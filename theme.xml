@@ -8,10 +8,28 @@ originally based on: "simple" by nils bonenberger
 based:      Alekfull Bello v2, Art Book and Carbon
 -->
 <theme defaultView="detailed">
-	<formatVersion>4</formatVersion>
-	<include subset="colorset" name="синий">./_inc/colors/blue.xml</include>
-	<include subset="colorset" name="красный">./_inc/colors/red.xml</include>
-	<include subset="colorset" name="зеленый">./_inc/colors/green.xml</include>
+	<formatVersion>7</formatVersion>
+
+	<variables lang="ru">
+		<blue>Синий</blue>
+		<red>Красный</red>
+		<green>Зеленый</green>
+	</variables>
+	<variables lang="fr">
+		<blue>Bleu</blue>
+		<red>Rouge</red>
+		<green>Bleu</green>
+	</variables>
+	<variables lang="de">
+		<blue>Blau</blue>
+		<red>Rot</red>
+		<green>Grün</green>
+	</variables>
+
+	<include subset="colorset" name="blue" displayName="${blue}">./_inc/colors/blue.xml</include>
+	<include subset="colorset" name="red" displayName="${red}">./_inc/colors/red.xml</include>
+	<include subset="colorset" name="green" displayName="${green}">./_inc/colors/green.xml</include>
+
 	<view name="menu">
 		<menuText name="menutitle">
 			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
