@@ -1,0 +1,658 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Theme: ckau-book
+version: 2.0
+author: Ckau
+license: creative commons CC-BY-NC-SA
+originally based on: "simple" by nils bonenberger
+based:      Alekfull Bello v2, Art Book and Carbon
+-->
+<theme defaultView="detailed">
+	<formatVersion>4</formatVersion>
+	<include subset="colorset" name="синий">./_inc/colors/blue.xml</include>
+	<include subset="colorset" name="красный">./_inc/colors/red.xml</include>
+	<include subset="colorset" name="зеленый">./_inc/colors/green.xml</include>
+	<view name="menu">
+		<menuText name="menutitle">
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontSize>0.044</fontSize>
+			<color>FAFAFA</color>
+		</menuText>
+		<menuText name="menufooter">
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontSize>0.02</fontSize>
+			<color>777777FF</color>
+		</menuText>
+		<menuText name="menutext">
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontSize>0.038</fontSize>
+			<color>969696</color>
+			<separatorColor>363636FF</separatorColor>
+			<selectorColor>${baseColor}</selectorColor>
+			<selectorColorEnd>${gradientEndColor}</selectorColorEnd>
+			<selectedColor>FFFFFF</selectedColor>
+			<selectorGradientType>horizontal</selectorGradientType>
+		</menuText>
+		<menuTextSmall name="menutextsmall">
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontSize>0.02</fontSize>
+			<color>deec00</color>
+		</menuTextSmall>
+		<menuBackground name="menubg">
+			<color>202020</color>
+			<path>./_inc/images/frame.png</path>
+		</menuBackground>
+		<menuIcons name="menuicons">
+			<iconKodi>./_inc/icons/Kodi.png</iconKodi>
+			<iconSystem>./_inc/icons/System.png</iconSystem>
+			<iconUpdates>./_inc/icons/Updates.png</iconUpdates>
+			<iconGames>./_inc/icons/Games.png</iconGames>
+			<iconControllers>./_inc/icons/Controllers.png</iconControllers>
+			<iconUI>./_inc/icons/UI.png</iconUI>
+			<iconSound>./_inc/icons/Sound.png</iconSound>
+			<iconNetwork>./_inc/icons/Network.png</iconNetwork>
+			<iconScraper>./_inc/icons/Scraper.png</iconScraper>
+			<iconAdvanced>./_inc/icons/Advanced.png</iconAdvanced>
+			<iconQuit>./_inc/icons/Quit.png</iconQuit>
+			<iconRestart>./_inc/icons/Restart.png</iconRestart>
+			<iconShutdown>./_inc/icons/Shutdown.png</iconShutdown>
+			<iconFastShutdown>./_inc/icons/Fastshutdown.png</iconFastShutdown>
+			<iconRetroachievements>./_inc/icons/Contest.png</iconRetroachievements>
+		</menuIcons>
+		<menuTextEdit name="menutextedit">
+			<inactive>./_inc/images/textinput_ninepatch.png</inactive>
+			<active>./_inc/images/textinput_ninepatch_active.png</active>
+		</menuTextEdit>
+	</view>
+	<view name="system">
+		<carousel name="systemcarousel">
+			<type>vertical_wheel</type>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<origin>0 0</origin>
+			<color>00000000</color>
+			<logoScale>1.3</logoScale>
+			<logoSize>0.2 0.2</logoSize>
+			<logoRotation>-6.5</logoRotation>
+			<logoRotationOrigin>4.0 0.3</logoRotationOrigin>
+			<logoAlignment>right</logoAlignment>
+			<maxLogoCount>7</maxLogoCount>
+			<systemInfoDelay>0.1</systemInfoDelay>
+			<zIndex>75</zIndex>
+		</carousel>
+		<text name="systemInfo" extra="true">
+		 	<pos>0.030 0.082</pos>
+			<backgroundColor>14141400</backgroundColor>
+			<color>FFFFFF</color>
+			<alignment>left</alignment>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontSize>0.03</fontSize>
+		</text>
+		<text name="selectsystem" extra="true">
+			<text>Select System</text>
+			<text lang="fr">Sélectionnez le système</text>
+			<text lang="de">Wählen Sie System</text>
+			<text lang="ru">Выбор системы</text>
+		 	<pos>0.030 0.030</pos>
+			<backgroundColor>14141400</backgroundColor>
+			<color>FFFFFF</color>
+			<alignment>left</alignment>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontSize>0.05</fontSize>
+			<zIndex>110</zIndex>
+		</text>
+		<image name="background" extra="true">
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>./_inc/art/${system.theme}.jpg</path>
+		</image>
+		<image name="art" extra="true">
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>./_inc/images/overlay.png</path>
+		</image>
+		<text name="logoText">
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>${baseColor}</color>
+			<forceUppercase>true</forceUppercase>
+		</text>
+		<image name="logo">
+			<path>./_inc/logos/${system.theme}.png</path>
+			<path>./_inc/logos/${system.theme}-${lang}.png</path>
+		</image>
+		<text name="info1, info2, info3, info4, info5, info6, info7, info8, info9, info10, info11, info12" extra="true">
+			<color>FFFFFF</color>
+			<alignment>left</alignment>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontSize>0.02</fontSize>
+			<size>0.4 0.03</size>
+		</text>
+	</view>
+	<view name="basic,detailed,grid">
+		<helpsystem name="help">
+			<pos>1 1</pos>
+		</helpsystem>
+	</view>
+	<view name="basic,grid">
+		<text name="logoText">
+			<pos>.5 0.1427777777777778</pos>
+			<origin>0.5 0</origin>
+			<size>0.15625 0.0555555555555556</size>
+			<fontSize>0.0444444444444444</fontSize>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>${baseColor}</color>
+			<forceUppercase>true</forceUppercase>
+		</text>
+		<image name="background" extra="true">
+			<tile>true</tile>
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>./_inc/images/space.png</path>
+			<color>141414</color>
+		</image>
+	</view>
+	<view name="basic">
+		<image name="logo">
+			<path>./_inc/logos/${system.theme}.png</path>
+			<path>./_inc/logos/${system.theme}-${lang}.png</path>
+			<pos>.5 0.1427777777777778</pos>
+			<maxSize>0.460 0.126</maxSize>
+			<origin>0.5 0.5</origin>
+		</image>
+		<textlist name="gamelist">
+			<selectorColor>333333ff</selectorColor>
+			<selectedColor>${baseColor}</selectedColor>
+			<primaryColor>cccccc</primaryColor>
+			<secondaryColor>cccccc</secondaryColor>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontSize>0.025</fontSize>
+			<pos>0.1484375 0.2416666666666667</pos>
+			<size>0.703125 0.5555555555555556</size>
+			<alignment>center</alignment>
+			<horizontalMargin>0.01</horizontalMargin>
+			<forceUppercase>1</forceUppercase>
+			<scrollSound>./_inc/sound/scroll.wav</scrollSound>
+		</textlist>
+		<image name="help-launch" extra="true">
+			<path>./_inc/images/help-launch.png</path>
+			<origin>0 0</origin>
+			<pos>0.3734375 0.8333333333333333</pos>
+			<size>0.071875 0.0263888888888889</size>
+		</image>
+		<image name="help-random" extra="true">
+			<path>./_inc/images/help-random.png</path>
+			<origin>0 0</origin>
+			<pos>0.45703125 0.8333333333333333</pos>
+			<size>0.07734375 0.0263888888888889</size>
+		</image>
+		<image name="help-favorite" extra="true">
+			<path>./_inc/images/help-favorite.png</path>
+			<origin>0 0</origin>
+			<pos>0.54921875 0.8333333333333333</pos>
+			<size>0.10046875 0.0263888888888889</size>
+		</image>
+	</view>
+	<view name="detailed">
+		<video name="md_video">
+			<pos>0.540625 0.725555555555556</pos>
+			<maxSize>0.30 0.3833333333333333</maxSize>
+			<origin>0.5 0.5</origin>
+			<delay>0.1</delay>
+			<default>./_inc/videos/static.mp4</default>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<effect>none</effect>
+			<zIndex>110</zIndex>
+		</video>
+		<image name="md_marquee">
+			<origin>0 0</origin>
+			<pos>1 1</pos>
+		</image>
+		<image name="video-background" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.540625 0.725555555555556</pos>
+			<size>0.30625 0.3944444444444444</size>
+			<path>./_inc/images/space.png</path>
+			<color>bbbbbb</color>
+			<zIndex>100</zIndex>
+		</image>
+		<image name="video-screen" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.540625 0.725555555555556</pos>
+			<size>0.30 0.3833333333333333</size>
+			<path>./_inc/images/space.png</path>
+			<color>000000</color>
+			<zIndex>105</zIndex>
+		</image>
+		<image name="logo">
+			<path>./_inc/logos/${system.theme}.png</path>
+			<path>./_inc/logos/${system.theme}-${lang}.png</path>
+			<pos>0.8625 0.1527777777777778</pos>
+			<maxSize>0.200 0.126</maxSize>
+			<origin>0.5 0.5</origin>
+		</image>
+		<image name="background" extra="true">
+			<tile>true</tile>
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>./_inc/images/space.png</path>
+			<color>cccccc</color>
+		</image>
+		<image name="md_image">
+			<origin>0.5 0</origin>
+			<pos>0.225 0.1277777777777778</pos>
+			<maxSize>0.3078125 0.547222222222222</maxSize>
+		</image>
+		<text name="md_lbl_rating,md_playcount,md_lbl_releasedate,md_lbl_lastplayed,md_lbl_developer,md_lbl_publisher,md_lbl_genre,md_lbl_players,md_lbl_playcount">
+			<pos>1 1</pos>
+		</text>
+		<text name="md_players,md_genre,md_description,md_developer,md_publisher">
+			<color>111111</color>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontSize>0.0194444444444444</fontSize>
+		</text>
+		<datetime name="md_lastplayed,md_releasedate">
+			<color>111111</color>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontSize>0.0194444444444444</fontSize>
+		</datetime>
+		<rating name="md_rating">
+			<pos>0.4125 0.1388888888888889</pos>
+			<size>0.1796875 0.0277777777777778</size>
+			<color>666666</color>
+		</rating>
+		<datetime name="md_releasedate">
+			<pos>0.4455 0.192</pos>
+			<size>0.171875 0.0222222222222222</size>
+		</datetime>
+		<text name="md_developer">
+			<pos>0.4455 0.232</pos>
+			<size>0.171875 0.0222222222222222</size>
+		</text>
+		<text name="md_publisher">
+			<pos>0.4455 0.272</pos>
+			<size>0.171875 0.0222222222222222</size>
+		</text>
+		<text name="md_genre">
+			<pos>0.4455 0.312</pos>
+			<size>0.171875 0.0222222222222222</size>
+		</text>
+		<text name="md_players">
+			<pos>0.4455 0.352</pos>
+			<size>0.171875 0.0222222222222222</size>
+		</text>
+		<datetime name="md_lastplayed">
+			<pos>0.4455 0.392</pos>
+			<size>0.171875 0.0222222222222222</size>
+		</datetime>
+		<image name="release_date_logo" extra="true">
+			<pos>0.4125 0.184</pos>
+			<size>0.02 0.035</size>
+			<path>./_inc/images/game_info_releasedate.svg</path>
+		</image>
+		<image name="developer_logo" extra="true">
+			<pos>0.4125 0.224</pos>
+			<size>.02 .035</size>
+			<path>./_inc/images/game_info_developer.svg</path>
+		</image>
+		<image name="publisher_logo" extra="true">
+			<pos>0.4125 0.264</pos>
+			<size>.02 .035</size>
+			<path>./_inc/images/game_info_publisher.svg</path>
+		</image>
+		<image name="genre_logo" extra="true">
+			<pos>0.4125 0.304</pos>
+			<size>.02 .035</size>
+			<path>./_inc/images/game_info_genre.svg</path>
+		</image>
+		<image name="players_logo" extra="true">
+			<pos>0.4125 0.344</pos>
+			<size>.02 .035</size>
+			<path>./_inc/images/game_info_players.svg</path>
+		</image>
+		<image name="lastplayed_logo" extra="true">
+			<pos>0.4125 0.384</pos>
+			<size>.02 .035</size>
+			<path>./_inc/images/game_info_lastplayed.svg</path>
+		</image>
+		<image name="md-description-border" extra="true">
+			<pos>0.071875 0.706111111111111</pos>
+			<size>0.3078125 0.0027777777777778</size>
+			<origin>0 0</origin>
+			<path>./_inc/images/space.png</path>
+			<color>aaaaaa</color>
+		</image>
+		<text name="md_description">
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<pos>0.071875 0.736111111111111</pos>
+			<size>0.3098125 0.2080555555555556</size>
+			<fontSize>0.025</fontSize>
+		</text>
+		<image name="gamelist-background" extra="true">
+			<origin>0 0</origin>
+			<pos>0.725 0</pos>
+			<size>0.275 1</size>
+			<path>./_inc/images/space.png</path>
+			<color>141414</color>
+		</image>
+		<textlist name="gamelist">
+			<selectorColor>333333ff</selectorColor>
+			<selectedColor>${baseColor}</selectedColor>
+			<primaryColor>cccccc</primaryColor>
+			<secondaryColor>cccccc</secondaryColor>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<forceUppercase>1</forceUppercase>
+			<pos>0.7578125 0.2416666666666667</pos>
+			<size>0.209375 0.5555555555555556</size>
+			<alignment>center</alignment>
+			<horizontalMargin>0.00</horizontalMargin>
+			<fontSize>0.025</fontSize>
+			<scrollSound>./_inc/sound/scroll.wav</scrollSound>
+		</textlist>
+		<image name="md_hidden">
+			<pos>0.823 0.700</pos>
+			<path>./_inc/images/hidden.svg</path>
+			<maxSize>0.132 0.132</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>969696</color>
+		</image>
+		<image name="md_kidgame">
+			<pos>0.883 0.700</pos>
+			<path>./_inc/images/kid.svg</path>
+			<maxSize>0.032 0.032</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>969696</color>
+		</image>
+		<image name="md_favorite">
+			<pos>0.940 0.700</pos>
+			<path>./_inc/images/favorite.svg</path>
+			<maxSize>0.032 0.032</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>969696</color>
+		</image>
+		<text name="logoText">
+			<pos>0.784375 0.1527777777777778</pos>
+			<size>0.15625 0.0555555555555556</size>
+			<fontSize>0.0444444444444444</fontSize>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<forceUppercase>true</forceUppercase>
+			<color>555555</color>
+		</text>
+		<image name="help-launch" extra="true">
+			<path>./_inc/images/help-launch.png</path>
+			<size>0.071875 0.0263888888888889</size>
+			<pos>0.4125 0.472222222222222</pos>
+			<origin>0 0</origin>
+		</image>
+		<image name="help-favorite" extra="true">
+			<pos>0.496875 0.472222222222222</pos>
+			<path>./_inc/images/help-favorite.png</path>
+			<size>0.10046875 0.0263888888888889</size>
+			<origin>0 0</origin>
+		</image>
+		<image name="help-random" extra="true">
+			<path>./_inc/images/help-random.png</path>
+			<size>0.07734375 0.0263888888888889</size>
+			<origin>0.5 0</origin>
+			<pos>0.8625 0.8333333333333333</pos>
+		</image>
+	</view>
+	<view name="grid">
+		<image name="logo">
+			<path>./_inc/logos/${system.theme}.png</path>
+			<path>./_inc/logos/${system.theme}-${lang}.png</path>
+			<pos>.5 0.09</pos>
+			<maxSize>0.460 0.126</maxSize>
+			<origin>0.5 0.5</origin>
+		</image>
+		<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
+			<color>A0A0B000</color>
+		</text>
+		<text name="md_publisher, md_genre, md_players, md_playcount, md_description">
+			<color>ffffff00</color>
+		</text>
+		<datetime name="md_releasedate, md_lastplayed">
+			<color>ffffff00</color>
+		</datetime>
+		<rating name="md_rating">
+			<pos>0.8 0.955</pos>
+			<size>0.1796875 0.0277777777777778</size>
+			<color>666666</color>
+		</rating>
+		<imagegrid name="gamegrid">
+			<pos>0.025 0.16</pos>
+			<size>0.950 0.774</size>
+			<margin>0.005 0.04</margin>
+			<padding>0.03 0.05 0.03 0.04</padding>
+			<autoLayout>7 2</autoLayout>
+			<autoLayoutSelectedZoom>1.12</autoLayoutSelectedZoom>
+			<animateSelection>false</animateSelection>
+		</imagegrid>
+		<gridtile name="default">
+			<backgroundColor>FFFFFF00</backgroundColor>
+			<backgroundCornerSize>9 9</backgroundCornerSize>
+			<selectionMode>image</selectionMode>
+			<padding>5 5</padding>
+			<imageColor>FFFFFFB0</imageColor>
+		</gridtile>
+		<gridtile name="selected">
+			<backgroundCenterColor>${centerFadeColor}</backgroundCenterColor>
+			<backgroundEdgeColor>${bottomBarColor}</backgroundEdgeColor>
+			<imageColor>FFFFFFFF</imageColor>
+		</gridtile>
+		<text name="gridtile">
+			<color>D0D0D0</color>
+			<backgroundColor>00000000</backgroundColor>
+			<fontSize>0.022</fontSize>
+			<alignment>center</alignment>
+			<size>1 0.24</size>
+		</text>
+		<text name="gridtile_selected">
+			<color>FFFFFF</color>
+			<glowColor>${glowColor}</glowColor>
+			<glowSize>3</glowSize>
+		</text>
+		<image name="help-launch" extra="true">
+			<path>./_inc/images/help-launch.png</path>
+			<origin>0 0</origin>
+			<pos>0.3734375 0.955</pos>
+			<size>0.071875 0.0263888888888889</size>
+			<zIndex>100</zIndex>
+		</image>
+		<image name="help-random" extra="true">
+			<path>./_inc/images/help-random.png</path>
+			<origin>0 0</origin>
+			<pos>0.45703125 0.955</pos>
+			<size>0.07734375 0.0263888888888889</size>
+			<zIndex>100</zIndex>
+		</image>
+		<image name="help-favorite" extra="true">
+			<path>./_inc/images/help-favorite.png</path>
+			<origin>0 0</origin>
+			<pos>0.54921875 0.955</pos>
+			<size>0.10046875 0.0263888888888889</size>
+			<zIndex>100</zIndex>
+		</image>
+	</view>
+	<customView name="Карусель" inherits="grid" tinyScreen="false">
+		<text name="md_name">
+			<color>ffffffff</color>
+			<pos>0.04 0.76</pos>
+			<size>0.92 0.10</size>
+			<alignment>center</alignment>
+			<glowColor>00000016</glowColor>
+			<glowSize>4</glowSize>
+		</text>
+		<text name="md_developer">
+			<color>808080ff</color>
+			<pos>0.04 0.80</pos>
+			<size>0.92 0.10</size>
+			<alignment>center</alignment>
+			<fontSize>0.020</fontSize>
+			<glowColor>00000016</glowColor>
+			<glowSize>3</glowSize>
+		</text>
+		<imagegrid name="gamegrid">
+			<pos>0 0.05</pos>
+			<size>1 1</size>
+			<padding>0.05 0.14 0.05 0.30</padding>
+			<scrollDirection>horizontal</scrollDirection>
+			<autoLayout>5 1</autoLayout>
+			<autoLayoutSelectedZoom>1.50</autoLayoutSelectedZoom>
+			<margin>0.005 0.010</margin>
+			<centerSelection>true</centerSelection>
+			<scrollLoop>true</scrollLoop>
+		</imagegrid>
+		<gridtile name="default">
+			<padding>64 16</padding>
+			<backgroundCenterColor>FFFFFF00</backgroundCenterColor>
+			<backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
+			<imageSizeMode>maxSize</imageSizeMode>
+			<imageColor>FFFFFFAA</imageColor>
+			<reflexion>0.24 0.0</reflexion>
+		</gridtile>
+		<gridtile name="selected">
+			<backgroundCenterColor>FFFFFF00</backgroundCenterColor>
+			<backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
+			<padding>64 16</padding>
+		</gridtile>
+		<text name="gridtile">
+			<color>80808080</color>
+			<fontSize>0.016</fontSize>
+			<size>1 0</size>
+		</text>
+		<text name="gridtile_selected">
+			<color>FFFFFF00</color>
+			<fontSize>0.035</fontSize>
+			<size>1 0</size>
+		</text>
+	</customView>
+	<customView name="Карусель - Подробно" inherits="Карусель">
+		<imagegrid name="gamegrid">
+			<pos>0 0.05</pos>
+			<size>0.66 1</size>
+			<autoLayout>3 1</autoLayout>
+			<padding>0.01 0.18 0.01 0.24</padding>
+		</imagegrid>
+		<image name="gamelistBackground" extra="true">
+			<path>./_inc/images/space.png</path>
+			<color>141414</color>
+			<origin>0 0</origin>
+			<pos>0.66 0.16</pos>
+			<size>0.34 0.774</size>
+			<zIndex>12</zIndex>
+		</image>
+		<image name="md_image">
+			<visible>false</visible>
+		</image>
+		<text name="md_name">
+			<color>ffffffff</color>
+			<pos>0.68 0.188</pos>
+			<size>0.30 0.05</size>
+			<color>F0F0F0</color>
+			<fontSize>0.032</fontSize>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<alignment>center</alignment>
+			<glowColor>${glowColor}</glowColor>
+			<glowSize>2</glowSize>
+		</text>
+		<text name="md_developer">
+			<color>666666</color>
+			<pos>0.68 0.875</pos>
+			<size>0.30 0.05</size>
+			<alignment>left</alignment>
+			<fontSize>0.025</fontSize>
+			<glowSize>0</glowSize>
+		</text>
+		<video name="md_video">
+			<pos>0.83 0.455</pos>
+			<maxSize>0.30 0.3833333333333333</maxSize>
+			<origin>0.5 0.5</origin>
+			<delay>0.1</delay>
+			<default>./_inc/videos/static.mp4</default>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<effect>none</effect>
+			<zIndex>110</zIndex>
+		</video>
+		<image name="md_marquee">
+			<origin>0 0</origin>
+			<pos>1 1</pos>
+		</image>
+		<image name="video-background" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.83 0.455</pos>
+			<size>0.30625 0.3944444444444444</size>
+			<path>./_inc/images/space.png</path>
+			<color>333333ff</color>
+			<zIndex>100</zIndex>
+		</image>
+		<image name="video-screen" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.83 0.455</pos>
+			<size>0.30 0.3833333333333333</size>
+			<path>./_inc/images/space.png</path>
+			<color>000000</color>
+			<zIndex>105</zIndex>
+		</image>
+		<text name="md_description">
+			<pos>0.68 0.678</pos>
+			<size>0.30 0.20</size>
+			<fontSize>0.025</fontSize>
+			<color>A0A0B0</color>
+		</text>
+		<rating name="md_rating">
+			<pos>0.9 0.886</pos>
+			<size>0.05 0.03</size>
+			<color>666666</color>
+		</rating>
+	</customView>
+	<customView name="Плитки" inherits="grid">
+		<imagegrid name="gamegrid">
+			<autoLayout>3 2</autoLayout>
+			<autoLayoutSelectedZoom>1.02</autoLayoutSelectedZoom>
+			<imageSource>image</imageSource>
+			<margin>0.005 0.010</margin>
+			<padding>0.03 0.05 0.03 0.04</padding>
+			<zIndex>11</zIndex>
+		</imagegrid>
+		<gridtile name="default">
+			<size>0.225 0.254</size>
+			<backgroundCenterColor>FFFFFF20</backgroundCenterColor>
+			<backgroundEdgeColor>FFFFFF20</backgroundEdgeColor>
+			<backgroundCornerSize>0 0</backgroundCornerSize>
+			<padding>1 1</padding>
+			<imageSizeMode>minSize</imageSizeMode>
+			<imageColor>FFFFFFAA</imageColor>
+		</gridtile>
+		<gridtile name="selected">
+			<size>0.230 0.259</size>
+			<padding>2 2</padding>
+			<backgroundCornerSize>0 0</backgroundCornerSize>
+			<imageColor>FFFFFFFF</imageColor>
+		</gridtile>
+		<text name="gridtile">
+			<color>D0D0D0D0</color>
+			<backgroundColor>00000000</backgroundColor>
+			<fontSize>0.028</fontSize>
+			<alignment>center</alignment>
+			<size>0 0.18</size>
+			<glowColor>00000008</glowColor>
+			<glowSize>3</glowSize>
+		</text>
+		<text name="gridtile_selected">
+			<color>FFFFFF</color>
+			<glowColor>${glowColor}</glowColor>
+			<glowSize>3</glowSize>
+		</text>
+	</customView>
+	<customView name="Плитки и видео" inherits="Плитки">
+		<imagegrid name="gamegrid">
+			<showVideoAtDelay>200</showVideoAtDelay>
+		</imagegrid>
+	</customView>
+</theme>
