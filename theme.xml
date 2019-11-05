@@ -14,16 +14,28 @@ based:      Alekfull Bello v2, Art Book and Carbon
 		<blue>Синий</blue>
 		<red>Красный</red>
 		<green>Зеленый</green>
+		<carouselViewName>Карусель</carouselViewName>
+		<carouselDetailsViewName>Карусель + Подробно</carouselDetailsViewName>
+		<tilesViewName>Плитки</tilesViewName>
+		<tilesVideoViewName>Плитки + Видео</tilesVideoViewName>
 	</variables>
 	<variables lang="fr">
 		<blue>Bleu</blue>
 		<red>Rouge</red>
 		<green>Vert</green>
+		<carouselViewName>Carrousel</carouselViewName>
+		<carouselDetailsViewName>Carrousel + Aperçu</carouselDetailsViewName>
+		<tilesViewName>Vignettes</tilesViewName>
+		<tilesVideoViewName>Vignettes + Vidéo</tilesVideoViewName>
 	</variables>
 	<variables lang="de">
 		<blue>Blau</blue>
 		<red>Rot</red>
 		<green>Grün</green>
+		<carouselViewName>Karussell</carouselViewName>
+		<carouselDetailsViewName>Karussell + Einzelheiten</carouselDetailsViewName>
+		<tilesViewName>Fliesen</tilesViewName>
+		<tilesVideoViewName>Fliesen + Video</tilesVideoViewName>
 	</variables>
 
 	<include subset="colorset" name="blue" displayName="${blue}">./_inc/colors/blue.xml</include>
@@ -505,7 +517,7 @@ based:      Alekfull Bello v2, Art Book and Carbon
 			<zIndex>100</zIndex>
 		</image>
 	</view>
-	<customView name="Карусель" inherits="grid" tinyScreen="false">
+	<customView name="Carousel" inherits="grid" tinyScreen="false" displayName="${carouselViewName}">
 		<text name="md_name">
 			<color>ffffffff</color>
 			<pos>0.04 0.76</pos>
@@ -558,7 +570,7 @@ based:      Alekfull Bello v2, Art Book and Carbon
 			<size>1 0</size>
 		</text>
 	</customView>
-	<customView name="Карусель - Подробно" inherits="Карусель">
+	<customView name="Carousel + Details" inherits="Carousel" displayName="${carouselDetailsViewName}">
 		<imagegrid name="gamegrid">
 			<pos>0 0.05</pos>
 			<size>0.66 1</size>
@@ -638,7 +650,7 @@ based:      Alekfull Bello v2, Art Book and Carbon
 			<color>666666</color>
 		</rating>
 	</customView>
-	<customView name="Плитки" inherits="grid">
+	<customView name="Tiles" inherits="grid" displayName="${tilesViewName}">
 		<imagegrid name="gamegrid">
 			<autoLayout>3 2</autoLayout>
 			<autoLayoutSelectedZoom>1.02</autoLayoutSelectedZoom>
@@ -677,7 +689,7 @@ based:      Alekfull Bello v2, Art Book and Carbon
 			<glowSize>3</glowSize>
 		</text>
 	</customView>
-	<customView name="Плитки и видео" inherits="Плитки">
+	<customView name="Tiles + Video" inherits="Tiles" displayName="${tilesVideoViewName}">
 		<imagegrid name="gamegrid">
 			<showVideoAtDelay>200</showVideoAtDelay>
 		</imagegrid>
