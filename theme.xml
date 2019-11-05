@@ -18,24 +18,27 @@ based:      Alekfull Bello v2, Art Book and Carbon
 		<carouselDetailsViewName>Карусель + Подробно</carouselDetailsViewName>
 		<tilesViewName>Плитки</tilesViewName>
 		<tilesVideoViewName>Плитки + Видео</tilesVideoViewName>
+		<gridDetailsViewName>Сетка + Подробно</gridDetailsViewName>
 	</variables>
 	<variables lang="fr">
 		<blue>Bleu</blue>
 		<red>Rouge</red>
 		<green>Vert</green>
 		<carouselViewName>Carrousel</carouselViewName>
-		<carouselDetailsViewName>Carrousel + Aperçu</carouselDetailsViewName>
+		<carouselDetailsViewName>Carrousel + Détaillé</carouselDetailsViewName>
 		<tilesViewName>Vignettes</tilesViewName>
 		<tilesVideoViewName>Vignettes + Vidéo</tilesVideoViewName>
+		<gridDetailsViewName>Grille + Détaillé</gridDetailsViewName>
 	</variables>
 	<variables lang="de">
 		<blue>Blau</blue>
 		<red>Rot</red>
 		<green>Grün</green>
 		<carouselViewName>Karussell</carouselViewName>
-		<carouselDetailsViewName>Karussell + Einzelheiten</carouselDetailsViewName>
+		<carouselDetailsViewName>Karussell + Detailliert</carouselDetailsViewName>
 		<tilesViewName>Fliesen</tilesViewName>
 		<tilesVideoViewName>Fliesen + Video</tilesVideoViewName>
+		<gridDetailsViewName>Raster + Detailliert</gridDetailsViewName>
 	</variables>
 
 	<include subset="colorset" name="blue" displayName="${blue}">./_inc/colors/blue.xml</include>
@@ -462,7 +465,7 @@ based:      Alekfull Bello v2, Art Book and Carbon
 		<imagegrid name="gamegrid">
 			<pos>0.025 0.16</pos>
 			<size>0.950 0.774</size>
-			<margin>0.005 0.04</margin>
+			<margin>0.005 0.010</margin>
 			<padding>0.03 0.05 0.03 0.04</padding>
 			<autoLayout>7 2</autoLayout>
 			<autoLayoutSelectedZoom>1.12</autoLayoutSelectedZoom>
@@ -517,6 +520,89 @@ based:      Alekfull Bello v2, Art Book and Carbon
 			<zIndex>100</zIndex>
 		</image>
 	</view>
+	<customView name="Grid + Details" inherits="grid" displayName="${gridDetailsViewName}">
+		<imagegrid name="gamegrid">
+			<size>0.66 0.76</size>
+			<autoLayout>4 2</autoLayout>
+			<margin>0.005 0.010</margin>
+			<padding>0.03 0.05 0.03 0.04</padding>
+		</imagegrid>
+		<text name="gridtile">
+			<size>0 0</size>
+		</text>
+		<image name="gamelistBackground" extra="true">
+			<path>./_inc/images/space.png</path>
+			<color>141414</color>
+			<origin>0 0</origin>
+			<pos>0.66 0.16</pos>
+			<size>0.34 0.774</size>
+			<zIndex>12</zIndex>
+		</image>
+		<image name="md_image">
+			<visible>false</visible>
+		</image>
+		<text name="md_name">
+			<color>ffffffff</color>
+			<pos>0.68 0.188</pos>
+			<size>0.30 0.05</size>
+			<color>F0F0F0</color>
+			<fontSize>0.032</fontSize>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<alignment>center</alignment>
+			<glowColor>${glowColor}</glowColor>
+			<glowSize>2</glowSize>
+		</text>
+		<text name="md_developer">
+			<color>666666</color>
+			<pos>0.68 0.875</pos>
+			<size>0.30 0.05</size>
+			<alignment>left</alignment>
+			<fontSize>0.025</fontSize>
+			<glowSize>0</glowSize>
+		</text>
+		<video name="md_video">
+			<pos>0.83 0.455</pos>
+			<maxSize>0.30 0.3833333333333333</maxSize>
+			<origin>0.5 0.5</origin>
+			<delay>0.1</delay>
+			<default>./_inc/videos/static.mp4</default>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<effect>none</effect>
+			<zIndex>110</zIndex>
+		</video>
+		<image name="md_marquee">
+			<origin>0 0</origin>
+			<pos>1 1</pos>
+		</image>
+		<image name="video-background" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.83 0.455</pos>
+			<size>0.30625 0.3944444444444444</size>
+			<path>./_inc/images/space.png</path>
+			<color>333333ff</color>
+			<zIndex>100</zIndex>
+		</image>
+		<image name="video-screen" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.83 0.455</pos>
+			<size>0.30 0.3833333333333333</size>
+			<path>./_inc/images/space.png</path>
+			<color>000000</color>
+			<zIndex>105</zIndex>
+		</image>
+		<text name="md_description">
+			<pos>0.68 0.678</pos>
+			<size>0.30 0.20</size>
+			<fontSize>0.025</fontSize>
+			<color>A0A0B0</color>
+		</text>
+		<rating name="md_rating">
+			<pos>0.9 0.886</pos>
+			<size>0.05 0.03</size>
+			<color>666666</color>
+		</rating>
+	</customView>
 	<customView name="Carousel" inherits="grid" tinyScreen="false" displayName="${carouselViewName}">
 		<text name="md_name">
 			<color>ffffffff</color>
