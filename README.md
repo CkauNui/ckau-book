@@ -9,4 +9,4 @@ Site: https://4pda.ru/forum/index.php?showtopic=802556&st=1600#entry83038152
 
 Based:      Alekfull Bello v2, Art Book and Carbon
 
-Language: Russian, English, Deutsch, French
+Language: Russian, English, Deutsch, French, Polish
