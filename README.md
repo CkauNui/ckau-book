@@ -1,5 +1,5 @@
 # ckau-book (RUS)
-Theme for Batocera >5.22 and more
+Theme for Batocera >5.24 and more
 
 Theme name:     ckau-book
 
