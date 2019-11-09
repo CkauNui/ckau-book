@@ -58,10 +58,10 @@ based:      Alekfull Bello v2, Art Book and Carbon
 	<view name="menu, system">
 		<helpsystem name="help">
 			<fontSize>0.03</fontSize>
-			<iconA>./_inc/images/a.png</iconA>
-			<iconB>./_inc/images/b.png</iconB>
-			<iconX>./_inc/images/x.png</iconX>
-			<iconY>./_inc/images/y.png</iconY>
+			<iconA>./_inc/images/a.svg</iconA>
+			<iconB>./_inc/images/b.svg</iconB>
+			<iconX>./_inc/images/x.svg</iconX>
+			<iconY>./_inc/images/y.svg</iconY>
 		</helpsystem>
 	</view>
 
@@ -184,11 +184,46 @@ based:      Alekfull Bello v2, Art Book and Carbon
 			<size>0.4 0.03</size>
 		</text>
 	</view>
+
 	<view name="basic,detailed,grid">
 		<helpsystem name="help">
 			<pos>1 1</pos>
 		</helpsystem>
+		<text name="LaunchButton" extra="true">
+			<text>LAUNCH</text>
+			<text lang="pl">Uruchom</text>
+			<text lang="fr">LANCER</text>
+			<text lang="de">STARTEN</text>
+			<text lang="ru">ЗАПУСК</text>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>110</zIndex>
+		</text>
+		<text name="FavoriteButton" extra="true">
+			<text>FAVORITE</text>
+			<text lang="pl">Do ulubionych</text>
+			<text lang="fr">FAVORI</text>
+			<text lang="de">LIEBLINGS</text>
+			<text lang="ru">ИЗБРАННОЕ</text>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>110</zIndex>
+		</text>
+		<text name="RandomButton" extra="true">
+			<text>RANDOM</text>
+			<text lang="pl">Losowy</text>
+			<text lang="fr">ALÉATOIRE</text>
+			<text lang="de">ZUFALL</text>
+			<text lang="ru">РАНДОМ</text>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>110</zIndex>
+		</text>
 	</view>
+
 	<view name="basic,grid">
 		<text name="logoText">
 			<pos>.5 0.1427777777777778</pos>
@@ -230,26 +265,32 @@ based:      Alekfull Bello v2, Art Book and Carbon
 			<forceUppercase>1</forceUppercase>
 			<scrollSound>./_inc/sound/scroll.wav</scrollSound>
 		</textlist>
+		<text name="LaunchButton" extra="true">
+			<pos>0.3964375 0.8283333333333333</pos>
+		</text>
+		<text name="FavoriteButton" extra="true">
+			<pos>0.57221875 0.8283333333333333</pos>
+		</text>
+		<text name="RandomButton" extra="true">
+			<pos>0.48003125 0.8283333333333333</pos>
+		</text>
 		<image name="help-launch" extra="true">
-			<path>./_inc/images/help-launch.png</path>
-			<path>./_inc/images/help-launch-${lang}.png</path>
+			<path>./_inc/images/help-launch.svg</path>
 			<origin>0 0</origin>
 			<pos>0.3734375 0.8333333333333333</pos>
-			<size>0.071875 0.0263888888888889</size>
+			<size>0.0174 0.0274</size>
 		</image>
 		<image name="help-random" extra="true">
-			<path>./_inc/images/help-random.png</path>
-			<path>./_inc/images/help-random-${lang}.png</path>
+			<path>./_inc/images/help-random.svg</path>
 			<origin>0 0</origin>
 			<pos>0.45703125 0.8333333333333333</pos>
-			<size>0.07734375 0.0263888888888889</size>
+			<size>0.0174 0.0274</size>
 		</image>
 		<image name="help-favorite" extra="true">
-			<path>./_inc/images/help-favorite.png</path>
-			<path>./_inc/images/help-favorite-${lang}.png</path>
+			<path>./_inc/images/help-favorite.svg</path>
 			<origin>0 0</origin>
 			<pos>0.54921875 0.8333333333333333</pos>
-			<size>0.10046875 0.0263888888888889</size>
+			<size>0.0174 0.0274</size>
 		</image>
 	</view>
 	<view name="detailed">
@@ -439,26 +480,32 @@ based:      Alekfull Bello v2, Art Book and Carbon
 			<forceUppercase>true</forceUppercase>
 			<color>555555</color>
 		</text>
+		<text name="LaunchButton" extra="true">
+			<pos>0.4355 0.467222222222222</pos>
+		</text>
+		<text name="FavoriteButton" extra="true">
+			<pos>0.519875 0.467222222222222</pos>
+		</text>
+		<text name="RandomButton" extra="true">
+			<pos>0.8485 0.8283333333333333</pos>
+		</text>
 		<image name="help-launch" extra="true">
-			<path>./_inc/images/help-launch.png</path>
-			<path>./_inc/images/help-launch-${lang}.png</path>
-			<size>0.071875 0.0263888888888889</size>
+			<path>./_inc/images/help-launch.svg</path>
 			<pos>0.4125 0.472222222222222</pos>
+			<size>0.0174 0.0274</size>
 			<origin>0 0</origin>
 		</image>
 		<image name="help-favorite" extra="true">
+			<path>./_inc/images/help-favorite.svg</path>
 			<pos>0.496875 0.472222222222222</pos>
-			<path>./_inc/images/help-favorite.png</path>
-			<path>./_inc/images/help-favorite-${lang}.png</path>
-			<size>0.10046875 0.0263888888888889</size>
+			<size>0.0174 0.0274</size>
 			<origin>0 0</origin>
 		</image>
 		<image name="help-random" extra="true">
-			<path>./_inc/images/help-random.png</path>
-			<path>./_inc/images/help-random-${lang}.png</path>
-			<size>0.07734375 0.0263888888888889</size>
-			<origin>0.5 0</origin>
-			<pos>0.8625 0.8333333333333333</pos>
+			<path>./_inc/images/help-random.svg</path>
+			<origin>0 0</origin>
+			<pos>0.8255 0.8333333333333333</pos>
+			<size>0.0174 0.0274</size>
 		</image>
 	</view>
 	<view name="grid">
@@ -516,28 +563,34 @@ based:      Alekfull Bello v2, Art Book and Carbon
 			<glowColor>${glowColor}</glowColor>
 			<glowSize>3</glowSize>
 		</text>
+		<text name="LaunchButton" extra="true">
+			<pos>0.3964375 0.950</pos>
+		</text>
+		<text name="FavoriteButton" extra="true">
+			<pos>0.57221875 0.950</pos>
+		</text>
+		<text name="RandomButton" extra="true">
+			<pos>0.48003125 0.950</pos>
+		</text>
 		<image name="help-launch" extra="true">
-			<path>./_inc/images/help-launch.png</path>
-			<path>./_inc/images/help-launch-${lang}.png</path>
+			<path>./_inc/images/help-launch.svg</path>
 			<origin>0 0</origin>
 			<pos>0.3734375 0.955</pos>
-			<size>0.071875 0.0263888888888889</size>
+			<size>0.0174 0.0274</size>
 			<zIndex>100</zIndex>
 		</image>
 		<image name="help-random" extra="true">
-			<path>./_inc/images/help-random.png</path>
-			<path>./_inc/images/help-random-${lang}.png</path>
+			<path>./_inc/images/help-random.svg</path>
 			<origin>0 0</origin>
 			<pos>0.45703125 0.955</pos>
-			<size>0.07734375 0.0263888888888889</size>
+			<size>0.0174 0.0274</size>
 			<zIndex>100</zIndex>
 		</image>
 		<image name="help-favorite" extra="true">
-			<path>./_inc/images/help-favorite.png</path>
-			<path>./_inc/images/help-favorite-${lang}.png</path>
+			<path>./_inc/images/help-favorite.svg</path>
 			<origin>0 0</origin>
 			<pos>0.54921875 0.955</pos>
-			<size>0.10046875 0.0263888888888889</size>
+			<size>0.0174 0.0274</size>
 			<zIndex>100</zIndex>
 		</image>
 	</view>
