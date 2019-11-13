@@ -19,6 +19,7 @@ based:      Alekfull Bello v2, Art Book and Carbon
 		<tilesViewName>Плитки</tilesViewName>
 		<tilesVideoViewName>Плитки + Видео</tilesVideoViewName>
 		<gridDetailsViewName>Сетка + Подробно</gridDetailsViewName>
+		<NoVideoDetailsViewName>Подробно - Видео</NoVideoDetailsViewName>
 	</variables>
 	<variables lang="pl">
 		<blue>Niebieski</blue>
@@ -29,6 +30,7 @@ based:      Alekfull Bello v2, Art Book and Carbon
 		<tilesViewName>Kafelki</tilesViewName>
 		<tilesVideoViewName>Kafelki + Wideo</tilesVideoViewName>
 		<gridDetailsViewName>Siatka + Szczegóły</gridDetailsViewName>
+		<NoVideoDetailsViewName>Szczegóły - Wideo</NoVideoDetailsViewName>
 	</variables>
 	<variables lang="fr">
 		<blue>Bleu</blue>
@@ -39,6 +41,7 @@ based:      Alekfull Bello v2, Art Book and Carbon
 		<tilesViewName>Vignettes</tilesViewName>
 		<tilesVideoViewName>Vignettes + Vidéo</tilesVideoViewName>
 		<gridDetailsViewName>Grille + Détaillé</gridDetailsViewName>
+		<NoVideoDetailsViewName>Détaillé - Vidéo</NoVideoDetailsViewName>
 	</variables>
 	<variables lang="de">
 		<blue>Blau</blue>
@@ -49,6 +52,7 @@ based:      Alekfull Bello v2, Art Book and Carbon
 		<tilesViewName>Fliesen</tilesViewName>
 		<tilesVideoViewName>Fliesen + Video</tilesVideoViewName>
 		<gridDetailsViewName>Raster + Detailliert</gridDetailsViewName>
+		<NoVideoDetailsViewName>Detailliert - Video</NoVideoDetailsViewName>
 	</variables>
 
 	<include subset="colorset" name="blue" displayName="${blue}">./_inc/colors/blue.xml</include>
@@ -853,5 +857,35 @@ based:      Alekfull Bello v2, Art Book and Carbon
 		<imagegrid name="gamegrid">
 			<showVideoAtDelay>200</showVideoAtDelay>
 		</imagegrid>
+	</customView>
+	<customView name="Detailed - Video" inherits="detailed" displayName="${NoVideoDetailsViewName}">
+		<video name="md_video">
+			<pos>1 1</pos>
+			<size>0 0</size>
+			<zIndex>0</zIndex>
+		</video>
+		<image name="video-background" extra="true">
+			<pos>1 1</pos>
+			<size>0 0</size>
+			<zIndex>0</zIndex>
+		</image>
+		<image name="video-screen" extra="true">
+			<pos>1 1</pos>
+			<size>0 0</size>
+			<zIndex>0</zIndex>
+		</image>
+		<image name="md-description-border" extra="true">
+			<pos>0.071875 0.706111111111111</pos>
+			<size>0.5578125 0.0027777777777778</size>
+			<origin>0 0</origin>
+			<path>./_inc/images/space.png</path>
+			<color>aaaaaa</color>
+		</image>
+		<text name="md_description">
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<pos>0.071875 0.736111111111111</pos>
+			<size>0.5698125 0.2080555555555556</size>
+			<fontSize>0.025</fontSize>
+		</text>
 	</customView>
 </theme>
