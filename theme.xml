@@ -16,6 +16,7 @@ based:      Alekfull Bello v2, Art Book and Carbon
 		<red>Красный</red>
 		<green>Зеленый</green>
 		<subset.systemview>Вид списка систем</subset.systemview>
+		<subset.aspect_ratio>Соотношение сторон</subset.aspect_ratio>
 		<swheel>Колесо</swheel>
 		<svertical>Вертикально</svertical>
 		<scenter>По центру</scenter>
@@ -32,6 +33,7 @@ based:      Alekfull Bello v2, Art Book and Carbon
 		<red>Czerwony</red>
 		<green>Zielony</green>
 		<subset.systemview>Widok listy systemów</subset.systemview>
+		<subset.aspect_ratio></subset.aspect_ratio>
 		<swheel>Wkoło</swheel>
 		<svertical>Pionowo</svertical>
 		<scenter>Centralnie</scenter>
@@ -48,6 +50,7 @@ based:      Alekfull Bello v2, Art Book and Carbon
 		<red>Rouge</red>
 		<green>Vert</green>
 		<subset.systemview></subset.systemview>
+		<subset.aspect_ratio></subset.aspect_ratio>
 		<swheel></swheel>
 		<svertical></svertical>
 		<scenter></scenter>
@@ -64,6 +67,7 @@ based:      Alekfull Bello v2, Art Book and Carbon
 		<red>Rot</red>
 		<green>Grün</green>
 		<subset.systemview></subset.systemview>
+		<subset.aspect_ratio></subset.aspect_ratio>
 		<swheel></swheel>
 		<svertical></svertical>
 		<scenter></scenter>
@@ -82,6 +86,9 @@ based:      Alekfull Bello v2, Art Book and Carbon
 	<include subset="systemview" name="Wheel" displayName="${swheel}">./_inc/systemviews/wheel.xml</include>
 	<include subset="systemview" name="Vertical" displayName="${svertical}">./_inc/systemviews/vertical.xml</include>
 	<include subset="systemview" name="Center" displayName="${scenter}">./_inc/systemviews/center.xml</include>
+
+	<include subset="aspect_ratio" name="16 : 9" displayName="${a169}">./_inc/systemviews/169.xml</include>
+	<include subset="aspect_ratio" name="4 : 3" displayName="${a43}">./_inc/systemviews/43.xml</include>
 
 	<view name="menu, system">
 		<helpsystem name="help">
@@ -171,12 +178,6 @@ based:      Alekfull Bello v2, Art Book and Carbon
 			<alignment>left</alignment>
 			<zIndex>110</zIndex>
 		</text>
-		<image name="background" extra="true">
-			<origin>0 0</origin>
-			<pos>0 0</pos>
-			<size>1 1</size>
-			<path>./_inc/art/${system.theme}.jpg</path>
-		</image>
 		<image name="art" extra="true">
 			<origin>0 0</origin>
 			<pos>0 0</pos>
