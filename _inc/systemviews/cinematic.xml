@@ -2,11 +2,23 @@
 <theme>
   <formatVersion>4</formatVersion>
 	<view name="system">
+		<video name="md_video2" extra="true">
+			<path>./../_inc/videos/novideo.mp4</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.336 0.45</pos>
+			<size>0.6 0.6</size>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<effect>none</effect>
+			<delay>0.8</delay>
+			<zIndex>1</zIndex>
+		</video>
 		<video name="md_video" extra="true">
 			<path>./../_inc/videos/${system.theme}.mp4</path>
 			<origin>0 0</origin>
 			<pos>0 0</pos>
 			<size>1 1</size>
+			<zIndex>2</zIndex>
 		</video>
 		<text name="systemInfo" extra="true">
 			<backgroundColor>14141400</backgroundColor>
@@ -15,6 +27,7 @@
 			<pos>-0.2 0.936</pos>
 			<alignment>right</alignment>
 			<fontSize>0.03</fontSize>
+			<zIndex>110</zIndex>
 		</text>
 		<text name="info1, info2, info3, info4, info5, info6, info7, info8, info9, info10, info11, info12" extra="true">
 			<fontPath>./../_inc/fonts/AdobeBlank.ttf</fontPath>
