@@ -26,11 +26,11 @@ based:      Alekfull Bello v2, Art Book and Carbon
 		<gridDetailsViewName>Сетка + Подробно</gridDetailsViewName>
 		<NoVideoDetailsViewName>Подробно Без Видео</NoVideoDetailsViewName>
 		<subset.systembackground>Фон списка систем</subset.systembackground>
-		<Art169>Арт 16:9 (RPi3, установите лимит VRAM на 80)</Art169>
-		<Art43>Арт 4:3 (RPi3, установите лимит VRAM на 80)</Art43>
+		<Art169>Арты 16:9 (RPi3, установите лимит VRAM на 80)</Art169>
+		<Art43>Арты 4:3 (RPi3, установите лимит VRAM на 80)</Art43>
 		<CV1>Видео на весь экран (RPi3, выключите оптимизацию видео vram)</CV1>
 		<CV2>Видео маленькое (RPi3, выключите оптимизацию видео vram)</CV2>
-		<Art2>Арты Alekfull</Art2>
+		<Art2>Арты Alekfull 16:9</Art2>
 	</variables>
 	<variables lang="pl">
 		<subset.colorset>Kolory Motywu</subset.colorset>
@@ -53,7 +53,7 @@ based:      Alekfull Bello v2, Art Book and Carbon
 		<Art43>Obraz 4:3</Art43>
 		<CV1>Filmowy (PC x86/x64)</CV1>
 		<CV2>Filmowy (RPi3 wymaga wyłączenia optymalizacji wideo vram)</CV2>
-		<Art2>Obraz Alekfull</Art2>
+		<Art2>Obraz Alekfull 16:9</Art2>
 	</variables>
 	<variables lang="fr">
 		<subset.colorset>Jeux de couleurs</subset.colorset>
@@ -112,9 +112,9 @@ based:      Alekfull Bello v2, Art Book and Carbon
 
 	<include subset="systembackground" name="Art 16:9 (Set VRAM Limit to 80)" displayName="${Art169}">./_inc/systemviews/169.xml</include>
 	<include subset="systembackground" name="Art 4:3 (Set VRAM Limit to 80)" displayName="${Art43}">./_inc/systemviews/43.xml</include>
-	<include subset="systembackground" name="Arts Alekfull" displayName="${Art2}">./_inc/systemviews/art2.xml</include>
+	<include subset="systembackground" name="Arts Alekfull 16:9" displayName="${Art2}">./_inc/systemviews/art2.xml</include>
 	<include subset="systembackground" name="Cinematic FullScreen (PC x86/x64)" displayName="${CV1}">./_inc/systemviews/cinematic.xml</include>
-	<include subset="systembackground" name="Cinematic Small (RPi3, Need Disable Video Optimize VRAM USe)" displayName="${CV2}">./_inc/systemviews/cinematicsmall.xml</include>
+	<include subset="systembackground" name="Cinematic Small (RPi3, Need Disable Video Optimize VRAM Use)" displayName="${CV2}">./_inc/systemviews/cinematicsmall.xml</include>
 
 	<view name="menu, system">
 		<helpsystem name="help">
@@ -676,8 +676,7 @@ based:      Alekfull Bello v2, Art Book and Carbon
 			<zIndex>110</zIndex>
 		</video>
 		<image name="md_marquee">
-			<origin>0 0</origin>
-			<pos>1 1</pos>
+			<visible>false</visible>
 		</image>
 		<image name="video-background" extra="true">
 			<origin>0.5 0.5</origin>
