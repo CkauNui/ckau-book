@@ -5,6 +5,7 @@ version:		2.0
 author:			Ckau
 license:		creative commons CC-BY-NC-SA
 github:			https://github.com/CkauNui/ckau-book
+originally based on: "simple, carbon, art-book"
 -->
 <theme defaultView="detailed">
 	<formatVersion>7</formatVersion>
@@ -14,6 +15,10 @@ github:			https://github.com/CkauNui/ckau-book
 		<blue>Синий</blue>
 		<red>Красный</red>
 		<green>Зеленый</green>
+		<yellow>Желтый</yellow>
+		<violet>Фиолетовый</violet>
+		<cyan>Циан</cyan>
+		<orange>Ораньжевый</orange>
 		<subset.systemview>Вид списка систем</subset.systemview>
 		<swheel>Колесо</swheel>
 		<svertical>Вертикально</svertical>
@@ -25,17 +30,23 @@ github:			https://github.com/CkauNui/ckau-book
 		<gridDetailsViewName>Сетка + Подробно</gridDetailsViewName>
 		<NoVideoDetailsViewName>Подробно Без Видео</NoVideoDetailsViewName>
 		<subset.systembackground>Фон списка систем</subset.systembackground>
-		<Art169>Консоли 16:9 (RPi3, установите лимит VRAM на 80)</Art169>
-		<Art43>Консоли 4:3 (RPi3, установите лимит VRAM на 80)</Art43>
+		<Art_169>Консоли 16:9 (RPi3, установите лимит VRAM на 80)</Art_169>
+		<Art_43>Консоли 4:3 (RPi3, установите лимит VRAM на 80)</Art_43>
 		<CV1>Видео на весь экран (RPi3, выключите оптимизацию видео vram)</CV1>
 		<CV2>Видео маленькое (RPi3, выключите оптимизацию видео vram)</CV2>
-		<Art2>Обои 16:9 (RPi3, установите лимит VRAM на 80)</Art2>
+		<Art2_169>Обои 16:9 (RPi3, установите лимит VRAM на 80)</Art2_169>
+		<Art2_43>Обои 4:3 (RPi3, установите лимит VRAM на 80)</Art2_43>
 	</variables>
+	
 	<variables lang="pl">
 		<subset.colorset>Kolory Motywu</subset.colorset>
 		<blue>Niebieski</blue>
 		<red>Czerwony</red>
 		<green>Zielony</green>
+		<yellow>Żółty</yellow>
+		<violet>Fioletowy</violet>
+		<cyan>Cyjan</cyan>
+		<orange>Pomarańczowy</orange>
 		<subset.systemview>Widok listy systemów</subset.systemview>
 		<subset.aspect_ratio>Proporcje ekranu</subset.aspect_ratio>
 		<swheel>Wkoło</swheel>
@@ -48,17 +59,23 @@ github:			https://github.com/CkauNui/ckau-book
 		<gridDetailsViewName>Siatka + Szczegóły</gridDetailsViewName>
 		<NoVideoDetailsViewName>Szczegóły No Wideo</NoVideoDetailsViewName>
 		<subset.systembackground>Tło listy systemów</subset.systembackground>
-		<Art169>Obraz 16:9</Art169>
-		<Art43>Obraz 4:3</Art43>
-		<CV1>Filmowy (PC x86/x64)</CV1>
+		<Art_169>Obraz 16:9</Art_169>
+		<Art_43>Obraz 4:3</Art_43>
+		<CV1>Filmowy (RPi3 wymaga wyłączenia optymalizacji wideo vram)</CV1>
 		<CV2>Filmowy (RPi3 wymaga wyłączenia optymalizacji wideo vram)</CV2>
-		<Art2>Obraz Alekfull 16:9</Art2>
+		<Art2_169>Obraz Alekfull 16:9</Art2_169>
+		<Art2_43>Obraz Alekfull 4:3</Art2_43>
 	</variables>
+	
 	<variables lang="fr">
 		<subset.colorset>Jeux de couleurs</subset.colorset>
 		<blue>Bleu</blue>
 		<red>Rouge</red>
 		<green>Vert</green>
+		<yellow>Jaune</yellow>
+		<violet>Violet</violet>
+		<cyan>Cyan</cyan>
+		<orange>Orange</orange>
 		<subset.systemview></subset.systemview>
 		<subset.aspect_ratio></subset.aspect_ratio>
 		<swheel></swheel>
@@ -71,17 +88,23 @@ github:			https://github.com/CkauNui/ckau-book
 		<gridDetailsViewName>Grille + Détaillé</gridDetailsViewName>
 		<NoVideoDetailsViewName>Détaillé No Vidéo</NoVideoDetailsViewName>
 		<subset.systembackground></subset.systembackground>
-		<Art169></Art169>
-		<Art43></Art43>
+		<Art_169></Art_169>
+		<Art_43></Art_43>
 		<CV1></CV1>
 		<CV2></CV2>
-		<Art2></Art2>
+		<Art2_169></Art2_169>
+		<Art2_43></Art2_43>
 	</variables>
+	
 	<variables lang="de">
 		<subset.colorset></subset.colorset>
 		<blue>Blau</blue>
 		<red>Rot</red>
 		<green>Grün</green>
+		<yellow>Gelb</yellow>
+		<violet>Violett</violet>
+		<cyan>Cyan</cyan>
+		<orange>Orange</orange>
 		<subset.systemview></subset.systemview>
 		<subset.aspect_ratio></subset.aspect_ratio>
 		<swheel></swheel>
@@ -94,24 +117,30 @@ github:			https://github.com/CkauNui/ckau-book
 		<gridDetailsViewName>Raster + Detailliert</gridDetailsViewName>
 		<NoVideoDetailsViewName>Detailliert No Video</NoVideoDetailsViewName>
 		<subset.systembackground></subset.systembackground>
-		<Art169></Art169>
-		<Art43></Art43>
+		<Art_169></Art_169>
+		<Art_43></Art_43>
 		<CV1></CV1>
 		<CV2></CV2>
-		<Art2></Art2>
+		<Art2_169></Art2_169>
+		<Art2_43></Art2_43>
 	</variables>
 
-	<include subset="colorset" name="blue" displayName="${blue}">./_inc/colors/blue.xml</include>
-	<include subset="colorset" name="red" displayName="${red}">./_inc/colors/red.xml</include>
-	<include subset="colorset" name="green" displayName="${green}">./_inc/colors/green.xml</include>
+	<include subset="colorset" name="Blue" displayName="${blue}">./_inc/colors/blue.xml</include>
+	<include subset="colorset" name="Red" displayName="${red}">./_inc/colors/red.xml</include>
+	<include subset="colorset" name="Green" displayName="${green}">./_inc/colors/green.xml</include>
+	<include subset="colorset" name="Yellow" displayName="${yellow}">./_inc/colors/yellow.xml</include>
+	<include subset="colorset" name="Violet" displayName="${violet}">./_inc/colors/violet.xml</include>
+	<include subset="colorset" name="Cyan" displayName="${cyan}">./_inc/colors/cyan.xml</include>
+	<include subset="colorset" name="Orange" displayName="${orange}">./_inc/colors/orange.xml</include>
 	
 	<include subset="systemview" name="Wheel" displayName="${swheel}">./_inc/systemviews/wheel.xml</include>
 	<include subset="systemview" name="Vertical" displayName="${svertical}">./_inc/systemviews/vertical.xml</include>
 	<include subset="systemview" name="Center" displayName="${scenter}">./_inc/systemviews/center.xml</include>
-
-	<include subset="systembackground" name="Consoles 16:9 (RPi3, Set VRAM Limit to 80)" displayName="${Art169}">./_inc/systemviews/169.xml</include>
-	<include subset="systembackground" name="Consoles 4:3 (RPi3, Set VRAM Limit to 80)" displayName="${Art43}">./_inc/systemviews/43.xml</include>
-	<include subset="systembackground" name="Wallpapers 16:9 (RPi3, Set VRAM Limit to 80)" displayName="${Art2}">./_inc/systemviews/art2.xml</include>
+	
+	<include subset="systembackground" name="Consoles 16:9 (RPi3, Set VRAM Limit to 80)" displayName="${Art_169}">./_inc/systemviews/art_169.xml</include>
+	<include subset="systembackground" name="Consoles 4:3 (RPi3, Set VRAM Limit to 80)" displayName="${Art_43}">./_inc/systemviews/art_43.xml</include>
+	<include subset="systembackground" name="Wallpapers 16:9 (RPi3, Set VRAM Limit to 80)" displayName="${Art2_169}">./_inc/systemviews/art2_169.xml</include>
+	<include subset="systembackground" name="Wallpapers 4:3 (RPi3, Set VRAM Limit to 80)" displayName="${Art2_43}">./_inc/systemviews/art2_43.xml</include>
 	<include subset="systembackground" name="Cinematic FullScreen (RPi3, Need Disable Video Optimize VRAM Use)" displayName="${CV1}">./_inc/systemviews/cinematic.xml</include>
 	<include subset="systembackground" name="Cinematic Small (RPi3, Need Disable Video Optimize VRAM Use)" displayName="${CV2}">./_inc/systemviews/cinematicsmall.xml</include>
 
@@ -178,6 +207,7 @@ github:			https://github.com/CkauNui/ckau-book
 			<active>./_inc/images/textinput_ninepatch_active.png</active>
 		</menuTextEdit>
 	</view>
+
 	<view name="screen">
 		<text name="clock">
 			<color>777777FF</color>
@@ -194,18 +224,17 @@ github:			https://github.com/CkauNui/ckau-book
 			<itemSpacing>0.003</itemSpacing>
 			<imagePath>./_inc/images/gamepad.svg</imagePath>
 			<color>FFFFFF80</color>
-			<activityColor>A0A0FFC0</activityColor>
-			<hotkeyColor>FFA0A0C0</hotkeyColor>
+			<activityColor>${baseColor}</activityColor>
+			<hotkeyColor>${gradientEndColor}</hotkeyColor>
 		</controllerActivity>
 	</view>
-	<view name="system">
 
+	<view name="system">
 		<carousel name="systemcarousel">
 			<color>00000000</color>
 			<scrollSound>./_inc/sound/scroll.wav</scrollSound>
 		</carousel>
-
-		<image name="art" extra="true">
+		<image name="art" extra="static">
 			<origin>0 0</origin>
 			<pos>0 0</pos>
 			<size>1 1</size>
@@ -280,6 +309,7 @@ github:			https://github.com/CkauNui/ckau-book
 			<color>141414</color>
 		</image>
 	</view>
+
 	<view name="basic">
 		<image name="logo">
 			<path>./_inc/logos/${system.theme}.png</path>
@@ -315,21 +345,22 @@ github:			https://github.com/CkauNui/ckau-book
 			<path>./_inc/images/help-launch.svg</path>
 			<origin>0 0</origin>
 			<pos>0.3734375 0.8333333333333333</pos>
-			<size>0.0174 0.0274</size>
+			<maxSize>0.0274</maxSize>
 		</image>
 		<image name="help-random" extra="true">
 			<path>./_inc/images/help-random.svg</path>
 			<origin>0 0</origin>
 			<pos>0.45703125 0.8333333333333333</pos>
-			<size>0.0174 0.0274</size>
+			<maxSize>0.0274</maxSize>
 		</image>
 		<image name="help-favorite" extra="true">
 			<path>./_inc/images/help-favorite.svg</path>
 			<origin>0 0</origin>
 			<pos>0.54921875 0.8333333333333333</pos>
-			<size>0.0174 0.0274</size>
+			<maxSize>0.0274</maxSize>
 		</image>
 	</view>
+
 	<view name="detailed">
 		<video name="md_video">
 			<pos>0.540625 0.725555555555556</pos>
@@ -383,7 +414,9 @@ github:			https://github.com/CkauNui/ckau-book
 			<maxSize>0.3078125 0.547222222222222</maxSize>
 		</image>
 		<text name="md_lbl_rating,md_lbl_releasedate,md_lbl_lastplayed,md_lbl_developer,md_lbl_publisher,md_lbl_genre,md_lbl_players,md_lbl_playcount">
-			<pos>1 1</pos>
+			<color>111111</color>
+			<fontPath>./_inc/fonts/AdobeBlank.ttf</fontPath>
+			<fontSize>0.0194444444444444</fontSize>
 		</text>
 		<text name="md_players,md_genre,md_description,md_developer,md_publisher,md_playcount,md_gametime">
 			<color>111111</color>
@@ -407,7 +440,7 @@ github:			https://github.com/CkauNui/ckau-book
 		</datetime>
 		<image name="release_date_logo" extra="true">
 			<pos>0.4125 0.204</pos>
-			<size>0 0.035</size>
+			<maxSize>0.035</maxSize>
 			<path>./_inc/images/game_info_releasedate.svg</path>
 		</image>
 		<text name="md_publisher">
@@ -416,7 +449,7 @@ github:			https://github.com/CkauNui/ckau-book
 		</text>
 		<image name="publisher_logo" extra="true">
 			<pos>0.4125 0.254</pos>
-			<size>0 .035</size>
+			<maxSize>0.035</maxSize>
 			<path>./_inc/images/game_info_publisher.svg</path>
 		</image>
 		<text name="md_players">
@@ -425,7 +458,7 @@ github:			https://github.com/CkauNui/ckau-book
 		</text>
 		<image name="players_logo" extra="true">
 			<pos>0.4125 0.304</pos>
-			<size>0 .035</size>
+			<maxSize>0.035</maxSize>
 			<path>./_inc/images/game_info_players.svg</path>
 		</image>
 		<text name="md_playcount">
@@ -434,7 +467,7 @@ github:			https://github.com/CkauNui/ckau-book
 		</text>
 		<image name="playcount_logo" extra="true">
 			<pos>0.4125 0.354</pos>
-			<size>0 .035</size>
+			<maxSize>0.035</maxSize>
 			<path>./_inc/images/game_info_playcount3.svg</path>
 		</image>
 
@@ -444,7 +477,7 @@ github:			https://github.com/CkauNui/ckau-book
 		</text>
 		<image name="developer_logo" extra="true">
 			<pos>0.5525 0.204</pos>
-			<size>0 .035</size>
+			<maxSize>0.035</maxSize>
 			<path>./_inc/images/game_info_developer.svg</path>
 		</image>
 		<text name="md_genre">
@@ -453,7 +486,7 @@ github:			https://github.com/CkauNui/ckau-book
 		</text>
 		<image name="genre_logo" extra="true">
 			<pos>0.5525 0.254</pos>
-			<size>0 .035</size>
+			<maxSize>0.035</maxSize>
 			<path>./_inc/images/game_info_genre.svg</path>
 		</image>
 		<datetime name="md_lastplayed">
@@ -462,7 +495,7 @@ github:			https://github.com/CkauNui/ckau-book
 		</datetime>
 		<image name="lastplayed_logo" extra="true">
 			<pos>0.5525 0.304</pos>
-			<size>0 .035</size>
+			<maxSize>0.035</maxSize>
 			<path>./_inc/images/game_info_lastplayed.svg</path>
 		</image>
 		<text name="md_gametime">
@@ -471,7 +504,7 @@ github:			https://github.com/CkauNui/ckau-book
 		</text>
 		<image name="gametime_logo" extra="true">
 			<pos>0.5525 0.354</pos>
-			<size>0 .035</size>
+			<maxSize>0.035</maxSize>
 			<path>./_inc/images/game_info_gametime3.svg</path>
 		</image>
 
@@ -529,22 +562,23 @@ github:			https://github.com/CkauNui/ckau-book
 		<image name="help-launch" extra="true">
 			<path>./_inc/images/help-launch.svg</path>
 			<pos>0.4125 0.472222222222222</pos>
-			<size>0.0174 0.0274</size>
+			<maxSize>0.0274</maxSize>
 			<origin>0 0</origin>
 		</image>
 		<image name="help-favorite" extra="true">
 			<path>./_inc/images/help-favorite.svg</path>
 			<pos>0.496875 0.472222222222222</pos>
-			<size>0.0174 0.0274</size>
+			<maxSize>0.0274</maxSize>
 			<origin>0 0</origin>
 		</image>
 		<image name="help-random" extra="true">
 			<path>./_inc/images/help-random.svg</path>
 			<origin>0 0</origin>
 			<pos>0.8255 0.8333333333333333</pos>
-			<size>0.0174 0.0274</size>
+			<maxSize>0.0274</maxSize>
 		</image>
 	</view>
+
 	<view name="grid">
 		<image name="logo">
 			<path>./_inc/logos/${system.theme}.png</path>
@@ -554,12 +588,10 @@ github:			https://github.com/CkauNui/ckau-book
 			<origin>0.5 0.5</origin>
 		</image>
 		<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_gametime, md_publisher, md_developer, md_players,md_genre,md_description, md_lastplayed,md_releasedate">
-			<pos>1 1</pos>
 			<color>111111</color>
-			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontPath>./_inc/fonts/AdobeBlank.ttf</fontPath>
 			<fontSize>0.0194444444444444</fontSize>
 		</text>
-
 		<rating name="md_rating">
 			<pos>0.8 0.955</pos>
 			<size>0.1796875 0.0277777777777778</size>
@@ -612,24 +644,25 @@ github:			https://github.com/CkauNui/ckau-book
 			<path>./_inc/images/help-launch.svg</path>
 			<origin>0 0</origin>
 			<pos>0.3734375 0.955</pos>
-			<size>0.0174 0.0274</size>
+			<maxSize>0.0274</maxSize>
 			<zIndex>100</zIndex>
 		</image>
 		<image name="help-random" extra="true">
 			<path>./_inc/images/help-random.svg</path>
 			<origin>0 0</origin>
 			<pos>0.45703125 0.955</pos>
-			<size>0.0174 0.0274</size>
+			<maxSize>0.0274</maxSize>
 			<zIndex>100</zIndex>
 		</image>
 		<image name="help-favorite" extra="true">
 			<path>./_inc/images/help-favorite.svg</path>
 			<origin>0 0</origin>
 			<pos>0.54921875 0.955</pos>
-			<size>0.0174 0.0274</size>
+			<maxSize>0.0274</maxSize>
 			<zIndex>100</zIndex>
 		</image>
 	</view>
+
 	<customView name="Grid + Details" inherits="grid" displayName="${gridDetailsViewName}">
 		<imagegrid name="gamegrid">
 			<size>0.66 0.76</size>
@@ -638,8 +671,17 @@ github:			https://github.com/CkauNui/ckau-book
 			<padding>0.03 0.05 0.03 0.04</padding>
 		</imagegrid>
 		<text name="gridtile">
+			<fontPath>./_inc/fonts/AdobeBlank.ttf</fontPath>
 			<size>0 0</size>
 		</text>
+		<image name="gridtile.favorite">
+			<path>./_inc/images/starfav.svg</path>
+			<pos>0.95 0.05</pos>
+			<maxSize>0.10 0.10</maxSize>
+			<origin>0.5 0.5</origin>
+			<horizontalAlignment>right</horizontalAlignment>
+			<color>${baseColor}</color>
+		</image>
 		<image name="gamelistBackground" extra="true">
 			<path>./_inc/images/space.png</path>
 			<color>141414</color>
@@ -699,6 +741,7 @@ github:			https://github.com/CkauNui/ckau-book
 			<fontSize>0.020</fontSize>
 			<glowColor>00000016</glowColor>
 			<glowSize>3</glowSize>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 		</text>
 		<text name="md_description">
 			<pos>0.68 0.688</pos>
@@ -714,10 +757,11 @@ github:			https://github.com/CkauNui/ckau-book
 			<alignment>left</alignment>
 			<fontSize>0.025</fontSize>
 			<glowSize>0</glowSize>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 		</datetime>
 		<image name="release_date_logo" extra="true">
 			<pos>0.68 0.896</pos>
-			<size>0 0.03</size>
+			<maxSize>0.03</maxSize>
 			<path>./_inc/images/game_info_releasedate.svg</path>
 			<zIndex>100</zIndex>
 		</image>
@@ -733,10 +777,11 @@ github:			https://github.com/CkauNui/ckau-book
 			<alignment>left</alignment>
 			<fontSize>0.025</fontSize>
 			<glowSize>0</glowSize>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 		</text>
 		<image name="genre_logo" extra="true">
 			<pos>0.68 0.655</pos>
-			<size>0 0.03</size>
+			<maxSize>0.03</maxSize>
 			<path>./_inc/images/game_info_genre.svg</path>
 			<zIndex>100</zIndex>
 		</image>
@@ -747,14 +792,16 @@ github:			https://github.com/CkauNui/ckau-book
 			<alignment>left</alignment>
 			<fontSize>0.025</fontSize>
 			<glowSize>0</glowSize>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 		</text>
 		<image name="players_logo" extra="true">
 			<pos>0.94 0.655</pos>
-			<size>0 .03</size>
+			<maxSize>0.03</maxSize>
 			<path>./_inc/images/game_info_players.svg</path>
 			<zIndex>100</zIndex>
 		</image>
 	</customView>
+
 	<customView name="Carousel" inherits="grid" tinyScreen="false" displayName="${carouselViewName}">
 		<text name="md_name">
 			<color>ffffffff</color>
@@ -763,6 +810,7 @@ github:			https://github.com/CkauNui/ckau-book
 			<alignment>center</alignment>
 			<glowColor>00000016</glowColor>
 			<glowSize>4</glowSize>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 		</text>
 		<text name="md_developer">
 			<color>808080ff</color>
@@ -772,6 +820,7 @@ github:			https://github.com/CkauNui/ckau-book
 			<fontSize>0.020</fontSize>
 			<glowColor>00000016</glowColor>
 			<glowSize>3</glowSize>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 		</text>
 		<imagegrid name="gamegrid">
 			<pos>0 0.16</pos>
@@ -816,6 +865,7 @@ github:			https://github.com/CkauNui/ckau-book
 			<color>${baseColor}</color>
 		</image>
 	</customView>
+
 	<customView name="Carousel + Details" inherits="Carousel" displayName="${carouselDetailsViewName}">
 		<imagegrid name="gamegrid">
 			<pos>0 0.16</pos>
@@ -884,6 +934,7 @@ github:			https://github.com/CkauNui/ckau-book
 			<fontSize>0.020</fontSize>
 			<glowColor>00000016</glowColor>
 			<glowSize>3</glowSize>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 		</text>
 		<text name="md_description">
 			<pos>0.68 0.688</pos>
@@ -899,10 +950,11 @@ github:			https://github.com/CkauNui/ckau-book
 			<alignment>left</alignment>
 			<fontSize>0.025</fontSize>
 			<glowSize>0</glowSize>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 		</datetime>
 		<image name="release_date_logo" extra="true">
 			<pos>0.68 0.896</pos>
-			<size>0 0.03</size>
+			<maxSize>0.03</maxSize>
 			<path>./_inc/images/game_info_releasedate.svg</path>
 			<zIndex>100</zIndex>
 		</image>
@@ -918,10 +970,11 @@ github:			https://github.com/CkauNui/ckau-book
 			<alignment>left</alignment>
 			<fontSize>0.025</fontSize>
 			<glowSize>0</glowSize>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 		</text>
 		<image name="genre_logo" extra="true">
 			<pos>0.68 0.655</pos>
-			<size>0 0.03</size>
+			<maxSize>0.03</maxSize>
 			<path>./_inc/images/game_info_genre.svg</path>
 			<zIndex>100</zIndex>
 		</image>
@@ -932,14 +985,16 @@ github:			https://github.com/CkauNui/ckau-book
 			<alignment>left</alignment>
 			<fontSize>0.025</fontSize>
 			<glowSize>0</glowSize>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 		</text>
 		<image name="players_logo" extra="true">
 			<pos>0.94 0.655</pos>
-			<size>0 0.03</size>
+			<maxSize>0.03</maxSize>
 			<path>./_inc/images/game_info_players.svg</path>
 			<zIndex>100</zIndex>
 		</image>
 	</customView>
+
 	<customView name="Tiles" inherits="grid" displayName="${tilesViewName}">
 		<imagegrid name="gamegrid">
 			<autoLayout>3 2</autoLayout>
@@ -979,11 +1034,13 @@ github:			https://github.com/CkauNui/ckau-book
 			<glowSize>3</glowSize>
 		</text>
 	</customView>
+
 	<customView name="Tiles + Video" inherits="Tiles" displayName="${tilesVideoViewName}">
 		<imagegrid name="gamegrid">
 			<showVideoAtDelay>200</showVideoAtDelay>
 		</imagegrid>
 	</customView>
+
 	<customView name="Detailed No Video" inherits="detailed" displayName="${NoVideoDetailsViewName}">
 		<video name="md_video">
 			<pos>1 1</pos>
