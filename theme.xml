@@ -201,6 +201,7 @@ originally based on: "simple, carbon, art-book"
 			<iconShutdown>./_inc/icons/Shutdown.png</iconShutdown>
 			<iconFastShutdown>./_inc/icons/Fastshutdown.png</iconFastShutdown>
 			<iconRetroachievements>./_inc/icons/Contest.png</iconRetroachievements>
+			<iconManual>./_inc/icons/Manual.png</iconManual>
 		</menuIcons>
 		<menuTextEdit name="menutextedit">
 			<inactive>./_inc/images/textinput_ninepatch.png</inactive>
@@ -212,7 +213,7 @@ originally based on: "simple, carbon, art-book"
 		<text name="clock">
 			<color>777777FF</color>
 			<fontSize>0.035</fontSize>
-			<pos>0.90 0.936</pos>
+			<pos>0.90 0.938</pos>
 			<size>0.09 0.058</size>
 			<alignment>right</alignment>
 			<verticalAlignment>center</verticalAlignment>
@@ -328,9 +329,14 @@ originally based on: "simple, carbon, art-book"
 			<pos>0.1484375 0.2416666666666667</pos>
 			<size>0.703125 0.5555555555555556</size>
 			<alignment>center</alignment>
+			<lines>17</lines>
 			<horizontalMargin>0.01</horizontalMargin>
 			<forceUppercase>1</forceUppercase>
 			<scrollSound>./_inc/sound/scroll.wav</scrollSound>
+			<scrollbarColor>333333ff</scrollbarColor>
+			<scrollbarCorner>0.49</scrollbarCorner>
+			<scrollbarSize>0.005</scrollbarSize>
+			<scrollbarAlignment>outerright</scrollbarAlignment>
 		</textlist>
 		<text name="LaunchButton" extra="true">
 			<pos>0.3964375 0.8283333333333333</pos>
@@ -538,9 +544,14 @@ originally based on: "simple, carbon, art-book"
 			<pos>0.7578125 0.2416666666666667</pos>
 			<size>0.209375 0.5555555555555556</size>
 			<alignment>center</alignment>
-			<horizontalMargin>0.00</horizontalMargin>
+			<lines>17</lines>
+			<horizontalMargin>0.005</horizontalMargin>
 			<fontSize>0.025</fontSize>
 			<scrollSound>./_inc/sound/scroll.wav</scrollSound>
+			<scrollbarColor>333333ff</scrollbarColor>
+			<scrollbarCorner>0.49</scrollbarCorner>
+			<scrollbarSize>0.005</scrollbarSize>
+			<scrollbarAlignment>outerright</scrollbarAlignment>
 		</textlist>
 		<text name="logoText">
 			<pos>0.784375 0.1527777777777778</pos>
@@ -577,6 +588,31 @@ originally based on: "simple, carbon, art-book"
 			<pos>0.8255 0.8333333333333333</pos>
 			<maxSize>0.0274</maxSize>
 		</image>
+
+		<image name="md_hidden">
+			<path>./_inc/images/hidden.svg</path>
+			<pos>0.5625 0.1528888888888889</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_kidgame">
+			<path>./_inc/images/kid.svg</path>
+			<pos>0.5025 0.1528888888888889</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_manual">
+			<path>./_inc/images/manual.svg</path>
+			<pos>0.5225 0.1528888888888889</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
 	</view>
 
 	<view name="grid">
@@ -598,7 +634,7 @@ originally based on: "simple, carbon, art-book"
 			<color>666666</color>
 		</rating>
 		<imagegrid name="gamegrid">
-			<pos>0.025 0.16</pos>
+			<pos>0.016 0.16</pos>
 			<size>0.950 0.774</size>
 			<margin>0.005 0.010</margin>
 			<padding>0.03 0.05 0.03 0.04</padding>
@@ -606,6 +642,9 @@ originally based on: "simple, carbon, art-book"
 			<autoLayoutSelectedZoom>1.12</autoLayoutSelectedZoom>
 			<animateSelection>false</animateSelection>
 			<scrollSound>./_inc/sound/scroll.wav</scrollSound>
+			<scrollbarColor>333333ff</scrollbarColor>
+			<scrollbarCorner>0.49</scrollbarCorner>
+			<scrollbarSize>0.005</scrollbarSize>
 		</imagegrid>
 		<gridtile name="default">
 			<backgroundColor>FFFFFF00</backgroundColor>
@@ -660,6 +699,31 @@ originally based on: "simple, carbon, art-book"
 			<pos>0.54921875 0.955</pos>
 			<maxSize>0.0274</maxSize>
 			<zIndex>100</zIndex>
+		</image>
+		
+		<image name="md_hidden">
+			<path>./_inc/images/hidden.svg</path>
+			<pos>0.781 0.9685</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_kidgame">
+			<path>./_inc/images/kid.svg</path>
+			<pos>0.76 0.9685</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_manual">
+			<path>./_inc/images/manual.svg</path>
+			<pos>0.74 0.9685</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
 		</image>
 	</view>
 
@@ -799,6 +863,31 @@ originally based on: "simple, carbon, art-book"
 			<maxSize>0.03</maxSize>
 			<path>./_inc/images/game_info_players.svg</path>
 			<zIndex>100</zIndex>
+		</image>
+
+		<image name="md_hidden">
+			<path>./_inc/images/hidden.svg</path>
+			<pos>0.8415 0.9112</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_kidgame">
+			<path>./_inc/images/kid.svg</path>
+			<pos>0.885 0.9112</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_manual">
+			<path>./_inc/images/manual.svg</path>
+			<pos>0.865 0.9112</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
 		</image>
 	</customView>
 
@@ -992,6 +1081,31 @@ originally based on: "simple, carbon, art-book"
 			<maxSize>0.03</maxSize>
 			<path>./_inc/images/game_info_players.svg</path>
 			<zIndex>100</zIndex>
+		</image>
+		
+		<image name="md_hidden">
+			<path>./_inc/images/hidden.svg</path>
+			<pos>0.8415 0.9112</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_kidgame">
+			<path>./_inc/images/kid.svg</path>
+			<pos>0.885 0.9112</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_manual">
+			<path>./_inc/images/manual.svg</path>
+			<pos>0.865 0.9112</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
 		</image>
 	</customView>
 
