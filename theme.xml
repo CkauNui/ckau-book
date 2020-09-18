@@ -25,10 +25,12 @@ originally based on: "simple, carbon, art-book"
 		<scenter>По центру</scenter>
 		<carouselViewName>Карусель</carouselViewName>
 		<carouselDetailsViewName>Карусель + Подробно</carouselDetailsViewName>
+		<carouselDetailsMarqueeViewName>Карусель + Подробно + Лого</carouselDetailsMarqueeViewName>
 		<WallViewName>Обои</WallViewName>
 		<tilesViewName>Плитки</tilesViewName>
 		<tilesVideoViewName>Плитки + Видео</tilesVideoViewName>
 		<gridDetailsViewName>Сетка + Подробно</gridDetailsViewName>
+		<gridDetailsMarqueeViewName>Сетка + Подробно + Лого</gridDetailsMarqueeViewName>
 		<NoVideoDetailsViewName>Подробно Без Видео</NoVideoDetailsViewName>
 		<subset.systembackground>Фон списка систем</subset.systembackground>
 		<Art_169>Консоли 16:9 (RPi3, установите лимит VRAM на 80)</Art_169>
@@ -56,6 +58,8 @@ originally based on: "simple, carbon, art-book"
 		<carouselViewName>Karuzela</carouselViewName>
 		<carouselDetailsViewName>Karuzela + Szczegóły</carouselDetailsViewName>
 		<WallViewName></WallViewName>
+		<gridDetailsMarqueeViewName></gridDetailsMarqueeViewName>
+		<carouselDetailsMarqueeViewName></carouselDetailsMarqueeViewName>
 		<tilesViewName>Kafelki</tilesViewName>
 		<tilesVideoViewName>Kafelki + Wideo</tilesVideoViewName>
 		<gridDetailsViewName>Siatka + Szczegóły</gridDetailsViewName>
@@ -86,6 +90,8 @@ originally based on: "simple, carbon, art-book"
 		<carouselViewName>Carrousel</carouselViewName>
 		<carouselDetailsViewName>Carrousel + Détaillé</carouselDetailsViewName>
 		<WallViewName></WallViewName>
+		<gridDetailsMarqueeViewName></gridDetailsMarqueeViewName>
+		<carouselDetailsMarqueeViewName></carouselDetailsMarqueeViewName>
 		<tilesViewName>Vignettes</tilesViewName>
 		<tilesVideoViewName>Vignettes + Vidéo</tilesVideoViewName>
 		<gridDetailsViewName>Grille + Détaillé</gridDetailsViewName>
@@ -415,8 +421,7 @@ Rok wydania : ${system.releaseYear}</text>
 			<maxSize>0.02 0.05</maxSize>
 		</image>
 		<image name="md_marquee">
-			<origin>0 0</origin>
-			<pos>1 1</pos>
+			<visible>false</visible>
 		</image>
 		<image name="video-background" extra="true">
 			<origin>0.5 0.5</origin>
@@ -937,6 +942,21 @@ Rok wydania : ${system.releaseYear}</text>
 		</image>
 	</customView>
 
+	<customView name="Grid + Details + Marquee" inherits="Grid + Details" displayName="${gridDetailsMarqueeViewName}">
+		<image name="md_marquee">
+			<pos>0.83 0.2</pos>
+			<size>0.15 0</size>
+			<visible>true</visible>
+			<zIndex>120</zIndex>
+		</image>
+		<text name="md_developer">
+			<visible>false</visible>
+		</text>
+		<text name="md_name">
+			<visible>false</visible>
+		</text>
+	</customView>
+
 	<customView name="Carousel" inherits="grid" tinyScreen="false" displayName="${carouselViewName}">
 		<text name="md_name">
 			<color>ffffffff</color>
@@ -1042,8 +1062,7 @@ Rok wydania : ${system.releaseYear}</text>
 			<zIndex>110</zIndex>
 		</video>
 		<image name="md_marquee">
-			<origin>0 0</origin>
-			<pos>1 1</pos>
+			<visible>false</visible>
 		</image>
 		<image name="video-background" extra="true">
 			<origin>0.5 0.5</origin>
@@ -1161,6 +1180,21 @@ Rok wydania : ${system.releaseYear}</text>
 		</image>
 	</customView>
 
+	<customView name="Carousel + Details + Marquee" inherits="Carousel + Details" displayName="${carouselDetailsMarqueeViewName}">
+		<image name="md_marquee">
+			<pos>0.83 0.2</pos>
+			<size>0.15 0</size>
+		 <visible>true</visible>
+			<zIndex>120</zIndex>
+		</image>
+		<text name="md_developer">
+			<visible>false</visible>
+		</text>
+		<text name="md_name">
+			<visible>false</visible>
+		</text>
+	</customView>
+
 <customView name="Wallpapers" inherits="grid" displayName="${WallViewName}">
 		<image name="art" extra="true">
 			<origin>0 0</origin>
@@ -1215,7 +1249,14 @@ Rok wydania : ${system.releaseYear}</text>
 			<imageColor>FFFFFFFF</imageColor>
 		</gridtile>
 		<text name="gridtile">
-			<fontPath>./_inc/fonts/AdobeBlank.ttf</fontPath>
+			<color>80808080</color>
+			<fontSize>0.016</fontSize>
+			<size>1 0</size>
+		</text>
+		<text name="gridtile_selected">
+			<color>FFFFFF00</color>
+			<fontSize>0.035</fontSize>
+			<size>1 0</size>
 		</text>
 		<video name="md_video">
 			<pos>0.17 0.725555555555556</pos>
