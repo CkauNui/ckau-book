@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+	<view name="system">
+<!--		<carousel name="systemcarousel">
+			<type>vertical_wheel</type>
+			<pos>0 -0.12</pos>
+			<size>0.44 0.4</size>
+			<origin>0 0</origin>
+			<color>00000000</color>
+			<logoScale>2.0</logoScale>
+			<logoSize>0.1 0.1</logoSize>
+			<logoRotation>6.5</logoRotation>
+			<logoRotationOrigin>-6.0 0.3</logoRotationOrigin>
+			<logoAlignment>left</logoAlignment>
+			<maxLogoCount>2</maxLogoCount>
+			<systemInfoDelay>0.1</systemInfoDelay>
+			<zIndex>0</zIndex>
+		</carousel>
+-->
+		<carousel name="systemcarousel">
+			<visible>false</visible>
+			<type>vertical_wheel</type>
+			<logoScale>0</logoScale>
+			<pos>-2 -2</pos>
+			<size>0 0</size>
+		</carousel>
+		<image name="logo1" extra="static">
+			<zIndex>175</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<path>./../../_inc/logos/${system.theme}.png</path>
+			<path>./../../_inc/logos/${system.theme}-${lang}.png</path>
+			<pos>0.03 0.03</pos>
+			<maxSize>0.200 0.126</maxSize>
+			<storyboard repeatAt="200">
+				<animation property="y" from="-0.2" begin="0" duration="200" mode="linear"/>
+				<animation property="scale" from="1" to="1.05" begin="300" duration="1000" mode="easeOut"/>
+				<animation property="scale" from="1.05" to="1" begin="1300" duration="1000" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<text name="systemInfo" extra="static">
+			<backgroundColor>14141400</backgroundColor>
+			<color>777777FF</color>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<pos>-0.06 0.936</pos>
+			<alignment>right</alignment>
+			<fontSize>0.03</fontSize>
+			<zIndex>110</zIndex>
+		</text>
+
+		<image name="ArrowBG" extra="static">
+			<zIndex>175</zIndex>
+			<color>141414</color>
+			<path>./../../_inc/images/arrow_bg.jpg</path>
+			<path>./../../_inc/images/arrow_bg.png</path>
+			<pos>0.98 0.018</pos>
+			<maxSize>0.04</maxSize>
+			<origin>0.5 0.5</origin>
+		</image>
+		<image name="ArrowUp" extra="static">
+			<zIndex>175</zIndex>
+			<color>666666</color>
+			<path>./../../_inc/images/arrow_up.jpg</path>
+			<path>./../../_inc/images/arrow_up.png</path>
+			<pos>0.97 0.018</pos>
+			<maxSize>0.015</maxSize>
+			<storyboard repeat="forever">
+				<animation property="y" from="0.018" to="0.010" begin="0" duration="700" mode="linear"/>
+				<animation property="y" from="0.010" to="0.018" begin="700" duration="700" mode="linear"/>
+			</storyboard>
+			<origin>0.5 0.5</origin>
+		</image>
+		<image name="ArrowDown" extra="static">
+			<zIndex>175</zIndex>
+			<color>666666</color>
+			<path>./../../_inc/images/arrow_down.jpg</path>
+			<path>./../../_inc/images/arrow_down.png</path>
+			<pos>0.991 0.018</pos>
+			<maxSize>0.015</maxSize>
+			<storyboard repeat="forever">
+				<animation property="y" from="0.018" to="0.025" begin="0" duration="700" mode="linear"/>
+				<animation property="y" from="0.025" to="0.018" begin="700" duration="700" mode="linear"/>
+			</storyboard>
+			<origin>0.5 0.5</origin>
+		</image>
+	</view>
+</theme>

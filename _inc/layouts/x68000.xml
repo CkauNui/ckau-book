@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.49 0.4</pos>
+			<maxSize>0.22</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>1987</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.03</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.25</pos>
+			<text>Sharp
+X68000</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.40</pos>
+			<text>The X68000 (Japanese: エックス ろくまんはっせん, Hepburn: Ekkusu Rokuman Hassen) is a home computer created by Sharp Corporation, first released in 1987, sold only in Japan.
+
+The first model features a 10 MHz Motorola 68000 CPU (hence the name), 1 MB of RAM, and no hard drive; the last model was released in 1993 with a 25 MHz Motorola 68030 CPU, 4 MB of RAM, and optional 80 MB SCSI hard drive. RAM in these systems is expandable to 12 MB, though most games and applications do not require more than 2 MB.</text>
+			<text lang="pl">Descpriptions. Pls send me it in Discord</text>
+			<text lang="fr">Le Sharp X68000, communément appelé X68000 ou X68k, est un ordinateur personnel de Sharp Corporation commercialisé au Japon à partir de 1987. Le premier modèle utilisait un microprocesseur Motorola 68000 à 10 MHz, avec 1 mégaoctet de mémoire vive et aucun disque dur. Le dernier modèle, lancé en 1993, avait un Motorola 68030 à 25 MHz, avec 4 Mio de mémoire vive et un disque dur SCSI de 80 Mo en option. Les modèles de base comportaient deux lecteurs de disquettes 5" ¼.
+
+Cet ordinateur fonctionne avec un système d'exploitation appelé Human68k, développé conjointement par le constructeur même, à savoir Sharp et Hudson Soft. Human68k fonctionne selon le même principe que MS-DOS, qui se base sur des commandes saisies par l'utilisateur. Les fichiers exécutables se terminent par l'extension .X. Trois versions majeures de ce système d'exploitation ont été lancées.</text>
+			<text lang="de">Descpriptions. Pls send me it in Discord</text>
+			<text lang="ru">Серия бытовых компьютеров, выпускавшихся в Японии компанией Sharp Corporation. В других странах эти компьютеры не продавались. Первая модель была выпущена в 1987 году. Она имела процессор Motorola 68000 на частоте 10 МГц, 1 мегабайт ОЗУ, и не имела жёсткого диска. Последняя модель выпущена в 1993 году, она использовала процессор Motorola 68030 на частоте 25 МГц, имела 4 мегабайта ОЗУ, и опциональный жёсткий диск стандарта SCSI объёмом 80 МБ. ОЗУ этих компьютеров могло быть расширено до 12 мегабайт, однако большинство приложений и игр требовали для своей работы не более 2 МБ ОЗУ.
+
+Компьютер X68000 работают под управлением операционной системы Human68K, разработанной для Sharp компанией Hudson Soft. Она имеет интерфейс командной строки, и набор команд, очень похожий на набор команд ОС DOS (вводятся английскими буквами). Было выпущено три версии этой ОС, с несколькими промежуточными обновлениями между ними. Помимо Human68K, было возможно использование специальных версий NetBSD для X68030 и OS-9.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>
