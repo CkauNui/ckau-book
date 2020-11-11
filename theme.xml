@@ -186,6 +186,7 @@ originally based on: "simple, carbon, art-book"
 	<include subset="systembackground" name="Cinematic FullScreen (Need Disable Video Optimize VRAM Use)" displayName="${CV1}">./_inc/systemviews/cinematic.xml</include>
 	<include subset="systembackground" name="Cinematic RPi3 (360p, Need Disable Video Optimize VRAM)" displayName="${CV2}">./_inc/systemviews/cinematic_rpi3.xml</include>
 
+<include tinyScreen="true" name="TinyScreen">./_inc/systemviews/tinyscreen.xml</include>
 <!-- Кнопки -->
 	<view name="menu, system">
 		<helpsystem name="help">
@@ -314,6 +315,11 @@ originally based on: "simple, carbon, art-book"
 			<path>./_inc/sound/${system.theme}.wav</path>
 			<path>./_inc/sound/${system.theme}.mp3</path>
 		</sound>
+			<text name="TextDesc" extra="true">
+			<size>0.5 0.45</size>
+			<autoScroll>vertical</autoScroll>
+			<verticalAlignment>top</verticalAlignment>
+	</text>
 	</view>
 
 <!-- Вид списка игр -->
