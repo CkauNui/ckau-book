@@ -2,20 +2,36 @@
 <theme>
   <formatVersion>7</formatVersion>
 <include>./../../_inc/layouts/${system.theme}.xml</include>
+	<view name="menu">
+		<menuText name="menutext" extra="true">
+			<fontSize>0.0415</fontSize>
+			<color>969696</color>
+			<separatorColor>363636FF</separatorColor>
+			<selectorColor>${baseColor}</selectorColor>
+			<selectorColorEnd>${gradientEndColor}</selectorColorEnd>
+			<selectedColor>FFFFFF</selectedColor>
+			<selectorGradientType>horizontal</selectorGradientType>
+		</menuText>
+		<menuTextSmall name="menutextsmall" extra="true">
+			<fontSize>0.03</fontSize>
+			<color>deec00</color>
+		</menuTextSmall>
+	</view>
 	<view name="system">
 	<text name="TextDate" extra="true">
 			<pos>0.49 0.16</pos>
-			<fontSize>0.045</fontSize>
+			<fontSize>0.035</fontSize>
 	</text>
 	<text name="TextDesc" extra="true">
 			<size>0.5 0.45</size>
-			<fontSize>0.050</fontSize>
+			<fontSize>0.035</fontSize>
 			<pos>0.49 0.45</pos>
 			<autoScroll>vertical</autoScroll>
+			<verticalAlignment>top</verticalAlignment>
 	</text>
 		<text name="systemInfo" extra="true">
 			<pos>0.49 0.1</pos>
-			<fontSize>0.045</fontSize>
+			<fontSize>0.035</fontSize>
 			<alignment>left</alignment>
 			<origin>0 0</origin>
 			<storyboard>
