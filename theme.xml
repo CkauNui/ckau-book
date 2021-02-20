@@ -11,6 +11,14 @@ originally based on: "simple, carbon, art-book"
 	<formatVersion>7</formatVersion>
 
 <!-- Языки -->
+	<variables>
+		<helpSubsetName>Buttons icons</helpSubsetName>
+		<helpbuttons>Button</helpbuttons>
+		<xboxbuttons>XBOX</xboxbuttons>
+		<psxbuttons>PlayStation</psxbuttons>
+		<stbuttons>Standart</stbuttons>
+	</variables>
+
 	<variables lang="ru">
 		<subset.colorset>Выбор цвета</subset.colorset>
 		<blue>Синий</blue>
@@ -43,6 +51,7 @@ originally based on: "simple, carbon, art-book"
 		<tilesVideoViewName>Плитки + Видео</tilesVideoViewName>
 		<gridDetailsViewName>Сетка + Подробно</gridDetailsViewName>
 		<gridDetailsMarqueeViewName>Сетка + Подробно + Лого</gridDetailsMarqueeViewName>
+		<logoDetailsViewName>Лого + Подробно</logoDetailsViewName>
 		<NoVideoDetailsViewName>Подробно Без Видео</NoVideoDetailsViewName>
 		<subset.systembackground>Фон списка систем</subset.systembackground>
 		<Art_169>Консоли (RPi3, установите лимит VRAM на 80)</Art_169>
@@ -52,11 +61,20 @@ originally based on: "simple, carbon, art-book"
 		<ColorfulNoAnim>Colorful (без анимации)</ColorfulNoAnim>
 		<Art2_169>Обои (RPi3, установите лимит VRAM на 80)</Art2_169>
 		<ColorfulViewName>Colorful (вертикально)</ColorfulViewName>
-		<ColorfulViewNameGame>Colorful + Gamelist (вертикально)</ColorfulViewNameGame>
+		<ColorfulViewNameGame>Colorful + Список (вертикально)</ColorfulViewNameGame>
+		<ColorfulViewNameWhellLeft>Colorful + Колесо слева (вертикально)</ColorfulViewNameWhellLeft>
+		<ColorfulViewNameWhellRight>Colorful + Колесо справа (вертикально)</ColorfulViewNameWhellRight>
 		<Colorful2ViewName>Colorful (горизонтально)</Colorful2ViewName>
-		<Colorful2ViewNameGame>Colorful + Gamelist (горизонтально)</Colorful2ViewNameGame>
+		<Colorful2ViewNameGame>Colorful + Список (горизонтально)</Colorful2ViewNameGame>
+		<Colorful2ViewNameWhellLeft>Colorful + Колесо слева (горизонтально)</Colorful2ViewNameWhellLeft>
+		<Colorful2ViewNameWhellRight>Colorful + Колесо справа (горизонтально)</Colorful2ViewNameWhellRight>
+		<helpSubsetName>Иконки кнопок</helpSubsetName>
+		<helpbuttons>Кнопки</helpbuttons>
+		<xboxbuttons>XBOX</xboxbuttons>
+		<psxbuttons>PlayStation</psxbuttons>
+		<gray>Стандартные</gray>
 	</variables>
-	
+
 	<variables lang="pl">
 		<subset.colorset>Kolory Motywu</subset.colorset>
 		<blue>Niebieski</blue>
@@ -127,6 +145,8 @@ originally based on: "simple, carbon, art-book"
 		<Art2_169>Papier peint (RPi3, Fixez la mémoire vidéos à 80)</Art2_169>
 		<ColorfulViewName>Colorful (Verticalement)</ColorfulViewName>
 		<Colorful2ViewName>Colorful (Horizontalement)</Colorful2ViewName>
+		<helpSubsetName>Icônes d'aide</helpSubsetName>
+		<helpbuttons>Position des boutons</helpbuttons>
 	</variables>
 	
 	<variables lang="de">
@@ -179,7 +199,6 @@ originally based on: "simple, carbon, art-book"
 	<include subset="systemview" name="Vertical Left (anim)" displayName="${sverticalleftanim}">./_inc/systemviews/vertical_left_anim.xml</include>
 	<include subset="systemview" name="Horizontal" displayName="${shorizontal}">./_inc/systemviews/horizontal.xml</include>
 	<include subset="systemview" name="Center" displayName="${scenter}">./_inc/systemviews/center.xml</include>
-	
 
 <!-- Вид систем -->
 	<include subset="systembackground" name="Colorful (anim)" displayName="${ColorfulAnim}">./_inc/systemviews/animate.xml</include>
@@ -191,18 +210,25 @@ originally based on: "simple, carbon, art-book"
 	<include subset="systembackground" name="Cinematic FullScreen (Need Disable Video Optimize VRAM Use)" displayName="${CV1}">./_inc/systemviews/cinematic.xml</include>
 	<include subset="systembackground" tinyScreen="false" name="Cinematic RPi3 (360p, Need Disable Video Optimize VRAM)" displayName="${CV2}">./_inc/systemviews/cinematic_rpi3.xml</include>
 
-<include tinyScreen="true" name="TinyScreen">./_inc/systemviews/tinyscreen.xml</include>
-<!-- Кнопки -->
-	<view name="menu, system">
+	<include tinyScreen="true" name="TinyScreen">./_inc/systemviews/tinyscreen.xml</include>
+
+
+<!-- Кнопки -
+	<view name="menu, system, basic, detailed, grid, gamecarousel">
 		<helpsystem name="help">
 			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<fontSize>0.03</fontSize>
+			<fontSize>0.025</fontSize>
+			<pos>0.012 0.9625</pos>
 			<iconA>./_inc/images/a.svg</iconA>
 			<iconB>./_inc/images/b.svg</iconB>
 			<iconX>./_inc/images/x.svg</iconX>
 			<iconY>./_inc/images/y.svg</iconY>
+			<textColor>666666FF</textColor>
+			<iconColor>666666FF</iconColor>
 		</helpsystem>
-	</view>
+	</view>->
+
+
 
 <!-- Меню -->
 	<view name="menu">
@@ -263,8 +289,8 @@ originally based on: "simple, carbon, art-book"
 	<view name="screen">
 		<text name="clock">
 			<color>777777FF</color>
-			<fontSize>0.03</fontSize>
-			<pos>0.90 0.935</pos>
+			<fontSize>0.025</fontSize>
+			<pos>0.90 0.945</pos>
 			<size>0.09 0.058</size>
 			<alignment>right</alignment>
 			<verticalAlignment>center</verticalAlignment>
@@ -294,6 +320,16 @@ originally based on: "simple, carbon, art-book"
 	</view>
 
 	<view name="system">
+		<text name="systemInfo" extra="static">
+			<backgroundColor>14141400</backgroundColor>
+			<color>777777FF</color>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<pos>0.85 0.945</pos>
+			<size>0.09 0.058</size>
+			<alignment>right</alignment>
+			<fontSize>0.025</fontSize>
+			<zIndex>110</zIndex>
+		</text>
 		<carousel name="systemcarousel">
 			<color>00000000</color>
 			<scrollSound>./_inc/sound/scroll.wav</scrollSound>
@@ -311,25 +347,66 @@ originally based on: "simple, carbon, art-book"
 			<color>${baseColor}</color>
 			<forceUppercase>true</forceUppercase>
 		</text>
+
 		<image name="logo">
+	<!-- try png -->
 			<path>./_inc/logos/${system.theme}.png</path>
+	<!-- try svg -->
+			<path>./_inc/logos/${system.theme}.svg</path>
+	<!-- check if lang resources exist -->
 			<path>./_inc/logos/${system.theme}-${lang}.png</path>
+			<path>./_inc/logos/${system.theme}-${lang}.svg</path>
+			<linearSmooth>true</linearSmooth>
 		</image>
+
+		<image name="logo" region="eu"></image>
+		<image name="logo" region="us">
+			<path>./_inc/logos/us/${system.theme}.png</path>
+			<path>./_inc/logos/us/${system.theme}.svg</path>
+		</image>
+		
+		<image name="logo" region="jp">
+		  <path>./_inc/logos/jp/${system.theme}.png</path>
+			<path>./_inc/logos/jp/${system.theme}.svg</path>
+		</image>
+		
 		<sound name="bgsound">
-			<path>./_inc/sound/${system.theme}.ogg</path>
-			<path>./_inc/sound/${system.theme}.wav</path>
-			<path>./_inc/sound/${system.theme}.mp3</path>
+			<path>./_inc/music/${system.theme}.ogg</path>
+			<path>./_inc/music/${system.theme}.wav</path>
+			<path>./_inc/music/${system.theme}.mp3</path>
 		</sound>
-			<text name="TextDesc" extra="true" tinyScreen="false">
+		<text name="TextDesc" extra="true" tinyScreen="false">
 			<size>0.5 0.5</size>
 			<autoScroll>vertical</autoScroll>
 			<verticalAlignment>top</verticalAlignment>
-			</text>
+		</text>
 	</view>
 
 <!-- Вид списка игр -->
 	<view name="basic,detailed,grid,gamecarousel">
-		<helpsystem name="help">
+		<image name="logo">
+			<path>./_inc/logos/${system.theme}.png</path>
+
+			<path>./_inc/logos/${system.theme}.svg</path>
+			<path>./_inc/logos/${system.theme}-w.svg</path>
+
+			<path>./_inc/logos/${system.theme}-${lang}.png</path>
+			<path>./_inc/logos/${system.theme}-${lang}.svg</path>
+			<linearSmooth>true</linearSmooth>
+		</image>
+
+		<image name="logo" region="eu"></image>
+		<image name="logo" region="us">
+			<path>./_inc/logos/us/${system.theme}.png</path>
+			<path>./_inc/logos/us/${system.theme}.svg</path>
+		</image>
+		
+		<image name="logo" region="jp">
+		  <path>./_inc/logos/jp/${system.theme}.png</path>
+			<path>./_inc/logos/jp/${system.theme}.svg</path>
+		</image>
+		
+		<!--<helpsystem name="help">
 			<pos>1 1</pos>
 		</helpsystem>
 		<text name="LaunchButton" extra="true">
@@ -355,17 +432,25 @@ originally based on: "simple, carbon, art-book"
 			<zIndex>110</zIndex>
 		</text>
 		<text name="RandomButton" extra="true">
-			<text>RANDOM</text>
-			<text lang="pl">LOSOWY</text>
-			<text lang="fr">ALÉATOIRE</text>
-			<text lang="de">ZUFALL</text>
-			<text lang="ru">РАНДОМ</text>
+			<text>SETTINGS</text>
+			<text lang="pl">USTAWIENIA</text>
+			<text lang="fr">PARAMÈTRES</text>
+			<text lang="de">DIE EINSTELLUNGEN</text>
+			<text lang="ru">НАСТРОЙКИ</text>
 			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 			<color>666666</color>
 			<fontSize>0.025</fontSize>
 			<zIndex>110</zIndex>
-		</text>
+		</text>-->
 	</view>
+
+<!-- Кнопки -->
+	<subset name="helpsystem" displayName="${helpSubsetName}">
+		<include name="buttons" displayName="${helpbuttons}">./_inc//help/buttons.xml</include>
+		<include name="xboxbuttons" displayName="${xboxbuttons}">./_inc//help/xboxbuttons.xml</include>
+		<include name="psxbuttons" displayName="${psxbuttons}">./_inc//help/psxbuttons.xml</include>
+		<include name="standard" displayName="${stbuttons}">./_inc//help/default.xml</include>
+	</subset>
 
 	<view name="basic,grid">
 		<text name="logoText">
@@ -387,9 +472,361 @@ originally based on: "simple, carbon, art-book"
 		</image>
 	</view>
 
+<!-- Иконки -->
+	<view name="detailed,gamecarousel">
+		<text name="md_lbl_rating,md_lbl_releasedate,md_lbl_lastplayed,md_lbl_developer,md_lbl_publisher,md_lbl_genre,md_lbl_players,md_lbl_playcount">
+			<color>111111</color>
+			<fontPath>./_inc/fonts/AdobeBlank.ttf</fontPath>
+			<fontSize>0.0194444444444444</fontSize>
+		</text>
+		<text name="md_players,md_genre,md_description,md_developer,md_publisher,md_playcount,md_gametime">
+			<color>111111</color>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontSize>0.0194444444444444</fontSize>
+		</text>
+		<datetime name="md_lastplayed,md_releasedate">
+			<color>111111</color>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontSize>0.0194444444444444</fontSize>
+		</datetime>
+		
+		<image name="md_flag">
+			<origin>0 0.5</origin>
+			<pos>0.5415 0.11</pos>
+			<maxSize>0.02 0.05</maxSize>
+			<color>FFFFFFFF</color>
+			<zIndex>150</zIndex>
+		</image>
+		<rating name="md_rating">
+			<pos>0.4124 0.2455</pos>
+			<size>0.05 0.03</size>
+			<color>666666</color>
+			<origin>0.5 0</origin>
+			<horizontalAlignment>left</horizontalAlignment>
+			<unfilledColor>80808030</unfilledColor>
+			<unfilledPath>./_inc/images/star_filled.svg</unfilledPath>
+		</rating>
+		<text name="md_players">
+			<pos>0.396 0.108</pos>
+			<size>0.03 0.03</size>
+			<origin>0.5 0.5</origin>
+			<fontPath>./_inc/fonts/players.ttf</fontPath>
+			<text>1</text>
+			<!--<size>0.03 0.03</size>
+			<pos>0.976 0.37</pos>-->
+			<alignment>center</alignment>
+			<fontSize>0.034</fontSize>
+			<color>666666</color>
+		</text>
+		<image name="md_manual,md_nomanual">
+			<path>./_inc/images/book.png</path>
+			<pos>0.4195 0.108</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_nomanual">
+			<color>80808040</color>
+		</image>
+		<image name="md_cheevos,md_notcheevos">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/icons/Contest.png</path>
+			<pos>0.440 0.108</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<color>666666</color>
+			<zIndex>100</zIndex>
+		</image>
+		<image name="md_notcheevos">
+			<color>80808040</color>
+		</image> 
+		<image name="md_savestate,md_nosavestate">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/icons/SaveState.png</path>
+			<pos>0.462 0.108</pos>
+			<x ifCheevos="false">0.440</x>
+			<maxSize>0.02 0.03</maxSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_nosavestate">
+			<color>80808030</color>
+		</image>
+
+		<image name="md_hidden">
+			<path>./_inc/images/hidden.svg</path>
+			<pos>0.504 0.108</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_kidgame,md_notkidgame">
+			<path>./_inc/images/kid.svg</path>
+			<pos>0.483 0.108</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_notkidgame"> 
+			<color>80808000</color>
+		</image>
+
+
+		<datetime name="md_releasedate">
+			<pos>0.4106 0.135</pos>
+			<size>0.107 0.0222222222222222</size>
+			<format>%Y</format>
+		</datetime>
+		<image name="release_date_logo" extra="true">
+			<pos>0.3956 0.146</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_releasedate.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+		<text name="md_publisher">
+			<pos>0.4106 0.173</pos>
+			<size>0.107 0.0222222222222222</size>
+		</text>
+		<image name="publisher_logo" extra="true">
+			<pos>0.3956 0.184</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_publisher.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+	<!--<image name="players_logo" extra="true">
+			<pos>0.4125 0.304</pos>
+			<maxSize>0.035</maxSize>
+			<path>./_inc/images/game_info_players.svg</path>
+			<zIndex>150</zIndex>
+		</image>-->
+		<text name="md_playcount">
+			<pos>0.4106 0.211</pos>
+			<size>0.107 0.0222222222222222</size>
+		</text>
+		<image name="playcount_logo" extra="true">
+			<pos>0.3956 0.222</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_playcount3.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+
+		<text name="md_developer">
+			<pos>0.5655 0.135</pos>
+			<size>0.128 0.0222222222222222</size>
+		</text>
+		<image name="developer_logo" extra="true">
+			<pos>0.551 0.146</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_developer.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+		<text name="md_genre">
+			<pos>0.5655 0.173</pos>
+			<size>0.128 0.0222222222222222</size>
+		</text>
+		<image name="genre_logo" extra="true">
+			<pos>0.551 0.184</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_genre.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+		<datetime name="md_lastplayed">
+			<pos>0.5655 0.205</pos>
+			<size>0.171875 0.0222222222222222</size>
+			<origin>0.5 0.5</origin>
+			<zIndex>1</zIndex>
+			<visible>false</visible>
+		</datetime>
+	<!--<image name="lastplayed_logo" extra="true">
+			<pos>0.5525 0.204</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_lastplayed.svg</path>
+			<zIndex>150</zIndex>
+		</image>-->
+		<text name="md_gametime">
+			<pos>0.5655 0.211</pos>
+			<size>0.128 0.0222222222222222</size>
+		</text>
+		<image name="gametime_logo" extra="true">
+			<pos>0.551 0.222</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_lastplayed.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+		
+	<!--<text name="LaunchButton" extra="true">
+			<pos>0.4355 0.467222222222222</pos>
+		</text>
+		<text name="FavoriteButton" extra="true">
+			<pos>0.519875 0.467222222222222</pos>
+		</text>
+		<text name="RandomButton" extra="true">
+			<pos>0.8485 0.8283333333333333</pos>
+			<visible>false</visible>
+			<zIndex>1</zIndex>
+		</text>
+		<image name="help-launch" extra="true">
+			<path>./_inc/images/help-launch.svg</path>
+			<pos>0.4125 0.472222222222222</pos>
+			<maxSize>0.0274</maxSize>
+			<origin>0 0</origin>
+		</image>
+		<image name="help-favorite" extra="true">
+			<path>./_inc/images/help-favorite.svg</path>
+			<pos>0.496875 0.472222222222222</pos>
+			<maxSize>0.0274</maxSize>
+			<origin>0 0</origin>
+		</image>
+		<image name="help-random" extra="true">
+			<path>./_inc/images/help-random.svg</path>
+			<origin>0 0</origin>
+			<pos>0.8255 0.8333333333333333</pos>
+			<maxSize>0.0274</maxSize>
+			<visible>false</visible>
+			<zIndex>1</zIndex>
+		</image>-->
+	</view>
+
+	<view name="grid">
+		<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_gametime, md_publisher, md_developer, md_players,md_genre,md_description, md_lastplayed">
+			<color>111111</color>
+			<fontPath>./_inc/fonts/AdobeBlank.ttf</fontPath>
+			<fontSize>0.0194444444444444</fontSize>
+		</text>
+
+		<datetime name="md_releasedate">
+			<pos>0.9095 0.9625</pos>
+			<size>0.1 0.0222222222222222</size>
+			<alignment>left</alignment>
+			<format>%Y</format>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontSize>0.0254444444444444</fontSize>
+			<color>666666</color>
+			<zIndex>180</zIndex>
+		</datetime>
+		<image name="md_flag">
+			<origin>0 0.5</origin>
+			<pos>0.8845 0.971</pos>
+			<maxSize>0.02 0.05</maxSize>
+		</image>
+		<rating name="md_rating">
+			<pos>0.8225 0.956</pos>
+			<size>0.05 0.03</size>
+			<color>666666</color>
+			<origin>0.5 0</origin>
+			<horizontalAlignment>left</horizontalAlignment>
+			<unfilledColor>80808030</unfilledColor>
+			<unfilledPath>./_inc/images/star_filled.svg</unfilledPath>
+		</rating>
+		<text name="md_players">
+			<pos>0.782 0.971</pos>
+			<size>0.03 0.03</size>
+			<origin>0.5 0.5</origin>
+			<fontPath>./_inc/fonts/players.ttf</fontPath>
+			<text>1</text>
+			<alignment>center</alignment>
+			<fontSize>0.034</fontSize>
+			<color>666666</color>
+		</text>
+		<image name="md_manual,md_nomanual">
+			<pos>0.758 0.97</pos>
+			<path>./_inc/images/book.png</path>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_nomanual">
+			<color>80808040</color>
+		</image>
+		<image name="md_cheevos,md_notcheevos">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/icons/Contest.png</path>
+			<pos>0.7365 0.97</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<color>666666</color>
+			<zIndex>100</zIndex>
+		</image>
+		<image name="md_notcheevos">
+			<color>80808040</color>
+		</image>
+		<image name="md_savestate,md_nosavestate">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/icons/SaveState.png</path>
+			<pos>0.715 0.97</pos>
+			<x ifCheevos="false">0.7365</x>
+			<maxSize>0.02 0.03</maxSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_nosavestate">
+			<color>80808030</color>
+		</image>
+		<image name="md_hidden">
+			<pos>0.6925 0.97</pos>
+			<path>./_inc/images/hidden.svg</path>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_kidgame,md_notkidgame">
+			<pos>0.672 0.97</pos>
+			<path>./_inc/images/kid.svg</path>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_notkidgame"> 
+			<color>80808000</color>
+		</image>
+		
+	<!--<text name="LaunchButton" extra="true">
+			<pos>0.3964375 0.950</pos>
+		</text>
+		<text name="FavoriteButton" extra="true">
+			<pos>0.57221875 0.950</pos>
+		</text>
+		<text name="RandomButton" extra="true">
+			<pos>0.48003125 0.950</pos>
+		</text>
+		<image name="help-launch" extra="true">
+			<path>./_inc/images/help-launch.svg</path>
+			<origin>0 0</origin>
+			<pos>0.3734375 0.955</pos>
+			<maxSize>0.0274</maxSize>
+			<zIndex>100</zIndex>
+		</image>
+		<image name="help-random" extra="true">
+			<path>./_inc/images/help-random.svg</path>
+			<origin>0 0</origin>
+			<pos>0.45703125 0.955</pos>
+			<maxSize>0.0274</maxSize>
+			<zIndex>100</zIndex>
+		</image>
+		<image name="help-favorite" extra="true">
+			<path>./_inc/images/help-favorite.svg</path>
+			<origin>0 0</origin>
+			<pos>0.54921875 0.955</pos>
+			<maxSize>0.0274</maxSize>
+			<zIndex>100</zIndex>
+		</image>-->
+	</view>
+
+
+
 <!-- Базовый -->
 	<view name="basic">
-				<image name="ArrowBG" extra="static">
+		<image name="ArrowBG" extra="static">
 			<zIndex>175</zIndex>
 			<color>141414</color>
 			<path>./_inc/images/arrow_bg.jpg</path>
@@ -439,9 +876,9 @@ originally based on: "simple, carbon, art-book"
 			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 			<fontSize>0.025</fontSize>
 			<pos>0.1484375 0.2416666666666667</pos>
-			<size>0.703125 0.5555555555555556</size>
+			<size>0.703125 0.6555555555555556</size>
 			<alignment>center</alignment>
-			<lines>17</lines>
+			<lines>20</lines>
 			<horizontalMargin>0.01</horizontalMargin>
 			<forceUppercase>1</forceUppercase>
 			<scrollSound>./_inc/sound/scroll.wav</scrollSound>
@@ -450,7 +887,7 @@ originally based on: "simple, carbon, art-book"
 			<scrollbarSize>0.005</scrollbarSize>
 			<scrollbarAlignment>outerright</scrollbarAlignment>
 		</textlist>
-		<text name="LaunchButton" extra="true">
+		<!--<text name="LaunchButton" extra="true">
 			<pos>0.3964375 0.8283333333333333</pos>
 		</text>
 		<text name="FavoriteButton" extra="true">
@@ -476,7 +913,7 @@ originally based on: "simple, carbon, art-book"
 			<origin>0 0</origin>
 			<pos>0.54921875 0.8333333333333333</pos>
 			<maxSize>0.0274</maxSize>
-		</image>
+		</image>-->
 	</view>
 
 <!-- Подробно -->
@@ -517,7 +954,7 @@ originally based on: "simple, carbon, art-book"
 			<origin>0.5 0.5</origin>
 		</image>
 		<video name="md_video">
-			<pos>0.540625 0.725555555555556</pos>
+			<pos>0.540625 0.480555555555556</pos>
 			<maxSize>0.30 0.3833333333333333</maxSize>
 			<origin>0.5 0.5</origin>
 			<delay>0.1</delay>
@@ -527,17 +964,12 @@ originally based on: "simple, carbon, art-book"
 			<effect>none</effect>
 			<zIndex>110</zIndex>
 		</video>
-		<image name="md_flag">
-			<origin>0 0.5</origin>
-			<pos>0.413 0.42</pos>
-			<maxSize>0.02 0.05</maxSize>
-		</image>
 		<image name="md_marquee">
 			<visible>false</visible>
 		</image>
 		<image name="video-background" extra="true">
 			<origin>0.5 0.5</origin>
-			<pos>0.540625 0.725555555555556</pos>
+			<pos>0.540625 0.480555555555556</pos>
 			<size>0.30625 0.3944444444444444</size>
 			<path>./_inc/images/space.png</path>
 			<color>bbbbbb</color>
@@ -545,7 +977,7 @@ originally based on: "simple, carbon, art-book"
 		</image>
 		<image name="video-screen" extra="true">
 			<origin>0.5 0.5</origin>
-			<pos>0.540625 0.725555555555556</pos>
+			<pos>0.540625 0.480555555555556</pos>
 			<size>0.30 0.3833333333333333</size>
 			<path>./_inc/images/space.png</path>
 			<color>000000</color>
@@ -567,118 +999,35 @@ originally based on: "simple, carbon, art-book"
 			<color>cccccc</color>
 		</image>
 		<image name="md_thumbnail">
-			<origin>0.5 0</origin>
-			<pos>0.225 0.1277777777777778</pos>
+			<origin>0.5 1</origin>
+			<pos>0.2023 0.6777777777777778</pos>
 			<maxSize>0.3078125 0.547222222222222</maxSize>
-		</image>
-		<text name="md_lbl_rating,md_lbl_releasedate,md_lbl_lastplayed,md_lbl_developer,md_lbl_publisher,md_lbl_genre,md_lbl_players,md_lbl_playcount">
-			<color>111111</color>
-			<fontPath>./_inc/fonts/AdobeBlank.ttf</fontPath>
-			<fontSize>0.0194444444444444</fontSize>
-		</text>
-		<text name="md_players,md_genre,md_description,md_developer,md_publisher,md_playcount,md_gametime">
-			<color>111111</color>
-			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<fontSize>0.0194444444444444</fontSize>
-		</text>
-		<datetime name="md_lastplayed,md_releasedate">
-			<color>111111</color>
-			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<fontSize>0.0194444444444444</fontSize>
-		</datetime>
-		<rating name="md_rating">
-			<pos>0.4125 0.1388888888888889</pos>
-			<size>0.1796875 0.0277777777777778</size>
-			<color>666666</color>
-		</rating>
-
-		<datetime name="md_releasedate">
-			<pos>0.4455 0.21</pos>
-			<size>0.171875 0.0222222222222222</size>
-		</datetime>
-		<image name="release_date_logo" extra="true">
-			<pos>0.4125 0.204</pos>
-			<maxSize>0.035</maxSize>
-			<path>./_inc/images/game_info_releasedate.svg</path>
-		</image>
-		<text name="md_publisher">
-			<pos>0.4455 0.26</pos>
-			<size>0.105 0.0222222222222222</size>
-		</text>
-		<image name="publisher_logo" extra="true">
-			<pos>0.4125 0.254</pos>
-			<maxSize>0.035</maxSize>
-			<path>./_inc/images/game_info_publisher.svg</path>
-		</image>
-		<text name="md_players">
-			<pos>0.4455 0.31</pos>
-			<size>0.171875 0.0222222222222222</size>
-		</text>
-		<image name="players_logo" extra="true">
-			<pos>0.4125 0.304</pos>
-			<maxSize>0.035</maxSize>
-			<path>./_inc/images/game_info_players.svg</path>
-		</image>
-		<text name="md_playcount">
-			<pos>0.4455 0.36</pos>
-			<size>0.171875 0.0222222222222222</size>
-		</text>
-		<image name="playcount_logo" extra="true">
-			<pos>0.4125 0.354</pos>
-			<maxSize>0.035</maxSize>
-			<path>./_inc/images/game_info_playcount3.svg</path>
-		</image>
-
-		<text name="md_developer">
-			<pos>0.5855 0.21</pos>
-			<size>0.12 0.0222222222222222</size>
-		</text>
-		<image name="developer_logo" extra="true">
-			<pos>0.5525 0.204</pos>
-			<maxSize>0.035</maxSize>
-			<path>./_inc/images/game_info_developer.svg</path>
-		</image>
-		<text name="md_genre">
-			<pos>0.5855 0.26</pos>
-			<size>0.12 0.0222222222222222</size>
-		</text>
-		<image name="genre_logo" extra="true">
-			<pos>0.5525 0.254</pos>
-			<maxSize>0.035</maxSize>
-			<path>./_inc/images/game_info_genre.svg</path>
-		</image>
-		<datetime name="md_lastplayed">
-			<pos>0.5855 0.31</pos>
-			<size>0.171875 0.0222222222222222</size>
-		</datetime>
-		<image name="lastplayed_logo" extra="true">
-			<pos>0.5525 0.304</pos>
-			<maxSize>0.035</maxSize>
-			<path>./_inc/images/game_info_lastplayed.svg</path>
-		</image>
-		<text name="md_gametime">
-			<pos>0.5855 0.36</pos>
-			<size>0.171875 0.0222222222222222</size>
-		</text>
-		<image name="gametime_logo" extra="true">
-			<pos>0.5525 0.354</pos>
-			<maxSize>0.035</maxSize>
-			<path>./_inc/images/game_info_gametime3.svg</path>
 		</image>
 
 		<image name="md-description-border" extra="true">
-			<pos>0.071875 0.706111111111111</pos>
-			<size>0.3078125 0.0027777777777778</size>
-			<origin>0 0</origin>
+			<pos>0.0484 0.706111111111111</pos>
+			<size>0.6455 0.0027777777777778</size>
+			<origin>0 0.5</origin>
 			<path>./_inc/images/space.png</path>
 			<color>aaaaaa</color>
+			<zIndex>106</zIndex>
 		</image>
 		<text name="md_description">
 			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<pos>0.071875 0.736111111111111</pos>
-			<size>0.3098125 0.2080555555555556</size>
+			<pos>0.061875 0.705111111111111</pos>
+			<size>0.6188125 0.2240555555555556</size>
 			<fontSize>0.025</fontSize>
+			<zIndex>105</zIndex>
+			<verticalAlignment>center</verticalAlignment>
 		</text>
+		<image name="md-description-border2" extra="true">
+			<pos>0.0484 0.927111111111111</pos>
+			<size>0.6455 0.0027777777777778</size>
+			<origin>0 0.5</origin>
+			<path>./_inc/images/space.png</path>
+			<color>aaaaaa</color>
+			<zIndex>106</zIndex>
+		</image>
 		<image name="gamelist-background" extra="true">
 			<origin>0 0</origin>
 			<pos>0.725 0</pos>
@@ -694,9 +1043,9 @@ originally based on: "simple, carbon, art-book"
 			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 			<forceUppercase>1</forceUppercase>
 			<pos>0.7578125 0.2416666666666667</pos>
-			<size>0.209375 0.5555555555555556</size>
+			<size>0.209375 0.6755555555555556</size>
 			<alignment>center</alignment>
-			<lines>17</lines>
+			<lines>19</lines>
 			<horizontalMargin>0.005</horizontalMargin>
 			<fontSize>0.025</fontSize>
 			<scrollSound>./_inc/sound/scroll.wav</scrollSound>
@@ -713,7 +1062,7 @@ originally based on: "simple, carbon, art-book"
 			<forceUppercase>true</forceUppercase>
 			<color>555555</color>
 		</text>
-		<text name="LaunchButton" extra="true">
+	<!--<text name="LaunchButton" extra="true">
 			<pos>0.4355 0.467222222222222</pos>
 		</text>
 		<text name="FavoriteButton" extra="true">
@@ -739,32 +1088,7 @@ originally based on: "simple, carbon, art-book"
 			<origin>0 0</origin>
 			<pos>0.8255 0.8333333333333333</pos>
 			<maxSize>0.0274</maxSize>
-		</image>
-
-		<image name="md_hidden">
-			<path>./_inc/images/hidden.svg</path>
-			<pos>0.5625 0.1528888888888889</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-		</image>
-		<image name="md_kidgame">
-			<path>./_inc/images/kid.svg</path>
-			<pos>0.5225 0.1528888888888889</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-		</image>
-		<image name="md_manual">
-			<path>./_inc/images/manual.svg</path>
-			<pos>0.5025 0.1528888888888889</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-		</image>
+		</image>-->
 	</view>
 
 <!-- Сетка -->
@@ -776,23 +1100,14 @@ originally based on: "simple, carbon, art-book"
 			<maxSize>0.260 0.126</maxSize>
 			<origin>0.5 0.5</origin>
 		</image>
-		<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_gametime, md_publisher, md_developer, md_players,md_genre,md_description, md_lastplayed,md_releasedate">
-			<color>111111</color>
-			<fontPath>./_inc/fonts/AdobeBlank.ttf</fontPath>
-			<fontSize>0.0194444444444444</fontSize>
-		</text>
-		<rating name="md_rating">
-			<pos>0.8 0.955</pos>
-			<size>0.1796875 0.0277777777777778</size>
-			<color>666666</color>
-		</rating>
 		<imagegrid name="gamegrid">
 			<pos>0.016 0.16</pos>
-			<size>0.950 0.774</size>
+			<size>0.950 0.784</size>
 			<margin>0.005 0.010</margin>
-			<padding>0.03 0.05 0.03 0.04</padding>
+			<padding>0.03 0.04 0.03 0.1</padding>
 			<autoLayout>7 2</autoLayout>
 			<autoLayoutSelectedZoom>1.12</autoLayoutSelectedZoom>
+			<centerSelection>false</centerSelection>
 			<animateSelection>false</animateSelection>
 			<scrollSound>./_inc/sound/scroll.wav</scrollSound>
 			<scrollbarColor>333333ff</scrollbarColor>
@@ -821,68 +1136,24 @@ originally based on: "simple, carbon, art-book"
 		<text name="gridtile_selected">
 			<color>FFFFFF</color>
 			<glowColor>${glowColor}</glowColor>
-			<glowSize>3</glowSize>
+			<glowSize>2</glowSize>
 		</text>
-		<text name="LaunchButton" extra="true">
-			<pos>0.3964375 0.950</pos>
-		</text>
-		<text name="FavoriteButton" extra="true">
-			<pos>0.57221875 0.950</pos>
-		</text>
-		<text name="RandomButton" extra="true">
-			<pos>0.48003125 0.950</pos>
-		</text>
-		<image name="help-launch" extra="true">
-			<path>./_inc/images/help-launch.svg</path>
-			<origin>0 0</origin>
-			<pos>0.3734375 0.955</pos>
-			<maxSize>0.0274</maxSize>
-			<zIndex>100</zIndex>
-		</image>
-		<image name="help-random" extra="true">
-			<path>./_inc/images/help-random.svg</path>
-			<origin>0 0</origin>
-			<pos>0.45703125 0.955</pos>
-			<maxSize>0.0274</maxSize>
-			<zIndex>100</zIndex>
-		</image>
-		<image name="help-favorite" extra="true">
-			<path>./_inc/images/help-favorite.svg</path>
-			<origin>0 0</origin>
-			<pos>0.54921875 0.955</pos>
-			<maxSize>0.0274</maxSize>
-			<zIndex>100</zIndex>
-		</image>
-		
-		<image name="md_hidden">
-			<path>./_inc/images/hidden.svg</path>
-			<pos>0.74 0.9685</pos>
-			<maxSize>0.02 0.03</maxSize>
+		<image name="gridtile.favorite">
+			<path>./_inc/images/starfav.svg</path>
+			<pos>0.93 0.07</pos>
+			<maxSize>0.10 0.10</maxSize>
 			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
+			<horizontalAlignment>right</horizontalAlignment>
+			<color>${baseColor}</color>
 		</image>
-		<image name="md_kidgame">
-			<path>./_inc/images/kid.svg</path>
-			<pos>0.7615 0.9685</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-		</image>
-		<image name="md_manual">
-			<path>./_inc/images/manual.svg</path>
-			<pos>0.781 0.9685</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-		</image>
-		<image name="md_flag">
-			<origin>0 0.5</origin>
-			<pos>0.884 0.9685</pos>
-			<maxSize>0.02 0.05</maxSize>
-		</image>
+		<ninepatch name="gridtile.background:selected">
+			<path>./_inc/images/framewselsq.png</path>
+			<cornerSize>36 36</cornerSize>
+			<padding>-18 -18</padding>
+			<color>${baseColor}</color>
+			<animateColor>141414</animateColor>
+			<animateColorTime>650</animateColorTime>
+		</ninepatch>
 	</view>
 
 <!-- Подробно + Карусель -->
@@ -923,7 +1194,7 @@ originally based on: "simple, carbon, art-book"
 			<origin>0.5 0.5</origin>
 		</image>
 		<video name="md_video">
-			<pos>0.540625 0.725555555555556</pos>
+			<pos>0.540625 0.480555555555556</pos>
 			<maxSize>0.30 0.3833333333333333</maxSize>
 			<origin>0.5 0.5</origin>
 			<delay>0.1</delay>
@@ -933,17 +1204,12 @@ originally based on: "simple, carbon, art-book"
 			<effect>none</effect>
 			<zIndex>110</zIndex>
 		</video>
-		<image name="md_flag">
-			<origin>0 0.5</origin>
-			<pos>0.413 0.42</pos>
-			<maxSize>0.02 0.05</maxSize>
-		</image>
 		<image name="md_marquee">
 			<visible>false</visible>
 		</image>
 		<image name="video-background" extra="true">
 			<origin>0.5 0.5</origin>
-			<pos>0.540625 0.725555555555556</pos>
+			<pos>0.540625 0.480555555555556</pos>
 			<size>0.30625 0.3944444444444444</size>
 			<path>./_inc/images/space.png</path>
 			<color>bbbbbb</color>
@@ -951,7 +1217,7 @@ originally based on: "simple, carbon, art-book"
 		</image>
 		<image name="video-screen" extra="true">
 			<origin>0.5 0.5</origin>
-			<pos>0.540625 0.725555555555556</pos>
+			<pos>0.540625 0.480555555555556</pos>
 			<size>0.30 0.3833333333333333</size>
 			<path>./_inc/images/space.png</path>
 			<color>000000</color>
@@ -974,118 +1240,35 @@ originally based on: "simple, carbon, art-book"
 			<color>cccccc</color>
 		</image>
 		<image name="md_thumbnail">
-			<origin>0.5 0</origin>
-			<pos>0.225 0.1277777777777778</pos>
+			<origin>0.5 1</origin>
+			<pos>0.2023 0.6777777777777778</pos>
 			<maxSize>0.3078125 0.547222222222222</maxSize>
-		</image>
-		<text name="md_lbl_rating,md_lbl_releasedate,md_lbl_lastplayed,md_lbl_developer,md_lbl_publisher,md_lbl_genre,md_lbl_players,md_lbl_playcount">
-			<color>111111</color>
-			<fontPath>./_inc/fonts/AdobeBlank.ttf</fontPath>
-			<fontSize>0.0194444444444444</fontSize>
-		</text>
-		<text name="md_players,md_genre,md_description,md_developer,md_publisher,md_playcount,md_gametime">
-			<color>111111</color>
-			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<fontSize>0.0194444444444444</fontSize>
-		</text>
-		<datetime name="md_lastplayed,md_releasedate">
-			<color>111111</color>
-			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<fontSize>0.0194444444444444</fontSize>
-		</datetime>
-		<rating name="md_rating">
-			<pos>0.4125 0.1388888888888889</pos>
-			<size>0.1796875 0.0277777777777778</size>
-			<color>666666</color>
-		</rating>
-
-		<datetime name="md_releasedate">
-			<pos>0.4455 0.21</pos>
-			<size>0.171875 0.0222222222222222</size>
-		</datetime>
-		<image name="release_date_logo" extra="true">
-			<pos>0.4125 0.204</pos>
-			<maxSize>0.035</maxSize>
-			<path>./_inc/images/game_info_releasedate.svg</path>
-		</image>
-		<text name="md_publisher">
-			<pos>0.4455 0.26</pos>
-			<size>0.105 0.0222222222222222</size>
-		</text>
-		<image name="publisher_logo" extra="true">
-			<pos>0.4125 0.254</pos>
-			<maxSize>0.035</maxSize>
-			<path>./_inc/images/game_info_publisher.svg</path>
-		</image>
-		<text name="md_players">
-			<pos>0.4455 0.31</pos>
-			<size>0.171875 0.0222222222222222</size>
-		</text>
-		<image name="players_logo" extra="true">
-			<pos>0.4125 0.304</pos>
-			<maxSize>0.035</maxSize>
-			<path>./_inc/images/game_info_players.svg</path>
-		</image>
-		<text name="md_playcount">
-			<pos>0.4455 0.36</pos>
-			<size>0.171875 0.0222222222222222</size>
-		</text>
-		<image name="playcount_logo" extra="true">
-			<pos>0.4125 0.354</pos>
-			<maxSize>0.035</maxSize>
-			<path>./_inc/images/game_info_playcount3.svg</path>
-		</image>
-
-		<text name="md_developer">
-			<pos>0.5855 0.21</pos>
-			<size>0.12 0.0222222222222222</size>
-		</text>
-		<image name="developer_logo" extra="true">
-			<pos>0.5525 0.204</pos>
-			<maxSize>0.035</maxSize>
-			<path>./_inc/images/game_info_developer.svg</path>
-		</image>
-		<text name="md_genre">
-			<pos>0.5855 0.26</pos>
-			<size>0.12 0.0222222222222222</size>
-		</text>
-		<image name="genre_logo" extra="true">
-			<pos>0.5525 0.254</pos>
-			<maxSize>0.035</maxSize>
-			<path>./_inc/images/game_info_genre.svg</path>
-		</image>
-		<datetime name="md_lastplayed">
-			<pos>0.5855 0.31</pos>
-			<size>0.171875 0.0222222222222222</size>
-		</datetime>
-		<image name="lastplayed_logo" extra="true">
-			<pos>0.5525 0.304</pos>
-			<maxSize>0.035</maxSize>
-			<path>./_inc/images/game_info_lastplayed.svg</path>
-		</image>
-		<text name="md_gametime">
-			<pos>0.5855 0.36</pos>
-			<size>0.171875 0.0222222222222222</size>
-		</text>
-		<image name="gametime_logo" extra="true">
-			<pos>0.5525 0.354</pos>
-			<maxSize>0.035</maxSize>
-			<path>./_inc/images/game_info_gametime3.svg</path>
 		</image>
 
 		<image name="md-description-border" extra="true">
-			<pos>0.071875 0.706111111111111</pos>
-			<size>0.3078125 0.0027777777777778</size>
-			<origin>0 0</origin>
+			<pos>0.0484 0.706111111111111</pos>
+			<size>0.6455 0.0027777777777778</size>
+			<origin>0 0.5</origin>
 			<path>./_inc/images/space.png</path>
 			<color>aaaaaa</color>
+			<zIndex>106</zIndex>
 		</image>
 		<text name="md_description">
 			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<pos>0.071875 0.736111111111111</pos>
-			<size>0.3098125 0.2080555555555556</size>
+			<pos>0.061875 0.705111111111111</pos>
+			<size>0.6188125 0.2240555555555556</size>
 			<fontSize>0.025</fontSize>
+			<zIndex>105</zIndex>
+			<verticalAlignment>center</verticalAlignment>
 		</text>
+		<image name="md-description-border2" extra="true">
+			<pos>0.0484 0.927111111111111</pos>
+			<size>0.6455 0.0027777777777778</size>
+			<origin>0 0.5</origin>
+			<path>./_inc/images/space.png</path>
+			<color>aaaaaa</color>
+			<zIndex>106</zIndex>
+		</image>
 		<image name="gamelist-background" extra="true">
 			<origin>0 0</origin>
 			<pos>0.725 0</pos>
@@ -1123,62 +1306,6 @@ originally based on: "simple, carbon, art-book"
 			<forceUppercase>true</forceUppercase>
 			<color>555555</color>
 		</text>
-		<text name="LaunchButton" extra="true">
-			<pos>0.4355 0.467222222222222</pos>
-		</text>
-		<text name="FavoriteButton" extra="true">
-			<pos>0.519875 0.467222222222222</pos>
-		</text>
-		<text name="RandomButton" extra="true">
-			<pos>0.8485 0.8283333333333333</pos>
-			<visible>false</visible>
-			<zIndex>1</zIndex>
-		</text>
-		<image name="help-launch" extra="true">
-			<path>./_inc/images/help-launch.svg</path>
-			<pos>0.4125 0.472222222222222</pos>
-			<maxSize>0.0274</maxSize>
-			<origin>0 0</origin>
-		</image>
-		<image name="help-favorite" extra="true">
-			<path>./_inc/images/help-favorite.svg</path>
-			<pos>0.496875 0.472222222222222</pos>
-			<maxSize>0.0274</maxSize>
-			<origin>0 0</origin>
-		</image>
-		<image name="help-random" extra="true">
-			<path>./_inc/images/help-random.svg</path>
-			<origin>0 0</origin>
-			<pos>0.8255 0.8333333333333333</pos>
-			<maxSize>0.0274</maxSize>
-			<visible>false</visible>
-			<zIndex>1</zIndex>
-		</image>
-
-		<image name="md_hidden">
-			<path>./_inc/images/hidden.svg</path>
-			<pos>0.5625 0.1528888888888889</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-		</image>
-		<image name="md_kidgame">
-			<path>./_inc/images/kid.svg</path>
-			<pos>0.5225 0.1528888888888889</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-		</image>
-		<image name="md_manual">
-			<path>./_inc/images/manual.svg</path>
-			<pos>0.5025 0.1528888888888889</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-		</image>
 	</view>
 
 <!-- Подробно + Колесо -->
@@ -1270,29 +1397,84 @@ originally based on: "simple, carbon, art-book"
 			<pos>1 1</pos>
 			<size>0 0</size>
 			<zIndex>0</zIndex>
+			<visible>false</visible>
 		</image>
 		<image name="video-screen" extra="true">
 			<pos>1 1</pos>
 			<size>0 0</size>
 			<zIndex>0</zIndex>
+			<visible>false</visible>
 		</image>
-		<image name="md-description-border" extra="true">
-			<pos>0.071875 0.706111111111111</pos>
-			<size>0.5578125 0.0027777777777778</size>
-			<origin>0 0</origin>
-			<path>./_inc/images/space.png</path>
-			<color>aaaaaa</color>
+		<rating name="md_rating">
+			<pos>0.4124 0.096</pos>
+		</rating>
+		<image name="md_flag">
+			<pos>0.3864 0.3012</pos>
+			<color>FFFFFFFF</color>
 		</image>
-		<text name="md_description">
-			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<pos>0.071875 0.736111111111111</pos>
-			<size>0.5698125 0.2080555555555556</size>
-			<fontSize>0.025</fontSize>
+		<text name="md_players">
+			<pos>0.3964 0.2612</pos>
 		</text>
+		<image name="md_manual,md_nomanual">
+			<pos>0.551 0.2605</pos>
+		</image>
+		<image name="md_cheevos,md_notcheevos">
+			<pos>0.551 0.298</pos>
+		</image>
+		<image name="md_savestate,md_nosavestate">
+			<pos>0.551 0.336</pos>
+			<y ifCheevos="false">0.298</y>
+			<x ifCheevos="false">0.551</x>
+		</image>
+
+		<image name="md_hidden">
+			<pos>0.3964 0.3379</pos>
+		</image>
+		<image name="md_kidgame,md_notkidgame">
+			<pos>0.396 0.3739</pos>
+		</image>
+		
+		<datetime name="md_releasedate">
+			<pos>0.4106 0.135</pos>
+		</datetime>
+		<image name="release_date_logo" extra="true">
+			<pos>0.3956 0.146</pos>
+		</image>
+		<text name="md_publisher">
+			<pos>0.4106 0.173</pos>
+		</text>
+		<image name="publisher_logo" extra="true">
+			<pos>0.3956 0.184</pos>
+		</image>
+		<text name="md_playcount">
+			<pos>0.4106 0.211</pos>
+		</text>
+		<image name="playcount_logo" extra="true">
+			<pos>0.3956 0.222</pos>
+		</image>
+
+		<text name="md_developer">
+			<pos>0.5655 0.135</pos>
+		</text>
+		<image name="developer_logo" extra="true">
+			<pos>0.551 0.146</pos>
+		</image>
+		<text name="md_genre">
+			<pos>0.5655 0.173</pos>
+		</text>
+		<image name="genre_logo" extra="true">
+			<pos>0.551 0.184</pos>
+		</image>
+		<text name="md_gametime">
+			<pos>0.5655 0.211</pos>
+		</text>
+		<image name="gametime_logo" extra="true">
+			<pos>0.551 0.222</pos>
+		</image>
 	</customView>
 
 <!-- Обои -->
-<customView name="Wallpapers" inherits="grid" displayName="${WallViewName}">
+	<customView name="Wallpapers" inherits="grid" displayName="${WallViewName}">
 		<image name="ArrowBG" extra="static">
 			<zIndex>175</zIndex>
 			<color>141414</color>
@@ -1391,11 +1573,21 @@ originally based on: "simple, carbon, art-book"
 			<fontSize>0.035</fontSize>
 			<size>1 0</size>
 		</text>
+		<image name="gridtile.favorite">
+			<color>FFFFFF00</color>
+			<visible>false</visible>
+		</image>
+		<ninepatch name="gridtile.background:selected">
+			<color>FFFFFF00</color>
+			<visible>false</visible>
+			<animateColor>FFFFFF00</animateColor>
+			<animateColorTime>0</animateColorTime>
+		</ninepatch>
 		<video name="md_video">
 			<pos>0.17 0.725555555555556</pos>
 			<maxSize>0.30 0.3833333333333333</maxSize>
 			<origin>0.5 0.5</origin>
-			<delay>0.2</delay>
+			<delay>1.0</delay>
 			<showSnapshotNoVideo>false</showSnapshotNoVideo>
 			<showSnapshotDelay>true</showSnapshotDelay>
 			<snapshotSource>thumbnail</snapshotSource>
@@ -1418,42 +1610,7 @@ originally based on: "simple, carbon, art-book"
 			<forceUppercase>true</forceUppercase>
 			<color>555555</color>
 		</text>
-		<rating name="md_rating">
-			<pos>0.026 0.925</pos>
-			<zIndex>160</zIndex>
-		</rating>
-		<image name="md_flag">
-			<origin>0 0.5</origin>
-			<pos>0.026 0.906</pos>
-			<maxSize>0.02 0.05</maxSize>
-			<color>FFFFFF80</color>
-			<zIndex>160</zIndex>
-		</image>
-		<image name="md_hidden">
-			<path>./_inc/images/hidden.svg</path>
-			<pos>0.161 0.939</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-		</image>
-		<image name="md_kidgame">
-			<path>./_inc/images/kid.svg</path>
-			<pos>0.14 0.939</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-		</image>
-		<image name="md_manual">
-			<path>./_inc/images/manual.svg</path>
-			<pos>0.12 0.939</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-		</image>
-		<image name="help-launch" extra="true">
+		<!--<image name="help-launch" extra="true">
 			<zIndex>150</zIndex>
 		</image>
 		<image name="help-random" extra="true">
@@ -1461,12 +1618,53 @@ originally based on: "simple, carbon, art-book"
 		</image>
 		<image name="help-favorite" extra="true">
 			<zIndex>150</zIndex>
+		</image>-->
+		<datetime name="md_releasedate">
+			<origin>0.5 1</origin>
+			<pos>0.0358 0.79</pos>
+			<rotation>-90</rotation>
+			<zIndex>140</zIndex>
+		</datetime>
+		<rating name="md_rating">
+			<pos>0.051 0.92</pos>
+			<zIndex>150</zIndex>
+		</rating>
+		<image name="md_flag">
+			<pos>0.0262 0.905</pos>
+			<color>FFFFFF90</color>
+			<zIndex>150</zIndex>
+		</image>
+		<text name="md_players">
+			<pos>0.124 0.935</pos>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="md_manual,md_nomanual">
+			<pos>0.1475 0.935</pos>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_cheevos,md_notcheevos">
+			<pos>0.1685 0.935</pos>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_savestate,md_nosavestate">
+			<pos>0.19 0.935</pos>
+			<x ifCheevos="false">0.1685</x>
+			<zIndex>150</zIndex>
+		</image>
+
+		<image name="md_hidden">
+			<pos>0.213 0.935</pos>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_kidgame,md_notkidgame">
+			<pos>0.235 0.935</pos>
+			<zIndex>150</zIndex>
 		</image>
 	</customView>
 
 <!-- Обои + Карусель -->
 	<customView name="WallpapersCarousel" inherits="gamecarousel" displayName="${WallpapersCarouselName}">
-		<text name="LaunchButton" extra="true">
+	<!--<text name="LaunchButton" extra="true">
 			<pos>0.3964375 0.950</pos>
 		</text>
 		<text name="FavoriteButton" extra="true">
@@ -1498,16 +1696,12 @@ originally based on: "simple, carbon, art-book"
 			<pos>0.54921875 0.955</pos>
 			<maxSize>0.0274</maxSize>
 			<zIndex>100</zIndex>
-		</image>
-		<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_gametime, md_publisher, md_developer, md_players,md_genre,md_description, md_lastplayed,md_releasedate">
+		</image>-->
+		<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_gametime, md_publisher, md_developer,md_genre,md_description, md_lastplayed">
 			<color>111111</color>
 			<fontPath>./_inc/fonts/AdobeBlank.ttf</fontPath>
 			<fontSize>0.0194444444444444</fontSize>
 		</text>
-		<datetime name="md_releasedate">
-			<visible>false</visible>
-			<zIndex>1</zIndex>
-		</datetime>
 		<image name="release_date_logo" extra="true">
 			<visible>false</visible>
 			<zIndex>1</zIndex>
@@ -1517,14 +1711,6 @@ originally based on: "simple, carbon, art-book"
 			<zIndex>1</zIndex>
 		</text>
 		<image name="publisher_logo" extra="true">
-			<visible>false</visible>
-			<zIndex>1</zIndex>
-		</image>
-		<text name="md_players">
-			<visible>false</visible>
-			<zIndex>1</zIndex>
-		</text>
-		<image name="players_logo" extra="true">
 			<visible>false</visible>
 			<zIndex>1</zIndex>
 		</image>
@@ -1570,6 +1756,10 @@ originally based on: "simple, carbon, art-book"
 			<zIndex>1</zIndex>
 		</image>
 		<image name="md-description-border" extra="true">
+			<visible>false</visible>
+			<zIndex>1</zIndex>
+		</image>
+		<image name="md-description-border2" extra="true">
 			<visible>false</visible>
 			<zIndex>1</zIndex>
 		</image>
@@ -1694,7 +1884,7 @@ originally based on: "simple, carbon, art-book"
 			<pos>0.17 0.725555555555556</pos>
 			<maxSize>0.30 0.3833333333333333</maxSize>
 			<origin>0.5 0.5</origin>
-			<delay>0.2</delay>
+			<delay>1.0</delay>
 			<showSnapshotNoVideo>false</showSnapshotNoVideo>
 			<showSnapshotDelay>true</showSnapshotDelay>
 			<snapshotSource>thumbnail</snapshotSource>
@@ -1718,42 +1908,7 @@ originally based on: "simple, carbon, art-book"
 			<forceUppercase>true</forceUppercase>
 			<color>555555</color>
 		</text>
-		<rating name="md_rating">
-			<pos>0.026 0.925</pos>
-			<zIndex>160</zIndex>
-		</rating>
-		<image name="md_flag">
-			<origin>0 0.5</origin>
-			<pos>0.026 0.906</pos>
-			<maxSize>0.02 0.05</maxSize>
-			<color>FFFFFF80</color>
-			<zIndex>160</zIndex>
-		</image>
-		<image name="md_hidden">
-			<path>./_inc/images/hidden.svg</path>
-			<pos>0.161 0.939</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-		</image>
-		<image name="md_kidgame">
-			<path>./_inc/images/kid.svg</path>
-			<pos>0.14 0.939</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-		</image>
-		<image name="md_manual">
-			<path>./_inc/images/manual.svg</path>
-			<pos>0.12 0.939</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-		</image>
-		<image name="help-launch" extra="true">
+	<!--<image name="help-launch" extra="true">
 			<zIndex>150</zIndex>
 		</image>
 		<image name="help-random" extra="true">
@@ -1761,16 +1916,63 @@ originally based on: "simple, carbon, art-book"
 		</image>
 		<image name="help-favorite" extra="true">
 			<zIndex>150</zIndex>
+		</image>-->
+		<datetime name="md_releasedate">
+			<origin>0.5 1</origin>
+			<pos>0.0358 0.79</pos>
+			<rotation>-90</rotation>
+			<zIndex>140</zIndex>
+			<size>0.1 0.0222222222222222</size>
+			<alignment>left</alignment>
+			<format>%Y</format>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontSize>0.0254444444444444</fontSize>
+			<color>666666</color>
+		</datetime>
+		<rating name="md_rating">
+			<pos>0.051 0.92</pos>
+			<zIndex>150</zIndex>
+		</rating>
+		<image name="md_flag">
+			<pos>0.0262 0.905</pos>
+			<color>FFFFFF90</color>
+			<zIndex>150</zIndex>
+		</image>
+		<text name="md_players">
+			<pos>0.124 0.935</pos>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="md_manual,md_nomanual">
+			<pos>0.1475 0.935</pos>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_cheevos,md_notcheevos">
+			<pos>0.1685 0.935</pos>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_savestate,md_nosavestate">
+			<pos>0.19 0.935</pos>
+			<x ifCheevos="false">0.1685</x>
+			<zIndex>150</zIndex>
+		</image>
+
+		<image name="md_hidden">
+			<pos>0.213 0.935</pos>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_kidgame,md_notkidgame">
+			<pos>0.235 0.935</pos>
+			<zIndex>150</zIndex>
 		</image>
 	</customView>
 
 <!-- Сетка + подробно -->
 	<customView name="Grid + Details" inherits="grid" displayName="${gridDetailsViewName}">
 		<imagegrid name="gamegrid">
-			<size>0.66 0.76</size>
+			<size>0.66 0.764</size>
 			<autoLayout>4 2</autoLayout>
 			<margin>0.005 0.010</margin>
-			<padding>0.03 0.05 0.03 0.04</padding>
+			<padding>0.03 0.04 0.03 0.1</padding>
 		</imagegrid>
 		<text name="gridtile">
 			<fontPath>./_inc/fonts/AdobeBlank.ttf</fontPath>
@@ -1846,93 +2048,12 @@ originally based on: "simple, carbon, art-book"
 			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 		</text>
 		<text name="md_description">
-			<pos>0.68 0.688</pos>
-			<size>0.30 0.20</size>
+			<pos>0.68 0.67</pos>
+			<size>0.30 0.255</size>
 			<fontSize>0.025</fontSize>
 			<color>A0A0B0</color>
 			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 		</text>
-		<datetime name="md_releasedate">
-			<color>666666</color>
-			<pos>0.705 0.888</pos>
-			<size>0.30 0.05</size>
-			<alignment>left</alignment>
-			<fontSize>0.025</fontSize>
-			<glowSize>0</glowSize>
-			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
-		</datetime>
-		<image name="release_date_logo" extra="true">
-			<pos>0.68 0.896</pos>
-			<maxSize>0.03</maxSize>
-			<path>./_inc/images/game_info_releasedate.svg</path>
-			<zIndex>100</zIndex>
-		</image>
-		<rating name="md_rating">
-			<pos>0.9 0.896</pos>
-			<size>0.05 0.03</size>
-			<color>666666</color>
-		</rating>
-		<text name="md_genre">
-			<color>666666</color>
-			<pos>0.705 0.643</pos>
-			<size>0.2 0.05</size>
-			<alignment>left</alignment>
-			<fontSize>0.025</fontSize>
-			<glowSize>0</glowSize>
-			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
-		</text>
-		<image name="genre_logo" extra="true">
-			<pos>0.68 0.655</pos>
-			<maxSize>0.03</maxSize>
-			<path>./_inc/images/game_info_genre.svg</path>
-			<zIndex>100</zIndex>
-		</image>
-		<text name="md_players">
-			<color>666666</color>
-			<pos>0.965 0.643</pos>
-			<size>0.03 0.05</size>
-			<alignment>left</alignment>
-			<fontSize>0.025</fontSize>
-			<glowSize>0</glowSize>
-			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
-		</text>
-		<image name="players_logo" extra="true">
-			<pos>0.94 0.655</pos>
-			<maxSize>0.03</maxSize>
-			<path>./_inc/images/game_info_players.svg</path>
-			<zIndex>100</zIndex>
-		</image>
-
-		<image name="md_hidden">
-			<path>./_inc/images/hidden.svg</path>
-			<pos>0.844 0.9112</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-		</image>
-		<image name="md_kidgame">
-			<path>./_inc/images/kid.svg</path>
-			<pos>0.865 0.9112</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-		</image>
-		<image name="md_manual">
-			<path>./_inc/images/manual.svg</path>
-			<pos>0.885 0.9112</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-		</image>
-		<image name="md_flag">
-			<origin>0 0.5</origin>
-			<pos>0.9605 0.6345</pos>
-			<maxSize>0.02 0.05</maxSize>
-			<zIndex>150</zIndex>
-		</image>
 	</customView>
 
 <!-- Сетка + подробно + лого -->
@@ -1949,6 +2070,106 @@ originally based on: "simple, carbon, art-book"
 		<text name="md_name">
 			<visible>false</visible>
 		</text>
+	</customView>
+
+	<customView name="Logo + Details" inherits="grid" displayName="${logoDetailsViewName}">
+		<imagegrid name="gamegrid">
+			<size>0.66 0.764</size>
+			<autoLayout>4 3</autoLayout>
+			<margin>0.005 0.010</margin>
+			<padding>0.03 0.04 0.03 0.1</padding>
+			<imageSource>marquee</imageSource>
+		</imagegrid>
+		<text name="gridtile">
+			<fontPath>./_inc/fonts/AdobeBlank.ttf</fontPath>
+			<size>0 0</size>
+		</text>
+		<image name="gridtile.favorite">
+			<path>./_inc/images/starfav.svg</path>
+			<pos>0.95 0.05</pos>
+			<maxSize>0.10 0.10</maxSize>
+			<origin>0.5 0.5</origin>
+			<horizontalAlignment>right</horizontalAlignment>
+			<color>${baseColor}</color>
+		</image>
+		<image name="gamelistBackground" extra="true">
+			<path>./_inc/images/space.png</path>
+			<color>141414</color>
+			<origin>0 0</origin>
+			<pos>0.66 0.16</pos>
+			<size>0.34 0.774</size>
+			<zIndex>12</zIndex>
+		</image>
+		<image name="md_image">
+			<visible>false</visible>
+		</image>
+		<text name="md_name">
+			<pos>0.68 0.188</pos>
+			<size>0.30 0.05</size>
+			<color>F0F0F0</color>
+			<fontSize>0.032</fontSize>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<alignment>center</alignment>
+			<glowColor>${glowColor}</glowColor>
+			<glowSize>2</glowSize>
+		</text>
+		<video name="md_video">
+			<pos>0.83 0.455</pos>
+			<maxSize>0.30 0.3833333333333333</maxSize>
+			<origin>0.5 0.5</origin>
+			<delay>1.0</delay>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>true</showSnapshotDelay>
+			<snapshotSource>thumbnail</snapshotSource>
+			<effect>none</effect>
+			<zIndex>110</zIndex>
+		</video>
+		<image name="md_marquee">
+			<visible>false</visible>
+		</image>
+		<image name="video-background" extra="true">
+			<visible>false</visible>
+			<origin>0.5 0.5</origin>
+			<pos>0.83 0.455</pos>
+			<size>0.30625 0.3944444444444444</size>
+			<path>./_inc/images/space.png</path>
+			<color>333333ff</color>
+			<zIndex>100</zIndex>
+		</image>
+		<image name="video-screen" extra="true">
+			<visible>false</visible>
+			<origin>0.5 0.5</origin>
+			<pos>0.83 0.455</pos>
+			<size>0.30 0.3833333333333333</size>
+			<path>./_inc/images/space.png</path>
+			<color>000000</color>
+			<zIndex>105</zIndex>
+		</image>
+		<text name="md_developer">
+			<color>808080ff</color>
+			<pos>0.68 0.216</pos>
+			<size>0.30 0.05</size>
+			<alignment>center</alignment>
+			<fontSize>0.020</fontSize>
+			<glowColor>00000016</glowColor>
+			<glowSize>3</glowSize>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+		</text>
+		<text name="md_description">
+			<pos>0.68 0.67</pos>
+			<size>0.30 0.255</size>
+			<fontSize>0.025</fontSize>
+			<color>A0A0B0</color>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+		</text>
+		<ninepatch name="gridtile.background:selected">
+			<path>./_inc/images/framewselsq2.png</path>
+			<cornerSize>0 0</cornerSize>
+			<padding>-18 -18</padding>
+			<color>${baseColor}</color>
+			<animateColor>141414</animateColor>
+			<animateColorTime>650</animateColorTime>
+		</ninepatch>
 	</customView>
 
 <!-- Карусель -->
@@ -2006,14 +2227,12 @@ originally based on: "simple, carbon, art-book"
 			<fontSize>0.035</fontSize>
 			<size>1 0</size>
 		</text>
-		<image name="gridtile.favorite">
-			<path>./_inc/images/starfav.svg</path>
-			<pos>0.95 0.05</pos>
-			<maxSize>0.10 0.10</maxSize>
-			<origin>0.5 0.5</origin>
-			<horizontalAlignment>right</horizontalAlignment>
-			<color>${baseColor}</color>
-		</image>
+		<ninepatch name="gridtile.background:selected">
+			<color>FFFFFF00</color>
+			<visible>false</visible>
+			<animateColor>FFFFFF00</animateColor>
+			<animateColorTime>0</animateColorTime>
+		</ninepatch>
 	</customView>
 
 <!-- Карусель + подробно -->
@@ -2087,93 +2306,12 @@ originally based on: "simple, carbon, art-book"
 			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 		</text>
 		<text name="md_description">
-			<pos>0.68 0.688</pos>
-			<size>0.30 0.20</size>
+			<pos>0.68 0.67</pos>
+			<size>0.30 0.255</size>
 			<fontSize>0.025</fontSize>
 			<color>A0A0B0</color>
 			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 		</text>
-		<datetime name="md_releasedate">
-			<color>666666</color>
-			<pos>0.705 0.888</pos>
-			<size>0.30 0.05</size>
-			<alignment>left</alignment>
-			<fontSize>0.025</fontSize>
-			<glowSize>0</glowSize>
-			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
-		</datetime>
-		<image name="release_date_logo" extra="true">
-			<pos>0.68 0.896</pos>
-			<maxSize>0.03</maxSize>
-			<path>./_inc/images/game_info_releasedate.svg</path>
-			<zIndex>100</zIndex>
-		</image>
-		<rating name="md_rating">
-			<pos>0.9 0.896</pos>
-			<size>0.05 0.03</size>
-			<color>666666</color>
-		</rating>
-		<text name="md_genre">
-			<color>666666</color>
-			<pos>0.705 0.643</pos>
-			<size>0.2 0.05</size>
-			<alignment>left</alignment>
-			<fontSize>0.025</fontSize>
-			<glowSize>0</glowSize>
-			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
-		</text>
-		<image name="genre_logo" extra="true">
-			<pos>0.68 0.655</pos>
-			<maxSize>0.03</maxSize>
-			<path>./_inc/images/game_info_genre.svg</path>
-			<zIndex>100</zIndex>
-		</image>
-		<text name="md_players">
-			<color>666666</color>
-			<pos>0.965 0.643</pos>
-			<size>0.03 0.05</size>
-			<alignment>left</alignment>
-			<fontSize>0.025</fontSize>
-			<glowSize>0</glowSize>
-			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
-		</text>
-		<image name="players_logo" extra="true">
-			<pos>0.94 0.655</pos>
-			<maxSize>0.03</maxSize>
-			<path>./_inc/images/game_info_players.svg</path>
-			<zIndex>100</zIndex>
-		</image>
-		
-		<image name="md_hidden">
-			<path>./_inc/images/hidden.svg</path>
-			<pos>0.844 0.9112</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-		</image>
-		<image name="md_kidgame">
-			<path>./_inc/images/kid.svg</path>
-			<pos>0.865 0.9112</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-		</image>
-		<image name="md_manual">
-			<path>./_inc/images/manual.svg</path>
-			<pos>0.885 0.9112</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-		</image>
-		<image name="md_flag">
-			<origin>0 0.5</origin>
-			<pos>0.9605 0.6345</pos>
-			<maxSize>0.02 0.05</maxSize>
-			<zIndex>150</zIndex>
-		</image>
 	</customView>
 
 <!-- Карусель + подробно + лого -->
@@ -2196,6 +2334,7 @@ originally based on: "simple, carbon, art-book"
 	<customView name="Tiles" inherits="grid" displayName="${tilesViewName}">
 		<imagegrid name="gamegrid">
 			<autoLayout>3 2</autoLayout>
+			<cellProportion>1.25</cellProportion>
 			<autoLayoutSelectedZoom>1.02</autoLayoutSelectedZoom>
 			<imageSource>image</imageSource>
 			<margin>0.005 0.010</margin>
@@ -2207,29 +2346,32 @@ originally based on: "simple, carbon, art-book"
 			<backgroundCenterColor>FFFFFF20</backgroundCenterColor>
 			<backgroundEdgeColor>FFFFFF20</backgroundEdgeColor>
 			<backgroundCornerSize>0 0</backgroundCornerSize>
-			<padding>1 1</padding>
+			<padding>3 3</padding>
 			<imageSizeMode>minSize</imageSizeMode>
-			<imageColor>FFFFFFAA</imageColor>
+			<imageColor>A0A0A0FF</imageColor>
 		</gridtile>
 		<gridtile name="selected">
 			<size>0.230 0.259</size>
-			<padding>2 2</padding>
+			<padding>3 3</padding>
 			<backgroundCornerSize>0 0</backgroundCornerSize>
 			<imageColor>FFFFFFFF</imageColor>
 		</gridtile>
 		<text name="gridtile">
 			<color>D0D0D0D0</color>
 			<backgroundColor>00000000</backgroundColor>
-			<fontSize>0.028</fontSize>
+			<singleLineScroll>false</singleLineScroll>
+			<fontSize>0.026</fontSize>
 			<alignment>center</alignment>
-			<size>0 0.18</size>
+			<padding>0.08 0.02</padding>
+			<size>0 0.22</size>
 			<glowColor>00000008</glowColor>
-			<glowSize>3</glowSize>
+			<glowSize>2</glowSize>
 		</text>
 		<text name="gridtile_selected">
+			<singleLineScroll>false</singleLineScroll>
 			<color>FFFFFF</color>
 			<glowColor>${glowColor}</glowColor>
-			<glowSize>3</glowSize>
+			<glowSize>2</glowSize>
 		</text>
 		<image name="gridtile.marquee">
 			<color>FFFFFFD0</color>
@@ -2246,6 +2388,12 @@ originally based on: "simple, carbon, art-book"
 			<pos>0.5 0.17</pos>
 			<size>0.50 0.25</size>
 		</image>
+		<text name="gridtile.text">
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<fontSize>0.040</fontSize>
+			<padding>0.1 0</padding>
+		</text>
 	</customView>
 
 <!-- Плитки + видео -->
@@ -2256,13 +2404,13 @@ originally based on: "simple, carbon, art-book"
 	</customView>
 
 <!-- Colorful (вертикально) -->
-<customView name="Colorful (vertically)" inherits="grid" displayName="${ColorfulViewName}">
+	<customView name="Colorful (vertically)" inherits="grid" displayName="${ColorfulViewName}">
 		<image name="art" extra="true">
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
 			<minSize>1 1</minSize>
 			<path>./_inc/images/overlay.png</path>
-			<zIndex>100</zIndex>
+			<zIndex>85</zIndex>
 		</image>
 		<image name="background" extra="true">
 			<origin>0.5 0.5</origin>
@@ -2338,8 +2486,8 @@ originally based on: "simple, carbon, art-book"
 			</storyboard>
 		</text>
 		<text name="md_description" extra="true">
-			<pos>0.65 0.45</pos>
-			<size>0.35 0.35</size>
+			<pos>0.65 0.471</pos>
+			<size>0.342 0.45</size>
 			<alignment>left</alignment>
 			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 			<color>666666</color>
@@ -2390,44 +2538,7 @@ originally based on: "simple, carbon, art-book"
 				<animation property="scale" from="1.05" to="1" begin="1300" duration="1000" mode="easeOut"/>
 			</storyboard>
 		</image>
-
-		<rating name="md_rating">
-			<pos>0.026 0.925</pos>
-			<zIndex>160</zIndex>
-		</rating>
-		<image name="md_flag">
-			<origin>0 0.5</origin>
-			<pos>0.026 0.906</pos>
-			<maxSize>0.02 0.05</maxSize>
-			<color>FFFFFF80</color>
-			<zIndex>160</zIndex>
-		</image>
-		<image name="md_hidden">
-			<path>./_inc/images/hidden.svg</path>
-			<pos>0.161 0.939</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-		</image>
-		<image name="md_kidgame">
-			<path>./_inc/images/kid.svg</path>
-			<pos>0.14 0.939</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-		</image>
-		<image name="md_manual">
-			<path>./_inc/images/manual.svg</path>
-			<pos>0.12 0.939</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-		</image>
-		
-		<text name="LaunchButton" extra="true">
+	<!--<text name="LaunchButton" extra="true">
 			<pos>0.6964375 0.850</pos>
 			<storyboard>
 				<animation property="y" from="0.9" begin="2000" duration="1000" mode="linear"/>
@@ -2486,169 +2597,199 @@ originally based on: "simple, carbon, art-book"
 				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
 				<animation property="opacity" from="0" to="1" begin="2000" duration="1000" mode="EaseIn"/>
 			</storyboard>
-		</image>
-
-
-		<text name="md_players,md_genre,md_developer,md_publisher,md_playcount,md_gametime, md_releasedate, md_lastplayed">
+		</image>-->
+		<text name="md_players,md_genre,md_developer,md_publisher,md_playcount,md_gametime">
 			<color>666666</color>
 			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 			<fontSize>0.0194444444444444</fontSize>
 		</text>
-		<image name="release_date_logo" extra="true">
-			<pos>0.65 0.054</pos>
-			<maxSize>0.035</maxSize>
-			<path>./_inc/images/game_info_releasedate.svg</path>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
-		</image>
-		<datetime name="md_releasedate" extra="true">
-			<pos>0.68 0.06</pos>
-			<size>0.105 0.0222222222222222</size>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+		<datetime name="md_lastplayed,md_releasedate">
+			<color>666666</color>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontSize>0.0194444444444444</fontSize>
 		</datetime>
+
+
+		<image name="md_flag">
+			<origin>0 0.5</origin>
+			<pos>0.841 0.075</pos>
+			<maxSize>0.02 0.05</maxSize>
+			<color>FFFFFF90</color>
+			<zIndex>150</zIndex>
+		</image>
+		<rating name="md_rating">
+			<pos>0.6765 0.212</pos>
+			<size>0.05 0.03</size>
+			<color>666666</color>
+			<origin>0.5 0</origin>
+			<horizontalAlignment>left</horizontalAlignment>
+			<unfilledColor>80808030</unfilledColor>
+			<unfilledPath>./_inc/images/star_filled.svg</unfilledPath>
+			<zIndex>150</zIndex>
+		</rating>
+		<text name="md_players">
+			<pos>0.66 0.075</pos>
+			<size>0.03 0.03</size>
+			<origin>0.5 0.5</origin>
+			<fontPath>./_inc/fonts/players.ttf</fontPath>
+			<text>1</text>
+			<!--<size>0.03 0.03</size>
+			<pos>0.976 0.37</pos>-->
+			<alignment>center</alignment>
+			<fontSize>0.034</fontSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="md_manual,md_nomanual">
+			<path>./_inc/images/book.png</path>
+			<pos>0.6835 0.075</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_nomanual">
+			<color>80808040</color>
+		</image>
+		<image name="md_cheevos,md_notcheevos">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/icons/Contest.png</path>
+			<pos>0.7040 0.075</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_notcheevos">
+			<color>80808040</color>
+		</image> 
+		<image name="md_savestate,md_nosavestate">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/icons/SaveState.png</path>
+			<pos>0.7260 0.075</pos>
+			<x ifCheevos="false">0.7040</x>
+			<maxSize>0.02 0.03</maxSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_nosavestate">
+			<color>80808030</color>
+		</image>
+
+		<image name="md_hidden">
+			<path>./_inc/images/hidden.svg</path>
+			<pos>0.7691 0.075</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_kidgame,md_notkidgame">
+			<path>./_inc/images/kid.svg</path>
+			<pos>0.7481 0.075</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_notkidgame"> 
+			<color>80808000</color>
+		</image>
+
+
+		<datetime name="md_releasedate">
+			<pos>0.6745 0.102</pos>
+			<size>0.107 0.0222222222222222</size>
+			<format>%Y</format>
+			<zIndex>150</zIndex>
+		</datetime>
+		<image name="release_date_logo" extra="true">
+			<pos>0.6595 0.113</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_releasedate.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
 		<text name="md_publisher">
-			<pos>0.68 0.11</pos>
-			<size>0.105 0.0222222222222222</size>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<pos>0.6745 0.140</pos>
+			<size>0.107 0.0222222222222222</size>
+			<zIndex>150</zIndex>
 		</text>
 		<image name="publisher_logo" extra="true">
-			<pos>0.65 0.104</pos>
-			<maxSize>0.035</maxSize>
+			<pos>0.6595 0.151</pos>
+			<maxSize>0.02 0.03</maxSize>
 			<path>./_inc/images/game_info_publisher.svg</path>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
 		</image>
-		<text name="md_players">
-			<pos>0.68 0.16</pos>
-			<size>0.171875 0.0222222222222222</size>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<image name="players_logo" extra="true">
-			<pos>0.65 0.154</pos>
+	<!--<image name="players_logo" extra="true">
+			<pos>0.4125 0.304</pos>
 			<maxSize>0.035</maxSize>
 			<path>./_inc/images/game_info_players.svg</path>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
-		</image>
+			<zIndex>150</zIndex>
+		</image>-->
 		<text name="md_playcount">
-			<pos>0.68 0.21</pos>
-			<size>0.171875 0.0222222222222222</size>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<pos>0.6745 0.178</pos>
+			<size>0.107 0.0222222222222222</size>
+			<zIndex>150</zIndex>
 		</text>
 		<image name="playcount_logo" extra="true">
-			<pos>0.65 0.204</pos>
-			<maxSize>0.035</maxSize>
+			<pos>0.6595 0.189</pos>
+			<maxSize>0.02 0.03</maxSize>
 			<path>./_inc/images/game_info_playcount3.svg</path>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
 		</image>
 
 		<text name="md_developer">
-			<pos>0.82 0.06</pos>
-			<size>0.12 0.0222222222222222</size>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<pos>0.8655 0.102</pos>
+			<size>0.128 0.0222222222222222</size>
+			<zIndex>150</zIndex>
 		</text>
 		<image name="developer_logo" extra="true">
-			<pos>0.79 0.054</pos>
-			<maxSize>0.035</maxSize>
+			<pos>0.851 0.113</pos>
+			<maxSize>0.02 0.03</maxSize>
 			<path>./_inc/images/game_info_developer.svg</path>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
 		</image>
 		<text name="md_genre">
-			<pos>0.82 0.11</pos>
-			<size>0.12 0.0222222222222222</size>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<pos>0.8655 0.140</pos>
+			<size>0.128 0.0222222222222222</size>
+			<zIndex>150</zIndex>
 		</text>
 		<image name="genre_logo" extra="true">
-			<pos>0.79 0.104</pos>
-			<maxSize>0.035</maxSize>
+			<pos>0.851 0.151</pos>
+			<maxSize>0.02 0.03</maxSize>
 			<path>./_inc/images/game_info_genre.svg</path>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
 		</image>
 		<datetime name="md_lastplayed">
-			<pos>0.82 0.16</pos>
+			<pos>0.8655 0.205</pos>
 			<size>0.171875 0.0222222222222222</size>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<origin>0.5 0.5</origin>
+			<zIndex>1</zIndex>
+			<visible>false</visible>
 		</datetime>
-		<image name="lastplayed_logo" extra="true">
-			<pos>0.79 0.154</pos>
-			<maxSize>0.035</maxSize>
+	<!--<image name="lastplayed_logo" extra="true">
+			<pos>0.5525 0.204</pos>
+			<maxSize>0.02 0.03</maxSize>
 			<path>./_inc/images/game_info_lastplayed.svg</path>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
-		</image>
+			<zIndex>150</zIndex>
+		</image>-->
 		<text name="md_gametime">
-			<pos>0.82 0.21</pos>
-			<size>0.171875 0.0222222222222222</size>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<pos>0.8655 0.178</pos>
+			<size>0.128 0.0222222222222222</size>
+			<zIndex>150</zIndex>
 		</text>
 		<image name="gametime_logo" extra="true">
-			<pos>0.79 0.204</pos>
-			<maxSize>0.035</maxSize>
-			<path>./_inc/images/game_info_gametime3.svg</path>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<pos>0.851 0.189</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_lastplayed.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
 		</image>
-		
-		
+
 		<imagegrid name="gamegrid">
 			<pos>0.75 0.0</pos>
 			<size>0.25 1</size>
@@ -2682,10 +2823,20 @@ originally based on: "simple, carbon, art-book"
 			<fontSize>0</fontSize>
 			<size>1 0</size>
 		</text>
+		<image name="gridtile.favorite">
+			<color>FFFFFF00</color>
+			<visible>false</visible>
+		</image>
+		<ninepatch name="gridtile.background:selected">
+			<color>FFFFFF00</color>
+			<visible>false</visible>
+			<animateColor>FFFFFF00</animateColor>
+			<animateColorTime>0</animateColorTime>
+		</ninepatch>
 	</customView>
 
 <!-- Colorful + Gamelist (вертикально) -->
-<customView name="Colorful + Gamelist (vertically)" inherits="detailed" displayName="${ColorfulViewNameGame}">
+	<customView name="Colorful + Gamelist (vertically)" inherits="detailed" displayName="${ColorfulViewNameGame}">
 		<textlist name="gamelist">
 			<selectorColor>333333ff</selectorColor>
 			<selectedColor>${baseColor}</selectedColor>
@@ -2693,7 +2844,7 @@ originally based on: "simple, carbon, art-book"
 			<secondaryColor>cccccc</secondaryColor>
 			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 			<forceUppercase>1</forceUppercase>
-			<pos>0.7848125 0.0536666666666667</pos>
+			<pos>0.7848125 0.0576666666666667</pos>
 			<size>0.209375 0.3855555555555556</size>
 			<alignment>center</alignment>
 			<lines>12</lines>
@@ -2733,13 +2884,18 @@ originally based on: "simple, carbon, art-book"
 			<zIndex>0</zIndex>
 			<visible>false</visible>
 		</image>
-
+		<image name="md-description-border2" extra="true">
+			<pos>1 1</pos>
+			<size>0 0</size>
+			<zIndex>0</zIndex>
+			<visible>false</visible>
+		</image>
 		<image name="art" extra="true">
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
 			<minSize>1 1</minSize>
 			<path>./_inc/images/overlay.png</path>
-			<zIndex>100</zIndex>
+			<zIndex>85</zIndex>
 		</image>
 		<image name="background" extra="true">
 			<origin>0.5 0.5</origin>
@@ -2812,7 +2968,7 @@ originally based on: "simple, carbon, art-book"
 		</text>
 		<text name="md_description" extra="true">
 			<pos>0.65 0.471</pos>
-			<size>0.35 0.35</size>
+			<size>0.342 0.45</size>
 			<alignment>left</alignment>
 			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 			<color>666666</color>
@@ -2864,44 +3020,8 @@ originally based on: "simple, carbon, art-book"
 				<animation property="scale" from="1.05" to="1" begin="1300" duration="1000" mode="easeOut"/>
 			</storyboard>
 		</image>
-
-		<rating name="md_rating">
-			<pos>0.026 0.925</pos>
-			<zIndex>160</zIndex>
-		</rating>
-		<image name="md_flag">
-			<origin>0 0.5</origin>
-			<pos>0.026 0.906</pos>
-			<maxSize>0.02 0.05</maxSize>
-			<color>FFFFFF80</color>
-			<zIndex>160</zIndex>
-		</image>
-		<image name="md_hidden">
-			<path>./_inc/images/hidden.svg</path>
-			<pos>0.161 0.939</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-		</image>
-		<image name="md_kidgame">
-			<path>./_inc/images/kid.svg</path>
-			<pos>0.14 0.939</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-		</image>
-		<image name="md_manual">
-			<path>./_inc/images/manual.svg</path>
-			<pos>0.12 0.939</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-		</image>
 		
-		<text name="LaunchButton" extra="true">
+	<!--<text name="LaunchButton" extra="true">
 			<pos>0.6964375 0.850</pos>
 			<storyboard>
 				<animation property="y" from="0.9" begin="2000" duration="1000" mode="linear"/>
@@ -2960,168 +3080,988 @@ originally based on: "simple, carbon, art-book"
 				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
 				<animation property="opacity" from="0" to="1" begin="2000" duration="1000" mode="EaseIn"/>
 			</storyboard>
-		</image>
+		</image>-->
 
-
-		<text name="md_players,md_genre,md_developer,md_publisher,md_playcount,md_gametime, md_releasedate, md_lastplayed">
+		<text name="md_genre,md_developer,md_publisher,md_playcount,md_gametime, md_releasedate, md_lastplayed">
 			<color>666666</color>
 			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 			<fontSize>0.0194444444444444</fontSize>
 		</text>
-		<image name="release_date_logo" extra="true">
-			<pos>0.65 0.054</pos>
-			<maxSize>0.035</maxSize>
-			<path>./_inc/images/game_info_releasedate.svg</path>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+
+		<image name="md_flag">
+			<origin>0 0.5</origin>
+			<pos>0.65 0.39</pos>
+			<maxSize>0.02 0.05</maxSize>
+			<color>FFFFFF90</color>
+			<zIndex>150</zIndex>
 		</image>
-		<datetime name="md_releasedate" extra="true">
-			<pos>0.68 0.06</pos>
-			<size>0.105 0.0222222222222222</size>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+		<rating name="md_rating">
+			<pos>0.6765 0.41</pos>
+			<size>0.05 0.03</size>
+			<color>666666</color>
+			<origin>0.5 0</origin>
+			<horizontalAlignment>left</horizontalAlignment>
+			<unfilledColor>80808030</unfilledColor>
+			<unfilledPath>./_inc/images/star_filled.svg</unfilledPath>
+			<zIndex>150</zIndex>
+		</rating>
+		<text name="md_players">
+			<pos>0.66 0.075</pos>
+			<size>0.03 0.03</size>
+			<origin>0.5 0.5</origin>
+			<fontPath>./_inc/fonts/players.ttf</fontPath>
+			<text>1</text>
+			<!--<size>0.03 0.03</size>
+			<pos>0.976 0.37</pos>-->
+			<alignment>center</alignment>
+			<fontSize>0.034</fontSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="md_manual,md_nomanual">
+			<path>./_inc/images/book.png</path>
+			<pos>0.6835 0.075</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_nomanual">
+			<color>80808040</color>
+		</image>
+		<image name="md_cheevos,md_notcheevos">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/icons/Contest.png</path>
+			<pos>0.7040 0.075</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_notcheevos">
+			<color>80808040</color>
+		</image> 
+		<image name="md_savestate,md_nosavestate">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/icons/SaveState.png</path>
+			<pos>0.7260 0.075</pos>
+			<x ifCheevos="false">0.7040</x>
+			<maxSize>0.02 0.03</maxSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_nosavestate">
+			<color>80808030</color>
+		</image>
+
+		<image name="md_hidden">
+			<path>./_inc/images/hidden.svg</path>
+			<pos>0.7691 0.075</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_kidgame,md_notkidgame">
+			<path>./_inc/images/kid.svg</path>
+			<pos>0.7481 0.075</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_notkidgame"> 
+			<color>80808000</color>
+		</image>
+
+
+		<datetime name="md_releasedate">
+			<pos>0.6745 0.102</pos>
+			<size>0.107 0.0222222222222222</size>
+			<format>%Y</format>
+			<zIndex>150</zIndex>
 		</datetime>
+		<image name="release_date_logo" extra="true">
+			<pos>0.6595 0.113</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_releasedate.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
 		<text name="md_publisher">
-			<pos>0.68 0.11</pos>
-			<size>0.095 0.0222222222222222</size>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<pos>0.6745 0.140</pos>
+			<size>0.107 0.0222222222222222</size>
+			<zIndex>150</zIndex>
 		</text>
 		<image name="publisher_logo" extra="true">
-			<pos>0.65 0.104</pos>
-			<maxSize>0.035</maxSize>
+			<pos>0.6595 0.151</pos>
+			<maxSize>0.02 0.03</maxSize>
 			<path>./_inc/images/game_info_publisher.svg</path>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
 		</image>
-		<text name="md_players">
-			<pos>0.68 0.26</pos>
-			<size>0.171875 0.0222222222222222</size>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<image name="players_logo" extra="true">
-			<pos>0.65 0.254</pos>
+	<!--<image name="players_logo" extra="true">
+			<pos>0.4125 0.304</pos>
 			<maxSize>0.035</maxSize>
 			<path>./_inc/images/game_info_players.svg</path>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
-		</image>
+			<zIndex>150</zIndex>
+		</image>-->
 		<text name="md_playcount">
-			<pos>0.68 0.31</pos>
-			<size>0.171875 0.0222222222222222</size>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<pos>0.6745 0.291</pos>
+			<size>0.107 0.0222222222222222</size>
+			<zIndex>150</zIndex>
 		</text>
 		<image name="playcount_logo" extra="true">
-			<pos>0.65 0.304</pos>
-			<maxSize>0.035</maxSize>
+			<pos>0.6595 0.302</pos>
+			<maxSize>0.02 0.03</maxSize>
 			<path>./_inc/images/game_info_playcount3.svg</path>
-			<zIndex>180</zIndex>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+
+		<text name="md_developer">
+			<pos>0.6745 0.178</pos>
+			<size>0.107 0.0222222222222222</size>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="developer_logo" extra="true">
+			<pos>0.6595 0.189</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_developer.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+		<text name="md_genre">
+			<pos>0.6745 0.216</pos>
+			<size>0.107 0.0222222222222222</size>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="genre_logo" extra="true">
+			<pos>0.6595 0.227</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_genre.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+		<datetime name="md_lastplayed">
+			<pos>0.8655 0.205</pos>
+			<size>0.107 0.0222222222222222</size>
+			<origin>0.5 0.5</origin>
+			<zIndex>1</zIndex>
+			<visible>false</visible>
+		</datetime>
+	<!--<image name="lastplayed_logo" extra="true">
+			<pos>0.5525 0.204</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_lastplayed.svg</path>
+			<zIndex>150</zIndex>
+		</image>-->
+		<text name="md_gametime">
+			<pos>0.6745 0.254</pos>
+			<size>0.107 0.0222222222222222</size>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="gametime_logo" extra="true">
+			<pos>0.6595 0.265</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_lastplayed.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+	</customView>
+
+<!-- Colorful + Carousel (вертикально) -->
+<customView name="Colorful + Whell Left (vertically)" inherits="gamecarousel" displayName="${ColorfulViewNameWhellLeft}">
+		<gamecarousel name="gamecarousel">
+			<type>vertical_wheel</type>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<logoScale>2.5</logoScale>
+			<logoSize>0.1 0.1</logoSize>
+			<logoRotation>6.5</logoRotation>
+			<logoRotationOrigin>-4.0 0.3</logoRotationOrigin>
+			<logoAlignment>left</logoAlignment>
+			<maxLogoCount>15</maxLogoCount>
+			<zIndex>82</zIndex>
+			<imageSource>marquee</imageSource>
+			<scrollSound>./_inc/sound/scroll.wav</scrollSound>
+		</gamecarousel>
+
+	<!--<gamecarousel name="gamecarousel">
+			<type>vertical_wheel</type>
+      <pos>0.0 -0.222</pos>
+      <size>0.52 0.675</size>
+      <logoScale>2.5</logoScale>
+      <logoSize>0.15 0.12</logoSize>
+      <maxLogoCount>15</maxLogoCount>
+			<logoRotation>-8.5</logoRotation>
+			<logoRotationOrigin>-4.0 0.3</logoRotationOrigin>
+			<logoAlignment>left</logoAlignment>
+			<zIndex>150</zIndex>
+			<imageSource>marquee</imageSource>
+			<scrollSound>./_inc/sound/scroll.wav</scrollSound>
+		</gamecarousel>
+
+	<gamecarousel name="gamecarousel">
+			<type>vertical_wheel</type>
+      <pos>0.48 -0.222</pos>
+      <size>0.52 0.675</size>
+      <logoScale>2.5</logoScale>
+      <logoSize>0.15 0.12</logoSize>
+      <maxLogoCount>15</maxLogoCount>
+			<logoRotation>8.5</logoRotation>
+			<logoRotationOrigin>4.0 0.3</logoRotationOrigin>
+			<logoAlignment>right</logoAlignment>
+			<zIndex>150</zIndex>
+			<imageSource>marquee</imageSource>
+			<scrollSound>./_inc/sound/scroll.wav</scrollSound>
+		</gamecarousel>-->
+		<text name="gamecarouselLogoText">
+			<color>FFFFFFFF</color>
+			<glowColor>000000FF</glowColor>
+			<glowSize>3</glowSize>
+			<lineSpacing>1.0</lineSpacing>
+			<fontSize>0.03</fontSize>
+		</text>
+		<text name="logoText">
+			<pos>0.784375 0.1527777777777778</pos>
+			<size>0.15625 0.0555555555555556</size>
+			<fontSize>0.0444444444444444</fontSize>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<forceUppercase>true</forceUppercase>
+			<color>555555</color>
+		</text>
+		
+		<image name="gamelist-background" extra="true">
+			<pos>1 1</pos>
+			<size>0 0</size>
+			<zIndex>0</zIndex>
+			<visible>false</visible>
+		</image>
+		<image name="video-background" extra="true">
+			<pos>1 1</pos>
+			<size>0 0</size>
+			<zIndex>0</zIndex>
+			<visible>false</visible>
+		</image>
+		<image name="video-screen" extra="true">
+			<pos>1 1</pos>
+			<size>0 0</size>
+			<zIndex>0</zIndex>
+			<visible>false</visible>
+		</image>
+		<image name="md-description-border" extra="true">
+			<pos>1 1</pos>
+			<size>0 0</size>
+			<zIndex>0</zIndex>
+			<visible>false</visible>
+		</image>
+		<image name="md-description-border2" extra="true">
+			<pos>1 1</pos>
+			<size>0 0</size>
+			<zIndex>0</zIndex>
+			<visible>false</visible>
+		</image>
+		<image name="art" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<minSize>1 1</minSize>
+			<path>./_inc/images/overlay.png</path>
+			<zIndex>85</zIndex>
+		</image>
+		<image name="background" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>1.1 0.5</pos>
+			<minSize>1 1</minSize>
+			<color>141414</color>
+			<path>./_inc/images/space.png</path>
+			<zIndex>90</zIndex>
+		</image>
+
+		<image name="ArrowBG" extra="static">
+			<zIndex>175</zIndex>
+			<color>141414</color>
+			<path>./_inc/images/arrow_bg.jpg</path>
+			<path>./_inc/images/arrow_bg.png</path>
+			<pos>0.98 0.018</pos>
+			<maxSize>0.04</maxSize>
+			<origin>0.5 0.5</origin>
+		</image>
+		<image name="ArrowUp" extra="static">
+			<zIndex>175</zIndex>
+			<color>666666</color>
+			<path>./_inc/images/arrow_up.jpg</path>
+			<path>./_inc/images/arrow_up.png</path>
+			<pos>0.97 0.018</pos>
+			<maxSize>0.015</maxSize>
+			<storyboard repeat="forever">
+				<animation property="y" from="0.018" to="0.010" begin="0" duration="700" mode="linear"/>
+				<animation property="y" from="0.010" to="0.018" begin="700" duration="700" mode="linear"/>
+			</storyboard>
+			<origin>0.5 0.5</origin>
+		</image>
+		<image name="ArrowDown" extra="static">
+			<zIndex>175</zIndex>
+			<color>666666</color>
+			<path>./_inc/images/arrow_down.jpg</path>
+			<path>./_inc/images/arrow_down.png</path>
+			<pos>0.991 0.018</pos>
+			<maxSize>0.015</maxSize>
+			<storyboard repeat="forever">
+				<animation property="y" from="0.018" to="0.025" begin="0" duration="700" mode="linear"/>
+				<animation property="y" from="0.025" to="0.018" begin="700" duration="700" mode="linear"/>
+			</storyboard>
+			<origin>0.5 0.5</origin>
+		</image>
+
+		<image name="md_thumbnail">
+			<origin>1 0.5</origin>
+			<pos>0.64 0.5</pos>
+			<maxSize>0.2 0.4</maxSize>
+			<zIndex>90</zIndex>
 			<storyboard>
 				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="1000" mode="EaseIn"/>
+				<animation property="pos" to="0.53 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" from ="0.53 0.5" to="0.64 0.5" begin="1000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		
+		<text name="md_name" extra="true">
+			<pos>0.65 0.25</pos>
+			<size>0.35 0.2</size>
+			<alignment>left</alignment>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.06</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<visible>true</visible>
+		</text>
+		<text name="md_description" extra="true">
+			<pos>0.65 0.471</pos>
+			<size>0.342 0.45</size>
+			<alignment>left</alignment>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="1000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+
+		<video name="md_video" extra="true">
+			<pos>0.3 0.5</pos>
+			<size>0.6 1</size>
+			<origin>0.5 0.5</origin>
+			<delay>0</delay>
+			<color>606060FF</color>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<snapshotSource>image</snapshotSource>
+			<effect>none</effect>
+			<zIndex>80</zIndex>
+		</video>
+		<image name="logo" extra="true">
+			<linearSmooth>true</linearSmooth>
+			<zIndex>175</zIndex>
+			<visible>false</visible>
+			<path>./_inc/logos/${system.theme}.png</path>
+			<path>./_inc/logos/${system.theme}-${lang}.png</path>
+			<pos>0.13 0.08</pos>
+			<maxSize>0.200 0.126</maxSize>
+			<storyboard repeatAt="200">
+				<animation property="y" from="-0.2" begin="0" duration="200" mode="linear"/>
+				<animation property="scale" from="1" to="1.05" begin="300" duration="1000" mode="linear"/>
+				<animation property="scale" from="1.05" to="1" begin="1300" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+	<!--<image name="md_marquee" extra="true">
+			<linearSmooth>true</linearSmooth>
+			<visible>true</visible>
+			<zIndex>175</zIndex>
+			<pos>0.13 0.08</pos>
+			<maxSize>0.200 0.126</maxSize>
+			<storyboard repeatAt="200">
+				<animation property="y" from="-0.2" begin="0" duration="200" mode="linear"/>
+				<animation property="scale" from="1" to="1.05" begin="300" duration="1000" mode="easeOut"/>
+				<animation property="scale" from="1.05" to="1" begin="1300" duration="1000" mode="easeOut"/>
+			</storyboard>
+		</image>-->
+		
+
+		<text name="md_genre,md_developer,md_publisher,md_playcount,md_gametime, md_releasedate, md_lastplayed">
+			<color>666666</color>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontSize>0.0194444444444444</fontSize>
+		</text>
+
+		<image name="md_flag">
+			<origin>0 0.5</origin>
+			<pos>0.841 0.075</pos>
+			<maxSize>0.02 0.05</maxSize>
+			<color>FFFFFF90</color>
+			<zIndex>150</zIndex>
+		</image>
+		<rating name="md_rating">
+			<pos>0.6765 0.212</pos>
+			<size>0.05 0.03</size>
+			<color>666666</color>
+			<origin>0.5 0</origin>
+			<horizontalAlignment>left</horizontalAlignment>
+			<unfilledColor>80808030</unfilledColor>
+			<unfilledPath>./_inc/images/star_filled.svg</unfilledPath>
+			<zIndex>150</zIndex>
+		</rating>
+		<text name="md_players">
+			<pos>0.66 0.075</pos>
+			<size>0.03 0.03</size>
+			<origin>0.5 0.5</origin>
+			<fontPath>./_inc/fonts/players.ttf</fontPath>
+			<text>1</text>
+			<!--<size>0.03 0.03</size>
+			<pos>0.976 0.37</pos>-->
+			<alignment>center</alignment>
+			<fontSize>0.034</fontSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="md_manual,md_nomanual">
+			<path>./_inc/images/book.png</path>
+			<pos>0.6835 0.075</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_nomanual">
+			<color>80808040</color>
+		</image>
+		<image name="md_cheevos,md_notcheevos">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/icons/Contest.png</path>
+			<pos>0.7040 0.075</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_notcheevos">
+			<color>80808040</color>
+		</image> 
+		<image name="md_savestate,md_nosavestate">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/icons/SaveState.png</path>
+			<pos>0.7260 0.075</pos>
+			<x ifCheevos="false">0.7040</x>
+			<maxSize>0.02 0.03</maxSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_nosavestate">
+			<color>80808030</color>
+		</image>
+
+		<image name="md_hidden">
+			<path>./_inc/images/hidden.svg</path>
+			<pos>0.7691 0.075</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_kidgame,md_notkidgame">
+			<path>./_inc/images/kid.svg</path>
+			<pos>0.7481 0.075</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_notkidgame"> 
+			<color>80808000</color>
+		</image>
+
+
+		<datetime name="md_releasedate">
+			<pos>0.6745 0.102</pos>
+			<size>0.107 0.0222222222222222</size>
+			<format>%Y</format>
+			<zIndex>150</zIndex>
+		</datetime>
+		<image name="release_date_logo" extra="true">
+			<pos>0.6595 0.113</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_releasedate.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+		<text name="md_publisher">
+			<pos>0.6745 0.140</pos>
+			<size>0.107 0.0222222222222222</size>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="publisher_logo" extra="true">
+			<pos>0.6595 0.151</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_publisher.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+	<!--<image name="players_logo" extra="true">
+			<pos>0.4125 0.304</pos>
+			<maxSize>0.035</maxSize>
+			<path>./_inc/images/game_info_players.svg</path>
+			<zIndex>150</zIndex>
+		</image>-->
+		<text name="md_playcount">
+			<pos>0.6745 0.178</pos>
+			<size>0.107 0.0222222222222222</size>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="playcount_logo" extra="true">
+			<pos>0.6595 0.189</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_playcount3.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
 
 		<text name="md_developer">
-			<pos>0.68 0.16</pos>
-			<size>0.095 0.0222222222222222</size>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<pos>0.8655 0.102</pos>
+			<size>0.128 0.0222222222222222</size>
+			<zIndex>150</zIndex>
 		</text>
 		<image name="developer_logo" extra="true">
-			<pos>0.65 0.154</pos>
-			<maxSize>0.035</maxSize>
+			<pos>0.851 0.113</pos>
+			<maxSize>0.02 0.03</maxSize>
 			<path>./_inc/images/game_info_developer.svg</path>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
 		</image>
 		<text name="md_genre">
-			<pos>0.68 0.21</pos>
-			<size>0.095 0.0222222222222222</size>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<pos>0.8655 0.140</pos>
+			<size>0.128 0.0222222222222222</size>
+			<zIndex>150</zIndex>
 		</text>
 		<image name="genre_logo" extra="true">
-			<pos>0.65 0.204</pos>
-			<maxSize>0.035</maxSize>
+			<pos>0.851 0.151</pos>
+			<maxSize>0.02 0.03</maxSize>
 			<path>./_inc/images/game_info_genre.svg</path>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
 		</image>
 		<datetime name="md_lastplayed">
-			<pos>0.68 0.36</pos>
+			<pos>0.8655 0.205</pos>
 			<size>0.171875 0.0222222222222222</size>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<origin>0.5 0.5</origin>
+			<zIndex>1</zIndex>
+			<visible>false</visible>
 		</datetime>
-		<image name="lastplayed_logo" extra="true">
-			<pos>0.65 0.354</pos>
-			<maxSize>0.035</maxSize>
+	<!--<image name="lastplayed_logo" extra="true">
+			<pos>0.5525 0.204</pos>
+			<maxSize>0.02 0.03</maxSize>
 			<path>./_inc/images/game_info_lastplayed.svg</path>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
-		</image>
+			<zIndex>150</zIndex>
+		</image>-->
 		<text name="md_gametime">
-			<pos>0.68 0.41</pos>
-			<size>0.171875 0.0222222222222222</size>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<pos>0.8655 0.178</pos>
+			<size>0.128 0.0222222222222222</size>
+			<zIndex>150</zIndex>
 		</text>
 		<image name="gametime_logo" extra="true">
-			<pos>0.65 0.404</pos>
-			<maxSize>0.035</maxSize>
-			<path>./_inc/images/game_info_gametime3.svg</path>
-			<zIndex>180</zIndex>
+			<pos>0.851 0.189</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_lastplayed.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+</customView>
+
+<customView name="Colorful + Whell Right (vertically)" inherits="gamecarousel" displayName="${ColorfulViewNameWhellRight}">
+	<gamecarousel name="gamecarousel">
+		<type>vertical_wheel</type>
+			<pos>0.48 -0.15</pos>
+			<size>0.52 0.675</size>
+			<logoScale>2.5</logoScale>
+			<logoSize>0.15 0.12</logoSize>
+			<maxLogoCount>15</maxLogoCount>
+			<logoRotation>-9.5</logoRotation>
+			<logoRotationOrigin>3.5 0.0</logoRotationOrigin>
+			<logoAlignment>right</logoAlignment>
+			<zIndex>150</zIndex>
+			<imageSource>marquee</imageSource>
+			<scrollSound>./_inc/sound/scroll.wav</scrollSound>
+		</gamecarousel>
+
+		<text name="gamecarouselLogoText">
+			<color>FFFFFFFF</color>
+			<glowColor>000000FF</glowColor>
+			<glowSize>3</glowSize>
+			<lineSpacing>1.0</lineSpacing>
+			<fontSize>0.03</fontSize>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+		</text>
+		<text name="logoText">
+			<pos>0.784375 0.1527777777777778</pos>
+			<size>0.15625 0.0555555555555556</size>
+			<fontSize>0.0444444444444444</fontSize>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<forceUppercase>true</forceUppercase>
+			<color>555555</color>
+		</text>
+		
+		<image name="gamelist-background" extra="true">
+			<pos>1 1</pos>
+			<size>0 0</size>
+			<zIndex>0</zIndex>
+			<visible>false</visible>
+		</image>
+		<image name="video-background" extra="true">
+			<pos>1 1</pos>
+			<size>0 0</size>
+			<zIndex>0</zIndex>
+			<visible>false</visible>
+		</image>
+		<image name="video-screen" extra="true">
+			<pos>1 1</pos>
+			<size>0 0</size>
+			<zIndex>0</zIndex>
+			<visible>false</visible>
+		</image>
+		<image name="md-description-border" extra="true">
+			<pos>1 1</pos>
+			<size>0 0</size>
+			<zIndex>0</zIndex>
+			<visible>false</visible>
+		</image>
+		<image name="md-description-border2" extra="true">
+			<pos>1 1</pos>
+			<size>0 0</size>
+			<zIndex>0</zIndex>
+			<visible>false</visible>
+		</image>
+		<image name="art" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<minSize>1 1</minSize>
+			<path>./_inc/images/overlay.png</path>
+			<zIndex>85</zIndex>
+		</image>
+		<image name="background" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>1.1 0.5</pos>
+			<minSize>1 1</minSize>
+			<color>141414</color>
+			<path>./_inc/images/space.png</path>
+			<zIndex>90</zIndex>
+		</image>
+
+		<image name="ArrowBG" extra="static">
+			<zIndex>175</zIndex>
+			<color>141414</color>
+			<path>./_inc/images/arrow_bg.jpg</path>
+			<path>./_inc/images/arrow_bg.png</path>
+			<pos>0.98 0.018</pos>
+			<maxSize>0.04</maxSize>
+			<origin>0.5 0.5</origin>
+		</image>
+		<image name="ArrowUp" extra="static">
+			<zIndex>175</zIndex>
+			<color>666666</color>
+			<path>./_inc/images/arrow_up.jpg</path>
+			<path>./_inc/images/arrow_up.png</path>
+			<pos>0.97 0.018</pos>
+			<maxSize>0.015</maxSize>
+			<storyboard repeat="forever">
+				<animation property="y" from="0.018" to="0.010" begin="0" duration="700" mode="linear"/>
+				<animation property="y" from="0.010" to="0.018" begin="700" duration="700" mode="linear"/>
+			</storyboard>
+			<origin>0.5 0.5</origin>
+		</image>
+		<image name="ArrowDown" extra="static">
+			<zIndex>175</zIndex>
+			<color>666666</color>
+			<path>./_inc/images/arrow_down.jpg</path>
+			<path>./_inc/images/arrow_down.png</path>
+			<pos>0.991 0.018</pos>
+			<maxSize>0.015</maxSize>
+			<storyboard repeat="forever">
+				<animation property="y" from="0.018" to="0.025" begin="0" duration="700" mode="linear"/>
+				<animation property="y" from="0.025" to="0.018" begin="700" duration="700" mode="linear"/>
+			</storyboard>
+			<origin>0.5 0.5</origin>
+		</image>
+
+		<image name="md_thumbnail">
+			<origin>1 0.5</origin>
+			<pos>0.64 0.5</pos>
+			<maxSize>0.2 0.4</maxSize>
+			<zIndex>90</zIndex>
 			<storyboard>
 				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="1000" mode="EaseIn"/>
+				<animation property="pos" to="0.53 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" from ="0.53 0.5" to="0.64 0.5" begin="1000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
-	</customView>
+		
+		<text name="md_name" extra="true">
+			<pos>0.65 0.25</pos>
+			<size>0.35 0.2</size>
+			<alignment>left</alignment>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.06</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<visible>false</visible>
+		</text>
+		<text name="md_description" extra="true">
+			<pos>0.65 0.491</pos>
+			<size>0.342 0.45</size>
+			<alignment>left</alignment>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="1000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+
+		<video name="md_video" extra="true">
+			<pos>0.3 0.5</pos>
+			<size>0.6 1</size>
+			<origin>0.5 0.5</origin>
+			<delay>0</delay>
+			<color>606060FF</color>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<snapshotSource>image</snapshotSource>
+			<effect>none</effect>
+			<zIndex>80</zIndex>
+		</video>
+		<image name="logo" extra="true">
+			<linearSmooth>true</linearSmooth>
+			<zIndex>175</zIndex>
+			<visible>false</visible>
+			<path>./_inc/logos/${system.theme}.png</path>
+			<path>./_inc/logos/${system.theme}-${lang}.png</path>
+			<pos>0.13 0.08</pos>
+			<maxSize>0.200 0.126</maxSize>
+			<storyboard repeatAt="200">
+				<animation property="y" from="-0.2" begin="0" duration="200" mode="linear"/>
+				<animation property="scale" from="1" to="1.05" begin="300" duration="1000" mode="linear"/>
+				<animation property="scale" from="1.05" to="1" begin="1300" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+	<!--<image name="md_marquee" extra="true">
+			<linearSmooth>true</linearSmooth>
+			<visible>true</visible>
+			<zIndex>175</zIndex>
+			<pos>0.13 0.08</pos>
+			<maxSize>0.200 0.126</maxSize>
+			<storyboard repeatAt="200">
+				<animation property="y" from="-0.2" begin="0" duration="200" mode="linear"/>
+				<animation property="scale" from="1" to="1.05" begin="300" duration="1000" mode="easeOut"/>
+				<animation property="scale" from="1.05" to="1" begin="1300" duration="1000" mode="easeOut"/>
+			</storyboard>
+		</image>-->
+		
+
+		<text name="md_genre,md_developer,md_publisher,md_playcount,md_gametime, md_releasedate, md_lastplayed">
+			<color>666666</color>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontSize>0.0194444444444444</fontSize>
+		</text>
+
+		<image name="md_flag">
+			<origin>0 0.5</origin>
+			<pos>0.65 0.43</pos>
+			<maxSize>0.02 0.05</maxSize>
+			<color>FFFFFF90</color>
+			<zIndex>150</zIndex>
+		</image>
+		<rating name="md_rating">
+			<pos>0.6765 0.45</pos>
+			<size>0.05 0.03</size>
+			<color>666666</color>
+			<origin>0.5 0</origin>
+			<horizontalAlignment>left</horizontalAlignment>
+			<unfilledColor>80808030</unfilledColor>
+			<unfilledPath>./_inc/images/star_filled.svg</unfilledPath>
+			<zIndex>150</zIndex>
+		</rating>
+		<text name="md_players">
+			<pos>0.66 0.075</pos>
+			<size>0.03 0.03</size>
+			<origin>0.5 0.5</origin>
+			<fontPath>./_inc/fonts/players.ttf</fontPath>
+			<text>1</text>
+			<!--<size>0.03 0.03</size>
+			<pos>0.976 0.37</pos>-->
+			<alignment>center</alignment>
+			<fontSize>0.034</fontSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="md_manual,md_nomanual">
+			<path>./_inc/images/book.png</path>
+			<pos>0.6835 0.075</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_nomanual">
+			<color>80808040</color>
+		</image>
+		<image name="md_cheevos,md_notcheevos">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/icons/Contest.png</path>
+			<pos>0.7040 0.075</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_notcheevos">
+			<color>80808040</color>
+		</image> 
+		<image name="md_savestate,md_nosavestate">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/icons/SaveState.png</path>
+			<pos>0.7260 0.075</pos>
+			<x ifCheevos="false">0.7040</x>
+			<maxSize>0.02 0.03</maxSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_nosavestate">
+			<color>80808030</color>
+		</image>
+
+		<image name="md_hidden">
+			<path>./_inc/images/hidden.svg</path>
+			<pos>0.7691 0.075</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_kidgame,md_notkidgame">
+			<path>./_inc/images/kid.svg</path>
+			<pos>0.7481 0.075</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_notkidgame"> 
+			<color>80808000</color>
+		</image>
+
+
+		<datetime name="md_releasedate">
+			<pos>0.6745 0.102</pos>
+			<size>0.107 0.0222222222222222</size>
+			<format>%Y</format>
+			<zIndex>150</zIndex>
+		</datetime>
+		<image name="release_date_logo" extra="true">
+			<pos>0.6595 0.113</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_releasedate.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+		<text name="md_publisher">
+			<pos>0.6745 0.140</pos>
+			<size>0.107 0.0222222222222222</size>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="publisher_logo" extra="true">
+			<pos>0.6595 0.151</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_publisher.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+	<!--<image name="players_logo" extra="true">
+			<pos>0.4125 0.304</pos>
+			<maxSize>0.035</maxSize>
+			<path>./_inc/images/game_info_players.svg</path>
+			<zIndex>150</zIndex>
+		</image>-->
+		<text name="md_playcount">
+			<pos>0.6745 0.291</pos>
+			<size>0.107 0.0222222222222222</size>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="playcount_logo" extra="true">
+			<pos>0.6595 0.302</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_playcount3.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+
+		<text name="md_developer">
+			<pos>0.6745 0.178</pos>
+			<size>0.107 0.0222222222222222</size>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="developer_logo" extra="true">
+			<pos>0.6595 0.189</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_developer.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+		<text name="md_genre">
+			<pos>0.6745 0.216</pos>
+			<size>0.107 0.0222222222222222</size>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="genre_logo" extra="true">
+			<pos>0.6595 0.227</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_genre.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+		<datetime name="md_lastplayed">
+			<pos>0.8655 0.205</pos>
+			<size>0.107 0.0222222222222222</size>
+			<origin>0.5 0.5</origin>
+			<zIndex>1</zIndex>
+			<visible>false</visible>
+		</datetime>
+	<!--<image name="lastplayed_logo" extra="true">
+			<pos>0.5525 0.204</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_lastplayed.svg</path>
+			<zIndex>150</zIndex>
+		</image>-->
+		<text name="md_gametime">
+			<pos>0.6745 0.254</pos>
+			<size>0.107 0.0222222222222222</size>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="gametime_logo" extra="true">
+			<pos>0.6595 0.265</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_lastplayed.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+</customView>
+
 
 <!-- Colorful (горизонтально) -->
 <customView name="Colorful (horizontally)" inherits="grid" displayName="${Colorful2ViewName}">
@@ -3130,7 +4070,8 @@ originally based on: "simple, carbon, art-book"
 			<pos>0.5 0.5</pos>
 			<minSize>1 1</minSize>
 			<path>./_inc/images/overlay.png</path>
-			<zIndex>100</zIndex>
+			<zIndex>1</zIndex>
+			<visible>false</visible>
 		</image>
 		<image name="background" extra="true">
 			<origin>0.5 0.5</origin>
@@ -3191,8 +4132,8 @@ originally based on: "simple, carbon, art-book"
 		</image>
 		
 		<text name="md_name" extra="true">
-			<pos>0.31 0.6</pos>
-			<size>0.69 0.1</size>
+			<pos>0.3 0.6</pos>
+			<size>0.695 0.1</size>
 			<alignment>left</alignment>
 			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 			<color>FFFFFF</color>
@@ -3206,8 +4147,8 @@ originally based on: "simple, carbon, art-book"
 			</storyboard>
 		</text>
 		<text name="md_description" extra="true">
-			<pos>0.31 0.7</pos>
-			<size>0.4 0.21</size>
+			<pos>0.3 0.7</pos>
+			<size>0.4 0.24</size>
 			<alignment>left</alignment>
 			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 			<color>666666</color>
@@ -3222,8 +4163,8 @@ originally based on: "simple, carbon, art-book"
 		</text>
 
 		<video name="md_video">
-			<pos>0.5 0.2</pos>
-			<size>1 1</size>
+			<pos>0.5 0.25</pos>
+			<size>1 0.8</size>
 			<origin>0.5 0.5</origin>
 			<delay>0</delay>
 			<color>606060FF</color>
@@ -3259,59 +4200,7 @@ originally based on: "simple, carbon, art-book"
 			</storyboard>
 		</image>
 
-		<rating name="md_rating">
-			<pos>0.75 0.695</pos>
-			<zIndex>160</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
-		</rating>
-		<image name="md_flag">
-			<origin>1 1</origin>
-			<pos>1 0.6</pos>
-			<maxSize>0.02 0.05</maxSize>
-			<color>FFFFFF80</color>
-			<zIndex>90</zIndex>
-		</image>
-		<image name="md_hidden">
-			<path>./_inc/images/hidden.svg</path>
-			<pos>0.885 0.709</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
-		</image>
-		<image name="md_kidgame">
-			<path>./_inc/images/kid.svg</path>
-			<pos>0.864 0.709</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
-		</image>
-		<image name="md_manual">
-			<path>./_inc/images/manual.svg</path>
-			<pos>0.844 0.709</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
-		</image>
-		
-		<text name="LaunchButton" extra="true">
+	<!--<text name="LaunchButton" extra="true">
 			<storyboard>
 				<animation property="y" from="0.9" begin="2000" duration="1000" mode="linear"/>
 				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
@@ -3355,167 +4244,186 @@ originally based on: "simple, carbon, art-book"
 				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
 				<animation property="opacity" from="0" to="1" begin="2000" duration="1000" mode="EaseIn"/>
 			</storyboard>
-		</image>
-
+		</image>-->
 
 		<text name="md_players,md_genre,md_developer,md_publisher,md_playcount,md_gametime, md_releasedate, md_lastplayed">
 			<color>666666</color>
 			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 			<fontSize>0.0194444444444444</fontSize>
 		</text>
-		<image name="release_date_logo" extra="true">
-			<pos>0.75 0.734</pos>
-			<maxSize>0.035</maxSize>
-			<path>./_inc/images/game_info_releasedate.svg</path>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+
+		<image name="md_flag">
+			<pos>0.8410 0.715</pos>
+			<color>FFFFFF90</color>
+			<zIndex>150</zIndex>
 		</image>
-		<datetime name="md_releasedate" extra="true">
-			<pos>0.78 0.74</pos>
+		<rating name="md_rating">
+			<pos>0.7365 0.852</pos>
+			<zIndex>150</zIndex>
+		</rating>
+		<text name="md_players">
+			<pos>0.7200 0.715</pos>
+			<size>0.03 0.03</size>
+			<origin>0.5 0.5</origin>
+			<fontPath>./_inc/fonts/players.ttf</fontPath>
+			<text>1</text>
+			<!--<size>0.03 0.03</size>
+			<pos>0.976 0.37</pos>-->
+			<alignment>center</alignment>
+			<fontSize>0.034</fontSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="md_manual,md_nomanual">
+			<path>./_inc/images/book.png</path>
+			<pos>0.7435 0.715</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_nomanual">
+			<color>80808040</color>
+		</image>
+		<image name="md_cheevos,md_notcheevos">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/icons/Contest.png</path>
+			<pos>0.7640 0.715</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_notcheevos">
+			<color>80808040</color>
+		</image> 
+		<image name="md_savestate,md_nosavestate">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/icons/SaveState.png</path>
+			<pos>0.7860 0.715</pos>
+			<x ifCheevos="false">0.7640</x>
+			<maxSize>0.02 0.03</maxSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_nosavestate">
+			<color>80808030</color>
+		</image>
+
+		<image name="md_hidden">
+			<path>./_inc/images/hidden.svg</path>
+			<pos>0.8291 0.715</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_kidgame,md_notkidgame">
+			<path>./_inc/images/kid.svg</path>
+			<pos>0.8081 0.715</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_notkidgame"> 
+			<color>80808000</color>
+		</image>
+
+
+		<datetime name="md_releasedate">
+			<pos>0.7345 0.742</pos>
 			<size>0.105 0.0222222222222222</size>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<format>%Y</format>
+			<zIndex>150</zIndex>
 		</datetime>
+		<image name="release_date_logo" extra="true">
+			<pos>0.7195 0.753</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_releasedate.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
 		<text name="md_publisher">
-			<pos>0.78 0.79</pos>
+			<pos>0.7345 0.780</pos>
 			<size>0.105 0.0222222222222222</size>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<zIndex>150</zIndex>
 		</text>
 		<image name="publisher_logo" extra="true">
-			<pos>0.75 0.784</pos>
-			<maxSize>0.035</maxSize>
+			<pos>0.7195 0.791</pos>
+			<maxSize>0.02 0.03</maxSize>
 			<path>./_inc/images/game_info_publisher.svg</path>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
 		</image>
-		<text name="md_players">
-			<pos>0.78 0.84</pos>
-			<size>0.171875 0.0222222222222222</size>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<image name="players_logo" extra="true">
-			<pos>0.75 0.834</pos>
+	<!--<image name="players_logo" extra="true">
+			<pos>0.4125 0.304</pos>
 			<maxSize>0.035</maxSize>
 			<path>./_inc/images/game_info_players.svg</path>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
-		</image>
+			<zIndex>150</zIndex>
+		</image>-->
 		<text name="md_playcount">
-			<pos>0.78 0.89</pos>
-			<size>0.171875 0.0222222222222222</size>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<pos>0.7345 0.818</pos>
+			<size>0.105 0.0222222222222222</size>
+			<zIndex>150</zIndex>
 		</text>
 		<image name="playcount_logo" extra="true">
-			<pos>0.75 0.884</pos>
-			<maxSize>0.035</maxSize>
+			<pos>0.7195 0.829</pos>
+			<maxSize>0.02 0.03</maxSize>
 			<path>./_inc/images/game_info_playcount3.svg</path>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
 		</image>
 
 		<text name="md_developer">
-			<pos>0.92 0.74</pos>
-			<size>0.08 0.0222222222222222</size>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<pos>0.8655 0.742</pos>
+			<size>0.128 0.0222222222222222</size>
+			<zIndex>150</zIndex>
 		</text>
 		<image name="developer_logo" extra="true">
-			<pos>0.89 0.734</pos>
-			<maxSize>0.035</maxSize>
+			<pos>0.851 0.753</pos>
+			<maxSize>0.02 0.03</maxSize>
 			<path>./_inc/images/game_info_developer.svg</path>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
 		</image>
 		<text name="md_genre">
-			<pos>0.92 0.79</pos>
-			<size>0.08 0.0222222222222222</size>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<pos>0.8655 0.780</pos>
+			<size>0.128 0.0222222222222222</size>
+			<zIndex>150</zIndex>
 		</text>
 		<image name="genre_logo" extra="true">
-			<pos>0.89 0.784</pos>
-			<maxSize>0.035</maxSize>
+			<pos>0.851 0.791</pos>
+			<maxSize>0.02 0.03</maxSize>
 			<path>./_inc/images/game_info_genre.svg</path>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
 		</image>
 		<datetime name="md_lastplayed">
-			<pos>0.92 0.84</pos>
+			<pos>0.8655 0.205</pos>
 			<size>0.171875 0.0222222222222222</size>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<origin>0.5 0.5</origin>
+			<zIndex>1</zIndex>
+			<visible>false</visible>
 		</datetime>
-		<image name="lastplayed_logo" extra="true">
-			<pos>0.89 0.834</pos>
-			<maxSize>0.035</maxSize>
+	<!--<image name="lastplayed_logo" extra="true">
+			<pos>0.5525 0.204</pos>
+			<maxSize>0.02 0.03</maxSize>
 			<path>./_inc/images/game_info_lastplayed.svg</path>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
-		</image>
+			<zIndex>150</zIndex>
+		</image>-->
 		<text name="md_gametime">
-			<pos>0.92 0.89</pos>
-			<size>0.171875 0.0222222222222222</size>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<pos>0.8655 0.818</pos>
+			<size>0.128 0.0222222222222222</size>
+			<zIndex>150</zIndex>
 		</text>
 		<image name="gametime_logo" extra="true">
-			<pos>0.89 0.884</pos>
-			<maxSize>0.035</maxSize>
-			<path>./_inc/images/game_info_gametime3.svg</path>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<pos>0.851 0.829</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_lastplayed.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
 		</image>
+		
 		
 		
 		<imagegrid name="gamegrid">
@@ -3551,6 +4459,16 @@ originally based on: "simple, carbon, art-book"
 			<fontSize>0</fontSize>
 			<size>1 0</size>
 		</text>
+		<image name="gridtile.favorite">
+			<color>FFFFFF00</color>
+			<visible>false</visible>
+		</image>
+		<ninepatch name="gridtile.background:selected">
+			<color>FFFFFF00</color>
+			<visible>false</visible>
+			<animateColor>FFFFFF00</animateColor>
+			<animateColorTime>0</animateColorTime>
+		</ninepatch>
 	</customView>
 
 <!-- Colorful + Gamelist (горизонтально) -->
@@ -3563,7 +4481,7 @@ originally based on: "simple, carbon, art-book"
 			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 			<forceUppercase>1</forceUppercase>
 			<pos>0.7478125 0.6416666666666667</pos>
-			<size>0.229375 0.2855555555555556</size>
+			<size>0.229375 0.2955555555555556</size>
 			<alignment>center</alignment>
 			<lines>9</lines>
 			<horizontalMargin>0.005</horizontalMargin>
@@ -3601,7 +4519,8 @@ originally based on: "simple, carbon, art-book"
 			<pos>0.5 0.5</pos>
 			<minSize>1 1</minSize>
 			<path>./_inc/images/overlay.png</path>
-			<zIndex>100</zIndex>
+			<visible>false</visible>
+			<zIndex>1</zIndex>
 		</image>
 		<image name="background" extra="true">
 			<origin>0.5 0.5</origin>
@@ -3672,9 +4591,17 @@ originally based on: "simple, carbon, art-book"
 			<zIndex>140</zIndex>
 			<visible>false</visible>
 		</text>
+		<image name="md-description-border" extra="true">
+			<visible>false</visible>
+			<zIndex>1</zIndex>
+		</image>
+		<image name="md-description-border2" extra="true">
+			<visible>false</visible>
+			<zIndex>1</zIndex>
+		</image>
 		<text name="md_description" extra="true">
-			<pos>0.31 0.715</pos>
-			<size>0.4 0.21</size>
+			<pos>0.3 0.705</pos>
+			<size>0.4 0.2352</size>
 			<alignment>left</alignment>
 			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 			<color>666666</color>
@@ -3689,8 +4616,8 @@ originally based on: "simple, carbon, art-book"
 		</text>
 
 		<video name="md_video">
-			<pos>0.5 0.2</pos>
-			<size>1 1</size>
+			<pos>0.5 0.25</pos>
+			<size>1 0.8</size>
 			<origin>0.5 0.5</origin>
 			<delay>0</delay>
 			<color>606060FF</color>
@@ -3727,59 +4654,7 @@ originally based on: "simple, carbon, art-book"
 			</storyboard>
 		</image>
 
-		<rating name="md_rating">
-			<pos>0.75 0.605</pos>
-			<zIndex>160</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
-		</rating>
-		<image name="md_flag">
-			<origin>1 1</origin>
-			<pos>1 0.6</pos>
-			<maxSize>0.02 0.05</maxSize>
-			<color>FFFFFF80</color>
-			<zIndex>90</zIndex>
-		</image>
-		<image name="md_hidden">
-			<path>./_inc/images/hidden.svg</path>
-			<pos>0.885 0.619</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
-		</image>
-		<image name="md_kidgame">
-			<path>./_inc/images/kid.svg</path>
-			<pos>0.864 0.619</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
-		</image>
-		<image name="md_manual">
-			<path>./_inc/images/manual.svg</path>
-			<pos>0.844 0.619</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
-		</image>
-		
-		<text name="LaunchButton" extra="true">
+	<!--<text name="LaunchButton" extra="true">
 			<pos>0.3964375 0.950</pos>
 			<storyboard>
 				<animation property="y" from="0.9" begin="2000" duration="1000" mode="linear"/>
@@ -3829,168 +4704,1096 @@ originally based on: "simple, carbon, art-book"
 				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
 				<animation property="opacity" from="0" to="1" begin="2000" duration="1000" mode="EaseIn"/>
 			</storyboard>
-		</image>
-
+		</image>-->
 
 		<text name="md_players,md_genre,md_developer,md_publisher,md_playcount,md_gametime, md_releasedate, md_lastplayed">
 			<color>666666</color>
 			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 			<fontSize>0.0194444444444444</fontSize>
 		</text>
-		<image name="release_date_logo" extra="true">
-			<pos>0.31 0.604</pos>
-			<maxSize>0.035</maxSize>
-			<path>./_inc/images/game_info_releasedate.svg</path>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+		<image name="md_flag">
+			<origin>0 0.5</origin>
+			<pos>0.98 0.588</pos>
+			<maxSize>0.02 0.05</maxSize>
+			<color>FFFFFF90</color>
+			<zIndex>150</zIndex>
 		</image>
-		<datetime name="md_releasedate" extra="true">
-			<pos>0.34 0.61</pos>
-			<size>0.105 0.0222222222222222</size>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
-		</datetime>
-		<text name="md_publisher">
-			<pos>0.44 0.61</pos>
-			<size>0.06 0.0222222222222222</size>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+		<rating name="md_rating">
+			<pos>0.9555 0.606</pos>
+			<size>0.05 0.03</size>
+			<color>666666</color>
+			<origin>0.5 0</origin>
+			<horizontalAlignment>right</horizontalAlignment>
+			<unfilledColor>80808030</unfilledColor>
+			<unfilledPath>./_inc/images/star_filled.svg</unfilledPath>
+			<zIndex>150</zIndex>
+		</rating>
+		<text name="md_players">
+			<pos>0.76 0.62</pos>
+			<size>0.03 0.03</size>
+			<origin>0.5 0.5</origin>
+			<fontPath>./_inc/fonts/players.ttf</fontPath>
+			<text>1</text>
+			<!--<size>0.03 0.03</size>
+			<pos>0.976 0.37</pos>-->
+			<alignment>center</alignment>
+			<fontSize>0.034</fontSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
 		</text>
-		<image name="publisher_logo" extra="true">
-			<pos>0.41 0.604</pos>
-			<maxSize>0.035</maxSize>
-			<path>./_inc/images/game_info_publisher.svg</path>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+		<image name="md_manual,md_nomanual">
+			<path>./_inc/images/book.png</path>
+			<pos>0.7835 0.62</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_nomanual">
+			<color>80808040</color>
+		</image>
+		<image name="md_cheevos,md_notcheevos">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/icons/Contest.png</path>
+			<pos>0.8040 0.62</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_notcheevos">
+			<color>80808040</color>
+		</image> 
+		<image name="md_savestate,md_nosavestate">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/icons/SaveState.png</path>
+			<pos>0.8260 0.62</pos>
+			<x ifCheevos="false">0.8040</x>
+			<maxSize>0.02 0.03</maxSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_nosavestate">
+			<color>80808030</color>
+		</image>
+
+		<image name="md_hidden">
+			<path>./_inc/images/hidden.svg</path>
+			<pos>0.8691 0.62</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_kidgame,md_notkidgame">
+			<path>./_inc/images/kid.svg</path>
+			<pos>0.8481 0.62</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_notkidgame"> 
+			<color>80808000</color>
+		</image>
+
+
+		<datetime name="md_releasedate">
+			<pos>0.3245 0.609</pos>
+			<size>0.107 0.0222222222222222</size>
+			<format>%Y</format>
+			<zIndex>150</zIndex>
+		</datetime>
+		<image name="release_date_logo" extra="true">
+			<pos>0.3095 0.62</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_releasedate.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
 		</image>
 		<text name="md_developer">
-			<pos>0.54 0.61</pos>
-			<size>0.06 0.0222222222222222</size>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<pos>0.4570 0.609</pos>
+			<size>0.107 0.0222222222222222</size>
+			<zIndex>150</zIndex>
 		</text>
 		<image name="developer_logo" extra="true">
-			<pos>0.51 0.604</pos>
-			<maxSize>0.035</maxSize>
+			<pos>0.4425 0.62</pos>
+			<maxSize>0.02 0.03</maxSize>
 			<path>./_inc/images/game_info_developer.svg</path>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
 		</image>
+		<text name="md_playcount">
+			<pos>0.591 0.609</pos>
+			<size>0.107 0.0222222222222222</size>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="playcount_logo" extra="true">
+			<pos>0.576 0.62</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_playcount3.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+
+
 		<text name="md_genre">
-			<pos>0.64 0.61</pos>
-			<size>0.07 0.0222222222222222</size>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
+			<pos>0.3245 0.647</pos>
+			<size>0.107 0.0222222222222222</size>
+			<zIndex>150</zIndex>
 		</text>
 		<image name="genre_logo" extra="true">
-			<pos>0.61 0.604</pos>
-			<maxSize>0.035</maxSize>
+			<pos>0.3095 0.658</pos>
+			<maxSize>0.02 0.03</maxSize>
 			<path>./_inc/images/game_info_genre.svg</path>
-			<zIndex>180</zIndex>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+		<text name="md_publisher">
+			<pos>0.4570 0.647</pos>
+			<size>0.107 0.0222222222222222</size>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="publisher_logo" extra="true">
+			<pos>0.4425 0.658</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_publisher.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+		<text name="md_gametime">
+			<pos>0.591 0.647</pos>
+			<size>0.107 0.0222222222222222</size>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="gametime_logo" extra="true">
+			<pos>0.576 0.658</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_lastplayed.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+		
+	<!--<image name="players_logo" extra="true">
+			<pos>0.4125 0.304</pos>
+			<maxSize>0.035</maxSize>
+			<path>./_inc/images/game_info_players.svg</path>
+			<zIndex>150</zIndex>
+		</image>-->
+
+		<datetime name="md_lastplayed">
+			<pos>0.8655 0.205</pos>
+			<size>0.171875 0.0222222222222222</size>
+			<origin>0.5 0.5</origin>
+			<zIndex>1</zIndex>
+			<visible>false</visible>
+		</datetime>
+	<!--<image name="lastplayed_logo" extra="true">
+			<pos>0.5525 0.204</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_lastplayed.svg</path>
+			<zIndex>150</zIndex>
+		</image>-->
+	</customView>
+
+<!-- Colorful + Carousel (горизонтально) -->
+<customView name="Colorful + Whell Left (horizontally)" inherits="gamecarousel" displayName="${Colorful2ViewNameWhellLeft}">
+		<gamecarousel name="gamecarousel">
+			<type>vertical_wheel</type>
+			<pos>0 -0.22</pos>
+			<size>1 1</size>
+			<logoScale>2.5</logoScale>
+			<logoSize>0.1 0.1</logoSize>
+			<logoRotation>6.5</logoRotation>
+			<logoRotationOrigin>-4.0 0.3</logoRotationOrigin>
+			<logoAlignment>left</logoAlignment>
+			<maxLogoCount>15</maxLogoCount>
+			<zIndex>82</zIndex>
+			<imageSource>marquee</imageSource>
+			<scrollSound>./_inc/sound/scroll.wav</scrollSound>
+		</gamecarousel>
+
+	<!--<gamecarousel name="gamecarousel">
+			<type>vertical_wheel</type>
+      <pos>0.0 -0.222</pos>
+      <size>0.52 0.675</size>
+      <logoScale>2.5</logoScale>
+      <logoSize>0.15 0.12</logoSize>
+      <maxLogoCount>15</maxLogoCount>
+			<logoRotation>-8.5</logoRotation>
+			<logoRotationOrigin>-4.0 0.3</logoRotationOrigin>
+			<logoAlignment>left</logoAlignment>
+			<zIndex>150</zIndex>
+			<imageSource>marquee</imageSource>
+			<scrollSound>./_inc/sound/scroll.wav</scrollSound>
+		</gamecarousel>
+
+	<gamecarousel name="gamecarousel">
+			<type>vertical_wheel</type>
+      <pos>0.48 -0.222</pos>
+      <size>0.52 0.675</size>
+      <logoScale>2.5</logoScale>
+      <logoSize>0.15 0.12</logoSize>
+      <maxLogoCount>15</maxLogoCount>
+			<logoRotation>8.5</logoRotation>
+			<logoRotationOrigin>4.0 0.3</logoRotationOrigin>
+			<logoAlignment>right</logoAlignment>
+			<zIndex>150</zIndex>
+			<imageSource>marquee</imageSource>
+			<scrollSound>./_inc/sound/scroll.wav</scrollSound>
+		</gamecarousel>-->
+		<text name="gamecarouselLogoText">
+			<color>FFFFFFFF</color>
+			<glowColor>000000FF</glowColor>
+			<glowSize>3</glowSize>
+			<lineSpacing>1.0</lineSpacing>
+			<fontSize>0.03</fontSize>
+		</text>
+		<text name="logoText">
+			<pos>0.784375 0.1527777777777778</pos>
+			<size>0.15625 0.0555555555555556</size>
+			<fontSize>0.0444444444444444</fontSize>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<forceUppercase>true</forceUppercase>
+			<color>555555</color>
+		</text>
+		<image name="gamelist-background" extra="true">
+			<pos>1 1</pos>
+			<size>0 0</size>
+			<zIndex>0</zIndex>
+			<visible>false</visible>
+		</image>
+		<image name="video-background" extra="true">
+			<pos>1 1</pos>
+			<size>0 0</size>
+			<zIndex>0</zIndex>
+			<visible>false</visible>
+		</image>
+		<image name="video-screen" extra="true">
+			<pos>1 1</pos>
+			<size>0 0</size>
+			<zIndex>0</zIndex>
+			<visible>false</visible>
+		</image>
+		<image name="md-description-border" extra="true">
+			<pos>1 1</pos>
+			<size>0 0</size>
+			<zIndex>0</zIndex>
+			<visible>false</visible>
+		</image>
+		<image name="md-description-border2" extra="true">
+			<pos>1 1</pos>
+			<size>0 0</size>
+			<zIndex>0</zIndex>
+			<visible>false</visible>
+		</image>
+		<image name="art" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<minSize>1 1</minSize>
+			<path>./_inc/images/overlay.png</path>
+			<zIndex>1</zIndex>
+			<visible>false</visible>
+		</image>
+		<image name="background" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 1.1</pos>
+			<minSize>1 1</minSize>
+			<color>141414</color>
+			<path>./_inc/images/space.png</path>
+			<zIndex>90</zIndex>
+		</image>
+
+		<image name="ArrowBG" extra="static">
+			<zIndex>175</zIndex>
+			<color>141414</color>
+			<path>./_inc/images/arrow_bg.jpg</path>
+			<path>./_inc/images/arrow_bg.png</path>
+			<pos>0.98 0.018</pos>
+			<maxSize>0.04</maxSize>
+			<origin>0.5 0.5</origin>
+		</image>
+		<image name="ArrowUp" extra="static">
+			<zIndex>175</zIndex>
+			<color>666666</color>
+			<path>./_inc/images/arrow_up.jpg</path>
+			<path>./_inc/images/arrow_up.png</path>
+			<pos>0.97 0.018</pos>
+			<maxSize>0.015</maxSize>
+			<storyboard repeat="forever">
+				<animation property="y" from="0.018" to="0.010" begin="0" duration="700" mode="linear"/>
+				<animation property="y" from="0.010" to="0.018" begin="700" duration="700" mode="linear"/>
+			</storyboard>
+			<origin>0.5 0.5</origin>
+		</image>
+		<image name="ArrowDown" extra="static">
+			<zIndex>175</zIndex>
+			<color>666666</color>
+			<path>./_inc/images/arrow_down.jpg</path>
+			<path>./_inc/images/arrow_down.png</path>
+			<pos>0.991 0.018</pos>
+			<maxSize>0.015</maxSize>
+			<storyboard repeat="forever">
+				<animation property="y" from="0.018" to="0.025" begin="0" duration="700" mode="linear"/>
+				<animation property="y" from="0.025" to="0.018" begin="700" duration="700" mode="linear"/>
+			</storyboard>
+			<origin>0.5 0.5</origin>
+		</image>
+
+		<image name="md_thumbnail">
+			<origin>0.5 1</origin>
+			<pos>0.15 0.94</pos>
+			<maxSize>0.29 0.4</maxSize>
+			<zIndex>90</zIndex>
 			<storyboard>
 				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="1000" mode="EaseIn"/>
+				<animation property="pos" to="0.15 0.84" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" from ="0.15 0.84" to="0.15 0.94" begin="1000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		
-		<text name="md_players">
-			<pos>0.34 0.66</pos>
-			<size>0.171875 0.0222222222222222</size>
-			<zIndex>180</zIndex>
+		<text name="md_name" extra="true">
+			<pos>0.3 0.6</pos>
+			<size>0.695 0.1</size>
+			<alignment>left</alignment>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.06</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
 			<storyboard>
+				<animation property="x" from="0.34" begin="1000" duration="1000" mode="linear"/>
 				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="1000" mode="EaseIn"/>
 			</storyboard>
 		</text>
-		<image name="players_logo" extra="true">
-			<pos>0.31 0.654</pos>
+		<text name="md_description" extra="true">
+			<pos>0.3 0.7</pos>
+			<size>0.4 0.24</size>
+			<alignment>left</alignment>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="1000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+
+		<video name="md_video">
+			<pos>0.5 0.25</pos>
+			<size>1 0.8</size>
+			<origin>0.5 0.5</origin>
+			<delay>0</delay>
+			<color>606060FF</color>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<snapshotSource>image</snapshotSource>
+			<effect>none</effect>
+			<zIndex>80</zIndex>
+		</video>
+		<image name="logo" extra="true">
+			<linearSmooth>true</linearSmooth>
+			<zIndex>175</zIndex>
+			<visible>false</visible>
+			<path>./_inc/logos/${system.theme}.png</path>
+			<path>./_inc/logos/${system.theme}-${lang}.png</path>
+			<pos>0.13 0.08</pos>
+			<maxSize>0.200 0.126</maxSize>
+			<storyboard repeatAt="200">
+				<animation property="y" from="-0.2" begin="0" duration="200" mode="linear"/>
+				<animation property="scale" from="1" to="1.05" begin="300" duration="1000" mode="linear"/>
+				<animation property="scale" from="1.05" to="1" begin="1300" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="md_marquee" extra="true">
+			<linearSmooth>true</linearSmooth>
+			<zIndex>175</zIndex>
+			<pos>0.13 0.08</pos>
+			<maxSize>0.200 0.126</maxSize>
+			<storyboard repeatAt="200">
+				<animation property="y" from="-0.2" begin="0" duration="200" mode="linear"/>
+				<animation property="scale" from="1" to="1.05" begin="300" duration="1000" mode="easeOut"/>
+				<animation property="scale" from="1.05" to="1" begin="1300" duration="1000" mode="easeOut"/>
+			</storyboard>
+		</image>
+
+	<!--<text name="LaunchButton" extra="true">
+			<storyboard>
+				<animation property="y" from="0.9" begin="2000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="2000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="FavoriteButton" extra="true">
+			<storyboard>
+				<animation property="y" from="0.9" begin="2000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="2000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="RandomButton" extra="true">
+			<storyboard>
+				<animation property="y" from="0.9" begin="2000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="2000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<image name="help-launch" extra="true">
+			<zIndex>150</zIndex>
+			<storyboard>
+				<animation property="y" from="0.9" begin="2000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="2000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</image>
+		<image name="help-random" extra="true">
+			<zIndex>150</zIndex>
+			<storyboard>
+				<animation property="y" from="0.9" begin="2000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="2000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</image>
+		<image name="help-favorite" extra="true">
+			<zIndex>150</zIndex>
+			<storyboard>
+				<animation property="y" from="0.9" begin="2000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="2000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</image>-->
+
+		<text name="md_players,md_genre,md_developer,md_publisher,md_playcount,md_gametime, md_releasedate, md_lastplayed">
+			<color>666666</color>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontSize>0.0194444444444444</fontSize>
+		</text>
+
+		<image name="md_flag">
+			<pos>0.8410 0.715</pos>
+			<color>FFFFFF90</color>
+			<zIndex>150</zIndex>
+		</image>
+		<rating name="md_rating">
+			<pos>0.7365 0.852</pos>
+			<zIndex>150</zIndex>
+		</rating>
+		<text name="md_players">
+			<pos>0.7200 0.715</pos>
+			<size>0.03 0.03</size>
+			<origin>0.5 0.5</origin>
+			<fontPath>./_inc/fonts/players.ttf</fontPath>
+			<text>1</text>
+			<!--<size>0.03 0.03</size>
+			<pos>0.976 0.37</pos>-->
+			<alignment>center</alignment>
+			<fontSize>0.034</fontSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="md_manual,md_nomanual">
+			<path>./_inc/images/book.png</path>
+			<pos>0.7435 0.715</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_nomanual">
+			<color>80808040</color>
+		</image>
+		<image name="md_cheevos,md_notcheevos">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/icons/Contest.png</path>
+			<pos>0.7640 0.715</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_notcheevos">
+			<color>80808040</color>
+		</image> 
+		<image name="md_savestate,md_nosavestate">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/icons/SaveState.png</path>
+			<pos>0.7860 0.715</pos>
+			<x ifCheevos="false">0.7640</x>
+			<maxSize>0.02 0.03</maxSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_nosavestate">
+			<color>80808030</color>
+		</image>
+
+		<image name="md_hidden">
+			<path>./_inc/images/hidden.svg</path>
+			<pos>0.8291 0.715</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_kidgame,md_notkidgame">
+			<path>./_inc/images/kid.svg</path>
+			<pos>0.8081 0.715</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_notkidgame"> 
+			<color>80808000</color>
+		</image>
+
+
+		<datetime name="md_releasedate">
+			<pos>0.7345 0.742</pos>
+			<size>0.105 0.0222222222222222</size>
+			<format>%Y</format>
+			<zIndex>150</zIndex>
+		</datetime>
+		<image name="release_date_logo" extra="true">
+			<pos>0.7195 0.753</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_releasedate.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+		<text name="md_publisher">
+			<pos>0.7345 0.780</pos>
+			<size>0.105 0.0222222222222222</size>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="publisher_logo" extra="true">
+			<pos>0.7195 0.791</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_publisher.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+	<!--<image name="players_logo" extra="true">
+			<pos>0.4125 0.304</pos>
 			<maxSize>0.035</maxSize>
 			<path>./_inc/images/game_info_players.svg</path>
-			<zIndex>180</zIndex>
+			<zIndex>150</zIndex>
+		</image>-->
+		<text name="md_playcount">
+			<pos>0.7345 0.818</pos>
+			<size>0.105 0.0222222222222222</size>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="playcount_logo" extra="true">
+			<pos>0.7195 0.829</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_playcount3.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+
+		<text name="md_developer">
+			<pos>0.8655 0.742</pos>
+			<size>0.128 0.0222222222222222</size>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="developer_logo" extra="true">
+			<pos>0.851 0.753</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_developer.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+		<text name="md_genre">
+			<pos>0.8655 0.780</pos>
+			<size>0.128 0.0222222222222222</size>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="genre_logo" extra="true">
+			<pos>0.851 0.791</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_genre.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+		<datetime name="md_lastplayed">
+			<pos>0.8655 0.205</pos>
+			<size>0.171875 0.0222222222222222</size>
+			<origin>0.5 0.5</origin>
+			<zIndex>1</zIndex>
+			<visible>false</visible>
+		</datetime>
+	<!--<image name="lastplayed_logo" extra="true">
+			<pos>0.5525 0.204</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_lastplayed.svg</path>
+			<zIndex>150</zIndex>
+		</image>-->
+		<text name="md_gametime">
+			<pos>0.8655 0.818</pos>
+			<size>0.128 0.0222222222222222</size>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="gametime_logo" extra="true">
+			<pos>0.851 0.829</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_lastplayed.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+</customView>
+
+<customView name="Colorful + Whell Right (horizontally)" inherits="gamecarousel" displayName="${Colorful2ViewNameWhellRight}">
+	<gamecarousel name="gamecarousel">
+			<type>vertical_wheel</type>
+			<pos>0 -0.22</pos>
+			<size>1 1</size>
+			<logoScale>2.5</logoScale>
+			<logoSize>0.1 0.1</logoSize>
+			<logoRotation>-6.5</logoRotation>
+			<logoRotationOrigin>4.0 0.3</logoRotationOrigin>
+			<logoAlignment>right</logoAlignment>
+			<maxLogoCount>15</maxLogoCount>
+			<zIndex>82</zIndex>
+			<imageSource>marquee</imageSource>
+			<scrollSound>./_inc/sound/scroll.wav</scrollSound>
+		</gamecarousel>
+		
+		<text name="gamecarouselLogoText">
+			<color>FFFFFFFF</color>
+			<glowColor>000000FF</glowColor>
+			<glowSize>3</glowSize>
+			<lineSpacing>1.0</lineSpacing>
+			<fontSize>0.03</fontSize>
+		</text>
+		<text name="logoText">
+			<pos>0.784375 0.1527777777777778</pos>
+			<size>0.15625 0.0555555555555556</size>
+			<fontSize>0.0444444444444444</fontSize>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<forceUppercase>true</forceUppercase>
+			<color>555555</color>
+		</text>
+		<image name="gamelist-background" extra="true">
+			<pos>1 1</pos>
+			<size>0 0</size>
+			<zIndex>0</zIndex>
+			<visible>false</visible>
+		</image>
+		<image name="video-background" extra="true">
+			<pos>1 1</pos>
+			<size>0 0</size>
+			<zIndex>0</zIndex>
+			<visible>false</visible>
+		</image>
+		<image name="video-screen" extra="true">
+			<pos>1 1</pos>
+			<size>0 0</size>
+			<zIndex>0</zIndex>
+			<visible>false</visible>
+		</image>
+		<image name="md-description-border" extra="true">
+			<pos>1 1</pos>
+			<size>0 0</size>
+			<zIndex>0</zIndex>
+			<visible>false</visible>
+		</image>
+		<image name="md-description-border2" extra="true">
+			<pos>1 1</pos>
+			<size>0 0</size>
+			<zIndex>0</zIndex>
+			<visible>false</visible>
+		</image>
+		<image name="art" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<minSize>1 1</minSize>
+			<path>./_inc/images/overlay.png</path>
+			<zIndex>1</zIndex>
+			<visible>false</visible>
+		</image>
+		<image name="background" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 1.1</pos>
+			<minSize>1 1</minSize>
+			<color>141414</color>
+			<path>./_inc/images/space.png</path>
+			<zIndex>90</zIndex>
+		</image>
+
+		<image name="ArrowBG" extra="static">
+			<zIndex>175</zIndex>
+			<color>141414</color>
+			<path>./_inc/images/arrow_bg.jpg</path>
+			<path>./_inc/images/arrow_bg.png</path>
+			<pos>0.98 0.018</pos>
+			<maxSize>0.04</maxSize>
+			<origin>0.5 0.5</origin>
+		</image>
+		<image name="ArrowUp" extra="static">
+			<zIndex>175</zIndex>
+			<color>666666</color>
+			<path>./_inc/images/arrow_up.jpg</path>
+			<path>./_inc/images/arrow_up.png</path>
+			<pos>0.97 0.018</pos>
+			<maxSize>0.015</maxSize>
+			<storyboard repeat="forever">
+				<animation property="y" from="0.018" to="0.010" begin="0" duration="700" mode="linear"/>
+				<animation property="y" from="0.010" to="0.018" begin="700" duration="700" mode="linear"/>
+			</storyboard>
+			<origin>0.5 0.5</origin>
+		</image>
+		<image name="ArrowDown" extra="static">
+			<zIndex>175</zIndex>
+			<color>666666</color>
+			<path>./_inc/images/arrow_down.jpg</path>
+			<path>./_inc/images/arrow_down.png</path>
+			<pos>0.991 0.018</pos>
+			<maxSize>0.015</maxSize>
+			<storyboard repeat="forever">
+				<animation property="y" from="0.018" to="0.025" begin="0" duration="700" mode="linear"/>
+				<animation property="y" from="0.025" to="0.018" begin="700" duration="700" mode="linear"/>
+			</storyboard>
+			<origin>0.5 0.5</origin>
+		</image>
+
+		<image name="md_thumbnail">
+			<origin>0.5 1</origin>
+			<pos>0.15 0.94</pos>
+			<maxSize>0.29 0.4</maxSize>
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="1000" mode="EaseIn"/>
+				<animation property="pos" to="0.15 0.84" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" from ="0.15 0.84" to="0.15 0.94" begin="1000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		
+		<text name="md_name" extra="true">
+			<pos>0.3 0.6</pos>
+			<size>0.695 0.1</size>
+			<alignment>left</alignment>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.06</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.34" begin="1000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="md_description" extra="true">
+			<pos>0.3 0.7</pos>
+			<size>0.4 0.24</size>
+			<alignment>left</alignment>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="1000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+
+		<video name="md_video">
+			<pos>0.5 0.25</pos>
+			<size>1 0.8</size>
+			<origin>0.5 0.5</origin>
+			<delay>0</delay>
+			<color>606060FF</color>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<snapshotSource>image</snapshotSource>
+			<effect>none</effect>
+			<zIndex>80</zIndex>
+		</video>
+		<image name="logo" extra="true">
+			<linearSmooth>true</linearSmooth>
+			<zIndex>175</zIndex>
+			<visible>false</visible>
+			<path>./_inc/logos/${system.theme}.png</path>
+			<path>./_inc/logos/${system.theme}-${lang}.png</path>
+			<pos>0.13 0.08</pos>
+			<maxSize>0.200 0.126</maxSize>
+			<storyboard repeatAt="200">
+				<animation property="y" from="-0.2" begin="0" duration="200" mode="linear"/>
+				<animation property="scale" from="1" to="1.05" begin="300" duration="1000" mode="linear"/>
+				<animation property="scale" from="1.05" to="1" begin="1300" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="md_marquee" extra="true">
+			<linearSmooth>true</linearSmooth>
+			<zIndex>175</zIndex>
+			<pos>0.13 0.08</pos>
+			<maxSize>0.200 0.126</maxSize>
+			<storyboard repeatAt="200">
+				<animation property="y" from="-0.2" begin="0" duration="200" mode="linear"/>
+				<animation property="scale" from="1" to="1.05" begin="300" duration="1000" mode="easeOut"/>
+				<animation property="scale" from="1.05" to="1" begin="1300" duration="1000" mode="easeOut"/>
+			</storyboard>
+		</image>
+
+	<!--<text name="LaunchButton" extra="true">
+			<storyboard>
+				<animation property="y" from="0.9" begin="2000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="2000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="FavoriteButton" extra="true">
+			<storyboard>
+				<animation property="y" from="0.9" begin="2000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="2000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="RandomButton" extra="true">
+			<storyboard>
+				<animation property="y" from="0.9" begin="2000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="2000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<image name="help-launch" extra="true">
+			<zIndex>150</zIndex>
+			<storyboard>
+				<animation property="y" from="0.9" begin="2000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="2000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</image>
+		<image name="help-random" extra="true">
+			<zIndex>150</zIndex>
+			<storyboard>
+				<animation property="y" from="0.9" begin="2000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="2000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</image>
+		<image name="help-favorite" extra="true">
+			<zIndex>150</zIndex>
+			<storyboard>
+				<animation property="y" from="0.9" begin="2000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="2000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</image>-->
+
+		<text name="md_players,md_genre,md_developer,md_publisher,md_playcount,md_gametime, md_releasedate, md_lastplayed">
+			<color>666666</color>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontSize>0.0194444444444444</fontSize>
+		</text>
+
+		<image name="md_flag">
+			<pos>0.8410 0.715</pos>
+			<color>FFFFFF90</color>
+			<zIndex>150</zIndex>
+		</image>
+		<rating name="md_rating">
+			<pos>0.7365 0.852</pos>
+			<zIndex>150</zIndex>
+		</rating>
+		<text name="md_players">
+			<pos>0.7200 0.715</pos>
+			<size>0.03 0.03</size>
+			<origin>0.5 0.5</origin>
+			<fontPath>./_inc/fonts/players.ttf</fontPath>
+			<text>1</text>
+			<!--<size>0.03 0.03</size>
+			<pos>0.976 0.37</pos>-->
+			<alignment>center</alignment>
+			<fontSize>0.034</fontSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="md_manual,md_nomanual">
+			<path>./_inc/images/book.png</path>
+			<pos>0.7435 0.715</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_nomanual">
+			<color>80808040</color>
+		</image>
+		<image name="md_cheevos,md_notcheevos">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/icons/Contest.png</path>
+			<pos>0.7640 0.715</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_notcheevos">
+			<color>80808040</color>
+		</image> 
+		<image name="md_savestate,md_nosavestate">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/icons/SaveState.png</path>
+			<pos>0.7860 0.715</pos>
+			<x ifCheevos="false">0.7640</x>
+			<maxSize>0.02 0.03</maxSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_nosavestate">
+			<color>80808030</color>
+		</image>
+
+		<image name="md_hidden">
+			<path>./_inc/images/hidden.svg</path>
+			<pos>0.8291 0.715</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_kidgame,md_notkidgame">
+			<path>./_inc/images/kid.svg</path>
+			<pos>0.8081 0.715</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_notkidgame"> 
+			<color>80808000</color>
+		</image>
+
+
+		<datetime name="md_releasedate">
+			<pos>0.7345 0.742</pos>
+			<size>0.105 0.0222222222222222</size>
+			<format>%Y</format>
+			<zIndex>150</zIndex>
+		</datetime>
+		<image name="release_date_logo" extra="true">
+			<pos>0.7195 0.753</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_releasedate.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+		<text name="md_publisher">
+			<pos>0.7345 0.780</pos>
+			<size>0.105 0.0222222222222222</size>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="publisher_logo" extra="true">
+			<pos>0.7195 0.791</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_publisher.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+	<!--<image name="players_logo" extra="true">
+			<pos>0.4125 0.304</pos>
+			<maxSize>0.035</maxSize>
+			<path>./_inc/images/game_info_players.svg</path>
+			<zIndex>150</zIndex>
+		</image>-->
+		<text name="md_playcount">
+			<pos>0.7345 0.818</pos>
+			<size>0.105 0.0222222222222222</size>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="playcount_logo" extra="true">
+			<pos>0.7195 0.829</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_playcount3.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+
+		<text name="md_developer">
+			<pos>0.8655 0.742</pos>
+			<size>0.128 0.0222222222222222</size>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="developer_logo" extra="true">
+			<pos>0.851 0.753</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_developer.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+		<text name="md_genre">
+			<pos>0.8655 0.780</pos>
+			<size>0.128 0.0222222222222222</size>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="genre_logo" extra="true">
+			<pos>0.851 0.791</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_genre.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+		<datetime name="md_lastplayed">
+			<pos>0.8655 0.205</pos>
+			<size>0.171875 0.0222222222222222</size>
+			<origin>0.5 0.5</origin>
+			<zIndex>1</zIndex>
+			<visible>false</visible>
+		</datetime>
+	<!--<image name="lastplayed_logo" extra="true">
+			<pos>0.5525 0.204</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_lastplayed.svg</path>
+			<zIndex>150</zIndex>
+		</image>-->
+		<text name="md_gametime">
+			<pos>0.8655 0.818</pos>
+			<size>0.128 0.0222222222222222</size>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="gametime_logo" extra="true">
+			<pos>0.851 0.829</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./_inc/images/game_info_lastplayed.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+		
+</customView>
+
+<!-- Анимации иконок -->
+<customView name="Colorful + Whell Right (horizontally), Colorful + Whell Left (horizontally), Colorful + Gamelist (horizontally), Colorful (horizontally), Colorful + Whell Right (vertically), Colorful + Whell Left (vertically), Colorful + Gamelist (vertically), Colorful (vertically)">
+		<image name="gametime_logo,genre_logo,developer_logo,playcount_logo,publisher_logo,release_date_logo,md_kidgame,md_notkidgame,md_hidden,md_savestate,md_nosavestate,md_cheevos,md_notcheevos,md_manual,md_nomanual,md_flag">
 			<storyboard>
 				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
 				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
 			</storyboard>
 		</image>
-		<text name="md_playcount">
-			<pos>0.44 0.66</pos>
-			<size>0.171875 0.0222222222222222</size>
-			<zIndex>180</zIndex>
+		<text name="md_gametime,md_genre,md_developer,md_playcount,md_publisher,md_players">
 			<storyboard>
 				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
 				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
 			</storyboard>
 		</text>
-		<image name="playcount_logo" extra="true">
-			<pos>0.41 0.654</pos>
-			<maxSize>0.035</maxSize>
-			<path>./_inc/images/game_info_playcount3.svg</path>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
-		</image>
-		<datetime name="md_lastplayed">
-			<pos>0.54 0.66</pos>
-			<size>0.171875 0.0222222222222222</size>
-			<zIndex>180</zIndex>
+		<datetime name="md_lastplayed,md_releasedate">
 			<storyboard>
 				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
 				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
 			</storyboard>
 		</datetime>
-		<image name="lastplayed_logo" extra="true">
-			<pos>0.51 0.654</pos>
-			<maxSize>0.035</maxSize>
-			<path>./_inc/images/game_info_lastplayed.svg</path>
-			<zIndex>180</zIndex>
+		<rating name="md_rating">
+			<unfilledColor>282828FF</unfilledColor>
 			<storyboard>
 				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
 				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
 			</storyboard>
-		</image>
-		<text name="md_gametime">
-			<pos>0.64 0.66</pos>
-			<size>0.171875 0.0222222222222222</size>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<image name="gametime_logo" extra="true">
-			<pos>0.61 0.654</pos>
-			<maxSize>0.035</maxSize>
-			<path>./_inc/images/game_info_gametime3.svg</path>
-			<zIndex>180</zIndex>
-			<storyboard>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-			</storyboard>
-		</image>
-	</customView>
-
+		</rating>
+</customView>
 </theme>
-

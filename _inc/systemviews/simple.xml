@@ -28,8 +28,13 @@
 		<image name="logo1" extra="static">
 			<zIndex>175</zIndex>
 			<linearSmooth>true</linearSmooth>
-			<path>./../../_inc/logos/${system.theme}.png</path>
-			<path>./../../_inc/logos/${system.theme}-${lang}.png</path>
+      <!-- try png -->
+      <path>./_inc/logos/${system.theme}.png</path>
+      <!-- try svg -->
+      <path>./_inc/logos/${system.theme}.svg</path>
+      <!-- check if lang resources exist -->
+      <path>./_inc/logos/${system.theme}-${lang}.png</path>
+      <path>./_inc/logos/${system.theme}-${lang}.svg</path>
 			<pos>0.03 0.03</pos>
 			<maxSize>0.200 0.126</maxSize>
 			<storyboard repeatAt="200">
@@ -38,16 +43,6 @@
 				<animation property="scale" from="1.05" to="1" begin="1300" duration="1000" mode="easeOut"/>
 			</storyboard>
 		</image>
-		<text name="systemInfo" extra="static">
-			<backgroundColor>14141400</backgroundColor>
-			<color>777777FF</color>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<pos>-0.06 0.936</pos>
-			<alignment>right</alignment>
-			<fontSize>0.03</fontSize>
-			<zIndex>110</zIndex>
-		</text>
-
 		<image name="ArrowBG" extra="static">
 			<zIndex>175</zIndex>
 			<color>141414</color>
