@@ -19,11 +19,21 @@
 		</carousel>
 		<image name="logo">
 		<linearSmooth>true</linearSmooth>
-			<storyboard event="activate" repeatAt="1">
-				<animation property="opacity" to="1" begin="0" duration="0" mode="linear"/>
-				<animation property="scale" from="1" to="1.05" begin="0" duration="1000" mode="easeOut"/>
-				<animation property="scale" from="1.05" to="1" begin="1000" duration="1000" mode="easeOut"/>
-			</storyboard>
+<storyboard event="activate">
+<animation property="x" to="-0.5" begin="2500" duration="300" mode="EaseIn"/>
+<animation property="opacity" from="0" to="1" duration="150" mode="Linear"/>
+<animation property="opacity" from="1" to="1" begin="1150" duration="35" mode="Linear"/>
+</storyboard>
+<storyboard event="scroll">
+<animation property="x" to="-0.5" begin="1500" duration="300" mode="EaseIn"/>
+<animation property="opacity" from="0" to="1" duration="150" mode="Linear"/>
+<animation property="opacity" from="1" to="1" begin="1150" duration="35" mode="Linear"/>
+</storyboard>
+<storyboard event="deactivate">
+<animation property="x" to="-0.5" begin="1500" duration="300" mode="EaseIn"/>
+<animation property="opacity" from="0" to="1" duration="150" mode="Linear"/>
+<animation property="opacity" from="1" to="1" begin="1150" duration="35" mode="Linear"/>
+</storyboard>
 		</image>
 		<image name="ArrowBG" extra="static">
 			<zIndex>175</zIndex>
