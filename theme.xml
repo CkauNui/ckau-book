@@ -705,8 +705,10 @@ originally based on: "simple, carbon, art-book"
 		</text>
 
 		<datetime name="md_releasedate">
-			<pos>0.9095 0.9625</pos>
+			<origin>0.5 1</origin>
+			<pos>0.98 0.78</pos>
 			<size>0.1 0.0222222222222222</size>
+			<rotation>-90</rotation>
 			<alignment>left</alignment>
 			<format>%Y</format>
 			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
@@ -715,21 +717,23 @@ originally based on: "simple, carbon, art-book"
 			<zIndex>180</zIndex>
 		</datetime>
 		<image name="md_flag">
-			<origin>0 0.5</origin>
-			<pos>0.8845 0.971</pos>
+			<origin>0.5 0</origin>
+			<pos>0.98 0.88</pos>
 			<maxSize>0.02 0.05</maxSize>
+			<color>FFFFFF90</color>
 		</image>
 		<rating name="md_rating">
-			<pos>0.8225 0.956</pos>
+			<pos>0.98 0.21</pos>
 			<size>0.05 0.03</size>
+			<rotation>-90</rotation> 
 			<color>666666</color>
 			<origin>0.5 0</origin>
-			<horizontalAlignment>left</horizontalAlignment>
+			<horizontalAlignment>right</horizontalAlignment>
 			<unfilledColor>80808030</unfilledColor>
 			<unfilledPath>./_inc/images/star_filled.svg</unfilledPath>
 		</rating>
 		<text name="md_players">
-			<pos>0.782 0.971</pos>
+			<pos>0.98 0.37</pos>
 			<size>0.03 0.03</size>
 			<origin>0.5 0.5</origin>
 			<fontPath>./_inc/fonts/players.ttf</fontPath>
@@ -739,7 +743,7 @@ originally based on: "simple, carbon, art-book"
 			<color>666666</color>
 		</text>
 		<image name="md_manual,md_nomanual">
-			<pos>0.758 0.97</pos>
+			<pos>0.98 0.42</pos>
 			<path>./_inc/images/book.png</path>
 			<maxSize>0.02 0.03</maxSize>
 			<origin>0.5 0.5</origin>
@@ -752,7 +756,7 @@ originally based on: "simple, carbon, art-book"
 		<image name="md_cheevos,md_notcheevos">
 			<origin>0.5 0.5</origin>
 			<path>./_inc/icons/Contest.png</path>
-			<pos>0.7365 0.97</pos>
+			<pos>0.98 0.47</pos>
 			<maxSize>0.02 0.03</maxSize>
 			<color>666666</color>
 			<zIndex>100</zIndex>
@@ -763,8 +767,8 @@ originally based on: "simple, carbon, art-book"
 		<image name="md_savestate,md_nosavestate">
 			<origin>0.5 0.5</origin>
 			<path>./_inc/icons/SaveState.png</path>
-			<pos>0.715 0.97</pos>
-			<x ifCheevos="false">0.7365</x>
+			<pos>0.98 0.52</pos>
+			<y ifCheevos="false">0.47</y>
 			<maxSize>0.02 0.03</maxSize>
 			<color>666666</color>
 			<zIndex>150</zIndex>
@@ -773,7 +777,7 @@ originally based on: "simple, carbon, art-book"
 			<color>80808030</color>
 		</image>
 		<image name="md_hidden">
-			<pos>0.6925 0.97</pos>
+			<pos>0.98 0.92</pos>
 			<path>./_inc/images/hidden.svg</path>
 			<maxSize>0.02 0.03</maxSize>
 			<origin>0.5 0.5</origin>
@@ -781,7 +785,7 @@ originally based on: "simple, carbon, art-book"
 			<zIndex>150</zIndex>
 		</image>
 		<image name="md_kidgame,md_notkidgame">
-			<pos>0.672 0.97</pos>
+			<pos>0.98 0.57</pos>
 			<path>./_inc/images/kid.svg</path>
 			<maxSize>0.02 0.03</maxSize>
 			<origin>0.5 0.5</origin>
@@ -1140,12 +1144,12 @@ originally based on: "simple, carbon, art-book"
 			<glowSize>2</glowSize>
 		</text>
 		<image name="gridtile.favorite">
-			<path>./_inc/images/starfav.svg</path>
+			<path>./_inc/images/favorite.png</path>
 			<pos>0.93 0.07</pos>
 			<maxSize>0.10 0.10</maxSize>
 			<origin>0.5 0.5</origin>
 			<horizontalAlignment>right</horizontalAlignment>
-			<color>${baseColor}</color>
+			<color>FFFF00B0</color>
 		</image>
 		<ninepatch name="gridtile.background:selected">
 			<path>./_inc/images/framewselsq.png</path>
@@ -1627,10 +1631,14 @@ originally based on: "simple, carbon, art-book"
 		</datetime>
 		<rating name="md_rating">
 			<pos>0.051 0.92</pos>
+			<origin>0.5 0</origin>
+			<horizontalAlignment>left</horizontalAlignment>
+			<rotation>0</rotation>
 			<zIndex>150</zIndex>
 		</rating>
 		<image name="md_flag">
 			<pos>0.0262 0.905</pos>
+			<origin>0 0.5</origin>
 			<color>FFFFFF90</color>
 			<zIndex>150</zIndex>
 		</image>
@@ -1979,12 +1987,12 @@ originally based on: "simple, carbon, art-book"
 			<size>0 0</size>
 		</text>
 		<image name="gridtile.favorite">
-			<path>./_inc/images/starfav.svg</path>
+			<path>./_inc/images/favorite.png</path>
 			<pos>0.95 0.05</pos>
 			<maxSize>0.10 0.10</maxSize>
 			<origin>0.5 0.5</origin>
 			<horizontalAlignment>right</horizontalAlignment>
-			<color>${baseColor}</color>
+			<color>FFFF00B0</color>
 		</image>
 		<image name="gamelistBackground" extra="true">
 			<path>./_inc/images/space.png</path>
@@ -2054,6 +2062,96 @@ originally based on: "simple, carbon, art-book"
 			<color>A0A0B0</color>
 			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 		</text>
+		<datetime name="md_releasedate">
+			<origin>0 0</origin>
+			<pos>0.8725 0.9325</pos>
+			<size>0.1 0.0222222222222222</size>
+			<rotation>0</rotation>
+			<alignment>left</alignment>
+			<format>%Y</format>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontSize>0.0254444444444444</fontSize>
+			<color>666666</color>
+			<zIndex>180</zIndex>
+		</datetime>
+		<image name="md_flag">
+			<origin>0 0</origin>
+			<pos>0.8475 0.9305</pos>
+			<maxSize>0.02 0.05</maxSize>
+		</image>
+		<rating name="md_rating">
+			<pos>0.9595 0.926</pos>
+			<size>0.05 0.03</size>
+			<rotation>0</rotation>
+			<color>666666</color>
+			<origin>0.5 0</origin>
+			<horizontalAlignment>right</horizontalAlignment>
+			<unfilledColor>80808030</unfilledColor>
+			<unfilledPath>./_inc/images/star_filled.svg</unfilledPath>
+		</rating>
+		<text name="md_players">
+			<pos>0.832 0.941</pos>
+			<size>0.03 0.03</size>
+			<origin>0.5 0.5</origin>
+			<fontPath>./_inc/fonts/players.ttf</fontPath>
+			<text>1</text>
+			<alignment>center</alignment>
+			<fontSize>0.034</fontSize>
+			<color>666666</color>
+		</text>
+		<image name="md_manual,md_nomanual">
+			<pos>0.808 0.94</pos>
+			<path>./_inc/images/book.png</path>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_cheevos,md_notcheevos">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/icons/Contest.png</path>
+			<pos>0.7865 0.94</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<color>666666</color>
+			<zIndex>100</zIndex>
+		</image>
+		<image name="md_savestate,md_nosavestate">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/icons/SaveState.png</path>
+			<pos>0.765 0.94</pos>
+			<x ifCheevos="false">0.7865</x>
+			<maxSize>0.02 0.03</maxSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_hidden">
+			<pos>0.7425 0.94</pos>
+			<path>./_inc/images/hidden.svg</path>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_kidgame,md_notkidgame">
+			<pos>0.722 0.94</pos>
+			<path>./_inc/images/kid.svg</path>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_notkidgame"> 
+			<color>80808000</color>
+		</image>
+		<image name="md_nosavestate">
+			<color>80808030</color>
+		</image>
+		<image name="md_notcheevos">
+			<color>80808040</color>
+		</image>
+		<image name="md_nomanual">
+			<color>80808040</color>
+		</image>
 	</customView>
 
 <!-- Сетка + подробно + лого -->
@@ -2085,12 +2183,12 @@ originally based on: "simple, carbon, art-book"
 			<size>0 0</size>
 		</text>
 		<image name="gridtile.favorite">
-			<path>./_inc/images/starfav.svg</path>
+			<path>./_inc/images/favorite.png</path>
 			<pos>0.95 0.05</pos>
-			<maxSize>0.10 0.10</maxSize>
+			<maxSize>0.14 0.44</maxSize>
 			<origin>0.5 0.5</origin>
 			<horizontalAlignment>right</horizontalAlignment>
-			<color>${baseColor}</color>
+			<color>FFFF00B0</color>
 		</image>
 		<image name="gamelistBackground" extra="true">
 			<path>./_inc/images/space.png</path>
@@ -2170,6 +2268,96 @@ originally based on: "simple, carbon, art-book"
 			<animateColor>141414</animateColor>
 			<animateColorTime>650</animateColorTime>
 		</ninepatch>
+		<datetime name="md_releasedate">
+			<origin>0 0</origin>
+			<pos>0.8725 0.9325</pos>
+			<size>0.1 0.0222222222222222</size>
+			<rotation>0</rotation>
+			<alignment>left</alignment>
+			<format>%Y</format>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontSize>0.0254444444444444</fontSize>
+			<color>666666</color>
+			<zIndex>180</zIndex>
+		</datetime>
+		<image name="md_flag">
+			<origin>0 0</origin>
+			<pos>0.8475 0.9305</pos>
+			<maxSize>0.02 0.05</maxSize>
+		</image>
+		<rating name="md_rating">
+			<pos>0.9595 0.926</pos>
+			<size>0.05 0.03</size>
+			<rotation>0</rotation>
+			<color>666666</color>
+			<origin>0.5 0</origin>
+			<horizontalAlignment>right</horizontalAlignment>
+			<unfilledColor>80808030</unfilledColor>
+			<unfilledPath>./_inc/images/star_filled.svg</unfilledPath>
+		</rating>
+		<text name="md_players">
+			<pos>0.832 0.941</pos>
+			<size>0.03 0.03</size>
+			<origin>0.5 0.5</origin>
+			<fontPath>./_inc/fonts/players.ttf</fontPath>
+			<text>1</text>
+			<alignment>center</alignment>
+			<fontSize>0.034</fontSize>
+			<color>666666</color>
+		</text>
+		<image name="md_manual,md_nomanual">
+			<pos>0.808 0.94</pos>
+			<path>./_inc/images/book.png</path>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_cheevos,md_notcheevos">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/icons/Contest.png</path>
+			<pos>0.7865 0.94</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<color>666666</color>
+			<zIndex>100</zIndex>
+		</image>
+		<image name="md_savestate,md_nosavestate">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/icons/SaveState.png</path>
+			<pos>0.765 0.94</pos>
+			<x ifCheevos="false">0.7865</x>
+			<maxSize>0.02 0.03</maxSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_hidden">
+			<pos>0.7425 0.94</pos>
+			<path>./_inc/images/hidden.svg</path>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_kidgame,md_notkidgame">
+			<pos>0.722 0.94</pos>
+			<path>./_inc/images/kid.svg</path>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_notkidgame"> 
+			<color>80808000</color>
+		</image>
+		<image name="md_nosavestate">
+			<color>80808030</color>
+		</image>
+		<image name="md_notcheevos">
+			<color>80808040</color>
+		</image>
+		<image name="md_nomanual">
+			<color>80808040</color>
+		</image>
 	</customView>
 
 <!-- Карусель -->
@@ -2312,6 +2500,96 @@ originally based on: "simple, carbon, art-book"
 			<color>A0A0B0</color>
 			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 		</text>
+		<datetime name="md_releasedate">
+			<origin>0 0</origin>
+			<pos>0.8725 0.9325</pos>
+			<size>0.1 0.0222222222222222</size>
+			<rotation>0</rotation>
+			<alignment>left</alignment>
+			<format>%Y</format>
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontSize>0.0254444444444444</fontSize>
+			<color>666666</color>
+			<zIndex>180</zIndex>
+		</datetime>
+		<image name="md_flag">
+			<origin>0 0</origin>
+			<pos>0.8475 0.9305</pos>
+			<maxSize>0.02 0.05</maxSize>
+		</image>
+		<rating name="md_rating">
+			<pos>0.9595 0.926</pos>
+			<size>0.05 0.03</size>
+			<rotation>0</rotation>
+			<color>666666</color>
+			<origin>0.5 0</origin>
+			<horizontalAlignment>right</horizontalAlignment>
+			<unfilledColor>80808030</unfilledColor>
+			<unfilledPath>./_inc/images/star_filled.svg</unfilledPath>
+		</rating>
+		<text name="md_players">
+			<pos>0.832 0.941</pos>
+			<size>0.03 0.03</size>
+			<origin>0.5 0.5</origin>
+			<fontPath>./_inc/fonts/players.ttf</fontPath>
+			<text>1</text>
+			<alignment>center</alignment>
+			<fontSize>0.034</fontSize>
+			<color>666666</color>
+		</text>
+		<image name="md_manual,md_nomanual">
+			<pos>0.808 0.94</pos>
+			<path>./_inc/images/book.png</path>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_cheevos,md_notcheevos">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/icons/Contest.png</path>
+			<pos>0.7865 0.94</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<color>666666</color>
+			<zIndex>100</zIndex>
+		</image>
+		<image name="md_savestate,md_nosavestate">
+			<origin>0.5 0.5</origin>
+			<path>./_inc/icons/SaveState.png</path>
+			<pos>0.765 0.94</pos>
+			<x ifCheevos="false">0.7865</x>
+			<maxSize>0.02 0.03</maxSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_hidden">
+			<pos>0.7425 0.94</pos>
+			<path>./_inc/images/hidden.svg</path>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_kidgame,md_notkidgame">
+			<pos>0.722 0.94</pos>
+			<path>./_inc/images/kid.svg</path>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_notkidgame"> 
+			<color>80808000</color>
+		</image>
+		<image name="md_nosavestate">
+			<color>80808030</color>
+		</image>
+		<image name="md_notcheevos">
+			<color>80808040</color>
+		</image>
+		<image name="md_nomanual">
+			<color>80808040</color>
+		</image>
 	</customView>
 
 <!-- Карусель + подробно + лого -->
@@ -2620,6 +2898,7 @@ originally based on: "simple, carbon, art-book"
 		<rating name="md_rating">
 			<pos>0.6765 0.212</pos>
 			<size>0.05 0.03</size>
+			<rotation>0</rotation>
 			<color>666666</color>
 			<origin>0.5 0</origin>
 			<horizontalAlignment>left</horizontalAlignment>
@@ -2699,6 +2978,8 @@ originally based on: "simple, carbon, art-book"
 		<datetime name="md_releasedate">
 			<pos>0.6745 0.102</pos>
 			<size>0.107 0.0222222222222222</size>
+			<origin>0 0</origin>
+			<rotation>0</rotation>
 			<format>%Y</format>
 			<zIndex>150</zIndex>
 		</datetime>
@@ -4254,10 +4535,13 @@ originally based on: "simple, carbon, art-book"
 		<image name="md_flag">
 			<pos>0.8410 0.715</pos>
 			<color>FFFFFF90</color>
+			<origin>0 0.5</origin>
 			<zIndex>150</zIndex>
 		</image>
 		<rating name="md_rating">
-			<pos>0.7365 0.852</pos>
+			<pos>0.7465 0.852</pos>
+			<rotation>0</rotation>
+			<origin>0 0</origin>
 			<zIndex>150</zIndex>
 		</rating>
 		<text name="md_players">
@@ -4330,8 +4614,10 @@ originally based on: "simple, carbon, art-book"
 
 
 		<datetime name="md_releasedate">
+			<origin>0 0</origin>
 			<pos>0.7345 0.742</pos>
 			<size>0.105 0.0222222222222222</size>
+			<rotation>0</rotation>
 			<format>%Y</format>
 			<zIndex>150</zIndex>
 		</datetime>
