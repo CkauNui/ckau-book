@@ -56,7 +56,7 @@ originally based on: "simple, carbon, art-book"
 		<subset.systembackground>Фон списка систем</subset.systembackground>
 		<Art_169>Консоли (RPi3, установите лимит VRAM на 80)</Art_169>
 		<CV1>Видео на весь экран (выключите оптимизацию видео vram)</CV1>
-		<CV2>Видео для RPi3 (360p, выключите оптимизацию видео vram)</CV2>
+		<CV2>Статичное видео (положите static.mp4 в videos)</CV2>
 		<ColorfulAnim>Colorful (с анимацией)</ColorfulAnim>
 		<ColorfulNoAnim>Colorful (без анимации)</ColorfulNoAnim>
 		<Art2_169>Обои (RPi3, установите лимит VRAM на 80)</Art2_169>
@@ -102,7 +102,7 @@ originally based on: "simple, carbon, art-book"
 		<subset.systembackground>Tło listy systemów</subset.systembackground>
 		<Art_169>Obraz</Art_169>
 		<CV1>Filmowy (wymaga wyłączenia optymalizacji wideo vram)</CV1>
-		<CV2>Filmowy RPi3 (360p, wymaga wyłączenia optymalizacji wideo vram)</CV2>
+		<CV2>Filmowy Static (put static.mp4 in videos)</CV2>
 		<Art2_169>Obraz Alekfull</Art2_169>
 	</variables>
 	
@@ -139,7 +139,7 @@ originally based on: "simple, carbon, art-book"
 		<subset.systembackground>Arrière-Plan</subset.systembackground>
 		<Art_169>Consoles (RPi3, Fixez la mémoire vidéos à 80)</Art_169>
 		<CV1>Vidéos plein écran (Désactivez optimiser la mémoire pour les vidéos)</CV1>
-		<CV2>Vidéos RPi3 (360p, Désactivez optimiser la mémoire pour les vidéos)</CV2>
+		<CV2>Vidéos Static (put static.mp4 in videos)</CV2>
 		<ColorfulAnim>Colorful (animé)</ColorfulAnim>
 		<ColorfulNoAnim>Colorful (sans animation)</ColorfulNoAnim>
 		<Art2_169>Papier peint (RPi3, Fixez la mémoire vidéos à 80)</Art2_169>
@@ -188,15 +188,15 @@ originally based on: "simple, carbon, art-book"
 	<include subset="colorset" name="Orange" displayName="${orange}">./_inc/colors/orange.xml</include>
 
 <!-- Карусель -->
-	<include subset="systemview" name="Simple (anim)" displayName="${ssimple}">./_inc/systemviews/simple.xml</include>
-	<include subset="systemview" name="Wheel" displayName="${swheel}">./_inc/systemviews/wheel.xml</include>
 	<include subset="systemview" name="Wheel (anim)" displayName="${swheelanim}">./_inc/systemviews/wheel_anim.xml</include>
-	<include subset="systemview" name="Wheel Left" displayName="${swheelleft}">./_inc/systemviews/wheel_left.xml</include>
+	<include subset="systemview" name="Wheel" displayName="${swheel}">./_inc/systemviews/wheel.xml</include>
 	<include subset="systemview" name="Wheel Left (anim)" displayName="${swheelleftanim}">./_inc/systemviews/wheel_left_anim.xml</include>
-	<include subset="systemview" name="Vertical" displayName="${svertical}">./_inc/systemviews/vertical.xml</include>
+	<include subset="systemview" name="Wheel Left" displayName="${swheelleft}">./_inc/systemviews/wheel_left.xml</include>
+	<include subset="systemview" name="Simple (anim)" displayName="${ssimple}">./_inc/systemviews/simple.xml</include>
 	<include subset="systemview" name="Vertical (anim)" displayName="${sverticalanim}">./_inc/systemviews/vertical_anim.xml</include>
-	<include subset="systemview" name="Vertical Left" displayName="${sverticalleft}">./_inc/systemviews/vertical_left.xml</include>
+	<include subset="systemview" name="Vertical" displayName="${svertical}">./_inc/systemviews/vertical.xml</include>
 	<include subset="systemview" name="Vertical Left (anim)" displayName="${sverticalleftanim}">./_inc/systemviews/vertical_left_anim.xml</include>
+	<include subset="systemview" name="Vertical Left" displayName="${sverticalleft}">./_inc/systemviews/vertical_left.xml</include>
 	<include subset="systemview" name="Horizontal" displayName="${shorizontal}">./_inc/systemviews/horizontal.xml</include>
 	<include subset="systemview" name="Center" displayName="${scenter}">./_inc/systemviews/center.xml</include>
 
@@ -208,7 +208,7 @@ originally based on: "simple, carbon, art-book"
 	<include subset="systembackground" name="Consoles (RPi3, Set VRAM Limit to 80)" displayName="${Art_169}">./_inc/systemviews/art_169.xml</include>
 	<include subset="systembackground" name="Wallpapers (RPi3, Set VRAM Limit to 80)" displayName="${Art2_169}">./_inc/systemviews/art2_169.xml</include>
 	<include subset="systembackground" name="Cinematic FullScreen (Need Disable Video Optimize VRAM Use)" displayName="${CV1}">./_inc/systemviews/cinematic.xml</include>
-	<include subset="systembackground" tinyScreen="false" name="Cinematic RPi3 (360p, Need Disable Video Optimize VRAM)" displayName="${CV2}">./_inc/systemviews/cinematic_rpi3.xml</include>
+	<include subset="systembackground" name="Cinematic Static (put static.mp4 in videos)" displayName="${CV2}">./_inc/systemviews/cinematic_static.xml</include>
 
 	<include tinyScreen="true" name="TinyScreen">./_inc/systemviews/tinyscreen.xml</include>
 
