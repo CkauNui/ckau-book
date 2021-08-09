@@ -49,6 +49,7 @@ originally based on: "simple, carbon, art-book"
 		<WallpapersCarouselName>Обои + Карусель</WallpapersCarouselName>
 		<tilesViewName>Плитки</tilesViewName>
 		<tilesVideoViewName>Плитки + Видео</tilesVideoViewName>
+		<iconsViewName>Журналы</iconsViewName>
 		<gridDetailsViewName>Сетка + Подробно</gridDetailsViewName>
 		<gridDetailsMarqueeViewName>Сетка + Подробно + Лого</gridDetailsMarqueeViewName>
 		<logoDetailsViewName>Лого + Подробно</logoDetailsViewName>
@@ -2686,6 +2687,30 @@ originally based on: "simple, carbon, art-book"
 		<imagegrid name="gamegrid">
 			<showVideoAtDelay>200</showVideoAtDelay>
 		</imagegrid>
+	</customView>
+
+<!-- Журналы -->
+	<customView name="Icons" inherits="Tiles" displayName="${iconsViewName}">
+		<imagegrid name="gamegrid">
+			<autoLayout>7 2</autoLayout>
+			<cellProportion>0.6</cellProportion>
+			<cellProportion verticalScreen="true">0.77</cellProportion>
+			<autoLayout verticalScreen="true">2 0</autoLayout>
+			<margin>0.008 0.010</margin>
+		</imagegrid>
+		<text name="gridtile">
+			<fontSize>0.022</fontSize>
+			<size>1 0.12</size>
+			<padding>0 0.01 0 0.1</padding>
+			<alignment>left</alignment>
+			<singleLineScroll>false</singleLineScroll>
+		</text>
+		<text name="gridtile_selected">
+			<singleLineScroll>true</singleLineScroll>
+		</text>
+		<image name="gridtile.image">
+			<linearSmooth>true</linearSmooth>
+		</image>
 	</customView>
 
 <!-- Colorful (вертикально) -->
