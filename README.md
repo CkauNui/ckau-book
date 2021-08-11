@@ -1,6 +1,7 @@
 # ckau-book
 
 Theme for Batocera >5.24, Retrobat and more
+
 21 systems + 2 custom views added to the original theme
 
 Original Author:         Ckau
