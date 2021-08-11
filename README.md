@@ -1,4 +1,6 @@
-# ckau-book Colorful-add-systems
+# ckau-book
+# Systems added to Colorful
+
 Theme for Batocera >5.24, Retrobat and more
 
 Theme name:              ckau-book
