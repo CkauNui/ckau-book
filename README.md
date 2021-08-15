@@ -8,9 +8,13 @@ Author:         Ckau
 Site: https://4pda.ru/forum/index.php?showtopic=802556&st=1600#entry83038152
 
 based on:	"Carbon" by Fabrice CARUSO
+
 based on:	"Art Book" by Anthony Caccese
+
 based on:	art from "Alekfull Bello v2" by fagnerpc
+
 based on:	art from "Colorful" by viking
+
 
 Language: Russian, English, Deutsch, French, Polish
 
