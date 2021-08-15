@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<theme defaultView="Colorful + Gamelist (vertically)">
+<formatVersion>7</formatVersion>
+<!-- Базовый -->
+	<view name="basic">
+		<text name="logoText">
+			<pos>.5 0.1427777777777778</pos>
+			<origin>0.5 0</origin>
+			<size>0.15625 0.0555555555555556</size>
+			<fontSize>0.0444444444444444</fontSize>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>${baseColor}</color>
+			<forceUppercase>true</forceUppercase>
+		</text>
+		<image name="background" extra="true">
+			<tile>true</tile>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<size>1 1</size>
+			<path>./../../_inc/images/space.png</path>
+			<color>141414</color>
+		</image>
+		<image name="ArrowBG" extra="static">
+			<zIndex>175</zIndex>
+			<color>141414</color>
+			<path>./../../_inc/images/arrow_bg.jpg</path>
+			<path>./../../_inc/images/arrow_bg.png</path>
+			<pos>0.98 0.018</pos>
+			<maxSize>0.04</maxSize>
+			<origin>0.5 0.5</origin>
+		</image>
+		<image name="ArrowUp" extra="static">
+			<zIndex>175</zIndex>
+			<color>666666</color>
+			<path>./../../_inc/images/arrow_up.jpg</path>
+			<path>./../../_inc/images/arrow_up.png</path>
+			<pos>0.97 0.018</pos>
+			<maxSize>0.015</maxSize>
+			<storyboard repeat="forever">
+				<animation property="y" from="0.018" to="0.010" begin="0" duration="700" mode="linear"/>
+				<animation property="y" from="0.010" to="0.018" begin="700" duration="700" mode="linear"/>
+			</storyboard>
+			<origin>0.5 0.5</origin>
+		</image>
+		<image name="ArrowDown" extra="static">
+			<zIndex>175</zIndex>
+			<color>666666</color>
+			<path>./../../_inc/images/arrow_down.jpg</path>
+			<path>./../../_inc/images/arrow_down.png</path>
+			<pos>0.991 0.018</pos>
+			<maxSize>0.015</maxSize>
+			<storyboard repeat="forever">
+				<animation property="y" from="0.018" to="0.025" begin="0" duration="700" mode="linear"/>
+				<animation property="y" from="0.025" to="0.018" begin="700" duration="700" mode="linear"/>
+			</storyboard>
+			<origin>0.5 0.5</origin>
+		</image>
+		<image name="logo">
+			<path>./../../_inc/logos/${system.theme}.png</path>
+			<path>./../../_inc/logos/${system.theme}-${lang}.png</path>
+			<pos>.5 0.1427777777777778</pos>
+			<maxSize>0.260 0.126</maxSize>
+			<origin>0.5 0.5</origin>
+		</image>
+		<textlist name="gamelist">
+			<selectorColor>333333ff</selectorColor>
+			<selectedColor>${baseColor}</selectedColor>
+			<primaryColor>cccccc</primaryColor>
+			<secondaryColor>cccccc</secondaryColor>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontSize>0.025</fontSize>
+			<pos>0.1484375 0.2416666666666667</pos>
+			<size>0.703125 0.6555555555555556</size>
+			<alignment>center</alignment>
+			<lines>20</lines>
+			<horizontalMargin>0.01</horizontalMargin>
+			<forceUppercase>1</forceUppercase>
+			<scrollSound>./../../_inc/sound/scroll.wav</scrollSound>
+			<scrollbarColor>333333ff</scrollbarColor>
+			<scrollbarCorner>0.49</scrollbarCorner>
+			<scrollbarSize>0.005</scrollbarSize>
+			<scrollbarAlignment>outerright</scrollbarAlignment>
+		</textlist>
+	</view>
+</theme>

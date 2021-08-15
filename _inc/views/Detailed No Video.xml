@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<theme defaultView="Colorful + Gamelist (vertically)">
+<formatVersion>7</formatVersion>
+<!-- Подробно без видео -->
+	<customView name="Detailed No Video" inherits="detailed" displayName="${NoVideoDetailsViewName}">
+		<image name="ArrowBG" extra="static">
+			<zIndex>175</zIndex>
+			<color>141414</color>
+			<path>./../../_inc/images/arrow_bg.jpg</path>
+			<path>./../../_inc/images/arrow_bg.png</path>
+			<pos>0.98 0.018</pos>
+			<maxSize>0.04</maxSize>
+			<origin>0.5 0.5</origin>
+		</image>
+		<image name="ArrowUp" extra="static">
+			<zIndex>176</zIndex>
+			<color>666666</color>
+			<path>./../../_inc/images/arrow_up.jpg</path>
+			<path>./../../_inc/images/arrow_up.png</path>
+			<pos>0.97 0.018</pos>
+			<maxSize>0.015</maxSize>
+			<storyboard repeat="forever">
+				<animation property="y" from="0.018" to="0.010" begin="0" duration="700" mode="linear"/>
+				<animation property="y" from="0.010" to="0.018" begin="700" duration="700" mode="linear"/>
+			</storyboard>
+			<origin>0.5 0.5</origin>
+		</image>
+		<image name="ArrowDown" extra="static">
+			<zIndex>176</zIndex>
+			<color>666666</color>
+			<path>./../../_inc/images/arrow_down.jpg</path>
+			<path>./../../_inc/images/arrow_down.png</path>
+			<pos>0.991 0.018</pos>
+			<maxSize>0.015</maxSize>
+			<storyboard repeat="forever">
+				<animation property="y" from="0.018" to="0.025" begin="0" duration="700" mode="linear"/>
+				<animation property="y" from="0.025" to="0.018" begin="700" duration="700" mode="linear"/>
+			</storyboard>
+			<origin>0.5 0.5</origin>
+		</image>
+		<video name="md_video">
+			<pos>1 1</pos>
+			<size>0 0</size>
+			<zIndex>0</zIndex>
+			<visible>false</visible>
+		</video>
+		<image name="video-background" extra="true">
+			<pos>1 1</pos>
+			<size>0 0</size>
+			<zIndex>0</zIndex>
+			<visible>false</visible>
+		</image>
+		<image name="video-screen" extra="true">
+			<pos>1 1</pos>
+			<size>0 0</size>
+			<zIndex>0</zIndex>
+			<visible>false</visible>
+		</image>
+		<rating name="md_rating">
+			<pos>0.4124 0.096</pos>
+		</rating>
+		<image name="md_flag">
+			<pos>0.3864 0.3012</pos>
+			<color>FFFFFFFF</color>
+		</image>
+		<text name="md_players">
+			<pos>0.3964 0.2612</pos>
+		</text>
+		<image name="md_manual,md_nomanual">
+			<pos>0.551 0.2605</pos>
+		</image>
+		<image name="md_cheevos,md_notcheevos">
+			<pos>0.551 0.298</pos>
+		</image>
+		<image name="md_savestate,md_nosavestate">
+			<pos>0.551 0.336</pos>
+			<y ifCheevos="false">0.298</y>
+			<x ifCheevos="false">0.551</x>
+		</image>
+
+		<image name="md_hidden">
+			<pos>0.3964 0.3379</pos>
+		</image>
+		<image name="md_kidgame,md_notkidgame">
+			<pos>0.396 0.3739</pos>
+		</image>
+		
+		<datetime name="md_releasedate">
+			<pos>0.4106 0.135</pos>
+		</datetime>
+		<image name="release_date_logo" extra="true">
+			<pos>0.3956 0.146</pos>
+		</image>
+		<text name="md_publisher">
+			<pos>0.4106 0.173</pos>
+		</text>
+		<image name="publisher_logo" extra="true">
+			<pos>0.3956 0.184</pos>
+		</image>
+		<text name="md_playcount">
+			<pos>0.4106 0.211</pos>
+		</text>
+		<image name="playcount_logo" extra="true">
+			<pos>0.3956 0.222</pos>
+		</image>
+
+		<text name="md_developer">
+			<pos>0.5655 0.135</pos>
+		</text>
+		<image name="developer_logo" extra="true">
+			<pos>0.551 0.146</pos>
+		</image>
+		<text name="md_genre">
+			<pos>0.5655 0.173</pos>
+		</text>
+		<image name="genre_logo" extra="true">
+			<pos>0.551 0.184</pos>
+		</image>
+		<text name="md_gametime">
+			<pos>0.5655 0.211</pos>
+		</text>
+		<image name="gametime_logo" extra="true">
+			<pos>0.551 0.222</pos>
+		</image>
+	</customView>
+</theme>
