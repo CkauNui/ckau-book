@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<theme defaultView="Colorful + Gamelist (vertically)">
+<formatVersion>7</formatVersion>
+<!-- Плитки -->
+	<customView name="Tiles" inherits="grid" displayName="${tilesViewName}">
+		<imagegrid name="gamegrid">
+			<autoLayout>3 2</autoLayout>
+			<cellProportion>1.25</cellProportion>
+			<autoLayoutSelectedZoom>1.02</autoLayoutSelectedZoom>
+			<imageSource>image</imageSource>
+			<margin>0.005 0.010</margin>
+			<padding>0.03 0.05 0.03 0.04</padding>
+			<zIndex>11</zIndex>
+		</imagegrid>
+		<gridtile name="default">
+			<size>0.225 0.254</size>
+			<backgroundCenterColor>FFFFFF20</backgroundCenterColor>
+			<backgroundEdgeColor>FFFFFF20</backgroundEdgeColor>
+			<backgroundCornerSize>0 0</backgroundCornerSize>
+			<padding>3 3</padding>
+			<imageSizeMode>minSize</imageSizeMode>
+			<imageColor>A0A0A0FF</imageColor>
+		</gridtile>
+		<gridtile name="selected">
+			<size>0.230 0.259</size>
+			<padding>3 3</padding>
+			<backgroundCornerSize>0 0</backgroundCornerSize>
+			<imageColor>FFFFFFFF</imageColor>
+		</gridtile>
+		<text name="gridtile">
+			<color>D0D0D0D0</color>
+			<backgroundColor>00000000</backgroundColor>
+			<singleLineScroll>false</singleLineScroll>
+			<fontSize>0.026</fontSize>
+			<alignment>center</alignment>
+			<padding>0.08 0.02</padding>
+			<size>0 0.22</size>
+			<glowColor>00000008</glowColor>
+			<glowSize>2</glowSize>
+		</text>
+		<text name="gridtile_selected">
+			<singleLineScroll>false</singleLineScroll>
+			<color>FFFFFF</color>
+			<glowColor>${glowColor}</glowColor>
+			<glowSize>2</glowSize>
+		</text>
+		<image name="gridtile.marquee">
+			<color>FFFFFFD0</color>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<size>0.50 0.50</size>
+		</image>
+		<image name="gridtile.marquee:selected">
+			<color>FFFFFFFF</color>
+			<size>0.65 0.65</size>
+		</image>
+		<image name="gridtile.marquee:videoplaying">
+			<color>FFFFFFA0</color>
+			<pos>0.5 0.17</pos>
+			<size>0.50 0.25</size>
+		</image>
+		<text name="gridtile.text">
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<fontSize>0.040</fontSize>
+			<padding>0.1 0</padding>
+		</text>
+	</customView>
+</theme>
