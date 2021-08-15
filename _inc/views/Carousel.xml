@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<theme defaultView="Colorful + Gamelist (vertically)">
+<formatVersion>7</formatVersion>
+<!-- Карусель -->
+	<customView name="Carousel" inherits="grid" tinyScreen="false" displayName="${carouselViewName}">
+		<text name="md_name">
+			<color>ffffffff</color>
+			<pos>0.04 0.76</pos>
+			<size>0.92 0.10</size>
+			<alignment>center</alignment>
+			<glowColor>00000016</glowColor>
+			<glowSize>4</glowSize>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+		</text>
+		<text name="md_developer">
+			<color>808080ff</color>
+			<pos>0.04 0.80</pos>
+			<size>0.92 0.10</size>
+			<alignment>center</alignment>
+			<fontSize>0.020</fontSize>
+			<glowColor>00000016</glowColor>
+			<glowSize>3</glowSize>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+		</text>
+		<imagegrid name="gamegrid">
+			<pos>0 0.16</pos>
+			<size>1 0.84</size>
+			<padding>0.01 0.14 0.01 0.30</padding>
+			<scrollDirection>horizontal</scrollDirection>
+			<autoLayout>5 1</autoLayout>
+			<autoLayoutSelectedZoom>1.50</autoLayoutSelectedZoom>
+			<margin>0.005 0.010</margin>
+			<centerSelection>true</centerSelection>
+			<scrollLoop>true</scrollLoop>
+		</imagegrid>
+		<gridtile name="default">
+			<padding>64 16</padding>
+			<backgroundCenterColor>FFFFFF00</backgroundCenterColor>
+			<backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
+			<imageSizeMode>maxSize</imageSizeMode>
+			<imageColor>FFFFFFAA</imageColor>
+			<reflexion>0.24 0.0</reflexion>
+		</gridtile>
+		<gridtile name="selected">
+			<backgroundCenterColor>FFFFFF00</backgroundCenterColor>
+			<backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
+			<padding>64 16</padding>
+		</gridtile>
+		<text name="gridtile">
+			<color>80808080</color>
+			<fontSize>0.016</fontSize>
+			<size>1 0</size>
+		</text>
+		<text name="gridtile_selected">
+			<color>FFFFFF00</color>
+			<fontSize>0.035</fontSize>
+			<size>1 0</size>
+		</text>
+		<ninepatch name="gridtile.background:selected">
+			<color>FFFFFF00</color>
+			<visible>false</visible>
+			<animateColor>FFFFFF00</animateColor>
+			<animateColorTime>0</animateColorTime>
+		</ninepatch>
+	</customView>
+</theme>
