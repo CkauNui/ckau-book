@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+<!-- Animation gamelist logo from Lehcim Cram Trebor -->
+<view name="basic,detailed,grid,gamecarousel">
+
+		<image name="transitionMaskUp" extra="true">
+			<path>./_inc/images/transitionMask.png</path>
+			<size>1 1</size>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<color>000000</color>
+			<zIndex>9997</zIndex>
+			<opacity>1</opacity>
+			<storyboard>
+				<animation property="pos" from="0.5 0.5" to="0.5 0.5" duration="350" mode="linear"/>
+				<animation property="pos" from="0.5 0.5" to="0.5 0.425" begin="350" duration="350" mode="easeOutCubic"/>
+				<animation property="pos" from="0.5 0.425" to="0.5 -0.5" begin="700" duration="600" mode="easeInCubic"/>
+			</storyboard>
+		</image>
+
+		<image name="transitionMaskDown" extra="true">
+			<path>./_inc/images/transitionMask.png</path>
+			<flipY>true</flipY>
+			<size>1 1</size>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<color>000000</color>
+			<zIndex>9997</zIndex>
+			<opacity>1</opacity>
+			<storyboard>
+				<animation property="pos" from="0.5 0.5" to="0.5 0.5" duration="350" mode="linear"/>
+				<animation property="pos" from="0.5 0.5" to="0.5 0.575" begin="350" duration="350" mode="easeOutCubic"/>
+				<animation property="pos" from="0.5 0.575" to="0.5 1.5" begin="700" duration="600" mode="easeInCubic"/>
+			</storyboard>
+		</image>
+
+		<image name="gamelistPreloading" extra="true">
+			<linearSmooth>true</linearSmooth>
+			<tile>false</tile>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<maxSize>0.6 0.28</maxSize>
+			<color>00000000</color>
+			<reflexion>0.05 0.2</reflexion>
+			<zIndex>9999</zIndex>
+			<path>./_inc/logos/${system.theme}.png</path>
+			<path>./_inc/logos/${system.theme}.svg</path>
+			<path>./_inc/logos/${system.theme}-w.svg</path>
+			<path>./_inc/logos/${system.theme}-w-${lang}.png</path>
+			<path>./_inc/logos/${system.theme}-w-${lang}.svg</path>
+			<path>./_inc/logos/${system.theme}-${lang}.png</path>
+			<path>./_inc/logos/${system.theme}-${lang}.svg</path>
+			<path region="us">./_inc/logos/us/${system.theme}.png</path>
+			<path region="us">./_inc/logos/us/${system.theme}.svg</path>
+			<path region="us">./_inc/logos/us/${system.theme}-w.svg</path>
+			<path region="jp">./_inc/logos/jp/${system.theme}.png</path>
+			<path region="jp">./_inc/logos/jp/${system.theme}.svg</path>
+			<path region="jp">./_inc/logos/jp/${system.theme}-w.svg</path>
+			<storyboard>
+				<animation property="color" from="00000000" to="ffffff" duration="250" mode="linear"/>
+				<animation property="color" from="ffffff" to="ffffff" begin="250" duration="550" mode="easeIn"/>
+				<animation property="color" from="ffffff" to="00000000" begin="700" duration="700" mode="easeInQuint"/>
+				<animation property="reflexion" to="0 0" begin="700" duration="600" mode="easeInCubic"/>
+				<animation property="offsetX" to="1" begin="700" duration="700" mode="easeInQuint"/>
+			</storyboard>
+		</image>
+
+		<image name="gamelistPreloadingShadow" extra="true">
+			<tile>false</tile>
+			<origin>0.49 0.46</origin>
+			<pos>0.5 0.5</pos>
+			<maxSize>0.6 0.28</maxSize>
+			<color>00000000</color>
+			<zIndex>9998</zIndex>
+			<path>./_inc/logos/${system.theme}.png</path>
+			<path>./_inc/logos/${system.theme}.svg</path>
+			<path>./_inc/logos/${system.theme}-w.svg</path>
+			<path>./_inc/logos/${system.theme}-w-${lang}.png</path>
+			<path>./_inc/logos/${system.theme}-w-${lang}.svg</path>
+			<path>./_inc/logos/${system.theme}-${lang}.png</path>
+			<path>./_inc/logos/${system.theme}-${lang}.svg</path>
+			<path region="us">./_inc/logos/us/${system.theme}.png</path>
+			<path region="us">./_inc/logos/us/${system.theme}.svg</path>
+			<path region="us">./_inc/logos/us/${system.theme}-w.svg</path>
+			<path region="jp">./_inc/logos/jp/${system.theme}.png</path>
+			<path region="jp">./_inc/logos/jp/${system.theme}.svg</path>
+			<path region="jp">./_inc/logos/jp/${system.theme}-w.svg</path>
+			<storyboard>
+				<animation property="color" from="00000000" to="00000040" duration="250" mode="linear"/>
+				<animation property="color" from="00000040" to="00000040" begin="250" duration="550" mode="easeIn"/>
+				<animation property="color" from="00000040" to="00000000" begin="700" duration="700" mode="easeInQuint"/>
+				<animation property="offsetX" to="-1" begin="700" duration="700" mode="easeInQuint"/>
+			</storyboard>
+		</image>
+</view>
+</theme>
