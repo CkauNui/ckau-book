@@ -21,15 +21,15 @@
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
 			<pos>0.519 0.378</pos>
-			<maxSize>0.25</maxSize>
-			<zIndex>25</zIndex>
+			<maxSize>0.27</maxSize>
+			<zIndex>26</zIndex>
 			<storyboard>
 				<animation property="pos" to="0.239 0.378" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
 			<pos>0.49 0.2</pos>
-			<text>2011</text>
+			<text>2006</text>
 			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
 			<color>666666</color>
 			<fontSize>0.03</fontSize>
@@ -42,6 +42,7 @@
 		</text>
 		<text name="TextName" extra="true">
 			<pos>0.49 0.25</pos>
+			<size>0.5 0</size>
 			<text>Solarus</text>
 			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
 			<color>FFFFFF</color>
@@ -57,14 +58,21 @@
 		<text name="TextDesc" extra="true">
 			<size>0.5 0</size>
 			<pos>0.49 0.35</pos>
-			<text>Solarus is a Free and open-source software cross-platform Game engine for developing 2D computer graphics. It has been designed to power Action role-playing games, though, are not limited.
+			<text>Solarus was specifically designed with cult 2D action-RPG classics in mind, such as The Legend of Zelda: A Link to the Past and Secret of Mana on the Super Nintendo, or Soleil on the Sega Megadrive/Genesis.
 
-The engine is written in C++ and uses Lua (programming language) as its scripting language. It is published under the GNU General Public License.
-</text>
-			<text lang="pl">Descpriptions. Pls send me it in Discord</text>
+The engine is programmed in C++, with the SDL library and an OpenGL backend. Games made with Solarus are called quests, and are programmed in Lua.
+
+The engine does all the heavy computations (for example, collision checks) and the low-level operations like drawing the screen, animating sprites and playing sounds.
+
+As a quest maker, you are not much interested in implementing these algorithms. On the contrary, you want to define the game logic. Your Lua scripts describe the behavior of enemies, what happens when pressing a switch on a specific map. They will also implement such things as the title screen and the head-up display.
+
+Both parts (the C++ engine and the Lua scripts of your quest) communicate through the Solarus Lua API. The communication works in both ways: you can call functions of the engine (example: you want to move a non-playing character) and the engine calls your own functions (example: be informed that an enemy was just killed). But before using this Solarus API, you have to learn the basics of Lua (easy and minimal, yet powerful language).</text>
 			<text lang="fr">Descpriptions. Pls send me it in Discord</text>
 			<text lang="de">Descpriptions. Pls send me it in Discord</text>
-			<text lang="ru">Descpriptions. Pls send me it in Discord</text>
+			<text lang="ru">Solarus Engine — это фанатский открытый, бесплатный и свободный игровой движок для создания Action-RPG игр, написанный на C++ и Lua.
+Solarus был специально разработан с учетом опыта культовых классических 2D-ролевых игр, таких как The Legend of Zelda: A Link to the Past и Secret of Mana для Super Nintendo или Soleil для Sega Megadrive / Genesis.
+
+Движок написан на C ++ с SDL и бэкендом OpenGL; он выполняет необходимые вычисления (например, проверку на коллизии) и низкоуровневые операции, такие как отрисовка дисплея, анимация спрайтов и воспроизведение звуков. Игры, созданные с помощью Solarus Engine, программируются на Lua, описывая поведение врагов, или, например, что происходит при нажатии переключателя на определенной карте. Обе части (движок C ++ и сценарии Lua игры) взаимодействуют через Solarus Lua API. Связь работает в обоих направлениях: вы можете вызывать функции движка (пример: вы хотите переместить неигрового персонажа), а движок вызывает ваши собственные функции (пример: проинформировать, что враг был только что сражён). На Lua также реализовывают такие вещи, как титульный экран и отображение HUD.</text>
 			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
 			<color>666666</color>
 			<fontSize>0.025</fontSize>
