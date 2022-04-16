@@ -5,12 +5,15 @@ Theme name:     ckau-book
 Author:         Ckau
 Contributors:   Lendersmark, g-spawnPL
 
+
 This theme includes all of the ckau-book original theme assets,
 plus: 40+ systems and 2 views added in the "Colorful" option.
 
 100% up-to-date with the latest additions made by Ckau to the master branch.
 
+
 Site: https://4pda.ru/forum/index.php?showtopic=802556&st=1600#entry83038152
+
 
 based on:	"Carbon" by Fabrice CARUSO
 
