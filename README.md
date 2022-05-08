@@ -21,8 +21,8 @@ Supported languages: English, Deutsch, French, Polish, Russian.
         <img src="https://img.shields.io/github/issues-pr-closed/Lendersmark/ckau-book-enhanced" /></a>
       <a href="https://img.shields.io/github/v/release/Lendersmark/ckau-book-enhanced" alt="Version">
         <img src="https://img.shields.io/github/v/release/Lendersmark/ckau-book-enhanced" /></a>
-<!--      <a href="https://img.shields.io/github/downloads/Lendersmark/ckau-book-enhanced">
-        <img src="https://img.shields.io/github/downloads/Lendersmark/ckau-book-enhanced" alt="Downloads"></a>-->
+      <a href="https://img.shields.io/github/downloads/Lendersmark/ckau-book-enhanced/total">
+        <img src="https://img.shields.io/github/downloads/Lendersmark/ckau-book-enhanced/total" alt="Downloads"></a>
 </p>
 
 ## What is this project about?
@@ -31,6 +31,10 @@ Supported languages: English, Deutsch, French, Polish, Russian.
 Forked from awesome <a href="https://github.com/CkauNui/ckau-book">ckau-book</a> theme, <strong>ckau-book-enhanced</strong> expands the original theme by embracing more and more systems in both COLORFUL and DARKFUL variations.<br/>
 The ultimate goal of the project is to support all of Batocera and Retrobat systems in both variations, and contribute to the development of ckau-book theme by anticipating changes and improvements.<br/>
 
+## Video Showcase
+
+https://user-images.githubusercontent.com/46349178/167809027-9684eecd-47df-4162-853f-f6734c53c6b6.mp4
+      
 ## Screenshots
 
 |                                    |                                    |                                    |
@@ -48,24 +52,22 @@ The ultimate goal of the project is to support all of Batocera and Retrobat syst
 
 ## Features
 
-- 173 systems supported in COLORFUL variation
-- 135 systems supported in DARKFUL variation
+- 170+ systems supported in COLORFUL variation (details [here](https://github.com/Lendersmark/ckau-book-enhanced/wiki/Supported-Systems))
+- 130+ systems supported in DARKFUL variation (details [here](https://github.com/Lendersmark/ckau-book-enhanced/wiki/Supported-Systems))
 - 2 new game views added
 - Always up-to-date with ckau-book original theme
 - Works with both Batocera.linux and Retrobat latest builds
 - Emuelec and Retropie not officially supported, but it may work well :)
 
-## Contributing
-
-I'll gladly accept ANY help/pull requests & advice.<br/>
-If you want to contribute, I can provide source PSD files to start from.<br/>
-Also, since I'm not a designer, if you would like to fix some layout or provide better versions of the artworks, feel free to drop me a line, open an issue or a discussion.
-
-[FAQ](../../wiki/FAQ)
-
 ## Support
 
-Open up an issue 😛 or write me directly on GitHub.
+Please open an [issue](https://github.com/Lendersmark/ckau-book-enhanced/issues) or share your thought in the [Discussions](https://github.com/Lendersmark/ckau-book-enhanced/discussions) section.
+      
+## Contributing
+
+I'll gladly accept any help/pull requests & advice.<br/>
+If you want to contribute, I can provide source PSD files to start from.<br/>
+Also, since I'm not a designer, if you would like to fix some layout or provide better versions of the artworks, just let me know ☺️ 
 
 ## Credits
 
@@ -75,8 +77,9 @@ Open up an issue 😛 or write me directly on GitHub.
   - [Carbon](https://github.com/fabricecaruso/es-theme-carbon) theme by [@fabricecaruso](https://github.com/fabricecaruso)
   - [Art Book](https://github.com/anthonycaccese/es-theme-art-book) theme by [@anthonycaccese](https://github.com/anthonycaccese)
   - artworks from [Colorful](https://forums.launchbox-app.com/topic/51590-colorful-bigbox-theme) Launchbox/Bigbox theme by [Viking](https://forums.launchbox-app.com/profile/70421-viking)
-  - artworks from "Alekfull Bello v2" by fagnerpc
+  - artworks from "Alekfull Bello v2" by [@fagnerpc](https://github.com/fagnerpc)
 - Thanks to [@g-spawnPL](https://github.com/g-spawnPL) for designing many artworks & helping out with the project
+- Video Showcase by [@KevinLeenders](https://github.com/KevinLeenders)
   
 ## License
   
