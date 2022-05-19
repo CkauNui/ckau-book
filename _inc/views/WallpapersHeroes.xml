@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<theme defaultView="Colorful + Gamelist (vertically)">
+<formatVersion>7</formatVersion>
+<!-- Обои + Карусель -->
+	<customView name="WallpapersHeroes" inherits="gamecarousel" displayName="${WallpapersHeroesName}">
+		<image name="background" extra="true">
+			<color>141414</color>
+		</image>
+		<image name="gamelist-background" extra="true">
+			<visible>false</visible>
+			<zIndex>1</zIndex>
+		</image>
+<!--		<image name="md_thumbnail">
+			<visible>false</visible>
+			<zIndex>1</zIndex>
+		</image>-->
+		<image name="video-background" extra="true">
+			<visible>false</visible>
+			<zIndex>1</zIndex>
+		</image>
+		<image name="video-screen" extra="true">
+			<visible>false</visible>
+			<zIndex>1</zIndex>
+		</image>
+		<text name="md_name" extra="true">
+			<pos>0.005 0.005</pos>
+			<alignment>left</alignment>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF1F</color>
+			<fontSize>0.02</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+		</text>
+		<image name="ArrowBG" extra="static">
+			<zIndex>175</zIndex>
+			<color>141414</color>
+			<path>./../../_inc/images/arrow_bg.jpg</path>
+			<path>./../../_inc/images/arrow_bg.png</path>
+			<pos>0.98 0.018</pos>
+			<maxSize>0.04</maxSize>
+			<origin>0.5 0.5</origin>
+		</image>
+		<image name="ArrowUp" extra="static">
+			<zIndex>176</zIndex>
+			<color>666666</color>
+			<path>./../../_inc/images/arrow_up.jpg</path>
+			<path>./../../_inc/images/arrow_up.png</path>
+			<pos>0.97 0.018</pos>
+			<maxSize>0.015</maxSize>
+			<storyboard repeat="forever">
+				<animation property="y" from="0.018" to="0.010" begin="0" duration="700" mode="linear"/>
+				<animation property="y" from="0.010" to="0.018" begin="700" duration="700" mode="linear"/>
+			</storyboard>
+			<origin>0.5 0.5</origin>
+		</image>
+		<image name="ArrowDown" extra="static">
+			<zIndex>176</zIndex>
+			<color>666666</color>
+			<path>./../../_inc/images/arrow_down.jpg</path>
+			<path>./../../_inc/images/arrow_down.png</path>
+			<pos>0.991 0.018</pos>
+			<maxSize>0.015</maxSize>
+			<storyboard repeat="forever">
+				<animation property="y" from="0.018" to="0.025" begin="0" duration="700" mode="linear"/>
+				<animation property="y" from="0.025" to="0.018" begin="700" duration="700" mode="linear"/>
+			</storyboard>
+			<origin>0.5 0.5</origin>
+		</image>
+		<image name="art" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<minSize>1 1</minSize>
+			<path>./../../_inc/images/overlay3.png</path>
+			<zIndex>70</zIndex>
+		</image>
+<!--		<image name="md_image">
+			<tile>true</tile>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<minSize>1 1</minSize>
+			<color>FFFFFFDF</color>
+		</image>
+-->
+		<image name="md_fanart">
+			<origin>0.5 0</origin>
+			<pos>0.5 0</pos>
+			<color>FFFFFF5F</color>
+			<maxSize>1 1</maxSize>
+			<imageSource>fanart</imageSource>
+			<zIndex>60</zIndex>
+		</image>
+		<image name="md_thumbnail">
+			<tile>true</tile>
+			<origin>0.5 1</origin>
+			<pos>0.13 0.925</pos>
+			<maxSize>0.23 1</maxSize>
+			<zIndex>70</zIndex>
+		</image>
+		<image name="md-description-border" extra="true">
+			<visible>false</visible>
+			<zIndex>1</zIndex>
+		</image>
+		<text name="md_description">
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<pos>0.273 0.31</pos>
+			<size>0.4 0.23</size>
+			<lineSpacing>1.1</lineSpacing>
+			<fontSize>0.025</fontSize>
+			<color>FFFFFFff</color>
+			<glowColor>00000016</glowColor>
+			<glowSize>3</glowSize>
+			<zIndex>65</zIndex>
+		</text>
+		<image name="md-description-border2" extra="true">
+			<visible>false</visible>
+			<zIndex>1</zIndex>
+		</image>
+		<imagegrid name="gamegrid">
+			<pos>0.75 0</pos>
+			<size>0.25 1</size>
+			<margin>0.005 0.010</margin>
+			<scrollDirection>vertical</scrollDirection>
+			<autoLayout>1 7</autoLayout>
+			<autoLayoutSelectedZoom>1.3</autoLayoutSelectedZoom>
+			<animateSelection>false</animateSelection>
+			<scrollSound>./../../_inc/sound/scroll.wav</scrollSound>
+			<scrollbarColor>333333ff</scrollbarColor>
+			<scrollbarCorner>0.49</scrollbarCorner>
+			<scrollbarSize>0.005</scrollbarSize>
+			<scrollbarAlignment>right</scrollbarAlignment>
+			<imageSource>marquee</imageSource>
+			<centerSelection>true</centerSelection>
+			<zIndex>150</zIndex>
+		</imagegrid>
+		<gridtile name="default">
+			<backgroundColor>FFFFFF00</backgroundColor>
+			<backgroundCornerSize>0 0</backgroundCornerSize>
+			<selectionMode>image</selectionMode>
+			<padding>0 0</padding>
+			<imageColor>A0A0A070</imageColor>
+		</gridtile>
+		<gridtile name="selected">
+			<backgroundCenterColor>FFFFFF00</backgroundCenterColor>
+			<backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
+			<imageColor>FFFFFFFF</imageColor>
+		</gridtile>
+		<text name="gridtile">
+			<color>80808080</color>
+			<fontSize>0.016</fontSize>
+			<size>1 0</size>
+		</text>
+		<text name="gridtile_selected">
+			<color>FFFFFF00</color>
+			<fontSize>0.035</fontSize>
+			<size>1 0</size>
+		</text>
+		<video name="md_video">
+			<pos>0.273 0.925</pos>
+			<size>0.35</size>
+			<origin>0 1</origin>
+			<delay>0.3</delay>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>true</showSnapshotDelay>
+			<snapshotSource>image</snapshotSource>
+			<effect>none</effect>
+			<zIndex>100</zIndex>
+			<scaleOrigin>1</scaleOrigin>
+		</video>
+		<image name="logo">
+			<path>./../../_inc/logos/${system.theme}.png</path>
+			<path>./../../_inc/logos/${system.theme}-${lang}.png</path>
+			<pos>0.12 0.12</pos>
+			<maxSize>0.200 0.126</maxSize>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+			<visible>true</visible>
+		</image>
+		<text name="logoText">
+			<pos>0.784375 0.1527777777777778</pos>
+			<size>0.15625 0.0555555555555556</size>
+			<fontSize>0.0444444444444444</fontSize>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<forceUppercase>true</forceUppercase>
+			<color>555555</color>
+		</text>
+
+		<text name="md_genre,md_developer,md_publisher,md_playcount,md_gametime, md_releasedate, md_lastplayed">
+			<color>666666</color>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontSize>0.0194444444444444</fontSize>
+		</text>
+
+		<image name="md_flag">
+			<origin>0 0.5</origin>
+			<pos>0.65 0.88</pos>
+			<maxSize>0.02 0.05</maxSize>
+			<color>FFFFFF90</color>
+			<zIndex>150</zIndex>
+		</image>
+		<rating name="md_rating">
+			<pos>0.6765 0.9</pos>
+			<size>0.05 0.03</size>
+			<color>666666</color>
+			<origin>0.5 0</origin>
+			<horizontalAlignment>left</horizontalAlignment>
+			<unfilledColor>80808030</unfilledColor>
+			<unfilledPath>./../../_inc/images/star_filled.svg</unfilledPath>
+			<zIndex>150</zIndex>
+		</rating>
+		<text name="md_players">
+			<pos>0.66 0.585</pos>
+			<size>0.03 0.03</size>
+			<origin>0.5 0.5</origin>
+			<fontPath>./../../_inc/fonts/players.ttf</fontPath>
+			<text>1</text>
+			<!--<size>0.03 0.03</size>
+			<pos>0.976 0.37</pos>-->
+			<alignment>center</alignment>
+			<fontSize>0.034</fontSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="md_manual,md_nomanual">
+			<path>./../../_inc/images/book.png</path>
+			<pos>0.6835 0.585</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_nomanual">
+			<color>80808040</color>
+		</image>
+		<image name="md_cheevos,md_notcheevos">
+			<origin>0.5 0.5</origin>
+			<path>./../../_inc/icons/Contest.png</path>
+			<pos>0.7040 0.585</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_notcheevos">
+			<color>80808040</color>
+		</image> 
+		<image name="md_savestate,md_nosavestate">
+			<origin>0.5 0.5</origin>
+			<path>./../../_inc/icons/SaveState.png</path>
+			<pos>0.7260 0.585</pos>
+			<x ifCheevos="false">0.7040</x>
+			<maxSize>0.02 0.03</maxSize>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_nosavestate">
+			<color>80808030</color>
+		</image>
+
+		<image name="md_hidden">
+			<path>./../../_inc/images/hidden.svg</path>
+			<pos>0.7691 0.585</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_kidgame,md_notkidgame">
+			<path>./../../_inc/images/kid.svg</path>
+			<pos>0.7481 0.585</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>666666</color>
+			<zIndex>150</zIndex>
+		</image>
+		<image name="md_notkidgame"> 
+			<color>80808000</color>
+		</image>
+
+
+		<datetime name="md_releasedate">
+			<pos>0.6745 0.612</pos>
+			<size>0.107 0.0222222222222222</size>
+			<format>%Y</format>
+			<zIndex>150</zIndex>
+		</datetime>
+		<image name="release_date_logo" extra="true">
+			<pos>0.6595 0.623</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./../../_inc/images/game_info_releasedate.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+		<text name="md_publisher">
+			<pos>0.6745 0.650</pos>
+			<size>0.107 0.0222222222222222</size>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="publisher_logo" extra="true">
+			<pos>0.6595 0.661</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./../../_inc/images/game_info_publisher.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+	<!--<image name="players_logo" extra="true">
+			<pos>0.4125 0.304</pos>
+			<maxSize>0.035</maxSize>
+			<path>./../../_inc/images/game_info_players.svg</path>
+			<zIndex>150</zIndex>
+		</image>-->
+		<text name="md_playcount">
+			<pos>0.6745 0.801</pos>
+			<size>0.107 0.0222222222222222</size>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="playcount_logo" extra="true">
+			<pos>0.6595 0.812</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./../../_inc/images/game_info_playcount3.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+
+		<text name="md_developer">
+			<pos>0.6745 0.688</pos>
+			<size>0.107 0.0222222222222222</size>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="developer_logo" extra="true">
+			<pos>0.6595 0.699</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./../../_inc/images/game_info_developer.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+		<text name="md_genre">
+			<pos>0.6745 0.726</pos>
+			<size>0.107 0.0222222222222222</size>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="genre_logo" extra="true">
+			<pos>0.6595 0.737</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./../../_inc/images/game_info_genre.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+		<datetime name="md_lastplayed">
+			<pos>0.8655 0.715</pos>
+			<size>0.107 0.0222222222222222</size>
+			<origin>0.5 0.5</origin>
+			<zIndex>1</zIndex>
+			<visible>false</visible>
+		</datetime>
+	<!--<image name="lastplayed_logo" extra="true">
+			<pos>0.5525 0.204</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./../../_inc/images/game_info_lastplayed.svg</path>
+			<zIndex>150</zIndex>
+		</image>-->
+		<text name="md_gametime">
+			<pos>0.6745 0.764</pos>
+			<size>0.107 0.0222222222222222</size>
+			<zIndex>150</zIndex>
+		</text>
+		<image name="gametime_logo" extra="true">
+			<pos>0.6595 0.775</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<path>./../../_inc/images/game_info_lastplayed.svg</path>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+	</customView>
+</theme>
