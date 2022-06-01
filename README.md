@@ -97,8 +97,8 @@ Summary of the license below:
 
 ### Copyrights / Sources
 
-Each brand of hardware and software here represented as a tribute.
-Used logos, trademarks and photos are copyright of their respective owners.
+Each brand of hardware and software here represented as a tribute.<br/>
+Used logos, trademarks and photos are copyright of their respective owners.<br/>
 The Vanamo Online Game Museum for (most) photos.
   
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
