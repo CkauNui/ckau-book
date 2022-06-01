@@ -74,10 +74,10 @@ Also, since I'm not a designer, if you would like to fix some layout or provide 
 - Forked from:
   - [ckau-book](https://github.com/CkauNui/ckau-book) theme by [@CkauNui](https://github.com/CkauNui)
 - Based on:
-  - [Carbon](https://github.com/fabricecaruso/es-theme-carbon) theme by [@fabricecaruso](https://github.com/fabricecaruso)
-  - [Art Book](https://github.com/anthonycaccese/es-theme-art-book) theme by [@anthonycaccese](https://github.com/anthonycaccese)
   - artworks from [Colorful](https://forums.launchbox-app.com/topic/51590-colorful-bigbox-theme) Launchbox/Bigbox theme by [Viking](https://forums.launchbox-app.com/profile/70421-viking)
   - artworks from "Alekfull Bello v2" by [@fagnerpc](https://github.com/fagnerpc)
+  - [Carbon](https://github.com/fabricecaruso/es-theme-carbon) theme by [@fabricecaruso](https://github.com/fabricecaruso)
+  - [Art Book](https://github.com/anthonycaccese/es-theme-art-book) theme by [@anthonycaccese](https://github.com/anthonycaccese)      
 - Thanks to [@g-spawnPL](https://github.com/g-spawnPL) for designing many artworks & helping out with the project
 - Video Showcase by [@KevinLeenders](https://github.com/KevinLeenders)
   
@@ -95,9 +95,11 @@ Summary of the license below:
 - PROHIBITED:
   - Commercial distribution
 
-### Logo Notice
+### Copyrights / Sources
 
-The used logos and trademarks are copyright of their respective owners.
+Each brand of hardware and software here represented as a tribute.
+Used logos, trademarks and photos are copyright of their respective owners.
+The Vanamo Online Game Museum for (most) photos.
   
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
