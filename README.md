@@ -3,7 +3,7 @@
 <p>
 <img align="right" width="200px" src="https://i.imgur.com/eCZPBDE.png">
 Emulationstation Theme for Batocera and RetroBat.<br/>
-All (200+) systems supported.<br/>
+220 systems supported.<br/>
 Supported languages: English, Deutsch, French, Polish, Russian.
 <br/>
 <br/>
@@ -29,7 +29,7 @@ Supported languages: English, Deutsch, French, Polish, Russian.
 
 <p>
 Forked from awesome <a href="https://github.com/CkauNui/ckau-book">ckau-book</a> theme, <strong>ckau-book-enhanced</strong> expands the original theme by embracing more and more systems in both COLORFUL and DARKFUL variations.<br/>
-The goal of the project is to support all of Batocera and Retrobat systems in both variations, and contribute to the development of ckau-book theme by anticipating changes and improvements.<br/>
+The goal of the project is to contribute to the development of ckau-book theme, by anticipating changes and improvements.<br/>
 
 ## Video Showcase
 
@@ -52,11 +52,9 @@ https://user-images.githubusercontent.com/46349178/167809027-9684eecd-47df-4162-
 
 ## Features
 
-- 200+ systems supported in both COLORFUL and DARKFUL flavours (details [here](https://github.com/Lendersmark/ckau-book-enhanced/wiki/Supported-Systems))
-- 2 new game views added
-- Always up-to-date with ckau-book original theme
-- Works with both Batocera.linux and Retrobat latest builds
-- Emuelec and Retropie not officially supported, but it should work well :)
+- All 220 Batocera v34 and Retrobat v4.0.2 systems supported in both COLORFUL and DARKFUL flavours (details [here](https://github.com/Lendersmark/ckau-book-enhanced/wiki/Supported-Systems))
+- Compatible with both Batocera and Retrobat latest builds
+- Retropie/Recalbox/Emuelec not officially supported, but it should work well :)
 
 ## Support
 
