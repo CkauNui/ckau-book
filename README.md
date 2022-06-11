@@ -1,86 +1,52 @@
-# ckau-book-enhanced
+# Ckau-Book
+
 
 <p>
 <img align="right" width="200px" src="https://i.imgur.com/eCZPBDE.png">
-Emulationstation Theme for Batocera and RetroBat.<br/>
-220 systems supported.<br/>
-Supported languages: English, Deutsch, French, Polish, Russian.
+Emulationstation Theme for Batocera, RetroBat, EmuELEC.<br/>
+170+ supported systems.<br/>
+Supported languages: Russian, English, Deutsch, French, Polish.
 <br/>
 <br/>
 </p>
 <p>
-      <a href="https://img.shields.io/github/stars/Lendersmark/ckau-book-enhanced" alt="stars">
-        <img src="https://img.shields.io/github/stars/Lendersmark/ckau-book-enhanced" /></a>
-      <a href="https://img.shields.io/github/forks/Lendersmark/ckau-book-enhanced" alt="Forks">
-        <img src="https://img.shields.io/github/forks/Lendersmark/ckau-book-enhanced" /></a>
-      <a href="https://img.shields.io/github/issues/Lendersmark/ckau-book-enhanced" alt="Issues">
-        <img src="https://img.shields.io/github/issues/Lendersmark/ckau-book-enhanced" /></a>
-      <a href="https://img.shields.io/github/issues-closed/Lendersmark/ckau-book-enhanced" alt="Issues Closed">
-        <img src="https://img.shields.io/github/issues-closed/Lendersmark/ckau-book-enhanced" /></a>
-      <a href="https://img.shields.io/github/issues-pr-closed/Lendersmark/ckau-book-enhanced" alt="Closed PR">
-        <img src="https://img.shields.io/github/issues-pr-closed/Lendersmark/ckau-book-enhanced" /></a>
-      <a href="https://img.shields.io/github/v/release/Lendersmark/ckau-book-enhanced" alt="Version">
-        <img src="https://img.shields.io/github/v/release/Lendersmark/ckau-book-enhanced" /></a>
-      <a href="https://img.shields.io/github/downloads/Lendersmark/ckau-book-enhanced/total">
-        <img src="https://img.shields.io/github/downloads/Lendersmark/ckau-book-enhanced/total" alt="Downloads"></a>
+      <a href="https://img.shields.io/github/stars/CkauNui/ckau-book" alt="stars">
+        <img src="https://img.shields.io/github/stars/CkauNui/ckau-book" /></a>
+      <a href="https://img.shields.io/github/forks/CkauNui/ckau-book" alt="Forks">
+        <img src="https://img.shields.io/github/forks/CkauNui/ckau-book" /></a>
+      <a href="https://img.shields.io/github/issues/CkauNui/ckau-book" alt="Issues">
+        <img src="https://img.shields.io/github/issues/CkauNui/ckau-book" /></a>
+      <a href="https://img.shields.io/github/issues-closed/CkauNui/ckau-book" alt="Issues Closed">
+        <img src="https://img.shields.io/github/issues-closed/CkauNui/ckau-book" /></a>
+      <a href="https://img.shields.io/github/issues-pr-closed/CkauNui/ckau-book" alt="Closed PR">
+        <img src="https://img.shields.io/github/issues-pr-closed/CkauNui/ckau-book" /></a>
 </p>
 
-## What is this project about?
+## Video Playlist
 
-<p>
-Forked from awesome <a href="https://github.com/CkauNui/ckau-book">ckau-book</a> theme, <strong>ckau-book-enhanced</strong> expands the original theme by embracing more and more systems in both COLORFUL and DARKFUL variations.<br/>
-The goal of the project is to contribute to the development of ckau-book theme, by anticipating changes and improvements.<br/>
+https://www.youtube.com/playlist?list=PLlc3zkd7FLPScpaFz9Gf7WWrcR0v21pDv
 
-## Video Showcase
-
-https://user-images.githubusercontent.com/46349178/167809027-9684eecd-47df-4162-853f-f6734c53c6b6.mp4
-      
 ## Screenshots
 
 |                                    |                                    |                                    |
 | :--------------------------------: | :--------------------------------: | :--------------------------------: |
-| ![](https://github.com/Lendersmark/ckau-book-enhanced/blob/master/_inc/anim/cplus4.png?raw=true) | ![](https://github.com/Lendersmark/ckau-book-enhanced/blob/master/_inc/anim/famicom.png?raw=true) | ![](https://github.com/Lendersmark/ckau-book-enhanced/blob/master/_inc/anim/sfc.png?raw=true) |
-| ![](https://github.com/Lendersmark/ckau-book-enhanced/blob/master/_inc/anim/oricatmos.png?raw=true) | ![](https://github.com/Lendersmark/ckau-book-enhanced/blob/master/_inc/anim/triforce.png?raw=true) | ![](https://github.com/Lendersmark/ckau-book-enhanced/blob/master/_inc/anim/ti99.png?raw=true) |
-| ![](https://github.com/Lendersmark/ckau-book-enhanced/blob/master/_inc/anim/sufami.png?raw=true) | ![](https://github.com/Lendersmark/ckau-book-enhanced/blob/master/_inc/anim/xegs.png?raw=true) | ![](https://github.com/Lendersmark/ckau-book-enhanced/blob/master/_inc/anim/spectravideo.png?raw=true) |
-
-## Installation
-
-- Visit the [Releases](https://github.com/Lendersmark/ckau-book-enhanced/releases) page
-- Download the latest `ckau-book-enhanced.zip`
-- Unzip the downloaded file into your Batocera or Retrobat themes directory
-- Choose <strong>ckau-book-enhanced</strong> as theme in Emulationstation settings
-
-## Features
-
-- All 220 Batocera v34 and Retrobat v4.0.2 systems supported in both COLORFUL and DARKFUL flavours (details [here](https://github.com/Lendersmark/ckau-book-enhanced/wiki/Supported-Systems))
-- Compatible with both Batocera and Retrobat latest builds
-- Retropie/Recalbox/Emuelec not officially supported, but it should work well :)
-
-## Support
-
-Please open an [issue](https://github.com/Lendersmark/ckau-book-enhanced/issues) or share your thought in the [Discussions](https://github.com/Lendersmark/ckau-book-enhanced/discussions) section.
-      
-## Contributing
-
-I'll gladly accept any help/pull requests & advice.<br/>
-If you want to contribute, I can provide source PSD files to start from.<br/>
-Also, since I'm not a designer, if you would like to fix some layout or provide better versions of the artworks, just let me know ☺️ 
+| ![](https://i.imgur.com/b7ech0v.png?raw=true) | ![](https://i.imgur.com/3uKzHYp.png?raw=true) | ![](https://i.imgur.com/NL7fZf8.png?raw=true) |
+| ![](https://i.imgur.com/NG1P5FZ.png?raw=true) | ![](https://i.imgur.com/BZyUFDn.png?raw=true) | ![](https://i.imgur.com/FeKK9KN.png?raw=true) |
+| ![](https://i.imgur.com/n6fcyqE.png?raw=true) | ![](https://i.imgur.com/J4n82Pe.png?raw=true) | ![](https://i.imgur.com/OByObVo.png?raw=true) |
 
 ## Credits
 
-- Forked from:
-  - [ckau-book](https://github.com/CkauNui/ckau-book) theme by [@CkauNui](https://github.com/CkauNui)
+- Theme autor:
+  - Ckau ([@CkauNui](https://github.com/CkauNui))
+  - Thanks to [@Lendersmark](https://github.com/Lendersmark) (fork [ckau-book-enhanced](https://github.com/Lendersmark/ckau-book-enhanced)) and [@g-spawnPL](https://github.com/g-spawnPL) for designing many artworks & helping out with the project
 - Based on:
+  - [Carbon](https://github.com/fabricecaruso/es-theme-carbon) theme by [@fabricecaruso](https://github.com/fabricecaruso)
+  - [Art Book](https://github.com/anthonycaccese/es-theme-art-book) theme by [@anthonycaccese](https://github.com/anthonycaccese)
   - artworks from [Colorful](https://forums.launchbox-app.com/topic/51590-colorful-bigbox-theme) Launchbox/Bigbox theme by [Viking](https://forums.launchbox-app.com/profile/70421-viking)
   - artworks from "Alekfull Bello v2" by [@fagnerpc](https://github.com/fagnerpc)
-  - [Carbon](https://github.com/fabricecaruso/es-theme-carbon) theme by [@fabricecaruso](https://github.com/fabricecaruso)
-  - [Art Book](https://github.com/anthonycaccese/es-theme-art-book) theme by [@anthonycaccese](https://github.com/anthonycaccese)      
-- Thanks to [@g-spawnPL](https://github.com/g-spawnPL) for designing many artworks & helping out with the project
-- Video Showcase by [@KevinLeenders](https://github.com/KevinLeenders)
-  
+
+
 ## License
-  
-Summary of the license below:
 
 - ALLOWED
   - Share and duplicate as it is
@@ -92,11 +58,9 @@ Summary of the license below:
 - PROHIBITED:
   - Commercial distribution
 
-### Copyrights / Sources
+### Logo Notice
 
-Each brand of hardware and software here represented as a tribute.<br/>
-Used logos, trademarks and photos are copyright of their respective owners.<br/>
-The Vanamo Online Game Museum for (most) photos.
+The used logos and trademarks are copyright of their respective owners.
   
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
