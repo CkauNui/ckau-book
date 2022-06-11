@@ -29,10 +29,10 @@
 		</video>
 		<text name="TextDate" extra="true">
 			<pos>0.49 0.2</pos>
-			<text>2011</text>
+			<text>1990</text>
 			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
 			<color>666666</color>
-			<fontSize>0.03</fontSize>
+			<fontSize>0.025</fontSize>
 			<zIndex>140</zIndex>
 			<storyboard>
 				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
@@ -40,11 +40,23 @@
 				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
 			</storyboard>
 		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>byuu</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.25</pos>
+			<pos>0.49 0.30</pos>
 			<size>0.5 0</size>
-			<text>Super Nintendo
-Entertainment System MSU1</text>
+			<text>Super Nintendo MSU-1</text>
 			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
 			<color>FFFFFF</color>
 			<fontSize>0.065</fontSize>
@@ -59,19 +71,25 @@ Entertainment System MSU1</text>
 		<text name="TextDesc" extra="true">
 			<size>0.5 0</size>
 			<pos>0.49 0.4</pos>
-			<text>The MSU1 is an expansion chip, not entirely unlike the SuperFX, SDD-1, CX4 or the DSP series used in games such as Yoshi’s Island, Star Ocean, Mega Man X 2 and most games with scenes in Mode 7. Consequently, it is a part of the game cartridge. A common misconception is that supporting the MSU1 in hardware would require modifying the main SNES unit, and that it therefore does not “count”.</text>
-			<text lang="pl">MSU1 jest układem rozszerzającym, nie różniącym się zupełnie od SuperFX, SDD-1, CX4 czy serii DSP używanych w takich grach jak Yoshi's Island, Star Ocean, Mega Man X 2 i większości gier ze scenami w Trybie 7. W związku z tym jest to część kartridża z grą. Często spotykanym błędnym przekonaniem jest to, że sprzętowe wsparcie MSU1 wymaga modyfikacji głównej jednostki SNES-a, nie jest to prawda.</text>
-			<text lang="fr">La Super Nintendo Entertainment System (couramment abrégée Super NES ou SNES ou encore Super Nintendo), ou Super Famicom (スーパーファミコン) au Japon, est une console de jeux vidéo du constructeur japonais Nintendo commercialisée à partir de novembre 1990. En Amérique du Nord, la console est sortie avec un look résolument différent. À noter qu'en Corée du Sud, la Super Nintendo est distribuée par Hyundai Electronics sous le nom de Super Comboy (슈퍼 컴보이).
+			<text>The MSU-1 is a cartridge addon chip (similar to the SuperFx chip) that allows for many enhancements to SNES games including, but not limited to, full-motion video and CD quality sound by adding up to 4GB (yes, 4 gigabytes) of storage for extra content.
 
-En 1997 et 1998, Nintendo décide de rafraîchir le design en sortant le modèle SNS-101, parfois appelé Super NES 2 aux États-Unis, et la Super Famicom Jr. au Japon.
+Some examples of MSU-1 modded games would be:
 
-Pour rivaliser avec la populaire Nintendo Entertainment System / Famicom qui écrase le marché, NEC lance la PC-Engine en 1987, et Sega suit avec sa Mega Drive en 1988. Les deux systèmes offrent alors de bien meilleures performances, notamment graphiques et sonores, que la 8 bits de Nintendo. Bien que la NES continue d'être leader sur le marché des jeux vidéo, le bon accueil de la Mega Drive et de la PC-engine par les différents acteurs du marché contraint Nintendo à créer une console pouvant rivaliser avec ses nouvelles concurrentes.</text>
+Zelda: A Link to the Past done with a fully orchistrated CD quality soundtrack.
+Chrono Trigger with all the video cutscenes from the PlayStation version inserted.
+Mega Man X with a new CD quality soundtrack.
+
+The MSU-1 chip itself only needs to be in the game cartridge to run on an actual unmodded SNES system. Emulators, on the other hand, need to be modified to support playback of MSU-1 modded games. This is due to the emulator needing to access files outside the ROM while playing the ROM.
+The chip does have some limitations, such as only being able to stream one data track at a time, but it essentially turns the SNES into what it could have been with a CD attachment.</text>
+			<text lang="fr">Descpriptions. Pls send me it in Discord</text>
 			<text lang="de">Descpriptions. Pls send me it in Discord</text>
 			<text lang="ru">Игры Super Nintendo, улучшенные с помощью MSU-1
 MSU-1 это специальный сопроцессор, добавляющий игровой приставке Super Nintendo несколько интересных возможностей:
-- Воспроизведение звука CD-качества (44.1 кГц, 16 бит) - то есть, примерно то же самое, что ожидалось от Nintendo PlayStation (Super NES CD-ROM).
-- Воспроизведение потокового видео*
+
+- Воспроизведение звука CD-качества (44.1 кГц, 16 бит)
+- Воспроизведение потокового видео
 - Адресация 4 Гб данных
+То есть, примерно то же самое, что ожидалось от Nintendo PlayStation (Super NES CD-ROM).
 
 Благодаря таким возможностям, ROM хакеры могут заменять фоновую музыку в играх на их высококачественные версии, и даже воспроизводить полнометражные видеоролики.
 Аббревиатура MSU означает "Media Streaming Unit 1".
