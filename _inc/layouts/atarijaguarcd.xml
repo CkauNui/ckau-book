@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videocrton" extra="true">
+			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
+			<delay>0</delay>
+			<loops>0</loops>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.39</pos>
+			<maxSize>0.24</maxSize>
+			<zIndex>26</zIndex>
+		</video>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.39</pos>
+			<maxSize>0.24</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>1995</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Atari</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>Jaguar CD</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.4</pos>
+			<text>The Atari Jaguar CD or Jag CD is a CD-ROM peripheral for the Atari Jaguar video game console.
+
+Atari announced a CD-ROM drive for the Jaguar before the console's November 1993 launch. Code-named the Jaguar II during development, the Jaguar CD was released on September 21, 1995, and retailed for $149.95. It suffered from multiple delays, having been originally intended for launch during the 1994 holiday shopping season. The device sits atop the Jaguar console, fitting into the ROM cartridge slot. The drive has its own cartridge slot to allow cartridge games to be played without removing the CD drive, and to run software that used cartridge and CD in tandem. There was a separate "Memory Track" cartridge for storing saved game position and high scores. Several publications have criticized the Jaguar CD's design for bearing an appearance similar to a toilet.</text>
+			<text lang="fr">Descriptions. Pls send me it in Discord</text>
+			<text lang="de">Descriptions. Pls send me it in Discord</text>
+			<text lang="pl">Atari Jaguar CD (w skrócie Jag CD) – opcjonalny napęd CD do konsoli Atari Jaguar, wprowadzony przez Atari w roku 1995.
+
+Dodatek ten łączył się z konsolą przez łącze na kartridże – był podłączany do niej z góry. Był to napęd CD dwukrotnej prędkości, płyty zaś mogły mieścić do 790 megabajtów. Z dodatkiem były sprzedawane dwie gry: Vid Grid i Blue Lightning. Poza grami Jaguar CD umożliwiało również słuchanie muzyki – jedną z dołączonych płyt był soundtrack z gry Tempest 2000.
+
+Jaguar CD, podobnie jak sama konsola Atari Jaguar, ukazał się zbyt późno w porównaniu z konkurencją w postaci konsol Sega Saturn oraz PlayStation. W efekcie na przystawkę ukazało się zaledwie 11 gier, poza tym wyprodukowano tylko 20 tysięcy egzemplarzy napędu.</text>
+			<text lang="ru">Игровая консоль, выпущенная в ноябре 1993 года компанией Atari. В своё время являлась мощной платформой следующего (пятого по счёту) поколения телевизионных игровых приставок. Поступила в продажу по цене 249,99 долларов. Рекламировалась как «первая 64-битная система», что было рекламной уловкой — CPU и GPU приставки имели RISC-подобную 32-битную архитектуру, 64-битным был графический сопроцессор «Том».
+
+Однако для приставки было выпущено ограниченное число игр, большинство из которых были низкого качества, что отрицательно сказалось на продажах консоли. К причинам провала также можно отнести неудачно выбранный носитель (картридж), неудобный джойстик и ценовую политику. Конкуренция с другими приставками, особенно использовавшими CD-диски как PlayStation, обрекла Atari Jaguar на провал. В период с конца 1993 по конец 1995 года было продано всего 125 тыс. экземпляров.
+
+И хотя производителем были предприняты попытки привлечь к консоли интерес покупателей, выпустив в спешном порядке адаптер для чтения компакт-дисков Atari Jaguar CD, устройство для сохранения состояния игры Memory Track и устройство для совместной игры на двух приставках JagLink, эти действия не смогли повысить продажи. Претерпев серьёзные убытки, Atari была вынуждена покинуть рынок игровых приставок.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>
