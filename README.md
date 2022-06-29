@@ -34,11 +34,22 @@ https://www.youtube.com/playlist?list=PLlc3zkd7FLPScpaFz9Gf7WWrcR0v21pDv
 | ![](https://i.imgur.com/NG1P5FZ.png?raw=true) | ![](https://i.imgur.com/BZyUFDn.png?raw=true) | ![](https://i.imgur.com/FeKK9KN.png?raw=true) |
 | ![](https://i.imgur.com/n6fcyqE.png?raw=true) | ![](https://i.imgur.com/J4n82Pe.png?raw=true) | ![](https://i.imgur.com/OByObVo.png?raw=true) |
 
+## Addons: 4K Images, videos, collections and more!
+To reduce download size, each release is provided with Colorful and Darkful system views, and Full HD 1920x1080 images for all supported systems.
+
+To download addons, please refer to the file named `(OPTIONAL) download video, 4K images, cinematic, collections, arts.txt` in the theme root directory.
+
+- COLORFUL 4K Images: high-detailed, beautiful 3840x2160 system images for both Colorful and Darkful views
+- COLORFUL Video Pack: a gameplay video for each system will show as default in Colorful/Darkful
+- CINEMATIC Video Pack: change view to fullscrean video for sytems
+- COLLECTIONS: 61 collections with both artworks & videos
+- CONSOLES / WALLPAPERS Arts: change view to consoles or wallpapers for sytems
+
 ## Credits
 
 - Theme autor:
   - Ckau ([@CkauNui](https://github.com/CkauNui))
-  - Thanks to [@Lendersmark](https://github.com/Lendersmark) (fork [ckau-book-enhanced](https://github.com/Lendersmark/ckau-book-enhanced)) and [@g-spawnPL](https://github.com/g-spawnPL) for designing many artworks & helping out with the project
+  - Thanks to [@Lendersmark](https://github.com/Lendersmark) (fork [ckau-book-enhanced](https://github.com/Lendersmark/ckau-book-enhanced)) and [@g-spawnPL](https://github.com/g-spawnPL) for designing some artworks & helping with the project
 - Based on:
   - [Carbon](https://github.com/fabricecaruso/es-theme-carbon) theme by [@fabricecaruso](https://github.com/fabricecaruso)
   - [Art Book](https://github.com/anthonycaccese/es-theme-art-book) theme by [@anthonycaccese](https://github.com/anthonycaccese)
