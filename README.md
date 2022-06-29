@@ -30,7 +30,7 @@ https://www.youtube.com/playlist?list=PLlc3zkd7FLPScpaFz9Gf7WWrcR0v21pDv
 
 |                                    |                                    |                                    |
 | :--------------------------------: | :--------------------------------: | :--------------------------------: |
-| ![](https://i.imgur.com/b7ech0v.png?raw=true) | ![](https://i.imgur.com/3uKzHYp.png?raw=true) | ![](https://i.imgur.com/NL7fZf8.png?raw=true) |
+| ![](https://i.imgur.com/WSwrq1u.jpg?raw=true) | ![](https://i.imgur.com/3uKzHYp.png?raw=true) | ![](https://i.imgur.com/NL7fZf8.png?raw=true) |
 | ![](https://i.imgur.com/NG1P5FZ.png?raw=true) | ![](https://i.imgur.com/BZyUFDn.png?raw=true) | ![](https://i.imgur.com/FeKK9KN.png?raw=true) |
 | ![](https://i.imgur.com/n6fcyqE.png?raw=true) | ![](https://i.imgur.com/J4n82Pe.png?raw=true) | ![](https://i.imgur.com/OByObVo.png?raw=true) |
 
