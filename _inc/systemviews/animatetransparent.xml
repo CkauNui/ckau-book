@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+			<include>./../../_inc/layouts/${system.theme}.xml</include>
+			<include tinyScreen="true" name="TinyScreen">./../../_inc/systemviews/tinyscreenAnim.xml</include>
+	<view name="system">
+		<image name="background1" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<minSize>1 1</minSize>
+			<path>./../../_inc/anim/${system.theme}.jpg</path>
+			<path>./../../_inc/anim/${system.theme}.png</path>
+			<path>./../../_inc/anim/4K/${system.theme}.jpg</path>
+			<path>./../../_inc/anim/4K/${system.theme}.png</path>
+			<zIndex>30</zIndex>
+		</image>
+		<!-- Support different images for regional consoles/computers -->
+		<image name="background1" extra="true" region="eu"></image>		
+		<image name="background1" extra="true" region="us">
+			<path>./../../_inc/anim/us/${system.theme}.jpg</path>
+			<path>./../../_inc/anim/us/${system.theme}.png</path>
+			<path>./../../_inc/anim/4K/us/${system.theme}.jpg</path>
+			<path>./../../_inc/anim/4K/us/${system.theme}.png</path>
+		</image>
+		<image name="background1" extra="true" region="jp">
+			<path>./../../_inc/anim/jp/${system.theme}.jpg</path>
+			<path>./../../_inc/anim/jp/${system.theme}.png</path>
+			<path>./../../_inc/anim/4K/jp/${system.theme}.jpg</path>
+			<path>./../../_inc/anim/4K/jp/${system.theme}.png</path>
+		</image>
+		<!--Semitransparent panel -->
+		<image name="background" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<minSize>1 1.1</minSize>
+			<color>000000</color>
+			<opacity>0.85</opacity>
+			<path>./../../_inc/images/space.png</path>
+		</image>
+		<!--Fix gaps between monitor borders and video-->
+		<image name="fixgaps" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<minSize>1 1.1</minSize>
+			<color>141414</color>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>20</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<!--Extension of the image background-->
+		<image name="background1-ext" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.6 0.5</pos>
+			<minSize>1.4 1.1</minSize>
+			<path>./../../_inc/anim/${system.theme}.jpg</path>
+			<path>./../../_inc/anim/${system.theme}.png</path>
+			<zIndex>10</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.32 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<!-- Support different images for regional consoles/computers -->
+		<image name="background1-ext" extra="true" region="eu"></image>
+		<image name="background1-ext" extra="true" region="us">
+			<path>./../../_inc/anim/us/${system.theme}.jpg</path>
+			<path>./../../_inc/anim/us/${system.theme}.png</path>
+		</image>
+		<image name="background1-ext" extra="true" region="jp">
+			<path>./../../_inc/anim/jp/${system.theme}.jpg</path>
+			<path>./../../_inc/anim/jp/${system.theme}.png</path>
+		</image>
+		<text name="info1, info2, info3, info4, info5, info6, info7, info8, info9, info10, info11, info12" extra="static">
+			<color>FFFFFF</color>
+			<alignment>left</alignment>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontSize>0.02</fontSize>
+			<size>0.4 0.03</size>
+			<glowColor>00000016</glowColor>
+			<glowSize>2</glowSize>
+		</text>
+		<!-- Lighten Date and description color-->
+		<text name="TextDate">
+			<color>777777</color>
+		</text>		
+		<text name="TextDesc">
+			<color>777777</color>
+		</text>
+		<!-- -->
+		<image name="logo, logo1">
+			<path>./../../_inc/logos/${system.theme}-w.svg</path>
+			<path>./../../_inc/logos/${system.theme}-w-${lang}.png</path>
+			<path>./../../_inc/logos/${system.theme}-w-${lang}.svg</path>
+			<path>./../../_inc/logos/${system.theme}.png</path>
+			<path>./../../_inc/logos/${system.theme}.svg</path>
+			
+			<path>./../../_inc/logos/${system.theme}-${lang}.png</path>
+			<path>./../../_inc/logos/${system.theme}-${lang}.svg</path>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="logo, logo1" region="eu"></image>
+		<image name="logo, logo1" region="us">
+			<path>./../../_inc/logos/us/${system.theme}-w.svg</path>
+			<path>./../../_inc/logos/us/${system.theme}.png</path>
+			<path>./../../_inc/logos/us/${system.theme}.svg</path>
+		</image>
+		<image name="logo, logo1" region="jp">
+			<path>./../../_inc/logos/jp/${system.theme}-w.svg</path>
+			<path>./../../_inc/logos/jp/${system.theme}.png</path>
+			<path>./../../_inc/logos/jp/${system.theme}.svg</path>
+		</image>
+		<!-- Make arrows white with transparent bg color -->
+		<image name="ArrowBG" extra="static">
+		<zIndex>5</zIndex>
+		</image>
+		<image name="ArrowUp" extra="static">
+		<color>888888</color>
+		</image>
+		<image name="ArrowDown" extra="static">
+		<color>888888</color>
+		</image>
+	</view>
+</theme>
