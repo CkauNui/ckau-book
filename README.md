@@ -55,11 +55,12 @@ To download addons, please refer to the file named `(OPTIONAL) download video, 4
   - [Art Book](https://github.com/anthonycaccese/es-theme-art-book) theme by [@anthonycaccese](https://github.com/anthonycaccese)
   - artworks from [Colorful](https://forums.launchbox-app.com/topic/51590-colorful-bigbox-theme) Launchbox/Bigbox theme by [Viking](https://forums.launchbox-app.com/profile/70421-viking)
   - artworks from "Alekfull Bello v2" by [@fagnerpc](https://github.com/fagnerpc)
-  - The Vanamo Online Game Museum for most of the photos.
-  - PICO-8 image taken from PICO-8 Handheld Console Concept by Luiz Felipe Moura.
 
-- Each brand of hardware and software here represented as a tribute.
-- All logos, trademarks and photos are copyright of their respective owners.
+### Copyrights / Sources
+- Each brand of hardware and software here represented as a tribute.<br/>
+- All logos, trademarks and photos are copyright of their respective owners.<br/>
+- The [Vanamo Online Game Museum](https://commons.wikimedia.org/wiki/User:Evan-Amos) for most of the photos.<br/>
+- PICO-8 image taken from [PICO-8 Handheld Console Concept](https://www.behance.net/gallery/143131355/PICO-8-Handheld-Console-Concept) by Luiz Felipe Moura.
 
 ## License
 
