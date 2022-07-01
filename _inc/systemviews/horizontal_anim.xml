@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+	<view name="system">
+		<carousel name="systemcarousel">
+			<color>00000000</color>
+			<systemInfoDelay>0.1</systemInfoDelay>
+			<pos>0 -0.04</pos>
+			<logoScale>1.2</logoScale>
+			<logoSize>0.15 0.15</logoSize>
+		</carousel>
+		<image name="logo">
+			<linearSmooth>true</linearSmooth>
+				<storyboard event="activate">
+				<animation property="y" to="-0.5" begin="2500" duration="300" mode="EaseIn"/>
+				<animation property="opacity" from="0" to="1" duration="150" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="1150" duration="35" mode="Linear"/>
+				</storyboard>
+				<storyboard event="scroll">
+				<animation property="y" to="-0.5" begin="1500" duration="300" mode="EaseIn"/>
+				<animation property="opacity" from="0" to="1" duration="150" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="1150" duration="35" mode="Linear"/>
+				</storyboard>
+				<storyboard event="deactivate">
+				<animation property="y" to="-0.5" begin="1500" duration="300" mode="EaseIn"/>
+				<animation property="opacity" from="0" to="1" duration="150" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="1150" duration="35" mode="Linear"/>
+				</storyboard>
+		</image>
+	</view>
+</theme>
