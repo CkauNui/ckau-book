@@ -2,31 +2,38 @@
 <theme>
 	<formatVersion>7</formatVersion>
 			<include>./../../_inc/layouts/noanim/${system.theme}.xml</include>
-
 	<view name="system">
 		<image name="background1" extra="true">
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
 			<minSize>1 1</minSize>
-			<path>./../../_inc/anim/dark/${system.theme}.jpg</path>
-			<path>./../../_inc/anim/dark/${system.theme}.png</path>
-			<path>./../../_inc/anim/4K/dark/${system.theme}.jpg</path>
-			<path>./../../_inc/anim/4K/dark/${system.theme}.png</path>
+			<!-- If 4K is selected as preferred, attemps to load 4K image, then if it's not present fallbacks to Full HD-->
+			<path ifSubset="image_quality:high_quality">./../../_inc/anim/dark/${system.theme}.jpg</path>
+			<path ifSubset="image_quality:high_quality">./../../_inc/anim/dark/${system.theme}.png</path>
+			<path ifSubset="image_quality:high_quality">./../../_inc/anim/4K/dark/${system.theme}.jpg</path>
+			<path ifSubset="image_quality:high_quality">./../../_inc/anim/4K/dark/${system.theme}.png</path>
+			<!-- If Full HD is selected as preferred, then loads full hd image-->
+			<path ifSubset="image_quality:medium_quality">./../../_inc/anim/dark/${system.theme}.jpg</path>
+			<path ifSubset="image_quality:medium_quality">./../../_inc/anim/dark/${system.theme}.png</path>
 			<zIndex>30</zIndex>
 		</image>
 		<!-- Support different images for regional consoles/computers -->
-		<image name="background1" extra="true" region="eu"></image>
+		<image name="background1" extra="true" region="eu"></image>		
 		<image name="background1" extra="true" region="us">
-			<path>./../../_inc/anim/dark/us/${system.theme}.jpg</path>
-			<path>./../../_inc/anim/dark/us/${system.theme}.png</path>
-			<path>./../../_inc/anim/4K/dark/us/${system.theme}.jpg</path>
-			<path>./../../_inc/anim/4K/dark/us/${system.theme}.png</path>
+			<path ifSubset="image_quality:high_quality">./../../_inc/anim/dark/us/${system.theme}.jpg</path>
+			<path ifSubset="image_quality:high_quality">./../../_inc/anim/dark/us/${system.theme}.png</path>
+			<path ifSubset="image_quality:high_quality">./../../_inc/anim/4K/dark/us/${system.theme}.jpg</path>
+			<path ifSubset="image_quality:high_quality">./../../_inc/anim/4K/dark/us/${system.theme}.png</path>
+			<path ifSubset="image_quality:medium_quality">./../../_inc/anim/dark/us/${system.theme}.jpg</path>
+			<path ifSubset="image_quality:medium_quality">./../../_inc/anim/dark/us/${system.theme}.png</path>
 		</image>
 		<image name="background1" extra="true" region="jp">
-			<path>./../../_inc/anim/dark/jp/${system.theme}.jpg</path>
-			<path>./../../_inc/anim/dark/jp/${system.theme}.png</path>
-			<path>./../../_inc/anim/4K/dark/jp/${system.theme}.jpg</path>
-			<path>./../../_inc/anim/4K/dark/jp/${system.theme}.png</path>
+			<path ifSubset="image_quality:high_quality">./../../_inc/anim/dark/jp/${system.theme}.jpg</path>
+			<path ifSubset="image_quality:high_quality">./../../_inc/anim/dark/jp/${system.theme}.png</path>
+			<path ifSubset="image_quality:high_quality">./../../_inc/anim/4K/dark/jp/${system.theme}.jpg</path>
+			<path ifSubset="image_quality:high_quality">./../../_inc/anim/4K/dark/jp/${system.theme}.png</path>
+			<path ifSubset="image_quality:medium_quality">./../../_inc/anim/dark/jp/${system.theme}.jpg</path>
+			<path ifSubset="image_quality:medium_quality">./../../_inc/anim/dark/jp/${system.theme}.png</path>
 		</image>
 		<!-- -->
 		<text name="info1, info2, info3, info4, info5, info6, info7, info8, info9, info10, info11, info12" extra="static">

@@ -8,25 +8,33 @@
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
 			<minSize>1 1</minSize>
-			<path>./../../_inc/anim/${system.theme}.jpg</path>
-			<path>./../../_inc/anim/${system.theme}.png</path>
-			<path>./../../_inc/anim/4K/${system.theme}.jpg</path>
-			<path>./../../_inc/anim/4K/${system.theme}.png</path>
+			<!-- If 4K is selected as preferred, attemps to load 4K image, then if it's not present fallbacks to Full HD-->
+			<path ifSubset="image_quality:high_quality">./../../_inc/anim/${system.theme}.jpg</path>
+			<path ifSubset="image_quality:high_quality">./../../_inc/anim/${system.theme}.png</path>
+			<path ifSubset="image_quality:high_quality">./../../_inc/anim/4K/${system.theme}.jpg</path>
+			<path ifSubset="image_quality:high_quality">./../../_inc/anim/4K/${system.theme}.png</path>
+			<!-- If Full HD is selected as preferred, then loads full hd image-->
+			<path ifSubset="image_quality:medium_quality">./../../_inc/anim/${system.theme}.jpg</path>
+			<path ifSubset="image_quality:medium_quality">./../../_inc/anim/${system.theme}.png</path>
 			<zIndex>30</zIndex>
 		</image>
 		<!-- Support different images for regional consoles/computers -->
 		<image name="background1" extra="true" region="eu"></image>		
 		<image name="background1" extra="true" region="us">
-			<path>./../../_inc/anim/us/${system.theme}.jpg</path>
-			<path>./../../_inc/anim/us/${system.theme}.png</path>
-			<path>./../../_inc/anim/4K/us/${system.theme}.jpg</path>
-			<path>./../../_inc/anim/4K/us/${system.theme}.png</path>
+			<path ifSubset="image_quality:high_quality">./../../_inc/anim/us/${system.theme}.jpg</path>
+			<path ifSubset="image_quality:high_quality">./../../_inc/anim/us/${system.theme}.png</path>
+			<path ifSubset="image_quality:high_quality">./../../_inc/anim/4K/us/${system.theme}.jpg</path>
+			<path ifSubset="image_quality:high_quality">./../../_inc/anim/4K/us/${system.theme}.png</path>
+			<path ifSubset="image_quality:medium_quality">./../../_inc/anim/us/${system.theme}.jpg</path>
+			<path ifSubset="image_quality:medium_quality">./../../_inc/anim/us/${system.theme}.png</path>
 		</image>
 		<image name="background1" extra="true" region="jp">
-			<path>./../../_inc/anim/jp/${system.theme}.jpg</path>
-			<path>./../../_inc/anim/jp/${system.theme}.png</path>
-			<path>./../../_inc/anim/4K/jp/${system.theme}.jpg</path>
-			<path>./../../_inc/anim/4K/jp/${system.theme}.png</path>
+			<path ifSubset="image_quality:high_quality">./../../_inc/anim/jp/${system.theme}.jpg</path>
+			<path ifSubset="image_quality:high_quality">./../../_inc/anim/jp/${system.theme}.png</path>
+			<path ifSubset="image_quality:high_quality">./../../_inc/anim/4K/jp/${system.theme}.jpg</path>
+			<path ifSubset="image_quality:high_quality">./../../_inc/anim/4K/jp/${system.theme}.png</path>
+			<path ifSubset="image_quality:medium_quality">./../../_inc/anim/jp/${system.theme}.jpg</path>
+			<path ifSubset="image_quality:medium_quality">./../../_inc/anim/jp/${system.theme}.png</path>
 		</image>
 		<!--Semitransparent panel -->
 		<image name="background" extra="true">
