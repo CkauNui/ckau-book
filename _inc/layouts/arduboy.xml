@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.50 0.34</pos>
+			<maxSize>0.2</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.34" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>2015</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.03</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.25</pos>
+			<size>0.5 0</size>
+			<text>Arduboy</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.35</pos>
+			<text>The Arduboy is a handheld game console with open source software, based on the Arduino hardware platform.
+
+The original version of the Arduboy was 1.6 millimetres (0.063 in) thick, with the height and width of a credit card, and was initially designed by Kevin Bates as an electronic business card.
+
+In preparation for a consumer version, the developer moved to Shenzhen, China to work on the Arduboy at the HAX accelerator.
+
+Later consumer versions replaced the first version's touch-sensitive panels by physical buttons, and include a protective plastic case, raising the thickness to 5 millimetres (0.20 in).
+
+A non-production smaller formfactor "Arduboy Mini" was demonstrated in 2019. Another non-production system, the "Arduboy Nano" was demonstrated in 2021 with an smaller formfactor than the Arduboy Mini.</text>
+			<text lang="pl"></text>
+			<text lang="fr">Descriptions. Pls send me it in Discord.</text>
+			<text lang="de">Descriptions. Pls send me it in Discord</text>
+			<text lang="ru">Портативная игровая консоль с открытым исходным кодом, основанная на аппаратной платформе Arduino.
+
+Первоначальная версия Arduboy имела толщину 1,6 миллиметра (0,063 дюйма), высоту и ширину кредитной карты, и изначально была разработана Кевином Бейтсом как электронная визитная карточка.
+
+Для подготовки потребительской версии разработчик переехал в Шэньчжэнь, Китай, чтобы работать над Arduboy в HAX accelerator.
+
+В более поздних потребительских версиях сенсорные панели первой версии были заменены на физические кнопки, а защитный пластиковый корпус увеличил толщину до 5 миллиметров (0,20 дюйма).
+
+В 2019 году была продемонстрирована несерийная система "Arduboy Mini" меньшего форм-фактора. Еще одна несерийная система, "Arduboy Nano", была продемонстрирована в 2021 году с меньшим форм-фактором, чем Arduboy Mini.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>
