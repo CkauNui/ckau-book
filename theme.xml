@@ -25,9 +25,7 @@ originally based on:	art from "Colorful" by viking
 		<gamelist_logo>Gamelist Logo Animate</gamelist_logo>
 		<On_Logo>On</On_Logo>
 		<Off_Logo>Off</Off_Logo>
-		<image_quality>Preferred image Quality</image_quality>
-		<high_quality>4K (If Present)</high_quality>
-		<medium_quality>Full HD</medium_quality>
+		<VideoFullName>Fullscreen Video</VideoFullName>
 	</variables>
 	
 <!-- Языки -->
@@ -63,6 +61,7 @@ originally based on:	art from "Colorful" by viking
 		<gameCarouselViewName>Подробно + Карусель</gameCarouselViewName>
 		<WallpapersCarouselName>Обои + Карусель</WallpapersCarouselName>
 		<WallpapersHeroesName>Шапка (фанарт) + Карусель</WallpapersHeroesName>
+		<VideoFullName>Видео на весь экран</VideoFullName>
 		<tilesViewName>Плитки</tilesViewName>
 		<tilesVideoViewName>Плитки + Видео</tilesVideoViewName>
 		<iconsViewName>Журналы</iconsViewName>
@@ -214,12 +213,6 @@ originally based on:	art from "Colorful" by viking
 	<include subset="colorset" name="Violet" displayName="${violet}">./_inc/colors/violet.xml</include>
 	<include subset="colorset" name="Yellow" displayName="${yellow}">./_inc/colors/yellow.xml</include>
 
-<!-- Select preferred image quality-->
-	<subset name="image_quality" displayName="${image_quality}">
-		<include name="high_quality" displayName="${high_quality}"></include>
-		<include name="medium_quality" displayName="${medium_quality}"></include>
-	</subset>
-
 <!-- Карусель -->
 	<include subset="systemview" name="Wheel (anim)" displayName="${swheelanim}">./_inc/systemviews/wheel_anim.xml</include>
 	<include subset="systemview" name="Wheel" displayName="${swheel}">./_inc/systemviews/wheel.xml</include>
@@ -261,6 +254,7 @@ originally based on:	art from "Colorful" by viking
 	<include>./_inc/views/Wallpapers.xml</include>
 	<include>./_inc/views/WallpapersCarousel.xml</include>
 	<include>./_inc/views/WallpapersHeroes.xml</include>
+	<include>./_inc/views/VideoFull.xml</include>
 	<include>./_inc/views/Carousel.xml</include>
 	<include>./_inc/views/Carousel + Details.xml</include>
 	<include>./_inc/views/Carousel + Details + Marquee.xml</include>
@@ -284,6 +278,7 @@ originally based on:	art from "Colorful" by viking
 		<include name="On (No Black Bars)" displayName="${On_Logo2}">./_inc/views/gamelist_logo_noblack.xml</include>
 		<include name="Off" displayName="${Off_Logo}"></include>
 	</subset>
+
 
 <!-- Кнопки -
 	<view name="menu, system, basic, detailed, grid, gamecarousel">
