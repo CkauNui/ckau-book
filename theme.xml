@@ -26,6 +26,9 @@ originally based on:	art from "Colorful" by viking
 		<On_Logo>On</On_Logo>
 		<Off_Logo>Off</Off_Logo>
 		<VideoFullName>Fullscreen Video</VideoFullName>
+		<image_quality>Preferred image Quality</image_quality>
+		<high_quality>4K (If Present)</high_quality>
+		<medium_quality>Full HD</medium_quality>
 	</variables>
 	
 <!-- Языки -->
@@ -212,6 +215,12 @@ originally based on:	art from "Colorful" by viking
 	<include subset="colorset" name="Red" displayName="${red}">./_inc/colors/red.xml</include>
 	<include subset="colorset" name="Violet" displayName="${violet}">./_inc/colors/violet.xml</include>
 	<include subset="colorset" name="Yellow" displayName="${yellow}">./_inc/colors/yellow.xml</include>
+
+<!-- Select preferred image quality-->
+	<subset name="image_quality" displayName="${image_quality}">
+		<include name="high_quality" displayName="${high_quality}"></include>
+		<include name="medium_quality" displayName="${medium_quality}"></include>
+	</subset>
 
 <!-- Карусель -->
 	<include subset="systemview" name="Wheel (anim)" displayName="${swheelanim}">./_inc/systemviews/wheel_anim.xml</include>
