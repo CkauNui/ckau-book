@@ -25,6 +25,9 @@ originally based on:	art from "Colorful" by viking
 		<gamelist_logo>Gamelist Logo Animate</gamelist_logo>
 		<On_Logo>On</On_Logo>
 		<Off_Logo>Off</Off_Logo>
+		<arrows>Up/Down arrows in System view</arrows>
+		<on_arrows>On</on_arrows>
+		<off_arrows>Off</off_arrows>
 		<VideoFullName>Fullscreen Video</VideoFullName>
 	</variables>
 	
@@ -273,12 +276,18 @@ originally based on:	art from "Colorful" by viking
 <!-- Пресеты -->
 	<include>./_inc/presets/${system.theme}.xml</include>
 
+<!-- Animated gamelist logo on/off -->
 	<subset name="gamelist_logo" displayName="${gamelist_logo}">
 		<include name="On" displayName="${On_Logo}">./_inc/views/gamelist_logo.xml</include>
 		<include name="On (No Black Bars)" displayName="${On_Logo2}">./_inc/views/gamelist_logo_noblack.xml</include>
 		<include name="Off" displayName="${Off_Logo}"></include>
 	</subset>
 
+<!-- Enable/Disable navigation arrows in systemview -->
+	<subset name="arrows" displayName="${arrows}">
+		<include name="On" displayName="${on_arrows}">./_inc/views/arrows.xml</include>
+		<include name="Off" displayName="${off_arrows}"></include>
+	</subset>
 
 <!-- Кнопки -
 	<view name="menu, system, basic, detailed, grid, gamecarousel">
