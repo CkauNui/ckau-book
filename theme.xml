@@ -31,7 +31,7 @@ originally based on:	art from "Colorful" by viking
 		<VideoFullName>Fullscreen Video</VideoFullName>
 	</variables>
 	
-<!-- Other languages -->
+<!-- Языки / Other languages -->
 	<variables lang="ru">
 		<subset.colorset>Выбор цвета</subset.colorset>
 		<blue>Синий</blue>
@@ -100,6 +100,9 @@ originally based on:	art from "Colorful" by viking
 		<On_Logo>ВКЛ</On_Logo>
 		<On_Logo2>ВКЛ (Без чёрных полос)</On_Logo2>
 		<Off_Logo>ВЫКЛ</Off_Logo>
+		<arrows>Стреки навигации Вверх/Вниз</arrows>
+		<on_arrows>ВКЛ</on_arrows>
+		<off_arrows>ОТКЛ</off_arrows>
 	</variables>
 
 	<variables lang="pl">
@@ -206,7 +209,7 @@ originally based on:	art from "Colorful" by viking
 		<Art2_169></Art2_169>
 	</variables>
 
-<!-- Colorsets -->
+<!-- Цвета / Colorsets -->
 	<include subset="colorset" name="Blue" displayName="${blue}">./_inc/colors/blue.xml</include>
 	<include subset="colorset" name="Cyan" displayName="${cyan}">./_inc/colors/cyan.xml</include>
 	<include subset="colorset" name="Gray" displayName="${gray}">./_inc/colors/gray.xml</include>
@@ -231,7 +234,7 @@ originally based on:	art from "Colorful" by viking
 		</helpsystem>
 	</view>-->
 
-<!-- Menu -->
+<!-- Меню / Menu -->
 	<view name="menu">
 		<menuText name="menutitle">
 			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
@@ -384,16 +387,6 @@ originally based on:	art from "Colorful" by viking
 		</text>
 	</view>
 
-<!-- Buttons -->
-	<subset name="helpsystem" displayName="${helpSubsetName}">
-		<include name="buttons" displayName="${helpbuttons}">./_inc/help/buttons.xml</include>
-		<include name="xboxbuttons" displayName="${xboxbuttons}">./_inc/help/xboxbuttons.xml</include>
-		<include name="psxbuttons" displayName="${psxbuttons}">./_inc/help/psxbuttons.xml</include>
-		<include name="psxbuttons_color" displayName="${psxbuttons_color}">./_inc/help/psxbuttons_color.xml</include>
-		<include name="arcadebuttons" displayName="${arcadebuttons}">./_inc/help/arcadebuttons.xml</include>
-		<include name="standard" displayName="${stbuttons}">./_inc/help/default.xml</include>
-	</subset>
-
 <!-- System views -->
 	<include subset="systemview" name="Wheel (anim)" displayName="${swheelanim}">./_inc/systemviews/wheel_anim.xml</include>
 	<include subset="systemview" name="Wheel" displayName="${swheel}">./_inc/systemviews/wheel.xml</include>
@@ -532,6 +525,16 @@ originally based on:	art from "Colorful" by viking
 			<zIndex>110</zIndex>
 		</text>-->
 	</view>
+
+<!-- Buttons -->
+	<subset name="helpsystem" displayName="${helpSubsetName}">
+		<include name="buttons" displayName="${helpbuttons}">./_inc/help/buttons.xml</include>
+		<include name="xboxbuttons" displayName="${xboxbuttons}">./_inc/help/xboxbuttons.xml</include>
+		<include name="psxbuttons" displayName="${psxbuttons}">./_inc/help/psxbuttons.xml</include>
+		<include name="psxbuttons_color" displayName="${psxbuttons_color}">./_inc/help/psxbuttons_color.xml</include>
+		<include name="arcadebuttons" displayName="${arcadebuttons}">./_inc/help/arcadebuttons.xml</include>
+		<include name="standard" displayName="${stbuttons}">./_inc/help/default.xml</include>
+	</subset>
 
 <!-- Icon animations in gameviews -->
 <customView name="Colorful + Wheel Right (horizontally), Colorful + Wheel Left (horizontally), Colorful + Gamelist (horizontally), Colorful (horizontally), Colorful + Wheel Right (vertically), Colorful + Wheel Left (vertically), Colorful + Gamelist (vertically), Colorful (vertically)">
