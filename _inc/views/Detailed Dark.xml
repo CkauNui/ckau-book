@@ -19,41 +19,7 @@
 			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
 			<fontSize>0.0194444444444444</fontSize>
 		</datetime>
-		<image name="ArrowBG" extra="static">
-			<zIndex>175</zIndex>
-			<color>141414</color>
-			<path>./../../_inc/images/arrow_bg.jpg</path>
-			<path>./../../_inc/images/arrow_bg.png</path>
-			<pos>0.98 0.018</pos>
-			<maxSize>0.04</maxSize>
-			<origin>0.5 0.5</origin>
-		</image>
-		<image name="ArrowUp" extra="static">
-			<zIndex>176</zIndex>
-			<color>666666</color>
-			<path>./../../_inc/images/arrow_up.jpg</path>
-			<path>./../../_inc/images/arrow_up.png</path>
-			<pos>0.97 0.018</pos>
-			<maxSize>0.015</maxSize>
-			<storyboard repeat="forever">
-				<animation property="y" from="0.018" to="0.010" begin="0" duration="700" mode="linear"/>
-				<animation property="y" from="0.010" to="0.018" begin="700" duration="700" mode="linear"/>
-			</storyboard>
-			<origin>0.5 0.5</origin>
-		</image>
-		<image name="ArrowDown" extra="static">
-			<zIndex>176</zIndex>
-			<color>666666</color>
-			<path>./../../_inc/images/arrow_down.jpg</path>
-			<path>./../../_inc/images/arrow_down.png</path>
-			<pos>0.991 0.018</pos>
-			<maxSize>0.015</maxSize>
-			<storyboard repeat="forever">
-				<animation property="y" from="0.018" to="0.025" begin="0" duration="700" mode="linear"/>
-				<animation property="y" from="0.025" to="0.018" begin="700" duration="700" mode="linear"/>
-			</storyboard>
-			<origin>0.5 0.5</origin>
-		</image>
+
 		<video name="md_video">
 			<pos>0.540625 0.480555555555556</pos>
 			<maxSize>0.30 0.3833333333333333</maxSize>
@@ -343,4 +309,6 @@
 			<zIndex>150</zIndex>
 		</image>
 	</customView>
+<!-- Navigation arrows, if enabled -->
+  	<include ifSubset="arrows:On">./../../_inc/views/arrows.xml</include>
 </theme>

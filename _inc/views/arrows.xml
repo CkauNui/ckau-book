@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+    <!-- Moves Battery and network indicators to the left -->
+    <view name="screen">
+        <batteryIndicator name="batteryIndicator">
+            <pos>0.925 0.0</pos>
+        </batteryIndicator>
+    </view>
+    <!-- Displays navigation arrows -->
+    <customView name="system,menu,basic,Carousel + Details + Marquee,Carousel + Details,Carousel,Colorful (horizontally),Colorful (vertically),Colorful + Gamelist (horizontally),Colorful + Gamelist (vertically),Colorful + Wheel Left (horizontally),Colorful + Wheel Left (vertically),Colorful + Wheel Right (horizontally),Colorful + Wheel Right (vertically),Detailed No Video,detailed,DetailedWheel,gamecarousel,Grid + Details + Marquee,Grid + Details,grid,Icons,Logo + Details,Tiles + Video,Tiles,Wallpapers,WallpapersCarousel,Detailed Dark,WallpapersHeroes,VideoFull">
+        <image name="ArrowBG" extra="static">
+            <zIndex>175</zIndex>
+            <color>141414</color>
+            <path>./../../_inc/images/arrow_bg.jpg</path>
+            <path>./../../_inc/images/arrow_bg.png</path>
+            <pos>0.98 0.018</pos>
+            <maxSize>0.04</maxSize>
+            <origin>0.5 0.5</origin>
+        </image>
+        <image name="ArrowUp" extra="static">
+            <zIndex>176</zIndex>
+            <color>666666</color>
+            <path>./../../_inc/images/arrow_up.jpg</path>
+            <path>./../../_inc/images/arrow_up.png</path>
+            <pos>0.97 0.018</pos>
+            <maxSize>0.015</maxSize>
+            <storyboard repeat="forever">
+                <animation property="y" from="0.018" to="0.010" begin="0" duration="700" mode="linear"/>
+                <animation property="y" from="0.010" to="0.018" begin="700" duration="700" mode="linear"/>
+            </storyboard>
+            <origin>0.5 0.5</origin>
+        </image>
+        <image name="ArrowDown" extra="static">
+            <zIndex>176</zIndex>
+            <color>666666</color>
+            <path>./../../_inc/images/arrow_down.jpg</path>
+            <path>./../../_inc/images/arrow_down.png</path>
+            <pos>0.991 0.018</pos>
+            <maxSize>0.015</maxSize>
+            <storyboard repeat="forever">
+                <animation property="y" from="0.018" to="0.025" begin="0" duration="700" mode="linear"/>
+                <animation property="y" from="0.025" to="0.018" begin="700" duration="700" mode="linear"/>
+            </storyboard>
+            <origin>0.5 0.5</origin>
+        </image>
+    </customView>
+</theme>

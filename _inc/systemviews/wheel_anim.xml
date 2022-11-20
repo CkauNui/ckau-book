@@ -19,56 +19,23 @@
 		</carousel>
 		<image name="logo">
 		<linearSmooth>true</linearSmooth>
-<storyboard event="activate">
-<animation property="x" to="0.5" begin="2500" duration="300" mode="EaseIn"/>
-<animation property="opacity" from="0" to="1" duration="150" mode="Linear"/>
-<animation property="opacity" from="1" to="1" begin="1150" duration="35" mode="Linear"/>
-</storyboard>
-<storyboard event="scroll">
-<animation property="x" to="0.5" begin="1500" duration="300" mode="EaseIn"/>
-<animation property="opacity" from="0" to="1" duration="150" mode="Linear"/>
-<animation property="opacity" from="1" to="1" begin="1150" duration="35" mode="Linear"/>
-</storyboard>
-<storyboard event="deactivate">
-<animation property="x" to="0.5" begin="1500" duration="300" mode="EaseIn"/>
-<animation property="opacity" from="0" to="1" duration="150" mode="Linear"/>
-<animation property="opacity" from="1" to="1" begin="1150" duration="35" mode="Linear"/>
-</storyboard>
-		</image>
-		<image name="ArrowBG" extra="static">
-			<zIndex>175</zIndex>
-			<color>141414</color>
-			<path>./../../_inc/images/arrow_bg.jpg</path>
-			<path>./../../_inc/images/arrow_bg.png</path>
-			<pos>0.98 0.018</pos>
-			<maxSize>0.04</maxSize>
-			<origin>0.5 0.5</origin>
-		</image>
-		<image name="ArrowUp" extra="static">
-			<zIndex>175</zIndex>
-			<color>666666</color>
-			<path>./../../_inc/images/arrow_up.jpg</path>
-			<path>./../../_inc/images/arrow_up.png</path>
-			<pos>0.97 0.018</pos>
-			<maxSize>0.015</maxSize>
-			<storyboard repeat="forever">
-				<animation property="y" from="0.018" to="0.010" begin="0" duration="700" mode="linear"/>
-				<animation property="y" from="0.010" to="0.018" begin="700" duration="700" mode="linear"/>
+			<storyboard event="activate">
+				<animation property="x" to="0.5" begin="2500" duration="300" mode="EaseIn"/>
+				<animation property="opacity" from="0" to="1" duration="150" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="1150" duration="35" mode="Linear"/>
 			</storyboard>
-			<origin>0.5 0.5</origin>
-		</image>
-		<image name="ArrowDown" extra="static">
-			<zIndex>175</zIndex>
-			<color>666666</color>
-			<path>./../../_inc/images/arrow_down.jpg</path>
-			<path>./../../_inc/images/arrow_down.png</path>
-			<pos>0.991 0.018</pos>
-			<maxSize>0.015</maxSize>
-			<storyboard repeat="forever">
-				<animation property="y" from="0.018" to="0.025" begin="0" duration="700" mode="linear"/>
-				<animation property="y" from="0.025" to="0.018" begin="700" duration="700" mode="linear"/>
+			<storyboard event="scroll">
+				<animation property="x" to="0.5" begin="1500" duration="300" mode="EaseIn"/>
+				<animation property="opacity" from="0" to="1" duration="150" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="1150" duration="35" mode="Linear"/>
 			</storyboard>
-			<origin>0.5 0.5</origin>
+			<storyboard event="deactivate">
+				<animation property="x" to="0.5" begin="1500" duration="300" mode="EaseIn"/>
+				<animation property="opacity" from="0" to="1" duration="150" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="1150" duration="35" mode="Linear"/>
+			</storyboard>
 		</image>
 	</view>
+	<!-- Navigation arrows, if enabled -->
+  <include ifSubset="arrows:On">./../../_inc/views/arrows.xml</include>
 </theme>
