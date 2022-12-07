@@ -35,6 +35,10 @@ https://www.youtube.com/playlist?list=PLlc3zkd7FLPScpaFz9Gf7WWrcR0v21pDv
 | ![](https://i.imgur.com/n6fcyqE.png?raw=true) | ![](https://i.imgur.com/J4n82Pe.png?raw=true) | ![](https://i.imgur.com/OByObVo.png?raw=true) |
 
 ## Addons: 4K Images, videos, collections and more!
+UPD. Moved all addons outside the theme folder, in order to preserve addon files when updating theme through EmulationStation.
+"/themes/ckau-book" - theme directory
+"/themes/ckau-book-addons" - addons directory, which will not be overwritten by ES update procedure.
+
 To reduce download size, each release is provided with Colorful and Darkful system views, and Full HD 1920x1080 images for all supported systems.
 
 To download addons, please refer to the file named `(OPTIONAL) download video, 4K images, cinematic, collections, arts.txt` in the theme root directory.
