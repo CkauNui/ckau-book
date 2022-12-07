@@ -10,8 +10,11 @@
 			<minSize>1 1</minSize>
 			<path>./../../_inc/anim/${system.theme}.jpg</path>
 			<path>./../../_inc/anim/${system.theme}.png</path>
-			<path>./../../_inc/anim/4K/${system.theme}.jpg</path>
-			<path>./../../_inc/anim/4K/${system.theme}.png</path>
+			<!-- Loads 4K image, if addon is available -->
+			<path>./../../../ckau-book-addons/_inc/anim/4K/${system.theme}.jpg</path>
+			<path>./../../../ckau-book-addons/_inc/anim/4K/${system.theme}.png</path>
+			<!-- If it's a collection, checks if the image addon is available -->
+			<path>./../../../ckau-book-addons/_inc/art2/collections/${system.theme}.jpg</path>
 			<zIndex>30</zIndex>
 		</image>
 		<!-- Support different images for regional consoles/computers -->
@@ -28,7 +31,16 @@
 			<path>./../../_inc/anim/4K/jp/${system.theme}.jpg</path>
 			<path>./../../_inc/anim/4K/jp/${system.theme}.png</path>
 		</image>
-		<!-- -->
+		<!-- If it's a collection, checks if the the video addon is available -->
+		<video name="md_video" extra="static">
+			<path>./../../../ckau-book-addons/_inc/videos/collections/${system.theme}.mp4</path>
+			<delay>1.0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<maxSize>1 1</maxSize>
+			<zIndex>74</zIndex>
+		</video>
 		<text name="info1, info2, info3, info4, info5, info6, info7, info8, info9, info10, info11, info12" extra="static">
 			<color>FFFFFF</color>
 			<alignment>left</alignment>
