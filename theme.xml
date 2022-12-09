@@ -378,11 +378,11 @@ originally based on:	art from "Colorful" by viking
 			<path>./_inc/music/${system.theme}.wav</path>
 			<path>./_inc/music/${system.theme}.mp3</path>
 		</sound>
-		<text name="TextDesc" extra="true" tinyScreen="false">
+<!-- 		<text name="TextDesc" extra="true" tinyScreen="false">
 			<size>0.5 0.5</size>
 			<autoScroll>vertical</autoScroll>
 			<verticalAlignment>top</verticalAlignment>
-		</text>
+		</text> -->
 	</view>
 
 <!-- System views -->
@@ -410,7 +410,6 @@ originally based on:	art from "Colorful" by viking
 	<include subset="systembackground" name="Cinematic FullScreen" displayName="${CV1}">./_inc/systemviews/cinematic.xml</include>
 	<include subset="systembackground" name="Cinematic Static" displayName="${CV2}">./_inc/systemviews/cinematic_static.xml</include>
 
-	<include tinyScreen="true" name="TinyScreen">./_inc/systemviews/tinyscreen.xml</include>
 
 <!-- Animated gamelist logo on/off -->
 	<subset name="gamelist_logo" displayName="${gamelist_logo}">
@@ -564,6 +563,17 @@ originally based on:	art from "Colorful" by viking
 		</rating>
 </customView>
 
+<!-- Description limitation -->
+	<view name="system">
+		<text name="TextDesc" extra="true" tinyScreen="false">
+			<size>0.5 0.55</size>
+			<autoScroll>vertical</autoScroll>
+			<verticalAlignment>top</verticalAlignment>
+		</text>
+	</view>
+
 <!-- Support 4:3 ratio -->
-  	<include if="${screen.ratio} == '4/3'">./_inc/views/4 3.xml</include>
+  	<include if="${screen.ratio} == '4/3'" tinyScreen="false">./_inc/views/4 3.xml</include>
+<!-- Support TinyScreen (320x240) -->
+	<include tinyScreen="true" name="TinyScreen">./_inc/systemviews/tinyscreen.xml</include>
 </theme>
