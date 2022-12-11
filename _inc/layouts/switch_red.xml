@@ -18,13 +18,14 @@
 			<path>{random}</path>
 			<path>./../../_inc/anim/video/switch.mp4</path>
 			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/switch.mp4</path>
 			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.42</pos>
 			<maxSize>0.42</maxSize>
+            <maxSize if="${screen.ratio} == '4/3'">0.54</maxSize>
 			<zIndex>27</zIndex>
 			<storyboard>
 				<animation property="pos" to="0.22 0.42" begin="2000" duration="1000" mode="linear"/>
@@ -34,15 +35,19 @@
 			<path>./../../_inc/anim/video/switch2.mp4</path>
 			<!-- Loads platform video from addon directory, if available -->
 			<path>./../../../ckau-book-addons/_inc/anim/video/switch2.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
 			<delay>0</delay>
+			<audio>false</audio>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<pos>0.69 0.677</pos>
+			<origin if="${screen.ratio} == '4/3'">0.07 0.5</origin>
+			<pos>0.685 0.681</pos>
 			<maxSize>0.11</maxSize>
-			<zIndex>26</zIndex>
-			<rotation>08</rotation> 
+			<maxSize if="${screen.ratio} == '4/3'">0.145</maxSize>
+			<zIndex>28</zIndex>
+			<rotation>0</rotation>
 			<storyboard>
-				<animation property="pos" to="0.41 0.677" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.405 0.681" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
