@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.363</pos>
+			<maxSize>0.14</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.18</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<video name="videobox2" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+			<audio>false</audio>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+            <origin if="${screen.ratio} == '4/3'">0.1 0.5</origin>
+			<pos>0.655 0.37</pos>
+			<maxSize>0.13</maxSize>
+			<zIndex>25</zIndex>
+			<rotation>0</rotation>
+			<storyboard>
+				<animation property="pos" to="0.375 0.37" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<video name="videobox3" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+			<audio>false</audio>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+            <origin if="${screen.ratio} == '4/3'">0.9 0.5</origin>
+			<pos>0.345 0.37</pos>
+			<maxSize>0.13</maxSize>
+			<zIndex>25</zIndex>
+			<rotation>0</rotation>
+			<storyboard>
+				<animation property="pos" to="0.065 0.37" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>1998</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>SETA Corporation</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>Aleck 64</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.4</pos>
+			<text>The Aleck 64 is the Nintendo 64 design in arcade form, designed by SETA in cooperation with Nintendo, and sold from 1998 to 2003 only in Japan.
+It essentially consists of a Nintendo 64 board retrofitted with the sound capabilities which are standard for arcade games of the time. Nintendo and SETA began working on their agreement for the board in 1996, hoping to recreate the business model Namco and Sony Computer Entertainment displayed with the Namco System 11, to facilitate conversions of arcade games.
+
+Released in 1998, the Aleck 64 was the Nintendo equivalent of the Namco System 11/12 or Sega Titan Video (ST-V). Games were produced for it until 2003/4, possibly making one of them technically the last N64 game.</text>
+			<text lang="pl">Aleck 64 to projekt Nintendo 64 w formie arcade, zaprojektowany przez SETA we współpracy z Nintendo i sprzedawany od 1998 do 2003 roku tylko w Japonii.
+Zasadniczo składa się z płyty Nintendo 64 doposażonej w możliwości dźwiękowe, które są standardem dla gier arcade w tym czasie. Nintendo i SETA rozpoczęły pracę nad umową dla płyty w 1996 roku, mając nadzieję na odtworzenie modelu biznesowego Namco i Sony Computer Entertainment wyświetlanego z Namco System 11, w celu ułatwienia konwersji gier arcade.
+
+Wydany w 1998 roku Aleck 64 był odpowiednikiem Nintendo dla Namco System 11/12 lub Sega Titan Video (ST-V). Gry były produkowane dla niego do 2003/4 roku, być może czyniąc jedną z nich technicznie ostatnią grą na N64.</text>
+			<text lang="fr"></text>
+			<text lang="de">Descriptions. Pls send me it in Discord</text>
+			<text lang="ru">Aleck 64 - это конструкция Nintendo 64 в аркадной форме, разработанная компанией SETA в сотрудничестве с Nintendo и продававшаяся с 1998 по 2003 год только в Японии.
+По сути, она представляет собой плату Nintendo 64, оснащенную стандартными для аркадных игр того времени звуковыми возможностями. Nintendo и SETA начали работу над соглашением о создании платы в 1996 году, надеясь воссоздать бизнес-модель, которую Namco и Sony Computer Entertainment продемонстрировали с Namco System 11, чтобы облегчить конвертацию аркадных игр.
+
+Выпущенная в 1998 году приставка Aleck 64 стала аналогом Nintendo для Namco System 11/12 или Sega Titan Video (ST-V). Игры для нее выпускались до 2003/4 года, что, возможно, делает одну из них технически последней игрой для N64.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>
