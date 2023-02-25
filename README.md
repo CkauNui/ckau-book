@@ -43,19 +43,18 @@ UPD. Moved all addons outside the theme folder, in order to preserve addon files
 
 To reduce download size, each release is provided with Colorful and Darkful system views, and Full HD 1920x1080 images for all supported systems.
 
-To download addons, please refer to the file named `(OPTIONAL) download video, 4K images, cinematic, collections, arts.txt` in the theme root directory.
+To download addons, please refer to the file named `(OPTIONAL) download video, 4K images, cinematic, collections, arts.txt` in the theme root directory or download them directly from the following GitHub repositories:
 
-- COLORFUL 4K Images: high-detailed, beautiful 3840x2160 system images for both Colorful and Darkful views
-- COLORFUL Video Pack: a gameplay video for each system will show as default in Colorful/Darkful
-- CINEMATIC Video Pack: change view to fullscrean video for sytems
-- COLLECTIONS: 61 collections with both artworks & videos
-- CONSOLES / WALLPAPERS Arts: change view to consoles or wallpapers for sytems
+- [COLORFUL 4K Images](https://github.com/CkauNui/ckau-book-addons-Colorful-4K-Images): high-detailed, beautiful 3840x2160 system images for both Colorful and Darkful views
+- [COLORFUL Video Pack](https://github.com/CkauNui/ckau-book-addons-Colorful-Video): a gameplay video for each system will show as default in Colorful/Darkful
+- [CINEMATIC Video Pack](https://github.com/CkauNui/ckau-book-addons-Cinematic-Video): change systemview to "Cinematic FullScreen" to activate it
+- [CONSOLES](https://github.com/CkauNui/ckau-book-addons-Consoles) / [WALLPAPERS](https://github.com/CkauNui/ckau-book-addons-Wallpapers) Arts: change systemview to "Consoles" or "Wallpapers" to activate them
 
 ## Credits
 
 - Theme autor:
   - Ckau ([@CkauNui](https://github.com/CkauNui))
-  - Thanks to [@Lendersmark](https://github.com/Lendersmark) (fork [ckau-book-enhanced](https://github.com/Lendersmark/ckau-book-enhanced)) and [@g-spawnPL](https://github.com/g-spawnPL) for designing some artworks & helping with the project
+  - Thanks to [@Lendersmark](https://github.com/Lendersmark) and [@g-spawnPL](https://github.com/g-spawnPL) for designing artworks & helping with the project
 - Based on:
   - [Carbon](https://github.com/fabricecaruso/es-theme-carbon) theme by [@fabricecaruso](https://github.com/fabricecaruso)
   - [Art Book](https://github.com/anthonycaccese/es-theme-art-book) theme by [@anthonycaccese](https://github.com/anthonycaccese)
