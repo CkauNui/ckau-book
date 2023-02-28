@@ -1,145 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.50 0.365</pos>
-			<maxSize>0.22</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.365" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-            <origin if="${screen.ratio} == '4/3'">0.2 0.5</origin>
-			<pos>0.655 0.378</pos>
-			<maxSize>0.155</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.375 0.378" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox3" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-            <origin if="${screen.ratio} == '4/3'">0.8 0.5</origin>
-			<pos>0.345 0.378</pos>
-			<maxSize>0.155</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.065 0.378" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
-			<text>1997</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
-			<text>SNK</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
-			<text>Hyper Neo Geo 64</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
-			<text>Arcade system created by SNK, and released in September 1997, as the successor of the Neo Geo MVS, within the Neo Geo family.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.50 0.365</pos>
+      <maxSize>0.22</maxSize>
+      <zIndex>26</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.365" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.2 0.5</origin>
+      <pos>0.655 0.378</pos>
+      <maxSize>0.155</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.375 0.378" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox3" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.8 0.5</origin>
+      <pos>0.345 0.378</pos>
+      <maxSize>0.155</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.065 0.378" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text>1997</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <pos>0.49 0.255</pos>
+      <text>SNK</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.04</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.30</pos>
+      <size>0.5 0</size>
+      <text>Hyper Neo Geo 64</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.4</pos>
+      <text>Arcade system created by SNK, and released in September 1997, as the successor of the Neo Geo MVS, within the Neo Geo family.
 
 It is the first and only SNK hardware set capable of rendering in 3D, and was meant to replace SNK's older MVS system on the market. Company executives planned for the project to bring SNK into the new era of 3D gaming that had arisen during the mid-1990s, and had planned for a corresponding home system to replace the aging and expensive AES home console.
 
 However it never managed to match the huge success of the MVS, and reached its end of life in 1999. Only seven games were produced for the arcade variation of the system, none of which proved particularly popular, and the project was discontinued. The proposed home system never got beyond initial planning stages and only one of the arcade games, Fatal Fury: Wild Ambition, has been ported to home systems.</text>
-			<text lang="pl">System zręcznościowy stworzony przez SNK, a wydany we wrześniu 1997 roku, jako następca Neo Geo MVS, w ramach rodziny Neo Geo.
+      <text lang="pl">System zręcznościowy stworzony przez SNK, a wydany we wrześniu 1997 roku, jako następca Neo Geo MVS, w ramach rodziny Neo Geo.
 
 Jest to pierwszy i jedyny zestaw sprzętowy SNK zdolny do renderowania w 3D i miał zastąpić na rynku starszy system MVS firmy SNK. Kierownictwo firmy planowało, że ten projekt wprowadzi SNK w nową erę gier 3D, która powstała w połowie lat 90-tych, a także zaplanowało odpowiedni system domowy, który miał zastąpić starzejącą się i drogą konsolę AES.
 
 Jednak nigdy nie udało się jej dorównać ogromnemu sukcesowi MVS i w 1999 roku zakończyła swój żywot. Na arcade'ową odmianę systemu wyprodukowano tylko siedem gier, z których żadna nie okazała się szczególnie popularna, a projekt został przerwany. Proponowany system domowy nigdy nie wyszedł poza wstępne etapy planowania i tylko jedna z gier arcade, Fatal Fury: Wild Ambition, została przeniesiona na systemy domowe.</text>
-			<text lang="fr">Système d'arcade créé par SNK, et sorti en septembre 1997, comme le successeur du Neo Geo MVS, au sein de la famille Neo Geo.
+      <text lang="fr">Système d'arcade créé par SNK, et sorti en septembre 1997, comme le successeur du Neo Geo MVS, au sein de la famille Neo Geo.
 
 C'est le premier et le seul ensemble matériel de SNK capable d'effectuer un rendu en 3D, et il était destiné à remplacer l'ancien système MVS de SNK sur le marché. Les dirigeants de la société prévoyaient que ce projet ferait entrer SNK dans la nouvelle ère du jeu en 3D qui avait vu le jour au milieu des années 1990, et avaient prévu un système de salon correspondant pour remplacer la console de salon AES, vieillissante et coûteuse.
 
 Cependant, elle n'a jamais réussi à égaler l'énorme succès de la MVS, et a atteint sa fin de vie en 1999. Seuls sept jeux ont été produits pour la version arcade du système, dont aucun ne s'est avéré particulièrement populaire, et le projet a été abandonné. Le projet de système domestique n'a jamais dépassé le stade de la planification initiale et seul un des jeux d'arcade, Fatal Fury : Wild Ambition, a été porté sur les systèmes domestiques.</text>
-			<text lang="de">Descriptions. Pls send me it in Discord</text>
-			<text lang="ru">Аркадная система, созданная компанией SNK и выпущенная в сентябре 1997 года как преемник Neo Geo MVS в семействе Neo Geo.
+      <text lang="ru">Аркадная система, созданная компанией SNK и выпущенная в сентябре 1997 года как преемник Neo Geo MVS в семействе Neo Geo.
 
 Это первая и единственная аппаратная система SNK, способная к 3D-рендерингу, которая должна была заменить на рынке более старую систему SNK MVS. Руководители компании планировали, что этот проект введет SNK в новую эру 3D-игр, которая возникла в середине 1990-х годов, и планировали соответствующую домашнюю систему для замены устаревшей и дорогой домашней консоли AES.
 
 Однако она так и не смогла сравниться с огромным успехом MVS и закончила свое существование в 1999 году. Для аркадной версии системы было выпущено всего семь игр, ни одна из которых не оказалась особенно популярной, и проект был прекращен. Предполагаемая домашняя система так и не вышла за рамки начального планирования, и только одна из аркадных игр, Fatal Fury: Wild Ambition, была перенесена на домашние системы.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-	</view>
+      <text lang="it">Sistema arcade creato da SNK e rilasciato nel settembre 1997, come successore del Neo Geo MVS, all'interno della famiglia Neo Geo.
+
+È il primo e unico hardware SNK in grado di eseguire il rendering in 3D e doveva sostituire il vecchio sistema MVS di SNK sul mercato. I dirigenti dell'azienda avevano previsto che il progetto portasse SNK nella nuova era del gioco in 3D, sorta a metà degli anni Novanta, e avevano pianificato un sistema domestico corrispondente per sostituire la vecchia e costosa console domestica AES.
+
+Tuttavia, non riuscì mai a eguagliare l'enorme successo dell'MVS e terminò la sua vita nel 1999. Per la variante arcade del sistema furono prodotti solo sette giochi, nessuno dei quali si rivelò particolarmente popolare, e il progetto fu interrotto. Il sistema domestico proposto non andò mai oltre le fasi iniziali di progettazione e solo uno dei giochi arcade, Fatal Fury: Wild Ambition, è stato portato su sistemi domestici.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
 </theme>

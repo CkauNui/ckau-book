@@ -1,102 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.49 0.4</pos>
-			<maxSize>0.22</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
-			<text>1981</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
-			<text>Commodore</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
-			<text>VIC-20</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.40</pos>
-			<text>The Commodore VIC-20 (known as the VC-20 in Germany and the VIC-1001 in Japan) is an 8-bit home computer that was sold by Commodore Business Machines. The VIC-20 was announced in 1980, roughly three years after Commodore's first personal computer, the PET. The VIC-20 was the first computer of any description to sell one million units. It was described as "one of the first anti-spectatorial, non-esoteric computers by design...no longer relegated to hobbyist/enthusiasts or those with money, the computer Commodore developed was the computer of the future.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.49 0.4</pos>
+      <maxSize>0.22</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text>1981</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <pos>0.49 0.255</pos>
+      <text>Commodore</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.04</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.30</pos>
+      <size>0.5 0</size>
+      <text>VIC-20</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.40</pos>
+      <text>The Commodore VIC-20 (known as the VC-20 in Germany and the VIC-1001 in Japan) is an 8-bit home computer that was sold by Commodore Business Machines. The VIC-20 was announced in 1980, roughly three years after Commodore's first personal computer, the PET. The VIC-20 was the first computer of any description to sell one million units. It was described as "one of the first anti-spectatorial, non-esoteric computers by design...no longer relegated to hobbyist/enthusiasts or those with money, the computer Commodore developed was the computer of the future.
 
 The VIC-20 was called VC-20 in Germany because the pronunciation of VIC with a German accent sounds like the German expletives "fick" or "wichsen". The term VC was marketed as though it was an abbreviation of VolksComputer ("people's computer," similar to Volkswagen and Volksempfänger).</text>
-			<text lang="pl">Commodore VIC-20 (w Niemczech VC20, w Japonii VIC-1001) – komputer domowy produkowany przez firmę Commodore, posiadający 5 kB pamięci RAM i procesor MOS 6502. Jest pierwszym komputerem domowym, którego liczba sprzedanych sztuk wyniosła ponad milion egzemplarzy (w sumie sprzedano ponad 2,5 miliona jednostek).
+      <text lang="pl">Commodore VIC-20 (w Niemczech VC20, w Japonii VIC-1001) – komputer domowy produkowany przez firmę Commodore, posiadający 5 kB pamięci RAM i procesor MOS 6502. Jest pierwszym komputerem domowym, którego liczba sprzedanych sztuk wyniosła ponad milion egzemplarzy (w sumie sprzedano ponad 2,5 miliona jednostek).
 
 VIC-20 wyposażony był w 8-bitowy mikroprocesor MOS Technology 6502, znany z mikrokomputera Commodore PET. Układ grafiki, MOS VIC, udostępniał tryb tekstowy: 22 kolumny x 23 wiersze, a także tryb graficzny – w rozdzielczości 176x184 pikseli z 3 bitami na piksel. Obudowa komputera była później używana w Commodore 64 i Commodore 16. VIC-20 został wprowadzony do sprzedaży na początku 1981, po premierze na Pokazie Elektroniki Komputerowej w czerwcu 1980.</text>
-			<text lang="fr">Descriptions. Pls send me it in Discord</text>
-			<text lang="de">Descriptions. Pls send me it in Discord</text>
-			<text lang="ru">8-битный домашний компьютер, выпускавшийся компанией Commodore Business Machines. VIC-20 был анонсирован в июне 1980, примерно через три года после выпуска Commodore PET. Это первый в мире компьютер, продажи которого превысили миллион экземпляров. Всего было реализовано более 2,5 миллионов компьютеров этой модели. В ходе конкурентной борьбы цена упала с $299,95 до $55 (ниже себестоимости), но это с лихвой окупалось за счёт продаж программного обеспечения и аксессуаров.
+      <text lang="ru">8-битный домашний компьютер, выпускавшийся компанией Commodore Business Machines. VIC-20 был анонсирован в июне 1980, примерно через три года после выпуска Commodore PET. Это первый в мире компьютер, продажи которого превысили миллион экземпляров. Всего было реализовано более 2,5 миллионов компьютеров этой модели. В ходе конкурентной борьбы цена упала с $299,95 до $55 (ниже себестоимости), но это с лихвой окупалось за счёт продаж программного обеспечения и аксессуаров.
 
 Commodore VIC-20 был оснащён 8-разрядным микропроцессором CSG/MOS 6502 с тактовой частотой 1,0227 МГц. В качестве видеоконтроллера и звукогенератора использовалась микросхема VIC (Video Interface Chip 6560/6561). VIC позволял отображать цветную графику с разрешением 176×184 пикселей или 23 строчки по 22 символа и воспроизводить трёхголосный звук в диапазоне трёх октав. Объём ОЗУ составлял 5,5 КБ, из которых пользователю было доступно 3583 байт, а 2 КБ использовалось для системных нужд, в частности для отображения видео. Выпускались картриджи для расширения памяти объёмом от 3 до 64 КБ. В 16 КБ ПЗУ был прошит интерпретатор Бейсика и KERNAL (операционная система низкого уровня).
 
 К VIC-20 можно было подключать джойстик, принтер VIC 1515, VIC Modem и другие периферийные устройства. В качестве внешней памяти использовались картриджи, магнитофонные компакт-кассеты с фирменным накопителем Commodore Datasette или дисковод Commodore 1540 для дискет размером 5¼" объёмом около 170 КБ.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-	</view>
+      <text lang="it">Il Commodore VIC-20 (noto come VC-20 in Germania e VIC-1001 in Giappone) è stato un home computer a 8 bit venduto da Commodore Business Machines. Il VIC-20 fu annunciato nel 1980, circa tre anni dopo il primo personal computer di Commodore, il PET. Il VIC-20 è stato il primo computer di qualsiasi tipo a vendere un milione di unità. È stato descritto come "uno dei primi computer anti-speculatori, non esoterici per concezione... non più relegato agli hobbisti/entusiasti o a chi ha soldi, il computer sviluppato da Commodore era il computer del futuro".
+
+Il VIC-20 era chiamato VC-20 in Germania perché la pronuncia di VIC con accento tedesco assomiglia alle imprecazioni tedesche "fick" o "wichsen". Il termine VC fu commercializzato come se fosse un'abbreviazione di VolksComputer ("computer del popolo", simile a Volkswagen e Volksempfänger).</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
 </theme>

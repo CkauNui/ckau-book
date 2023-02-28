@@ -1,110 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videocrton" extra="true">
-			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
-			<delay>0</delay>
-			<loops>0</loops>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.475 0.39</pos>
-			<maxSize>0.232</maxSize>
-			<zIndex>26</zIndex>
-		</video>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.525 0.5</origin>
-			<pos>0.475 0.39</pos>
-			<maxSize>0.232</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.195 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
-			<text>1987</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<!-- Support different dates for regional consoles/computers -->
-		<text name="TextDate" extra="true" region="eu"></text>
-		<text name="TextDate" extra="true" region="us">
-			<text>1986</text>	
-		</text>
-		<text name="TextDate" extra="true" region="jp">
-			<text>1985</text>
-		</text>
-		<!-- -->
-		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
-			<text>Sega</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
-			<text>Master System</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<!-- Support different names for regional consoles/computers -->
-		<text name="TextName" extra="true" region="eu"></text>
-		<text name="TextName" extra="true" region="us"></text>
-		<text name="TextName" extra="true" region="jp">
-			<text>Mark III</text>
-		</text>
-		<!-- -->
-		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
-			<text>The Sega Master System is a third-generation 8-bit home video game console manufactured by Sega. It was originally a remodeled export version of the Sega Mark III, the third iteration of the SG-1000 series of consoles, which was released in Japan in 1985 and featured enhanced graphical capabilities over its predecessors. The Master System launched in North America in 1986, followed by Europe in 1987, and Brazil in 1989. A Japanese version of the Master System was also launched in 1987, which features a few enhancements over the export models (and by proxy the original Mark III): a built-in FM audio chip, a rapid-fire switch, and a dedicated port for the 3D glasses. The Master System II, a cheaper model, was released in 1990 in North America and Europe.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videocrton" extra="true">
+      <path>./../../_inc/anim/video/CRT_ON.mp4</path>
+      <delay>0</delay>
+      <loops>0</loops>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.475 0.39</pos>
+      <maxSize>0.232</maxSize>
+      <zIndex>26</zIndex>
+    </video>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.525 0.5</origin>
+      <pos>0.475 0.39</pos>
+      <maxSize>0.232</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.195 0.39" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text>1987</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <!-- Support different dates for regional consoles/computers -->
+    <text name="TextDate" extra="true" region="eu"/>
+    <text name="TextDate" extra="true" region="us">
+      <text>1986</text>
+    </text>
+    <text name="TextDate" extra="true" region="jp">
+      <text>1985</text>
+    </text>
+    <!-- -->
+    <text name="TextManufacturer" extra="true">
+      <pos>0.49 0.255</pos>
+      <text>Sega</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.04</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.30</pos>
+      <size>0.5 0</size>
+      <text>Master System</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <!-- Support different names for regional consoles/computers -->
+    <text name="TextName" extra="true" region="eu"/>
+    <text name="TextName" extra="true" region="us"/>
+    <text name="TextName" extra="true" region="jp">
+      <text>Mark III</text>
+    </text>
+    <!-- -->
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.4</pos>
+      <text>The Sega Master System is a third-generation 8-bit home video game console manufactured by Sega. It was originally a remodeled export version of the Sega Mark III, the third iteration of the SG-1000 series of consoles, which was released in Japan in 1985 and featured enhanced graphical capabilities over its predecessors. The Master System launched in North America in 1986, followed by Europe in 1987, and Brazil in 1989. A Japanese version of the Master System was also launched in 1987, which features a few enhancements over the export models (and by proxy the original Mark III): a built-in FM audio chip, a rapid-fire switch, and a dedicated port for the 3D glasses. The Master System II, a cheaper model, was released in 1990 in North America and Europe.
 
 The original Master System models use both cartridges and a credit card-sized format known as Sega Cards. Accessories for the consoles include a light gun and 3D glasses that work with a range of specially designed games. The later Master System II redesign removed the card slot, turning it into a strictly cartridge-only system and is incompatible with the 3D glasses.</text>
-			<text lang="pl">Sega Master System (jap.: マスターシステム) – 8-bitowa konsola na kartridże produkowana przez japońską firmę Sega.
+      <text lang="pl">Sega Master System (jap.: マスターシステム) – 8-bitowa konsola na kartridże produkowana przez japońską firmę Sega.
 
 Sega Master System została wprowadzona na rynek jako przerobiona wersja Sega SG-1000 Mark III, która z kolei była następcą SG-1000 Mark I i SG-1000 Mark II. W Japonii Mark III oficjalnie weszła na rynek 20 października 1985, maskotką systemu był Alex Kidd. W Stanach Zjednoczonych pojawiła się w czerwcu 1986, rok po wejściu na rynek konsoli Nintendo Entertainment System. Przez kolejny rok była wprowadzona do krajów europejskich.
 Pomimo że SMS była konsolą bardziej zaawansowaną technicznie niż NES, nie udało jej się zdobyć takiej samej popularności. Spowodowane to było przede wszystkim późniejszym debiutem SMS, większą liczbą gier dostępnych na NES i restrykcjami nałożonymi przez Segę na producentów gier na SMS. W ciągu czterech pierwszych miesięcy sprzedano zaledwie 125 000 konsoli Segi. Dla porównania: w tym samym czasie sprzedano ponad 2 000 000 egzemplarzy Nintendo.
@@ -118,23 +118,25 @@ Dane techniczne:
 - ROM: 64 kbit (8 kB) do 2048 kbit (256 kB) w zależności od gry
 - RAM: 64 kbit (8 kB)
 - Wideo RAM: 128 kbit (16 kB)</text>
-			<text lang="fr">La Master System (マスターシステム, Masutā Shisutemu) ou Sega Master System (aussi abrégé SMS) est une console de jeux vidéo de troisième génération, conçue et commercialisée par le constructeur japonais Sega Enterprises, Ltd. Elle sort en 1985, sous le nom Sega Mark III au Japon. La console est redessinée et rebaptisée Master System avant son lancement en 1986 en Amérique du Nord. Elle sort sous ce nom sur la plupart des autres territoires, dont l'Europe en 1986 et le Brésil en 1987. Le modèle remanié de la Master System sort également en 1987 au Japon.
+      <text lang="fr">La Master System (マスターシステム, Masutā Shisutemu) ou Sega Master System (aussi abrégé SMS) est une console de jeux vidéo de troisième génération, conçue et commercialisée par le constructeur japonais Sega Enterprises, Ltd. Elle sort en 1985, sous le nom Sega Mark III au Japon. La console est redessinée et rebaptisée Master System avant son lancement en 1986 en Amérique du Nord. Elle sort sous ce nom sur la plupart des autres territoires, dont l'Europe en 1986 et le Brésil en 1987. Le modèle remanié de la Master System sort également en 1987 au Japon.
 
 Les deux modèles initiaux de la console peuvent lire les cartouches de jeu et les Sega Cards, des cartes mémoires pouvant stocker les jeux, vendues à des prix inférieurs aux cartouches mais avec une capacité de stockage moindre ; la Master System II et les modèles ultérieurs ne possèdent pas de fente pour ces cartes. La Master System est également compatible avec des accessoires tels qu'un pistolet optique et des lunettes stéréoscopiques conçus pour fonctionner avec une gamme de jeux spécialement codés.</text>
-			<text lang="de">Descriptions. Pls send me it in Discord</text>
-			<text lang="ru">8-битная игровая приставка третьего поколения, разработанная и выпущенная компанией Sega. Изначально приставка была выпущена в Японии в 1985 году под названием Sega Mark III. После модернизации перед изданием в Северной Америке, приставка была переименована в Master System и выпущена в 1986 году в США, в 1987 году в Европе, и в 1989 году в Бразилии. Master System была повторно перевыпущена в Японии в 1987 году, отличаясь от экспортных моделей наличием дополнительных возможностей. Mark III, как и оригинальные модели Master System, могли работать и с обычными картриджами — которые официально назывались Mega Cartridges — и с Sega Cards, размером с банковскую карточку, которые продавались по меньшей цене чем картриджи. Master System II и более поздние модели не имели слота для карточек.
+      <text lang="ru">8-битная игровая приставка третьего поколения, разработанная и выпущенная компанией Sega. Изначально приставка была выпущена в Японии в 1985 году под названием Sega Mark III. После модернизации перед изданием в Северной Америке, приставка была переименована в Master System и выпущена в 1986 году в США, в 1987 году в Европе, и в 1989 году в Бразилии. Master System была повторно перевыпущена в Японии в 1987 году, отличаясь от экспортных моделей наличием дополнительных возможностей. Mark III, как и оригинальные модели Master System, могли работать и с обычными картриджами — которые официально назывались Mega Cartridges — и с Sega Cards, размером с банковскую карточку, которые продавались по меньшей цене чем картриджи. Master System II и более поздние модели не имели слота для карточек.
 
 Master System, являющаяся наследницей SG-1000, была создана как прямой конкурент приставке Nintendo Entertainment System. В отличие от её соперницы Master System использовала более современную аппаратную начинку, но несмотря на это ей не удалось побороть Nintendo по продажам в Японии и Северной Америке. При этом, приставка достигла значительно больших успехов в продажах в Европе и Бразилии. По сравнению с NES в игровой библиотеке Master System было гораздо меньше игр из-за лицензионной политики Nintendo, которая требовала от издателей эксклюзивности игр для NES.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-	</view>
+      <text lang="it">Il Sega Master System è una console per videogiochi domestici a 8 bit di terza generazione prodotta da Sega. Originariamente era una versione da esportazione rimaneggiata del Sega Mark III, la terza iterazione della serie di console SG-1000, uscita in Giappone nel 1985 e dotata di capacità grafiche migliorate rispetto ai suoi predecessori. Il Master System fu lanciato in Nord America nel 1986, seguito dall'Europa nel 1987 e dal Brasile nel 1989. Nel 1987 fu lanciata anche una versione giapponese del Master System, che presentava alcuni miglioramenti rispetto ai modelli per l'esportazione (e per procura al Mark III originale): un chip audio FM integrato, un interruttore a fuoco rapido e una porta dedicata per gli occhiali 3D. Il Master System II, un modello più economico, fu lanciato nel 1990 in Nord America e in Europa.
+
+I modelli originali di Master System utilizzano sia cartucce che un formato di carta di credito noto come Sega Card. Gli accessori per le console includono una light gun e occhiali 3D che funzionano con una serie di giochi appositamente progettati. La successiva riprogettazione del Master System II ha eliminato lo slot per le schede, trasformandolo in un sistema esclusivamente a cartucce ed è incompatibile con gli occhiali 3D.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
 </theme>

@@ -1,110 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videocrton" extra="true">
-			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
-			<delay>0</delay>
-			<loops>0</loops>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.482 0.39</pos>
-			<maxSize>0.22</maxSize>
-			<zIndex>26</zIndex>
-		</video>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.482 0.39</pos>
-			<maxSize>0.22</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.202 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
-			<text>1983</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
-			<text>Philips</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
-			<text>Videopac+ G7400</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
-			<text>The Philips Videopac+ G7400 is a third-generation home video game console released in limited quantities in 1983, and only in Europe; an American release as the Odyssey³ Command Center was planned but never occurred. The G7400 was the successor to the Philips Videopac G7000, the European counterpart to the American Magnavox Odyssey². The system featured excellently tailored background and foreground graphics.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videocrton" extra="true">
+      <path>./../../_inc/anim/video/CRT_ON.mp4</path>
+      <delay>0</delay>
+      <loops>0</loops>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.482 0.39</pos>
+      <maxSize>0.22</maxSize>
+      <zIndex>26</zIndex>
+    </video>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.482 0.39</pos>
+      <maxSize>0.22</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.202 0.39" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text>1983</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <pos>0.49 0.255</pos>
+      <text>Philips</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.04</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.30</pos>
+      <size>0.5 0</size>
+      <text>Videopac+ G7400</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.4</pos>
+      <text>The Philips Videopac+ G7400 is a third-generation home video game console released in limited quantities in 1983, and only in Europe; an American release as the Odyssey³ Command Center was planned but never occurred. The G7400 was the successor to the Philips Videopac G7000, the European counterpart to the American Magnavox Odyssey². The system featured excellently tailored background and foreground graphics.
 
 The G7400 could play three types of games: all normal G7000 games, special G7000 games with additional high-res background graphics that would appear only when played on the G7400, and G7400-only games with high-res sprites and backgrounds.</text>
-			<text lang="pl">Philips Videopac+ G7400 to domowa konsola do gier wideo trzeciej generacji, wydana w ograniczonych ilościach w 1983 roku i tylko w Europie; planowano wydanie amerykańskie jako Odyssey³ Command Center, ale nigdy nie doszło do skutku. G7400 był następcą Philips Videopac G7000, europejskiego odpowiednika amerykańskiego Magnavox Odyssey². System ten charakteryzował się doskonale dopasowaną grafiką tła i pierwszego planu.
+      <text lang="pl">Philips Videopac+ G7400 to domowa konsola do gier wideo trzeciej generacji, wydana w ograniczonych ilościach w 1983 roku i tylko w Europie; planowano wydanie amerykańskie jako Odyssey³ Command Center, ale nigdy nie doszło do skutku. G7400 był następcą Philips Videopac G7000, europejskiego odpowiednika amerykańskiego Magnavox Odyssey². System ten charakteryzował się doskonale dopasowaną grafiką tła i pierwszego planu.
 
 Na G7400 można było grać w trzy rodzaje gier: wszystkie normalne gry na G7000, specjalne gry na G7000 z dodatkową grafiką tła o wysokiej rozdzielczości, które pojawiały się tylko na G7400, oraz gry tylko na G7400 z grafiką i tłem o wysokiej rozdzielczości.</text>
-			<text lang="fr">Descriptions. Pls send me it in Discord</text>
-			<text lang="de">Descriptions. Pls send me it in Discord</text>
-			<text lang="ru">Philips Videopac+ G7400 — домашняя игровая приставка третьего поколения, выпущенная ограниченным тиражом в 1983 году и только в Европе; выпуск в Америке под названием Odyssey³ Command Center планировался, но так и не состоялся. G7400 был преемником Philips Videopac G7000, европейского аналога американского Magnavox Odyssey². В системе отлично подобрана фоновая и передняя графика.
+      <text lang="ru">Philips Videopac+ G7400 — домашняя игровая приставка третьего поколения, выпущенная ограниченным тиражом в 1983 году и только в Европе; выпуск в Америке под названием Odyssey³ Command Center планировался, но так и не состоялся. G7400 был преемником Philips Videopac G7000, европейского аналога американского Magnavox Odyssey². В системе отлично подобрана фоновая и передняя графика.
 
 G7400 мог играть в три типа игр: все обычные игры G7000, специальные игры G7000 с дополнительной фоновой графикой высокого разрешения, которая появлялась только при воспроизведении на G7400, и игры только для G7400 со спрайтами и фоном высокого разрешения.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-	</view>
+      <text lang="it">Il Philips Videopac+ G7400 è una console per videogiochi domestica di terza generazione rilasciata in quantità limitate nel 1983, e solo in Europa; un'uscita americana con il nome di Odyssey³ Command Center era prevista ma non è mai avvenuta. Il G7400 era il successore del Philips Videopac G7000, la controparte europea dell'americana Magnavox Odyssey². Il sistema era dotato di una grafica di sfondo e di primo piano ottimamente adattata.
+
+Il G7400 poteva riprodurre tre tipi di giochi: tutti i normali giochi del G7000, i giochi speciali del G7000 con grafica di sfondo aggiuntiva ad alta risoluzione che appariva solo quando si giocava sul G7400 e i giochi solo per il G7400 con sprite e sfondi ad alta risoluzione.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
 </theme>

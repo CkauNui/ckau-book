@@ -1,82 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.48 0.5</origin>
-			<pos>0.519 0.378</pos>
-			<maxSize>0.27</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.239 0.378" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
-			<text>2004</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.03</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextName" extra="true">
-			<pos>0.49 0.25</pos>
-			<size>0.5 0</size>
-			<text>Cave Story</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.35</pos>
-			<text>Cave Story is a 2004 Metroidvania platform-adventure game for Microsoft Windows. It was developed over five years by Japanese developer Daisuke "Pixel" Amaya in his free time. Cave Story features 2D platform mechanics and is reminiscent of the games Amaya played in his youth, such as Metroid and Castlevania (both released in 1986). After its initial self-published release, the game slowly gained popularity on the internet. It received widespread critical acclaim for many polished aspects of its design, such as its compelling characters, setting, story, and gameplay. Cave Story is considered by many as the quintessential indie game because of its one-man development team and influence on the gaming world.</text>
-			<text lang="pl">Cave Story (jap. 洞窟物語 Dōkutsu Monogatari) – darmowa gra komputerowa (freeware) opublikowana w grudniu 2004 roku. Została stworzona przez Daisuke Amayę, znanego również pod jego pseudonimem artystycznym "Pixel". Cave Story jest przygodową grą akcji podobną do Castlevanii i Metroida. Ulepszona wersja o tytule Cave Story+ została wydana w listopadzie 2011 roku w usłudze Steam oraz w październiku 2012 roku na Nintendo 3DS. 20 czerwca 2017 Cave Story + zostało wydane na Nintendo Switch.</text>
-			<text lang="fr">Cave Story est un jeu vidéo amateur de plate-formes et d'aventure (metroidvania) sorti en 2004 sur PC. Développé en 5 ans par Daisuke "Pixel" Amaya sur son temps libre, Cave Story s'inspire notamment de classiques du jeu de plate-formes 2D tels que Metroid (1986) ou Castlevania (1986), auxquels Pixel a joué durant son enfance. Suite à son lancement initial, en téléchargement gratuit, Cave Story est progressivement devenu très populaire sur Internet. Le jeu a été applaudi par la critique pour son écriture, son ambiance et son gameplay.</text>
-			<text lang="de">Descriptions. Pls send me it in Discord</text>
-			<text lang="ru">Cave Story — бесплатная компьютерная игра в жанре метроидвания, созданная японским программистом Дайсукэ Амаей (творческий псевдоним Pixel) в свободное время и выпущенная в декабре 2004 года. Спустя некоторое время игра получила популярность в Интернете. Cave Story описывается многими игровыми изданиями как одна из самых значимых инди-игр, выделяя, что над ней трудился лишь один человек, и учитывая её влияние на игровую индустрию.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-	</view>
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.48 0.5</origin>
+      <pos>0.519 0.378</pos>
+      <maxSize>0.27</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.239 0.378" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text>2004</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.03</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.25</pos>
+      <size>0.5 0</size>
+      <text>Cave Story</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.35</pos>
+      <text>Cave Story is a 2004 Metroidvania platform-adventure game for Microsoft Windows. It was developed over five years by Japanese developer Daisuke "Pixel" Amaya in his free time. Cave Story features 2D platform mechanics and is reminiscent of the games Amaya played in his youth, such as Metroid and Castlevania (both released in 1986). After its initial self-published release, the game slowly gained popularity on the internet. It received widespread critical acclaim for many polished aspects of its design, such as its compelling characters, setting, story, and gameplay. Cave Story is considered by many as the quintessential indie game because of its one-man development team and influence on the gaming world.</text>
+      <text lang="pl">Cave Story (jap. 洞窟物語 Dōkutsu Monogatari) – darmowa gra komputerowa (freeware) opublikowana w grudniu 2004 roku. Została stworzona przez Daisuke Amayę, znanego również pod jego pseudonimem artystycznym "Pixel". Cave Story jest przygodową grą akcji podobną do Castlevanii i Metroida. Ulepszona wersja o tytule Cave Story+ została wydana w listopadzie 2011 roku w usłudze Steam oraz w październiku 2012 roku na Nintendo 3DS. 20 czerwca 2017 Cave Story + zostało wydane na Nintendo Switch.</text>
+      <text lang="ru">Cave Story — бесплатная компьютерная игра в жанре метроидвания, созданная японским программистом Дайсукэ Амаей (творческий псевдоним Pixel) в свободное время и выпущенная в декабре 2004 года. Спустя некоторое время игра получила популярность в Интернете. Cave Story описывается многими игровыми изданиями как одна из самых значимых инди-игр, выделяя, что над ней трудился лишь один человек, и учитывая её влияние на игровую индустрию.</text>
+      <text lang="it">Cave Story è un gioco platform-adventure Metroidvania del 2004 per Microsoft Windows. È stato sviluppato per cinque anni dallo sviluppatore giapponese Daisuke "Pixel" Amaya nel suo tempo libero. Cave Story è caratterizzato da meccaniche platform 2D e ricorda i giochi a cui Amaya giocava in gioventù, come Metroid e Castlevania (entrambi usciti nel 1986). Dopo l'iniziale pubblicazione autonoma, il gioco ha lentamente guadagnato popolarità su Internet. Ha ricevuto ampi consensi dalla critica per molti aspetti curati del suo design, come i personaggi, l'ambientazione, la storia e il gameplay. Cave Story è considerato da molti come la quintessenza del gioco indipendente, grazie al suo team di sviluppo composto da un solo uomo e alla sua influenza sul mondo dei videogiochi.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
 </theme>

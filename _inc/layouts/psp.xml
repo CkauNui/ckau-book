@@ -1,109 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.488</pos>
-			<maxSize>0.29</maxSize>
-            <maxSize if="${screen.ratio} == '4/3'">0.38</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.488" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
-			<text>2004</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
-			<text>Sony</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
-			<text>PlayStation Portable</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
-			<text>The PlayStation Portable (PSP) is a handheld game console developed and marketed by Sony Computer Entertainment. It was first released in Japan on December 12, 2004, in North America on March 24, 2005, and in PAL regions on September 1, 2005, and is the first handheld installment in the PlayStation line of consoles. As a seventh generation console it competed with the Nintendo DS.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.5 0.488</pos>
+      <maxSize>0.29</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.38</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.488" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text>2004</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <pos>0.49 0.255</pos>
+      <text>Sony</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.04</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.30</pos>
+      <size>0.5 0</size>
+      <text>PlayStation Portable</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.4</pos>
+      <text>The PlayStation Portable (PSP) is a handheld game console developed and marketed by Sony Computer Entertainment. It was first released in Japan on December 12, 2004, in North America on March 24, 2005, and in PAL regions on September 1, 2005, and is the first handheld installment in the PlayStation line of consoles. As a seventh generation console it competed with the Nintendo DS.
 
 Development of the PSP was announced during E3 2003, and the console was unveiled at a Sony press conference on May 11, 2004. The system was the most powerful portable console when it was introduced, and was the first real competitor of Nintendo's handheld consoles after many challengers, such as Nokia's N-Gage, had failed. The PSP's advanced graphics capabilities made it a popular mobile entertainment device, which could connect to the PlayStation 2 and PlayStation 3 consoles, any computer with USB interface, other PSP systems, and the Internet. The PSP also had a vast array of multimedia features such as video playback, and so has been considered a portable media player as well. The PSP is the only handheld console to use an optical disc format – Universal Media Disc (UMD) – as its primary storage medium; both games and movies have been released on the format.</text>
-			<text lang="pl">PlayStation Portable (oficjalny skrót: PSP) – przenośna konsola gier wideo produkowana i sprzedawana przez Sony Computer Entertainment. Po raz pierwszy o pracach nad konsolą wspomniano na E3 2003, a pierwsza jej odsłona miała miejsce 11 maja 2004 na konferencji prasowej Sony przed E3 2004. Urządzenie zostało wydane w Japonii 12 grudnia 2004, w Ameryce Północnej 28 października 2004, w Europie 1 marca 2005 oraz w Australii 11 kwietnia 2005.
+      <text lang="pl">PlayStation Portable (oficjalny skrót: PSP) – przenośna konsola gier wideo produkowana i sprzedawana przez Sony Computer Entertainment. Po raz pierwszy o pracach nad konsolą wspomniano na E3 2003, a pierwsza jej odsłona miała miejsce 11 maja 2004 na konferencji prasowej Sony przed E3 2004. Urządzenie zostało wydane w Japonii 12 grudnia 2004, w Ameryce Północnej 28 października 2004, w Europie 1 marca 2005 oraz w Australii 11 kwietnia 2005.
 
 PlayStation Portable jest drugą podręczną konsolą gier wideo wykorzystującą format dysków optycznych, Universal Media Disc (UMD), jako główny nośnik danych. Innymi wyróżniającymi cechami konsoli są duży ekran, duże możliwości multimedialne i możliwość połączenia z PlayStation 3, innymi PSP i Internetem.
 
 Konsola PSP ma większą moc obliczeniową i szersze możliwości multimedialne niż jej konkurent Nintendo DS. Po wydaniu we wczesnej fazie sierpnia 2007 przebudowanej, węższej i lżejszej (ang. slimmer and lighter) wersji PlayStation Portable nazwanej „Slim and Lite” sprzedaż w październiku wzrosła czterokrotnie w Wielkiej Brytanii i zwiększyła się blisko dwukrotnie w Ameryce Północnej.</text>
-			<text lang="fr">La PlayStation Portable (プレイステーション・ポータブル, Pureisutēshon Pōtaburu, ou PSP) est la première console de jeux vidéo portable de Sony, commercialisée entre 2004 et 2014. Elle marque un tournant dans l'histoire des consoles portables, car elle propose une qualité d'image et des capacités générales approchant celles de la PlayStation 2, une console de salon.
+      <text lang="fr">La PlayStation Portable (プレイステーション・ポータブル, Pureisutēshon Pōtaburu, ou PSP) est la première console de jeux vidéo portable de Sony, commercialisée entre 2004 et 2014. Elle marque un tournant dans l'histoire des consoles portables, car elle propose une qualité d'image et des capacités générales approchant celles de la PlayStation 2, une console de salon.
 
 La PlayStation Portable permet de jouer à des jeux vidéo, de regarder des vidéos et des images, d'écouter de la musique et offre la possibilité de naviguer sur Internet. Son système de connexion sans fil Wi-Fi permet de faire communiquer jusqu'à seize machines en même temps les unes avec les autres, grâce à la fonction de « mise en réseau ad hoc ».
 
 En septembre 2007, Sony lance la PSP Slim and Lite, plus fine, plus légère, et possédant plus de fonctions que la première version.</text>
-			<text lang="de">Descriptions. Pls send me it in Discord</text>
-			<text lang="ru">Портативная игровая консоль производства Sony Computer Entertainment. PlayStation Portable — четвертый продукт компании Sony в линейке PlayStation. Анонс PSP состоялся на выставке E3 2003, а первая консоль была продемонстрирована публике 11 мая 2004 года на пресс-конференции, проводимой Sony в рамках E3 2004. Первые продажи консоли были начаты в Японии 12 декабря 2004 года, в Северной Америке 24 марта 2005 года, и в PAL-регионах 1 сентября 2005 года.
+      <text lang="ru">Портативная игровая консоль производства Sony Computer Entertainment. PlayStation Portable — четвертый продукт компании Sony в линейке PlayStation. Анонс PSP состоялся на выставке E3 2003, а первая консоль была продемонстрирована публике 11 мая 2004 года на пресс-конференции, проводимой Sony в рамках E3 2004. Первые продажи консоли были начаты в Японии 12 декабря 2004 года, в Северной Америке 24 марта 2005 года, и в PAL-регионах 1 сентября 2005 года.
 
 PlayStation Portable стала первой портативной игровой консолью, которая использовала оптический накопитель Universal Media Disc (UMD) в качестве основного носителя.
 
 27 января 2011 года Sony анонсировала следующую портативную консоль — PlayStation Vita, известную ранее как Next Generation Portable (NGP).</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-	</view>
+      <text lang="it">La PlayStation Portable (PSP) è una console portatile sviluppata e commercializzata da Sony Computer Entertainment. È stata rilasciata per la prima volta in Giappone il 12 dicembre 2004, in Nord America il 24 marzo 2005 e nelle regioni PAL il 1° settembre 2005 ed è la prima console portatile della linea PlayStation. Come console di settima generazione è stata in concorrenza con il Nintendo DS.
+
+Lo sviluppo della PSP è stato annunciato durante l'E3 2003 e la console è stata presentata durante una conferenza stampa di Sony l'11 maggio 2004. Al momento della sua presentazione, la console era la più potente tra quelle portatili e rappresentava il primo vero concorrente delle console portatili di Nintendo dopo il fallimento di molti concorrenti, come N-Gage di Nokia. Le avanzate capacità grafiche della PSP la resero un popolare dispositivo di intrattenimento mobile, in grado di connettersi alle console PlayStation 2 e PlayStation 3, a qualsiasi computer dotato di interfaccia USB, ad altre console PSP e a Internet. La PSP disponeva anche di una vasta gamma di funzioni multimediali, come la riproduzione di video, e per questo è stata considerata anche un lettore multimediale portatile. La PSP è l'unica console portatile a utilizzare un formato di disco ottico - Universal Media Disc (UMD) - come supporto di memorizzazione principale; su questo formato sono stati pubblicati sia giochi che film.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
 </theme>

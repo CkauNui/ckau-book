@@ -1,114 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videocrton" extra="true">
-			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
-			<delay>0</delay>
-			<loops>0</loops>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.39</pos>
-			<maxSize>0.24</maxSize>
-			<zIndex>26</zIndex>
-		</video>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.39</pos>
-			<maxSize>0.24</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
-			<text>1994</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
-			<text>Nintendo</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
-			<text>Super Game Boy</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
-			<text>The Super Game Boy (スーパーゲームボーイ, Sūpā Gēmu Bōi) is a peripheral that allows Game Boy cartridges to be played on a Super Nintendo Entertainment System console, compatible with the same cartridges as the original Game Boy: original Game Boy cartridges, the Game Boy Camera, and dual-mode Game Boy Color cartridges (in Game Boy-mode).
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videocrton" extra="true">
+      <path>./../../_inc/anim/video/CRT_ON.mp4</path>
+      <delay>0</delay>
+      <loops>0</loops>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.5 0.39</pos>
+      <maxSize>0.24</maxSize>
+      <zIndex>26</zIndex>
+    </video>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.5 0.39</pos>
+      <maxSize>0.24</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text>1994</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <pos>0.49 0.255</pos>
+      <text>Nintendo</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.04</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.30</pos>
+      <size>0.5 0</size>
+      <text>Super Game Boy</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.4</pos>
+      <text>The Super Game Boy (スーパーゲームボーイ, Sūpā Gēmu Bōi) is a peripheral that allows Game Boy cartridges to be played on a Super Nintendo Entertainment System console, compatible with the same cartridges as the original Game Boy: original Game Boy cartridges, the Game Boy Camera, and dual-mode Game Boy Color cartridges (in Game Boy-mode).
 
 The unit could map the four shades of green to various colors on the screen. Later Game Boy games that were optimized to use the Super Game Boy had additional color information and could override the on-screen colors, display a graphical border around the screen, and display special background sprites. Those games would have printed a small "Super Game Boy Game Pak" logo on the box and cartridge. The adaptor could support up to 64 colors for the border, and 12 colors for the screen. Static screens could display all 10 colors. Certain games can load multiple borders depending on the player's location in the game.
 
 It is also possible for Super Game Boy games to make use of the Super NES hardware for extra effects: these games had expanded sound when used with the Super Game Boy. Some titles even allowed the second Super NES controller to be used for two-player action; using the Super Multitap, some games even supported four players.</text>
-			<text lang="pl">Super Game Boy (スーパーゲームボーイ, Sūpā Gēmu Bōi) to urządzenie peryferyjne pozwalające na odtwarzanie kartridży Game Boy na konsoli Super Nintendo Entertainment System, kompatybilne z tymi samymi kartridżami, co oryginalny Game Boy: oryginalnymi kartridżami Game Boy, Game Boy Camera i kartridżami Game Boy Color z dwoma trybami (w trybie Game Boy).
+      <text lang="pl">Super Game Boy (スーパーゲームボーイ, Sūpā Gēmu Bōi) to urządzenie peryferyjne pozwalające na odtwarzanie kartridży Game Boy na konsoli Super Nintendo Entertainment System, kompatybilne z tymi samymi kartridżami, co oryginalny Game Boy: oryginalnymi kartridżami Game Boy, Game Boy Camera i kartridżami Game Boy Color z dwoma trybami (w trybie Game Boy).
 
 Urządzenie potrafiło mapować cztery odcienie zieleni na różne kolory na ekranie. Późniejsze gry na Game Boya, które zostały zoptymalizowane do korzystania z Super Game Boya, zawierały dodatkowe informacje o kolorach i mogły zastępować kolory ekranowe, wyświetlać graficzne obramowanie wokół ekranu oraz specjalne obrazy tła. Gry te miały na pudełku i kartridżu nadrukowane małe logo "Super Game Boy Game Pak". Adapter mógł obsługiwać do 64 kolorów obramowania i 12 kolorów ekranu. Statyczne ekrany mogły wyświetlać wszystkie 10 kolorów. W niektórych grach można załadować wiele obramowań, w zależności od miejsca zajmowanego przez gracza w grze.
 
 W grach na Super Game Boya możliwe było także wykorzystanie sprzętu Super NES w celu uzyskania dodatkowych efektów: gry te miały rozszerzony dźwięk, gdy były używane z Super Game Boyem. Niektóre tytuły pozwalały nawet na wykorzystanie drugiego kontrolera Super NES do gry dla dwóch graczy; przy użyciu Super Multitapu niektóre gry obsługiwały nawet czterech graczy.</text>
-			<text lang="fr">Descriptions. Pls send me it in Discord</text>
-			<text lang="de">Descriptions. Pls send me it in Discord</text>
-			<text lang="ru">(яп. スーパーゲームボーイ Sūpā Gēmu Bōi) является 16-битным картриджем-адаптером для игровой консоли Super Nintendo Entertainment System, в Японии также известной как Super Famicom. Super Game Boy позволяет запускать картриджи с играми для портативной консоли Game Boy на экране телевизора, используя в качестве игрового контроллера геймпад от SNES/Super Famicom. На момент выпуска в США Super Game Boy стоил $59.99. В Великобритании он продавался по цене £49.99. Super Game Boy является предшественником устройства Game Boy Player для консоли Nintendo GameCube, которое работало по схожей схеме.
+      <text lang="ru">(яп. スーパーゲームボーイ Sūpā Gēmu Bōi) является 16-битным картриджем-адаптером для игровой консоли Super Nintendo Entertainment System, в Японии также известной как Super Famicom. Super Game Boy позволяет запускать картриджи с играми для портативной консоли Game Boy на экране телевизора, используя в качестве игрового контроллера геймпад от SNES/Super Famicom. На момент выпуска в США Super Game Boy стоил $59.99. В Великобритании он продавался по цене £49.99. Super Game Boy является предшественником устройства Game Boy Player для консоли Nintendo GameCube, которое работало по схожей схеме.
 
 Super Game Boy был совместим с картриджами для оригинального монохромного Game Boy и картриджами для Game Boy Color, если они поддерживали игру в чёрно-белом режиме. Он мог отображать только четыре оттенка зелёного цвета. Игры для Game Boy, вышедшие после Super Game Boy, были оптимизированы для игры с ним и содержали в своём коде добавочную информацию, позволявшую менять цвета на экране, отображать на экране телевизора специальную рамку и даже воспроизводить скрытые ранее спрайты, которые были, например, на загрузочном экране Mario's Picross. Такие игры содержали специальный логотип «Super Game Boy Game Pak» на коробке и на самом картридже. Всего этот адаптер поддерживал 64 цвета рамки и 12 цветов экрана. Статические изображения Super Game Boy мог воспроизводить в 10 цветах.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-	</view>
+      <text lang="it">Il Super Game Boy (スーパーゲームボーイ, Sūpā Gēmu Bōi) è una periferica che consente di giocare con le cartucce Game Boy su una console Super Nintendo Entertainment System, compatibile con le stesse cartucce del Game Boy originale: cartucce Game Boy, Game Boy Camera e cartucce Game Boy Color dual-mode (in modalità Game Boy).
+
+L'unità poteva mappare le quattro tonalità di verde a vari colori sullo schermo. I giochi Game Boy successivi, ottimizzati per l'uso del Super Game Boy, disponevano di informazioni cromatiche aggiuntive e potevano sovrascrivere i colori sullo schermo, visualizzare un bordo grafico intorno allo schermo e visualizzare speciali sprite di sfondo. Questi giochi avrebbero stampato un piccolo logo "Super Game Boy Game Pak" sulla scatola e sulla cartuccia. L'adattatore poteva supportare fino a 64 colori per il bordo e 12 colori per lo schermo. Gli schermi statici potevano visualizzare tutti e 10 i colori. Alcuni giochi possono caricare più bordi a seconda della posizione del giocatore nel gioco.
+
+È anche possibile che i giochi per Super Game Boy utilizzino l'hardware del Super NES per ottenere effetti extra: questi giochi hanno un suono ampliato se utilizzati con il Super Game Boy. Alcuni titoli consentivano addirittura di utilizzare il secondo controller del Super NES per l'azione a due giocatori; utilizzando il Super Multitap, alcuni giochi supportavano addirittura quattro giocatori.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
 </theme>

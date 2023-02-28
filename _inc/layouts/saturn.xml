@@ -1,117 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videocrton" extra="true">
-			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
-			<delay>0</delay>
-			<loops>0</loops>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.364</pos>
-			<maxSize>0.244</maxSize>
-			<zIndex>26</zIndex>
-		</video>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.364</pos>
-			<maxSize>0.244</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.364" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
-			<text>1995</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<!-- Support different dates for regional consoles/computers -->
-		<text name="TextDate" extra="true" region="eu"></text>
-		<text name="TextDate" extra="true" region="us"></text>
-		<text name="TextDate" extra="true" region="jp">
-			<text>1994</text>
-		</text>
-		<!-- -->
-		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
-			<text>Sega</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
-			<text>Saturn</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
-			<text>The Sega Saturn is a home video game console developed by Sega and released on November 22, 1994 in Japan, May 11, 1995 in North America, and July 8, 1995 in Europe. Part of the fifth generation of video game consoles, it was the successor to the successful Sega Genesis. The Saturn has a dual-CPU architecture and eight processors. Its games are in CD-ROM format, and its game library contains several ports of arcade games as well as original games.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videocrton" extra="true">
+      <path>./../../_inc/anim/video/CRT_ON.mp4</path>
+      <delay>0</delay>
+      <loops>0</loops>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.5 0.364</pos>
+      <maxSize>0.244</maxSize>
+      <zIndex>26</zIndex>
+    </video>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.5 0.364</pos>
+      <maxSize>0.244</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.364" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text>1995</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <!-- Support different dates for regional consoles/computers -->
+    <text name="TextDate" extra="true" region="eu"/>
+    <text name="TextDate" extra="true" region="us"/>
+    <text name="TextDate" extra="true" region="jp">
+      <text>1994</text>
+    </text>
+    <!-- -->
+    <text name="TextManufacturer" extra="true">
+      <pos>0.49 0.255</pos>
+      <text>Sega</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.04</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.30</pos>
+      <size>0.5 0</size>
+      <text>Saturn</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.4</pos>
+      <text>The Sega Saturn is a home video game console developed by Sega and released on November 22, 1994 in Japan, May 11, 1995 in North America, and July 8, 1995 in Europe. Part of the fifth generation of video game consoles, it was the successor to the successful Sega Genesis. The Saturn has a dual-CPU architecture and eight processors. Its games are in CD-ROM format, and its game library contains several ports of arcade games as well as original games.
 
 Development of the Saturn began in 1992, the same year Sega's groundbreaking 3D Model 1 arcade hardware debuted. The Saturn was designed around a new CPU from Japanese electronics company Hitachi. Sega added another video display processor in early 1994 to better compete with Sony's forthcoming PlayStation.</text>
-			<text lang="pl">Sega Saturn (jap. セガサターン) – 32-bitowa konsola do gier wideo firmy Sega wydana 22 listopada 1994. W dniu premiery konsoli w Japonii sprzedano ok. 170 000 egzemplarzy. Przez pewien czas była konkurentem dla Sony PlayStation. Ponieważ konstrukcja została mocno zmodyfikowana tuż przed wprowadzeniem konsoli na rynek, Sega nie potrafiła tak usprawnić produkcji (tj. zmniejszyć jej kosztów), by nawiązać cenową walkę z firmą Sony. W momencie premiery cena konsoli w Japonii wynosiła 44 800 jenów (ok. 490 dolarów), a w USA 399 dolarów, gdy produkt Sony był tańszy o około 100 dolarów. W ciągu pierwszych 2 tygodni sprzedano 2,5 mln egzemplarzy. Wzrastająca popularność konsoli Sony PlayStation zmieniła jednak wysoką sprzedaż urządzenia. Konsola była wspierana do 1998 roku w USA i do 1999 w Japonii.</text>
-			<text lang="fr">La Saturn ou Sega Saturn (セガサターン, Sega Satān) est une console de jeux vidéo de cinquième génération commercialisée par Sega. Quatrième console de salon conçue par l'entreprise japonaise, succédant à la Mega Drive, elle sort le 22 novembre 1994 au Japon, le 11 mai 1995 en Amérique du Nord et le 8 juillet 1995 en Europe. La Saturn est dotée d'une architecture intégrant huit processeurs, dont deux microprocesseurs, deux processeurs graphiques et deux dédiés à l'audio. Ses jeux sont édités au format CD-ROM et sa ludothèque se compose de nombreux jeux issus de l'arcade, ainsi que de titres originaux.
+      <text lang="pl">Sega Saturn (jap. セガサターン) – 32-bitowa konsola do gier wideo firmy Sega wydana 22 listopada 1994. W dniu premiery konsoli w Japonii sprzedano ok. 170 000 egzemplarzy. Przez pewien czas była konkurentem dla Sony PlayStation. Ponieważ konstrukcja została mocno zmodyfikowana tuż przed wprowadzeniem konsoli na rynek, Sega nie potrafiła tak usprawnić produkcji (tj. zmniejszyć jej kosztów), by nawiązać cenową walkę z firmą Sony. W momencie premiery cena konsoli w Japonii wynosiła 44 800 jenów (ok. 490 dolarów), a w USA 399 dolarów, gdy produkt Sony był tańszy o około 100 dolarów. W ciągu pierwszych 2 tygodni sprzedano 2,5 mln egzemplarzy. Wzrastająca popularność konsoli Sony PlayStation zmieniła jednak wysoką sprzedaż urządzenia. Konsola była wspierana do 1998 roku w USA i do 1999 w Japonii.</text>
+      <text lang="fr">La Saturn ou Sega Saturn (セガサターン, Sega Satān) est une console de jeux vidéo de cinquième génération commercialisée par Sega. Quatrième console de salon conçue par l'entreprise japonaise, succédant à la Mega Drive, elle sort le 22 novembre 1994 au Japon, le 11 mai 1995 en Amérique du Nord et le 8 juillet 1995 en Europe. La Saturn est dotée d'une architecture intégrant huit processeurs, dont deux microprocesseurs, deux processeurs graphiques et deux dédiés à l'audio. Ses jeux sont édités au format CD-ROM et sa ludothèque se compose de nombreux jeux issus de l'arcade, ainsi que de titres originaux.
 
 La conception de la Saturn débute en 1992, autour du nouveau processeur SH-2 conçu en collaboration entre Sega et Hitachi, dans le rôle de processeur central unique. Au fil de sa conception, celui-ci est doublé par un second SH-2, à l'instar du rajout du second processeur graphique personnalisé début 1994, afin de permettre à la console de rivaliser techniquement avec la PlayStation de Sony. La Saturn est initialement un succès au Japon, mais pas aux États-Unis où elle est commercialisée en mai 1995, soit quatre mois avant la date de sortie initialement prévue. Après les débuts de la Nintendo 64 fin 1996, la Saturn perd rapidement des parts de marché aux États-Unis et en Europe, où sa commercialisation est arrêtée en 1998. Au Japon, la console est exploitée jusqu'en 2000. Écoulée à 9,26 millions d'unités dans le monde, elle est considérée comme un échec commercial.</text>
-			<text lang="de">Descriptions. Pls send me it in Discord</text>
-			<text lang="ru">Домашняя игровая приставка, разработанная компанией Sega и выпущенная 22 ноября 1994 года в Японии, 11 мая 1995 года в Северной Америке и 8 июля 1995 года в Европе. Являясь частью пятого поколения игровых видео консолей, она стала преемницей успешной игровой приставки Sega Genesis. Saturn имеет двухпроцессорную архитектуру. Игры выпускались в формате CD-ROM, а библиотека игр состоит как из оригинальных игр, так и из портов игр с аркадных автоматов.
+      <text lang="ru">Домашняя игровая приставка, разработанная компанией Sega и выпущенная 22 ноября 1994 года в Японии, 11 мая 1995 года в Северной Америке и 8 июля 1995 года в Европе. Являясь частью пятого поколения игровых видео консолей, она стала преемницей успешной игровой приставки Sega Genesis. Saturn имеет двухпроцессорную архитектуру. Игры выпускались в формате CD-ROM, а библиотека игр состоит как из оригинальных игр, так и из портов игр с аркадных автоматов.
 
 Разработка Saturn началась в 1992 году, а в том же году состоялся дебют Sega Model 1, новой системы для аркадных автоматов с поддержкой трехмерной графики. Аппаратное обеспечение Saturn было спроектировано на базе нового процессора SuperH-2 японской компании Hitachi. В начале 1994 года Sega добавила еще один графический процессор, чтобы лучше конкурировать с грядущей игровой приставкой Sony PlayStation.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-	</view>
+      <text lang="it">Il Sega Saturn è una console per videogiochi domestica sviluppata da Sega e rilasciata il 22 novembre 1994 in Giappone, l'11 maggio 1995 in Nord America e l'8 luglio 1995 in Europa. Appartenente alla quinta generazione di console per videogiochi, è il successore della fortunata Sega Genesis. Il Saturn ha un'architettura dual-CPU e otto processori. I suoi giochi sono in formato CD-ROM e la sua libreria di giochi contiene diversi porting di giochi arcade e giochi originali.
+
+Lo sviluppo del Saturn iniziò nel 1992, lo stesso anno in cui debuttò l'innovativo hardware arcade 3D Model 1 di Sega. Il Saturn fu progettato con una nuova CPU dell'azienda elettronica giapponese Hitachi. All'inizio del 1994 Sega aggiunse un altro processore di visualizzazione video per competere meglio con l'imminente PlayStation di Sony.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
 </theme>

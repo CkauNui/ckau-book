@@ -1,118 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videocrton" extra="true">
-			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
-			<delay>0</delay>
-			<loops>0</loops>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.49 0.4</pos>
-			<maxSize>0.22</maxSize>
-			<zIndex>26</zIndex>
-		</video>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.49 0.4</pos>
-			<maxSize>0.22</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
-			<text>1983</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
-			<text>Sega</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
-			<text>SC-3000</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.40</pos>
-			<text>The SC-3000 (Sega Computer 3000) is the first and only computer to be designed and manufactured by Sega. It was first released in July of 1983 in Japan, and serves as the home computer equivalent of the SG-1000 cartridge-based video game console. The SC-3000, often known simply as the "Sega Computer" or even just the "Sega", is an 8-bit home computer almost identical in nature to the SG-1000, but with a built-in keyboard and support for more hardware expansions.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videocrton" extra="true">
+      <path>./../../_inc/anim/video/CRT_ON.mp4</path>
+      <delay>0</delay>
+      <loops>0</loops>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.49 0.4</pos>
+      <maxSize>0.22</maxSize>
+      <zIndex>26</zIndex>
+    </video>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.49 0.4</pos>
+      <maxSize>0.22</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text>1983</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <pos>0.49 0.255</pos>
+      <text>Sega</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.04</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.30</pos>
+      <size>0.5 0</size>
+      <text>SC-3000</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.40</pos>
+      <text>The SC-3000 (Sega Computer 3000) is the first and only computer to be designed and manufactured by Sega. It was first released in July of 1983 in Japan, and serves as the home computer equivalent of the SG-1000 cartridge-based video game console. The SC-3000, often known simply as the "Sega Computer" or even just the "Sega", is an 8-bit home computer almost identical in nature to the SG-1000, but with a built-in keyboard and support for more hardware expansions.
 
 Unlike later Sega systems, the SC-3000 did not receive a worldwide release, but in markets where it did compete, including Japan, Australia, New Zealand, France, Italy and Finland, the computer fared well as a low price, entry-level machine for the home. By 1985, the SC-3000 had been displaced by more popular computer standards, but is nevertheless said to have fared better than the SG-1000 console on the global stage, and has a strong group of followers to this day.
 
 The SC-3000 was also Sega's last home computer to be released to the general public. The company would partner with Amstrad and IBM for the Amstrad Mega PC and TeraDrive respectively in later years, but other endeavours such as the extremely rare Sega AI Computer saw only a small fraction of the success the SC-3000 received, and were built with very different aims.</text>
-			<text lang="pl">SC-3000 (Sega Computer 3000) to pierwszy i jedyny komputer zaprojektowany i wyprodukowany przez firmę Sega. Po raz pierwszy został wydany w lipcu 1983 roku w Japonii i służył jako odpowiednik domowego komputera dla konsoli do gier SG-1000 z kartridżami. SC-3000, często znany po prostu jako "Sega Computer" lub po prostu "Sega", to 8-bitowy komputer domowy o niemal identycznym charakterze jak SG-1000, ale z wbudowaną klawiaturą i obsługą większej liczby rozszerzeń sprzętowych.
+      <text lang="pl">SC-3000 (Sega Computer 3000) to pierwszy i jedyny komputer zaprojektowany i wyprodukowany przez firmę Sega. Po raz pierwszy został wydany w lipcu 1983 roku w Japonii i służył jako odpowiednik domowego komputera dla konsoli do gier SG-1000 z kartridżami. SC-3000, często znany po prostu jako "Sega Computer" lub po prostu "Sega", to 8-bitowy komputer domowy o niemal identycznym charakterze jak SG-1000, ale z wbudowaną klawiaturą i obsługą większej liczby rozszerzeń sprzętowych.
 
 W przeciwieństwie do późniejszych systemów firmy Sega, SC-3000 nie został wprowadzony na rynek ogólnoświatowy, ale na rynkach, na których konkurował, w tym w Japonii, Australii, Nowej Zelandii, Francji, Włoszech i Finlandii, sprawdził się jako niedroga, podstawowa maszyna dla użytkowników domowych. Do 1985 roku SC-3000 został wyparty przez bardziej popularne standardy komputerowe, ale mimo to uważa się, że na arenie światowej poradził sobie lepiej niż konsola SG-1000 i do dziś ma silną grupę zwolenników.
 
 SC-3000 był także ostatnim komputerem domowym firmy Sega, który został wprowadzony do powszechnego użytku. W późniejszych latach firma nawiązała współpracę z firmami Amstrad i IBM, tworząc odpowiednio Amstrad Mega PC i TeraDrive, ale inne przedsięwzięcia, takie jak niezwykle rzadki Sega AI Computer, odniosły tylko niewielki ułamek sukcesu, jaki odniósł SC-3000, i zostały zbudowane w zupełnie innych celach.</text>
-			<text lang="fr">Initialement, Sega prévoit de sortir d'abord le SC-3000, un ordinateur destiné aux débutants, mais l'entreprise japonaise prend connaissance des ambitions de Nintendo de développer une console dédiée exclusivement aux jeux vidéo. Reportant ce premier projet, Sega adapte sa SC-3000 en remplaçant le clavier par un joystick, le clavier devenant un simple périphérique (appelé SK-1100).
+      <text lang="fr">Initialement, Sega prévoit de sortir d'abord le SC-3000, un ordinateur destiné aux débutants, mais l'entreprise japonaise prend connaissance des ambitions de Nintendo de développer une console dédiée exclusivement aux jeux vidéo. Reportant ce premier projet, Sega adapte sa SC-3000 en remplaçant le clavier par un joystick, le clavier devenant un simple périphérique (appelé SK-1100).
 
 Le SC-3000, un ordinateur doté d'un clavier intégré comprenant la SG-1000, est mis sur le marché par Sega. Il est également connu sous le nom Sega Computer 3000, et connait une version améliorée dénommée SC-3000H. Celle-ci est vendue avec une mémoire accrue (8 kbit au lieu de 2) dans sa version d'importation.</text>
-			<text lang="de">Descriptions. Pls send me it in Discord</text>
-			<text lang="ru">SC-3000 — эквивалент игровой консоли SG-1000 от SEGA, выполненный в виде домашнего компьютера. Продавался в Японии, Австралии, Новой Зеландии, Италии, Франции, Испании и Финляндии, конкурируя с компьютерами семейства MSX.
+      <text lang="ru">SC-3000 — эквивалент игровой консоли SG-1000 от SEGA, выполненный в виде домашнего компьютера. Продавался в Японии, Австралии, Новой Зеландии, Италии, Франции, Испании и Финляндии, конкурируя с компьютерами семейства MSX.
 
 SC-3000 был выпущен в 1983 году по цене 29 800 японских йен и позиционировался как компьютер для начинающих. Так как игры от SG-1000 подходили к SC-3000, и SC-3000 имел возможность запуска собственных приложений, его продажи превысили продажи SG-1000.
 
 Владельцы SC-3000 имели возможность создавать свои собственные программы и игры. Также, для него существовали дополнительные устройства от сторонних производителей — модуль голосового синтеза, световой пистолет, и некоторые другие.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-	</view>
+      <text lang="it">L'SC-3000 (Sega Computer 3000) è stato il primo e unico computer progettato e prodotto da Sega. Rilasciato per la prima volta nel luglio del 1983 in Giappone, rappresenta l'equivalente per home computer della console per videogiochi a cartucce SG-1000. L'SC-3000, spesso conosciuto semplicemente come "Sega Computer" o anche solo "Sega", è un home computer a 8 bit quasi identico all'SG-1000, ma con una tastiera integrata e il supporto per un maggior numero di espansioni hardware.
+
+A differenza dei sistemi Sega successivi, l'SC-3000 non è stato distribuito in tutto il mondo, ma nei mercati in cui era presente, tra cui Giappone, Australia, Nuova Zelanda, Francia, Italia e Finlandia, il computer ha avuto successo come macchina entry-level a basso prezzo per la casa. Nel 1985, l'SC-3000 era stato soppiantato da standard informatici più diffusi, ma si dice che abbia avuto un successo migliore della console SG-1000 sulla scena mondiale e che ancora oggi abbia un forte gruppo di seguaci.
+
+L'SC-3000 è stato anche l'ultimo home computer di Sega a essere distribuito al pubblico. Negli anni successivi, l'azienda avrebbe collaborato con Amstrad e IBM rispettivamente per l'Amstrad Mega PC e il TeraDrive, ma altre iniziative, come il rarissimo Sega AI Computer, hanno riscosso solo una piccola parte del successo ottenuto dall'SC-3000 e sono state realizzate con obiettivi molto diversi.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
 </theme>

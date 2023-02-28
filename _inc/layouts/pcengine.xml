@@ -1,116 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videocrton" extra="true">
-			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
-			<delay>0</delay>
-			<loops>0</loops>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.50 0.395</pos>
-			<maxSize>0.21</maxSize>
-			<zIndex>26</zIndex>
-		</video>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.50 0.415</pos>
-			<maxSize>0.21</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.415" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
-			<text>1989</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<!-- Support different dates for regional consoles/computers -->
-		<text name="TextDate" extra="true" region="eu"></text>
-		<text name="TextDate" extra="true" region="us"></text>
-		<text name="TextDate" extra="true" region="jp">
-			<text>1987</text>
-		</text>
-		<!-- -->
-		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
-			<text>Nec</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
-			<text>PC Engine</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<!-- Support different names for regional consoles/computers -->
-		<text name="TextName" extra="true" region="eu"></text>
-		<text name="TextName" extra="true" region="us">
-			<text>TurboGrafx-16</text>
-		</text>
-		<text name="TextName" extra="true" region="jp"></text>
-		<!-- -->
-		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
-			<text>The TurboGrafx-16, known as the PC Engine in Japan and France, is a 16-bit fourth-generation home video game console designed by Hudson Soft and sold by NEC Home Electronics. It was released in Japan in 1987 and in North America in 1989. The Japanese model was imported and distributed in France in 1989, and the United Kingdom and Spain received a version based on the American model known as simply TurboGrafx. It was the first console released in the 16-bit era, although it used a modified 8-bit CPU. In Japan, the system was launched as a competitor to the Famicom, but the delayed United States release meant that it ended up competing with the Sega Genesis and later the Super Nintendo Entertainment System.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videocrton" extra="true">
+      <path>./../../_inc/anim/video/CRT_ON.mp4</path>
+      <delay>0</delay>
+      <loops>0</loops>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.50 0.395</pos>
+      <maxSize>0.21</maxSize>
+      <zIndex>26</zIndex>
+    </video>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.50 0.415</pos>
+      <maxSize>0.21</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.415" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text>1989</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <!-- Support different dates for regional consoles/computers -->
+    <text name="TextDate" extra="true" region="eu"/>
+    <text name="TextDate" extra="true" region="us"/>
+    <text name="TextDate" extra="true" region="jp">
+      <text>1987</text>
+    </text>
+    <!-- -->
+    <text name="TextManufacturer" extra="true">
+      <pos>0.49 0.255</pos>
+      <text>Nec</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.04</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.30</pos>
+      <size>0.5 0</size>
+      <text>PC Engine</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <!-- Support different names for regional consoles/computers -->
+    <text name="TextName" extra="true" region="eu"/>
+    <text name="TextName" extra="true" region="us">
+      <text>TurboGrafx-16</text>
+    </text>
+    <text name="TextName" extra="true" region="jp"/>
+    <!-- -->
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.4</pos>
+      <text>The TurboGrafx-16, known as the PC Engine in Japan and France, is a 16-bit fourth-generation home video game console designed by Hudson Soft and sold by NEC Home Electronics. It was released in Japan in 1987 and in North America in 1989. The Japanese model was imported and distributed in France in 1989, and the United Kingdom and Spain received a version based on the American model known as simply TurboGrafx. It was the first console released in the 16-bit era, although it used a modified 8-bit CPU. In Japan, the system was launched as a competitor to the Famicom, but the delayed United States release meant that it ended up competing with the Sega Genesis and later the Super Nintendo Entertainment System.
 
 The TurboGrafx-16 has an 8-bit CPU, a 16-bit video color encoder, and a 16-bit video display controller. The GPUs are capable of displaying 482 colors simultaneously, out of 512. With dimensions of just 14 cm × 14 cm × 3.8 cm (5.5 in × 5.5 in × 1.5 in), the Japanese PC Engine is the smallest major home game console ever made. Games were released on HuCard cartridges and later the CD-ROM optical format with the TurboGrafx-CD add-on.</text>
-			<text lang="pl">TurboGrafx-16 Am.Płn./PC EngineJP – 8-bitowa konsola z 16-bitowym układem graficznym, wydana po raz pierwszy 30 października 1987 roku w Japonii, gdzie znana jest pod nazwą PC Engine. Swoją premierę w Ameryce Północnej konsola miała 29 sierpnia 1989. TurboGrafx-16 nie miał oficjalnej premiery PAL, ale bardzo ograniczona ilość konsol dostała się głównie na rynek Wielkiej Brytanii.
+      <text lang="pl">TurboGrafx-16 Am.Płn./PC EngineJP – 8-bitowa konsola z 16-bitowym układem graficznym, wydana po raz pierwszy 30 października 1987 roku w Japonii, gdzie znana jest pod nazwą PC Engine. Swoją premierę w Ameryce Północnej konsola miała 29 sierpnia 1989. TurboGrafx-16 nie miał oficjalnej premiery PAL, ale bardzo ograniczona ilość konsol dostała się głównie na rynek Wielkiej Brytanii.
 
 Konsola powstała dzięki współpracy pomiędzy Hudson Soft (odpowiedzialny głównie za produkcję chipów) oraz NEC. Charakterystyczną cechą konsoli był jej niewielki rozmiar, osiągnięty głównie dzięki zastosowaniu tylko trzech układów scalonych oraz używania niewielkich, przypominających karty płatnicze nośników danych, znanych pod nazwą „HuCard” (od Hudson Card; w wersji Amerykańskiej znana bardziej jako „TurboChip”). TurboGrafx-16 był pierwszą konsolą, używającą jako nośnika danych płyty CD-ROM.
 
 Początkowo PC Engine osiągnął znaczny sukces w Japonii, gdzie cieszył się lepszymi wynikami sprzedaży niż nawet Nintendo Famicom. Japońska popularność konsoli nie przekładała się jednak na zainteresowanie w Ameryce Północnej, gdzie konsola nie sprzedawała się tak dobrze, głównie z powodu słabego wsparcia twórców oraz wydawców gier.</text>
-			<text lang="fr">La PC-Engine (PCエンジン, Piishii Enjin), connue sous le nom TurboGrafx-16 en Amérique du Nord, est une console de jeux vidéo 8 bits fabriquée par NEC et commercialisée à partir de 1987 au Japon. En dehors de son pays natal et du territoire nord-américain, la gamme de consoles a connu une existence relativement confidentielle, car peu ou pas distribuée.
+      <text lang="fr">La PC-Engine (PCエンジン, Piishii Enjin), connue sous le nom TurboGrafx-16 en Amérique du Nord, est une console de jeux vidéo 8 bits fabriquée par NEC et commercialisée à partir de 1987 au Japon. En dehors de son pays natal et du territoire nord-américain, la gamme de consoles a connu une existence relativement confidentielle, car peu ou pas distribuée.
 
 En avance sur son temps, la PC-Engine possède un processeur central 8 bits et un processeur graphique 16 bits, ainsi elle est considérée comme une console de quatrième génération. Conçue pour être modulaire et évolutive, c'est aussi la première console de jeux de l'histoire à utiliser dès décembre 1988, le support des CD-ROMs, grâce à un lecteur en option. Après le premier modèle d'origine, elle fut déclinée dans de nombreuses versions pour finir par accepter quatre formats de jeux différents : HuCard, CD-ROM², Super CD-ROM² et Arcade CD-ROM².</text>
-			<text lang="de">Descriptions. Pls send me it in Discord</text>
-			<text lang="ru">8-16 разрядная игровая приставка, выпущенная NEC в Японии 30 октября 1987 года, в Северной Америке в конце августа 1989 года под именем TurboGrafx-16. В регионе PAL приставка не продавалась, если не считать релиза в 1990 году в Великобритании. Эта версия называлась TurboGrafx и была выпущена в очень ограниченном количестве. Неофициально эта версия продавалась во Франции и Бенилюксе.
+      <text lang="ru">8-16 разрядная игровая приставка, выпущенная NEC в Японии 30 октября 1987 года, в Северной Америке в конце августа 1989 года под именем TurboGrafx-16. В регионе PAL приставка не продавалась, если не считать релиза в 1990 году в Великобритании. Эта версия называлась TurboGrafx и была выпущена в очень ограниченном количестве. Неофициально эта версия продавалась во Франции и Бенилюксе.
 
 PC Engine была 8-разрядной приставкой с двойным 16-разрядным графическим процессором, с возможностью отображения 482 цветов одновременно.
 
@@ -119,16 +118,19 @@ PC Engine по тем временам была системой нового п
 Небольшие размеры PC Engine — всего 14 см x 14 см x 3.8 см (5.5 дюймов x 5.5 дюймов x 1.5 дюйма) — позволили ей стать рекордсменом в звании самой маленькой игровой приставки из когда-либо созданных, по версии книги рекордов Гиннесса в области компьютерных игр (англ. Guinness World Records Gamer’s Edition, 2008).
 
 В 2009 году PC Engine была помещена на тринадцатое место в списке «25 игровых приставок всех времён» по версии сайта IGN.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-	</view>
+      <text lang="it">Il TurboGrafx-16, noto come PC Engine in Giappone e Francia, è una console per videogiochi domestici di quarta generazione a 16 bit progettata da Hudson Soft e venduta da NEC Home Electronics. È stata rilasciata in Giappone nel 1987 e in Nord America nel 1989. Il modello giapponese è stato importato e distribuito in Francia nel 1989, mentre il Regno Unito e la Spagna hanno ricevuto una versione basata sul modello americano, nota semplicemente come TurboGrafx. Fu la prima console rilasciata nell'era dei 16 bit, sebbene utilizzasse una CPU modificata a 8 bit. In Giappone, la console fu lanciata come concorrente del Famicom, ma il ritardo nell'uscita negli Stati Uniti fece sì che finisse per competere con il Sega Genesis e successivamente con il Super Nintendo Entertainment System.
+
+Il TurboGrafx-16 è dotato di una CPU a 8 bit, un codificatore video a 16 bit e un controller video a 16 bit. Le GPU sono in grado di visualizzare 482 colori simultaneamente, su 512. Con dimensioni di soli 14 cm × 14 cm × 3,8 cm (5,5 in × 5,5 in × 1,5 in), il PC Engine giapponese è la più piccola console per videogiochi mai realizzata. I giochi sono stati rilasciati su cartucce HuCard e successivamente sul formato ottico CD-ROM con il componente aggiuntivo TurboGrafx-CD.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
 </theme>

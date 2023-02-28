@@ -1,104 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.51 0.377</pos>
-			<maxSize>0.228</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.23 0.377" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
-			<text>1992</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
-			<text>Commodore</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
-			<text>Amiga 4000</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
-			<text>The Commodore Amiga 4000, or A4000, is the successor of the A2000 and A3000 computers. There are two models: the A4000/040 released in October 1992 with a Motorola 68040 CPU, and the A4000/030 released in April 1993 with a Motorola 68EC030.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.51 0.377</pos>
+      <maxSize>0.228</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.23 0.377" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text>1992</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <pos>0.49 0.255</pos>
+      <text>Commodore</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.04</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.30</pos>
+      <size>0.5 0</size>
+      <text>Amiga 4000</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.4</pos>
+      <text>The Commodore Amiga 4000, or A4000, is the successor of the A2000 and A3000 computers. There are two models: the A4000/040 released in October 1992 with a Motorola 68040 CPU, and the A4000/030 released in April 1993 with a Motorola 68EC030.
 
 The Amiga 4000 system design was generally similar to that of the A3000, but introduced the Advanced Graphics Architecture (AGA) chipset with enhanced graphics. The SCSI system from previous Amigas was replaced by the lower-cost Parallel ATA.
 
 The original A4000 is housed in a beige horizontal desktop box with a separate keyboard. Later, Commodore released an expanded tower version called the A4000T.</text>
-			<text lang="pl">Komputer Commodore Amiga 4000, czyli A4000, to następca komputerów A2000 i A3000. Powstały dwa modele: A4000/040 wydany w październiku 1992 roku z procesorem Motorola 68040 oraz A4000/030 wydany w kwietniu 1993 roku z procesorem Motorola 68EC030.
+      <text lang="pl">Komputer Commodore Amiga 4000, czyli A4000, to następca komputerów A2000 i A3000. Powstały dwa modele: A4000/040 wydany w październiku 1992 roku z procesorem Motorola 68040 oraz A4000/030 wydany w kwietniu 1993 roku z procesorem Motorola 68EC030.
 
 Konstrukcja systemu Amigi 4000 była ogólnie podobna do A3000, ale wprowadzono chipset AGA (Advanced Graphics Architecture) z ulepszoną grafiką. System SCSI z poprzednich Amig został zastąpiony tańszym Parallel ATA.
 
 Oryginalna A4000 mieści się w beżowej, poziomej obudowie typu desktop z oddzielną klawiaturą. Później Commodore wypuściło rozbudowaną wersję tower o nazwie A4000T.</text>
-			<text lang="fr">Descriptions. Pls send me it in Discord</text>
-			<text lang="de">Descriptions. Pls send me it in Discord</text>
-			<text lang="ru">Amiga 4000 или A4000, была выпущена в октябре 1992 года. Этот компьютер создавался на базе передового чипсета Commodore — AGA, позволял отображать 262 144 цвета на экран (из палитры 16 777 216 цветов) и поставлялся с AmigaOS 3.0. Существовало несколько вариантов поставки, но стандартным стало наличие 3,5" дисковода 1,76 Мб, 120 Мб IDE ATA винчестера и 6 Мб предустановленной памяти (2 Мб Chip- и 4 Мб Fast-памяти).
+      <text lang="ru">Amiga 4000 или A4000, была выпущена в октябре 1992 года. Этот компьютер создавался на базе передового чипсета Commodore — AGA, позволял отображать 262 144 цвета на экран (из палитры 16 777 216 цветов) и поставлялся с AmigaOS 3.0. Существовало несколько вариантов поставки, но стандартным стало наличие 3,5" дисковода 1,76 Мб, 120 Мб IDE ATA винчестера и 6 Мб предустановленной памяти (2 Мб Chip- и 4 Мб Fast-памяти).
 
 Позиционируясь как преемник Amiga 3000 и Amiga 3000T, дизайн компьютера комбинировался из корпуса форм-фактора A2000 (большой бокс), материнской платы A3000 (вертикальные разъёмы расширения) и материнской платы A1200 (чипсет AGA). Компьютер поставлялся с процессором Motorola MC68EC030 25 МГц (и сопроцессором MC68882) или MC68040 50 МГц.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-	</view>
+      <text lang="it">Il Commodore Amiga 4000, o A4000, è il successore dei computer A2000 e A3000. Esistono due modelli: l'A4000/040, rilasciato nell'ottobre 1992 con una CPU Motorola 68040, e l'A4000/030, rilasciato nell'aprile 1993 con una CPU Motorola 68EC030.
+
+Il design del sistema Amiga 4000 era generalmente simile a quello dell'A3000, ma introduceva il chipset Advanced Graphics Architecture (AGA) con grafica migliorata. Il sistema SCSI dei precedenti Amiga fu sostituito dal più economico Parallel ATA.
+
+L'A4000 originale è alloggiato in una scatola da tavolo orizzontale beige con una tastiera separata. In seguito, Commodore rilasciò una versione ampliata a torre chiamata A4000T.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
 </theme>

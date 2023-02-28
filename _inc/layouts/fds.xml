@@ -1,112 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videocrton" extra="true">
-			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
-			<delay>0</delay>
-			<loops>0</loops>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.49 0.4</pos>
-			<maxSize>0.24</maxSize>
-			<zIndex>26</zIndex>
-		</video>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.49 0.4</pos>
-			<maxSize>0.24</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
-			<text>1986</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
-			<text>Nintendo</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
-			<text>Family Computer Disk System</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
-			<text>The Family Computer Disk System is a peripheral for Nintendo's Family Computer home video game console, released only in Japan on February 21, 1986. It uses proprietary floppy disks called "Disk Cards" for cheaper data storage and it adds a new high-fidelity sound channel for supporting Disk System games.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videocrton" extra="true">
+      <path>./../../_inc/anim/video/CRT_ON.mp4</path>
+      <delay>0</delay>
+      <loops>0</loops>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.49 0.4</pos>
+      <maxSize>0.24</maxSize>
+      <zIndex>26</zIndex>
+    </video>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.49 0.4</pos>
+      <maxSize>0.24</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text>1986</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <pos>0.49 0.255</pos>
+      <text>Nintendo</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.04</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.30</pos>
+      <size>0.5 0</size>
+      <text>Family Computer Disk System</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.4</pos>
+      <text>The Family Computer Disk System is a peripheral for Nintendo's Family Computer home video game console, released only in Japan on February 21, 1986. It uses proprietary floppy disks called "Disk Cards" for cheaper data storage and it adds a new high-fidelity sound channel for supporting Disk System games.
 
 Fundamentally, the Disk System serves simply to enhance some aspects already inherent to the base Famicom system, with better sound and cheaper games—though with the disadvantages of high initial price, slow speed, and lower reliability. However, this boost to the market of affordable and writable mass storage temporarily served as an enabling technology for the creation of new types of video games. This includes the vast, open world, progress-saving adventures of the best-selling The Legend of Zelda (1986) and Metroid (1986), games with a cost-effective and swift release such as the best-selling Super Mario Bros. 2, and nationwide leaderboards and contests via the in-store Disk Fax kiosks, which are considered to be forerunners of today's online achievement and distribution systems.</text>
-			<text lang="pl">Family Computer Disk System jest peryferią dla Nintendo Family Computer domu konsoli gier wideo, wydany tylko w Japonii w dniu 21 lutego 1986 roku. Używa zastrzeżonych dyskietek zwanych "Disk Cards" do tańszego przechowywania danych i dodaje nowy kanał dźwięku wysokiej wierności do wspierania gier z systemem dyskowym.
+      <text lang="pl">Family Computer Disk System jest peryferią dla Nintendo Family Computer domu konsoli gier wideo, wydany tylko w Japonii w dniu 21 lutego 1986 roku. Używa zastrzeżonych dyskietek zwanych "Disk Cards" do tańszego przechowywania danych i dodaje nowy kanał dźwięku wysokiej wierności do wspierania gier z systemem dyskowym.
 
 Zasadniczo, System Dyskowy służy po prostu do wzmocnienia niektórych aspektów już nieodłącznych dla podstawowego systemu Famicom, z lepszym dźwiękiem i tańszymi grami - choć z wadami wysokiej ceny początkowej, powolnej prędkości i niższej niezawodności. Jednakże, ten impuls do rynku niedrogich i zapisywalnych pamięci masowych tymczasowo służył jako technologia umożliwiająca tworzenie nowych typów gier wideo. Obejmuje to rozległe, otwarte, przygodowe gry z zapisywaniem postępu, takie jak bestsellerowe The Legend of Zelda (1986) i Metroid (1986), gry z opłacalną i szybką premierą, takie jak bestsellerowy Super Mario Bros. 2, oraz ogólnokrajowe tablice liderów i konkursy za pośrednictwem sklepowych kiosków Disk Fax, które są uważane za prekursorów dzisiejszych systemów trofeów i dystrybucji online.</text>
-			<text lang="fr">La Famicom Disk System ou FDS (Family Computer Disk System) est un périphérique de la console de jeux vidéo Famicom. Vendu par Nintendo, il se place sous la console et utilise un format propriétaire de disquette permettant de stocker des jeux. Sorti le 21 février 1986 au Japon, la version américaine, prévue pour fin 1986, n'a jamais été publiée.
+      <text lang="fr">La Famicom Disk System ou FDS (Family Computer Disk System) est un périphérique de la console de jeux vidéo Famicom. Vendu par Nintendo, il se place sous la console et utilise un format propriétaire de disquette permettant de stocker des jeux. Sorti le 21 février 1986 au Japon, la version américaine, prévue pour fin 1986, n'a jamais été publiée.
 
 Fin 1984, Nintendo commence déjà à réfléchir à l'après-Famicom, car elle n'imagine pas que sa console puisse rester viable commercialement encore de longues années. Le principal problème lié à la première console de salon, c'est sa capacité de stockage mémoire et Nintendo décide donc d'y remédier en élaborant une extension matérielle pour sa console permettant de lire des disquettes, lesquelles disposent d'une plus grande capacité de mémoire et en outre offrant la possibilité de sauvegarder les parties.</text>
-			<text lang="de">Descriptions. Pls send me it in Discord</text>
-			<text lang="ru">Периферийное устройство для игровой приставки Family Computer (NES) компании Nintendo, выпущенное 21 февраля 1986 года эксклюзивно для японского рынка. Устройство использовало гибкие диски проприетарного формата (официальное название такой дискеты — Disk Card) для хранения данных. Был анонсирован выпуск устройства на территории Северной Америки и Европы (PAL регион), впоследствии не состоявшийся. За период с 1986 по 2003 год было продано 4,5 миллиона экземпляров устройства.
+      <text lang="ru">Периферийное устройство для игровой приставки Family Computer (NES) компании Nintendo, выпущенное 21 февраля 1986 года эксклюзивно для японского рынка. Устройство использовало гибкие диски проприетарного формата (официальное название такой дискеты — Disk Card) для хранения данных. Был анонсирован выпуск устройства на территории Северной Америки и Европы (PAL регион), впоследствии не состоявшийся. За период с 1986 по 2003 год было продано 4,5 миллиона экземпляров устройства.
 
 Уже в 1986 году объём хранимой информации в 112 кб являлся недостаточным, так как первые компьютеры IBM PC (август 1981 года) снабжались дисководами, дискеты которых вмещали до 360 кб. В 1981 году были выпущены на рынок дискеты современного формата 3,5 дюйма, вмещавшие до 720 кб, а распространённый современный тип дискет, вмещающий 1,44 мегабайта был доступен ещё в 1984 году, однако, массовая на тот момент технология была значительно дешевле. Возможность перезаписи информации на магнитном диске открыли новые возможности для компьютерных игр. Так, версии следующих игр для FDS имели возможность сохранения: The Legend of Zelda, Metroid, Kid Icarus. Многие из игр, вышедших в Японии эксклюзивно для FDS, были портированы в формат картриджа и изданы на приставке NES, используя для сохранения питаемую от батареи ОЗУ или систему паролей.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-	</view>
+      <text lang="it">Il Family Computer Disk System è una periferica per la console di videogiochi domestica Family Computer di Nintendo, rilasciata solo in Giappone il 21 febbraio 1986. Utilizza dischi floppy proprietari chiamati "Disk Card" per una memorizzazione dei dati più economica e aggiunge un nuovo canale audio ad alta fedeltà per supportare i giochi del Disk System.
+
+Fondamentalmente, il Disk System serviva semplicemente a migliorare alcuni aspetti già insiti nel sistema Famicom di base, con un suono migliore e giochi più economici, sebbene con gli svantaggi di un prezzo iniziale elevato, una velocità ridotta e una minore affidabilità. Tuttavia, questo impulso al mercato delle memorie di massa accessibili e scrivibili servì temporaneamente come tecnologia abilitante per la creazione di nuovi tipi di videogiochi. Tra questi, le vaste avventure open world con salvataggio dei progressi dei vendutissimi The Legend of Zelda (1986) e Metroid (1986), i giochi con un'uscita rapida ed economica come il vendutissimo Super Mario Bros. 2, e le classifiche e i concorsi a livello nazionale tramite i chioschi Disk Fax, considerati i precursori degli odierni sistemi di distribuzione e di acquisto online.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
 </theme>

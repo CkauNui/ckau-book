@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.5 0.363</pos>
+      <maxSize>0.14</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.18</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.1 0.5</origin>
+      <pos>0.655 0.37</pos>
+      <maxSize>0.13</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.375 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox3" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.9 0.5</origin>
+      <pos>0.345 0.37</pos>
+      <maxSize>0.13</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.065 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text>1990</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <pos>0.49 0.255</pos>
+      <text>SNK</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.04</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.30</pos>
+      <size>0.5 0</size>
+      <text>Neo Geo MVS</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.4</pos>
+      <text>The Neo Geo MVS, stylised as NEO•GEO MVS, also written as NEOGEO MVS, is a coin-operated arcade machine released in 1990 by Japanese game company SNK Corporation. Its CPU is technically a 16/32-bit 68000-based system with an 8/16-bit Z80 coprocessor, while its GPU chipset has a 24-bit graphics data bus.
+
+The MVS offers owners the ability to put up to six different cartridges into a single cabinet, a unique feature that was also a key economic consideration for operators with limited floorspace, as well as saving money long-term. With its games stored on self-contained cartridges, a game cabinet can be exchanged for a different game title by swapping the game's ROM cartridge and cabinet artwork.
+The Neo Geo MVS was a worldwide commercial success upon release in arcades, becoming one of the highest-earning machines at various arcades across markets.
+
+A home console version was also made, called Advanced Entertainment System (AES). Unlike earlier systems, the Neo Geo AES was intended to reproduce the same quality of game as the arcade MVS system.
+</text>
+      <text lang="pl">Neo Geo MVS, stylizowane jako NEO-GEO MVS, pisane również jako NEOGEO MVS, to maszyna arcade na monety wydana w 1990 roku przez japońską firmę gier SNK Corporation. Jego procesor to technicznie 16/32-bitowy układ oparty na 68000 z 8/16-bitowym koprocesorem Z80, natomiast układ GPU posiada 24-bitową szynę danych graficznych.
+
+MVS oferuje właścicielom możliwość umieszczenia do sześciu różnych kartridży w jednej obudowie, co jest unikalną cechą, która była również kluczowym czynnikiem ekonomicznym dla operatorów z ograniczoną przestrzenią użytkową, jak również długoterminową oszczędnością pieniędzy. Dzięki grom przechowywanym na niezależnych kartridżach, szafkę z grą można wymienić na inny tytuł gry poprzez zamianę kartridża ROM gry i grafiki obudowy.
+Neo Geo MVS odniosła światowy sukces komercyjny po wydaniu w salonach, stając się jedną z najlepiej zarabiających maszyn w różnych salonach na całym rynku.
+
+Powstała również wersja na konsolę domową, nazwana Advanced Entertainment System (AES). W odróżnieniu od wcześniejszych systemów, Neo Geo AES miał na celu odtworzenie tej samej jakości gry, co arcade'owy system MVS.</text>
+      <text lang="ru">Neo Geo MVS, стилизованная под NEO-GEO MVS, также пишется как NEOGEO MVS, - это монетоприемник для аркадных автоматов, выпущенный в 1990 году японской игровой компанией SNK Corporation. Его центральный процессор технически представляет собой 16/32-битную систему на базе 68000 с 8/16-битным сопроцессором Z80, а чипсет GPU имеет 24-битную шину графических данных.
+
+MVS предлагает владельцам возможность разместить до шести различных картриджей в одном шкафу - уникальная особенность, которая также была ключевым экономическим соображением для операторов с ограниченным пространством, а также экономией денег в долгосрочной перспективе. Благодаря тому, что игры хранятся на автономных картриджах, игровой шкаф может быть заменен на другую игру путем замены картриджа ROM и художественного оформления корпуса.
+Neo Geo MVS имела всемирный коммерческий успех после выпуска в игровых автоматах, став одним из самых высокодоходных автоматов в различных игровых залах на всех рынках.
+
+Была также выпущена версия для домашней консоли, названная Advanced Entertainment System (AES). В отличие от предыдущих систем, Neo Geo AES должна была воспроизводить то же качество игр, что и аркадная система MVS.</text>
+      <text lang="it">Il Neo Geo MVS, stilizzato come NEO-GEO MVS, scritto anche come NEOGEO MVS, è una macchina arcade a gettoni rilasciata nel 1990 dalla società giapponese SNK Corporation. La sua CPU è tecnicamente un sistema a 16/32 bit basato su 68000 con un coprocessore Z80 a 8/16 bit, mentre il chipset GPU ha un bus dati grafico a 24 bit.
+
+L'MVS offre ai proprietari la possibilità di inserire fino a sei cartucce diverse in un singolo cabinet, una caratteristica unica che è stata anche una considerazione economica fondamentale per gli operatori con spazi limitati, oltre che un risparmio a lungo termine. Grazie ai giochi memorizzati su cartucce autonome, un mobile può essere sostituito con un titolo diverso scambiando la cartuccia ROM del gioco e la grafica del mobile.
+Il Neo Geo MVS è stato un successo commerciale mondiale al momento dell'uscita nelle sale giochi, diventando una delle macchine che ha guadagnato di più nei vari mercati.
+
+Fu realizzata anche una versione per console domestica, chiamata Advanced Entertainment System (AES). A differenza dei sistemi precedenti, il Neo Geo AES era destinato a riprodurre la stessa qualità di gioco del sistema arcade MVS.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
+</theme>

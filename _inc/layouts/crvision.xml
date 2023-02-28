@@ -1,113 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videocrton" extra="true">
-			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
-			<delay>0</delay>
-			<loops>0</loops>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.48 0.4</pos>
-			<maxSize>0.235</maxSize>
-			<zIndex>26</zIndex>
-		</video>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/creativision.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/creativision.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.48 0.4</pos>
-			<maxSize>0.235</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
-			<text>1982</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
-			<text>Vtech</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
-			<text>Creativision</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.40</pos>
-			<text>The Video Technology CreatiVision is a hybrid computer and home video game console introduced by VTech in 1981 and released in 1982. The hybrid unit was similar in concept to computers such as the APF Imagination Machine, the older VideoBrain Family Computer, and to a lesser extent the Intellivision game console and Coleco Adam computer, all of which anticipated the trend of video game consoles becoming more like low-end computers.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videocrton" extra="true">
+      <path>./../../_inc/anim/video/CRT_ON.mp4</path>
+      <delay>0</delay>
+      <loops>0</loops>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.48 0.4</pos>
+      <maxSize>0.235</maxSize>
+      <zIndex>26</zIndex>
+    </video>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/creativision.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/creativision.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.48 0.4</pos>
+      <maxSize>0.235</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text>1982</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <pos>0.49 0.255</pos>
+      <text>Vtech</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.04</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.30</pos>
+      <size>0.5 0</size>
+      <text>Creativision</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.40</pos>
+      <text>The Video Technology CreatiVision is a hybrid computer and home video game console introduced by VTech in 1981 and released in 1982. The hybrid unit was similar in concept to computers such as the APF Imagination Machine, the older VideoBrain Family Computer, and to a lesser extent the Intellivision game console and Coleco Adam computer, all of which anticipated the trend of video game consoles becoming more like low-end computers.
 
 The CreatiVision was distributed in many European countries, including most German-speaking countries like West Germany, Austria and Switzerland and also Italy, South Africa, in Israel under the Educat 2002 name, as well as in Australia and New Zealand under the Dick Smith Wizzard name. 
 
 The CreatiVision console sported an 8-bit Rockwell 6502 CPU at a speed of 2 MHz, 1KB of RAM and 16KB of Video RAM, and had a graphics resolution of 256 × 192 with 16 colors and 32 sprites. The console had two integrated joystick/membrane keypad controllers (much like the ColecoVision and Atari 5200) which, when set in a special compartment on top of the console, could be used as a computer keyboard.
 </text>
-			<text lang="pl">Video Technology CreatiVision to hybrydowy komputer i domowa konsola do gier wideo wprowadzona przez firmę VTech w 1981 roku i wydana w 1982 roku. Hybrydowa jednostka była podobna w koncepcji do komputerów takich jak APF Imagination Machine, starszy VideoBrain Family Computer, a w mniejszym stopniu do konsoli Intellivision i komputera Coleco Adam, z których wszystkie przewidywały trend rozwoju konsoli do gier wideo, które stawały się bardziej podobne do komputerów niskiej klasy.
+      <text lang="pl">Video Technology CreatiVision to hybrydowy komputer i domowa konsola do gier wideo wprowadzona przez firmę VTech w 1981 roku i wydana w 1982 roku. Hybrydowa jednostka była podobna w koncepcji do komputerów takich jak APF Imagination Machine, starszy VideoBrain Family Computer, a w mniejszym stopniu do konsoli Intellivision i komputera Coleco Adam, z których wszystkie przewidywały trend rozwoju konsoli do gier wideo, które stawały się bardziej podobne do komputerów niskiej klasy.
 
 CreatiVision był dystrybuowany w wielu krajach europejskich, w tym w większości krajów niemieckojęzycznych, takich jak Niemcy Zachodnie, Austria i Szwajcaria, a także we Włoszech, RPA, w Izraelu pod nazwą Educat 2002, a także w Australii i Nowej Zelandii pod nazwą Dick Smith Wizzard. 
 
 Konsola CreatiVision posiadała 8-bitowy procesor Rockwell 6502 o prędkości 2 MHz, 1KB pamięci RAM i 16KB pamięci Video RAM, oraz rozdzielczość grafiki 256 × 192 z 16 kolorami i 32 spritami. Konsola posiadała dwa zintegrowane kontrolery typu joystick/membranowa klawiatura (podobnie jak w ColecoVision i Atari 5200), które po umieszczeniu w specjalnym schowku na górze konsoli mogły być używane jako klawiatura komputerowa.</text>
-			<text lang="fr">Descriptions. Pls send me it in Discord</text>
-			<text lang="de">Descriptions. Pls send me it in Discord</text>
-			<text lang="ru">Video Technology CreatiVision представляет собой гибридный компьютер и домашнюю игровую консоль, представленную VTech в 1981 году и выпущенную в 1982 году. Гибридное устройство было похоже по концепции на такие компьютеры, как APF Imagination Machine, старый компьютер семейства VideoBrain и, в меньшей степени, игровая консоль Intellivision и компьютер Coleco Adam, все из которых предвосхитили тенденцию к тому, что игровые приставки становятся все более похожими на недорогие компьютеры.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-	</view>
+      <text lang="ru">Video Technology CreatiVision представляет собой гибридный компьютер и домашнюю игровую консоль, представленную VTech в 1981 году и выпущенную в 1982 году. Гибридное устройство было похоже по концепции на такие компьютеры, как APF Imagination Machine, старый компьютер семейства VideoBrain и, в меньшей степени, игровая консоль Intellivision и компьютер Coleco Adam, все из которых предвосхитили тенденцию к тому, что игровые приставки становятся все более похожими на недорогие компьютеры.</text>
+      <text lang="it">Il Video Technology CreatiVision è un computer ibrido e una console per videogiochi domestici introdotta da VTech nel 1981 e rilasciata nel 1982. L'unità ibrida era simile nel concetto a computer come l'APF Imagination Machine, il vecchio VideoBrain Family Computer e, in misura minore, la console per videogiochi Intellivision e il computer Coleco Adam, che anticipavano la tendenza delle console per videogiochi a diventare più simili a computer di fascia bassa.
+
+Il CreatiVision è stato distribuito in molti paesi europei, tra cui la maggior parte dei paesi di lingua tedesca come la Germania Ovest, l'Austria e la Svizzera e anche l'Italia, in Sudafrica, in Israele con il nome Educat 2002 e in Australia e Nuova Zelanda con il nome Dick Smith Wizzard.
+
+La console CreatiVision era dotata di una CPU Rockwell 6502 a 8 bit con una velocità di 2 MHz, 1KB di RAM e 16KB di Video RAM, e aveva una risoluzione grafica di 256 × 192 con 16 colori e 32 sprite. La console era dotata di due controller integrati joystick/tastiera a membrana (come il ColecoVision e l'Atari 5200) che, se inseriti in uno speciale scomparto sulla parte superiore della console, potevano essere utilizzati come tastiera del computer.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
 </theme>

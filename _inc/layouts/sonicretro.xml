@@ -1,86 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.48 0.5</origin>
-			<pos>0.519 0.378</pos>
-			<maxSize>0.27</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.239 0.378" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
-			<text>2021</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.03</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextName" extra="true">
-			<pos>0.49 0.25</pos>
-			<size>0.5 0</size>
-			<text>Sonic Retro Engine</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.35</pos>
-			<text>The Retro Engine (currently known as the Star Engine) is an engine created by "The Taxman" (Christian Whitehead). It is designed to deliver features from the 32-bit console era and below, and focuses on things like raster effects, palette manipulations, 'mode 7', and other features of retro games from back then, unlike modern engines today. The engine is multi-platform, and it fully supports modern essentials such as widescreen and online functionality. The Taxman and Stealth (Simon Thomley) remade and remastered Sonic the Hedgehog CD (2011) for Xbox Live Arcade, PlayStation Network, iOS, and Android, Sonic the Hedgehog (2013) for iOS and Android, and Sonic the Hedgehog 2 (2013) for iOS and Android using the Retro Engine. These new features for the games include upgraded graphics, widescreen display, 60 fps, remastered soundtracks, and many more features.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.48 0.5</origin>
+      <pos>0.519 0.378</pos>
+      <maxSize>0.27</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.239 0.378" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text>2021</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.03</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.25</pos>
+      <size>0.5 0</size>
+      <text>Sonic Retro Engine</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.35</pos>
+      <text>The Retro Engine (currently known as the Star Engine) is an engine created by "The Taxman" (Christian Whitehead). It is designed to deliver features from the 32-bit console era and below, and focuses on things like raster effects, palette manipulations, 'mode 7', and other features of retro games from back then, unlike modern engines today. The engine is multi-platform, and it fully supports modern essentials such as widescreen and online functionality. The Taxman and Stealth (Simon Thomley) remade and remastered Sonic the Hedgehog CD (2011) for Xbox Live Arcade, PlayStation Network, iOS, and Android, Sonic the Hedgehog (2013) for iOS and Android, and Sonic the Hedgehog 2 (2013) for iOS and Android using the Retro Engine. These new features for the games include upgraded graphics, widescreen display, 60 fps, remastered soundtracks, and many more features.
 
 In January 2021, 3 games based on Retro Engine were reverse engineered. The user Rubberduckycooly released two projects on GitHub: one for Sonic 1 and 2, and the other for Sonic CD. Despite binaries being freely available, the player is still required to obtain a copy of the game's data through official sources such as Google Play, AppStore or Steam.</text>
-			<text lang="pl">Retro Engine (obecnie znany jako Star Engine) to silnik stworzony przez "The Taxman" (Christian Whitehead). Został on zaprojektowany, aby zapewnić funkcje z ery konsol 32-bitowych i niższych, i skupia się na takich rzeczach, jak efekty rastrowe, manipulacje paletami, "tryb 7" i inne cechy gier retro z tamtych czasów, w przeciwieństwie do współczesnych silników. Silnik jest wieloplatformowy i w pełni obsługuje nowoczesne funkcje, takie jak szeroki ekran i funkcjonalność online. The Taxman i Stealth (Simon Thomley) zremasterowali grę Sonic the Hedgehog CD (2011) na Xbox Live Arcade, PlayStation Network, iOS i Android, Sonic the Hedgehog (2013) na iOS i Android oraz Sonic the Hedgehog 2 (2013) na iOS i Android przy użyciu silnika Retro. Nowe funkcje tych gier obejmują ulepszoną grafikę, wyświetlanie na szerokim ekranie, 60 klatek na sekundę, zremasterowane ścieżki dźwiękowe i wiele innych funkcji.
+      <text lang="pl">Retro Engine (obecnie znany jako Star Engine) to silnik stworzony przez "The Taxman" (Christian Whitehead). Został on zaprojektowany, aby zapewnić funkcje z ery konsol 32-bitowych i niższych, i skupia się na takich rzeczach, jak efekty rastrowe, manipulacje paletami, "tryb 7" i inne cechy gier retro z tamtych czasów, w przeciwieństwie do współczesnych silników. Silnik jest wieloplatformowy i w pełni obsługuje nowoczesne funkcje, takie jak szeroki ekran i funkcjonalność online. The Taxman i Stealth (Simon Thomley) zremasterowali grę Sonic the Hedgehog CD (2011) na Xbox Live Arcade, PlayStation Network, iOS i Android, Sonic the Hedgehog (2013) na iOS i Android oraz Sonic the Hedgehog 2 (2013) na iOS i Android przy użyciu silnika Retro. Nowe funkcje tych gier obejmują ulepszoną grafikę, wyświetlanie na szerokim ekranie, 60 klatek na sekundę, zremasterowane ścieżki dźwiękowe i wiele innych funkcji.
 
 W styczniu 2021 r. przeprowadzono inżynierię wsteczną 3 gier opartych na Retro Engine. Użytkownik Rubberduckycooly opublikował na GitHubie dwa projekty: jeden dla Sonic 1 i 2, a drugi dla Sonic CD. Mimo że binaria są swobodnie dostępne, gracz nadal musi uzyskać kopię danych gry za pośrednictwem oficjalnych źródeł, takich jak Google Play, AppStore czy Steam.</text>
-			<text lang="fr">Descriptions. Pls send me it in Discord</text>
-			<text lang="de">Descriptions. Pls send me it in Discord</text>
-			<text lang="ru">Мультиплатформенный игровой движок, разработанный австралийским программистом Кристианом Уайтхедом, наиболее известным благодаря использованию в серии Sonic the Hedgehog от Sega.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-	</view>
+      <text lang="ru">Мультиплатформенный игровой движок, разработанный австралийским программистом Кристианом Уайтхедом, наиболее известным благодаря использованию в серии Sonic the Hedgehog от Sega.</text>
+      <text lang="it">Il Retro Engine (attualmente conosciuto come Star Engine) è un motore creato da "The Taxman" (Christian Whitehead). È stato progettato per offrire le caratteristiche dell'era delle console a 32 bit e oltre, e si concentra su aspetti come gli effetti raster, le manipolazioni della tavolozza, il "mode 7" e altre caratteristiche dei giochi retro di allora, a differenza dei motori moderni. Il motore è multipiattaforma e supporta pienamente gli elementi essenziali moderni come il widescreen e la funzionalità online. The Taxman e Stealth (Simon Thomley) hanno rifatto e rimasterizzato Sonic the Hedgehog CD (2011) per Xbox Live Arcade, PlayStation Network, iOS e Android, Sonic the Hedgehog (2013) per iOS e Android e Sonic the Hedgehog 2 (2013) per iOS e Android utilizzando il Retro Engine. Le nuove caratteristiche dei giochi includono grafica aggiornata, visualizzazione widescreen, 60 fps, colonne sonore rimasterizzate e molte altre caratteristiche.
+
+Nel gennaio 2021, 3 giochi basati su Retro Engine sono stati sottoposti a reverse engineering. L'utente Rubberduckycooly ha pubblicato due progetti su GitHub: uno per Sonic 1 e 2 e l'altro per Sonic CD. Nonostante i binari siano liberamente disponibili, il giocatore deve comunque ottenere una copia dei dati del gioco attraverso fonti ufficiali come Google Play, AppStore o Steam.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
 </theme>

@@ -1,88 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.48 0.5</origin>
-			<pos>0.519 0.378</pos>
-			<maxSize>0.27</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.239 0.378" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
-			<text>2017</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.03</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextName" extra="true">
-			<pos>0.49 0.25</pos>
-			<size>0.5 0</size>
-			<text>I.K.E.M.E.N</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.35</pos>
-			<text>I.K.E.M.E.N (short for Itsumademo Kanseishinai Eienni Mikansei ENgine) is a free and open-source fighting game engine designed to be compatible with M.U.G.E.N content, while also expanding on its feature set to allow for more flexible customization. The engine is notable for introducing stage zoom prior to the release of the M.U.G.E.N 1.1 beta, and for allowing netplay matches, a feature that is not supported in any official build of M.U.G.E.N.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.48 0.5</origin>
+      <pos>0.519 0.378</pos>
+      <maxSize>0.27</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.239 0.378" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text>2017</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.03</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.25</pos>
+      <size>0.5 0</size>
+      <text>I.K.E.M.E.N</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.35</pos>
+      <text>I.K.E.M.E.N (short for Itsumademo Kanseishinai Eienni Mikansei ENgine) is a free and open-source fighting game engine designed to be compatible with M.U.G.E.N content, while also expanding on its feature set to allow for more flexible customization. The engine is notable for introducing stage zoom prior to the release of the M.U.G.E.N 1.1 beta, and for allowing netplay matches, a feature that is not supported in any official build of M.U.G.E.N.
 
 Unlike M.U.G.E.N, the engine is open source, which allows users to modify the engine outside of simple content additions, as well as the addition of new features, such as new state controllers and menus.</text>
-			<text lang="pl">I.K.E.M.E.N (skrót od Itsumademo Kanseishinai Eienni Mikansei ENgine) to darmowy i open-source'owy silnik do gier walki, zaprojektowany tak, aby był kompatybilny z zawartością M.U.G.E.N, jednocześnie rozszerzając jego zestaw funkcji, aby umożliwić bardziej elastyczne dostosowanie. Silnik ten jest godny uwagi ze względu na wprowadzenie stage zoom przed wydaniem bety M.U.G.E.N 1.1 oraz umożliwienie rozgrywania meczów w sieci, co nie jest wspierane w żadnej oficjalnej wersji M.U.G.E.N.
+      <text lang="pl">I.K.E.M.E.N (skrót od Itsumademo Kanseishinai Eienni Mikansei ENgine) to darmowy i open-source'owy silnik do gier walki, zaprojektowany tak, aby był kompatybilny z zawartością M.U.G.E.N, jednocześnie rozszerzając jego zestaw funkcji, aby umożliwić bardziej elastyczne dostosowanie. Silnik ten jest godny uwagi ze względu na wprowadzenie stage zoom przed wydaniem bety M.U.G.E.N 1.1 oraz umożliwienie rozgrywania meczów w sieci, co nie jest wspierane w żadnej oficjalnej wersji M.U.G.E.N.
 
 W przeciwieństwie do M.U.G.E.N, silnik jest open source, co pozwala użytkownikom na modyfikację silnika poza prostym dodawaniem zawartości, jak również dodawanie nowych funkcji, takich jak nowe kontrolery stanów i menu.</text>
-			<text lang="fr">Descriptions. Pls send me it in Discord.</text>
-			<text lang="de">Descriptions. Pls send me it in Discord</text>
-			<text lang="ru">I.K.E.M.E.N (сокращение от Itsumademo Kanseishinai Eienni Mikansei ENgine) - это бесплатный движок для файтингов с открытым исходным кодом, разработанный для совместимости с контентом M.U.G.E.N, а также расширяющий его набор функций для более гибкой настройки. Движок примечателен тем, что в нем появилась функция масштабирования сцены до выхода бета-версии M.U.G.E.N 1.1, а также возможность проведения матчей по сети, которая не поддерживается ни в одной официальной сборке M.U.G.E.N.
+      <text lang="ru">I.K.E.M.E.N (сокращение от Itsumademo Kanseishinai Eienni Mikansei ENgine) - это бесплатный движок для файтингов с открытым исходным кодом, разработанный для совместимости с контентом M.U.G.E.N, а также расширяющий его набор функций для более гибкой настройки. Движок примечателен тем, что в нем появилась функция масштабирования сцены до выхода бета-версии M.U.G.E.N 1.1, а также возможность проведения матчей по сети, которая не поддерживается ни в одной официальной сборке M.U.G.E.N.
 
 В отличие от M.U.G.E.N, движок имеет открытый исходный код, что позволяет пользователям изменять движок, не ограничиваясь простым добавлением контента, а также добавлением новых функций, таких как новые контроллеры состояний и меню.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-	</view>
+      <text lang="it">I.K.E.M.E.N (acronimo di Itsumademo Kanseishinai Eienni Mikansei ENgine) è un motore per giochi di combattimento libero e open source progettato per essere compatibile con i contenuti di M.U.G.E.N, ampliando al contempo il suo set di funzionalità per consentire una personalizzazione più flessibile. Il motore si distingue per l'introduzione dello stage zoom prima del rilascio della beta di M.U.G.E.N 1.1 e per la possibilità di giocare in rete, una caratteristica che non è supportata in nessuna build ufficiale di M.U.G.E.N.
+
+A differenza di M.U.G.E.N, il motore è open source, il che consente agli utenti di modificare il motore al di là delle semplici aggiunte di contenuti, nonché di aggiungere nuove funzionalità, come nuovi controller di stato e menu.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
 </theme>

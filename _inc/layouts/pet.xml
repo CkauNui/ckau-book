@@ -1,105 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.48 0.4</pos>
-			<maxSize>0.17</maxSize>
-			<zIndex>25</zIndex>
-			<rotation></rotation>
-			<storyboard>
-				<animation property="pos" to="0.20 0.4" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
-			<text>1977</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
-			<text>Commodore</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
-			<text>Pet</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
-			<text>The Commodore PET is a line of personal computers produced starting in 1977 by Commodore International. A single all-in-one case combines a MOS Technology 6502 microprocessor, Commodore BASIC in read-only memory, keyboard, computer monitor, and in early models a cassette deck.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.48 0.4</pos>
+      <maxSize>0.17</maxSize>
+      <zIndex>25</zIndex>
+      <rotation/>
+      <storyboard>
+        <animation property="pos" to="0.20 0.4" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text>1977</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <pos>0.49 0.255</pos>
+      <text>Commodore</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.04</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.30</pos>
+      <size>0.5 0</size>
+      <text>Pet</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.4</pos>
+      <text>The Commodore PET is a line of personal computers produced starting in 1977 by Commodore International. A single all-in-one case combines a MOS Technology 6502 microprocessor, Commodore BASIC in read-only memory, keyboard, computer monitor, and in early models a cassette deck.
 
 Development of the system began in 1976 and a prototype was demonstrated at the January 1977 Consumer Electronics Show. A series of problems delayed production versions until December 1977, by which time the TRS-80 and Apple II had already begun deliveries. Byte referred to the three machines collectively as the "1977 trinity".
 
 The PET design underwent a series of updates: more memory, better keyboard, larger screen, and other modifications. The systems were a top seller in the Canadian and United States education markets, as well as for business use in Europe.
 
 The name was suggested by Andre Souson after he saw the Pet Rock in Los Gatos, and stated they were going to make the "pet computer". It was backronymed to Personal Electronic Transactor.</text>
-			<text lang="pl">Commodore PET (Personal Electronic Transactor) – linia komputerów domowych (osobistych) produkowanych przez firmę Commodore International w latach 1977 – 1982. PET był pierwszym w pełni funkcjonalnym komputerem firmy Commodore; na jego podstawie firma stworzyła później całą linię 8-bitowych komputerów domowych, takich jak Commodore VIC-20 czy Commodore 64. PET najlepiej sprzedawał się na kanadyjskim oraz amerykańskim rynku edukacyjnym. Pierwszy model, PET 2001, został zaprezentowany podczas targów Consumer Electronics Show w 1977 roku.
+      <text lang="pl">Commodore PET (Personal Electronic Transactor) – linia komputerów domowych (osobistych) produkowanych przez firmę Commodore International w latach 1977 – 1982. PET był pierwszym w pełni funkcjonalnym komputerem firmy Commodore; na jego podstawie firma stworzyła później całą linię 8-bitowych komputerów domowych, takich jak Commodore VIC-20 czy Commodore 64. PET najlepiej sprzedawał się na kanadyjskim oraz amerykańskim rynku edukacyjnym. Pierwszy model, PET 2001, został zaprezentowany podczas targów Consumer Electronics Show w 1977 roku.
 
 Pierwsza wersja produkcyjna PET-a miała 4 lub 8 kB RAM-u, do generowania obrazu używała chipa MOS 6545. Wyświetlał on obraz na wbudowanym monitorze o rozdzielczości 40*25 znaków. Komputer miał także wbudowany magnetofon kasetowy i raczej niewygodną, bardzo małą klawiaturę.
 
 Komputer sprzedawał się nieźle, ale często krytykowano jego klawiaturę, w wyniku czego Commodore wprowadził na rynek nowe wersje 2001-N i 2001-B, w których magnetofon nie stanowił już integralnej części obudowy, co pozwoliło na użycie większej i wygodniejszej klawiatury. Dodatkowo wprowadzono także zmiany na płycie głównej i produkowano modele z powiększoną pamięcią 2001-N-8, -N-16 oraz -N-31 (z kolejno 8, 16 i 32 kilobajtami pamięci).</text>
-			<text lang="fr">Descriptions. Pls send me it in Discord</text>
-			<text lang="de">Descriptions. Pls send me it in Discord</text>
-			<text lang="ru">(Personal Electronic Transactor) — домашний персональный компьютер, выпускавшийся компанией Commodore с 1977 года. Хотя это устройство не получило широкого распространения за пределами Северной Америки и Великобритании, это был первый полноценный компьютер Commodore, и он послужил основой для будущего успеха компании.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-	</view>
+      <text lang="ru">(Personal Electronic Transactor) — домашний персональный компьютер, выпускавшийся компанией Commodore с 1977 года. Хотя это устройство не получило широкого распространения за пределами Северной Америки и Великобритании, это был первый полноценный компьютер Commodore, и он послужил основой для будущего успеха компании.</text>
+      <text lang="it">Il Commodore PET è una linea di personal computer prodotta a partire dal 1977 da Commodore International. Un singolo case all-in-one combina un microprocessore MOS Technology 6502, Commodore BASIC in memoria di sola lettura, tastiera, monitor e, nei primi modelli, una piastra a cassette.
+
+Lo sviluppo del sistema iniziò nel 1976 e un prototipo fu presentato al Consumer Electronics Show del gennaio 1977. Una serie di problemi ritardarono la produzione delle versioni fino al dicembre 1977, quando le consegne del TRS-80 e dell'Apple II erano già iniziate. Byte si riferiva a queste tre macchine come alla "trinità del 1977".
+
+Il design del PET subì una serie di aggiornamenti: più memoria, tastiera migliore, schermo più grande e altre modifiche. I sistemi furono molto venduti nei mercati dell'istruzione canadese e statunitense, oltre che in Europa per uso aziendale.
+
+Il nome fu suggerito da Andre Souson dopo aver visto il Pet Rock a Los Gatos, e dichiarò che avrebbero realizzato il "computer da compagnia". Il nome è stato poi cambiato in Personal Electronic Transactor.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
 </theme>

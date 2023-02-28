@@ -1,97 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.48 0.5</origin>
-			<pos>0.519 0.378</pos>
-			<maxSize>0.27</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.239 0.378" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
-			<text>1999</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.03</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextName" extra="true">
-			<pos>0.49 0.25</pos>
-			<size>0.5 0</size>
-			<text>M.U.G.E.N</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.35</pos>
-			<text>M.U.G.E.N - a freeware program to create your own 2D games (brawlers), written in C. The game engine was released in 1999 by Elecbyte and was developed for the next four years. Since 2003 the company discontinued support for the engine, however Elecbyte returned to the engine development and released a new version in 2009. Updates released between 2004 and 2008 were unofficial versions of the original engine.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.48 0.5</origin>
+      <pos>0.519 0.378</pos>
+      <maxSize>0.27</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.239 0.378" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text>1999</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.03</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.25</pos>
+      <size>0.5 0</size>
+      <text>M.U.G.E.N</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.35</pos>
+      <text>M.U.G.E.N - a freeware program to create your own 2D games (brawlers), written in C. The game engine was released in 1999 by Elecbyte and was developed for the next four years. Since 2003 the company discontinued support for the engine, however Elecbyte returned to the engine development and released a new version in 2009. Updates released between 2004 and 2008 were unofficial versions of the original engine.
 
 The word "mugen" probably comes from the Japanese language where it means dream, fantasy, or infinity. Officially Elecbyte claims to have forgotten what the acronym they chose for the name means, but the included documentation suggests that the engine was originally intended for use in shoot'em ups.
 
 The engine is easily configurable. You can modify many elements of the game, including characters, arenas and the look of the engine itself. M.U.G.E.N community is centered around Internet themed forums, where users share the games they have created, as well as characters, which often represent characters from popular computer games.</text>
-			<text lang="pl">M.U.G.E.N – program na licencji freeware do tworzenia własnych gier 2D (bijatyk), napisany w C. Silnik gry został wydany w roku 1999 przez firmę Elecbyte i rozwijany był przez kolejne cztery lata. Od roku 2003 firma zaniechała wsparcia dla silnika, niemniej jednak Elecbyte powrócił do rozwoju silnika i wydał w 2009 jego nową wersję. Aktualizacje wypuszczone w latach 2004-2008 to nieoficjalne wersje oryginalnego silnika.
+      <text lang="pl">M.U.G.E.N – program na licencji freeware do tworzenia własnych gier 2D (bijatyk), napisany w C. Silnik gry został wydany w roku 1999 przez firmę Elecbyte i rozwijany był przez kolejne cztery lata. Od roku 2003 firma zaniechała wsparcia dla silnika, niemniej jednak Elecbyte powrócił do rozwoju silnika i wydał w 2009 jego nową wersję. Aktualizacje wypuszczone w latach 2004-2008 to nieoficjalne wersje oryginalnego silnika.
 
 Wyraz "mugen" wywodzi się prawdopodobnie z języka japońskiego gdzie oznacza sen, fantazje, tudzież nieskończoność. Oficjalnie firma Elecbyte twierdzi, że zapomnieli co miał oznaczać akronim, który wybrali do nazwy, niemniej dołączona dokumentacja sugeruje że silnik pierwotnie miał służyć w tworzeniu shoot'em'upów.
 
 Silnik jest łatwo konfigurowalny. Można modyfikować wiele elementów gry, m.in. postacie, areny i wygląd samego silnika. Społeczność M.U.G.E.N skupia się wokół internetowych for tematycznych, na których użytkownicy udostępniają stworzone przez siebie gry, a także postacie, które często przedstawiają bohaterów popularnych gier komputerowych.
 </text>
-			<text lang="fr">Descriptions. Pls send me it in Discord</text>
-			<text lang="de">Descriptions. Pls send me it in Discord</text>
-			<text lang="ru">Бесплатный графический 2D-движок виртуальных сражений, разработанный компанией Elecbyte. Написан на языке программирования Си с использованием библиотек Allegro. Бета-версия MUGEN работает под управлением DOS, GNU/Linux и Microsoft Windows. Дата выпуска 17 июля 1999 года.
+      <text lang="ru">Бесплатный графический 2D-движок виртуальных сражений, разработанный компанией Elecbyte. Написан на языке программирования Си с использованием библиотек Allegro. Бета-версия MUGEN работает под управлением DOS, GNU/Linux и Microsoft Windows. Дата выпуска 17 июля 1999 года.
 
 Разработка вновь начата 19 сентября 2009 года.
 
 Движок позволяет игрокам создавать своих персонажей, уровни и другие игровые объекты при помощи интерпретируемых игрой текстовых файлов, графики, и звуков. Для создания музыкального оформления заднего плана, антуража главного меню и т. д., имеется поддержка звуковых форматов: MP3, ADX, Ogg Vorbis и MIDI. Программный продукт позволяет воссоздавать атмосферу популярных и любимых игр.
 
 Механизм в полной [платной] комплектации даёт возможность достичь качества коммерческих 2D-проектов, вплоть до полного копирования персонажей и переноса игрового процесса (хотя, в силу некоторых ограничений, точного воспроизведения удаётся добиться не в полной мере).</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-	</view>
+      <text lang="it">M.U.G.E.N - un programma freeware per creare giochi 2D (picchiaduro), scritto in C. Il motore di gioco è stato rilasciato nel 1999 da Elecbyte ed è stato sviluppato per i quattro anni successivi. Dal 2003 l'azienda ha interrotto il supporto per il motore, ma Elecbyte è tornata allo sviluppo del motore e ha rilasciato una nuova versione nel 2009. Gli aggiornamenti rilasciati tra il 2004 e il 2008 erano versioni non ufficiali del motore originale.
+
+La parola "mugen" deriva probabilmente dalla lingua giapponese, dove significa sogno, fantasia o infinito. Ufficialmente Elecbyte dichiara di aver dimenticato il significato dell'acronimo scelto per il nome, ma la documentazione inclusa suggerisce che il motore era originariamente destinato agli shoot'em up.
+
+Il motore è facilmente configurabile. È possibile modificare molti elementi del gioco, compresi i personaggi, le arene e l'aspetto del motore stesso. La comunità di M.U.G.E.N è incentrata su forum tematici su Internet, dove gli utenti condividono i giochi che hanno creato, nonché i personaggi, che spesso rappresentano personaggi di popolari giochi per computer.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
 </theme>

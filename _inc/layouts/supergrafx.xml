@@ -1,96 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videocrton" extra="true">
-			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
-			<delay>0</delay>
-			<loops>0</loops>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.50 0.395</pos>
-			<maxSize>0.21</maxSize>
-			<zIndex>26</zIndex>
-		</video>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.50 0.395</pos>
-			<maxSize>0.21</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.395" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
-			<text>1989</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
-			<text>Nec</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
-			<text>SuperGrafx</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
-			<text>The PC Engine SuperGrafx (PCエンジンスーパーグラフィックス, Pī Shī Enjin SūpāGurafikkusu), also known as simply the SuperGrafx, is a fourth-generation home video game console manufactured by NEC Home Electronics and released in Japan and France in 1989. It is the successor system to the PC Engine, released two years prior. Originally known as the PC Engine 2 during production stages, it was purported as a true 16-bit home console, featuring improved graphics and audio capabilities over its predecessor.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videocrton" extra="true">
+      <path>./../../_inc/anim/video/CRT_ON.mp4</path>
+      <delay>0</delay>
+      <loops>0</loops>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.50 0.395</pos>
+      <maxSize>0.21</maxSize>
+      <zIndex>26</zIndex>
+    </video>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.50 0.395</pos>
+      <maxSize>0.21</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.395" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text>1989</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <pos>0.49 0.255</pos>
+      <text>Nec</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.04</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.30</pos>
+      <size>0.5 0</size>
+      <text>SuperGrafx</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.4</pos>
+      <text>The PC Engine SuperGrafx (PCエンジンスーパーグラフィックス, Pī Shī Enjin SūpāGurafikkusu), also known as simply the SuperGrafx, is a fourth-generation home video game console manufactured by NEC Home Electronics and released in Japan and France in 1989. It is the successor system to the PC Engine, released two years prior. Originally known as the PC Engine 2 during production stages, it was purported as a true 16-bit home console, featuring improved graphics and audio capabilities over its predecessor.
 
 The console was rushed to market, released several months before its initial release date of 1990, only having modest updates to the hardware. With only six retail games released that took advantage of the console's hardware updates, the SuperGrafx was a commercial failure, selling only 75,000 units total in both regions. None of the hardware advancements it possessed were carried over to NEC's later consoles, such as the TurboDuo.</text>
-			<text lang="pl">PC Engine SuperGrafx (PCエンジンスーパーグラフィックス, Pī Shī Enjin SūpāGurafikkusu), znany również jako po prostu SuperGrafx, to domowa konsola gier wideo czwartej generacji wyprodukowana przez NEC Home Electronics i wydana w Japonii i Francji w 1989 roku. Jest to następca wydanego dwa lata wcześniej systemu PC Engine. Pierwotnie znany jako PC Engine 2 podczas etapów produkcji, był uważany za prawdziwą 16-bitową konsolę domową, wyposażoną w ulepszoną grafikę i możliwości audio w stosunku do swojego poprzednika.
+      <text lang="pl">PC Engine SuperGrafx (PCエンジンスーパーグラフィックス, Pī Shī Enjin SūpāGurafikkusu), znany również jako po prostu SuperGrafx, to domowa konsola gier wideo czwartej generacji wyprodukowana przez NEC Home Electronics i wydana w Japonii i Francji w 1989 roku. Jest to następca wydanego dwa lata wcześniej systemu PC Engine. Pierwotnie znany jako PC Engine 2 podczas etapów produkcji, był uważany za prawdziwą 16-bitową konsolę domową, wyposażoną w ulepszoną grafikę i możliwości audio w stosunku do swojego poprzednika.
 
 Konsolę wprowadzono na rynek w pośpiechu, kilka miesięcy przed pierwotną datą premiery (1990), wprowadzając jedynie skromne aktualizacje sprzętowe. Ponieważ w sprzedaży detalicznej ukazało się tylko sześć gier, które wykorzystywały ulepszenia sprzętowe konsoli, SuperGrafx okazał się komercyjną porażką, sprzedając się w obu regionach w liczbie zaledwie 75 000 egzemplarzy. Żadne z ulepszeń sprzętowych, jakie posiadała ta konsola, nie zostało przeniesione do późniejszych konsol firmy NEC, takich jak TurboDuo.</text>
-			<text lang="fr">La SuperGrafx est une console de jeux vidéo fabriquée par NEC Corporation et lancée en décembre 1989 au Japon.
+      <text lang="fr">La SuperGrafx est une console de jeux vidéo fabriquée par NEC Corporation et lancée en décembre 1989 au Japon.
 
 Il s'agit d'une version améliorée de la PC-Engine (ou CoreGrafX). Comparée à cette dernière, elle a quatre fois plus de mémoire pour le processeur, une deuxième puce vidéo avec sa propre mémoire, et un contrôleur de priorité qui permettait de combiner la sortie des deux puces vidéo de différentes manières.
 
@@ -99,8 +99,7 @@ La console sort en France en mai 1990 au prix de 2490 FF sans jeu. En novembre 1
 Le SuperGrafx fut en grande partie un échec à cause d'un manque de logiciels utilisant ses capacités : seulement 5 titres furent produits. Toutefois elle était compatible avec les nombreux jeux PC-Engine. Aucun jeu CD, Super CD ou Arcade CD ne tira profit de la plate-forme.
 
 En outre, son simple processeur 8 bits avait une charge de travail plutôt lourde pour contrôler le matériel vidéo supplémentaire</text>
-			<text lang="de">Descriptions. Pls send me it in Discord</text>
-			<text lang="ru">8-16 разрядная игровая приставка, выпущенная NEC в Японии 30 октября 1987 года, в Северной Америке в конце августа 1989 года под именем TurboGrafx-16. В регионе PAL приставка не продавалась, если не считать релиза в 1990 году в Великобритании. Эта версия называлась TurboGrafx и была выпущена в очень ограниченном количестве. Неофициально эта версия продавалась во Франции и Бенилюксе.
+      <text lang="ru">8-16 разрядная игровая приставка, выпущенная NEC в Японии 30 октября 1987 года, в Северной Америке в конце августа 1989 года под именем TurboGrafx-16. В регионе PAL приставка не продавалась, если не считать релиза в 1990 году в Великобритании. Эта версия называлась TurboGrafx и была выпущена в очень ограниченном количестве. Неофициально эта версия продавалась во Франции и Бенилюксе.
 
 PC Engine была 8-разрядной приставкой с двойным 16-разрядным графическим процессором, с возможностью отображения 482 цветов одновременно.
 
@@ -109,16 +108,19 @@ PC Engine по тем временам была системой нового п
 Небольшие размеры PC Engine — всего 14 см x 14 см x 3.8 см (5.5 дюймов x 5.5 дюймов x 1.5 дюйма) — позволили ей стать рекордсменом в звании самой маленькой игровой приставки из когда-либо созданных, по версии книги рекордов Гиннесса в области компьютерных игр (англ. Guinness World Records Gamer’s Edition, 2008).
 
 В 2009 году PC Engine была помещена на тринадцатое место в списке «25 игровых приставок всех времён» по версии сайта IGN.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-	</view>
+      <text lang="it">Il PC Engine SuperGrafx (PCエンジンスーパーグラフィックス, Pī Shī Enjin SūpāGurafikkusu), noto anche come semplicemente SuperGrafx, è una console per videogiochi domestici di quarta generazione prodotta da NEC Home Electronics e rilasciata in Giappone e Francia nel 1989. È il successore del PC Engine, uscito due anni prima. Conosciuto originariamente come PC Engine 2 durante le fasi di produzione, è stato presentato come una vera console domestica a 16 bit, con capacità grafiche e audio migliorate rispetto al suo predecessore.
+
+La console è stata immessa sul mercato in fretta e furia, rilasciata diversi mesi prima della data di uscita iniziale del 1990, con solo modesti aggiornamenti all'hardware. Con solo sei giochi distribuiti al dettaglio che sfruttavano gli aggiornamenti hardware della console, il SuperGrafx fu un fallimento commerciale, vendendo solo 75.000 unità in totale in entrambe le regioni. Nessuno dei miglioramenti hardware di cui disponeva fu trasferito alle console successive di NEC, come il TurboDuo.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
 </theme>

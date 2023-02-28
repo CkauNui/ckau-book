@@ -1,110 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.49 0.365</pos>
-			<maxSize>0.19</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.21 0.365" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
-			<text>1982</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
-			<text>Nec</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
-			<text>PC-9800 Series</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
-			<text>NEC PC-9801 - a not-quite-industry-standard PC line of personal computers developed in 1982 in Japan by NEC Corporation based on IBM solutions, aimed exclusively at the Japanese market.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.49 0.365</pos>
+      <maxSize>0.19</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.21 0.365" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text>1982</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <pos>0.49 0.255</pos>
+      <text>Nec</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.04</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.30</pos>
+      <size>0.5 0</size>
+      <text>PC-9800 Series</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.4</pos>
+      <text>NEC PC-9801 - a not-quite-industry-standard PC line of personal computers developed in 1982 in Japan by NEC Corporation based on IBM solutions, aimed exclusively at the Japanese market.
 
 The first model was a 16-bit architecture with an Intel 8086 processor clocked at 5 MHz and 128 KB of RAM. It shipped with graphics cards capable of displaying 8 colors at 640x400 resolution - a clear performance differentiator compared to PCs of the time.
 
 Initially conceived as a solution for industrial and office applications, by 1987 the PC-9801 series captured nearly 90% of the Japanese personal computer market. Over time, as power increased and graphics and sound effects were appreciated by home users (especially gamers), it also became popular for non-commercial applications - the Touhou Project series, for example, made its debut.
 
 Translated with www.DeepL.com/Translator (free version)</text>
-			<text lang="pl">NEC PC-9801 – nie w pełni kompatybilna z przemysłowym standardem PC lina komputerów osobistych stworzona w 1982 w Japonii przez NEC Corporation na bazie rozwiązań IBM, skierowana wyłącznie na rynek japoński.
+      <text lang="pl">NEC PC-9801 – nie w pełni kompatybilna z przemysłowym standardem PC lina komputerów osobistych stworzona w 1982 w Japonii przez NEC Corporation na bazie rozwiązań IBM, skierowana wyłącznie na rynek japoński.
 
 Pierwszy model był architekturą 16-bitową z procesorem Intel 8086 taktowanym zegarem 5 MHz oraz 128 KB pamięci RAM. Dostarczany z kartami grafiki zdolnymi wyświetlać 8 kolorów w rozdzielczości 640x400 - co wyraźnie wyróżniało się osiągami w stosunku do ówczesnych PC.
 
 Początkowo pomyślany jako rozwiązanie dla zastosowań przemysłowych i biurowych, w roku 1987 seria PC-9801 zajęła blisko 90% japońskiego rynku komputerów osobistych. Z czasem, wraz ze wzrostem mocy i docenieniem efektów graficznych i dźwiękowych przez użytkowników domowych (zwłaszcza graczy) stał się popularny także w niekomercyjnych zastosowaniach – zadebiutowała na nich np seria Touhou Project.</text>
-			<text lang="fr">La première version du PC-98 utilisait un processeur Intel 8086 tournant à une fréquence d'horloge de 5 Mhz et était dotée de 128 Ko de mémoire vive, améliorable en 640 Ko. La résolution graphique pouvait monter jusqu'à 640* 400 pixels avec un affichage comportant une palette de 8 couleurs. Son successeur, le PC-9801E, sorti en 1983, utilisait un processeur Intel 8086-2, que l'on pouvait faire tourner soit à 5 Mhz soit à 8 Mhz.
+      <text lang="fr">La première version du PC-98 utilisait un processeur Intel 8086 tournant à une fréquence d'horloge de 5 Mhz et était dotée de 128 Ko de mémoire vive, améliorable en 640 Ko. La résolution graphique pouvait monter jusqu'à 640* 400 pixels avec un affichage comportant une palette de 8 couleurs. Son successeur, le PC-9801E, sorti en 1983, utilisait un processeur Intel 8086-2, que l'on pouvait faire tourner soit à 5 Mhz soit à 8 Mhz.
 
 Au cours des années 1980 et au début des années 1990, NEC dominait le marché des ordinateurs personnels japonais avec plus de 60 % de PC-98 et PC-88 vendus. En 1990, IBM Japan lança son nouveau système d'exploitation, le DOS/V, capable d'afficher les caractères japonais sur des IBM PC ordinaires. Après cela, les ventes de PC-98 commencèrent à décliner. Le dernier successeur de la gamme fut le PC-9821Ra43 sorti en 2000 et basé sur un processeur Celeron, allant à une fréquence de 433 Mhz.
 
 Seiko Epson a développé des clones de PC-98 avec des périphériques compatibles.</text>
-			<text lang="de">Descriptions. Pls send me it in Discord</text>
-			<text lang="ru">Форм-фактор компьютеров производства NEC, доминировавший на японском рынке персональных компьютеров для дома и бизнеса в 1980—1990-х годах.
+      <text lang="ru">Форм-фактор компьютеров производства NEC, доминировавший на японском рынке персональных компьютеров для дома и бизнеса в 1980—1990-х годах.
 
 Первая модель стандарта PC-98 — PC-9801 — была выпущена в октябре 1982 года. Она была оснащена процессором Intel 8086 с частотой 5 МГц, двумя графическими контроллерами µPD7220 (один для текста, другой для графики), 128 Кб оперативной памяти, расширяемой до 640 Кб. 8-цветный дисплей имел максимальное разрешение 640×400 пикселей. Следующая модель, PC-9801E, появившаяся в 1983 году была оснащена процессором 8086-2, который мог переключаться между частотами в 5 и 8 МГц. В начале 1990-х 50 % всех проданных в Японии компьютеров были PC-98. Последним из представителей линейки этих компьютеров был PC-9821Ra43, основанный на процессоре Celeron с частотой 433 МГц, появившийся в 2000 году.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-	</view>
+      <text lang="it">NEC PC-9801 è stata una linea di personal computer sviluppata nel 1982 in Giappone da NEC Corporation sulla base di soluzioni IBM e destinata esclusivamente al mercato giapponese.
+
+Il primo modello aveva un'architettura a 16 bit con processore Intel 8086 a 5 MHz e 128 KB di RAM. Veniva fornito con schede grafiche in grado di visualizzare 8 colori alla risoluzione di 640x400, un chiaro elemento di differenziazione delle prestazioni rispetto ai PC dell'epoca.
+
+Inizialmente concepita come soluzione per applicazioni industriali e d'ufficio, nel 1987 la serie PC-9801 aveva conquistato quasi il 90% del mercato giapponese dei personal computer. Nel corso del tempo, con l'aumento della potenza e l'apprezzamento della grafica e degli effetti sonori da parte degli utenti domestici (in particolare i giocatori), divenne popolare anche per applicazioni non commerciali - la serie Touhou Project, ad esempio, fece il suo debutto.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
 </theme>

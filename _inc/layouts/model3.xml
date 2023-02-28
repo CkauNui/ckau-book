@@ -1,138 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.50 0.395</pos>
-			<maxSize>0.255</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.395" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-            <origin if="${screen.ratio} == '4/3'">0.2 0.5</origin>
-			<pos>0.66 0.425</pos>
-			<maxSize>0.16</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.38 0.425" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox3" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-            <origin if="${screen.ratio} == '4/3'">0.8 0.5</origin>
-			<pos>0.34 0.425</pos>
-			<maxSize>0.16</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.06 0.425" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
-			<text>1996</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
-			<text>Sega</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
-			<text>Model 3</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
-			<text>Sega Model 3 is an arcade platform released in 1996 as the successor to Sega Model 2. Model 3 continued several arcade games series established on previous Sega arcade boards, with games such as; Daytona USA 2, Sega Rally 2, Virtua Fighter 3 and Star Wars Trilogy Arcade.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.50 0.395</pos>
+      <maxSize>0.255</maxSize>
+      <zIndex>26</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.395" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.2 0.5</origin>
+      <pos>0.66 0.425</pos>
+      <maxSize>0.16</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.38 0.425" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox3" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.8 0.5</origin>
+      <pos>0.34 0.425</pos>
+      <maxSize>0.16</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.06 0.425" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text>1996</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <pos>0.49 0.255</pos>
+      <text>Sega</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.04</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.30</pos>
+      <size>0.5 0</size>
+      <text>Model 3</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.4</pos>
+      <text>Sega Model 3 is an arcade platform released in 1996 as the successor to Sega Model 2. Model 3 continued several arcade games series established on previous Sega arcade boards, with games such as; Daytona USA 2, Sega Rally 2, Virtua Fighter 3 and Star Wars Trilogy Arcade.
 
 Upon release, the Model 3 board was significantly more powerful than any other arcade platform on the market as well as any home console or computer at the time, with graphical fidelity roughly to par with Dreamcast or even some early PlayStation 2 titles; it took several years for home systems to catch-up.
 
 It had an IBM-Motorola PowerPC 603e CPU that could run at 66, 100 or 166 MHz, 33 MB of RAM and two Lockheed Martin Real3D/Pro-1000 GPUs. Model 3 was followed by Sega Naomi in 1998 which uses a similar architecture to the Sega Dreamcast.
 	</text>
-			<text lang="pl">Sega Model 3 to platforma arcade wydana w 1996 roku jako następca Sega Model 2. Model 3 kontynuował kilka serii gier zręcznościowych, które pojawiły się na wcześniejszych platformach firmy Sega. Były to takie gry jak: Daytona USA 2, Sega Rally 2, Virtua Fighter 3 i Star Wars Trilogy Arcade.
+      <text lang="pl">Sega Model 3 to platforma arcade wydana w 1996 roku jako następca Sega Model 2. Model 3 kontynuował kilka serii gier zręcznościowych, które pojawiły się na wcześniejszych platformach firmy Sega. Były to takie gry jak: Daytona USA 2, Sega Rally 2, Virtua Fighter 3 i Star Wars Trilogy Arcade.
 
 W momencie premiery, płyta Model 3 była znacznie potężniejsza niż jakakolwiek inna platforma arcade na rynku, a także jakakolwiek konsola domowa lub komputer w tamtym czasie, z wiernością graficzną zbliżoną do Dreamcasta, a nawet niektórych wczesnych tytułów PlayStation 2; potrzeba było kilku lat, aby systemy domowe nadrobiły zaległości.
 
 Posiadał on procesor IBM-Motorola PowerPC 603e, który mógł pracować z częstotliwością 66, 100 lub 166 MHz, 33 MB pamięci RAM i dwa procesory graficzne Lockheed Martin Real3D/Pro-1000. Po Modelu 3 w 1998 roku pojawiła się Sega Naomi, wykorzystująca architekturę podobną do Sega Dreamcast.</text>
-			<text lang="fr">Descriptions. Pls send me it in Discord</text>
-			<text lang="de">Descriptions. Pls send me it in Discord</text>
-			<text lang="ru">Аркадный кабинет выпущенный в 1996 году на смену Sega Model 2. На Model 3 вышло несколько продолжений игр, таких как; Daytona USA 2, Sega Rally 2, Virtua Fighter 3 и Star Wars Trilogy. При выпуске Model 3 была самой мощной системой на рынке аркадных кабинетов и была сопоставима по мощности с Dreamcast или PlayStation 2. Домашним системам того времени потребовалось несколько лет, чтобы наверстать упущеное. Model 3 имела процессор IBM-Motorola PowerPC 603e с частотой 66, 100 или 166 MHz, 33 MB оперативной памяти и два графических процессора Lockheed Martin Real3D/Pro-1000. За Model 3 была выпущена Sega Naomi в 1998 году и в ней используется архитектура, схожая с Sega Dreamcast.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-	</view>
+      <text lang="ru">Аркадный кабинет выпущенный в 1996 году на смену Sega Model 2. На Model 3 вышло несколько продолжений игр, таких как; Daytona USA 2, Sega Rally 2, Virtua Fighter 3 и Star Wars Trilogy. При выпуске Model 3 была самой мощной системой на рынке аркадных кабинетов и была сопоставима по мощности с Dreamcast или PlayStation 2. Домашним системам того времени потребовалось несколько лет, чтобы наверстать упущеное. Model 3 имела процессор IBM-Motorola PowerPC 603e с частотой 66, 100 или 166 MHz, 33 MB оперативной памяти и два графических процессора Lockheed Martin Real3D/Pro-1000. За Model 3 была выпущена Sega Naomi в 1998 году и в ней используется архитектура, схожая с Sega Dreamcast.</text>
+      <text lang="it">Sega Model 3 è una piattaforma arcade rilasciata nel 1996 come successore di Sega Model 2. Il Model 3 ha proseguito diverse serie di giochi arcade già presenti sulle precedenti schede arcade Sega, con giochi come Daytona USA 2, Sega Rally 2, Virtua Fighter 3 e Star Wars Trilogy Arcade.
+
+Al momento dell'uscita, la scheda Model 3 era significativamente più potente di qualsiasi altra piattaforma arcade sul mercato, nonché di qualsiasi console o computer domestico dell'epoca, con una fedeltà grafica pari a quella del Dreamcast o persino di alcuni titoli della prima PlayStation 2; ci vollero diversi anni prima che i sistemi domestici si mettessero al passo.
+
+Aveva una CPU IBM-Motorola PowerPC 603e che poteva funzionare a 66, 100 o 166 MHz, 33 MB di RAM e due GPU Lockheed Martin Real3D/Pro-1000. Il Model 3 fu seguito dal Sega Naomi nel 1998, che utilizzava un'architettura simile a quella del Sega Dreamcast.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
 </theme>

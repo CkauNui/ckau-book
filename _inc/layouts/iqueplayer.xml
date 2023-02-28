@@ -1,103 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.36</pos>
-			<maxSize>0.32</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
-			<text>2003</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
-			<text>iQue</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
-			<text>iQue Player</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
-			<text>The iQue Player is a handheld TV game version of the Nintendo 64 console that was manufactured by iQue, a joint venture between Nintendo and Taiwanese-American scientist Wei Yen after China had banned the sale of home video games.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.5 0.36</pos>
+      <maxSize>0.32</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text>2003</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <pos>0.49 0.255</pos>
+      <text>iQue</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.04</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.30</pos>
+      <size>0.5 0</size>
+      <text>iQue Player</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.4</pos>
+      <text>The iQue Player is a handheld TV game version of the Nintendo 64 console that was manufactured by iQue, a joint venture between Nintendo and Taiwanese-American scientist Wei Yen after China had banned the sale of home video games.
 
 Its Chinese name is Shén Yóu Ji (神游机), literally "Divine Gaming Machine". Shényóu (神游) is a double entendre as "to make a mental journey". It was never released in any English-speaking countries, but the name "iQue Player" appears in the instruction manual.
 The console and its controller are one unit, plugging directly into the television. A box accessory allows multiplayer gaming.</text>
-			<text lang="pl">Odtwarzacz iQue to ręczna wersja gry telewizyjnej konsoli Nintendo 64, która została wyprodukowana przez iQue, wspólne przedsięwzięcie Nintendo i tajwańsko-amerykańskiego naukowca Wei Yen po tym, jak Chiny zakazały sprzedaży domowych gier wideo.
+      <text lang="pl">Odtwarzacz iQue to ręczna wersja gry telewizyjnej konsoli Nintendo 64, która została wyprodukowana przez iQue, wspólne przedsięwzięcie Nintendo i tajwańsko-amerykańskiego naukowca Wei Yen po tym, jak Chiny zakazały sprzedaży domowych gier wideo.
 
 Jego chińska nazwa to Shén Yóu Ji (神游机), dosłownie "Divine Gaming Machine". Shényóu (神游) to podwójne entendre jako "odbyć podróż mentalną". Nigdy nie została wydana w żadnym z krajów anglojęzycznych, ale w instrukcji obsługi pojawia się nazwa "iQue Player".
 Konsola i jej kontroler stanowią jedno urządzenie, podłączane bezpośrednio do telewizora. Dodatek w postaci pudełka umożliwia grę wieloosobową.</text>
-			<text lang="fr">Descriptions. Pls send me it in Discord</text>
-			<text lang="de">Descriptions. Pls send me it in Discord</text>
-			<text lang="ru">iQue Player это портативная версия телевизионной игры для консоли Nintendo 64, которая была произведена компанией iQue, совместным предприятием Nintendo и тайваньско-американского ученого Вэй Ена после того, как в Китае запретили продажу домашних видеоигр.
+      <text lang="ru">iQue Player это портативная версия телевизионной игры для консоли Nintendo 64, которая была произведена компанией iQue, совместным предприятием Nintendo и тайваньско-американского ученого Вэй Ена после того, как в Китае запретили продажу домашних видеоигр.
 
 Ее китайское название - Shén Yóu Ji (神游机), буквально "Божественная игровая машина". Shényóu (神游) - это двойное значение, означающее "совершить мысленное путешествие". Она никогда не выпускалась в англоязычных странах, но название "iQue Player" встречается в инструкции по эксплуатации.
 Консоль и ее контроллер представляют собой единый блок, подключаемый непосредственно к телевизору. Аксессуар в виде коробки позволяет играть в многопользовательские игры.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
-		</text>
-	</view>
+      <text lang="it">L'iQue Player è una versione portatile per TV della console Nintendo 64, prodotta da iQue, una joint venture tra Nintendo e lo scienziato taiwanese-americano Wei Yen, dopo che la Cina aveva vietato la vendita di videogiochi domestici.
+
+Il suo nome cinese è Shén Yóu Ji (神游机), letteralmente "Macchina da gioco divina". Shényóu (神游) è un doppio senso come "fare un viaggio mentale". Non è mai stato rilasciato in nessun paese di lingua inglese, ma il nome "iQue Player" compare nel manuale di istruzioni.
+La console e il suo controller sono un'unica unità che si collega direttamente al televisore. Un accessorio della scatola permette di giocare in multiplayer.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
 </theme>
