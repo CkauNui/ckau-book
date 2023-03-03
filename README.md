@@ -5,7 +5,7 @@
 <img align="right" width="200px" src="https://i.imgur.com/eCZPBDE.png">
 Emulationstation Theme for Batocera, RetroBat, EmuELEC.<br/>
 250+ supported systems.<br/>
-Supported languages: Russian, English, Deutsch, French, Polish.
+Supported languages: Russian, English, Polish, Italian, Deutsch, French.
 <br/>
 <br/>
 </p>
@@ -43,12 +43,22 @@ UPD. Moved all addons outside the theme folder, in order to preserve addon files
 
 To reduce download size, each release is provided with Colorful and Darkful system views, and Full HD 1920x1080 images for all supported systems.
 
-To download addons, please refer to the file named `(OPTIONAL) download video, 4K images, cinematic, collections, arts.txt` in the theme root directory or download them directly from the following GitHub repositories:
+To download addons, please refer to the file named `(OPTIONAL) download video, 4K images, cinematic, collections, arts.txt` in the theme root directory or download them directly from the following GitHub repositories to always get the latest version:
 
-- [COLORFUL 4K Images](https://github.com/CkauNui/ckau-book-addons-Colorful-4K-Images): high-detailed, beautiful 3840x2160 system images for both Colorful and Darkful views
-- [COLORFUL Video Pack](https://github.com/CkauNui/ckau-book-addons-Colorful-Video): a gameplay video for each system will show as default in Colorful/Darkful
-- [CINEMATIC Video Pack](https://github.com/CkauNui/ckau-book-addons-Cinematic-Video): change systemview to "Cinematic FullScreen" to activate it
-- [CONSOLES](https://github.com/CkauNui/ckau-book-addons-Consoles) / [WALLPAPERS](https://github.com/CkauNui/ckau-book-addons-Wallpapers) Arts: change systemview to "Consoles" or "Wallpapers" to activate them
+|                                    |                                    |                                    
+| :--------------------------------: | :--------------------------------: |
+| [COLORFUL 4K Images](https://github.com/CkauNui/ckau-book-addons-Colorful-4K-Images) | High-detailed, beautiful 3840x2160 system images for both Colorful and Darkful views
+| [COLORFUL Video Pack](https://github.com/CkauNui/ckau-book-addons-Colorful-Video) | A gameplay video for each system will show as default in Colorful/Darkful
+| [CINEMATIC Video Pack](https://github.com/CkauNui/ckau-book-addons-Cinematic-Video) |  Change systemview to "Cinematic FullScreen" to activate it
+| [CONSOLES](https://github.com/CkauNui/ckau-book-addons-Consoles) / [WALLPAPERS Arts](https://github.com/CkauNui/ckau-book-addons-Wallpapers) | Change systemview to "Consoles" or "Wallpapers" to activate them
+
+## Support for additional systems
+
+In addition to covering all systems in the latest version of Batocera/Retrobat, the theme also supports a list of other systems that are not (yet) officially part of Batocera/Retrobat, such as Aleck64, Amiga 600/4000, Casio Loopy, Dragon 32 etc.
+These systems can be easily added to your environment, without the need to setup new emulators or tamper with your existing configuration files.
+
+Check [Ckau Book Custom Systems](https://github.com/g-spawnPL/ckau-book-custom-systems) repository to download the additional XML files for your setup: Batocera on Rpi4, Batocera on a x86 PC, or Retrobat.
+
 
 ## Credits
 
