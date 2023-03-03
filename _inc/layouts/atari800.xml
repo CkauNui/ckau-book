@@ -1,93 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-  <formatVersion>7</formatVersion>
-  <view name="system">
-    <image name="background1" extra="true">
-      <storyboard>
-        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <image name="background" extra="true">
-      <zIndex>90</zIndex>
-      <storyboard>
-        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <video name="videocrton" extra="true">
-      <path>./../../_inc/anim/video/CRT_ON.mp4</path>
-      <delay>0</delay>
-      <loops>0</loops>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.5 0.35</pos>
-      <maxSize>0.2</maxSize>
-      <zIndex>26</zIndex>
-    </video>
-    <video name="videobox" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.5 0.35</pos>
-      <maxSize>0.2</maxSize>
-      <zIndex>25</zIndex>
-      <storyboard>
-        <animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <text name="TextDate" extra="true">
-      <pos>0.49 0.2</pos>
-      <text>1979</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextManufacturer" extra="true">
-      <pos>0.49 0.255</pos>
-      <text>Atari</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.04</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextName" extra="true">
-      <pos>0.49 0.30</pos>
-      <size>0.5 0</size>
-      <text>800</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.065</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextDesc" extra="true">
-      <size>0.5 0</size>
-      <pos>0.49 0.40</pos>
-      <text>The Atari 8-bit family is a series of 8-bit home computers introduced by Atari, Inc. in 1979 as the Atari 400 and Atari 800 and manufactured until 1992. All of the machines in the family are technically similar and differ primarily in packaging. They are based on the MOS Technology 6502 CPU running at 1.79 MHz, and were the first home computers designed with custom coprocessor chips. This architecture enabled graphics and sound more advanced than contemporary machines, and gaming was a major draw. First-person space combat simulator Star Raiders is considered the platform's killer app. The systems launched with plug and play peripherals using the Atari SIO serial bus, an early analog of USB.
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videocrton" extra="true">
+			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
+			<delay>0</delay>
+			<loops>0</loops>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.35</pos>
+			<maxSize>0.2</maxSize>
+			<zIndex>26</zIndex>
+		</video>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.35</pos>
+			<maxSize>0.2</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>1979</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Atari</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>800</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.40</pos>
+			<text>The Atari 8-bit family is a series of 8-bit home computers introduced by Atari, Inc. in 1979 as the Atari 400 and Atari 800 and manufactured until 1992. All of the machines in the family are technically similar and differ primarily in packaging. They are based on the MOS Technology 6502 CPU running at 1.79 MHz, and were the first home computers designed with custom coprocessor chips. This architecture enabled graphics and sound more advanced than contemporary machines, and gaming was a major draw. First-person space combat simulator Star Raiders is considered the platform's killer app. The systems launched with plug and play peripherals using the Atari SIO serial bus, an early analog of USB.
 
 The Atari 400 was initially almost half the cost of the Atari 800. Instead of the 800's full-sized keyboard, the 400 has a pressure-sensitive panel. The 800 has a second cartridge slot and a larger case allowing RAM upgrades to 48K. Both models were replaced by the XL series in 1983, then–after the company was sold and reestablished as Atari Corporation–the XE models in 1985. The XL and XE are lighter in construction while having Atari BASIC built-in and 2 joystick ports instead of 4. The 130XE increased the memory to 128 KB of bank-switched RAM.</text>
-      <text lang="pl">Rodzina 8-bitowych Atari – seria 8-bitowych komputerów domowych wprowadzona przez amerykańskie przedsiębiorstwo Atari Inc.
+			<text lang="pl">Rodzina 8-bitowych Atari – seria 8-bitowych komputerów domowych wprowadzona przez amerykańskie przedsiębiorstwo Atari Inc.
 W roku 1978, po sukcesie konsoli Atari 2600, firma Atari Inc. postanowiła spróbować swych sił na rodzącym się dopiero rynku komputerów domowych. W listopadzie 1979 roku rozpoczęła sprzedaż modeli Atari 400 (nazwa kodowa Candy) i Atari 800 (nazwa kodowa Colleen) - tańszej i droższej wersji 8-bitowego komputera.
 
 Dane techniczne:
@@ -102,27 +102,27 @@ Dane techniczne:
 - do ośmiu "duszków", zwanych w terminologii Atari "graczami i pociskami"; w istocie dostępne są 4 duszki większe (gracze) oraz 4 duszki mniejsze (pociski), które można opcjonalnie połączyć w piątego "gracza"; każdy z graczy i pocisków ma niezależny kolor, a układy graficzne wykrywają i sprzętowo sygnalizują kolizje między nimi oraz pomiędzy każdym z obiektów a tłem (zwanym w terminologii Atari "polem gry")
 - dźwięk: układ POKEY, cztery ośmiobitowe kanały syntezy generujące obwiednię w teorii prostokątną, w istocie zaś falę o dość skomplikowanym przebiegu; każdy z kanałów ma niezależny rejestr głośności, trójzakresowy generator zakłóceń losowych (szumu); istnieje też możliwość wyboru jednej z trzech częstotliwości bazowych dla wszystkich generatorów, to jest 15 kHz, 64 kHz oraz 1,77 MHz; ponadto pary generatorów (1+2 oraz 3+4) można niezależnie połączyć w jeden generator szesnastobitowy
 - 57-klawiszowa klawiatura QWERTY oraz 4 klawisze funkcyjne</text>
-      <text lang="de">Der Atari 800 ist ein auf dem 6502-Mikroprozessor basierender Heimcomputer des US-amerikanischen Herstellers Atari, Inc.
+			<text lang="de">Der Atari 800 ist ein auf dem 6502-Mikroprozessor basierender Heimcomputer des US-amerikanischen Herstellers Atari, Inc.
 
 Der Atari 800 wurde ab Ende 1979 zunächst nur im US-amerikanischen Versandhandel angeboten und wegen seiner vielseitigen Möglichkeiten zur Erweiterung und damit Zukunftsfähigkeit massiv als „zeitloser Computer“ angepriesen. Nach verschiedenen von Atari angestoßenen Kooperationen im Bildungssektor, der Veröffentlichung von Spiele-Kassenschlagern wie Star Raiders und dem Ausbau des Atari-Händlernetzes gelang es, die Bekanntheit kontinuierlich zu steigern. Verkaufsfördernd kam die ab Mitte 1981 vollzogene Expansion nach Europa hinzu, die schließlich in der bis Ende 1982 währenden Marktführerschaft Ataris gipfelte.</text>
-      <text lang="ru">Atari 400, Atari 800, серии XL и XE — семейство 8-разрядных домашних компьютеров производства компании Atari, которые выпускались с 1979 года и продавались в США. Последние модели семейства производились по 1992 год и распространялись в Европе.
+			<text lang="ru">Atari 400, Atari 800, серии XL и XE — семейство 8-разрядных домашних компьютеров производства компании Atari, которые выпускались с 1979 года и продавались в США. Последние модели семейства производились по 1992 год и распространялись в Европе.
 
 Центральный процессор всех моделей семейства — MOS Technology 6502, работающий на частоте 1,79 МГц (1,77 МГц для PAL-версии). Для обработки графики, звука, ввода/вывода были применены специализированные микросхемы — это разгружало процессор для других задач. Такая производительность и архитектура позволили успешно конкурировать с другими домашними компьютерами того времени — Apple II и Commodore PET.
 
 В целом, семейство имело коммерческий успех: с 1979 по 1985 год было продано около двух миллионов Atari 400 и 800, в 1981—1982 годах Atari лидировала на рынке домашних компьютеров. Наиболее популярной моделью семейства стала Atari 800XL, было продано более 600 тысяч экземпляров этой модели. Однако на продажи семейства драматично повлияло появление Commodore 64 и кризис индустрии компьютерных игр 1983 года.</text>
-      <text lang="it">La famiglia Atari 8-bit è una serie di home computer a 8 bit introdotta da Atari, Inc. nel 1979 come Atari 400 e Atari 800 e prodotta fino al 1992. Tutte le macchine della famiglia sono tecnicamente simili e si differenziano principalmente per la confezione. Sono basati sulla CPU MOS Technology 6502 a 1,79 MHz e sono stati i primi home computer progettati con chip coprocessori personalizzati. Questa architettura consentiva una grafica e un suono più avanzati rispetto alle macchine contemporanee e i giochi erano una delle principali attrazioni. Il simulatore di combattimento spaziale in prima persona Star Raiders è considerato la killer app della piattaforma. I sistemi furono lanciati con periferiche plug and play che utilizzavano il bus seriale Atari SIO, un primo analogo dell'USB.
+			<text lang="it">La famiglia Atari 8-bit è una serie di home computer a 8 bit introdotta da Atari, Inc. nel 1979 come Atari 400 e Atari 800 e prodotta fino al 1992. Tutte le macchine della famiglia sono tecnicamente simili e si differenziano principalmente per la confezione. Sono basati sulla CPU MOS Technology 6502 a 1,79 MHz e sono stati i primi home computer progettati con chip coprocessori personalizzati. Questa architettura consentiva una grafica e un suono più avanzati rispetto alle macchine contemporanee e i giochi erano una delle principali attrazioni. Il simulatore di combattimento spaziale in prima persona Star Raiders è considerato la killer app della piattaforma. I sistemi furono lanciati con periferiche plug and play che utilizzavano il bus seriale Atari SIO, un primo analogo dell'USB.
 
 L'Atari 400 costava inizialmente quasi la metà dell'Atari 800. Al posto della tastiera a grandezza naturale dell'800, il 400 ha un pannello sensibile alla pressione. L'800 ha un secondo slot per cartucce e un case più grande che consente di aggiornare la RAM a 48K. Entrambi i modelli furono sostituiti dalla serie XL nel 1983 e poi, dopo la vendita dell'azienda e la sua ricostituzione come Atari Corporation, dai modelli XE nel 1985. L'XL e l'XE sono più leggeri e hanno l'Atari BASIC integrato e 2 porte joystick invece di 4. Il 130XE aumenta la memoria a 128 KB di RAM commutata in banchi.</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-  </view>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
 </theme>

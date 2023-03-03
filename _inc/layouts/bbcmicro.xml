@@ -1,122 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-  <formatVersion>7</formatVersion>
-  <view name="system">
-    <image name="background1" extra="true">
-      <storyboard>
-        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <image name="background" extra="true">
-      <zIndex>90</zIndex>
-      <storyboard>
-        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <video name="videocrton" extra="true">
-      <path>./../../_inc/anim/video/CRT_ON.mp4</path>
-      <delay>0</delay>
-      <loops>0</loops>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.49 0.4</pos>
-      <maxSize>0.22</maxSize>
-      <zIndex>26</zIndex>
-    </video>
-    <video name="videobox" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <origin if="${screen.ratio} == '4/3'">0.51 0.5</origin>
-      <pos>0.49 0.4</pos>
-      <maxSize>0.22</maxSize>
-      <zIndex>25</zIndex>
-      <storyboard>
-        <animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <text name="TextDate" extra="true">
-      <pos>0.49 0.2</pos>
-      <text>1981</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextManufacturer" extra="true">
-      <pos>0.49 0.255</pos>
-      <text>Acorn</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.04</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextName" extra="true">
-      <pos>0.49 0.30</pos>
-      <size>0.5 0</size>
-      <text>BBC Micro</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.065</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextDesc" extra="true">
-      <size>0.5 0</size>
-      <pos>0.49 0.40</pos>
-      <text>The British Broadcasting Corporation Microcomputer System, or BBC Micro, is a series of home computers produced since 1981 by Acorn Computers for the BBC Computer Literacy Project. Thanks to this microcomputer Great Britain became one of the most computerized countries in the world.
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videocrton" extra="true">
+			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
+			<delay>0</delay>
+			<loops>0</loops>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.49 0.4</pos>
+			<maxSize>0.22</maxSize>
+			<zIndex>26</zIndex>
+		</video>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.51 0.5</origin>
+			<pos>0.49 0.4</pos>
+			<maxSize>0.22</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>1981</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Acorn</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>BBC Micro</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.40</pos>
+			<text>The British Broadcasting Corporation Microcomputer System, or BBC Micro, is a series of home computers produced since 1981 by Acorn Computers for the BBC Computer Literacy Project. Thanks to this microcomputer Great Britain became one of the most computerized countries in the world.
 
 The first type Model A BBC Micro had MOS6502 processor clocked at 2 MHz and 16 KB RAM. It could operate in eight graphic modes: from 640×256 (from Model B) in two colors, to 40×25 in eight colors.
 
 Although 12 models of the microcomputer were produced, the term BBC Micro is usually used for the first 4 models: Model A, B, B+64 and B+128.</text>
-      <text lang="pl">BBC Micro – seria komputerów domowych produkowanych od roku 1981 przez firmę Acorn Computers na potrzeby projektu BBC Computer Literacy Project. Dzięki temu mikrokomputerowi Wielka Brytania stała się jednym z najbardziej zinformatyzowanych krajów w świecie.
+			<text lang="pl">BBC Micro – seria komputerów domowych produkowanych od roku 1981 przez firmę Acorn Computers na potrzeby projektu BBC Computer Literacy Project. Dzięki temu mikrokomputerowi Wielka Brytania stała się jednym z najbardziej zinformatyzowanych krajów w świecie.
 
 Pierwszy typ Model A BBC Micro posiadał procesor MOS6502 taktowany zegarem 2 MHz i 16 KB RAM. Mógł pracować w ośmiu trybach graficznych: od 640×256 (od modelu B) w dwu kolorach, do 40×25 w ośmiu barwach.
 
 Chociaż wyprodukowano 12 modeli mikrokomputera, to określenie BBC Micro używa się zazwyczaj w stosunku do pierwszych 4 modeli: Model A, B, B+64 i B+128.</text>
-      <text lang="ru">Один из ранних домашних компьютеров. Был спроектирован и разработан компанией Acorn Computers для British Broadcasting Corporation (BBC).
+			<text lang="ru">Один из ранних домашних компьютеров. Был спроектирован и разработан компанией Acorn Computers для British Broadcasting Corporation (BBC).
 
 В начале 1980-х BBC начала проект, который стал известен как BBC Computer Literacy Project. Этот проект был начат во многом в ответ на документальный фильм The Mighty Micro, в котором доктор Кристофер Эванс (англ. Christopher Evans) предсказал начинающуюся (микро-) компьютерную революцию и её влияние на экономику, индустрию и стиль жизни Великобритании.
 
 Компьютер был выпущен на рынок Великобритании под названием BBC Microcomputer в конце 1981 года; получил широкую популярность в этой стране; использовался в большинстве школ Великобритании для изучения компьютерной грамоты и информационных технологий. Попытки выхода с компьютером на американский рынок провалились, в основном из-за популярности там серии Apple II.
 
 BBC Micro вышел в двух версиях: Model A и Model B; сначала цена на модели была 235 £ и 335 £, соответственно, но почти сразу она поднялась до 299 £ и 399 £. Acorn ожидала объёмов продаж в 12 тыс., но в конечном счёте было продано более 1,5 млн компьютеров.</text>
-      <text lang="it">Il British Broadcasting Corporation Microcomputer System, o BBC Micro, è una serie di home computer prodotti dal 1981 da Acorn Computers per il BBC Computer Literacy Project. Grazie a questo microcomputer la Gran Bretagna è diventata uno dei Paesi più informatizzati al mondo.
+			<text lang="it">Il British Broadcasting Corporation Microcomputer System, o BBC Micro, è una serie di home computer prodotti dal 1981 da Acorn Computers per il BBC Computer Literacy Project. Grazie a questo microcomputer la Gran Bretagna è diventata uno dei Paesi più informatizzati al mondo.
 
 Il primo tipo Model A BBC Micro aveva un processore MOS6502 con clock a 2 MHz e 16 KB di RAM. Poteva operare in otto modalità grafiche: da 640×256 (dal Modello B) a due colori, a 40×25 a otto colori.
 
 Sebbene siano stati prodotti 12 modelli di microcomputer, il termine BBC Micro viene solitamente utilizzato per i primi 4 modelli: Modello A, B, B+64 e B+128.</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-  </view>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
 </theme>

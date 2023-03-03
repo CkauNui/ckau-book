@@ -1,112 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-  <formatVersion>7</formatVersion>
-  <view name="system">
-    <image name="background1" extra="true">
-      <storyboard>
-        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <image name="background" extra="true">
-      <zIndex>90</zIndex>
-      <storyboard>
-        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <video name="videobox" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <origin if="${screen.ratio} == '4/3'">0.5 0.51</origin>
-      <pos>0.5 0.35</pos>
-      <maxSize>0.351</maxSize>
-      <maxSize if="${screen.ratio} == '4/3'">0.46</maxSize>
-      <zIndex>25</zIndex>
-      <storyboard>
-        <animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <text name="TextDate" extra="true">
-      <pos>0.49 0.2</pos>
-      <text>2006</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextManufacturer" extra="true">
-      <pos>0.49 0.255</pos>
-      <text>Sony</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.04</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextName" extra="true">
-      <pos>0.49 0.30</pos>
-      <size>0.5 0</size>
-      <text>PlayStation 3</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.065</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextDesc" extra="true">
-      <size>0.5 0</size>
-      <pos>0.49 0.4</pos>
-      <text>The PlayStation 3 (PS3) is a home video game console developed by Sony Computer Entertainment. It is the successor to PlayStation 2, and is part of the PlayStation brand of consoles. It was first released on November 11, 2006 in Japan, November 17, 2006 in North America, and March 23, 2007 in Europe and Australia. The PlayStation 3 competed primarily against Microsoft's Xbox 360 and Nintendo's Wii as part of the seventh generation of video game consoles.
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.51</origin>
+			<pos>0.5 0.35</pos>
+			<maxSize>0.351</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.46</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>2006</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Sony</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>PlayStation 3</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.4</pos>
+			<text>The PlayStation 3 (PS3) is a home video game console developed by Sony Computer Entertainment. It is the successor to PlayStation 2, and is part of the PlayStation brand of consoles. It was first released on November 11, 2006 in Japan, November 17, 2006 in North America, and March 23, 2007 in Europe and Australia. The PlayStation 3 competed primarily against Microsoft's Xbox 360 and Nintendo's Wii as part of the seventh generation of video game consoles.
 
 The console was first officially announced at E3 2005, and was released at the end of 2006. It was the first console to use Blu-ray Disc as its primary storage medium. The console was the first PlayStation to integrate social gaming services, including the PlayStation Network, as well as the first to be controllable from a handheld console, through its remote connectivity with PlayStation Portable and PlayStation Vita. In September 2009, the Slim model of the PlayStation 3 was released. It no longer provided the hardware ability to run PS2 games. It was lighter and thinner than the original version, and featured a redesigned logo and marketing design, as well as a minor start-up change in software. A Super Slim variation was then released in late 2012, further refining and redesigning the console.</text>
-      <text lang="pl">PlayStation 3 (jap. プレイステーション3, Pureisutēshon Surī, skrót PS3; do września 2009 znak towarowy PLAYSTATION 3) – konsola gier wideo wyprodukowana przez Sony Computer Entertainment. 11 listopada 2006 roku miała miejsce premiera w Japonii, a 17 listopada w Ameryce Północnej. W Europie konsola pojawiła się 23 marca 2007 roku. Jest bezpośrednią konkurencją dla konsol siódmej generacji: Xboksa 360 przedsiębiorstwa Microsoft oraz Wii wyprodukowanej przez Nintendo.
+			<text lang="pl">PlayStation 3 (jap. プレイステーション3, Pureisutēshon Surī, skrót PS3; do września 2009 znak towarowy PLAYSTATION 3) – konsola gier wideo wyprodukowana przez Sony Computer Entertainment. 11 listopada 2006 roku miała miejsce premiera w Japonii, a 17 listopada w Ameryce Północnej. W Europie konsola pojawiła się 23 marca 2007 roku. Jest bezpośrednią konkurencją dla konsol siódmej generacji: Xboksa 360 przedsiębiorstwa Microsoft oraz Wii wyprodukowanej przez Nintendo.
 
 Konsola została oficjalnie zapowiedziana przez Sony na targach Electronic Entertainment Expo w maju 2005 roku. PlayStation 3 stała się pierwszą konsolą na rynku, która wykorzystywała format Blu-ray jako podstawowy nośnik danych. Innymi ważnymi cechami konsoli jest darmowy dostęp do usług sieciowych takich jak PlayStation Network (umożliwiająca dostęp do PlayStation Store oraz PlayStation Plus) oraz możliwość połączenia jej z przenośnymi konsolami PlayStation Portable oraz PlayStation Vita.
 
 PlayStation 3 doczekała się dwóch zasadniczych rewizji, zmieniających gruntownie wygląd zewnętrzny konsoli oraz zmniejszających koszty produkcji sprzętu, poprzez zastosowanie miniaturyzacji użytych w niej technologii. Pierwsza z nich, o nazwie „Slim”, została wydana we wrześniu 2009 roku – wraz z nią Sony zmieniło też logo konsoli, znak towarowy oraz ogólny wizerunek sprzętu. Premiera ostatniej wersji o nazwie „Super Slim” odbyła się jesienią 2012 roku. W obydwu przypadkach zmniejszeniu uległy gabaryty konsoli, jej waga, pobór prądu oraz rozmiary jej podzespołów.
 
 Do lutego 2017 roku sprzedano ok. 86,8 milionów sztuk konsoli, natomiast liczba gier sprzedanych na tę platformę przekroczyła 947 milionów egzemplarzy.</text>
-      <text lang="fr">La PlayStation 3 (abrégé officiellement PS3) est une console de jeux vidéo de septième génération commercialisée par Sony. Elle est sortie le 11 novembre 2006 au Japon, le 17 novembre 2006 en Amérique du Nord et le 23 mars 2007 en Europe. Elle succède à la PlayStation 2 (qui avait elle-même succédé à la PlayStation), et concurrence la Xbox 360 de Microsoft ainsi que la Wii de Nintendo.
+			<text lang="fr">La PlayStation 3 (abrégé officiellement PS3) est une console de jeux vidéo de septième génération commercialisée par Sony. Elle est sortie le 11 novembre 2006 au Japon, le 17 novembre 2006 en Amérique du Nord et le 23 mars 2007 en Europe. Elle succède à la PlayStation 2 (qui avait elle-même succédé à la PlayStation), et concurrence la Xbox 360 de Microsoft ainsi que la Wii de Nintendo.
 
 Conçue comme un centre de divertissement numérique, la PlayStation 3 s'inscrit dans l'ère de la télévision à haute définition en intégrant un lecteur Blu-ray et une connectique HDMI. La console dispose d'un disque dur, d'un navigateur Web et fait office de media center en supportant différents types de format multimédia. Elle propose une connectivité étendue avec la PlayStation Portable par Wi-Fi. Les versions antérieures aux modèles « Slim » lancés fin août 2009 sont compatibles avec les distributions Linux. Le BD-Live et le BD-java sont ajoutés au firmware 2.15, et une partie permettant de lancer des homebrew est retirée avec la version 2.50. Son service en ligne, le PlayStation Network, permet de jouer en réseau gratuitement, de télécharger des jeux, des démos, des bandes-annonces et donne accès à divers services de communication. La manette est sans fil et embarque un système de détection de mouvement.
 
 En décembre 2009, plus de 500 titres sont commercialisés sur la console.</text>
-      <text lang="ru">Игровая приставка седьмого поколения, третья в семействе игровых систем PlayStation (не считая PlayStation Portable). С помощью PS3 можно играть, смотреть фильмы, слушать музыку, отправлять электронную почту и просматривать веб-страницы. С самого момента выпуска приставкой поддерживается большинство игр для консолей предыдущего поколения, PlayStation и PlayStation 2. Главными конкурентами консоли являются Xbox 360 от Microsoft и Wii от Nintendo.
+			<text lang="ru">Игровая приставка седьмого поколения, третья в семействе игровых систем PlayStation (не считая PlayStation Portable). С помощью PS3 можно играть, смотреть фильмы, слушать музыку, отправлять электронную почту и просматривать веб-страницы. С самого момента выпуска приставкой поддерживается большинство игр для консолей предыдущего поколения, PlayStation и PlayStation 2. Главными конкурентами консоли являются Xbox 360 от Microsoft и Wii от Nintendo.
 
 Изначально выход PS3 планировался на 2005 год, но разработчики, которые имели доступ к версии приставки того времени, заявили, что решение ещё слишком сырое (например, в той версии совсем не было GPU, его добавили в самом конце подготовки к запуску). Выход PS3 в Японии состоялся 11 ноября 2006 года, 17 ноября приставка появилась в Северной Америке в первом квартале 2007 года), в марте 2007 года — в Европе, а потом в России.</text>
-      <text lang="it">La PlayStation 3 (PS3) è una console per videogiochi domestica sviluppata da Sony Computer Entertainment. È il successore della PlayStation 2 e fa parte del marchio di console PlayStation. È stata rilasciata per la prima volta l'11 novembre 2006 in Giappone, il 17 novembre 2006 in Nord America e il 23 marzo 2007 in Europa e Australia. La PlayStation 3 ha gareggiato principalmente contro la Xbox 360 di Microsoft e la Wii di Nintendo come parte della settima generazione di console per videogiochi.
+			<text lang="it">La PlayStation 3 (PS3) è una console per videogiochi domestica sviluppata da Sony Computer Entertainment. È il successore della PlayStation 2 e fa parte del marchio di console PlayStation. È stata rilasciata per la prima volta l'11 novembre 2006 in Giappone, il 17 novembre 2006 in Nord America e il 23 marzo 2007 in Europa e Australia. La PlayStation 3 ha gareggiato principalmente contro la Xbox 360 di Microsoft e la Wii di Nintendo come parte della settima generazione di console per videogiochi.
 
 La console è stata annunciata ufficialmente per la prima volta all'E3 2005 ed è stata rilasciata alla fine del 2006. È stata la prima console a utilizzare il Blu-ray Disc come supporto di memorizzazione principale. La console è stata la prima PlayStation a integrare servizi di social gaming, tra cui PlayStation Network, e la prima a poter essere controllata da una console portatile, grazie alla connettività remota con PlayStation Portable e PlayStation Vita. Nel settembre 2009, è stato rilasciato il modello Slim della PlayStation 3. Non offriva più la capacità hardware di eseguire i giochi PS2. Era più leggera e sottile della versione originale e presentava un logo e un design di marketing ridisegnati, oltre a una piccola modifica del software. Alla fine del 2012 è stata rilasciata una variante Super Slim, che ha ulteriormente perfezionato e ridisegnato la console.</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-  </view>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
 </theme>

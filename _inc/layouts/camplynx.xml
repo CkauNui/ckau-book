@@ -1,96 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-  <formatVersion>7</formatVersion>
-  <view name="system">
-    <image name="background1" extra="true">
-      <storyboard>
-        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <image name="background" extra="true">
-      <zIndex>90</zIndex>
-      <storyboard>
-        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <video name="videocrton" extra="true">
-      <path>./../../_inc/anim/video/CRT_ON.mp4</path>
-      <delay>0</delay>
-      <loops>0</loops>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.49 0.4</pos>
-      <maxSize>0.22</maxSize>
-      <zIndex>26</zIndex>
-    </video>
-    <video name="videobox" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.49 0.4</pos>
-      <maxSize>0.22</maxSize>
-      <zIndex>25</zIndex>
-      <storyboard>
-        <animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <text name="TextDate" extra="true">
-      <pos>0.49 0.2</pos>
-      <text>1983</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextManufacturer" extra="true">
-      <pos>0.49 0.255</pos>
-      <text>Camputers</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.04</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextName" extra="true">
-      <pos>0.49 0.30</pos>
-      <size>0.5 0</size>
-      <text>Lynx</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.065</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextDesc" extra="true">
-      <size>0.5 0</size>
-      <pos>0.49 0.40</pos>
-      <text>The Lynx was an 8-bit British home computer that was first released in early 1983 as a 48 kB model. Several models were available with 48 kB, 96 kB or 128 kB RAM. It was possible to reach 192 kB with RAM expansions on board.
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videocrton" extra="true">
+			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
+			<delay>0</delay>
+			<loops>0</loops>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.49 0.4</pos>
+			<maxSize>0.22</maxSize>
+			<zIndex>26</zIndex>
+		</video>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.49 0.4</pos>
+			<maxSize>0.22</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>1983</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Camputers</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>Lynx</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.40</pos>
+			<text>The Lynx was an 8-bit British home computer that was first released in early 1983 as a 48 kB model. Several models were available with 48 kB, 96 kB or 128 kB RAM. It was possible to reach 192 kB with RAM expansions on board.
 
 The machine was based around a Z80A CPU clocked at 4 MHz (6 MHz for the 128/192 kB models) and featured a Motorola 6845 as video controller. It was possible to run CP/M with the optional 5.25" floppy disk-drive on the 96 kB and 128 kB models.
 
 The computer always ran in "high" resolution graphics mode (256x252 pixels in eight colours) using 6 times 10 pixels characters. For sound it had a simple (6 bit) DAC. A comparator was included to serve as an ADC (primarily used for reading from tape drives).
 Compared to, for example, the Commodore 64, the BASIC was more extensive and faster and resolution of graphics was better; but computer games on the other hand suffered from the special implementation and lack of hardware for sound and sprites.</text>
-      <text lang="pl">Lynx to 8-bitowy brytyjski komputer domowy, który został wydany na początku 1983 roku jako model o pojemności 48 kB. Dostępnych było kilka modeli z 48 kB, 96 kB lub 128 kB pamięci RAM. Możliwe było osiągnięcie 192 kB dzięki wbudowanym rozszerzeniom pamięci RAM. John Shireff zaprojektował sprzęt, a Davis Jansons oprogramowanie układowe.
+			<text lang="pl">Lynx to 8-bitowy brytyjski komputer domowy, który został wydany na początku 1983 roku jako model o pojemności 48 kB. Dostępnych było kilka modeli z 48 kB, 96 kB lub 128 kB pamięci RAM. Możliwe było osiągnięcie 192 kB dzięki wbudowanym rozszerzeniom pamięci RAM. John Shireff zaprojektował sprzęt, a Davis Jansons oprogramowanie układowe.
 
 Maszyna bazowała na procesorze Z80A taktowanym zegarem 4 MHz (6 MHz dla modeli 128/192 kB) i posiadała Motorolę 6845 jako kontroler wideo. W modelach 96 kB i 128 kB można było uruchomić system CP/M z opcjonalnym napędem dyskietek 5,25".
 
@@ -98,23 +98,23 @@ Unikalne cechy tego komputera (w porównaniu z innymi ówczesnymi komputerami do
 Wszystkie liczby były liczbami zmiennoprzecinkowymi BCD (nawet numery wierszy).
 Komputer zawsze pracował w trybie graficznym "wysokiej" rozdzielczości (256x252 piksele w ośmiu kolorach), używając znaków 6 razy 10 pikseli. Do przetwarzania dźwięku służył prosty (6-bitowy) przetwornik cyfrowo-analogowy. Dołączony był komparator, który służył jako przetwornik ADC (używany głównie do odczytu z napędów taśmowych).
 W porównaniu na przykład z Commodore 64, BASIC był bardziej rozbudowany i szybszy, a rozdzielczość grafiki lepsza; z drugiej strony jednak gry komputerowe cierpiały z powodu specjalnej implementacji i braku sprzętu do obsługi dźwięku i sprite'ów.</text>
-      <text lang="ru">Lynx 8-битный британский домашним компьютер, который был выпущен в начале 1983 года как модель 48 кБ. Несколько моделей были доступны с 48 КБ, 96 КБ или 128 КБ ОЗУ. Было возможно достигнуть 192 кБ с расширениями RAM на борту. Джон Ширефф разработал аппаратное обеспечение, а Дэвис Янсонс - прошивку.</text>
-      <text lang="it">Il Lynx era un home computer britannico a 8 bit, rilasciato per la prima volta all'inizio del 1983 come modello da 48 kB. Erano disponibili diversi modelli con 48 kB, 96 kB o 128 kB di RAM. Era possibile raggiungere i 192 kB con espansioni di RAM a bordo.
+			<text lang="ru">Lynx 8-битный британский домашним компьютер, который был выпущен в начале 1983 года как модель 48 кБ. Несколько моделей были доступны с 48 КБ, 96 КБ или 128 КБ ОЗУ. Было возможно достигнуть 192 кБ с расширениями RAM на борту. Джон Ширефф разработал аппаратное обеспечение, а Дэвис Янсонс - прошивку.</text>
+			<text lang="it">Il Lynx era un home computer britannico a 8 bit, rilasciato per la prima volta all'inizio del 1983 come modello da 48 kB. Erano disponibili diversi modelli con 48 kB, 96 kB o 128 kB di RAM. Era possibile raggiungere i 192 kB con espansioni di RAM a bordo.
 
 La macchina era basata su una CPU Z80A con clock a 4 MHz (6 MHz per i modelli da 128/192 kB) e disponeva di un Motorola 6845 come controller video. Sui modelli da 96 kB e 128 kB era possibile eseguire CP/M con il lettore di dischetti da 5,25" opzionale.
 
 Il computer funzionava sempre in modalità grafica ad "alta" risoluzione (256x252 pixel in otto colori) utilizzando caratteri da 10 pixel per sei volte. Per il suono aveva un semplice DAC (6 bit). Era incluso un comparatore che fungeva da ADC (utilizzato principalmente per la lettura da unità a nastro).
 Rispetto, ad esempio, al Commodore 64, il BASIC era più esteso e più veloce e la risoluzione della grafica era migliore; i giochi per computer, invece, soffrivano dell'implementazione speciale e della mancanza di hardware per il suono e gli sprite.</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-  </view>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
 </theme>

@@ -1,100 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-  <formatVersion>7</formatVersion>
-  <view name="system">
-    <image name="background1" extra="true">
-      <storyboard>
-        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <image name="background" extra="true">
-      <zIndex>90</zIndex>
-      <storyboard>
-        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <video name="videocrton" extra="true">
-      <path>./../../_inc/anim/video/CRT_ON.mp4</path>
-      <delay>0</delay>
-      <loops>0</loops>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.49 0.4</pos>
-      <maxSize>0.22</maxSize>
-      <zIndex>26</zIndex>
-    </video>
-    <video name="videobox" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.49 0.4</pos>
-      <maxSize>0.22</maxSize>
-      <zIndex>25</zIndex>
-      <storyboard>
-        <animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <text name="TextDate" extra="true">
-      <pos>0.49 0.2</pos>
-      <text>1980</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextManufacturer" extra="true">
-      <pos>0.49 0.255</pos>
-      <text>Acorn</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.04</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextName" extra="true">
-      <pos>0.49 0.30</pos>
-      <size>0.5 0</size>
-      <text>Atom</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.065</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextDesc" extra="true">
-      <size>0.5 0</size>
-      <pos>0.49 0.40</pos>
-      <text>The Acorn Atom is a home computer made by Acorn Computers Ltd from 1980 to 1982, when it was replaced by the BBC Micro. The Micro began life as an upgrade to the Atom, originally known as the Proton.
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videocrton" extra="true">
+			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
+			<delay>0</delay>
+			<loops>0</loops>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.49 0.4</pos>
+			<maxSize>0.22</maxSize>
+			<zIndex>26</zIndex>
+		</video>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.49 0.4</pos>
+			<maxSize>0.22</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>1980</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Acorn</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>Atom</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.40</pos>
+			<text>The Acorn Atom is a home computer made by Acorn Computers Ltd from 1980 to 1982, when it was replaced by the BBC Micro. The Micro began life as an upgrade to the Atom, originally known as the Proton.
 
 The Atom was a progression of the MOS Technology 6502-based machines that the company had been making from 1979. The Atom was a cut-down Acorn System 3 without a disk drive but with an integral keyboard and cassette tape interface, sold in either kit or complete form. In 1980 it was priced between £120 in kit form, £170 (equivalent to £745 in 2020) ready assembled, to over £200 for the fully expanded version with 12 KB of RAM and the floating-point extension ROM.
 
 It had an MC6847 Video Display Generator (VDG) video chip, allowing for both text and graphics modes. It could be connected to a TV or modified to output to a video monitor. Basic video memory was 1 KB but could be expanded to 6 KB. Since the MC6847 could only output at 60 Hz, meaning that the video could not be resolved on a large proportion of European TV sets, a 50 Hz PAL colour card was later made available. Six video modes were available, with resolutions from 64×64 in 4 colours, up to 256×192 in monochrome. At the time, 256×192 was considered to be high resolution.</text>
-      <text lang="pl">Acorn Atom to komputer domowy produkowany przez firmę Acorn Computers Ltd. w latach 1980-1982, kiedy to został zastąpiony przez BBC Micro. Początkowo Micro był ulepszoną wersją Atoma, pierwotnie znanego jako Proton.
+			<text lang="pl">Acorn Atom to komputer domowy produkowany przez firmę Acorn Computers Ltd. w latach 1980-1982, kiedy to został zastąpiony przez BBC Micro. Początkowo Micro był ulepszoną wersją Atoma, pierwotnie znanego jako Proton.
 
 Atom stanowił rozwinięcie maszyn opartych na technologii MOS Technology 6502, które firma produkowała od 1979 roku. Atom był okrojonym komputerem Acorn System 3 bez stacji dysków, ale z wbudowaną klawiaturą i interfejsem taśmy magnetofonowej, sprzedawanym w zestawie lub w całości. W 1980 roku cena wynosiła od 120 funtów za zestaw, przez 170 funtów (równowartość 745 funtów w 2020 roku) za gotowy zestaw, do ponad 200 funtów za w pełni rozbudowaną wersję z 12 KB pamięci RAM i rozszerzeniem zmiennoprzecinkowym ROM.
 
 Komputer był wyposażony w układ wideo MC6847 Video Display Generator (VDG), umożliwiający pracę w trybie tekstowym i graficznym. Można go było podłączyć do telewizora lub zmodyfikować tak, aby wysyłał sygnał do monitora wideo. Podstawowa pamięć wideo wynosiła 1 KB, ale można ją było rozszerzyć do 6 KB. Ponieważ MC6847 mógł wysyłać sygnał tylko z częstotliwością 60 Hz, co oznaczało, że obraz nie mógł być wyświetlany na dużej części europejskich odbiorników telewizyjnych, później udostępniono kartę kolorową PAL 50 Hz. Dostępnych było sześć trybów wideo o rozdzielczości od 64×64 w 4 kolorach do 256×192 w trybie monochromatycznym. W tamtych czasach rozdzielczość 256×192 była uważana za wysoką.</text>
-      <text lang="ru">Домашний компьютер, выпускавшийся компанией Acorn Computers с 1981 по 1983 год; был заменён компьютером BBC Micro (первоначальное название — Acorn Proton), а позднее — Acorn Electron.
+			<text lang="ru">Домашний компьютер, выпускавшийся компанией Acorn Computers с 1981 по 1983 год; был заменён компьютером BBC Micro (первоначальное название — Acorn Proton), а позднее — Acorn Electron.
 
 Atom стал очередным шагом в ряду машин на основе MOS Technology 6502, которые компания выпускала с 1979 года. Atom был усечённой версией Acorn System 3 — без привода дисковода, но с интегрированной клавиатурой и с интерфейсом для кассетного магнитофона. Компьютер продавался в виде набора для сборки либо в виде готового изделия.
 
@@ -103,21 +103,21 @@ Atom стал очередным шагом в ряду машин на осно
 В компьютер был встроен интерпретатор собственного диалекта языка Бейсик (Atom BASIC). В программу можно было встраивать код на ассемблере, перед исполнением программы этот код ассемблировался.
 
 Корпус компьютера был разработан индустриальным дизайнером Allen Boothroyd из компании Cambridge Product Design Ltd. К компьютеру прилагалось печатное руководство, носившее название «Атомная теория и практика».</text>
-      <text lang="it">L'Acorn Atom è un home computer prodotto da Acorn Computers Ltd dal 1980 al 1982, quando fu sostituito dal BBC Micro. Il Micro nasceva come aggiornamento dell'Atom, originariamente noto come Proton.
+			<text lang="it">L'Acorn Atom è un home computer prodotto da Acorn Computers Ltd dal 1980 al 1982, quando fu sostituito dal BBC Micro. Il Micro nasceva come aggiornamento dell'Atom, originariamente noto come Proton.
 
 L'Atom era un'evoluzione delle macchine basate sulla tecnologia MOS 6502 che l'azienda aveva prodotto a partire dal 1979. L'Atom è un Acorn System 3 ridotto senza unità disco, ma con una tastiera integrata e un'interfaccia a cassette, venduto in kit o in forma completa. Nel 1980 il prezzo oscillava tra le 120 sterline in kit, le 170 sterline (equivalenti a 745 sterline nel 2020) per la versione pronta per l'assemblaggio e le oltre 200 sterline per la versione completamente espansa con 12 KB di RAM e la ROM di estensione in virgola mobile.
 
 Era dotato di un chip video MC6847 Video Display Generator (VDG), che consentiva di utilizzare sia la modalità testo che quella grafica. Poteva essere collegato a un televisore o modificato per l'uscita a un monitor video. La memoria video di base era di 1 KB, ma poteva essere espansa fino a 6 KB. Poiché l'MC6847 era in grado di emettere solo immagini a 60 Hz, il che significava che il video non poteva essere gestito da gran parte dei televisori europei, in seguito fu resa disponibile una scheda a colori PAL a 50 Hz. Erano disponibili sei modalità video, con risoluzioni da 64×64 in 4 colori, fino a 256×192 in monocromia. All'epoca, 256×192 era considerata un'alta risoluzione.</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-  </view>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
 </theme>

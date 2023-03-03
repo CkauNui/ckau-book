@@ -1,67 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-  <formatVersion>7</formatVersion>
-  <view name="system">
-    <image name="background1" extra="true">
-      <storyboard>
-        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <image name="background" extra="true">
-      <zIndex>90</zIndex>
-      <storyboard>
-        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <video name="videobox" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.519 0.373</pos>
-      <maxSize>0.26</maxSize>
-      <zIndex>25</zIndex>
-      <storyboard>
-        <animation property="pos" to="0.239 0.373" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <text name="TextDate" extra="true">
-      <pos>0.49 0.2</pos>
-      <text>2005</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.03</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextName" extra="true">
-      <pos>0.49 0.25</pos>
-      <size>0.5 0</size>
-      <text>GZDoom</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.065</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextDesc" extra="true">
-      <size>0.5 0</size>
-      <pos>0.49 0.35</pos>
-      <text>GZDoom is a 3D-accelerated Doom source port based on ZDoom coded and maintained by Christoph Oelckers.
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.519 0.373</pos>
+			<maxSize>0.26</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.239 0.373" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>2005</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.03</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.25</pos>
+			<size>0.5 0</size>
+			<text>GZDoom</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.35</pos>
+			<text>GZDoom is a 3D-accelerated Doom source port based on ZDoom coded and maintained by Christoph Oelckers.
 
 GZDoom features an OpenGL renderer and lots of new features, among them:
 - Sloped 3D floors
@@ -70,7 +70,7 @@ GZDoom features an OpenGL renderer and lots of new features, among them:
 - True color support
 - Model support
 - It was originally based on the 2.0.96x community build but is now based on official versions of ZDoom, occasionally using slightly newer Git code. The source is of course available.</text>
-      <text lang="pl">GZDoom to źródłowy port Dooma akcelerowanego w 3D, bazujący na ZDoomie, kodowany i utrzymywany przez Christopha Oelckersa.
+			<text lang="pl">GZDoom to źródłowy port Dooma akcelerowanego w 3D, bazujący na ZDoomie, kodowany i utrzymywany przez Christopha Oelckersa.
 
 GZDoom posiada renderer OpenGL i wiele nowych funkcji, między innymi:
 - Pochyłe podłogi 3D
@@ -79,7 +79,7 @@ GZDoom posiada renderer OpenGL i wiele nowych funkcji, między innymi:
 - Obsługa prawdziwych kolorów
 - Wsparcie dla modeli
 - Pierwotnie bazował na kompilacji społecznościowej 2.0.96x, ale obecnie bazuje na oficjalnych wersjach ZDoom, sporadycznie używając nieco nowszego kodu Git. Źródło jest oczywiście dostępne.</text>
-      <text lang="ru">GZDoom — порт движка компьютерной игры Doom, форк проекта ZDoom с обеспечением улучшенной поддержки аппаратного обеспечения (OpenGL).
+			<text lang="ru">GZDoom — порт движка компьютерной игры Doom, форк проекта ZDoom с обеспечением улучшенной поддержки аппаратного обеспечения (OpenGL).
 
 - Полная поддержка 3D полов (включая наклонные и полупрозрачные)
 - Отражающие горизонтальные и наклонные поверхности
@@ -90,7 +90,7 @@ GZDoom posiada renderer OpenGL i wiele nowych funkcji, między innymi:
 - Полная поддержка TrueColor
 
 ZDoom — порт, расширенная версия движка компьютерной игры Doom (Doom engine), движок позволяет играть практически во все игры на движке id Tech (Doom, Doom 2, Heretic, HeXen, Strife). Разработка движка прекращена (на версии 2.8.1), но развитие проекта продолжено как GZDoom (стабильная версия) и QZDoom (служит для испытаний новых, стабильных функций).</text>
-      <text lang="it">GZDoom è un port sorgente di Doom accelerato in 3D basato su ZDoom, codificato e mantenuto da Christoph Oelckers.
+			<text lang="it">GZDoom è un port sorgente di Doom accelerato in 3D basato su ZDoom, codificato e mantenuto da Christoph Oelckers.
 
 GZDoom dispone di un renderer OpenGL e di molte nuove caratteristiche, tra cui:
 - Pavimenti 3D inclinati
@@ -99,16 +99,16 @@ GZDoom dispone di un renderer OpenGL e di molte nuove caratteristiche, tra cui:
 - Supporto per i colori reali
 - Supporto per i modelli
 - Originariamente era basato sulla versione comunitaria 2.0.96x, ma ora si basa sulle versioni ufficiali di ZDoom, utilizzando occasionalmente un codice Git leggermente più recente. Il sorgente è ovviamente disponibile.</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-  </view>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
 </theme>

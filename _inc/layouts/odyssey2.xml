@@ -1,153 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-  <formatVersion>7</formatVersion>
-  <view name="system">
-    <image name="background1" extra="true">
-      <storyboard>
-        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <image name="background" extra="true">
-      <zIndex>90</zIndex>
-      <storyboard>
-        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <video name="videocrton" extra="true">
-      <path>./../../_inc/anim/video/CRT_ON.mp4</path>
-      <delay>0</delay>
-      <loops>0</loops>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.48 0.39</pos>
-      <maxSize>0.22</maxSize>
-      <zIndex>26</zIndex>
-    </video>
-    <video name="videobox" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.48 0.39</pos>
-      <maxSize>0.22</maxSize>
-      <zIndex>25</zIndex>
-      <storyboard>
-        <animation property="pos" to="0.20 0.39" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <text name="TextDate" extra="true">
-      <pos>0.49 0.2</pos>
-      <text>1978</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <!-- Support different dates for regional consoles/computers -->
-    <text name="TextDate" extra="true" region="eu">
-      <text>1978</text>
-    </text>
-    <text name="TextDate" extra="true" region="us">
-      <text>1979</text>
-    </text>
-    <text name="TextDate" extra="true" region="jp">
-      <text>1982</text>
-    </text>
-    <!-- -->
-    <text name="TextManufacturer" extra="true">
-      <pos>0.49 0.255</pos>
-      <text>Philips</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.04</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <!-- Support different names for regional consoles/computers -->
-    <text name="TextManufacturer" extra="true" region="eu">
-      <text>Philips</text>
-    </text>
-    <text name="TextManufacturer" extra="true" region="us">
-      <text>Magnavox</text>
-    </text>
-    <text name="TextManufacturer" extra="true" region="jp">
-      <text>Kōton Trading Toitarii Enterprise</text>
-    </text>
-    <!-- -->
-    <text name="TextName" extra="true">
-      <pos>0.49 0.30</pos>
-      <size>0.5 0</size>
-      <text>Videopac G7000</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.065</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <!-- Support different names for regional consoles/computers -->
-    <text name="TextName" extra="true" region="eu"/>
-    <text name="TextName" extra="true" region="us">
-      <text>Odyssey²</text>
-    </text>
-    <text name="TextName" extra="true" region="jp">
-      <text>Odyssey²</text>
-    </text>
-    <!-- -->
-    <text name="TextDesc" extra="true">
-      <size>0.5 0</size>
-      <pos>0.49 0.4</pos>
-      <text>The Magnavox Odyssey 2 (stylized as Magnavox Odyssey²), also known as Philips Odyssey 2, is a second generation home video game console that was released in 1978. It was sold in Europe as the Philips Videopac G7000, in Brazil as the Philips Odyssey and in Japan as Odyssey2 (オデッセイ2 odessei2). The Odyssey 2 was one of the major three home consoles prior to the 1983 video game market crash, along with Atari 2600 and Intellivision.
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videocrton" extra="true">
+			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
+			<delay>0</delay>
+			<loops>0</loops>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.48 0.39</pos>
+			<maxSize>0.22</maxSize>
+			<zIndex>26</zIndex>
+		</video>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.48 0.39</pos>
+			<maxSize>0.22</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.20 0.39" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>1978</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<!-- Support different dates for regional consoles/computers -->
+		<text name="TextDate" extra="true" region="eu">
+			<text>1978</text>
+		</text>
+		<text name="TextDate" extra="true" region="us">
+			<text>1979</text>
+		</text>
+		<text name="TextDate" extra="true" region="jp">
+			<text>1982</text>
+		</text>
+		<!-- -->
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Philips</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<!-- Support different names for regional consoles/computers -->
+		<text name="TextManufacturer" extra="true" region="eu">
+			<text>Philips</text>
+		</text>
+		<text name="TextManufacturer" extra="true" region="us">
+			<text>Magnavox</text>
+		</text>
+		<text name="TextManufacturer" extra="true" region="jp">
+			<text>Kōton Trading Toitarii Enterprise</text>
+		</text>
+		<!-- -->
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>Videopac G7000</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<!-- Support different names for regional consoles/computers -->
+		<text name="TextName" extra="true" region="eu"/>
+		<text name="TextName" extra="true" region="us">
+			<text>Odyssey²</text>
+		</text>
+		<text name="TextName" extra="true" region="jp">
+			<text>Odyssey²</text>
+		</text>
+		<!-- -->
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.4</pos>
+			<text>The Magnavox Odyssey 2 (stylized as Magnavox Odyssey²), also known as Philips Odyssey 2, is a second generation home video game console that was released in 1978. It was sold in Europe as the Philips Videopac G7000, in Brazil as the Philips Odyssey and in Japan as Odyssey2 (オデッセイ2 odessei2). The Odyssey 2 was one of the major three home consoles prior to the 1983 video game market crash, along with Atari 2600 and Intellivision.
 
 In the early 1970s, Magnavox pioneered the home video game industry by successfully bringing the first home console to market, the Odyssey, which was quickly followed by a number of later models, each with a few technological improvements. In 1978, Magnavox, now a subsidiary of North American Philips, decided to release an all-new successor, Odyssey 2.
 
 In 2009, the video game website IGN named the Odyssey 2 the 21st greatest video game console, out of its list of 25.</text>
-      <text lang="pl">Magnavox Odyssey 2 (stylizowany jako Magnavox Odyssey²), znany również jako Philips Odyssey 2, to domowa konsola gier wideo drugiej generacji, która została wydana w 1978 roku. Była sprzedawana w Europie jako Philips Videopac G7000, w Brazylii jako Philips Odyssey, a w Japonii jako Odyssey2 (オデッセイ2 odessei2). Odyssey 2 była jedną z trzech głównych konsol domowych przed krachem rynku gier wideo w 1983 roku, wraz z Atari 2600 i Intellivision.
+			<text lang="pl">Magnavox Odyssey 2 (stylizowany jako Magnavox Odyssey²), znany również jako Philips Odyssey 2, to domowa konsola gier wideo drugiej generacji, która została wydana w 1978 roku. Była sprzedawana w Europie jako Philips Videopac G7000, w Brazylii jako Philips Odyssey, a w Japonii jako Odyssey2 (オデッセイ2 odessei2). Odyssey 2 była jedną z trzech głównych konsol domowych przed krachem rynku gier wideo w 1983 roku, wraz z Atari 2600 i Intellivision.
 
 Na początku lat 70. firma Magnavox była pionierem w branży domowych gier wideo, z powodzeniem wprowadzając na rynek pierwszą konsolę domową, Odyssey, po której szybko pojawiło się kilka późniejszych modeli, każdy z kilkoma ulepszeniami technologicznymi. W 1978 roku Magnavox, obecnie spółka zależna północnoamerykańskiego Philipsa, zdecydowała się na wypuszczenie zupełnie nowego następcy, Odyssey 2.
 
 W 2009 roku serwis internetowy IGN, zajmujący się grami wideo, uznał Odyssey 2 za 21. najlepszą konsolę do gier wideo z listy 25.</text>
-      <text lang="fr">Le Videopac est une console de jeux vidéo conçue par Magnavox, fabriquée par Philips et commercialisée à la fin des années 1970 et au début des années 1980 sous les marques Philips (Videopac/Odyssey), Radiola-Radiotechnique (Videopac), Schneider (Videopac), Siera (Videopac), Magnavox (Odyssey²), Brandt (Jopac), Continental Edison (Jopac) et Saba (Jopac).
+			<text lang="fr">Le Videopac est une console de jeux vidéo conçue par Magnavox, fabriquée par Philips et commercialisée à la fin des années 1970 et au début des années 1980 sous les marques Philips (Videopac/Odyssey), Radiola-Radiotechnique (Videopac), Schneider (Videopac), Siera (Videopac), Magnavox (Odyssey²), Brandt (Jopac), Continental Edison (Jopac) et Saba (Jopac).
 
 Les cartouches Videopac possédaient toutes un numéro et leurs titres étaient traduits dans les langues des pays de commercialisation. Il n'était pas rare, surtout pour les premières cartouches à avoir été commercialisées que plusieurs jeux soient disponibles sur une cartouche. La sélection s'effectuait à l'aide du clavier intégré aux consoles.</text>
-      <text lang="ru">Игровая приставка, выпущенная в 1978 году. В Европе известна как Philips Videopac G7000, в Бразилии — Philips Odyssey, в США — Magnavox Odyssey² и Philips Odyssey², а также под несколькими другими названиями.
+			<text lang="ru">Игровая приставка, выпущенная в 1978 году. В Европе известна как Philips Videopac G7000, в Бразилии — Philips Odyssey, в США — Magnavox Odyssey² и Philips Odyssey², а также под несколькими другими названиями.
 
 В начале 1970-х компания Magnavox была инноватором индустрии домашних видеоигр. Они начали очень удачно, представив на рынке игровую приставку Odyssey, за которой последовало несколько моделей с некоторыми технологическими улучшениями. В 1978 году Magnavox (в это время она уже стала дочерней компанией North American Philips) выпустила Odyssey², свою вторую игровую консоль, которую относят ко второму поколению игровых систем.
 
 Одной из сильнейших сторон приставки был модуль синтеза речи, который выпускался в качестве дополнительного модуля для речевых/музыкальных/звуковых эффектов.</text>
-      <text lang="it">La Magnavox Odyssey 2 (stilizzata come Magnavox Odyssey²), nota anche come Philips Odyssey 2, è una console per videogiochi domestica di seconda generazione uscita nel 1978. È stata venduta in Europa come Philips Videopac G7000, in Brasile come Philips Odyssey e in Giappone come Odyssey2 (オデッセイ2 odessei2). L'Odyssey 2 è stata una delle tre principali console domestiche prima del crollo del mercato dei videogiochi del 1983, insieme all'Atari 2600 e all'Intellivision.
+			<text lang="it">La Magnavox Odyssey 2 (stilizzata come Magnavox Odyssey²), nota anche come Philips Odyssey 2, è una console per videogiochi domestica di seconda generazione uscita nel 1978. È stata venduta in Europa come Philips Videopac G7000, in Brasile come Philips Odyssey e in Giappone come Odyssey2 (オデッセイ2 odessei2). L'Odyssey 2 è stata una delle tre principali console domestiche prima del crollo del mercato dei videogiochi del 1983, insieme all'Atari 2600 e all'Intellivision.
 
 All'inizio degli anni '70, Magnavox è stata pioniera nel settore dei videogiochi domestici portando con successo sul mercato la prima console domestica, l'Odyssey, che è stata rapidamente seguita da una serie di modelli successivi, ciascuno con alcuni miglioramenti tecnologici. Nel 1978, Magnavox, ora sussidiaria della nordamericana Philips, decise di lanciare sul mercato un successore completamente nuovo, Odyssey 2.
 
 Nel 2009, il sito web di videogiochi IGN ha nominato l'Odyssey 2 la 21a più grande console per videogiochi, su una lista di 25.</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-  </view>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
 </theme>

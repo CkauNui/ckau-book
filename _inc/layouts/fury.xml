@@ -1,89 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-  <formatVersion>7</formatVersion>
-  <view name="system">
-    <image name="background1" extra="true">
-      <storyboard>
-        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <image name="background" extra="true">
-      <zIndex>90</zIndex>
-      <storyboard>
-        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <video name="videobox" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <origin if="${screen.ratio} == '4/3'">0.48 0.5</origin>
-      <pos>0.519 0.378</pos>
-      <maxSize>0.27</maxSize>
-      <zIndex>25</zIndex>
-      <storyboard>
-        <animation property="pos" to="0.239 0.378" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <text name="TextDate" extra="true">
-      <pos>0.49 0.2</pos>
-      <text>2019</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.03</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextName" extra="true">
-      <pos>0.49 0.25</pos>
-      <size>0.5 0</size>
-      <text>Fury</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.065</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextDesc" extra="true">
-      <size>0.5 0</size>
-      <pos>0.49 0.35</pos>
-      <text>Ion Fury is a new Build Engine game from the creators of the EDuke32 source port.
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.48 0.5</origin>
+			<pos>0.519 0.378</pos>
+			<maxSize>0.27</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.239 0.378" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>2019</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.03</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.25</pos>
+			<size>0.5 0</size>
+			<text>Fury</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.35</pos>
+			<text>Ion Fury is a new Build Engine game from the creators of the EDuke32 source port.
 
 3D Realms and Voidpoint are proud to bring back the Build engine, which powered Duke Nukem 3D, Blood, and Shadow Warrior, in all of its hand-crafted pixelated glory. They’ve spent a lot of time tinkering under the hood to take advantage of new technology and techniques. Bigger levels, hundreds of new colors, and morphing maps that transform mid-level are all just a few of the advancements made to the engine.</text>
-      <text lang="pl">Ion Fury to gra i nowy Build Engine od twórców źródłowego portu EDuke32.
+			<text lang="pl">Ion Fury to gra i nowy Build Engine od twórców źródłowego portu EDuke32.
 
 3D Realms i Voidpoint z dumą przywracają Build Engine, który napędzał Duke Nukem 3D, Blood i Shadow Warrior, w całej jego ręcznie wykonanej pikselowej chwale. Spędzili mnóstwo czasu majstrując pod maską, aby wykorzystać nowe technologie i techniki. Większe poziomy, setki nowych kolorów i mapy morfingu, które przekształcają się w połowie poziomu to tylko niektóre z ulepszeń silnika.</text>
-      <text lang="ru">Ion Fury - это новая игра на Build Engine от создателей исходного порта EDuke32.
+			<text lang="ru">Ion Fury - это новая игра на Build Engine от создателей исходного порта EDuke32.
 
 3D Realms и Voidpoint с гордостью возвращают движок Build, на котором были созданы Duke Nukem 3D, Blood и Shadow Warrior, во всей его пиксельной красе, созданной вручную. Они потратили много времени на доработку движка, чтобы использовать преимущества новых технологий и методов. Большие уровни, сотни новых цветов, трансформация карты в середине уровня - вот лишь некоторые из усовершенствований, внесенных в движок.</text>
-      <text lang="it">Ion Fury è un nuovo gioco di Build Engine dai creatori del port sorgente di EDuke32.
+			<text lang="it">Ion Fury è un nuovo gioco di Build Engine dai creatori del port sorgente di EDuke32.
 
 3D Realms e Voidpoint sono orgogliosi di riportare il motore Build, che ha alimentato Duke Nukem 3D, Blood e Shadow Warrior, in tutta la sua gloria pixelata artigianale. Hanno trascorso molto tempo a lavorare sotto il cofano per sfruttare le nuove tecnologie e tecniche. Livelli più grandi, centinaia di nuovi colori e mappe morphing che si trasformano a metà livello sono solo alcuni dei progressi apportati al motore.</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-  </view>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
 </theme>

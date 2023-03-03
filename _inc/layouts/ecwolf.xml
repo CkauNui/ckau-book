@@ -1,89 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-  <formatVersion>7</formatVersion>
-  <view name="system">
-    <image name="background1" extra="true">
-      <storyboard>
-        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <image name="background" extra="true">
-      <zIndex>90</zIndex>
-      <storyboard>
-        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <video name="videobox" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <origin if="${screen.ratio} == '4/3'">0.48 0.5</origin>
-      <pos>0.519 0.378</pos>
-      <maxSize>0.27</maxSize>
-      <zIndex>25</zIndex>
-      <storyboard>
-        <animation property="pos" to="0.239 0.378" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <text name="TextDate" extra="true">
-      <pos>0.49 0.2</pos>
-      <text>2015</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.03</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextName" extra="true">
-      <pos>0.49 0.25</pos>
-      <size>0.5 0</size>
-      <text>ECWolf</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.065</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextDesc" extra="true">
-      <size>0.5 0</size>
-      <pos>0.49 0.35</pos>
-      <text>ECWolf is an advanced source port for Wolfenstein 3D, Spear of Destiny, and Super 3D Noah's Ark based off of the Wolf4SDL code base. ECWolf pulls a substantial amount of code from ZDoom and aims to provide a wide array of mod editing capabilities without the need to modify the source code.
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.48 0.5</origin>
+			<pos>0.519 0.378</pos>
+			<maxSize>0.27</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.239 0.378" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>2015</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.03</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.25</pos>
+			<size>0.5 0</size>
+			<text>ECWolf</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.35</pos>
+			<text>ECWolf is an advanced source port for Wolfenstein 3D, Spear of Destiny, and Super 3D Noah's Ark based off of the Wolf4SDL code base. ECWolf pulls a substantial amount of code from ZDoom and aims to provide a wide array of mod editing capabilities without the need to modify the source code.
 
 Expanding upon Wolf4SDL, ECWolf opens up yet even more possibilities for the world of Wolfenstein modding. Starting in 2015, numerous sets have been released exclusively for the ECWolf port, most notably projects by AstroCreep and Executor.</text>
-      <text lang="pl">ECWolf jest zaawansowanym portem źródłowym dla Wolfenstein 3D, Spear of Destiny i Super 3D Noah's Ark opartym na bazie kodu Wolf4SDL. ECWolf czerpie znaczną część kodu z ZDooma i ma na celu zapewnienie szerokiego wachlarza możliwości edycji modów bez konieczności modyfikowania kodu źródłowego.
+			<text lang="pl">ECWolf jest zaawansowanym portem źródłowym dla Wolfenstein 3D, Spear of Destiny i Super 3D Noah's Ark opartym na bazie kodu Wolf4SDL. ECWolf czerpie znaczną część kodu z ZDooma i ma na celu zapewnienie szerokiego wachlarza możliwości edycji modów bez konieczności modyfikowania kodu źródłowego.
 
 Rozszerzając Wolf4SDL, ECWolf otwiera jeszcze więcej możliwości dla świata modowania Wolfensteina. Począwszy od 2015 roku, liczne zestawy zostały wydane wyłącznie dla portu ECWolf, w szczególności projekty AstroCreep i Executor.</text>
-      <text lang="ru">Порт Wolfenstein-3D под современные ОС
+			<text lang="ru">Порт Wolfenstein-3D под современные ОС
 
 ECWolf предоставляет много полезных функций, таких как улучшенное управление (и возможность его настраивания), поддержка больших разрешений и снятие ограничений с количества слотов для сохранений. Сама же игра начинает выглядеть крайне респектабельно: сглаженные углы и грамотно растянутые текстуры без какой-либо фильтрации.</text>
-      <text lang="it">ECWolf è un port sorgente avanzato per Wolfenstein 3D, Spear of Destiny e Super 3D Noah's Ark basato sulla base di codice Wolf4SDL. ECWolf estrae una quantità sostanziale di codice da ZDoom e mira a fornire un'ampia gamma di capacità di modifica delle mod senza la necessità di modificare il codice sorgente.
+			<text lang="it">ECWolf è un port sorgente avanzato per Wolfenstein 3D, Spear of Destiny e Super 3D Noah's Ark basato sulla base di codice Wolf4SDL. ECWolf estrae una quantità sostanziale di codice da ZDoom e mira a fornire un'ampia gamma di capacità di modifica delle mod senza la necessità di modificare il codice sorgente.
 
 Espandendo Wolf4SDL, ECWolf apre ancora più possibilità al mondo del modding di Wolfenstein. A partire dal 2015, sono stati rilasciati numerosi set esclusivamente per il port ECWolf, in particolare i progetti di AstroCreep ed Executor.</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-  </view>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
 </theme>

@@ -1,90 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-  <formatVersion>7</formatVersion>
-  <view name="system">
-    <image name="background1" extra="true">
-      <storyboard>
-        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <image name="background" extra="true">
-      <zIndex>90</zIndex>
-      <storyboard>
-        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <video name="videobox" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <origin if="${screen.ratio} == '4/3'">0.48 0.5</origin>
-      <pos>0.519 0.378</pos>
-      <maxSize>0.27</maxSize>
-      <zIndex>25</zIndex>
-      <storyboard>
-        <animation property="pos" to="0.239 0.378" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <text name="TextDate" extra="true">
-      <pos>0.49 0.2</pos>
-      <text>2013</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.03</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextName" extra="true">
-      <pos>0.49 0.25</pos>
-      <text>Moonlight</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.065</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextDesc" extra="true">
-      <size>0.5 0</size>
-      <pos>0.49 0.35</pos>
-      <text>Moonlight allows you to play your PC games on almost any device, whether you're in another room or miles away from your gaming rig.
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.48 0.5</origin>
+			<pos>0.519 0.378</pos>
+			<maxSize>0.27</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.239 0.378" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>2013</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.03</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.25</pos>
+			<text>Moonlight</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.35</pos>
+			<text>Moonlight allows you to play your PC games on almost any device, whether you're in another room or miles away from your gaming rig.
 Moonlight (formerly Limelight) is an open source implementation of NVIDIA's GameStream protocol. We implemented the protocol used by the NVIDIA Shield and wrote a set of 3rd party clients.
 
 You can stream your collection of PC games from your GameStream-compatible PC to any supported device and play them remotely. Moonlight is perfect for gaming on the go without sacrificing the graphics and game selection available on PC.</text>
-      <text lang="pl">Moonlight umożliwia Ci granie w Twoje gry PC na niemal każdym urządzeniu, niezależnie od tego, czy jesteś w innym pokoju, czy też oddalony o wiele kilometrów od swojej konsoli do gier.
+			<text lang="pl">Moonlight umożliwia Ci granie w Twoje gry PC na niemal każdym urządzeniu, niezależnie od tego, czy jesteś w innym pokoju, czy też oddalony o wiele kilometrów od swojej konsoli do gier.
 Moonlight (dawniej Limelight) jest otwartoźródłową implementacją protokołu GameStream firmy NVIDIA. Zaimplementowaliśmy protokół używany przez NVIDIA Shield i napisaliśmy zestaw klientów innych firm.
 
 Możesz przesyłać swoją kolekcję gier PC ze swojego komputera kompatybilnego z GameStream do dowolnego obsługiwanego urządzenia i grać w nie zdalnie. Moonlight jest idealny do grania w podróży, bez poświęcania grafiki i wyboru gier dostępnych na PC.</text>
-      <text lang="ru">Стриминг игр с ПК. 
+			<text lang="ru">Стриминг игр с ПК. 
 Для использования Moonlight подходит любой ПК (не мобильный) с видеокартой Nvidia GeForce GTX 600-й серии и лучше. Ограничение по типу видеокарты связано с тем, что Moonlight базируется на сервисе Nvidia Shield GameStream. На ПК вам не нужно какое-либо стороннее ПО, только GeForce Experience, которое поставляется вместе с драйверами Nvidia.</text>
-      <text lang="it">Moonlight permette di giocare ai giochi per PC su quasi tutti i dispositivi, sia che ci si trovi in un'altra stanza o a chilometri di distanza dal proprio impianto di gioco.
+			<text lang="it">Moonlight permette di giocare ai giochi per PC su quasi tutti i dispositivi, sia che ci si trovi in un'altra stanza o a chilometri di distanza dal proprio impianto di gioco.
 Moonlight (ex Limelight) è un'implementazione open source del protocollo GameStream di NVIDIA. Abbiamo implementato il protocollo utilizzato da NVIDIA Shield e scritto una serie di client di terze parti.
 
 È possibile eseguire lo streaming della propria collezione di giochi per PC dal proprio PC compatibile con GameStream a qualsiasi dispositivo supportato e giocarci in remoto. Moonlight è perfetto per giocare in movimento senza sacrificare la grafica e la selezione di giochi disponibili su PC.</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-  </view>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
 </theme>

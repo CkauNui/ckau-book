@@ -1,113 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-  <formatVersion>7</formatVersion>
-  <view name="system">
-    <image name="background1" extra="true">
-      <storyboard>
-        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <image name="background" extra="true">
-      <zIndex>90</zIndex>
-      <storyboard>
-        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <video name="videocrton" extra="true">
-      <path>./../../_inc/anim/video/CRT_ON.mp4</path>
-      <delay>0</delay>
-      <loops>0</loops>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.49 0.4</pos>
-      <maxSize>0.255</maxSize>
-      <zIndex>26</zIndex>
-    </video>
-    <video name="videobox" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.49 0.4</pos>
-      <maxSize>0.255</maxSize>
-      <zIndex>25</zIndex>
-      <storyboard>
-        <animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <text name="TextDate" extra="true">
-      <pos>0.49 0.2</pos>
-      <text>1979</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextManufacturer" extra="true">
-      <pos>0.49 0.255</pos>
-      <text>Texas Instruments</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.04</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextName" extra="true">
-      <pos>0.49 0.30</pos>
-      <size>0.5 0</size>
-      <text>TI-99/4A</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.065</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextDesc" extra="true">
-      <size>0.5 0</size>
-      <pos>0.49 0.40</pos>
-      <text>The TI-99/4 is a home computer released in late 1979 by Texas Instruments. Based on the Texas Instruments TMS9900 microprocessor originally used in minicomputers, it was the first 16-bit home computer. The associated video display controller provides color graphics and among the best sprite support of its era.
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videocrton" extra="true">
+			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
+			<delay>0</delay>
+			<loops>0</loops>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.49 0.4</pos>
+			<maxSize>0.255</maxSize>
+			<zIndex>26</zIndex>
+		</video>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.49 0.4</pos>
+			<maxSize>0.255</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>1979</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Texas Instruments</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>TI-99/4A</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.40</pos>
+			<text>The TI-99/4 is a home computer released in late 1979 by Texas Instruments. Based on the Texas Instruments TMS9900 microprocessor originally used in minicomputers, it was the first 16-bit home computer. The associated video display controller provides color graphics and among the best sprite support of its era.
 
 It includes a simplified internal design, a full-travel keyboard, improved graphics, and a unique expansion system. At half the price of the original model, sales picked up significantly. TI supported the 4A with peripherals, including a speech synthesizer and a "Peripheral Expansion System" box to contain hardware add-ons. TI released developer information and tools, but the insistence on remaining sole publisher continued to starve the platform of software.</text>
-      <text lang="pl">TI-99/4 to komputer domowy wydany pod koniec 1979 roku przez Texas Instruments. Oparty na mikroprocesorze Texas Instruments TMS9900, pierwotnie używanym w minikomputerach, był pierwszym 16-bitowym komputerem domowym. Powiązany z nim kontroler wyświetlacza wideo zapewnia kolorową grafikę i jedną z najlepszych w swojej epoce obsługę sprite'ów. Słabym punktem jest klawiatura w stylu kalkulatora, a system cierpiał na brak komercyjnego oprogramowania z powodu wymagań TI dotyczących kaset ROM i udostępniania informacji o programistach tylko wybranym firmom trzecim.
+			<text lang="pl">TI-99/4 to komputer domowy wydany pod koniec 1979 roku przez Texas Instruments. Oparty na mikroprocesorze Texas Instruments TMS9900, pierwotnie używanym w minikomputerach, był pierwszym 16-bitowym komputerem domowym. Powiązany z nim kontroler wyświetlacza wideo zapewnia kolorową grafikę i jedną z najlepszych w swojej epoce obsługę sprite'ów. Słabym punktem jest klawiatura w stylu kalkulatora, a system cierpiał na brak komercyjnego oprogramowania z powodu wymagań TI dotyczących kaset ROM i udostępniania informacji o programistach tylko wybranym firmom trzecim.
 
 Uproszczona konstrukcja wewnętrzna, klawiatura o pełnym zakresie ruchu, ulepszona grafika i unikalny system rozszerzeń. Przy cenie o połowę niższej niż w przypadku oryginalnego modelu, sprzedaż znacznie wzrosła. TI wspierała model 4A urządzeniami peryferyjnymi, w tym syntezatorem mowy i pudełkiem "Peripheral Expansion System", które zawierało dodatki sprzętowe. TI udostępniało informacje i narzędzia dla programistów, ale upór w pozostawaniu jedynym wydawcą nadal powodował głód oprogramowania na platformie.
 
 TI-99/4A pojawił się na rynku mniej więcej w tym samym czasie, co Commodore VIC-20. Prezes Commodore, Jack Tramiel, został kiedyś urażony drapieżnymi cenami TI w połowie lat 70-tych i w odwecie rozpoczął wojnę cenową, wielokrotnie obniżając cenę VIC-20 i zmuszając TI do tego samego. Do 1983 roku 99/4A był sprzedawany za mniej niż 100 USD, ze stratą. Nawet przy zwiększonej bazie użytkowników, stworzonej dzięki dużym rabatom, po stracie 330 milionów dolarów w trzecim kwartale 1983 roku, Texas Instruments ogłosiło zaprzestanie produkcji TI-99/4A w październiku 1983 roku i wstrzymało produkcję w marcu 1984 roku.</text>
-      <text lang="ru">Домашний компьютер, созданный компанией Texas Instruments (TI) и выпущенный на рынок в 1981 году, первоначально по цене в 525 долларов (продавался без монитора). Модель TI-99/4A — это улучшенный вариант не очень удачной (и довольно редкой) модели TI-99/4, выпущенной в 1979 году по цене в 1150 долларов (продавалась с монитором).
+			<text lang="ru">Домашний компьютер, созданный компанией Texas Instruments (TI) и выпущенный на рынок в 1981 году, первоначально по цене в 525 долларов (продавался без монитора). Модель TI-99/4A — это улучшенный вариант не очень удачной (и довольно редкой) модели TI-99/4, выпущенной в 1979 году по цене в 1150 долларов (продавалась с монитором).
 
 Компьютер представляет собой моноблок, материнская плата с процессором находится в том же корпусе под клавиатурой. Блок питания размещён справа от клавиатуры за слотом картриджа — эта выемка в корпусе была довольно горячей, пользователи называли его «местом для разогрева чашки с кофе». Внешний блок питания, отличающийся в разных странах, был по сути понижающим трансформатором.</text>
-      <text lang="it">Il TI-99/4 è un home computer rilasciato alla fine del 1979 da Texas Instruments. Basato sul microprocessore Texas Instruments TMS9900, originariamente utilizzato nei minicomputer, è stato il primo home computer a 16 bit. Il controller video associato fornisce grafica a colori e uno dei migliori supporti per gli sprite dell'epoca.
+			<text lang="it">Il TI-99/4 è un home computer rilasciato alla fine del 1979 da Texas Instruments. Basato sul microprocessore Texas Instruments TMS9900, originariamente utilizzato nei minicomputer, è stato il primo home computer a 16 bit. Il controller video associato fornisce grafica a colori e uno dei migliori supporti per gli sprite dell'epoca.
 
 Include un design interno semplificato, una tastiera a corsa completa, una grafica migliorata e un sistema di espansione unico. Con un prezzo dimezzato rispetto al modello originale, le vendite aumentarono notevolmente. TI supportò il 4A con periferiche, tra cui un sintetizzatore vocale e un box "Peripheral Expansion System" per contenere componenti hardware aggiuntivi. TI rilasciò informazioni e strumenti per gli sviluppatori, ma l'insistenza nel voler rimanere l'unico editore continuò a privare la piattaforma di software.</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-  </view>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
 </theme>

@@ -1,93 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-  <formatVersion>7</formatVersion>
-  <view name="system">
-    <image name="background1" extra="true">
-      <storyboard>
-        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <image name="background" extra="true">
-      <zIndex>90</zIndex>
-      <storyboard>
-        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <video name="videocrton" extra="true">
-      <path>./../../_inc/anim/video/CRT_ON.mp4</path>
-      <delay>0</delay>
-      <loops>0</loops>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.5 0.37</pos>
-      <maxSize>0.244</maxSize>
-      <zIndex>26</zIndex>
-    </video>
-    <video name="videobox" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.5 0.37</pos>
-      <maxSize>0.244</maxSize>
-      <zIndex>25</zIndex>
-      <storyboard>
-        <animation property="pos" to="0.22 0.37" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <text name="TextDate" extra="true">
-      <pos>0.49 0.2</pos>
-      <text>1994</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextManufacturer" extra="true">
-      <pos>0.49 0.255</pos>
-      <text>Sony</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.04</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextName" extra="true">
-      <pos>0.49 0.30</pos>
-      <size>0.5 0</size>
-      <text>PlayStation</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.065</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextDesc" extra="true">
-      <size>0.5 0</size>
-      <pos>0.49 0.4</pos>
-      <text>PlayStation (Japanese: プレイステーション, Hepburn: Pureisutēshon, officially abbreviated as PS) is a Japanese video game brand that consists of five home video game consoles, as well as a media center, an online service, a line of controllers, two handhelds and a phone, as well as multiple magazines. The brand is produced by Sony Interactive Entertainment, a division of Sony, with the first console releasing as the PlayStation in Japan released in December 1994, and worldwide the following year.
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videocrton" extra="true">
+			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
+			<delay>0</delay>
+			<loops>0</loops>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.37</pos>
+			<maxSize>0.244</maxSize>
+			<zIndex>26</zIndex>
+		</video>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.37</pos>
+			<maxSize>0.244</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.37" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>1994</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Sony</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>PlayStation</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.4</pos>
+			<text>PlayStation (Japanese: プレイステーション, Hepburn: Pureisutēshon, officially abbreviated as PS) is a Japanese video game brand that consists of five home video game consoles, as well as a media center, an online service, a line of controllers, two handhelds and a phone, as well as multiple magazines. The brand is produced by Sony Interactive Entertainment, a division of Sony, with the first console releasing as the PlayStation in Japan released in December 1994, and worldwide the following year.
 
 The very first console in the series was the first console of any kind to exceed 100 million units, in less than a decade. Its successor, the PlayStation 2, was released in 2000. The PlayStation 2 is the best-selling home console to date, having exceeded 155 million units sold by the end of 2012. Sony's next console, the PlayStation 3, was released in 2006 and has sold over 87.4 million units as of March 2017. The next Playstation 4 was released in 2013 and sold one million units in a single day, making it the fastest-selling console in history. The last console in the series, the PlayStation 5, was released in November 2020.</text>
-      <text lang="pl">PlayStation (PS, znana także jako PSX) (jap. プレイステーション, pureisutēshon) – 32-bitowa konsola do gier wideo, wyprodukowana w Japonii przez firmę Sony Computer Entertainment, zaprojektowana przez Kena Kutaragiego.
+			<text lang="pl">PlayStation (PS, znana także jako PSX) (jap. プレイステーション, pureisutēshon) – 32-bitowa konsola do gier wideo, wyprodukowana w Japonii przez firmę Sony Computer Entertainment, zaprojektowana przez Kena Kutaragiego.
 Premiera konsoli odbyła się 3 grudnia 1994 roku, kiedy to pierwsze egzemplarze trafiły na półki japońskich sklepów. Niecały rok później, 9 września 1995 roku, konsola ukazała się w Stanach Zjednoczonych, a 29 września tego samego roku w Europie.
 
 PlayStation miała zostać stworzona we współpracy z Nintendo, jako SNES-CD – Sony miało dostarczyć czytnik CD-ROM oraz ogólnie pomóc przy architekturze systemu. Jednak z powodu różnicy zdań, Nintendo rozpoczęło współpracę z Phillips, a w 1993 roku Sony samo zaczęło prace nad swoją konsolą, dodając literę X do jej nazwy – po premierze systemu litera została usunięta, jednak skrót pozostał – PSX. Sprzedaż konsoli osiągnęła 100 milionów sztuk, natomiast ówczesny potentat na rynku konsol - SEGA oferujący konsolę SEGA Saturn sprzedał niespełna 10 milionów sztuk, a Nintendo 33 mln.
@@ -109,25 +109,25 @@ Specyfikacja techniczna:
 - Dźwięk: 24-kanałowy procesor ADPCM[13]
 - Napęd CD-ROM podwójnej prędkości
 - karty pamięci o pojemnościach 128, 256, 512 kB oraz 1, 2, 4, 8 MB (two in one)</text>
-      <text lang="fr">La PlayStation (プレイステーション, Purei Sutēshon) est une console de jeux vidéo de cinquième génération, produite par Sony Computer Entertainment à partir de 1994. La PlayStation originale fut la première machine de la gamme PlayStation, déclinée ensuite en PSone (une version plus petite et plus légère que l'originale).
+			<text lang="fr">La PlayStation (プレイステーション, Purei Sutēshon) est une console de jeux vidéo de cinquième génération, produite par Sony Computer Entertainment à partir de 1994. La PlayStation originale fut la première machine de la gamme PlayStation, déclinée ensuite en PSone (une version plus petite et plus légère que l'originale).
 
 Le 18 mai 2004, soit près de dix ans après son lancement, Sony annonce avoir distribué 100 millions de consoles dans le monde et plus de 962 millions de jeux PlayStation.</text>
-      <text lang="ru">Игровая приставка пятого поколения, разработанная компанией Sony Computer Entertainment под руководством Кэна Кутараги. Релиз консоли состоялся 3 декабря 1994 года в Японии, в США приставка появилась 9 сентября 1995 года, а в Европе — 29 сентября 1995 года. Консоль является первой игровой системой в линейке PlayStation. В 2000 году вышла обновлённая версия консоли под названием PSone, которая отличалась от оригинальной PlayStation значительно меньшим размером. Приставка оказалась очень популярной, обеспечив Sony прорыв в игровой индустрии, где до того момента безраздельно властвовали Nintendo и Sega.
+			<text lang="ru">Игровая приставка пятого поколения, разработанная компанией Sony Computer Entertainment под руководством Кэна Кутараги. Релиз консоли состоялся 3 декабря 1994 года в Японии, в США приставка появилась 9 сентября 1995 года, а в Европе — 29 сентября 1995 года. Консоль является первой игровой системой в линейке PlayStation. В 2000 году вышла обновлённая версия консоли под названием PSone, которая отличалась от оригинальной PlayStation значительно меньшим размером. Приставка оказалась очень популярной, обеспечив Sony прорыв в игровой индустрии, где до того момента безраздельно властвовали Nintendo и Sega.
 
 3 декабря 2018 года в честь 24-ой годовщины выпуска оригинальной консоли была выпущена миниатюрная версия под названием PlayStation Classic, которая включает 20 предустановленных игр, таких как Grand Theft Auto, Final Fantasy VII, Tekken 3, Resident Evil.</text>
-      <text lang="it">PlayStation (giapponese: プレイステーション, Hepburn: Pureisutēshon, abbreviato ufficialmente in PS) è un marchio giapponese di videogiochi che consiste in cinque console per videogiochi domestici, oltre a un media center, un servizio online, una linea di controller, due palmari e un telefono, oltre a diverse riviste. Il marchio è prodotto da Sony Interactive Entertainment, una divisione di Sony, e la prima console è stata rilasciata come PlayStation in Giappone nel dicembre 1994 e in tutto il mondo l'anno successivo.
+			<text lang="it">PlayStation (giapponese: プレイステーション, Hepburn: Pureisutēshon, abbreviato ufficialmente in PS) è un marchio giapponese di videogiochi che consiste in cinque console per videogiochi domestici, oltre a un media center, un servizio online, una linea di controller, due palmari e un telefono, oltre a diverse riviste. Il marchio è prodotto da Sony Interactive Entertainment, una divisione di Sony, e la prima console è stata rilasciata come PlayStation in Giappone nel dicembre 1994 e in tutto il mondo l'anno successivo.
 
 La prima console della serie è stata la prima console di qualsiasi tipo a superare i 100 milioni di unità, in meno di un decennio. Il suo successore, la PlayStation 2, è stato rilasciato nel 2000. La PlayStation 2 è la console domestica più venduta fino ad oggi, avendo superato i 155 milioni di unità vendute alla fine del 2012. La console successiva di Sony, la PlayStation 3, è uscita nel 2006 e ha venduto oltre 87,4 milioni di unità a marzo 2017. La successiva Playstation 4 è stata rilasciata nel 2013 e ha venduto un milione di unità in un solo giorno, diventando la console che ha venduto più velocemente nella storia. L'ultima console della serie, la PlayStation 5, è uscita a novembre 2020.</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-  </view>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
 </theme>

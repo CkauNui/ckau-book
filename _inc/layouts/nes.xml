@@ -1,112 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-  <formatVersion>7</formatVersion>
-  <view name="system">
-    <image name="background1" extra="true">
-      <storyboard>
-        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <image name="background" extra="true">
-      <zIndex>90</zIndex>
-      <storyboard>
-        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <video name="videocrton" extra="true">
-      <path>./../../_inc/anim/video/CRT_ON.mp4</path>
-      <delay>0</delay>
-      <loops>0</loops>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.49 0.4</pos>
-      <maxSize>0.24</maxSize>
-      <zIndex>26</zIndex>
-    </video>
-    <video name="videobox" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.49 0.4</pos>
-      <maxSize>0.24</maxSize>
-      <zIndex>25</zIndex>
-      <storyboard>
-        <animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <text name="TextDate" extra="true">
-      <pos>0.49 0.2</pos>
-      <text>1986</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <!-- Support different dates for regional consoles/computers -->
-    <text name="TextDate" extra="true" region="eu"/>
-    <text name="TextDate" extra="true" region="us">
-      <text>1985</text>
-    </text>
-    <text name="TextDate" extra="true" region="jp">
-      <text>1983</text>
-    </text>
-    <!-- -->
-    <text name="TextManufacturer" extra="true">
-      <pos>0.49 0.255</pos>
-      <text>Nintendo</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.04</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextName" extra="true">
-      <pos>0.49 0.30</pos>
-      <size>0.5 0</size>
-      <text>Entertainment System</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.065</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <!-- Support different names for regional consoles/computers -->
-    <text name="TextName" extra="true" region="eu"/>
-    <text name="TextName" extra="true" region="us"/>
-    <text name="TextName" extra="true" region="jp">
-      <text>Family Computer</text>
-    </text>
-    <!-- -->
-    <text name="TextDesc" extra="true">
-      <size>0.5 0</size>
-      <pos>0.49 0.4</pos>
-      <text>The Nintendo Entertainment System (NES) is an 8-bit third-generation home video game console produced by Nintendo. Nintendo first released it in Japan as the Family Computer, commonly known as the Famicom, in 1983. The NES, a remodelled version, was released internationally in the following years.
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videocrton" extra="true">
+			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
+			<delay>0</delay>
+			<loops>0</loops>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.49 0.4</pos>
+			<maxSize>0.24</maxSize>
+			<zIndex>26</zIndex>
+		</video>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.49 0.4</pos>
+			<maxSize>0.24</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>1986</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<!-- Support different dates for regional consoles/computers -->
+		<text name="TextDate" extra="true" region="eu"/>
+		<text name="TextDate" extra="true" region="us">
+			<text>1985</text>
+		</text>
+		<text name="TextDate" extra="true" region="jp">
+			<text>1983</text>
+		</text>
+		<!-- -->
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Nintendo</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>Entertainment System</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<!-- Support different names for regional consoles/computers -->
+		<text name="TextName" extra="true" region="eu"/>
+		<text name="TextName" extra="true" region="us"/>
+		<text name="TextName" extra="true" region="jp">
+			<text>Family Computer</text>
+		</text>
+		<!-- -->
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.4</pos>
+			<text>The Nintendo Entertainment System (NES) is an 8-bit third-generation home video game console produced by Nintendo. Nintendo first released it in Japan as the Family Computer, commonly known as the Famicom, in 1983. The NES, a remodelled version, was released internationally in the following years.
 
 The NES featured a number of groundbreaking games, such as the platform game Super Mario Bros, the action-adventure game The Legend of Zelda and the action game Metroid. As one of the best-selling gaming consoles of its time, the NES helped revitalize the US video game industry following the video game crash of 1983. Nintendo introduced a now-standard business model of licensing third-party developers to produce and distribute games for the NES. The NES was succeeded by the Super Nintendo Entertainment System.</text>
-      <text lang="pl">Nintendo Entertainment System (w skrócie NES) – konsola gier komputerowych trzeciej generacji (posiadająca architekturę 8-bitową) wyprodukowana przez japońskie przedsiębiorstwo Nintendo. Po raz pierwszy zaprezentowana 15 lipca 1983 na rynku japońskim jako Nintendo Family Computer, znana także jako Famicom. NES będąca jej przebudowaną wersją została w kolejnych latach wprowadzona międzynarodowo (w Europie w roku 1986). Na NES zostało wydanych wiele przełomowych gier takich jak platformówka Super Mario Bros, przygodówka The Legend of Zelda czy też gra akcji Metroid. Jako jedna z najlepiej sprzedających się konsol tamtych lat, istotnie przyczyniła się do rewitalizacji amerykańskiego rynku gier po zapaści w 1983.
+			<text lang="pl">Nintendo Entertainment System (w skrócie NES) – konsola gier komputerowych trzeciej generacji (posiadająca architekturę 8-bitową) wyprodukowana przez japońskie przedsiębiorstwo Nintendo. Po raz pierwszy zaprezentowana 15 lipca 1983 na rynku japońskim jako Nintendo Family Computer, znana także jako Famicom. NES będąca jej przebudowaną wersją została w kolejnych latach wprowadzona międzynarodowo (w Europie w roku 1986). Na NES zostało wydanych wiele przełomowych gier takich jak platformówka Super Mario Bros, przygodówka The Legend of Zelda czy też gra akcji Metroid. Jako jedna z najlepiej sprzedających się konsol tamtych lat, istotnie przyczyniła się do rewitalizacji amerykańskiego rynku gier po zapaści w 1983.
 
 Sprzedano łącznie ponad 60 mln egzemplarzy konsoli, w tym w samej Japonii ok. 19 mln. Wśród najbardziej znanych tytułów, które ukazały się na Famicom/NES znalazły się Mario Bros oraz Super Mario Bros. Sukces konsoli sprawił, że na świecie powstało wiele jej klonów. W Polsce, a także w innych krajach Europy dużą popularność zdobył klon Famicoma – Pegasus, głównie dzięki swej dostępności na rynkach i targowiskach. Ostatnią grą na NES-a była Wario's Woods wydana w 1994 roku. W 1995 firma oficjalnie wycofała konsolę ze sprzedaży. Szacuje się, że na całym świecie sprzedano ok. 62 mln egzemplarzy konsoli i ponad 500 mln gier.</text>
-      <text lang="fr">La Nintendo Entertainment System, par abréviation NES, également couramment appelée Nintendo en France, est une console de jeux vidéo de génération 8 bits fabriquée par l'entreprise japonaise Nintendo et distribuée à partir de 1985 (1987 en Europe). Son équivalent japonais est la Family Computer (ファミリーコンピュータ, Famirī Konpyūta), ou Famicom (ファミコン, Famikon), sortie quelques années avant, en 1983. En Corée du Sud, la NES porta le nom de Hyundai Comboy (컴보이) et en Inde, celui de Tata Famicom.
+			<text lang="fr">La Nintendo Entertainment System, par abréviation NES, également couramment appelée Nintendo en France, est une console de jeux vidéo de génération 8 bits fabriquée par l'entreprise japonaise Nintendo et distribuée à partir de 1985 (1987 en Europe). Son équivalent japonais est la Family Computer (ファミリーコンピュータ, Famirī Konpyūta), ou Famicom (ファミコン, Famikon), sortie quelques années avant, en 1983. En Corée du Sud, la NES porta le nom de Hyundai Comboy (컴보이) et en Inde, celui de Tata Famicom.
 
 La console connut un succès mondial, ce qui aida à redynamiser l'industrie du jeu vidéo après le krach du jeu vidéo de 1983, et ce qui fixa les normes pour les consoles suivantes, du game design aux procédures de gestion.
 
@@ -114,22 +114,22 @@ Super Mario Bros. fut le jeu le plus vendu sur la console. Son succès fut tel q
 
 La Comboy, la NES Coréenne.
 La Nintendo Entertainment System est la 12e console de jeux vidéo la plus vendue de tous les temps avec 61,91 millions d'unités vendues.</text>
-      <text lang="ru">Восьмибитная игровая приставка, популярная в середине 1980-х и начале 1990-х годов. Впервые консоль появилась на японском рынке в 1983 году под названием Famicom, а затем, переименованная в NES, вышла в Европе и США в 1985 году. Новинка оказалась исключительно удачной и сумела завоевать практически весь американский и японский рынок. Консоль появилась с большим пакетом игр, среди которых самым известным и продаваемым стало семейство игр Super Mario Bros. Марио стал талисманом корпорации Nintendo. Всего, по официальным данным, было продано более 60 млн приставок и более 500 млн игр.
+			<text lang="ru">Восьмибитная игровая приставка, популярная в середине 1980-х и начале 1990-х годов. Впервые консоль появилась на японском рынке в 1983 году под названием Famicom, а затем, переименованная в NES, вышла в Европе и США в 1985 году. Новинка оказалась исключительно удачной и сумела завоевать практически весь американский и японский рынок. Консоль появилась с большим пакетом игр, среди которых самым известным и продаваемым стало семейство игр Super Mario Bros. Марио стал талисманом корпорации Nintendo. Всего, по официальным данным, было продано более 60 млн приставок и более 500 млн игр.
 
 Поскольку выход консоли произошёл вскоре после кризиса игровой индустрии, многие критики именно ей приписывают возрождение игрового рынка и открытие третьего поколения видеоприставок, так как удачные аппаратные характеристики и богатая библиотека игр вызвали интерес как у потребителей, так и у разработчиков, отвернувшихся было от игровой индустрии после краха.</text>
-      <text lang="it">Il Nintendo Entertainment System (NES) è una console per videogiochi di terza generazione a 8 bit prodotta da Nintendo. Nintendo la distribuì per la prima volta in Giappone con il nome di Family Computer, comunemente noto come Famicom, nel 1983. Il NES, una versione rimodellata, è stato rilasciato a livello internazionale negli anni successivi.
+			<text lang="it">Il Nintendo Entertainment System (NES) è una console per videogiochi di terza generazione a 8 bit prodotta da Nintendo. Nintendo la distribuì per la prima volta in Giappone con il nome di Family Computer, comunemente noto come Famicom, nel 1983. Il NES, una versione rimodellata, è stato rilasciato a livello internazionale negli anni successivi.
 
 Il NES ha offerto una serie di giochi innovativi, come il platform Super Mario Bros, il gioco d'azione e avventura The Legend of Zelda e il gioco d'azione Metroid. Essendo una delle console più vendute dell'epoca, il NES contribuì a rivitalizzare l'industria videoludica statunitense dopo il crollo dei videogiochi del 1983. Nintendo introdusse un modello commerciale ormai standard che prevedeva la concessione di licenze a sviluppatori terzi per la produzione e la distribuzione di giochi per il NES. Al NES successe il Super Nintendo Entertainment System.</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-  </view>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
 </theme>

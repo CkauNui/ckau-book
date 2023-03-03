@@ -1,117 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-  <formatVersion>7</formatVersion>
-  <view name="system">
-    <image name="background1" extra="true">
-      <storyboard>
-        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <image name="background" extra="true">
-      <zIndex>90</zIndex>
-      <storyboard>
-        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <video name="videocrton" extra="true">
-      <path>./../../_inc/anim/video/CRT_ON.mp4</path>
-      <delay>0</delay>
-      <loops>0</loops>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.49 0.4</pos>
-      <maxSize>0.22</maxSize>
-      <zIndex>26</zIndex>
-    </video>
-    <video name="videobox" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.49 0.4</pos>
-      <maxSize>0.22</maxSize>
-      <zIndex>25</zIndex>
-      <storyboard>
-        <animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <text name="TextDate" extra="true">
-      <pos>0.49 0.2</pos>
-      <text>1983</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextManufacturer" extra="true">
-      <pos>0.49 0.255</pos>
-      <text>Acorn</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.04</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextName" extra="true">
-      <pos>0.49 0.30</pos>
-      <size>0.5 0</size>
-      <text>Electron</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.065</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextDesc" extra="true">
-      <size>0.5 0</size>
-      <pos>0.49 0.40</pos>
-      <text>The Acorn Electron (nicknamed the Elk inside Acorn and beyond) was a budget version of the BBC Micro educational/home computer introduced by Acorn Computers Ltd on 25 August 1983. It had 32 kilobytes of RAM, and its ROM includes BBC BASIC v2 along with its operating system.
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videocrton" extra="true">
+			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
+			<delay>0</delay>
+			<loops>0</loops>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.49 0.4</pos>
+			<maxSize>0.22</maxSize>
+			<zIndex>26</zIndex>
+		</video>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.49 0.4</pos>
+			<maxSize>0.22</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>1983</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Acorn</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>Electron</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.40</pos>
+			<text>The Acorn Electron (nicknamed the Elk inside Acorn and beyond) was a budget version of the BBC Micro educational/home computer introduced by Acorn Computers Ltd on 25 August 1983. It had 32 kilobytes of RAM, and its ROM includes BBC BASIC v2 along with its operating system.
 
 The Electron was able to save and load programs onto audio cassette via a supplied converter cable that connected it to any standard tape recorder that had the correct sockets. It was capable of basic graphics, and could display onto either a television set, a colour (RGB) monitor or a monochrome monitor.
 
 For a short period, the Electron was reportedly the best selling micro in the United Kingdom, with an estimated 200,000 to 250,000 machines sold over its entire commercial lifespan.</text>
-      <text lang="pl">Acorn Electron (o kryptonimie Elk wewnątrz firmy Acorn i poza nią) był budżetową wersją komputera edukacyjnego/domowego BBC Micro, wprowadzoną na rynek przez firmę Acorn Computers Ltd. 25 sierpnia 1983 roku. Posiadał 32 kilobajty pamięci RAM, a w jego pamięci ROM znajdował się BBC BASIC v2 wraz z systemem operacyjnym.
+			<text lang="pl">Acorn Electron (o kryptonimie Elk wewnątrz firmy Acorn i poza nią) był budżetową wersją komputera edukacyjnego/domowego BBC Micro, wprowadzoną na rynek przez firmę Acorn Computers Ltd. 25 sierpnia 1983 roku. Posiadał 32 kilobajty pamięci RAM, a w jego pamięci ROM znajdował się BBC BASIC v2 wraz z systemem operacyjnym.
 
 Electron mógł zapisywać i ładować programy na kasetę audio za pomocą dostarczonego kabla konwertera, który łączył go z dowolnym standardowym magnetofonem wyposażonym w odpowiednie gniazda. Umożliwiał też wyświetlanie podstawowej grafiki na telewizorze, monitorze kolorowym (RGB) lub monochromatycznym.
 
 Przez krótki okres czasu Electron był podobno najlepiej sprzedającym się mikrokomputerem w Wielkiej Brytanii - szacuje się, że w całym okresie jego komercyjnej eksploatacji sprzedano od 200 000 do 250 000 urządzeń.</text>
-      <text lang="ru">Домашний компьютер, созданный компанией Acorn Computers Ltd в качестве урезанной бюджетной версии домашнего и учебного компьютера BBC Micro. Electron располагал ОЗУ в 32 Кб, в ПЗУ компьютера был записан интерпретатор BBC BASIC.
+			<text lang="ru">Домашний компьютер, созданный компанией Acorn Computers Ltd в качестве урезанной бюджетной версии домашнего и учебного компьютера BBC Micro. Electron располагал ОЗУ в 32 Кб, в ПЗУ компьютера был записан интерпретатор BBC BASIC.
 
 После того как Acorn выпустил BBC Micro (£235 и £335 для версии A и B соответственно), менеджмент компании озаботился возможностью выпуска более дешёвого варианта для массового рынка. В июне 1982 года стало известно о том что ZX Spectrum будет продаваться по цене £175, и сооснователя компании Hermann Hauser спросили, не подорвёт ли это продажи BBC Micro. Он ответил, что в третьем квартале Acorn собирается выпустить компьютер по цене в £120-150, с графикой, превосходящей Spectrum и совместимый с BBC Micro.</text>
-      <text lang="it">L'Acorn Electron (soprannominato Elk all'interno di Acorn e non solo) era una versione economica del computer educativo/home BBC Micro introdotta da Acorn Computers Ltd il 25 agosto 1983. Aveva 32 kilobyte di RAM e la sua ROM includeva il BBC BASIC v2 insieme al sistema operativo.
+			<text lang="it">L'Acorn Electron (soprannominato Elk all'interno di Acorn e non solo) era una versione economica del computer educativo/home BBC Micro introdotta da Acorn Computers Ltd il 25 agosto 1983. Aveva 32 kilobyte di RAM e la sua ROM includeva il BBC BASIC v2 insieme al sistema operativo.
 
 L'Electron era in grado di salvare e caricare programmi su audiocassetta tramite un cavo convertitore in dotazione che lo collegava a qualsiasi registratore standard dotato delle prese corrette. Era in grado di realizzare grafica di base e di visualizzare su un televisore, un monitor a colori (RGB) o un monitor monocromatico.
 
 Per un breve periodo, l'Electron è stato il microcomputer più venduto nel Regno Unito, con una stima di 200.000-250.000 macchine vendute nel corso della sua intera vita commerciale.</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-  </view>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
 </theme>

@@ -1,107 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-  <formatVersion>7</formatVersion>
-  <view name="system">
-    <image name="background1" extra="true">
-      <storyboard>
-        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <image name="background" extra="true">
-      <zIndex>90</zIndex>
-      <storyboard>
-        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <video name="videobox" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <origin if="${screen.ratio} == '4/3'">0.5 0.455</origin>
-      <pos>0.5 0.4</pos>
-      <maxSize>0.195</maxSize>
-      <zIndex>25</zIndex>
-      <storyboard>
-        <animation property="pos" to="0.22 0.4" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <text name="TextDate" extra="true">
-      <pos>0.49 0.2</pos>
-      <text>2001</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextManufacturer" extra="true">
-      <pos>0.49 0.255</pos>
-      <text>Nintendo</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.04</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextName" extra="true">
-      <pos>0.49 0.30</pos>
-      <size>0.5 0</size>
-      <text>Pokémon mini</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.065</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextDesc" extra="true">
-      <size>0.5 0</size>
-      <pos>0.49 0.4</pos>
-      <text>The Pokémon Mini (officially stylized as Pokémon mini) is a handheld game console that was designed and manufactured by Nintendo and themed around the Pokémon media franchise. It is the smallest game system with interchangeable cartridges ever produced by Nintendo, weighing just under two and a half ounces (71 grams). It was first released in North America on November 16, 2001, (two days before the GameCube was released) then in Japan on December 14, 2001, and in Europe on March 15, 2002. The systems were released in three colors: Wooper Blue, Chikorita Green, and Smoochum Purple.
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.455</origin>
+			<pos>0.5 0.4</pos>
+			<maxSize>0.195</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.4" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>2001</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Nintendo</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>Pokémon mini</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.4</pos>
+			<text>The Pokémon Mini (officially stylized as Pokémon mini) is a handheld game console that was designed and manufactured by Nintendo and themed around the Pokémon media franchise. It is the smallest game system with interchangeable cartridges ever produced by Nintendo, weighing just under two and a half ounces (71 grams). It was first released in North America on November 16, 2001, (two days before the GameCube was released) then in Japan on December 14, 2001, and in Europe on March 15, 2002. The systems were released in three colors: Wooper Blue, Chikorita Green, and Smoochum Purple.
 
 Features of the Pokémon mini include an internal real-time clock, an infrared port used to facilitate multiplayer gaming, a reed switch for detecting shakes, and a motor used to implement force feedback. Pokémon Channel features playable emulated demo versions of Pokémon Mini games, including the console exclusive "Snorlax's Lunch Time". Games such as "Togepi's Adventure" were only released in Japan.</text>
-      <text lang="pl">Pokémon Mini – miniaturowa konsola firmy Nintendo przeznaczona do gier o Pokémonach.
+			<text lang="pl">Pokémon Mini – miniaturowa konsola firmy Nintendo przeznaczona do gier o Pokémonach.
 
 Jest to obecnie najmniejsza konsola z możliwością wymiany kartridży z grami. Wyposażono ją w urządzenie wibracyjne, czujnik wstrząsów oraz wbudowany zegar. Możliwe jest połączenie kilku urządzeń za pomocą podczerwieni dla gry bezprzewodowej. Konsola posiada monochromatyczny wyświetlacz LCD.</text>
-      <text lang="fr">Le Pokémon mini (ポケモンミニ) est une console de jeux vidéo portable conçue et distribuée par Nintendo et axée sur la franchise Pokémon. Elle est la plus petite console de jeux à cartouches produite par Nintendo. Elle possède un écran noir et blanc, et propose une horloge, un vibreur et un détecteur de choc. Elle dispose d'une connexion infrarouge permettant le jeu multijoueur.
+			<text lang="fr">Le Pokémon mini (ポケモンミニ) est une console de jeux vidéo portable conçue et distribuée par Nintendo et axée sur la franchise Pokémon. Elle est la plus petite console de jeux à cartouches produite par Nintendo. Elle possède un écran noir et blanc, et propose une horloge, un vibreur et un détecteur de choc. Elle dispose d'une connexion infrarouge permettant le jeu multijoueur.
 
 La console est conçue pour les jeunes enfants. Les jeux officiels sont simples et courts, et tous ont pour thème l'univers des Pokémon. Des jeux n'appartenant pas à cette franchise ont été annoncés par Nintendo, en particulier des adaptations de Game and Watch, mais ne sont jamais sortis.
 
 La console est rétro-ingénierée afin d'y développer des jeux amateurs.</text>
-      <text lang="ru">Портативная игровая система, разработанная и выпущенная Nintendo и посвящённая принадлежащей ей медиа-франшизе «Покемон». Она вышла 16 ноября 2001 года в Америке, 14 декабря в Японии и 15 марта 2002 года в Европе. Портативную консоль выпустили с тремя различными вариантами цвета корпуса: Wooper Blue, Chikorita Green и Smoochum Purple. Pokémon mini самая лёгкая портативная игровая консоль от Nintendo со сменными картриджами: она весит всего 70 граммов.
+			<text lang="ru">Портативная игровая система, разработанная и выпущенная Nintendo и посвящённая принадлежащей ей медиа-франшизе «Покемон». Она вышла 16 ноября 2001 года в Америке, 14 декабря в Японии и 15 марта 2002 года в Европе. Портативную консоль выпустили с тремя различными вариантами цвета корпуса: Wooper Blue, Chikorita Green и Smoochum Purple. Pokémon mini самая лёгкая портативная игровая консоль от Nintendo со сменными картриджами: она весит всего 70 граммов.
 
 В Pokémon Mini присутствуют часы реального времени, инфракрасный порт для многопользовательской игры, акселерометр и вибратор. В игре Pokémon Channel для Nintendo GameCube присутствуют демоверсии некоторых игр для Pokémon mini — они запускаются на приставке посредством эмуляции. Фанаты, научившиеся программировать консоль, разработали много своих любительских игр для этой системы.</text>
-      <text lang="it">Il Pokémon Mini (ufficialmente stilizzato come Pokémon mini) è una console portatile progettata e prodotta da Nintendo e incentrata sul franchise mediatico dei Pokémon. È la più piccola console di gioco con cartucce intercambiabili mai prodotta da Nintendo, con un peso di poco inferiore alle due once e mezzo (71 grammi). È stata rilasciata per la prima volta in Nord America il 16 novembre 2001 (due giorni prima dell'uscita del GameCube), poi in Giappone il 14 dicembre 2001 e in Europa il 15 marzo 2002. I sistemi sono stati distribuiti in tre colori: Wooper Blue, Chikorita Green e Smoochum Purple.
+			<text lang="it">Il Pokémon Mini (ufficialmente stilizzato come Pokémon mini) è una console portatile progettata e prodotta da Nintendo e incentrata sul franchise mediatico dei Pokémon. È la più piccola console di gioco con cartucce intercambiabili mai prodotta da Nintendo, con un peso di poco inferiore alle due once e mezzo (71 grammi). È stata rilasciata per la prima volta in Nord America il 16 novembre 2001 (due giorni prima dell'uscita del GameCube), poi in Giappone il 14 dicembre 2001 e in Europa il 15 marzo 2002. I sistemi sono stati distribuiti in tre colori: Wooper Blue, Chikorita Green e Smoochum Purple.
 
 Le caratteristiche del Pokémon mini includono un orologio interno in tempo reale, una porta a infrarossi utilizzata per facilitare il gioco multigiocatore, un interruttore reed per rilevare le scosse e un motore utilizzato per implementare il force feedback. Pokémon Channel offre versioni demo emulate giocabili dei giochi Pokémon Mini, tra cui l'esclusiva della console "Snorlax's Lunch Time". Giochi come "Togepi's Adventure" sono stati rilasciati solo in Giappone.</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-  </view>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
 </theme>

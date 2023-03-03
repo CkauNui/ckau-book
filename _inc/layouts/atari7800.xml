@@ -1,95 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-  <formatVersion>7</formatVersion>
-  <view name="system">
-    <image name="background1" extra="true">
-      <storyboard>
-        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <image name="background" extra="true">
-      <zIndex>90</zIndex>
-      <storyboard>
-        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <video name="videocrton" extra="true">
-      <path>./../../_inc/anim/video/CRT_ON.mp4</path>
-      <delay>0</delay>
-      <loops>0</loops>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.475 0.39</pos>
-      <maxSize>0.232</maxSize>
-      <zIndex>26</zIndex>
-    </video>
-    <video name="videobox" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.475 0.39</pos>
-      <maxSize>0.232</maxSize>
-      <zIndex>25</zIndex>
-      <storyboard>
-        <animation property="pos" to="0.195 0.39" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <text name="TextDate" extra="true">
-      <pos>0.49 0.2</pos>
-      <text>1986</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextManufacturer" extra="true">
-      <pos>0.49 0.255</pos>
-      <text>Atari</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.04</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextName" extra="true">
-      <pos>0.49 0.30</pos>
-      <size>0.5 0</size>
-      <text>7800</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.065</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextDesc" extra="true">
-      <size>0.5 0</size>
-      <pos>0.49 0.4</pos>
-      <text>The Atari 7800 ProSystem, or simply the Atari 7800, is a home video game console officially released by Atari Corporation in 1986 as the successor to both the Atari 2600 and Atari 5200. It is able to run almost all Atari 2600 cartridges, making it the first console with built-in backward compatibility. It shipped with a different model of joystick from the 2600-standard CX40 and Pole Position II as the pack-in game. Most of the announced titles at launch were ports of 1980–83 arcade games.
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videocrton" extra="true">
+			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
+			<delay>0</delay>
+			<loops>0</loops>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.475 0.39</pos>
+			<maxSize>0.232</maxSize>
+			<zIndex>26</zIndex>
+		</video>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.475 0.39</pos>
+			<maxSize>0.232</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.195 0.39" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>1986</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Atari</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>7800</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.4</pos>
+			<text>The Atari 7800 ProSystem, or simply the Atari 7800, is a home video game console officially released by Atari Corporation in 1986 as the successor to both the Atari 2600 and Atari 5200. It is able to run almost all Atari 2600 cartridges, making it the first console with built-in backward compatibility. It shipped with a different model of joystick from the 2600-standard CX40 and Pole Position II as the pack-in game. Most of the announced titles at launch were ports of 1980–83 arcade games.
 
 Designed by General Computer Corporation, the 7800 has significantly improved graphics hardware over Atari's previous consoles, but the same Television Interface Adapter chip that launched with the 2600 in 1977 is used to generate audio. In an effort to prevent the flood of poor quality games that contributed to the video game crash of 1983, cartridges had to be digitally signed by Atari.
 
 The Atari 7800 was first announced on May 21, 1984, but a general release was shelved due to the sale of the company. Atari dropped support for the 7800, along with the 2600 and the Atari 8-bit family, on January 1, 1992.</text>
-      <text lang="pl">Atari 7800 – konsola gier wideo wyprodukowana przez amerykańskie przedsiębiorstwo Atari. Jej premiera odbyła się w 1986 roku. W 2004 roku wydano konsolę wzorowaną na Atari 7800 – Atari Flashback.
+			<text lang="pl">Atari 7800 – konsola gier wideo wyprodukowana przez amerykańskie przedsiębiorstwo Atari. Jej premiera odbyła się w 1986 roku. W 2004 roku wydano konsolę wzorowaną na Atari 7800 – Atari Flashback.
 
 Dane techniczne:
 - procesor: 8-bitowy 6502C z zegarem 1,79 MHz
@@ -103,29 +103,29 @@ Dane techniczne:
 - dźwięk: obsługiwany przez układ audio-wideo TIA, taki sam jak w Atari 2600
 - opcjonalnie układ dźwiękowy POKEY na kartridżu dla polepszenia dźwięku
 - 2 złącza dżojstików, złącze kartridżów, złącze rozszerzeń, zasilania, antenowe</text>
-      <text lang="fr">L'Atari 7800 est une console de jeux vidéo 8-bit de troisième génération, conçue et commercialisée par le constructeur américain Atari. Elle est sortie début 1986 aux États-Unis, puis dans le courant de l'année au Japon et seulement en 1991 en France.
+			<text lang="fr">L'Atari 7800 est une console de jeux vidéo 8-bit de troisième génération, conçue et commercialisée par le constructeur américain Atari. Elle est sortie début 1986 aux États-Unis, puis dans le courant de l'année au Japon et seulement en 1991 en France.
 
 Succédant à l'Atari 5200, l'Atari 7800 sort comme concurrente à la Nintendo Entertainment System (NES) et à la Sega Master System pendant l'ère des consoles de jeux vidéo de troisième génération. Toutefois, la console ne rivalisera jamais réellement avec ses concurrentes.</text>
-      <text lang="ru">Игровая приставка, выпущенная компанией Atari в июне 1986 года (пробный выпуск состоялся двумя годами раньше). Модель 7800 была разработана для замены неудачной Atari 5200 и с целью возвратить Atari превосходство на рынке игровых консолей, который она делила с Nintendo и Sega. В этой системе Atari устранила все недостатки Atari 5200: вместо аналоговых джойстиков она имела простые цифровые джойстики, была почти полностью совместима с Atari 2600 и она даже была дешевле — начальная цена составила 140 долларов.
+			<text lang="ru">Игровая приставка, выпущенная компанией Atari в июне 1986 года (пробный выпуск состоялся двумя годами раньше). Модель 7800 была разработана для замены неудачной Atari 5200 и с целью возвратить Atari превосходство на рынке игровых консолей, который она делила с Nintendo и Sega. В этой системе Atari устранила все недостатки Atari 5200: вместо аналоговых джойстиков она имела простые цифровые джойстики, была почти полностью совместима с Atari 2600 и она даже была дешевле — начальная цена составила 140 долларов.
 
 7800 стала первой игровой системой Atari, разработанной внешней компанией (General Computer Corporation; после этого вне компании были разработаны Atari Lynx и Atari Jaguar). Система была спроектирована так чтобы её можно было дополнить до полноценного домашнего компьютера — была разработана клавиатура, которая к тому же имела порт расширения (это был SIO-порт от 8-разрядного семейства Atari) для подключения периферии — такой как привод гибких дисков или принтер.
 
 В 2009 году IGN составил список лучших игровых консолей, поставив 7800 на 17-е место.</text>
-      <text lang="it">L'Atari 7800 ProSystem, o semplicemente Atari 7800, è una console per videogiochi domestica rilasciata ufficialmente da Atari Corporation nel 1986 come successore sia dell'Atari 2600 che dell'Atari 5200. È in grado di eseguire quasi tutte le cartucce dell'Atari 2600, il che la rende la prima console con retrocompatibilità integrata. Veniva fornita con un modello di joystick diverso dal CX40 standard del 2600 e con Pole Position II come gioco in dotazione. La maggior parte dei titoli annunciati al lancio erano porting di giochi arcade del 1980-83.
+			<text lang="it">L'Atari 7800 ProSystem, o semplicemente Atari 7800, è una console per videogiochi domestica rilasciata ufficialmente da Atari Corporation nel 1986 come successore sia dell'Atari 2600 che dell'Atari 5200. È in grado di eseguire quasi tutte le cartucce dell'Atari 2600, il che la rende la prima console con retrocompatibilità integrata. Veniva fornita con un modello di joystick diverso dal CX40 standard del 2600 e con Pole Position II come gioco in dotazione. La maggior parte dei titoli annunciati al lancio erano porting di giochi arcade del 1980-83.
 
 Progettata da General Computer Corporation, la 7800 presenta un hardware grafico notevolmente migliorato rispetto alle precedenti console Atari, ma per generare l'audio viene utilizzato lo stesso chip Television Interface Adapter lanciato con la 2600 nel 1977. Nel tentativo di prevenire l'ondata di giochi di scarsa qualità che contribuì al crollo dei videogiochi del 1983, le cartucce dovevano essere firmate digitalmente da Atari.
 
 L'Atari 7800 fu annunciato per la prima volta il 21 maggio 1984, ma il rilascio generale fu accantonato a causa della vendita dell'azienda. Atari abbandonò il supporto per il 7800, insieme al 2600 e alla famiglia Atari 8-bit, il 1° gennaio 1992.</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-  </view>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
 </theme>

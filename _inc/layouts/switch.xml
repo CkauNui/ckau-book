@@ -1,103 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-  <formatVersion>7</formatVersion>
-  <view name="system">
-    <image name="background1" extra="true">
-      <storyboard>
-        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <image name="background" extra="true">
-      <zIndex>90</zIndex>
-      <storyboard>
-        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <video name="videobox" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.5 0.42</pos>
-      <maxSize>0.42</maxSize>
-      <maxSize if="${screen.ratio} == '4/3'">0.54</maxSize>
-      <zIndex>27</zIndex>
-      <storyboard>
-        <animation property="pos" to="0.22 0.42" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <video name="videobox2" extra="true">
-      <path>./../../_inc/anim/video/switch2.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/switch2.mp4</path>
-      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-      <delay>0</delay>
-      <audio>false</audio>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <origin if="${screen.ratio} == '4/3'">0.07 0.5</origin>
-      <pos>0.685 0.681</pos>
-      <maxSize>0.11</maxSize>
-      <maxSize if="${screen.ratio} == '4/3'">0.145</maxSize>
-      <zIndex>28</zIndex>
-      <rotation>0</rotation>
-      <storyboard>
-        <animation property="pos" to="0.405 0.681" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <text name="TextDate" extra="true">
-      <pos>0.49 0.2</pos>
-      <text>2017</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextManufacturer" extra="true">
-      <pos>0.49 0.255</pos>
-      <text>Nintendo</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.04</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextName" extra="true">
-      <pos>0.49 0.30</pos>
-      <size>0.5 0</size>
-      <text>Switch</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.065</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextDesc" extra="true">
-      <size>0.5 0</size>
-      <pos>0.49 0.4</pos>
-      <text>The Nintendo Switch is a video game console, developed by Nintendo and released worldwide in most regions on March 3, 2017. It is a hybrid console that can be used as either a home console or a portable device. Its wireless Joy-Con controllers, with standard buttons and directional analog sticks for user input, motion sensing, and tactile feedback, can attach to both sides of the console to support handheld-style play. They can also connect to a grip accessory to provide a traditional home console gamepad form, or be used individually in the hand like the Wii Remote and Nunchuk, supporting local multiplayer modes.
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.42</pos>
+			<maxSize>0.42</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.54</maxSize>
+			<zIndex>27</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.42" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<video name="videobox2" extra="true">
+			<path>./../../_inc/anim/video/switch2.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/switch2.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<audio>false</audio>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.07 0.5</origin>
+			<pos>0.685 0.681</pos>
+			<maxSize>0.11</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.145</maxSize>
+			<zIndex>28</zIndex>
+			<rotation>0</rotation>
+			<storyboard>
+				<animation property="pos" to="0.405 0.681" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>2017</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Nintendo</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>Switch</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.4</pos>
+			<text>The Nintendo Switch is a video game console, developed by Nintendo and released worldwide in most regions on March 3, 2017. It is a hybrid console that can be used as either a home console or a portable device. Its wireless Joy-Con controllers, with standard buttons and directional analog sticks for user input, motion sensing, and tactile feedback, can attach to both sides of the console to support handheld-style play. They can also connect to a grip accessory to provide a traditional home console gamepad form, or be used individually in the hand like the Wii Remote and Nunchuk, supporting local multiplayer modes.
 
 The Nintendo Switch's software supports online gaming through Internet connectivity, as well as local wireless ad hoc connectivity with other consoles. Nintendo Switch games and software are available on both physical flash-based ROM cartridges and digital distribution via Nintendo eShop; the system has no region lockout. A handheld-focused revision of the system, called the Nintendo Switch Lite, was released on September 20, 2019.</text>
-      <text lang="pl">Nintendo Switch (początkowo Nintendo NX) – konsola gier wideo firmy Nintendo wydana 3 marca 2017 roku. Jest następcą wydanego w 2012 roku Wii U.
+			<text lang="pl">Nintendo Switch (początkowo Nintendo NX) – konsola gier wideo firmy Nintendo wydana 3 marca 2017 roku. Jest następcą wydanego w 2012 roku Wii U.
 
 Konsola została wyposażona w procesor główny i procesor graficzny oparte na technologii Tegra X1 firmy Nvidia. Składa się on z czterech rdzeni Cortex-A57 oraz czterech Cortex-A53. Wyświetla rozdzielczość 1080p w trybie telewizyjnym oraz 720p w trybie przenośnym. Pojemność pamięci wewnętrznej urządzenia to 32 GB. Obsługuje karty pamięci microSDHC i microSDXC o pojemności do 2 terabajtów.
 
@@ -105,22 +105,22 @@ Stacja dokująca ma port HDMI, USB 3.0, dwa porty USB 2.0 oraz gniazdo ładowani
 W zestawie z konsolą dołączone są także kontrolery Joy-Con: Joy-Con L i Joy-Con R. Oba kontrolery są wyposażone w akcelerometr, żyroskop, a także w wibracje haptyczne. Joy-Con R został dodatkowo wyposażony w NFC oraz sensor podczerwieni, który potrafi identyfikować obiekty i gesty.
 
 Według danych ze stycznia 2017 roku 80% egzemplarzy, które miało trafić do sklepów w Japonii, zostało wykupione w przedpremierowych zamówieniach. W Stanach Zjednoczonych po trzech dniach od uruchomienia możliwości zamówień wykupione zostały wszystkie egzemplarze konsoli. W Wielkiej Brytanii w pierwszy weekend po premierze sprzedano 80 000 egzemplarzy. Do końca marca 2017 roku sprzedaż konsoli Nintendo Switch wynosiła 2,74 miliona. W styczniu 2018 roku Nintendo podało, iż Nintendo Switch do 31 grudnia 2017 roku sprzedało się w liczbie 14,86 miliona egzemplarzy, tym samym przewyższyło całkowitą sprzedaż Wii U w niecały rok.</text>
-      <text lang="ru">Гибридная игровая консоль, разработанная японской компанией Nintendo. Nintendo Switch совмещает в себе свойства домашней игровой приставки и портативной игровой системы и может использоваться в обоих качествах. На этапе разработки Nintendo Switch носила кодовое название «Nintendo NX», была впервые продемонстрирована в октябре 2016 года и выпущена в продажу во всём мире 3 марта 2017 года.
+			<text lang="ru">Гибридная игровая консоль, разработанная японской компанией Nintendo. Nintendo Switch совмещает в себе свойства домашней игровой приставки и портативной игровой системы и может использоваться в обоих качествах. На этапе разработки Nintendo Switch носила кодовое название «Nintendo NX», была впервые продемонстрирована в октябре 2016 года и выпущена в продажу во всём мире 3 марта 2017 года.
 
 Nintendo Switch может работать как домашняя игровая приставка — в этом случае основное устройство приставки вставляется в специальную док-станцию, присоединённую к телевизору, и экран телевизора используется как средство вывода. Вне док-станции Nintendo Switch использует собственный сенсорный ЖК-экран — игрок может держать консоль в руках и взаимодействовать с ней как с планшетным компьютером либо разместить на столе перед несколькими участвующими в игре игроками, наподобие миниатюрного телевизора. Беспроводные контроллеры Joy-Con (джойконы), входящие в комплект с консолью, также можно использовать разными способами: прикрепить к обеим сторонам консоли для игры в портативном режиме, вставить их в аксессуар Grip, чтобы получить форму традиционного геймпада для домашней консоли, или использовать их отдельно от консоли как Wii Remote. Консоль не использует блокировку по региону.</text>
-      <text lang="it">Nintendo Switch è una console per videogiochi, sviluppata da Nintendo e rilasciata in tutto il mondo nella maggior parte delle regioni il 3 marzo 2017. È una console ibrida che può essere utilizzata sia come console domestica che come dispositivo portatile. I suoi controller Joy-Con wireless, con pulsanti standard e stick analogici direzionali per l'input dell'utente, il rilevamento del movimento e il feedback tattile, possono essere collegati a entrambi i lati della console per supportare il gioco in stile portatile. Possono anche essere collegati a un accessorio per l'impugnatura per ottenere una forma tradizionale di gamepad per console domestica, o essere usati singolarmente nella mano come il telecomando Wii e il Nunchuk, supportando le modalità multiplayer locali.
+			<text lang="it">Nintendo Switch è una console per videogiochi, sviluppata da Nintendo e rilasciata in tutto il mondo nella maggior parte delle regioni il 3 marzo 2017. È una console ibrida che può essere utilizzata sia come console domestica che come dispositivo portatile. I suoi controller Joy-Con wireless, con pulsanti standard e stick analogici direzionali per l'input dell'utente, il rilevamento del movimento e il feedback tattile, possono essere collegati a entrambi i lati della console per supportare il gioco in stile portatile. Possono anche essere collegati a un accessorio per l'impugnatura per ottenere una forma tradizionale di gamepad per console domestica, o essere usati singolarmente nella mano come il telecomando Wii e il Nunchuk, supportando le modalità multiplayer locali.
 
 Il software di Nintendo Switch supporta il gioco online attraverso la connettività Internet e la connettività locale wireless ad hoc con altre console. I giochi e i software di Nintendo Switch sono disponibili sia su cartucce ROM fisiche basate su flash che in distribuzione digitale tramite il Nintendo eShop; la console non ha il blocco regionale. Il 20 settembre 2019 è stata rilasciata una versione della console incentrata sulla modalità portatile, chiamata Nintendo Switch Lite.</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-  </view>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
 </theme>

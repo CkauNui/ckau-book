@@ -1,93 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-  <formatVersion>7</formatVersion>
-  <view name="system">
-    <image name="background1" extra="true">
-      <storyboard>
-        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <image name="background" extra="true">
-      <zIndex>90</zIndex>
-      <storyboard>
-        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <video name="videobox" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <origin if="${screen.ratio} == '4/3'">0.48 0.5</origin>
-      <pos>0.519 0.378</pos>
-      <maxSize>0.27</maxSize>
-      <zIndex>25</zIndex>
-      <storyboard>
-        <animation property="pos" to="0.239 0.378" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <text name="TextDate" extra="true">
-      <pos>0.49 0.2</pos>
-      <text>2003</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.03</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextName" extra="true">
-      <pos>0.49 0.25</pos>
-      <size>0.5 0</size>
-      <text>TyrQuake</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.065</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextDesc" extra="true">
-      <size>0.5 0</size>
-      <pos>0.49 0.35</pos>
-      <text>TyrQuake's goal is to port and maintain the Quake game on modern systems. It allows map designers to create larger and/or more detailed maps than the original game allowed while maintaining the original character of the game.
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.48 0.5</origin>
+			<pos>0.519 0.378</pos>
+			<maxSize>0.27</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.239 0.378" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>2003</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.03</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.25</pos>
+			<size>0.5 0</size>
+			<text>TyrQuake</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.35</pos>
+			<text>TyrQuake's goal is to port and maintain the Quake game on modern systems. It allows map designers to create larger and/or more detailed maps than the original game allowed while maintaining the original character of the game.
 
 Quake is a first-person shooter video game developed by id Software and published by GT Interactive in 1996. In the game, players must find their way through various medieval maze-like environments, fighting various monsters with different weapons. The overall atmosphere is dark and gritty, with lots of stone textures and rusty, large fonts.
 
 Quake, the successor to id Software's Doom series, was based on the technology and gameplay of its predecessor.</text>
-      <text lang="pl">Celem TyrQuake'a jest przeniesienie i utrzymanie gry Quake na nowoczesnych systemach. Umożliwia projektantom map tworzenie większych i/lub bardziej szczegółowych map, niż pozwalała na to oryginalna gra zachowując oryginalny charakter gry.
+			<text lang="pl">Celem TyrQuake'a jest przeniesienie i utrzymanie gry Quake na nowoczesnych systemach. Umożliwia projektantom map tworzenie większych i/lub bardziej szczegółowych map, niż pozwalała na to oryginalna gra zachowując oryginalny charakter gry.
 
 Quake to gra wideo z gatunku first-person shooter, opracowana przez id Software i wydana przez GT Interactive w 1996 roku. W grze gracze muszą odnaleźć drogę przez różne średniowieczne środowiska przypominające labirynty, walcząc z różnymi potworami przy użyciu różnych rodzajów broni. Ogólna atmosfera jest mroczna i ziarnista, z dużą ilością tekstur kamienia i rdzawą, wielką czcionką.
 
 Quake, następca serii Doom firmy id Software, opierał się na technologii i rozgrywce swojego poprzednika.</text>
-      <text lang="ru">Цель TyrQuake — портировать и поддерживать игру Quake на современных системах. Это позволяет разработчикам карт создавать более крупные и / или более подробные карты, чем позволяла исходная игра, сохраняя при этом исходный характер игры.</text>
-      <text lang="it">L'obiettivo di TyrQuake è quello di portare e mantenere il gioco Quake sui sistemi moderni. Consente ai progettisti di mappe di creare mappe più grandi e/o più dettagliate rispetto a quelle consentite dal gioco originale, pur mantenendo il carattere originale del gioco.
+			<text lang="ru">Цель TyrQuake — портировать и поддерживать игру Quake на современных системах. Это позволяет разработчикам карт создавать более крупные и / или более подробные карты, чем позволяла исходная игра, сохраняя при этом исходный характер игры.</text>
+			<text lang="it">L'obiettivo di TyrQuake è quello di portare e mantenere il gioco Quake sui sistemi moderni. Consente ai progettisti di mappe di creare mappe più grandi e/o più dettagliate rispetto a quelle consentite dal gioco originale, pur mantenendo il carattere originale del gioco.
 
 Quake è un videogioco sparatutto in prima persona sviluppato da id Software e pubblicato da GT Interactive nel 1996. Nel gioco, i giocatori devono farsi strada attraverso vari ambienti medievali simili a labirinti, combattendo vari mostri con armi diverse. L'atmosfera generale è cupa e grintosa, con molte texture di pietra e caratteri grandi e arrugginiti.
 
 Quake, il successore della serie Doom di id Software, si basa sulla tecnologia e sul gameplay del suo predecessore.</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-  </view>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
 </theme>
