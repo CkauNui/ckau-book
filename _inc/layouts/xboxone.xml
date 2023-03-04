@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.428</pos>
+			<maxSize>0.44</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.59</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.428" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>2013</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Microsoft</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>Xbox One</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.4</pos>
+			<text>The Xbox One is a home video game console developed by Microsoft. Announced in May 2013, it is the successor to Xbox 360 and the third console in the Xbox series.
+Microsoft marketed the device as an "all-in-one entertainment system", hence the name "Xbox One". An eighth-generation console, it mainly competed against Sony's PlayStation 4 and Nintendo's Wii U and later the Switch.
+
+Moving away from its predecessor's PowerPC-based architecture, the Xbox One marks a shift back to the x86 architecture used in the original Xbox; it features an AMD Accelerated Processing Unit (APU) built around the x86-64 instruction set. Xbox One's controller was redesigned over the Xbox 360's, with a redesigned body, D-pad, and triggers capable of delivering directional haptic feedback.
+
+The Xbox One received positive reviews for its refined controller design, multimedia features, and voice navigation. Its quieter and cooler design was praised for making the console more reliable than its predecessor at launch, but the console was generally criticized for running games at a technically lower graphical level than the PlayStation 4.</text>
+			<text lang="pl">Xbox One to domowa konsola do gier wideo opracowana przez firmę Microsoft. Ogłoszony w maju 2013 roku, jest następcą Xbox 360 i trzecią konsolą z serii Xbox.
+Microsoft sprzedawał urządzenie jako "system rozrywki all-in-one", stąd nazwa "Xbox One". Konsola ósmej generacji, konkurowała głównie z PlayStation 4 firmy Sony oraz Wii U firmy Nintendo, a później Switch.
+
+Odchodząc od architektury PowerPC swojego poprzednika, Xbox One oznacza powrót do architektury x86 stosowanej w oryginalnym Xboxie; posiada jednostkę APU (Accelerated Processing Unit) firmy AMD zbudowaną na bazie zestawu instrukcji x86-64. Kontroler konsoli Xbox One został przeprojektowany w stosunku do kontrolera konsoli Xbox 360, z przeprojektowanym korpusem, D-padem i spustami zdolnymi do przekazywania kierunkowych haptycznych informacji zwrotnych.
+
+Xbox One otrzymał pozytywne recenzje za dopracowany projekt kontrolera, funkcje multimedialne i nawigację głosową. Chwalono cichszą i chłodniejszą konstrukcję, dzięki której konsola była bardziej niezawodna niż jej poprzedniczka w momencie premiery, ale ogólnie krytykowano ją za uruchamianie gier na technicznie niższym poziomie graficznym niż w przypadku PlayStation 4.</text>
+			<text lang="fr"></text>
+			<text lang="ru">Xbox One - это домашняя игровая консоль, разработанная компанией Microsoft. Анонсированная в мае 2013 года, она является преемницей Xbox 360 и третьей консолью в серии Xbox.
+Microsoft рекламирует устройство как "универсальную развлекательную систему", отсюда и название "Xbox One". Консоль восьмого поколения, она в основном конкурировала с PlayStation 4 от Sony и Wii U от Nintendo, а позже Switch.
+
+Отказавшись от архитектуры PowerPC, использовавшейся в предшественнике, Xbox One знаменует собой возврат к архитектуре x86, использовавшейся в оригинальной Xbox; она оснащена ускоренным процессором AMD (APU), построенным на базе набора инструкций x86-64. Контроллер Xbox One был переработан по сравнению с Xbox 360, с обновленным корпусом, D-pad и триггерами, способными обеспечивать направленную тактильную обратную связь.
+
+Xbox One получил положительные отзывы за усовершенствованный дизайн контроллера, мультимедийные функции и голосовую навигацию. Его более тихий и прохладный дизайн был высоко оценен за то, что консоль стала более надежной, чем ее предшественница на старте продаж, но консоль в целом критиковали за то, что она запускает игры на технически более низком графическом уровне, чем PlayStation 4.</text>
+			<text lang="it">La Xbox One è una console per videogiochi domestica sviluppata da Microsoft. Annunciata nel maggio 2013, è il successore di Xbox 360 e la terza console della serie Xbox.
+Microsoft ha commercializzato il dispositivo come un "sistema di intrattenimento all-in-one", da cui il nome "Xbox One". È una console di ottava generazione, che compete principalmente con la PlayStation 4 di Sony e la Wii U di Nintendo e successivamente con la Switch.
+
+Abbandonando l'architettura basata su PowerPC del suo predecessore, la Xbox One segna un ritorno all'architettura x86 utilizzata nella Xbox originale; è dotata di un'unità di elaborazione accelerata (APU) di AMD costruita attorno al set di istruzioni x86-64. Il controller della Xbox One è stato riprogettato rispetto a quello della Xbox 360, con un corpo ridisegnato, un D-pad e grilletti in grado di fornire un feedback aptico direzionale.
+
+La Xbox One ha ricevuto recensioni positive per il design raffinato del controller, le funzioni multimediali e la navigazione vocale. Il design più silenzioso e fresco è stato elogiato per aver reso la console più affidabile rispetto al suo predecessore al momento del lancio, ma la console è stata generalmente criticata per l'esecuzione di giochi a un livello grafico tecnicamente inferiore rispetto a quello della PlayStation 4.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>
