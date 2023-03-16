@@ -25,21 +25,6 @@ originally based on:	art from "Colorful" by viking
 	<include subset="colorset" name="Violet" displayName="${violet}">./_inc/colors/violet.xml</include>
 	<include subset="colorset" name="Yellow" displayName="${yellow}">./_inc/colors/yellow.xml</include>
 
-<!-- Кнопки -
-	<view name="menu, system, basic, detailed, grid, gamecarousel">
-		<helpsystem name="help">
-			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<fontSize>0.025</fontSize>
-			<pos>0.012 0.9625</pos>
-			<iconA>./_inc/images/a.svg</iconA>
-			<iconB>./_inc/images/b.svg</iconB>
-			<iconX>./_inc/images/x.svg</iconX>
-			<iconY>./_inc/images/y.svg</iconY>
-			<textColor>666666FF</textColor>
-			<iconColor>666666FF</iconColor>
-		</helpsystem>
-	</view>-->
-
 <!-- Меню / Menu -->
 	<view name="menu">
 		<menuText name="menutitle">
@@ -54,8 +39,9 @@ originally based on:	art from "Colorful" by viking
 		</menuText>
 		<menuText name="menutext" extra="true" tinyScreen="false">
 			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<fontSize>0.03</fontSize>
+			<fontSize>0.028</fontSize>
 			<color>969696</color>
+			<!-- <separatorColor>202020</separatorColor> -->
 			<separatorColor>363636FF</separatorColor>
 			<selectorColor>${baseColor}</selectorColor>
 			<selectorColorEnd>${gradientEndColor}</selectorColorEnd>
@@ -65,11 +51,24 @@ originally based on:	art from "Colorful" by viking
 		<menuTextSmall name="menutextsmall" extra="true" tinyScreen="false">
 			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 			<fontSize>0.02</fontSize>
-			<color>deec00</color>
+			<color>${groupColor}</color>
 		</menuTextSmall>
+		<menuGroup name="menugroup">
+			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontSize>0.02</fontSize>
+			<color>${groupColor}</color>
+			<backgroundColor>00000000</backgroundColor>
+			<!-- <separatorColor>${groupSeparatorColor}</separatorColor> -->
+			<lineSpacing>2.3</lineSpacing>
+		</menuGroup>
 		<menuBackground name="menubg">
-			<color>202020</color>
+			<color>242424</color>
 			<path>./_inc/images/frame.png</path>
+			<cornerSize>18 18</cornerSize>
+			<scrollbarColor>96969620</scrollbarColor>
+			<scrollbarCorner>0.49</scrollbarCorner>
+			<scrollbarSize>0.003</scrollbarSize>
+			<scrollbarAlignment>innerright</scrollbarAlignment>
 		</menuBackground>
 		<menuIcons name="menuicons">
 			<iconKodi>./_inc/icons/Kodi.png</iconKodi>
@@ -93,6 +92,11 @@ originally based on:	art from "Colorful" by viking
 			<inactive>./_inc/images/textinput_ninepatch.png</inactive>
 			<active>./_inc/images/textinput_ninepatch_active.png</active>
 		</menuTextEdit>
+		<menuButton name="menubutton">
+			<path>./_inc/images/button.png</path>
+			<filledPath>./_inc/images/button_filled.png</filledPath>
+			<cornerSize>8 8</cornerSize>
+		</menuButton>
 	</view>
 
 <!-- Clock, gamepad icons, battery indicator -->
