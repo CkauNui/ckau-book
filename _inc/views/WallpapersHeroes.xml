@@ -28,7 +28,7 @@
 			<alignment>left</alignment>
 			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
 			<color>FFFFFF1F</color>
-			<fontSize>0.02</fontSize>
+			<fontSize>0.025</fontSize>
 			<lineSpacing>1.1</lineSpacing>
 			<zIndex>140</zIndex>
 		</text>
@@ -61,6 +61,19 @@
 			<pos>0.13 0.925</pos>
 			<maxSize>0.23 0.63</maxSize>
 			<zIndex>70</zIndex>
+			<storyboard event="open">
+				<animation property="offsetX" from="-0.2" to="0" duration="500" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="offsetX" from="-0.2" to="0" begin="" duration="500" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" from="0" to="0" duration="" mode="Linear"/>
+			</storyboard>
+		<!-- Disable animations for specific systems -->
+			<storyboard event="open" if="{system.theme} == 'nds'"></storyboard>
+			<storyboard event="activate" if="{system.theme} == 'nds'"></storyboard>
+			<storyboard event="deactivate" if="{system.theme} == 'nds'"></storyboard>
 		</image>
 		<image name="md-description-border" extra="true">
 			<visible>false</visible>
