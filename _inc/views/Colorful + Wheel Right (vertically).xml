@@ -101,14 +101,6 @@
 		</image>
 		
 		<text name="md_name" extra="true">
-			<pos>0.65 0.25</pos>
-			<size>0.35 0.2</size>
-			<alignment>left</alignment>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.06</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
 			<visible>false</visible>
 		</text>
 		<text name="md_description" extra="true">
@@ -140,32 +132,8 @@
 			<zIndex>80</zIndex>
 		</video>
 		<image name="logo" extra="true">
-			<linearSmooth>true</linearSmooth>
-			<zIndex>175</zIndex>
 			<visible>false</visible>
-			<path>./../../_inc/logos/${system.theme}.png</path>
-			<path>./../../_inc/logos/${system.theme}-${lang}.png</path>
-			<pos>0.13 0.08</pos>
-			<maxSize>0.200 0.126</maxSize>
-			<storyboard repeatAt="200">
-				<animation property="y" from="-0.2" begin="0" duration="200" mode="linear"/>
-				<animation property="scale" from="1" to="1.05" begin="300" duration="1000" mode="linear"/>
-				<animation property="scale" from="1.05" to="1" begin="1300" duration="1000" mode="linear"/>
-			</storyboard>
 		</image>
-	<!--<image name="md_marquee" extra="true">
-			<linearSmooth>true</linearSmooth>
-			<visible>true</visible>
-			<zIndex>175</zIndex>
-			<pos>0.13 0.08</pos>
-			<maxSize>0.200 0.126</maxSize>
-			<storyboard repeatAt="200">
-				<animation property="y" from="-0.2" begin="0" duration="200" mode="linear"/>
-				<animation property="scale" from="1" to="1.05" begin="300" duration="1000" mode="easeOut"/>
-				<animation property="scale" from="1.05" to="1" begin="1300" duration="1000" mode="easeOut"/>
-			</storyboard>
-		</image>-->
-		
 
 		<text name="md_genre,md_developer,md_publisher,md_playcount,md_gametime, md_releasedate, md_lastplayed">
 			<color>666666</color>
@@ -191,7 +159,7 @@
 			<zIndex>150</zIndex>
 		</rating>
 		<text name="md_players">
-			<pos>0.66 0.075</pos>
+			<pos>0.66 0.072</pos>
 			<size>0.03 0.03</size>
 			<origin>0.5 0.5</origin>
 			<fontPath>./../../_inc/fonts/players.ttf</fontPath>
@@ -222,6 +190,14 @@
 			<color>666666</color>
 			<zIndex>150</zIndex>
 		</image>
+		<image name="fake_cheevos" extra="true">
+			<origin>0.5 0.5</origin>
+			<path>./../../_inc/icons/Contest.png</path>
+			<pos>0.7040 0.075</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<color>80808040</color>
+			<zIndex>140</zIndex>
+		</image>
 		<image name="md_notcheevos">
 			<color>80808040</color>
 		</image> 
@@ -229,7 +205,7 @@
 			<origin>0.5 0.5</origin>
 			<path>./../../_inc/icons/SaveState.png</path>
 			<pos>0.7260 0.075</pos>
-			<x ifCheevos="false">0.7040</x>
+			<x ifCheevos="false">0.7260</x>
 			<maxSize>0.02 0.03</maxSize>
 			<color>666666</color>
 			<zIndex>150</zIndex>

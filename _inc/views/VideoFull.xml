@@ -39,12 +39,13 @@
 			<path>./../../_inc/images/overlay.png</path>
 			<zIndex>110</zIndex>
 		</image>
-		<image name="md_image">
+		<image name="md_fanart">
 			<tile>true</tile>
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
 			<minSize>1 1</minSize>
 			<color>FFFFFFDF</color>
+			<imageSource>fanart</imageSource>
 		</image>
 		<image name="md_thumbnail">
 			<tile>true</tile>
@@ -52,15 +53,15 @@
 			<pos>0.13 0.785</pos>
 			<maxSize>0.23 1</maxSize>
 			<zIndex>170</zIndex>
-			<storyboard event="activate">
-				<animation property="x" to="-0.5" begin="1200" duration="300" mode="EaseIn"/>
-				<animation property="opacity" from="0" to="1" duration="150" mode="Linear"/>
-				<animation property="opacity" from="1" to="1" begin="1150" duration="35" mode="Linear"/>
+			<storyboard event="open">
+				<animation property="offsetX" from="-0.2" to="0" duration="500" mode="EaseOutQuint"/>
 			</storyboard>
-			<storyboard event="scroll">
-				<animation property="x" to="-0.5" begin="1200" duration="300" mode="EaseIn"/>
-				<animation property="opacity" from="0" to="1" duration="150" mode="Linear"/>
-				<animation property="opacity" from="1" to="1" begin="1150" duration="35" mode="Linear"/>
+			<storyboard event="activate">
+				<animation property="offsetX" from="-0.2" to="0" begin="" duration="500" mode="EaseOutQuint"/>
+				<animation property="offsetX" from="0" to="-1.2" begin="3200" duration="1200" mode="EaseInQuint"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" from="0" to="0" duration="" mode="Linear"/>
 			</storyboard>
 		</image>
 		<image name="md-description-border" extra="true">
@@ -105,7 +106,7 @@
 			<fontSize>0.03</fontSize>
 		</text>
 		<video name="md_video">
-			<pos>0.5 0.5</pos>
+			<pos>0.5 0.499</pos>
 			<maxSize>1 1</maxSize>
 			<origin>0.5 0.5</origin>
 			<delay>0.3</delay>
@@ -175,9 +176,13 @@
 			<pos>0.1585 0.935</pos>
 			<zIndex>150</zIndex>
 		</image>
+		<image name="fake_cheevos" extra="true">
+			<pos>0.1585 0.935</pos>
+			<zIndex>140</zIndex>
+		</image>
 		<image name="md_savestate,md_nosavestate">
 			<pos>0.18 0.935</pos>
-			<x ifCheevos="false">0.1585</x>
+			<x ifCheevos="false">0.18</x>
 			<zIndex>150</zIndex>
 		</image>
 
