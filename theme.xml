@@ -13,7 +13,11 @@ originally based on:	art from "Colorful" by viking
 	<formatVersion>7</formatVersion>
 
 <!-- Translations -->
-	<include>./translations.xml</include>
+	<include>./_inc/elements/translations.xml</include>
+
+<!-- Systems colors and synonyms for Colorful -->
+	<include>./_inc/elements/syscolors.xml</include>
+	<include>./_inc/elements/synonyms.xml</include>
 
 <!-- Цвета / Colorsets -->
 	<include subset="colorset" name="Blue" displayName="${blue}">./_inc/colors/blue.xml</include>
@@ -395,4 +399,5 @@ originally based on:	art from "Colorful" by viking
   	<include if="${screen.ratio} == '4/3'" tinyScreen="false">./_inc/views/4 3.xml</include>
 <!-- Support TinyScreen (320x240) -->
 	<include tinyScreen="true" name="TinyScreen">./_inc/systemviews/tinyscreen.xml</include>
+
 </theme>

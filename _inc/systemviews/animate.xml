@@ -1,19 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
-			<include>./../../_inc/layouts/${system.theme}.xml</include>
-			<include tinyScreen="true" name="TinyScreen">./../../_inc/systemviews/tinyscreenAnim.xml</include>
-
+	<!-- Loads system desc & animations, attemps to load synonym if not available -->
+	<include>./../../_inc/layouts/${system.theme}.xml</include>
+	<include>./../../_inc/layouts/${synonym}.xml</include>
+	<include tinyScreen="true" name="TinyScreen">./../../_inc/systemviews/tinyscreenAnim.xml</include>
 	<view name="system">
+		<!-- Dynamically colored system background -->
+		<image name="sysbackground" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<minSize>1 1.1</minSize>
+			<color>${sysColor}</color>
+			<path>./../../_inc/images/space.png</path>
+		</image>	
+		<!-- System artwork -->
 		<image name="background1" extra="true">
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
 			<minSize>1 1</minSize>
-			<path>./../../_inc/anim/${system.theme}.jpg</path>
+			<!-- Loads system theme image, attemps to load synonym if not available -->
 			<path>./../../_inc/anim/${system.theme}.png</path>
+			<path>./../../_inc/anim/${synonym}.png</path>			
 			<!-- Loads 4K image, if addon is available -->
-			<path>./../../../ckau-book-addons/_inc/anim/4K/${system.theme}.jpg</path>
 			<path>./../../../ckau-book-addons/_inc/anim/4K/${system.theme}.png</path>
+			<path>./../../../ckau-book-addons/_inc/anim/4K/${synonym}.png</path>
 			<!-- If it's a collection, checks if the image addon is available -->
 			<path>./../../../ckau-book-addons/_inc/art2/collections/${system.theme}.jpg</path>
 			<zIndex>30</zIndex>
@@ -21,16 +32,16 @@
 		<!-- Support different images for regional consoles/computers -->
 		<image name="background1" extra="true" region="eu"></image>
 		<image name="background1" extra="true" region="us">
-			<path>./../../_inc/anim/us/${system.theme}.jpg</path>
 			<path>./../../_inc/anim/us/${system.theme}.png</path>
-			<path>./../../../ckau-book-addons/_inc/anim/4K/us/${system.theme}.jpg</path>
+			<path>./../../_inc/anim/${synonym}.png</path>
 			<path>./../../../ckau-book-addons/_inc/anim/4K/us/${system.theme}.png</path>
+			<path>./../../../ckau-book-addons/_inc/anim/4K/${synonym}.png</path>
 		</image>
 		<image name="background1" extra="true" region="jp">
-			<path>./../../_inc/anim/jp/${system.theme}.jpg</path>
 			<path>./../../_inc/anim/jp/${system.theme}.png</path>
-			<path>./../../../ckau-book-addons/_inc/anim/4K/jp/${system.theme}.jpg</path>
+			<path>./../../_inc/anim/${synonym}.png</path>
 			<path>./../../../ckau-book-addons/_inc/anim/4K/jp/${system.theme}.png</path>
+			<path>./../../../ckau-book-addons/_inc/anim/4K/${synonym}.png</path>
 		</image>
 		<!-- If it's a collection, checks if the the video addon is available -->
 		<video name="md_video" extra="static">
@@ -42,6 +53,7 @@
 			<maxSize>1 1</maxSize>
 			<zIndex>74</zIndex>
 		</video>
+		<!-- Descriptions background -->
 		<image name="background" extra="true">
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
