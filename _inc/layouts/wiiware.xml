@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.495</pos>
+			<maxSize>0.25</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.37</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.495" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>2008</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Nintendo</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>WiiWare</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.4</pos>
+			<text>WiiWare was a service that allowed Wii users to download games and applications specifically designed and developed for the Wii video game console made by Nintendo. These games and applications could only be purchased and downloaded from the Wii Shop Channel under the WiiWare section. Once the user had downloaded the game or application, it would appear in their Wii Menu or SD Card Menu as a new channel.
+
+WiiWare was a companion to the Virtual Console, which specializes in emulated games originally developed for other systems instead of original games.</text>
+			<text lang="pl">WiiWare było usługą, która pozwalała użytkownikom Wii na pobieranie gier i aplikacji zaprojektowanych i stworzonych specjalnie dla konsoli gier wideo Wii wyprodukowanej przez Nintendo. Te gry i aplikacje mogły być kupowane i pobierane tylko z kanału Wii Shop w sekcji WiiWare. Po pobraniu przez użytkownika gry lub aplikacji, pojawiała się ona w jego Wii Menu lub SD Card Menu jako nowy kanał.
+
+WiiWare było towarzyszem Virtual Console, która specjalizuje się w emulowanych grach stworzonych pierwotnie dla innych systemów zamiast oryginalnych gier.</text>
+			<text lang="ru">WiiWare - это сервис, позволяющий пользователям Wii загружать игры и приложения, специально разработанные и созданные для игровой консоли Wii компании Nintendo. Эти игры и приложения можно было приобрести и загрузить только с канала Wii Shop в разделе WiiWare. После того как пользователь загружал игру или приложение, оно появлялось в меню Wii или меню SD-карты как новый канал.
+
+WiiWare был дополнением к Virtual Console, которая специализировалась на эмулированных играх, изначально разработанных для других систем, вместо оригинальных игр.</text>
+			<text lang="it">WiiWare è stato un servizio che consentiva agli utenti della console Wii di scaricare giochi e applicazioni appositamente progettati e sviluppati per la console per videogiochi Wii di Nintendo. Questi giochi e applicazioni potevano essere acquistati e scaricati solo dal Canale Wii Shop nella sezione WiiWare. Una volta che l'utente aveva scaricato il gioco o l'applicazione, questo appariva nel proprio menu Wii o nel menu della scheda SD come nuovo canale.
+
+WiiWare era un complemento della Virtual Console, specializzata in giochi emulati originariamente sviluppati per altre console, piuttosto che in giochi originali.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>
