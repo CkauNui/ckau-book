@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.50 0.38</pos>
+			<maxSize>0.13</maxSize>
+			<zIndex>25</zIndex>
+			<rotation/>
+			<storyboard>
+				<animation property="pos" to="0.22 0.38" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>1982</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Commodore</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>CBM-II</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.4</pos>
+			<text>The Commodore CBM-II series is a short-lived range of 8-bit personal computers from Commodore Business Machines (CBM), released in 1982 and intended as a follow-on to the Commodore PET series.
+The CBM-II has two incarnations, the P series (P = personal, or, home use) and the B series (B = business use). The B series was available with a built-in monochrome monitor (hi-profile) with detached keyboard, and also as a single unit with built-in keyboard but no monitor (lo-profile).
+
+The CBM-II line sold poorly and ended up being extremely expensive to manufacture, as well as difficult to develop software for. Commodore did not release any sales figures or an official discontinuation date, however the B128/600 is the most common model in the lineup. Production ended at some point during 1984 and Commodore liquidated their remaining inventory in 1985.</text>
+			<text lang="pl">Seria Commodore CBM-II to krótko żyjąca seria 8-bitowych komputerów osobistych firmy Commodore Business Machines (CBM), wydana w 1982 roku i będąca następcą serii Commodore PET.
+CBM-II ma dwa wcielenia, seria P (P = osobisty, lub, domowy) i seria B (B = biznesowy). Seria B była dostępna z wbudowanym monitorem monochromatycznym (hi-profile) z odłączaną klawiaturą, a także jako pojedyncze urządzenie z wbudowaną klawiaturą, ale bez monitora (lo-profile).
+
+Linia CBM-II sprzedawała się słabo i okazała się niezwykle droga w produkcji, a także trudna w tworzeniu oprogramowania. Commodore nie podało żadnych danych dotyczących sprzedaży ani oficjalnej daty zakończenia produkcji, jednak B128/600 to najczęściej spotykany model w linii. Produkcja zakończyła się w pewnym momencie w 1984 roku, a Commodore upłynniło swoje pozostałe zapasy w 1985 roku.</text>
+			<text lang="ru">Серия Commodore CBM-II - это недолговечная серия 8-битных персональных компьютеров компании Commodore Business Machines (CBM), выпущенная в 1982 году и задуманная как продолжение серии Commodore PET.
+У CBM-II было два воплощения: серия P (P = персональное, или домашнее использование) и серия B (B = деловое использование). Серия B выпускалась со встроенным монохромным монитором (hi-profile) с отделенной клавиатурой, а также в виде отдельного устройства со встроенной клавиатурой, но без монитора (lo-profile).
+
+Линейка CBM-II продавалась плохо и оказалась чрезвычайно дорогой в производстве, а также сложной для разработки программного обеспечения. Компания Commodore не опубликовала никаких данных о продажах или официальной даты прекращения производства, однако модель B128/600 стала самой распространенной в линейке. Производство закончилось в какой-то момент в 1984 году, а в 1985 году Commodore ликвидировал оставшиеся запасы.</text>
+			<text lang="it">La serie Commodore CBM-II è una serie di personal computer a 8 bit di Commodore Business Machines (CBM), rilasciata nel 1982 e destinata a seguire la serie Commodore PET.
+Il CBM-II ebbe due incarnazioni, la serie P (P = personal, o uso domestico) e la serie B (B = uso aziendale). La serie B era disponibile con un monitor monocromatico incorporato (hi-profile) con tastiera staccata, e anche come unità singola con tastiera incorporata ma senza monitor (lo-profile).
+
+La linea CBM-II ebbe scarse vendite e finì per essere estremamente costosa da produrre, oltre che difficile da sviluppare software. Commodore non ha rilasciato dati di vendita o una data ufficiale di cessazione della produzione, tuttavia il B128/600 è il modello più comune della linea. La produzione terminò a un certo punto nel 1984 e Commodore liquidò le rimanenti scorte nel 1985.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>
