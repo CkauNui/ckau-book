@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videocrton" extra="true">
+			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
+			<delay>0</delay>
+			<loops>0</loops>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.482 0.395</pos>
+			<maxSize>0.22</maxSize>
+			<zIndex>26</zIndex>
+		</video>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.482 0.395</pos>
+			<maxSize>0.22</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.202 0.395" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>1983</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Tsukuda Original</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>Othello Multivision</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.4</pos>
+			<text>The Othello Multivision FG-1000 developed by Tsukuda Original was one of the more well-known SC-3000 clones.
+The console was made of a keyboard with a cartridge slot and a tiny joystick grafted on to the right side of the keyboard.
+The Multivision could play any SG-1000 or SC-3000 game, but it also came bundled with Othello (hence the name) and had a handful of exclusive games packaged under the Multivision branding.
+
+A second model of the Multivision, the FG-2000, was released in 1984 with a built-in directional pad instead of a joystick and a port that allowed a second actual controller, but by then, the Multivision’s fate on the marketplace had been sealed. Both versions sold poorly, and as a result, are incredibly rare.</text>
+			<text lang="pl">Othello Multivision FG-1000 opracowana przez Tsukuda Original była jednym z bardziej znanych klonów SC-3000.
+Konsola składała się z klawiatury ze slotem na kartridże oraz malutkiego joysticka przeszczepionego po prawej stronie klawiatury.
+Multivision mógł grać w każdą grę SG-1000 lub SC-3000, ale był również dołączony do Othello (stąd nazwa) i miał garść ekskluzywnych gier pakowanych pod marką Multivision.
+
+Drugi model Multivision, FG-2000, został wydany w 1984 roku z wbudowanym padem kierunkowym zamiast joysticka i portem umożliwiającym podłączenie drugiego rzeczywistego kontrolera, ale do tego czasu los Multivision na rynku był już przesądzony. Obie wersje sprzedawały się słabo, a w rezultacie są niezwykle rzadkie.</text>
+			<text lang="fr"></text>
+			<text lang="ru">Консоль Othello Multivision FG-1000, разработанная компанией Tsukuda Original, была одним из наиболее известных клонов SC-3000.
+Консоль состояла из клавиатуры со слотом для картриджей и крошечного джойстика, прикрепленного к правой стороне клавиатуры.
+На Multivision можно было играть в любую игру SG-1000 или SC-3000, но она также поставлялась в комплекте с Othello (отсюда и название) и имела несколько эксклюзивных игр, упакованных под брендом Multivision.
+
+Вторая модель Multivision, FG-2000, была выпущена в 1984 году со встроенным курсором вместо джойстика и портом, позволяющим подключить второй контроллер, но к тому времени судьба Multivision на рынке была предрешена. Обе версии продавались плохо, и в результате они стали невероятно редкими.</text>
+			<text lang="it">L'Othello Multivision FG-1000, sviluppato da Tsukuda Original, è stato uno dei cloni più noti dell'SC-3000.
+La console era costituita da una tastiera con uno slot per cartucce e un piccolo joystick innestato sul lato destro della tastiera.
+Il Multivision poteva far girare a qualsiasi gioco SG-1000 o SC-3000, ma fu anche fornito in bundle con Othello (da cui il nome) e aveva una manciata di giochi esclusivi confezionati con il marchio Multivision.
+
+Un secondo modello del Multivision, l'FG-2000, fu rilasciato nel 1984 con un pad direzionale incorporato al posto del joystick e una porta che consentiva di utilizzare un secondo controller vero e proprio, ma a quel punto il destino del Multivision sul mercato era ormai segnato. Entrambe le versioni ebbero scarso successo e, di conseguenza, sono incredibilmente rare.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>
