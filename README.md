@@ -5,7 +5,7 @@
 <img align="right" width="200px" src="https://i.imgur.com/eCZPBDE.png">
 Emulationstation Theme for Batocera, RetroBat, EmuELEC.<br/>
 250+ supported systems.<br/>
-Supported languages: Russian, English, Polish, Italian, Deutsch, French.
+Supported languages: English, French, German, Spanish, Italian, Polish, Russian.
 <br/>
 <br/>
 </p>
