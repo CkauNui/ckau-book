@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+	<formatVersion>7</formatVersion>
+
+	<customView name="WallpapersHeroes">
+		<image name="md_thumbnail">
+			<tile>true</tile>
+			<origin>0.5 1</origin>
+			<pos>0.448 0.925</pos>
+			<maxSize>0.33 0.38</maxSize>
+			<zIndex>70</zIndex>
+		</image>
+		<video name="md_video">
+			
+			<pos>0.14 0.925</pos>
+			<!-- <size>0.35</size> -->
+			<size>0.25 0.56</size>
+			<origin>0.5 1</origin>
+			<delay>0.3</delay>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>true</showSnapshotDelay>
+			<snapshotSource>image</snapshotSource>
+			<effect>none</effect>
+			<zIndex>100</zIndex>
+			<scaleOrigin>1</scaleOrigin>
+		</video>
+		<image name="md_fanart">
+			<storyboard event="open">
+				<animation property="offsetY" from="-0.05" to="0" duration="500" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="offsetY" from="-0.05" to="0" begin="" duration="500" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" from="0" to="0" duration="" mode="Linear"/>
+			</storyboard>
+		</image>
+	</customView>
+</theme>
