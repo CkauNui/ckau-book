@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<path>./../../_inc/anim/megadrive.png</path>
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videocrton" extra="true">
+			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
+			<delay>0</delay>
+			<loops>0</loops>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.39</pos>
+			<maxSize>0.242</maxSize>
+			<zIndex>26</zIndex>
+		</video>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/megadrive.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/megadrive.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.39</pos>
+			<maxSize>0.244</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>1988</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Sega</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>Genesis</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.4</pos>
+			<text>The Sega Genesis, known as the Mega Drive outside North America, is a 16-bit fourth-generation home video game console developed and sold by Sega. The Genesis is Sega's third console and the successor to the Master System. Sega released it as the Mega Drive in Japan in 1988, and later as the Genesis in North America in 1989. In 1990, it was distributed as the Mega Drive by Virgin Mastertronic in Europe, Ozisoft in Australasia, and Tec Toy in Brazil. In South Korea, it was distributed by Samsung as the Super Gam*Boy and later the Super Aladdin Boy.
+
+Designed by an R&amp;D team supervised by Hideki Sato and Masami Ishikawa, the Genesis was adapted from Sega's System 16 arcade board, centered on a Motorola 68000 processor as the CPU, a Zilog Z80 as a sound controller, and a video system supporting hardware sprites, tiles, and scrolling. It plays a library of more than 900 games created by Sega and a wide array of third-party publishers delivered on ROM-based cartridges. Several add-ons were released, including a Power Base Converter to play Master System games. It was released in several different versions, some created by third parties. Sega created two network services to support the Genesis: Sega Meganet and Sega Channel.</text>
+			<text lang="pl">Sega Mega Drive – 16-bitowa konsola gier wideo wydana przez Segę w 1988 roku w Japonii i 1990 w Europie. W Ameryce Północnej konsola była sprzedawana jako Sega Genesis, ponieważ Sega nie mogła uzyskać pełni praw do nazwy Mega Drive. Produkcja konsoli została zakończona w 1997 roku. Powodem była niska sprzedaż po wprowadzeniu następcy, 32-bitowego Saturna. Konsola jest następcą Sega Master System/Sega SG-1000 Mark III.
+
+Mega Drive jest wstecznie kompatybilny z Sega Mark III oraz Master System dzięki wbudowanym w konsole podzespołom, jednak, jako że poprzednie konsole producenta posiadały inne kartridże, wymagany jest adapter Power Base / Master System Converter w przypadku gier z Master System lub Mega Adaptor w przypadku gier z Mark III.
+
+W 1994 roku uruchomiono usługę Sega Channel. Po uiszczeniu opłaty, właściciele konsoli Mega Drive dostawali specjalny adapter, pozwalający na podłączenie konsoli do sieci, z której można było ściągać gry. Największą popularnością usługa cieszyła się w Stanach Zjednoczonych, gdzie została uruchomiona w grudniu 1994 roku. Sega wraz ze współpracującymi przedsiębiorstwami próbowała wprowadzać tę usługę w różnych częściach Azji, Ameryki, Europy (w tym w Polsce) i Australii.</text>
+			<text lang="ru">Игровая приставка четвёртого поколения, разработанная и выпускавшаяся компанией Sega. Приставка была выпущена в 1988 в Японии как Mega Drive, в 1989 в США как Genesis и в 1990 в Европе (Virgin Mastertronic), Австралии (Ozisoft) и Бразилии (Tec Toy) — вновь под названием Mega Drive. Причиной изменения названия при запуске приставки на рынке США явилась невозможность официальной регистрации торговой марки Mega Drive. В Южной Корее распространением приставки занималась компания Samsung; приставка имела название Super Gam*Boy, позднее изменённое на Super Aladdin Boy. Sega Mega Drive — это третья аппаратная платформа от Sega после Sega Master System.
+
+Приставка была разработана исследовательской группой под руководством Хидеки Сато и Масами Исикавы на основе аппаратного обеспечения аркадного автомата Sega System 16. В качестве первичного центрального процессора был выбран Motorola 68000, вторичным стал Zilog Z80. На данную игровую систему было разработано более 900 игр, в создании которых принимала участие как сама компания Sega, так и сторонние издатели; игры распространялись на игровых картриджах. Sega Genesis имеет обратную совместимость с Sega Master System, которая достигается путём использования устройства Power Base Converter, продававшегося отдельно. Для консоли были разработаны и другие периферийные и сетевые устройства. В это же время и сама консоль выпускалась в различных вариациях, которые были направлены на расширение функциональности.</text>
+			<text lang="es">La Sega Genesis, conocida como Mega Drive fuera de Norteamérica, es una videoconsola doméstica de 16 bits de cuarta generación desarrollada y comercializada por Sega. La Genesis es la tercera consola de Sega y la sucesora de la Master System. Sega la lanzó como Mega Drive en Japón en 1988, y posteriormente como Genesis en Norteamérica en 1989. En 1990, fue distribuida como Mega Drive por Virgin Mastertronic en Europa, Ozisoft en Australasia y Tec Toy en Brasil. En Corea del Sur, fue distribuida por Samsung como Super Gam*Boy y, más tarde, Super Aladdin Boy.
+
+Diseñada por un equipo de I+D supervisado por Hideki Sato y Masami Ishikawa, la Genesis fue una adaptación de la placa arcade System 16 de Sega, centrada en un procesador Motorola 68000 como CPU, un Zilog Z80 como controlador de sonido y un sistema de vídeo compatible con sprites, tiles y desplazamiento por hardware. Reproduce una biblioteca de más de 900 juegos creados por Sega y una amplia gama de editores externos en cartuchos basados en ROM. Se lanzaron varios complementos, incluido un convertidor Power Base para jugar a juegos de Master System. Salió a la venta en varias versiones diferentes, algunas creadas por terceros. Sega creó dos servicios de red para la Genesis: Sega Meganet y Sega Channel.</text>
+			<text lang="de">Der Sega Genesis, außerhalb Nordamerikas als Mega Drive bekannt, ist eine 16-Bit-Videospielkonsole der vierten Generation, die von Sega entwickelt und verkauft wurde. Die Genesis ist die dritte Konsole von Sega und der Nachfolger des Master Systems. Sega brachte sie 1988 in Japan als Mega Drive und 1989 in Nordamerika als Genesis auf den Markt. Im Jahr 1990 wurde es als Mega Drive von Virgin Mastertronic in Europa, Ozisoft in Australasien und Tec Toy in Brasilien vertrieben. In Südkorea wurde es von Samsung als Super Gam*Boy und später als Super Aladdin Boy vertrieben.
+
+Der Genesis wurde von einem Forschungs- und Entwicklungsteam unter der Leitung von Hideki Sato und Masami Ishikawa entwickelt und basierte auf Segas System 16 Arcade-Board mit einem Motorola 68000-Prozessor als CPU, einem Zilog Z80 als Sound-Controller und einem Videosystem, das Hardware-Sprites, Kacheln und Scrolling unterstützt. Es spielt eine Bibliothek von mehr als 900 Spielen, die von Sega und einer Vielzahl von Drittanbietern auf ROM-basierten Cartridges entwickelt wurden. Es wurden mehrere Add-ons veröffentlicht, darunter ein Power Base Converter zum Abspielen von Master System-Spielen. Es wurde in mehreren verschiedenen Versionen veröffentlicht, von denen einige von Drittanbietern entwickelt wurden. Sega schuf zwei Netzwerkdienste zur Unterstützung des Genesis: Sega Meganet und Sega Channel.</text>
+			<text lang="fr">La Sega Genesis, connue sous le nom de Mega Drive en dehors de l'Amérique du Nord, est une console de jeux vidéo de salon 16 bits de quatrième génération développée et vendue par Sega. La Genesis est la troisième console de Sega et le successeur du Master System. Sega l'a commercialisée sous le nom de Mega Drive au Japon en 1988, puis sous le nom de Genesis en Amérique du Nord en 1989. En 1990, elle a été distribuée sous le nom de Mega Drive par Virgin Mastertronic en Europe, Ozisoft en Australasie et Tec Toy au Brésil. En Corée du Sud, il a été distribué par Samsung sous le nom de Super Gam*Boy, puis de Super Aladdin Boy.
+
+Conçue par une équipe de R&amp;D supervisée par Hideki Sato et Masami Ishikawa, la Genesis a été adaptée de la carte d'arcade System 16 de Sega, centrée sur un processeur Motorola 68000 comme unité centrale, un Zilog Z80 comme contrôleur de son, et un système vidéo prenant en charge les sprites matériels, les tuiles et le défilement. Il dispose d'une bibliothèque de plus de 900 jeux créés par Sega et un large éventail d'éditeurs tiers, livrés sur des cartouches à base de ROM. Plusieurs modules complémentaires ont été commercialisés, notamment un convertisseur Power Base permettant de jouer aux jeux Master System. La console a été déclinée en plusieurs versions, dont certaines ont été créées par des tiers. Sega a créé deux services de réseau pour soutenir la Genesis : Sega Meganet et Sega Channel.</text>
+			<text lang="it">Il Sega Genesis, noto come Mega Drive al di fuori del Nord America, è una console per videogiochi domestici di quarta generazione a 16 bit sviluppata e venduta da Sega. Il Genesis è la terza console di Sega e il successore del Master System. Sega la distribuì come Mega Drive in Giappone nel 1988 e successivamente come Genesis in Nord America nel 1989. Nel 1990 fu distribuito come Mega Drive da Virgin Mastertronic in Europa, Ozisoft in Australasia e Tec Toy in Brasile. In Corea del Sud fu distribuito da Samsung come Super Gam*Boy e successivamente Super Aladdin Boy.
+
+Progettato da un team di ricerca e sviluppo supervisionato da Hideki Sato e Masami Ishikawa, il Genesis è stato adattato dalla scheda arcade System 16 di Sega, incentrata su un processore Motorola 68000 come CPU, uno Zilog Z80 come controller audio e un sistema video che supportava sprite hardware, tiles e scrolling. Riproduce una libreria di oltre 900 giochi creati da Sega e da una vasta gamma di editori di terze parti, distribuiti su cartucce ROM. Sono stati rilasciati diversi componenti aggiuntivi, tra cui un Power Base Converter per giocare ai giochi Master System. È stato distribuito in diverse versioni, alcune create da terze parti. Sega creò due servizi di rete per supportare il Genesis: Sega Meganet e Sega Channel.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>
