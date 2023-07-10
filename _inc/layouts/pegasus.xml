@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videocrton" extra="true">
+			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
+			<delay>0</delay>
+			<loops>0</loops>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.485 0.4</pos>
+			<maxSize>0.28</maxSize>
+			<zIndex>26</zIndex>
+		</video>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.485 0.4</pos>
+			<maxSize>0.28</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.205 0.4" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>1981</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Technosys Research Labs</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>Aamber Pegasus</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.40</pos>
+			<text>The Aamber Pegasus is a home computer first produced in New Zealand in 1981 by Technosys Research Labs. It was based on a Motorola MC6809C CPU at 4 MHz, with 4k RAM memory. Later versions have been equipped with up to 64k RAM.
+An optional multi ROM board in conjunction with a rotating dial allowed switching between 6 EPROM banks containing multiple language environments, games and applications could be added. The EPROM based language environments included EXTENDED BASIC, PASCAL, BASIC (a variant of TinyBASIC), MAD (Assembler/Disassembler) and FORTH. Games available on EPROM are TANKS, INVADERS and GALAXY WARS. Other software included MONITOR (the system BIOS which needed to be present for the system to run) and a word processor application called WORD.
+The system also allowed loading of programs by cassette.
+
+A network version of the Aamber Pegasus provided connectivity to a 6809-based server (SWTPC-6809). Especially the networking version attempted to address the New Zealand Government's computers in schools initiative, but never produced the hoped-for large orders. It is thought that Apple Computers introduction of the Apple II computer into the New Zealand market, and its subsequent heavy educational discounting was the final nail in the coffin for Technosys and the Aamber Pegasus computer. Total production numbers are unknown, but it is thought that less than a hundred units were ever sold.</text>
+			<text lang="pl">Aamber Pegasus to komputer domowy wyprodukowany po raz pierwszy w Nowej Zelandii w 1981 roku przez Technosys Research Labs. Oparty był na procesorze Motorola MC6809C o częstotliwości 4 MHz, z pamięcią RAM 4k. Późniejsze wersje zostały wyposażone w maksymalnie 64 tys. pamięci RAM.
+Opcjonalna karta Multi ROM w połączeniu z obrotowym pokrętłem umożliwiała przełączanie między 6 bankami EPROM zawierającymi wiele środowisk językowych, można było dodawać gry i aplikacje. Środowiska językowe oparte na EPROM obejmowały EXTENDED BASIC, PASCAL, BASIC (wariant TinyBASIC), MAD (Assembler/Disassembler) i FORTH. Gry dostępne na EPROM to TANKS, INVADERS i GALAXY WARS. Inne oprogramowanie obejmowało MONITOR (system BIOS, który musiał być obecny, aby system mógł działać) i edytor tekstu o nazwie WORD.
+System umożliwiał również ładowanie programów z kaset.
+
+Wersja sieciowa Aamber Pegasus zapewniała łączność z serwerem opartym na 6809 (SWTPC-6809). W szczególności wersja sieciowa próbowała odpowiedzieć na inicjatywę rządu Nowej Zelandii dotyczącą komputerów w szkołach, ale nigdy nie przyniosła oczekiwanych dużych zamówień. Uważa się, że wprowadzenie przez Apple Computers komputera Apple II na rynek nowozelandzki, a następnie jego duże obniżki edukacyjne były ostatecznym gwoździem do trumny dla Technosys i komputera Aamber Pegasus. Całkowita liczba wyprodukowanych egzemplarzy nie jest znana, ale uważa się, że sprzedano mniej niż sto sztuk.</text>
+			<text lang="ru">Aamber Pegasus - домашний компьютер, впервые выпущенный в Новой Зеландии в 1981 году компанией Technosys Research Labs. Он был построен на базе процессора Motorola MC6809C с частотой 4 МГц и имел 4 кб оперативной памяти. Более поздние версии оснащались до 64 кб ОЗУ.
+Дополнительная плата мульти-ПЗУ в сочетании с вращающимся диском позволяла переключать 6 банков EPROM, содержащих различные языковые среды, игры и приложения. Языковые среды на EPROM включали EXTENDED BASIC, PASCAL, BASIC (вариант TinyBASIC), MAD (ассемблер/дизассемблер) и FORTH. Игры, доступные на EPROM, - TANKS, INVADERS и GALAXY WARS. Среди других программ были MONITOR (системный BIOS, который должен был присутствовать для работы системы) и текстовый процессор WORD.
+Система также позволяла загружать программы с кассеты.
+
+Сетевая версия Aamber Pegasus обеспечивала связь с сервером на базе 6809 (SWTPC-6809). Особенно сетевая версия была направлена на реализацию инициативы правительства Новой Зеландии "Компьютеры в школах", но так и не принесла ожидаемых крупных заказов. Считается, что вывод компанией Apple Computers компьютера Apple II на новозеландский рынок и последующая сильная скидка на образовательную продукцию стали последним гвоздем в крышку гроба для Technosys и компьютера Aamber Pegasus. Общее количество выпущенных компьютеров неизвестно, но считается, что их было продано менее сотни.</text>
+			<text lang="es">El Aamber Pegasus es un ordenador doméstico fabricado por primera vez en Nueva Zelanda en 1981 por Technosys Research Labs. Estaba basado en una CPU Motorola MC6809C a 4 MHz, con 4k de memoria RAM. Versiones posteriores han sido equipadas con hasta 64k de RAM.
+Una placa opcional multi ROM junto con un dial giratorio permitía cambiar entre 6 bancos de EPROM que contenían múltiples entornos de lenguaje, se podían añadir juegos y aplicaciones. Los entornos de lenguaje basados en EPROM incluían BASIC EXTENDIDO, PASCAL, BASIC (una variante de TinyBASIC), MAD (ensamblador/desensamblador) y FORTH. Los juegos disponibles en EPROM son TANKS, INVADERS y GALAXY WARS. Otros programas incluían MONITOR (la BIOS del sistema que debía estar presente para que el sistema funcionara) y una aplicación de procesador de textos llamada WORD.
+El sistema también permitía cargar programas mediante casetes.
+
+Una versión en red del Aamber Pegasus proporcionaba conectividad a un servidor basado en el 6809 (SWTPC-6809). Especialmente la versión de red intentó abordar la iniciativa de ordenadores en las escuelas del Gobierno de Nueva Zelanda, pero nunca produjo los grandes pedidos esperados. Se cree que la introducción del ordenador Apple II en el mercado neozelandés por parte de Apple Computers y sus consiguientes descuentos en el sector educativo fueron el último clavo en el ataúd de Technosys y del ordenador Aamber Pegasus. Se desconoce el número total de unidades producidas, pero se cree que se vendieron menos de cien.</text>
+			<text lang="de">Der Aamber Pegasus ist ein Heimcomputer, der erstmals 1981 in Neuseeland von Technosys Research Labs hergestellt wurde. Er basierte auf einer Motorola MC6809C CPU mit 4 MHz und 4k RAM Speicher. Spätere Versionen wurden mit bis zu 64k RAM ausgestattet.
+Eine optionale Multi-ROM-Platine in Verbindung mit einem Drehrad ermöglichte das Umschalten zwischen 6 EPROM-Bänken, die mehrere Sprachumgebungen, Spiele und Anwendungen enthielten, die hinzugefügt werden konnten. Zu den EPROM-basierten Sprachumgebungen gehörten EXTENDED BASIC, PASCAL, BASIC (eine Variante von TinyBASIC), MAD (Assembler/Disassembler) und FORTH. Auf EPROM verfügbare Spiele sind TANKS, INVADERS und GALAXY WARS. Weitere Software war MONITOR (das System-BIOS, das vorhanden sein musste, damit das System lief) und ein Textverarbeitungsprogramm namens WORD.
+Das System ermöglichte auch das Laden von Programmen per Kassette.
+
+Eine Netzwerkversion des Aamber Pegasus ermöglichte den Anschluss an einen 6809-basierten Server (SWTPC-6809). Vor allem die Netzwerkversion sollte die Initiative der neuseeländischen Regierung "Computer in Schulen" unterstützen, führte aber nie zu den erhofften Großaufträgen. Es wird vermutet, dass die Einführung des Apple II durch Apple Computers auf dem neuseeländischen Markt und die darauf folgenden starken Preisnachlässe für Schulen der endgültige Sargnagel für Technosys und den Aamber Pegasus Computer waren. Die Gesamtproduktionszahlen sind nicht bekannt, aber es wird angenommen, dass weniger als hundert Einheiten verkauft wurden.</text>
+			<text lang="fr">L'Aamber Pegasus est un ordinateur domestique produit pour la première fois en Nouvelle-Zélande en 1981 par Technosys Research Labs. Il était basé sur un processeur Motorola MC6809C à 4 MHz, avec une mémoire RAM de 4k. Les versions ultérieures ont été équipées d'une mémoire vive allant jusqu'à 64k.
+Une carte multi ROM optionnelle, associée à un cadran rotatif, permettait de basculer entre 6 banques d'EPROM contenant plusieurs environnements linguistiques, des jeux et des applications pouvant être ajoutés. Les environnements linguistiques basés sur l'EPROM comprenaient EXTENDED BASIC, PASCAL, BASIC (une variante de TinyBASIC), MAD (Assembleur/Désassembleur) et FORTH. Les jeux disponibles sur EPROM sont TANKS, INVADERS et GALAXY WARS. Les autres logiciels comprenaient MONITOR (le BIOS du système qui devait être présent pour que le système fonctionne) et une application de traitement de texte appelée WORD.
+Le système permettait également de charger des programmes par cassette.
+
+Une version réseau de l'Aamber Pegasus permettait de se connecter à un serveur basé sur le 6809 (SWTPC-6809). La version réseau, en particulier, tentait de répondre à l'initiative du gouvernement néo-zélandais relative aux ordinateurs dans les écoles, mais elle n'a jamais produit les commandes importantes espérées. On pense que l'introduction par Apple Computers de l'ordinateur Apple II sur le marché néo-zélandais, et les fortes remises accordées par la suite aux établissements d'enseignement, ont été le dernier clou dans le cercueil de Technosys et de l'ordinateur Pegasus d'Aamber. Le nombre total d'unités produites n'est pas connu, mais on pense que moins d'une centaine d'unités ont été vendues.</text>
+			<text lang="it">L'Aamber Pegasus è un home computer prodotto per la prima volta in Nuova Zelanda nel 1981 da Technosys Research Labs. Era basato su una CPU Motorola MC6809C a 4 MHz, con una memoria RAM di 4k. Le versioni successive sono state dotate di una memoria RAM fino a 64k.
+Una scheda opzionale multi ROM, insieme a una manopola rotante, consentiva di passare da 6 banchi EPROM contenenti ambienti linguistici multipli, giochi e applicazioni. I linguaggi, basati su EPROM, comprendevano EXTENDED BASIC, PASCAL, BASIC (una variante del TinyBASIC), MAD (Assembler/Disassembler) e FORTH. I giochi disponibili su EPROM erano TANKS, INVADERS e GALAXY WARS. Altri software includevano MONITOR (il BIOS di sistema che doveva essere presente per il funzionamento del sistema) e un'applicazione di elaborazione testi chiamata WORD.
+Il sistema consentiva anche il caricamento di programmi tramite cassetta.
+
+Una versione di rete di Aamber Pegasus forniva la connettività a un server basato su 6809 (SWTPC-6809). Soprattutto la versione di rete tentò di rispondere all'iniziativa del governo neozelandese sui computer nelle scuole, ma non produsse mai i grandi ordini sperati. Si pensa che l'introduzione del computer Apple II da parte di Apple Computers nel mercato neozelandese e i conseguenti forti sconti per la didattica siano stati il colpo finale per Technosys e per il computer Aamber Pegasus. I numeri della produzione totale sono sconosciuti, ma si pensa che siano state vendute meno di cento unità.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>
