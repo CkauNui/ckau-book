@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.41</pos>
+			<maxSize>0.351</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.5 0.5</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.41" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>2008</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>CD Projekt</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>GOG.com</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.4</pos>
+			<text>GOG.com (formerly Good Old Games) is a digital distribution platform for video games and films. It is operated by GOG sp. z o.o., a wholly owned subsidiary of CD Projekt based in Warsaw, Poland.
+GOG.com delivers DRM-free video games through its digital platform for Microsoft Windows, macOS and Linux.
+
+GOG.com works to offer older games as well as new releases to users, with the product lacking any type of digital rights management to give consumers the ability to install the game anywhere and as many times as they want.</text>
+			<text lang="pl">GOG.com (dawniej Good Old Games) to platforma cyfrowej dystrybucji gier wideo i filmów. Jej operatorem jest GOG sp. z o.o., spółka zależna CD Projekt z siedzibą w Warszawie.
+GOG.com dostarcza gry wideo bez zabezpieczeń DRM za pośrednictwem platformy cyfrowej dla systemów Microsoft Windows, macOS i Linux.
+
+GOG.com oferuje użytkownikom zarówno starsze, jak i nowe gry, a sam produkt pozbawiony jest jakiegokolwiek cyfrowego zarządzania prawami autorskimi, dzięki czemu konsumenci mogą zainstalować grę w dowolnym miejscu i dowolną liczbę razy.</text>
+			<text lang="ru">GOG.com (ранее Good Old Games) - платформа цифровой дистрибуции видеоигр и фильмов. Она управляется компанией GOG sp. z o.o., дочерним предприятием CD Projekt, расположенным в Варшаве (Польша).
+GOG.com предоставляет видеоигры без DRM через свою цифровую платформу для Microsoft Windows, macOS и Linux.
+
+GOG.com предлагает пользователям как старые игры, так и новые релизы, при этом в продукте отсутствует какая-либо система управления цифровыми правами, что дает потребителям возможность устанавливать игру в любом месте и столько раз, сколько они захотят.</text>
+			<text lang="es">GOG.com (antes Good Old Games) es una plataforma de distribución digital de videojuegos y películas. Está gestionada por GOG sp. z o.o., filial al 100% de CD Projekt con sede en Varsovia (Polonia).
+GOG.com distribuye videojuegos sin DRM a través de su plataforma digital para Microsoft Windows, macOS y Linux.
+
+GOG.com trabaja para ofrecer a los usuarios tanto juegos antiguos como nuevos lanzamientos, y el producto carece de cualquier tipo de gestión de derechos digitales para dar a los consumidores la posibilidad de instalar el juego en cualquier lugar y tantas veces como quieran.</text>
+			<text lang="de">GOG.com (früher Good Old Games) ist eine digitale Vertriebsplattform für Videospiele und Filme. Sie wird von GOG sp. z o.o. betrieben, einer hundertprozentigen Tochtergesellschaft von CD Projekt mit Sitz in Warschau, Polen.
+GOG.com bietet DRM-freie Videospiele über seine digitale Plattform für Microsoft Windows, macOS und Linux an.
+
+GOG.com bietet seinen Nutzern sowohl ältere Spiele als auch Neuerscheinungen an, wobei das Produkt ohne jegliche Art von digitalem Rechtemanagement auskommt, damit die Verbraucher das Spiel überall und so oft sie wollen installieren können.</text>
+			<text lang="fr">GOG.com (anciennement Good Old Games) est une plateforme de distribution numérique de jeux vidéo et de films. Elle est exploitée par GOG sp. z o.o., une filiale à 100 % de CD Projekt basée à Varsovie, en Pologne.
+GOG.com propose des jeux vidéo sans DRM par l'intermédiaire de sa plateforme numérique pour Microsoft Windows, macOS et Linux.
+
+GOG.com s'efforce de proposer aux utilisateurs des jeux plus anciens ainsi que de nouvelles versions, le produit étant dépourvu de tout type de gestion des droits numériques afin de permettre aux consommateurs d'installer le jeu n'importe où et autant de fois qu'ils le souhaitent.</text>
+			<text lang="it">GOG.com (ex Good Old Games) è una piattaforma di distribuzione digitale di videogiochi e film. È gestita da GOG sp. z o.o., una società interamente controllata da CD Projekt con sede a Varsavia, in Polonia.
+GOG.com distribuisce videogiochi senza DRM attraverso la sua piattaforma digitale per Microsoft Windows, macOS e Linux.
+
+GOG.com è in grado di offrire agli utenti sia i giochi più vecchi che le nuove uscite; il prodotto è privo di qualsiasi tipo di gestione dei diritti digitali per dare ai consumatori la possibilità di installare il gioco ovunque e tutte le volte che vogliono.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>
