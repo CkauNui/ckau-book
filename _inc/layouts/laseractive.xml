@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videocrton" extra="true">
+			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
+			<delay>0</delay>
+			<loops>0</loops>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.385</pos>
+			<maxSize>0.25</maxSize>
+			<zIndex>26</zIndex>
+		</video>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.385</pos>
+			<maxSize>0.25</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.385" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>1993</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Pioneer</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>LaserActive</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.4</pos>
+			<text>The LaserActive (レーザーアクティブ, RēzāAkutibu) is a converged device and fourth-generation home video game console capable of playing LaserDiscs, Compact Discs, console games, and LD-G karaoke discs. It was released by Pioneer Corporation in 1993. In addition to LaserActive games, separately sold add-on modules (called "PACs" by Pioneer) accept Mega Drive/Genesis and PC Engine/TurboGrafx-16 ROM cartridges and CD-ROMs.
+
+A NEC-branded version of the LaserActive player known as the LD-ROM² System, or model PCE-LD1, was released in December 1993, which was priced identically to the original system and also accepted Pioneer's PAC modules.
+The LaserActive has no regional lockout, allowing software from any region to be played on any system.</text>
+			<text lang="pl">LaserActive (レーザーアクティブ, RēzāAkutibu) to urządzenie konwergentne i domowa konsola do gier wideo czwartej generacji zdolna do odtwarzania płyt LaserDisc, Compact Disc, gier konsolowych i płyt karaoke LD-G. Została wydana przez Pioneer Corporation w 1993 roku. Oprócz gier LaserActive, oddzielnie sprzedawane moduły dodatkowe (zwane "PAC" przez Pioneer) akceptują kartridże ROM i CD-ROM Mega Drive/Genesis i PC Engine/TurboGrafx-16.
+
+Wersja odtwarzacza LaserActive pod marką NEC, znana jako LD-ROM² System lub model PCE-LD1, została wydana w grudniu 1993 roku, a jej cena była identyczna z ceną oryginalnego systemu i również akceptowała moduły PAC firmy Pioneer.
+LaserActive nie posiada blokady regionalnej, umożliwiając odtwarzanie oprogramowania z dowolnego regionu na dowolnym systemie.</text>
+			<text lang="ru">LaserActive (レーザーアクティブ, RēzāAkutibu) - конвергентное устройство и домашняя игровая приставка четвертого поколения, способная воспроизводить диски LaserDiscs, Compact Discs, консольные игры и караоке-диски LD-G. Она была выпущена корпорацией Pioneer в 1993 году. Помимо игр LaserActive, к приставке прилагались отдельно продаваемые дополнительные модули (Pioneer называет их "PACs"), принимающие картриджи с ПЗУ и CD-ROM от Mega Drive/Genesis и PC Engine/TurboGrafx-16.
+
+В декабре 1993 года под маркой NEC была выпущена версия плеера LaserActive, известная как LD-ROM² System, или модель PCE-LD1, которая стоила столько же, сколько и оригинальная система, и также принимала модули PAC от Pioneer.
+LaserActive не имеет региональной блокировки, что позволяет воспроизводить программное обеспечение из любого региона на любой системе.</text>
+			<text lang="es">El LaserActive (レーザーアクティブ, RēzāAkutibu) es un dispositivo convergente y una videoconsola doméstica de cuarta generación capaz de reproducir LaserDiscs, Compact Discs, juegos de consola y discos de karaoke LD-G. Fue lanzada al mercado por Pioneer Corporation en 1993. Además de los juegos LaserActive, los módulos adicionales vendidos por separado (denominados "PAC" por Pioneer) aceptan cartuchos ROM y CD-ROM de Mega Drive/Genesis y PC Engine/TurboGrafx-16.
+
+En diciembre de 1993 salió a la venta una versión del reproductor LaserActive con la marca NEC conocida como LD-ROM² System, o modelo PCE-LD1, que tenía un precio idéntico al del sistema original y también aceptaba los módulos PAC de Pioneer.
+El LaserActive no tiene bloqueo regional, lo que permite reproducir software de cualquier región en cualquier sistema.</text>
+			<text lang="de">Der LaserActive (レーザーアクティブ, RēzāAkutibu) ist ein konvergiertes Gerät und eine Heimvideospielkonsole der vierten Generation, die LaserDiscs, Compact Discs, Konsolenspiele und LD-G-Karaoke-Discs abspielen kann. Sie wurde 1993 von der Pioneer Corporation auf den Markt gebracht. Zusätzlich zu den LaserActive-Spielen können mit den separat erhältlichen Zusatzmodulen (von Pioneer "PACs" genannt) Mega Drive/Genesis- und PC Engine/TurboGrafx-16-ROM-Kassetten und CD-ROMs abgespielt werden.
+
+Eine NEC-Version des LaserActive-Players, bekannt als LD-ROM² System oder Modell PCE-LD1, wurde im Dezember 1993 veröffentlicht, die preislich mit dem ursprünglichen System identisch war und ebenfalls die PAC-Module von Pioneer akzeptierte.
+Der LaserActive hat keine regionale Sperre, so dass Software aus jeder Region auf jedem System abgespielt werden kann.</text>
+			<text lang="fr">Le LaserActive (レーザーアクティブ, RēzāAkutibu) est un appareil convergent et une console de jeu vidéo de salon de quatrième génération capable de lire des LaserDiscs, des Compact Discs, des jeux de console et des disques de karaoké LD-G. Elle a été lancée par Pioneer Corporation en 1993. Outre les jeux LaserActive, des modules d'extension vendus séparément (appelés "PAC" par Pioneer) acceptent les cartouches ROM et les CD-ROM Mega Drive/Genesis et PC Engine/TurboGrafx-16.
+
+Une version du lecteur LaserActive portant la marque NEC et connue sous le nom de système LD-ROM², ou modèle PCE-LD1, a été commercialisée en décembre 1993, à un prix identique à celui du système original et acceptant également les modules PAC de Pioneer.
+Le LaserActive n'a pas de verrouillage régional, ce qui permet de lire des logiciels de n'importe quelle région sur n'importe quel système.</text>
+			<text lang="it">Il LaserActive (レーザーアクティブ, RēzāAkutibu) è stato un dispositivo convergente e una console per videogiochi domestica di quarta generazione in grado di riprodurre LaserDisc, Compact Disc, giochi per console e dischi karaoke LD-G. Fu rilasciato da Pioneer Corporation nel 1993. Oltre ai giochi LaserActive, i moduli aggiuntivi venduti separatamente (chiamati "PAC" da Pioneer) accettavano cartucce ROM e CD-ROM Mega Drive/Genesis e PC Engine/TurboGrafx-16.
+
+Nel dicembre 1993 fu rilasciata una versione del lettore LaserActive con marchio NEC, nota come LD-ROM² System, o modello PCE-LD1, che aveva un prezzo identico a quello del sistema originale e accettava anche i moduli PAC di Pioneer.
+Il LaserActive non ha un blocco regionale e consente di riprodurre software di qualsiasi regione su qualsiasi sistema.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>
