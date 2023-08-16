@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.41</pos>
+			<maxSize>0.351</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.5 0.5</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.41" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>2002</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Aristocrat Leisure</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>Big Fish Games</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.4</pos>
+			<text>Big Fish Games is a casual gaming company based in Seattle, with a regional office in Oakland, California, owned by Aristocrat Leisure. It is a developer and distributor of casual games for computers and mobile devices.
+
+Games developed by the various Big Fish studios include: Drawn series (Dark Flight, The Painted Tower, Trail of Shadows), Fairway Solitaire HD, Hidden Expedition series, Mystery Case Files series.</text>
+			<text lang="pl">Big Fish Games to firma zajmująca się grami casual z siedzibą w Seattle, z biurem regionalnym w Oakland w Kalifornii, należąca do Aristocrat Leisure. Jest deweloperem i dystrybutorem gier casual na komputery i urządzenia mobilne.
+
+Gry opracowane przez różne studia Big Fish obejmują: Seria Drawn (Dark Flight, The Painted Tower, Trail of Shadows), Fairway Solitaire HD, seria Hidden Expedition, seria Mystery Case Files.</text>
+			<text lang="ru">Big Fish Games - компания, занимающаяся разработкой казуальных игр, базирующаяся в Сиэтле и имеющая региональный офис в Окленде (штат Калифорния), принадлежащая Aristocrat Leisure. Она является разработчиком и дистрибьютором казуальных игр для компьютеров и мобильных устройств.
+
+В число игр, разработанных различными студиями Big Fish, входят: Серия Drawn (Dark Flight, The Painted Tower, Trail of Shadows), Fairway Solitaire HD, серия Hidden Expedition, серия Mystery Case Files.</text>
+			<text lang="es">Big Fish Games es una empresa de juegos casuales con sede en Seattle y una oficina regional en Oakland (California), propiedad de Aristocrat Leisure. Desarrolla y distribuye juegos casuales para ordenadores y dispositivos móviles.
+
+Entre los juegos desarrollados por los distintos estudios de Big Fish se incluyen: Drawn series (Dark Flight, The Painted Tower, Trail of Shadows), Fairway Solitaire HD, Hidden Expedition series, Mystery Case Files series.</text>
+			<text lang="de">Big Fish Games ist ein Unternehmen für Gelegenheitsspiele mit Sitz in Seattle und einem regionalen Büro in Oakland, Kalifornien, und gehört zu Aristocrat Leisure. Das Unternehmen entwickelt und vertreibt Gelegenheitsspiele für Computer und mobile Geräte.
+
+Zu den von den verschiedenen Big Fish-Studios entwickelten Spielen gehören: Drawn-Serie (Dark Flight, The Painted Tower, Trail of Shadows), Fairway Solitaire HD, Hidden Expedition-Serie, Mystery Case Files-Serie.</text>
+			<text lang="fr">Big Fish Games est une société de jeux occasionnels basée à Seattle, avec un bureau régional à Oakland, en Californie, appartenant à Aristocrat Leisure. Elle développe et distribue des jeux occasionnels pour ordinateurs et appareils mobiles.
+
+Les jeux développés par les différents studios de Big Fish comprennent : la série Drawn (Dark Flight, The Painted Tower, Trail of Shadows), Fairway Solitaire HD, la série Hidden Expedition, la série Mystery Case Files.</text>
+			<text lang="it">Big Fish Games è una società di giochi casual con sede a Seattle e un ufficio regionale a Oakland, in California, di proprietà di Aristocrat Leisure. Sviluppa e distribuisce giochi casual per computer e dispositivi mobili.
+
+I giochi sviluppati dai vari studi di Big Fish includono: Serie Drawn (Dark Flight, The Painted Tower, Trail of Shadows), Fairway Solitaire HD, la serie Hidden Expedition, e la serie Mystery Case Files.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>

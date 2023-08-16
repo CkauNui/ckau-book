@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.498 0.44</pos>
+			<maxSize>0.115</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.218 0.44" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>1979</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Milton Bradley Company</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>Microvision</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<!-- Support different names for regional consoles/computers -->
+		<text name="TextName" extra="true" region="eu"/>
+		<text name="TextName" extra="true" region="us">
+			<text>Dreamcast Visual Memory System</text>
+		</text>
+		<text name="TextName" extra="true" region="jp"/>
+		<!-- -->
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.4</pos>
+			<text>The Microvision (aka Milton Bradley Microvision or MB Microvision) was the first handheld game console that used interchangeable cartridges and in that sense is reprogrammable.
+Unlike most later consoles, the Microvision did not contain an onboard processor (CPU). Instead, each game included its own processor contained within the removable cartridge. This meant that the console itself effectively consisted of the controls, LCD panel and LCD controller.
+
+The Microvision was designed by Jay Smith, the engineer who would later design the Vectrex gaming console. Its combination of portability and a cartridge-based system led to moderate success. However, very few cartridges, a small screen, and a lack of support from established home video game companies led to its demise in 1981.</text>
+			<text lang="pl">Microvision (znana również jako Milton Bradley Microvision lub MB Microvision) była pierwszą przenośną konsolą do gier, która wykorzystywała wymienne kartridże i w tym sensie była reprogramowalna.
+W przeciwieństwie do większości późniejszych konsol, Microvision nie zawierała wbudowanego procesora (CPU). Zamiast tego każda gra zawierała własny procesor znajdujący się w wymiennym kartridżu. Oznaczało to, że sama konsola składała się z elementów sterujących, panelu LCD i kontrolera LCD.
+
+Microvision została zaprojektowana przez Jaya Smitha, inżyniera, który później zaprojektował konsolę do gier Vectrex. Połączenie przenośności i systemu opartego na kartridżach doprowadziło do umiarkowanego sukcesu. Jednak bardzo niewielka liczba kartridży, mały ekran i brak wsparcia ze strony uznanych firm zajmujących się domowymi grami wideo doprowadziły do upadku w 1981 roku.</text>
+			<text lang="ru">Microvision (она же Milton Bradley Microvision или MB Microvision) была первой портативной игровой консолью, использующей сменные картриджи и в этом смысле являющейся перепрограммируемой.
+В отличие от большинства более поздних консолей, Microvision не содержала встроенного процессора (CPU). Вместо этого для каждой игры использовался свой процессор, находящийся в сменном картридже. Таким образом, сама консоль фактически состояла из органов управления, ЖК-панели и ЖК-контроллера.
+
+Консоль Microvision была разработана Джеем Смитом, инженером, который впоследствии создал игровую консоль Vectrex. Сочетание портативности и системы на основе картриджей принесло ей умеренный успех. Однако очень малое количество картриджей, маленький экран и отсутствие поддержки со стороны известных компаний, занимающихся разработкой домашних видеоигр, привели к тому, что в 1981 году консоль прекратила свое существование.</text>
+			<text lang="es">La Microvision (también conocida como Milton Bradley Microvision o MB Microvision) fue la primera videoconsola portátil que utilizaba cartuchos intercambiables y, en ese sentido, era reprogramable.
+A diferencia de la mayoría de las consolas posteriores, la Microvision no contenía un procesador integrado (CPU). En su lugar, cada juego incluía su propio procesador dentro del cartucho extraíble. Esto significaba que la consola en sí estaba formada por los mandos, el panel LCD y el controlador LCD.
+
+La Microvision fue diseñada por Jay Smith, el ingeniero que más tarde diseñaría la videoconsola Vectrex. Su combinación de portabilidad y sistema basado en cartuchos tuvo un éxito moderado. Sin embargo, la escasez de cartuchos, el tamaño reducido de la pantalla y la falta de apoyo de las empresas de videojuegos domésticos la hicieron desaparecer en 1981.</text>
+			<text lang="de">Die Microvision (auch bekannt als Milton Bradley Microvision oder MB Microvision) war die erste tragbare Spielkonsole, die austauschbare Kassetten verwendete und in diesem Sinne reprogrammierbar war.
+Anders als die meisten späteren Konsolen enthielt die Microvision keinen eingebauten Prozessor (CPU). Stattdessen verfügte jedes Spiel über einen eigenen Prozessor, der in der austauschbaren Kassette enthalten war. Dies bedeutete, dass die Konsole selbst praktisch nur aus der Steuerung, dem LCD-Panel und dem LCD-Controller bestand.
+
+Die Microvision wurde von Jay Smith entworfen, dem Ingenieur, der später die Vectrex-Spielkonsole entwickeln sollte. Die Kombination aus Tragbarkeit und einem Kassettensystem führte zu einem mäßigen Erfolg. Die geringe Anzahl von Kassetten, der kleine Bildschirm und die mangelnde Unterstützung durch etablierte Videospielhersteller führten jedoch 1981 zum Aus für das System.</text>
+			<text lang="fr">La Microvision (alias Milton Bradley Microvision ou MB Microvision) est la première console de jeu portable qui utilise des cartouches interchangeables et qui, en ce sens, est reprogrammable.
+Contrairement à la plupart des consoles ultérieures, la Microvision ne contenait pas de processeur embarqué (CPU). Au lieu de cela, chaque jeu comprenait son propre processeur contenu dans la cartouche amovible. Cela signifie que la console elle-même se composait effectivement des commandes, de l'écran LCD et du contrôleur LCD.
+
+Le Microvision a été conçu par Jay Smith, l'ingénieur qui allait plus tard concevoir la console de jeu Vectrex. La combinaison de la portabilité et d'un système à base de cartouches a connu un succès modéré. Cependant, le nombre très limité de cartouches, le petit écran et le manque de soutien de la part des sociétés de jeux vidéo de salon ont conduit à sa disparition en 1981.</text>
+			<text lang="it">Il Microvision (noto anche come Milton Bradley Microvision o MB Microvision) è stata la prima console portatile per videogiochi che utilizzava cartucce intercambiabili e in questo senso era riprogrammabile.
+A differenza della maggior parte delle console successive, il Microvision non conteneva un processore (CPU) a bordo. Al contrario, ogni gioco includeva un proprio processore contenuto nella cartuccia rimovibile. Ciò significa che la console stessa era costituita dai controlli, dal pannello LCD e dal controller LCD.
+
+Il Microvision fu progettato da Jay Smith, l'ingegnere che in seguito avrebbe progettato la console di gioco Vectrex. La sua combinazione di portabilità e sistema basato su cartucce portò a un moderato successo. Tuttavia, il numero esiguo di cartucce, lo schermo di piccole dimensioni e la mancanza di supporto da parte delle aziende produttrici di videogiochi domestici ne determinarono la scomparsa nel 1981.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>
