@@ -6,6 +6,7 @@
 	<customView name="Tiles" inherits="grid" displayName="${tilesViewName}">
 		<imagegrid name="gamegrid">
 			<autoLayout>3 2</autoLayout>
+			<autoLayout if="${screen.ratio} == '21/9'">5 2</autoLayout>
 			<cellProportion>1.25</cellProportion>
 			<autoLayoutSelectedZoom>1.02</autoLayoutSelectedZoom>
 			<imageSource>image</imageSource>

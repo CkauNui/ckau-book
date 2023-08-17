@@ -50,8 +50,10 @@
 		<image name="md_thumbnail">
 			<tile>true</tile>
 			<origin>0.5 1</origin>
+			<origin if="${screen.ratio} == '21/9'">0.7 1</origin>
 			<pos>0.13 0.785</pos>
 			<maxSize>0.23 1</maxSize>
+			<maxSize if="${screen.ratio} == '21/9'">0.165 1</maxSize>
 			<zIndex>170</zIndex>
 			<storyboard event="open">
 				<animation property="offsetX" from="-0.2" to="0" duration="500" mode="EaseOutQuint"/>
@@ -107,7 +109,7 @@
 		</text>
 		<video name="md_video">
 			<pos>0.5 0.499</pos>
-			<maxSize>1 1</maxSize>
+			<size>1 1</size>
 			<origin>0.5 0.5</origin>
 			<delay>0.3</delay>
 			<showSnapshotNoVideo>false</showSnapshotNoVideo>
