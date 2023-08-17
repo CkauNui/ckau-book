@@ -9,9 +9,11 @@
 			<size>1 1</size>
 			<scrollDirection>horizontal</scrollDirection>
 			<autoLayout>7 1</autoLayout>
+			<autoLayout if="${screen.ratio} == '21/9'">9 1</autoLayout>
 			<scrollSound>./../../_inc/sound/scroll.wav</scrollSound>
 			<autoLayoutSelectedZoom>1.20</autoLayoutSelectedZoom>
 			<margin>-0.010 -0.210</margin>
+			<margin if="${screen.ratio} == '21/9'">-0.007 -0.14</margin>
 			<centerSelection>true</centerSelection>
 			<scrollLoop>true</scrollLoop>
 			<zIndex>50</zIndex>
