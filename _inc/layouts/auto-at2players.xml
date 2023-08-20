@@ -2,6 +2,17 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
+		<!-- Dynamically colored system background, but not animated. Needed to allow background image extension in 21:9 -->
+		<image if="${screen.ratio} == '21/9'" name="sysbg-right" extra="true">
+			<visible>false</visible>
+		</image>
+		<image if="${screen.ratio} == '21/9'" name="sysbg-right-fixed" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.9 0.5</pos>
+			<minSize>0.52 1.1</minSize>
+			<color>${sysColor}</color>
+			<path>./../../_inc/images/space.png</path>
+		</image>
 		<video name="videobox" extra="true">
 			<path>{random}</path>
 			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
