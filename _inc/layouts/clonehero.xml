@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>	
+			<pos>0.5 0.375</pos>
+			<maxSize>0.335</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.375" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>2022</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Srylain inc.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>Clone Hero</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.40</pos>
+			<text>Clone Hero is a freeware music rhythm video game created by Ryan Foster, first released in alpha on March 1, 2017, receiving a full release on November 29, 2022.
+
+The game is a clone of the Guitar Hero franchise with nearly identical gameplay. The main draw of the game is its ability to play community-made songs, which has resulted in a large fan community around the game as well as a resurgence in popularity for the genre.</text>
+			<text lang="pl">Clone Hero to darmowa muzyczna gra rytmiczna stworzona przez Ryana Fostera, wydana po raz pierwszy w wersji alfa 1 marca 2017 r., a następnie w pełnej wersji 29 listopada 2022 r.
+
+Gra jest klonem serii Guitar Hero z niemal identyczną rozgrywką. Główną atrakcją gry jest możliwość odtwarzania utworów stworzonych przez społeczność, co zaowocowało dużą społecznością fanów wokół gry, a także odrodzeniem popularności gatunku.</text>
+			<text lang="ru">Clone Hero - условно-бесплатная музыкальная ритм-игра, созданная Райаном Фостером, впервые вышедшая в альфа-версии 1 марта 2017 года и получившая полноценный релиз 29 ноября 2022 года.
+
+Игра представляет собой клон франшизы Guitar Hero с практически идентичным геймплеем. Главной особенностью игры является возможность исполнения песен, созданных сообществом, что привело к появлению большого сообщества фанатов игры и возрождению популярности жанра.</text>
+			<text lang="es">Clone Hero es un videojuego gratuito de ritmo musical creado por Ryan Foster, lanzado por primera vez en alfa el 1 de marzo de 2017, recibiendo un lanzamiento completo el 29 de noviembre de 2022.
+
+El juego es un clon de la franquicia Guitar Hero con una jugabilidad casi idéntica. El principal atractivo del juego es su capacidad para reproducir canciones creadas por la comunidad, lo que ha dado lugar a una gran comunidad de fans en torno al juego, así como a un resurgimiento de la popularidad del género.</text>
+			<text lang="de">Clone Hero ist ein Freeware-Musik-Rhythmus-Videospiel von Ryan Foster, das am 1. März 2017 erstmals in der Alpha-Version veröffentlicht wurde und am 29. November 2022 eine Vollversion erhielt.
+
+Das Spiel ist ein Klon der Guitar Hero-Franchise mit nahezu identischem Gameplay. Die Hauptattraktion des Spiels ist die Möglichkeit, von der Community erstellte Songs zu spielen, was zu einer großen Fangemeinde rund um das Spiel sowie zu einem Wiederaufleben der Popularität des Genres geführt hat.</text>
+			<text lang="fr">Clone Hero est un jeu vidéo gratuit de rythme musical créé par Ryan Foster, d'abord sorti en alpha le 1er mars 2017, recevant une version complète le 29 novembre 2022.
+
+Le jeu est un clone de la franchise Guitar Hero avec un gameplay presque identique. Le principal attrait du jeu est sa capacité à jouer des chansons créées par la communauté, ce qui a donné lieu à une grande communauté de fans autour du jeu ainsi qu'à une résurgence de la popularité du genre.</text>
+			<text lang="it">Clone Hero è un videogioco ritmico musicale freeware creato da Ryan Foster, rilasciato per la prima volta in versione alpha il 1° marzo 2017, per poi ricevere il rilascio completo il 29 novembre 2022.
+
+Il gioco è un clone del franchise di Guitar Hero con un gameplay quasi identico. L'attrattiva principale del gioco è la possibilità di suonare canzoni create dalla comunità, che ha portato a una grande comunità di fan intorno al gioco e a una rinascita della popolarità del genere.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>

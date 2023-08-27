@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videocrton" extra="true">
+			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
+			<delay>0</delay>
+			<loops>0</loops>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>	
+			<pos>0.5 0.36</pos>
+			<maxSize>0.24</maxSize>
+			<zIndex>26</zIndex>
+		</video>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>	
+			<pos>0.5 0.36</pos>
+			<maxSize>0.21</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>1990</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Commodore</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>64 Games System</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.40</pos>
+			<text>The Commodore 64 Games System (often abbreviated C64GS) is the cartridge-based home video game console version of the popular Commodore 64 home computer. It was released in December 1990 by Commodore into a booming console market dominated by Nintendo and Sega. It was only released in Europe and was a considerable commercial failure. The C64GS came bundled with a cartridge containing four games: Fiendish Freddy's Big Top O'Fun, International Soccer, Flimbo's Quest, and Klax.
+
+The C64GS was not Commodore's first gaming system based on the C64 hardware. However, unlike the 1982 MAX Machine (a game-oriented computer based on a very cut-down version of the same hardware family), the C64GS is internally very similar to the complete C64, with which it is compatible.</text>
+			<text lang="pl">Commodore 64 Games System (często w skrócie C64GS) to oparta na kartridżach wersja popularnego komputera domowego Commodore 64. Został wydany w grudniu 1990 roku przez Commodore na dynamicznie rozwijającym się rynku konsol zdominowanym przez Nintendo i Segę. Została wydana tylko w Europie i okazała się sporą komercyjną porażką. C64GS był dostarczany w zestawie z kartridżem zawierającym cztery gry: Fiendish Freddy's Big Top O'Fun, International Soccer, Flimbo's Quest i Klax.
+
+C64GS nie był pierwszym systemem do gier Commodore opartym na sprzęcie C64. Jednak w przeciwieństwie do MAX Machine z 1982 roku (komputer zorientowany na gry oparty na bardzo okrojonej wersji tej samej rodziny sprzętu), C64GS jest wewnętrznie bardzo podobny do kompletnego C64, z którym jest kompatybilny.</text>
+			<text lang="ru">Commodore 64 Games System (часто сокращенно C64GS) - это картриджная версия популярного домашнего компьютера Commodore 64 для домашних видеоигр. Она была выпущена компанией Commodore в декабре 1990 г. на бурно развивающемся рынке консолей, где доминировали Nintendo и Sega. Она была выпущена только в Европе и потерпела значительный коммерческий провал. В комплект поставки C64GS входил картридж с четырьмя играми: Fiendish Freddy's Big Top O'Fun, International Soccer, Flimbo's Quest и Klax.
+
+C64GS была не первой игровой системой Commodore, основанной на аппаратном обеспечении C64. Однако, в отличие от MAX Machine 1982 года (игрового компьютера, основанного на очень урезанной версии того же семейства аппаратных средств), C64GS внутренне очень похожа на полноценную C64, с которой она совместима.</text>
+			<text lang="es">El Commodore 64 Games System (a menudo abreviado C64GS) es la versión de videoconsola doméstica basada en cartuchos del popular ordenador doméstico Commodore 64. Fue lanzado en diciembre de 1990 por Commodore en un mercado en auge dominado por Nintendo y Sega. Commodore la lanzó en diciembre de 1990 en un mercado de consolas en auge dominado por Nintendo y Sega. Sólo salió a la venta en Europa y fue un fracaso comercial considerable. El C64GS venía con un cartucho que contenía cuatro juegos: Fiendish Freddy's Big Top O'Fun, International Soccer, Flimbo's Quest y Klax.
+
+El C64GS no fue el primer sistema de juego de Commodore basado en el hardware del C64. Sin embargo, a diferencia del MAX Machine de 1982 (un ordenador orientado a juegos basado en una versión muy recortada de la misma familia de hardware), el C64GS es internamente muy similar al C64 completo, con el que es compatible.</text>
+			<text lang="de">Das Commodore 64 Games System (oft als C64GS abgekürzt) ist die auf Kassetten basierende Videospielkonsolenversion des beliebten Commodore 64 Heimcomputers. Es wurde im Dezember 1990 von Commodore in einem boomenden, von Nintendo und Sega dominierten Konsolenmarkt veröffentlicht. Es wurde nur in Europa veröffentlicht und war ein großer kommerzieller Misserfolg. Der C64GS wurde mit einer Kassette ausgeliefert, die vier Spiele enthielt: Fiendish Freddy's Big Top O'Fun, International Soccer, Flimbo's Quest und Klax.
+
+Der C64GS war nicht das erste Spielsystem von Commodore, das auf der Hardware des C64 basierte. Anders als die MAX Machine von 1982 (ein spieleorientierter Computer, der auf einer sehr abgespeckten Version derselben Hardware-Familie basierte) ist der C64GS jedoch dem kompletten C64 sehr ähnlich, mit dem er kompatibel ist.</text>
+			<text lang="fr">Le Commodore 64 Games System (souvent abrégé C64GS) est la version de la console de jeux vidéo de salon à cartouches du célèbre ordinateur de salon Commodore 64. Il a été lancé en décembre 1990 par Commodore sur un marché des consoles en plein essor, dominé par Nintendo et Sega. Il n'a été commercialisé qu'en Europe et a connu un échec commercial considérable. Le C64GS était livré avec une cartouche contenant quatre jeux : Fiendish Freddy's Big Top O'Fun, International Soccer, Flimbo's Quest et Klax.
+
+Le C64GS n'était pas le premier système de jeu de Commodore basé sur le matériel C64. Cependant, contrairement à la MAX Machine de 1982 (un ordinateur orienté jeux basé sur une version très réduite de la même famille de matériel), le C64GS est intérieurement très similaire au C64 complet, avec lequel il est compatible.</text>
+			<text lang="it">Il Commodore 64 Games System (spesso abbreviato in C64GS) è la versione della console per videogiochi domestici basata su cartucce del popolare home computer Commodore 64. È stato rilasciato nel dicembre 1990 da Commodore in un mercato delle console in piena espansione, dominato da Nintendo e Sega. Fu distribuito solo in Europa e fu un notevole insuccesso commerciale. Il C64GS veniva fornito con una cartuccia contenente quattro giochi: Fiendish Freddy's Big Top O'Fun, International Soccer, Flimbo's Quest e Klax.
+
+Il C64GS non fu il primo sistema di gioco Commodore basato sull'hardware del C64. Tuttavia, a differenza della MAX Machine del 1982 (un computer orientato ai giochi basato su una versione molto ridotta della stessa famiglia di hardware), il C64GS è internamente molto simile al C64 completo, con cui è compatibile.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>

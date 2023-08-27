@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.49 0.5</origin>	
+			<pos>0.5 0.46</pos>
+			<maxSize>0.48</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.65</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.46" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>2015</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Pau Oliva</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>Fightcade</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.4</pos>
+			<text>Fightcade is a software client used to enable online capabilities to play of various arcade and home console systems via emulation.
+
+Fightcade utilizes networking middleware GGPO to mitigate the effects of network latency on gameplay, and functions as a successor of GGPO's now-defunct matchmaking client.</text>
+			<text lang="pl">Fightcade to klient oprogramowania służący do udostępniania możliwości gry online na różnych konsolach zręcznościowych i domowych poprzez emulację.
+
+Fightcade wykorzystuje sieciowe oprogramowanie pośredniczące GGPO w celu złagodzenia wpływu opóźnień sieciowych na rozgrywkę i działa jako następca nieistniejącego już klienta dobierania graczy GGPO.</text>
+			<text lang="ru">Fightcade - это программный клиент, используемый для организации сетевых возможностей игры на различных аркадных и домашних консолях с помощью эмуляции.
+
+Fightcade использует сетевое промежуточное ПО GGPO для уменьшения влияния сетевых задержек на игровой процесс и является преемником ныне не существующего клиента GGPO для создания матчей.</text>
+			<text lang="es">Fightcade es un cliente de software utilizado para habilitar las capacidades online de juego de varios sistemas arcade y consolas domésticas mediante emulación.
+
+Fightcade utiliza el middleware de red GGPO para mitigar los efectos de la latencia de la red en el juego, y funciona como sucesor del ya desaparecido cliente de matchmaking de GGPO.</text>
+			<text lang="de">Fightcade ist ein Software-Client, der es ermöglicht, verschiedene Arcade- und Heimkonsolensysteme über Emulationen online zu spielen.
+
+Fightcade nutzt die Netzwerk-Middleware GGPO, um die Auswirkungen der Netzwerklatenz auf das Spielgeschehen zu mildern, und fungiert als Nachfolger des inzwischen eingestellten Matchmaking-Clients von GGPO.</text>
+			<text lang="fr">Fightcade est un logiciel client utilisé pour permettre de jouer en ligne à divers systèmes d'arcade et de console de salon via l'émulation.
+
+Fightcade utilise le logiciel intermédiaire GGPO pour atténuer les effets de la latence du réseau sur le gameplay, et fonctionne comme le successeur du client de matchmaking de GGPO, aujourd'hui disparu.</text>
+			<text lang="it">Fightcade è un client software utilizzato per abilitare le capacità online di gioco di vari sistemi arcade e console domestiche tramite emulazione.
+
+Fightcade utilizza il middleware di rete GGPO per mitigare gli effetti della latenza di rete sul gameplay e funziona come successore del client di matchmaking di GGPO, ormai defunto.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>
