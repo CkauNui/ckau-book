@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.49 0.5</origin>	
+			<pos>0.535 0.46</pos>
+			<maxSize>0.48</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.65</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.255 0.46" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>2020</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Microsoft</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>Xbox Series X/S</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.4</pos>
+			<text>The Xbox Series X and Xbox Series S are, collectively, the fourth generation of the Xbox series of home video game consoles developed and sold by Microsoft. Released on November 10, 2020, the higher-end Xbox Series X and lower-end Xbox Series S are part of the ninth generation of video game consoles, which also includes Sony's PlayStation 5, released the same month. They superseded the Xbox One.
+
+Like the Xbox One, the consoles use an AMD 64-bit x86-64 CPU and GPU. Both models have solid-state drives to reduce loading times, support for hardware-accelerated ray-tracing and spatial audio, the ability to convert games to high-dynamic-range rendering using machine learning (Auto HDR), support for HDMI 2.1 variable refresh rate and low-latency modes, and updated controllers. Xbox Series X was designed to nominally render games in 2160p (4K resolution) at 60 frames per second (FPS). The lower-end, digital-only Xbox Series S, which has reduced specifications and does not include an optical drive, was designed to nominally render games in 1440p at 60 FPS, with support for 4K video scaling and ray tracing.</text>
+			<text lang="pl">Xbox Series X i Xbox Series S to łącznie czwarta generacja domowych konsol do gier wideo z serii Xbox opracowanych i sprzedawanych przez firmę Microsoft. Wydane 10 listopada 2020 r., wyższej klasy Xbox Series X i niższej klasy Xbox Series S są częścią dziewiątej generacji konsol do gier wideo, która obejmuje również PlayStation 5 firmy Sony, wydaną w tym samym miesiącu. Zastąpiły one Xbox One.
+
+Podobnie jak Xbox One, konsole wykorzystują 64-bitowy procesor AMD x86-64 i procesor graficzny. Oba modele posiadają dyski półprzewodnikowe skracające czas ładowania, obsługę akcelerowanego sprzętowo ray-tracingu i dźwięku przestrzennego, możliwość konwertowania gier do renderowania o wysokim zakresie dynamiki przy użyciu uczenia maszynowego (Auto HDR), obsługę zmiennej częstotliwości odświeżania HDMI 2.1 i trybów niskiego opóźnienia oraz zaktualizowane kontrolery. Xbox Series X został zaprojektowany do nominalnego renderowania gier w 2160p (rozdzielczość 4K) przy 60 klatkach na sekundę (FPS). Niższa, cyfrowa konsola Xbox Series S, która ma ograniczoną specyfikację i nie zawiera napędu optycznego, została zaprojektowana do nominalnego renderowania gier w rozdzielczości 1440p przy 60 klatkach na sekundę, z obsługą skalowania wideo 4K i ray tracingu.</text>
+			<text lang="ru">Xbox Series X и Xbox Series S - это четвертое поколение серии домашних игровых приставок Xbox, разработанное и продаваемое компанией Microsoft. Выпущенные 10 ноября 2020 г. старшая модель Xbox Series X и младшая модель Xbox Series S относятся к девятому поколению игровых приставок, в которое также входит вышедшая в том же месяце PlayStation 5 от Sony. Они пришли на смену Xbox One.
+
+Как и в Xbox One, в консолях используются 64-разрядные процессоры AMD x86-64 CPU и GPU. Обе модели оснащены твердотельными накопителями для уменьшения времени загрузки, поддержкой аппаратного ускорения трассировки лучей и пространственного аудио, возможностью конвертации игр в режим рендеринга с высоким динамическим диапазоном с помощью машинного обучения (Auto HDR), поддержкой переменной частоты обновления HDMI 2.1 и режимов с низкой задержкой, а также обновленными контроллерами. Xbox Series X была разработана для номинального рендеринга игр в разрешении 2160p (4K) при 60 кадрах в секунду (FPS). Младшая модель Xbox Series S, предназначенная только для цифровых игр и не оснащенная оптическим приводом, была разработана для воспроизведения игр в разрешении 1440p при 60 кадрах в секунду, с поддержкой масштабирования видео 4K и трассировки лучей.</text>
+			<text lang="es">Las Xbox Series X y Xbox Series S son, colectivamente, la cuarta generación de la serie Xbox de consolas de videojuegos domésticas desarrolladas y comercializadas por Microsoft. Lanzadas el 10 de noviembre de 2020, la Xbox Series X de gama alta y la Xbox Series S de gama baja forman parte de la novena generación de consolas de videojuegos, que también incluye la PlayStation 5 de Sony, lanzada el mismo mes. Sustituyen a la Xbox One.
+
+Al igual que la Xbox One, las consolas utilizan una CPU y una GPU AMD x86-64 de 64 bits. Ambos modelos cuentan con unidades de estado sólido para reducir los tiempos de carga, compatibilidad con el trazado de rayos acelerado por hardware y el audio espacial, posibilidad de convertir los juegos a renderizado de alto rango dinámico mediante aprendizaje automático (Auto HDR), compatibilidad con los modos HDMI 2.1 de frecuencia de actualización variable y baja latencia, y mandos actualizados. Xbox Series X se diseñó para renderizar juegos en 2160p (resolución 4K) a 60 fotogramas por segundo (FPS). La Xbox Series S, de gama más baja y sólo digital, con especificaciones reducidas y que no incluye unidad óptica, se diseñó para renderizar nominalmente los juegos en 1440p a 60 FPS, con soporte para escalado de vídeo 4K y trazado de rayos.</text>
+			<text lang="de">Die Xbox Serie X und die Xbox Serie S sind zusammen die vierte Generation der Xbox-Serie von Videospielkonsolen für den Heimgebrauch, die von Microsoft entwickelt und verkauft werden. Die am 10. November 2020 auf den Markt gebrachte Xbox Serie X und die Xbox Serie S sind Teil der neunten Generation von Videospielkonsolen, zu der auch die im selben Monat erschienene PlayStation 5 von Sony gehört. Sie haben die Xbox One abgelöst.
+
+Wie die Xbox One verwenden die Konsolen eine AMD 64-Bit x86-64 CPU und GPU. Beide Modelle verfügen über Solid-State-Laufwerke zur Verkürzung der Ladezeiten, Unterstützung für hardwarebeschleunigtes Raytracing und Spatial Audio, die Möglichkeit, Spiele mithilfe von maschinellem Lernen in High-Dynamic-Range-Rendering (Auto HDR) zu konvertieren, Unterstützung für HDMI 2.1 mit variabler Bildwiederholrate und Modi mit niedriger Latenz sowie aktualisierte Steuerungen. Die Xbox Series X wurde entwickelt, um Spiele in 2160p (4K-Auflösung) bei 60 Bildern pro Sekunde (FPS) darzustellen. Die niedrigere, rein digitale Xbox Serie S mit reduzierten Spezifikationen und ohne optisches Laufwerk wurde für die nominale Wiedergabe von Spielen in 1440p bei 60 FPS entwickelt, mit Unterstützung für 4K-Videoskalierung und Raytracing.</text>
+			<text lang="fr">Les consoles Xbox Series X et Xbox Series S sont, collectivement, la quatrième génération de la série Xbox de consoles de jeux vidéo de salon développées et vendues par Microsoft. Sorties le 10 novembre 2020, les consoles Xbox Series X et Xbox Series S font partie de la neuvième génération de consoles de jeux vidéo, qui comprend également la PlayStation 5 de Sony, sortie le même mois. Elles remplacent la Xbox One.
+
+Comme la Xbox One, les consoles utilisent un CPU et un GPU AMD 64-bit x86-64. Les deux modèles sont dotés de disques durs à semi-conducteurs pour réduire les temps de chargement, de la prise en charge du ray-tracing accéléré au niveau matériel et de l'audio spatial, de la possibilité de convertir les jeux en rendu à plage dynamique élevée grâce à l'apprentissage automatique (Auto HDR), de la prise en charge de la fréquence de rafraîchissement variable HDMI 2.1 et des modes à faible latence, ainsi que de contrôleurs mis à jour. La Xbox Series X a été conçue pour rendre les jeux en 2160p (résolution 4K) à 60 images par seconde (FPS). La série S de la Xbox, plus bas de gamme et uniquement numérique, dont les spécifications sont réduites et qui n'inclut pas de lecteur optique, a été conçue pour rendre les jeux en 1440p à 60 FPS, avec la prise en charge de la mise à l'échelle vidéo 4K et du ray tracing.</text>
+			<text lang="it">La Xbox Series X e la Xbox Series S sono, collettivamente, la quarta generazione della serie di console per videogiochi domestiche Xbox sviluppate e vendute da Microsoft. Rilasciate il 10 novembre 2020, la Xbox Series X di fascia alta e la Xbox Series S di fascia bassa fanno parte della nona generazione di console per videogiochi, che comprende anche la PlayStation 5 di Sony, uscita lo stesso mese. Hanno sostituito la Xbox One.
+
+Come la Xbox One, le console utilizzano una CPU e una GPU AMD a 64 bit x86-64. Entrambi i modelli sono dotati di unità a stato solido per ridurre i tempi di caricamento, supporto per il ray-tracing accelerato via hardware e per l'audio spaziale, possibilità di convertire i giochi in rendering ad alta gamma dinamica utilizzando l'apprendimento automatico (Auto HDR), supporto per la frequenza di aggiornamento variabile HDMI 2.1 e per le modalità a bassa latenza e controller aggiornati. Xbox Series X è stata progettata per renderizzare nominalmente i giochi a 2160p (risoluzione 4K) a 60 fotogrammi al secondo (FPS). La Xbox Series S, di fascia bassa e solo digitale, che ha specifiche ridotte e non include un'unità ottica, è stata progettata per renderizzare nominalmente i giochi a 1440p a 60 FPS, con supporto per lo scaling video 4K e il ray tracing.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>

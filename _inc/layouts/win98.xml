@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.55 0.5</origin>
+			<origin if="${screen.ratio} == '21/9'">0.44 0.5</origin>	
+			<pos>0.46 0.43</pos>
+			<maxSize>0.202</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.27</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.18 0.43" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>1998</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Microsoft</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>Windows 98</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.4</pos>
+			<text>Windows 98 is a consumer-oriented operating system developed by Microsoft as part of its Windows 9x family of Microsoft Windows operating systems. The second operating system in the 9x line, it is the successor to Windows 95, and was released to manufacturing on May 15, 1998, and generally to retail on June 25, 1998. Like its predecessor, it is a hybrid 16-bit and 32-bit monolithic product with the boot stage based on MS-DOS.
+
+Windows 98 is a web-integrated operating system that bears numerous similarities to its predecessor. Most of its improvements were cosmetic or designed to improve the user experience, but there were also a handful of features introduced to enhance system functionality and capabilities, including improved USB support and accessibility, as well as support for hardware advancements such as DVD players.</text>
+			<text lang="pl">Windows 98 to zorientowany na konsumentów system operacyjny opracowany przez firmę Microsoft jako część rodziny systemów operacyjnych Microsoft Windows 9x. Drugi system operacyjny w linii 9x, jest następcą Windows 95 i został wydany do produkcji 15 maja 1998 roku, a ogólnie do sprzedaży detalicznej 25 czerwca 1998 roku. Podobnie jak jego poprzednik, jest to hybrydowy 16-bitowy i 32-bitowy monolityczny produkt z etapem rozruchu opartym na MS-DOS.
+
+Windows 98 to zintegrowany z Internetem system operacyjny, który wykazuje liczne podobieństwa do swojego poprzednika. Większość jego ulepszeń była kosmetyczna lub zaprojektowana w celu poprawy komfortu użytkowania, ale wprowadzono również kilka funkcji zwiększających funkcjonalność i możliwości systemu, w tym ulepszoną obsługę USB i dostępność, a także obsługę zaawansowanych urządzeń, takich jak odtwarzacze DVD.</text>
+			<text lang="ru">Windows 98 - операционная система, ориентированная на потребителя, разработанная компанией Microsoft в рамках семейства операционных систем Microsoft Windows 9x. Вторая операционная система в линейке 9x, она является преемницей Windows 95 и была выпущена в производство 15 мая 1998 года, а в розничную продажу - 25 июня 1998 года. Как и предшественница, она представляет собой гибридный 16- и 32-разрядный монолитный продукт с этапом загрузки, основанным на MS-DOS.
+
+Windows 98 - это веб-интегрированная операционная система, имеющая много общего со своей предшественницей. Большинство ее усовершенствований носят косметический характер и направлены на улучшение пользовательского интерфейса, но есть и ряд функций, направленных на расширение функциональности и возможностей системы, в том числе улучшенная поддержка и доступность USB, а также поддержка аппаратных новинок, таких как DVD-плееры.</text>
+			<text lang="es">Windows 98 es un sistema operativo orientado al consumidor desarrollado por Microsoft como parte de su familia Windows 9x de sistemas operativos Microsoft Windows. Es el segundo sistema operativo de la línea 9x, sucesor de Windows 95, y fue lanzado a la fabricación el 15 de mayo de 1998 y, en general, a la venta al por menor el 25 de junio de 1998. Al igual que su predecesor, es un producto monolítico híbrido de 16 y 32 bits con la fase de arranque basada en MS-DOS.
+
+Windows 98 es un sistema operativo integrado en la web que guarda numerosas similitudes con su predecesor. La mayoría de sus mejoras eran cosméticas o estaban diseñadas para mejorar la experiencia del usuario, pero también se introdujeron un puñado de características para mejorar la funcionalidad y las capacidades del sistema, incluida la mejora de la compatibilidad con USB y la accesibilidad, así como la compatibilidad con avances de hardware como los reproductores de DVD.</text>
+			<text lang="de">Windows 98 ist ein verbraucherorientiertes Betriebssystem, das von Microsoft als Teil der Windows 9x-Familie von Microsoft Windows-Betriebssystemen entwickelt wurde. Es ist das zweite Betriebssystem der 9x-Reihe und der Nachfolger von Windows 95. Es wurde am 15. Mai 1998 für die Produktion und am 25. Juni 1998 für den Einzelhandel freigegeben. Wie sein Vorgänger ist es ein hybrides, monolithisches 16-Bit- und 32-Bit-Produkt, dessen Startphase auf MS-DOS basiert.
+
+Windows 98 ist ein web-integriertes Betriebssystem, das zahlreiche Ähnlichkeiten mit seinem Vorgänger aufweist. Die meisten Verbesserungen waren kosmetischer Natur oder dienten der Verbesserung der Benutzerfreundlichkeit, aber es wurden auch einige Funktionen eingeführt, um die Systemfunktionalität und -fähigkeiten zu verbessern, einschließlich der verbesserten USB-Unterstützung und Zugänglichkeit sowie der Unterstützung von Hardwareerweiterungen wie DVD-Playern.</text>
+			<text lang="fr">Windows 98 est un système d'exploitation grand public développé par Microsoft dans le cadre de sa famille de systèmes d'exploitation Windows 9x. Deuxième système d'exploitation de la gamme 9x, il succède à Windows 95 et a été mis à la disposition des fabricants le 15 mai 1998 et des détaillants le 25 juin 1998. Comme son prédécesseur, il s'agit d'un produit monolithique hybride 16 bits et 32 bits dont la phase de démarrage est basée sur MS-DOS.
+
+Windows 98 est un système d'exploitation intégré au web qui présente de nombreuses similitudes avec son prédécesseur. La plupart de ses améliorations sont d'ordre cosmétique ou visent à améliorer l'expérience de l'utilisateur, mais une poignée de caractéristiques ont également été introduites pour améliorer les fonctionnalités et les capacités du système, notamment une meilleure prise en charge et accessibilité USB, ainsi qu'une prise en charge des avancées matérielles telles que les lecteurs de DVD.</text>
+			<text lang="it">Windows 98 è un sistema operativo orientato al mercato consumer, sviluppato da Microsoft come parte della famiglia di sistemi operativi Microsoft Windows 9x. Secondo sistema operativo della linea 9x, è il successore di Windows 95 ed è stato rilasciato alla produzione il 15 maggio 1998 e in generale al dettaglio il 25 giugno 1998. Come il suo predecessore, è un prodotto monolitico ibrido a 16 e 32 bit con la fase di avvio basata su MS-DOS.
+
+Windows 98 è un sistema operativo integrato nel Web che presenta numerose somiglianze con il suo predecessore. La maggior parte delle migliorie apportate sono di natura estetica o volte a migliorare l'esperienza dell'utente, ma sono state introdotte anche alcune caratteristiche per migliorare le funzionalità e le capacità del sistema, tra cui il supporto e l'accessibilità dell'USB e il supporto di innovazioni hardware come i lettori DVD.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>
