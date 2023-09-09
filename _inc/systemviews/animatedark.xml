@@ -10,6 +10,9 @@
 		<image if="${screen.ratio} == '21/9'" name="sysbg-right" extra="true">
 			<color>141414</color>
 		</image>
+		<image if="${screen.ratio} == '21/9'" name="sysbg-right-fixed" extra="true">
+			<color>141414</color>
+		</image>		
 		<!-- System artwork -->
 		<image name="background1" extra="true">
 			<!-- Loads system theme image, attemps to load synonym if not available -->
@@ -37,30 +40,24 @@
 		</image>
 		<!-- Prefer white versions of the logo -->
 		<image name="logo, logo1">
+			<path>./../../_inc/logos/${system.theme}-w.png</path>
 			<path>./../../_inc/logos/${system.theme}-w.svg</path>
-			<path>./../../_inc/logos/${system.theme}-w-${lang}.png</path>
-			<path>./../../_inc/logos/${system.theme}-w-${lang}.svg</path>
 			<!-- Attemps to load synonym if system not available -->
+			<path>./../../_inc/logos/${synonym}-w.png</path>			
 			<path>./../../_inc/logos/${synonym}-w.svg</path>
-			<path>./../../_inc/logos/${synonym}-w-${lang}.png</path>
-			<path>./../../_inc/logos/${synonym}-w-${lang}.svg</path>
 			<linearSmooth>true</linearSmooth>
 		</image>
 		<image name="logo, logo1" region="eu"></image>
 		<image name="logo, logo1" region="us">
-			<path>./../../_inc/logos/us/${system.theme}.png</path>
-			<path>./../../_inc/logos/us/${system.theme}.svg</path>
+			<path>./../../_inc/logos/us/${system.theme}-w.png</path>			
 			<path>./../../_inc/logos/us/${system.theme}-w.svg</path>
-			<path>./../../_inc/logos/us/${synonym}.png</path>
-			<path>./../../_inc/logos/us/${synonym}.svg</path>
+			<path>./../../_inc/logos/us/${synonym}-w.png</path>
 			<path>./../../_inc/logos/us/${synonym}-w.svg</path>
 		</image>
 		<image name="logo, logo1" region="jp">
-			<path>./../../_inc/logos/jp/${system.theme}.png</path>
-			<path>./../../_inc/logos/jp/${system.theme}.svg</path>
+			<path>./../../_inc/logos/jp/${system.theme}-w.png</path>
 			<path>./../../_inc/logos/jp/${system.theme}-w.svg</path>
-			<path>./../../_inc/logos/jp/${synonym}.png</path>
-			<path>./../../_inc/logos/jp/${synonym}.svg</path>
+			<path>./../../_inc/logos/jp/${synonym}-w.png</path>
 			<path>./../../_inc/logos/jp/${synonym}-w.svg</path>
 		</image>
 	</view>
