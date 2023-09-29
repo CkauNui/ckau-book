@@ -25,13 +25,13 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.48 0.5</origin>
-			<origin if="${screen.ratio} == '21/9'">0.535 0.5</origin>
-			<pos>0.519 0.378</pos>
-			<maxSize>0.22</maxSize>
+			<origin if="${screen.ratio} == '4/3'">0.48</origin>
+			<pos>0.5 0.485</pos>
+			<maxSize>0.14</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
 			<zIndex>25</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.239 0.378" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.22 0.485" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
