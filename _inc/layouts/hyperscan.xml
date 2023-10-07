@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videocrton" extra="true">
+			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
+			<delay>0</delay>
+			<loops>0</loops>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.37</pos>
+			<maxSize>0.26</maxSize>
+			<zIndex>26</zIndex>
+		</video>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.37</pos>
+			<maxSize>0.26</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.36</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.37" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>2006</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Mattel</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>HyperScan</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.4</pos>
+			<text>The HyperScan is a home video game console from the toy company Mattel. It is unique in that it includes a 13.56 MHz radio-frequency identification (RFID) scanner that reads and writes to the "cards" which, in turn, activate features in and save data from the game. Players are able to enhance the abilities of their characters by scanning cards.
+
+The games for the system were sold as "Game Packs", which consisted of a game disc accompanied by six game cards (seven for Spider-Man). Additional cards which contained characters, abilities, moves and levels when scanned were part of a six-card "Booster Pack". As with most trading card packs, the cards were randomized, meaning a player looking for a certain card to unlock that element of the game may have had to buy multiple Booster Packs in order to get it (while getting multiple cards for another aspect of the game), or trade it for another with a friend, as was likely intended by the Hyperscan's card aspect.
+
+Multiple booster packs were intended for certain games. X-Men intended to have 102 cards to unlock parts of the game in separate "red" and "black" series; the latter went unreleased due to the console's cancellation.</text>
+			<text lang="pl">HyperScan to domowa konsola do gier wideo firmy Mattel produkującej zabawki. Jest wyjątkowa, ponieważ zawiera skaner identyfikacji radiowej (RFID) 13,56 MHz, który odczytuje i zapisuje "karty", które z kolei aktywują funkcje i zapisują dane z gry. Gracze mogą zwiększać umiejętności swoich postaci poprzez skanowanie kart.
+
+Gry dla systemu były sprzedawane jako "Game Packs", które składały się z płyty z grą wraz z sześcioma kartami do gry (siedem dla Spider-Mana). Dodatkowe karty, które zawierały postacie, umiejętności, ruchy i poziomy po zeskanowaniu, były częścią sześciokartowego "Booster Pack". Podobnie jak w przypadku większości pakietów kart kolekcjonerskich, karty były losowe, co oznaczało, że gracz szukający określonej karty do odblokowania tego elementu gry mógł być zmuszony do zakupu wielu pakietów wzmacniających, aby ją zdobyć (jednocześnie zdobywając wiele kart do innego aspektu gry) lub wymienić ją na inną ze znajomym, co prawdopodobnie było zamierzone przez aspekt kart Hyperscan.
+
+Dla niektórych gier przewidziano wiele pakietów wzmacniających. X-Men miał mieć 102 karty do odblokowania części gry w oddzielnych "czerwonych" i "czarnych" seriach; ta ostatnia nie została wydana z powodu anulowania konsoli.</text>
+			<text lang="ru">HyperScan - это домашняя игровая приставка от компании Mattel. Ее уникальность заключается в том, что она оснащена сканером радиочастотной идентификации (RFID), работающим на частоте 13,56 МГц, который считывает и записывает "карты", которые, в свою очередь, активируют функции и сохраняют данные из игры. Игроки могут улучшать способности своих персонажей, сканируя карты.
+
+Игры для системы продавались в виде "Game Packs", состоящих из диска с игрой и шести игровых карт (семь для Человека-паука). Дополнительные карты, содержащие персонажей, способности, ходы и уровни при сканировании, входили в "Booster Pack", состоящий из шести карт. Как и в большинстве других наборов торговых карт, карты были рандомизированы, поэтому игроку, ищущему определенную карту для разблокировки того или иного элемента игры, приходилось покупать несколько наборов бустеров, чтобы получить ее (одновременно получая несколько карт для другого аспекта игры), или обменивать ее на другую у друга, как, вероятно, и предполагалось в карточном аспекте Hyperscan.
+
+Для некоторых игр предназначалось несколько бустер-паков. Для игры X-Men предполагалось использовать 102 карты для разблокировки частей игры в отдельных "красной" и "черной" сериях; последняя так и не была выпущена из-за отмены консоли.</text>
+			<text lang="es">El HyperScan es una videoconsola doméstica de la empresa juguetera Mattel. Es única porque incluye un escáner de identificación por radiofrecuencia (RFID) de 13,56 MHz que lee y escribe en las "tarjetas" que, a su vez, activan funciones y guardan datos del juego. Los jugadores pueden mejorar las habilidades de sus personajes escaneando las tarjetas.
+
+Los juegos para el sistema se vendían como "Packs de Juego", que consistían en un disco de juego acompañado de seis tarjetas de juego (siete para Spider-Man). Las cartas adicionales que contenían personajes, habilidades, movimientos y niveles al ser escaneadas formaban parte de un "Booster Pack" de seis cartas. Como en la mayoría de los packs de cartas coleccionables, las cartas eran aleatorias, lo que significa que un jugador que buscara una carta determinada para desbloquear ese elemento del juego podría haber tenido que comprar varios Booster Packs para conseguirla (a la vez que obtenía varias cartas para otro aspecto del juego), o cambiarla por otra con un amigo, como probablemente pretendía el aspecto de las cartas de Hyperscan.
+
+Para algunos juegos se crearon varios sobres. X-Men pretendía tener 102 cartas para desbloquear partes del juego en series separadas "roja" y "negra"; esta última no salió a la venta debido a la cancelación de la consola.</text>
+			<text lang="de">Der HyperScan ist eine Heimvideospielkonsole des Spielzeugherstellers Mattel. Das Besondere daran ist, dass sie einen 13,56-MHz-Radiofrequenz-Identifikations-Scanner (RFID) enthält, der die "Karten" liest und beschreibt, die wiederum Funktionen im Spiel aktivieren und Daten speichern. Die Spieler können die Fähigkeiten ihrer Charaktere durch das Scannen von Karten verbessern.
+
+Die Spiele für das System wurden als "Game Packs" verkauft, die aus einer Spiel-Disc und sechs Spielkarten (sieben für Spider-Man) bestanden. Zusätzliche Karten, die Charaktere, Fähigkeiten, Bewegungen und Stufen enthielten, wenn sie eingescannt wurden, waren Teil eines "Booster Packs" mit sechs Karten. Wie bei den meisten Sammelkartenspielen waren die Karten zufällig verteilt, was bedeutete, dass ein Spieler, der eine bestimmte Karte suchte, um dieses Spielelement freizuschalten, möglicherweise mehrere Booster Packs kaufen musste, um sie zu bekommen (während er gleichzeitig mehrere Karten für einen anderen Aspekt des Spiels erhielt), oder sie mit einem Freund gegen eine andere tauschen musste, wie es wahrscheinlich durch den Kartenaspekt des Hyperscan beabsichtigt war.
+
+Für bestimmte Spiele waren mehrere Boosterpacks vorgesehen. X-Men sollte 102 Karten enthalten, um Teile des Spiels in separaten "roten" und "schwarzen" Serien freizuschalten; letztere wurden aufgrund der Stornierung der Konsole nicht veröffentlicht.</text>
+			<text lang="fr">L'HyperScan est une console de jeu vidéo domestique de la société de jouets Mattel. Elle est unique en ce sens qu'elle comprend un scanner d'identification par radiofréquence (RFID) de 13,56 MHz qui lit et écrit sur les "cartes" qui, à leur tour, activent des fonctions et sauvegardent des données du jeu. Les joueurs peuvent améliorer les capacités de leurs personnages en scannant les cartes.
+
+Les jeux pour le système étaient vendus sous forme de "packs de jeu", qui consistaient en un disque de jeu accompagné de six cartes de jeu (sept pour Spider-Man). Des cartes supplémentaires contenant des personnages, des capacités, des mouvements et des niveaux lorsqu'elles sont scannées faisaient partie d'un "Booster Pack" de six cartes. Comme dans la plupart des paquets de cartes à collectionner, les cartes étaient aléatoires, ce qui signifie qu'un joueur à la recherche d'une certaine carte pour débloquer cet élément du jeu devait acheter plusieurs paquets de boosters pour l'obtenir (tout en obtenant plusieurs cartes pour un autre aspect du jeu), ou l'échanger contre une autre avec un ami, comme le prévoyait probablement l'aspect carte de l'Hyperscan.
+
+Certains jeux nécessitaient plusieurs booster packs. X-Men prévoyait 102 cartes pour débloquer des parties du jeu dans des séries distinctes "rouge" et "noire" ; cette dernière n'est pas sortie en raison de l'annulation de la console.</text>
+			<text lang="it">L'HyperScan è una console per videogiochi domestica dell'azienda di giocattoli Mattel. È unica nel suo genere in quanto include uno scanner per l'identificazione a radiofrequenza (RFID) a 13,56 MHz che legge e scrive sulle "carte" che, a loro volta, attivano le funzioni e salvano i dati del gioco. I giocatori sono in grado di migliorare le abilità dei loro personaggi attraverso la scansione delle carte.
+
+I giochi per il sistema erano venduti come "Game Pack", che consistevano in un disco di gioco accompagnato da sei carte di gioco (sette per Spider-Man). Le carte aggiuntive, che contenevano personaggi, abilità, mosse e livelli quando venivano scannerizzate, facevano parte di un "Booster Pack" di sei carte. Come nella maggior parte dei pacchetti di carte collezionabili, le carte erano randomizzate, il che significa che un giocatore alla ricerca di una certa carta per sbloccare quell'elemento del gioco poteva dover acquistare più Booster Pack per ottenerla (ottenendo al contempo più carte per un altro aspetto del gioco), oppure scambiarla con un amico, come probabilmente era previsto dall'aspetto delle carte dell'Hyperscan.
+
+Per alcuni giochi erano previsti booster pack multipli. Per X-Men erano previste 102 carte per sbloccare parti del gioco in serie separate "rosse" e "nere"; queste ultime non sono state rilasciate a causa della cancellazione della console.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>

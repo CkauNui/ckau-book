@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.52 0.51</origin>
+			<pos>0.47 0.38</pos>
+			<maxSize>0.2</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.28</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.19 0.38" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>1983</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Olivetti</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>M21</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.40</pos>
+			<text>In 1984, a few months after presenting the M24, Olivetti put on the market the M21, the first and only transportable personal computer produced by the Ivrea-based company. The technical features are basically the same as those of the M24, from which the motherboard is also derived with a few modifications. The M21 mounts a monitor with amber phosphors, a real novelty for the time.
+
+The Olivetti Personal Computer M21 was a complete computer system, providing the full range of hardware and software options normally associated only with desktop personal computers. Based on the Intel 8086 microprocessor, the M21 supports MS-DOS, CP/M-86 and UCSD operating systems.
+The system supports an integrated 9" monochrome video, this video provides advanced graphics features with a maximum resolution of 640 x 400 pixels. If a larger screen is required, or colour output is wanted, either of the M24's 12" videos can be connected.
+
+The keyboard is a compact, industry-standard 83-key input device. During transit the keyboard is attached to the front of the basic module, thus protecting the video.</text>
+			<text lang="pl">W 1984 roku, kilka miesięcy po zaprezentowaniu M24, Olivetti wprowadziło na rynek M21, pierwszy i jedyny przenośny komputer osobisty wyprodukowany przez firmę z Ivrei. Cechy techniczne są zasadniczo takie same jak w M24, z którego pochodzi również płyta główna z kilkoma modyfikacjami. M21 montuje monitor z bursztynowym fosforem, co było prawdziwą nowością w tamtych czasach.
+
+Olivetti Personal Computer M21 był kompletnym systemem komputerowym, zapewniającym pełen zakres opcji sprzętowych i programowych, zwykle kojarzonych tylko z komputerami stacjonarnymi. Oparty na mikroprocesorze Intel 8086, M21 obsługuje systemy operacyjne MS-DOS, CP/M-86 i UCSD.
+System obsługuje zintegrowany 9-calowy monochromatyczny ekran wideo, który zapewnia zaawansowane funkcje graficzne z maksymalną rozdzielczością 640 x 400 pikseli. Jeśli wymagany jest większy ekran lub kolorowy sygnał wyjściowy, można podłączyć jeden z 12-calowych ekranów wideo M24.
+
+Klawiatura jest kompaktowym, standardowym 83-klawiszowym urządzeniem wejściowym. Podczas transportu klawiatura jest przymocowana do przedniej części modułu podstawowego, chroniąc w ten sposób wideo.</text>
+			<text lang="ru">В 1984 году, через несколько месяцев после представления модели M24, компания Olivetti выпустила на рынок M21 - первый и единственный переносной персональный компьютер, произведенный компанией из Ивреи. По своим техническим характеристикам он практически не отличается от модели M24, от которой с небольшими изменениями была взята и материнская плата. В M21 установлен монитор с янтарными люминофорами - настоящая новинка для того времени.
+
+Olivetti Personal Computer M21 представлял собой полноценную компьютерную систему, предоставляющую полный набор аппаратных и программных возможностей, обычно присущих только настольным персональным компьютерам. Основанный на микропроцессоре Intel 8086, M21 поддерживает операционные системы MS-DOS, CP/M-86 и UCSD.
+Система поддерживает встроенный 9-дюймовый монохромный видеоэкран, который обеспечивает расширенные графические возможности с максимальным разрешением 640 x 400 пикселей. Если требуется экран большего размера или цветной вывод, то можно подключить один из 12-дюймовых мониторов M24.
+
+Клавиатура представляет собой компактное, стандартное для отрасли 83-клавишное устройство ввода. При транспортировке клавиатура крепится к передней части основного модуля, защищая тем самым видео.</text>
+			<text lang="es">En 1984, pocos meses después de presentar el M24, Olivetti saca al mercado el M21, el primer y único ordenador personal transportable producido por la empresa de Ivrea. Las características técnicas son básicamente las mismas que las del M24, del que también deriva la placa base con algunas modificaciones. El M21 monta un monitor con fósforo ámbar, toda una novedad para la época.
+
+El Olivetti Personal Computer M21 era un sistema informático completo, que ofrecía toda la gama de opciones de hardware y software normalmente asociadas sólo a los ordenadores personales de sobremesa. Basado en el microprocesador Intel 8086, el M21 es compatible con los sistemas operativos MS-DOS, CP/M-86 y UCSD.
+El sistema soporta un vídeo monocromo integrado de 9", este vídeo proporciona funciones gráficas avanzadas con una resolución máxima de 640 x 400 píxeles. Si se necesita una pantalla más grande, o se desea una salida en color, se puede conectar cualquiera de los dos vídeos de 12" del M24.
+
+El teclado es un dispositivo de entrada compacto y estándar de 83 teclas. Durante el transporte, el teclado se fija a la parte frontal del módulo básico, protegiendo así el vídeo.</text>
+			<text lang="de">1984, wenige Monate nach der Vorstellung des M24, brachte Olivetti den M21 auf den Markt, den ersten und einzigen transportablen Personal Computer des Unternehmens aus Ivrea. Die technischen Merkmale entsprechen im Wesentlichen denen des M24, von dem auch die Hauptplatine mit einigen Änderungen abgeleitet ist. Der M21 verfügt über einen Monitor mit bernsteinfarbenem Phosphor, eine echte Neuheit für die damalige Zeit.
+
+Der Olivetti Personal Computer M21 war ein komplettes Computersystem, das alle Hardware- und Softwareoptionen bot, die man normalerweise nur mit Desktop-Personalcomputern in Verbindung bringt. Der M21 basiert auf dem Intel 8086 Mikroprozessor und unterstützt die Betriebssysteme MS-DOS, CP/M-86 und UCSD.
+Das System unterstützt ein integriertes 9"-Monochrom-Video, das erweiterte Grafikfunktionen mit einer maximalen Auflösung von 640 x 400 Pixeln bietet. Wenn ein größerer Bildschirm benötigt wird oder eine Farbausgabe gewünscht ist, kann eines der beiden 12"-Videos des M24 angeschlossen werden.
+
+Bei der Tastatur handelt es sich um ein kompaktes, dem Industriestandard entsprechendes Eingabegerät mit 83 Tasten. Während des Transports ist die Tastatur an der Vorderseite des Basismoduls angebracht und schützt so das Video.</text>
+			<text lang="fr">En 1984, quelques mois après avoir présenté le M24, Olivetti a mis sur le marché le M21, le premier et le seul ordinateur personnel transportable produit par la société d'Ivrea. Les caractéristiques techniques sont fondamentalement les mêmes que celles du M24, dont la carte mère est également dérivée avec quelques modifications. Le M21 est équipé d'un moniteur à phosphores ambrés, une véritable nouveauté pour l'époque.
+
+L'ordinateur personnel Olivetti M21 était un système informatique complet, offrant toute la gamme d'options matérielles et logicielles normalement associées aux ordinateurs personnels de bureau. Basé sur le microprocesseur Intel 8086, le M21 supporte les systèmes d'exploitation MS-DOS, CP/M-86 et UCSD.
+Le système est équipé d'un écran vidéo monochrome intégré de 9 pouces, qui offre des fonctions graphiques avancées avec une résolution maximale de 640 x 400 pixels. Si un écran plus grand est nécessaire, ou si une sortie couleur est souhaitée, l'une des vidéos 12" du M24 peut être connectée.
+
+Le clavier est un dispositif d'entrée compact de 83 touches, conforme aux normes industrielles. Pendant le transport, le clavier est fixé à l'avant du module de base, protégeant ainsi la vidéo.</text>
+			<text lang="it">Nel 1984, pochi mesi dopo aver presentato l'M24, Olivetti immette sul mercato l'M21, il primo e unico personal computer trasportabile prodotto dall'azienda di Ivrea. Le caratteristiche tecniche sono sostanzialmente le stesse dell'M24, da cui deriva anche la scheda madre con alcune modifiche. L'M21 monta un monitor con fosfori color ambra, una vera novità per l'epoca.
+
+L'Olivetti Personal Computer M21 era un sistema informatico completo, che offriva l'intera gamma di opzioni hardware e software normalmente associate solo ai personal computer desktop. Basato sul microprocessore Intel 8086, l'M21 supporta i sistemi operativi MS-DOS, CP/M-86 e UCSD.
+Il sistema supporta un video monocromatico integrato da 9", che offre funzioni grafiche avanzate con una risoluzione massima di 640 x 400 pixel. Se è necessario uno schermo più grande o si desidera un'uscita a colori, è possibile collegare uno dei due video da 12" dell'M24.
+
+La tastiera è un dispositivo di input compatto e standard del settore a 83 tasti. Durante il trasporto, la tastiera è fissata alla parte anteriore del modulo base, proteggendo così il video.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>
