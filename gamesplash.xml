@@ -3,16 +3,15 @@
 	<formatVersion>7</formatVersion>
 	<view name="splash">
 		<splash name="splash">
-			<backgroundColor>000000FF</backgroundColor>
+			<backgroundColor>161616</backgroundColor>
 			<imageSource>marquee</imageSource>
 		</splash>
 		<image name="background">
-			<pos>0.5 0.5</pos>
+			<pos>0.5 0.45</pos>
 			<origin>0.5 0.5</origin>
-			<size>1 1</size>
+			<maxSize>0.6</maxSize>
 			<roundCorners>0</roundCorners>
 			<linearSmooth>false</linearSmooth>
-			<color>A0A0A0FF</color>
 		</image>
 		<text name="label">
 			<color>FFFFFFFF</color>
@@ -22,7 +21,16 @@
 			<glowOffset>1</glowOffset>
 			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
 		</text>
-		<image name="backgroundFade" extra="true">
+		<image name="arrtanim1" extra="true">
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<path>./_inc/images/gamesplash.png</path>
+			<size>1 1</size>
+			<roundCorners>0</roundCorners>
+			<linearSmooth>false</linearSmooth>
+			<zIndex>6</zIndex>
+		</image>
+<!-- 		<image name="backgroundFade" extra="true">
 			<tile>false</tile>
 			<linearSmooth>true</linearSmooth>
 			<path>./_inc/images/overlay.png</path>
@@ -31,7 +39,7 @@
 			<origin>0.5 0.5</origin>
 			<minSize>1 1</minSize>
 			<zIndex>16</zIndex>
-		</image>
+		</image> -->
 		<image name="scanlines" extra="true">
 			<path>./_inc/images/scanlines.png</path>
 			<tile>true</tile> 
@@ -42,7 +50,7 @@
 			<color>ffffff</color>
 			<zIndex>5</zIndex>
 		</image>
-		<image name="darken" extra="true">
+<!-- 		<image name="darken" extra="true">
 			<path>./_inc/images/white.png</path>
 			<pos>0 0.7</pos>
 			<origin>0 0</origin>
@@ -50,6 +58,6 @@
 			<color>00000000</color>
 			<colorEnd>000000F0</colorEnd>
 			<zIndex>8</zIndex>
-		</image>
+		</image> -->
 	</view>
 </theme>
