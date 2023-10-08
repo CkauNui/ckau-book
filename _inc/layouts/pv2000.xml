@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videocrton" extra="true">
+			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
+			<delay>0</delay>
+			<loops>0</loops>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>	
+			<pos>0.5 0.36</pos>
+			<maxSize>0.21</maxSize>
+			<zIndex>26</zIndex>
+		</video>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.36</pos>
+			<maxSize>0.21</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.27</maxSize>	
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>1983</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Casio</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>PV-2000</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.40</pos>
+			<text>Also called "RakuGaki" in Japan, the PV-2000 is a very obscure japanese system released in 1983 at the same time of the PV-1000 gaming system. These two systems are not compatible with each other, as they have very different architecure. The PV-2000 is closer to MSX systems than to its little brother PV-1000. The PV-2000 is crude little computer marketed as an initiation and gaming machine.
+
+The keyboard uses a flat plastic membrane just like the Sinclair ZX-81 for example. 8 direction keys act as a game controller along with two special "fire" keys next to the spacebar. Of course it had no great success. Only 11 cartridges seem to have been released for it, mainly popular Arcade hits (Pac &amp; Pal, Rock'n Rope, Pooyan, Galaga, Super Cobra, etc).</text>
+			<text lang="pl">Nazywany również "RakuGaki" w Japonii, PV-2000 to bardzo mało znany japoński system wydany w 1983 roku w tym samym czasie co system do gier PV-1000. Te dwa systemy nie są ze sobą kompatybilne, ponieważ mają bardzo różną architekturę. PV-2000 jest bliższy systemom MSX niż jego mniejszemu bratu PV-1000. PV-2000 to prymitywny mały komputer sprzedawany jako maszyna do inicjacji i gier.
+
+Klawiatura wykorzystuje płaską plastikową membranę, podobnie jak na przykład Sinclair ZX-81. 8 klawiszy kierunkowych działa jako kontroler gry wraz z dwoma specjalnymi klawiszami "fire" obok spacji. Oczywiście nie odniósł on wielkiego sukcesu. Wydaje się, że wydano dla niego tylko 11 kartridży, głównie popularnych hitów Arcade (Pac &amp; Pal, Rock'n Rope, Pooyan, Galaga, Super Cobra itp.).</text>
+			<text lang="ru">PV-2000, также называемая в Японии "RakuGaki", - это очень малоизвестная японская система, выпущенная в 1983 году одновременно с игровой системой PV-1000. Эти две системы несовместимы друг с другом, так как имеют совершенно разную архитектуру. PV-2000 ближе к системам MSX, чем к своему младшему брату PV-1000. PV-2000 - это маленький грубый компьютер, который продается как игровой.
+
+Клавиатура выполнена в виде плоской пластиковой мембраны, как, например, у Sinclair ZX-81. В качестве игрового контроллера выступают 8 клавиш направления движения, а также две специальные клавиши "огонь", расположенные рядом с пробелом. Разумеется, большого успеха она не имела. Для нее было выпущено всего 11 картриджей, в основном популярные аркадные хиты (Pac &amp; Pal, Rock'n Rope, Pooyan, Galaga, Super Cobra и т.д.).</text>
+			<text lang="es">También llamado "RakuGaki" en Japón, el PV-2000 es un sistema japonés muy poco conocido que salió a la venta en 1983 al mismo tiempo que el sistema de juegos PV-1000. Estos dos sistemas no son compatibles entre sí, ya que tienen una arquitectura muy diferente. El PV-2000 está más cerca de los sistemas MSX que de su hermano pequeño PV-1000. El PV-2000 es un pequeño y tosco ordenador comercializado como máquina de iniciación y juego.
+
+El teclado utiliza una membrana plana de plástico como el Sinclair ZX-81 por ejemplo. 8 teclas de dirección actúan como controlador del juego junto con dos teclas especiales de "fuego" junto a la barra espaciadora. Por supuesto, no tuvo un gran éxito. Sólo 11 cartuchos parecen haber sido lanzados para él, principalmente éxitos populares de Arcade (Pac &amp; Pal, Rock'n Rope, Pooyan, Galaga, Super Cobra, etc).</text>
+			<text lang="de">Das PV-2000, in Japan auch "RakuGaki" genannt, ist ein sehr obskures japanisches System, das 1983 zur gleichen Zeit wie das PV-1000-Spielsystem auf den Markt kam. Diese beiden Systeme sind nicht miteinander kompatibel, da sie eine sehr unterschiedliche Architektur haben. Der PV-2000 ist näher an MSX-Systemen als an seinem kleinen Bruder PV-1000. Der PV-2000 ist ein grober kleiner Computer, der als Einführungs- und Spielmaschine vermarktet wird.
+
+Die Tastatur besteht aus einer flachen Plastikmembran, wie sie z.B. beim Sinclair ZX-81 verwendet wurde. 8 Richtungstasten dienen als Spielsteuerung zusammen mit zwei speziellen "Feuer"-Tasten neben der Leertaste. Natürlich hatte es keinen großen Erfolg. Es scheinen nur 11 Kassetten für ihn erschienen zu sein, hauptsächlich beliebte Arcade-Hits (Pac &amp; Pal, Rock'n Rope, Pooyan, Galaga, Super Cobra, usw.).</text>
+			<text lang="fr">Également appelé "RakuGaki" au Japon, le PV-2000 est un système japonais très obscur sorti en 1983 en même temps que le système de jeu PV-1000. Ces deux systèmes ne sont pas compatibles l'un avec l'autre, car ils ont une architecture très différente. Le PV-2000 est plus proche des systèmes MSX que de son petit frère le PV-1000. Le PV-2000 est un petit ordinateur rudimentaire commercialisé comme machine d'initiation et de jeu.
+
+Le clavier utilise une membrane plastique plate comme sur le Sinclair ZX-81 par exemple. 8 touches de direction font office de contrôleur de jeu, ainsi que deux touches spéciales "feu" situées à côté de la barre d'espacement. Bien entendu, ce jeu n'a pas connu un grand succès. Seules 11 cartouches semblent avoir été commercialisées, principalement des jeux d'arcade populaires (Pac &amp; Pal, Rock'n Rope, Pooyan, Galaga, Super Cobra, etc).</text>
+			<text lang="it">Chiamato anche "RakuGaki" in Giappone, il PV-2000 è un sistema giapponese molto oscuro rilasciato nel 1983 contemporaneamente al sistema di gioco PV-1000. Questi due sistemi non sono compatibili tra loro, poiché hanno un'architettura molto diversa. Il PV-2000 è più vicino ai sistemi MSX che al suo fratellino PV-1000. Il PV-2000 è un piccolo e rozzo computer commercializzato come macchina per l'iniziazione e il gioco.
+
+La tastiera utilizza una membrana di plastica piatta, come quella del Sinclair ZX-81, ad esempio. 8 tasti direzionali fungono da controller di gioco e due tasti speciali "fuoco" accanto alla barra spaziatrice. Naturalmente non ebbe un grande successo. Sembra che siano state rilasciate solo 11 cartucce, principalmente di giochi arcade popolari (Pac &amp; Pal, Rock'n Rope, Pooyan, Galaga, Super Cobra, ecc.).</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>

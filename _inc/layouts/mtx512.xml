@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.325</pos>
+			<maxSize>0.26</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.34</maxSize>	
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.325" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>1983</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Memotech</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>MTX512</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.40</pos>
+			<text>The Memotech MTX500 and MTX512 were a range of 8-bit Zilog Z80A based home computers released by the British company Memotech in 1983 and sold mainly in the UK, France, Germany and Scandinavia. Originally a manufacturer of memory add-ons for Sinclair machines, Memotech developed their own competing computer when it was perceived the expansion pack business would no longer be viable.
+
+The Memotech machines were technically similar to, although not compatible with, the MSX standard, making use of the same CPU and video chip. The machines were particularly distinguished from other microcomputers available at the time by the generous maximum memory ceiling. The 500 and 512 models could be expanded internally up to 512K, an unusually large amount of RAM in 1983 for a computer aimed at home use.</text>
+			<text lang="pl">Memotech MTX500 i MTX512 były gamą 8-bitowych komputerów domowych opartych na Zilog Z80A wydanych przez brytyjską firmę Memotech w 1983 roku i sprzedawanych głównie w Wielkiej Brytanii, Francji, Niemczech i Skandynawii. Pierwotnie producent dodatków pamięci dla maszyn Sinclair, Memotech opracował własny konkurencyjny komputer, gdy okazało się, że biznes pakietów rozszerzeń nie będzie już opłacalny.
+
+Maszyny Memotech były technicznie podobne do standardu MSX, choć nie były z nim kompatybilne, wykorzystując ten sam procesor i układ wideo. Maszyny te szczególnie wyróżniały się na tle innych mikrokomputerów dostępnych w tamtym czasie dzięki dużemu maksymalnemu pułapowi pamięci. Modele 500 i 512 można było rozszerzyć wewnętrznie do 512K, co było niezwykle dużą ilością pamięci RAM w 1983 roku dla komputera przeznaczonego do użytku domowego.</text>
+			<text lang="ru">Memotech MTX500 и MTX512 - серия 8-разрядных домашних компьютеров на базе Zilog Z80A, выпущенная британской компанией Memotech в 1983 г. и продававшаяся в основном в Великобритании, Франции, Германии и Скандинавии. Изначально компания занималась производством дополнительных модулей памяти для компьютеров Sinclair, но когда стало ясно, что бизнес по производству модулей расширения перестает быть жизнеспособным, Memotech разработала свой собственный компьютер-конкурент.
+
+Машины Memotech были технически схожи со стандартом MSX, но не совместимы с ним, поскольку использовали тот же процессор и видеочип. От других микрокомпьютеров, выпускавшихся в то время, эти машины отличались большим максимальным объемом памяти. Модели 500 и 512 можно было расширить внутреннюю память до 512 Кбайт - необычно большой объем оперативной памяти для компьютера 1983 года, предназначенного для домашнего использования.</text>
+			<text lang="es">Los Memotech MTX500 y MTX512 fueron una gama de ordenadores domésticos de 8 bits basados en el Zilog Z80A lanzados al mercado por la empresa británica Memotech en 1983 y vendidos principalmente en el Reino Unido, Francia, Alemania y Escandinavia. Originalmente fabricante de complementos de memoria para máquinas Sinclair, Memotech desarrolló su propio ordenador competidor cuando se vio que el negocio de los paquetes de expansión dejaría de ser viable.
+
+Las máquinas Memotech eran técnicamente similares al estándar MSX, aunque no compatibles con él, ya que utilizaban la misma CPU y el mismo chip de vídeo. Las máquinas se distinguían especialmente de otros microordenadores disponibles en la época por el generoso límite máximo de memoria. Los modelos 500 y 512 podían ampliarse internamente hasta 512K, una cantidad de RAM inusualmente grande en 1983 para un ordenador destinado al uso doméstico.</text>
+			<text lang="de">Die Memotech MTX500 und MTX512 waren eine Reihe von 8-Bit-Heimcomputern auf Zilog Z80A-Basis, die 1983 von der britischen Firma Memotech auf den Markt gebracht und hauptsächlich im Vereinigten Königreich, Frankreich, Deutschland und Skandinavien verkauft wurden. Ursprünglich Hersteller von Speichererweiterungen für Sinclair-Maschinen, entwickelte Memotech einen eigenen konkurrierenden Computer, als man erkannte, dass das Geschäft mit den Erweiterungspaketen nicht mehr rentabel sein würde.
+
+Die Memotech-Maschinen waren dem MSX-Standard technisch ähnlich, wenn auch nicht mit ihm kompatibel, da sie denselben CPU- und Videochip nutzten. Die Maschinen unterschieden sich von anderen damals erhältlichen Mikrocomputern vor allem durch die großzügige maximale Speicherausstattung. Die Modelle 500 und 512 konnten intern auf bis zu 512K erweitert werden, eine ungewöhnlich große Menge an RAM im Jahr 1983 für einen Computer für den Heimgebrauch.</text>
+			<text lang="fr">Les Memotech MTX500 et MTX512 étaient une gamme d'ordinateurs domestiques 8 bits basés sur le Zilog Z80A, lancés par la société britannique Memotech en 1983 et vendus principalement au Royaume-Uni, en France, en Allemagne et en Scandinavie. À l'origine fabricant de modules de mémoire pour les machines Sinclair, Memotech a développé son propre ordinateur concurrent lorsqu'il est apparu que l'activité des modules d'extension ne serait plus viable.
+
+Les machines Memotech étaient techniquement similaires à la norme MSX, bien que non compatibles avec elle, car elles utilisaient le même processeur et la même puce vidéo. Les machines se distinguaient particulièrement des autres micro-ordinateurs disponibles à l'époque par leur mémoire maximale généreuse. Les modèles 500 et 512 pouvaient être étendus en interne jusqu'à 512K, une quantité de RAM inhabituellement élevée en 1983 pour un ordinateur destiné à un usage domestique.</text>
+			<text lang="it">I Memotech MTX500 e MTX512 sono stati una gamma di home computer a 8 bit basati su Zilog Z80A, prodotti dall'azienda britannica Memotech nel 1983 e venduti principalmente nel Regno Unito, in Francia, Germania e Scandinavia. Originariamente produttore di componenti aggiuntivi di memoria per le macchine Sinclair, Memotech sviluppò un proprio computer concorrente quando intuì che l'attività dei pacchetti di espansione non sarebbe stata più redditizia.
+
+Le macchine Memotech erano tecnicamente simili, anche se non compatibili, con lo standard MSX, in quanto utilizzavano la stessa CPU e lo stesso chip video. Le macchine si distinguevano dagli altri microcomputer disponibili all'epoca per il generoso tetto massimo di memoria. I modelli 500 e 512 potevano essere espansi internamente fino a 512K, una quantità di RAM insolitamente elevata nel 1983 per un computer destinato all'uso domestico.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>

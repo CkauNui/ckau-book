@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videocrton" extra="true">
+			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
+			<delay>0</delay>
+			<loops>0</loops>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>	
+			<pos>0.5 0.36</pos>
+			<maxSize>0.22</maxSize>
+			<zIndex>26</zIndex>
+		</video>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>	
+			<pos>0.5 0.36</pos>
+			<maxSize>0.22</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>1982</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Sord Computer Corporation</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>M5</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.40</pos>
+			<text>The Sord M5 is a home computer launched by Sord Computer Corporation in 1982. Primarily the Sord M5 competed in the Japanese home computer market. It was also sold as the CGL M5 in the United Kingdom by Computer Games Limited and was reasonably popular in Czechoslovakia, where the M5 stood as one of the first affordable computers available to the general public. Takara also sold models in Japan as the Game M5, and models were also exported to South Korea.
+
+Original models of the Sord M5 are relatively small by home computing standards, with a built-in keyboard with rubber keys, similar to the ZX Spectrum, which is also sold in many countries such as the United Kingdom itself, Ireland, Spain, the Netherlands, Singapore, Malaysia, Sweden, Norway, Denmark, Canada, New Zealand, Australia, Greece, Israel and Hong Kong as the Sord M5 Creative Computer, which included a carrying case for the computer.
+
+The specifications of the computer are very similar to the MSX, a computer that likely forced the Sord M5 (along with many similar Japanese computers) out of the market by the mid-1980s.</text>
+			<text lang="pl">Sord M5 to komputer domowy wprowadzony na rynek przez Sord Computer Corporation w 1982 roku. Głównie Sord M5 konkurował na japońskim rynku komputerów domowych. Był również sprzedawany jako CGL M5 w Wielkiej Brytanii przez Computer Games Limited i był dość popularny w Czechosłowacji, gdzie M5 był jednym z pierwszych niedrogich komputerów dostępnych dla ogółu społeczeństwa. Takara sprzedawała również modele w Japonii jako Game M5, a modele były również eksportowane do Korei Południowej.
+
+Oryginalne modele Sord M5 są stosunkowo małe jak na standardy komputerów domowych, z wbudowaną klawiaturą z gumowymi klawiszami, podobną do ZX Spectrum, która jest również sprzedawana w wielu krajach, takich jak Wielka Brytania, Irlandia, Hiszpania, Holandia, Singapur, Malezja, Szwecja, Norwegia, Dania, Kanada, Nowa Zelandia, Australia, Grecja, Izrael i Hongkong jako Sord M5 Creative Computer, który zawierał futerał do przenoszenia komputera.
+
+Specyfikacje komputera są bardzo podobne do MSX, komputera, który prawdopodobnie wyparł Sord M5 (wraz z wieloma podobnymi japońskimi komputerami) z rynku w połowie lat 80-tych.</text>
+			<text lang="ru">Sord M5 - домашний компьютер, выпущенный компанией Sord Computer Corporation в 1982 году. В первую очередь Sord M5 конкурировал на японском рынке домашних компьютеров. Он также продавался под названием CGL M5 в Великобритании компанией Computer Games Limited и был достаточно популярен в Чехословакии, где M5 стал одним из первых доступных компьютеров для широкой публики. Компания Takara также продавала модели в Японии под названием Game M5, кроме того, модели экспортировались в Южную Корею.
+
+Оригинальные модели Sord M5 - относительно небольшие по меркам домашних компьютеров, со встроенной клавиатурой с резиновыми клавишами, похожей на ZX Spectrum. Во многих странах, таких как Великобритания, Ирландия, Испания, Нидерланды, Сингапур, Малайзия, Швеция, Норвегия, Дания, Канада, Новая Зеландия, Австралия, Греция, Израиль и Гонконг, Sord M5 Creative Computer продавался под названием Sord M5 Creative Computer, в комплект которого входил чехол для переноски компьютера.
+
+По своим техническим характеристикам компьютер очень похож на MSX - компьютер, который, вероятно, вытеснил Sord M5 (как и многие другие аналогичные японские компьютеры) с рынка к середине 1980-х годов.</text>
+			<text lang="es">El Sord M5 es un ordenador doméstico lanzado por Sord Computer Corporation en 1982. El Sord M5 compitió principalmente en el mercado japonés de ordenadores domésticos. También se vendió como CGL M5 en el Reino Unido por Computer Games Limited y fue razonablemente popular en Checoslovaquia, donde el M5 fue uno de los primeros ordenadores asequibles disponibles para el público en general. Takara también vendió modelos en Japón como Game M5, y también se exportaron modelos a Corea del Sur.
+
+Los modelos originales del Sord M5 son relativamente pequeños para los estándares de la informática doméstica, con un teclado incorporado con teclas de goma, similar al del ZX Spectrum, que también se vende en muchos países como el propio Reino Unido, Irlanda, España, Países Bajos, Singapur, Malasia, Suecia, Noruega, Dinamarca, Canadá, Nueva Zelanda, Australia, Grecia, Israel y Hong Kong como Sord M5 Creative Computer, que incluía una funda de transporte para el ordenador.
+
+Las especificaciones del ordenador son muy similares a las del MSX, un ordenador que probablemente obligó al Sord M5 (junto con muchos ordenadores japoneses similares) a abandonar el mercado a mediados de la década de 1980.</text>
+			<text lang="de">Der Sord M5 ist ein Heimcomputer, der 1982 von der Sord Computer Corporation auf den Markt gebracht wurde. In erster Linie konkurrierte der Sord M5 auf dem japanischen Heimcomputermarkt. Er wurde auch als CGL M5 im Vereinigten Königreich von Computer Games Limited verkauft und war in der Tschechoslowakei recht beliebt, wo der M5 als einer der ersten erschwinglichen Computer für die breite Öffentlichkeit erhältlich war. Takara verkaufte die Modelle auch in Japan unter dem Namen Game M5, und es wurden auch Modelle nach Südkorea exportiert.
+
+Die Originalmodelle des Sord M5 sind im Vergleich zu Heimcomputern relativ klein und verfügen über eine eingebaute Tastatur mit Gummitasten, ähnlich wie der ZX Spectrum, der auch in vielen Ländern wie dem Vereinigten Königreich selbst, Irland, Spanien, den Niederlanden, Singapur, Malaysia, Schweden, Norwegen, Dänemark, Kanada, Neuseeland, Australien, Griechenland, Israel und Hongkong als Sord M5 Creative Computer verkauft wird, zu dem auch eine Tragetasche für den Computer gehört.
+
+Die technischen Daten des Computers sind dem MSX sehr ähnlich, einem Computer, der den Sord M5 (zusammen mit vielen ähnlichen japanischen Computern) Mitte der 1980er Jahre wahrscheinlich vom Markt verdrängt hat.</text>
+			<text lang="fr">Le Sord M5 est un ordinateur domestique lancé par Sord Computer Corporation en 1982. Le Sord M5 était principalement destiné au marché japonais des ordinateurs domestiques. Il a également été vendu sous le nom de CGL M5 au Royaume-Uni par Computer Games Limited et a connu une certaine popularité en Tchécoslovaquie, où le M5 a été l'un des premiers ordinateurs abordables disponibles pour le grand public. Takara a également vendu des modèles au Japon sous le nom de Game M5, et des modèles ont également été exportés en Corée du Sud.
+
+Les modèles originaux du Sord M5 sont relativement petits par rapport aux normes de l'informatique domestique, avec un clavier intégré à touches en caoutchouc, similaire au ZX Spectrum, qui est également vendu dans de nombreux pays tels que le Royaume-Uni, l'Irlande, l'Espagne, les Pays-Bas, Singapour, la Malaisie, la Suède, la Norvège, le Danemark, le Canada, la Nouvelle-Zélande, l'Australie, la Grèce, Israël et Hong Kong sous le nom de Sord M5 Creative Computer, qui comprend une mallette de transport pour l'ordinateur.
+
+Les spécifications de l'ordinateur sont très similaires à celles du MSX, un ordinateur qui a probablement évincé le Sord M5 (ainsi que de nombreux ordinateurs japonais similaires) du marché au milieu des années 1980.</text>
+			<text lang="it">Il Sord M5 è un home computer lanciato da Sord Computer Corporation nel 1982. Principalmente il Sord M5 competeva nel mercato giapponese degli home computer. Fu venduto anche come CGL M5 nel Regno Unito da Computer Games Limited ed ebbe una discreta popolarità in Cecoslovacchia, dove l'M5 fu uno dei primi computer economici disponibili al pubblico. Takara vendette anche modelli in Giappone con il nome di Game M5 e furono esportati anche in Corea del Sud.
+
+I modelli originali del Sord M5 sono relativamente piccoli per gli standard dell'home computing, con una tastiera incorporata con tasti in gomma, simile a quella dello ZX Spectrum, che viene venduto anche in molti paesi come lo stesso Regno Unito, l'Irlanda, la Spagna, i Paesi Bassi, Singapore, la Malesia, la Svezia, la Norvegia, la Danimarca, il Canada, la Nuova Zelanda, l'Australia, la Grecia, Israele e Hong Kong con il nome di Sord M5 Creative Computer, che includeva una custodia per il trasporto del computer.
+
+Le specifiche del computer sono molto simili a quelle dell'MSX, che probabilmente costrinse il Sord M5 (insieme a molti altri computer giapponesi simili) a uscire dal mercato entro la metà degli anni Ottanta.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>
