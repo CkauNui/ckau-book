@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.49</origin>
+			<pos>0.5 0.445</pos>
+			<maxSize>0.15</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.445" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>2005</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>TimeTop</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>GameKing III</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.4</pos>
+			<text>GameKing is a brand of handheld game consoles, designed and developed by Timetop and manufactured by Guangzhou Panyu Gaoming Electronics Co.,Ltd, for the Hong Kong consumer market.
+
+The 'GameKing III' or GM-220 was released in 2005. While early advertisements showed the GameKing III with the same "false color" background picture as the GameKing I and II, which indicated that the system was black and white like the previous GameKing models, the GM-220 is full colour. Another distinction of the GM-220 is that unlike its predecessors, the Gameking I and II, which were promoted and marketed worldwide, the Gameking III was not distributed outside of Asia, making it much less common than the earlier models.
+
+The resolution doesn't seem enhanced compared to an original GameKing, and "classic" GameKing cartridges are automatically colorized, while games especially developed for it allegedly make use of the full color palette.</text>
+			<text lang="pl">GameKing to marka przenośnych konsol do gier, zaprojektowanych i opracowanych przez Timetop i wyprodukowanych przez Guangzhou Panyu Gaoming Electronics Co.,Ltd, na rynek konsumencki w Hongkongu.
+
+GameKing III lub GM-220 został wydany w 2005 roku. Podczas gdy wczesne reklamy pokazywały GameKing III z tym samym "fałszywym kolorem" tła, co GameKing I i II, co wskazywało, że system był czarno-biały, jak poprzednie modele GameKing, GM-220 jest w pełni kolorowy. Kolejnym wyróżnikiem GM-220 jest to, że w przeciwieństwie do swoich poprzedników, Gameking I i II, które były promowane i sprzedawane na całym świecie, Gameking III nie był dystrybuowany poza Azją, co czyni go znacznie mniej powszechnym niż wcześniejsze modele.
+
+Rozdzielczość nie wydaje się zwiększona w porównaniu do oryginalnego GameKinga, a "klasyczne" kartridże GameKing są automatycznie kolorowane, podczas gdy gry opracowane specjalnie dla niego rzekomo wykorzystują pełną paletę kolorów.</text>
+			<text lang="ru">GameKing - марка портативных игровых приставок, разработанных компанией Timetop и выпускаемых компанией Guangzhou Panyu Gaoming Electronics Co. Ltd. для потребительского рынка Гонконга.
+
+Модель "GameKing III" или GM-220 была выпущена в 2005 году. Если в первых рекламных роликах GameKing III изображался на том же "ложноцветном" фоне, что и GameKing I и II, что означало, что система черно-белая, как и предыдущие модели GameKing, то GM-220 - полноцветная. Еще одним отличием GM-220 является то, что в отличие от своих предшественников, Gameking I и II, которые продвигались и продавались по всему миру, Gameking III не распространялась за пределами Азии, что делает ее гораздо менее распространенной, чем предыдущие модели.
+
+Разрешение не кажется повышенным по сравнению с оригинальным GameKing, а "классические" картриджи GameKing имеют автоматическую цветопередачу, в то время как игры, специально разработанные для него, якобы используют всю цветовую палитру.</text>
+			<text lang="es">GameKing es una marca de videoconsolas portátiles, diseñada y desarrollada por Timetop y fabricada por Guangzhou Panyu Gaoming Electronics Co.,Ltd, para el mercado de consumo de Hong Kong.
+
+La GameKing III o GM-220 salió a la venta en 2005. Mientras que los primeros anuncios mostraban la GameKing III con la misma imagen de fondo en "falso color" que las GameKing I y II, lo que indicaba que la consola era en blanco y negro como los modelos GameKing anteriores, la GM-220 es a todo color. Otra distinción de la GM-220 es que, a diferencia de sus predecesoras, las Gameking I y II, que se promocionaron y comercializaron en todo el mundo, la Gameking III no se distribuyó fuera de Asia, lo que la hizo mucho menos común que los modelos anteriores.
+
+La resolución no parece mejorada en comparación con una GameKing original, y los cartuchos GameKing "clásicos" se colorean automáticamente, mientras que los juegos especialmente desarrollados para ella supuestamente hacen uso de toda la paleta de colores.</text>
+			<text lang="de">GameKing ist eine Marke von Handheld-Spielkonsolen, die von Timetop entworfen und entwickelt und von Guangzhou Panyu Gaoming Electronics Co.,Ltd. für den Verbrauchermarkt in Hongkong hergestellt werden.
+
+Der "GameKing III" oder GM-220 wurde 2005 auf den Markt gebracht. Während frühe Werbungen den GameKing III mit demselben "Falschfarben"-Hintergrundbild wie den GameKing I und II zeigten, was darauf hindeutete, dass das System wie die vorherigen GameKing-Modelle schwarz-weiß war, ist der GM-220 vollfarbig. Ein weiteres Unterscheidungsmerkmal des GM-220 ist, dass das Gameking III im Gegensatz zu seinen Vorgängermodellen, dem Gameking I und II, die weltweit beworben und vermarktet wurden, nicht außerhalb Asiens vertrieben wurde, so dass es weit weniger verbreitet war als die früheren Modelle.
+
+Die Auflösung scheint im Vergleich zu einem originalen GameKing nicht verbessert zu sein, und "klassische" GameKing-Kassetten sind automatisch koloriert, während speziell für ihn entwickelte Spiele angeblich die volle Farbpalette nutzen.</text>
+			<text lang="fr">GameKing est une marque de consoles de jeux portables conçue et développée par Timetop et fabriquée par Guangzhou Panyu Gaoming Electronics Co.,Ltd, pour le marché grand public de Hong Kong.
+
+Le "GameKing III" ou GM-220 a été commercialisé en 2005. Alors que les premières publicités montraient le GameKing III avec la même image de fond en "fausses couleurs" que les GameKing I et II, ce qui indiquait que le système était en noir et blanc comme les modèles GameKing précédents, le GM-220 est en couleurs. Une autre particularité du GM-220 est que, contrairement à ses prédécesseurs, les Gameking I et II, qui ont été promus et commercialisés dans le monde entier, le Gameking III n'a pas été distribué en dehors de l'Asie, ce qui le rend beaucoup moins courant que les modèles précédents.
+
+La résolution ne semble pas améliorée par rapport à un GameKing original, et les cartouches GameKing "classiques" sont automatiquement colorisées, alors que les jeux spécialement développés pour ce modèle utiliseraient toute la palette de couleurs.</text>
+			<text lang="it">GameKing è un marchio di console di gioco portatili, progettato e sviluppato da Timetop e prodotto da Guangzhou Panyu Gaoming Electronics Co.,Ltd, per il mercato consumer di Hong Kong.
+
+Il "GameKing III" o GM-220 è stato rilasciato nel 2005. Mentre le prime pubblicità mostravano il GameKing III con la stessa immagine di sfondo "a falsi colori" dei GameKing I e II, che indicava che il sistema era in bianco e nero come i precedenti modelli GameKing, il GM-220 è a colori. Un'altra caratteristica del GM-220 è che, a differenza dei suoi predecessori, il Gameking I e II, che sono stati promossi e commercializzati in tutto il mondo, il Gameking III non è stato distribuito al di fuori dell'Asia, il che lo rende molto meno comune dei modelli precedenti.
+
+La risoluzione non sembra migliorata rispetto a quella di un GameKing originale, e le cartucce GameKing "classiche" sono colorate automaticamente, mentre i giochi sviluppati appositamente per questa console sfruttano presumibilmente l'intera tavolozza di colori.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>

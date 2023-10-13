@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videocrton" extra="true">
+			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
+			<delay>0</delay>
+			<loops>0</loops>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.365</pos>
+			<maxSize>0.26</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.35</maxSize>
+			<zIndex>26</zIndex>
+		</video>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.365</pos>
+			<maxSize>0.26</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.35</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.365" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>2000</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Samsung</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>Nuon DVD-N501</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.4</pos>
+			<text>Nuon (stylized as NUON) is a technology developed by VM Labs that adds features to a DVD player. In addition to viewing DVDs, one can play 3D video games and use enhanced DVD navigational tools such as zoom and smooth scanning of DVD playback. One could also play CDs while the Nuon graphics processor generates synchronized graphics on the screen. There were plans to provide Internet access capability in the next generation of Nuon-equipped DVD players.
+
+In North America, Nuon was used in the Samsung DVD-N501 and DVD-N2000 models; they also released several models in other parts of the world: DVD-N504 (Europe), DVD N505 (Europe), and DVD-N591 (Korea). Toshiba released the SD-2300 DVD player, and there are two RCA models, the DRC300N and DRC480N. The Nuon was also used in Motorola's Streamaster 5000 "Digital DNA" set-top box.</text>
+			<text lang="pl">Nuon (stylizowany na NUON) to technologia opracowana przez VM Labs, która dodaje funkcje do odtwarzacza DVD. Oprócz oglądania DVD, można grać w gry wideo 3D i korzystać z ulepszonych narzędzi nawigacyjnych DVD, takich jak zoom i płynne skanowanie odtwarzania DVD. Można również odtwarzać płyty CD, podczas gdy procesor graficzny Nuon generuje zsynchronizowaną grafikę na ekranie. Istniały plany zapewnienia dostępu do Internetu w następnej generacji odtwarzaczy DVD wyposażonych w Nuon.
+
+W Ameryce Północnej Nuon był używany w modelach Samsung DVD-N501 i DVD-N2000; wypuszczono także kilka modeli w innych częściach świata: DVD-N504 (Europa), DVD N505 (Europa) i DVD-N591 (Korea). Toshiba wypuściła odtwarzacz DVD SD-2300, a także dwa modele RCA, DRC300N i DRC480N. Nuon był również używany w dekoderze Motorola Streamaster 5000 "Digital DNA".</text>
+			<text lang="ru">Nuon (стилизованное название NUON) - технология, разработанная компанией VM Labs, которая расширяет возможности DVD-плеера. Помимо просмотра DVD-дисков, можно играть в 3D-видеоигры и использовать расширенные средства навигации по DVD, такие как масштабирование и плавное сканирование при воспроизведении DVD. Можно также воспроизводить компакт-диски, в то время как графический процессор Nuon генерирует синхронизированную графику на экране. Планировалось, что в следующем поколении DVD-плееров, оснащенных Nuon, будет реализована возможность доступа в Интернет.
+
+В Северной Америке Nuon использовался в моделях Samsung DVD-N501 и DVD-N2000; в других частях света также было выпущено несколько моделей: DVD-N504 (Европа), DVD N505 (Европа) и DVD-N591 (Корея). Toshiba выпустила DVD-плеер SD-2300, а также две модели RCA - DRC300N и DRC480N. Nuon также использовался в приставке Streamaster 5000 "Digital DNA" компании Motorola.</text>
+			<text lang="es">Nuon (estilizado como NUON) es una tecnología desarrollada por VM Labs que añade funciones a un reproductor de DVD. Además de ver DVD, se puede jugar a videojuegos en 3D y utilizar herramientas mejoradas de navegación por DVD, como el zoom y el barrido suave de la reproducción de DVD. También se pueden reproducir CD mientras el procesador gráfico Nuon genera gráficos sincronizados en la pantalla. Estaba previsto que la próxima generación de reproductores de DVD equipados con Nuon ofreciera acceso a Internet.
+
+En Norteamérica, Nuon se utilizó en los modelos DVD-N501 y DVD-N2000 de Samsung; también lanzaron varios modelos en otras partes del mundo: DVD-N504 (Europa), DVD N505 (Europa) y DVD-N591 (Corea). Toshiba lanzó el reproductor de DVD SD-2300, y hay dos modelos de RCA, el DRC300N y el DRC480N. El Nuon también se utilizó en el descodificador Streamaster 5000 "Digital DNA" de Motorola.</text>
+			<text lang="de"></text>
+			<text lang="fr">Nuon (stylisé en NUON) est une technologie développée par VM Labs qui ajoute des fonctionnalités à un lecteur de DVD. Outre la lecture de DVD, il est possible de jouer à des jeux vidéo en 3D et d'utiliser des outils de navigation DVD améliorés, tels que le zoom et le balayage fluide de la lecture de DVD. Il est également possible de lire des CD pendant que le processeur graphique Nuon génère des graphiques synchronisés sur l'écran. Il est prévu de doter la prochaine génération de lecteurs de DVD équipés de Nuon d'une fonction d'accès à l'internet.
+
+En Amérique du Nord, Nuon a été utilisé dans les modèles DVD-N501 et DVD-N2000 de Samsung ; plusieurs modèles ont également été commercialisés dans d'autres parties du monde : DVD-N504 (Europe), DVD N505 (Europe) et DVD-N591 (Corée). Toshiba a commercialisé le lecteur de DVD SD-2300, et il existe deux modèles RCA, le DRC300N et le DRC480N. Le Nuon a également été utilisé dans le décodeur Streamaster 5000 "Digital DNA" de Motorola.</text>
+			<text lang="it">Nuon (stilizzato come NUON) è una tecnologia sviluppata da VM Labs che aggiunge funzioni a un lettore DVD. Oltre a visualizzare i DVD, è possibile giocare a videogiochi 3D e utilizzare strumenti di navigazione migliorati per i DVD, come lo zoom e la scansione fluida della riproduzione dei DVD. È anche possibile riprodurre CD mentre il processore grafico Nuon genera grafica sincronizzata sullo schermo. Era previsto che la prossima generazione di lettori DVD Nuon fosse dotata di funzionalità di accesso a Internet.
+
+In Nord America, Nuon è stato utilizzato nei modelli Samsung DVD-N501 e DVD-N2000; anche in altre parti del mondo sono stati rilasciati diversi modelli: DVD-N504 (Europa), DVD N505 (Europa) e DVD-N591 (Corea). Toshiba ha rilasciato il lettore DVD SD-2300 e ci sono due modelli RCA, il DRC300N e il DRC480N. Il Nuon è stato utilizzato anche nel set-top box Streamaster 5000 "Digital DNA" di Motorola.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>

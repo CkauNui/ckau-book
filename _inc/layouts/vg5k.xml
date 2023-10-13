@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videocrton" extra="true">
+			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
+			<delay>0</delay>
+			<loops>0</loops>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.335</pos>
+			<maxSize>0.22</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.28</maxSize>
+			<zIndex>26</zIndex>
+		</video>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.335</pos>
+			<maxSize>0.22</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.28</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.335" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>1984</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Philips</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>VG-5000 μ</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.40</pos>
+			<text>The VG5000 μ is a computer created by Philips in 1984. It was manufactured in Le Mans by Radiotechnique (RTS) and marketed under the Philips, Radiola and Schneider brands.
+
+Not compatible with any other machines, it offered VG5000 BASIC (derived from Microsoft BASIC-80) as the operating system upon boot. Graphic ability was limited to a semigraphic symbol display, with the equivalent resolution of 320 x 250 in 8 colors. There are about forty games available for the system.</text>
+			<text lang="pl">VG5000 μ to komputer stworzony przez firmę Philips w 1984 roku. Był produkowany w Le Mans przez firmę Radiotechnique (RTS) i sprzedawany pod markami Philips, Radiola i Schneider.
+
+Nie był kompatybilny z żadnymi innymi maszynami, oferował VG5000 BASIC (wywodzący się z Microsoft BASIC-80) jako system operacyjny po uruchomieniu. Możliwości graficzne były ograniczone do półgraficznego wyświetlacza symboli, o równoważnej rozdzielczości 320 x 250 w 8 kolorach. Dla systemu dostępnych jest około czterdziestu gier.</text>
+			<text lang="ru">VG5000 μ - компьютер, созданный компанией Philips в 1984 году. Он производился в Ле-Мане компанией Radiotechnique (RTS) и продавался под марками Philips, Radiola и Schneider.
+
+Не совместимый ни с какими другими машинами, он предлагал в качестве операционной системы при загрузке VG5000 BASIC (производный от Microsoft BASIC-80). Графические возможности ограничивались полуграфическим символьным дисплеем с эквивалентным разрешением 320 x 250 при 8 цветах. Для системы доступно около сорока игр.</text>
+			<text lang="es">El VG5000 μ es un ordenador creado por Philips en 1984. Fue fabricado en Le Mans por Radiotechnique (RTS) y comercializado bajo las marcas Philips, Radiola y Schneider.
+
+No era compatible con ninguna otra máquina y ofrecía VG5000 BASIC (derivado de Microsoft BASIC-80) como sistema operativo al arrancar. La capacidad gráfica se limitaba a una pantalla semigráfica de símbolos, con una resolución equivalente de 320 x 250 en 8 colores. Hay unos cuarenta juegos disponibles para el sistema.</text>
+			<text lang="de">Der VG5000 μ ist ein Computer, der 1984 von Philips entwickelt wurde. Er wurde in Le Mans von Radiotechnique (RTS) hergestellt und unter den Marken Philips, Radiola und Schneider vertrieben.
+
+Er war nicht mit anderen Rechnern kompatibel und bot beim Booten VG5000 BASIC (abgeleitet von Microsoft BASIC-80) als Betriebssystem. Die grafischen Möglichkeiten beschränkten sich auf eine semigrafische Symbolanzeige mit einer Auflösung von 320 x 250 in 8 Farben. Es sind etwa vierzig Spiele für das System verfügbar.</text>
+			<text lang="fr">Le VG5000 μ est un ordinateur créé par Philips en 1984. Il était fabriqué au Mans par Radiotechnique (RTS) et commercialisé sous les marques Philips, Radiola et Schneider.
+
+Non compatible avec d'autres machines, il proposait le VG5000 BASIC (dérivé du Microsoft BASIC-80) comme système d'exploitation au démarrage. La capacité graphique était limitée à un affichage de symboles semi-graphiques, avec une résolution équivalente à 320 x 250 en 8 couleurs. Une quarantaine de jeux sont disponibles pour ce système.</text>
+			<text lang="it">Il VG5000 μ è un computer creato da Philips nel 1984. È stato prodotto a Le Mans da Radiotechnique (RTS) e commercializzato con i marchi Philips, Radiola e Schneider.
+
+Non compatibile con altre macchine, offriva il VG5000 BASIC (derivato dal Microsoft BASIC-80) come sistema operativo all'avvio. La capacità grafica era limitata a un display di simboli semigrafici, con una risoluzione equivalente a 320 x 250 a 8 colori. Sono disponibili circa quaranta giochi per il sistema.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>

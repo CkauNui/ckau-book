@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.50 0.47</pos>
+			<maxSize>0.20</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.24</maxSize>
+			<zIndex>26</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.47" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<video name="videobox2" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+			<audio>false</audio>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.28 0.5</origin>
+			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>	
+			<pos>0.635 0.47</pos>
+			<maxSize>0.16</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.20</maxSize>
+			<zIndex>25</zIndex>
+			<rotation>0</rotation>
+			<storyboard>
+				<animation property="pos" to="0.355 0.47" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<video name="videobox3" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+			<audio>false</audio>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.72 0.5</origin>
+			<origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>	
+			<pos>0.365 0.47</pos>
+			<maxSize>0.16</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.20</maxSize>
+			<zIndex>25</zIndex>
+			<rotation>0</rotation>
+			<storyboard>
+				<animation property="pos" to="0.085 0.47" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>2023</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.03</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.25</pos>
+			<text>Batoparrot</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.35</pos>
+			<text>Initially, Batoparrot was conceived as a parody system to make fun of the exclusivity and monopolistic ideals of Teknoparrot (a modern Windows-based arcade game emulator). Initially, Batoparrot was a simple idea to port several playable Teknoparrot games to Batocera, using the PC arcade game equivalent as a substitute for the Linux game equivalent.
+			
+But as the idea gained popularity, Batocera users embraced it and began using it as a full-fledged replacement for Teknoparrot in Batocera, prompting a full plunge into adding all arcade games currently available and released on PC with the same name as those developed and released by game developers and playable through Teknoparrot. 
+The idea is that all Teknoparrot games that have PC counterparts (older or newer) will be added to Batoparrot and will be fully playable in Batocera. In this respect, Batoparrot is nothing more than a travesty and a false system, since it uses PC games that are already playable in Wine (a Linux-based Windows "emulator") as a starting point for running games. Of course, PC games are sometimes developed in a completely different way than arcade games (except for pure ports), and treating them as if they were full-fledged arcade games reportedly doesn't appeal to a few arcade game purists. 
+
+Although originally a parody idea, Batoparrot continues to do very well, and has even inspired the release of more exclusive modern PC arcade titles by developers who want their games to be playable on all platforms. In its current form, Batoparrot is a form of protest against the closed-source, monopolistic, profit-driven nature of Teknoparrot and continues to be used by the Linux and Batocera communities. The person behind the concept of the parody system, Sleyk, has vowed to add games to his repertoire based solely on principle, strictly adhering to adding only modern arcade games playable through Teknoparrot that have been released on PC until Teknoparrot gets an official Linux-based user interface and abandons its monopolistic profit-driven structure.
+	</text>
+			<text lang="pl">Początkowo Batoparrot został pomyślany jako system parodiujący, mający na celu wyśmiewanie się z ekskluzywności i monopolistycznych ideałów Teknoparrot (nowoczesnego emulatora gier zręcznościowych opartego na systemie Windows). Początkowo Batoparrot był prostym pomysłem na przeniesienie kilku grywalnych gier Teknoparrot do Batocery, wykorzystując odpowiednik gry zręcznościowej na PC jako substytut odpowiednika gry w systemie Linux.
+			
+Jednak gdy pomysł zyskał na popularności, użytkownicy Batocery przyjęli go i zaczęli używać go jako pełnoprawnego zamiennika Teknoparrot w Batocerze, co skłoniło do pełnego zanurzenia się w dodawaniu wszystkich gier zręcznościowych, które są obecnie dostępne i wydane na PC o tej samej nazwie, co te, które zostały opracowane i wydane przez twórców gier i w które można grać przez Teknoparrot. 
+Chodzi o to, że wszystkie gry Teknoparrot, które mają odpowiedniki na PC (starsze lub nowsze), zostaną dodane do Batoparrot i będą w pełni grywalne w Batocera. Pod tym względem Batoparrot jest jedynie parodią i fałszywym systemem, ponieważ wykorzystuje gry na PC, które są już grywalne w Wine (opartym na Linuksie "emulatorze" systemu Windows) jako punkt startowy do uruchamiania gier. Oczywiście gry na PC są czasami tworzone w zupełnie inny sposób niż gry zręcznościowe (poza czystymi portami), a traktowanie ich tak, jakby były pełnoprawnymi grami zręcznościowymi, podobno nie podoba się kilku purystom gier zręcznościowych. 
+
+Choć początkowo był to pomysł na parodię, Batoparrot nadal radzi sobie bardzo dobrze, a nawet zainspirował do wydania bardziej ekskluzywnych nowoczesnych tytułów zręcznościowych na PC przez twórców, którzy chcą, aby ich gry były odtwarzane na wszystkich platformach. W obecnej formie Batoparrot stanowi formę protestu przeciwko zamkniętemu źródłu, monopolistycznej, nastawionej na zysk naturze Teknoparrot i jest nadal wykorzystywany przez społeczności Linux i Batocera. Osoba stojąca za koncepcją systemu parodii, Sleyk, przysięga dodawać gry do swojego repertuaru, wyłącznie w oparciu o zasady, ściśle przestrzegając dodawania tylko nowoczesnych gier zręcznościowych, w które można grać przez Teknoparrot, które zostały wydane na PC, dopóki Teknoparrot nie otrzyma oficjalnego interfejsu użytkownika opartego na Linuksie i nie zrezygnuje z monopolistycznej struktury opartej na zyskach.</text>
+			<text lang="ru">Изначально Batoparrot задумывался как пародийная система, высмеивающая эксклюзивность и монополистические идеалы Teknoparrot (современного эмулятора аркадных игр на базе Windows). Изначально Batoparrot представлял собой простую идею портирования нескольких игр Teknoparrot на Batocera, используя эквивалент аркадной игры для ПК в качестве замены эквивалента игры для Linux.
+			
+Однако по мере того, как идея набирала популярность, пользователи Batocera приняли ее и стали использовать в качестве полноценной замены Teknoparrot в Batocera, что послужило толчком для полного погружения в добавление всех аркадных игр, доступных в настоящее время и выпущенных на ПК с тем же названием, что и игры, разработанные и выпущенные разработчиками и воспроизводимые через Teknoparrot. 
+Идея заключается в том, что все игры Teknoparrot, имеющие аналоги на ПК (старые или новые), будут добавлены в Batoparrot и станут полностью играбельными в Batocera. В этом отношении Batoparrot является не более чем пародией и ложной системой, поскольку в качестве отправной точки для запуска игр использует PC-игры, которые уже воспроизводятся в Wine (Linux-based Windows 'emulator'). Конечно, игры для ПК иногда разрабатываются совсем не так, как аркадные игры (кроме чистых портов), и отношение к ним как к полноценным аркадным играм, как сообщается, не устраивает некоторых пуристов аркадных игр. 
+
+Несмотря на то, что идея Batoparrot изначально была пародийной, она до сих пор пользуется большим успехом и даже вдохновила разработчиков, которые хотят, чтобы их игры были доступны на всех платформах, на выпуск более эксклюзивных современных аркадных игр на ПК. В своем нынешнем виде Batoparrot является формой протеста против закрытого исходного кода, монополистической, ориентированной на прибыль природы Teknoparrot и продолжает использоваться сообществами Linux и Batocera. Человек, стоящий за концепцией пародийной системы, Sleyk, клянется добавлять игры в свой репертуар исключительно на основе правил, строго придерживаясь добавления только современных аркадных игр, воспроизводимых через Teknoparrot, которые были выпущены на ПК, пока Teknoparrot не получит официальный пользовательский интерфейс на базе Linux и не откажется от своей монополистической структуры, ориентированной на прибыль.</text>
+			<text lang="es">Inicialmente, Batoparrot se concibió como un sistema paródico para burlarse de la exclusividad y los ideales monopolísticos de Teknoparrot (un emulador de juegos arcade moderno basado en Windows). Al principio, Batoparrot era una simple idea para portar varios juegos jugables de Teknoparrot a Batocera, utilizando el equivalente de juego arcade de PC como sustituto del equivalente de juego de Linux.
+			
+Sin embargo, a medida que la idea fue ganando popularidad, los usuarios de Batocera la abrazaron y empezaron a utilizarla como un sustituto en toda regla de Teknoparrot en Batocera, lo que provocó una inmersión total en la adición de todos los juegos arcade actualmente disponibles y lanzados en PC con el mismo nombre que los desarrollados y lanzados por los desarrolladores de juegos y jugables a través de Teknoparrot. 
+La idea es que todos los juegos de Teknoparrot que tengan equivalentes para PC (más antiguos o más recientes) se añadan a Batoparrot y sean totalmente jugables en Batocera. En este sentido, Batoparrot no es más que una parodia y un sistema falso, ya que utiliza juegos de PC que ya son jugables en Wine (un "emulador" de Windows basado en Linux) como punto de partida para ejecutar juegos. Por supuesto, los juegos de PC se desarrollan a veces de forma completamente distinta a los juegos arcade (aparte de los puros ports), y tratarlos como si fueran juegos arcade en toda regla disgusta, según se dice, a unos cuantos puristas de los juegos arcade. 
+
+Aunque originalmente fue una idea paródica, Batoparrot sigue funcionando muy bien, e incluso ha inspirado el lanzamiento de títulos arcade modernos más exclusivos en PC por parte de desarrolladores que quieren que sus juegos se puedan jugar en todas las plataformas. En su forma actual, Batoparrot es una forma de protesta contra el carácter cerrado, monopolístico y lucrativo de Teknoparrot y sigue siendo utilizado por las comunidades Linux y Batocera. La persona detrás del concepto del sistema de parodia, Sleyk, promete añadir juegos a su repertorio, puramente en base a reglas, adhiriéndose estrictamente a añadir sólo juegos arcade modernos jugables a través de Teknoparrot que hayan sido lanzados en PC hasta que Teknoparrot consiga una interfaz de usuario oficial basada en Linux y abandone su estructura monopolística impulsada por los beneficios.</text>
+			<text lang="de">Ursprünglich wurde Batoparrot als Parodie-System konzipiert, um die Exklusivität und die monopolistischen Ideale von Teknoparrot (einem modernen Windows-basierten Arcade-Spiel-Emulator) zu verspotten. Ursprünglich war Batoparrot eine einfache Idee, mehrere spielbare Teknoparrot-Spiele auf Batocera zu portieren, wobei das PC-Arcade-Spieläquivalent als Ersatz für das Linux-Spieläquivalent verwendet wurde.
+			
+Als die Idee jedoch an Popularität gewann, wurde sie von den Batocera-Benutzern angenommen und als vollwertiger Ersatz für Teknoparrot in Batocera verwendet, was dazu führte, dass alle derzeit auf dem PC erhältlichen und veröffentlichten Arcade-Spiele mit demselben Namen wie die von Spieleentwicklern entwickelten und veröffentlichten und über Teknoparrot spielbaren Spiele hinzugefügt wurden. 
+Die Idee ist, dass alle Teknoparrot-Spiele, die ein PC-Äquivalent haben (ältere oder neuere), zu Batoparrot hinzugefügt werden und in Batocera vollständig spielbar sind. In dieser Hinsicht ist Batoparrot nichts weiter als eine Travestie und ein falsches System, da es PC-Spiele, die bereits in Wine (einem Linux-basierten Windows-'Emulator') spielbar sind, als Ausgangspunkt für die Ausführung von Spielen verwendet. Natürlich werden PC-Spiele manchmal ganz anders entwickelt als Arcade-Spiele (abgesehen von reinen Portierungen), und sie so zu behandeln, als wären sie vollwertige Arcade-Spiele, verärgert angeblich einige Arcade-Spiele-Puristen. 
+
+Obwohl es sich ursprünglich um eine Parodie handelte, ist Batoparrot immer noch sehr erfolgreich und hat sogar die Veröffentlichung von exklusiveren modernen Arcade-Titeln auf dem PC durch Entwickler inspiriert, die ihre Spiele auf allen Plattformen spielbar machen wollen. In seiner heutigen Form ist Batoparrot eine Form des Protests gegen die geschlossene, monopolistische und profitorientierte Natur von Teknoparrot und wird weiterhin von der Linux- und Batocera-Gemeinschaft genutzt. Die Person, die hinter dem Konzept des Parodie-Systems steht, Sleyk, schwört, Spiele zu seinem Repertoire hinzuzufügen, rein auf Basis von Regeln, wobei er sich strikt daran hält, nur moderne Arcade-Spiele hinzuzufügen, die über Teknoparrot spielbar sind und auf dem PC veröffentlicht wurden, bis Teknoparrot eine offizielle Linux-basierte Benutzeroberfläche erhält und seine monopolistische, gewinnorientierte Struktur aufgibt.</text>
+			<text lang="fr">Au départ, Batoparrot a été conçu comme un système parodique pour se moquer de l'exclusivité et des idéaux monopolistiques de Teknoparrot (un émulateur de jeux d'arcade moderne basé sur Windows). Au départ, Batoparrot était une simple idée de portage de plusieurs jeux Teknoparrot jouables sur Batocera, en utilisant l'équivalent du jeu d'arcade PC comme substitut de l'équivalent du jeu Linux.
+			
+Cependant, comme l'idée a gagné en popularité, les utilisateurs de Batocera l'ont adoptée et ont commencé à l'utiliser comme un remplacement à part entière de Teknoparrot dans Batocera, ce qui a incité à ajouter tous les jeux d'arcade actuellement disponibles et sortis sur PC avec le même nom que ceux développés et sortis par les développeurs de jeux et jouables à travers Teknoparrot. 
+L'idée est que tous les jeux Teknoparrot qui ont des équivalents PC (anciens ou plus récents) seront ajoutés à Batoparrot et seront entièrement jouables dans Batocera. À cet égard, Batoparrot n'est rien d'autre qu'une parodie et un faux système, car il utilise des jeux PC qui sont déjà jouables dans Wine (un "émulateur" Windows basé sur Linux) comme point de départ pour l'exécution des jeux. Bien entendu, les jeux PC sont parfois développés d'une manière totalement différente des jeux d'arcade (à l'exception des portages purs), et le fait de les traiter comme s'il s'agissait de jeux d'arcade à part entière déplairait à quelques puristes des jeux d'arcade. 
+
+Bien qu'il s'agisse à l'origine d'une idée parodique, Batoparrot se porte toujours très bien et a même inspiré la sortie de titres d'arcade modernes plus exclusifs sur PC par des développeurs qui souhaitent que leurs jeux soient jouables sur toutes les plates-formes. Dans sa forme actuelle, Batoparrot est une forme de protestation contre la nature fermée, monopolistique et axée sur le profit de Teknoparrot et continue d'être utilisé par les communautés Linux et Batocera. La personne à l'origine du concept du système de parodie, Sleyk, s'engage à ajouter des jeux à son répertoire, uniquement sur la base de règles, en adhérant strictement à l'ajout de jeux d'arcade modernes jouables via Teknoparrot qui sont sortis sur PC jusqu'à ce que Teknoparrot obtienne une interface utilisateur officielle basée sur Linux et abandonne sa structure monopolistique axée sur le profit.</text>
+			<text lang="it">Inizialmente, Batoparrot è stato concepito come un sistema parodistico per prendere in giro l'esclusività e gli ideali monopolistici di Teknoparrot (un moderno emulatore di giochi arcade basato su Windows). Inizialmente, Batoparrot era una semplice idea per portare diversi giochi Teknoparrot giocabili su Batocera, utilizzando l'equivalente del gioco arcade per PC come sostituto dell'equivalente del gioco per Linux.
+			
+Tuttavia, quando l'idea ha guadagnato popolarità, gli utenti di Batocera l'hanno accolta e hanno iniziato a usarla come un vero e proprio sostituto di Teknoparrot in Batocera, spingendo ad aggiungere tutti i giochi arcade attualmente disponibili e rilasciati su PC con lo stesso nome di quelli sviluppati e rilasciati dagli sviluppatori di giochi e giocabili attraverso Teknoparrot. 
+L'idea è che tutti i giochi Teknoparrot che hanno un equivalente per PC (più o meno recente) saranno aggiunti a Batoparrot e saranno completamente giocabili in Batocera. Da questo punto di vista, Batoparrot non è altro che una parodia e un falso sistema, in quanto utilizza giochi per PC che sono già giocabili in Wine (un "emulatore" di Windows basato su Linux) come punto di partenza per l'esecuzione dei giochi. Naturalmente, i giochi per PC sono a volte sviluppati in modo completamente diverso dai giochi arcade (a parte i puri porting), e trattarli come se fossero giochi arcade a tutti gli effetti, secondo quanto riferito, scontenta alcuni puristi dei giochi arcade. 
+
+Anche se in origine era un'idea parodistica, Batoparrot sta avendo molto successo e ha persino ispirato la pubblicazione di titoli arcade moderni più esclusivi su PC da parte di sviluppatori che vogliono che i loro giochi siano giocabili su tutte le piattaforme. Nella sua forma attuale, Batoparrot è una forma di protesta contro la natura chiusa, monopolistica e orientata al profitto di Teknoparrot e continua a essere utilizzato dalle comunità Linux e Batocera. La persona che ha ideato il sistema di parodia, Sleyk, ha promesso di aggiungere giochi al suo repertorio, esclusivamente sulla base di regole, attenendosi rigorosamente all'aggiunta di soli giochi arcade moderni giocabili attraverso Teknoparrot e rilasciati su PC, fino a quando Teknoparrot non otterrà un'interfaccia utente ufficiale basata su Linux e abbandonerà la sua struttura monopolistica basata sul profitto.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>
