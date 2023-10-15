@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.51 0.5</origin>
+			<origin if="${screen.ratio} == '21/9'">0.48 0.5</origin>
+			<pos>0.49 0.4</pos>
+			<maxSize>0.28</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>1983</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Matra &amp; Hachette</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>Alice 32</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.4</pos>
+			<text>The Matra &amp; Hachette Ordinateur Alice is a home computer sold in France beginning in 1983. It was a clone of the TRS-80 MC-10, produced through a collaboration between Matra and Hachette in France and Tandy Corporation in the United States.
+
+The Alice is distinguished by its bright red casing. Functionally, it is equivalent to the MC-10, with a Péritel (SCART) connector replacing the RF modulator for video output.
+The Alice never became a popular computer in its home country. It tried to invade schools by being part of the country's Plan Informatique pour Tous ("Information technology for everyone") programme, but Thomson won the whole deal. Less than 50 games were released for the system.
+The original model had 4 kB of RAM and used a Motorola 6847 video display generator chip, as used in the Dragon 32 and Acorn Atom among others.</text>
+			<text lang="pl">Matra &amp; Hachette Ordinateur Alice to komputer domowy sprzedawany we Francji od 1983 roku. Był to klon TRS-80 MC-10, wyprodukowany dzięki współpracy firm Matra i Hachette we Francji oraz Tandy Corporation w Stanach Zjednoczonych.
+
+Alice wyróżnia się jaskrawoczerwoną obudową. Funkcjonalnie jest odpowiednikiem MC-10, ze złączem Péritel (SCART) zastępującym modulator RF dla wyjścia wideo.
+Alice nigdy nie stał się popularnym komputerem w swoim kraju. Próbował wejść do szkół, będąc częścią krajowego programu Plan Informatique pour Tous ("Technologia informacyjna dla wszystkich"), ale Thomson wygrał całą transakcję. Na system wydano mniej niż 50 gier.
+Oryginalny model miał 4 kB pamięci RAM i wykorzystywał układ generatora wideo Motorola 6847, używany między innymi w Dragon 32 i Acorn Atom.</text>
+			<text lang="ru">Matra &amp; Hachette Ordinateur Alice - домашний компьютер, продававшийся во Франции с 1983 года. Он являлся клоном TRS-80 MC-10, выпущенным в результате сотрудничества французских компаний Matra и Hachette и американской Tandy Corporation.
+
+Alice отличается ярко-красным корпусом. Функционально она эквивалентна MC-10, но вместо радиочастотного модулятора для вывода видеосигнала используется разъем Péritel (SCART).
+На родине "Алиса" так и не стала популярным компьютером. Она пыталась проникнуть в школы, став частью программы Plan Informatique pour Tous ("Информационные технологии для всех"), но Thomson выиграл все дело. Для системы было выпущено менее 50 игр.
+Первоначальная модель имела 4 кБ оперативной памяти и использовала микросхему генератора видеодисплея Motorola 6847, применявшуюся, в частности, в Dragon 32 и Acorn Atom.</text>
+			<text lang="es">El Matra &amp; Hachette Ordinateur Alice es un ordenador doméstico vendido en Francia a partir de 1983. Era un clon del TRS-80 MC-10, producido a través de una colaboración entre Matra y Hachette en Francia y Tandy Corporation en los Estados Unidos.
+
+El Alice se distingue por su carcasa de color rojo brillante. Funcionalmente, es equivalente al MC-10, con un conector Péritel (SCART) que sustituye al modulador RF para la salida de vídeo.
+El Alice nunca llegó a ser un ordenador popular en su país de origen. Intentó invadir las escuelas formando parte del programa Plan Informatique pour Tous ("Tecnología de la información para todos") del país, pero Thomson ganó todo el trato. Se lanzaron menos de 50 juegos para el sistema.
+El modelo original tenía 4 kB de RAM y utilizaba un chip generador de pantalla de vídeo Motorola 6847, como los utilizados en el Dragon 32 y el Acorn Atom, entre otros.</text>
+			<text lang="de">Der Matra &amp; Hachette Ordinateur Alice ist ein Heimcomputer, der ab 1983 in Frankreich verkauft wurde. Er war ein Klon des TRS-80 MC-10, der in Zusammenarbeit von Matra und Hachette in Frankreich und der Tandy Corporation in den Vereinigten Staaten hergestellt wurde.
+
+Der Alice zeichnet sich durch sein leuchtend rotes Gehäuse aus. Funktionell entspricht er dem MC-10, mit einem Péritel (SCART)-Anschluss, der den RF-Modulator für die Videoausgabe ersetzt.
+Der Alice wurde in seinem Heimatland nie ein beliebter Computer. Im Rahmen des Programms "Plan Informatique pour Tous" ("Informatik für alle") versuchte er, in die Schulen vorzudringen, doch Thomson setzte sich durch. Weniger als 50 Spiele wurden für das System veröffentlicht.
+Das ursprüngliche Modell hatte 4 kB RAM und verwendete einen Motorola 6847 Video Display Generator Chip, wie er unter anderem im Dragon 32 und Acorn Atom verwendet wurde.</text>
+			<text lang="fr">Le Matra &amp; Hachette Ordinateur Alice est un ordinateur domestique vendu en France à partir de 1983. Il s'agit d'un clone du TRS-80 MC-10, produit dans le cadre d'une collaboration entre Matra et Hachette en France et Tandy Corporation aux États-Unis.
+
+L'Alice se distingue par son boîtier rouge vif. Fonctionnellement, il est équivalent au MC-10, avec un connecteur Péritel (SCART) remplaçant le modulateur RF pour la sortie vidéo.
+L'Alice n'est jamais devenu un ordinateur populaire dans son pays d'origine. Il a tenté d'envahir les écoles en faisant partie du programme Plan Informatique pour Tous, mais Thomson a remporté le marché. Moins de 50 jeux ont été commercialisés pour ce système.
+Le modèle original disposait de 4 kB de RAM et utilisait une puce de générateur d'affichage vidéo Motorola 6847, utilisée entre autres dans le Dragon 32 et l'Acorn Atom.</text>
+			<text lang="it">Matra &amp; Hachette Ordinateur Alice è un home computer venduto in Francia a partire dal 1983. Era un clone del TRS-80 MC-10, prodotto grazie alla collaborazione tra Matra e Hachette in Francia e Tandy Corporation negli Stati Uniti.
+
+L'Alice si distingue per l'involucro rosso brillante. Dal punto di vista funzionale, è equivalente all'MC-10, con un connettore Péritel (SCART) che sostituisce il modulatore RF per l'uscita video.
+L'Alice non divenne mai un computer popolare nel suo paese d'origine. Tentò di invadere le scuole facendo parte del programma Plan Informatique pour Tous ("Tecnologia dell'informazione per tutti") del paese, ma Thomson vinse l'affare. Sono stati rilasciati meno di 50 giochi per il sistema.
+Il modello originale aveva 4 kB di RAM e utilizzava un chip generatore di display video Motorola 6847, utilizzato tra l'altro nel Dragon 32 e nell'Acorn Atom.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>
