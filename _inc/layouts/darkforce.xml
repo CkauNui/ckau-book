@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.51</origin>
+			<pos>0.495 0.45</pos>
+			<maxSize>0.291</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.46</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.215 0.45" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>2022</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.25</pos>
+			<size>0.5 0</size>
+			<text>The Force Engine</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.35</pos>
+			<text>The Force Engine is a project with the goal to reverse engineer and rebuild the Jedi Engine for modern systems and the games that used that engine - Dark Forces and Outlaws. The project will include modern, built-in tools, such as a level editor and will make it easy to play Dark Forces and Outlaws on modern systems as well as the many community mods designed to work with the original games.
+
+Playing Dark Forces or, in the future, Outlaws using the Force Engine will add ease of use and modern features such as higher resolutions and modern control schemes such as mouse-look. Using the built-in tools, once they are available, will allow for easier modding with more modern UI, greater flexibility and the ability to use enhancements made to the Jedi Engine for Outlaws in custom Dark Forces levels - such as slopes, stacked sectors, per-sector color maps and more.</text>
+			<text lang="pl">The Force Engine to projekt mający na celu inżynierię wsteczną i przebudowę silnika Jedi Engine dla nowoczesnych systemów oraz gier, które korzystały z tego silnika - Dark Forces i Outlaws. Projekt będzie zawierał nowoczesne, wbudowane narzędzia, takie jak edytor poziomów i ułatwi granie w Dark Forces i Outlaws na nowoczesnych systemach, a także wiele modów społeczności zaprojektowanych do pracy z oryginalnymi grami.
+
+Granie w Dark Forces lub, w przyszłości, Outlaws przy użyciu Force Engine doda łatwość użytkowania i nowoczesne funkcje, takie jak wyższe rozdzielczości i nowoczesne schematy sterowania, takie jak wygląd myszy. Korzystanie z wbudowanych narzędzi, gdy tylko będą one dostępne, pozwoli na łatwiejsze modowanie z bardziej nowoczesnym interfejsem użytkownika, większą elastyczność i możliwość korzystania z ulepszeń wprowadzonych do silnika Jedi Engine dla Outlaws na niestandardowych poziomach Dark Forces - takich jak nachylenia, ułożone sektory, mapy kolorów dla poszczególnych sektorów i wiele innych.</text>
+			<text lang="ru">The Force Engine - это проект, целью которого является реинжиниринг и восстановление Jedi Engine для современных систем и игр, использующих этот движок, - Dark Forces и Outlaws. Проект будет включать в себя современные встроенные инструменты, такие как редактор уровней, и позволит легко играть в Dark Forces и Outlaws на современных системах, а также в многочисленные моды сообщества, разработанные для работы с оригинальными играми.
+
+Игра в Dark Forces или, в будущем, Outlaws на движке Force Engine добавит простоту использования и современные возможности, такие как более высокое разрешение и современные схемы управления, например, mouse-look. Использование встроенных инструментов, как только они появятся, позволит упростить моддинг с более современным пользовательским интерфейсом, повысить гибкость и использовать улучшения, внесенные в движок Jedi Engine для Outlaws, в пользовательских уровнях Dark Forces - например, наклоны, сложенные сектора, карты цветов для каждого сектора и многое другое.</text>
+			<text lang="es">El Motor de la Fuerza es un proyecto cuyo objetivo es realizar ingeniería inversa y reconstruir el Motor Jedi para sistemas modernos y los juegos que utilizaban ese motor: Dark Forces y Outlaws. El proyecto incluirá herramientas modernas integradas, como un editor de niveles, y facilitará el juego de Dark Forces y Outlaws en sistemas modernos, así como los numerosos mods de la comunidad diseñados para funcionar con los juegos originales.
+
+Jugar a Dark Forces o, en el futuro, a Outlaws utilizando el motor Force Engine añadirá facilidad de uso y características modernas, como resoluciones más altas y esquemas de control modernos, como la vista de ratón. El uso de las herramientas integradas, una vez que estén disponibles, facilitará la creación de mods con una interfaz de usuario más moderna, mayor flexibilidad y la posibilidad de utilizar las mejoras realizadas en el motor Jedi para Outlaws en niveles personalizados de Dark Forces, como pendientes, sectores apilados, mapas de color por sector y mucho más.</text>
+			<text lang="de">The Force Engine ist ein Projekt mit dem Ziel, die Jedi-Engine für moderne Systeme und die Spiele, die diese Engine verwendet haben - Dark Forces und Outlaws - nachzubauen. Das Projekt wird moderne, eingebaute Tools wie einen Level-Editor enthalten und es einfach machen, Dark Forces und Outlaws auf modernen Systemen zu spielen, ebenso wie die vielen Community-Mods, die für die Originalspiele entwickelt wurden.
+
+Das Spielen von Dark Forces oder, in Zukunft, Outlaws mit der Force Engine wird die Benutzerfreundlichkeit erhöhen und moderne Features wie höhere Auflösungen und moderne Steuerungsschemata wie Mouse-Look ermöglichen. Die Verwendung der eingebauten Tools, sobald sie verfügbar sind, wird eine einfachere Modifikation mit modernerer Benutzeroberfläche, größerer Flexibilität und der Möglichkeit, die Verbesserungen der Jedi-Engine für Outlaws in benutzerdefinierten Dark Forces-Levels zu verwenden, ermöglichen - wie z. B. Abhänge, gestapelte Sektoren, Farbkarten für jeden Sektor und mehr.</text>
+			<text lang="fr">The Force Engine est un projet dont l'objectif est de reconstruire le Jedi Engine pour les systèmes modernes et les jeux qui utilisaient ce moteur - Dark Forces et Outlaws. Le projet inclura des outils modernes intégrés, tels qu'un éditeur de niveaux, et permettra de jouer facilement à Dark Forces et Outlaws sur des systèmes modernes, ainsi qu'aux nombreux mods communautaires conçus pour fonctionner avec les jeux originaux.
+
+Jouer à Dark Forces ou, à l'avenir, à Outlaws en utilisant le moteur Force ajoutera une facilité d'utilisation et des fonctionnalités modernes telles que des résolutions plus élevées et des schémas de contrôle modernes tels que l'apparence de la souris. L'utilisation des outils intégrés, une fois qu'ils seront disponibles, facilitera le modding avec une interface plus moderne, une plus grande flexibilité et la possibilité d'utiliser les améliorations apportées au moteur Jedi pour Outlaws dans les niveaux personnalisés de Dark Forces - comme les pentes, les secteurs empilés, les cartes de couleurs par secteur et bien plus encore.</text>
+			<text lang="it">The Force Engine è un progetto che ha l'obiettivo di decodificare e ricostruire il Jedi Engine per i sistemi moderni e i giochi che lo utilizzavano - Dark Forces e Outlaws. Il progetto includerà strumenti moderni e integrati, come un editor di livelli, e renderà facile giocare a Dark Forces e Outlaws sui sistemi moderni, così come alle numerose mod della comunità progettate per funzionare con i giochi originali.
+
+Giocare a Dark Forces o, in futuro, a Outlaws utilizzando il Force Engine aggiungerà facilità d'uso e caratteristiche moderne come risoluzioni più elevate e schemi di controllo moderni come il mouse-look. L'utilizzo degli strumenti integrati, una volta disponibili, consentirà un modding più semplice con un'interfaccia utente più moderna, una maggiore flessibilità e la possibilità di utilizzare i miglioramenti apportati al Jedi Engine per Outlaws nei livelli personalizzati di Dark Forces, come pendenze, settori impilati, mappe di colore per settore e altro ancora.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>
