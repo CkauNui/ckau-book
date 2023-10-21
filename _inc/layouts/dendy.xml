@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videocrton" extra="true">
+			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
+			<delay>0</delay>
+			<loops>0</loops>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.49 0.4</pos>
+			<maxSize>0.24</maxSize>
+			<zIndex>26</zIndex>
+		</video>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.49 0.4</pos>
+			<maxSize>0.24</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>1992</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Steepler</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>Dendy</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<!-- Support different names for regional consoles/computers -->
+		<text name="TextName" extra="true" region="eu"/>
+		<text name="TextName" extra="true" region="us"/>
+		<text name="TextName" extra="true" region="jp">
+			<text>Family Computer</text>
+		</text>
+		<!-- -->
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.4</pos>
+			<text>Dendy (Russian: Де́нди) is a series of home video game consoles, an unofficial hardware clone of Nintendo's third-generation Famicom. Dendy was produced by Steepler since late 1992, and assembled in Taiwan from Chinese components. It was mainly sold in Russia and post-Soviet countries. Manufacturing assembly grew to add the Subor factory in China and at Tenzor factory in Dubna town in Russia.
+
+The Dendy lineup was divided into two categories: the basic Dendy Classic and the budget Dendy Junior, which differ in design, quality, and price. The Classic is a copy of the Micro Genius console of Taiwan TXC Corporation and was produced in the same factory. The Junior was made from cheaper system on a chip technology specifically for Steepler. A Dendy Pro version with one wired and one wireless gamepad was sold from only one small batch.</text>
+			<text lang="pl">Dendy (rosyjski: Де́нди) to seria domowych konsol do gier wideo, nieoficjalny klon sprzętowy trzeciej generacji Famicom firmy Nintendo. Dendy był produkowany przez firmę Steepler od końca 1992 roku i montowany na Tajwanie z chińskich komponentów. Był sprzedawany głównie w Rosji i krajach postsowieckich. Produkcja rozszerzyła się o fabrykę Subor w Chinach i fabrykę Tenzor w mieście Dubna w Rosji.
+
+Linia Dendy została podzielona na dwie kategorie: podstawową Dendy Classic i budżetową Dendy Junior, które różnią się wyglądem, jakością i ceną. Classic jest kopią konsoli Micro Genius tajwańskiej firmy TXC Corporation i został wyprodukowany w tej samej fabryce. Junior został wykonany z tańszego systemu w technologii chipowej specjalnie dla Steeplera. Wersja Dendy Pro z jednym przewodowym i jednym bezprzewodowym gamepadem była sprzedawana tylko z jednej małej partii.</text>
+			<text lang="ru">Dendy (рус. Де́нди) - серия домашних игровых приставок, неофициальный аппаратный клон Famicom третьего поколения от Nintendo. Dendy выпускалась компанией Steepler с конца 1992 года и собиралась на Тайване из китайских комплектующих. В основном она продавалась в России и странах постсоветского пространства. Производственная сборка расширилась и стала осуществляться на заводе Subor в Китае и на заводе Tenzor в городе Дубна в России.
+
+Модельный ряд Dendy делился на две категории: базовую Dendy Classic и бюджетную Dendy Junior, которые отличались дизайном, качеством и ценой. Classic является копией консоли Micro Genius тайваньской корпорации TXC и производилась на том же заводе. Junior была изготовлена по более дешевой технологии "система на чипе" специально для Steepler. Версия Dendy Pro с одним проводным и одним беспроводным геймпадом была продана только из одной небольшой партии.</text>
+			<text lang="es">Dendy (en ruso: Де́нди) es una serie de videoconsolas domésticas, un clon no oficial de la tercera generación de la Famicom de Nintendo. Dendy fue producida por Steepler desde finales de 1992, y ensamblada en Taiwán a partir de componentes chinos. Se vendió principalmente en Rusia y los países postsoviéticos. La fabricación se amplió a la fábrica Subor en China y a la fábrica Tenzor en la ciudad rusa de Dubna.
+
+La gama Dendy se dividía en dos categorías: la básica Dendy Classic y la económica Dendy Junior, que se diferenciaban por su diseño, calidad y precio. La Classic es una copia de la consola Micro Genius de Taiwan TXC Corporation y se producía en la misma fábrica. La Junior se fabricó con tecnología system on a chip, más barata y específica para Steepler. Sólo se vendió una versión Dendy Pro con un gamepad con cable y otro inalámbrico en un pequeño lote.</text>
+			<text lang="de">Dendy (russisch: Де́нди) ist eine Serie von Videospielkonsolen für den Heimgebrauch, ein inoffizieller Hardware-Klon von Nintendos Famicom der dritten Generation. Dendy wurde seit Ende 1992 von Steepler hergestellt und in Taiwan aus chinesischen Komponenten zusammengebaut. Er wurde hauptsächlich in Russland und den postsowjetischen Ländern verkauft. Die Produktion wurde auf die Subor-Fabrik in China und die Tenzor-Fabrik in der russischen Stadt Dubna ausgeweitet.
+
+Das Dendy-Sortiment wurde in zwei Kategorien unterteilt: das Basisgerät Dendy Classic und das preisgünstige Dendy Junior, die sich in Design, Qualität und Preis unterscheiden. Das Classic ist eine Kopie der Micro Genius-Konsole der taiwanesischen TXC Corporation und wurde im selben Werk hergestellt. Der Junior wurde mit der billigeren System-on-a-Chip-Technologie speziell für Steepler hergestellt. Eine Dendy Pro-Version mit einem kabelgebundenen und einem kabellosen Gamepad wurde nur in einer Kleinserie verkauft.</text>
+			<text lang="fr">Dendy (russe : Де́нди) est une série de consoles de jeux vidéo de salon, clone matériel non officiel de la Famicom de troisième génération de Nintendo. Le Dendy a été produit par Steepler à partir de la fin 1992, et assemblé à Taïwan à partir de composants chinois. Il a été principalement vendu en Russie et dans les pays post-soviétiques. L'assemblage s'est étendu à l'usine Subor en Chine et à l'usine Tenzor dans la ville de Dubna en Russie.
+
+La gamme Dendy était divisée en deux catégories : le Dendy Classic de base et le Dendy Junior économique, qui se distinguent par leur conception, leur qualité et leur prix. Le Classic est une copie de la console Micro Genius de Taiwan TXC Corporation et a été produit dans la même usine. Le Junior a été fabriqué à partir d'un système sur puce moins cher, spécialement conçu pour Steepler. Une version Dendy Pro avec une manette de jeu filaire et une manette de jeu sans fil a été vendue à partir d'un seul petit lot.</text>
+			<text lang="it">Dendy (in russo: Де́нди) è una serie di console per videogiochi domestiche, un clone hardware non ufficiale del Famicom di terza generazione di Nintendo. Dendy è stata prodotta da Steepler a partire dalla fine del 1992 e assemblata a Taiwan con componenti cinesi. È stato venduto principalmente in Russia e nei paesi post-sovietici. L'assemblaggio è cresciuto fino ad aggiungere la fabbrica Subor in Cina e la fabbrica Tenzor nella città di Dubna in Russia.
+
+La linea Dendy era divisa in due categorie: la Dendy Classic di base e la Dendy Junior economica, che si differenziano per design, qualità e prezzo. Il Classic è una copia della console Micro Genius della Taiwan TXC Corporation ed è stato prodotto nella stessa fabbrica. La Junior è stata realizzata con una tecnologia system on a chip più economica, specifica per Steepler. Una versione Dendy Pro con un gamepad cablato e uno wireless è stata venduta solo in un piccolo lotto.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>
