@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.49 0.5</origin>
+      <pos>0.5 0.409</pos>
+      <maxSize>0.48</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.65</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.409" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text>2013</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <pos>0.49 0.255</pos>
+      <text>Sony</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.04</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.30</pos>
+      <size>0.5 0</size>
+      <text>Playstation 4</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.4</pos>
+      <text>The PlayStation 4 (PS4) is a home video game console developed by Sony Interactive Entertainment. A console of the eighth generation, it competes with Microsoft's Xbox One and Nintendo's Wii U and Switch.
+
+Moving away from the more complex Cell microarchitecture of its predecessor, the console features an AMD Accelerated Processing Unit (APU) built upon the x86-64 architecture, which can theoretically peak at 1.84 teraflops; AMD stated that it was the "most powerful" APU it had developed to date. The PlayStation 4 places an increased emphasis on social interaction and integration with other devices and services, including the ability to play games off-console on PlayStation Vita and other supported devices ("Remote Play"), the ability to stream gameplay online or to friends, with them controlling gameplay remotely ("Share Play"). The console's controller was also redesigned and improved over the PlayStation 3, with improved buttons and analog sticks, and an integrated touchpad among other changes. The console also supports HDR10 High-dynamic-range video and playback of 4K resolution multimedia.</text>
+      <text lang="it">La PlayStation 4 (PS4) è una console per videogiochi domestica sviluppata da Sony Interactive Entertainment. È una console di ottava generazione e compete con la Xbox One di Microsoft e le console Wii U e Switch di Nintendo.
+
+Abbandonando la più complessa microarchitettura Cell del suo predecessore, la console è dotata di un'unità di elaborazione accelerata (APU) AMD basata sull'architettura x86-64, che può teoricamente raggiungere un picco di 1,84 teraflops; AMD ha dichiarato che si tratta dell'APU "più potente" sviluppata finora. La PlayStation 4 pone una maggiore enfasi sull'interazione sociale e sull'integrazione con altri dispositivi e servizi, tra cui la possibilità di giocare fuori dalla console su PlayStation Vita e altri dispositivi supportati ("Remote Play"), la possibilità di trasmettere il gioco in streaming online o agli amici, con questi ultimi che possono controllare il gioco a distanza ("Share Play"). Anche il controller della console è stato ridisegnato e migliorato rispetto a quello della PlayStation 3, con pulsanti e stick analogici migliorati e un touchpad integrato. La console supporta anche i video ad alta gamma dinamica HDR10 e la riproduzione di contenuti multimediali con risoluzione 4K.</text>
+      <text lang="fr">La PlayStation 4 (PS4) est une console de jeux vidéo de salon développée par Sony Interactive Entertainment. Console de huitième génération, elle est en concurrence avec la Xbox One de Microsoft et les Wii U et Switch de Nintendo.
+
+Délaissant la microarchitecture Cell plus complexe de son prédécesseur, la console est équipée d'une unité de traitement accéléré (APU) AMD basée sur l'architecture x86-64, qui peut théoriquement atteindre 1,84 téraflops ; AMD a déclaré qu'il s'agissait de l'APU "la plus puissante" qu'elle ait développée à ce jour. La PlayStation 4 met davantage l'accent sur l'interaction sociale et l'intégration avec d'autres appareils et services, notamment la possibilité de jouer à des jeux hors console sur la PlayStation Vita et d'autres appareils pris en charge ("Remote Play"), la possibilité de diffuser le gameplay en ligne ou à des amis, ces derniers contrôlant le gameplay à distance ("Share Play"). La manette de la console a également été redessinée et améliorée par rapport à la PlayStation 3, avec des boutons et des sticks analogiques plus performants, ainsi qu'un pavé tactile intégré, entre autres changements. La console prend également en charge la vidéo HDR10 à gamme dynamique élevée et la lecture de contenus multimédias en résolution 4K.</text>
+      <text lang="de">Die PlayStation 4 (PS4) ist eine von Sony Interactive Entertainment entwickelte Videospielkonsole für den Heimgebrauch. Als Konsole der achten Generation konkurriert sie mit der Xbox One von Microsoft sowie der Wii U und der Switch von Nintendo.
+
+Die Konsole löst sich von der komplexeren Cell-Mikroarchitektur ihres Vorgängers und verfügt über eine AMD Accelerated Processing Unit (APU), die auf der x86-64-Architektur basiert und theoretisch eine Spitzenleistung von 1,84 Teraflops erreichen kann; AMD gab an, dass es sich dabei um die leistungsstärkste" APU handelt, die es bisher entwickelt hat. Die PlayStation 4 setzt verstärkt auf soziale Interaktion und die Integration mit anderen Geräten und Diensten, einschließlich der Möglichkeit, Spiele außerhalb der Konsole auf PlayStation Vita und anderen unterstützten Geräten zu spielen ("Remote Play"), sowie der Möglichkeit, Spiele online oder an Freunde zu streamen, wobei diese das Spiel aus der Ferne steuern können ("Share Play"). Der Controller der Konsole wurde im Vergleich zur PlayStation 3 ebenfalls überarbeitet und verbessert, unter anderem mit verbesserten Tasten und Analogsticks sowie einem integrierten Touchpad. Die Konsole unterstützt außerdem HDR10 High-Dynamic-Range-Video und die Wiedergabe von Multimedia in 4K-Auflösung.</text>
+      <text lang="es">La PlayStation 4 (PS4) es una videoconsola doméstica desarrollada por Sony Interactive Entertainment. Consola de la octava generación, compite con la Xbox One de Microsoft y las Wii U y Switch de Nintendo.
+
+Alejándose de la microarquitectura Cell más compleja de su predecesora, la consola incorpora una unidad de procesamiento acelerado (APU) de AMD basada en la arquitectura x86-64, que teóricamente puede alcanzar un pico de 1,84 teraflops; AMD declaró que era la APU "más potente" que había desarrollado hasta la fecha. PlayStation 4 pone un mayor énfasis en la interacción social y la integración con otros dispositivos y servicios, incluyendo la posibilidad de jugar fuera de la consola en PlayStation Vita y otros dispositivos compatibles ("Remote Play"), la capacidad de transmitir el juego en línea o a amigos, con ellos controlando el juego de forma remota ("Share Play"). El mando de la consola también se ha rediseñado y mejorado con respecto al de PlayStation 3, con botones y sticks analógicos mejorados y un touchpad integrado, entre otros cambios. La consola también es compatible con vídeo de alto rango dinámico HDR10 y reproducción multimedia en resolución 4K.</text>
+      <text lang="ru">PlayStation 4 (PS4) - домашняя игровая консоль, разработанная компанией Sony Interactive Entertainment. Консоль восьмого поколения, конкурирующая с Xbox One от Microsoft, Wii U и Switch от Nintendo.
+
+Отходя от более сложной микроархитектуры Cell своей предшественницы, консоль оснащена ускоренным процессором AMD, построенным на архитектуре x86-64, который теоретически может достигать производительности 1,84 терафлопс; компания AMD заявила, что это "самый мощный" APU, разработанный ею на сегодняшний день. В PlayStation 4 повышенное внимание уделяется социальному взаимодействию и интеграции с другими устройствами и сервисами, включая возможность играть в игры вне консоли на PlayStation Vita и других поддерживаемых устройствах ("Remote Play"), возможность транслировать игровой процесс через Интернет или друзьям, удаленно управляя игрой ("Share Play"). Контроллер консоли также был переработан и усовершенствован по сравнению с PlayStation 3: улучшены кнопки и аналоговые стики, появился встроенный тачпад и другие изменения. Консоль также поддерживает видео с высоким динамическим диапазоном HDR10 и воспроизведение мультимедиа с разрешением 4K.</text>
+      <text lang="pl">PlayStation 4 (PS4) to domowa konsola do gier wideo opracowana przez Sony Interactive Entertainment. Jest to konsola ósmej generacji, konkurująca z Xbox One firmy Microsoft oraz Wii U i Switch firmy Nintendo.
+
+Odchodząc od bardziej złożonej mikroarchitektury Cell swojego poprzednika, konsola wyposażona jest w jednostkę AMD Accelerated Processing Unit (APU) zbudowaną na architekturze x86-64, która teoretycznie może osiągnąć 1,84 teraflopa; AMD stwierdziło, że jest to "najpotężniejsza" jednostka APU, jaką do tej pory opracowała. PlayStation 4 kładzie większy nacisk na interakcję społeczną i integrację z innymi urządzeniami i usługami, w tym możliwość grania w gry poza konsolą na PlayStation Vita i innych obsługiwanych urządzeniach ("Remote Play"), możliwość strumieniowania rozgrywki online lub do znajomych, z nimi kontrolując rozgrywkę zdalnie ("Share Play"). Kontroler konsoli został również przeprojektowany i ulepszony w stosunku do PlayStation 3, z ulepszonymi przyciskami i drążkami analogowymi oraz zintegrowanym touchpadem. Konsola obsługuje również wideo HDR10 High-dynamic-range i odtwarzanie multimediów w rozdzielczości 4K.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
+</theme>
