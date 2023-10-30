@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videocrton" extra="true">
+      <path>./../../_inc/anim/video/CRT_ON.mp4</path>
+      <delay>0</delay>
+      <loops>0</loops>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.52 0.5</origin>
+      <pos>0.49 0.41</pos>
+      <maxSize>0.22</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.21</maxSize>
+      <zIndex>26</zIndex>
+    </video>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.52 0.5</origin>
+      <pos>0.49 0.41</pos>
+      <maxSize>0.22</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.21</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.21 0.41" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text>1982</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <pos>0.49 0.255</pos>
+      <text>Jupiter Cantab</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.04</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.30</pos>
+      <size>0.5 0</size>
+      <text>Jupiter Ace</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.4</pos>
+      <text>The Jupiter Ace by Jupiter Cantab was a British home computer released in 1982. The Ace differed from other microcomputers of the time in that its programming environment used Forth instead of the more popular Basic.
+
+The Jupiter Ace is often compared with ZX81 due to its similar size, low cost, and similar form factor. Internally its design is more similar to the ZX Spectrum although the Ace also had a dedicated video memory of 2 KB, partly avoiding the slow down when programs accessed the same bank (same chips) as the video memory. Like the Spectrum, the Ace used black conductive rubber keys.
+Audio capabilities were CPU-controlled with programmable frequency and duration. Sound output was through a small built-in speaker.
+As was common at the time, it used a common tape recorder instead of disk/tape drives. Similarly, a television was needed as a display – but this was in black and white only, rather than the colour supported by competing models such as the Spectrum.
+The Jupiter Ace was based on the Zilog Z80, which the designers had previous experience of from working on the Sinclair ZX81 and ZX Spectrum.
+
+Both graphics and text could be displayed at the same time: redefinition of the character tiles provided standard 256×192 graphics limited to the 128 available (definable) 8×8 chars, concurrent with plotting of 64×48 graphics.</text>
+      <text lang="it">Il Jupiter Ace di Jupiter Cantab era un home computer britannico rilasciato nel 1982. L'Ace si differenziava dagli altri microcomputer dell'epoca per il fatto che il suo ambiente di programmazione utilizzava il Forth invece del più popolare Basic.
+
+Il Jupiter Ace viene spesso paragonato allo ZX81 per le sue dimensioni simili, il basso costo e il fattore di forma simile. Internamente il suo design è più simile a quello dello ZX Spectrum, anche se l'Ace aveva una memoria video dedicata di 2 KB, evitando in parte il rallentamento quando i programmi accedevano allo stesso banco (gli stessi chip) della memoria video. Come lo Spectrum, l'Ace utilizzava tasti in gomma conduttiva nera.
+Le funzionalità audio erano controllate dalla CPU con frequenza e durata programmabili. L'uscita del suono avveniva attraverso un piccolo altoparlante incorporato.
+Come era comune all'epoca, utilizzava un comune registratore a nastro invece di unità disco/nastro. Come display era necessario anche un televisore, ma solo in bianco e nero, anziché a colori come nei modelli concorrenti come lo Spectrum.
+Il Jupiter Ace era basato sullo Zilog Z80, di cui i progettisti avevano già avuto esperienza lavorando al Sinclair ZX81 e allo ZX Spectrum.
+
+Era possibile visualizzare contemporaneamente grafica e testo: la ridefinizione delle tessere dei caratteri forniva una grafica standard 256×192 limitata ai 128 caratteri 8×8 disponibili (definibili), contemporaneamente al plottaggio di una grafica 64×48.</text>
+      <text lang="fr">Le Jupiter Ace de Jupiter Cantab était un ordinateur domestique britannique sorti en 1982. L'Ace se distinguait des autres micro-ordinateurs de l'époque par son environnement de programmation qui utilisait le langage Forth au lieu du Basic, plus populaire.
+
+Le Jupiter Ace est souvent comparé au ZX81 en raison de sa taille similaire, de son faible coût et de sa forme similaire. En interne, sa conception est plus proche de celle du ZX Spectrum, bien que l'Ace dispose également d'une mémoire vidéo dédiée de 2 Ko, ce qui évite en partie le ralentissement lorsque les programmes accèdent à la même banque (mêmes puces) que la mémoire vidéo. Comme le Spectrum, l'Ace utilisait des touches noires en caoutchouc conducteur.
+Les fonctions audio étaient contrôlées par le processeur, avec une fréquence et une durée programmables. Le son était émis par un petit haut-parleur intégré.
+Comme c'était souvent le cas à l'époque, il utilisait un magnétophone ordinaire au lieu de lecteurs de disques ou de bandes. De même, un téléviseur était nécessaire pour l'affichage, mais uniquement en noir et blanc, au lieu de la couleur supportée par les modèles concurrents tels que le Spectrum.
+Le Jupiter Ace était basé sur le Zilog Z80, que les concepteurs connaissaient déjà pour avoir travaillé sur le Sinclair ZX81 et le ZX Spectrum.
+
+Des graphiques et du texte pouvaient être affichés en même temps : la redéfinition des tuiles de caractères permettait d'obtenir des graphiques standard 256×192 limités aux 128 caractères 8×8 disponibles (définissables), en même temps que le traçage de graphiques 64×48.</text>
+      <text lang="de">Der Jupiter Ace von Jupiter Cantab war ein britischer Heimcomputer, der 1982 auf den Markt kam. Der Ace unterschied sich von anderen Mikrocomputern dieser Zeit dadurch, dass seine Programmierumgebung Forth anstelle des beliebteren Basic verwendete.
+
+Der Jupiter Ace wird oft mit dem ZX81 verglichen, da er ähnlich groß und günstig ist und eine ähnliche Form hat. Intern ähnelt sein Design eher dem des ZX Spectrum, obwohl der Ace auch einen eigenen Videospeicher von 2 KB hatte, wodurch die Verlangsamung vermieden wurde, wenn Programme auf dieselbe Bank (dieselben Chips) wie der Videospeicher zugriffen. Wie der Spectrum hatte auch der Ace schwarze, leitfähige Gummitasten.
+Die Audiofunktionen waren CPU-gesteuert mit programmierbarer Frequenz und Dauer. Die Tonausgabe erfolgte über einen kleinen eingebauten Lautsprecher.
+Wie damals üblich, wurde ein herkömmliches Tonbandgerät anstelle eines Disketten-/Bandlaufwerks verwendet. Ebenso wurde ein Fernseher als Anzeigegerät benötigt - allerdings nur in Schwarzweiß und nicht in Farbe, wie es bei Konkurrenzmodellen wie dem Spectrum der Fall war.
+Der Jupiter Ace basierte auf dem Zilog Z80, mit dem die Entwickler durch die Arbeit am Sinclair ZX81 und ZX Spectrum bereits Erfahrung hatten.
+
+Es konnten sowohl Grafiken als auch Text gleichzeitig angezeigt werden: Die Neudefinition der Zeichenkacheln ermöglichte Standardgrafiken im Format 256×192, die auf die 128 verfügbaren (definierbaren) 8×8 Zeichen begrenzt waren, und gleichzeitig das Plotten von 64×48 Grafiken.</text>
+      <text lang="es">El Jupiter Ace de Jupiter Cantab fue un ordenador doméstico británico lanzado en 1982. El Ace se diferenciaba de otros microordenadores de la época en que su entorno de programación utilizaba Forth en lugar del más popular Basic.
+
+El Jupiter Ace se compara a menudo con el ZX81 debido a su tamaño similar, bajo coste y factor de forma similar. Internamente su diseño es más similar al ZX Spectrum aunque el Ace también tenía una memoria de vídeo dedicada de 2 KB, evitando en parte la ralentización cuando los programas accedían al mismo banco (los mismos chips) que la memoria de vídeo. Al igual que el Spectrum, el Ace utilizaba teclas negras de goma conductora.
+Las funciones de audio estaban controladas por la CPU con frecuencia y duración programables. La salida de sonido se realizaba a través de un pequeño altavoz integrado.
+Como era habitual en la época, utilizaba una grabadora de cinta común en lugar de unidades de disco/cinta. Asimismo, se necesitaba un televisor como pantalla, pero sólo en blanco y negro, en lugar del color que ofrecían los modelos de la competencia, como el Spectrum.
+El Jupiter Ace se basaba en el Z80 de Zilog, con el que los diseñadores ya habían trabajado en el ZX81 y el ZX Spectrum de Sinclair.
+
+Se podían mostrar gráficos y texto al mismo tiempo: la redefinición de los mosaicos de caracteres proporcionaba gráficos estándar de 256×192 limitados a los 128 caracteres de 8×8 disponibles (definibles), al tiempo que se trazaban gráficos de 64×48.</text>
+      <text lang="ru">Jupiter Ace компании Jupiter Cantab - британский домашний компьютер, выпущенный в 1982 году. От других микрокомпьютеров того времени Ace отличался тем, что в его среде программирования использовался язык Forth, а не более популярный Basic.
+
+Jupiter Ace часто сравнивают с ZX81 из-за схожих размеров, низкой стоимости и схожего форм-фактора. По внутреннему устройству он больше похож на ZX Spectrum, хотя Ace также имел выделенную видеопамять объемом 2 КБ, что позволило частично избежать замедления при обращении программ к тому же банку (тем же микросхемам), что и видеопамять. Как и в Spectrum, в Ace использовались черные токопроводящие резиновые клавиши.
+Звуковые возможности управлялись процессором с программируемой частотой и длительностью. Звук выводился через небольшой встроенный динамик.
+Как и в то время, вместо дисковых/ленточных накопителей использовался обычный магнитофон. В качестве дисплея также требовался телевизор, но только черно-белый, а не цветной, как в конкурирующих моделях, например Spectrum.
+Jupiter Ace был построен на базе Zilog Z80, с которым конструкторы уже имели опыт работы над Sinclair ZX81 и ZX Spectrum.
+
+Одновременно могли отображаться и графика, и текст: переопределение плиток символов обеспечивало стандартную графику 256×192, ограниченную 128 доступными (определяемыми) символами 8×8, одновременно с черчением графики 64×48.</text>
+      <text lang="pl">Jupiter Ace firmy Jupiter Cantab był brytyjskim komputerem domowym wydanym w 1982 roku. Ace różnił się od innych ówczesnych mikrokomputerów tym, że jego środowisko programistyczne wykorzystywało język Forth zamiast bardziej popularnego Basic.
+
+Jupiter Ace jest często porównywany do ZX81 ze względu na podobny rozmiar, niski koszt i podobną obudowę. Wewnętrznie jego konstrukcja jest bardziej podobna do ZX Spectrum, chociaż Ace posiadał również dedykowaną pamięć wideo o pojemności 2 KB, częściowo unikając spowolnienia, gdy programy uzyskiwały dostęp do tego samego banku (tych samych układów) co pamięć wideo. Podobnie jak Spectrum, Ace używał czarnych przewodzących gumowych klawiszy.
+Możliwości audio były kontrolowane przez procesor z programowalną częstotliwością i czasem trwania. Dźwięk był emitowany przez mały wbudowany głośnik.
+Jak to było powszechne w tamtych czasach, używano zwykłego magnetofonu zamiast napędów dysków/taśm. Podobnie, telewizor był potrzebny jako wyświetlacz - ale był on tylko czarno-biały, a nie kolorowy obsługiwany przez konkurencyjne modele, takie jak Spectrum.
+Jupiter Ace był oparty na procesorze Zilog Z80, z którym projektanci mieli wcześniejsze doświadczenia z pracy nad Sinclair ZX81 i ZX Spectrum.
+
+Zarówno grafika, jak i tekst mogły być wyświetlane w tym samym czasie: redefinicja kafelków znaków zapewniała standardową grafikę 256×192 ograniczoną do 128 dostępnych (definiowalnych) znaków 8×8, równolegle z wykreślaniem grafiki 64×48.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
+</theme>
