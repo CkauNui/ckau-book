@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.53 0.5</origin>
+      <origin if="${screen.ratio} == '21/9'">0.42 0.5</origin>
+      <pos>0.44 0.4</pos>
+      <maxSize>0.228</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.32</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.16 0.4" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text>1978</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <pos>0.49 0.255</pos>
+      <text>Luxor</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.04</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.30</pos>
+      <size>0.5 0</size>
+      <text>ABC 80</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.4</pos>
+      <text>The ABC 80 (Advanced BASIC Computer 80) was a personal computer engineered by the Swedish corporation Dataindustrier AB (DIAB) and manufactured by Luxor in Motala, Sweden in the late 1970s and early 1980s.
+
+The ABC 80 was based on an earlier modular computer system from the same company and built around a Z80 and 16 KB of ROM containing a fast semi-compiling BASIC interpreter. It had 16–32 KB of RAM as main memory and a dedicated (included) tape recorder for program and data storage, but could also be expanded to handle disk drives as well as many other peripherals. The ROM could be extended in increments of 1 or 4 KB in order to handle such so called "options". The monitor was a black and white TV set modified for the purpose, an obvious choice since Luxor also made TVs.
+
+The ABC 80 was used in schools and offices around Scandinavia and parts of Europe. It was also used for industrial automation, scientific measurement and control systems. Like its successor, the ABC 800, the computer had an unusually quick and usable BASIC with excellent I/O response times, something that was often discovered when trying to switch to IBM PC-based personal computers. Due to its roots in an industrial computer system, the ABC 80 also had a flexible bus extension system with many external expansion and peripheral cards available for various purposes and applications, as well as high quality support and documentation.</text>
+      <text lang="it">L'ABC 80 (Advanced BASIC Computer 80) era un personal computer progettato dalla società svedese Dataindustrier AB (DIAB) e prodotto da Luxor a Motala, in Svezia, tra la fine degli anni Settanta e l'inizio degli anni Ottanta.
+
+L'ABC 80 era basato su un precedente sistema di computer modulare della stessa azienda e costruito attorno a uno Z80 e a 16 KB di ROM contenenti un veloce interprete BASIC semi-compilato. Aveva 16-32 KB di RAM come memoria principale e un registratore a nastro dedicato (incluso) per la memorizzazione di programmi e dati, ma poteva anche essere espanso per gestire unità disco e molte altre periferiche. La ROM poteva essere estesa con incrementi di 1 o 4 KB per gestire le cosiddette "opzioni". Il monitor era un televisore in bianco e nero modificato per lo scopo, una scelta ovvia visto che Luxor produceva anche televisori.
+
+L'ABC 80 fu utilizzato nelle scuole e negli uffici di tutta la Scandinavia e di parte dell'Europa. Veniva utilizzato anche per l'automazione industriale, la misurazione scientifica e i sistemi di controllo. Come il suo successore, l'ABC 800, il computer era dotato di un BASIC insolitamente veloce e utilizzabile, con eccellenti tempi di risposta I/O, cosa che veniva spesso riscontrata quando si cercava di passare a personal computer basati su PC IBM. Grazie alle sue radici in un sistema di computer industriali, l'ABC 80 aveva anche un sistema flessibile di estensione del bus con molte schede di espansione e periferiche esterne disponibili per vari scopi e applicazioni, oltre a un supporto e una documentazione di alta qualità.</text>
+      <text lang="fr">L'ABC 80 (Advanced BASIC Computer 80) était un ordinateur personnel conçu par la société suédoise Dataindustrier AB (DIAB) et fabriqué par Luxor à Motala, en Suède, à la fin des années 1970 et au début des années 1980.
+
+L'ABC 80 était basé sur un système informatique modulaire antérieur de la même société et construit autour d'un Z80 et de 16 Ko de ROM contenant un interpréteur BASIC rapide à semi-compilation. Il disposait de 16 à 32 Ko de RAM comme mémoire principale et d'un magnétophone dédié (inclus) pour le stockage des programmes et des données, mais il pouvait également être étendu pour gérer des lecteurs de disques ainsi que de nombreux autres périphériques. La ROM pouvait être étendue par incréments de 1 ou 4 Ko afin de gérer ce que l'on appelle les "options". Le moniteur était un téléviseur noir et blanc modifié à cet effet, un choix évident puisque Luxor fabriquait également des téléviseurs.
+
+L'ABC 80 a été utilisé dans des écoles et des bureaux en Scandinavie et dans certaines parties de l'Europe. Il a également été utilisé pour l'automatisation industrielle, les mesures scientifiques et les systèmes de contrôle. Comme son successeur, l'ABC 800, l'ordinateur disposait d'un BASIC exceptionnellement rapide et utilisable, avec d'excellents temps de réponse E/S, ce qui a souvent été découvert lors du passage à des ordinateurs personnels basés sur IBM PC. En raison de ses racines dans un système informatique industriel, l'ABC 80 disposait également d'un système d'extension de bus flexible avec de nombreuses cartes d'extension externes et périphériques disponibles pour divers objectifs et applications, ainsi que d'un support et d'une documentation de haute qualité.</text>
+      <text lang="de">Der ABC 80 (Advanced BASIC Computer 80) war ein Personal Computer, der von der schwedischen Firma Dataindustrier AB (DIAB) entwickelt und von Luxor in Motala, Schweden, in den späten 1970er und frühen 1980er Jahren hergestellt wurde.
+
+Der ABC 80 basierte auf einem früheren modularen Computersystem desselben Unternehmens und war auf einem Z80 und 16 KB ROM aufgebaut, der einen schnellen semikompilierenden BASIC-Interpreter enthielt. Er verfügte über 16-32 KB RAM als Hauptspeicher und ein eigenes (mitgeliefertes) Tonbandgerät für die Programm- und Datenspeicherung, konnte aber auch für den Anschluss von Diskettenlaufwerken und vielen anderen Peripheriegeräten erweitert werden. Das ROM konnte in Schritten von 1 oder 4 KB erweitert werden, um solche so genannten "Optionen" zu handhaben. Als Monitor diente ein für diesen Zweck modifizierter Schwarz-Weiß-Fernseher, eine naheliegende Wahl, da Luxor auch Fernsehgeräte herstellte.
+
+Der ABC 80 wurde in Schulen und Büros in ganz Skandinavien und Teilen Europas eingesetzt. Er wurde auch für die industrielle Automatisierung, wissenschaftliche Messungen und Kontrollsysteme verwendet. Wie sein Nachfolger, der ABC 800, verfügte der Computer über ein ungewöhnlich schnelles und benutzerfreundliches BASIC mit ausgezeichneten E/A-Reaktionszeiten, etwas, das oft entdeckt wurde, als man versuchte, auf IBM PC-basierte Personal Computer umzusteigen. Aufgrund seiner Wurzeln in einem industriellen Computersystem verfügte der ABC 80 auch über ein flexibles Buserweiterungssystem mit vielen externen Erweiterungs- und Peripheriekarten für verschiedene Zwecke und Anwendungen sowie über eine hochwertige Unterstützung und Dokumentation.</text>
+      <text lang="es">El ABC 80 (Advanced BASIC Computer 80) fue un ordenador personal diseñado por la empresa sueca Dataindustrier AB (DIAB) y fabricado por Luxor en Motala, Suecia, a finales de los años setenta y principios de los ochenta.
+
+El ABC 80 se basaba en un sistema informático modular anterior de la misma empresa y estaba construido en torno a un Z80 y 16 KB de ROM que contenían un rápido intérprete BASIC semicompilable. Tenía 16-32 KB de RAM como memoria principal y una grabadora de cinta dedicada (incluida) para el almacenamiento de programas y datos, pero también podía ampliarse para manejar unidades de disco, así como muchos otros periféricos. La ROM podía ampliarse en incrementos de 1 ó 4 KB para manejar las llamadas "opciones". El monitor era un televisor en blanco y negro modificado para este fin, una elección obvia ya que Luxor también fabricaba televisores.
+
+El ABC 80 se utilizó en escuelas y oficinas de Escandinavia y parte de Europa. También se utilizó para la automatización industrial, la medición científica y los sistemas de control. Al igual que su sucesor, el ABC 800, el ordenador tenía un BASIC inusualmente rápido y utilizable con excelentes tiempos de respuesta de E/S, algo que se descubría a menudo cuando se intentaba cambiar a ordenadores personales basados en IBM PC. Debido a sus raíces en un sistema informático industrial, el ABC 80 también disponía de un flexible sistema de ampliación de bus con numerosas tarjetas externas de expansión y periféricos disponibles para diversos fines y aplicaciones, así como soporte y documentación de alta calidad.</text>
+      <text lang="ru">ABC 80 (Advanced BASIC Computer 80) - персональный компьютер, разработанный шведской корпорацией Dataindustrier AB (DIAB) и выпускавшийся компанией Luxor в Мотале (Швеция) в конце 1970-х - начале 1980-х годов.
+
+ABC 80 был основан на более ранней модульной компьютерной системе той же компании и построен на базе Z80 и 16 КБ ПЗУ, содержащего быстрый полукомпилируемый интерпретатор BASIC. В качестве основной памяти использовалось 16-32 КБ ОЗУ, а для хранения программ и данных использовалась специальная (входящая в комплект) магнитофонная лента, которая могла быть расширена за счет дисковых накопителей и многих других периферийных устройств. ПЗУ могло быть расширено на 1 или 4 КБ для работы с так называемыми "опциями". В качестве монитора использовался черно-белый телевизор, модифицированный для этой цели, что было вполне очевидно, поскольку компания Luxor также производила телевизоры.
+
+ABC 80 использовался в школах и офисах по всей Скандинавии и в некоторых странах Европы. Он также использовался для промышленной автоматизации, научных измерений и систем управления. Как и его преемник, ABC 800, этот компьютер имел необычайно быстрый и удобный BASIC с отличным временем отклика на ввод-вывод, что часто обнаруживалось при попытках перехода на персональные компьютеры на базе IBM PC. Благодаря своей принадлежности к промышленным компьютерам, ABC 80 также имел гибкую систему расширения шины, множество внешних плат расширения и периферийных устройств для различных целей и приложений, а также высококачественную поддержку и документацию.</text>
+      <text lang="pl">ABC 80 (Advanced BASIC Computer 80) był komputerem osobistym zaprojektowanym przez szwedzką korporację Dataindustrier AB (DIAB) i produkowanym przez Luxor w Motala w Szwecji na przełomie lat 70. i 80. ubiegłego wieku.
+
+ABC 80 był oparty na wcześniejszym modułowym systemie komputerowym tej samej firmy i zbudowany wokół Z80 i 16 KB pamięci ROM zawierającej szybki, częściowo kompilujący się interpreter BASIC. Miał 16-32 KB pamięci RAM jako pamięć główną i dedykowany (dołączony) magnetofon do przechowywania programów i danych, ale można go było również rozszerzyć do obsługi napędów dyskowych, a także wielu innych urządzeń peryferyjnych. Pamięć ROM mogła być rozszerzana w krokach co 1 lub 4 KB w celu obsługi tak zwanych "opcji". Monitor był czarno-białym telewizorem zmodyfikowanym do tego celu, co było oczywistym wyborem, ponieważ Luxor produkował również telewizory.
+
+ABC 80 był używany w szkołach i biurach w całej Skandynawii i części Europy. Był również wykorzystywany w automatyce przemysłowej, pomiarach naukowych i systemach sterowania. Podobnie jak jego następca, ABC 800, komputer miał niezwykle szybki i użyteczny BASIC z doskonałym czasem reakcji we / wy, co często odkrywano przy próbie przejścia na komputery osobiste oparte na IBM PC. Ze względu na swoje korzenie w przemysłowym systemie komputerowym, ABC 80 posiadał również elastyczny system rozszerzeń magistrali z wieloma zewnętrznymi kartami rozszerzeń i peryferyjnymi dostępnymi do różnych celów i zastosowań, a także wysokiej jakości wsparcie i dokumentację.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
+</theme>
