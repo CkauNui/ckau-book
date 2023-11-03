@@ -78,6 +78,15 @@
 			<imageSource>fanart</imageSource>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>10</zIndex>
+			<storyboard event="open">
+				<animation property="offsetX" from="-0.01" to="0" duration="600" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="offsetX" from="-0.01" to="0" begin="" duration="600" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" from="1" to="0" duration="100" mode="Linear"/>
+			</storyboard>
 		</image>
 		<image name="logo">
 			<pos>0.12 0.12</pos>

@@ -109,6 +109,15 @@
 			<pos>0.5 0.5</pos>
 			<minSize>1 1</minSize>
 			<color>FFFFFFDF</color>
+			<storyboard event="open">
+				<animation property="offsetY" from="-0.01" to="0" duration="600" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="offsetY" from="-0.01" to="0" begin="" duration="600" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" from="1" to="0" duration="100" mode="Linear"/>
+			</storyboard>
 		</image>
 		<text name="md_description">
 			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
