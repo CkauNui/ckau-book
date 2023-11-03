@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+		<path>./../../_inc/anim/gbc.png</path>
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/gbc.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/gbc.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.32</pos>
+			<maxSize>0.215</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.32" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<video name="videoglich" extra="true">
+            <path>./../../_inc/anim/video/glich.mp4</path>
+            <delay>0</delay>
+            <effect>none</effect>
+ 			<origin>0.5 0.5</origin>
+			<pos>0.5 0.32</pos>
+			<maxSize>0.215</maxSize>
+            <zIndex>26</zIndex>
+            <color>FFFFFF50</color>
+            <storyboard>
+                <animation property="pos" to="0.22 0.32" begin="2000" duration="1000" mode="linear"/>
+            </storyboard>
+        </video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>1998</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Nintendo</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>Game Boy Color</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.4</pos>
+			<text>The Game Boy Color (commonly abbreviated as GBC) is a handheld game console, manufactured by Nintendo, which was released in Japan on October 21, 1998 and to international markets that November. It is the successor to the original Game Boy and is part of the Game Boy family.
+
+The GBC features a color screen rather than monochrome, but it is not backlit. It is slightly thicker and taller and features a slightly smaller screen than the Game Boy Pocket, its immediate predecessor in the Game Boy line. As with the original Game Boy, it has a custom 8-bit processor made by Sharp that is considered a hybrid between the Intel 8080 and the Zilog Z80. The American English spelling of the system's name, Game Boy Color, remains consistent throughout the world.</text>
+			<text lang="pl">Game Boy Color (jap. ゲームボーイカラー Gēmu Bōi Karā, w skrócie GBC) – przenośna konsola gier wideo wyprodukowana i wydana w 1998 roku przez Nintendo, będąca następcą konsoli Game Boy. Nowością w stosunku do poprzednika było wprowadzenie kolorowego wyświetlacza oraz portu podczerwieni. Najlepiej sprzedającą się grą na konsolę była Pokémon Gold i Silver.
+
+Dane techniczne:
+Game Boy Color z podłączonym Pikachu Link Cable
+procesor 8-bitowy Z80, działający w trybie prędkości pojedynczej (4 MHz) i podwójnej (8 MHz), RAM 32 KB + 96 KB VRAM + 256 KB WRAM, dźwięk 4 kanałowy FM stereo, wyświetlacz ciekłokrystaliczny, 160 × 144 pikseli, produkowany przez Sharp Corporation, paletę 32768 kolorów (w tym do 56 kolorów jednocześnie na ekranie). Waży 138 gramów i jest zasilany przez 2 baterie AA o żywotności do 10 godzin.</text>
+			<text lang="ru">Портативная игровая система, наследница Game Boy, выпущенная компанией Nintendo 21 октября 1998 года в Японии, в ноябре 1998 года в Северной Америке и в 1999 году в Европе.
+
+Игровая консоль оснащалась ЖК-дисплеем с цветовой гаммой, сравнимой с NES. Для системы вышло более 700 игр в различных жанрах (аркады, RPG, стратегии, симуляторы, спортивные игры), большую долю игр составляли игры про вселенную покемонов (Pokemon). Также выходили игры в самых неожиданных для портативной консоли жанрах, например, в жанре Survival Horror (Alone in the Dark: The New Nightmare и Resident Evil Gaiden).
+
+Спад продаж Game Boy Color наступил в начале 2001 года, когда Nintendo выпустила новую версию Game Boy — Game Boy Advance.</text>
+			<text lang="es">La Game Boy Color (comúnmente abreviada como GBC) es una videoconsola portátil, fabricada por Nintendo, que salió a la venta en Japón el 21 de octubre de 1998 y en los mercados internacionales en noviembre. Es la sucesora de la Game Boy original y forma parte de la familia Game Boy.
+
+La GBC tiene una pantalla en color en lugar de monocroma, pero no está retroiluminada. Es ligeramente más gruesa y alta, y tiene una pantalla algo más pequeña que la Game Boy Pocket, su predecesora inmediata en la línea Game Boy. Al igual que la Game Boy original, tiene un procesador de 8 bits personalizado fabricado por Sharp que se considera un híbrido entre el 8080 de Intel y el Z80 de Zilog. La grafía en inglés americano del nombre del sistema, Game Boy Color, se mantiene en todo el mundo.</text>
+			<text lang="de">Der Game Boy Color (üblicherweise als GBC abgekürzt) ist eine von Nintendo hergestellte Handheld-Spielkonsole, die am 21. Oktober 1998 in Japan und im November 1998 auf internationalen Märkten veröffentlicht wurde. Er ist der Nachfolger des ursprünglichen Game Boy und gehört zur Game Boy Familie.
+
+Der GBC verfügt über einen Farbbildschirm anstelle eines Monochrombildschirms, der jedoch nicht hintergrundbeleuchtet ist. Er ist etwas dicker und höher und hat einen etwas kleineren Bildschirm als der Game Boy Pocket, sein unmittelbarer Vorgänger in der Game Boy-Reihe. Wie der ursprüngliche Game Boy verfügt er über einen speziellen 8-Bit-Prozessor von Sharp, der als eine Mischung aus dem Intel 8080 und dem Zilog Z80 angesehen wird. Die amerikanisch-englische Schreibweise des Systemnamens, Game Boy Color, wird weltweit beibehalten.</text>
+			<text lang="fr">La Game Boy Color (communément abrégée en GBC) est une console de jeu portable, fabriquée par Nintendo, qui a été lancée au Japon le 21 octobre 1998 et sur les marchés internationaux en novembre de la même année. Elle succède à la Game Boy originale et fait partie de la famille Game Boy.
+
+La GBC est dotée d'un écran couleur plutôt que monochrome, mais il n'est pas rétroéclairé. Elle est légèrement plus épaisse et plus grande, et son écran est légèrement plus petit que celui de la Game Boy Pocket, son prédécesseur immédiat dans la gamme Game Boy. Comme la Game Boy originale, elle est équipée d'un processeur 8 bits personnalisé fabriqué par Sharp, considéré comme un hybride entre l'Intel 8080 et le Zilog Z80. L'orthographe américaine du nom du système, Game Boy Color, reste inchangée dans le monde entier.</text>
+			<text lang="it">Il Game Boy Color (comunemente abbreviato in GBC) è una console portatile per videogiochi, prodotta da Nintendo, uscita in Giappone il 21 ottobre 1998 e sui mercati internazionali nel novembre dello stesso anno. È il successore del Game Boy originale e fa parte della famiglia Game Boy.
+
+Il GBC ha uno schermo a colori anziché monocromatico, ma non è retroilluminato. È leggermente più spesso e più alto e ha uno schermo leggermente più piccolo del Game Boy Pocket, il suo immediato predecessore nella linea Game Boy. Come il Game Boy originale, è dotato di un processore personalizzato a 8 bit prodotto da Sharp, considerato un ibrido tra l'Intel 8080 e lo Zilog Z80. L'ortografia americana del nome del sistema, Game Boy Color, rimane costante in tutto il mondo.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>

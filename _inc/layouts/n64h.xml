@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+		<path>./../../_inc/anim/n64.png</path>
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/n64.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/n64.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.36</pos>
+			<maxSize>0.32</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		 <video name="videoglich" extra="true">
+            <path>./../../_inc/anim/video/glich.mp4</path>
+            <delay>0</delay>
+            <effect>none</effect>
+ 			<origin>0.5 0.5</origin>
+			<pos>0.5 0.36</pos>
+			<maxSize>0.32</maxSize>
+            <zIndex>26</zIndex>
+            <color>FFFFFF50</color>
+            <storyboard>
+                <animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
+            </storyboard>
+        </video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>1996</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Nintendo</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>64</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.4</pos>
+			<text>The Nintendo 64 (officially abbreviated as N64, hardware model number pre-term: NUS, stylized as NINTENDO64) is a home video game console developed and marketed by Nintendo. Named for its 64-bit central processing unit, it was released in June 1996 in Japan, September 1996 in North America, and March 1997 in Europe and Australia. It was the last major home console to use the ROM cartridge as its primary storage format until the Switch in 2017. The Nintendo 64 was discontinued in 2002 following the launch of its successor, the GameCube.
+
+Codenamed "Project Reality", the Nintendo 64 design was mostly complete by mid-1995, but its launch was delayed until 1996, when Time named it Machine of the Year. It was launched with three games: Super Mario 64, Pilotwings 64 and Saikyō Habu Shōgi (exclusive to Japan). As part of the fifth generation of video game consoles, it competed primarily with the Sony PlayStation and Sega Saturn. The suggested retail price at its United States launch was US$199.99 (equivalent to $326.02 in 2019), and as of December 2009, 32.93 million units had been sold worldwide. In 2015, IGN named it the ninth-greatest video game console of all time.</text>
+			<text lang="pl">Nintendo 64, N64 – domowa konsola gier komputerowych stworzona przez firmę Nintendo. Premiera konsoli w Japonii miała miejsce 23 czerwca 1996 roku, w Ameryce Północnej – 29 września 1996, a w Europie – 1 marca 1997 roku. Oficjalnie prace nad konsolą rozpoczęły się 23 sierpnia 1993. W tym dniu bowiem poinformowano o podpisaniu umowy między firmami Nintendo i Silicon Graphics, w której była mowa o projekcie „Reality”, mającym na celu stworzenie nowej konsoli do gier. Początkowo konsola miała nosić nazwę Ultra Nintendo, skróconą później do Ultra 64.
+
+Konsola obsługuje grafikę trójwymiarową. Zostało na nią wydane 396 gier. Sprzedano ponad 32 mln. egzemplarzy tej konsoli. Pad do N64 posiada gałkę analogową.
+
+Dane techniczne:
+- Procesor: 64 bit MIPS VR4300 (kompatybilny z R4300i) (RISC) 93,75 MHz, 24 kB L1 Cache
+- Koprocesor: 64 bit MIPS RISC RCP (Reality Immersion Co-Processor) i DP (Pixel Drawing Processor) 62,5 MHz
+- Grafika: 256x224, max. 640x480, 16,8 mln. kolorów z czego w jednej chwili może być wyświetlanych 32 000.
+- Pamięć: 4 MB Rambus DRAM, istnieje możliwość rozbudowania do 8 MB za pomocą Expansion Pak
+- Dźwięk: stereo 16 bit, kompresja ADPCM
+- Nośnik danych: kartridż o pojemności od 32 do 512 Mbit (od 4 do 64 MB).
+- Wejścia: 4 porty padów 3 pinowe
+- Wyjścia:
+    Composite Video
+    S-Video
+    RGB (tylko w systemie NTSC)
+    Analogowy dźwięk stereo
+    RF poprzez zewnętrzny modulator[2]
+- Wymiary: 260 × 170 mm x 73 mm
+- Waga: 1,1 kg</text>
+			<text lang="ru">64-разрядная игровая приставка. Разрабатывалась японской компанией Nintendo совместно с Silicon Graphics. Была выпущена в 1996 году (23 июня в Японии и 29 сентября в США) и стала ответом на приставки конкурентов Sony PlayStation и Sega Saturn. Тактовая частота центрального процессора — 93,75 МГц, графического — 62,5 МГц. Оснащалась оперативной памятью объёмом 4,5 МБ. Максимальное разрешение равнялось 640×480 при 24-битной глубине цвета. Благодаря участию Silicon Graphics, в этой приставке появилась масса новшеств, связанных с трёхмерной графикой: сглаживание текстур, MIP-mapping и др. В качестве игрового носителя был выбран картридж объёмом до 64 МБ.
+
+Вместе с консолью Nintendo выпустила первый 3D-платформер Super Mario 64, который демонстрировал её новшества во всей красе. Это и дало начальный толчок. Однако первое время игр для Nintendo 64 было крайне мало: не всем давались особенности программирования для неё, кроме того, многих отпугивал устаревший формат носителя (оба основных конкурента тогда уже перешли на компакт-диски, которые имели большую ёмкость и были удобнее и дешевле). Сама же Nintendo не была готова к полному обеспечению своей консоли игровыми проектами. Но к 1998 году ситуация исправилась, и N64 заняла второе место на рынке игровых приставок после PlayStation (проект Saturn тогда уже можно было считать провалившимся).</text>
+			<text lang="es">La Nintendo 64 (abreviada oficialmente como N64, número de modelo de hardware pre-term: NUS, estilizado como NINTENDO64) es una videoconsola doméstica desarrollada y comercializada por Nintendo. Llamada así por su unidad central de procesamiento de 64 bits, salió a la venta en junio de 1996 en Japón, en septiembre de 1996 en Norteamérica y en marzo de 1997 en Europa y Australia. Fue la última gran consola doméstica en utilizar el cartucho ROM como formato de almacenamiento principal hasta la Switch en 2017. La Nintendo 64 dejó de fabricarse en 2002 tras el lanzamiento de su sucesora, la GameCube.
+
+Con el nombre en clave de "Project Reality", el diseño de Nintendo 64 estaba prácticamente terminado a mediados de 1995, pero su lanzamiento se retrasó hasta 1996, cuando Time la nombró Máquina del Año. Se lanzó con tres juegos: Super Mario 64, Pilotwings 64 y Saikyō Habu Shōgi (exclusivo para Japón). Como parte de la quinta generación de consolas de videojuegos, compitió principalmente con la Sony PlayStation y la Sega Saturn. El precio de venta sugerido en su lanzamiento en Estados Unidos fue de 199,99 dólares (equivalente a 326,02 dólares en 2019), y en diciembre de 2009 se habían vendido 32,93 millones de unidades en todo el mundo. En 2015, IGN la nombró la novena videoconsola más grande de todos los tiempos.</text>
+			<text lang="de">Das Nintendo 64 (offiziell abgekürzt als N64, Hardware-Modellnummer vor dem Namen: NUS, stilisiert als NINTENDO64) ist eine von Nintendo entwickelte und vermarktete Videospielkonsole für den Heimgebrauch. Sie wurde nach ihrer 64-Bit-Zentraleinheit benannt und erschien im Juni 1996 in Japan, im September 1996 in Nordamerika und im März 1997 in Europa und Australien. Es war die letzte große Heimkonsole, die bis zur Switch im Jahr 2017 die ROM-Cartridge als primäres Speicherformat verwendete. Das Nintendo 64 wurde 2002 nach der Einführung seines Nachfolgers, des GameCube, eingestellt.
+
+Unter dem Codenamen "Project Reality" war das Design des Nintendo 64 Mitte 1995 weitgehend fertiggestellt, aber die Markteinführung verzögerte sich bis 1996, als es von Time zur "Machine of the Year" gekürt wurde. Es wurde mit drei Spielen auf den Markt gebracht: Super Mario 64, Pilotwings 64 und Saikyō Habu Shōgi (exklusiv in Japan). Als Teil der fünften Generation von Videospielkonsolen konkurrierte es hauptsächlich mit der Sony PlayStation und dem Sega Saturn. Die unverbindliche Preisempfehlung bei der Markteinführung in den USA lag bei 199,99 US-Dollar (entspricht 326,02 US-Dollar im Jahr 2019), und bis Dezember 2009 wurden weltweit 32,93 Millionen Einheiten verkauft. Im Jahr 2015 wurde sie von IGN zur neuntgrößten Videospielkonsole aller Zeiten gekürt.</text>
+			<text lang="fr">La Nintendo 64 (officiellement abrégée en N64, numéro de modèle matériel pré-terme : NUS, stylisé en NINTENDO64) est une console de jeux vidéo de salon développée et commercialisée par Nintendo. Nommée d'après son unité centrale de 64 bits, elle est sortie en juin 1996 au Japon, en septembre 1996 en Amérique du Nord et en mars 1997 en Europe et en Australie. Elle fut la dernière grande console de salon à utiliser la cartouche ROM comme format de stockage principal jusqu'à la Switch en 2017. La Nintendo 64 a été abandonnée en 2002 suite au lancement de son successeur, la GameCube.
+
+Sous le nom de code "Project Reality", la conception de la Nintendo 64 était pratiquement terminée à la mi-1995, mais son lancement a été retardé jusqu'en 1996, date à laquelle Time l'a nommée "Machine de l'année". Elle a été lancée avec trois jeux : Super Mario 64, Pilotwings 64 et Saikyō Habu Shōgi (exclusif au Japon). Faisant partie de la cinquième génération de consoles de jeux vidéo, elle était principalement en concurrence avec la PlayStation de Sony et la Saturn de Sega. Lors de son lancement aux États-Unis, le prix de vente conseillé était de 199,99 dollars américains (l'équivalent de 326,02 dollars en 2019), et en décembre 2009, 32,93 millions d'unités avaient été vendues dans le monde. En 2015, IGN l'a désignée comme la neuvième plus grande console de jeux vidéo de tous les temps.</text>
+			<text lang="it">Il Nintendo 64 (ufficialmente abbreviato in N64, numero di modello hardware pre-term: NUS, stilizzato come NINTENDO64) è una console per videogiochi domestica sviluppata e commercializzata da Nintendo. Chiamata così per la sua unità di elaborazione centrale a 64 bit, è stata rilasciata nel giugno 1996 in Giappone, nel settembre 1996 in Nord America e nel marzo 1997 in Europa e Australia. È stata l'ultima grande console domestica a utilizzare la cartuccia ROM come formato di memorizzazione principale fino allo Switch nel 2017. Il Nintendo 64 è stato dismesso nel 2002 dopo il lancio del suo successore, il GameCube.
+
+Con il nome in codice "Project Reality", il progetto del Nintendo 64 era stato in gran parte completato a metà del 1995, ma il suo lancio fu ritardato fino al 1996, quando il Time lo nominò macchina dell'anno. Il lancio avvenne con tre giochi: Super Mario 64, Pilotwings 64 e Saikyō Habu Shōgi (esclusiva per il Giappone). Facendo parte della quinta generazione di console per videogiochi, è entrato in competizione principalmente con la Sony PlayStation e il Sega Saturn. Il prezzo di vendita consigliato al lancio negli Stati Uniti era di 199,99 dollari (equivalenti a 326,02 dollari nel 2019) e, a dicembre 2009, erano state vendute 32,93 milioni di unità in tutto il mondo. Nel 2015, IGN l'ha definita la nona console per videogiochi più grande di tutti i tempi.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>
