@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.5 0.363</pos>
+      <maxSize>0.14</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.1 0.5</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.655 0.37</pos>
+      <maxSize>0.13</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.375 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox3" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.9 0.5</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.345 0.37</pos>
+      <maxSize>0.13</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.065 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text/>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.03</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.25</pos>
+      <text>ZiNc</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.35</pos>
+      <text>ZiNc is a command-line Windows emulator for arcade hardware based on Sony PlayStation hardware. These hardware systems include Sony ZiNc (ZN1 &amp; ZN2) and Namco System 11.
+
+These games are also supported in MAME, but ZiNc can frequently run them faster and with graphics and sound enhancements.
+The last version of ZiNc from original authors named 'Duddie' (Marcin Dudar; aka TheD / The Author) and 'Tratax' (DynaChicken) was v0.9; after that, they went on to create GCEmu (a Nintendo GameCube emulator) and R.Belmont / SMF took over ZiNc development. The source code was lost and it thus will never receive any further updates.</text>
+      <text lang="it">ZiNc è un emulatore Windows a riga di comando per hardware arcade basato su hardware Sony PlayStation. Questi sistemi hardware includono Sony ZiNc (ZN1 e ZN2) e Namco System 11.
+        
+Questi giochi sono supportati anche da MAME, ma ZiNc è spesso in grado di eseguirli più velocemente e con miglioramenti grafici e sonori.
+L'ultima versione di ZiNc degli autori originali 'Duddie' (Marcin Dudar; alias TheD / The Author) e 'Tratax' (DynaChicken) è stata la v0.9; in seguito, i due hanno creato GCEmu (un emulatore per Nintendo GameCube) e R.Belmont / SMF si è occupato dello sviluppo di ZiNc. Il codice sorgente è andato perso e quindi non riceverà mai ulteriori aggiornamenti.</text>
+      <text lang="fr">ZiNc est un émulateur Windows en ligne de commande pour le matériel d'arcade basé sur la PlayStation de Sony. Ces systèmes incluent le Sony ZiNc (ZN1 &amp; ZN2) et le Namco System 11.
+
+Ces jeux sont également supportés par MAME, mais ZiNc peut souvent les exécuter plus rapidement et avec des améliorations graphiques et sonores.
+La dernière version de ZiNc des auteurs originaux nommés 'Duddie' (Marcin Dudar ; aka TheD / The Author) et 'Tratax' (DynaChicken) était la v0.9 ; après cela, ils ont continué à créer GCEmu (un émulateur Nintendo GameCube) et R.Belmont / SMF a pris en charge le développement de ZiNc. Le code source a été perdu et il ne recevra donc plus jamais de mises à jour.</text>
+      <text lang="de">ZiNc ist ein Befehlszeilen-Windows-Emulator für Arcade-Hardware, die auf Sony PlayStation-Hardware basiert. Diese Hardware-Systeme umfassen Sony ZiNc (ZN1 &amp; ZN2) und Namco System 11.
+
+Diese Spiele werden auch von MAME unterstützt, aber ZiNc kann sie häufig schneller und mit verbesserter Grafik und Sound ausführen.
+Die letzte Version von ZiNc von den ursprünglichen Autoren namens 'Duddie' (Marcin Dudar; auch bekannt als TheD / The Author) und 'Tratax' (DynaChicken) war v0.9; danach gingen sie dazu über, GCEmu (einen Nintendo GameCube-Emulator) zu erstellen und R.Belmont / SMF übernahm die Entwicklung von ZiNc. Der Quellcode ist verloren gegangen und wird daher nie mehr aktualisiert werden.</text>
+      <text lang="es">ZiNc es un emulador Windows de línea de comandos para hardware arcade basado en hardware Sony PlayStation. Estos sistemas de hardware incluyen Sony ZiNc (ZN1 y ZN2) y Namco System 11.
+
+Estos juegos también son compatibles con MAME, pero con frecuencia ZiNc puede ejecutarlos más rápido y con mejoras gráficas y de sonido.
+La última versión de ZiNc de los autores originales llamados 'Duddie' (Marcin Dudar; alias TheD / El Autor) y 'Tratax' (DynaChicken) fue la v0.9; después de eso, pasaron a crear GCEmu (un emulador de Nintendo GameCube) y R.Belmont / SMF se hizo cargo del desarrollo de ZiNc. El código fuente se perdió y, por lo tanto, nunca recibirá más actualizaciones.</text>
+      <text lang="ru">ZiNc - это эмулятор командной строки Windows для аркадного оборудования на базе аппаратуры Sony PlayStation. К таким аппаратным системам относятся Sony ZiNc (ZN1 и ZN2) и Namco System 11.
+
+Эти игры также поддерживаются в MAME, но ZiNc часто запускает их быстрее и с улучшенной графикой и звуком.
+Последней версией ZiNc от оригинальных авторов по имени 'Duddie' (Marcin Dudar; он же TheD / The Author) и 'Tratax' (DynaChicken) была версия 0.9; после этого они перешли к созданию GCEmu (эмулятора Nintendo GameCube), а R.Belmont / SMF взял на себя разработку ZiNc. Исходный код был утерян, и, следовательно, он никогда не получит дальнейших обновлений.</text>
+      <text lang="pl">ZiNc to emulator wiersza poleceń systemu Windows dla sprzętu arcade opartego na sprzęcie Sony PlayStation. Te systemy sprzętowe obejmują Sony ZiNc (ZN1 i ZN2) oraz Namco System 11.
+
+Gry te są również obsługiwane w MAME, ale ZiNc często uruchamia je szybciej i z ulepszoną grafiką i dźwiękiem.
+Ostatnią wersją ZiNc od oryginalnych autorów o nazwach "Duddie" (Marcin Dudar; aka TheD / The Author) i "Tratax" (DynaChicken) była wersja v0.9; potem poszli dalej tworzyć GCEmu (emulator Nintendo GameCube), a R.Belmont / SMF przejął rozwój ZiNc. Kod źródłowy został utracony i dlatego nigdy nie otrzyma żadnych dalszych aktualizacji.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
+</theme>
