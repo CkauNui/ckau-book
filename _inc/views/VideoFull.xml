@@ -36,16 +36,22 @@
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
 			<minSize>1 1</minSize>
-			<color>FFFFFFDF</color>
+			<color>FFFFFF5F</color>
 			<imageSource>fanart</imageSource>
 			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="400" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
 				<animation property="offsetY" from="-0.01" to="0" duration="600" mode="EaseOutQuint"/>
 			</storyboard>
-			<storyboard event="activate">
-				<animation property="offsetY" from="-0.01" to="0" begin="" duration="600" mode="EaseOutQuint"/>
+			<storyboard event="activatePrev">
+				<animation property="offsetY" from="0.01" to="0" duration="600" mode="EaseOutQuint"/>
 			</storyboard>
-			<storyboard event="deactivate">
-				<animation property="opacity" from="1" to="0" duration="100" mode="Linear"/>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" duration="400" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" duration="400" mode="easeOut"/>
 			</storyboard>
 		</image>
 		<image name="md_thumbnail">
