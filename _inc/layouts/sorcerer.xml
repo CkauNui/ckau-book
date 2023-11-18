@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.62 0.5</origin>
+      <origin if="${screen.ratio} == '21/9'">0.37 0.5</origin>
+      <pos>0.44 0.38</pos>
+      <maxSize>0.18</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.22</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.16 0.38" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text>1978</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <pos>0.49 0.255</pos>
+      <text>Exidy</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.04</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.30</pos>
+      <size>0.5 0</size>
+      <text>Sorcerer</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.4</pos>
+      <text>The Sorcerer is a home computer system released in 1978 by the video game company Exidy, later under their Exidy Systems subsidiary. Based on the Zilog Z80 and the general layout of the emerging S-100 standard, the Sorcerer was comparatively advanced when released, especially when compared to the contemporary more commercially successful Commodore PET and TRS-80. The basic design was proposed by Paul Terrell, formerly of the Byte Shop, a pioneering computer store.
+
+Lacking strong support from its parent company, who were focused on the successful arcade game market, the Sorcerer was sold primarily through international distributors and technology licensing agreements. Distribution agreements with Dick Smith Electronics in Australia and Liveport in the UK as well as Compudata which included a manufacturing license to build, market and distribute the Tulip line of computers in Europe. The system remains relatively unknown outside these markets.</text>
+      <text lang="it">Il Sorcerer è un sistema di home computer rilasciato nel 1978 dall'azienda di videogiochi Exidy, successivamente sotto la sua filiale Exidy Systems. Basato sullo Zilog Z80 e sul layout generale dell'emergente standard S-100, il Sorcerer era relativamente avanzato al momento della sua uscita, soprattutto se paragonato ai contemporanei Commodore PET e TRS-80, di maggior successo commerciale. Il progetto di base fu proposto da Paul Terrell, ex Byte Shop, un negozio di computer all'avanguardia.
+
+Non avendo un forte sostegno da parte della casa madre, che si concentrava sul mercato di successo dei giochi arcade, il Sorcerer fu venduto principalmente attraverso distributori internazionali e accordi di licenza tecnologica. Gli accordi di distribuzione furono stipulati con Dick Smith Electronics in Australia e Liveport nel Regno Unito, oltre che con Compudata, che includeva una licenza di produzione per costruire, commercializzare e distribuire la linea di computer Tulip in Europa. Il sistema rimane relativamente sconosciuto al di fuori di questi mercati.</text>
+      <text lang="fr">Le Sorcerer est un système informatique domestique sorti en 1978 par la société de jeux vidéo Exidy, plus tard sous sa filiale Exidy Systems. Basé sur le Zilog Z80 et la disposition générale de la norme émergente S-100, le Sorcerer était relativement avancé lors de sa sortie, en particulier par rapport au Commodore PET et au TRS-80, qui connaissaient à l'époque un succès commercial plus important. La conception de base a été proposée par Paul Terrell, anciennement du Byte Shop, un magasin d'informatique pionnier.
+
+Faute de soutien de la part de sa société mère, qui se concentrait sur le marché florissant des jeux d'arcade, le Sorcerer a été vendu principalement par l'intermédiaire de distributeurs internationaux et d'accords de licence technologique. Des accords de distribution ont été conclus avec Dick Smith Electronics en Australie et Liveport au Royaume-Uni, ainsi qu'avec Compudata, qui incluait une licence de fabrication pour construire, commercialiser et distribuer la gamme d'ordinateurs Tulip en Europe. Le système reste relativement peu connu en dehors de ces marchés.</text>
+      <text lang="de">Der Sorcerer ist ein Heimcomputersystem, das 1978 von der Videospielfirma Exidy, später unter ihrer Tochtergesellschaft Exidy Systems, herausgebracht wurde. Der Sorcerer basierte auf dem Zilog Z80 und dem allgemeinen Layout des aufkommenden S-100-Standards und war bei seiner Veröffentlichung vergleichsweise fortschrittlich, insbesondere im Vergleich zu den zeitgenössischen, kommerziell erfolgreicheren Commodore PET und TRS-80. Das grundlegende Design wurde von Paul Terrell vorgeschlagen, der früher im Byte Shop, einem Pionier-Computerladen, tätig war.
+
+Da die Muttergesellschaft, die sich auf den erfolgreichen Markt für Arcade-Spiele konzentrierte, den Sorcerer nicht stark unterstützte, wurde er in erster Linie über internationale Vertriebshändler und Technologielizenzvereinbarungen verkauft. Vertriebsvereinbarungen mit Dick Smith Electronics in Australien und Liveport im Vereinigten Königreich sowie mit Compudata, die eine Herstellungslizenz für den Bau, die Vermarktung und den Vertrieb der Tulip-Reihe von Computern in Europa beinhalteten. Das System ist außerhalb dieser Märkte noch relativ unbekannt.</text>
+      <text lang="es">El Sorcerer es un sistema informático doméstico lanzado en 1978 por la empresa de videojuegos Exidy, más tarde bajo su filial Exidy Systems. Basado en el Z80 de Zilog y en el diseño general del emergente estándar S-100, el Sorcerer era relativamente avanzado en el momento de su lanzamiento, especialmente si se compara con el Commodore PET y el TRS-80, de mayor éxito comercial. El diseño básico fue propuesto por Paul Terrell, anteriormente de Byte Shop, una tienda de informática pionera.
+
+Al carecer de un fuerte apoyo por parte de su empresa matriz, que estaba centrada en el exitoso mercado de los juegos arcade, el Sorcerer se vendió principalmente a través de distribuidores internacionales y acuerdos de licencia tecnológica. Acuerdos de distribución con Dick Smith Electronics en Australia y Liveport en el Reino Unido, así como con Compudata, que incluían una licencia de fabricación para construir, comercializar y distribuir la línea de ordenadores Tulip en Europa. El sistema sigue siendo relativamente desconocido fuera de estos mercados.</text>
+      <text lang="ru">Sorcerer - домашняя компьютерная система, выпущенная в 1978 г. компанией Exidy, специализирующейся на видеоиграх, а позднее - дочерней компанией Exidy Systems. Основанная на Zilog Z80 и имеющая общую компоновку зарождающегося стандарта S-100, система Sorcerer на момент выпуска была сравнительно передовой, особенно по сравнению с современными, более коммерчески успешными Commodore PET и TRS-80. Базовая конструкция была предложена Полом Терреллом, бывшим сотрудником магазина Byte Shop - новаторского компьютерного магазина.
+
+Не имея сильной поддержки со стороны материнской компании, которая была ориентирована на успешный рынок аркадных игр, Sorcerer продавался в основном через международных дистрибьюторов и по соглашениям о лицензировании технологий. Дистрибьюторские соглашения с Dick Smith Electronics в Австралии и Liveport в Великобритании, а также с Compudata включали лицензию на производство, маркетинг и распространение линейки компьютеров Tulip в Европе. За пределами этих рынков система остается относительно малоизвестной.</text>
+      <text lang="pl">Sorcerer to domowy system komputerowy wydany w 1978 roku przez firmę Exidy, zajmującą się grami wideo, a później przez jej spółkę zależną Exidy Systems. Oparty na procesorze Zilog Z80 i ogólnym układzie wyłaniającego się standardu S-100, Sorcerer był stosunkowo zaawansowany w momencie premiery, zwłaszcza w porównaniu do współczesnych, bardziej komercyjnie udanych Commodore PET i TRS-80. Podstawowy projekt został zaproponowany przez Paula Terrella, byłego pracownika Byte Shop, pionierskiego sklepu komputerowego.
+
+Ze względu na brak silnego wsparcia ze strony firmy macierzystej, która koncentrowała się na odnoszącym sukcesy rynku gier zręcznościowych, Sorcerer był sprzedawany głównie za pośrednictwem międzynarodowych dystrybutorów i umów licencyjnych. Umowy dystrybucyjne z Dick Smith Electronics w Australii i Liveport w Wielkiej Brytanii, a także Compudata, która obejmowała licencję produkcyjną na budowę, sprzedaż i dystrybucję linii komputerów Tulip w Europie. System pozostaje stosunkowo mało znany poza tymi rynkami.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
+</theme>
