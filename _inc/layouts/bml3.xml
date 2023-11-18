@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videocrton" extra="true">
+      <path>./../../_inc/anim/video/CRT_ON.mp4</path>
+      <delay>0</delay>
+      <loops>0</loops>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.5 0.335</pos>
+      <maxSize>0.22</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.28</maxSize>
+      <zIndex>26</zIndex>
+    </video>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.5 0.36</pos>
+      <maxSize>0.2</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.26</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text>1980</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <pos>0.49 0.255</pos>
+      <text>Hitachi</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.04</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.30</pos>
+      <size>0.5 0</size>
+      <text>MB-6890</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.40</pos>
+      <text>The Hitachi MB 6890, also known as the BASIC Master Level 3, emerged as a groundbreaking personal computer from Japan during the early 1980s. Notably, it was the first system to display Japanese characters, a significant achievement at the time.
+
+Operating on an 8-bit platform, it utilized Extended BASIC, which greatly improved performance and user-friendliness. The machine featured a color display, and optional peripherals included a printer and a mini floppy drive. Beyond individual use, it found applications in education, office work, data search, and simulation. Overall, the Hitachi MB 6890, completed in 1980, played a pivotal role in driving the adoption of personal computers in the business-oriented market.</text>
+      <text lang="it">L'Hitachi MB 6890, noto anche come BASIC Master Level 3, è stato un personal computer innovativo proveniente dal Giappone all'inizio degli anni '80. In particolare, è stato il primo sistema a visualizzare i caratteri giapponesi, un risultato significativo per l'epoca. In particolare, fu il primo sistema a visualizzare i caratteri giapponesi, un risultato significativo per l'epoca.
+
+Funzionante su una piattaforma a 8 bit, utilizzava il BASIC esteso, che migliorava notevolmente le prestazioni e la facilità d'uso. La macchina era dotata di un display a colori e le periferiche opzionali includevano una stampante e un mini drive floppy. Al di là dell'uso individuale, ha trovato applicazione nell'istruzione, nel lavoro d'ufficio, nella ricerca di dati e nella simulazione. Nel complesso, l'MB 6890 di Hitachi, completato nel 1980, ha svolto un ruolo fondamentale nell'adozione dei personal computer nel mercato business-oriented.</text>
+      <text lang="fr">Le Hitachi MB 6890, également connu sous le nom de BASIC Master Level 3, est un ordinateur personnel japonais révolutionnaire apparu au début des années 1980. Il a notamment été le premier système à afficher des caractères japonais, ce qui constituait une avancée considérable à l'époque.
+
+Fonctionnant sur une plate-forme 8 bits, il utilisait Extended BASIC, qui améliorait considérablement les performances et la convivialité. La machine était dotée d'un écran couleur et les périphériques optionnels comprenaient une imprimante et un mini lecteur de disquettes. Au-delà de l'utilisation individuelle, il a trouvé des applications dans l'éducation, la bureautique, la recherche de données et la simulation. Dans l'ensemble, l'Hitachi MB 6890, achevé en 1980, a joué un rôle essentiel dans l'adoption des ordinateurs personnels sur le marché des entreprises.</text>
+      <text lang="de">Der Hitachi MB 6890, auch bekannt als BASIC Master Level 3, war in den frühen 1980er Jahren ein bahnbrechender Personal Computer aus Japan. Er war das erste System, das japanische Schriftzeichen anzeigen konnte, was zu dieser Zeit eine bedeutende Leistung war.
+
+Er lief auf einer 8-Bit-Plattform und nutzte Extended BASIC, das die Leistung und Benutzerfreundlichkeit erheblich verbesserte. Das Gerät verfügte über ein Farbdisplay, und zu den optionalen Peripheriegeräten gehörten ein Drucker und ein Mini-Diskettenlaufwerk. Über den individuellen Gebrauch hinaus fand er Anwendungen in den Bereichen Bildung, Büroarbeit, Datensuche und Simulation. Insgesamt spielte der 1980 fertig gestellte Hitachi MB 6890 eine entscheidende Rolle bei der Einführung von Personal Computern auf dem geschäftsorientierten Markt.</text>
+      <text lang="es">El Hitachi MB 6890, también conocido como BASIC Master Level 3, surgió como un innovador ordenador personal de Japón a principios de la década de 1980. En particular, fue el primer sistema que mostraba caracteres japoneses, todo un logro para la época.
+
+Funcionaba en una plataforma de 8 bits y utilizaba el BASIC ampliado, que mejoraba enormemente el rendimiento y la facilidad de uso. La máquina contaba con una pantalla en color y, como periféricos opcionales, incluía una impresora y una minidisquetera. Más allá del uso individual, encontró aplicaciones en educación, trabajo de oficina, búsqueda de datos y simulación. En conjunto, el Hitachi MB 6890, terminado en 1980, desempeñó un papel fundamental en el impulso de la adopción de los ordenadores personales en el mercado orientado a las empresas.</text>
+      <text lang="ru">Hitachi MB 6890, также известный как BASIC Master Level 3, стал новаторским персональным компьютером, выпущенным в Японии в начале 1980-х годов. Примечательно, что это была первая система, отображавшая японские иероглифы, что было значительным достижением для того времени.
+
+Работающая на 8-разрядной платформе, она использовала расширенный BASIC, что значительно повысило производительность и удобство работы. Машина оснащалась цветным дисплеем, а в качестве дополнительных периферийных устройств предлагались принтер и мини-дисковод. Помимо индивидуального использования, машина нашла применение в образовании, офисной работе, поиске данных и моделировании. В целом модель Hitachi MB 6890, выпущенная в 1980 году, сыграла решающую роль в распространении персональных компьютеров на рынке бизнес-ориентированных систем.</text>
+      <text lang="pl">Hitachi MB 6890, znany również jako BASIC Master Level 3, pojawił się jako przełomowy komputer osobisty z Japonii na początku lat 80-tych. W szczególności był to pierwszy system wyświetlający japońskie znaki, co było znaczącym osiągnięciem w tamtym czasie.
+
+Działający na 8-bitowej platformie, wykorzystywał rozszerzony BASIC, który znacznie poprawił wydajność i łatwość obsługi. Maszyna była wyposażona w kolorowy wyświetlacz, a opcjonalne urządzenia peryferyjne obejmowały drukarkę i stację dyskietek. Oprócz użytku indywidualnego, znalazł zastosowanie w edukacji, pracy biurowej, wyszukiwaniu danych i symulacji. Ogólnie rzecz biorąc, Hitachi MB 6890, ukończony w 1980 roku, odegrał kluczową rolę w napędzaniu adopcji komputerów osobistych na rynku zorientowanym na biznes.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
+</theme>

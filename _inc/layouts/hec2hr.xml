@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videocrton" extra="true">
+      <path>./../../_inc/anim/video/CRT_ON.mp4</path>
+      <delay>0</delay>
+      <loops>0</loops>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.5 0.335</pos>
+      <maxSize>0.22</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.28</maxSize>
+      <zIndex>26</zIndex>
+    </video>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.5 0.335</pos>
+      <maxSize>0.2</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.28</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.335" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text>1983</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <pos>0.49 0.255</pos>
+      <text>Hector</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.04</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.30</pos>
+      <size>0.5 0</size>
+      <text>Hector 2HR</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.40</pos>
+      <text>Hector (or Victor Lambda) are a series of a microcomputers produced in France in the early 1980s. The Hector 2HR is a 1983 computer with a Zilog Z80 processor, 16KB of ROM and 48KB of RAM.
+Initially sold as Victor Lambda 2HR, it was renamed avoid trademark confusion. Graphics were improved from the previous Hector 1 (aka Victor Lambda 2) model, with a resolution of 243x231 in 4 colors, and 40x23 character text. It has an built-in cassette recorder and an optional disk drive (DISK II). At launch there were sixty software titles available on tape.
+
+It was considered as a more serious machine for those wishing to program their own games.</text>
+      <text lang="it">Hector (o Victor Lambda) è una serie di microcomputer prodotti in Francia all'inizio degli anni Ottanta. Hector 2HR è un computer del 1983 con processore Zilog Z80, 16KB di ROM e 48KB di RAM.
+Inizialmente venduto come Victor Lambda 2HR, fu rinominato per evitare la confusione del marchio. La grafica è stata migliorata rispetto al precedente modello Hector 1 (alias Victor Lambda 2), con una risoluzione di 243x231 a 4 colori e un testo di 40x23 caratteri. Dispone di un registratore a cassette integrato e di un'unità disco opzionale (DISK II). Al momento del lancio erano disponibili sessanta titoli di software su nastro.
+
+Era considerata una macchina più seria per coloro che desideravano programmare i propri giochi.</text>
+      <text lang="fr">Hector (ou Victor Lambda) est une série de micro-ordinateurs produits en France au début des années 1980. Le Hector 2HR est un ordinateur de 1983 équipé d'un processeur Zilog Z80, de 16 Ko de mémoire morte et de 48 Ko de mémoire vive.
+Initialement vendu sous le nom de Victor Lambda 2HR, il a été renommé pour éviter toute confusion de marque. Les graphismes ont été améliorés par rapport au modèle précédent Hector 1 (alias Victor Lambda 2), avec une résolution de 243x231 en 4 couleurs, et un texte de 40x23 caractères. Il est équipé d'un enregistreur de cassettes intégré et d'un lecteur de disques optionnel (DISK II). Au lancement, soixante logiciels étaient disponibles sur cassette.
+
+Il était considéré comme une machine plus sérieuse pour ceux qui souhaitaient programmer leurs propres jeux.</text>
+      <text lang="de">Hector (oder Victor Lambda) ist eine Serie von Mikrocomputern, die in den frühen 1980er Jahren in Frankreich hergestellt wurden. Der Hector 2HR ist ein Computer aus dem Jahr 1983 mit einem Zilog Z80-Prozessor, 16 KB ROM und 48 KB RAM.
+Ursprünglich als Victor Lambda 2HR verkauft, wurde er umbenannt, um Markenverwechslungen zu vermeiden. Die Grafik wurde gegenüber dem Vorgängermodell Hector 1 (auch bekannt als Victor Lambda 2) verbessert, mit einer Auflösung von 243x231 in 4 Farben und 40x23 Zeichen Text. Er hat einen eingebauten Kassettenrekorder und ein optionales Diskettenlaufwerk (DISK II). Bei der Markteinführung waren sechzig Softwaretitel auf Kassette erhältlich.
+
+Er wurde als ernsthafteres Gerät für diejenigen angesehen, die ihre eigenen Spiele programmieren wollten.</text>
+      <text lang="es">Hector (o Victor Lambda) es una serie de microordenadores fabricados en Francia a principios de los años ochenta. El Hector 2HR es un ordenador de 1983 con un procesador Zilog Z80, 16KB de ROM y 48KB de RAM.
+Inicialmente se vendió como Victor Lambda 2HR, pero se le cambió el nombre para evitar confusiones de marca. Los gráficos fueron mejorados respecto al modelo anterior Hector 1 (también conocido como Victor Lambda 2), con una resolución de 243x231 en 4 colores, y texto de 40x23 caracteres. Incorpora una grabadora de casete y una unidad de disco opcional (DISK II). En el momento de su lanzamiento había sesenta títulos de software disponibles en cinta.
+
+Se consideraba una máquina más seria para quienes deseaban programar sus propios juegos.</text>
+      <text lang="ru">Hector (или Victor Lambda) - серия микрокомпьютеров, выпускавшихся во Франции в начале 1980-х годов. Hector 2HR - это компьютер 1983 года выпуска с процессором Zilog Z80, 16 КБ ПЗУ и 48 КБ ОЗУ.
+Первоначально он продавался под названием Victor Lambda 2HR, но был переименован во избежание путаницы с торговой маркой. Графика была улучшена по сравнению с предыдущей моделью Hector 1 (она же Victor Lambda 2): разрешение 243x231 в 4 цветах, текст 40x23 символа. Модель имеет встроенный кассетный магнитофон и дополнительный дисковод (DISK II). На момент выпуска на кассете было доступно шестьдесят наименований программного обеспечения.
+
+Он рассматривался как более серьезная машина для желающих программировать собственные игры.</text>
+      <text lang="pl">Hector (lub Victor Lambda) to seria mikrokomputerów produkowanych we Francji na początku lat 80-tych. Hector 2HR to komputer z 1983 roku z procesorem Zilog Z80, 16 KB pamięci ROM i 48 KB pamięci RAM.
+Początkowo sprzedawany jako Victor Lambda 2HR, został przemianowany w celu uniknięcia pomyłki w znakach towarowych. Grafika została ulepszona w stosunku do poprzedniego modelu Hector 1 (aka Victor Lambda 2), z rozdzielczością 243x231 w 4 kolorach i tekstem 40x23 znaków. Posiada wbudowany magnetofon kasetowy i opcjonalną stację dysków (DISK II). W momencie premiery na kasecie dostępnych było sześćdziesiąt tytułów oprogramowania.
+
+Był uważany za poważniejszą maszynę dla tych, którzy chcieli programować własne gry.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
+</theme>
