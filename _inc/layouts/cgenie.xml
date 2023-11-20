@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.5 0.335</pos>
+      <maxSize>0.24</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.25</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.335" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text>1982</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <pos>0.49 0.255</pos>
+      <text>EACA</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.04</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.30</pos>
+      <size>0.5 0</size>
+      <text>EG2000 Colour Genie</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.40</pos>
+      <text>The EACA EG2000 Colour Genie was a computer produced by Hong Kong-based manufacturer EACA. It was introduced in Germany in August 1982 by Tromeschläger Computer Service and Schmidtke Electronic.
+This computer followed their earlier Video Genie I and II models and was released around the same time as the business-oriented Video Genie. The Colour Genie featured a Zilog Z80 CPU running at 2.2 MHz, 16 KB RAM (expandable to 32 KB), and 16 colors for graphics. It had a 40×24 text display and 160×96 graphics resolution. The sound hardware included a General Instruments AY-3-8910 chip with 3 sound channels and 1 noise channel.
+
+The Colour Genie was not compatible with Tandy's newer TRS-80 Color Computer due to architectural differences. Approximately 190 games were published for this system in English and German.</text>
+      <text lang="it">L'EACA EG2000 Colour Genie era un computer prodotto dal produttore EACA di Hong Kong. Fu introdotto in Germania nell'agosto 1982 da Tromeschläger Computer Service e Schmidtke Electronic.
+Questo computer seguiva i precedenti modelli Video Genie I e II e fu commercializzato all'incirca nello stesso periodo del Video Genie orientato al business. Il Colour Genie era dotato di una CPU Zilog Z80 a 2,2 MHz, 16 KB di RAM (espandibile a 32 KB) e 16 colori per la grafica. Aveva un display di testo 40×24 e una risoluzione grafica di 160×96. L'hardware audio comprendeva un chip General Instruments AY-3-8910 con 3 canali audio e 1 canale di rumore.
+
+Il Colour Genie non era compatibile con il più recente TRS-80 Color Computer di Tandy a causa delle differenze architettoniche. Per questo sistema furono pubblicati circa 190 giochi in inglese e tedesco.</text>
+      <text lang="fr">L'EACA EG2000 Colour Genie était un ordinateur produit par le fabricant EACA basé à Hong Kong. Il a été introduit en Allemagne en août 1982 par Tromeschläger Computer Service et Schmidtke Electronic.
+Cet ordinateur faisait suite aux modèles Video Genie I et II et a été commercialisé à peu près en même temps que le Video Genie destiné aux entreprises. Le Colour Genie était équipé d'un processeur Zilog Z80 cadencé à 2,2 MHz, d'une mémoire vive de 16 Ko (extensible à 32 Ko) et de 16 couleurs pour les graphiques. Il disposait d'un écran texte de 40×24 et d'une résolution graphique de 160×96. Le matériel audio comprenait une puce General Instruments AY-3-8910 avec 3 canaux sonores et 1 canal de bruit.
+
+Le Colour Genie n'était pas compatible avec le TRS-80 Color Computer de Tandy, plus récent, en raison de différences architecturales. Environ 190 jeux ont été publiés pour ce système en anglais et en allemand.</text>
+      <text lang="de">Der EACA EG2000 Colour Genie war ein Computer des in Hongkong ansässigen Herstellers EACA. Er wurde in Deutschland im August 1982 von Tromeschläger Computer Service und Schmidtke Electronic eingeführt.
+Dieser Computer folgte auf die früheren Modelle Video Genie I und II und wurde etwa zur gleichen Zeit wie der business-orientierte Video Genie herausgebracht. Der Colour Genie verfügte über eine Zilog Z80-CPU mit 2,2 MHz, 16 KB RAM (erweiterbar auf 32 KB) und 16 Farben für Grafiken. Er hatte eine Textanzeige von 40×24 und eine Grafikauflösung von 160×96. Die Sound-Hardware umfasste einen General Instruments AY-3-8910 Chip mit 3 Soundkanälen und 1 Rauschkanal.
+
+Der Colour Genie war aufgrund architektonischer Unterschiede nicht mit dem neueren TRS-80 Color Computer von Tandy kompatibel. Ungefähr 190 Spiele wurden für dieses System in Englisch und Deutsch veröffentlicht.</text>
+      <text lang="es">El EACA EG2000 Colour Genie era un ordenador producido por el fabricante EACA, con sede en Hong Kong. Fue introducido en Alemania en agosto de 1982 por Tromeschläger Computer Service y Schmidtke Electronic.
+Este ordenador siguió a sus modelos anteriores Video Genie I y II y salió al mercado más o menos al mismo tiempo que el Video Genie orientado a los negocios. El Colour Genie disponía de una CPU Zilog Z80 a 2,2 MHz, 16 KB de RAM (ampliable a 32 KB) y 16 colores para los gráficos. Tenía una pantalla de texto de 40×24 y una resolución gráfica de 160×96. El hardware de sonido incluía un chip General Instruments AY-3-8910 con 3 canales de sonido y 1 canal de ruido.
+
+El Colour Genie no era compatible con el nuevo TRS-80 Color Computer de Tandy debido a diferencias arquitectónicas. Se publicaron aproximadamente 190 juegos para este sistema en inglés y alemán.</text>
+      <text lang="ru">EACA EG2000 Colour Genie - компьютер, выпущенный гонконгским производителем EACA. Он был представлен в Германии в августе 1982 года компаниями Tromeschläger Computer Service и Schmidtke Electronic.
+Этот компьютер последовал за более ранними моделями Video Genie I и II и был выпущен примерно в то же время, что и бизнес-ориентированный Video Genie. Colour Genie оснащался процессором Zilog Z80, работающим на частоте 2,2 МГц, 16 КБ оперативной памяти (с возможностью расширения до 32 КБ) и 16 цветами для графики. Он имел текстовый дисплей 40×24 и графическое разрешение 160×96. Звуковая аппаратура включала микросхему General Instruments AY-3-8910 с 3 звуковыми каналами и 1 каналом шума.
+
+Из-за архитектурных различий Colour Genie не был совместим с более новой моделью Tandy TRS-80 Color Computer. Для этой системы было выпущено около 190 игр на английском и немецком языках.</text>
+      <text lang="pl">EACA EG2000 Colour Genie był komputerem wyprodukowanym przez firmę EACA z siedzibą w Hongkongu. Został wprowadzony na rynek niemiecki w sierpniu 1982 roku przez Tromeschläger Computer Service i Schmidtke Electronic.
+Komputer ten był następcą wcześniejszych modeli Video Genie I i II i został wydany mniej więcej w tym samym czasie, co zorientowany na biznes Video Genie. Colour Genie wyposażony był w procesor Zilog Z80 pracujący z częstotliwością 2,2 MHz, 16 KB pamięci RAM (z możliwością rozszerzenia do 32 KB) i 16 kolorów grafiki. Miał wyświetlacz tekstowy 40×24 i rozdzielczość grafiki 160×96. Sprzęt dźwiękowy zawierał układ General Instruments AY-3-8910 z 3 kanałami dźwiękowymi i 1 kanałem szumu.
+
+Colour Genie nie był kompatybilny z nowszym komputerem TRS-80 Color Computer firmy Tandy ze względu na różnice architektoniczne. Na ten system wydano około 190 gier w języku angielskim i niemieckim.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
+</theme>
