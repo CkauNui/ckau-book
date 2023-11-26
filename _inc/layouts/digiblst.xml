@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.49</origin>
+      <pos>0.505 0.493</pos>
+      <maxSize>0.24</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.225 0.493" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text>2005</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <pos>0.49 0.255</pos>
+      <text>Nikko Europe B.V.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.04</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.30</pos>
+      <size>0.5 0</size>
+      <text>digiBLAST</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.4</pos>
+      <text>Digiblast - Personal Media Center (stylized digiBLAST personal media center) is a portable console built, developed and produced by three separate companies: Nikko Europe B.V. in the Netherlands, Grey Innovation in Australia and Vivid Imaginations in the United Kingdom.  It was launched in 2005 mainly as a gaming console, but it can also use special cartridges that allow you to watch cartoons in RealPlayer format and, with a special add-on, you can transfer and listen to audio files in MP3 format from your PC.
+
+The console consists of a 2.7-inch LCD screen with 4096 colors. It is also equipped with a stand on the back of the case that allows it to stand on its own while watching, for example, a cartoon among those in the catalog.
+Another add-on allows you to connect the console to a TV, incompatible with some games and of poor quality, as they and all the elements on the screen are displayed in a tiny window.
+There was also a last add-on with the ability to take pictures at 1.3 megapixel resolution, which never saw its release in stores.</text>
+      <text lang="it">Digiblast - Personal Media Center (stilizzato digiBLAST personal media center) è una console portatile costruita, sviluppata e prodotta da tre società distinte: Nikko Europe B.V. nei Paesi Bassi, Grey Innovation in Australia e Vivid Imaginations nel Regno Unito.  È stata lanciata nel 2005 principalmente come console di gioco, ma può anche utilizzare speciali cartucce che consentono di guardare cartoni animati in formato RealPlayer e, con uno speciale add-on, di trasferire e ascoltare file audio in formato MP3 dal PC.
+
+La console è dotata di uno schermo LCD da 2,7 pollici a 4096 colori. È inoltre dotata di un supporto sul retro della custodia che le permette di stare in piedi da sola mentre si guarda, ad esempio, un cartone animato tra quelli presenti nel catalogo.
+Un altro componente aggiuntivo permette di collegare la console a un televisore, incompatibile con alcuni giochi e di scarsa qualità, in quanto essi e tutti gli elementi sullo schermo vengono visualizzati in una minuscola finestra.
+C'era anche un ultimo componente aggiuntivo con la possibilità di scattare foto a 1,3 megapixel di risoluzione, che non ha mai visto la sua uscita nei negozi.</text>
+      <text lang="fr">Digiblast - Personal Media Center (stylisé digiBLAST personal media center) est une console portable construite, développée et produite par trois sociétés distinctes : Nikko Europe B.V. aux Pays-Bas, Grey Innovation en Australie et Vivid Imaginations au Royaume-Uni.  Elle a été lancée en 2005 principalement comme console de jeu, mais elle peut également utiliser des cartouches spéciales qui permettent de regarder des dessins animés au format RealPlayer et, avec un module complémentaire spécial, de transférer et d'écouter des fichiers audio au format MP3 à partir de votre PC.
+
+La console se compose d'un écran LCD de 2,7 pouces avec 4096 couleurs. Elle est également équipée d'un support à l'arrière du boîtier qui lui permet de tenir debout tout en regardant, par exemple, un dessin animé parmi ceux du catalogue.
+Un autre add-on permet de connecter la console à un téléviseur, incompatible avec certains jeux et de mauvaise qualité, puisque ceux-ci et tous les éléments de l'écran s'affichent dans une minuscule fenêtre.
+Il existait également un dernier module complémentaire permettant de prendre des photos d'une résolution de 1,3 mégapixel, qui n'a jamais été commercialisé.</text>
+      <text lang="de">Digiblast - Personal Media Center (stilisiert digiBLAST personal media center) ist eine tragbare Konsole, die von drei verschiedenen Unternehmen entwickelt und produziert wird: Nikko Europe B.V. in den Niederlanden, Grey Innovation in Australien und Vivid Imaginations im Vereinigten Königreich.  Sie wurde 2005 hauptsächlich als Spielkonsole auf den Markt gebracht, kann aber auch mit speziellen Kassetten betrieben werden, die es ermöglichen, Zeichentrickfilme im RealPlayer-Format anzuschauen, und mit einem speziellen Zusatzgerät können Sie Audiodateien im MP3-Format von Ihrem PC übertragen und anhören.
+
+Die Konsole besteht aus einem 2,7-Zoll-LCD-Bildschirm mit 4096 Farben. Sie ist außerdem mit einem Ständer auf der Rückseite des Gehäuses ausgestattet, der es ermöglicht, die Konsole aufrecht stehen zu lassen, während man zum Beispiel einen Zeichentrickfilm aus dem Katalog anschaut.
+Mit einem weiteren Zusatz können Sie die Konsole an einen Fernseher anschließen, der mit einigen Spielen nicht kompatibel und von schlechter Qualität ist, da sie und alle Elemente auf dem Bildschirm in einem kleinen Fenster angezeigt werden.
+Es gab auch ein letztes Add-on mit der Möglichkeit, Bilder mit einer Auflösung von 1,3 Megapixeln zu machen, das nie in den Handel kam.</text>
+      <text lang="es">Digiblast - Personal Media Center (estilizado digiBLAST personal media center) es una consola portátil construida, desarrollada y producida por tres empresas distintas: Nikko Europe B.V. en los Países Bajos, Grey Innovation en Australia y Vivid Imaginations en el Reino Unido.  Se lanzó en 2005 principalmente como consola de juegos, pero también puede utilizar cartuchos especiales que permiten ver dibujos animados en formato RealPlayer y, con un complemento especial, transferir y escuchar archivos de audio en formato MP3 desde el PC.
+
+La consola consta de una pantalla LCD de 2,7 pulgadas con 4.096 colores. También está equipada con un soporte en la parte posterior de la carcasa que permite mantenerla en pie mientras se ve, por ejemplo, un dibujo animado de los que hay en el catálogo.
+Otro complemento permite conectar la consola a un televisor, incompatible con algunos juegos y de mala calidad, ya que éstos y todos los elementos de la pantalla se muestran en una ventana diminuta.
+También existía un último complemento con la posibilidad de hacer fotos a 1,3 megapíxeles de resolución, que nunca llegó a aparecer en las tiendas.</text>
+      <text lang="ru">Digiblast - Personal Media Center (стилизованный digiBLAST personal media center) - портативная консоль, созданная, разработанная и произведенная тремя отдельными компаниями: Nikko Europe B.V. в Нидерландах, Grey Innovation в Австралии и Vivid Imaginations в Великобритании.  Она была выпущена в 2005 году в основном как игровая консоль, но в ней также могут использоваться специальные картриджи, позволяющие смотреть мультфильмы в формате RealPlayer, а с помощью специального дополнения - передавать и прослушивать аудиофайлы в формате MP3 с ПК.
+
+Консоль состоит из 2,7-дюймового ЖК-экрана с 4096 цветами. Кроме того, она оснащена подставкой на задней части корпуса, что позволяет ей самостоятельно стоять во время просмотра, например, какого-либо мультфильма из представленных в каталоге.
+Еще одно дополнение позволяет подключить консоль к телевизору, несовместимому с некоторыми играми и имеющими низкое качество, так как они и все элементы на экране отображаются в крошечном окошке.
+Существовало и последнее дополнение с возможностью делать фотографии с разрешением 1,3 мегапикселя, которое так и не появилось в магазинах.</text>
+      <text lang="pl">Digiblast - Personal Media Center (stylizowane digiBLAST personal media center) to przenośna konsola zbudowana, opracowana i wyprodukowana przez trzy odrębne firmy: Nikko Europe B.V. w Holandii, Grey Innovation w Australii i Vivid Imaginations w Wielkiej Brytanii.  Została wprowadzona na rynek w 2005 roku głównie jako konsola do gier, ale może również korzystać ze specjalnych kartridży, które umożliwiają oglądanie kreskówek w formacie RealPlayer, a dzięki specjalnemu dodatkowi można przesyłać i słuchać plików audio w formacie MP3 z komputera.
+
+Konsola składa się z 2,7-calowego ekranu LCD wyświetlającego 4096 kolorów. Wyposażona jest również w podstawkę z tyłu obudowy, która pozwala jej stać samodzielnie podczas oglądania np. kreskówki z katalogu.
+Kolejny dodatek pozwala podłączyć konsolę do telewizora, niekompatybilnego z niektórymi grami i słabej jakości, ponieważ one i wszystkie elementy na ekranie są wyświetlane w małym okienku.
+Był też ostatni dodatek z możliwością robienia zdjęć w rozdzielczości 1,3 megapiksela, który nigdy nie doczekał się premiery w sklepach.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+  </view>
+</theme>
