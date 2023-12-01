@@ -129,13 +129,25 @@
 			<!-- <size>0.35</size> -->
 			<maxSize>0.35</maxSize>
 			<origin>0.5 1</origin>
-			<delay>1</delay>
+			<delay>1.5</delay>
 			<showSnapshotNoVideo>false</showSnapshotNoVideo>
-			<showSnapshotDelay>false</showSnapshotDelay>
+			<showSnapshotDelay>true</showSnapshotDelay>
 			<snapshotSource>image</snapshotSource>
 			<effect>none</effect>
 			<zIndex>100</zIndex>
 			<scaleOrigin>1</scaleOrigin>
+			<storyboard event="open">
+				<animation property="opacity" to="0" begin="0" duration="0" mode="easeOut"/>
+				<animation property="opacity" from="0" to="1" begin="600" duration="400" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="0" begin="0" duration="0" mode="easeOut"/>
+				<animation property="opacity" from="0" to="1" begin="600" duration="400" mode="easeIn"/>
+				<animation property="offsetX" from="0.2" to="0" begin="600" duration="500" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" to="0" duration="0" mode="easeIn"/>
+			</storyboard>
 		</video>
 
 		<text name="md_players,md_genre,md_developer,md_publisher,md_playcount,md_gametime">
