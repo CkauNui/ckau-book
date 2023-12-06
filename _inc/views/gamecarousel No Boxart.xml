@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+<formatVersion>7</formatVersion>
+<!-- Подробно + Карусель -->
+<customView name="gamecarousel No Boxart" inherits="gamecarousel" displayName="${gameCarouselNoBoxartViewName}">
+		<video name="md_video">
+			<pos>0.520625 0.678</pos>
+			<maxSize>0.3078125 0.455</maxSize>
+			<origin>0.5 1</origin>
+			<delay>0.1</delay>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+		</video>
+		<image name="md_thumbnail">
+			<visible>false</visible>
+			<zIndex>1</zIndex>
+		</image>
+		<image name="md_image">
+			<origin>0.5 1</origin>
+			<pos>0.18 0.6777777777777778</pos>
+			<maxSize>0.3078125 0.585</maxSize>
+		</image>
+		<text name="md_name" extra="true">
+			<pos>-0.15 0</pos>
+			<size>1 0.03</size>
+			<alignment>center</alignment>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>aaaaaa</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+		</text>
+		<image name="md-description-border" extra="true">
+			<visible>false</visible>
+			<zIndex>1</zIndex>
+		</image>
+		<text name="md_description">
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<pos>0.024875 0.705111111111111</pos>
+			<size>0.6568125 0.2240555555555556</size>
+			<fontSize>0.025</fontSize>
+			<zIndex>105</zIndex>
+		</text>
+		<image name="md-description-border2" extra="true">
+			<visible>false</visible>
+			<zIndex>1</zIndex>
+		</image>
+		<image name="md_flag">
+			<pos>0.5415 0.07</pos>
+		</image>
+		<rating name="md_rating">
+			<pos>0.4124 0.2055</pos>
+		</rating>
+		<text name="md_players">
+			<pos>0.396 0.065</pos>
+		</text>
+		<image name="md_manual,md_nomanual">
+			<pos>0.4195 0.068</pos>
+		</image>
+		<image name="md_cheevos,md_notcheevos">
+			<pos>0.440 0.068</pos>
+		</image>
+		<image name="fake_cheevos" extra="true">
+			<pos>0.440 0.068</pos>
+		</image>
+		<image name="md_savestate,md_nosavestate">
+			<pos>0.462 0.068</pos>
+		</image>
+
+		<image name="md_hidden">
+			<pos>0.504 0.068</pos>
+		</image>
+		<image name="md_kidgame,md_notkidgame">
+			<pos>0.483 0.068</pos>
+		</image>
+
+		<datetime name="md_releasedate">
+			<pos>0.4106 0.095</pos>
+		</datetime>
+		<image name="release_date_logo" extra="true">
+			<pos>0.3956 0.106</pos>
+		</image>
+		<text name="md_publisher">
+			<pos>0.4106 0.133</pos>
+		</text>
+		<image name="publisher_logo" extra="true">
+			<pos>0.3956 0.144</pos>
+		</image>
+		<text name="md_playcount">
+			<pos>0.4106 0.171</pos>
+		</text>
+		<image name="playcount_logo" extra="true">
+			<pos>0.3956 0.182</pos>
+		</image>
+
+		<text name="md_developer">
+			<pos>0.5655 0.095</pos>
+		</text>
+		<image name="developer_logo" extra="true">
+			<pos>0.551 0.106</pos>
+		</image>
+		<text name="md_genre">
+			<pos>0.5655 0.133</pos>
+		</text>
+		<image name="genre_logo" extra="true">
+			<pos>0.551 0.144</pos>
+		</image>
+		<datetime name="md_lastplayed">
+			<pos>0.5655 0.165</pos>
+		</datetime>
+		<text name="md_gametime">
+			<pos>0.5655 0.171</pos>
+		</text>
+		<image name="gametime_logo" extra="true">
+			<pos>0.551 0.182</pos>
+		</image>
+	</customView>
+<!-- Navigation arrows, if enabled -->
+  	<include ifSubset="arrows:On">./../../_inc/views/arrows.xml</include>
+</theme>
