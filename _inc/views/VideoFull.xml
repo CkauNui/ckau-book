@@ -11,16 +11,13 @@
 			<visible>false</visible>
 			<zIndex>1</zIndex>
 		</image>
-<!--		<image name="md_thumbnail">
-			<visible>false</visible>
-			<zIndex>1</zIndex>
-		</image>-->
 		<text name="md_name" extra="true">
-			<pos>0.005 0.005</pos>
-			<alignment>left</alignment>
+			<pos>0 0</pos>
+			<size>1 0.03</size>
+			<alignment>center</alignment>
 			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
 			<color>FFFFFF1F</color>
-			<fontSize>0.02</fontSize>
+			<fontSize>0.025</fontSize>
 			<lineSpacing>1.1</lineSpacing>
 			<zIndex>140</zIndex>
 		</text>
@@ -56,11 +53,9 @@
 		</image>
 		<image name="md_thumbnail">
 			<tile>true</tile>
-			<origin>0.5 1</origin>
-			<origin if="${screen.ratio} == '21/9'">0.7 1</origin>
-			<pos>0.13 0.785</pos>
-			<maxSize>0.23 1</maxSize>
-			<maxSize if="${screen.ratio} == '21/9'">0.165 1</maxSize>
+			<origin>0 1</origin>
+			<pos>0.015 0.785</pos>
+			<maxSize>0.3 0.61</maxSize>
 			<zIndex>170</zIndex>
 			<storyboard event="open">
 				<animation property="offsetX" from="-0.2" to="0" duration="500" mode="EaseOutQuint"/>

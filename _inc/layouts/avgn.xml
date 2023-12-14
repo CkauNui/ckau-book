@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.48 0.5</origin>
+			<pos>0.519 0.378</pos>
+			<maxSize>0.27</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.239 0.378" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text>2004</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.03</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.25</pos>
+			<size>0.5 0</size>
+			<text>The Angry Video Game Nerd</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.35</pos>
+			<text>AVGN is the main character of the video show of the same name, a series of video game reviews for video game consoles of the past years. The reviews are dedicated to criticizing low-quality video games in a humorous style.
+
+The video series is created by James D. Rolfe, who plays the role of the main character. The show gained popularity through the publication of the first videos on YouTube. The videos were then published on the ScrewAttack website and later, along with two other exclusive series, were given to the GameTrailers website, where they were published until the site was shut down. According to GameTrailers, the episodes posted there had between half a million and two million views. The show was subsequently published exclusively on Cinemassacre's YouTube channel.
+
+At the time of its appearance, the show was called The Angry Nintendo Nerd. In episode 15, the name was changed so as not to infringe on Nintendo's trademark and to start doing reviews of games from other companies' game consoles in the future.</text>
+			<text lang="pl">AVGN to główny bohater programu wideo o tej samej nazwie, serii recenzji gier wideo na konsole z ostatnich lat. Recenzje poświęcone są krytyce niskiej jakości gier wideo w humorystycznym stylu.
+
+Twórcą serii jest James D. Rolfe, który wciela się w rolę głównego bohatera. Program zyskał popularność dzięki publikacji pierwszych filmów w serwisie YouTube. Filmy zostały następnie opublikowane na stronie ScrewAttack, a później, wraz z dwoma innymi ekskluzywnymi seriami, zostały przekazane stronie GameTrailers, gdzie były publikowane do momentu zamknięcia strony. Według GameTrailers, opublikowane tam odcinki miały od pół do dwóch milionów wyświetleń. Program został następnie opublikowany wyłącznie na kanale YouTube Cinemassacre.
+
+W momencie pojawienia się, program nosił nazwę The Angry Nintendo Nerd. W odcinku 15 nazwa została zmieniona, aby nie naruszać znaku towarowego Nintendo i w przyszłości zacząć recenzować gry z konsol innych firm.</text>
+			<text lang="ru">AVGN — главный герой одноимённого видеошоу, серии обзоров видеоигр для игровых консолей прошлых лет. Обзоры посвящены критике низкокачественных видеоигр в юмористическом стиле.
+
+Серия видеороликов создана Джеймсом Д. Рольфом, исполняющим роль главного героя. Шоу получило популярность благодаря публикации первых видео на сайте YouTube. После этого ролики публиковались на сайте ScrewAttack и позже, вместе с двумя другими эксклюзивными сериями, были переданы сайту GameTrailers, на котором публиковались до закрытия сайта. По данным GameTrailers, размещённые на нём серии имели от полумиллиона до двух миллионов просмотров. Впоследствии шоу публиковалось исключительно на YouTube-канале Cinemassacre.
+
+На момент появления шоу называлось The Angry Nintendo Nerd. В 15-м выпуске название было изменено, чтобы не нарушать торговый знак Nintendo и в будущем начать делать обзоры игр с игровых консолей других компаний.</text>
+			<text lang="es">AVGN es el protagonista del programa de vídeo del mismo nombre, una serie de críticas de videojuegos para videoconsolas de los últimos años. Las reseñas se dedican a criticar videojuegos de baja calidad en clave de humor.
+
+La serie de vídeo está creada por James D. Rolfe, que interpreta el papel del protagonista. El programa ganó popularidad con la publicación de los primeros vídeos en YouTube. A continuación, los vídeos se publicaron en el sitio web ScrewAttack y, más tarde, junto con otras dos series exclusivas, se cedieron al sitio web GameTrailers, donde se publicaron hasta el cierre del sitio. Según GameTrailers, los episodios publicados allí tuvieron entre medio millón y dos millones de visitas. Posteriormente, el programa se publicó en exclusiva en el canal de YouTube de Cinemassacre.
+
+En el momento de su aparición, el programa se llamaba The Angry Nintendo Nerd. En el episodio 15, se cambió el nombre para no infringir la marca registrada de Nintendo y empezar a hacer reseñas de juegos de videoconsolas de otras compañías en el futuro.</text>
+			<text lang="de">AVGN ist die Hauptfigur der gleichnamigen Videoshow, einer Serie von Videospielkritiken für Videospielkonsolen der letzten Jahre. Die Kritiken widmen sich der Kritik an minderwertigen Videospielen in einem humorvollen Stil.
+
+Die Videoserie wurde von James D. Rolfe geschaffen, der die Rolle der Hauptfigur spielt. Bekanntheit erlangte die Show durch die Veröffentlichung der ersten Videos auf YouTube. Die Videos wurden dann auf der Website ScrewAttack veröffentlicht und später, zusammen mit zwei anderen exklusiven Serien, der Website GameTrailers zur Verfügung gestellt, wo sie bis zur Schließung der Website veröffentlicht wurden. Nach Angaben von GameTrailers wurden die dort eingestellten Episoden zwischen einer halben und zwei Millionen Mal angesehen. Die Sendung wurde anschließend exklusiv auf dem YouTube-Kanal von Cinemassacre veröffentlicht.
+
+Zum Zeitpunkt ihres Erscheinens trug die Sendung den Namen The Angry Nintendo Nerd. In Folge 15 wurde der Name geändert, um das Markenzeichen von Nintendo nicht zu verletzen und um in Zukunft auch Spiele von anderen Konsolenherstellern zu testen.</text>
+			<text lang="fr">AVGN est le personnage principal de l'émission vidéo du même nom, une série de critiques de jeux vidéo pour les consoles de ces dernières années. Les critiques portent sur des jeux vidéo de qualité médiocre dans un style humoristique.
+
+La série vidéo est créée par James D. Rolfe, qui joue le rôle du personnage principal. L'émission a gagné en popularité grâce à la publication des premières vidéos sur YouTube. Les vidéos ont ensuite été publiées sur le site ScrewAttack, puis, avec deux autres séries exclusives, sur le site GameTrailers, où elles ont été publiées jusqu'à la fermeture du site. Selon GameTrailers, les épisodes publiés sur ce site ont été vus entre un demi-million et deux millions de fois. L'émission a ensuite été publiée en exclusivité sur la chaîne YouTube de Cinemassacre.
+
+À l'époque de son apparition, l'émission s'appelait The Angry Nintendo Nerd. Dans l'épisode 15, le nom a été modifié afin de ne pas porter atteinte à la marque Nintendo et de commencer à faire des critiques de jeux sur les consoles d'autres sociétés à l'avenir.</text>
+			<text lang="it">AVGN è il protagonista dell'omonimo programma video, una serie di recensioni di videogiochi per le console degli ultimi anni. Le recensioni sono dedicate alla critica di videogiochi di bassa qualità in stile umoristico.
+
+La serie video è creata da James D. Rolfe, che interpreta il ruolo del protagonista. Lo spettacolo ha acquisito popolarità grazie alla pubblicazione dei primi video su YouTube. I video sono stati poi pubblicati sul sito web ScrewAttack e successivamente, insieme ad altre due serie esclusive, sono stati ceduti al sito web GameTrailers, dove sono stati pubblicati fino alla chiusura del sito. Secondo GameTrailers, gli episodi pubblicati hanno avuto tra il mezzo milione e i due milioni di visualizzazioni. La serie è stata successivamente pubblicata esclusivamente sul canale YouTube di Cinemassacre.
+
+All'epoca della sua comparsa, lo show si chiamava The Angry Nintendo Nerd. Nell'episodio 15, il nome è stato cambiato per non violare il marchio Nintendo e per iniziare a recensire in futuro giochi di console di altre aziende.</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>
