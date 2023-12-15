@@ -27,6 +27,7 @@
 			<origin>0.5 0.5</origin>
 			<pos>0.50 0.435</pos>
 			<maxSize>0.25</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.24</maxSize>
 			<zIndex>26</zIndex>
 			<storyboard>
 				<animation property="pos" to="0.22 0.435" begin="2000" duration="1000" mode="linear"/>
@@ -41,8 +42,11 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
+      		<origin if="${screen.ratio} == '4/3'">0.28 0.5</origin>
+      		<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
 			<pos>0.635 0.47</pos>
 			<maxSize>0.16</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.20</maxSize>
 			<zIndex>25</zIndex>
 			<rotation>0</rotation>
 			<storyboard>
@@ -58,8 +62,11 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.72 0.5</origin>
+			<origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
 			<pos>0.365 0.47</pos>
 			<maxSize>0.16</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.20</maxSize>
 			<zIndex>25</zIndex>
 			<rotation>0</rotation>
 			<storyboard>
