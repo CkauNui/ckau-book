@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<!-- Dynamically colored system background, but not animated. Needed to allow background image extension in 21:9 -->
+		<image if="${screen.ratio} == '21/9'" name="sysbg-right" extra="true">
+			<visible>false</visible>
+		</image>
+		<image if="${screen.ratio} == '21/9'" name="sysbg-right-fixed" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.9 0.5</pos>
+			<minSize>0.52 1.1</minSize>
+			<color>${sysColor}</color>
+			<path>./../../_inc/images/space.png</path>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.41</pos>
+			<maxSize>0.351</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.5 0.5</maxSize>
+			<zIndex>25</zIndex>
+		</video>
+	</view>
+</theme>
