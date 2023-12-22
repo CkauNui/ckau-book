@@ -2,16 +2,17 @@
 <theme>
   <formatVersion>7</formatVersion>
   <view name="system">
-    <!-- Dynamically colored system background, but not animated. Needed to allow background image extension in 21:9 -->
-    <image if="${screen.ratio} == '21/9'" name="sysbg-right" extra="true">
-      <visible>false</visible>
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
     </image>
-    <image if="${screen.ratio} == '21/9'" name="sysbg-right-fixed" extra="true">
-      <origin>0.5 0.5</origin>
-      <pos>0.9 0.5</pos>
-      <minSize>0.52 1.1</minSize>
-      <color>${sysColor}</color>
-      <path>./../../_inc/images/space.png</path>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
     </image>
     <video name="videobox" extra="true">
       <path>{random}</path>
@@ -28,6 +29,85 @@
       <maxSize>0.351</maxSize>
       <maxSize if="${screen.ratio} == '4/3'">0.5 0.5</maxSize>
       <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.41" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
     </video>
+    <text name="TextDate" extra="true">
+      <pos>0.49 0.2</pos>
+      <text/>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.03</fontSize>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextName" extra="true">
+      <pos>0.49 0.25</pos>
+      <text>Steering Wheel Games</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>FFFFFF</color>
+      <fontSize>0.065</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
+    <text name="TextDesc" extra="true">
+      <size>0.5 0</size>
+      <pos>0.49 0.35</pos>
+      <text>A sim racing wheel is a control device for use in racing games, racing simulators, and driving simulators. They are usually packaged with a large paddle styled as a steering wheel, along with a set of pedals for the accelerator, brake, and clutch, as well as transmission controls. An analog wheel and pedal set such as this allows the user to accurately manipulate steering angle and pedal control that is required to properly manage a simulated car, as opposed to digital control such as a keyboard. The relatively large range of motion further allows the user to more accurately apply the controls.
+
+The least expensive units are paddle controllers with a larger wheel, but many gaming wheels also employ force feedback to simulate the tactile feedback a real driver feels from a steering wheel. Game controllers are available for arcade cabinets, personal computers, and console games that are designed to look and feel like a steering wheel and intended for use in racing games.
+
+One of the earliest racing wheels for the PC mass market was the Thrustmaster Formula T1, released in 1994. It had no force feedback, only some form of spring-based centering resistance proportional to the steering angle. Two of the earliest FFB wheels for the consumer PC market were the Microsoft Sidewinder Force Feedback Wheel, released in 1997, and the Logitech Wingman Formula Force.</text>
+      <text lang="it">Un volante simulato è un dispositivo di controllo da utilizzare nei giochi di corse, nei simulatori di corse e nei simulatori di guida. Di solito sono dotati di un'ampia paletta che ricorda un volante, insieme a una serie di pedali per l'acceleratore, il freno, la frizione e i comandi della trasmissione. Un volante e una pedaliera analogici come questi consentono all'utente di manipolare con precisione l'angolo di sterzata e il controllo dei pedali, necessari per gestire correttamente un'auto simulata, a differenza di un controllo digitale come quello di una tastiera. Il raggio di movimento relativamente ampio consente inoltre all'utente di applicare i comandi con maggiore precisione.
+
+Le unità meno costose sono i paddle controller con una ruota più grande, ma molte ruote da gioco utilizzano anche il force feedback per simulare il feedback tattile che un vero pilota sente da un volante. Sono disponibili controller di gioco per cabinati arcade, personal computer e console, progettati per assomigliare a un volante e destinati all'uso nei giochi di corse.
+
+Uno dei primi volanti per il mercato di massa dei PC è stato il Thrustmaster Formula T1, uscito nel 1994. Non aveva un ritorno di forza, ma solo una forma di resistenza al centraggio basata su molle e proporzionale all'angolo di sterzata. Due dei primi volanti FFB per il mercato consumer dei PC sono stati il Microsoft Sidewinder Force Feedback Wheel, uscito nel 1997, e il Logitech Wingman Formula Force.</text>
+      <text lang="fr">Un volant de simulation de course est un dispositif de contrôle utilisé dans les jeux de course, les simulateurs de course et les simulateurs de conduite. Il est généralement composé d'une grande palette ressemblant à un volant et d'un jeu de pédales pour l'accélérateur, le frein et l'embrayage, ainsi que pour les commandes de la transmission. Un volant et un pédalier analogiques de ce type permettent à l'utilisateur de manipuler avec précision l'angle de braquage et le contrôle des pédales, ce qui est nécessaire pour gérer correctement une voiture simulée, par opposition à un contrôle numérique tel qu'un clavier. L'amplitude relativement importante des mouvements permet en outre à l'utilisateur d'appliquer les commandes avec plus de précision.
+
+Les unités les moins chères sont des contrôleurs à palette avec un volant plus grand, mais de nombreux volants de jeu utilisent également le retour de force pour simuler le retour tactile qu'un vrai conducteur ressent sur un volant. Il existe des manettes de jeu pour les bornes d'arcade, les ordinateurs personnels et les consoles de jeux qui sont conçues pour ressembler à un volant et pour être utilisées dans les jeux de course.
+
+L'un des premiers volants de course destinés au marché de masse des PC était le Thrustmaster Formula T1, sorti en 1994. Il n'avait pas de retour de force, mais seulement une forme de résistance de centrage à base de ressorts proportionnelle à l'angle de braquage. Deux des premiers volants FFB destinés au marché des PC grand public sont le Microsoft Sidewinder Force Feedback Wheel, sorti en 1997, et le Logitech Wingman Formula Force.</text>
+      <text lang="de">Ein Rennsimulator ist ein Steuergerät zur Verwendung in Rennspielen, Rennsimulatoren und Fahrsimulatoren. Es besteht in der Regel aus einem großen Paddel im Stil eines Lenkrads und einer Reihe von Pedalen für Gas, Bremse und Kupplung sowie einer Getriebesteuerung. Ein analoges Lenkrad und ein analoger Pedalsatz wie dieser ermöglichen es dem Benutzer, den Lenkwinkel und die Pedalsteuerung, die für die korrekte Steuerung eines simulierten Fahrzeugs erforderlich sind, genau einzustellen, im Gegensatz zu einer digitalen Steuerung wie einer Tastatur. Der relativ große Bewegungsbereich ermöglicht es dem Benutzer außerdem, die Steuerelemente präziser einzusetzen.
+
+Die günstigsten Geräte sind Paddle-Controller mit einem größeren Lenkrad, aber viele Gaming Wheels verfügen auch über eine Kraftrückkopplung, um das taktile Feedback zu simulieren, das ein echter Fahrer von einem Lenkrad erhält. Für Spielhallen, PCs und Konsolenspiele gibt es Game-Controller, die wie ein Lenkrad aussehen und sich auch so anfühlen und für Rennspiele gedacht sind.
+
+Eines der ersten Rennlenkräder für den PC-Massenmarkt war das Thrustmaster Formula T1, das 1994 auf den Markt kam. Es hatte kein Force-Feedback, sondern nur eine Art federbasierten Zentrierwiderstand, der proportional zum Lenkwinkel war. Zwei der ersten FFB-Lenkräder für den PC-Verbrauchermarkt waren das Microsoft Sidewinder Force Feedback Wheel, das 1997 auf den Markt kam, und das Logitech Wingman Formula Force.</text>
+      <text lang="es">Un volante de simulación de carreras es un dispositivo de control que se utiliza en juegos de carreras, simuladores de carreras y simuladores de conducción. Suelen incluir una gran paleta a modo de volante, junto con un conjunto de pedales para el acelerador, el freno y el embrague, así como controles de transmisión. Un conjunto de volante y pedales analógicos como éste permite al usuario manipular con precisión el ángulo de dirección y el control de los pedales que se requiere para manejar correctamente un coche simulado, a diferencia de un control digital como el de un teclado. El rango de movimiento relativamente amplio permite además al usuario aplicar los controles con mayor precisión.
+
+Las unidades menos caras son los mandos de paletas con un volante más grande, pero muchos volantes de juego también emplean la retroalimentación de fuerza para simular la retroalimentación táctil que un conductor real siente de un volante. Existen mandos de juego para recreativas, ordenadores personales y consolas diseñados para parecerse a un volante y pensados para su uso en juegos de carreras.
+
+Uno de los primeros volantes de carreras para el mercado masivo de PC fue el Thrustmaster Formula T1, lanzado en 1994. No tenía Force Feedback, sino una especie de resistencia al centrado basada en un muelle y proporcional al ángulo de giro. Dos de los primeros volantes FFB para el mercado de consumo de PC fueron el Microsoft Sidewinder Force Feedback Wheel, lanzado en 1997, y el Logitech Wingman Formula Force.</text>
+      <text lang="ru">Гоночный руль - это устройство управления, предназначенное для использования в гоночных играх, симуляторах гонок и симуляторах вождения. Обычно они комплектуются большим лепестком, стилизованным под руль, а также набором педалей для акселератора, тормоза и сцепления, а также управления коробкой передач. Аналоговый руль и набор педалей позволяют пользователю точно управлять углом поворота руля и педалями, что необходимо для правильного управления симулятором автомобиля, в отличие от цифрового управления, например, с клавиатуры. Относительно большой диапазон движения также позволяет пользователю более точно применять элементы управления.
+
+Самые недорогие устройства - это лепестковые контроллеры с большим колесом, но многие игровые колеса также используют обратную связь по усилию, чтобы имитировать тактильную обратную связь, которую настоящий водитель ощущает от руля. Существуют игровые контроллеры для аркадных автоматов, персональных компьютеров и консольных игр, которые выглядят и ощущаются как руль и предназначены для использования в гоночных играх.
+
+Одним из самых ранних гоночных рулей для массового рынка ПК был Thrustmaster Formula T1, выпущенный в 1994 году. В нем не было обратной связи по усилию, только некое пружинное сопротивление центрированию, пропорциональное углу поворота руля. Двумя самыми ранними рулями с обратной связью для потребительского рынка ПК были Microsoft Sidewinder Force Feedback Wheel, выпущенный в 1997 году, и Logitech Wingman Formula Force.</text>
+      <text lang="pl">Kierownica wyścigowa to urządzenie sterujące do użytku w grach wyścigowych, symulatorach wyścigów i symulatorach jazdy. Zazwyczaj są one wyposażone w dużą łopatkę stylizowaną na kierownicę, wraz z zestawem pedałów przyspieszenia, hamulca i sprzęgła, a także elementów sterujących skrzynią biegów. Analogowy zestaw kierownicy i pedałów, taki jak ten, pozwala użytkownikowi dokładnie manipulować kątem skrętu kierownicy i kontrolą pedałów, co jest wymagane do prawidłowego zarządzania symulowanym samochodem, w przeciwieństwie do sterowania cyfrowego, takiego jak klawiatura. Stosunkowo duży zakres ruchu pozwala użytkownikowi na dokładniejsze zastosowanie elementów sterujących.
+
+Najtańsze urządzenia to kontrolery łopatkowe z większą kierownicą, ale wiele kierownic do gier wykorzystuje również siłowe sprzężenie zwrotne, aby symulować dotykowe sprzężenie zwrotne, które prawdziwy kierowca odczuwa z kierownicy. Kontrolery do gier są dostępne dla szaf arcade, komputerów osobistych i gier konsolowych, które zostały zaprojektowane tak, aby wyglądać i czuć się jak kierownica i są przeznaczone do użytku w grach wyścigowych.
+
+Jedną z najwcześniejszych kierownic wyścigowych na rynek masowy PC była Thrustmaster Formula T1, wydana w 1994 roku. Nie posiadała ona siłowego sprzężenia zwrotnego, a jedynie pewną formę sprężynowego oporu centrowania proporcjonalnego do kąta skrętu kierownicy. Dwie najwcześniejsze kierownice FFB na rynek konsumencki PC to Microsoft Sidewinder Force Feedback Wheel, wydana w 1997 roku, oraz Logitech Wingman Formula Force.</text>
+      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+      <color>666666</color>
+      <fontSize>0.025</fontSize>
+      <lineSpacing>1.1</lineSpacing>
+      <zIndex>140</zIndex>
+      <storyboard>
+        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+      </storyboard>
+    </text>
   </view>
 </theme>
