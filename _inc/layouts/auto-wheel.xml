@@ -2,16 +2,17 @@
 <theme>
   <formatVersion>7</formatVersion>
   <view name="system">
-    <!-- Dynamically colored system background, but not animated. Needed to allow background image extension in 21:9 -->
-    <image if="${screen.ratio} == '21/9'" name="sysbg-right" extra="true">
-      <visible>false</visible>
+    <image name="background1" extra="true">
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
     </image>
-    <image if="${screen.ratio} == '21/9'" name="sysbg-right-fixed" extra="true">
-      <origin>0.5 0.5</origin>
-      <pos>0.9 0.5</pos>
-      <minSize>0.52 1.1</minSize>
-      <color>${sysColor}</color>
-      <path>./../../_inc/images/space.png</path>
+    <image name="background" extra="true">
+      <zIndex>90</zIndex>
+      <storyboard>
+        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
     </image>
     <video name="videobox" extra="true">
       <path>{random}</path>
@@ -28,6 +29,9 @@
       <maxSize>0.351</maxSize>
       <maxSize if="${screen.ratio} == '4/3'">0.5 0.5</maxSize>
       <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.41" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
     </video>
     <text name="TextDate" extra="true">
       <pos>0.49 0.2</pos>
