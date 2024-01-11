@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme defaultView="Grid + Fanart">
+	<formatVersion>7</formatVersion>
+	<customView name="Grid + Fanart">
+		<image name="md_fanart">
+		<color>FFFFFFFF</color>
+		<storyboard></storyboard>
+			<storyboard event="activateNext"></storyboard>
+			<storyboard event="activatePrev"></storyboard>
+			<storyboard event="deactivateNext"></storyboard>
+			<storyboard event="deactivatePrev"></storyboard>
+		</image>
+		<video name="md_video">
+			<delay>0.3</delay>
+			<storyboard event="open"></storyboard>
+			<storyboard event="activate"></storyboard>
+			<storyboard event="deactivate"></storyboard>
+		</video>
+		<image name="md_marquee">
+			<pos>0.185 0.172</pos>
+		</image>
+		<text name="md_name" extra="true">
+			<visible>false</visible>
+		</text>
+	</customView>
+	<view name="grid">
+		<imagegrid name="gamegrid">
+			<autoLayout>6 2</autoLayout>
+			<autoLayout if="${screen.ratio} == '21/9'">8 2</autoLayout>
+		</imagegrid>
+	</view>
+</theme>
