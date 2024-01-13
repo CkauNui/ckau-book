@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background1" extra="true">
+			<storyboard>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<zIndex>90</zIndex>
+			<storyboard>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.425</pos>
+			<maxSize>0.46</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.59</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.42" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<pos>0.49 0.2</pos>
+			<text></text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.49 0.255</pos>
+			<text>Collection</text>
+			<text lang="pl">Kolekcja</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.04</fontSize>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.49 0.30</pos>
+			<size>0.5 0</size>
+			<text>Video Game Movies</text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.065</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="TextDesc" extra="true">
+			<size>0.5 0</size>
+			<pos>0.49 0.4</pos>
+			<text>Films based on video games abound in interesting events and take on unusual stories, effectively piquing the interest of viewers. Action-packed stories offer enjoyable entertainment, and work well as a good movie for the evening. Among the numerous adaptations, there are several titles that are particularly noteworthy.
+This is a collection of theatrical films based on video games and films that made video games.</text>
+			<text lang="pl">Filmy na podstawie gier wideo obfitują w ciekawe wydarzenia i podejmują nietypowe historie, skutecznie wzbudzając zainteresowanie widzów. Pełne akcji historie zapewniają przyjemną rozrywkę i sprawdzają się jako dobry film na wieczór. Wśród licznych adaptacji na szczególną uwagę zasługuje kilka tytułów.
+Jest to zbiór filmów kinowych opartych na grach wideo oraz filmów, na podstawie których powstały gry wideo.</text>
+			<text lang="ru"></text>
+			<text lang="es"></text>
+			<text lang="de"></text>
+			<text lang="fr"></text>
+			<text lang="it"></text>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>666666</color>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>
