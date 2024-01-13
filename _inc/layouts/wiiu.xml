@@ -34,14 +34,19 @@
 			</storyboard>
 		</video>
 		<video name="videobox2" extra="true">
-			<path>./../../_inc/anim/video/wiiu2.mp4</path>
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}2.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}2.mp4</path>
 			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/wiiu2.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}2.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}2.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
 			<audio>false</audio>
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
 			<origin if="${screen.ratio} == '4/3'">0.25 0.5</origin>
+			<origin if="${screen.ratio} == '21/9'">0.9 0.5</origin>	
 			<pos>0.6 0.718</pos>
 			<maxSize>0.1</maxSize>
 			<maxSize if="${screen.ratio} == '4/3'">0.135</maxSize>
