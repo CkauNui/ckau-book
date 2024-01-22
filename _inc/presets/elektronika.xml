@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme defaultView="VideoFull">
+	<formatVersion>7</formatVersion>
+
+	<customView name="VideoFull">
+		<text name="md_name" extra="true">
+			<color>FFFFFF</color>
+		</text>
+		<video name="md_video">
+			<pos>0.5 0.499</pos>
+			<size>1 1</size>
+			<origin>0.5 0.5</origin>
+			<delay>0.3</delay>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<snapshotSource>thumbnail</snapshotSource>
+			<effect>none</effect>
+			<zIndex>100</zIndex>
+			<storyboard>
+				<animation property="zIndex" from="100" to="102" begin="2500" duration="0" mode="easeOut"/>
+			</storyboard>
+		</video>
+		<gamecarousel name="gamecarousel">
+			<zIndex>101</zIndex>
+		</gamecarousel>
+		<image name="logo">
+			<visible>false</visible>
+		</image>
+		<image name="logo1" extra="true">
+			<pos>.5 0.09</pos>
+			<maxSize>0.260 0.126</maxSize>
+			<origin>0.5 0.5</origin>
+			<storyboard>
+				<animation property="opacity" from="1" to="0" begin="0" duration="4000" mode="EaseOut"/>
+				<animation property="scale" from="1.05" to="1.4" begin="0" duration="4000" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<datetime name="md_releasedate">
+			<origin>0 0</origin>
+			<pos>0.193 0.926</pos>
+			<size>0.1 0.0222222222222222</size>
+			<rotation>0</rotation>
+			<alignment>left</alignment>
+			<format>%Y</format>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontSize>0.0254444444444444</fontSize>
+			<color>666666</color>
+			<zIndex>180</zIndex>
+			<visible>true</visible>
+		</datetime>
+	</customView>
+</theme>
