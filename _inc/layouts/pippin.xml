@@ -2,28 +2,19 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videocrton" extra="true">
-			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
-			<delay>0</delay>
-			<loops>0</loops>
-			<effect>none</effect>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
 			<origin>0.5 0.5</origin>
-			<pos>0.502 0.37</pos>
-			<maxSize>0.31</maxSize>
-			<zIndex>26</zIndex>
-		</video>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.5 0.364</pos>
+			<maxSize>0.34</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.364" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
 		<video name="videobox" extra="true">
 			<path>{random}</path>
 			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
@@ -35,39 +26,20 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<pos>0.502 0.37</pos>
-			<maxSize>0.31</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.36</maxSize>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.5 0.364</pos>
+			<maxSize>0.33</maxSize>
 			<zIndex>25</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.222 0.37" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.22 0.364" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1996</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Apple</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<!-- Support different names for regional consoles/computers -->
 		<text name="TextManufacturer" extra="true" region="eu"/>
@@ -77,19 +49,7 @@
 		</text>
 		<!-- -->
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>Pippin</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<!-- Support different names for regional consoles/computers -->
 		<text name="TextName" extra="true" region="eu"/>
@@ -99,8 +59,6 @@
 		</text>
 		<!-- -->
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The Apple Pippin is an open multimedia technology platform, designed by Apple Computer, and marketed as PiPP!N. According to Apple, Pippin was directed at the home market as "an integral part of the consumer audiovisual, stereo, and television environment."
 
 Pippin is based on the Apple Macintosh platform, including the classic Mac OS architecture. Apple built a demonstration device based on Pippin called "Pippin Power Player," and used it to demonstrate the platform at trade shows and to the media, in order to attract potential software developers and hardware manufacturers.
@@ -129,16 +87,6 @@ Apple a concédé des licences sur la technologie Pippin à des sociétés tierc
 
 Pippin è basato sulla piattaforma Apple Macintosh, compresa la classica architettura Mac OS. Apple ha costruito un dispositivo dimostrativo basato su Pippin, chiamato "Pippin Power Player", e lo ha utilizzato per dimostrare la piattaforma alle fiere e ai media, al fine di attirare potenziali sviluppatori di software e produttori di hardware.
 Apple ha concesso in licenza la tecnologia Pippin a società terze. Bandai Company Ltd. ha sviluppato i modelli Atmark e @WORLD, concentrandosi sul settore dei giochi e dell'intrattenimento in Giappone, Canada e Stati Uniti. Katz Media ha sviluppato il modello KMP 2000, focalizzandolo su mercati verticali in Europa e Canada.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

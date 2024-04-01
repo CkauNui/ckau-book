@@ -2,16 +2,17 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.5 0.422</pos>
+			<maxSize>0.225</maxSize>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.22 0.422" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -21,63 +22,28 @@
 			<!-- Loads platform video from addon directory, if available -->
 			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
 			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.49</origin>
-			<pos>0.5 0.422</pos>
-			<maxSize>0.215</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.21</maxSize>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.5 0.424</pos>
+			<maxSize>0.213</maxSize>
 			<zIndex>25</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.22 0.422" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.22 0.424" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1990</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Sega</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>Game Gear</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The Game Gear is an 8-bit fourth generation handheld game console released by Sega on October 6, 1990 in Japan, in April 1991 throughout North America and Europe, and during 1992 in Australia. The Game Gear primarily competed with Nintendo's Game Boy, the Atari Lynx, and NEC's TurboExpress. It shares much of its hardware with the Master System, and can play Master System games by the use of an adapter. Sega positioned the Game Gear, which had a full-color backlit screen with a landscape format, as a technologically superior handheld to the Game Boy.
 
 Though the Game Gear was rushed to market, its unique game library and price point gave it an edge over the Atari Lynx and TurboExpress. However, due to its short battery life, lack of original games, and weak support from Sega, the Game Gear was unable to surpass the Game Boy, selling 10.62 million units by March 1996. The Game Gear was discontinued on April 30, 1997. It was re-released as a budget system by Majesco Entertainment in 2000, under license from Sega.</text>
@@ -108,16 +74,6 @@ Bien que la Game Gear ait été mise sur le marché en toute hâte, sa biblioth�
 			<text lang="it">Il Game Gear è una console portatile a 8 bit di quarta generazione, rilasciata da Sega il 6 ottobre 1990 in Giappone, nell'aprile 1991 in Nord America e in Europa e nel 1992 in Australia. Il Game Gear competeva principalmente con il Game Boy di Nintendo, l'Atari Lynx e il TurboExpress di NEC. Condivide gran parte dell'hardware con il Master System e può far girare con i giochi del Master System utilizzando un adattatore. Sega ha posizionato il Game Gear, che aveva uno schermo retroilluminato a colori e un formato orizzontale, come una console portatile tecnologicamente superiore al Game Boy.
 
 Sebbene il Game Gear sia stato lanciato sul mercato molto velocemente, la sua libreria di giochi unica e il suo prezzo gli permisero di avere un vantaggio rispetto all'Atari Lynx e al TurboExpress. Tuttavia, a causa della breve durata della batteria, della mancanza di giochi originali e del debole supporto di Sega, il Game Gear non riuscì a superare il Game Boy, vendendo 10,62 milioni di unità nel marzo 1996. Il Game Gear fu dismesso il 30 aprile 1997. È stato ripresentato come sistema economico da Majesco Entertainment nel 2000, su licenza di Sega.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

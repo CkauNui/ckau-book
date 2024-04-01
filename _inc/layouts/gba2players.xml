@@ -2,16 +2,35 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 1</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.71</origin>
+			<pos>0.529 0.755</pos>
+			<maxSize>0.16</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.21</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.17</maxSize>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.249 0.755" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
+		<image name="sysbg-video-right" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 -0.05</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.29</origin>
+			<pos>0.471 0.245</pos>
+			<maxSize>0.16</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.21</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.17</maxSize>
+			<rotation>180</rotation>
 			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.191 0.245" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -19,13 +38,15 @@
 			<path>./../../_inc/anim/video/gba.mp4</path>
 			<!-- Loads platform video from addon directory, if available -->
 			<path>./../../../ckau-book-addons/_inc/anim/video/gba.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.45 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 1.1</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.71</origin>
 			<pos>0.529 0.755</pos>
 			<maxSize>0.15</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.165</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.145</maxSize>
 			<zIndex>25</zIndex>
 			<storyboard>
 				<animation property="pos" to="0.249 0.755" begin="2000" duration="1000" mode="linear"/>
@@ -36,14 +57,16 @@
 			<path>./../../_inc/anim/video/gba.mp4</path>
 			<!-- Loads platform video from addon directory, if available -->
 			<path>./../../../ckau-book-addons/_inc/anim/video/gba.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
 			<delay>0</delay>
 			<audio>false</audio>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.55 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 -0.1</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.29</origin>
 			<pos>0.471 0.245</pos>
 			<maxSize>0.15</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.165</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.145</maxSize>
 			<zIndex>25</zIndex>
 			<rotation>180</rotation>
 			<storyboard>
@@ -51,49 +74,16 @@
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>2001</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Nintendo</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
-			<text>Game Boy Advance (2 Players)</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
+			<text>Game Boy Advance
+(2 Players)</text>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<pos if="${screen.ratio} == '4/3'">0.49 0.48</pos>
 			<text>The Game Boy Advance (GBA) is a 32-bit handheld game console developed, manufactured and marketed by Nintendo as the successor to the Game Boy Color. It was released in Japan on March 21, 2001, in North America on June 11, 2001, in Australia and Europe on June 22, 2001, and in mainland China on June 8, 2004 as iQue Game Boy Advance. The GBA is part of the sixth generation of video game consoles. The original model does not have an illuminated screen; Nintendo addressed that with the release of a redesigned model with a frontlit screen, the Game Boy Advance SP, in 2003. A newer revision of the redesign was released in 2005, with a backlit screen. The final redesign, the Game Boy Micro, was released in 2005.
 
@@ -122,16 +112,6 @@ Au 30 juin 2010, 81,51 millions d'unités de la série Game Boy Advance ont ét�
 			<text lang="it">Il Game Boy Advance (GBA) è una console portatile a 32 bit sviluppata, prodotta e commercializzata da Nintendo come successore del Game Boy Color. È stata rilasciata in Giappone il 21 marzo 2001, in Nord America l'11 giugno 2001, in Australia e in Europa il 22 giugno 2001 e nella Cina continentale l'8 giugno 2004 come iQue Game Boy Advance. Il GBA fa parte della sesta generazione di console per videogiochi. Il modello originale non ha uno schermo illuminato; Nintendo ha risolto questo problema con l'uscita di un modello ridisegnato con uno schermo illuminato frontalmente, il Game Boy Advance SP, nel 2003. Nel 2005 è stata rilasciata una nuova revisione del modello, con uno schermo retroilluminato. La versione finale, il Game Boy Micro, è stata rilasciata nel 2005.
 
 Al 30 giugno 2010 sono state vendute 81,51 milioni di unità della serie Game Boy Advance in tutto il mondo. Il suo successore, il Nintendo DS, è uscito nel novembre 2004 ed è retrocompatibile con il software del Game Boy Advance.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

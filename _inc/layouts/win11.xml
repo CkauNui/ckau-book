@@ -2,81 +2,53 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.405</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
+			<pos>0.5 0.394</pos>
+			<maxSize>0.383</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.497</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.417</maxSize>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.22 0.394" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
 			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/moonlight.mp4</path>
 			<path>./../../_inc/anim/video/${synonym}.mp4</path>
 			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/moonlight.mp4</path>
 			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.405</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
 			<pos>0.5 0.39</pos>
-			<maxSize>0.37</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.5 0.5</maxSize>
+			<maxSize>0.372</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.495</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.415</maxSize>
 			<zIndex>25</zIndex>
 			<storyboard>
 				<animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>2021</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Microsoft</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>Windows 11</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>Windows 11 is the latest major release of Microsoft's Windows NT operating system, released on October 5, 2021. It was a free upgrade to its predecessor, Windows 10 (2015), and is available for any Windows 10 devices that meet the new Windows 11 system requirements, but can also be installed on unsupported devices by bypassing the restrictions of system requirements.</text>
 			<text lang="pl">Windows 11 to najnowsza główna wersja systemu operacyjnego Windows NT firmy Microsoft, wydana 5 października 2021 roku. Była to bezpłatna aktualizacja do swojego poprzednika, Windows 10 (2015), i jest dostępna dla wszystkich urządzeń z systemem Windows 10, które spełniają nowe wymagania systemowe Windows 11, ale można ją również zainstalować na nieobsługiwanych urządzeniach, omijając ograniczenia wymagań systemowych.</text>
 			<text lang="ru">Windows 11 - последний крупный выпуск операционной системы Windows NT компании Microsoft, выпущенный 5 октября 2021 года. Она стала бесплатным обновлением своей предшественницы, Windows 10 (2015), и доступна для любых устройств с Windows 10, отвечающих новым системным требованиям Windows 11, но может быть установлена и на неподдерживаемые устройства в обход ограничений системных требований.</text>
@@ -84,16 +56,6 @@
 			<text lang="de">Windows 11 ist die neueste Hauptversion des Betriebssystems Windows NT von Microsoft, die am 5. Oktober 2021 veröffentlicht wurde. Es war ein kostenloses Upgrade zu seinem Vorgänger, Windows 10 (2015), und ist für alle Windows 10-Geräte verfügbar, die die neuen Windows 11-Systemanforderungen erfüllen, kann aber auch auf nicht unterstützten Geräten unter Umgehung der Einschränkungen der Systemanforderungen installiert werden.</text>
 			<text lang="fr">Windows 11 est la dernière version majeure du système d'exploitation Windows NT de Microsoft, publiée le 5 octobre 2021. Il s'agit d'une mise à jour gratuite de son prédécesseur, Windows 10 (2015), et est disponible pour tous les appareils Windows 10 qui répondent à la nouvelle configuration requise pour Windows 11, mais peut également être installé sur des appareils non pris en charge en contournant les restrictions de la configuration requise.</text>
 			<text lang="it">Windows 11 è l'ultima major release del sistema operativo Windows NT di Microsoft, rilasciata il 5 ottobre 2021. È stato un aggiornamento gratuito del suo predecessore, Windows 10 (2015), ed è disponibile per tutti i dispositivi Windows 10 che soddisfano i nuovi requisiti di sistema di Windows 11, ma può anche essere installato su dispositivi non supportati aggirando le restrizioni dei requisiti di sistema.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

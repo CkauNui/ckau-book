@@ -2,30 +2,20 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videocrton" extra="true">
-			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
-			<delay>0</delay>
-			<loops>0</loops>
-			<effect>none</effect>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.52 0.49</origin>
-			<origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>	
-			<pos>0.48 0.4</pos>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
+			<origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
+			<pos>0.4815 0.402</pos>
 			<maxSize>0.22</maxSize>
-			<zIndex>26</zIndex>
-		</video>
+			<storyboard>
+				<animation property="pos" to="0.2015 0.402" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
 		<video name="videobox" extra="true">
 			<path>{random}</path>
 			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
@@ -37,60 +27,26 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.52 0.49</origin>
-			<origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>			
-			<pos>0.48 0.4</pos>
-			<maxSize>0.24</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.34</maxSize>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
+			<origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
+			<pos>0.4815 0.402</pos>
+			<maxSize>0.215</maxSize>
 			<zIndex>25</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.20 0.4" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.2015 0.402" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1977</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>RCA</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>Studio II</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The RCA Studio II is a home video game console made by RCA that debuted in January 1977. The graphics of Studio II games were black and white and resembled those of earlier Pong consoles and their clones. The Studio II also did not have joysticks or similar game controllers but instead used two ten-button keypads that were built into the console itself. The console was capable of making simple beep sounds with slight variations in tone and length. The Studio II included five built-in games.
 
 The Studio II was not a successful product; the previously released Fairchild Channel F made it obsolete at launch and the Atari 2600, superior to both, was released ten months later. After poor Christmas sales in 1977, RCA discontinued the Studio II.</text>
@@ -112,16 +68,6 @@ Le Studio II n'a pas été un produit à succès ; le Fairchild Channel F, sorti
 			<text lang="it">RCA Studio II è una console per videogiochi per uso domestico prodotta da RCA che ha debuttato nel gennaio 1977. La grafica dei giochi dello Studio II era in bianco e nero e ricordava quella delle precedenti console Pong e dei loro cloni. Inoltre, lo Studio II non disponeva di joystick o di controller di gioco simili, ma utilizzava due tastiere a dieci pulsanti integrate nella console stessa. La console era in grado di emettere semplici segnali acustici con leggere variazioni di tono e lunghezza. Lo Studio II comprendeva cinque giochi integrati.
 
 Lo Studio II non fu un prodotto di successo: il Fairchild Channel F, uscito in precedenza, lo rese obsoleto al momento del lancio e l'Atari 2600, superiore a entrambi, uscì dieci mesi dopo. Dopo le scarse vendite del Natale del 1977, RCA smise di produrre lo Studio II.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

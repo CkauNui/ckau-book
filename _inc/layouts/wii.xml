@@ -2,16 +2,19 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.394</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.4625</origin>
+			<pos>0.5 0.39</pos>
+			<maxSize>0.38</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.49</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.41</maxSize>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -21,62 +24,31 @@
 			<!-- Loads platform video from addon directory, if available -->
 			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
 			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.394</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.4625</origin>
 			<pos>0.5 0.39</pos>
 			<maxSize>0.37</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.47</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.48</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.4</maxSize>
 			<zIndex>25</zIndex>
 			<storyboard>
 				<animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>2006</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Nintendo</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>Wii</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The Wii (known unofficially as the Nintendo Wii) is a home video game console released by Nintendo on November 19, 2006. As a seventh generation console, the Wii competed with Microsoft's Xbox 360 and Sony's PlayStation 3. Nintendo stated that its console targets a broader demographic than that of the two others.
 
 As of the first quarter of 2016, the Wii led its generation over the PlayStation 3 and Xbox 360 in worldwide sales, with more than 101 million units sold; in December 2009, the console broke the sales record for a single month in the United States.</text>
@@ -100,16 +72,6 @@ Au premier trimestre 2016, la Wii était en tête des ventes mondiales de sa gé
 			<text lang="it">La Wii (conosciuta non ufficialmente come Nintendo Wii) è una console per videogiochi domestica rilasciata da Nintendo il 19 novembre 2006. Come console di settima generazione, la Wii competeva con la Xbox 360 di Microsoft e la PlayStation 3 di Sony. Nintendo ha dichiarato che la sua console si rivolgeva a una fascia demografica più ampia rispetto alle altre due.
 
 Nel primo trimestre del 2016, la console Wii ha superato la PlayStation 3 e la Xbox 360 nelle vendite mondiali, con oltre 101 milioni di unità vendute; nel dicembre 2009, la console ha battuto il record di vendite per un singolo mese negli Stati Uniti.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

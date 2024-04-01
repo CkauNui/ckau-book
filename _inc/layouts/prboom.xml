@@ -2,16 +2,18 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '21/9'">0.5 0.5</origin>
+			<pos>0.515 0.43</pos>
+			<maxSize>0.23</maxSize>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.235 0.43" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -25,46 +27,23 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
 			<origin if="${screen.ratio} == '21/9'">0.5 0.5</origin>
-			<pos>0.519 0.44</pos>
-			<maxSize>0.22</maxSize>
+			<pos>0.515 0.43</pos>
+			<maxSize>0.21</maxSize>
 			<zIndex>25</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.239 0.44" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.235 0.43" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>2000</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.03</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.25</pos>
-			<size>0.5 0</size>
 			<text>PrBoom</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.35</pos>
 			<text>PrBoom, originally short for "Proff Boom", is a source port based initially on Boom, but later merged with LxDoom and LsdlDoom. As a result of this merger, PrBoom is compatible with both Boom and MBF. It includes OpenGL features for the renderer (as GLBoom) as well as some enhancements over the engines it is based on, such as being able to handle levels with twice as many segs, vertices and sidedefs than usual. In addition to the code from its predecessors, it incorporates bits of code from the Eternity Engine, and PrBoom+.
 
 Unlike other source ports that concentrate on offering many new game features or changes, such as ZDoom, EDGE and the Eternity Engine, PrBoom aims to act as a stable port of the more established or traditional engines.
@@ -98,16 +77,6 @@ PrBoom utilise la bibliothèque SDL pour faire abstraction des spécificités du
 A differenza di altri port di origine che si concentrano sull'offerta di molte nuove funzionalità o modifiche al gioco, come ZDoom, EDGE e l'Eternity Engine, PrBoom mira ad agire come un port stabile dei motori più consolidati o tradizionali.
 
 PrBoom utilizza la libreria SDL per astrarre dalle specificità del sistema operativo o della piattaforma. Oltre che per il PC, è stato compilato anche per il GP2X e per vari modelli di Mac. Il port sorgente, confezionato con Freedoom, è incluso nel repository software Fedora RPM.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

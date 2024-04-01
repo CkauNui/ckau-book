@@ -2,28 +2,19 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videocrton" extra="true">
-			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
-			<delay>0</delay>
-			<loops>0</loops>
-			<effect>none</effect>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>20</zIndex>
 			<origin>0.5 0.5</origin>
-			<pos>0.5 0.39</pos>
-			<maxSize>0.24</maxSize>
-			<zIndex>26</zIndex>
-		</video>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.498 0.39</pos>
+			<maxSize>0.28</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.218 0.39" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
 		<video name="videobox" extra="true">
 			<path>{random}</path>
 			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
@@ -31,10 +22,11 @@
 			<!-- Loads platform video from addon directory, if available -->
 			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
 			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
 			<pos>0.498 0.39</pos>
 			<maxSize>0.305</maxSize>
 			<zIndex>25</zIndex>
@@ -43,49 +35,15 @@
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1995</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Nintendo</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>Satellaview</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The Satellaview is a satellite modem peripheral produced by Nintendo for the Super Famicom in 1995. Containing 1 megabit of ROM space and an additional 512 kB of RAM, Satellaview allowed players to download games, magazines and other forms of content through satellite broadcasts provided by Japanese company St.GIGA. To use Satellaview, players had to purchase a special broadcast satellite (BS) tuner directly from St.GIGA or rent one for a six-month fee, and to pay monthly maintenance fees to both St.GIGA and Nintendo. It was attached to the bottom of the Super Famicom via the system's expansion port. It featured heavy support from third-party developers, including Squaresoft, Taito, Konami, Capcom and Seta.</text>
 			<text lang="pl">Satellaview (jap. サテラビュー Saterabyū) – modem satelitarny stworzony dla konsoli Super Nintendo Entertainment System, wydany na wyłączność w Japonii w 1995 roku. Nazwa Satellaview to kontaminacja słów "Satellite" (satelita) i "view" (widok). "BS" oznacza "Broadcast Satellite", wspólną nazwę jednych z bezpośrednich satelitów nadawczych w Japonii. Ponieważ Satellaview wydane było tylko w Japonii, pojawiły się pewne zamieszania wśród anglojęzycznych entuzjastów, którzy błędnie rozszerzyli prefiks "BS". W rezultacie wiele błędnych tłumaczeń jest używanych i często rozpowszechnianych przez angielskojęzycznych graczy, najczęściej "Bandai Satellaview" lub "Broadcast Satellaview".
 
@@ -97,16 +55,6 @@ Firma St. GIGA była odpowiedzialna za zarządzanie serwerem plików, utrzymanie
 			<text lang="de">Das Satellaview ist ein Satellitenmodem-Peripheriegerät, das 1995 von Nintendo für das Super Famicom entwickelt wurde. Mit 1 Megabit ROM-Speicherplatz und zusätzlichen 512 kB RAM ermöglichte Satellaview den Spielern das Herunterladen von Spielen, Magazinen und anderen Inhalten über Satellitenübertragungen der japanischen Firma St.GIGA. Um Satellaview nutzen zu können, mussten die Spieler einen speziellen Satellitentuner (BS) direkt von St.GIGA kaufen oder gegen eine sechsmonatige Gebühr mieten und monatliche Wartungsgebühren sowohl an St.GIGA als auch an Nintendo entrichten. Er wurde an der Unterseite des Super Famicom über den Erweiterungsport des Systems angebracht. Es wurde von zahlreichen Drittentwicklern unterstützt, darunter Squaresoft, Taito, Konami, Capcom und Seta.</text>
 			<text lang="fr">Le Satellaview est un modem satellite périphérique produit par Nintendo pour la Super Famicom en 1995. Contenant 1 mégabit d'espace ROM et 512 kB de RAM, le Satellaview permettait aux joueurs de télécharger des jeux, des magazines et d'autres formes de contenu par le biais d'émissions par satellite fournies par la société japonaise St.GIGA. Pour utiliser Satellaview, les joueurs devaient acheter un syntoniseur BS (Broadcast Satellite) spécial directement auprès de St.GIGA ou en louer un pour six mois, et payer des frais de maintenance mensuels à la fois à St.GIGA et à Nintendo. GIGA et Nintendo. Elle se fixait au bas de la Super Famicom via le port d'extension de la console. Elle a bénéficié d'un soutien important de la part de développeurs tiers, notamment Squaresoft, Taito, Konami, Capcom et Seta.</text>
 			<text lang="it">Satellaview è una periferica modem satellitare prodotta da Nintendo per il Super Famicom nel 1995. Con 1 megabit di spazio ROM e 512 kB aggiuntivi di RAM, Satellaview permetteva ai giocatori di scaricare giochi, riviste e altri contenuti attraverso le trasmissioni satellitari fornite dalla società giapponese St.GIGA. Per utilizzare Satellaview, i giocatori dovevano acquistare uno speciale sintonizzatore satellitare (BS) direttamente da St.GIGA o noleggiarne uno per un canone di sei mesi, e pagare le spese di manutenzione mensili sia a St.GIGA che a Nintendo. Era collegato alla parte inferiore del Super Famicom tramite la porta di espansione della console. Ha goduto del supporto di sviluppatori di terze parti, tra cui Squaresoft, Taito, Konami, Capcom e Seta.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

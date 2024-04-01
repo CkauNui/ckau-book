@@ -2,16 +2,19 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.32</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.5 0.355</pos>
+			<maxSize>0.25</maxSize>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.22 0.355" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -25,7 +28,8 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.42</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.32</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
 			<pos>0.5 0.355</pos>
 			<maxSize>0.24</maxSize>
 			<zIndex>25</zIndex>
@@ -34,49 +38,15 @@
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1986</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Apple</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>Apple IIGS</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The Apple IIGS (styled as IIgs), the fifth and most powerful of the Apple II family, is a 16-bit personal computer produced by Apple Computer. While featuring the Macintosh look and feel, and resolution and color similar to the Amiga and Atari ST, it remains compatible with earlier Apple II models. The "GS" in the name stands for "Graphics and Sound," referring to its enhanced multimedia hardware, especially its state-of-the-art audio.
 
 The microcomputer is a radical departure from any previous Apple II, with a 16-bit 65C816 microprocessor, direct access to megabytes of random-access memory (RAM), and mouse. It is the first computer from Apple with a color graphical user interface (color was introduced on the Macintosh II six months later) and Apple Desktop Bus interface for keyboards, mice, and other input devices. It is the first personal computer with a wavetable synthesis chip, using technology from Ensoniq.
@@ -126,16 +96,6 @@ L'IIGS laissait présager un avenir prometteur et une évolution de la gamme App
 Il microcomputer si discosta radicalmente da qualsiasi Apple II precedente, con un microprocessore 65C816 a 16 bit, accesso diretto a megabyte di memoria ad accesso casuale (RAM) e mouse. Fu il primo computer Apple con un'interfaccia grafica a colori (il colore verrà introdotto sul Macintosh II sei mesi dopo) e un'interfaccia Apple Desktop Bus per tastiere, mouse e altri dispositivi di input. Fu anche il primo personal computer con un chip di sintesi wavetable, che utilizza la tecnologia Ensoniq.
 
 L'IIGS rappresentava un futuro promettente e un progresso evolutivo della linea Apple II, ma Apple si concentrò sempre più sulla piattaforma Macintosh. Apple cessò la produzione dell'IIGS nel dicembre 1992.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

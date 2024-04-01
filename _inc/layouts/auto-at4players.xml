@@ -2,16 +2,50 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<!-- Dynamically colored system background, but not animated. Needed to allow background image extension in 21:9 -->
-		<image if="${screen.ratio} == '21/9'" name="sysbg-right" extra="true">
-			<visible>false</visible>
-		</image>
-		<image if="${screen.ratio} == '21/9'" name="sysbg-right-fixed" extra="true">
+		<image name="sysbg-left" extra="true">
 			<origin>0.5 0.5</origin>
-			<pos>0.9 0.5</pos>
-			<minSize>0.52 1.1</minSize>
-			<color>${sysColor}</color>
-			<path>./../../_inc/images/space.png</path>
+			<origin if="${screen.ratio} == '4/3'">0.5 -0.55</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.14</origin>
+			<pos>0.498 0.18</pos>
+			<minSize>0.4 0.1</minSize>
+			<minSize if="${screen.ratio} == '4/3'">0.59 0.1</minSize>
+			<minSize if="${screen.ratio} == '16/10'">0.49 0.1</minSize>
+			<rotation>0</rotation>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>27</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.218 0.18" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-right" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 1</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.74</origin>
+			<pos>0.498 0.65</pos>
+			<minSize>0.4 0.1</minSize>
+			<minSize if="${screen.ratio} == '4/3'">0.59 0.1</minSize>
+			<minSize if="${screen.ratio} == '16/10'">0.49 0.1</minSize>
+			<rotation>0</rotation>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>27</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.218 0.65" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.41</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.465</origin>
+			<pos>0.5 0.41</pos>
+			<maxSize>0.36</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.473</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.3925</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.41" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
 			<path>{random}</path>
@@ -20,14 +54,45 @@
 			<!-- Loads platform video from addon directory, if available -->
 			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
 			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.41</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.465</origin>
 			<pos>0.5 0.41</pos>
 			<maxSize>0.351</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.5 0.5</maxSize>
 			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.41" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
 		</video>
+		<text name="TextDate" extra="true">
+			<text/>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>Collection</text>
+			<text lang="pl">Kolekcja</text>
+			<text lang="ru">Коллекция</text>
+			<text lang="es">Recopilación</text>
+			<text lang="fr">Collection</text>
+			<text lang="it">Collezione</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>4 Players</text>
+			<text lang="pl">4 graczy</text>
+			<text lang="ru">4 игрока</text>
+			<text lang="es">4 jugadores</text>
+			<text lang="fr">4 joueurs</text>
+			<text lang="it">4 giocatori</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>A four-player game is a multiplayer game that can be played by up to four players simultaneously. Here is a collection of your games that support four-player game.</text>
+			<text lang="pl">Gra czterosobowa to gra wieloosobowa, w którą może grać jednocześnie do czterech graczy. Oto zbiór twoich gier obsługujący grę dla czterech graczy.</text>
+			<text lang="ru">Игры для четырёх игроков - это многопользовательская игры, в которую могут одновременно играть до четырёх игроков. Здесь собраны игры, поддерживающие игру вчетвером.</text>
+			<text lang="es">Un juego para cuatro jugadores es un juego multijugador al que pueden jugar hasta cuatro jugadores simultáneamente. Aquí tienes una recopilación de tus juegos compatibles con cuatro jugadores.</text>
+			<text lang="de">Ein Vier-Spieler-Spiel ist ein Multiplayer-Spiel, das von bis zu vier Spielern gleichzeitig gespielt werden kann. Hier ist eine Sammlung von Spielen, die Vier-Spieler-Spiele unterstützen.</text>
+			<text lang="fr">Un jeu à quatre joueurs est un jeu multijoueur qui peut être joué par quatre joueurs simultanément. Voici une collection de vos jeux qui prennent en charge les jeux à quatre joueurs.</text>
+			<text lang="it">Un gioco a quattro giocatori è un gioco multiplayer che può essere giocato da un massimo di quattro giocatori contemporaneamente. Ecco una raccolta di giochi che supportano il gioco a quattro giocatori.</text>
+		</text>
 	</view>
 </theme>

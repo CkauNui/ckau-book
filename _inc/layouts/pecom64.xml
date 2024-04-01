@@ -1,113 +1,71 @@
 <theme>
-  <formatVersion>7</formatVersion>
-  <view name="system">
-    <image name="background1" extra="true">
-      <storyboard>
-        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <image name="background" extra="true">
-      <zIndex>90</zIndex>
-      <storyboard>
-        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <video name="videobox" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
-      <path>./../../_inc/anim/video/${synonym}.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.502 0.405</pos>
-      <maxSize>0.19</maxSize>
-      <maxSize if="${screen.ratio} == '4/3'">0.255</maxSize>
-      <zIndex>25</zIndex>
-      <storyboard>
-        <animation property="pos" to="0.222 0.405" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <text name="TextDate" extra="true">
-      <pos>0.49 0.2</pos>
-      <text>1985</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextManufacturer" extra="true">
-      <pos>0.49 0.255</pos>
-      <text>Elektronska Industrija Niš</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.04</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextName" extra="true">
-      <pos>0.49 0.30</pos>
-      <size>0.5 0</size>
-      <text>Pecom 64</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.065</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextDesc" extra="true">
-      <size>0.5 0</size>
-      <pos>0.49 0.40</pos>
-      <text>The Pecom 64 was a computer designed for education and home use in Serbia in the mid-1980s. It had a CDP 1802B processor, 32 KB of RAM, and a cassette tape for storage. It could display text and graphics on a TV screen, and produce sound through two channels. It had a programmable character set and a reconfigurable keyboard.
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.502 0.403</pos>
+			<maxSize>0.25</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.222 0.403" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.502 0.403</pos>
+			<maxSize>0.23</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.222 0.403" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>1985</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>Elektronska Industrija Niš</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>Pecom 64</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>The Pecom 64 was a computer designed for education and home use in Serbia in the mid-1980s. It had a CDP 1802B processor, 32 KB of RAM, and a cassette tape for storage. It could display text and graphics on a TV screen, and produce sound through two channels. It had a programmable character set and a reconfigurable keyboard.
 
 It was compatible with some software and hardware from other computers, such as the Cosmac VIP and the Commodore 64. It was one of the first computers made in Yugoslavia.
 </text>
-      <text lang="it">Il Pecom 64 era un computer progettato per l'istruzione e l'uso domestico in Serbia a metà degli anni Ottanta. Aveva un processore CDP 1802B, 32 KB di RAM e una cassetta per l'archiviazione. Poteva visualizzare testo e grafica su uno schermo televisivo e produrre suoni attraverso due canali. Aveva un set di caratteri programmabili e una tastiera riconfigurabile.
+			<text lang="it">Il Pecom 64 era un computer progettato per l'istruzione e l'uso domestico in Serbia a metà degli anni Ottanta. Aveva un processore CDP 1802B, 32 KB di RAM e una cassetta per l'archiviazione. Poteva visualizzare testo e grafica su uno schermo televisivo e produrre suoni attraverso due canali. Aveva un set di caratteri programmabili e una tastiera riconfigurabile.
 
 Era compatibile con alcuni software e hardware di altri computer, quali il Cosmac VIP e il Commodore 64. È stato uno dei primi computer prodotti in Jugoslavia.</text>
-      <text lang="fr">Le Pecom 64 était un ordinateur conçu pour l'éducation et l'usage domestique en Serbie au milieu des années 1980. Il était équipé d'un processeur CDP 1802B, de 32 Ko de RAM et d'une cassette pour le stockage. Il pouvait afficher du texte et des graphiques sur un écran de télévision et produire du son sur deux canaux. Il disposait d'un jeu de caractères programmable et d'un clavier reconfigurable.
+			<text lang="fr">Le Pecom 64 était un ordinateur conçu pour l'éducation et l'usage domestique en Serbie au milieu des années 1980. Il était équipé d'un processeur CDP 1802B, de 32 Ko de RAM et d'une cassette pour le stockage. Il pouvait afficher du texte et des graphiques sur un écran de télévision et produire du son sur deux canaux. Il disposait d'un jeu de caractères programmable et d'un clavier reconfigurable.
 
 Il était compatible avec certains logiciels et matériels d'autres ordinateurs, tels que le Cosmac VIP et le Commodore 64. C'est l'un des premiers ordinateurs fabriqués en Yougoslavie.</text>
-      <text lang="de">Der Pecom 64 war ein Computer, der Mitte der 1980er Jahre in Serbien für den Unterricht und den Heimgebrauch entwickelt wurde. Er hatte einen CDP 1802B-Prozessor, 32 KB RAM und ein Kassettenband zur Speicherung. Er konnte Text und Grafiken auf einem Fernsehbildschirm anzeigen und über zwei Kanäle Ton ausgeben. Er verfügte über einen programmierbaren Zeichensatz und eine rekonfigurierbare Tastatur.
+			<text lang="de">Der Pecom 64 war ein Computer, der Mitte der 1980er Jahre in Serbien für den Unterricht und den Heimgebrauch entwickelt wurde. Er hatte einen CDP 1802B-Prozessor, 32 KB RAM und ein Kassettenband zur Speicherung. Er konnte Text und Grafiken auf einem Fernsehbildschirm anzeigen und über zwei Kanäle Ton ausgeben. Er verfügte über einen programmierbaren Zeichensatz und eine rekonfigurierbare Tastatur.
 
 Er war mit einiger Soft- und Hardware anderer Computer, wie dem Cosmac VIP und dem Commodore 64, kompatibel. Er war einer der ersten in Jugoslawien hergestellten Computer.</text>
-      <text lang="es">El Pecom 64 fue un ordenador diseñado para uso educativo y doméstico en Serbia a mediados de los años ochenta. Tenía un procesador CDP 1802B, 32 KB de RAM y una cinta de casete para almacenamiento. Podía mostrar texto y gráficos en una pantalla de TV, y producir sonido a través de dos canales. Tenía un juego de caracteres programable y un teclado reconfigurable.
+			<text lang="es">El Pecom 64 fue un ordenador diseñado para uso educativo y doméstico en Serbia a mediados de los años ochenta. Tenía un procesador CDP 1802B, 32 KB de RAM y una cinta de casete para almacenamiento. Podía mostrar texto y gráficos en una pantalla de TV, y producir sonido a través de dos canales. Tenía un juego de caracteres programable y un teclado reconfigurable.
 
 Era compatible con algunos programas y equipos de otros ordenadores, como el Cosmac VIP y el Commodore 64. Fue uno de los primeros ordenadores fabricados en Yugoslavia.</text>
-      <text lang="ru">Pecom 64 - компьютер, разработанный в Сербии в середине 1980-х годов для обучения и домашнего использования. Он имел процессор CDP 1802B, 32 КБ оперативной памяти и кассету для хранения данных. Он мог выводить текст и графику на экран телевизора, а также воспроизводить звук по двум каналам. Имелся программируемый набор символов и перестраиваемая клавиатура.
+			<text lang="ru">Pecom 64 - компьютер, разработанный в Сербии в середине 1980-х годов для обучения и домашнего использования. Он имел процессор CDP 1802B, 32 КБ оперативной памяти и кассету для хранения данных. Он мог выводить текст и графику на экран телевизора, а также воспроизводить звук по двум каналам. Имелся программируемый набор символов и перестраиваемая клавиатура.
 
 Он был совместим с некоторыми программными и аппаратными средствами других компьютеров, таких как Cosmac VIP и Commodore 64. Это был один из первых компьютеров, произведенных в Югославии.</text>
-      <text lang="pl">Pecom 64 był komputerem przeznaczonym do edukacji i użytku domowego w Serbii w połowie lat 80-tych. Posiadał procesor CDP 1802B, 32 KB pamięci RAM i kasetę magnetofonową do przechowywania danych. Mógł wyświetlać tekst i grafikę na ekranie telewizora oraz generować dźwięk przez dwa kanały. Posiadał programowalny zestaw znaków i rekonfigurowalną klawiaturę.
+			<text lang="pl">Pecom 64 był komputerem przeznaczonym do edukacji i użytku domowego w Serbii w połowie lat 80-tych. Posiadał procesor CDP 1802B, 32 KB pamięci RAM i kasetę magnetofonową do przechowywania danych. Mógł wyświetlać tekst i grafikę na ekranie telewizora oraz generować dźwięk przez dwa kanały. Posiadał programowalny zestaw znaków i rekonfigurowalną klawiaturę.
 
 Był kompatybilny z niektórym oprogramowaniem i sprzętem z innych komputerów, takich jak Cosmac VIP i Commodore 64. Był to jeden z pierwszych komputerów wyprodukowanych w Jugosławii.</text>
-<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-  </view>
+		</text>
+	</view>
 </theme>

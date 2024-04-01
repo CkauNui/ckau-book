@@ -2,28 +2,19 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videocrton" extra="true">
-			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
-			<delay>0</delay>
-			<loops>0</loops>
-			<effect>none</effect>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
 			<pos>0.5 0.387</pos>
-			<maxSize>0.244</maxSize>
-			<zIndex>26</zIndex>
-		</video>
+			<maxSize>0.254</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.387" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
 		<video name="videobox" extra="true">
 			<path>{random}</path>
 			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
@@ -35,6 +26,8 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
 			<pos>0.5 0.387</pos>
 			<maxSize>0.244</maxSize>
 			<zIndex>25</zIndex>
@@ -43,36 +36,12 @@
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>2008</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.03</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.25</pos>
-			<size>0.5 0</size>
 			<text>Uzebox</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.35</pos>
 			<text>The Uzebox is a retro-minimalist 8-bit open source game console. It is based on an AVR 8-bit general purpose microcontroller made by Atmel. The particularity of the system is that it uses an interrupt driven kernel and has no frame buffer. Functions such as video signal generation, tile rendering and music mixing is done in realtime by a background task so your game can easily be developed in C.
 
 	The design goal was to be as simple as possible yet have good enough sound and graphics to implement interesting games. Emphasis was put on making it easy and fun to assemble and program for any hobbyists. The final design contains only two chips: an ATmega644 and an AD725 RGB-to-NTSC converter.</text>
@@ -94,16 +63,6 @@ Uzebox была впервые представлена в журнале «Make
 			<text lang="it">Uzebox è una console di gioco open source retro-minimalista a 8 bit. È basata su un microcontrollore generale a 8 bit AVR di Atmel. La particolarità del sistema è che utilizza un kernel guidato da interrupt e non ha frame buffer. Funzioni come la generazione del segnale video, il rendering dei tile e il mixaggio della musica vengono eseguite in tempo reale da un task in background, in modo che il gioco possa essere facilmente sviluppato in C.
 
 	L'obiettivo del progetto era quello di essere il più semplice possibile, ma con un suono e una grafica sufficientemente buoni per implementare giochi interessanti. L'enfasi è stata posta sul fatto di renderlo facile e divertente da assemblare e programmare per qualsiasi hobbista. Il progetto finale contiene solo due chip: un ATmega644 e un convertitore RGB-NTSC AD725.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

@@ -2,28 +2,19 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videocrton" extra="true">
-			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
-			<delay>0</delay>
-			<loops>0</loops>
-			<effect>none</effect>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
 			<origin>0.5 0.5</origin>
-			<pos>0.488 0.4</pos>
-			<maxSize>0.24</maxSize>
-			<zIndex>26</zIndex>
-		</video>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.49 0.4</pos>
+			<maxSize>0.237</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
 		<video name="videobox" extra="true">
 			<path>{random}</path>
 			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
@@ -35,57 +26,25 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<pos>0.488 0.4</pos>
-			<maxSize>0.24</maxSize>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.49 0.4</pos>
+			<maxSize>0.227</maxSize>
 			<zIndex>25</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.208 0.4" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1981</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Sinclair</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>ZX-81</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.40</pos>
 			<text>The ZX81 is a home computer that was produced by Sinclair Research and manufactured in Dundee, Scotland, by Timex Corporation. It was launched in the United Kingdom in March 1981 as the successor to Sinclair's ZX80 and designed to be a low-cost introduction to home computing for the general public. It was hugely successful; more than 1.5 million units were sold. In the United States it was initially sold as the ZX-81 under licence by Timex. Timex later produced its own versions of the ZX81: the Timex Sinclair 1000 and Timex Sinclair 1500. Unauthorized ZX81 clones were produced in several countries.
 
 The ZX81 was designed to be small, simple, and above all, inexpensive, with as few components as possible. Video output is to a television set rather than a dedicated monitor. Programs and data are loaded and saved onto compact audio cassettes. It uses only four silicon chips and a mere 1 KB of memory. There is no power switch or any moving parts with the exception of a VHF TV channel selector switch present in some models. It has a pressure-sensitive membrane keyboard. The ZX81's limitations prompted a market in third-party peripherals to improve its capabilities. Its distinctive case and keyboard brought designer Rick Dickinson a Design Council award.
@@ -121,16 +80,6 @@ Le ZX81 pouvait être acheté par correspondance préassemblé ou, pour un prix 
 Lo ZX81 fu progettato per essere piccolo, semplice e soprattutto economico, con il minor numero possibile di componenti. L'uscita video è destinata a un televisore piuttosto che a un monitor dedicato. I programmi e i dati vengono caricati e salvati su cassette audio compatte. Utilizza solo quattro chip di silicio e una memoria di appena 1 KB. Non ci sono interruttori di accensione né parti mobili, ad eccezione di un selettore di canali televisivi VHF presente in alcuni modelli. Ha una tastiera a membrana sensibile alla pressione. Le limitazioni dello ZX81 hanno stimolato un mercato di periferiche di terze parti per migliorarne le capacità. Il suo caratteristico case e la sua tastiera sono valsi al progettista Rick Dickinson un premio del Design Council.
 
 Lo ZX81 poteva essere acquistato per corrispondenza già assemblato o, a un prezzo inferiore, in kit. Fu il primo home computer economico di massa a essere venduto nei negozi di strada, guidati da W. H. Smith e presto da molti altri rivenditori. Lo ZX81 segnò il momento in cui l'informatica in Gran Bretagna divenne un'attività per il grande pubblico, anziché essere appannaggio di uomini d'affari e hobbisti dell'elettronica. Si creò un'enorme comunità di appassionati, alcuni dei quali fondarono le proprie aziende producendo software e hardware per lo ZX81. Molti di loro hanno poi ricoperto ruoli importanti nell'industria informatica britannica. Il successo commerciale dello ZX81 rese Sinclair Research uno dei principali produttori di computer della Gran Bretagna e fece guadagnare una fortuna e un cavalierato al fondatore dell'azienda, Sir Clive Sinclair.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

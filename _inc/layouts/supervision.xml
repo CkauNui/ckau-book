@@ -2,16 +2,17 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+			<pos>0.5 0.333</pos>
+			<maxSize>0.235</maxSize>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.22 0.333" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -21,10 +22,11 @@
 			<!-- Loads platform video from addon directory, if available -->
 			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
 			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
 			<pos>0.5 0.333</pos>
 			<maxSize>0.225</maxSize>
 			<zIndex>25</zIndex>
@@ -33,49 +35,15 @@
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1992</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Watara</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>Supervision</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The Watara Supervision, also known as the QuickShot Supervision in the UK, is a monochrome handheld game console, originating from Asia, and introduced in 1992 as a cut-price competitor for Nintendo's Game Boy. It came packaged with a game called Crystball, which is similar to Breakout. One unique feature of the Supervision was that it could be linked up to a television via a link cable. Games played in this way would display in four colors, much like Nintendo's Super Game Boy add-on for the SNES. A full color TV link was also in the works, but because of the Supervision's failure to make a major impression among gamers it was cancelled, along with the games which were in development for it.</text>
 			<text lang="pl">Watara Supervision – przenośna konsola gier wideo wyprodukowana przez przedsiębiorstwo Watara i wydana w Azji w 1992 roku. W założeniach miała stanowić tańszą konkurencję dla Game Boya.
 
@@ -94,16 +62,6 @@ Dane techniczne:
 			<text lang="de">Der Watara Supervision, im Vereinigten Königreich auch als QuickShot Supervision bekannt, ist eine aus Asien stammende monochrome Handheld-Spielkonsole, die 1992 als preisgünstiger Konkurrent zum Game Boy von Nintendo eingeführt wurde. Zum Lieferumfang gehörte ein Spiel namens Crystball, das Breakout ähnelt. Eine Besonderheit des Supervision war, dass er über ein Verbindungskabel mit einem Fernseher verbunden werden konnte. Spiele, die auf diese Weise gespielt wurden, wurden in vier Farben angezeigt, ähnlich wie Nintendos Super Game Boy Add-on für das SNES. Eine Vollfarb-TV-Verbindung war ebenfalls in Arbeit, aber da der Supervision keinen großen Eindruck bei den Spielern hinterließ, wurde er zusammen mit den Spielen, die für ihn entwickelt wurden, eingestellt.</text>
 			<text lang="fr">La Watara Supervision, également connue sous le nom de QuickShot Supervision au Royaume-Uni, est une console de jeu portable monochrome originaire d'Asie, lancée en 1992 pour concurrencer le Game Boy de Nintendo. Elle était livrée avec un jeu appelé Crystball, similaire à Breakout. L'une des caractéristiques uniques du Supervision était qu'il pouvait être relié à un téléviseur par un câble de liaison. Les jeux joués de cette manière s'affichaient en quatre couleurs, un peu comme le Super Game Boy de Nintendo pour la SNES. Une liaison TV en couleur était également en préparation, mais le Supervision n'ayant pas fait grande impression auprès des joueurs, elle a été annulée, de même que les jeux qui étaient en cours de développement pour lui.</text>
 			<text lang="it">Il Watara Supervision, noto anche come QuickShot Supervision nel Regno Unito, è una console portatile monocromatica di origine asiatica, introdotta nel 1992 come concorrente a prezzo ridotto del Game Boy di Nintendo. Veniva fornita con un gioco chiamato Crystball, simile a Breakout. Una caratteristica unica del Supervision era la possibilità di collegarlo a un televisore tramite un cavo di collegamento. I giochi giocati in questo modo venivano visualizzati in quattro colori, proprio come il Super Game Boy add-on di Nintendo per il SNES. Era in progetto anche un collegamento televisivo a colori, ma a causa dell'insuccesso del Supervision tra i giocatori fu cancellato, insieme ai giochi che erano in fase di sviluppo per esso.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

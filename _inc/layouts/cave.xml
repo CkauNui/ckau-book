@@ -2,16 +2,80 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-left" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.3 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.4 0.45</origin>
+			<origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>
+			<pos>0.29 0.36</pos>
+			<minSize>0.1 0.3</minSize>
+			<rotation>26</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>27</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.01 0.36" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
+		<image name="sysbg-right" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.7 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.6 0.45</origin>
+			<origin if="${screen.ratio} == '21/9'">0.85 0.5</origin>
+			<pos>0.71 0.36</pos>
+			<minSize>0.1 0.3</minSize>
+			<rotation>-26</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>27</zIndex>
 			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.43 0.36" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.50 0.37</pos>
+			<maxSize>0.225</maxSize>
+			<rotation>90</rotation>
+			<storyboard>
+				<animation property="pos" to="0.22 0.37" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-left" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+			<pos>0.375 0.398</pos>
+			<maxSize>0.135</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.175</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.15</maxSize>
+			<rotation>-64</rotation>
+			<storyboard>
+				<animation property="pos" to="0.095 0.398" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-right" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+			<pos>0.626 0.395</pos>
+			<maxSize>0.135</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.175</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.15</maxSize>
+			<rotation>64</rotation>
+			<storyboard>
+				<animation property="pos" to="0.346 0.395" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -24,8 +88,10 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
 			<pos>0.50 0.37</pos>
-			<maxSize>0.27</maxSize>
+			<maxSize>0.265</maxSize>
 			<zIndex>26</zIndex>
 			<storyboard>
 				<animation property="pos" to="0.22 0.37" begin="2000" duration="1000" mode="linear"/>
@@ -40,14 +106,15 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.28 0.5</origin>
-			<origin if="${screen.ratio} == '21/9'">0.85 0.5</origin>	
-			<pos>0.655 0.375</pos>
-			<maxSize>0.2</maxSize>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '21/9'">0.85 0.5</origin>
+			<pos>0.64 0.395</pos>
+			<maxSize>0.19</maxSize>
 			<zIndex>25</zIndex>
 			<rotation>0</rotation>
 			<storyboard>
-				<animation property="pos" to="0.375 0.375" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.36 0.395" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<video name="videobox3" extra="true">
@@ -59,60 +126,27 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.72 0.5</origin>
-			<origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>	
-			<pos>0.345 0.375</pos>
-			<maxSize>0.2</maxSize>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>
+			<pos>0.360 0.395</pos>
+			<maxSize>0.19</maxSize>
 			<zIndex>25</zIndex>
 			<rotation>0</rotation>
 			<storyboard>
-				<animation property="pos" to="0.065 0.375" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.080 0.395" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1995</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>CAVE Interactive Co.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>Cave</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>CAVE Interactive Co., Ltd. is a Japanese video game company founded in 1994 by former employees of Toaplan following its bankruptcy. They are known primarily for their "bullet hell" shoot 'em ups; from 1995 up to 2013, CAVE was one of the most prolific shoot 'em up developers in the Japanese market. Alongside this, CAVE has produced a variety of other types games for arcades, home consoles, PCs, and smartphones, also dating back to 1995.
 
 "CAVE" is an acronym for "Computer Art Visual Entertainment".</text>
@@ -136,16 +170,6 @@ TABOT, Inc. занимается играми, музыкой и разрабо�
 			<text lang="it">CAVE Interactive Co., Ltd. è una società giapponese di videogiochi fondata nel 1994 da ex dipendenti di Toaplan in seguito al suo fallimento. È nota soprattutto per i suoi sparatutto "bullet hell"; dal 1995 al 2013, CAVE è stata uno degli sviluppatori di sparatutto più prolifici del mercato giapponese. Oltre a questo, CAVE ha prodotto una serie di altri tipi di giochi per sale giochi, console domestiche, PC e smartphone, sempre a partire dal 1995.
 
 "CAVE" è l'acronimo di "Computer Art Visual Entertainment".</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

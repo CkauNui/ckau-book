@@ -2,29 +2,20 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
+			<origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
+			<pos>0.4815 0.402</pos>
+			<maxSize>0.215</maxSize>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.2015 0.402" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videocrton" extra="true">
-			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
-			<delay>0</delay>
-			<loops>0</loops>
-			<effect>none</effect>
-			<origin if="${screen.ratio} == '4/3'">0.52 0.5</origin>
-			<origin if="${screen.ratio} == '21/9'">0.47 0.5</origin>
-			<pos>0.48 0.4</pos>
-			<maxSize>0.22</maxSize>
-			<zIndex>26</zIndex>
-		</video>
 		<video name="videobox" extra="true">
 			<path>{random}</path>
 			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
@@ -36,60 +27,26 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.52 0.5</origin>
-			<origin if="${screen.ratio} == '21/9'">0.47 0.5</origin>
-			<pos>0.48 0.4</pos>
-			<maxSize>0.22</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.26</maxSize>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
+			<origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
+			<pos>0.4815 0.402</pos>
+			<maxSize>0.215</maxSize>
 			<zIndex>25</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.20 0.4" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.2015 0.402" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1978</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Interton</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>VC 4000</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.40</pos>
 			<text>The Interton Video Computer 4000 (officially abbreviated as Interton VC 4000) is an early 8-bit ROM cartridge-based second-generation home video game console that was released in Germany, England, France, Spain, Austria, the Netherlands and Australia in 1978 by German hearing aid manufacturer Interton. The console is the successor of the Interton Video 3001 and was sold for 298 Deutsche Mark and discontinued in 1983.
 
 The Interton VC 4000's power comes from a Signetics 2650 CPU (which is the same as an Arcadia 2001) and a Signetics 2636 gaming controller. Both controllers contain a 12-button keypad, two fire buttons, and a joystick. Inside the systems control panel, there are four different buttons. The ON/OFF switch, RESET, SELECT, and START.
@@ -123,16 +80,6 @@ La console a été produite par différentes sociétés et vendue sous différen
 La console Interton VC 4000 è alimentata da una CPU Signetics 2650 (la stessa dell'Arcadia 2001) e da un controller Signetics 2636. Entrambi i controller contengono una tastiera a 12 pulsanti, due pulsanti di fuoco e un joystick. All'interno del pannello di controllo del sistema sono presenti quattro diversi pulsanti. L'interruttore ON/OFF, RESET, SELECT e START.
 
 La console è stata prodotta da diverse aziende e venduta con nomi diversi. Non tutte le console sono compatibili con le altre a causa delle differenze nelle forme e nelle dimensioni degli slot per le cartucce, ma tutti i sistemi sono compatibili con il software.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

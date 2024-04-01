@@ -2,16 +2,19 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.38</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.5 0.445</pos>
+			<maxSize>0.16</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.17</maxSize>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.22 0.445" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -21,63 +24,30 @@
 			<!-- Loads platform video from addon directory, if available -->
 			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
 			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.49</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.38</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
 			<pos>0.5 0.445</pos>
 			<maxSize>0.15</maxSize>
 			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.17</maxSize>
 			<zIndex>25</zIndex>
 			<storyboard>
 				<animation property="pos" to="0.22 0.445" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>2005</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>TimeTop</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>GameKing III</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>GameKing is a brand of handheld game consoles, designed and developed by Timetop and manufactured by Guangzhou Panyu Gaoming Electronics Co.,Ltd, for the Hong Kong consumer market.
 
 The 'GameKing III' or GM-220 was released in 2005. While early advertisements showed the GameKing III with the same "false color" background picture as the GameKing I and II, which indicated that the system was black and white like the previous GameKing models, the GM-220 is full colour. Another distinction of the GM-220 is that unlike its predecessors, the Gameking I and II, which were promoted and marketed worldwide, the Gameking III was not distributed outside of Asia, making it much less common than the earlier models.
@@ -113,16 +83,6 @@ La résolution ne semble pas améliorée par rapport à un GameKing original, et
 Il "GameKing III" o GM-220 è stato rilasciato nel 2005. Mentre le prime pubblicità mostravano il GameKing III con la stessa immagine di sfondo "a falsi colori" dei GameKing I e II, che indicava che il sistema era in bianco e nero come i precedenti modelli GameKing, il GM-220 è a colori. Un'altra caratteristica del GM-220 è che, a differenza dei suoi predecessori, il Gameking I e II, che sono stati promossi e commercializzati in tutto il mondo, il Gameking III non è stato distribuito al di fuori dell'Asia, il che lo rende molto meno comune dei modelli precedenti.
 
 La risoluzione non sembra migliorata rispetto a quella di un GameKing originale, e le cartucce GameKing "classiche" sono colorate automaticamente, mentre i giochi sviluppati appositamente per questa console sfruttano presumibilmente l'intera tavolozza di colori.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

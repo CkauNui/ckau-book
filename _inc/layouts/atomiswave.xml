@@ -2,16 +2,79 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-left" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.4 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
+			<pos>0.287 0.36</pos>
+			<minSize>0.1 0.4</minSize>
+			<rotation>26</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>27</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.007 0.36" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
+		<image name="sysbg-right" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.6 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '21/9'">0.95 0.5</origin>
+			<pos>0.713 0.36</pos>
+			<minSize>0.1 0.4</minSize>
+			<rotation>-26</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>27</zIndex>
 			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.433 0.36" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+			<pos>0.50 0.38</pos>
+			<maxSize>0.2</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.38" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-left" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.53 0.15</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+			<pos>0.371 0.39</pos>
+			<maxSize>0.13</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.15</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.14</maxSize>
+			<rotation>-64</rotation>
+			<storyboard>
+				<animation property="pos" to="0.091 0.39" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-right" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.47 0.15</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+			<pos>0.628 0.39</pos>
+			<maxSize>0.13</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.15</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.14</maxSize>
+			<rotation>64</rotation>
+			<storyboard>
+				<animation property="pos" to="0.348 0.39" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -24,12 +87,13 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<pos>0.50 0.365</pos>
-			<maxSize>0.22</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.27</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
+			<pos>0.50 0.38</pos>
+			<maxSize>0.182</maxSize>
 			<zIndex>26</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.22 0.365" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.22 0.38" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<video name="videobox2" extra="true">
@@ -41,14 +105,15 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.2 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
 			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.655 0.378</pos>
-			<maxSize>0.155</maxSize>
+			<pos>0.638 0.39</pos>
+			<maxSize>0.14</maxSize>
 			<zIndex>25</zIndex>
 			<rotation>0</rotation>
 			<storyboard>
-				<animation property="pos" to="0.375 0.378" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.358 0.39" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<video name="videobox3" extra="true">
@@ -60,60 +125,27 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.8 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
 			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.345 0.378</pos>
-			<maxSize>0.155</maxSize>
+			<pos>0.36 0.39</pos>
+			<maxSize>0.14</maxSize>
 			<zIndex>25</zIndex>
 			<rotation>0</rotation>
 			<storyboard>
-				<animation property="pos" to="0.065 0.378" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.08 0.39" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>2003</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Sammy</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>Atomiswave</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The Atomiswave is a custom arcade system board and cabinet from Sammy Corporation. It is based on Sega's NAOMI system board (thus it is common to see the "Sega" logo on its boot up screen). The Atomiswave uses interchangeable game cartridges and the cabinet's control panel can be easily switched out with different control sets, including dual joysticks, dual light guns and a steering wheel.
 
 With the retirement of the aging Neo Geo MVS system, SNK Playmore chose the Atomiswave as its next system to develop games for. In a contract with Sammy, SNK Playmore agreed to develop five games for the Atomiswave system. Metal Slug 6 was SNK Playmore's fifth game for the Atomiswave, after which SNK moved on to a Taito Type X2 arcade board.</text>
@@ -135,16 +167,6 @@ Avec le retrait du système Neo Geo MVS vieillissant, SNK Playmore a choisi l'At
 			<text lang="it">Atomiswave è una scheda e un cabinet per sistemi arcade personalizzati di Sammy Corporation. È basata sulla scheda di sistema NAOMI di Sega (per questo è comune vedere il logo "Sega" sulla schermata di avvio). Atomiswave utilizza cartucce di gioco intercambiabili e il pannello di controllo del cabinet può essere facilmente sostituito con diversi set di controllo, tra cui due joystick, due light gun e un volante.
 
 Con il pensionamento del vecchio sistema Neo Geo MVS, SNK Playmore scelse l'Atomiswave come sistema successivo per lo sviluppo di giochi. In un contratto con Sammy, SNK Playmore accettò di sviluppare cinque giochi per il sistema Atomiswave. Metal Slug 6 fu il quinto gioco di SNK Playmore per Atomiswave, dopodiché SNK passò a una scheda arcade Taito Type X2.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

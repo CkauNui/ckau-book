@@ -1,103 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-  <formatVersion>7</formatVersion>
-  <view name="system">
-    <image name="background1" extra="true">
-      <storyboard>
-        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <image name="background" extra="true">
-      <zIndex>90</zIndex>
-      <storyboard>
-        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <video name="videobox" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
-      <path>./../../_inc/anim/video/${synonym}.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.5 0.365</pos>
-      <maxSize>0.2</maxSize>
-      <zIndex>25</zIndex>
-      <storyboard>
-        <animation property="pos" to="0.22 0.365" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <text name="TextDate" extra="true">
-      <pos>0.49 0.2</pos>
-      <text>1985</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextManufacturer" extra="true">
-      <pos>0.49 0.255</pos>
-      <text>Elektronika</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.04</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextName" extra="true">
-      <pos>0.49 0.30</pos>
-      <size>0.5 0</size>
-      <text>BK-0010</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.065</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextDesc" extra="true">
-      <size>0.5 0</size>
-      <pos>0.49 0.40</pos>
-      <text>The Electronika BK is a series of 16-bit PDP-11-compatible home computers developed under the Electronika brand by NPO Scientific Center, then the leading microcomputer design team in the Soviet Union. It is also the predecessor of the more powerful UKNC and DVK micros.
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.285</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.425</origin>
+			<pos>0.501 0.363</pos>
+			<maxSize>0.232</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.221 0.363" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.285</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.425</origin>
+			<pos>0.501 0.363</pos>
+			<maxSize>0.212</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.221 0.363" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>1985</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>Elektronika</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>BK-0010</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>The Electronika BK is a series of 16-bit PDP-11-compatible home computers developed under the Electronika brand by NPO Scientific Center, then the leading microcomputer design team in the Soviet Union. It is also the predecessor of the more powerful UKNC and DVK micros.
 
 This machine features a 16-bit K1801VM1 CPU, compatible with DEC's LSI-11 line. It has onboard DRAM, video memory, and supports two graphic video modes. Sound is initially basic but can be enhanced with an AY-3-8910 chip. It also includes a universal parallel port for peripherals and can have a floppy drive controller added.
 BK-0010 is the first model (originally released in 1983, the serial production since 1985). It has a full-travel keyboard, 32 KiB RAM, 8 KiB ROM with BIOS (chip K1801RE2-017), 8 KiB ROM with FOCAL interpreter (K1801RE2-018), 8 KiB ROM with debugger (K1801RE2-019) and a conventional and a Vilnius BASIC p-code compiler in the ROM; its CPU is clocked at 3 MHz. A tape recorder is used for data storage in the factory configuration.
 </text>
-      <text lang="it">L'Electronika BK è una serie di home computer a 16 bit compatibili con il PDP-11 sviluppati con il marchio Electronika dall'NPO Scientific Center, all'epoca il principale gruppo di progettazione di microcomputer dell'Unione Sovietica. È anche il predecessore dei più potenti micro UKNC e DVK.
+			<text lang="it">L'Electronika BK è una serie di home computer a 16 bit compatibili con il PDP-11 sviluppati con il marchio Electronika dall'NPO Scientific Center, all'epoca il principale gruppo di progettazione di microcomputer dell'Unione Sovietica. È anche il predecessore dei più potenti micro UKNC e DVK.
 
 Questa macchina è dotata di una CPU K1801VM1 a 16 bit, compatibile con la linea LSI-11 di DEC. Dispone di DRAM e memoria video integrate e supporta due modalità video grafiche. Il suono è inizialmente di base, ma può essere migliorato con un chip AY-3-8910. Include anche una porta parallela universale per le periferiche e può essere dotato di un controller per unità floppy.
 BK-0010 è il primo modello (originariamente rilasciato nel 1983, la produzione in serie dal 1985). Dispone di una tastiera full-travel, 32 KiB di RAM, 8 KiB di ROM con BIOS (chip K1801RE2-017), 8 KiB di ROM con interprete FOCAL (K1801RE2-018), 8 KiB di ROM con debugger (K1801RE2-019) e un compilatore p-code Vilnius BASIC convenzionale e uno nella ROM; la CPU ha un clock di 3 MHz. Nella configurazione di fabbrica viene utilizzato un registratore a nastro per la memorizzazione dei dati.</text>
-      <text lang="fr">L'Electronika BK est une série d'ordinateurs domestiques 16 bits compatibles avec le PDP-11 développés sous la marque Electronika par le NPO Scientific Center, qui était à l'époque la principale équipe de conception de micro-ordinateurs de l'Union soviétique. C'est également le prédécesseur des micros UKNC et DVK, plus puissants.
+			<text lang="fr">L'Electronika BK est une série d'ordinateurs domestiques 16 bits compatibles avec le PDP-11 développés sous la marque Electronika par le NPO Scientific Center, qui était à l'époque la principale équipe de conception de micro-ordinateurs de l'Union soviétique. C'est également le prédécesseur des micros UKNC et DVK, plus puissants.
 
 Cette machine est équipée d'un processeur 16 bits K1801VM1, compatible avec la ligne LSI-11 de DEC. Il dispose d'une DRAM embarquée, d'une mémoire vidéo et supporte deux modes vidéo graphiques. Le son est initialement basique mais peut être amélioré avec une puce AY-3-8910. Il comprend également un port parallèle universel pour les périphériques et peut être équipé d'un contrôleur de lecteur de disquette.
 Le BK-0010 est le premier modèle (sorti à l'origine en 1983, la production en série date de 1985). Il possède un clavier à déplacement complet, 32 KiB RAM, 8 KiB ROM avec BIOS (chip K1801RE2-017), 8 KiB ROM avec interpréteur FOCAL (K1801RE2-018), 8 KiB ROM avec débogueur (K1801RE2-019) et un compilateur conventionnel et un compilateur p-code Vilnius BASIC dans la ROM ; son CPU est cadencé à 3 MHz. Un magnétophone est utilisé pour le stockage des données dans la configuration d'usine.</text>
-      <text lang="de">Der Electronika BK ist eine Serie von 16-Bit-PDP-11-kompatiblen Heimcomputern, die unter der Marke Electronika vom NPO Scientific Center, dem damals führenden Mikrocomputer-Entwicklungsteam in der Sowjetunion, entwickelt wurden. Sie ist auch der Vorgänger der leistungsfähigeren Mikrocomputer UKNC und DVK.
+			<text lang="de">Der Electronika BK ist eine Serie von 16-Bit-PDP-11-kompatiblen Heimcomputern, die unter der Marke Electronika vom NPO Scientific Center, dem damals führenden Mikrocomputer-Entwicklungsteam in der Sowjetunion, entwickelt wurden. Sie ist auch der Vorgänger der leistungsfähigeren Mikrocomputer UKNC und DVK.
 
 Dieser Rechner verfügt über eine 16-Bit-CPU K1801VM1, die mit der LSI-11-Reihe von DEC kompatibel ist. Er verfügt über Onboard-DRAM, Videospeicher und unterstützt zwei Grafikvideomodi. Der Sound ist zunächst einfach, kann aber mit einem AY-3-8910-Chip verbessert werden. Außerdem verfügt er über einen universellen Parallelport für Peripheriegeräte und kann mit einem Floppy-Drive-Controller ausgestattet werden.
 BK-0010 ist das erste Modell (ursprünglich 1983 erschienen, Serienproduktion seit 1985). Er hat eine Vollhubtastatur, 32 KiB RAM, 8 KiB ROM mit BIOS (Chip K1801RE2-017), 8 KiB ROM mit FOCAL-Interpreter (K1801RE2-018), 8 KiB ROM mit Debugger (K1801RE2-019) und einen konventionellen und einen Vilnius BASIC p-code Compiler im ROM; seine CPU ist mit 3 MHz getaktet. In der Werkskonfiguration wird ein Tonbandgerät zur Datenspeicherung verwendet.</text>
-      <text lang="es">El Electronika BK es una serie de ordenadores domésticos de 16 bits compatibles con el PDP-11 desarrollados bajo la marca Electronika por el Centro Científico NPO, entonces el principal equipo de diseño de microordenadores de la Unión Soviética. También es el predecesor de los micros más potentes UKNC y DVK.
+			<text lang="es">El Electronika BK es una serie de ordenadores domésticos de 16 bits compatibles con el PDP-11 desarrollados bajo la marca Electronika por el Centro Científico NPO, entonces el principal equipo de diseño de microordenadores de la Unión Soviética. También es el predecesor de los micros más potentes UKNC y DVK.
 
 Esta máquina incorpora una CPU K1801VM1 de 16 bits, compatible con la línea LSI-11 de DEC. Dispone de DRAM a bordo, memoria de vídeo y soporta dos modos de vídeo gráfico. El sonido es inicialmente básico, pero puede mejorarse con un chip AY-3-8910. También incluye un puerto paralelo universal para periféricos y se le puede añadir un controlador de disquetera.
 BK-0010 es el primer modelo (lanzado originalmente en 1983, la producción en serie desde 1985). Tiene un teclado de recorrido completo, 32 KiB de RAM, 8 KiB de ROM con BIOS (chip K1801RE2-017), 8 KiB de ROM con intérprete FOCAL (K1801RE2-018), 8 KiB de ROM con depurador (K1801RE2-019) y un compilador de código p BASIC convencional y Vilnius en la ROM; su CPU funciona a 3 MHz. En la configuración de fábrica se utiliza una grabadora de cinta para el almacenamiento de datos.</text>
-      <text lang="ru">БК (сокращение от «бытовой компьютер») — семейство советских 16-разрядных домашних и учебных ЭВМ, совместимых по системе команд и частично по архитектуре с СМ ЭВМ, PDP-11 и ДВК.
+			<text lang="ru">БК (сокращение от «бытовой компьютер») — семейство советских 16-разрядных домашних и учебных ЭВМ, совместимых по системе команд и частично по архитектуре с СМ ЭВМ, PDP-11 и ДВК.
 
 Компьютеры были разработаны в НИИ точной технологии НПО «Научный Центр» в 1983 году, производство начато в 1985 году. Изначальная стоимость компьютеров БК-0010 составляла 600 рублей. В конце 1989 года выпущена улучшенная модель БК-0011: тактовая частота процессора выросла с 3 МГц до 4 МГц, количество оперативной памяти увеличено до 128 КБ, цветовой режим имел возможность отображать 4 цвета из 16 палитр.
 
@@ -107,20 +76,10 @@ BK-0010 es el primer modelo (lanzado originalmente en 1983, la producción en se
 • БК-0011/БК-0011М — улучшенная версия компьютера, выпускавшаяся с 1989-го года. В базовой версии был баг, связанный с воспроизведением звука, который достаточно быстро исправили в модели БК-0011М;
 • БК-0100 — экспериментальная модель, по-видимому, не пошла в серию.
 Компьютеры БК-0010 использовались для оборудования учебных классов в школах (комплекты учебной вычислительной техники — КУВТ), для них выпускались специальные модификации БК-0010Ш и БК-0010.01Ш.</text>
-      <text lang="pl">Electronika BK to seria 16-bitowych komputerów domowych kompatybilnych z PDP-11, opracowanych pod marką Electronika przez NPO Scientific Center, wówczas wiodący zespół projektantów mikrokomputerów w Związku Radzieckim. Jest to również poprzednik potężniejszych mikrokomputerów UKNC i DVK.
+			<text lang="pl">Electronika BK to seria 16-bitowych komputerów domowych kompatybilnych z PDP-11, opracowanych pod marką Electronika przez NPO Scientific Center, wówczas wiodący zespół projektantów mikrokomputerów w Związku Radzieckim. Jest to również poprzednik potężniejszych mikrokomputerów UKNC i DVK.
 
 Maszyna ta wyposażona jest w 16-bitowy procesor K1801VM1, kompatybilny z linią LSI-11 firmy DEC. Posiada wbudowaną pamięć DRAM, pamięć wideo i obsługuje dwa tryby graficzne wideo. Dźwięk jest początkowo podstawowy, ale można go ulepszyć za pomocą układu AY-3-8910. Zawiera również uniwersalny port równoległy dla urządzeń peryferyjnych i może mieć dodany kontroler stacji dyskietek.
 BK-0010 to pierwszy model (pierwotnie wydany w 1983 roku, produkcja seryjna od 1985 roku). Posiada pełną klawiaturę, 32 KiB pamięci RAM, 8 KiB pamięci ROM z BIOS-em (układ K1801RE2-017), 8 KiB pamięci ROM z interpreterem FOCAL (K1801RE2-018), 8 KiB pamięci ROM z debuggerem (K1801RE2-019) oraz konwencjonalny i wileński kompilator p-kodu BASIC w pamięci ROM; jego procesor jest taktowany zegarem 3 MHz. Magnetofon jest używany do przechowywania danych w konfiguracji fabrycznej.</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-  </view>
+		</text>
+	</view>
 </theme>

@@ -2,16 +2,19 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.28</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.42</origin>
+			<origin if="${screen.ratio} == '21/9'">0.46 0.52</origin>
+			<pos>0.469 0.363</pos>
+			<maxSize>0.22</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.24</maxSize>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.189 0.363" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -25,58 +28,27 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<pos>0.5 0.36</pos>
-			<maxSize>0.15</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.28</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.42</origin>
+			<origin if="${screen.ratio} == '21/9'">0.46 0.52</origin>
+			<pos>0.469 0.363</pos>
+			<maxSize>0.2</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.22</maxSize>
 			<zIndex>23</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.189 0.363" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1982</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Fujitsu</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>FM-7</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.40</pos>
 			<text>The FM-7 ("Fujitsu Micro 7") is a home computer created by Fujitsu. It was first released in 1982 and was sold in Japan and Spain. It is a stripped-down version of Fujitsu's earlier FM-8 computer, and during development it was referred to as the "FM-8 Jr.".
 
 Although it was designed to be a cut-down version of the FM-8, most notably removing the (expensive) bubble memory technology, the FM-7 was given a more advanced AY-3-8910 sound chip capable of three voice sound synthesis, leading to a strong uptake among the hobbyist computer market in Japan and making it a more popular system than the FM-8.
@@ -124,16 +96,6 @@ Sebbene sia stato progettato per essere una versione ridotta dell'FM-8, in parti
 All'inizio degli anni '80, l'FM-7 era in concorrenza con i computer della serie PC-8801 di NEC e X1 di Sharp. Nel 1984 fu sostituito dalla serie di computer FM-77, che presentava la compatibilità con l'FM-7. La serie FM-77 fu poi sostituita dalla serie FM Towns a 32 bit nel 1989.
 
 L'FM-7 è basato sul chip 6809, utilizzato anche in home computer come il TRS-80 Color Computer e il Dragon 32/64, oltre che in diversi giochi arcade.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

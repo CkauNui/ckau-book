@@ -2,16 +2,17 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.42</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
+			<pos>0.5 0.44</pos>
+			<maxSize>0.26</maxSize>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.22 0.44" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -21,48 +22,25 @@
 			<!-- Loads platform video from addon directory, if available -->
 			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
 			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<pos>0.5 0.43</pos>
-			<maxSize>0.27</maxSize>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.42</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
+			<pos>0.5 0.445</pos>
+			<maxSize>0.25</maxSize>
 			<zIndex>25</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.22 0.43" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.22 0.445" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>2018</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.03</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.25</pos>
-			<size>0.5 0</size>
 			<text>Lowres NX</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.35</pos>
 			<text>Virtual Game Console.
 Imagine LowRes NX as a handheld game console with a d-pad, two action buttons and a little rubber keyboard below a slidable touchscreen. LowRes NX was inspired by real 8- and 16-bit systems and simulates chips for graphics, sound and I/O, which actually work like classic hardware. It supports hardware sprites as well as hardware parallax scrolling, and even offers vertical blank and raster interrupts to create authentic retro effects.
 
@@ -90,16 +68,6 @@ Créez vos propres jeux rétro sur une console de jeu virtuelle. Programmez dans
 Immaginate LowRes NX come una console di gioco portatile con un d-pad, due pulsanti di azione e una piccola tastiera di gomma sotto uno schermo tattile scorrevole. LowRes NX si ispira ai sistemi reali a 8 e 16 bit e simula i chip per la grafica, il suono e l'I/O, che funzionano effettivamente come l'hardware classico. Supporta gli sprite hardware e lo scorrimento parallasse hardware, e offre anche interruzioni verticali e raster per creare autentici effetti retrò.
 
 Create i vostri giochi retrò su una console virtuale. Programmate nel classico linguaggio BASIC e create sprite, mappe di tessere, suoni e musica con gli strumenti inclusi. I principianti capiranno rapidamente come creare semplici giochi di testo o mostrare il loro primo sprite su una mappa di tessere. Come programmatore esperto potrete scoprire tutto il potenziale dei trucchi dell'hardware retrò!</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

@@ -2,29 +2,20 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videocrton" extra="true">
-			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
-			<delay>0</delay>
-			<loops>0</loops>
-			<effect>none</effect>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>	
+			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>
 			<pos>0.5 0.36</pos>
-			<maxSize>0.24</maxSize>
-			<zIndex>26</zIndex>
-		</video>
+			<maxSize>0.22</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
 		<video name="videobox" extra="true">
 			<path>{random}</path>
 			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
@@ -36,7 +27,9 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>	
+			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>
 			<pos>0.5 0.36</pos>
 			<maxSize>0.21</maxSize>
 			<zIndex>25</zIndex>
@@ -45,49 +38,15 @@
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1981</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Commodore</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>VIC-20</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.40</pos>
 			<text>The Commodore VIC-20 (known as the VC-20 in Germany and the VIC-1001 in Japan) is an 8-bit home computer that was sold by Commodore Business Machines. The VIC-20 was announced in 1980, roughly three years after Commodore's first personal computer, the PET. The VIC-20 was the first computer of any description to sell one million units. It was described as "one of the first anti-spectatorial, non-esoteric computers by design...no longer relegated to hobbyist/enthusiasts or those with money, the computer Commodore developed was the computer of the future.
 
 The VIC-20 was called VC-20 in Germany because the pronunciation of VIC with a German accent sounds like the German expletives "fick" or "wichsen". The term VC was marketed as though it was an abbreviation of VolksComputer ("people's computer," similar to Volkswagen and Volksempfänger).</text>
@@ -111,16 +70,6 @@ Le VIC-20 était appelé VC-20 en Allemagne parce que la prononciation de VIC av
 			<text lang="it">Il Commodore VIC-20 (noto come VC-20 in Germania e VIC-1001 in Giappone) è stato un home computer a 8 bit venduto da Commodore Business Machines. Il VIC-20 fu annunciato nel 1980, circa tre anni dopo il primo personal computer di Commodore, il PET. Il VIC-20 è stato il primo computer di qualsiasi tipo a vendere un milione di unità. È stato descritto come "uno dei primi computer anti-speculatori, non esoterici per concezione... non più relegato agli hobbisti/entusiasti o a chi ha soldi, il computer sviluppato da Commodore era il computer del futuro".
 
 Il VIC-20 era chiamato VC-20 in Germania perché la pronuncia di VIC con accento tedesco assomiglia alle imprecazioni tedesche "fick" o "wichsen". Il termine VC fu commercializzato come se fosse un'abbreviazione di VolksComputer ("computer del popolo", simile a Volkswagen e Volksempfänger).</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

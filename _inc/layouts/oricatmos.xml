@@ -2,29 +2,20 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videocrton" extra="true">
-			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
-			<delay>0</delay>
-			<loops>0</loops>
-			<effect>none</effect>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
 			<origin if="${screen.ratio} == '21/9'">0.47 0.5</origin>
-			<pos>0.49 0.405</pos>
-			<maxSize>0.21</maxSize>
-			<zIndex>26</zIndex>
-		</video>
+			<pos>0.49 0.4</pos>
+			<maxSize>0.235</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
 		<video name="videobox" extra="true">
 			<path>{random}</path>
 			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
@@ -35,59 +26,27 @@
 			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
 			<delay>0</delay>
 			<effect>none</effect>
-			<origin>0.5 0.5</origin>
+			<origin>0.49 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
 			<origin if="${screen.ratio} == '21/9'">0.47 0.5</origin>
-			<pos>0.49 0.405</pos>
-			<maxSize>0.21</maxSize>
+			<pos>0.489 0.4</pos>
+			<maxSize>0.22</maxSize>
 			<zIndex>25</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.21 0.405" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1983</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Oric Products International</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>Oric Atmos</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.40</pos>
 			<text>The Oric Atmos was the successor of the Oric 1 and had almost the same features. Its main difference with the Oric 1 was the keyboard and the debugged ROM (the ORIC 1 had several bugs). Although improved, the loading process from tape was still very uncertain. The real mechanical keyboard was really better.
 
 Two versions were available, with 16 or 48 KB of RAM. 16 KB version couldn't be upgraded, very few of them were sold.
@@ -106,7 +65,7 @@ Pojawiły się także nowe instrukcje Basic, a przede wszystkim w modelach franc
 
 Также почти сразу после выпуска Oric Atmos были анонсированы модем, принтер и 3,5" дисковод, эти дополнения были выпущены в конце 1984 года.
 
-В Югославии выпускались компьютеры Oric Nova — по-видимому, полные клоны Oric Atmos, произведённые по лицензии[1]. В Болгарии также выпускался Правец 8D — клон Oric Atmos в большем корпусе белого цвета, со встроенным блоком питания.</text>
+В Югославии выпускались компьютеры Oric Nova — по-видимому, полные клоны Oric Atmos, произведённые по лицензии. В Болгарии также выпускался Правец 8D — клон Oric Atmos в большем корпусе белого цвета, со встроенным блоком питания.</text>
 			<text lang="es">El Oric Atmos fue el sucesor del Oric 1 y tenía casi las mismas características. Su principal diferencia con el Oric 1 era el teclado y la ROM depurada (el ORIC 1 tenía varios fallos). Aunque mejorado, el proceso de carga desde cinta seguía siendo muy incierto. El teclado mecánico real era realmente mejor.
 
 Había dos versiones disponibles, con 16 o 48 KB de RAM. La versión de 16 KB no se podía actualizar, se vendieron muy pocas.
@@ -127,16 +86,6 @@ Il y avait aussi de nouvelles instructions de base et surtout l'alimentation Sca
 Erano disponibili due versioni, con 16 o 48 KB di RAM. La versione da 16 KB non poteva essere aggiornata e ne furono venduti pochissimi esemplari.
 
 C'erano anche nuove istruzioni di base e, soprattutto, l'alimentazione Scart era integrata nei modelli francesi a partire dall'85. L'Atmos ebbe un grande successo in Francia, così come il suo fratello minore, l'Oric-1.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

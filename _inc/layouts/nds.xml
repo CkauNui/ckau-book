@@ -2,16 +2,17 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.49</origin>
+			<pos>0.5 0.47</pos>
+			<maxSize>0.61</maxSize>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.22 0.47" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -21,61 +22,28 @@
 			<!-- Loads platform video from addon directory, if available -->
 			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
 			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<pos>0.5 0.47</pos>
-			<maxSize>0.6</maxSize>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.49</origin>
+			<pos>0.5 0.469</pos>
+			<maxSize>0.61</maxSize>
 			<zIndex>25</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.22 0.47" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.22 0.469" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>2004</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Nintendo</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>DS</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The Nintendo DS, or simply DS, is a line of handheld game console produced by Nintendo. The device released globally across 2004 and 2005. The DS, an initialism for "Developers' System" or "Dual Screen", introduced distinctive new features to handheld gaming: two LCD screens working in tandem (the bottom one being a touchscreen), a built-in microphone and support for wireless connectivity. Both screens are encompassed within a clamshell design similar to the Game Boy Advance SP. The Nintendo DS also features the ability for multiple DS consoles to directly interact with each other over Wi-Fi within a short range without the need to connect to an existing wireless network. Alternatively, they could interact online using the now-defunct Nintendo Wi-Fi Connection service. Its main competitor was Sony's PlayStation Portable during the seventh generation of video game consoles.</text>
 			<text lang="pl">Nintendo DS (skr. NDS lub DS) – przenośna konsola gier wideo zaprojektowana i wyprodukowana przez przedsiębiorstwo Nintendo. Wydana w 2004 roku w Kanadzie, Stanach Zjednoczonych i Japonii. Konsola ma obudowę typu clamshell, podobną do Game Boya Advance SP, a wewnątrz dwa ekrany LCD, z których jeden jest dotykowy. Była to pierwsza konsola Nintendo wydana najpierw w Ameryce Północnej, a nie w Japonii.
 
@@ -93,16 +61,6 @@ Nintendo DS имеет дизайн «раскладушки» (первая в�
 			<text lang="de">Der Nintendo DS, oder einfach DS, ist eine Reihe von Handheld-Spielkonsolen, die von Nintendo hergestellt werden. Das Gerät wurde in den Jahren 2004 und 2005 weltweit veröffentlicht. Der DS, eine Abkürzung für "Developers' System" oder "Dual Screen", führte markante neue Funktionen für Handheld-Spiele ein: zwei LCD-Bildschirme, die zusammen arbeiten (der untere ist ein Touchscreen), ein eingebautes Mikrofon und Unterstützung für drahtlose Konnektivität. Beide Bildschirme sind in einem Klappgehäuse untergebracht, das dem des Game Boy Advance SP ähnelt. Der Nintendo DS bietet auch die Möglichkeit, dass mehrere DS-Konsolen über Wi-Fi innerhalb einer kurzen Reichweite direkt miteinander interagieren können, ohne dass eine Verbindung zu einem bestehenden drahtlosen Netzwerk erforderlich ist. Alternativ konnten sie auch online über den inzwischen eingestellten Dienst Nintendo Wi-Fi Connection interagieren. Sein Hauptkonkurrent war die PlayStation Portable von Sony in der siebten Generation der Videospielkonsolen.</text>
 			<text lang="fr">La Nintendo DS, ou simplement DS, est une gamme de consoles de jeux portables produite par Nintendo. L'appareil a été commercialisé dans le monde entier en 2004 et 2005. La DS, acronyme de "Developers' System" ou "Dual Screen", a introduit de nouvelles caractéristiques distinctives dans les jeux portables : deux écrans LCD fonctionnant en tandem (l'écran du bas étant un écran tactile), un microphone intégré et la prise en charge de la connectivité sans fil. Les deux écrans sont intégrés dans une coque semblable à celle du Game Boy Advance SP. La Nintendo DS permet également à plusieurs consoles DS d'interagir directement par Wi-Fi à courte distance, sans qu'il soit nécessaire de se connecter à un réseau sans fil existant. Elles peuvent également interagir en ligne en utilisant le service Nintendo Wi-Fi Connection, aujourd'hui disparu. Son principal concurrent a été la PlayStation Portable de Sony lors de la septième génération de consoles de jeux vidéo.</text>
 			<text lang="it">Il Nintendo DS, o semplicemente DS, è una linea di console di gioco portatili prodotta da Nintendo. Il dispositivo è stato rilasciato a livello mondiale nel 2004 e nel 2005. Il DS, acronimo di "Developers' System" o "Dual Screen", ha introdotto nuove caratteristiche distintive nei giochi portatili: due schermi LCD che lavorano in tandem (quello inferiore è un touchscreen), un microfono integrato e il supporto per la connettività wireless. Entrambi gli schermi sono racchiusi in un design a conchiglia simile a quello del Game Boy Advance SP. Il Nintendo DS offre inoltre la possibilità a più console DS di interagire direttamente tra loro tramite Wi-Fi a breve distanza, senza la necessità di collegarsi a una rete wireless esistente. In alternativa, potevano interagire online utilizzando il servizio Nintendo Wi-Fi Connection, ormai defunto. Il suo principale concorrente era la PlayStation Portable di Sony durante la settima generazione di console per videogiochi.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

@@ -2,17 +2,21 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysart" extra="true">
 			<path>./../../_inc/anim/gb.png</path>
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<path>./../../../ckau-book-addons/_inc/anim/4K/gb.png</path>
 		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.413</origin>
+			<pos>0.5 0.35</pos>
+			<maxSize>0.23</maxSize>
 			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -22,74 +26,44 @@
 			<!-- Loads platform video from addon directory, if available -->
 			<path>./../../../ckau-book-addons/_inc/anim/video/gb.mp4</path>
 			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.243</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.413</origin>
+			<pos>0.5 0.344</pos>
+			<maxSize>0.202</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.344" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+			<video name="videoglich" extra="true">
+			<path>./../../_inc/anim/video/glich.mp4</path>
+			<delay>0</delay>
+			<effect>none</effect>
+ 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.413</origin>
 			<pos>0.5 0.35</pos>
 			<maxSize>0.22</maxSize>
-			<zIndex>25</zIndex>
+			<zIndex>26</zIndex>
+			<color>FFFFFF50</color>
 			<storyboard>
 				<animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
-			<video name="videoglich" extra="true">
-            <path>./../../_inc/anim/video/glich.mp4</path>
-            <delay>0</delay>
-            <effect>none</effect>
- 			<origin>0.5 0.5</origin>
-			<pos>0.5 0.35</pos>
-			<maxSize>0.22</maxSize>
-            <zIndex>26</zIndex>
-            <color>FFFFFF50</color>
-            <storyboard>
-                <animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
-            </storyboard>
-        </video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1989</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
+			
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Nintendo</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>Game Boy</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The Game Boy is an 8-bit handheld game console developed and manufactured by Nintendo. The first handheld in the Game Boy family, it was first released in Japan on April 21, 1989, then North America, three months later, and lastly in Europe, more than one year later. It was designed by the same team that developed the Game &amp; Watch series of handheld electronic games and several Nintendo Entertainment System games: Satoru Okada, Gunpei Yokoi, and Nintendo Research and Development 1.
 
 Nintendo's second handheld game console, the Game Boy, combines features from both the NES home system and Game &amp; Watch hardware. The console features a dull green dot-matrix screen with adjustable contrast dial, five control buttons (a directional pad, two game buttons, and "START" and "SELECT"), a single speaker with adjustable volume dial, and, like its rivals, uses cartridges as physical media for games. The color scheme is made from two tones of grey with accents of black, blue, and dark magenta. All the corners of the portrait-oriented rectangular unit are softly rounded, save for the bottom right, which is curved. At launch, it was sold either as a standalone unit, or bundled with one of several games, namely Super Mario Land or Tetris. Several accessories were also developed, including a carrying pouch, Game Genie, and printer.</text>
@@ -112,16 +86,6 @@ La deuxième console de jeu portable de Nintendo, la Game Boy, combine les carac
 			<text lang="it">Il Game Boy è una console portatile a 8 bit sviluppata e prodotta da Nintendo. Prima console portatile della famiglia Game Boy, è stata rilasciata per la prima volta in Giappone il 21 aprile 1989, poi in Nord America, tre mesi dopo, e infine in Europa, più di un anno dopo. È stato progettato dallo stesso team che ha sviluppato la serie di giochi elettronici portatili Game &amp; Watch e diversi giochi per Nintendo Entertainment System: Satoru Okada, Gunpei Yokoi, e Nintendo Research and Development 1.
 
 La seconda console portatile di Nintendo, il Game Boy, combina le caratteristiche della console domestica NES e dell'hardware Game &amp; Watch. La console è dotata di uno schermo verde opaco a matrice di punti con un contrasto regolabile, cinque pulsanti di controllo (un pad direzionale, due pulsanti di gioco, "START" e "SELECT"), un singolo altoparlante con volume regolabile e, come le sue rivali, utilizza le cartucce come supporto fisico per i giochi. La combinazione di colori è composta da due toni di grigio con accenti di nero, blu e magenta scuro. Tutti gli angoli dell'unità rettangolare orientata al ritratto sono dolcemente arrotondati, tranne quello in basso a destra, che è curvo. Al momento del lancio, è stato venduto sia come unità indipendente, sia in bundle con uno dei diversi giochi, in particolare Super Mario Land o Tetris. Sono stati sviluppati anche diversi accessori, tra cui una custodia per il trasporto, un Game Genie e una stampante.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

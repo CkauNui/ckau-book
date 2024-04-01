@@ -2,16 +2,17 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.43</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.475</origin>
+			<pos>0.5 0.45</pos>
+			<maxSize>0.27</maxSize>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.22 0.45" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -21,10 +22,11 @@
 			<!-- Loads platform video from addon directory, if available -->
 			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
 			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.43</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.475</origin>
 			<pos>0.5 0.45</pos>
 			<maxSize>0.25</maxSize>
 			<zIndex>25</zIndex>
@@ -33,36 +35,12 @@
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text/>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.03</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.27</pos>
-			<size>0.5 0</size>
 			<text>LCD Games</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.35</pos>
 			<text>Handheld electronic games are very small, portable devices for playing interactive electronic games, often miniaturized versions of video games. The controls, display and speakers are all part of a single unit.
 
 Rather than a general-purpose screen made up of a grid of small pixels, they usually have custom displays designed to play one game. This simplicity means they can be made as small as a smartwatch, and sometimes are. The visual output of these games can range from a few small light bulbs or LED lights to calculator-like alphanumerical screens; later these were mostly displaced by liquid crystal and vacuum fluorescent display screens with detailed images and in the case of VFD games, color. 
@@ -98,16 +76,6 @@ La popularité des ordinateurs de poche a atteint son apogée de la fin des ann�
 Invece di uno schermo generico composto da una griglia di piccoli pixel, di solito hanno display personalizzati progettati per la riproduzione di un solo gioco. Grazie a questa semplicità, possono essere realizzati con le dimensioni di uno smartwatch, e a volte lo sono. L'output visivo di questi giochi può variare da alcune piccole lampadine o luci LED a schermi alfanumerici simili a quelli di una calcolatrice; in seguito questi schermi sono stati sostituiti da schermi a cristalli liquidi e a fluorescenza sottovuoto con immagini dettagliate e, nel caso dei giochi VFD, a colori.
 
 La popolarità dei giochi portatili ha raggiunto il suo apice tra la fine degli anni '70 e l'inizio degli anni '90, prima di diminuire. Sono i precursori delle console di gioco portatili.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

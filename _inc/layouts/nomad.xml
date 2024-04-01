@@ -2,82 +2,44 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<pos>0.496 0.49</pos>
+			<maxSize>0.225</maxSize>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.216 0.49" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
 			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/megadrive.mp4</path>
 			<path>./../../_inc/anim/video/${synonym}.mp4</path>
 			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/megadrive.mp4</path>
 			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.49</origin>
 			<pos>0.496 0.49</pos>
 			<maxSize>0.215</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.21</maxSize>
 			<zIndex>25</zIndex>
 			<storyboard>
 				<animation property="pos" to="0.216 0.49" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1995</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Sega</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>Nomad</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The Genesis Nomad, also known as Sega Nomad, is a handheld game console manufactured by Sega and released in North America in October 1995. The Nomad is a portable variation of the Sega Genesis home video game console (known as the Mega Drive outside North America). It could also be used with a television set via a video port. It was based on the Mega Jet, a portable version of the home console designed for use on airline flights in Japan.
 
 The Nomad was the last handheld console released by Sega. Released late in the Genesis era, it had a short lifespan. It was sold exclusively in North America, and uses regional lockout. Sega's focus on the Sega Saturn left the Nomad under-supported, and it was incompatible with several Genesis peripherals, including the Power Base Converter, the Sega CD, and the 32X. About 1 million units of the Nomad were sold, and it is considered a commercial failure.</text>
@@ -99,16 +61,6 @@ La Nomad a été la dernière console portable commercialisée par Sega. Sortie 
 			<text lang="it">Il Genesis Nomad, noto anche come Sega Nomad, è una console di gioco portatile prodotta da Sega e rilasciata in Nord America nell'ottobre 1995. Il Nomad è una variante portatile della console per videogiochi domestica Sega Genesis (nota come Mega Drive fuori dal Nord America). Poteva essere utilizzato anche con un televisore tramite una porta video. Era basato sul Mega Jet, una versione portatile della console domestica progettata per l'uso sui voli aerei in Giappone.
 
 Il Nomad fu l'ultima console portatile rilasciata da Sega. Rilasciata alla fine dell'era Genesis, ebbe una vita breve. È stata venduta esclusivamente in Nord America e utilizza il blocco regionale. L'attenzione di Sega per il Sega Saturn ha reso il Nomad poco supportato e incompatibile con diverse periferiche del Genesis, tra cui il Power Base Converter, il Sega CD e il 32X. Il Nomad fu venduto in circa 1 milione di unità ed è considerato un fallimento commerciale.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

@@ -2,16 +2,17 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.498 0.412</pos>
+			<maxSize>0.33</maxSize>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.218 0.412" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -21,10 +22,11 @@
 			<!-- Loads platform video from addon directory, if available -->
 			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
 			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
 			<pos>0.498 0.412</pos>
 			<maxSize>0.32</maxSize>
 			<zIndex>25</zIndex>
@@ -33,49 +35,15 @@
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1982</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Smith Engineering</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>Vectrex</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The Vectrex is a vector display-based home video game console–the only one ever designed and released for the home market, developed by Smith Engineering. It was first released for the North America market in November 1982 and then Europe and Japan in 1983. Originally manufactured by General Consumer Electronics, it was later licensed to Milton Bradley after they acquired the company. Bandai released the system in Japan.
 
 The Vectrex, in contrast to other video-game systems available at the time, featured an integrated monochrome CRT monitor and did not need to be hooked up to a television set as it provided its own built-in display. A detachable wired control pad was mounted at, and could be folded into, the lower base of the console. Games included translucent color sheet overlays that could be placed over the monochrome screen. A number of peripherals were produced, such as a pair of 3D goggles known as the "3D Imager" and a "light-pen" that allowed the player to draw directly on the screen. A built-in game, Mine Storm, was playable without inserting a cartridge.</text>
@@ -105,16 +73,6 @@ Le Vectrex, contrairement aux autres systèmes de jeux vidéo disponibles à l'�
 			<text lang="it">Il Vectrex è una console per videogiochi domestica basata su display vettoriali, l'unica mai progettata e rilasciata per il mercato domestico, sviluppata da Smith Engineering. È stata commercializzata per la prima volta in Nord America nel novembre 1982 e poi in Europa e Giappone nel 1983. Originariamente prodotta da General Consumer Electronics, fu poi data in licenza a Milton Bradley dopo l'acquisizione della società. Bandai distribuì il sistema in Giappone.
 
 Il Vectrex, a differenza di altri sistemi di videogiochi disponibili all'epoca, era dotato di un monitor CRT monocromatico integrato e non aveva bisogno di essere collegato a un televisore, in quanto forniva il proprio display incorporato. Un pad di controllo a filo staccabile era montato e poteva essere ripiegato sulla base inferiore della console. I giochi includevano fogli traslucidi a colori che potevano essere posizionati sopra lo schermo monocromatico. Furono prodotte diverse periferiche, come un paio di occhiali 3D noti come "3D Imager" e una "light-pen" che permetteva al giocatore di disegnare direttamente sullo schermo. Un gioco integrato, Mine Storm, era giocabile senza inserire una cartuccia.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

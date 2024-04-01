@@ -2,16 +2,75 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-left" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.3 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+			<pos>0.26 0.36</pos>
+			<minSize>0.1 0.2</minSize>
+			<rotation>8</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>27</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="-0.02 0.36" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
+		<image name="sysbg-right" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.7 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.54 0.4</origin>
+			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+			<pos>0.74 0.36</pos>
+			<minSize>0.1 0.2</minSize>
+			<rotation>-8</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>27</zIndex>
 			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.46 0.36" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+			<pos>0.5 0.363</pos>
+			<maxSize>0.15</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-left" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+			<pos>0.36 0.37</pos>
+			<maxSize>0.14</maxSize>
+			<rotation>0</rotation>
+			<storyboard>
+				<animation property="pos" to="0.08 0.37" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-right" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+			<pos>0.638 0.37</pos>
+			<maxSize>0.14</maxSize>
+			<rotation>0</rotation>
+			<storyboard>
+				<animation property="pos" to="0.358 0.37" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -24,6 +83,8 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
 			<pos>0.5 0.363</pos>
 			<maxSize>0.14</maxSize>
 			<zIndex>25</zIndex>
@@ -34,14 +95,16 @@
 		<video name="videobox2" extra="true">
 			<path>{random}</path>
 			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}-right.mp4</path>
 			<!-- Loads platform video from addon directory, if available -->
 			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
 			<audio>false</audio>
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.1 0.5</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>	
+			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
 			<pos>0.655 0.37</pos>
 			<maxSize>0.13</maxSize>
 			<zIndex>25</zIndex>
@@ -53,14 +116,16 @@
 		<video name="videobox3" extra="true">
 			<path>{random}</path>
 			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}-left.mp4</path>
 			<!-- Loads platform video from addon directory, if available -->
 			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
 			<audio>false</audio>
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.9 0.5</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>	
+			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
 			<pos>0.345 0.37</pos>
 			<maxSize>0.13</maxSize>
 			<zIndex>25</zIndex>
@@ -70,36 +135,12 @@
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1997</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.03</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.25</pos>
-			<size>0.5 0</size>
 			<text>MAME</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.35</pos>
 			<text>MAME (originally an acronym of Multiple Arcade Machine Emulator) is a free and open-source emulator designed to recreate the hardware of arcade game systems in software on modern personal computers and other platforms. Its intention is to preserve gaming history by preventing vintage games from being lost or forgotten. It does this by emulating the inner workings of the emulated arcade machines; the ability to actually play the games is considered "a nice side effect". Joystiq has listed MAME as an application that every Windows and Mac gamer should have.
 
 The first public MAME release was by Nicola Salmoria on February 5, 1997. It now supports over 7,000 unique games and 10,000 actual ROM image sets, though not all of the games are playable. MESS, an emulator for many video game consoles and computer systems, based on the MAME core, was integrated into MAME in 2015.</text>
@@ -121,16 +162,6 @@ La première version publique de MAME a été publiée par Nicola Salmoria le 5 
 			<text lang="it">MAME (originariamente acronimo di Multiple Arcade Machine Emulator) è un emulatore gratuito e open-source progettato per ricreare l'hardware dei sistemi di gioco arcade nel software dei moderni personal computer e di altre piattaforme. Il suo scopo è quello di preservare la storia del gioco, evitando che i giochi d'epoca vadano persi o dimenticati. Lo fa emulando il funzionamento interno delle macchine arcade emulate; la possibilità di giocare effettivamente ai giochi è considerata "un piacevole effetto collaterale". Joystiq ha indicato MAME come un'applicazione che ogni giocatore Windows e Mac dovrebbe avere.
 
 La prima versione pubblica del MAME è stata realizzata da Nicola Salmoria il 5 febbraio 1997. Attualmente supporta oltre 7.000 giochi unici e 10.000 immagini ROM, anche se non tutti i giochi sono giocabili. MESS, un emulatore per molte console di videogiochi e sistemi informatici, basato sul nucleo di MAME, è stato integrato in MAME nel 2015.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

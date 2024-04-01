@@ -2,16 +2,17 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.26</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.415</origin>
+			<pos>0.5 0.325</pos>
+			<maxSize>0.254</maxSize>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.22 0.325" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -25,45 +26,31 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.48 0.5</origin>
-			<pos>0.519 0.378</pos>
-			<maxSize>0.27</maxSize>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.26</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.415</origin>
+			<pos>0.5 0.325</pos>
+			<maxSize>0.244</maxSize>
 			<zIndex>25</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.239 0.378" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.22 0.325" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>2004</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.03</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>Collection</text>
+			<text lang="pl">Kolekcja</text>
+			<text lang="ru">Коллекция</text>
+			<text lang="es">Recopilación</text>
+			<text lang="fr">Collection</text>
+			<text lang="it">Collezione</text>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.25</pos>
-			<size>0.5 0</size>
-			<text>The Angry Video Game Nerd</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
+			<text>The Angry Video Game
+Nerd</text>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.35</pos>
 			<text>AVGN is the main character of the video show of the same name, a series of video game reviews for video game consoles of the past years. The reviews are dedicated to criticizing low-quality video games in a humorous style.
 
 The video series is created by James D. Rolfe, who plays the role of the main character. The show gained popularity through the publication of the first videos on YouTube. The videos were then published on the ScrewAttack website and later, along with two other exclusive series, were given to the GameTrailers website, where they were published until the site was shut down. According to GameTrailers, the episodes posted there had between half a million and two million views. The show was subsequently published exclusively on Cinemassacre's YouTube channel.
@@ -99,16 +86,6 @@ La série vidéo est créée par James D. Rolfe, qui joue le rôle du personnage
 La serie video è creata da James D. Rolfe, che interpreta il ruolo del protagonista. Lo spettacolo ha acquisito popolarità grazie alla pubblicazione dei primi video su YouTube. I video sono stati poi pubblicati sul sito web ScrewAttack e successivamente, insieme ad altre due serie esclusive, sono stati ceduti al sito web GameTrailers, dove sono stati pubblicati fino alla chiusura del sito. Secondo GameTrailers, gli episodi pubblicati hanno avuto tra il mezzo milione e i due milioni di visualizzazioni. La serie è stata successivamente pubblicata esclusivamente sul canale YouTube di Cinemassacre.
 
 All'epoca della sua comparsa, lo show si chiamava The Angry Nintendo Nerd. Nell'episodio 15, il nome è stato cambiato per non violare il marchio Nintendo e per iniziare a recensire in futuro giochi di console di altre aziende.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

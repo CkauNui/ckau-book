@@ -2,28 +2,19 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videocrton" extra="true">
-			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
-			<delay>0</delay>
-			<loops>0</loops>
-			<effect>none</effect>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.34</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
 			<pos>0.50 0.395</pos>
-			<maxSize>0.21</maxSize>
-			<zIndex>26</zIndex>
-		</video>
+			<maxSize>0.22</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.395" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
 		<video name="videobox" extra="true">
 			<path>{random}</path>
 			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
@@ -35,6 +26,8 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.34</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
 			<pos>0.50 0.395</pos>
 			<maxSize>0.21</maxSize>
 			<zIndex>25</zIndex>
@@ -43,17 +36,7 @@
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1988</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<!-- Support different dates for regional consoles/computers -->
 		<text name="TextDate" extra="true" region="eu"/>
@@ -63,32 +46,10 @@
 		<text name="TextDate" extra="true" region="jp"/>
 		<!-- -->
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Nec</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>PC Engine CD-ROM²</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<!-- Support different names for regional consoles/computers -->
 		<text name="TextName" extra="true" region="eu"/>
@@ -98,8 +59,6 @@
 		<text name="TextName" extra="true" region="jp"/>
 		<!-- -->
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The CD-ROM² (pronounced CD-ROM-ROM) is an add-on attachment for the PC Engine that was released in Japan on December 4, 1988. The add-on allows the core versions of the console to play PC Engine games in CD-ROM format in addition to standard HuCards. This made the PC Engine the first video game console to use CD-ROMs as a storage media. The add-on consisted of two devices - the CD player itself and the interface unit, which connects the CD player to the console and provides a unified power supply and output for both.
 
 It was later released as the TurboGrafx-CD in the United States in November 1989, with a remodeled interface unit in order to suit the different shape of the TurboGrafx-16 console. The TurboGrafx-CD had a launch price of $399.99 and did not include any bundled games. Fighting Street and Monster Lair were the TurboGrafx-CD launch titles; Ys Book I and II soon followed.</text>
@@ -133,16 +92,6 @@ Il a été commercialisé sous le nom de TurboGrafx-CD aux États-Unis en novemb
 			<text lang="it">Il CD-ROM² (pronuncia CD-ROM-ROM) è un componente aggiuntivo per il PC Engine, rilasciato in Giappone il 4 dicembre 1988. Il componente aggiuntivo consente alle versioni principali della console di riprodurre i giochi del PC Engine in formato CD-ROM, oltre alle HuCard standard. Questo rendeva il PC Engine la prima console per videogiochi a utilizzare i CD-ROM come supporto di memorizzazione. Il componente aggiuntivo è costituito da due dispositivi: il lettore CD stesso e l'unità di interfaccia, che collega il lettore CD alla console e fornisce un'alimentazione e un'uscita unificate per entrambi.
 
 Il TurboGrafx-CD è stato poi rilasciato negli Stati Uniti nel novembre 1989, con un'unità di interfaccia modificata per adattarsi alla diversa forma della console TurboGrafx-16. Il TurboGrafx-CD aveva un prezzo di lancio di 399,99 dollari e non includeva alcun gioco in bundle. Fighting Street e Monster Lair furono i titoli di lancio del TurboGrafx-CD; Ys Book I e II seguirono presto.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

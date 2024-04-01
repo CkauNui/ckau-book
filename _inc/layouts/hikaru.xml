@@ -2,16 +2,79 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-left" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.3 0.2</origin>
+			<origin if="${screen.ratio} == '16/10'">0.4 0.35</origin>
+			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+			<pos>0.285 0.36</pos>
+			<minSize>0.1 0.3</minSize>
+			<rotation>26</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>27</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.005 0.36" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
+		<image name="sysbg-right" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.7 0.2</origin>
+			<origin if="${screen.ratio} == '16/10'">0.6 0.35</origin>
+			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+			<pos>0.72 0.36</pos>
+			<minSize>0.1 0.3</minSize>
+			<rotation>-26</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>27</zIndex>
 			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.44 0.36" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.50 0.435</pos>
+			<maxSize>0.2</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.435" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-left" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.48 0.26</origin>
+			<origin if="${screen.ratio} == '16/10'">0.52 0.44</origin>
+			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+			<pos>0.365 0.43</pos>
+			<maxSize>0.135</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.175</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.15</maxSize>
+			<rotation>-64</rotation>
+			<storyboard>
+				<animation property="pos" to="0.085 0.43" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-right" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.52 0.26</origin>
+			<origin if="${screen.ratio} == '16/10'">0.48 0.44</origin>
+			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+			<pos>0.635 0.435</pos>
+			<maxSize>0.135</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.175</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.15</maxSize>
+			<rotation>64</rotation>
+			<storyboard>
+				<animation property="pos" to="0.355 0.435" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -24,11 +87,13 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<pos>0.50 0.395</pos>
-			<maxSize>0.255</maxSize>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.50 0.435</pos>
+			<maxSize>0.175</maxSize>
 			<zIndex>26</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.22 0.395" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.22 0.435" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<video name="videobox2" extra="true">
@@ -40,14 +105,15 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.2 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.48 0.325</origin>
+			<origin if="${screen.ratio} == '16/10'">0.48 0.44</origin>
 			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.66 0.425</pos>
-			<maxSize>0.16</maxSize>
+			<pos>0.64 0.435</pos>
+			<maxSize>0.13</maxSize>
 			<zIndex>25</zIndex>
 			<rotation>0</rotation>
 			<storyboard>
-				<animation property="pos" to="0.38 0.425" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.36 0.435" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<video name="videobox3" extra="true">
@@ -59,60 +125,27 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.8 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.52 0.325</origin>
+			<origin if="${screen.ratio} == '16/10'">0.52 0.44</origin>
 			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.34 0.425</pos>
-			<maxSize>0.16</maxSize>
+			<pos>0.36 0.435</pos>
+			<maxSize>0.13</maxSize>
 			<zIndex>25</zIndex>
 			<rotation>0</rotation>
 			<storyboard>
-				<animation property="pos" to="0.06 0.425" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.08 0.435" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1998</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Sega</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>Hikaru</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The Sega Hikaru is a successor of the Sega NAOMI and Sega Model 3 arcade systems that was developed in 1998 and debuted in 1999. The Hikaru was used for a handful of deluxe dedicated-cabinet games, beginning with 1999's Brave Fire Fighters, in which the flame and water effects were largely a showpiece for the hardware.
 
 It was significantly more powerful and expensive than the NAOMI. The Hikaru featured a custom Sega GPU with advanced graphical capabilities, additional CPU and sound processors, various custom processors, increased memory, and faster bandwidth. It was the first game platform capable of effective hardware Phong shading, the most intensive form of shading at the time, and was capable of the most complex lighting and particle effects of its time.
@@ -148,16 +181,6 @@ C'était le système de jeu le plus puissant de l'époque (Planet Harriers, par 
 Era molto più potente e costoso del NAOMI. La Hikaru era dotata di una GPU Sega personalizzata con capacità grafiche avanzate, CPU e processori audio aggiuntivi, vari processori personalizzati, una memoria maggiore e una larghezza di banda più veloce. Fu la prima piattaforma di gioco in grado di utilizzare efficacemente l'hardware Phong shading, la forma più intensiva di shading dell'epoca, e fu in grado di realizzare i più complessi effetti di illuminazione e particellari dell'epoca.
 
 Era il sistema di gioco più potente dell'epoca (Planet Harriers, ad esempio, era considerato il miglior videogioco grafico dell'epoca), ma era molto costoso e difficile da programmare. Poiché la produzione era relativamente costosa, Sega abbandonò presto la Hikaru a favore di un continuo sviluppo del NAOMI. A questo modello successe il più economico NAOMI 2.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

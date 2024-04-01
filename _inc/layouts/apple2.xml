@@ -2,16 +2,18 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+			<origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
+			<pos>0.482 0.325</pos>
+			<maxSize>0.27</maxSize>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.202 0.325" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -25,8 +27,9 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.51 0.5</origin>
-			<origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>	
+			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+			<origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
 			<pos>0.482 0.325</pos>
 			<maxSize>0.26</maxSize>
 			<zIndex>25</zIndex>
@@ -35,49 +38,15 @@
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1977</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Apple</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>Apple II</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The Apple II (stylized as apple ][) is an 8-bit home computer and one of the world's first highly successful mass-produced microcomputer products. It was designed primarily by Steve Wozniak; Steve Jobs oversaw the development of the Apple II's foam-molded plastic case and Rod Holt developed the switching power supply. It was introduced by Jobs and Wozniak at the 1977 West Coast Computer Faire and marks Apple's first launch of a personal computer aimed at a consumer market—branded toward American households rather than businessmen or computer hobbyists.
 
 The three computers that Byte Magazine referred to as the "1977 Trinity" of home computing: the Commodore PET 2001, the Apple II, and the TRS-80 Model I.
@@ -132,16 +101,6 @@ I tre computer che Byte Magazine ha definito la "Trinità del 1977" dell'home co
 La rivista Byte si riferiva all'Apple II, al Commodore PET 2001 e al TRS-80 come alla "Trinità del 1977". L'Apple II aveva la caratteristica principale di poter visualizzare grafica a colori, e per questo motivo il logo Apple fu ridisegnato in modo da avere uno spettro di colori.
 
 L'Apple II fu il primo modello della serie Apple II, seguito dall'Apple II+, dall'Apple IIe, dall'Apple IIc e dall'Apple IIgs a 16 bit, tutti rimasti compatibili. La produzione dell'ultimo modello disponibile, l'Apple IIe, è cessata nel novembre 1993.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="menu">
+    <!-- Apply blur when a menu is opened -->
+    <menuBackground name="menubg">
+      <color>242424D0</color>
+      <!-- fadeShader applies to the background fading (whole screen) -->
+      <fadeShader>
+        <path>:/shaders/blur.glsl</path>
+        <blur>4</blur>
+      </fadeShader>
+      <!-- menuShader applies under the menu only -->
+      <menuShader>
+        <path>:/shaders/kawase_blur_9pass.glslp</path>
+      </menuShader>
+    </menuBackground>
+  </view>
+  <view name="system">
+    <!-- Blurs darkened carousel background -->
+    <screenshader name="blur" extra="true" ifSubset="systemview:darkened, systembackground:consoles|random video|random image|random fanart|random box">
+      <path>./blurcrt.glsl</path>
+      <!-- Sample glslp multipass program -->
+      <!-- <path>:/shaders/kawase_blur.glslp</path> -->
+      <pos>0 0.3838</pos>
+      <size>1 0.2323</size>
+      <zIndex>17</zIndex>
+      <!-- uniform parameters -->
+      <blur>6</blur>
+    </screenshader>
+    <carousel name="systemcarousel" ifSubset="systemview:darkened, systembackground:consoles|random video|random image|random fanart|random box">
+      <color>00000040</color>
+      <colorEnd>00000090</colorEnd>
+    </carousel>
+    <image name="CenterFade" extra="true" ifSubset="systemview:darkened, systembackground:consoles|random video|random image|random fanart|random box">
+      <visible>false</visible>
+    </image>
+    <!-- Blurs help bar on systemview -->
+    <!-- <screenshader name="syshelpblur" extra="static">
+      <path>:/shaders/kawase_blur_9pass.glslp</path>
+      <tile>false</tile>
+      <pos>0 0.947</pos>
+      <size>1 0.065</size>
+      <zIndex>920</zIndex>
+    </screenshader> -->
+
+	<screenshader name="syshelpblur" extra="static">
+		<path>:/shaders/blur.glsl</path>
+		<pos>0 0.948</pos>
+		<size>1 0.065</size>
+		<zIndex>92</zIndex>
+		<blur>6</blur>
+	</screenshader>
+
+<!--     <screenshader name="syshelpblur" extra="static" ifHelpPrompts="true">
+      <path>:/shaders/blur.glsl</path>
+      <pos>0 0.935</pos>
+      <size>1 0.066</size>
+      <zIndex>490</zIndex>
+      <blur>6</blur>
+    </screenshader> -->
+
+    <!-- <image name="background" extra="true">
+	<color>141414B9</color>
+      <screenshader>
+	  <size>1 1.1</size>
+        <path>:/shaders/kawase_blur_9pass.glslp</path>
+		<zIndex>920</zIndex>
+      </screenshader>
+    </image> -->
+
+<!--     <screenshader name="background" extra="true">
+      <path>:/shaders/kawase_blur_9pass.glslp</path>
+	  <tile>false</tile>
+		<size>1 1.1</size>
+      <zIndex>92</zIndex>
+    </screenshader> -->
+
+    <!-- Sample shader applied on image, with uniform parameter -->
+    <!--
+    <image name="logo">
+      <shader>
+        <path>:/shaders/shadow.glsl</path>
+        <shadowOffset>4</shadowOffset>
+      </shader>
+    </image>
+    -->
+  </view>
+  <view name="basic, detailed, grid, gamecarousel">
+    <!-- Blurs help bar on gamelists -->
+    <screenshader name="gamelistblur" extra="true">
+      <path>:/shaders/blur.glsl</path>
+      <pos>0 0.948</pos>
+		<size>1 0.065</size>
+		<zIndex>92</zIndex>
+      <!-- uniform parameters -->
+      <blur>6</blur>
+    </screenshader>
+    <!-- Sample shader applied on image, with uniform parameter -->
+    <!--
+    <image name="md_video">
+      <roundCorners>0</roundCorners>
+      <shader>
+        <path>:/shaders/border.glsl</path>
+        <borderSize>4</borderSize>
+        <borderColor>00000080</borderColor>
+      </shader>
+    </image>
+    -->
+  </view>
+  <!-- Sample shader applied on the whole screen -->
+  <!--
+  <view name="screen">
+    <shader name="scanlines" extra="static">
+      <path>:/shaders/scanlines.glsl</path>
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <zIndex>200</zIndex>
+    </shader>
+  </view>
+  -->
+</theme>

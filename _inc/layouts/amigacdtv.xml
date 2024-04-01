@@ -2,16 +2,17 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.498 0.348</pos>
+			<maxSize>0.27</maxSize>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.218 0.348" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -25,6 +26,8 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
 			<pos>0.498 0.348</pos>
 			<maxSize>0.26</maxSize>
 			<zIndex>25</zIndex>
@@ -33,49 +36,15 @@
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1991</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Commodore</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>CDTV</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The CDTV (from Commodore Dynamic Total Vision, later treated as a backronym for Compact Disc Television) is a home multimedia entertainment and video game console – convertible into a full-fledged personal computer by the addition of optional peripherals – developed by Commodore International and launched in April 1991.
 
 The CDTV was intended as a media appliance rather than a mainstream personal computer. As such, its housing had dimensions and styling that were fairly comparable to most household stereo system components of the period, and it came with an infrared remote control. Similarly, it was initially sold without a keyboard or a mouse (which could be added separately, and were later bundled with the machine). The CDTV was based on the same technology as earlier Amiga systems, but featured a single-speed CD-ROM drive and no floppy disk drive as standard.</text>
@@ -101,16 +70,6 @@ Le CDTV a été conçu comme un appareil multimédia plutôt que comme un ordina
 			<text lang="it">Il CDTV (da Commodore Dynamic Total Vision, in seguito trattato come acronimo per Compact Disc Television) è una console per l'intrattenimento multimediale e i videogiochi - convertibile in un vero e proprio personal computer grazie all'aggiunta di periferiche opzionali - sviluppata da Commodore International e lanciata nell'aprile 1991.
 
 Il CDTV fu concepito come un dispositivo multimediale piuttosto che come un personal computer tradizionale. Per questo motivo, il suo alloggiamento aveva dimensioni e stile abbastanza paragonabili a quelli della maggior parte degli impianti stereo domestici dell'epoca, ed era dotato di un telecomando a infrarossi. Inoltre, inizialmente era venduto senza tastiera o mouse (che potevano essere aggiunti separatamente e che in seguito vennero forniti insieme alla macchina). Il CDTV si basava sulla stessa tecnologia dei precedenti sistemi Amiga, ma era dotato di un'unità CD-ROM a velocità singola e di un'unità floppy disk non di serie.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

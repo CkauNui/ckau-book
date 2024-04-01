@@ -1,161 +1,181 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <theme>
-  <formatVersion>7</formatVersion>
-  <view name="system">
-    <image name="background1" extra="true">
-      <storyboard>
-        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <image name="background" extra="true">
-      <zIndex>90</zIndex>
-      <storyboard>
-        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <video name="videobox" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
-      <path>./../../_inc/anim/video/${synonym}.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.50 0.425</pos>
-      <maxSize>0.15</maxSize>
-      <zIndex>26</zIndex>
-      <storyboard>
-        <animation property="pos" to="0.22 0.425" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <video name="videobox2" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
-      <path>./../../_inc/anim/video/${synonym}-right.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
-      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}-right.mp4</path>
-      <audio>false</audio>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <origin if="${screen.ratio} == '4/3'">0.2 0.5</origin>
-      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-      <pos>0.66 0.425</pos>
-      <maxSize>0.155</maxSize>
-      <zIndex>25</zIndex>
-      <rotation>0</rotation>
-      <storyboard>
-        <animation property="pos" to="0.38 0.425" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <video name="videobox3" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
-      <path>./../../_inc/anim/video/${synonym}-left.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
-      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}-left.mp4</path>
-      <audio>false</audio>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <origin if="${screen.ratio} == '4/3'">0.9 0.5</origin>
-      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-      <pos>0.34 0.425</pos>
-      <maxSize>0.155</maxSize>
-      <zIndex>25</zIndex>
-      <rotation>0</rotation>
-      <storyboard>
-        <animation property="pos" to="0.06 0.425" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <text name="TextDate" extra="true">
-      <pos>0.49 0.2</pos>
-      <text>2008</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextManufacturer" extra="true">
-      <pos>0.49 0.255</pos>
-      <text>Examu</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.04</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextName" extra="true">
-      <pos>0.49 0.30</pos>
-      <size>0.5 0</size>
-      <text>eX-Board</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.065</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextDesc" extra="true">
-      <size>0.5 0</size>
-      <pos>0.49 0.4</pos>
-      <text>The eX-Board, introduced in 2008, is a proprietary arcade system board created by Examu. It served as the foundation for their video games.
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-left" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.3 0.2</origin>
+			<origin if="${screen.ratio} == '16/10'">0.4 0.35</origin>
+			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+			<pos>0.285 0.36</pos>
+			<minSize>0.1 0.3</minSize>
+			<rotation>26</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>27</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.005 0.36" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-right" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.7 0.2</origin>
+			<origin if="${screen.ratio} == '16/10'">0.6 0.35</origin>
+			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+			<pos>0.72 0.36</pos>
+			<minSize>0.1 0.3</minSize>
+			<rotation>-26</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>27</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.44 0.36" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.50 0.435</pos>
+			<maxSize>0.2</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.435" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-left" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.48 0.26</origin>
+			<origin if="${screen.ratio} == '16/10'">0.52 0.44</origin>
+			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+			<pos>0.365 0.43</pos>
+			<maxSize>0.135</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.175</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.15</maxSize>
+			<rotation>-64</rotation>
+			<storyboard>
+				<animation property="pos" to="0.085 0.43" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-right" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.52 0.26</origin>
+			<origin if="${screen.ratio} == '16/10'">0.48 0.44</origin>
+			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+			<pos>0.635 0.435</pos>
+			<maxSize>0.135</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.175</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.15</maxSize>
+			<rotation>64</rotation>
+			<storyboard>
+				<animation property="pos" to="0.355 0.435" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.50 0.433</pos>
+			<maxSize>0.155</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.195</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.165</maxSize>
+			<zIndex>26</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.433" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<video name="videobox2" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+			<audio>false</audio>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.48 0.325</origin>
+			<origin if="${screen.ratio} == '16/10'">0.48 0.44</origin>
+			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+			<pos>0.64 0.435</pos>
+			<maxSize>0.13</maxSize>
+			<zIndex>25</zIndex>
+			<rotation>0</rotation>
+			<storyboard>
+				<animation property="pos" to="0.36 0.435" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<video name="videobox3" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+			<audio>false</audio>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.52 0.325</origin>
+			<origin if="${screen.ratio} == '16/10'">0.52 0.44</origin>
+			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+			<pos>0.36 0.435</pos>
+			<maxSize>0.13</maxSize>
+			<zIndex>25</zIndex>
+			<rotation>0</rotation>
+			<storyboard>
+				<animation property="pos" to="0.08 0.435" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>2008</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>Examu</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>eX-Board</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>The eX-Board, introduced in 2008, is a proprietary arcade system board created by Examu. It served as the foundation for their video games.
 
 The hardware specifications of eX-Board include a fanless Via C7 NanoBGA2 CPU (based on the X86 architecture), a Via CN700 and VT8237R Plus chipset, 1 GB DDR2 SDRAM (with VRAM sharing), and integrated S3 UniChrome Pro AGP graphics with MPEG-2 decoding acceleration. Initially, Examu developed games specifically for eX-Board, but later shifted their focus to Taito’s NESiCAxLive arcade delivery system.
 Support for eX-Board ceased in December 2013.</text>
-      <text lang="it">La eX-Board, introdotta nel 2008, è una scheda di sistema arcade proprietaria creata da Examu. È servita come base per i loro videogiochi.
+			<text lang="it">La eX-Board, introdotta nel 2008, è una scheda di sistema arcade proprietaria creata da Examu. È servita come base per i loro videogiochi.
 
 Le specifiche hardware della eX-Board includono una CPU Via C7 NanoBGA2 senza ventola (basata sull'architettura X86), un chipset Via CN700 e VT8237R Plus, 1 GB di DDR2 SDRAM (con condivisione della VRAM) e grafica integrata S3 UniChrome Pro AGP con accelerazione della decodifica MPEG-2. Inizialmente, Examu sviluppò giochi specifici per eX-Board, ma in seguito spostò la propria attenzione sul sistema di distribuzione arcade NESiCAxLive di Taito.
 Il supporto per eX-Board è cessato nel dicembre 2013.</text>
-      <text lang="fr">L'eX-Board, introduite en 2008, est une carte d'arcade propriétaire créée par Examu. Elle a servi de base à leurs jeux vidéo.
+			<text lang="fr">L'eX-Board, introduite en 2008, est une carte d'arcade propriétaire créée par Examu. Elle a servi de base à leurs jeux vidéo.
 
 Les spécifications matérielles de l'eX-Board comprennent un processeur Via C7 NanoBGA2 sans ventilateur (basé sur l'architecture X86), un chipset Via CN700 et VT8237R Plus, 1 Go de SDRAM DDR2 (avec partage de VRAM), et une carte graphique AGP S3 UniChrome Pro intégrée avec accélération du décodage MPEG-2. Au départ, Examu a développé des jeux spécifiquement pour l'eX-Board, mais s'est ensuite concentré sur le système d'arcade NESiCAxLive de Taito.
 Le support de l'eX-Board a cessé en décembre 2013.</text>
-      <text lang="de">Das 2008 eingeführte eX-Board ist ein proprietäres Arcade-System-Board, das von Examu entwickelt wurde. Es diente als Grundlage für ihre Videospiele.
+			<text lang="de">Das 2008 eingeführte eX-Board ist ein proprietäres Arcade-System-Board, das von Examu entwickelt wurde. Es diente als Grundlage für ihre Videospiele.
 
 Zu den Hardwarespezifikationen des eX-Boards gehören eine lüfterlose Via C7 NanoBGA2-CPU (basierend auf der X86-Architektur), ein Via CN700- und VT8237R Plus-Chipsatz, 1 GB DDR2-SDRAM (mit VRAM-Sharing) und integrierte S3 UniChrome Pro AGP-Grafik mit MPEG-2-Dekodierungsbeschleunigung. Anfangs entwickelte Examu Spiele speziell für das eX-Board, später verlagerte sich der Schwerpunkt auf das NESiCAxLive Arcade-System von Taito.
 Die Unterstützung für eX-Board wurde im Dezember 2013 eingestellt.</text>
-      <text lang="es">La eX-Board, presentada en 2008, es una placa de sistema arcade patentada creada por Examu. Sirvió de base para sus videojuegos.
+			<text lang="es">La eX-Board, presentada en 2008, es una placa de sistema arcade patentada creada por Examu. Sirvió de base para sus videojuegos.
 
 Las especificaciones de hardware de la eX-Board incluyen una CPU Via C7 NanoBGA2 sin ventilador (basada en la arquitectura X86), un chipset Via CN700 y VT8237R Plus, 1 GB de SDRAM DDR2 (con uso compartido de VRAM) y gráficos integrados S3 UniChrome Pro AGP con aceleración de descodificación MPEG-2. En un principio, Examu desarrolló juegos específicamente para la eX-Board, pero más tarde se centró en el sistema arcade NESiCAxLive de Taito.
 El soporte para eX-Board cesó en diciembre de 2013.</text>
-      <text lang="ru">Плата eX-Board, представленная в 2008 году, - это фирменная плата для аркадных систем, созданная компанией Examu. Она послужила основой для их видеоигр.
+			<text lang="ru">Плата eX-Board, представленная в 2008 году, - это фирменная плата для аркадных систем, созданная компанией Examu. Она послужила основой для их видеоигр.
 
 Аппаратные характеристики eX-Board включают в себя безвентиляторный процессор Via C7 NanoBGA2 (на базе архитектуры X86), чипсет Via CN700 и VT8237R Plus, 1 Гб DDR2 SDRAM (с разделением VRAM) и интегрированную графику S3 UniChrome Pro AGP с ускорением декодирования MPEG-2. Изначально компания Examu разрабатывала игры специально для eX-Board, но позже переключила свое внимание на аркадную систему доставки NESiCAxLive от Taito.
 Поддержка eX-Board была прекращена в декабре 2013 года.</text>
-      <text lang="pl">eX-Board, wprowadzona na rynek w 2008 roku, jest zastrzeżoną płytą systemu arcade stworzoną przez Examu. Służyła ona jako podstawa ich gier wideo.
+			<text lang="pl">eX-Board, wprowadzona na rynek w 2008 roku, jest zastrzeżoną płytą systemu arcade stworzoną przez Examu. Służyła ona jako podstawa ich gier wideo.
 
 Specyfikacja sprzętowa eX-Board obejmuje bezwentylatorowy procesor Via C7 NanoBGA2 (oparty na architekturze X86), chipset Via CN700 i VT8237R Plus, 1 GB pamięci DDR2 SDRAM (ze współdzieloną pamięcią VRAM) oraz zintegrowany układ graficzny S3 UniChrome Pro AGP z akceleracją dekodowania MPEG-2. Początkowo Examu opracowywało gry specjalnie dla eX-Board, ale później skupiło się na systemie zręcznościowym Taito NESiCAxLive.
 Wsparcie dla eX-Board zakończyło się w grudniu 2013 roku.</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-  </view>
+		</text>
+	</view>
 </theme>

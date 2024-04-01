@@ -1,124 +1,71 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <theme>
-  <formatVersion>7</formatVersion>
-  <view name="system">
-    <image name="background1" extra="true">
-      <storyboard>
-        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <image name="background" extra="true">
-      <zIndex>90</zIndex>
-      <storyboard>
-        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <video name="videocrton" extra="true">
-      <path>./../../_inc/anim/video/CRT_ON.mp4</path>
-      <delay>0</delay>
-      <loops>0</loops>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.5 0.36</pos>
-      <maxSize>0.17</maxSize>
-      <maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
-      <zIndex>26</zIndex>
-    </video>
-    <video name="videobox" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
-      <path>./../../_inc/anim/video/${synonym}.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.5 0.36</pos>
-      <maxSize>0.17</maxSize>
-      <maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
-      <zIndex>25</zIndex>
-      <storyboard>
-        <animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <text name="TextDate" extra="true">
-      <pos>0.49 0.2</pos>
-      <text>1983</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextManufacturer" extra="true">
-      <pos>0.49 0.255</pos>
-      <text>Sony</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.04</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextName" extra="true">
-      <pos>0.49 0.30</pos>
-      <size>0.5 0</size>
-      <text>SMC-777</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.065</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextDesc" extra="true">
-      <size>0.5 0</size>
-      <pos>0.49 0.40</pos>
-      <text>The Sony SMC-777 is a personal computer that was released in November 1983 by Sony. It was aimed for the home market and featured a built-in 3.5-inch floppy disk drive, which was the first of its kind. The SMC-777 was designed to be easy to use, with a menu-based operating system called Sony Filer and a floppy disk containing various software applications, such as programming languages, games, and a word processor.
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+			<pos>0.502 0.36</pos>
+			<maxSize>0.22</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.222 0.36" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+			<pos>0.502 0.36</pos>
+			<maxSize>0.19</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.222 0.36" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>1983</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>Sony</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>SMC-777</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>The Sony SMC-777 is a personal computer that was released in November 1983 by Sony. It was aimed for the home market and featured a built-in 3.5-inch floppy disk drive, which was the first of its kind. The SMC-777 was designed to be easy to use, with a menu-based operating system called Sony Filer and a floppy disk containing various software applications, such as programming languages, games, and a word processor.
 
 The SMC-777 also had enhanced color graphics, with 16 colors and an optional color palette board that could choose from 4,096 colors. The SMC-777 was compatible with the SMC-70, an earlier model that was used for video production. The SMC-777 was followed by the SMC-777C, which had a faster CPU and more memory.</text>
-      <text lang="it">Il Sony SMC-777 è un personal computer rilasciato nel novembre 1983 da Sony. Era destinato al mercato domestico e disponeva di un'unità floppy disk da 3,5 pollici integrata, la prima del suo genere. L'SMC-777 è stato progettato per essere facile da usare, con un sistema operativo basato su menu chiamato Sony Filer e un floppy disk contenente varie applicazioni software, come linguaggi di programmazione, giochi e un word processor.
+			<text lang="it">Il Sony SMC-777 è un personal computer rilasciato nel novembre 1983 da Sony. Era destinato al mercato domestico e disponeva di un'unità floppy disk da 3,5 pollici integrata, la prima del suo genere. L'SMC-777 è stato progettato per essere facile da usare, con un sistema operativo basato su menu chiamato Sony Filer e un floppy disk contenente varie applicazioni software, come linguaggi di programmazione, giochi e un word processor.
 
 L'SMC-777 disponeva anche di una grafica a colori migliorata, con 16 colori e una scheda di tavolozza colori opzionale che permetteva di scegliere tra 4.096 colori. L'SMC-777 era compatibile con l'SMC-70, un modello precedente utilizzato per la produzione video. L'SMC-777 fu seguito dall'SMC-777C, che aveva una CPU più veloce e una maggiore quantità di memoria.</text>
-      <text lang="fr">Le Sony SMC-777 est un ordinateur personnel commercialisé en novembre 1983 par Sony. Il était destiné au marché domestique et comportait un lecteur de disquettes 3,5 pouces intégré, le premier du genre. Le SMC-777 a été conçu pour être facile à utiliser, avec un système d'exploitation à base de menus appelé Sony Filer et une disquette contenant diverses applications logicielles, telles que des langages de programmation, des jeux et un traitement de texte.
+			<text lang="fr">Le Sony SMC-777 est un ordinateur personnel commercialisé en novembre 1983 par Sony. Il était destiné au marché domestique et comportait un lecteur de disquettes 3,5 pouces intégré, le premier du genre. Le SMC-777 a été conçu pour être facile à utiliser, avec un système d'exploitation à base de menus appelé Sony Filer et une disquette contenant diverses applications logicielles, telles que des langages de programmation, des jeux et un traitement de texte.
 
 Le SMC-777 disposait également de graphismes couleur améliorés, avec 16 couleurs et une palette de couleurs optionnelle permettant de choisir parmi 4 096 couleurs. Le SMC-777 était compatible avec le SMC-70, un modèle antérieur utilisé pour la production vidéo. Le SMC-777 a été suivi par le SMC-777C, qui disposait d'un processeur plus rapide et de plus de mémoire.</text>
-      <text lang="de">Der Sony SMC-777 ist ein Personal Computer, der im November 1983 von Sony veröffentlicht wurde. Er war für den Heimmarkt bestimmt und verfügte über ein eingebautes 3,5-Zoll-Diskettenlaufwerk, das erste seiner Art. Der SMC-777 war so konzipiert, dass er einfach zu bedienen war. Er verfügte über ein menübasiertes Betriebssystem namens Sony Filer und eine Diskette mit verschiedenen Softwareanwendungen wie Programmiersprachen, Spiele und ein Textverarbeitungsprogramm.
+			<text lang="de">Der Sony SMC-777 ist ein Personal Computer, der im November 1983 von Sony veröffentlicht wurde. Er war für den Heimmarkt bestimmt und verfügte über ein eingebautes 3,5-Zoll-Diskettenlaufwerk, das erste seiner Art. Der SMC-777 war so konzipiert, dass er einfach zu bedienen war. Er verfügte über ein menübasiertes Betriebssystem namens Sony Filer und eine Diskette mit verschiedenen Softwareanwendungen wie Programmiersprachen, Spiele und ein Textverarbeitungsprogramm.
 
 Der SMC-777 verfügte außerdem über eine verbesserte Farbgrafik mit 16 Farben und einer optionalen Farbpalettenkarte, die eine Auswahl aus 4.096 Farben ermöglichte. Der SMC-777 war kompatibel mit dem SMC-70, einem Vorgängermodell, das für die Videoproduktion verwendet wurde. Auf den SMC-777 folgte der SMC-777C, der über eine schnellere CPU und mehr Speicher verfügte.</text>
-      <text lang="es">El Sony SMC-777 es un ordenador personal que Sony lanzó al mercado en noviembre de 1983. Estaba destinado al mercado doméstico e incorporaba una unidad de disquete de 3,5 pulgadas, la primera de su clase. El SMC-777 fue diseñado para ser fácil de usar, con un sistema operativo basado en menús llamado Sony Filer y un disquete que contenía varias aplicaciones de software, como lenguajes de programación, juegos y un procesador de textos.
+			<text lang="es">El Sony SMC-777 es un ordenador personal que Sony lanzó al mercado en noviembre de 1983. Estaba destinado al mercado doméstico e incorporaba una unidad de disquete de 3,5 pulgadas, la primera de su clase. El SMC-777 fue diseñado para ser fácil de usar, con un sistema operativo basado en menús llamado Sony Filer y un disquete que contenía varias aplicaciones de software, como lenguajes de programación, juegos y un procesador de textos.
 
 El SMC-777 también disponía de gráficos en color mejorados, con 16 colores y una tarjeta opcional de paleta de colores que permitía elegir entre 4.096 colores. El SMC-777 era compatible con el SMC-70, un modelo anterior que se utilizaba para la producción de vídeo. Al SMC-777 le siguió el SMC-777C, que tenía una CPU más rápida y más memoria.</text>
-      <text lang="ru">Sony SMC-777 - это персональный компьютер, выпущенный в ноябре 1983 года компанией Sony. Он предназначался для домашнего рынка и был оснащен встроенным 3,5-дюймовым дисководом для дискет, который был первым в своем роде. SMC-777 был разработан как простой в использовании компьютер, с операционной системой Sony Filer, основанной на меню, и дискетой, содержащей различные программные приложения, такие как языки программирования, игры и текстовый процессор.
+			<text lang="ru">Sony SMC-777 - это персональный компьютер, выпущенный в ноябре 1983 года компанией Sony. Он предназначался для домашнего рынка и был оснащен встроенным 3,5-дюймовым дисководом для дискет, который был первым в своем роде. SMC-777 был разработан как простой в использовании компьютер, с операционной системой Sony Filer, основанной на меню, и дискетой, содержащей различные программные приложения, такие как языки программирования, игры и текстовый процессор.
 
 SMC-777 также имел улучшенную цветную графику с 16 цветами и дополнительной платой цветовой палитры, позволяющей выбирать из 4 096 цветов. SMC-777 был совместим с SMC-70, более ранней моделью, которая использовалась для производства видео. За SMC-777 последовала модель SMC-777C, которая имела более быстрый процессор и больший объем памяти.</text>
-      <text lang="pl">Sony SMC-777 to komputer osobisty wydany w listopadzie 1983 roku przez firmę Sony. Był on przeznaczony na rynek domowy i posiadał wbudowany 3,5-calowy napęd dyskietek, który był pierwszym tego typu urządzeniem. SMC-777 został zaprojektowany tak, aby był łatwy w użyciu, z systemem operacyjnym opartym na menu o nazwie Sony Filer i dyskietką zawierającą różne aplikacje, takie jak języki programowania, gry i edytor tekstu.
+			<text lang="pl">Sony SMC-777 to komputer osobisty wydany w listopadzie 1983 roku przez firmę Sony. Był on przeznaczony na rynek domowy i posiadał wbudowany 3,5-calowy napęd dyskietek, który był pierwszym tego typu urządzeniem. SMC-777 został zaprojektowany tak, aby był łatwy w użyciu, z systemem operacyjnym opartym na menu o nazwie Sony Filer i dyskietką zawierającą różne aplikacje, takie jak języki programowania, gry i edytor tekstu.
 
 SMC-777 miał również ulepszoną kolorową grafikę, z 16 kolorami i opcjonalną paletą kolorów, która mogła wybierać spośród 4096 kolorów. SMC-777 był kompatybilny z SMC-70, wcześniejszym modelem, który był używany do produkcji wideo. Następcą SMC-777 był SMC-777C, który miał szybszy procesor i więcej pamięci.</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-  </view>
+		</text>
+	</view>
 </theme>

@@ -2,28 +2,19 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videocrton" extra="true">
-			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
-			<delay>0</delay>
-			<loops>0</loops>
-			<effect>none</effect>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
 			<pos>0.5 0.39</pos>
-			<maxSize>0.24</maxSize>
-			<zIndex>26</zIndex>
-		</video>
+			<maxSize>0.25</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
 		<video name="videobox" extra="true">
 			<path>{random}</path>
 			<path>./../../_inc/anim/video/snes-msu1.mp4</path>
@@ -33,6 +24,8 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
 			<pos>0.5 0.39</pos>
 			<maxSize>0.24</maxSize>
 			<zIndex>25</zIndex>
@@ -41,45 +34,13 @@
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1990</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Nintendo / Sony</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>Super NES CD-ROM System</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<!-- Support different names for regional consoles/computers -->
 		<text name="TextName" extra="true" region="eu"/>
@@ -88,8 +49,6 @@
 			<text>Super Famicom CD-ROM Adapter</text>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The Super NES CD-ROM System (commonly shortened as the SNES-CD), known as the Super Famicom CD-ROM Adapter in Japan, is an unreleased add-on for the Super Nintendo Entertainment System (SNES) video game console. It built upon the functionality of the cartridge-based SNES by adding support for a CD-ROM-based format known as Super Disc.
 
 The SNES-CD was developed in a joint venture between Nintendo and Sony. As well as the SNES add-on, Sony planned to release it as a hybrid console, the PlayStation, similar to Sharp's Twin Famicom and NEC's TurboDuo. Another partnership with Philips yielded a few Nintendo-themed games for the CD-i platform instead of the SNES-CD.
@@ -125,16 +84,6 @@ Après l'annulation de la SNES-CD, Sony a développé sa propre console sous le 
 Lo SNES-CD è stato sviluppato in una joint venture tra Nintendo e Sony. Oltre al componente aggiuntivo per SNES, Sony prevedeva di rilasciare una console ibrida, la PlayStation, simile al Twin Famicom di Sharp e al TurboDuo di NEC. Un'altra collaborazione con Philips portò alla realizzazione di alcuni giochi a tema Nintendo per la piattaforma CD-i invece che per lo SNES-CD.
 
 Dopo la cancellazione dello SNES-CD, Sony sviluppò una propria console con il nome di PlayStation. La prima console PlayStation divenne il principale concorrente della successiva console di Nintendo, il Nintendo 64.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

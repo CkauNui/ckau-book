@@ -2,29 +2,20 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videocrton" extra="true">
-			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
-			<delay>0</delay>
-			<loops>0</loops>
-			<effect>none</effect>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>	
+			<origin if="${screen.ratio} == '4/3'">0.5 0.28</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>
 			<pos>0.5 0.36</pos>
-			<maxSize>0.24</maxSize>
-			<zIndex>26</zIndex>
-		</video>
+			<maxSize>0.22</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
 		<video name="videobox" extra="true">
 			<path>{random}</path>
 			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
@@ -36,58 +27,27 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>	
+			<origin if="${screen.ratio} == '4/3'">0.5 0.28</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>
 			<pos>0.5 0.36</pos>
 			<maxSize>0.21</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.25</maxSize>
 			<zIndex>25</zIndex>
 			<storyboard>
 				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1990</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Commodore</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>64 Games System</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.40</pos>
 			<text>The Commodore 64 Games System (often abbreviated C64GS) is the cartridge-based home video game console version of the popular Commodore 64 home computer. It was released in December 1990 by Commodore into a booming console market dominated by Nintendo and Sega. It was only released in Europe and was a considerable commercial failure. The C64GS came bundled with a cartridge containing four games: Fiendish Freddy's Big Top O'Fun, International Soccer, Flimbo's Quest, and Klax.
 
 The C64GS was not Commodore's first gaming system based on the C64 hardware. However, unlike the 1982 MAX Machine (a game-oriented computer based on a very cut-down version of the same hardware family), the C64GS is internally very similar to the complete C64, with which it is compatible.</text>
@@ -109,16 +69,6 @@ Le C64GS n'était pas le premier système de jeu de Commodore basé sur le maté
 			<text lang="it">Il Commodore 64 Games System (spesso abbreviato in C64GS) è la versione della console per videogiochi domestici basata su cartucce del popolare home computer Commodore 64. È stato rilasciato nel dicembre 1990 da Commodore in un mercato delle console in piena espansione, dominato da Nintendo e Sega. Fu distribuito solo in Europa e fu un notevole insuccesso commerciale. Il C64GS veniva fornito con una cartuccia contenente quattro giochi: Fiendish Freddy's Big Top O'Fun, International Soccer, Flimbo's Quest e Klax.
 
 Il C64GS non fu il primo sistema di gioco Commodore basato sull'hardware del C64. Tuttavia, a differenza della MAX Machine del 1982 (un computer orientato ai giochi basato su una versione molto ridotta della stessa famiglia di hardware), il C64GS è internamente molto simile al C64 completo, con cui è compatibile.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

@@ -2,16 +2,77 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-left" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.3 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
+			<pos>0.305 0.45</pos>
+			<minSize>0.1 0.3</minSize>
+			<rotation>14</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>27</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.025 0.45" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
+		<image name="sysbg-right" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.6 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+			<pos>0.69 0.45</pos>
+			<minSize>0.1 0.3</minSize>
+			<rotation>-14</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>27</zIndex>
 			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.41 0.45" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<pos>0.499 0.47</pos>
+			<maxSize>0.175</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.184</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-left" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
+			<pos>0.392 0.48</pos>
+			<maxSize>0.14</maxSize>
+			<rotation>-76</rotation>
+			<storyboard>
+				<animation property="pos" to="0.112 0.48" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-right" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+			<pos>0.607 0.48</pos>
+			<maxSize>0.14</maxSize>
+			<rotation>76</rotation>
+			<storyboard>
+				<animation property="pos" to="0.327 0.48" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -21,16 +82,19 @@
 			<!-- Loads platform video from addon directory, if available -->
 			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
 			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<pos>0.50 0.465</pos>
-			<maxSize>0.185</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.24</maxSize>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<pos>0.499 0.47</pos>
+			<maxSize>0.162</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.22</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.182</maxSize>
 			<zIndex>26</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.22 0.465" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<video name="videobox2" extra="true">
@@ -42,15 +106,17 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.28 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
 			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
-			<pos>0.635 0.47</pos>
-			<maxSize>0.16</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.20</maxSize>
+			<pos>0.616 0.47</pos>
+			<maxSize>0.14</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
 			<zIndex>25</zIndex>
 			<rotation>0</rotation>
 			<storyboard>
-				<animation property="pos" to="0.355 0.47" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.336 0.47" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<video name="videobox3" extra="true">
@@ -62,61 +128,29 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.72 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
 			<origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
-			<pos>0.365 0.47</pos>
-			<maxSize>0.16</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.20</maxSize>
+			<pos>0.38 0.47</pos>
+			<maxSize>0.14</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
 			<zIndex>25</zIndex>
 			<rotation>0</rotation>
 			<storyboard>
-				<animation property="pos" to="0.085 0.47" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.1 0.47" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>2010</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.03</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Taito</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>NESICAxLive</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>NESiCAxLive (Japanese: ネシカ　クロス　ライブ, Hepburn: Neshika Kurosu Raibu) is a digital distribution system for arcade video games made by Taito, similar to the SEGA ALL.Net game distribution system.
 The NESiCAxLive system consists of an arcade system board combined with a dedicated router to access and download games. The system currently works on the Taito Type X2, Taito Type X Zero, Taito Type X3, and Taito Type X4 arcade boards.
 
@@ -145,16 +179,6 @@ Taito utilise NESiCAxLive non seulement pour distribuer ses propres jeux, mais a
 Il sistema NESiCAxLive consiste in una scheda di sistema arcade combinata con un router dedicato per accedere e scaricare i giochi. Il sistema funziona attualmente sulle schede arcade Taito Type X2, Taito Type X Zero, Taito Type X3 e Taito Type X4.
 
 Taito utilizza NESiCAxLive per distribuire non solo i propri giochi, ma permette anche ad altre aziende di utilizzarlo come piattaforma di pubblicazione. Al momento della sua introduzione, SNK, Cave e Arc System Works avevano accettato di distribuire giochi su NESiCAxLive.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

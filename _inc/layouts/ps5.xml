@@ -1,128 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-  <formatVersion>7</formatVersion>
-  <view name="system">
-    <image name="background1" extra="true">
-      <storyboard>
-        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <image name="background" extra="true">
-      <zIndex>90</zIndex>
-      <storyboard>
-        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <video name="videobox" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
-      <path>./../../_inc/anim/video/${synonym}.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <origin if="${screen.ratio} == '4/3'">0.49 0.5</origin>
-      <pos>0.535 0.46</pos>
-      <maxSize>0.48</maxSize>
-      <maxSize if="${screen.ratio} == '4/3'">0.65</maxSize>
-      <zIndex>25</zIndex>
-      <storyboard>
-        <animation property="pos" to="0.255 0.46" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <text name="TextDate" extra="true">
-      <pos>0.49 0.2</pos>
-      <text>2020</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextManufacturer" extra="true">
-      <pos>0.49 0.255</pos>
-      <text>Sony</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.04</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextName" extra="true">
-      <pos>0.49 0.30</pos>
-      <size>0.5 0</size>
-      <text>Playstation 5</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.065</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextDesc" extra="true">
-      <size>0.5 0</size>
-      <pos>0.49 0.4</pos>
-      <text>The PlayStation 5 (PS5) is a home video game console developed by Sony Interactive Entertainment. The PS5 is part of the ninth generation of video game consoles, along with Microsoft's Xbox Series X/S consoles, which were released in the same month.
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.485</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.495</origin>
+			<pos>0.535 0.479</pos>
+			<maxSize>0.47</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.616</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.513</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.255 0.479" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.485</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.495</origin>
+			<pos>0.535 0.478</pos>
+			<maxSize>0.46</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.613</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.51</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.255 0.478" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>2020</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>Sony</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>Playstation 5</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>The PlayStation 5 (PS5) is a home video game console developed by Sony Interactive Entertainment. The PS5 is part of the ninth generation of video game consoles, along with Microsoft's Xbox Series X/S consoles, which were released in the same month.
 
 The base model includes an optical disc drive compatible with Ultra HD Blu-ray discs. The Digital Edition lacks this drive, as a lower-cost model for buying games only through download. The two variants were launched simultaneously.
 
 The PlayStation 5's main hardware features include a solid-state drive customized for high-speed data streaming to enable significant improvements in storage performance, an AMD GPU capable of 4K resolution display at up to 120 frames per second, hardware-accelerated ray tracing for realistic lighting and reflections, and the Tempest Engine for hardware-accelerated 3D audio effects. Other features include the DualSense controller with haptic feedback, backward compatibility with the majority of PlayStation 4 and PlayStation VR games, and the PlayStation VR2 headset.</text>
-      <text lang="it">La PlayStation 5 (PS5) è una console per videogiochi domestica sviluppata da Sony Interactive Entertainment. La PS5 fa parte della nona generazione di console per videogiochi, insieme alle console Xbox Series X/S di Microsoft, uscite nello stesso mese.
+			<text lang="it">La PlayStation 5 (PS5) è una console per videogiochi domestica sviluppata da Sony Interactive Entertainment. La PS5 fa parte della nona generazione di console per videogiochi, insieme alle console Xbox Series X/S di Microsoft, uscite nello stesso mese.
 
 Il modello base include un'unità disco ottico compatibile con i dischi Ultra HD Blu-ray. La Digital Edition ne è priva, in quanto modello a basso costo per l'acquisto di giochi solo tramite download. Le due varianti sono state lanciate contemporaneamente.
 
 Le principali caratteristiche hardware della PlayStation 5 includono un'unità a stato solido personalizzata per lo streaming di dati ad alta velocità per consentire miglioramenti significativi nelle prestazioni di archiviazione, una GPU AMD in grado di visualizzare la risoluzione 4K fino a 120 fotogrammi al secondo, il ray-tracing accelerato via hardware per un'illuminazione e riflessi realistici e il Tempest Engine per effetti audio 3D accelerati via hardware. Altre caratteristiche includono il controller DualSense con feedback aptico, la retrocompatibilità con la maggior parte dei giochi per PlayStation 4 e PlayStation VR e le cuffie PlayStation VR2.</text>
-      <text lang="fr">La PlayStation 5 (PS5) est une console de jeux vidéo de salon développée par Sony Interactive Entertainment. La PS5 fait partie de la neuvième génération de consoles de jeux vidéo, au même titre que les consoles Xbox Series X/S de Microsoft, qui sont sorties le même mois.
+			<text lang="fr">La PlayStation 5 (PS5) est une console de jeux vidéo de salon développée par Sony Interactive Entertainment. La PS5 fait partie de la neuvième génération de consoles de jeux vidéo, au même titre que les consoles Xbox Series X/S de Microsoft, qui sont sorties le même mois.
 
 Le modèle de base comprend un lecteur de disque optique compatible avec les disques Blu-ray Ultra HD. L'édition numérique est dépourvue de ce lecteur, car il s'agit d'un modèle moins coûteux permettant d'acheter des jeux uniquement par téléchargement. Les deux variantes ont été lancées simultanément.
 
 Les principales caractéristiques matérielles de la PlayStation 5 comprennent un lecteur à semi-conducteurs personnalisé pour un flux de données à grande vitesse afin d'améliorer considérablement les performances de stockage, un GPU AMD capable d'afficher une résolution 4K à 120 images par seconde, le ray tracing accéléré au niveau matériel pour un éclairage et des réflexions réalistes, et le moteur Tempest pour des effets audio 3D accélérés au niveau matériel. Parmi les autres caractéristiques, citons la manette DualSense avec retour haptique, la rétrocompatibilité avec la majorité des jeux PlayStation 4 et PlayStation VR, ainsi que le casque PlayStation VR2.</text>
-      <text lang="de">Die PlayStation 5 (PS5) ist eine von Sony Interactive Entertainment entwickelte Videospielkonsole für den Heimgebrauch. Die PS5 ist Teil der neunten Generation von Videospielkonsolen, zusammen mit den Xbox-Konsolen der Serie X/S von Microsoft, die im selben Monat veröffentlicht wurden.
+			<text lang="de">Die PlayStation 5 (PS5) ist eine von Sony Interactive Entertainment entwickelte Videospielkonsole für den Heimgebrauch. Die PS5 ist Teil der neunten Generation von Videospielkonsolen, zusammen mit den Xbox-Konsolen der Serie X/S von Microsoft, die im selben Monat veröffentlicht wurden.
 
 Das Basismodell verfügt über ein optisches Laufwerk, das mit Ultra HD Blu-ray-Discs kompatibel ist. Bei der Digital Edition fehlt dieses Laufwerk, da es sich um ein preisgünstigeres Modell handelt, bei dem Spiele nur per Download erworben werden können. Die beiden Varianten wurden gleichzeitig auf den Markt gebracht.
 
 Zu den wichtigsten Hardware-Merkmalen der PlayStation 5 gehören ein Solid-State-Laufwerk, das für High-Speed-Daten-Streaming angepasst wurde und eine deutlich verbesserte Speicherleistung ermöglicht, ein AMD-Grafikprozessor, der eine 4K-Auflösung mit bis zu 120 Bildern pro Sekunde darstellen kann, hardwarebeschleunigtes Raytracing für realistische Beleuchtung und Reflexionen sowie die Tempest Engine für hardwarebeschleunigte 3D-Audioeffekte. Weitere Features sind der DualSense-Controller mit haptischem Feedback, Abwärtskompatibilität mit den meisten PlayStation 4- und PlayStation VR-Spielen sowie das PlayStation VR2-Headset.</text>
-      <text lang="es">La PlayStation 5 (PS5) es una videoconsola doméstica desarrollada por Sony Interactive Entertainment. La PS5 forma parte de la novena generación de consolas de videojuegos, junto con las consolas Xbox Series X/S de Microsoft, que salieron a la venta el mismo mes.
+			<text lang="es">La PlayStation 5 (PS5) es una videoconsola doméstica desarrollada por Sony Interactive Entertainment. La PS5 forma parte de la novena generación de consolas de videojuegos, junto con las consolas Xbox Series X/S de Microsoft, que salieron a la venta el mismo mes.
 
 El modelo base incluye una unidad de disco óptico compatible con discos Ultra HD Blu-ray. La Digital Edition carece de esta unidad, como modelo de menor coste para comprar juegos sólo a través de descarga. Las dos variantes se lanzaron simultáneamente.
 
 Las principales características de hardware de la PlayStation 5 incluyen una unidad de estado sólido personalizada para la transmisión de datos a alta velocidad que permite mejoras significativas en el rendimiento del almacenamiento, una GPU AMD capaz de mostrar una resolución 4K a un máximo de 120 fotogramas por segundo, trazado de rayos acelerado por hardware para una iluminación y unos reflejos realistas, y el motor Tempest Engine para efectos de audio 3D acelerados por hardware. Otras características son el mando DualSense con respuesta háptica, la retrocompatibilidad con la mayoría de juegos de PlayStation 4 y PlayStation VR, y el casco PlayStation VR2.</text>
-      <text lang="ru">PlayStation 5 (PS5) - домашняя игровая консоль, разработанная компанией Sony Interactive Entertainment. PS5 относится к девятому поколению игровых консолей, наряду с консолями Xbox Series X/S от Microsoft, которые были выпущены в том же месяце.
+			<text lang="ru">PlayStation 5 (PS5) - домашняя игровая консоль, разработанная компанией Sony Interactive Entertainment. PS5 относится к девятому поколению игровых консолей, наряду с консолями Xbox Series X/S от Microsoft, которые были выпущены в том же месяце.
 
 Базовая модель оснащена оптическим дисководом, совместимым с дисками Ultra HD Blu-ray. В модели Digital Edition этот привод отсутствует, так как она является более дешевой моделью для приобретения игр только через загрузку. Эти два варианта были выпущены одновременно.
 
 Основные аппаратные характеристики PlayStation 5 включают твердотельный накопитель, адаптированный для высокоскоростной передачи данных, что позволяет значительно повысить производительность системы хранения данных, графический процессор AMD, способный отображать информацию в разрешении 4K со скоростью до 120 кадров в секунду, аппаратно ускоренную трассировку лучей для реалистичного освещения и отражений, а также движок Tempest Engine для аппаратно ускоренных 3D-аудиоэффектов. Среди других особенностей - контроллер DualSense с тактильной обратной связью, обратная совместимость с большинством игр для PlayStation 4 и PlayStation VR, а также гарнитура PlayStation VR2.</text>
-      <text lang="pl">PlayStation 5 (PS5) to domowa konsola do gier wideo opracowana przez Sony Interactive Entertainment. PS5 jest częścią dziewiątej generacji konsol do gier wideo, wraz z konsolami Xbox Series X/S firmy Microsoft, które zostały wydane w tym samym miesiącu.
+			<text lang="pl">PlayStation 5 (PS5) to domowa konsola do gier wideo opracowana przez Sony Interactive Entertainment. PS5 jest częścią dziewiątej generacji konsol do gier wideo, wraz z konsolami Xbox Series X/S firmy Microsoft, które zostały wydane w tym samym miesiącu.
 
 Podstawowy model zawiera napęd optyczny kompatybilny z dyskami Ultra HD Blu-ray. Digital Edition nie posiada tego napędu, jako tańszy model do kupowania gier tylko poprzez pobieranie. Oba warianty zostały wprowadzone na rynek jednocześnie.
 
 Główne funkcje sprzętowe PlayStation 5 obejmują dysk półprzewodnikowy dostosowany do szybkiego strumieniowania danych, aby umożliwić znaczną poprawę wydajności pamięci masowej, procesor graficzny AMD zdolny do wyświetlania obrazu w rozdzielczości 4K z prędkością do 120 klatek na sekundę, akcelerowany sprzętowo ray tracing zapewniający realistyczne oświetlenie i odbicia oraz Tempest Engine zapewniający akcelerowane sprzętowo efekty dźwiękowe 3D. Inne funkcje obejmują kontroler DualSense z haptycznym sprzężeniem zwrotnym, wsteczną kompatybilność z większością gier PlayStation 4 i PlayStation VR oraz zestaw słuchawkowy PlayStation VR2.</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-  </view>
+		</text>
+	</view>
 </theme>

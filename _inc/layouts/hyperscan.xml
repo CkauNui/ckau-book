@@ -2,28 +2,19 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videocrton" extra="true">
-			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
-			<delay>0</delay>
-			<loops>0</loops>
-			<effect>none</effect>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
 			<origin>0.5 0.5</origin>
-			<pos>0.5 0.37</pos>
-			<maxSize>0.26</maxSize>
-			<zIndex>26</zIndex>
-		</video>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.31</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
+			<pos>0.5 0.36</pos>
+			<maxSize>0.34</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
 		<video name="videobox" extra="true">
 			<path>{random}</path>
 			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
@@ -35,58 +26,25 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<pos>0.5 0.37</pos>
-			<maxSize>0.26</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.36</maxSize>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.31</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
+			<pos>0.5 0.36</pos>
+			<maxSize>0.31</maxSize>
 			<zIndex>25</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.22 0.37" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>2006</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Mattel</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>HyperScan</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The HyperScan is a home video game console from the toy company Mattel. It is unique in that it includes a 13.56 MHz radio-frequency identification (RFID) scanner that reads and writes to the "cards" which, in turn, activate features in and save data from the game. Players are able to enhance the abilities of their characters by scanning cards.
 
 The games for the system were sold as "Game Packs", which consisted of a game disc accompanied by six game cards (seven for Spider-Man). Additional cards which contained characters, abilities, moves and levels when scanned were part of a six-card "Booster Pack". As with most trading card packs, the cards were randomized, meaning a player looking for a certain card to unlock that element of the game may have had to buy multiple Booster Packs in order to get it (while getting multiple cards for another aspect of the game), or trade it for another with a friend, as was likely intended by the Hyperscan's card aspect.
@@ -122,16 +80,6 @@ Certains jeux nécessitaient plusieurs booster packs. X-Men prévoyait 102 carte
 I giochi per il sistema erano venduti come "Game Pack", che consistevano in un disco di gioco accompagnato da sei carte di gioco (sette per Spider-Man). Le carte aggiuntive, che contenevano personaggi, abilità, mosse e livelli quando venivano scannerizzate, facevano parte di un "Booster Pack" di sei carte. Come nella maggior parte dei pacchetti di carte collezionabili, le carte erano randomizzate, il che significa che un giocatore alla ricerca di una certa carta per sbloccare quell'elemento del gioco poteva dover acquistare più Booster Pack per ottenerla (ottenendo al contempo più carte per un altro aspetto del gioco), oppure scambiarla con un amico, come probabilmente era previsto dall'aspetto delle carte dell'Hyperscan.
 
 Per alcuni giochi erano previsti booster pack multipli. Per X-Men erano previste 102 carte per sbloccare parti del gioco in serie separate "rosse" e "nere"; queste ultime non sono state rilasciate a causa della cancellazione della console.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

@@ -2,29 +2,20 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videocrton" extra="true">
-			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
-			<delay>0</delay>
-			<loops>0</loops>
-			<effect>none</effect>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>	
-			<pos>0.49 0.4</pos>
-			<maxSize>0.24</maxSize>
-			<zIndex>26</zIndex>
-		</video>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.28</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>
+			<pos>0.5 0.36</pos>
+			<maxSize>0.22</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
 		<video name="videobox" extra="true">
 			<path>{random}</path>
 			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
@@ -36,7 +27,9 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>	
+			<origin if="${screen.ratio} == '4/3'">0.5 0.28</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>
 			<pos>0.5 0.36</pos>
 			<maxSize>0.21</maxSize>
 			<zIndex>25</zIndex>
@@ -45,45 +38,13 @@
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1982</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Commodore</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>MAX Machine</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<!-- Support different names for regional consoles/computers -->
 		<text name="TextName" extra="true" region="eu"/>
@@ -93,8 +54,6 @@
 		<text name="TextName" extra="true" region="jp"/>
 		<!-- -->
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.40</pos>
 			<text>MAX Machine, also known as Ultimax in the United States and Canada and VC-10 in Germany, is a Video game console designed and sold by Commodore International in Japan, beginning in early 1982, a predecessor to the popular Commodore 64.
 The unit has a membrane keyboard and 2 KB of RAM internally and 0.5 KB of color RAM (1024 × 4 bits). It uses a television set for a display. It uses the same chipset and 6510 CPU as the Commodore 64, the same SID sound chip, and a MOS Technology 6566 graphics chip, a version of the VIC-II that powers the C-64 graphics for the MAX' static RAM. 
 
@@ -123,16 +82,6 @@ Les logiciels sont chargés à partir de cartouches enfichables - allumer la MAX
 L'unità dispone di una tastiera a membrana e di 2 KB di RAM interna e 0,5 KB di RAM a colori (1024 × 4 bit). Utilizza un televisore come display. Utilizza lo stesso chipset e la stessa CPU 6510 del Commodore 64, lo stesso chip audio SID e un chip grafico MOS Technology 6566, una versione del VIC-II che alimenta la grafica del C-64 per la RAM statica del MAX. 
 
 Il software viene caricato da cartucce plug-in: accendendo il MAX senza cartucce inserite si ottiene solo una schermata vuota. L'architettura delle cartucce ROM è compatibile con quella del C-64, quindi le cartucce MAX funzionano nel C-64.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

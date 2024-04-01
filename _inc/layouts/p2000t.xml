@@ -2,16 +2,18 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.27</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.42</origin>
+			<origin if="${screen.ratio} == '21/9'">0.37 0.5</origin>
+			<pos>0.44 0.36</pos>
+			<maxSize>0.21</maxSize>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.16 0.36" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -23,7 +25,8 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.62 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.27</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.42</origin>
 			<origin if="${screen.ratio} == '21/9'">0.37 0.5</origin>
 			<pos>0.44 0.36</pos>
 			<maxSize>0.2</maxSize>
@@ -33,49 +36,15 @@
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1980</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Philips</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>P2000T</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The Philips P2000T home computer was Philips' first real entry in the home computer market in 1980, after the Philips Videopac G7000 game system (better known in North America as the Magnavox Odyssey²) which they already sold to compete with the Atari 2600 and similar game systems.
 
 Philips used components they already produced for other markets (television sets and dictation machines) to quickly design a small computer system. It was partially designed by Austrian professor Dieter Hammer. They also copied the ROM cartridge system from their Videopac G7000 game system. One of these cartridges contained Microsoft BASIC. It was also possible to use cassette tape floppies.
@@ -98,16 +67,6 @@ Philips a utilisé des composants qu'elle produisait déjà pour d'autres march�
 			<text lang="it">Il computer domestico Philips P2000T è stato il primo vero ingresso di Philips nel mercato dei computer domestici nel 1980, dopo il sistema di gioco Philips Videopac G7000 (meglio conosciuto in Nord America come Magnavox Odyssey²), già venduto per competere con l'Atari 2600 e sistemi di gioco simili.
 
 Philips utilizzò i componenti già prodotti per altri mercati (televisori e dettatrici) per progettare rapidamente un piccolo sistema informatico. Il sistema fu parzialmente progettato dal professore austriaco Dieter Hammer. Inoltre, copiarono il sistema di cartucce ROM dal loro sistema di gioco Videopac G7000. Una di queste cartucce conteneva il Microsoft BASIC. Era anche possibile utilizzare floppy su cassetta.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

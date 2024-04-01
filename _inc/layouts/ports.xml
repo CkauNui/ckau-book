@@ -2,15 +2,20 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image if="${screen.ratio} == '21/9'" name="sysbg-right" extra="true">
-			<visible>false</visible>
-		</image>
-		<image if="${screen.ratio} == '21/9'" name="sysbg-right-fixed" extra="true">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
 			<origin>0.5 0.5</origin>
-			<pos>0.9 0.5</pos>
-			<minSize>0.52 1.1</minSize>
-			<color>${sysColor}</color>
-			<path>./../../_inc/images/space.png</path>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.41</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.465</origin>
+			<pos>0.5 0.41</pos>
+			<maxSize>0.36</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.473</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.3925</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.41" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
 			<path>{random}</path>
@@ -19,14 +24,43 @@
 			<!-- Loads platform video from addon directory, if available -->
 			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
 			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.41</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.465</origin>
 			<pos>0.5 0.41</pos>
 			<maxSize>0.351</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.5 0.5</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.466</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.389</maxSize>
 			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.41" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
 		</video>
+		<text name="TextDate" extra="true">
+			<text/>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>Collection</text>
+			<text lang="pl">Kolekcja</text>
+			<text lang="ru">Коллекция</text>
+			<text lang="es">Recopilación</text>
+			<text lang="fr">Collection</text>
+			<text lang="it">Collezione</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>Ports</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>Ports of games and their engines for Linux and modern operating systems often provide many useful features, such as improved controls, support for larger resolutions, removal of various restrictions and much more.</text>
+			<text lang="pl">Porty gier i ich silników dla Linuksa i nowoczesnych systemów operacyjnych często zapewniają wiele przydatnych funkcji, takich jak ulepszone sterowanie, obsługa większych rozdzielczości, usuwanie różnych ograniczeń i wiele więcej.</text>
+			<text lang="ru">Порты игр и их движков под Linux и современные ОС, часто предоставляют много полезных функций, таких как улучшенное управление, поддержка больших разрешений, снятие различных ограничений и много чего ещё.</text>
+			<text lang="es">Los ports de juegos y sus motores para Linux y sistemas operativos modernos suelen ofrecer muchas funciones útiles, como controles mejorados, compatibilidad con resoluciones mayores, eliminación de diversas restricciones y mucho más.</text>
+			<text lang="de">Portierungen von Spielen und ihren Engines für Linux und moderne Betriebssysteme bieten oft viele nützliche Funktionen wie verbesserte Steuerung, Unterstützung für größere Auflösungen, Aufhebung verschiedener Einschränkungen und vieles mehr.</text>
+			<text lang="fr">Les portages de jeux et leurs moteurs pour Linux et les systèmes d'exploitation modernes offrent souvent de nombreuses fonctionnalités utiles telles que des contrôles améliorés, la prise en charge de résolutions plus importantes, la suppression de diverses restrictions et bien d'autres choses encore.</text>
+			<text lang="it">I porting dei giochi e dei loro motori per Linux e i sistemi operativi moderni spesso forniscono molte caratteristiche utili, come controlli migliorati, supporto per risoluzioni più grandi, rimozione di varie restrizioni e molto altro ancora.</text>
+		</text>
 	</view>
 </theme>

@@ -2,17 +2,21 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
-		<path>./../../_inc/anim/gbc.png</path>
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<image name="sysart" extra="true">
+			<path>./../../_inc/anim/gbc.png</path>
+			<path>./../../../ckau-book-addons/_inc/anim/4K/gbc.png</path>
 		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.214</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.405</origin>
+			<pos>0.5 0.32</pos>
+			<maxSize>0.225</maxSize>
 			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.22 0.32" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -22,15 +26,16 @@
 			<!-- Loads platform video from addon directory, if available -->
 			<path>./../../../ckau-book-addons/_inc/anim/video/gbc.mp4</path>
 			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<pos>0.5 0.32</pos>
-			<maxSize>0.215</maxSize>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.214</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.405</origin>
+			<pos>0.499 0.3192</pos>
+			<maxSize>0.211</maxSize>
 			<zIndex>25</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.22 0.32" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.219 0.3192" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<video name="videoglich" extra="true">
@@ -38,6 +43,8 @@
             <delay>0</delay>
             <effect>none</effect>
  			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.214</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.405</origin>
 			<pos>0.5 0.32</pos>
 			<maxSize>0.215</maxSize>
             <zIndex>26</zIndex>
@@ -47,49 +54,16 @@
             </storyboard>
         </video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1998</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
+			
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Nintendo</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>Game Boy Color</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The Game Boy Color (commonly abbreviated as GBC) is a handheld game console, manufactured by Nintendo, which was released in Japan on October 21, 1998 and to international markets that November. It is the successor to the original Game Boy and is part of the Game Boy family.
 
 The GBC features a color screen rather than monochrome, but it is not backlit. It is slightly thicker and taller and features a slightly smaller screen than the Game Boy Pocket, its immediate predecessor in the Game Boy line. As with the original Game Boy, it has a custom 8-bit processor made by Sharp that is considered a hybrid between the Intel 8080 and the Zilog Z80. The American English spelling of the system's name, Game Boy Color, remains consistent throughout the world.</text>
@@ -115,16 +89,6 @@ La GBC est dotée d'un écran couleur plutôt que monochrome, mais il n'est pas 
 			<text lang="it">Il Game Boy Color (comunemente abbreviato in GBC) è una console portatile per videogiochi, prodotta da Nintendo, uscita in Giappone il 21 ottobre 1998 e sui mercati internazionali nel novembre dello stesso anno. È il successore del Game Boy originale e fa parte della famiglia Game Boy.
 
 Il GBC ha uno schermo a colori anziché monocromatico, ma non è retroilluminato. È leggermente più spesso e più alto e ha uno schermo leggermente più piccolo del Game Boy Pocket, il suo immediato predecessore nella linea Game Boy. Come il Game Boy originale, è dotato di un processore personalizzato a 8 bit prodotto da Sharp, considerato un ibrido tra l'Intel 8080 e lo Zilog Z80. L'ortografia americana del nome del sistema, Game Boy Color, rimane costante in tutto il mondo.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

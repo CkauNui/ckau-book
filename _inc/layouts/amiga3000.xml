@@ -2,16 +2,17 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+			<pos>0.499 0.354</pos>
+			<maxSize>0.245</maxSize>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.219 0.354" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -25,57 +26,25 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<pos>0.5 0.354</pos>
-			<maxSize>0.215</maxSize>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+			<pos>0.499 0.354</pos>
+			<maxSize>0.22</maxSize>
 			<zIndex>25</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.22 0.354" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.219 0.354" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1990</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Commodore</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>Amiga 3000</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The Amiga 3000, or A3000, is a personal computer released by Commodore in June 1990. It is the successor to the Amiga 2000 and its upgraded model Amiga 2500 with more processing speed, improved graphics, and a new revision of the operating system.
 
 Its predecessors, the Amiga 500, 1000 and 2000, share the same fundamental system architecture and consequently perform without much variation in processing speed despite considerable variation in purchase price. The A3000 however, was entirely reworked and rethought as a high-end workstation. The new Motorola 32-bit 68030 CPU, 68882 math co-processor, and 32-bit system memory increase the integer processing speed by a factor of 5 to 18, and the floating-point processing speed by a factor of 7 to 200 times. The new 32-bit Zorro III expansion slots provide for faster and more powerful expansion capabilities.
@@ -111,16 +80,6 @@ Comme les Amiga précédents, le 3000 utilise un système d'exploitation 32 bits
 I suoi predecessori, Amiga 500, 1000 e 2000, condividono la stessa architettura di sistema fondamentale e, di conseguenza, non presentano grandi variazioni in termini di velocità di elaborazione, nonostante la notevole variazione del prezzo di acquisto. L'A3000, tuttavia, è stato interamente rielaborato e ripensato come una workstation di fascia alta. La nuova CPU Motorola 68030 a 32 bit, il coprocessore matematico 68882 e la memoria di sistema a 32 bit aumentano la velocità di elaborazione dei numeri interi di un fattore compreso tra 5 e 18 e la velocità di elaborazione in virgola mobile di un fattore compreso tra 7 e 200 volte. I nuovi slot di espansione Zorro III a 32 bit consentono capacità di espansione più rapide e potenti.
 
 In comune con i precedenti Amiga, il 3000 esegue un sistema operativo a 32 bit chiamato AmigaOS. La versione 2.0 è generalmente considerata un'interfaccia più ergonomica e attraente rispetto alle versioni precedenti, che erano state progettate pensando ai televisori come minimo comune denominatore. L'accesso per gli sviluppatori di applicazioni è stato semplificato.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

@@ -2,16 +2,15 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.495</pos>
+			<maxSize>0.342</maxSize>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.22 0.495" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -21,61 +20,26 @@
 			<!-- Loads platform video from addon directory, if available -->
 			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
 			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<pos>0.5 0.495</pos>
-			<maxSize>0.332</maxSize>
+			<pos>0.5 0.493</pos>
+			<maxSize>0.33</maxSize>
 			<zIndex>25</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.22 0.495" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.22 0.493" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>2001</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>GamePark</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>GP32</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The GP32 (GamePark 32) is a handheld game console developed by the South Korean company Game Park. It was released on November 23, 2001, in South Korea and distributed in some parts of Europe.
 The overall design is not unlike the original version of the Game Boy Advance. The GP32 is based on a 133 MHz ARM 9 CPU and 8 MB of SDRAM. Unlike other handheld gaming systems, which tend to be proprietary cartridge-based, the GP32 uses SmartMedia cards (SMC) for storing programs and data, making it accessible for amateur developers as no further development hardware is required.
 
@@ -103,16 +67,6 @@ La console est équipée d'un mini-joystick à huit positions, de deux boutons p
 Il design generale non è dissimile dalla versione originale del Game Boy Advance. Il GP32 è basato su una CPU ARM 9 da 133 MHz e 8 MB di SDRAM. A differenza di altri sistemi di gioco portatili, che tendono a essere basati su cartucce proprietarie, il GP32 utilizza schede SmartMedia (SMC) per la memorizzazione di programmi e dati, rendendolo accessibile agli sviluppatori amatoriali, in quanto non richiede ulteriore hardware di sviluppo.
 
 La console è dotata di un controller mini-joystick a otto vie basato su microinterruttori, due pulsanti principali ("A" e "B"), due pulsanti a spalla su ciascun lato dello slot SMC ("L" e "R") e altri due pulsanti di menu su ciascun lato dello schermo ("SELECT" e "START"), realizzati in una gomma morbida e traslucida. La console dispone anche di una porta USB 1.1 per il collegamento con un computer host, di una porta di espansione seriale, di un ingresso per l'alimentatore da 3,3 V, di un connettore per le cuffie e di uno scomparto posteriore per due batterie AA.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

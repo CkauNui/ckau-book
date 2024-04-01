@@ -5,19 +5,25 @@
 	<view name="system">
 		<!-- Descriptions background -->
 		<image name="background" extra="true">
-			<opacity>0.9</opacity>
-		</image>
-		<image name="sysbg-right" extra="true">
 			<origin>0.5 0.5</origin>
-			<pos>1 0.5</pos>
-			<minSize>0.38 1.1</minSize>
-			<minSize if="${screen.ratio} == '4/3'">0.38 1.1</minSize>
-			<minSize if="${screen.ratio} == '21/9'">0.52 1.1</minSize>
-			<color>${sysColor}</color>
+			<pos>1.5 0.5</pos>
+			<minSize>1 1.1</minSize>
+			<color>14141420</color>
 			<path>./../../_inc/images/space.png</path>
+			<zIndex>90</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.85 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
+				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
-		</image>		
+		</image>
+		<text name="info1, info2, info3, info4, info5, info6, info7, info8, info9, info10, info11, info12" extra="static">
+			<color>FFFFFF</color>
+			<alignment>left</alignment>
+			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontSize>0.02</fontSize>
+			<size>0.4 0.03</size>
+			<glowColor>00000016</glowColor>
+			<glowSize>2</glowSize>
+		</text>
 	</view>
 </theme>

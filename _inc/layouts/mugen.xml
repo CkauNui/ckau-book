@@ -2,16 +2,20 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.365</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.454</origin>ы
+			<origin if="${screen.ratio} == '21/9'">0.535 0.5</origin>
+			<pos>0.499 0.384</pos>
+			<maxSize>0.32</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.41</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.345</maxSize>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.219 0.384" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -21,50 +25,29 @@
 			<!-- Loads platform video from addon directory, if available -->
 			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
 			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.48 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.365</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.454</origin>
 			<origin if="${screen.ratio} == '21/9'">0.535 0.5</origin>
-			<pos>0.51 0.382</pos>
-			<maxSize>0.305</maxSize>
+			<pos>0.499 0.384</pos>
+			<maxSize>0.295</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.39</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.325</maxSize>
 			<zIndex>25</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.23 0.382" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.219 0.384" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1999</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.03</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.25</pos>
-			<size>0.5 0</size>
 			<text>M.U.G.E.N</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.35</pos>
 			<text>M.U.G.E.N - a freeware program to create your own 2D games (brawlers), written in C. The game engine was released in 1999 by Elecbyte and was developed for the next four years. Since 2003 the company discontinued support for the engine, however Elecbyte returned to the engine development and released a new version in 2009. Updates released between 2004 and 2008 were unofficial versions of the original engine.
 
 The word "mugen" probably comes from the Japanese language where it means dream, fantasy, or infinity. Officially Elecbyte claims to have forgotten what the acronym they chose for the name means, but the included documentation suggests that the engine was originally intended for use in shoot'em ups.
@@ -103,16 +86,6 @@ Le moteur est facilement configurable. Vous pouvez modifier de nombreux élémen
 La parola "mugen" deriva probabilmente dalla lingua giapponese, dove significa sogno, fantasia o infinito. Ufficialmente Elecbyte dichiara di aver dimenticato il significato dell'acronimo scelto per il nome, ma la documentazione inclusa suggerisce che il motore era originariamente destinato agli shoot'em up.
 
 Il motore è facilmente configurabile. È possibile modificare molti elementi del gioco, compresi i personaggi, le arene e l'aspetto del motore stesso. La comunità di M.U.G.E.N è incentrata su forum tematici su Internet, dove gli utenti condividono i giochi che hanno creato, nonché i personaggi, che spesso rappresentano personaggi di popolari giochi per computer.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

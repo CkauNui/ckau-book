@@ -2,16 +2,77 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-left" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 1.06</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.68</origin>
+			<origin if="${screen.ratio} == '21/9'">1.05 0.5</origin>
+			<pos>0.63 0.684</pos>
+			<minSize>0.02 0.11</minSize>
+			<zIndex>29</zIndex>
+			<rotation>13</rotation>
+			<path>./../../_inc/images/space.png</path>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.35 0.684" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
+		<image name="sysbg-down" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.4 3.5</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 1.6</origin>
+			<origin if="${screen.ratio} == '21/9'">1.05 0.5</origin>
+			<pos>0.645 0.735</pos>
+			<minSize>0.04 0.02</minSize>
+			<zIndex>29</zIndex>
+			<rotation>12</rotation>
+			<path>./../../_inc/images/space.png</path>
 			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.365 0.735" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-right" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 1.01</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.7</origin>
+			<origin if="${screen.ratio} == '21/9'">1.05 0.5</origin>
+			<pos>0.745 0.695</pos>
+			<minSize>0.02 0.13</minSize>
+			<zIndex>29</zIndex>
+			<rotation>13</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<storyboard>
+				<animation property="pos" to="0.465 0.695" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.435</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.4777</origin>
+			<pos>0.5 0.42</pos>
+			<maxSize>0.418</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.549</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.457</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.42" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-right" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 1.04</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.68</origin>
+			<origin if="${screen.ratio} == '21/9'">1.05 0.5</origin>
+			<pos>0.6843 0.6798</pos>
+			<maxSize>0.11</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.11</maxSize>
+			<rotation>8</rotation>
+			<storyboard>
+				<animation property="pos" to="0.4043 0.6798" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -21,13 +82,16 @@
 			<!-- Loads platform video from addon directory, if available -->
 			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
 			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.435</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.4777</origin>
 			<pos>0.5 0.42</pos>
-			<maxSize>0.415</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.54</maxSize>
+			<maxSize>0.413</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.547</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.455</maxSize>
 			<zIndex>27</zIndex>
 			<storyboard>
 				<animation property="pos" to="0.22 0.42" begin="2000" duration="1000" mode="linear"/>
@@ -40,16 +104,17 @@
 			<!-- Loads platform video from addon directory, if available -->
 			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}2.mp4</path>
 			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}2.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
 			<delay>0</delay>
 			<audio>false</audio>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.07 0.5</origin>
-			<origin if="${screen.ratio} == '21/9'">1.05 0.5</origin>			
+			<origin if="${screen.ratio} == '4/3'">0.5 1.08</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.7</origin>
+			<origin if="${screen.ratio} == '21/9'">1.05 0.5</origin>
 			<pos>0.685 0.681</pos>
 			<maxSize>0.11</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.145</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.14</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.12</maxSize>
 			<zIndex>28</zIndex>
 			<rotation>0</rotation>
 			<storyboard>
@@ -57,49 +122,15 @@
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>2017</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Nintendo</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>Switch</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The Nintendo Switch is a video game console, developed by Nintendo and released worldwide in most regions on March 3, 2017. It is a hybrid console that can be used as either a home console or a portable device. Its wireless Joy-Con controllers, with standard buttons and directional analog sticks for user input, motion sensing, and tactile feedback, can attach to both sides of the console to support handheld-style play. They can also connect to a grip accessory to provide a traditional home console gamepad form, or be used individually in the hand like the Wii Remote and Nunchuk, supporting local multiplayer modes.
 
 The Nintendo Switch's software supports online gaming through Internet connectivity, as well as local wireless ad hoc connectivity with other consoles. Nintendo Switch games and software are available on both physical flash-based ROM cartridges and digital distribution via Nintendo eShop; the system has no region lockout. A handheld-focused revision of the system, called the Nintendo Switch Lite, was released on September 20, 2019.</text>
@@ -126,16 +157,6 @@ Le logiciel de la Nintendo Switch prend en charge le jeu en ligne via la connect
 			<text lang="it">Nintendo Switch è una console per videogiochi, sviluppata da Nintendo e rilasciata in tutto il mondo nella maggior parte delle regioni il 3 marzo 2017. È una console ibrida che può essere utilizzata sia come console domestica che come dispositivo portatile. I suoi controller Joy-Con wireless, con pulsanti standard e stick analogici direzionali per l'input dell'utente, il rilevamento del movimento e il feedback tattile, possono essere collegati a entrambi i lati della console per supportare il gioco in stile portatile. Possono anche essere collegati a un accessorio per l'impugnatura per ottenere una forma tradizionale di gamepad per console domestica, o essere usati singolarmente nella mano come il telecomando Wii e il Nunchuk, supportando le modalità multiplayer locali.
 
 Il software di Nintendo Switch supporta il gioco online attraverso la connettività Internet e la connettività locale wireless ad hoc con altre console. I giochi e i software di Nintendo Switch sono disponibili sia su cartucce ROM fisiche basate su flash che in distribuzione digitale tramite il Nintendo eShop; la console non ha il blocco regionale. Il 20 settembre 2019 è stata rilasciata una versione della console incentrata sulla modalità portatile, chiamata Nintendo Switch Lite.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

@@ -1,136 +1,85 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <theme>
-  <formatVersion>7</formatVersion>
-  <view name="system">
-    <image name="background1" extra="true">
-      <storyboard>
-        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <image name="background" extra="true">
-      <zIndex>90</zIndex>
-      <storyboard>
-        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <video name="videocrton" extra="true">
-      <path>./../../_inc/anim/video/CRT_ON.mp4</path>
-      <delay>0</delay>
-      <loops>0</loops>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.5 0.375</pos>
-      <maxSize>0.245</maxSize>
-      <zIndex>26</zIndex>
-    </video>
-    <video name="videobox" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
-      <path>./../../_inc/anim/video/${synonym}.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.5 0.375</pos>
-      <maxSize>0.245</maxSize>
-      <zIndex>25</zIndex>
-      <storyboard>
-        <animation property="pos" to="0.22 0.375" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <text name="TextDate" extra="true">
-      <pos>0.49 0.2</pos>
-      <text>1994</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextManufacturer" extra="true">
-      <pos>0.49 0.255</pos>
-      <text>Sega</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.04</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextName" extra="true">
-      <pos>0.49 0.30</pos>
-      <size>0.5 0</size>
-      <text>Sega CD 32X</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.065</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextDesc" extra="true">
-      <size>0.5 0</size>
-      <pos>0.49 0.4</pos>
-      <text>The Sega Mega Drive console received two add-on hardware upgrades during its life time: the Sega Mega-CD and Sega 32X. It is possible to install both of these on the same base console, creating a system called the Super 32X CD (Japan and Korea) or Sega Mega-CD 32X (PAL region) or Sega CD 32X (USA). This opens the possibility of software that can utilise both the Mega-CD's enhanced storage capacity and ability to play Red Book CD audio, and the 32X's enhancements in graphics and sound capabilities.
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.34</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.5 0.375</pos>
+			<maxSize>0.255</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.375" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.34</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.5 0.375</pos>
+			<maxSize>0.245</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.375" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>1994</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>Sega</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>Sega CD 32X</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>The Sega Mega Drive console received two add-on hardware upgrades during its life time: the Sega Mega-CD and Sega 32X. It is possible to install both of these on the same base console, creating a system called the Super 32X CD (Japan and Korea) or Sega Mega-CD 32X (PAL region) or Sega CD 32X (USA). This opens the possibility of software that can utilise both the Mega-CD's enhanced storage capacity and ability to play Red Book CD audio, and the 32X's enhancements in graphics and sound capabilities.
 
 Six games were released that require both add-on units in order to be played. All of these titles are full motion video based games, which were previously available as standalone Mega-CD games, and later had their FMV assets upgraded to take advantage of the 32X's improved graphics. As such, all six were released on CDs, with the cart slot of the 32X being unused during gameplay.
 
 Japan did not receive any Mega-CD 32X games, however North America received five while Europe recieved four of those five. Surgical Strike, once bound for a North American release, ended up being an exclusive title in Brazil (and curiously wound up being the only Mega-CD 32X game to reach this region). A further half-dozen titles were in development for the Mega-CD 32X at one stage, but were all cancelled, some merely appearing in Mega-CD form and some being moved to the Sega Saturn.</text>
-      <text lang="it">La console Sega Mega Drive ha ricevuto due aggiornamenti hardware aggiuntivi nel corso della sua vita: il Sega Mega-CD e il Sega 32X. È possibile installare entrambi sulla stessa console di base, creando un sistema chiamato Super 32X CD (Giappone e Corea) o Sega Mega-CD 32X (regione PAL) o Sega CD 32X (USA). In questo modo è possibile creare software in grado di sfruttare sia la maggiore capacità di memorizzazione del Mega-CD e la capacità di riprodurre l'audio del Red Book CD, sia i miglioramenti delle capacità grafiche e sonore del 32X.
+			<text lang="it">La console Sega Mega Drive ha ricevuto due aggiornamenti hardware aggiuntivi nel corso della sua vita: il Sega Mega-CD e il Sega 32X. È possibile installare entrambi sulla stessa console di base, creando un sistema chiamato Super 32X CD (Giappone e Corea) o Sega Mega-CD 32X (regione PAL) o Sega CD 32X (USA). In questo modo è possibile creare software in grado di sfruttare sia la maggiore capacità di memorizzazione del Mega-CD e la capacità di riprodurre l'audio del Red Book CD, sia i miglioramenti delle capacità grafiche e sonore del 32X.
 
 Sono stati rilasciati sei giochi che richiedono entrambe le unità aggiuntive per essere giocati. Tutti questi titoli sono giochi basati su video in full motion, che in precedenza erano disponibili come giochi Mega-CD standalone e che in seguito sono stati aggiornati per sfruttare la migliore grafica del 32X. Per questo motivo, tutti e sei sono stati pubblicati su CD, con lo slot del carrello del 32X inutilizzato durante il gioco.
 
 Il Giappone non ricevette alcun gioco Mega-CD per 32X, mentre il Nord America ne ricevette cinque e l'Europa quattro di questi cinque. Surgical Strike, un tempo destinato all'uscita in Nord America, finì per essere un titolo esclusivo in Brasile (e curiosamente fu l'unico gioco Mega-CD 32X a raggiungere questa regione). Un'altra mezza dozzina di titoli era in fase di sviluppo per il Mega-CD 32X, ma furono tutti cancellati: alcuni apparvero semplicemente in forma di Mega-CD e altri furono spostati sul Sega Saturn.</text>
-      <text lang="fr">La console Sega Mega Drive a reçu deux mises à jour matérielles supplémentaires au cours de son existence : le Sega Mega-CD et le Sega 32X. Il est possible d'installer les deux sur la même console de base, créant ainsi un système appelé Super 32X CD (Japon et Corée) ou Sega Mega-CD 32X (région PAL) ou Sega CD 32X (USA). Cela ouvre la voie à des logiciels qui peuvent utiliser à la fois la capacité de stockage améliorée du Mega-CD et sa capacité à lire les CD audio Red Book, et les améliorations des capacités graphiques et sonores du 32X.
+			<text lang="fr">La console Sega Mega Drive a reçu deux mises à jour matérielles supplémentaires au cours de son existence : le Sega Mega-CD et le Sega 32X. Il est possible d'installer les deux sur la même console de base, créant ainsi un système appelé Super 32X CD (Japon et Corée) ou Sega Mega-CD 32X (région PAL) ou Sega CD 32X (USA). Cela ouvre la voie à des logiciels qui peuvent utiliser à la fois la capacité de stockage améliorée du Mega-CD et sa capacité à lire les CD audio Red Book, et les améliorations des capacités graphiques et sonores du 32X.
 
 Six jeux ont été publiés, qui nécessitent les deux unités complémentaires pour être joués. Tous ces titres sont des jeux basés sur la vidéo en mouvement intégral, qui étaient auparavant disponibles en tant que jeux Mega-CD autonomes, et dont les actifs FMV ont été mis à jour ultérieurement pour tirer parti des améliorations graphiques du 32X. C'est pourquoi les six titres ont été publiés sur CD, l'emplacement du chariot du 32X n'étant pas utilisé pendant le jeu.
 
 Le Japon n'a pas reçu de jeux Mega-CD 32X, mais l'Amérique du Nord en a reçu cinq et l'Europe quatre. Surgical Strike, qui devait sortir en Amérique du Nord, a fini par être un titre exclusif au Brésil (et curieusement, il a été le seul jeu Mega-CD 32X à atteindre cette région). Une demi-douzaine d'autres titres étaient en cours de développement pour le Mega-CD 32X à un moment donné, mais ils ont tous été annulés, certains n'apparaissant que sous forme de Mega-CD et d'autres étant transférés sur la Sega Saturn.</text>
-      <text lang="de">Die Sega Mega Drive-Konsole erhielt während ihrer Lebensdauer zwei zusätzliche Hardware-Upgrades: das Sega Mega-CD und das Sega 32X. Es ist möglich, beide auf der gleichen Basiskonsole zu installieren, wodurch ein System namens Super 32X CD (Japan und Korea) oder Sega Mega-CD 32X (PAL-Region) oder Sega CD 32X (USA) entsteht. Dies eröffnet die Möglichkeit, Software zu entwickeln, die sowohl die größere Speicherkapazität der Mega-CD und die Fähigkeit, Red Book CD-Audio abzuspielen, als auch die verbesserten Grafik- und Soundfähigkeiten der 32X nutzen kann.
+			<text lang="de">Die Sega Mega Drive-Konsole erhielt während ihrer Lebensdauer zwei zusätzliche Hardware-Upgrades: das Sega Mega-CD und das Sega 32X. Es ist möglich, beide auf der gleichen Basiskonsole zu installieren, wodurch ein System namens Super 32X CD (Japan und Korea) oder Sega Mega-CD 32X (PAL-Region) oder Sega CD 32X (USA) entsteht. Dies eröffnet die Möglichkeit, Software zu entwickeln, die sowohl die größere Speicherkapazität der Mega-CD und die Fähigkeit, Red Book CD-Audio abzuspielen, als auch die verbesserten Grafik- und Soundfähigkeiten der 32X nutzen kann.
 
 Sechs Spiele wurden veröffentlicht, die beide Zusatzgeräte benötigen, um gespielt werden zu können. Bei all diesen Titeln handelt es sich um Full-Motion-Videospiele, die zuvor als eigenständige Mega-CD-Spiele erhältlich waren und deren FMV-Assets später aktualisiert wurden, um die Vorteile der verbesserten Grafik des 32X zu nutzen. Daher wurden alle sechs auf CDs veröffentlicht, wobei der Cart-Slot des 32X während des Spiels nicht genutzt wurde.
 
 Japan erhielt keine Mega-CD 32X-Spiele, aber Nordamerika erhielt fünf, während Europa vier dieser fünf erhielt. Surgical Strike, das einst für eine nordamerikanische Veröffentlichung vorgesehen war, wurde schließlich ein Exklusivtitel in Brasilien (und war kurioserweise das einzige Mega-CD 32X-Spiel, das diese Region erreichte). Ein weiteres halbes Dutzend Titel befand sich zu einem bestimmten Zeitpunkt in der Entwicklung für das Mega-CD 32X, wurde aber allesamt gestrichen, wobei einige lediglich als Mega-CD erschienen und andere auf den Sega Saturn verschoben wurden.</text>
-      <text lang="es">La consola Sega Mega Drive recibió dos actualizaciones de hardware adicionales durante su vida útil: la Sega Mega-CD y la Sega 32X. Es posible instalar ambas en la misma consola base, creando un sistema denominado Super 32X CD (Japón y Corea) o Sega Mega-CD 32X (región PAL) o Sega CD 32X (EE.UU.). Esto abre la posibilidad de crear software que aproveche tanto la mayor capacidad de almacenamiento del Mega-CD y su capacidad para reproducir audio Red Book CD, como las mejoras gráficas y de sonido del 32X.
+			<text lang="es">La consola Sega Mega Drive recibió dos actualizaciones de hardware adicionales durante su vida útil: la Sega Mega-CD y la Sega 32X. Es posible instalar ambas en la misma consola base, creando un sistema denominado Super 32X CD (Japón y Corea) o Sega Mega-CD 32X (región PAL) o Sega CD 32X (EE.UU.). Esto abre la posibilidad de crear software que aproveche tanto la mayor capacidad de almacenamiento del Mega-CD y su capacidad para reproducir audio Red Book CD, como las mejoras gráficas y de sonido del 32X.
 
 Se han lanzado seis juegos que requieren ambas unidades complementarias para poder jugarse. Todos estos títulos son juegos basados en vídeo de movimiento completo, que anteriormente estaban disponibles como juegos independientes de Mega-CD, y más tarde se actualizaron sus activos FMV para aprovechar los gráficos mejorados de la 32X. Por ello, los seis se lanzaron en CD y la ranura para el carro del 32X no se utilizó durante el juego.
 
 Japón no recibió ningún juego de Mega-CD 32X, pero Norteamérica recibió cinco y Europa, cuatro. Surgical Strike, que iba a salir en Norteamérica, acabó siendo un título exclusivo en Brasil (y curiosamente acabó siendo el único juego de Mega-CD 32X que llegó a esta región). Otra media docena de títulos estuvieron en desarrollo para Mega-CD 32X en un momento dado, pero todos fueron cancelados, algunos simplemente aparecieron en forma de Mega-CD y otros se trasladaron a Sega Saturn.</text>
-      <text lang="ru">Консоль Sega Mega Drive за время своего существования получила два дополнительных аппаратных обновления: Sega Mega-CD и Sega 32X. Их можно установить на одну базовую консоль, создав систему под названием Super 32X CD (Япония и Корея) или Sega Mega-CD 32X (PAL-регион) или Sega CD 32X (США). Это открывает возможности для создания программного обеспечения, использующего как увеличенный объем памяти Mega-CD и возможность воспроизведения аудиозаписей Red Book CD, так и улучшенные графические и звуковые возможности 32X.
+			<text lang="ru">Консоль Sega Mega Drive за время своего существования получила два дополнительных аппаратных обновления: Sega Mega-CD и Sega 32X. Их можно установить на одну базовую консоль, создав систему под названием Super 32X CD (Япония и Корея) или Sega Mega-CD 32X (PAL-регион) или Sega CD 32X (США). Это открывает возможности для создания программного обеспечения, использующего как увеличенный объем памяти Mega-CD и возможность воспроизведения аудиозаписей Red Book CD, так и улучшенные графические и звуковые возможности 32X.
 
 Было выпущено шесть игр, для воспроизведения которых требуются оба дополнительных устройства. Все эти игры представляют собой видеоигры, основанные на полном движении, которые ранее были доступны как самостоятельные игры на Mega-CD, а затем были модернизированы для использования улучшенной графики 32X. Поэтому все шесть игр были выпущены на компакт-дисках, а слот для карт на 32X не использовался во время игры.
 
 Япония не получила ни одной игры на Mega-CD 32X, однако Северная Америка получила пять игр, а Европа - четыре из этих пяти. Игра Surgical Strike, предназначавшаяся для североамериканского релиза, оказалась эксклюзивом в Бразилии (и, что любопытно, стала единственной игрой на Mega-CD 32X, попавшей в этот регион). Еще полдюжины игр находились в разработке для Mega-CD 32X, но все они были отменены, некоторые просто вышли на Mega-CD, а некоторые были перенесены на Sega Saturn.</text>
-      <text lang="pl">Konsola Sega Mega Drive otrzymała dwie dodatkowe aktualizacje sprzętowe w trakcie swojego życia: Sega Mega-CD i Sega 32X. Możliwe jest zainstalowanie obu z nich na tej samej konsoli bazowej, tworząc system o nazwie Super 32X CD (Japonia i Korea) lub Sega Mega-CD 32X (region PAL) lub Sega CD 32X (USA). Otwiera to możliwość oprogramowania, które może wykorzystywać zarówno zwiększoną pojemność pamięci Mega-CD i możliwość odtwarzania dźwięku Red Book CD, jak i ulepszenia grafiki i dźwięku 32X.
+			<text lang="pl">Konsola Sega Mega Drive otrzymała dwie dodatkowe aktualizacje sprzętowe w trakcie swojego życia: Sega Mega-CD i Sega 32X. Możliwe jest zainstalowanie obu z nich na tej samej konsoli bazowej, tworząc system o nazwie Super 32X CD (Japonia i Korea) lub Sega Mega-CD 32X (region PAL) lub Sega CD 32X (USA). Otwiera to możliwość oprogramowania, które może wykorzystywać zarówno zwiększoną pojemność pamięci Mega-CD i możliwość odtwarzania dźwięku Red Book CD, jak i ulepszenia grafiki i dźwięku 32X.
 
 Wydano sześć gier, które do działania wymagają obu urządzeń dodatkowych. Wszystkie te tytuły to gry oparte na pełnym ruchu wideo, które wcześniej były dostępne jako samodzielne gry Mega-CD, a później ich zasoby FMV zostały zaktualizowane, aby wykorzystać ulepszoną grafikę 32X. W związku z tym wszystkie sześć zostało wydanych na płytach CD, a gniazdo kart 32X nie było używane podczas rozgrywki.
 
 Japonia nie otrzymała żadnych gier na Mega-CD 32X, jednak Ameryka Północna otrzymała pięć, a Europa cztery z tych pięciu. Surgical Strike, niegdyś przeznaczony do wydania w Ameryce Północnej, ostatecznie stał się tytułem ekskluzywnym w Brazylii (i co ciekawe, był jedyną grą Mega-CD 32X, która dotarła do tego regionu). Kolejne pół tuzina tytułów było w przygotowaniu na Mega-CD 32X na pewnym etapie, ale wszystkie zostały anulowane, niektóre pojawiły się tylko w formie Mega-CD, a niektóre zostały przeniesione na Segę Saturn.</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-  </view>
+		</text>
+	</view>
 </theme>

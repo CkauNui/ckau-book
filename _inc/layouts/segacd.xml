@@ -2,28 +2,19 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videocrton" extra="true">
-			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
-			<delay>0</delay>
-			<loops>0</loops>
-			<effect>none</effect>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.34</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
 			<pos>0.5 0.375</pos>
-			<maxSize>0.245</maxSize>
-			<zIndex>26</zIndex>
-		</video>
+			<maxSize>0.255</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.375" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
 		<video name="videobox" extra="true">
 			<path>{random}</path>
 			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
@@ -35,6 +26,8 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.34</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
 			<pos>0.5 0.375</pos>
 			<maxSize>0.245</maxSize>
 			<zIndex>25</zIndex>
@@ -43,49 +36,15 @@
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1991</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Sega</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>Sega CD</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The Sega CD, released as the Mega-CD in most regions outside North America and Brazil, is a CD-ROM accessory for the Mega Drive/Genesis designed and produced by Sega as part of the fourth generation of video game consoles. It was released on December 12, 1991 in Japan, October 15, 1992 in North America, and April 2, 1993 in Europe. The Sega CD plays CD-based games and adds hardware functionality such as a faster central processing unit and graphic enhancements like sprite scaling and rotation. It can also play audio CDs and CD+G discs.
 
 The main benefit of CD technology was greater storage, which allowed for games to be nearly 320 times larger than Genesis cartridges. This benefit manifested as full motion video (FMV) games such as the controversial Night Trap, which became a focus of the 1993 congressional hearings on issues of video game violence and ratings. Sega of Japan partnered with JVC to design the Sega CD and refused to consult with Sega of America until the project was complete. Sega of America assembled parts from various "dummy" units to obtain a working prototype. It was redesigned several times by Sega and licensed third-party developers.</text>
@@ -107,16 +66,6 @@ Le principal avantage de la technologie CD est l'augmentation de la capacité de
 			<text lang="it">Il Sega CD, pubblicato come Mega-CD nella maggior parte delle regioni al di fuori del Nord America e del Brasile, è un accessorio CD-ROM per il Mega Drive/Genesis progettato e prodotto da Sega come parte della quarta generazione di console per videogiochi. È stato rilasciato il 12 dicembre 1991 in Giappone, il 15 ottobre 1992 in Nord America e il 2 aprile 1993 in Europa. Il Sega CD riproduce giochi basati su CD e aggiunge funzionalità hardware come un'unità di elaborazione centrale più veloce e miglioramenti grafici come la scalatura e la rotazione degli sprite. Può anche riprodurre CD audio e dischi CD+G.
 
 Il principale vantaggio della tecnologia CD era la maggiore capacità di memorizzazione, che consentiva ai giochi di essere quasi 320 volte più grandi delle cartucce Genesis. Questo vantaggio si è manifestato nei giochi full motion video (FMV), come il controverso Night Trap, che è stato al centro delle audizioni del Congresso del 1993 sulle questioni relative alla violenza e alla classificazione dei videogiochi. Sega of Japan si associò a JVC per progettare il Sega CD e rifiutò di consultarsi con Sega of America fino al completamento del progetto. Sega of America assemblò parti di varie unità "fittizie" per ottenere un prototipo funzionante. Il CD fu riprogettato più volte da Sega e da sviluppatori di terze parti su licenza.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

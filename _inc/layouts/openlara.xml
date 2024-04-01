@@ -1,114 +1,73 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <theme>
-  <formatVersion>7</formatVersion>
-  <view name="system">
-    <image name="background1" extra="true">
-      <storyboard>
-        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <image name="background" extra="true">
-      <zIndex>90</zIndex>
-      <storyboard>
-        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <video name="videobox" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
-      <path>./../../_inc/anim/video/${synonym}.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <origin if="${screen.ratio} == '4/3'">0.6 0.5</origin>
-      <origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
-      <pos>0.44 0.457</pos>
-      <maxSize>0.245</maxSize>
-      <zIndex>25</zIndex>
-      <storyboard>
-        <animation property="pos" to="0.160 0.457" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <text name="TextDate" extra="true">
-      <pos>0.49 0.2</pos>
-      <text>2015</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.03</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextManufacturer" extra="true">
-      <pos>0.49 0.255</pos>
-      <text>XProger</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.04</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextName" extra="true">
-      <pos>0.49 0.30</pos>
-      <size>0.5 0</size>
-      <text>OpenLara</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.065</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextDesc" extra="true">
-      <size>0.5 0</size>
-      <pos>0.49 0.4</pos>
-      <text>OpenLara is an open-source engine that allows to play the classic Tomb Raider games from 1 to 5. It is a recreation of the original Tomb Raider engine that uses the C language and the free OpenGL graphics libraries. The project is hosted on GitHub and is actively developed.
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.49</origin>
+			<origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
+			<pos>0.449 0.457</pos>
+			<maxSize>0.26</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.169 0.457" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.49</origin>
+			<origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
+			<pos>0.449 0.457</pos>
+			<maxSize>0.248</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.169 0.457" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>2015</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>XProger</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>OpenLara</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>OpenLara is an open-source engine that allows to play the classic Tomb Raider games from 1 to 5. It is a recreation of the original Tomb Raider engine that uses the C language and the free OpenGL graphics libraries. The project is hosted on GitHub and is actively developed.
 
 OpenLara is available as a WebGL build with a demo level and as a standalone version. The engine is also ported to libretro.</text>
-      <text lang="it">OpenLara è un motore open-source che permette di giocare ai classici Tomb Raider dall'1 al 5. È una ricreazione del motore originale di Tomb Raider che utilizza il linguaggio C e le librerie grafiche OpenGL gratuite. Il progetto è ospitato su GitHub e viene sviluppato attivamente.
+			<text lang="it">OpenLara è un motore open-source che permette di giocare ai classici Tomb Raider dall'1 al 5. È una ricreazione del motore originale di Tomb Raider che utilizza il linguaggio C e le librerie grafiche OpenGL gratuite. Il progetto è ospitato su GitHub e viene sviluppato attivamente.
 
 OpenLara è disponibile come build WebGL con un livello demo e come versione standalone. Il motore è stato anche portato su libretro.</text>
-      <text lang="fr">OpenLara est un moteur open-source qui permet de jouer aux jeux classiques de Tomb Raider de 1 à 5. Il s'agit d'une recréation du moteur original de Tomb Raider qui utilise le langage C et les bibliothèques graphiques libres OpenGL. Le projet est hébergé sur GitHub et est activement développé.
+			<text lang="fr">OpenLara est un moteur open-source qui permet de jouer aux jeux classiques de Tomb Raider de 1 à 5. Il s'agit d'une recréation du moteur original de Tomb Raider qui utilise le langage C et les bibliothèques graphiques libres OpenGL. Le projet est hébergé sur GitHub et est activement développé.
 
 OpenLara est disponible en version WebGL avec un niveau de démonstration et en version autonome. Le moteur est également porté sur libretro.</text>
-      <text lang="de">OpenLara ist eine Open-Source-Engine, die es ermöglicht, die klassischen Tomb-Raider-Spiele von 1 bis 5 zu spielen. Es ist eine Nachbildung der ursprünglichen Tomb-Raider-Engine, die die Sprache C und die freien OpenGL-Grafikbibliotheken verwendet. Das Projekt wird auf GitHub gehostet und wird aktiv weiterentwickelt.
+			<text lang="de">OpenLara ist eine Open-Source-Engine, die es ermöglicht, die klassischen Tomb-Raider-Spiele von 1 bis 5 zu spielen. Es ist eine Nachbildung der ursprünglichen Tomb-Raider-Engine, die die Sprache C und die freien OpenGL-Grafikbibliotheken verwendet. Das Projekt wird auf GitHub gehostet und wird aktiv weiterentwickelt.
 
 OpenLara ist als WebGL-Build mit einem Demo-Level und als Standalone-Version verfügbar. Die Engine ist auch auf libretro portiert.</text>
-      <text lang="es">OpenLara es un motor de código abierto que permite jugar a los juegos clásicos de Tomb Raider del 1 al 5. Se trata de una recreación del motor original de Tomb Raider que utiliza el lenguaje C y las librerías gráficas libres OpenGL. El proyecto está alojado en GitHub y se desarrolla activamente.
+			<text lang="es">OpenLara es un motor de código abierto que permite jugar a los juegos clásicos de Tomb Raider del 1 al 5. Se trata de una recreación del motor original de Tomb Raider que utiliza el lenguaje C y las librerías gráficas libres OpenGL. El proyecto está alojado en GitHub y se desarrolla activamente.
 
  OpenLara está disponible como versión WebGL con un nivel de demostración y como versión independiente. El motor también está portado a libretro.</text>
-      <text lang="ru">OpenLara - это движок с открытым исходным кодом, позволяющий играть в классические игры Tomb Raider от 1 до 5. Это воссоздание оригинального движка Tomb Raider, использующее язык C и свободные графические библиотеки OpenGL. Проект размещен на GitHub и активно развивается. 
+			<text lang="ru">OpenLara - это движок с открытым исходным кодом, позволяющий играть в классические игры Tomb Raider от 1 до 5. Это воссоздание оригинального движка Tomb Raider, использующее язык C и свободные графические библиотеки OpenGL. Проект размещен на GitHub и активно развивается. 
 
 OpenLara доступна в виде WebGL-сборки с демо-уровнем и в виде самостоятельной версии. Движок также портирован на libretro.</text>
-      <text lang="pl">OpenLara to silnik o otwartym kodzie źródłowym, który pozwala grać w klasyczne gry Tomb Raider od 1 do 5. Jest to odtworzenie oryginalnego silnika Tomb Raider, który wykorzystuje język C i darmowe biblioteki graficzne OpenGL. Projekt jest hostowany na GitHub i jest aktywnie rozwijany.
+			<text lang="pl">OpenLara to silnik o otwartym kodzie źródłowym, który pozwala grać w klasyczne gry Tomb Raider od 1 do 5. Jest to odtworzenie oryginalnego silnika Tomb Raider, który wykorzystuje język C i darmowe biblioteki graficzne OpenGL. Projekt jest hostowany na GitHub i jest aktywnie rozwijany.
 
 OpenLara jest dostępna jako kompilacja WebGL z poziomem demonstracyjnym oraz jako samodzielna wersja. Silnik został również przeniesiony do libretro.</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-  </view>
+		</text>
+	</view>
 </theme>

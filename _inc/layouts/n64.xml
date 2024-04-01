@@ -2,16 +2,17 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.5 0.36</pos>
+			<maxSize>0.34</maxSize>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -25,57 +26,25 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
 			<pos>0.5 0.36</pos>
-			<maxSize>0.32</maxSize>
+			<maxSize>0.31</maxSize>
 			<zIndex>25</zIndex>
 			<storyboard>
 				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1996</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Nintendo</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>64</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The Nintendo 64 (officially abbreviated as N64, hardware model number pre-term: NUS, stylized as NINTENDO64) is a home video game console developed and marketed by Nintendo. Named for its 64-bit central processing unit, it was released in June 1996 in Japan, September 1996 in North America, and March 1997 in Europe and Australia. It was the last major home console to use the ROM cartridge as its primary storage format until the Switch in 2017. The Nintendo 64 was discontinued in 2002 following the launch of its successor, the GameCube.
 
 Codenamed "Project Reality", the Nintendo 64 design was mostly complete by mid-1995, but its launch was delayed until 1996, when Time named it Machine of the Year. It was launched with three games: Super Mario 64, Pilotwings 64 and Saikyō Habu Shōgi (exclusive to Japan). As part of the fifth generation of video game consoles, it competed primarily with the Sony PlayStation and Sega Saturn. The suggested retail price at its United States launch was US$199.99 (equivalent to $326.02 in 2019), and as of December 2009, 32.93 million units had been sold worldwide. In 2015, IGN named it the ninth-greatest video game console of all time.</text>
@@ -96,7 +65,7 @@ Dane techniczne:
     S-Video
     RGB (tylko w systemie NTSC)
     Analogowy dźwięk stereo
-    RF poprzez zewnętrzny modulator[2]
+    RF poprzez zewnętrzny modulator
 - Wymiary: 260 × 170 mm x 73 mm
 - Waga: 1,1 kg</text>
 			<text lang="ru">64-разрядная игровая приставка. Разрабатывалась японской компанией Nintendo совместно с Silicon Graphics. Была выпущена в 1996 году (23 июня в Японии и 29 сентября в США) и стала ответом на приставки конкурентов Sony PlayStation и Sega Saturn. Тактовая частота центрального процессора — 93,75 МГц, графического — 62,5 МГц. Оснащалась оперативной памятью объёмом 4,5 МБ. Максимальное разрешение равнялось 640×480 при 24-битной глубине цвета. Благодаря участию Silicon Graphics, в этой приставке появилась масса новшеств, связанных с трёхмерной графикой: сглаживание текстур, MIP-mapping и др. В качестве игрового носителя был выбран картридж объёмом до 64 МБ.
@@ -114,16 +83,6 @@ Sous le nom de code "Project Reality", la conception de la Nintendo 64 était pr
 			<text lang="it">Il Nintendo 64 (ufficialmente abbreviato in N64, numero di modello hardware pre-term: NUS, stilizzato come NINTENDO64) è una console per videogiochi domestica sviluppata e commercializzata da Nintendo. Chiamata così per la sua unità di elaborazione centrale a 64 bit, è stata rilasciata nel giugno 1996 in Giappone, nel settembre 1996 in Nord America e nel marzo 1997 in Europa e Australia. È stata l'ultima grande console domestica a utilizzare la cartuccia ROM come formato di memorizzazione principale fino allo Switch nel 2017. Il Nintendo 64 è stato dismesso nel 2002 dopo il lancio del suo successore, il GameCube.
 
 Con il nome in codice "Project Reality", il progetto del Nintendo 64 era stato in gran parte completato a metà del 1995, ma il suo lancio fu ritardato fino al 1996, quando il Time lo nominò macchina dell'anno. Il lancio avvenne con tre giochi: Super Mario 64, Pilotwings 64 e Saikyō Habu Shōgi (esclusiva per il Giappone). Facendo parte della quinta generazione di console per videogiochi, è entrato in competizione principalmente con la Sony PlayStation e il Sega Saturn. Il prezzo di vendita consigliato al lancio negli Stati Uniti era di 199,99 dollari (equivalenti a 326,02 dollari nel 2019) e, a dicembre 2009, erano state vendute 32,93 milioni di unità in tutto il mondo. Nel 2015, IGN l'ha definita la nona console per videogiochi più grande di tutti i tempi.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

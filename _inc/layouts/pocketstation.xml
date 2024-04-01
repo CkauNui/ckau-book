@@ -2,16 +2,17 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+			<pos>0.5 0.37</pos>
+			<maxSize>0.23</maxSize>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.22 0.37" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -21,10 +22,11 @@
 			<!-- Loads platform video from addon directory, if available -->
 			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
 			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
 			<pos>0.5 0.37</pos>
 			<maxSize>0.22</maxSize>
 			<zIndex>25</zIndex>
@@ -33,49 +35,15 @@
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1999</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Sony</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>PocketStation</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The PocketStation is a Memory Card peripheral by Sony Computer Entertainment for the PlayStation home video game console. Categorized by Sony as a combination of a Memory Card and a miniature personal digital assistant, the device features a monochrome liquid crystal display (LCD), infrared communication capability, a real-time clock, built-in flash memory, and sound capability. To use the device's memory card functionality, it must be connected to a PlayStation through a memory card slot. It was released exclusively in Japan on January 23, 1999.
 
 Software for the PocketStation was typically distributed as extras for PlayStation games, included in the CD-ROM, enhancing the games with added features. Stand-alone software could also be downloaded through the PlayStation console. The software is then transferred to the PocketStation for use. A built-in infrared data interface allows direct transfer of data such as game saves between PocketStation units, as well as multiplayer gaming.</text>
@@ -99,16 +67,6 @@ Les logiciels pour la PocketStation étaient généralement distribués en tant 
 			<text lang="it">PocketStation è una periferica per schede di memoria di Sony Computer Entertainment per la console di videogiochi domestica PlayStation. Classificato da Sony come una combinazione tra una Memory Card e un assistente digitale personale in miniatura, il dispositivo è dotato di un display monocromatico a cristalli liquidi (LCD), capacità di comunicazione a infrarossi, orologio in tempo reale, memoria flash integrata e capacità audio. Per utilizzare le funzionalità della scheda di memoria, il dispositivo deve essere collegato a una PlayStation attraverso uno slot per schede di memoria. È stato rilasciato esclusivamente in Giappone il 23 gennaio 1999.
 
 Il software per la PocketStation veniva solitamente distribuito come extra per i giochi per PlayStation, incluso nel CD-ROM, migliorando i giochi con funzioni aggiuntive. Il software stand-alone poteva anche essere scaricato attraverso la console PlayStation. Il software viene poi trasferito alla PocketStation per essere utilizzato. Un'interfaccia dati a infrarossi integrata consente il trasferimento diretto di dati, come i salvataggi di gioco, tra le unità PocketStation e il gioco multiplayer.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

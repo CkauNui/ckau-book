@@ -1,153 +1,177 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <theme>
-  <formatVersion>7</formatVersion>
-  <view name="system">
-    <image name="background1" extra="true">
-      <storyboard>
-        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <image name="background" extra="true">
-      <zIndex>90</zIndex>
-      <storyboard>
-        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <video name="videobox" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
-      <path>./../../_inc/anim/video/${synonym}.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.50 0.45</pos>
-      <maxSize>0.2</maxSize>
-      <maxSize if="${screen.ratio} == '4/3'">0.24</maxSize>
-      <zIndex>26</zIndex>
-      <storyboard>
-        <animation property="pos" to="0.22 0.45" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <video name="videobox2" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
-      <audio>false</audio>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <origin if="${screen.ratio} == '4/3'">0.28 0.5</origin>
-      <origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
-      <pos>0.635 0.47</pos>
-      <maxSize>0.16</maxSize>
-      <maxSize if="${screen.ratio} == '4/3'">0.20</maxSize>
-      <zIndex>25</zIndex>
-      <rotation>0</rotation>
-      <storyboard>
-        <animation property="pos" to="0.355 0.47" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <video name="videobox3" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
-      <audio>false</audio>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <origin if="${screen.ratio} == '4/3'">0.72 0.5</origin>
-      <origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
-      <pos>0.37 0.47</pos>
-      <maxSize>0.16</maxSize>
-      <maxSize if="${screen.ratio} == '4/3'">0.20</maxSize>
-      <zIndex>25</zIndex>
-      <rotation>0</rotation>
-      <storyboard>
-        <animation property="pos" to="0.09 0.47" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <text name="TextDate" extra="true">
-      <pos>0.49 0.2</pos>
-      <text>2010</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.03</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextManufacturer" extra="true">
-      <pos>0.49 0.255</pos>
-      <text>Sega</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.04</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextName" extra="true">
-      <pos>0.49 0.30</pos>
-      <size>0.5 0</size>
-      <text>Ringwide</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.065</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextDesc" extra="true">
-      <size>0.5 0</size>
-      <pos>0.49 0.4</pos>
-      <text>The Sega Ringwide arcade system is an arcade platform developed by Sega as one half of their Ring series (the other half being Sega Ringedge). Both machines are based on PC architecture, using Microsoft Windows Embedded Standard 2009 as their operating system.
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-left" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.3 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
+			<pos>0.305 0.45</pos>
+			<minSize>0.1 0.3</minSize>
+			<rotation>14</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>27</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.025 0.45" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-right" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.6 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+			<pos>0.69 0.45</pos>
+			<minSize>0.1 0.3</minSize>
+			<rotation>-14</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>27</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.41 0.45" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<pos>0.499 0.47</pos>
+			<maxSize>0.175</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.184</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-left" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
+			<pos>0.392 0.48</pos>
+			<maxSize>0.14</maxSize>
+			<rotation>-76</rotation>
+			<storyboard>
+				<animation property="pos" to="0.112 0.48" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-right" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+			<pos>0.607 0.48</pos>
+			<maxSize>0.14</maxSize>
+			<rotation>76</rotation>
+			<storyboard>
+				<animation property="pos" to="0.327 0.48" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<pos>0.499 0.47</pos>
+			<maxSize>0.162</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.22</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.182</maxSize>
+			<zIndex>26</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<video name="videobox2" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+			<audio>false</audio>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+			<pos>0.621 0.47</pos>
+			<maxSize>0.14</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
+			<zIndex>25</zIndex>
+			<rotation>0</rotation>
+			<storyboard>
+				<animation property="pos" to="0.341 0.47" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<video name="videobox3" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+			<audio>false</audio>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '21/9'">0.25 0.5</origin>
+			<pos>0.39 0.47</pos>
+			<maxSize>0.145</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
+			<zIndex>25</zIndex>
+			<rotation>0</rotation>
+			<storyboard>
+				<animation property="pos" to="0.11 0.47" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>2010</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>Sega</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>Ringwide</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>The Sega Ringwide arcade system is an arcade platform developed by Sega as one half of their Ring series (the other half being Sega Ringedge). Both machines are based on PC architecture, using Microsoft Windows Embedded Standard 2009 as their operating system.
 
 The Ringwide is a versatile board that offers a range of price points. It has an Intel CPU and an AMD GPU. Some of the games released for the Ringwide are Chaos Code, Operation G.H.O.S.T. and Sega Racing Classic.</text>
-      <text lang="it">Il sistema arcade Sega Ringwide è una piattaforma arcade sviluppata da Sega come metà della serie Ring (l'altra metà è Sega Ringedge). Entrambe le macchine sono basate su architettura PC e utilizzano come sistema operativo Microsoft Windows Embedded Standard 2009.
+			<text lang="it">Il sistema arcade Sega Ringwide è una piattaforma arcade sviluppata da Sega come metà della serie Ring (l'altra metà è Sega Ringedge). Entrambe le macchine sono basate su architettura PC e utilizzano come sistema operativo Microsoft Windows Embedded Standard 2009.
 
 Il Ringwide è una scheda versatile che offre una gamma di prezzi diversi. Ha una CPU Intel e una GPU AMD. Alcuni dei giochi rilasciati per il Ringwide sono Chaos Code, Operation G.H.O.S.T. e Sega Racing Classic.</text>
-      <text lang="fr">Le système d'arcade Sega Ringwide est une plateforme d'arcade développée par Sega dans le cadre de la série Ring (l'autre moitié étant Sega Ringedge). Les deux machines sont basées sur une architecture PC, utilisant Microsoft Windows Embedded Standard 2009 comme système d'exploitation.
+			<text lang="fr">Le système d'arcade Sega Ringwide est une plateforme d'arcade développée par Sega dans le cadre de la série Ring (l'autre moitié étant Sega Ringedge). Les deux machines sont basées sur une architecture PC, utilisant Microsoft Windows Embedded Standard 2009 comme système d'exploitation.
 
 La Ringwide est une carte polyvalente qui offre une gamme de prix. Elle est équipée d'un processeur Intel et d'un GPU AMD. Parmi les jeux commercialisés pour la Ringwide, citons Chaos Code, Operation G.H.O.S.T. et Sega Racing Classic.</text>
-      <text lang="de">Das Sega Ringwide Arcade-System ist eine Arcade-Plattform, die von Sega als eine Hälfte der Ring-Serie entwickelt wurde (die andere Hälfte ist Sega Ringedge). Beide Maschinen basieren auf der PC-Architektur und verwenden Microsoft Windows Embedded Standard 2009 als Betriebssystem.
+			<text lang="de">Das Sega Ringwide Arcade-System ist eine Arcade-Plattform, die von Sega als eine Hälfte der Ring-Serie entwickelt wurde (die andere Hälfte ist Sega Ringedge). Beide Maschinen basieren auf der PC-Architektur und verwenden Microsoft Windows Embedded Standard 2009 als Betriebssystem.
 
 Der Ringwide ist ein vielseitiges Board, das in verschiedenen Preiskategorien angeboten wird. Es verfügt über eine Intel-CPU und einen AMD-Grafikprozessor. Einige der für den Ringwide veröffentlichten Spiele sind Chaos Code, Operation G.H.O.S.T. und Sega Racing Classic.</text>
-      <text lang="es">El sistema arcade Sega Ringwide es una plataforma arcade desarrollada por Sega como una mitad de su serie Ring (la otra mitad es Sega Ringedge). Ambas máquinas se basan en la arquitectura PC y utilizan Microsoft Windows Embedded Standard 2009 como sistema operativo.
+			<text lang="es">El sistema arcade Sega Ringwide es una plataforma arcade desarrollada por Sega como una mitad de su serie Ring (la otra mitad es Sega Ringedge). Ambas máquinas se basan en la arquitectura PC y utilizan Microsoft Windows Embedded Standard 2009 como sistema operativo.
 
 La Ringwide es una placa versátil que ofrece una amplia gama de precios. Tiene una CPU Intel y una GPU AMD. Algunos de los juegos lanzados para la Ringwide son Chaos Code, Operation G.H.O.S.T. y Sega Racing Classic.</text>
-      <text lang="ru">Аркадная система Sega Ringwide - это аркадная платформа, разработанная компанией Sega как одна из половин серии Ring (вторая половина - Sega Ringedge). Обе машины основаны на архитектуре ПК и используют в качестве операционной системы Microsoft Windows Embedded Standard 2009.
+			<text lang="ru">Аркадная система Sega Ringwide - это аркадная платформа, разработанная компанией Sega как одна из половин серии Ring (вторая половина - Sega Ringedge). Обе машины основаны на архитектуре ПК и используют в качестве операционной системы Microsoft Windows Embedded Standard 2009.
 
 Ringwide - это универсальная плата, предлагаемая по разным ценам. Она оснащена процессором Intel и графическим процессором AMD. Среди игр, выпущенных для Ringwide, - Chaos Code, Operation G.H.O.S.T. и Sega Racing Classic.</text>
-      <text lang="pl">System zręcznościowy Sega Ringwide to platforma zręcznościowa opracowana przez firmę Sega jako połowa serii Ring (druga połowa to Sega Ringedge). Oba urządzenia oparte są na architekturze PC i wykorzystują system operacyjny Microsoft Windows Embedded Standard 2009.
+			<text lang="pl">System zręcznościowy Sega Ringwide to platforma zręcznościowa opracowana przez firmę Sega jako połowa serii Ring (druga połowa to Sega Ringedge). Oba urządzenia oparte są na architekturze PC i wykorzystują system operacyjny Microsoft Windows Embedded Standard 2009.
 
 Ringwide to wszechstronna płyta, która oferuje szeroki zakres punktów cenowych. Posiada procesor Intel i kartę graficzną AMD. Niektóre z gier wydanych na Ringwide to Chaos Code, Operation G.H.O.S.T. i Sega Racing Classic.</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-  </view>
+		</text>
+	</view>
 </theme>

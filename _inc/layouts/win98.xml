@@ -2,16 +2,18 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.38</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
+			<origin if="${screen.ratio} == '21/9'">0.44 0.5</origin>
+			<pos>0.462 0.43</pos>
+			<maxSize>0.22</maxSize>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.182 0.43" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -25,60 +27,26 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.55 0.5</origin>
-			<origin if="${screen.ratio} == '21/9'">0.44 0.5</origin>	
-			<pos>0.46 0.43</pos>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.38</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
+			<origin if="${screen.ratio} == '21/9'">0.44 0.5</origin>
+			<pos>0.462 0.43</pos>
 			<maxSize>0.202</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.27</maxSize>
 			<zIndex>25</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.18 0.43" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.182 0.43" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1998</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Microsoft</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>Windows 98</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>Windows 98 is a consumer-oriented operating system developed by Microsoft as part of its Windows 9x family of Microsoft Windows operating systems. The second operating system in the 9x line, it is the successor to Windows 95, and was released to manufacturing on May 15, 1998, and generally to retail on June 25, 1998. Like its predecessor, it is a hybrid 16-bit and 32-bit monolithic product with the boot stage based on MS-DOS.
 
 Windows 98 is a web-integrated operating system that bears numerous similarities to its predecessor. Most of its improvements were cosmetic or designed to improve the user experience, but there were also a handful of features introduced to enhance system functionality and capabilities, including improved USB support and accessibility, as well as support for hardware advancements such as DVD players.</text>
@@ -100,16 +68,6 @@ Windows 98 est un système d'exploitation intégré au web qui présente de nomb
 			<text lang="it">Windows 98 è un sistema operativo orientato al mercato consumer, sviluppato da Microsoft come parte della famiglia di sistemi operativi Microsoft Windows 9x. Secondo sistema operativo della linea 9x, è il successore di Windows 95 ed è stato rilasciato alla produzione il 15 maggio 1998 e in generale al dettaglio il 25 giugno 1998. Come il suo predecessore, è un prodotto monolitico ibrido a 16 e 32 bit con la fase di avvio basata su MS-DOS.
 
 Windows 98 è un sistema operativo integrato nel Web che presenta numerose somiglianze con il suo predecessore. La maggior parte delle migliorie apportate sono di natura estetica o volte a migliorare l'esperienza dell'utente, ma sono state introdotte anche alcune caratteristiche per migliorare le funzionalità e le capacità del sistema, tra cui il supporto e l'accessibilità dell'USB e il supporto di innovazioni hardware come i lettori DVD.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

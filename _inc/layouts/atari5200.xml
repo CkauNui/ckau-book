@@ -2,28 +2,19 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videocrton" extra="true">
-			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
-			<delay>0</delay>
-			<loops>0</loops>
-			<effect>none</effect>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
 			<pos>0.49 0.4</pos>
-			<maxSize>0.285</maxSize>
-			<zIndex>26</zIndex>
-		</video>
+			<maxSize>0.237</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
 		<video name="videobox" extra="true">
 			<path>{random}</path>
 			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
@@ -35,57 +26,25 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
 			<pos>0.49 0.4</pos>
-			<maxSize>0.285</maxSize>
+			<maxSize>0.227</maxSize>
 			<zIndex>25</zIndex>
 			<storyboard>
 				<animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1982</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Atari</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>5200</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The Atari 5200 SuperSystem or simply Atari 5200 is a home video game console introduced in 1982 by Atari, Inc. as a higher-end complement for the popular Atari Video Computer System. The VCS was renamed to the Atari 2600 at the time of the 5200's launch. The 5200 was created to compete with the Intellivision, but wound up a direct competitor of the ColecoVision shortly after its release. While the Coleco system shipped with the first home version of Nintendo's Donkey Kong, the pack-in game for the 5200 was 1978's Super Breakout which had already appeared on the Atari VCS and Atari 8-bit computers in 1978 and 1979 respectively.
 
 The 5200's internal hardware is almost identical to that of Atari's Atari 8-bit family, although software is not directly compatible between the two systems. The 5200's controllers have an analog joystick and a numeric keypad along with start, pause, and reset buttons. The 360-degree non-centering joystick was touted as offering more control than the eight-way Atari CX40 joystick of the 2600, but it was a focal point for criticism.
@@ -124,16 +83,6 @@ Le 21 mai 1984, lors d'une conférence de presse au cours de laquelle l'Atari 78
 L'hardware interno del 5200 è quasi identico a quello della famiglia Atari 8-bit, anche se il software non è direttamente compatibile tra i due sistemi. I controller del 5200 hanno un joystick analogico e un tastierino numerico, oltre ai pulsanti di avvio, pausa e reset. Il joystick non centrato a 360 gradi è stato pubblicizzato come in grado di offrire un maggiore controllo rispetto al joystick a otto vie Atari CX40 del 2600, ma è stato oggetto di critiche.
 
 Il 21 maggio 1984, durante la conferenza stampa di presentazione dell'Atari 7800, i dirigenti dell'azienda rivelarono che il 5200 era stato ritirato dal mercato dopo soli due anni. Le vendite totali del 5200 sarebbero state superiori a 1 milione di unità, ben al di sotto delle vendite del suo predecessore, che avevano superato i 30 milioni.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

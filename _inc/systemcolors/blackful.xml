@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<include>./colorful.xml</include>
+	<view name="system, menu">
+		<image name="sysbg" extra="true">
+			<color>000000</color>
+		</image>
+		<image name="sysbg-left" extra="true">
+			<color>000000</color>
+		</image>
+		<image name="sysbg-right" extra="true">
+			<color>000000</color>
+		</image>
+		<image name="sysbg-down" extra="true">
+			<color>000000</color>
+		</image>
+
+<!-- System info desc -->
+		<text name="TextDate" extra="true">
+			<color>FFFFFF80</color>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<color>FFFFFF</color>
+		</text>
+		<text name="TextName" extra="true">
+			<color>FFFFFF</color>
+		</text>
+		<text name="TextDesc" extra="true">
+			<color>FFFFFF</color>
+		</text>
+
+<!-- Helpsystem bottom bar bg -->
+		<image name="BottomBar" extra="static">
+			<color>000000B9</color>
+		</image>
+
+<!-- Prefer white versions of the logo -->
+		<image name="logo, logo1">
+			<path>./../../_inc/logos/${system.theme}-w.png</path>
+			<path>./../../_inc/logos/${system.theme}-w.svg</path>
+			<path>./../../_inc/logos/${system.theme}-w-${lang}.png</path>
+			<path>./../../_inc/logos/${system.theme}-w-${lang}.svg</path>
+			<!-- Attemps to load synonym if system not available -->
+			<path>./../../_inc/logos/${synonym}-w.png</path>
+			<path>./../../_inc/logos/${synonym}-w.svg</path>
+			<path>./../../_inc/logos/${synonym}-w-${lang}.png</path>
+			<path>./../../_inc/logos/${synonym}-w-${lang}.svg</path>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="logo, logo1" region="eu"></image>
+		<image name="logo, logo1" region="us">
+			<path>./../../_inc/logos/us/${system.theme}-w.png</path>
+			<path>./../../_inc/logos/us/${system.theme}-w.svg</path>
+			<path>./../../_inc/logos/us/${synonym}-w.png</path>
+			<path>./../../_inc/logos/us/${synonym}-w.svg</path>
+		</image>
+		<image name="logo, logo1" region="jp">
+			<path>./../../_inc/logos/jp/${system.theme}-w.png</path>
+			<path>./../../_inc/logos/jp/${system.theme}-w.svg</path>
+			<path>./../../_inc/logos/jp/${synonym}-w.png</path>
+			<path>./../../_inc/logos/jp/${synonym}-w.svg</path>
+		</image>
+	</view>
+</theme>

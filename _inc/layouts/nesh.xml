@@ -2,29 +2,23 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
-		<path>./../../_inc/anim/nes.png</path>
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<image name="sysart" extra="true">
+			<path>./../../_inc/anim/nes.png</path>
+			<path>./../../../ckau-book-addons/_inc/anim/4K/nes.png</path>
 		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videocrton" extra="true">
-			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
-			<delay>0</delay>
-			<loops>0</loops>
-			<effect>none</effect>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
 			<pos>0.49 0.4</pos>
-			<maxSize>0.24</maxSize>
-			<zIndex>26</zIndex>
-		</video>
+			<maxSize>0.25</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
 		<video name="videobox" extra="true">
 			<path>{random}</path>
 			<path>./../../_inc/anim/video/nes.mp4</path>
@@ -36,11 +30,14 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
 			<pos>0.49 0.4</pos>
-			<maxSize>0.24</maxSize>
+			<maxSize>0.227</maxSize>
 			<zIndex>25</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 			<video name="videoglich" extra="true">
@@ -48,6 +45,8 @@
             <delay>0</delay>
             <effect>none</effect>
  			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
 			<pos>0.49 0.4</pos>
 			<maxSize>0.24</maxSize>
             <zIndex>26</zIndex>
@@ -57,17 +56,8 @@
             </storyboard>
         </video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1986</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
+			
 		</text>
 		<!-- Support different dates for regional consoles/computers -->
 		<text name="TextDate" extra="true" region="eu"/>
@@ -79,32 +69,10 @@
 		</text>
 		<!-- -->
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Nintendo</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>Entertainment System</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<!-- Support different names for regional consoles/computers -->
 		<text name="TextName" extra="true" region="eu"/>
@@ -114,8 +82,6 @@
 		</text>
 		<!-- -->
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The Nintendo Entertainment System (NES) is an 8-bit third-generation home video game console produced by Nintendo. Nintendo first released it in Japan as the Family Computer, commonly known as the Famicom, in 1983. The NES, a remodelled version, was released internationally in the following years.
 
 The NES featured a number of groundbreaking games, such as the platform game Super Mario Bros, the action-adventure game The Legend of Zelda and the action game Metroid. As one of the best-selling gaming consoles of its time, the NES helped revitalize the US video game industry following the video game crash of 1983. Nintendo introduced a now-standard business model of licensing third-party developers to produce and distribute games for the NES. The NES was succeeded by the Super Nintendo Entertainment System.</text>
@@ -137,16 +103,6 @@ La NES proposait un certain nombre de jeux révolutionnaires, tels que le jeu de
 			<text lang="it">Il Nintendo Entertainment System (NES) è una console per videogiochi di terza generazione a 8 bit prodotta da Nintendo. Nintendo la distribuì per la prima volta in Giappone con il nome di Family Computer, comunemente noto come Famicom, nel 1983. Il NES, una versione rimodellata, è stato rilasciato a livello internazionale negli anni successivi.
 
 Il NES ha offerto una serie di giochi innovativi, come il platform Super Mario Bros, il gioco d'azione e avventura The Legend of Zelda e il gioco d'azione Metroid. Essendo una delle console più vendute dell'epoca, il NES contribuì a rivitalizzare l'industria videoludica statunitense dopo il crollo dei videogiochi del 1983. Nintendo introdusse un modello commerciale ormai standard che prevedeva la concessione di licenze a sviluppatori terzi per la produzione e la distribuzione di giochi per il NES. Al NES successe il Super Nintendo Entertainment System.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

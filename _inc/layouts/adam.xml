@@ -2,29 +2,20 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videocrton" extra="true">
-			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
-			<delay>0</delay>
-			<loops>0</loops>
-			<effect>none</effect>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>	
+			<origin if="${screen.ratio} == '4/3'">0.5 0.33</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>
 			<pos>0.5 0.36</pos>
-			<maxSize>0.22</maxSize>
-			<zIndex>26</zIndex>
-		</video>
+			<maxSize>0.23</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
 		<video name="videobox" extra="true">
 			<path>{random}</path>
 			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
@@ -36,7 +27,9 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>	
+			<origin if="${screen.ratio} == '4/3'">0.5 0.33</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>
 			<pos>0.5 0.36</pos>
 			<maxSize>0.22</maxSize>
 			<zIndex>25</zIndex>
@@ -45,49 +38,15 @@
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1983</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Coleco</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>Adam</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.40</pos>
 			<text>The Coleco Adam is a home computer and expansion device for the ColecoVision released in 1983 by American toy and video game manufacturer Coleco. It was an attempt to follow on the success of the company's ColecoVision video game console. The Adam was not very successful, partly because of early production problems, and was discontinued in early 1985.
 
 In its favor, the Adam had a large software library from the start. It was derived from and compatible with the ColecoVision's software and accessories, and, in addition, the popular CP/M operating system was available as an option. Its price gave a complete system: an 80 kB RAM computer, tape drive, letter-quality printer, and software including the Buck Rogers: Planet of Zoom video game.</text>
@@ -121,16 +80,6 @@ En sa faveur, l'Adam disposait dès le départ d'une vaste bibliothèque de logi
 			<text lang="it">Il Coleco Adam è un home computer e un dispositivo di espansione per il ColecoVision rilasciato nel 1983 dal produttore americano di giocattoli e videogiochi Coleco. Si trattava di un tentativo di dare seguito al successo della console per videogiochi ColecoVision dell'azienda. L'Adam non ebbe molto successo, in parte a causa di problemi di produzione iniziali, e fu dismesso all'inizio del 1985.
 
 A suo favore, l'Adam disponeva fin dall'inizio di un'ampia libreria di software. Era derivato e compatibile con il software e gli accessori del ColecoVision e, inoltre, il popolare sistema operativo CP/M era disponibile come opzione. Il prezzo offriva un sistema completo: un computer da 80 kB di RAM, un'unità a nastro, una stampante di qualità letterale e un software che includeva il videogioco Buck Rogers: Planet of Zoom.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

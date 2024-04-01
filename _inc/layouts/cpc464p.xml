@@ -2,16 +2,18 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.32</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '21/9'">0.48 0.5</origin>
+			<pos>0.5 0.36</pos>
+			<maxSize>0.238</maxSize>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -25,7 +27,8 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.51 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.32</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
 			<origin if="${screen.ratio} == '21/9'">0.48 0.5</origin>
 			<pos>0.5 0.36</pos>
 			<maxSize>0.228</maxSize>
@@ -35,49 +38,15 @@
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1990</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Amstrad</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>CPC 464 Plus</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The Amstrad CPC 464 Plus model was intended as "more sophisticated and stylish" replacements for the CPC 464. The 464 Plus has 64KB RAM and a cassette tape drive.
 
 The plus range is not equipped with an on-board ROM, and thus the 464 Plus and the 6128 Plus do not contain a firmware. Instead, Amstrad provided the firmware for both models via the ROM extension facility, contained on the included Burnin' Rubber and Locomotive BASIC cartridge. This resulted in reduced hardware localization cost (only some select key caps and case labels had to be localized) with the added benefit of a rudimentary copy protection mechanism (without a firmware present, the machine itself could not copy a game cartridge's content).</text>
@@ -101,16 +70,6 @@ Die Plus-Reihe ist nicht mit einem On-Board-ROM ausgestattet, und so enthalten d
 			<text lang="it">Il modello Amstrad CPC 464 Plus era destinato a sostituire il CPC 464 in modo "più sofisticato ed elegante". Il 464 Plus dispone di 64KB di RAM e di un lettore di cassette.
 
 La gamma plus non è dotata di una ROM a bordo e quindi il 464 Plus e il 6128 Plus non contengono un firmware. Amstrad ha invece fornito il firmware per entrambi i modelli tramite la funzione di estensione della ROM, contenuta nella cartuccia Burnin' Rubber e Locomotive BASIC inclusa. Questo ha permesso di ridurre i costi di localizzazione dell'hardware (è stato necessario localizzare solo alcuni tasti selezionati e le etichette delle custodie) con l'ulteriore vantaggio di un rudimentale meccanismo di protezione dalla copia (senza la presenza di un firmware, la macchina stessa non poteva copiare il contenuto di una cartuccia di gioco).</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

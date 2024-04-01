@@ -2,28 +2,20 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videocrton" extra="true">
-			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
-			<delay>0</delay>
-			<loops>0</loops>
-			<effect>none</effect>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
 			<origin>0.5 0.5</origin>
-			<pos>0.48 0.4</pos>
-			<maxSize>0.23</maxSize>
-			<zIndex>26</zIndex>
-		</video>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
+			<origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
+			<pos>0.4815 0.402</pos>
+			<maxSize>0.22</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.2015 0.402" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
 		<video name="videobox" extra="true">
 			<path>{random}</path>
 			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
@@ -35,57 +27,26 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<pos>0.48 0.4</pos>
-			<maxSize>0.23</maxSize>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
+			<origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
+			<pos>0.4815 0.402</pos>
+			<maxSize>0.215</maxSize>
 			<zIndex>25</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.20 0.4" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.2015 0.402" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1977</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Atari</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>2600</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The Atari 2600, originally branded as the Atari Video Computer System (Atari VCS) until November 1982, is a home video game console developed and produced by Atari, Inc. Released on September 11, 1977, it is credited with popularizing the use of microprocessor-based hardware and games stored on ROM cartridges (a format first used with the Fairchild Channel F in 1976). The VCS was bundled with two joystick controllers, a conjoined pair of paddle controllers, and a game cartridge: initially Combat, and later Pac-Man.
 
 The Atari VCS launched with nine simple, low-resolution games in 2 KiB cartridges. The system found its killer app with the home conversion of Taito's arcade game Space Invaders in 1980 and became widely successful, leading to the creation of Activision and other third-party game developers as well as competition from home console manufacturers Mattel and Coleco. By the end of its primary lifecycle in 1983–84, games for the 2600 were using more than four times the ROM of the launch titles with significantly more advanced visuals and gameplay than the system was designed for, such as Pitfall! and its scrolling sequel Pitfall II: Lost Caverns.</text>
@@ -117,16 +78,6 @@ L'Atari VCS a été lancé avec neuf jeux simples, à faible résolution, sur de
 			<text lang="it">L'Atari 2600, originariamente chiamato Atari Video Computer System (Atari VCS) fino al novembre 1982, è una console per videogiochi domestica sviluppata e prodotta da Atari, Inc. Rilasciata l'11 settembre 1977, è accreditata per aver reso popolare l'uso di hardware basato su microprocessore e giochi memorizzati su cartucce ROM (un formato utilizzato per la prima volta con il Fairchild Channel F nel 1976). Il VCS veniva fornito con due controller joystick, una coppia di controller paddle e una cartuccia di giochi: inizialmente Combat e successivamente Pac-Man.
 
 L'Atari VCS fu lanciato con nove semplici giochi a bassa risoluzione in cartucce da 2 KiB. Il sistema trovò la sua killer app con la conversione domestica del gioco arcade Space Invaders di Taito nel 1980 e ottenne un grande successo, portando alla creazione di Activision e di altri sviluppatori di giochi di terze parti, nonché alla concorrenza dei produttori di console domestiche Mattel e Coleco. Alla fine del suo ciclo di vita primario, nel 1983-84, i giochi per il 2600 utilizzavano più di quattro volte la ROM dei titoli di lancio, con una grafica e un gameplay molto più avanzati di quelli per cui il sistema era stato progettato, come Pitfall! e il suo seguito a scorrimento Pitfall II: Lost Caverns.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

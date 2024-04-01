@@ -2,30 +2,20 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videocrton" extra="true">
-			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
-			<delay>0</delay>
-			<loops>0</loops>
-			<effect>none</effect>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.52 0.5</origin>
-			<origin if="${screen.ratio} == '21/9'">0.47 0.5</origin>
-			<pos>0.48 0.395</pos>
-			<maxSize>0.22</maxSize>
-			<zIndex>26</zIndex>
-		</video>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.38</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '21/9'">0.48 0.5</origin>
+			<pos>0.48 0.4</pos>
+			<maxSize>0.24</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.20 0.4" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
 		<video name="videobox" extra="true">
 			<path>{random}</path>
 			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
@@ -37,8 +27,9 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.52 0.5</origin>
-			<origin if="${screen.ratio} == '21/9'">0.47 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.38</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '21/9'">0.48 0.5</origin>
 			<pos>0.48 0.395</pos>
 			<maxSize>0.22</maxSize>
 			<zIndex>25</zIndex>
@@ -47,49 +38,15 @@
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1979</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Mattel</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>Intellivision</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The Intellivision is a home video game console released by Mattel Electronics in 1979. The name Intellivision is a portmanteau of "intelligent television". Development of the console began in 1977, the same year as the introduction of its main competitor, the Atari 2600. From 1980 to 1983 over 3 million Intellivision units were sold. In 1984 Mattel sold their video game assets to a former Mattel Electronics executive and investors who formed an entity that became INTV Corporation. Games development, which had started in 1978, continued until 1990 when the Intellivision was discontinued.
 
 In 2009, video game website IGN named the Intellivision the No. 14 greatest video game console of all time. It remained Mattel's only video game console until the release of the HyperScan in 2006.</text>
@@ -120,16 +77,6 @@ En 2009, le site web de jeux vidéo IGN a désigné l'Intellivision comme la 14e
 			<text lang="it">L'Intellivision è una console per videogiochi domestica rilasciata da Mattel Electronics nel 1979. Il nome Intellivision è una crasi di "intelligent television". Lo sviluppo della console iniziò nel 1977, lo stesso anno dell'introduzione del suo principale concorrente, l'Atari 2600. Dal 1980 al 1983 sono state vendute oltre 3 milioni di unità Intellivision. Nel 1984 Mattel vendette i propri asset videoludici a un ex dirigente di Mattel Electronics e a degli investitori che formarono un'entità che divenne INTV Corporation. Lo sviluppo dei giochi, iniziato nel 1978, continuò fino al 1990, quando l'Intellivision fu dismesso.
 
 Nel 2009, il sito web di videogiochi IGN ha nominato l'Intellivision la più grande console per videogiochi di tutti i tempi. Rimase l'unica console per videogiochi di Mattel fino all'uscita dell'HyperScan nel 2006.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

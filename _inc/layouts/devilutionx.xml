@@ -2,16 +2,17 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
+			<pos>0.435 0.445</pos>
+			<maxSize>0.29</maxSize>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.155 0.445" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -25,7 +26,7 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.6 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
 			<origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
 			<pos>0.435 0.445</pos>
 			<maxSize>0.275</maxSize>
@@ -35,36 +36,12 @@
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>2019</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.03</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.25</pos>
-			<size>0.5 0</size>
 			<text>DevilutionX</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.35</pos>
 			<text>DevilutionX is a source port of Diablo and Hellfire that strives to make it simple to run the game while providing engine improvements, bugfixes, and some optional quality of life features.
 			</text>
 			<text lang="pl">DevilutionX jest źródłowym portem Diablo i Hellfire, który stara się ułatwić uruchamianie gry, a jednocześnie zapewnia ulepszenia silnika, poprawki błędów i kilka opcjonalnych funkcji poprawiających jakość gry.</text>
@@ -75,16 +52,6 @@
 			<text lang="de">DevilutionX ist eine Quellcode-Portierung von Diablo und Hellfire, die darauf abzielt, die Ausführung des Spiels zu vereinfachen und gleichzeitig Verbesserungen an der Engine, Fehlerbehebungen und einige optionale Lebensqualitätsfunktionen bereitzustellen.</text>
 			<text lang="fr">DevilutionX est un portage source de Diablo et Hellfire qui s'efforce de simplifier l'exécution du jeu tout en apportant des améliorations au moteur, des corrections de bugs et quelques fonctionnalités optionnelles de qualité de vie.</text>
 			<text lang="it">DevilutionX è un porting sorgente di Diablo e Hellfire che si sforza di rendere semplice l'esecuzione del gioco, fornendo al contempo miglioramenti al motore, correzioni di bug e alcune caratteristiche opzionali di qualità della vita.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

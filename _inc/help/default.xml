@@ -1,16 +1,30 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
-	<customView name="system,menu,basic,Carousel + Details + Marquee,Carousel + Details,Carousel,Colorful (horizontally),Colorful (vertically),Colorful + Gamelist (horizontally),Colorful + Gamelist (vertically),Colorful + Wheel Left (horizontally),Colorful + Gamelist (horizontally 2),Colorful + Wheel Left (vertically),Colorful + Wheel Right (horizontally),Colorful + Wheel Right (vertically),Detailed No Video,detailed,DetailedWheel,gamecarousel,Grid + Details + Marquee,Grid + Details,grid,Icons,Logo + Details,Tiles + Video,Tiles,Wallpapers,WallpapersCarousel,Detailed Dark,WallpapersHeroes,VideoFull,Carousel + Fanart,Grid + Fanart,gamecarousel No Boxart">
+	<view name="system, menu, basic, detailed, grid, gamecarousel">
 		<helpsystem name="help">
 			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
 			<fontSize>0.025</fontSize>
-			<pos>0.012 0.9625</pos>
-			<textColor>666666FF</textColor>
-			<iconColor>666666FF</iconColor>
+			<!-- <pos>0.012 0.9625</pos> -->
+			<origin>0.5 0</origin>
+			<pos>0.5 0.9625</pos>
 		</helpsystem>
 		<helpsystem name="help" if="{system.theme} == 'avgn'">
 			<pos>2 2</pos>
 		</helpsystem>
-	</customView>
+<!-- Helpsystem bottom bar bg
+\\\\
+Current in "\systemcolors\colorful.xml"
+\\\\
+ -->
+		<!-- <image name="BottomBar" extra="static">
+			<tile>false</tile>
+			<size>1 0.05</size>
+			<pos>0 1</pos>
+			<origin>0 1</origin>
+			<path>./_inc/images/space.png</path>
+			<color>141414B9</color>
+			<zIndex>91</zIndex>
+		</image> -->
+	</view>
 </theme>

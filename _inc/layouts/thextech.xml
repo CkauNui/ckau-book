@@ -1,113 +1,75 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <theme>
-  <formatVersion>7</formatVersion>
-  <view name="system">
-    <image name="background1" extra="true">
-      <storyboard>
-        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <image name="background" extra="true">
-      <zIndex>90</zIndex>
-      <storyboard>
-        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <video name="videobox" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
-      <path>./../../_inc/anim/video/${synonym}.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.5 0.41</pos>
-      <maxSize>0.351</maxSize>
-      <maxSize if="${screen.ratio} == '4/3'">0.5 0.5</maxSize>
-      <zIndex>25</zIndex>
-      <storyboard>
-        <animation property="pos" to="0.22 0.41" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <text name="TextDate" extra="true">
-      <pos>0.49 0.2</pos>
-      <text>2015</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextManufacturer" extra="true">
-      <pos>0.49 0.255</pos>
-      <text>Wohlstand</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.04</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextName" extra="true">
-      <pos>0.49 0.30</pos>
-      <size>0.5 0</size>
-      <text>TheXTech</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.065</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextDesc" extra="true">
-      <size>0.5 0</size>
-      <pos>0.49 0.4</pos>
-      <text>TheXTech is an open-source engine that allows you to play the classic Super Mario Bros. X (SMBX) games from 1.0 to 1.3. It is a recreation of the original SMBX engine that was written in Visual Basic 6 and later ported to C++ and SDL2. The project is hosted on GitHub and is actively developed by Wohlstand and other contributors. 
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.41</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.465</origin>
+			<pos>0.5 0.41</pos>
+			<maxSize>0.36</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.473</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.3925</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.41" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.41</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.465</origin>
+			<pos>0.5 0.41</pos>
+			<maxSize>0.351</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.466</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.389</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.41" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>2015</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>Wohlstand</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>TheXTech</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>TheXTech is an open-source engine that allows you to play the classic Super Mario Bros. X (SMBX) games from 1.0 to 1.3. It is a recreation of the original SMBX engine that was written in Visual Basic 6 and later ported to C++ and SDL2. The project is hosted on GitHub and is actively developed by Wohlstand and other contributors. 
 
 TheXTech is available as a standalone version for Windows, Linux, macOS, Android, and Nintendo Switch. The engine also supports LunaDLL Autocode (LunaScript) via a memory emulator, allowing you to play more old episodes on TheXTech even on non-x86 processors.</text>
-      <text lang="it">TheXTech è un motore open-source che consente di giocare ai classici giochi di Super Mario Bros. X (SMBX) dalla 1.0 alla 1.3. Si tratta di una ricreazione del motore SMBX originale, scritto in Visual Basic 6 e successivamente portato in C++ e SDL2. Il progetto è ospitato su GitHub ed è attivamente sviluppato da Wohlstand e da altri collaboratori.
+			<text lang="it">TheXTech è un motore open-source che consente di giocare ai classici giochi di Super Mario Bros. X (SMBX) dalla 1.0 alla 1.3. Si tratta di una ricreazione del motore SMBX originale, scritto in Visual Basic 6 e successivamente portato in C++ e SDL2. Il progetto è ospitato su GitHub ed è attivamente sviluppato da Wohlstand e da altri collaboratori.
 
 TheXTech è disponibile in versione standalone per Windows, Linux, macOS, Android e Nintendo Switch. Il motore supporta anche LunaDLL Autocode (LunaScript) tramite un emulatore di memoria, consentendo di giocare a più vecchi episodi di TheXTech anche su processori non-x86.</text>
-      <text lang="fr">TheXTech est un moteur open-source qui vous permet de jouer aux jeux classiques Super Mario Bros. X (SMBX) de 1.0 à 1.3. Il s'agit d'une recréation du moteur SMBX original, écrit en Visual Basic 6, puis porté en C++ et SDL2. Le projet est hébergé sur GitHub et est activement développé par Wohlstand et d'autres contributeurs.
+			<text lang="fr">TheXTech est un moteur open-source qui vous permet de jouer aux jeux classiques Super Mario Bros. X (SMBX) de 1.0 à 1.3. Il s'agit d'une recréation du moteur SMBX original, écrit en Visual Basic 6, puis porté en C++ et SDL2. Le projet est hébergé sur GitHub et est activement développé par Wohlstand et d'autres contributeurs.
 
 TheXTech est disponible en version autonome pour Windows, Linux, macOS, Android et Nintendo Switch. Le moteur prend également en charge l'autocode LunaDLL (LunaScript) via un émulateur de mémoire, ce qui vous permet de jouer à plus d'anciens épisodes sur TheXTech, même sur des processeurs non-x86.</text>
-      <text lang="de">TheXTech ist eine Open-Source-Engine, mit der Sie die klassischen Super Mario Bros. X (SMBX)-Spiele von 1.0 bis 1.3 spielen können. Es ist eine Nachbildung der ursprünglichen SMBX-Engine, die in Visual Basic 6 geschrieben und später auf C++ und SDL2 portiert wurde. Das Projekt wird auf GitHub gehostet und von Wohlstand und anderen Mitwirkenden aktiv weiterentwickelt.
+			<text lang="de">TheXTech ist eine Open-Source-Engine, mit der Sie die klassischen Super Mario Bros. X (SMBX)-Spiele von 1.0 bis 1.3 spielen können. Es ist eine Nachbildung der ursprünglichen SMBX-Engine, die in Visual Basic 6 geschrieben und später auf C++ und SDL2 portiert wurde. Das Projekt wird auf GitHub gehostet und von Wohlstand und anderen Mitwirkenden aktiv weiterentwickelt.
 
 TheXTech ist als eigenständige Version für Windows, Linux, macOS, Android und Nintendo Switch erhältlich. Die Engine unterstützt auch LunaDLL Autocode (LunaScript) über einen Speicheremulator, so dass Sie mehr alte Episoden auf TheXTech auch auf nicht-x86-Prozessoren spielen können.</text>
-      <text lang="es">TheXTech es un motor de código abierto que permite jugar a los juegos clásicos de Super Mario Bros. X (SMBX) desde la versión 1.0 a la 1.3. Se trata de una recreación del motor SMBX original, escrito en Visual Basic 6 y portado posteriormente a C++ y SDL2. El proyecto está alojado en GitHub y es desarrollado activamente por Wohlstand y otros colaboradores.
+			<text lang="es">TheXTech es un motor de código abierto que permite jugar a los juegos clásicos de Super Mario Bros. X (SMBX) desde la versión 1.0 a la 1.3. Se trata de una recreación del motor SMBX original, escrito en Visual Basic 6 y portado posteriormente a C++ y SDL2. El proyecto está alojado en GitHub y es desarrollado activamente por Wohlstand y otros colaboradores.
 
 TheXTech está disponible como versión independiente para Windows, Linux, macOS, Android y Nintendo Switch. El motor también es compatible con LunaDLL Autocode (LunaScript) a través de un emulador de memoria, lo que permite reproducir más episodios antiguos en TheXTech incluso en procesadores no x86.</text>
-      <text lang="ru">TheXTech - это движок с открытым исходным кодом, который позволяет играть в классические игры Super Mario Bros. X (SMBX) с версии 1.0 по 1.3. Он является воссозданием оригинального движка SMBX, который был написан на Visual Basic 6, а затем перенесен на C++ и SDL2. Проект размещен на GitHub и активно развивается Wohlstand и другими соавторами.
+			<text lang="ru">TheXTech - это движок с открытым исходным кодом, который позволяет играть в классические игры Super Mario Bros. X (SMBX) с версии 1.0 по 1.3. Он является воссозданием оригинального движка SMBX, который был написан на Visual Basic 6, а затем перенесен на C++ и SDL2. Проект размещен на GitHub и активно развивается Wohlstand и другими соавторами.
 
 TheXTech доступен в виде самостоятельной версии для Windows, Linux, macOS, Android и Nintendo Switch. Движок также поддерживает автокод LunaDLL (LunaScript) через эмулятор памяти, что позволяет играть в старые эпизоды TheXTech даже на процессорах не x86.</text>
-      <text lang="pl">TheXTech to silnik open-source, który pozwala grać w klasyczne gry Super Mario Bros. X (SMBX) od 1.0 do 1.3. Jest to odtworzenie oryginalnego silnika SMBX, który został napisany w Visual Basic 6, a później przeniesiony do C++ i SDL2. Projekt jest hostowany na GitHub i jest aktywnie rozwijany przez Wohlstanda i innych współpracowników.
+			<text lang="pl">TheXTech to silnik open-source, który pozwala grać w klasyczne gry Super Mario Bros. X (SMBX) od 1.0 do 1.3. Jest to odtworzenie oryginalnego silnika SMBX, który został napisany w Visual Basic 6, a później przeniesiony do C++ i SDL2. Projekt jest hostowany na GitHub i jest aktywnie rozwijany przez Wohlstanda i innych współpracowników.
 
 TheXTech jest dostępny jako samodzielna wersja dla systemów Windows, Linux, macOS, Android i Nintendo Switch. Silnik obsługuje również LunaDLL Autocode (LunaScript) za pośrednictwem emulatora pamięci, umożliwiając odtwarzanie starszych odcinków TheXTech nawet na procesorach innych niż x86.</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-  </view>
+		</text>
+	</view>
 </theme>

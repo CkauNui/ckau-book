@@ -1,130 +1,78 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <theme>
-  <formatVersion>7</formatVersion>
-  <view name="system">
-    <image name="background1" extra="true">
-      <storyboard>
-        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <image name="background" extra="true">
-      <zIndex>90</zIndex>
-      <storyboard>
-        <animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-        <animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </image>
-    <video name="videocrton" extra="true">
-      <path>./../../_inc/anim/video/CRT_ON.mp4</path>
-      <delay>0</delay>
-      <loops>0</loops>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <pos>0.49 0.4</pos>
-      <maxSize>0.22</maxSize>
-      <zIndex>26</zIndex>
-    </video>
-    <video name="videobox" extra="true">
-      <path>{random}</path>
-      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
-      <path>./../../_inc/anim/video/${synonym}.mp4</path>
-      <!-- Loads platform video from addon directory, if available -->
-      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-      <delay>0</delay>
-      <effect>none</effect>
-      <origin>0.5 0.5</origin>
-      <origin if="${screen.ratio} == '4/3'">0.52 0.5</origin>
-      <pos>0.5 0.34</pos>
-      <maxSize>0.25</maxSize>
-      <zIndex>25</zIndex>
-      <storyboard>
-        <animation property="pos" to="0.22 0.34" begin="2000" duration="1000" mode="linear"/>
-      </storyboard>
-    </video>
-    <text name="TextDate" extra="true">
-      <pos>0.49 0.2</pos>
-      <text>1986</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextManufacturer" extra="true">
-      <pos>0.49 0.255</pos>
-      <text>Videoton</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.04</fontSize>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextName" extra="true">
-      <pos>0.49 0.30</pos>
-      <size>0.5 0</size>
-      <text>TV-Computer 64</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>FFFFFF</color>
-      <fontSize>0.065</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-    <text name="TextDesc" extra="true">
-      <size>0.5 0</size>
-      <pos>0.49 0.40</pos>
-      <text>The TV-Computer (or TVC) is an 8-bit home computer manufactured by Videoton in 1986.
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.5 0.34</pos>
+			<maxSize>0.26</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.34" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.5 0.34</pos>
+			<maxSize>0.25</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.34" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>1986</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>Videoton</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>TV-Computer 64</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>The TV-Computer (or TVC) is an 8-bit home computer manufactured by Videoton in 1986.
 It was based on the Enterprise and had a built-in BASIC interpreter. Programs could be loaded via tape or floppy. The TVC had three graphical modes: 128×240/16 colors, 256×240/4 colors, and 512×240/2 colors (black and white). It had two tape ports, 1 A/V, 1 RGB monitor, 1 RF connector, 1 centronics printer port, 1 side (for program-modules - game cartridges) and 4 upper expansion ports and 2 joystick ports.
 
 The TVC was versatile due to its four upper expansion ports. Current enhancements using these ports are: SD card reader, sound card (with 3 different sound chips), game card (+2 joy ports +SN76489 sound chip + 4 built-in games), HDMI output with several FPGA cores (ofc including TVC), USB/PS2 mouse handling (and an unreleased gamecard with SID and sprite support) and many more.</text>
-      <text lang="it">Il TV-Computer (o TVC) è un home computer a 8 bit prodotto da Videoton nel 1986.
+			<text lang="it">Il TV-Computer (o TVC) è un home computer a 8 bit prodotto da Videoton nel 1986.
 Era basato sull'Enterprise e aveva un interprete BASIC incorporato. I programmi potevano essere caricati tramite nastro o floppy. Il TVC aveva tre modalità grafiche: 128×240/16 colori, 256×240/4 colori e 512×240/2 colori (bianco e nero). Disponeva di due porte nastro, 1 A/V, 1 monitor RGB, 1 connettore RF, 1 porta stampante centronics, 1 laterale (per moduli di programma - cartucce di gioco) e 4 porte di espansione superiori e 2 porte joystick.
 
 Il TVC era versatile grazie alle sue quattro porte di espansione superiori. I miglioramenti attuali che utilizzano queste porte sono: Lettore di schede SD, scheda audio (con 3 diversi chip sonori), scheda di gioco (+2 porte joy + chip sonoro SN76489 + 4 giochi integrati), uscita HDMI con diversi core FPGA (incluso ovviamente il TVC), gestione di mouse USB/PS2 (e una scheda di gioco inedita con supporto SID e sprite) e molto altro ancora.</text>
-      <text lang="fr">Le TV-Computer (ou TVC) est un ordinateur domestique 8 bits fabriqué par Videoton en 1986.
+			<text lang="fr">Le TV-Computer (ou TVC) est un ordinateur domestique 8 bits fabriqué par Videoton en 1986.
 Il était basé sur l'Enterprise et disposait d'un interprète BASIC intégré. Les programmes pouvaient être chargés sur bande ou sur disquette. Le TVC avait trois modes graphiques : 128×240/16 couleurs, 256×240/4 couleurs, et 512×240/2 couleurs (noir et blanc). Il disposait de deux ports de bande, d'un moniteur A/V, d'un moniteur RGB, d'un connecteur RF, d'un port d'imprimante centronics, d'un port latéral (pour les modules de programme - cartouches de jeu), de quatre ports d'extension supérieurs et de deux ports pour joystick.
 
 Le TVC était polyvalent grâce à ses quatre ports d'extension supérieurs. Les améliorations actuelles utilisant ces ports sont les suivantes : Lecteur de carte SD, carte son (avec 3 puces son différentes), carte jeu (+2 ports joystick + puce son SN76489 + 4 jeux intégrés), sortie HDMI avec plusieurs cœurs FPGA (dont le TVC), gestion de la souris USB/PS2 (et une carte jeu inédite avec support SID et sprite) et bien d'autres choses encore.</text>
-      <text lang="de">Der TV-Computer (oder TVC) ist ein 8-Bit-Heimcomputer, der 1986 von Videoton hergestellt wurde.
+			<text lang="de">Der TV-Computer (oder TVC) ist ein 8-Bit-Heimcomputer, der 1986 von Videoton hergestellt wurde.
 Er basierte auf dem Enterprise und hatte einen eingebauten BASIC-Interpreter. Programme konnten über Band oder Diskette geladen werden. Der TVC hatte drei Grafikmodi: 128×240/16 Farben, 256×240/4 Farben und 512×240/2 Farben (schwarz/weiß). Er hatte zwei Bandanschlüsse, 1 A/V-, 1 RGB-Monitor-, 1 RF-Anschluss, 1 Centronics-Druckeranschluss, 1 seitlichen (für Programm-Module - Spielkassetten) und 4 obere Erweiterungsanschlüsse und 2 Joystick-Anschlüsse.
 
 Der TVC war dank seiner vier oberen Erweiterungsanschlüsse vielseitig einsetzbar. Aktuelle Erweiterungen, die diese Anschlüsse nutzen, sind: SD-Kartenleser, Soundkarte (mit 3 verschiedenen Soundchips), Spielekarte (+2 Joystick-Ports +SN76489-Soundchip + 4 eingebaute Spiele), HDMI-Ausgang mit mehreren FPGA-Kernen (natürlich einschließlich TVC), USB/PS2-Maussteuerung (und eine noch nicht veröffentlichte Spielekarte mit SID- und Sprite-Unterstützung) und vieles mehr.</text>
-      <text lang="es">El TV-Computer (o TVC) es un ordenador doméstico de 8 bits fabricado por Videoton en 1986.
+			<text lang="es">El TV-Computer (o TVC) es un ordenador doméstico de 8 bits fabricado por Videoton en 1986.
 Estaba basado en el Enterprise e incorporaba un intérprete BASIC. Los programas podían cargarse a través de cinta o disquete. El TVC tenía tres modos gráficos: 128×240/16 colores, 256×240/4 colores y 512×240/2 colores (blanco y negro). Tenía dos puertos de cinta, 1 A/V, 1 monitor RGB, 1 conector RF, 1 puerto de impresora centronics, 1 lateral (para módulos de programa - cartuchos de juego) y 4 puertos de expansión superiores y 2 puertos de joystick.
 
 El TVC era versátil gracias a sus cuatro puertos de expansión superiores. Las mejoras actuales que utilizan estos puertos son: Lector de tarjetas SD, tarjeta de sonido (con 3 chips de sonido diferentes), tarjeta de juegos (+2 puertos de joystick + chip de sonido SN76489 + 4 juegos incorporados), salida HDMI con varios núcleos FPGA (por supuesto incluyendo TVC), manejo de ratones USB/PS2 (y una tarjeta de juegos no lanzada con soporte para SID y sprites) y muchas más.</text>
-      <text lang="ru">TV-Computer (или TVC) - 8-разрядный домашний компьютер, выпущенный компанией Videoton в 1986 году.
+			<text lang="ru">TV-Computer (или TVC) - 8-разрядный домашний компьютер, выпущенный компанией Videoton в 1986 году.
 Он был создан на базе Enterprise и имел встроенный интерпретатор языка BASIC. Программы могли загружаться с кассеты или дискеты. TVC имел три графических режима: 128×240/16 цветов, 256×240/4 цветов и 512×240/2 цветов (черно-белый). Имелись два ленточных порта, 1 A/V, 1 RGB-монитор, 1 RF-разъем, 1 порт принтера centronics, 1 боковой (для программных модулей - игровых картриджей) и 4 верхних порта расширения и 2 порта для джойстиков.
 
 Универсальность TVC обеспечивается наличием четырех верхних портов расширения. Современные усовершенствования, использующие эти порты, таковы: SD-кардридер, звуковая карта (с 3 различными звуковыми чипами), игровая карта (+2 джойстика + звуковой чип SN76489 + 4 встроенные игры), HDMI-выход с несколькими ядрами FPGA (в том числе и TVC), работа с мышью USB/PS2 (и еще не выпущенная игровая карта с поддержкой SID и спрайтов) и многое другое.</text>
-      <text lang="pl">TV-Computer (lub TVC) to 8-bitowy komputer domowy wyprodukowany przez firmę Videoton w 1986 roku.
+			<text lang="pl">TV-Computer (lub TVC) to 8-bitowy komputer domowy wyprodukowany przez firmę Videoton w 1986 roku.
 Był on oparty na Enterprise i posiadał wbudowany interpreter BASIC. Programy mogły być ładowane z taśmy lub dyskietki. TVC posiadał trzy tryby graficzne: 128×240/16 kolorów, 256×240/4 kolory i 512×240/2 kolory (czarno-biały). Posiadał dwa porty taśmowe, 1 A/V, 1 monitor RGB, 1 złącze RF, 1 port drukarki centronics, 1 boczny (na moduły programowe - kartridże z grami) i 4 górne porty rozszerzeń oraz 2 porty joysticków.
 
 TVC był wszechstronny dzięki czterem górnym portom rozszerzeń. Obecne rozszerzenia wykorzystujące te porty to: Czytnik kart SD, karta dźwiękowa (z 3 różnymi układami dźwiękowymi), karta do gier (+2 porty joy +SN76489 układ dźwiękowy + 4 wbudowane gry), wyjście HDMI z kilkoma rdzeniami FPGA (ofc w tym TVC), obsługa myszy USB/PS2 (oraz niewydana karta do gier z obsługą SID i sprite'ów) i wiele innych.</text>
-      <fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-      <color>666666</color>
-      <fontSize>0.025</fontSize>
-      <lineSpacing>1.1</lineSpacing>
-      <zIndex>140</zIndex>
-      <storyboard>
-        <animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-        <animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-      </storyboard>
-    </text>
-  </view>
+		</text>
+	</view>
 </theme>

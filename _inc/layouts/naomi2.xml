@@ -2,16 +2,75 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-left" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.35 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
+			<pos>0.29 0.36</pos>
+			<minSize>0.1 0.3</minSize>
+			<rotation>19</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>27</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.01 0.36" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
+		<image name="sysbg-right" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.65 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.54 0.4</origin>
+			<origin if="${screen.ratio} == '21/9'">0.9 0.5</origin>
+			<pos>0.712 0.36</pos>
+			<minSize>0.1 0.3</minSize>
+			<rotation>-19</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>27</zIndex>
 			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.432 0.36" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+			<pos>0.50 0.365</pos>
+			<maxSize>0.185</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.365" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-left" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.27</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
+			<origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>
+			<pos>0.3854 0.395</pos>
+			<maxSize>0.165</maxSize>
+			<rotation>-71</rotation>
+			<storyboard>
+				<animation property="pos" to="0.1054 0.395" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-right" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.39</origin>
+			<origin if="${screen.ratio} == '21/9'">0.85 0.5</origin>
+			<pos>0.6139 0.385</pos>
+			<maxSize>0.165</maxSize>
+			<rotation>71</rotation>
+			<storyboard>
+				<animation property="pos" to="0.3339 0.385" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -24,6 +83,8 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
 			<pos>0.50 0.365</pos>
 			<maxSize>0.165</maxSize>
 			<zIndex>26</zIndex>
@@ -40,7 +101,8 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.2 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.18</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
 			<origin if="${screen.ratio} == '21/9'">0.85 0.5</origin>
 			<pos>0.635 0.378</pos>
 			<maxSize>0.165</maxSize>
@@ -59,7 +121,8 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.8 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.18</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
 			<origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>
 			<pos>0.365 0.378</pos>
 			<maxSize>0.16</maxSize>
@@ -70,49 +133,15 @@
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>2000</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Sega</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>Naomi 2</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The Sega NAOMI 2 is an arcade board developed by Sega and is a successor to Sega NAOMI hardware. It was originally released in 2000. Since it uses similar NAOMI architecture (but significantly beefed up), it is also fully backwards compatible with its predecessor.
 
 The NAOMI 2 is significantly more powerful than the NAOMI, including a dual CPU setup, new TL GPU, dual rasterizer GPU, increased memory, and faster bandwidth. This leads to games with much more polygons than a NAOMI game, rendered at much faster speeds, while the new TL GPU adds advanced lighting and particle effects. It was also more affordable than the very expensive (and difficult to program) Sega Hikaru arcade system that preceded it. The NAOMI 2 was nevertheless more powerful than home systems at the time.
@@ -150,16 +179,6 @@ Comme le NAOMI, le NAOMI 2 était également disponible en version GD-ROM et ter
 Il NAOMI 2 è molto più potente del NAOMI, con una configurazione a doppia CPU, una nuova GPU TL, una GPU a doppio rasterizzatore, una memoria maggiore e una larghezza di banda più veloce. Questo porta a giochi con un numero di poligoni molto maggiore rispetto a un gioco NAOMI, renderizzati a velocità molto più elevate, mentre la nuova GPU TL aggiunge effetti avanzati di illuminazione e particellari. Il NAOMI 2 era anche più conveniente del costoso (e difficile da programmare) sistema arcade Sega Hikaru che lo aveva preceduto. Il NAOMI 2 era comunque più potente dei sistemi domestici dell'epoca.
 
 Come il NAOMI, anche il NAOMI 2 era disponibile nelle varianti GD-ROM e Satellite Terminal. È stata l'ultima scheda di sistema arcade proprietaria di Sega; le schede arcade successive di Sega sono state basate su hardware di console e PC.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

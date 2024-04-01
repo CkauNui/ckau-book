@@ -2,16 +2,18 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '21/9'">0.43 0.5</origin>
+			<pos>0.4645 0.41</pos>
+			<maxSize>0.24</maxSize>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.1845 0.41" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -25,60 +27,26 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
 			<origin if="${screen.ratio} == '21/9'">0.43 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.55 0.5</origin>
-			<pos>0.462 0.41</pos>
-			<maxSize>0.19</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.26</maxSize>
+			<pos>0.4645 0.41</pos>
+			<maxSize>0.22</maxSize>
 			<zIndex>25</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.182 0.41" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.1845 0.41" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1983</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>VTech</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>Laser 310</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.40</pos>
 			<text>VTech Laser 310 (also known as VZ-310). It is an all-in-one computer with a Z80, 3.54 MHz microprocessor. VTech (short for Video Technology Ltd.) was a Hong Kong electronics company that also sold the Laser in other countries through various retail chains. The Laser 310 was sold by Dick Smith Electronics , for example, so instead of VTech the Laser 310 was then called the Dick Smith Laser VZ-310 or VZ-310 for short (sold from 1983 to 1989). The Laser 310 is comparable to the previous model Laser200 (VZ-200), except for a modified keyboard and a rather unusual memory size of 18 KiB (2 KiB of which is video RAM) and is fully compatible with it. The machine ran basic games on the cartridge, such as Hoppy (Frogger's version), Cosmic Rescue (Scramble), VZ Invaders (Space Invaders), Dawn Patrol (Chopper) and Moon Patrol.
 
 Technical specifications:
@@ -118,16 +86,6 @@ Caractéristiques techniques :
 - Résolution du texte : 32 x 16 caractères (8 couleurs)
 - Résolution graphique : 128 x 64 pixels (4 couleurs)</text>
 			<text lang="it">VTech Laser 310 (noto anche come VZ-310). È un computer all-in-one con microprocessore Z80 a 3,54 MHz. VTech (acronimo di Video Technology Ltd.) era un'azienda elettronica di Hong Kong che vendeva il Laser anche in altri Paesi attraverso varie catene di vendita al dettaglio. Il Laser 310 era venduto, ad esempio, da Dick Smith Electronics, quindi invece di VTech il Laser 310 era chiamato Dick Smith Laser VZ-310 o VZ-310 (venduto dal 1983 al 1989). Il Laser 310 è paragonabile al modello precedente Laser200 (VZ-200), ad eccezione di una tastiera modificata e di una memoria piuttosto insolita di 18 KiB (di cui 2 KiB di RAM video) ed è pienamente compatibile con esso. La macchina funzionava con giochi di base su cartuccia, come Hoppy (versione di Frogger), Cosmic Rescue (Scramble), VZ Invaders (Space Invaders), Dawn Patrol (Chopper) e Moon Patrol.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

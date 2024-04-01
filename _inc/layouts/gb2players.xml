@@ -2,16 +2,33 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.375</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
+			<origin if="${screen.ratio} == '21/9'">-0.1 0.5</origin>
+			<pos>0.338 0.45</pos>
+			<maxSize>0.16</maxSize>
 			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.058 0.45" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
+		<image name="sysbg-video-right" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.595</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.53</origin>
+			<origin if="${screen.ratio} == '21/9'">1.1 0.5</origin>
+			<pos>0.66 0.54</pos>
+			<maxSize>0.16</maxSize>
+			<rotation>180</rotation>
 			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.38 0.54" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
@@ -19,17 +36,17 @@
 			<path>./../../_inc/anim/video/gb.mp4</path>
 			<!-- Loads platform video from addon directory, if available -->
 			<path>./../../../ckau-book-addons/_inc/anim/video/gb.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">1 0.5</origin>
-			<origin if="${screen.ratio} == '21/9'">-0.05 0.5</origin>
-			<pos>0.338 0.45</pos>
-			<maxSize>0.15</maxSize>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.375</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
+			<origin if="${screen.ratio} == '21/9'">-0.1 0.5</origin>
+			<pos>0.336 0.446</pos>
+			<maxSize>0.14</maxSize>
 			<zIndex>25</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.058 0.45" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.056 0.446" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<video name="videobox2" extra="true">
@@ -37,65 +54,32 @@
 			<path>./../../_inc/anim/video/gb.mp4</path>
 			<!-- Loads platform video from addon directory, if available -->
 			<path>./../../../ckau-book-addons/_inc/anim/video/gb.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
 			<delay>0</delay>
 			<audio>false</audio>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0 0.5</origin>
-			<origin if="${screen.ratio} == '21/9'">1.05 0.5</origin>
-			<pos>0.66 0.54</pos>
-			<maxSize>0.15</maxSize>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.595</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.53</origin>
+			<origin if="${screen.ratio} == '21/9'">1.1 0.5</origin>
+			<pos>0.662 0.54</pos>
+			<maxSize>0.14</maxSize>
 			<zIndex>25</zIndex>
 			<rotation>180</rotation>
 			<storyboard>
-				<animation property="pos" to="0.38 0.54" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.382 0.54" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1989</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>Nintendo</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
-			<text>Game Boy (2 Players)</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
+			<text>Game Boy
+(2 Players)</text>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The Nintendo Game Link Cable is an accessory for the Game Boy line of handheld video game systems, allowing players to connect Game Boy's of all types for multiplayer play. Depending on the games, the Game Link Cable can be used to connect two games with the same title, such as Tetris, or two compatible games, such as Pokémon Red and Blue. Games can be linked together to compete, cooperate, trade items, unlock hidden features, etc.</text>
 			<text lang="pl">Nintendo Game Link Cable jest akcesorium dla linii Game Boy ręcznych systemów gier wideo, umożliwiając graczom połączenie Game Boy'ów wszystkich typów do gry wieloosobowej. W zależności od gier, kabel Game Link może być używany do łączenia dwóch gier o tym samym tytule, takich jak Tetris, lub dwóch kompatybilnych gier, takich jak Pokémon Red i Blue. Gry można łączyć ze sobą w celu rywalizacji, współpracy, handlu przedmiotami, odblokowywania ukrytych funkcji itp.</text>
 			<text lang="ru">Линейка портативных игровых устройств, разработанная и производившаяся Nintendo.
@@ -108,16 +92,6 @@
 			<text lang="de">Das Nintendo Game Link Cable ist ein Zubehör für die Game Boy-Reihe von Handheld-Videospielsystemen, mit dem Spieler Game Boy's aller Art für Multiplayer-Spiele verbinden können. Je nach Spiel kann das Game Link Cable verwendet werden, um zwei Spiele mit demselben Titel zu verbinden, wie z. B. Tetris, oder zwei kompatible Spiele, wie z. B. Pokémon Rot und Blau. Die Spiele können miteinander verbunden werden, um zu konkurrieren, zu kooperieren, Gegenstände zu tauschen, versteckte Funktionen freizuschalten usw.</text>
 			<text lang="fr">Le câble Game Link de Nintendo est un accessoire pour la gamme de consoles de jeux vidéo portables Game Boy, permettant aux joueurs de connecter des Game Boy de tous types pour jouer à plusieurs. Selon les jeux, le câble Game Link peut être utilisé pour connecter deux jeux portant le même titre, comme Tetris, ou deux jeux compatibles, comme Pokémon Rouge et Bleu. Les jeux peuvent être reliés entre eux pour s'affronter, coopérer, échanger des objets, débloquer des fonctions cachées, etc.</text>
 			<text lang="it">Il cavo Game Link di Nintendo è un accessorio per la linea di console portatili per videogiochi Game Boy, che consente ai giocatori di collegare Game Boy di ogni tipo per giocare in multiplayer. A seconda dei giochi, il cavo Game Link può essere utilizzato per collegare due giochi con lo stesso titolo, come Tetris, o due giochi compatibili, come Pokémon Rosso e Blu. I giochi possono essere collegati tra loro per competere, cooperare, scambiare oggetti, sbloccare funzioni nascoste, ecc.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>

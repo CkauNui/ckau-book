@@ -2,28 +2,19 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="background1" extra="true">
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="background" extra="true">
-			<zIndex>90</zIndex>
-			<storyboard>
-				<animation property="pos" to="1.5 0.5" begin="0" duration="0" mode="linear"/>
-				<animation property="pos" to="0.95 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videocrton" extra="true">
-			<path>./../../_inc/anim/video/CRT_ON.mp4</path>
-			<delay>0</delay>
-			<loops>0</loops>
-			<effect>none</effect>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
 			<pos>0.5 0.355</pos>
-			<maxSize>0.246</maxSize>
-			<zIndex>26</zIndex>
-		</video>
+			<maxSize>0.256</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.355" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
 		<video name="videobox" extra="true">
 			<path>{random}</path>
 			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
@@ -35,6 +26,8 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
 			<pos>0.5 0.355</pos>
 			<maxSize>0.246</maxSize>
 			<zIndex>25</zIndex>
@@ -43,49 +36,15 @@
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
-			<pos>0.49 0.2</pos>
 			<text>1990</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.1" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<pos>0.49 0.255</pos>
 			<text>SNK</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.04</fontSize>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextName" extra="true">
-			<pos>0.49 0.30</pos>
-			<size>0.5 0</size>
 			<text>Neo Geo</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.065</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="x" from="0.5" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
-			<size>0.5 0</size>
-			<pos>0.49 0.4</pos>
 			<text>The Neo Geo, stylised as NEO•GEO, also written as NEOGEO, is a cartridge-based arcade system board and fourth-generation home video game console released on April 26, 1990, by Japanese game company SNK Corporation. It was the first system in SNK's Neo Geo family. The Neo Geo was marketed as 24-bit; its CPU is technically a 16/32-bit 68000-based system with an 8/16-bit Z80 coprocessor, while its GPU chipset has a 24-bit graphics data bus.
 
 The Neo Geo originally launched as the MVS (Multi Video System) coin-operated arcade machine. The MVS offers owners the ability to put up to six different cartridges into a single cabinet, a unique feature that was also a key economic consideration for operators with limited floorspace, as well as saving money long-term. With its games stored on self-contained cartridges, a game cabinet can be exchanged for a different game title by swapping the game's ROM cartridge and cabinet artwork. A home console version was also made, called AES (Advanced Entertainment System). It was originally launched as a rental console for video game stores in Japan (called Neo Geo Rental System), with its high price causing SNK not to release it for home use – this was later reversed due to high demand and it came into the market as a luxury console. The AES had the same raw specs as the MVS and had full compatibility, thus managed to bring a true arcade experience to home users. The Neo Geo was revived along with the brand overall in December 2012 through the introduction of the Neo Geo X handheld and home system.</text>
@@ -111,16 +70,6 @@ Le Neo Geo a été lancé à l'origine comme machine d'arcade à pièces MVS (Mu
 			<text lang="it">Il Neo Geo, stilizzato come NEO-GEO, scritto anche come NEOGEO, è un sistema arcade a cartuccia e una console per videogiochi domestica di quarta generazione rilasciata il 26 aprile 1990 dalla società giapponese SNK Corporation. È stato il primo sistema della famiglia Neo Geo di SNK. Il Neo Geo è stato commercializzato come 24-bit; la sua CPU è tecnicamente un sistema a 16/32-bit basato su 68000 con un coprocessore Z80 a 8/16-bit, mentre il suo chipset GPU ha un bus dati grafico a 24-bit.
 
 Il Neo Geo è stato originariamente lanciato come macchina arcade a gettoni MVS (Multi Video System). L'MVS offre ai proprietari la possibilità di inserire fino a sei cartucce diverse in un singolo cabinet, una caratteristica unica che era anche una considerazione economica fondamentale per gli operatori con spazi limitati, oltre che un risparmio a lungo termine. Grazie ai giochi memorizzati su cartucce autonome, un cabinet può essere sostituito con un titolo diverso scambiando la cartuccia ROM del gioco e la grafica del cabinet. È stata realizzata anche una versione per console domestica, chiamata AES (Advanced Entertainment System). Inizialmente fu lanciata come console a noleggio per i negozi di videogiochi in Giappone (chiamata Neo Geo Rental System), e il suo prezzo elevato spinse SNK a non rilasciarla per uso domestico; in seguito, a causa dell'elevata domanda, la console fu introdotta sul mercato come console di lusso. L'AES aveva le stesse specifiche grezze dell'MVS e la piena compatibilità, riuscendo così a portare una vera esperienza arcade agli utenti domestici. Il Neo Geo è stato rilanciato insieme al marchio nel dicembre 2012 con l'introduzione del sistema portatile e domestico Neo Geo X.</text>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>666666</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-			<storyboard>
-				<animation property="y" from="0.8" begin="3000" duration="1000" mode="linear"/>
-				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="1000" mode="EaseIn"/>
-			</storyboard>
 		</text>
 	</view>
 </theme>
