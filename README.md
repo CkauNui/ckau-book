@@ -23,8 +23,8 @@ Supported languages: English, French, German, Spanish, Italian, Polish, Russian.
 </p>
 
 ## Video Playlist
-
-https://www.youtube.com/playlist?list=PLlc3zkd7FLPScpaFz9Gf7WWrcR0v21pDv
+[Ckau-Book 2.0 Update](https://youtu.be/ZZAhYxToddg)<br/>
+[YouTube Playlist](https://www.youtube.com/playlist?list=PLlc3zkd7FLPScpaFz9Gf7WWrcR0v21pDv)
 
 ## Screenshots
 
