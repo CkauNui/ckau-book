@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysart" extra="true">
+			<path>./../../_inc/anim/snes.png</path>
+			<path>./../../../ckau-book-addons/_inc/anim/4K/snes.png</path>
+		</image>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.5 0.39</pos>
+			<maxSize>0.25</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.5 0.39</pos>
+			<maxSize>0.24</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>1992</text>
+		</text>
+		<!-- Support different dates for regional consoles/computers -->
+		<text name="TextDate" extra="true" region="eu"/>
+		<text name="TextDate" extra="true" region="us">
+			<text>1991</text>
+		</text>
+		<text name="TextDate" extra="true" region="jp">
+			<text>1990</text>
+		</text>
+		<!-- -->
+		<text name="TextManufacturer" extra="true">
+			<text>Nintendo</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>SNES - TOP</text>
+		</text>
+		<!-- Support different names for regional consoles/computers -->
+		<text name="TextName" extra="true" region="eu"/>
+		<text name="TextName" extra="true" region="us"/>
+		<text name="TextName" extra="true" region="jp">
+			<text>Super Famicom - TOP</text>
+		</text>
+		<!-- -->
+		<text name="TextDesc" extra="true">
+			<text>The Super Nintendo Entertainment System (SNES), also known as the Super NES or Super Nintendo, is a 16-bit home video game console developed by Nintendo that was released in 1990 in Japan and South Korea, 1991 in North America, 1992 in Europe and Australasia (Oceania), and 1993 in South America. In Japan, the system is called the Super Famicom (SFC). In South Korea, it is known as the Super Comboy and was distributed by Hyundai Electronics. The system was released in Brazil on August 30, 1993, by Playtronic. Although each version is essentially the same, several forms of regional lockout prevent the different cartridges from being compatible with one another.
+
+The SNES is Nintendo's second programmable home console, following the Nintendo Entertainment System (NES). The console introduced advanced graphics and sound capabilities compared with other systems at the time. The system was designed to accommodate the ongoing development of a variety of enhancement chips integrated into game cartridges to be competitive into the next generation.</text>
+			<text lang="pl">Super Nintendo Entertainment System (w skrócie SNES i Super NES) – 16-bitowa konsola do gier, która osiągnęła wielki sukces w krajach zachodniej Europy, USA oraz w Japonii (tam pod nazwą Super Famicom).
+
+Był to następca NES-a/Famicoma, wykorzystujący nowe 16-bitowe podzespoły pozwalające na tworzenie bardziej zaawansowanych technicznie gier, z lepszą grafiką i dźwiękiem. Gry, podobnie jak w poprzednim modelu występowały w postaci kartridża, mogącego zawierać dodatkowe układy rozszerzające funkcje konsoli.
+
+Konsola wydana pierwotnie w Japonii, została przemodelowana na rynek amerykański oraz w niemal niezmienionej zewnętrznie formie wydana w Europie. Konsola posiadała blokadę regionalną, uniemożliwiającą uruchomienie gier z innych regionów. Jednak była możliwość pominięcia tego problemu za pomocą specjalnego adaptera. W przypadku modeli amerykańskiego i japońskiego był nią jedynie kształt obudowy kartridża.
+
+Konsola doczekała się szeregu nieoficjalnych emulatorów na różne platformy, w tym także na konsole stacjonarne jak PlayStation 2, GameCube oraz na urządzenia mobilne z systemem iOS, Android. Są to np. ZSNES, Snes9x czy higan. Dodatkowo na konsoli Wii udostępniono usługę Virtual Console, umożliwiającą uruchamianie wybranych tytułów.</text>
+			<text lang="ru">16-разрядная игровая приставка. стала второй домашней консолью Nintendo вслед за NES (которая выпускалась в Японии под названием Famicom). В SNES были представлены улучшенные графические и звуковые возможности по сравнению с другими консолями того времени. Кроме того, разработка дополнительных чипов, которые встраивались в картридж игры, позволяла ей оставаться конкурентоспособной на мировом рынке даже после выхода следующего поколения игровых приставок.
+
+Консоль приобрела популярность во многих странах, став самой продаваемой 16-битной приставкой, несмотря на упорную конкуренцию в Северной Америке со стороны Sega. SNES осталась популярна в эпоху 32-битных систем среди фанатов, коллекционеров и энтузиастов, работающих с эмуляцией (которые создают самодельные образы ПЗУ), несмотря на то, что Nintendo прекратила поддержку данной консоли.</text>
+			<text lang="es">La Super Nintendo Entertainment System (SNES), también conocida como Super NES o Super Nintendo, es una videoconsola doméstica de 16 bits desarrollada por Nintendo que salió a la venta en 1990 en Japón y Corea del Sur, en 1991 en Norteamérica, en 1992 en Europa y Australasia (Oceanía) y en 1993 en Sudamérica. En Japón, la consola se denomina Super Famicom (SFC). En Corea del Sur, se conoce como Super Comboy y fue distribuido por Hyundai Electronics. En Brasil, Playtronic lanzó la consola el 30 de agosto de 1993. Aunque cada versión es esencialmente la misma, varias formas de bloqueo regional impiden que los diferentes cartuchos sean compatibles entre sí.
+
+La SNES es la segunda consola doméstica programable de Nintendo, tras la Nintendo Entertainment System (NES). La consola introdujo funciones avanzadas de gráficos y sonido en comparación con otras consolas de la época. El sistema se diseñó para dar cabida al desarrollo continuo de una variedad de chips de mejora integrados en los cartuchos de juego para ser competitivos en la siguiente generación.</text>
+			<text lang="de">Das Super Nintendo Entertainment System (SNES), auch bekannt als Super NES oder Super Nintendo, ist eine von Nintendo entwickelte 16-Bit-Videospielkonsole für den Heimgebrauch, die 1990 in Japan und Südkorea, 1991 in Nordamerika, 1992 in Europa und Australasien (Ozeanien) und 1993 in Südamerika veröffentlicht wurde. In Japan wird das System Super Famicom (SFC) genannt. In Südkorea ist es unter dem Namen Super Comboy bekannt und wurde von Hyundai Electronics vertrieben. In Brasilien wurde das System am 30. August 1993 von Playtronic veröffentlicht. Obwohl alle Versionen im Wesentlichen gleich sind, verhindern verschiedene Formen von regionalen Sperren, dass die verschiedenen Cartridges miteinander kompatibel sind.
+
+Das SNES ist die zweite programmierbare Heimkonsole von Nintendo nach dem Nintendo Entertainment System (NES). Die Konsole bot im Vergleich zu anderen Systemen der damaligen Zeit fortschrittliche Grafik- und Soundfunktionen. Das System war so konzipiert, dass es die Weiterentwicklung einer Vielzahl von in Spielkassetten integrierten Erweiterungs-Chips ermöglichte, um in der nächsten Generation wettbewerbsfähig zu sein.</text>
+			<text lang="fr">La Super Nintendo Entertainment System (SNES), également connue sous le nom de Super NES ou Super Nintendo, est une console de jeux vidéo de salon 16 bits développée par Nintendo et commercialisée en 1990 au Japon et en Corée du Sud, en 1991 en Amérique du Nord, en 1992 en Europe et en Australasie (Océanie), et en 1993 en Amérique du Sud. Au Japon, la console est appelée Super Famicom (SFC). En Corée du Sud, il est connu sous le nom de Super Comboy et a été distribué par Hyundai Electronics. Le système a été commercialisé au Brésil le 30 août 1993 par Playtronic. Bien que chaque version soit essentiellement la même, plusieurs formes de verrouillage régional empêchent les différentes cartouches d'être compatibles les unes avec les autres.
+
+La SNES est la deuxième console de salon programmable de Nintendo, après la Nintendo Entertainment System (NES). La console a introduit des capacités graphiques et sonores avancées par rapport aux autres consoles de l'époque. La console a été conçue pour s'adapter au développement continu d'une variété de puces d'amélioration intégrées dans les cartouches de jeu afin d'être compétitive dans la génération suivante.</text>
+			<text lang="it">Il Super Nintendo Entertainment System (SNES), noto anche come Super NES o Super Nintendo, è una console per videogiochi domestici a 16 bit sviluppata da Nintendo e uscita nel 1990 in Giappone e Corea del Sud, nel 1991 in Nord America, nel 1992 in Europa e Australasia (Oceania) e nel 1993 in Sud America. In Giappone la console è chiamata Super Famicom (SFC). In Corea del Sud è conosciuto come Super Comboy ed è stato distribuito da Hyundai Electronics. Il sistema è stato rilasciato in Brasile il 30 agosto 1993 da Playtronic. Sebbene ogni versione sia essenzialmente identica, diverse forme di blocco regionale impediscono alle diverse cartucce di essere compatibili tra loro.
+
+Lo SNES è la seconda console domestica programmabile di Nintendo, dopo il Nintendo Entertainment System (NES). La console introdusse capacità grafiche e sonore avanzate rispetto alle altre console dell'epoca. La console è stata progettata per accogliere il continuo sviluppo di una serie di chip di miglioramento integrati nelle cartucce di gioco per essere competitivi nella generazione successiva.</text>
+		</text>
+	</view>
+</theme>
