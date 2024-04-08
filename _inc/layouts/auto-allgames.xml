@@ -2,20 +2,18 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<!-- fix bg and color -->
+		<!-- fix bg color -->
 		<image name="sysbg-fix" extra="true">
-			<zIndex>2</zIndex>
-			<color>${sysColor}</color>
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
-			<size>1 1</size>
-			<path>./../../_inc/images/space.png</path>
+			<maxSize>1 1</maxSize>
+			<scale if="${screen.ratio} == '16/10'">0.9</scale>
+			<scale if="${screen.ratio} == '4/3'">0.75</scale>
+			<path>./../../_inc/anim/auto-fix.png</path>
+			<zIndex>26</zIndex>
 			<storyboard>
 				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
-		</image>
-		<image name="sysbg" extra="true">
-			<color>82cdea</color>
 		</image>
 
 		<image name="sysbg-video" extra="true">
