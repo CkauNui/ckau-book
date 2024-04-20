@@ -1,0 +1,169 @@
+<?xml version="1.0" ?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-left" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.4 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
+			<pos>0.287 0.36</pos>
+			<minSize>0.1 0.4</minSize>
+			<rotation>26</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>27</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.007 0.36" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-right" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.6 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '21/9'">0.95 0.5</origin>
+			<pos>0.713 0.36</pos>
+			<minSize>0.1 0.4</minSize>
+			<rotation>-26</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>27</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.433 0.36" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+			<pos>0.50 0.38</pos>
+			<maxSize>0.2</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.38" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-left" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.53 0.15</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+			<pos>0.371 0.39</pos>
+			<maxSize>0.13</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.15</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.14</maxSize>
+			<rotation>-64</rotation>
+			<storyboard>
+				<animation property="pos" to="0.091 0.39" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-right" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.47 0.15</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+			<pos>0.628 0.39</pos>
+			<maxSize>0.13</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.15</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.14</maxSize>
+			<rotation>64</rotation>
+			<storyboard>
+				<animation property="pos" to="0.348 0.39" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.27</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
+			<pos>0.50 0.38</pos>
+			<maxSize>0.182</maxSize>
+			<zIndex>26</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.38" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<video name="videobox2" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+			<audio>false</audio>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
+			<origin if="${screen.ratio} == '21/9'">0.95 0.5</origin>
+			<pos>0.638 0.39</pos>
+			<maxSize>0.14</maxSize>
+			<zIndex>25</zIndex>
+			<rotation>0</rotation>
+			<storyboard>
+				<animation property="pos" to="0.358 0.39" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<video name="videobox3" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+			<audio>false</audio>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
+			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+			<pos>0.36 0.39</pos>
+			<maxSize>0.14</maxSize>
+			<zIndex>25</zIndex>
+			<rotation>0</rotation>
+			<storyboard>
+				<animation property="pos" to="0.08 0.39" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>1997</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>IGS</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>PolyGame master</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>The PolyGame Master (PGM) is an arcade system board developed by the Taiwanese company IGS and released in 1997. It was designed to compete with SNK’s Neo Geo MVS system in Taiwan. The PGM features several video games, with the most notable titles belonging to the Knights of Valour series.
+
+The PGM was succeeded by the IGS PolyGame Master 2 in 2007, which featured fewer games, with the most notable being Knights of Valour 3 from the same series, and the IGS PolyGame Master 3, released in 2012.</text>
+			<text lang="it">Il PolyGame Master (PGM) è una scheda di sistema arcade sviluppata dall'azienda taiwanese IGS e rilasciata nel 1997. È stato progettato per competere con il sistema Neo Geo MVS di SNK a Taiwan. Il PGM è dotato di diversi videogiochi, i cui titoli più importanti appartengono alla serie Knights of Valour.
+
+Il PGM è stato succeduto dall'IGS PolyGame Master 2 nel 2007, che presentava un minor numero di giochi, tra cui il più importante è Knights of Valour 3 della stessa serie, e dall'IGS PolyGame Master 3, uscito nel 2012.</text>
+			<text lang="fr">Le PolyGame Master (PGM) est un système d'arcade développé par la société taïwanaise IGS et sorti en 1997. Elle a été conçue pour concurrencer le système Neo Geo MVS de SNK à Taïwan. Le PGM propose plusieurs jeux vidéo, dont les titres les plus connus appartiennent à la série Knights of Valour.
+
+Le PGM a été remplacé par le IGS PolyGame Master 2 en 2007, qui proposait moins de jeux, les plus notables étant Knights of Valour 3 de la même série, et le IGS PolyGame Master 3, sorti en 2012.</text>
+			<text lang="de">Der PolyGame Master (PGM) ist ein Spielhallensystem, das von der taiwanesischen Firma IGS entwickelt und 1997 veröffentlicht wurde. Es wurde entwickelt, um mit dem Neo Geo MVS-System von SNK in Taiwan zu konkurrieren. Der PGM bietet mehrere Videospiele, wobei die bekanntesten Titel zur Knights of Valour-Serie gehören.
+
+Der PGM wurde 2007 durch den IGS PolyGame Master 2 abgelöst, der weniger Spiele enthielt. Die bekanntesten sind Knights of Valour 3 aus derselben Serie und der IGS PolyGame Master 3, der 2012 veröffentlicht wurde.</text>
+			<text lang="es">El PolyGame Master (PGM) es una placa de sistema arcade desarrollada por la empresa taiwanesa IGS y lanzada al mercado en 1997. Fue diseñada para competir con el sistema Neo Geo MVS de SNK en Taiwán. La PGM incluye varios videojuegos, entre los que destacan los títulos de la serie Knights of Valour.
+
+La PGM fue sucedida por la IGS PolyGame Master 2 en 2007, que incluía menos juegos, siendo el más notable Knights of Valour 3 de la misma serie, y la IGS PolyGame Master 3, lanzada en 2012.</text>
+			<text lang="ru">PolyGame Master (PGM) - аркадная системная плата, разработанная тайваньской компанией IGS и выпущенная в 1997 году. Она была разработана для конкуренции с системой Neo Geo MVS компании SNK на Тайване. На PGM вышло несколько видеоигр, наиболее заметные из которых принадлежат серии Knights of Valour.
+
+В 2007 году на смену PGM пришла IGS PolyGame Master 2, в которую вошло меньше игр, наиболее заметными из которых были Knights of Valour 3 из той же серии, и IGS PolyGame Master 3, выпущенная в 2012 году.</text>
+			<text lang="pl">PolyGame Master (PGM) to system zręcznościowy opracowany przez tajwańską firmę IGS i wydany w 1997 roku. Został zaprojektowany, aby konkurować z systemem Neo Geo MVS firmy SNK na Tajwanie. PGM zawiera kilka gier wideo, z których najbardziej znane tytuły należą do serii Knights of Valour.
+
+PGM został zastąpiony przez IGS PolyGame Master 2 w 2007 roku, który zawierał mniej gier, z których najbardziej godną uwagi jest Knights of Valour 3 z tej samej serii oraz IGS PolyGame Master 3, wydany w 2012 roku.</text>
+		</text>
+	</view>
+</theme>
