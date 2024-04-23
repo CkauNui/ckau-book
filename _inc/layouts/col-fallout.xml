@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<pos>0.4901 0.461</pos>
+			<maxSize>0.28</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.37</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.309</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.2101 0.461" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<pos>0.4901 0.4602</pos>
+			<maxSize>0.275</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.368</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.307</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.2101 0.4602" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>1997-2019</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>Collection</text>
+			<text lang="pl">Kolekcja</text>
+			<text lang="ru">Коллекция</text>
+			<text lang="es">Recopilación</text>
+			<text lang="fr">Collection</text>
+			<text lang="it">Collezione</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>Fallout</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>Fallout is a series of post-apocalyptic computer role-playing games published by Interplay Entertainment, Black Isle Studios, Micro Forté, Bethesda Softworks and Obsidian Entertainment. The action takes place after a nuclear war in the United States, which has been turned into a radioactive wasteland and is plagued by anarchy.
+
+Although the events are set in the distant future, decades after the nuclear conflict, Fallout features a distinctive retro-futuristic style inspired by the mass culture of the 1940s-50s. With a large open world, the games in the main series allow you to freely explore a variety of locations and solve problems in different ways.</text>
+			<text lang="pl">Fallout to seria postapokaliptycznych komputerowych gier fabularnych wydawanych przez Interplay Entertainment, Black Isle Studios, Micro Forté, Bethesda Softworks i Obsidian Entertainment. Akcja rozgrywa się po wojnie nuklearnej w Stanach Zjednoczonych, które zostały zamienione w radioaktywne pustkowia i są nękane przez anarchię.
+
+Pomimo osadzenia akcji w odległej przyszłości, kilkadziesiąt lat po konflikcie nuklearnym, Fallout charakteryzuje się charakterystycznym retro-futurystycznym stylem inspirowanym kulturą masową lat 40. i 50. ubiegłego wieku. Dzięki dużemu otwartemu światu, gry z głównej serii pozwalają na swobodną eksplorację różnorodnych lokacji i rozwiązywanie problemów na wiele sposobów.</text>
+			<text lang="ru">Fallout — серия постапокалиптических компьютерных ролевых игр, выпущенных компаниями Interplay Entertainment, Black Isle Studios, Micro Forté, Bethesda Softworks и Obsidian Entertainment. Действие происходит после ядерной войны на территории США, которая превратилась в радиоактивную пустыню и охвачена анархией.
+
+Хотя события и помещены в далёкое будущее, спустя десятки лет после ядерного конфликта, Fallout отличается характерным ретрофутуристическим стилем, вдохновлённым массовой культурой 40—50-х годов XX века. Игры основной серии, обладая большим открытым миром, позволяют свободно исследовать разнообразные локации и решать задачи различными способами.</text>
+			<text lang="es">Fallout es una serie de juegos de rol postapocalípticos para ordenador publicados por Interplay Entertainment, Black Isle Studios, Micro Forté, Bethesda Softworks y Obsidian Entertainment. La acción se desarrolla tras una guerra nuclear en Estados Unidos, que ha quedado convertido en un páramo radiactivo y asolado por la anarquía.
+
+Aunque ambientado en un futuro lejano, décadas después del conflicto nuclear, Fallout presenta un característico estilo retrofuturista inspirado en la cultura de masas de los años 40-50. Con un gran mundo abierto, los juegos de la serie principal permiten explorar libremente diversos lugares y resolver problemas de diversas maneras.</text>
+			<text lang="de">Fallout ist eine Reihe von postapokalyptischen Computer-Rollenspielen, die von Interplay Entertainment, Black Isle Studios, Micro Forté, Bethesda Softworks und Obsidian Entertainment veröffentlicht wurden. Die Handlung spielt nach einem Atomkrieg in den Vereinigten Staaten, die sich in ein radioaktives Ödland verwandelt haben und von Anarchie geplagt sind.
+
+Obwohl Fallout in der fernen Zukunft, Jahrzehnte nach dem Atomkonflikt, angesiedelt ist, zeichnet es sich durch einen unverwechselbaren retrofuturistischen Stil aus, der von der Massenkultur der 1940er bis 50er Jahre inspiriert ist. Die Spiele der Hauptserie bieten eine große offene Welt, in der Sie eine Vielzahl von Orten frei erkunden und Probleme auf unterschiedliche Weise lösen können.</text>
+			<text lang="fr">Fallout est une série de jeux de rôle post-apocalyptiques publiés par Interplay Entertainment, Black Isle Studios, Micro Forté, Bethesda Softworks et Obsidian Entertainment. L'action se déroule après une guerre nucléaire aux États-Unis, qui ont été transformés en un désert radioactif et sont en proie à l'anarchie.
+
+Bien qu'il se déroule dans un futur lointain, des décennies après le conflit nucléaire, Fallout présente un style rétro-futuriste distinctif inspiré de la culture de masse des années 1940-50. Avec un vaste monde ouvert, les jeux de la série principale vous permettent d'explorer librement une variété de lieux et de résoudre des problèmes de différentes manières.</text>
+			<text lang="it">Fallout è una serie di giochi di ruolo post-apocalittici per computer pubblicati da Interplay Entertainment, Black Isle Studios, Micro Forté, Bethesda Softworks e Obsidian Entertainment. L'azione si svolge dopo una guerra nucleare negli Stati Uniti, trasformati in una landa radioattiva e afflitti dall'anarchia.
+
+Sebbene sia ambientato in un futuro lontano, decenni dopo il conflitto nucleare, Fallout presenta un caratteristico stile retro-futuristico ispirato alla cultura di massa degli anni 1940-50. Con un vasto mondo aperto, i giochi della serie principale permettono di esplorare liberamente una varietà di luoghi e di risolvere i problemi in vari modi.</text>
+		</text>
+	</view>
+</theme>
