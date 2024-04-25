@@ -9,17 +9,16 @@
 			<origin>0.5 0</origin>
 			<size>0.15625 0.0555555555555556</size>
 			<fontSize>0.0444444444444444</fontSize>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontPath>./../../_inc/fonts/RobotoCondensed-Light.ttf</fontPath>
 			<color>${baseColor}</color>
 			<forceUppercase>true</forceUppercase>
 		</text>
 		<text name="md_name" extra="true">
 			<pos>0.005 0.005</pos>
 			<alignment>left</alignment>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontPath>./../../_inc/fonts/RobotoCondensed-Light.ttf</fontPath>
 			<color>FFFFFF1F</color>
 			<fontSize>0.02</fontSize>
-			<lineSpacing>1.1</lineSpacing>
 			<zIndex>140</zIndex>
 		</text>
 		<image name="background" extra="true">
@@ -28,29 +27,49 @@
 			<pos>0.5 0.5</pos>
 			<size>1 1</size>
 			<path>./../../_inc/images/space.png</path>
-			<color>141414</color>
+			<color>${sysColor}</color>
 		</image>
 		<image name="logo">
+			<path>./../../_inc/logos/${system.theme}-w.png</path>
+			<path>./../../_inc/logos/${system.theme}-w.svg</path>
+			<path>./../../_inc/logos/${system.theme}-w-${lang}.png</path>
+			<path>./../../_inc/logos/${system.theme}-w-${lang}.svg</path>
 			<path>./../../_inc/logos/${system.theme}.png</path>
+			<path>./../../_inc/logos/${system.theme}.svg</path>
 			<path>./../../_inc/logos/${system.theme}-${lang}.png</path>
+			<path>./../../_inc/logos/${system.theme}-${lang}.svg</path>
+			<!-- Attemps to load synonym if system not available -->
+			<path>./../../_inc/logos/${synonym}-w.png</path>
+			<path>./../../_inc/logos/${synonym}-w.svg</path>
+			<path>./../../_inc/logos/${synonym}-w-${lang}.png</path>
+			<path>./../../_inc/logos/${synonym}-w-${lang}.svg</path>
+			<path>./../../_inc/logos/${synonym}.png</path>
+			<path>./../../_inc/logos/${synonym}.svg</path>
+			<path>./../../_inc/logos/${synonym}-${lang}.png</path>
+			<path>./../../_inc/logos/${synonym}-${lang}.svg</path>
+			<!-- Logos for Collections -->
+			<path>./_inc/logos/collections/${system.theme}-w.png</path>
+			<path>./_inc/logos/collections/${system.theme}.png</path>
+			<path>./_inc/logos/collections/${system.theme}-w.svg</path>
+			<path>./_inc/logos/collections/${system.theme}.svg</path>
 			<pos>.5 0.09</pos>
 			<maxSize>0.260 0.126</maxSize>
 			<origin>0.5 0.5</origin>
 		</image>
 		<imagegrid name="gamegrid">
-			<pos>0.016 0.16</pos>
-			<size>0.950 0.79</size>
+			<pos>0 0.2</pos>
+			<size>0.950 0.75</size>
 			<margin>0.005 0.010</margin>
 			<padding>0.03 0.04 0.03 0.1</padding>
 			<autoLayout>7 2</autoLayout>
 			<autoLayout if="${screen.ratio} == '21/9'">9 2</autoLayout>
-			<autoLayoutSelectedZoom>1.12</autoLayoutSelectedZoom>
+			<autoLayoutSelectedZoom>1.06</autoLayoutSelectedZoom>
 			<centerSelection>false</centerSelection>
 			<animateSelection>false</animateSelection>
 			<scrollSound>./../../_inc/sound/scroll.wav</scrollSound>
-			<scrollbarColor>333333ff</scrollbarColor>
-			<scrollbarCorner>0.49</scrollbarCorner>
-			<scrollbarSize>0.005</scrollbarSize>
+			<scrollbarColor>FFFFFF80</scrollbarColor>
+			<scrollbarCorner>0</scrollbarCorner>
+			<scrollbarSize>0.002</scrollbarSize>
 		</imagegrid>
 		<gridtile name="default">
 			<backgroundColor>FFFFFF00</backgroundColor>
@@ -65,7 +84,7 @@
 			<imageColor>FFFFFFFF</imageColor>
 		</gridtile>
 		<text name="gridtile">
-			<color>D0D0D0</color>
+			<color>FFFFFF80</color>
 			<backgroundColor>00000000</backgroundColor>
 			<fontSize>0.022</fontSize>
 			<alignment>center</alignment>
@@ -92,19 +111,19 @@
 			<cornerSize>36 36</cornerSize>
 			<padding>-18 -18</padding>
 			<color>${baseColor}</color>
-			<animateColor>141414</animateColor>
+			<animateColor>ffffff</animateColor>
 			<animateColorTime>650</animateColorTime>
 		</ninepatch>
 		<datetime name="md_releasedate">
 			<origin>0.5 1</origin>
-			<pos>0.98 0.78</pos>
+			<pos>0.98 0.75</pos>
 			<size>0.1 0.0222222222222222</size>
 			<rotation>-90</rotation>
 			<alignment>left</alignment>
 			<format>%Y</format>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<fontSize>0.0254444444444444</fontSize>
-			<color>666666</color>
+			<fontPath>./../../_inc/fonts/RobotoCondensed-Regular.ttf</fontPath>
+			<fontSize>0.025</fontSize>
+			<color>FFFFFF80</color>
 			<zIndex>180</zIndex>
 		</datetime>
 		<image name="md_flag">
@@ -117,7 +136,7 @@
 			<pos>0.98 0.21</pos>
 			<size>0.05 0.03</size>
 			<rotation>-90</rotation> 
-			<color>666666</color>
+			<color>FFFFFF80</color>
 			<origin>0.5 0</origin>
 			<horizontalAlignment>right</horizontalAlignment>
 			<unfilledColor>80808030</unfilledColor>
@@ -131,29 +150,29 @@
 			<text>1</text>
 			<alignment>center</alignment>
 			<fontSize>0.034</fontSize>
-			<color>666666</color>
+			<color>FFFFFF80</color>
 		</text>
 		<image name="md_manual,md_nomanual">
 			<pos>0.98 0.42</pos>
 			<path>./../../_inc/images/book.png</path>
 			<maxSize>0.02 0.03</maxSize>
 			<origin>0.5 0.5</origin>
-			<color>666666</color>
+			<color>FFFFFF80</color>
 			<zIndex>150</zIndex>
 		</image>
 		<image name="md_nomanual">
-			<color>80808040</color>
+			<color>80808030</color>
 		</image>
 		<image name="md_cheevos,md_notcheevos">
 			<origin>0.5 0.5</origin>
 			<path>./../../_inc/icons/Contest.png</path>
 			<pos>0.98 0.47</pos>
 			<maxSize>0.02 0.03</maxSize>
-			<color>666666</color>
+			<color>FFFFFF80</color>
 			<zIndex>100</zIndex>
 		</image>
 		<image name="md_notcheevos">
-			<color>80808040</color>
+			<color>80808030</color>
 		</image>
 		<image name="md_savestate,md_nosavestate">
 			<origin>0.5 0.5</origin>
@@ -161,18 +180,18 @@
 			<pos>0.98 0.52</pos>
 			<y ifCheevos="false">0.47</y>
 			<maxSize>0.02 0.03</maxSize>
-			<color>666666</color>
+			<color>FFFFFF80</color>
 			<zIndex>150</zIndex>
 		</image>
 		<image name="md_nosavestate">
-			<color>80808030</color>
+			<color>FFFFFF80</color>
 		</image>
 		<image name="md_hidden">
 			<pos>0.98 0.92</pos>
 			<path>./../../_inc/images/hidden.svg</path>
 			<maxSize>0.02 0.03</maxSize>
 			<origin>0.5 0.5</origin>
-			<color>666666</color>
+			<color>FFFFFF80</color>
 			<zIndex>150</zIndex>
 		</image>
 		<image name="md_kidgame,md_notkidgame">
@@ -180,11 +199,11 @@
 			<path>./../../_inc/images/kid.svg</path>
 			<maxSize>0.02 0.03</maxSize>
 			<origin>0.5 0.5</origin>
-			<color>666666</color>
+			<color>FFFFFF80</color>
 			<zIndex>150</zIndex>
 		</image>
 		<image name="md_notkidgame"> 
-			<color>80808000</color>
+			<color>FFFFFF80</color>
 		</image>
 	</view>
 </theme>

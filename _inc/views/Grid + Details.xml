@@ -4,6 +4,9 @@
 <formatVersion>7</formatVersion>
 <!-- Сетка + подробно -->
 	<customView name="Grid + Details" inherits="grid" displayName="${gridDetailsViewName}">
+		<image name="logo,logo1">
+			<pos>.35 0.09</pos>
+		</image>
 		<imagegrid name="gamegrid">
 			<size>0.66 0.79</size>
 			<autoLayout>5 2</autoLayout>
@@ -25,36 +28,33 @@
 		</image>
 		<image name="gamelistBackground" extra="true">
 			<path>./../../_inc/images/space.png</path>
-			<color>141414</color>
+			<color>14141430</color>
 			<origin>0 0</origin>
-			<pos>0.66 0.16</pos>
-			<size>0.34 0.774</size>
+			<pos>0.66 0</pos>
+			<size>0.34 1</size>
 			<zIndex>12</zIndex>
+			<visible>false</visible>
 		</image>
 		<image name="md_image">
 			<visible>false</visible>
 		</image>
 		<text name="md_name">
-			<pos>0.68 0.108</pos>
+			<pos>0.68 0.08</pos>
 			<size>0.30 0.1</size>
-			<color>F0F0F0</color>
-			<fontSize>0.032</fontSize>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.035</fontSize>
+			<fontPath>./../../_inc/fonts/Gilroy-Bold.ttf</fontPath>
 			<alignment>center</alignment>
 			<verticalAlignment>bottom</verticalAlignment>
 			<horizontalAlignment>center</horizontalAlignment>
-			<glowColor>${glowColor}</glowColor>
-			<glowSize>2</glowSize>
 		</text>
 		<text name="md_developer">
-			<color>808080ff</color>
-			<pos>0.68 0.206</pos>
+			<color>FFFFFF</color>
+			<pos>0.68 0.18</pos>
 			<size>0.30 0.05</size>
 			<alignment>center</alignment>
 			<fontSize>0.020</fontSize>
-			<glowColor>00000016</glowColor>
-			<glowSize>3</glowSize>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontPath>./../../_inc/fonts/Gilroy-Light.ttf</fontPath>
 		</text>
 		<video name="md_video">
 			<pos>0.83 0.455</pos>
@@ -71,110 +71,112 @@
 			<visible>false</visible>
 		</image>
 		<text name="md_description">
-			<pos>0.68 0.66</pos>
-			<size>0.30 0.255</size>
-			<fontSize>0.025</fontSize>
-			<color>A0A0B0</color>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<pos>0.68 0.68</pos>
+			<size>0.3 0.15</size>
+			<lineSpacing>1.18</lineSpacing>
+			<fontSize>0.022</fontSize>
+			<color>FFFFFF</color>
+			<fontPath>./../../_inc/fonts/RobotoCondensed-Light.ttf</fontPath>
 		</text>
 		<datetime name="md_releasedate">
 			<origin>0 0</origin>
-			<pos>0.8725 0.9245</pos>
+			<pos>0.8725 0.9045</pos>
 			<size>0.03 0.0222222222222222</size>
 			<rotation>0</rotation>
 			<alignment>left</alignment>
 			<format>%Y</format>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<fontSize>0.0254444444444444</fontSize>
-			<color>666666</color>
+			<fontPath>./../../_inc/fonts/RobotoCondensed-Regular.ttf</fontPath>
+			<fontSize>0.02</fontSize>
+			<color>D0D0D0D0</color>
 			<zIndex>180</zIndex>
 		</datetime>
 		<image name="md_flag">
 			<origin>0 0</origin>
-			<pos>0.8475 0.9245</pos>
-			<maxSize>0.02 0.05</maxSize>
+			<pos>0.85 0.905</pos>
+			<pos if="${screen.ratio} == '21/9'">0.85 0.902</pos>
+			<maxSize>0.015 0.045</maxSize>
 		</image>
 		<rating name="md_rating">
-			<pos>0.9595 0.920</pos>
+			<pos>0.9595 0.900</pos>
 			<size>0.05 0.03</size>
 			<rotation>0</rotation>
-			<color>666666</color>
+			<color>D0D0D0D0</color>
 			<origin>0.5 0</origin>
 			<horizontalAlignment>right</horizontalAlignment>
 			<unfilledColor>80808030</unfilledColor>
 			<unfilledPath>./../../_inc/images/star_filled.svg</unfilledPath>
 		</rating>
 		<text name="md_players">
-			<pos>0.832 0.929</pos>
+			<pos>0.832 0.909</pos>
 			<size>0.03 0.03</size>
 			<origin>0.5 0.5</origin>
 			<fontPath>./../../_inc/fonts/players.ttf</fontPath>
 			<text>1</text>
 			<alignment>center</alignment>
-			<fontSize>0.035</fontSize>
-			<color>666666</color>
+			<fontSize>0.03</fontSize>
+			<color>D0D0D0D0</color>
 		</text>
 		<image name="md_manual,md_nomanual">
-			<pos>0.808 0.934</pos>
+			<pos>0.808 0.914</pos>
 			<path>./../../_inc/images/book.png</path>
 			<maxSize>0.02 0.03</maxSize>
 			<origin>0.5 0.5</origin>
-			<color>666666</color>
+			<color>D0D0D0D0</color>
 			<zIndex>150</zIndex>
 		</image>
 		<image name="md_cheevos,md_notcheevos">
 			<origin>0.5 0.5</origin>
 			<path>./../../_inc/icons/Contest.png</path>
-			<pos>0.7865 0.934</pos>
+			<pos>0.7865 0.914</pos>
 			<maxSize>0.02 0.03</maxSize>
-			<color>666666</color>
+			<color>D0D0D0D0</color>
 			<zIndex>100</zIndex>
 		</image>
 		<image name="fake_cheevos" extra="true">
 			<origin>0.5 0.5</origin>
 			<path>./../../_inc/icons/Contest.png</path>
-			<pos>0.7865 0.934</pos>
+			<pos>0.7865 0.914</pos>
 			<maxSize>0.02 0.03</maxSize>
-			<color>80808030</color>
+			<color>FFFFFF20</color>
 			<zIndex>90</zIndex>
 		</image>
 		<image name="md_savestate,md_nosavestate">
 			<origin>0.5 0.5</origin>
 			<path>./../../_inc/icons/SaveState.png</path>
-			<pos>0.765 0.934</pos>
+			<pos>0.765 0.914</pos>
 			<x ifCheevos="false">0.765</x>
-			<y ifCheevos="false">0.934</y>
+			<y ifCheevos="false">0.914</y>
 			<maxSize>0.02 0.03</maxSize>
-			<color>666666</color>
+			<color>D0D0D0D0</color>
 			<zIndex>150</zIndex>
 		</image>
 		<image name="md_hidden">
-			<pos>0.7425 0.934</pos>
+			<pos>0.7425 0.914</pos>
 			<path>./../../_inc/images/hidden.svg</path>
 			<maxSize>0.02 0.03</maxSize>
 			<origin>0.5 0.5</origin>
-			<color>666666</color>
+			<color>D0D0D0D0</color>
 			<zIndex>150</zIndex>
 		</image>
 		<image name="md_kidgame,md_notkidgame">
-			<pos>0.722 0.934</pos>
+			<pos>0.722 0.914</pos>
 			<path>./../../_inc/images/kid.svg</path>
 			<maxSize>0.02 0.03</maxSize>
 			<origin>0.5 0.5</origin>
-			<color>666666</color>
+			<color>D0D0D0D0</color>
 			<zIndex>150</zIndex>
 		</image>
 		<image name="md_notkidgame"> 
-			<color>80808000</color>
+			<color>FFFFFF20</color>
 		</image>
 		<image name="md_nosavestate">
-			<color>80808030</color>
+			<color>FFFFFF20</color>
 		</image>
 		<image name="md_notcheevos">
-			<color>80808040</color>
+			<color>FFFFFF20</color>
 		</image>
 		<image name="md_nomanual">
-			<color>80808040</color>
+			<color>FFFFFF20</color>
 		</image>
 	</customView>
 </theme>

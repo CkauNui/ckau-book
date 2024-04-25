@@ -4,6 +4,9 @@
 <formatVersion>7</formatVersion>
 <!-- Сетка + фанарт -->
 	<customView name="Grid + Fanart" inherits="grid" displayName="${gridFanartViewName}">
+		<image name="background" extra="true">
+			<color>141414</color>
+		</image>
 		<imagegrid name="gamegrid">
 	     <pos>0 0.425</pos>
 		 <padding>0.03 0.03 0.03 0.12</padding>
@@ -33,7 +36,7 @@
 		 <padding>3 3</padding>
 		</gridtile>
 		<text name="gridtile">
-<visible>false</visible>
+			<visible>false</visible>
 		</text>
 		<text name="gridtile_selected">
 			<color>FFFFFF00</color>
@@ -54,7 +57,7 @@
 			<pos>0 0</pos>
 			<size>1 0.03</size>
 			<alignment>center</alignment>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontPath>./../../_inc/fonts/RobotoCondensed-Light.ttf</fontPath>
 			<color>FFFFFF1F</color>
 			<fontSize>0.025</fontSize>
 			<lineSpacing>1.1</lineSpacing>
@@ -78,6 +81,7 @@
 			<pos>0.5 0</pos>
 			<color>FFFFFF5F</color>
 			<maxSize>1 1</maxSize>
+			<size if="${screen.ratio} == '21/9'">1</size>
 			<imageSource>fanart</imageSource>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>10</zIndex>
@@ -120,7 +124,9 @@
          <size>0.52 0.135</size>
 			<lineSpacing>1.18</lineSpacing>
 			<fontSize>0.022</fontSize>
-			<color>D0D0D0</color>
+			<color>FFFFFF</color>
+			<fontPath>./../../_inc/fonts/RobotoCondensed-Light.ttf</fontPath>			
+			<!--<color>D0D0D0</color>-->
 			<glowColor>00000016</glowColor>
 			<glowSize>3</glowSize>
 		</text>
@@ -152,12 +158,12 @@
 
 		<text name="md_players,md_genre,md_developer,md_publisher,md_playcount,md_gametime">
 			<color>D0D0D0D0</color>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontPath>./../../_inc/fonts/RobotoCondensed-Light.ttf</fontPath>
 			<fontSize>0.0194444444444444</fontSize>
 		</text>
 		<datetime name="md_lastplayed,md_releasedate">
 			<color>D0D0D0D0</color>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontPath>./../../_inc/fonts/RobotoCondensed-Light.ttf</fontPath>
 			<fontSize>0.0194444444444444</fontSize>
 		</datetime>
 

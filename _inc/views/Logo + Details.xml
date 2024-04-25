@@ -3,7 +3,7 @@
 <theme>
 <formatVersion>7</formatVersion>
 <!-- Лого + подробно -->
-	<customView name="Logo + Details" inherits="grid" displayName="${logoDetailsViewName}">
+	<customView name="Logo + Details" inherits="Grid + Details" displayName="${logoDetailsViewName}">
 		<imagegrid name="gamegrid">
 			<size>0.66 0.79</size>
 			<autoLayout>4 3</autoLayout>
@@ -24,14 +24,6 @@
 			<horizontalAlignment>right</horizontalAlignment>
 			<color>FFFF00B0</color>
 		</image>
-		<image name="gamelistBackground" extra="true">
-			<path>./../../_inc/images/space.png</path>
-			<color>141414</color>
-			<origin>0 0</origin>
-			<pos>0.66 0.16</pos>
-			<size>0.34 0.774</size>
-			<zIndex>12</zIndex>
-		</image>
 		<ninepatch name="gridtile.background:selected">
 			<path>./../../_inc/images/framewselsq2.png</path>
 			<cornerSize>0 0</cornerSize>
@@ -40,151 +32,5 @@
 			<animateColor>141414</animateColor>
 			<animateColorTime>650</animateColorTime>
 		</ninepatch>
-		<image name="md_image">
-			<visible>false</visible>
-		</image>
-		<text name="md_name">
-			<pos>0.68 0.108</pos>
-			<size>0.30 0.1</size>
-			<color>F0F0F0</color>
-			<fontSize>0.032</fontSize>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<alignment>center</alignment>
-			<verticalAlignment>bottom</verticalAlignment>
-			<horizontalAlignment>center</horizontalAlignment>
-			<glowColor>${glowColor}</glowColor>
-			<glowSize>2</glowSize>
-		</text>
-		<text name="md_developer">
-			<color>808080ff</color>
-			<pos>0.68 0.206</pos>
-			<size>0.30 0.05</size>
-			<alignment>center</alignment>
-			<fontSize>0.020</fontSize>
-			<glowColor>00000016</glowColor>
-			<glowSize>3</glowSize>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-		</text>
-		<video name="md_video">
-			<pos>0.83 0.455</pos>
-			<maxSize>0.30 0.3833333333333333</maxSize>
-			<origin>0.5 0.5</origin>
-			<delay>1.0</delay>
-			<showSnapshotNoVideo>false</showSnapshotNoVideo>
-			<showSnapshotDelay>true</showSnapshotDelay>
-			<snapshotSource>thumbnail</snapshotSource>
-			<effect>none</effect>
-			<zIndex>110</zIndex>
-		</video>
-		<image name="md_marquee">
-			<visible>false</visible>
-		</image>
-		<text name="md_description">
-			<pos>0.68 0.66</pos>
-			<size>0.30 0.255</size>
-			<fontSize>0.025</fontSize>
-			<color>A0A0B0</color>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-		</text>
-
-		<datetime name="md_releasedate">
-			<origin>0 0</origin>
-			<pos>0.8725 0.9245</pos>
-			<size>0.03 0.0222222222222222</size>
-			<rotation>0</rotation>
-			<alignment>left</alignment>
-			<format>%Y</format>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<fontSize>0.0254444444444444</fontSize>
-			<color>666666</color>
-			<zIndex>180</zIndex>
-		</datetime>
-		<image name="md_flag">
-			<origin>0 0</origin>
-			<pos>0.8475 0.9245</pos>
-			<maxSize>0.02 0.05</maxSize>
-		</image>
-		<rating name="md_rating">
-			<pos>0.9595 0.920</pos>
-			<size>0.05 0.03</size>
-			<rotation>0</rotation>
-			<color>666666</color>
-			<origin>0.5 0</origin>
-			<horizontalAlignment>right</horizontalAlignment>
-			<unfilledColor>80808030</unfilledColor>
-			<unfilledPath>./../../_inc/images/star_filled.svg</unfilledPath>
-		</rating>
-		<text name="md_players">
-			<pos>0.832 0.929</pos>
-			<size>0.03 0.03</size>
-			<origin>0.5 0.5</origin>
-			<fontPath>./../../_inc/fonts/players.ttf</fontPath>
-			<text>1</text>
-			<alignment>center</alignment>
-			<fontSize>0.035</fontSize>
-			<color>666666</color>
-		</text>
-		<image name="md_manual,md_nomanual">
-			<pos>0.808 0.934</pos>
-			<path>./../../_inc/images/book.png</path>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-		</image>
-		<image name="md_cheevos,md_notcheevos">
-			<origin>0.5 0.5</origin>
-			<path>./../../_inc/icons/Contest.png</path>
-			<pos>0.7865 0.934</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<color>666666</color>
-			<zIndex>100</zIndex>
-		</image>
-		<image name="fake_cheevos" extra="true">
-			<origin>0.5 0.5</origin>
-			<path>./../../_inc/icons/Contest.png</path>
-			<pos>0.7865 0.934</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<color>80808030</color>
-			<zIndex>90</zIndex>
-		</image>
-		<image name="md_savestate,md_nosavestate">
-			<origin>0.5 0.5</origin>
-			<path>./../../_inc/icons/SaveState.png</path>
-			<pos>0.765 0.934</pos>
-			<x ifCheevos="false">0.765</x>
-			<y ifCheevos="false">0.934</y>
-			<maxSize>0.02 0.03</maxSize>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-		</image>
-		<image name="md_hidden">
-			<pos>0.7425 0.934</pos>
-			<path>./../../_inc/images/hidden.svg</path>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-		</image>
-		<image name="md_kidgame,md_notkidgame">
-			<pos>0.722 0.934</pos>
-			<path>./../../_inc/images/kid.svg</path>
-			<maxSize>0.02 0.03</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>666666</color>
-			<zIndex>150</zIndex>
-		</image>
-		<image name="md_notkidgame"> 
-			<color>80808000</color>
-		</image>
-		<image name="md_nosavestate">
-			<color>80808030</color>
-		</image>
-		<image name="md_notcheevos">
-			<color>80808040</color>
-		</image>
-		<image name="md_nomanual">
-			<color>80808040</color>
-		</image>
 	</customView>
 </theme>
