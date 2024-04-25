@@ -41,16 +41,17 @@
 		<text name="md_name">
 			<pos>0.68 0.08</pos>
 			<size>0.30 0.1</size>
-			<color>FFFFFF</color>
+			<color>${textNameColor}</color>
 			<fontSize>0.035</fontSize>
 			<fontPath>./../../_inc/fonts/Gilroy-Bold.ttf</fontPath>
 			<alignment>center</alignment>
 			<verticalAlignment>bottom</verticalAlignment>
 			<horizontalAlignment>center</horizontalAlignment>
+			<visible>true</visible>
 		</text>
 		<text name="md_developer">
-			<color>FFFFFF</color>
-			<pos>0.68 0.18</pos>
+			<color>${textManufacturerColor}</color>
+			<pos>0.68 0.17</pos>
 			<size>0.30 0.05</size>
 			<alignment>center</alignment>
 			<fontSize>0.020</fontSize>
@@ -75,7 +76,7 @@
 			<size>0.3 0.15</size>
 			<lineSpacing>1.18</lineSpacing>
 			<fontSize>0.022</fontSize>
-			<color>FFFFFF</color>
+			<color>${textDescColor}</color>
 			<fontPath>./../../_inc/fonts/RobotoCondensed-Light.ttf</fontPath>
 		</text>
 		<datetime name="md_releasedate">
@@ -87,7 +88,7 @@
 			<format>%Y</format>
 			<fontPath>./../../_inc/fonts/RobotoCondensed-Regular.ttf</fontPath>
 			<fontSize>0.02</fontSize>
-			<color>D0D0D0D0</color>
+			<color>${textDateColor}</color>
 			<zIndex>180</zIndex>
 		</datetime>
 		<image name="md_flag">
@@ -100,10 +101,10 @@
 			<pos>0.9595 0.900</pos>
 			<size>0.05 0.03</size>
 			<rotation>0</rotation>
-			<color>D0D0D0D0</color>
+			<color>${textDateColor}</color>
 			<origin>0.5 0</origin>
 			<horizontalAlignment>right</horizontalAlignment>
-			<unfilledColor>80808030</unfilledColor>
+			<unfilledColor>${unfilledColor}</unfilledColor>
 			<unfilledPath>./../../_inc/images/star_filled.svg</unfilledPath>
 		</rating>
 		<text name="md_players">
@@ -114,14 +115,14 @@
 			<text>1</text>
 			<alignment>center</alignment>
 			<fontSize>0.03</fontSize>
-			<color>D0D0D0D0</color>
+			<color>${textDateColor}</color>
 		</text>
 		<image name="md_manual,md_nomanual">
 			<pos>0.808 0.914</pos>
 			<path>./../../_inc/images/book.png</path>
 			<maxSize>0.02 0.03</maxSize>
 			<origin>0.5 0.5</origin>
-			<color>D0D0D0D0</color>
+			<color>${textDateColor}</color>
 			<zIndex>150</zIndex>
 		</image>
 		<image name="md_cheevos,md_notcheevos">
@@ -129,7 +130,7 @@
 			<path>./../../_inc/icons/Contest.png</path>
 			<pos>0.7865 0.914</pos>
 			<maxSize>0.02 0.03</maxSize>
-			<color>D0D0D0D0</color>
+			<color>${textDateColor}</color>
 			<zIndex>100</zIndex>
 		</image>
 		<image name="fake_cheevos" extra="true">
@@ -137,7 +138,7 @@
 			<path>./../../_inc/icons/Contest.png</path>
 			<pos>0.7865 0.914</pos>
 			<maxSize>0.02 0.03</maxSize>
-			<color>FFFFFF20</color>
+			<color>${unfilledColor}</color>
 			<zIndex>90</zIndex>
 		</image>
 		<image name="md_savestate,md_nosavestate">
@@ -147,7 +148,7 @@
 			<x ifCheevos="false">0.765</x>
 			<y ifCheevos="false">0.914</y>
 			<maxSize>0.02 0.03</maxSize>
-			<color>D0D0D0D0</color>
+			<color>${textDateColor}</color>
 			<zIndex>150</zIndex>
 		</image>
 		<image name="md_hidden">
@@ -155,7 +156,7 @@
 			<path>./../../_inc/images/hidden.svg</path>
 			<maxSize>0.02 0.03</maxSize>
 			<origin>0.5 0.5</origin>
-			<color>D0D0D0D0</color>
+			<color>${textDateColor}</color>
 			<zIndex>150</zIndex>
 		</image>
 		<image name="md_kidgame,md_notkidgame">
@@ -163,20 +164,20 @@
 			<path>./../../_inc/images/kid.svg</path>
 			<maxSize>0.02 0.03</maxSize>
 			<origin>0.5 0.5</origin>
-			<color>D0D0D0D0</color>
+			<color>${textDateColor}</color>
 			<zIndex>150</zIndex>
 		</image>
 		<image name="md_notkidgame"> 
-			<color>FFFFFF20</color>
+			<color>${unfilledColor}</color>
 		</image>
 		<image name="md_nosavestate">
-			<color>FFFFFF20</color>
+			<color>${unfilledColor}</color>
 		</image>
 		<image name="md_notcheevos">
-			<color>FFFFFF20</color>
+			<color>${unfilledColor}</color>
 		</image>
 		<image name="md_nomanual">
-			<color>FFFFFF20</color>
+			<color>${unfilledColor}</color>
 		</image>
 	</customView>
 </theme>

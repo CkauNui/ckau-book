@@ -1,66 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
-	<include>./colorful.xml</include>
-	<view name="system, menu">
+	<include>./../../_inc/systemviews/animate.xml</include>
+	<!--<include>./colorful.xml</include>-->
+	<variables>
+		<!-- Sets variables for Colorful variants -->
+		<sysbgColor>141414</sysbgColor>
+		<textDateColor>FFFFFF80</textDateColor>
+		<textManufacturerColor>FFFFFF</textManufacturerColor>
+		<textNameColor>FFFFFF</textNameColor>
+		<textDescColor>FFFFFF80</textDescColor>
+		<bottomBarColor>141414B9</bottomBarColor>
+		<clockColor>FFFFFF80</clockColor>
+		<unfilledColor>80808030</unfilledColor>	
+	</variables>
+	<view name="system, menu, basic, detailed, grid, gamecarousel">
 		<image name="sysbg" extra="true">
-			<color>141414</color>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<size>1 1</size>
+			<color>${sysbgColor}</color>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>1</zIndex>
 		</image>
 		<image name="sysbg-fix" extra="true">
-			<color>141414</color>
+			<color>${sysbgColor}</color>
 		</image>
 		<image name="sysbg-left" extra="true">
-			<color>141414</color>
+			<color>${sysbgColor}</color>
 		</image>
 		<image name="sysbg-right" extra="true">
-			<color>141414</color>
+			<color>${sysbgColor}</color>
 		</image>
 		<image name="sysbg-down" extra="true">
-			<color>141414</color>
+			<color>${sysbgColor}</color>
 		</image>
 
 <!-- System info desc -->
 		<text name="TextDate" extra="true">
-			<color>FFFFFF80</color>
+			<color>${textDateColor}</color>
 		</text>
 		<text name="TextManufacturer" extra="true">
-			<color>FFFFFF</color>
+			<color>${textManufacturerColor}</color>
 		</text>
 		<text name="TextName" extra="true">
-			<color>FFFFFF</color>
+			<color>${textNameColor}</color>
 		</text>
 		<text name="TextDesc" extra="true">
-			<color>FFFFFF80</color>
+			<color>${textDescColor}</color>
 		</text>
 
+<!-- Color help buttons, games count, clock -->
+		<helpsystem name="help">
+			<textColor>${textDateColor}</textColor>
+			<iconColor>${textDateColor}</iconColor>
+		</helpsystem>
+		<text name="systemInfo" extra="static">
+			<color>${textDateColor}</color>
+		</text>
+
+<!-- Helpsystem bottom bar bg -->
+		<image name="BottomBar" extra="static">
+			<tile>false</tile>
+			<size>1 0.05</size>
+			<pos>0 1</pos>
+			<origin>0 1</origin>
+			<path>./_inc/images/space.png</path>
+			<!-- <color>242424D0</color> -->
+			<!-- <color>00000022</color> -->
+			<color>${bottomBarColor}</color>
+			<zIndex>91</zIndex>
+		</image>
+
 <!-- Prefer white versions of the logo -->
+<!-- System Logos -->
 		<image name="logo, logo1">
+			<path>./../../_inc/logos/${system.theme}.png</path>
+			<path>./../../_inc/logos/${system.theme}.svg</path>
+			<path>./../../_inc/logos/${system.theme}-${lang}.png</path>
+			<path>./../../_inc/logos/${system.theme}-${lang}.svg</path>
 			<path>./../../_inc/logos/${system.theme}-w.png</path>
 			<path>./../../_inc/logos/${system.theme}-w.svg</path>
 			<path>./../../_inc/logos/${system.theme}-w-${lang}.png</path>
 			<path>./../../_inc/logos/${system.theme}-w-${lang}.svg</path>
 			<!-- Attemps to load synonym if system not available -->
+			<path>./../../_inc/logos/${synonym}.png</path>
+			<path>./../../_inc/logos/${synonym}.svg</path>
+			<path>./../../_inc/logos/${synonym}-${lang}.png</path>
+			<path>./../../_inc/logos/${synonym}-${lang}.svg</path>
 			<path>./../../_inc/logos/${synonym}-w.png</path>
 			<path>./../../_inc/logos/${synonym}-w.svg</path>
 			<path>./../../_inc/logos/${synonym}-w-${lang}.png</path>
 			<path>./../../_inc/logos/${synonym}-w-${lang}.svg</path>
-		<!-- Logos for Collections -->
+			<!-- Logos for Collections -->
 			<path>./_inc/logos/collections/${system.theme}.png</path>
+			<path>./_inc/logos/collections/${system.theme}-w.png</path>
+			<path>./_inc/logos/collections/${system.theme}.svg</path>
 			<path>./_inc/logos/collections/${system.theme}-w.svg</path>
 			<linearSmooth>true</linearSmooth>
 		</image>
 		<image name="logo, logo1" region="eu"></image>
 		<image name="logo, logo1" region="us">
+			<path>./../../_inc/logos/us/${system.theme}.png</path>
+			<path>./../../_inc/logos/us/${system.theme}.svg</path>
 			<path>./../../_inc/logos/us/${system.theme}-w.png</path>
 			<path>./../../_inc/logos/us/${system.theme}-w.svg</path>
+			<path>./../../_inc/logos/us/${synonym}.png</path>
+			<path>./../../_inc/logos/us/${synonym}.svg</path>
 			<path>./../../_inc/logos/us/${synonym}-w.png</path>
 			<path>./../../_inc/logos/us/${synonym}-w.svg</path>
 		</image>
 		<image name="logo, logo1" region="jp">
+			<path>./../../_inc/logos/jp/${system.theme}.png</path>
+			<path>./../../_inc/logos/jp/${system.theme}.svg</path>
 			<path>./../../_inc/logos/jp/${system.theme}-w.png</path>
 			<path>./../../_inc/logos/jp/${system.theme}-w.svg</path>
+			<path>./../../_inc/logos/jp/${synonym}.png</path>
+			<path>./../../_inc/logos/jp/${synonym}.svg</path>
 			<path>./../../_inc/logos/jp/${synonym}-w.png</path>
 			<path>./../../_inc/logos/jp/${synonym}-w.svg</path>
 		</image>
 	</view>
+
+<!-- Color clock -->
+	<view name="screen">
+		<text name="clock">
+			<color>${clockColor}</color>
+		</text>
+	</view>
+
 </theme>

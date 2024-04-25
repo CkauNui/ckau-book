@@ -17,9 +17,10 @@
 			<pos>0.005 0.005</pos>
 			<alignment>left</alignment>
 			<fontPath>./../../_inc/fonts/RobotoCondensed-Light.ttf</fontPath>
-			<color>FFFFFF1F</color>
+			<color>${textDateColor}</color>
 			<fontSize>0.02</fontSize>
 			<zIndex>140</zIndex>
+			<visible>false</visible>
 		</text>
 		<image name="background" extra="true">
 			<tile>true</tile>
@@ -27,7 +28,7 @@
 			<pos>0.5 0.5</pos>
 			<size>1 1</size>
 			<path>./../../_inc/images/space.png</path>
-			<color>${sysColor}</color>
+			<color>${sysbgColor}</color>
 		</image>
 		<image name="logo">
 			<path>./../../_inc/logos/${system.theme}-w.png</path>
@@ -67,7 +68,7 @@
 			<centerSelection>false</centerSelection>
 			<animateSelection>false</animateSelection>
 			<scrollSound>./../../_inc/sound/scroll.wav</scrollSound>
-			<scrollbarColor>FFFFFF80</scrollbarColor>
+			<scrollbarColor>${TextDateColor}</scrollbarColor>
 			<scrollbarCorner>0</scrollbarCorner>
 			<scrollbarSize>0.002</scrollbarSize>
 		</imagegrid>
@@ -84,7 +85,7 @@
 			<imageColor>FFFFFFFF</imageColor>
 		</gridtile>
 		<text name="gridtile">
-			<color>FFFFFF80</color>
+			<color>${textDateColor}</color>
 			<backgroundColor>00000000</backgroundColor>
 			<fontSize>0.022</fontSize>
 			<alignment>center</alignment>
@@ -123,23 +124,22 @@
 			<format>%Y</format>
 			<fontPath>./../../_inc/fonts/RobotoCondensed-Regular.ttf</fontPath>
 			<fontSize>0.025</fontSize>
-			<color>FFFFFF80</color>
+			<color>${textDateColor}</color>
 			<zIndex>180</zIndex>
 		</datetime>
 		<image name="md_flag">
 			<origin>0.5 0</origin>
 			<pos>0.98 0.88</pos>
 			<maxSize>0.02 0.05</maxSize>
-			<color>FFFFFF90</color>
 		</image>
 		<rating name="md_rating">
 			<pos>0.98 0.21</pos>
 			<size>0.05 0.03</size>
 			<rotation>-90</rotation> 
-			<color>FFFFFF80</color>
+			<color>${textDateColor}</color>
 			<origin>0.5 0</origin>
 			<horizontalAlignment>right</horizontalAlignment>
-			<unfilledColor>80808030</unfilledColor>
+			<unfilledColor>${unfilledColor}</unfilledColor>
 			<unfilledPath>./../../_inc/images/star_filled.svg</unfilledPath>
 		</rating>
 		<text name="md_players">
@@ -150,29 +150,29 @@
 			<text>1</text>
 			<alignment>center</alignment>
 			<fontSize>0.034</fontSize>
-			<color>FFFFFF80</color>
+			<color>${textDateColor}</color>
 		</text>
 		<image name="md_manual,md_nomanual">
 			<pos>0.98 0.42</pos>
 			<path>./../../_inc/images/book.png</path>
 			<maxSize>0.02 0.03</maxSize>
 			<origin>0.5 0.5</origin>
-			<color>FFFFFF80</color>
+			<color>${textDateColor}</color>
 			<zIndex>150</zIndex>
 		</image>
 		<image name="md_nomanual">
-			<color>80808030</color>
+			<color>${unfilledColor}</color>
 		</image>
 		<image name="md_cheevos,md_notcheevos">
 			<origin>0.5 0.5</origin>
 			<path>./../../_inc/icons/Contest.png</path>
 			<pos>0.98 0.47</pos>
 			<maxSize>0.02 0.03</maxSize>
-			<color>FFFFFF80</color>
+			<color>${textDateColor}</color>
 			<zIndex>100</zIndex>
 		</image>
 		<image name="md_notcheevos">
-			<color>80808030</color>
+			<color>${unfilledColor}</color>
 		</image>
 		<image name="md_savestate,md_nosavestate">
 			<origin>0.5 0.5</origin>
@@ -180,18 +180,18 @@
 			<pos>0.98 0.52</pos>
 			<y ifCheevos="false">0.47</y>
 			<maxSize>0.02 0.03</maxSize>
-			<color>FFFFFF80</color>
+			<color>${textDateColor}</color>
 			<zIndex>150</zIndex>
 		</image>
 		<image name="md_nosavestate">
-			<color>FFFFFF80</color>
+			<color>${textDateColor}</color>
 		</image>
 		<image name="md_hidden">
 			<pos>0.98 0.92</pos>
 			<path>./../../_inc/images/hidden.svg</path>
 			<maxSize>0.02 0.03</maxSize>
 			<origin>0.5 0.5</origin>
-			<color>FFFFFF80</color>
+			<color>${textDateColor}</color>
 			<zIndex>150</zIndex>
 		</image>
 		<image name="md_kidgame,md_notkidgame">
@@ -199,11 +199,11 @@
 			<path>./../../_inc/images/kid.svg</path>
 			<maxSize>0.02 0.03</maxSize>
 			<origin>0.5 0.5</origin>
-			<color>FFFFFF80</color>
+			<color>${textDateColor}</color>
 			<zIndex>150</zIndex>
 		</image>
 		<image name="md_notkidgame"> 
-			<color>FFFFFF80</color>
+			<color>${textDateColor}</color>
 		</image>
 	</view>
 </theme>
