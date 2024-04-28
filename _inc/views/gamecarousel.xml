@@ -3,7 +3,7 @@
 <theme>
 <formatVersion>7</formatVersion>
 <!-- Подробно + Карусель -->
-<view name="gamecarousel" displayName="${gameCarouselViewName}">
+	<view name="gamecarousel" displayName="${gameCarouselViewName}">
 		<text name="md_lbl_rating,md_lbl_releasedate,md_lbl_lastplayed,md_lbl_developer,md_lbl_publisher,md_lbl_genre,md_lbl_players,md_lbl_playcount">
 			<color>111111</color>
 			<visible>false</visible>
@@ -11,12 +11,12 @@
 		</text>
 		<text name="md_players,md_genre,md_description,md_developer,md_publisher,md_playcount,md_gametime">
 			<color>111111</color>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontPath>./../../_inc/fonts/RobotoCondensed-Light.ttf</fontPath>
 			<fontSize>0.0194444444444444</fontSize>
 		</text>
 		<datetime name="md_lastplayed,md_releasedate">
 			<color>111111</color>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontPath>./../../_inc/fonts/RobotoCondensed-Light.ttf</fontPath>
 			<fontSize>0.0194444444444444</fontSize>
 		</datetime>
 		<video name="md_video">
@@ -37,15 +37,13 @@
 		<text name="md_name" extra="true">
 			<pos>0.005 0.005</pos>
 			<alignment>left</alignment>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontPath>./../../_inc/fonts/RobotoCondensed-Light.ttf</fontPath>
 			<color>6666661F</color>
 			<fontSize>0.02</fontSize>
 			<lineSpacing>1.1</lineSpacing>
 			<zIndex>140</zIndex>
 		</text>
 		<image name="logo">
-			<path>./../../_inc/logos/${system.theme}.png</path>
-			<path>./../../_inc/logos/${system.theme}-${lang}.png</path>
 			<pos>0.49 0.08</pos>
 			<maxSize>0.160 0.086</maxSize>
 			<origin>0.5 0.5</origin>
@@ -65,29 +63,30 @@
 			<maxSize>0.3078125 0.585</maxSize>
 		</image>
 
-		<image name="md-description-border" extra="true">
+		<!--<image name="md-description-border" extra="true">
 			<pos>0.0484 0.706111111111111</pos>
 			<size>0.6455 0.0027777777777778</size>
 			<origin>0 0.5</origin>
 			<path>./../../_inc/images/space.png</path>
 			<color>aaaaaa</color>
 			<zIndex>106</zIndex>
-		</image>
+		</image>-->
 		<text name="md_description">
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontPath>./../../_inc/fonts/RobotoCondensed-Light.ttf</fontPath>
 			<pos>0.061875 0.705111111111111</pos>
 			<size>0.6188125 0.2240555555555556</size>
-			<fontSize>0.025</fontSize>
+			<lineSpacing>1.18</lineSpacing>
+			<fontSize>0.022</fontSize>
 			<zIndex>105</zIndex>
 		</text>
-		<image name="md-description-border2" extra="true">
+		<!--<image name="md-description-border2" extra="true">
 			<pos>0.0484 0.927111111111111</pos>
 			<size>0.6455 0.0027777777777778</size>
 			<origin>0 0.5</origin>
 			<path>./../../_inc/images/space.png</path>
 			<color>aaaaaa</color>
 			<zIndex>106</zIndex>
-		</image>
+		</image>-->
 		<image name="gamelist-background" extra="true">
 			<origin>0 0</origin>
 			<pos>0.725 0</pos>
@@ -97,15 +96,15 @@
 		</image>
 		<gamecarousel name="gamecarousel">
 			<type>vertical_wheel</type>
-			<pos>0 0</pos>
+			<pos>0.37 0</pos>
 			<size>1 1</size>
 			<origin>0 0</origin>
-			<logoScale>1.3</logoScale>
+			<logoScale>1.1</logoScale>
 			<logoSize>0.18 0.18</logoSize>
 			<logoRotation>-6.5</logoRotation>
 			<logoRotationOrigin>4.0 0.3</logoRotationOrigin>
-			<logoAlignment>right</logoAlignment>
-			<maxLogoCount>7</maxLogoCount>
+			<logoAlignment>center</logoAlignment>
+			<maxLogoCount>5</maxLogoCount>
 			<zIndex>75</zIndex>
 			<imageSource>marquee</imageSource> <!-- text, image, thumbnail, marquee -->
 			<scrollSound>./../../_inc/sound/scroll.wav</scrollSound>
@@ -121,7 +120,7 @@
 			<pos>0.784375 0.1527777777777778</pos>
 			<size>0.15625 0.0555555555555556</size>
 			<fontSize>0.0444444444444444</fontSize>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontPath>./../../_inc/fonts/RobotoCondensed-Light.ttf</fontPath>
 			<forceUppercase>true</forceUppercase>
 			<color>555555</color>
 		</text>
@@ -215,7 +214,6 @@
 		<image name="md_notkidgame"> 
 			<color>80808000</color>
 		</image>
-
 
 		<datetime name="md_releasedate">
 			<pos>0.4106 0.135</pos>
@@ -311,6 +309,6 @@
 			<zIndex>150</zIndex>
 		</image>
 	</view>
-<!-- Navigation arrows, if enabled -->
+	<!-- Navigation arrows, if enabled -->
   	<include ifSubset="arrows:On">./../../_inc/views/arrows.xml</include>
 </theme>

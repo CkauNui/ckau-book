@@ -281,32 +281,27 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 <!-- Presets -->
 	<include>./_inc/presets/${system.theme}.xml</include>
 
-<!-- Game views (common elements) -->
+<!-- Game views (common elements): Prefers white version of the logo -->
 	<view name="basic,detailed,grid,gamecarousel">
-		<image name="logo">
+		<image name="logo,logo1">
 			<path>./_inc/logos/${system.theme}.png</path>
-
 			<path>./_inc/logos/${system.theme}.svg</path>
 			<path>./_inc/logos/${system.theme}-w.svg</path>
-			<path>./_inc/logos/${system.theme}-w-${lang}.png</path>
-			<path>./_inc/logos/${system.theme}-w-${lang}.svg</path>
-
 			<path>./_inc/logos/${system.theme}-${lang}.png</path>
 			<path>./_inc/logos/${system.theme}-${lang}.svg</path>
-		<!-- Logos for Collections -->
+			<path>./_inc/logos/${system.theme}-w-${lang}.png</path>
+			<path>./_inc/logos/${system.theme}-w-${lang}.svg</path>
 			<path>./_inc/logos/collections/${system.theme}.png</path>
 			<path>./_inc/logos/collections/${system.theme}.svg</path>
 			<path>./_inc/logos/collections/${system.theme}-w.svg</path>
 			<linearSmooth>true</linearSmooth>
 		</image>
-
 		<image name="logo" region="eu"></image>
 		<image name="logo" region="us">
 			<path>./_inc/logos/us/${system.theme}.png</path>
 			<path>./_inc/logos/us/${system.theme}.svg</path>
 			<path>./_inc/logos/us/${system.theme}-w.svg</path>
-		</image>
-		
+		</image>	
 		<image name="logo" region="jp">
 		  <path>./_inc/logos/jp/${system.theme}.png</path>
 			<path>./_inc/logos/jp/${system.theme}.svg</path>
