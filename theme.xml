@@ -218,26 +218,6 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 	<include name="Greyful" displayName="${sysbgcolorGreyful}">./_inc/systemcolors/greyful.xml</include>
 	</subset>
 
-<!-- Subset option for blur effects -->
-	<subset name="blurfx" displayName="${subset.blurfx}" ifArch="windows,x86_64" tinyScreen="false">
-	<include name="yes" displayName="${yes}">./_inc/fx/blurfx.xml</include>
-	<include name="no" displayName="${no}"/>
-	</subset>
-
-<!-- Animated gamelist logo on/off -->
-	<subset name="gamelist_logo" displayName="${gamelist_logo}">
-		<include name="On" displayName="${On_Logo3}">./_inc/views/gamelist_logo_bzz.xml</include>
-		<include name="On (Black Bars)" displayName="${On_Logo}">./_inc/views/gamelist_logo.xml</include>
-		<include name="On (No Black Bars)" displayName="${On_Logo2}">./_inc/views/gamelist_logo_noblack.xml</include>
-		<include name="Off" displayName="${Off_Logo}"></include>
-	</subset>
-
-<!-- Enable/Disable navigation arrows in System view -->
-	<subset name="arrows" displayName="${arrows}">
-		<include name="On" displayName="${on_arrows}"></include>
-		<include name="Off" displayName="${off_arrows}"></include>
-	</subset>
-
 <!-- Game views -->
 	<include>./_inc/views/basic.xml</include>
 	<include>./_inc/views/detailed.xml</include>
@@ -274,6 +254,32 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 
 <!-- Presets -->
 	<include>./_inc/presets/${system.theme}.xml</include>
+
+<!-- Color option for gameviews (need place bottom "Game views" and "Presets")-->
+	<subset name="gamelistbgcolor" displayName="${subset.gamelistbgcolor}">
+		<include name="Default" displayName="${defaultbg}"/>
+		<include name="Dynamic" displayName="${dynamicbg}">./_inc/systemcolors/dynamic.xml</include>
+	</subset>
+
+<!-- Subset option for blur effects -->
+	<subset name="blurfx" displayName="${subset.blurfx}" ifArch="windows,x86_64" tinyScreen="false">
+	<include name="yes" displayName="${yes}">./_inc/fx/blurfx.xml</include>
+	<include name="no" displayName="${no}"/>
+	</subset>
+
+<!-- Animated gamelist logo on/off -->
+	<subset name="gamelist_logo" displayName="${gamelist_logo}">
+		<include name="On" displayName="${On_Logo3}">./_inc/views/gamelist_logo_bzz.xml</include>
+		<include name="On (Black Bars)" displayName="${On_Logo}">./_inc/views/gamelist_logo.xml</include>
+		<include name="On (No Black Bars)" displayName="${On_Logo2}">./_inc/views/gamelist_logo_noblack.xml</include>
+		<include name="Off" displayName="${Off_Logo}"></include>
+	</subset>
+
+<!-- Enable/Disable navigation arrows in System view -->
+	<subset name="arrows" displayName="${arrows}">
+		<include name="On" displayName="${on_arrows}"></include>
+		<include name="Off" displayName="${off_arrows}"></include>
+	</subset>
 
 <!-- Game views (common elements) -->
 	<view name="basic,detailed,grid,gamecarousel">
@@ -320,7 +326,7 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 	</subset>
 
 <!-- Icon animations in gameviews -->
-	<customView name="Colorful + Wheel Right (horizontally), Colorful + Wheel Left (horizontally), Colorful + Gamelist (horizontally), Colorful + Gamelist (horizontally 2), Colorful (horizontally), Colorful + Wheel Right (vertically), Colorful + Wheel Left (vertically), Colorful + Gamelist (vertically), Colorful (vertically)">
+<!-- 	<customView name="Colorful + Wheel Right (horizontally), Colorful + Wheel Left (horizontally), Colorful + Gamelist (horizontally), Colorful + Gamelist (horizontally 2), Colorful (horizontally), Colorful + Wheel Right (vertically), Colorful + Wheel Left (vertically), Colorful + Gamelist (vertically), Colorful (vertically)">
 			<image name="gametime_logo,genre_logo,developer_logo,playcount_logo,publisher_logo,release_date_logo,md_kidgame,md_notkidgame,md_hidden,md_savestate,md_nosavestate,md_cheevos,md_notcheevos,md_manual,md_nomanual,md_flag">
 				<storyboard>
 					<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
@@ -346,7 +352,7 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 					<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
 				</storyboard>
 			</rating>
-	</customView>
+	</customView> -->
 
 <!-- Custom scroll sound -->
 	<include>./_inc/views/ScrollSound.xml</include>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="grid">
+		<image name="background" extra="true">
+			<color>${sysbgColor}</color>
+		</image>
+		<image name="gamelistBackground" extra="true">
+			<color>${sysbgColor}</color>
+		</image>
+	</view>
+	<customView name="Grid + Fanart, Wallpapers, Carousel + Fanart">
+		<image name="md_fanart">
+			<!-- <color>707070</color>  Set if no use background color-->
+			<color>FFFFFF5F</color>
+		</image>
+		<image name="background" extra="true">
+			<color>141414</color>
+		</image>
+	</customView>
+	<customView name="Logo + Details">
+		<image name="md_fanart">
+			<visible>false</visible>
+		</image>
+	</customView>
+	<customView name="Colorful (vertically)">
+		<image name="background" extra="true">
+			<color>141414</color>
+		</image>
+	</customView>
+
+
+	<view name="grid">
+		<imagegrid name="gamegrid">
+			<scrollbarColor>${textDateColor}</scrollbarColor>
+		</imagegrid>
+		<text name="gridtile">
+			<color>${textNameColor}</color>
+		</text>
+		<ninepatch name="gridtile.background:selected">
+			<animateColor>${sysbgColor}</animateColor>
+		</ninepatch>
+<!-- 		<text name="md_name">
+			<color>${textNameColor}</color>
+		</text> -->
+		<datetime name="md_releasedate">
+			<color>${textDateColor}</color>
+		</datetime>
+		<rating name="md_rating">
+			<color>${textDateColor}</color>
+		</rating>
+		<text name="md_players">
+			<color>${textDateColor}</color>
+		</text>
+		<image name="md_manual,md_nomanual, md_cheevos,md_notcheevos, md_savestate,md_nosavestate, md_hidden, md_kidgame,md_notkidgame">
+			<color>${textDateColor}</color>
+		</image>
+		<image name="fake_cheevos, md_nosavestate, md_notcheevos, md_nomanual" extra="true">
+			<color>${unfilledColor}</color>
+		</image>
+		<image name="md_notkidgame"> 
+			<color>80808000</color>
+		</image>
+	</view>
+	<customView name="Grid + Details, Grid + Details + Marquee, Logo + Details, Carousel, Carousel + Details, Carousel + Details + Marquee">
+		<!-- <text name="md_name">
+			<color>${textNameColor}</color>
+		</text> -->
+		<text name="md_developer">
+			<color>${textManufacturerColor}</color>
+		</text>
+		<text name="md_description">
+			<color>${textDescColor}</color>
+		</text>
+		<datetime name="md_releasedate">
+			<color>${textDateColor}</color>
+		</datetime>
+		<rating name="md_rating">
+			<color>${textDateColor}</color>
+		</rating>
+		<text name="md_players">
+			<color>${textDateColor}</color>
+		</text>
+		<image name="md_manual,md_nomanual, md_cheevos,md_notcheevos, md_savestate,md_nosavestate, md_hidden, md_kidgame,md_notkidgame">
+			<color>${textDateColor}</color>
+		</image>
+		<image name="fake_cheevos, md_nosavestate, md_notcheevos, md_nomanual" extra="true">
+			<color>${unfilledColor}</color>
+		</image>
+		<image name="md_notkidgame"> 
+			<color>80808000</color>
+		</image>
+	</customView>
+</theme>
