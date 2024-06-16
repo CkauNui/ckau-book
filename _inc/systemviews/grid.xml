@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+
+	<variables>
+		<corners>8 * ${screen.height} / 1080</corners>
+		<borderFrame>${themePath}/_inc/images/framewsel.png</borderFrame>
+		<videoFrame>firstfile("${themePath}/_inc/anim/video/" + {system:theme} + ".mp4")</videoFrame>
+		<videoFrame2>${themePath}/_inc/anim/video/${system.theme}.mp4</videoFrame2>
+		<blinkColor>FFFF80FF</blinkColor>
+		<grid.itemspacing.px>12 * ${screen.height} / 1080</grid.itemspacing.px>
+		<grid.itemspacing.px verticalScreen="true">15 * ${screen.width} / 1920</grid.itemspacing.px>
+		<grid.paddingtop>0.04</grid.paddingtop>
+		<grid.paddingtop verticalScreen="true">0.022</grid.paddingtop>
+	</variables>
+
+	<view name="system">
+		<imagegrid name="imagegrid">
+			<zIndex>20</zIndex>
+			<pos>0.008 0.05</pos>
+			<size>0.975 0.95</size>
+			<pos verticalScreen="true">0.008 0.05</pos>
+			<size verticalScreen="true">0.975 0.95</size>
+			<autoLayout>0 3</autoLayout>
+<!-- 			<cellProportion>1.15</cellProportion> -->
+			<cellProportion>1.2</cellProportion>
+			<autoLayout verticalScreen="true">2 0</autoLayout>
+			<cellProportion verticalScreen="true">1.33</cellProportion>
+			<margin>${grid.itemspacing.px}</margin>
+			<padding>0.03 ${grid.paddingtop} 0.03 0.11</padding>
+			<scrollbarColor>33333320</scrollbarColor>
+			<scrollbarCorner>0.49</scrollbarCorner>
+			<scrollbarSize>0.005</scrollbarSize>
+			<scrollbarAlignment>right</scrollbarAlignment>
+			
+			<itemTemplate>
+				<container>
+					<scale>1</scale>
+					<storyboard event="activate">
+						<animation property="scale" to="1.05" duration="150" mode="easeOut"/>
+					</storyboard>
+					<storyboard event="deactivate">
+						<animation property="scale" to="1" duration="250" mode="easeOut"/>
+					</storyboard>
+
+					<container padding="-8" zIndex="1">
+						<ninepatch>
+							<pos>0 0</pos>
+							<size>1 1</size>
+							<path>${themePath}/_inc/images/framew.png</path>
+							<cornerSize>36 36</cornerSize>
+							<padding>-2 -2</padding>
+							<color>000000B0</color>
+							<zIndex>1</zIndex>
+							<storyboard event="activate" repeat="forever">
+								<animation property="path" to="${borderFrame}"/>
+								<animation property="padding" to="-15 -15"/>
+								<animation property="cornerSize" to="36 36"/>
+								<animation property="color" from="${baseColor}" to="${sysbgColor}" duration="1500" mode="easeOut"/>
+								<animation property="color" from="${sysbgColor}" to="${baseColor}" begin="1500" duration="1500" mode="easeOut"/>
+							</storyboard>
+							<storyboard event="deactivate">
+								<animation property="path" to="${themePath}/_inc/images/framew.png"/>
+								<animation property="color" to="000000B0"/>
+								<animation property="padding" to="-2 -2"/>
+								<animation property="cornerSize" to="36 36"/>
+							</storyboard>
+						</ninepatch>
+					</container>
+					
+					<image>
+						<path>${themePath}/_inc/images/space.png</path>
+						<pos>0 0</pos>
+						<origin>0 0</origin>
+						<size>1 1</size>
+						<color>141414</color>
+						<color ifSubset="colorset:blue">121824</color>
+						<color ifSubset="colorset:red">241212</color>
+						<color ifSubset="colorset:green">182816</color>
+						<color ifSubset="colorset:cyan">142626</color>
+						<color ifSubset="colorset:yellow">303016</color>
+						<color ifSubset="colorset:violet">301630</color>
+						<color ifSubset="colorset:orange">302416</color>
+						<zIndex>2</zIndex>
+						<roundCorners>${corners}</roundCorners>
+						<image name="shade">
+							<path>${themePath}/_inc/images/space.png</path>
+							<pos>0 0</pos>
+							<origin>0 0</origin>
+							<size>1 1</size>
+							<color>FFFFFF16</color>
+							<roundCorners>${corners}</roundCorners>
+						</image>
+					</image>
+					
+					<image name="systemBack" extra="true">
+						<path>${themePath}/_inc/anim/${system.theme}.png</path>
+						<!-- this line is just to make sure the image size was preloaded for async, but is not dynamic -->
+						<path>none</path>
+						<!-- remove binding to the preloaded version -->
+						<!-- <path>exists("${themePath}/art/background/" + {system:theme} + ".jpg") ? "${themePath}/art/background/" + {system:theme} + ".jpg" : exists("${themePath}/art/background/collections/" + {system:theme} + ".jpg") ? "${themePath}/art/background/collections/" + {system:theme} + ".jpg" : {system:ascollection:random:fanart}</path>-->
+						<path>firstfile(
+							"${themePath}/_inc/anim/" + {system:theme} + ".png",
+							"./../../../ckau-book-addons/_inc/anim/4K/" + {system:theme} + ".png",
+				"./../../../ckau-book-addons/_inc/art2/collections/" + {system:theme} + ".png")</path>
+						<!-- Redeclare the line to make the image dynamic with binding -->
+						<pos>0.5</pos>
+						<origin>0.5</origin>
+						<minSize>1 1</minSize>
+						<linearSmooth>true</linearSmooth>
+						<color>FFFFFF90</color>
+						<roundCorners>${corners}</roundCorners>
+						<zIndex>3</zIndex>
+						<scale>1</scale>
+						<storyboard event="activate">
+							<animation property="color" to="FFFFFFD0" duration="250" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="color" to="FFFFFF90" duration="250" mode="easeOut"/>
+						</storyboard>
+					</image>
+
+					<container padding="0.1">
+						<!-- Redefines how the carousel logo is rendered. Here we add a drop shadow to the logo -->
+						<image name="logoDropShadow" pos="0.5" origin="0.5" maxSize="1" linearSmooth="true">
+							<path>{system:logo}</path>
+							<padding>3 3 -3 -3</padding>
+							<color>00000080</color>
+							<zIndex>5</zIndex>
+						</image>
+						<image name="theLogoImage" pos="0.5" origin="0.5" maxSize="1" linearSmooth="true">
+							<path>{system:logo}</path>
+							<zIndex>6</zIndex>
+						</image>
+						<text name="substitutionText" color="white" alignment="center" multiLine="true">
+							<visible>!exists({system:logo})</visible>
+							<text>{system:fullName}</text>
+							<fontSize>0.06</fontSize>
+							<fontPath>${themePath}/_inc/fonts/Gilroy-Regular.ttf</fontPath>
+							<forceUppercase>false</forceUppercase>
+							<color>white</color>
+							<glowOffset>1 1</glowOffset>
+							<glowColor>0000002a</glowColor>
+							<glowSize>3</glowSize>
+						</text>
+						<opacity>0.9</opacity>
+						<storyboard event="activate">
+							<animation property="opacity" to="1"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="0.9" duration="250" mode="easeOut"/>
+						</storyboard>
+					</container>
+				</container>
+			</itemTemplate>
+		</imagegrid>
+
+		<!-- White logos -->
+		<image name="logo">
+			<path>${themePath}/_inc/logos/${system.theme}-w.png</path>
+			<path>${themePath}/_inc/logos/${system.theme}-w.svg</path>
+			<path>${themePath}/_inc/logos/${system.theme}-w-${lang}.png</path>
+			<path>${themePath}/_inc/logos/${system.theme}-w-${lang}.svg</path>
+			<!-- Attemps to load synonym if system not available -->
+			<path>${themePath}/_inc/logos/${synonym}-w.png</path>
+			<path>${themePath}/_inc/logos/${synonym}-w.svg</path>
+			<path>${themePath}/_inc/logos/${synonym}-w-${lang}.png</path>
+			<path>${themePath}/_inc/logos/${synonym}-w-${lang}.svg</path>
+		</image>
+		<image name="logo" region="eu"></image>
+		<image name="logo" region="us">
+			<path>${themePath}/_inc/logos/us/${system.theme}-w.png</path>
+			<path>${themePath}/_inc/logos/us/${system.theme}-w.svg</path>
+			<path>${themePath}/_inc/logos/us/${synonym}-w.png</path>
+			<path>${themePath}/_inc/logos/us/${synonym}-w.svg</path>
+		</image>
+		<image name="logo" region="jp">
+			<path>${themePath}/_inc/logos/jp/${system.theme}-w.png</path>
+			<path>${themePath}/_inc/logos/jp/${system.theme}-w.svg</path>
+			<path>${themePath}/_inc/logos/jp/${synonym}-w.png</path>
+			<path>${themePath}/_inc/logos/jp/${synonym}-w.svg</path>
+		</image>
+	</view>
+</theme>
