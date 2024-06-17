@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+<formatVersion>7</formatVersion>
+<!-- Content \ Контент -->
+
+	<variables>
+		<wideScreen>${screen.ratio} == "16/9" || ${screen.ratio} == "16/10" || ${screen.ratio} == "16/15"</wideScreen>
+		<ultrawideScreen>${screen.ratio} == "21/9"</ultrawideScreen>
+		<corners>7</corners>
+		<cornersOfMedias>7</cornersOfMedias>
+<!-- <simpleMode>${system.name} == "retrobat"</simpleMode> -->
+		<favoriteSystem>${system.name} == "favorites"</favoriteSystem>
+		<borderFrame>./../images/framewsel.png</borderFrame>
+		<blinkColor>141414</blinkColor>
+	</variables>
+	<subset name="contentBack" displayName="${contentBackground}" appliesTo="Content">
+		<include name="fanart" displayName="${fanart}"/>
+		<include name="thumb" displayName="${thumbnail}"/>
+		<include name="none" displayName="${none}"/>
+	</subset>
+
+	<customView name="Content" inherits="grid" displayName="${contentViewName}">
+
+	<imagegrid name="gamegrid">
+		<autoLayout>1 4</autoLayout>
+		<autoLayout if="${wideScreen}">2 4</autoLayout>
+		<autoLayout if="${ultrawideScreen}">3 4</autoLayout>
+		<margin>0.006 0.010</margin>
+		
+		<itemTemplate>
+			<container name="contentRoot">
+				<pos>0 0</pos>
+				<size>1 1</size>
+				<padding>0 0 0 3</padding>
+				<opacity>1</opacity>
+				
+				<container>
+					<image>
+						<path>./../images/space.png</path>
+						<pos>0 0</pos>
+						<origin>0 0</origin>
+						<size>1 1</size>
+						<color>141414</color>
+						<color ifSubset="colorset:blue">121824</color>
+						<color ifSubset="colorset:red">241212</color>
+						<color ifSubset="colorset:green">182816</color>
+						<color ifSubset="colorset:cyan">142626</color>
+						<color ifSubset="colorset:yellow">303016</color>
+						<color ifSubset="colorset:violet">301630</color>
+						<color ifSubset="colorset:orange">302416</color>
+						<zIndex>2</zIndex>
+						<roundCorners>${corners}</roundCorners>
+						
+						<image name="shade">
+							<visible>!exists({game:thumbnail})</visible>
+							<visible ifSubset="contentBack:fanart">!exists({game:fanart})</visible>
+							<visible ifSubset="contentBack:fanart">!exists({game:fanart}) &amp;&amp; !exists({game:thumbnail})</visible>
+							<visible ifSubset="contentBack:none">true</visible>
+							<path>./../images/space.png</path>
+							<pos>0 0</pos>
+							<origin>0 0</origin>
+							<size>1 1</size>
+							<color>FFFFFF16</color>
+							<roundCorners>${corners}</roundCorners>
+						</image>
+					</image>
+				
+				<container clipChildren="true" ifSubset="contentBack:thumb|fanart">
+					<image name="backgroundOfTile">
+					<path ifSubset="contentBack:thumb">{game:thumbnail}</path>
+					<path ifSubset="contentBack:fanart">{game:fanart}</path>
+					<origin>0.5</origin>
+					<pos>0.5</pos>
+					<minSize>1 1</minSize>
+					<linearSmooth>true</linearSmooth>
+					<zIndex>3</zIndex>
+					<color>FFFFFF1A</color>
+					<roundCorners>${corners}</roundCorners>
+					<storyboard event="activate" repeat="forever">
+						<animation property="scale" from="1" to="1.1" duration="5000"/>
+						<animation property="scale" begin="5000" to="1" duration="5000"/>
+					</storyboard>
+					<storyboard event="deactivate">
+						<animation property="scale" to="1" duration="250"/>
+					</storyboard>
+					</image>
+					
+					<image name="backgroundOfTile2">
+					<visible>!exists({game:fanart})</visible>
+					<path ifSubset="contentBack:fanart">{game:thumbnail}</path>
+					<origin>0.5</origin>
+					<pos>0.5</pos>
+					<minSize>1 1</minSize>
+					<linearSmooth>true</linearSmooth>
+					<zIndex>3</zIndex>
+					<color>FFFFFF1A</color>
+					<roundCorners>${corners}</roundCorners>
+					<storyboard event="activate" repeat="forever">
+						<animation property="scale" from="1" to="1.1" duration="5000"/>
+						<animation property="scale" begin="5000" to="1" duration="5000"/>
+					</storyboard>
+					<storyboard event="deactivate">
+						<animation property="scale" to="1" duration="250"/>
+					</storyboard>
+					</image>
+					
+				</container>
+				<container padding="-8" zIndex="1">
+					<ninepatch>
+						<pos>0 0</pos>
+						<size>1 1</size>
+						<path>./../images/framew.png</path>
+						<cornerSize>20 20</cornerSize>
+						<padding>-2 -2</padding>
+						<color>000000B0</color>
+						<zIndex>3</zIndex>
+						<storyboard event="activate" repeat="forever">
+							<animation property="path" to="${borderFrame}"/>
+							<animation property="padding" to="-15 -15"/>
+							<animation property="cornerSize" to="36 36"/>
+							<animation property="color" from="${baseColor}" to="${blinkColor}" duration="1500" mode="easeOut"/>
+							<animation property="color" from="${blinkColor}" to="${baseColor}" begin="1500" duration="1500" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="path" to="./../images/framew.png"/>
+							<animation property="color" to="000000B0"/>
+							<animation property="padding" to="-2 -2"/>
+							<animation property="cornerSize" to="20 20"/>
+						</storyboard>
+					</ninepatch>
+				</container>
+				</container>
+
+				<stackpanel>
+					<pos>0 0</pos>
+					<size>1 1</size>
+					<container name="spacer" w="0.007"/>
+					
+					<container>
+						<w>{grid:h}</w>
+						
+						<image name="imageOfGame" shared="false">
+						<path>{game:thumbnail}</path>
+						<origin>0.5</origin>
+						<pos>0.5</pos>
+						<maxSize>0.93 0.90</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<zIndex>40</zIndex>
+						<color>FFFFFFE0</color>
+						<roundCorners>{game:folder} ? 0 : ${cornersOfMedias}</roundCorners>
+						<shader>
+							<path>:/shaders/border.glsl</path>
+							<cornerRadius>${cornersOfMedias}</cornerRadius>
+							<borderSize>1</borderSize>
+							<borderColor>00000080</borderColor>
+							<innerShadowSize>0</innerShadowSize>
+							<outerShadowSize>3</outerShadowSize>
+							<outerShadowColor>00000080</outerShadowColor>
+						</shader>
+						<storyboard event="activate">
+							<animation property="color" to="white"/>
+							<animation enabled="exists({game:video})" property="opacity" to="1"/>
+							<animation enabled="exists({game:video})" property="opacity" begin="1500" from="1" to="0" duration="400"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="color" to="FFFFFFE0"/>
+							<animation enabled="exists({game:video})" property="opacity" to="1" duration="150"/>
+						</storyboard>
+						</image>
+						
+						<video>
+							<visible>exists({game:video})</visible>
+							<path>{game:video}</path>
+							<origin>0.5</origin>
+							<pos>0.5</pos>
+							<maxSize>0.93 0.90</maxSize>
+							<roundCorners>${cornersOfMedias}</roundCorners>
+							<linearSmooth>false</linearSmooth>
+							<zIndex>41</zIndex>
+							<enabled>false</enabled>
+							<storyboard event="activate">
+								<animation property="opacity" to="0"/>
+								<animation property="enabled" begin="1100" to="true"/>
+								<animation property="opacity" begin="1500" from="0" to="1" duration="400" mode="easeIn"/>
+								<animation property="scale" to="0"/>
+								<animation property="scale" begin="1500" from="0.5" to="1" duration="400" mode="easeOut"/>
+							</storyboard>
+							<storyboard event="deactivate">
+								<animation property="enabled" to="false" begin="150"/>
+								<animation property="opacity" from="1" to="0" duration="150"/>
+								<animation property="scale" from="1" to="0.5" duration="150"/>
+							</storyboard>
+							<shader>
+								<path>:/shaders/border.glsl</path>
+								<cornerRadius>${cornersOfMedias}</cornerRadius>
+								<borderSize>0</borderSize>
+								<borderColor>00000000</borderColor>
+								<innerShadowSize>0</innerShadowSize>
+								<outerShadowSize>3</outerShadowSize>
+								<outerShadowColor>00000080</outerShadowColor>
+							</shader>
+						</video>
+						
+						<image name="imageMarquee">
+							<visible>!{game:folder} &amp;&amp; !exists({game:thumbnail})</visible>
+							<path>{game:marquee}</path>
+							<default>:/cartridge.svg</default>
+							<origin>0.5</origin>
+							<pos>0.5</pos>
+							<maxSize>0.90 0.75</maxSize>
+							<linearSmooth>true</linearSmooth>
+							<zIndex>40</zIndex>
+							<color>white</color>
+						</image>
+						
+						<image name="imageFolder">
+							<visible>{game:folder} &amp;&amp; !exists({game:thumbnail})</visible>
+							<path>:/folder.svg</path>
+							<origin>0.5</origin>
+							<pos>0.5</pos>
+							<maxSize>0.95 0.75</maxSize>
+							<linearSmooth>true</linearSmooth>
+							<zIndex>40</zIndex>
+							<color>white</color>
+						</image>
+					</container>
+					
+					<container name="spacer2" w="0.007"/>
+					
+					<container name="atright">
+						<padding>10 10 15 10</padding>
+						
+						<container>
+						<stackpanel reverse="true">
+						<stackpanel name="panelFav" orientation="vertical" w="{grid:h} * 0.21" separator="4">
+						<image name="favoriteIcon" if="!${favoriteSystem}">
+							<visible>{game:favorite}</visible>
+							<path>./../../resources/fontoverrides/F006.png</path>
+							<pos>0 0</pos>
+							<origin>0 0</origin>
+							<maxSize>1 1</maxSize>
+							<horizontalAlignment>right</horizontalAlignment>
+							<saturation>{game:favorite} ? 1 : 0</saturation>
+							<opacity>{game:favorite} ? 1 : 0.2</opacity>
+							<color>FFFFFFFF</color>
+						</image>
+						<image if="${system.cheevos}">
+							<visible>{game:cheevos} &amp;&amp; {system:showCheevos}</visible>
+							<path>./../../resources/fontoverrides/F091.png</path>
+							<pos>0 0</pos>
+							<origin>0 0</origin>
+							<maxSize>1 1</maxSize>
+							<horizontalAlignment>right</horizontalAlignment>
+							<saturation>{game:cheevos} ? 1 : 0</saturation>
+							<opacity>{game:cheevos} ? 1 : 0.2</opacity>
+							<color>FFFFFFFF</color>
+						</image>
+						<image>
+							<visible>{game:hasManual} &amp;&amp; {system:showManual}</visible>
+							<path>./../../resources/fontoverrides/F02D.png</path>
+							<pos>0 0</pos>
+							<origin>0 0</origin>
+							<maxSize>1 1</maxSize>
+							<horizontalAlignment>right</horizontalAlignment>
+							<saturation>{game:hasManual} ? 1 : 0</saturation>
+							<opacity>{game:hasManual} ? 1 : 0.2</opacity>
+							<color>FFFFFFFF</color>
+						</image>
+						<image>
+							<visible>{game:savestate} &amp;&amp; {system:showSaveStates}</visible>
+							<path>./../../resources/fontoverrides/F0C7.png</path>
+							<pos>0 0</pos>
+							<origin>0 0</origin>
+							<maxSize>1 1</maxSize>
+							<horizontalAlignment>right</horizontalAlignment>
+							<saturation>{game:savestate} ? 1 : 0</saturation>
+							<opacity>{game:savestate} ? 1 : 0.2</opacity>
+							<color>FFFFFFFF</color>
+						</image>
+						<image>
+							<visible>{game:gunGame} &amp;&amp; {system:showGun}</visible>
+							<path>./../../resources/fontoverrides/F05B.png</path>
+							<pos>0 0</pos>
+							<origin>0 0</origin>
+							<maxSize>1 1</maxSize>
+							<horizontalAlignment>right</horizontalAlignment>
+							<saturation>{game:gunGame} ? 1 : 0</saturation>
+							<opacity>{game:gunGame} ? 1 : 0.2</opacity>
+							<color>FFFFFFFF</color>
+						</image>
+						<image>
+							<visible>{game:wheelGame} &amp;&amp; {system:showWheel}</visible>
+							<path>./../../resources/fontoverrides/F1B9.png</path>
+							<pos>0 0</pos>
+							<origin>0 0</origin>
+							<maxSize>1 1</maxSize>
+							<horizontalAlignment>right</horizontalAlignment>
+							<saturation>{game:wheelGame} ? 1 : 0</saturation>
+							<opacity>{game:wheelGame} ? 1 : 0.2</opacity>
+							<color>FFFFFFFF</color>
+						</image>
+						</stackpanel>
+						
+							<container>
+								<size>1 1</size>
+								
+								<stackpanel>
+									<size>1 0.3</size>
+									<pos>0 0</pos>
+									<separator>6</separator>
+								<text name="the_game_name">
+									<pos>0 0</pos>
+									<origin>0 0</origin>
+									<size>1 0.3</size>
+									<text>{game:nameShort}</text>
+									<fontPath>./../fonts/Gilroy-Bold.ttf</fontPath>
+									<fontSize>0.026</fontSize>
+									<verticalAlignment>bottom</verticalAlignment>
+									<multiLine>false</multiLine>
+									<extraTextColor>707070</extraTextColor>
+									<color>FFFFFFFF</color>
+									<glowColor>00000040</glowColor>
+									<glowSize>1</glowSize>
+								</text>
+								<text name="the_game_extra">
+									<pos>0 0</pos>
+									<origin>0 0</origin>
+									<size>0 1</size>
+									<text>{game:nameExtra}</text>
+									<extraTextColor>FFFFFF70</extraTextColor>
+									<color>FFFFFFFF</color>
+									<fontPath>./../fonts/Gilroy-Bold.ttf</fontPath>
+									<fontSize>0.016</fontSize>
+									<padding>0 0 0 0.08</padding>
+									<verticalAlignment>bottom</verticalAlignment>
+									<multiLine>false</multiLine>
+								</text>
+								</stackpanel>
+								
+								<stackpanel name="stars_and_system">
+									<visible>!{game:folder}</visible>
+									<pos>0 0.27</pos>
+									<size>1 0.17</size>
+									<separator>4</separator>
+								<text>
+									<pos>0 0</pos>
+									<size>0 1</size>
+									<text>{game:stars}</text>
+									<color>FFCC00D0</color>
+									<fontPath>./../fonts/Gilroy-Regular.ttf</fontPath>
+									<fontSize>0.016</fontSize>
+									<glowColor>00000040</glowColor>
+									<glowSize>1</glowSize>
+									<verticalAlignment>top</verticalAlignment>
+									<multiLine>false</multiLine>
+								</text>
+								<text if="${system.showSystemName}">
+									<pos>0 0</pos>
+									<size>0 1</size>
+									<text>"[" + {game:system} + "]"</text>
+									<color>FFFFFF70</color>
+									<fontPath>./../fonts/Gilroy-Regular.ttf</fontPath>
+									<fontSize>0.016</fontSize>
+									<verticalAlignment>top</verticalAlignment>
+									<multiLine>false</multiLine>
+								</text>
+								</stackpanel>
+								<text>
+									<pos>0 0.48</pos>
+									<size>1 0.52</size>
+									<text>{game:desc}</text>
+									<color>FFFFFFA0</color>
+									<fontPath>./../fonts/RobotoCondensed-Regular.ttf</fontPath>
+									<fontSize>0.018</fontSize>
+									<autoScroll>false</autoScroll>
+									<multiLine>true</multiLine>
+									<lineSpacing>1.25</lineSpacing>
+									<autoScrollDelay>250</autoScrollDelay>
+									<verticalAlignment>top</verticalAlignment>
+									<storyboard event="activate" ifSubset="previewbar:no">
+										<animation property="autoScroll" to="vertical"/>
+									</storyboard>
+									<storyboard event="deactivate" ifSubset="previewbar:no">
+										<animation property="autoScroll" to="false"/>
+									</storyboard>
+								</text>
+							</container>
+						</stackpanel>
+						</container>
+					</container>
+				</stackpanel>
+			</container>
+		</itemTemplate>
+	</imagegrid>
+	</customView>
+</theme>

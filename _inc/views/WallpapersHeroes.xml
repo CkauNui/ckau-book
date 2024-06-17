@@ -52,20 +52,27 @@
 			<maxSize>1 1</maxSize>
 			<imageSource>fanart</imageSource>
 			<zIndex>60</zIndex>
+			<linearSmooth>true</linearSmooth>
 			<storyboard event="open">
 				<animation property="opacity" from="0" to="1" duration="400" mode="easeIn"/>
 			</storyboard>
 			<storyboard event="activateNext">
 				<animation property="offsetY" from="-0.01" to="0" duration="600" mode="EaseOutQuint"/>
+				<animation property="scale" from="1" to="1.1" duration="8000"/>
+				<animation property="scale" begin="8000" to="1" duration="8000"/>
 			</storyboard>
 			<storyboard event="activatePrev">
 				<animation property="offsetY" from="0.01" to="0" duration="600" mode="EaseOutQuint"/>
+				<animation property="scale" from="1" to="1.1" duration="8000"/>
+				<animation property="scale" begin="8000" to="1" duration="8000"/>
 			</storyboard>
 			<storyboard event="deactivateNext">
 				<animation property="opacity" to="0" duration="400" mode="easeOut"/>
+				<animation property="scale" to="1" duration="250"/>
 			</storyboard>
 			<storyboard event="deactivatePrev">
 				<animation property="opacity" to="0" duration="400" mode="easeOut"/>
+				<animation property="scale" to="1" duration="250"/>
 			</storyboard>
 		</image>
 		<image name="md_thumbnail">
