@@ -3,7 +3,29 @@
 <theme defaultView="VideoFull">
 	<formatVersion>7</formatVersion>
 
+	<view name="detailed">
+		<image name="md_image">
+			<origin>0.5 1</origin>
+			<pos>0.18 0.6777777777777778</pos>
+			<maxSize>0.3078125 0.585</maxSize>
+		</image>
+	</view>
+	<view name="grid">
+		<imagegrid name="gamegrid">
+			<imageSource>image</imageSource>
+		</imagegrid>
+	</view>
+	<view name="gamecarousel">
+		<image name="md_image">
+			<origin>0.5 1</origin>
+			<pos>0.18 0.6777777777777778</pos>
+			<maxSize>0.3078125 0.585</maxSize>
+		</image>
+	</view>
 	<customView name="VideoFull">
+		<image name="md_image">
+			<visible>false</visible>
+		</image>
 		<text name="md_name" extra="true">
 			<color>FFFFFF</color>
 		</text>
@@ -49,5 +71,41 @@
 			<zIndex>180</zIndex>
 			<visible>true</visible>
 		</datetime>
+	</customView>
+	<customView name="Content">
+	<imagegrid name="gamegrid">
+		<autoLayout>1 4</autoLayout>
+		<autoLayout if="${wideScreen}">5 2</autoLayout>
+		<autoLayout if="${ultrawideScreen}">7 2</autoLayout>
+	</imagegrid>
+	</customView>
+	<customView name="WallpapersHeroes">
+		<image name="md_image">
+			<visible>false</visible>
+		</image>
+	</customView>
+	<customView name="WallpapersCarousel">
+		<image name="md_image">
+			<visible>false</visible>
+		</image>
+		<video name="md_video">
+			<snapshotSource>image</snapshotSource>
+		</video>
+	</customView>
+	<customView name="Logo + Details">
+		<imagegrid name="gamegrid">
+			<imageSource>marquee</imageSource>
+		</imagegrid>
+		<video name="md_video">
+			<snapshotSource>image</snapshotSource>
+		</video>
+	</customView>
+	<customView name="Wallpapers">
+		<imagegrid name="gamegrid">
+			<imageSource>marquee</imageSource>
+		</imagegrid>
+		<video name="md_video">
+			<snapshotSource>image</snapshotSource>
+		</video>
 	</customView>
 </theme>
