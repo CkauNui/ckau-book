@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-left" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.3 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+			<pos>0.26 0.36</pos>
+			<minSize>0.1 0.2</minSize>
+			<rotation>8</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>27</zIndex>
+			<storyboard>
+				<animation property="pos" to="-0.02 0.36" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-right" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.7 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.54 0.4</origin>
+			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+			<pos>0.74 0.36</pos>
+			<minSize>0.1 0.2</minSize>
+			<rotation>-8</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>27</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.46 0.36" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+			<pos>0.5 0.363</pos>
+			<maxSize>0.15</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-left" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+			<pos>0.36 0.37</pos>
+			<maxSize>0.14</maxSize>
+			<rotation>0</rotation>
+			<storyboard>
+				<animation property="pos" to="0.08 0.37" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-right" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+			<pos>0.638 0.37</pos>
+			<maxSize>0.14</maxSize>
+			<rotation>0</rotation>
+			<storyboard>
+				<animation property="pos" to="0.358 0.37" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/daphne.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/daphne.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+			<pos>0.5 0.363</pos>
+			<maxSize>0.14</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<video name="videobox2" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/daphne-right.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}-right.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/daphne-right.mp4</path>
+			<audio>false</audio>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+			<pos>0.655 0.37</pos>
+			<maxSize>0.13</maxSize>
+			<zIndex>25</zIndex>
+			<rotation>0</rotation>
+			<storyboard>
+				<animation property="pos" to="0.375 0.37" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<video name="videobox3" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/daphne-left.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}-left.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/daphne-left.mp4</path>
+			<audio>false</audio>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+			<pos>0.345 0.37</pos>
+			<maxSize>0.13</maxSize>
+			<zIndex>25</zIndex>
+			<rotation>0</rotation>
+			<storyboard>
+				<animation property="pos" to="0.065 0.37" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>2020</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>SINGE</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>Hypseus SINGE, Somewhat Interactive Nostalgic Game Engine, (named after the dragon from Dragon's Lair) is the logical evolution of the Daphne emulator, which uses a Lua-based scripting system to quickly simulate LaserDisc games or create completely new games based on video files! The language is easy to learn, very powerful and fast. All the functions needed to develop your own game are available through a simple application programming interface (API).</text>
+			<text lang="pl">Hypseus SINGE, Somewhat Interactive Nostalgic Game Engine, (nazwany na cześć smoka z Dragon's Lair) jest logiczną ewolucją emulatora Daphne, który wykorzystuje system skryptowy oparty na Lua do szybkiego symulowania gier LaserDisc lub tworzenia zupełnie nowych gier opartych na plikach wideo! Język jest łatwy do nauczenia, bardzo wydajny i szybki. Wszystkie funkcje potrzebne do stworzenia własnej gry są dostępne za pośrednictwem prostego interfejsu programowania aplikacji (API).</text>
+			<text lang="ru">Hypseus SINGE, Somewhat Interactive Nostalgic Game Engine, (названный в честь дракона из Dragon's Lair) - это логическое развитие эмулятора Daphne, в котором используется скриптовая система на основе Lua, позволяющая быстро симулировать игры с LaserDisc или создавать совершенно новые игры, на основе видеофайлов в HD качестве! Язык прост в освоении, очень мощный и быстрый. Все функции, необходимые для разработки собственной игры, доступны через простой интерфейс прикладного программирования (API).</text>
+			<text lang="es">Hypseus SINGE, Somewhat Interactive Nostalgic Game Engine, (llamado así por el dragón de Dragon's Lair) es la evolución lógica del emulador Daphne, que utiliza un sistema de scripts basado en Lua para simular rápidamente juegos de LaserDisc o crear juegos completamente nuevos a partir de archivos de vídeo. El lenguaje es fácil de aprender, muy potente y rápido. Todas las funciones necesarias para desarrollar tu propio juego están disponibles a través de una sencilla interfaz de programación de aplicaciones (API).</text>
+			<text lang="de">Hypseus SINGE, Somewhat Interactive Nostalgic Game Engine, (benannt nach dem Drachen aus Dragon's Lair) ist die logische Weiterentwicklung des Daphne-Emulators, der ein Lua-basiertes Skripting-System verwendet, um LaserDisc-Spiele schnell zu simulieren oder völlig neue Spiele auf der Grundlage von Videodateien zu erstellen! Die Sprache ist leicht zu erlernen, sehr leistungsfähig und schnell. Alle Funktionen, die Sie zur Entwicklung Ihres eigenen Spiels benötigen, sind über eine einfache Programmierschnittstelle (API) verfügbar.</text>
+			<text lang="fr">Hypseus SINGE, Somewhat Interactive Nostalgic Game Engine, (nommé d'après le dragon de Dragon's Lair) est l'évolution logique de l'émulateur Daphne, qui utilise un système de script basé sur Lua pour simuler rapidement des jeux LaserDisc ou créer des jeux complètement nouveaux basés sur des fichiers vidéo ! Le langage est facile à apprendre, très puissant et rapide. Toutes les fonctions nécessaires au développement de votre propre jeu sont disponibles via une simple interface de programmation d'applications (API).</text>
+			<text lang="it">Hypseus SINGE, Somewhat Interactive Nostalgic Game Engine, (dal nome del drago di Dragon's Lair) è la logica evoluzione dell'emulatore Daphne, che utilizza un sistema di scripting basato su Lua per simulare rapidamente giochi LaserDisc o creare giochi completamente nuovi basati su file video! Il linguaggio è facile da imparare, molto potente e veloce. Tutte le funzioni necessarie per sviluppare il proprio gioco sono disponibili attraverso una semplice interfaccia di programmazione delle applicazioni (API).</text>
+		</text>
+	</view>
+</theme>
