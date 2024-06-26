@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<pos>0.529 0.461</pos>
+			<maxSize>0.28</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.37</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.309</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.249 0.461" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<pos>0.529 0.4602</pos>
+			<maxSize>0.275</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.368</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.307</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.249 0.4602" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>2014</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>Return to Castle Wolfenstein</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>ioRTCW</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>ioRTCW is an open source project that aims to create a base version of Return to Castle Wolfenstein, which can be used for further development and improvement. For example, fixing bugs of the original, provide support for widescreen resolutions and 64 bit systems, improve graphics and much more.
+
+• SDL backend
+• OpenAL sound API support (support for multiple speakers and better sound quality)
+• Full x86_64 support
+• VoIP support, both in-game and external support via Mumble.
+• Support for compiling MinGW on Windows and cross-compiling on Linux
+• AVI video capture for demos
+• Significantly improved console autocompletion
+• Persistent console history
+• Colorized terminal output
+• Additional Ogg Vorbis support
+• Significantly improved QVM tools
+• Support for various esoteric operating systems
+• Support for cl_guid
+• HTTP/FTP download redirection (using cURL)
+• Multiuser support on Windows systems (game user data is stored in "My Documents\RTCW" folder)
+• PNG support
+• Many, many bug fixes</text>
+			<text lang="pl">ioRTCW to projekt open source, którego celem jest stworzenie bazowej wersji gry Return to Castle Wolfenstein, którą można wykorzystać do dalszego rozwoju i ulepszania. Na przykład naprawiając błędy oryginału, zapewniając wsparcie dla rozdzielczości panoramicznych i systemów 64-bitowych, poprawiając grafikę i wiele więcej.
+
+• Backend SDL
+• Obsługa API dźwięku OpenAL (obsługa wielu głośników i lepsza jakość dźwięku)
+• Pełna obsługa x86_64
+• Obsługa VoIP, zarówno w grze, jak i na zewnątrz poprzez Mumble.
+• Obsługa kompilacji MinGW w systemie Windows i kompilacji krzyżowej w systemie Linux
+• Przechwytywanie wideo AVI dla wersji demonstracyjnych
+• Znacznie ulepszone autouzupełnianie konsoli
+• Trwała historia konsoli
+• Kolorowe wyjście terminala
+• Dodatkowa obsługa Ogg Vorbis
+• Znacznie ulepszone narzędzia QVM
+• Wsparcie dla różnych ezoterycznych systemów operacyjnych
+• Wsparcie dla cl_guid
+• Przekierowanie pobierania HTTP/FTP (przy użyciu cURL)
+• Obsługa wielu użytkowników w systemach Windows (dane użytkownika gry są przechowywane w folderze "Moje dokumenty\RTCW")
+• Obsługa PNG
+• Wiele, wiele poprawek błędów</text>
+			<text lang="ru">ioRTCW - проект с открытым исходным кодом, целью которого является создание базовой версии игры Return to Castle Wolfenstein, которая может быть использована для дальнейшего развития и совершенствования. Например исправление ошибок оригинала, обеспечить поддержку широкоформатных разрешений и 64 битных систем, улучшенить графику и многое дургое.
+
+• Бэкэнд SDL
+• Поддержка звукового API OpenAL (поддержка нескольких динамиков и лучшее качество звука)
+• Полная поддержка x86_64
+• Поддержка VoIP, как внутриигровая, так и внешняя поддержка через Mumble.
+• Поддержка компиляции MinGW под Windows и кросс-компиляции под Linux
+• Захват видео в формате AVI для демонстрационных роликов
+• Значительно улучшенное автодополнение консоли
+• Постоянная история консоли
+• Раскрашенный вывод терминала
+• Дополнительная поддержка Ogg Vorbis
+• Значительно улучшенные инструменты QVM
+• Поддержка различных эзотерических операционных систем
+• Поддержка cl_guid
+• Перенаправление загрузки по HTTP/FTP (с помощью cURL)
+• Многопользовательская поддержка в системах Windows (пользовательские данные игры хранятся в папке "Мои документы\RTCW")
+• Поддержка PNG
+• Много, много исправлений ошибок</text>
+			<text lang="es">ioRTCW es un proyecto de código abierto cuyo objetivo es crear una versión base de Return to Castle Wolfenstein, que pueda ser utilizada para posteriores desarrollos y mejoras. Por ejemplo, corregir errores del original, proporcionar soporte para resoluciones panorámicas y sistemas de 64 bits, mejorar los gráficos y mucho más.
+
+• SDL backend
+• Soporte de la API de sonido OpenAL (soporte para múltiples altavoces y mejor calidad de sonido)
+• Compatibilidad total con x86_64
+• Soporte VoIP, tanto dentro del juego como externo a través de Mumble.
+• Soporte para compilar MinGW en Windows y cross-compiling en Linux
+• Captura de vídeo AVI para demos
+• Autocompletado de la consola significativamente mejorado
+• Historial de consola persistente
+• Salida de terminal coloreada
+• Compatibilidad adicional con Ogg Vorbis
+• Mejora significativa de las herramientas QVM
+• Compatibilidad con varios sistemas operativos esotéricos
+• Compatibilidad con cl_guid
+• Redirección de descargas HTTP/FTP (mediante cURL)
+• Compatibilidad multiusuario en sistemas Windows (los datos de usuario del juego se almacenan en la carpeta "Mis documentos\RTCW")
+• Compatibilidad con PNG
+• Muchas, muchas correcciones de errores</text>
+			<text lang="de">ioRTCW ist ein Open-Source-Projekt, das darauf abzielt, eine Basisversion von Return to Castle Wolfenstein zu erstellen, die für die weitere Entwicklung und Verbesserung verwendet werden kann. Zum Beispiel das Beheben von Fehlern des Originals, Unterstützung für Breitbildauflösungen und 64-Bit-Systeme, Verbesserung der Grafik und vieles mehr.
+
+• SDL-Backend
+• OpenAL-Sound-API-Unterstützung (Unterstützung für mehrere Lautsprecher und bessere Klangqualität)
+• Vollständige x86_64-Unterstützung
+• VoIP-Unterstützung, sowohl im Spiel als auch extern über Mumble.
+• Unterstützung für die Kompilierung von MinGW unter Windows und Cross-Kompilierung unter Linux
+• AVI-Videoaufnahme für Demos
+• Deutlich verbesserte automatische Vervollständigung der Konsole
+• Persistenter Konsolenverlauf
+• Eingefärbte Terminal-Ausgabe
+• Zusätzliche Unterstützung für Ogg Vorbis
+• Erheblich verbesserte QVM-Tools
+• Unterstützung für verschiedene esoterische Betriebssysteme
+• Unterstützung für cl_guid
+• HTTP/FTP-Download-Umleitung (mit cURL)
+• Mehrbenutzerunterstützung auf Windows-Systemen (die Benutzerdaten des Spiels werden im Ordner "Eigene Dateien\RTCW" gespeichert)
+• PNG-Unterstützung
+• Viele, viele Fehlerkorrekturen</text>
+			<text lang="fr">ioRTCW est un projet open source qui vise à créer une version de base de Return to Castle Wolfenstein, qui peut être utilisée pour d'autres développements et améliorations. Par exemple, la correction des bugs de l'original, le support des résolutions écran large et des systèmes 64 bits, l'amélioration des graphismes et bien d'autres choses encore.
+
+• SDL backend
+• Prise en charge de l'API sonore OpenAL (prise en charge de plusieurs haut-parleurs et meilleure qualité sonore)
+• Prise en charge complète de x86_64
+• Prise en charge de la VoIP, à la fois dans le jeu et en externe via Mumble.
+• Prise en charge de la compilation de MinGW sous Windows et de la compilation croisée sous Linux
+• Capture vidéo AVI pour les démos
+• Amélioration significative de l'autocomplétion de la console
+• Historique persistant de la console
+• Sortie de terminal colorisée
+• Prise en charge supplémentaire d'Ogg Vorbis
+• Outils QVM considérablement améliorés
+• Prise en charge de divers systèmes d'exploitation ésotériques
+• Prise en charge de cl_guid
+• Redirection des téléchargements HTTP/FTP (à l'aide de cURL)
+• Support multi-utilisateurs sur les systèmes Windows (les données de l'utilisateur du jeu sont stockées dans le dossier "My Documents\RTCW")
+• Prise en charge des fichiers PNG
+• De très nombreuses corrections de bugs</text>
+			<text lang="it">ioRTCW è un progetto open source che mira a creare una versione base di Return to Castle Wolfenstein, che può essere utilizzata per ulteriori sviluppi e miglioramenti. Ad esempio, correggere i bug dell'originale, fornire il supporto per le risoluzioni widescreen e i sistemi a 64 bit, migliorare la grafica e molto altro ancora.
+
+• Backend SDL
+• Supporto API audio OpenAL (supporto per più altoparlanti e migliore qualità del suono)
+• Supporto completo x86_64
+• Supporto VoIP, sia in gioco che esterno tramite Mumble.
+• Supporto per la compilazione di MinGW su Windows e per la compilazione incrociata su Linux.
+• Acquisizione video AVI per le demo
+• Autocompletamento della console notevolmente migliorato
+• Cronologia persistente della console
+• Output del terminale colorato
+• Supporto aggiuntivo per Ogg Vorbis
+• Strumenti QVM notevolmente migliorati
+• Supporto per vari sistemi operativi esoterici
+• Supporto per cl_guid
+• Reindirizzamento dei download HTTP/FTP (utilizzando cURL)
+• Supporto multiutente su sistemi Windows (i dati dell'utente del gioco sono memorizzati nella cartella "My Documents\RTCW")
+• Supporto PNG
+• Molte, molte correzioni di bug</text>
+		</text>
+	</view>
+</theme>
