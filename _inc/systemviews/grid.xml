@@ -6,7 +6,7 @@
 		<corners>8 * ${screen.height} / 1080</corners>
 		<borderFrame>${themePath}/_inc/images/framewsel.png</borderFrame>
 		<videoFrame>firstfile("${themePath}/_inc/anim/video/" + {system:theme} + ".mp4")</videoFrame>
-		<videoFrame2>${themePath}/_inc/anim/video/${system.theme}.mp4</videoFrame2>
+		<systemFrame>firstfile("${themePath}/_inc/anim/" + {system:theme} + ".png","./../../../ckau-book-addons/_inc/anim/4K/" + {system:theme} + ".png","./../../../ckau-book-addons/_inc/art2/collections/" + {system:theme} + ".png")</systemFrame>
 		<blinkColor>FFFF80FF</blinkColor>
 		<grid.itemspacing.px>12 * ${screen.height} / 1080</grid.itemspacing.px>
 		<grid.itemspacing.px verticalScreen="true">15 * ${screen.width} / 1920</grid.itemspacing.px>
@@ -14,7 +14,17 @@
 		<grid.paddingtop verticalScreen="true">0.022</grid.paddingtop>
 	</variables>
 
+<include>${themePath}/_inc/layouts/${system.theme}.xml</include>
+
+
 	<view name="system">
+
+
+
+
+
+
+
 		<imagegrid name="imagegrid">
 			<zIndex>20</zIndex>
 			<pos>0.008 0.05</pos>
@@ -32,7 +42,9 @@
 			<scrollbarCorner>0.49</scrollbarCorner>
 			<scrollbarSize>0.005</scrollbarSize>
 			<scrollbarAlignment>right</scrollbarAlignment>
-			
+
+
+
 			<itemTemplate>
 				<container>
 					<scale>1</scale>
@@ -66,6 +78,7 @@
 								<animation property="cornerSize" to="36 36"/>
 							</storyboard>
 						</ninepatch>
+						
 					</container>
 					
 					<image>
@@ -92,17 +105,14 @@
 							<roundCorners>${corners}</roundCorners>
 						</image>
 					</image>
-					
+
 					<image name="systemBack" extra="true">
 						<path>${themePath}/_inc/anim/${system.theme}.png</path>
 						<!-- this line is just to make sure the image size was preloaded for async, but is not dynamic -->
 						<path>none</path>
 						<!-- remove binding to the preloaded version -->
 						<!-- <path>exists("${themePath}/art/background/" + {system:theme} + ".jpg") ? "${themePath}/art/background/" + {system:theme} + ".jpg" : exists("${themePath}/art/background/collections/" + {system:theme} + ".jpg") ? "${themePath}/art/background/collections/" + {system:theme} + ".jpg" : {system:ascollection:random:fanart}</path>-->
-						<path>firstfile(
-							"${themePath}/_inc/anim/" + {system:theme} + ".png",
-							"./../../../ckau-book-addons/_inc/anim/4K/" + {system:theme} + ".png",
-				"./../../../ckau-book-addons/_inc/art2/collections/" + {system:theme} + ".png")</path>
+						<path>${systemFrame}</path>
 						<!-- Redeclare the line to make the image dynamic with binding -->
 						<pos>0.5</pos>
 						<origin>0.5</origin>
@@ -120,6 +130,27 @@
 						</storyboard>
 					</image>
 
+					<video name="videobox" extra="true">
+						<path>${videoFrame}</path>
+						<enabled>false</enabled>
+						<pos>0.5</pos>
+						<origin>0.5</origin>
+						<minSize>0.98</minSize>
+						<roundCorners>${corners}</roundCorners>
+						<storyboard event="activate">
+							<animation property="opacity" to="0"/>
+							<animation property="enabled" begin="1100" to="true"/>
+							<animation property="opacity" begin="1500" from="0" to="1" duration="400" mode="easeIn"/>
+							<animation property="scale" to="0"/>
+							<animation property="scale" begin="1500" from="0.5" to="1" duration="400" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="enabled" to="false" begin="150"/>
+							<animation property="opacity" from="1" to="0" duration="150"/>
+							<animation property="scale" from="1" to="0.5" duration="150"/>
+						</storyboard>
+					</video>
+
 					<container padding="0.1">
 						<!-- Redefines how the carousel logo is rendered. Here we add a drop shadow to the logo -->
 						<image name="logoDropShadow" pos="0.5" origin="0.5" maxSize="1" linearSmooth="true">
@@ -127,10 +158,22 @@
 							<padding>3 3 -3 -3</padding>
 							<color>00000080</color>
 							<zIndex>5</zIndex>
+						<storyboard event="activate">
+							<animation property="pos" begin="1100" to="0.5 0.2" duration="400" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="pos" to="0.5" duration="400" mode="easeOut"/>
+						</storyboard>
 						</image>
 						<image name="theLogoImage" pos="0.5" origin="0.5" maxSize="1" linearSmooth="true">
 							<path>{system:logo}</path>
 							<zIndex>6</zIndex>
+						<storyboard event="activate">
+							<animation property="pos" begin="1100" to="0.5 0.2" duration="400" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="pos" to="0.5" duration="400" mode="easeOut"/>
+						</storyboard>
 						</image>
 						<text name="substitutionText" color="white" alignment="center" multiLine="true">
 							<visible>!exists({system:logo})</visible>

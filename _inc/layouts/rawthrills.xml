@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-left" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.3 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
+			<pos>0.305 0.45</pos>
+			<minSize>0.1 0.3</minSize>
+			<rotation>14</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>27</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.025 0.45" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-right" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.6 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+			<pos>0.69 0.45</pos>
+			<minSize>0.1 0.3</minSize>
+			<rotation>-14</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>27</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.41 0.45" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<pos>0.499 0.47</pos>
+			<maxSize>0.175</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.184</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-left" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+			<pos>0.392 0.48</pos>
+			<maxSize>0.14</maxSize>
+			<rotation>-76</rotation>
+			<storyboard>
+				<animation property="pos" to="0.112 0.48" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-right" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+			<pos>0.607 0.48</pos>
+			<maxSize>0.14</maxSize>
+			<rotation>76</rotation>
+			<storyboard>
+				<animation property="pos" to="0.327 0.48" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<pos>0.499 0.47</pos>
+			<maxSize>0.162</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.22</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.182</maxSize>
+			<zIndex>26</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<video name="videobox2" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+			<audio>false</audio>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+			<pos>0.621 0.47</pos>
+			<maxSize>0.14</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
+			<zIndex>25</zIndex>
+			<rotation>0</rotation>
+			<storyboard>
+				<animation property="pos" to="0.341 0.47" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<video name="videobox3" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+			<audio>false</audio>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
+			<pos>0.38 0.47</pos>
+			<maxSize>0.14</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
+			<zIndex>25</zIndex>
+			<rotation>0</rotation>
+			<storyboard>
+				<animation property="pos" to="0.1 0.47" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>2001</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>Arcade</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>Raw Thrills</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>Raw Thrills, Inc. is an arcade video game entertainment company based in Skokie, Illinois. It is best known for developing arcade games based on films.
+
+Raw Thrills was founded in 2001 by Eugene Jarvis, Deepak Deo, and Andrew Eloff. Early on, the staff also consisted largely of other former Midway Games employees.
+
+At the beginning, the company made game designs for IGT including Super Times Pay Poker, Multi-Play Blackjack, and Turbo Reelette.
+
+Raw Thrills' first independent coin-op game was Target: Terror, a light-gun shooter game which was later upgraded to Target: Terror Gold (also known as Target: Force) featuring bonus levels, end-of-round awards, and other performance enhancements. Target: Terror was the first gun game designed under the direction of Eugene Jarvis.</text>
+			<text lang="pl">Raw Thrills, Inc. to firma z branży gier zręcznościowych z siedzibą w Skokie w stanie Illinois. Jest ona najbardziej znana z tworzenia gier zręcznościowych opartych na filmach.
+
+Raw Thrills zostało założone w 2001 roku przez Eugene'a Jarvisa, Deepaka Deo i Andrew Eloffa. Na początku personel składał się również w dużej mierze z innych byłych pracowników Midway Games.
+
+Na początku firma tworzyła projekty gier dla IGT, w tym Super Times Pay Poker, Multi-Play Blackjack i Turbo Reelette.
+
+Pierwszą niezależną grą Raw Thrills na monety była Target: Terror, strzelanka z lekką bronią, która została później ulepszona do Target: Terror Gold (znanej również jako Target: Force) z dodatkowymi poziomami, nagrodami na koniec rundy i innymi ulepszeniami wydajności. Target: Terror był pierwszą grą pistoletową zaprojektowaną pod kierownictwem Eugene'a Jarvisa.</text>
+			<text lang="ru">Raw Thrills, Inc. - компания, занимающаяся разработкой аркадных видеоигр и базирующаяся в Скоки, штат Иллинойс. Она наиболее известна тем, что разрабатывает аркадные игры по мотивам фильмов.
+
+Raw Thrills была основана в 2001 году Юджином Джарвисом, Дипаком Део и Эндрю Элоффом. На первых порах штат компании также состоял в основном из бывших сотрудников Midway Games.
+
+Вначале компания создавала игры для IGT, включая Super Times Pay Poker, Multi-Play Blackjack и Turbo Reelette.
+
+Первой самостоятельной игрой Raw Thrills была Target: Terror, шутер с лёгким оружием, которая позже была обновлена до Target: Terror Gold (также известная как Target: Force) с бонусными уровнями, наградами в конце раунда и другими улучшениями. Target: Terror стала первой игрой с оружием, разработанной под руководством Юджина Джарвиса.</text>
+			<text lang="es">Raw Thrills, Inc. es una empresa de videojuegos arcade con sede en Skokie, Illinois. Es conocida sobre todo por desarrollar juegos arcade basados en películas.
+
+Raw Thrills fue fundada en 2001 por Eugene Jarvis, Deepak Deo y Andrew Eloff. Al principio, la plantilla estaba formada en gran parte por otros antiguos empleados de Midway Games.
+
+Al principio, la empresa diseñaba juegos para IGT, como Super Times Pay Poker, Multi-Play Blackjack y Turbo Reelette.
+
+El primer juego independiente de Raw Thrills fue Target: Terror, un juego de disparos con armas ligeras que más tarde se convirtió en Target: Terror Gold (también conocido como Target: Force), con niveles de bonificación, premios al final de la ronda y otras mejoras de rendimiento. Target: Terror fue el primer juego de disparos diseñado bajo la dirección de Eugene Jarvis.</text>
+			<text lang="de">Raw Thrills, Inc. ist ein Unternehmen für Arcade-Videospielunterhaltung mit Sitz in Skokie, Illinois. Das Unternehmen ist vor allem für die Entwicklung von Arcade-Spielen bekannt, die auf Filmen basieren.
+
+Raw Thrills wurde im Jahr 2001 von Eugene Jarvis, Deepak Deo und Andrew Eloff gegründet. Zu Beginn bestand die Belegschaft größtenteils auch aus anderen ehemaligen Midway Games-Mitarbeitern.
+
+Zu Beginn entwickelte das Unternehmen Spiele für IGT, darunter Super Times Pay Poker, Multi-Play Blackjack und Turbo Reelette.
+
+Das erste unabhängige Münzspiel von Raw Thrills war Target: Terror, ein Light-Gun-Shooter-Spiel, das später zu Target erweitert wurde: Terror Gold (auch bekannt als Target: Force) mit Bonuslevels, Auszeichnungen am Ende der Runde und anderen Leistungsverbesserungen. Target: Terror war das erste Pistolenspiel, das unter der Leitung von Eugene Jarvis entwickelt wurde.</text>
+			<text lang="fr">Raw Thrills, Inc. est une société de divertissement de jeux vidéo d'arcade basée à Skokie, dans l'Illinois. Elle est surtout connue pour développer des jeux d'arcade basés sur des films.
+
+Raw Thrills a été fondée en 2001 par Eugene Jarvis, Deepak Deo et Andrew Eloff. Au début, le personnel était également composé en grande partie d'autres anciens employés de Midway Games.
+
+Au début, la société a conçu des jeux pour IGT, notamment le Super Times Pay Poker, le Multi-Play Blackjack et la Turbo Reelette.
+
+Le premier jeu indépendant de Raw Thrills était Target : Terror, un jeu de tir à l'arme légère qui a ensuite été amélioré pour devenir Target : Terror Gold (également connu sous le nom de Target : Force) avec des niveaux bonus, des récompenses de fin de tour et d'autres améliorations de performance. Target : Terror a été le premier jeu de tir conçu sous la direction d'Eugene Jarvis.</text>
+			<text lang="it">Raw Thrills, Inc. è una società di intrattenimento di videogiochi arcade con sede a Skokie, Illinois. È nota soprattutto per lo sviluppo di giochi arcade basati su film.
+
+Raw Thrills è stata fondata nel 2001 da Eugene Jarvis, Deepak Deo e Andrew Eloff. All'inizio il personale era composto in gran parte da ex dipendenti di Midway Games.
+
+All'inizio, la società ha realizzato progetti di giochi per IGT, tra cui Super Times Pay Poker, Multi-Play Blackjack e Turbo Reelette.
+
+Il primo gioco coin-op indipendente di Raw Thrills fu Target: Terror, uno sparatutto con armi leggere che fu poi aggiornato in Target: Terror Gold (noto anche come Target: Force), caratterizzato da livelli bonus, premi di fine turno e altri miglioramenti delle prestazioni. Target: Terror è stato il primo gioco di armi progettato sotto la direzione di Eugene Jarvis.</text>
+		</text>
+	</view>
+</theme>
