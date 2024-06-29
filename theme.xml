@@ -11,6 +11,19 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 -->
 <theme defaultView="WallpapersHeroes">
 	<formatVersion>7</formatVersion>
+
+	<variables>
+		<fontPlayers>./_inc/fonts/players.ttf</fontPlayers>
+		<fontNameBold>./_inc/fonts/Gilroy-Bold.ttf</fontNameBold>
+		<fontNameExBold>./_inc/fonts/Gilroy-ExtraBold.ttf</fontNameExBold>
+		<fontNameReg>./_inc/fonts/Gilroy-Regular.ttf</fontNameReg>
+		<fontNameLight>./_inc/fonts/Gilroy-Light.ttf</fontNameLight>
+		<fontDescReg>./_inc/fonts/RobotoCondensed-Regular.ttf</fontDescReg>
+		<fontDescBold>./_inc/fonts/RobotoCondensed-Bold.ttf</fontDescBold>
+		<fontDescLight>./_inc/fonts/RobotoCondensed-Light.ttf</fontDescLight>
+		<fontUbuntu>./_inc/fonts/ubuntu_condensed.ttf</fontUbuntu>
+	</variables>
+
 <!-- Translations -->
 	<include>./_inc/elements/translations.xml</include>
 
@@ -33,18 +46,18 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 <!-- Меню / Menu -->
 	<view name="menu">
 		<menuText name="menutitle">
-			<fontPath>./_inc/fonts/Gilroy-Bold.ttf</fontPath>
+			<fontPath>${fontNameBold}</fontPath>
 			<fontSize>0.035</fontSize>
 			<color>FAFAFA</color>
 		</menuText>
 		<menuText name="menufooter">
-			<fontPath>./_inc/fonts/Gilroy-Light.ttf</fontPath>
+			<fontPath>${fontNameReg}</fontPath>
 			<fontSize>0.02</fontSize>
 			<color>777777FF</color>
 		</menuText>
 		<menuText name="menutext" extra="true" tinyScreen="false">
-			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<fontSize>0.028</fontSize>
+			<fontPath>${fontDescReg}</fontPath>
+			<fontSize>0.026</fontSize>
 			<color>969696</color>
 			<!-- <separatorColor>202020</separatorColor> -->
 			<separatorColor>363636FF</separatorColor>
@@ -54,12 +67,12 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 			<selectorGradientType>horizontal</selectorGradientType>
 		</menuText>
 		<menuTextSmall name="menutextsmall" extra="true" tinyScreen="false">
-			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontPath>${fontDescReg}</fontPath>
 			<fontSize>0.02</fontSize>
 			<color>${groupColor}</color>
 		</menuTextSmall>
 		<menuGroup name="menugroup">
-			<fontPath>./_inc/fonts/Gilroy-Bold.ttf</fontPath>
+			<fontPath>${fontNameBold}</fontPath>
 			<fontSize>0.02</fontSize>
 			<color>${groupColor}</color>
 			<backgroundColor>00000000</backgroundColor>
@@ -109,12 +122,12 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 <!-- Clock, gamepad icons, battery indicator -->
 	<view name="screen">
 		<text name="clock">
-			<fontSize>0.025</fontSize>
+			<fontSize>0.024</fontSize>
 			<pos>0.90 0.945</pos>
 			<size>0.09 0.058</size>
 			<alignment>right</alignment>
 			<verticalAlignment>center</verticalAlignment>
-			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontPath>${fontDescReg}</fontPath>
 		</text>
 		<controllerActivity name="controllerActivity">
 			<pos>0.005 0.005</pos>
@@ -147,7 +160,7 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 		<text name="systemInfo" extra="static">
 			<backgroundColor>14141400</backgroundColor>
 			<color>777777FF</color>
-			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontPath>${fontDescReg}</fontPath>
 			<pos>0.85 0.945</pos>
 			<size>0.10 0.058</size>
 			<alignment>right</alignment>
@@ -168,7 +181,7 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 		</image> -->
 
 		<text name="logoText">
-			<fontPath>./_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontPath>${fontDescReg}</fontPath>
 			<color>${baseColor}</color>
 			<forceUppercase>true</forceUppercase>
 		</text>

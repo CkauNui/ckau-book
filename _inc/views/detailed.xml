@@ -7,17 +7,17 @@
 		<text name="md_lbl_rating,md_lbl_releasedate,md_lbl_lastplayed,md_lbl_developer,md_lbl_publisher,md_lbl_genre,md_lbl_players,md_lbl_playcount">
 			<color>111111</color>
 			<visible>false</visible>
-			<fontSize>0.0194444444444444</fontSize>
+			<fontSize>0.019</fontSize>
 		</text>
 		<text name="md_players,md_genre,md_description,md_developer,md_publisher,md_playcount,md_gametime">
 			<color>111111</color>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<fontSize>0.0194444444444444</fontSize>
+			<fontPath>${fontDescReg}</fontPath>
+			<fontSize>0.019</fontSize>
 		</text>
 		<datetime name="md_lastplayed,md_releasedate">
 			<color>111111</color>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<fontSize>0.0194444444444444</fontSize>
+			<fontPath>${fontDescReg}</fontPath>
+			<fontSize>0.019</fontSize>
 		</datetime>
 		<video name="md_video">
 			<pos>0.520625 0.678</pos>
@@ -35,9 +35,7 @@
 			<visible>false</visible>
 		</image>
 		<image name="logo">
-			<path>./../../_inc/logos/${system.theme}.png</path>
-			<path>./../../_inc/logos/${system.theme}-${lang}.png</path>
-			<pos>0.8625 0.1527777777777778</pos>
+			<pos>0.8625 0.152</pos>
 			<maxSize>0.200 0.126</maxSize>
 			<origin>0.5 0.5</origin>
 		</image>
@@ -47,35 +45,36 @@
 			<pos>0 0</pos>
 			<size>1 1</size>
 			<path>./../../_inc/images/space.png</path>
-			<color>cccccc</color>
+			<color>CCCCCC</color>
 		</image>
 		<image name="md_thumbnail">
 			<origin>0.5 1</origin>
-			<pos>0.18 0.6777777777777778</pos>
+			<pos>0.18 0.677</pos>
 			<maxSize>0.3078125 0.585</maxSize>
 		</image>
 
 		<image name="md-description-border" extra="true">
-			<pos>0.0484 0.706111111111111</pos>
-			<size>0.6455 0.0027777777777778</size>
+			<pos>0.0484 0.706</pos>
+			<size>0.6455 0.002</size>
 			<origin>0 0.5</origin>
 			<path>./../../_inc/images/space.png</path>
-			<color>aaaaaa</color>
+			<color>AAAAAA</color>
 			<zIndex>106</zIndex>
 		</image>
 		<text name="md_description">
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<pos>0.061875 0.705111111111111</pos>
-			<size>0.6188125 0.2240555555555556</size>
-			<fontSize>0.025</fontSize>
+			<fontPath>${fontDescReg}</fontPath>
+			<pos>0.061875 0.705</pos>
+			<size>0.6188125 0.224</size>
+			<fontSize>0.024</fontSize>
+			<lineSpacing>1.3</lineSpacing>
 			<zIndex>105</zIndex>
 		</text>
 		<image name="md-description-border2" extra="true">
-			<pos>0.0484 0.927111111111111</pos>
-			<size>0.6455 0.0027777777777778</size>
+			<pos>0.0484 0.927</pos>
+			<size>0.6455 0.002</size>
 			<origin>0 0.5</origin>
 			<path>./../../_inc/images/space.png</path>
-			<color>aaaaaa</color>
+			<color>AAAAAA</color>
 			<zIndex>106</zIndex>
 		</image>
 		<image name="gamelist-background" extra="true">
@@ -86,31 +85,31 @@
 			<color>141414</color>
 		</image>
 		<textlist name="gamelist">
-			<selectorColor>333333ff</selectorColor>
+			<selectorColor>333333FF</selectorColor>
 			<selectedColor>${baseColor}</selectedColor>
-			<primaryColor>cccccc</primaryColor>
-			<secondaryColor>cccccc</secondaryColor>
+			<primaryColor>CCCCCC</primaryColor>
+			<secondaryColor>CCCCCC</secondaryColor>
 			<extraTextColor>555555</extraTextColor>
 			<extraTextSelectedColor>A0A0A0</extraTextSelectedColor>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<fontPath>${fontDescReg}</fontPath>
 			<forceUppercase>1</forceUppercase>
-			<pos>0.7578125 0.2416666666666667</pos>
-			<size>0.209375 0.6755555555555556</size>
+			<pos>0.7578125 0.241</pos>
+			<size>0.209375 0.675</size>
 			<alignment>center</alignment>
 			<lines>19</lines>
 			<horizontalMargin>0.005</horizontalMargin>
 			<fontSize>0.025</fontSize>
 			<scrollSound>./../../_inc/sound/scroll.wav</scrollSound>
-			<scrollbarColor>333333ff</scrollbarColor>
+			<scrollbarColor>333333FF</scrollbarColor>
 			<scrollbarCorner>0.49</scrollbarCorner>
 			<scrollbarSize>0.005</scrollbarSize>
 			<scrollbarAlignment>outerright</scrollbarAlignment>
 		</textlist>
 		<text name="logoText">
-			<pos>0.784375 0.1527777777777778</pos>
-			<size>0.15625 0.0555555555555556</size>
-			<fontSize>0.0444444444444444</fontSize>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<pos>0.784375 0.152</pos>
+			<size>0.15625 0.055</size>
+			<fontSize>0.044</fontSize>
+			<fontPath>${fontNameBold}</fontPath>
 			<forceUppercase>true</forceUppercase>
 			<color>555555</color>
 		</text>
@@ -135,10 +134,8 @@
 			<pos>0.396 0.105</pos>
 			<size>0.04 0.04</size>
 			<origin>0.5 0.5</origin>
-			<fontPath>./../../_inc/fonts/players.ttf</fontPath>
+			<fontPath>${fontPlayers}</fontPath>
 			<text>1</text>
-			<!--<size>0.03 0.03</size>
-			<pos>0.976 0.37</pos>-->
 			<alignment>center</alignment>
 			<fontSize>0.035</fontSize>
 			<color>666666</color>
@@ -183,7 +180,7 @@
 			<zIndex>150</zIndex>
 		</image>
 		<image name="md_nosavestate">
-			<color>80808030</color>
+			<color>80808040</color>
 		</image>
 
 		<image name="md_hidden">
@@ -209,7 +206,7 @@
 
 		<datetime name="md_releasedate">
 			<pos>0.4106 0.135</pos>
-			<size>0.107 0.0222222222222222</size>
+			<size>0.107 0.022</size>
 			<format>%Y</format>
 		</datetime>
 		<image name="release_date_logo" extra="true">
@@ -222,7 +219,7 @@
 		</image>
 		<text name="md_publisher">
 			<pos>0.4106 0.173</pos>
-			<size>0.107 0.0222222222222222</size>
+			<size>0.107 0.022</size>
 		</text>
 		<image name="publisher_logo" extra="true">
 			<pos>0.3956 0.184</pos>
@@ -232,15 +229,9 @@
 			<color>666666</color>
 			<zIndex>150</zIndex>
 		</image>
-	<!--<image name="players_logo" extra="true">
-			<pos>0.4125 0.304</pos>
-			<maxSize>0.035</maxSize>
-			<path>./../../_inc/images/game_info_players.svg</path>
-			<zIndex>150</zIndex>
-		</image>-->
 		<text name="md_playcount">
 			<pos>0.4106 0.211</pos>
-			<size>0.107 0.0222222222222222</size>
+			<size>0.107 0.022</size>
 		</text>
 		<image name="playcount_logo" extra="true">
 			<pos>0.3956 0.222</pos>
@@ -253,7 +244,7 @@
 
 		<text name="md_developer">
 			<pos>0.5655 0.135</pos>
-			<size>0.128 0.0222222222222222</size>
+			<size>0.128 0.022</size>
 		</text>
 		<image name="developer_logo" extra="true">
 			<pos>0.551 0.146</pos>
@@ -265,7 +256,7 @@
 		</image>
 		<text name="md_genre">
 			<pos>0.5655 0.173</pos>
-			<size>0.128 0.0222222222222222</size>
+			<size>0.128 0.022</size>
 		</text>
 		<image name="genre_logo" extra="true">
 			<pos>0.551 0.184</pos>
@@ -277,20 +268,14 @@
 		</image>
 		<datetime name="md_lastplayed">
 			<pos>0.5655 0.205</pos>
-			<size>0.171875 0.0222222222222222</size>
+			<size>0.171875 0.022</size>
 			<origin>0.5 0.5</origin>
 			<zIndex>1</zIndex>
 			<visible>false</visible>
 		</datetime>
-	<!--<image name="lastplayed_logo" extra="true">
-			<pos>0.5525 0.204</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<path>./../../_inc/images/game_info_lastplayed.svg</path>
-			<zIndex>150</zIndex>
-		</image>-->
 		<text name="md_gametime">
 			<pos>0.5655 0.211</pos>
-			<size>0.128 0.0222222222222222</size>
+			<size>0.128 0.022</size>
 		</text>
 		<image name="gametime_logo" extra="true">
 			<pos>0.551 0.222</pos>
@@ -302,5 +287,5 @@
 		</image>
 	</view>
 <!-- Navigation arrows, if enabled -->
-  	<include ifSubset="arrows:On">./../../_inc/views/arrows.xml</include>
+	<include ifSubset="arrows:On">./../../_inc/views/arrows.xml</include>
 </theme>

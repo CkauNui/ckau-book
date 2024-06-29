@@ -5,20 +5,21 @@
 <!-- Сетка -->
 	<view name="grid">
 		<text name="logoText">
-			<pos>.5 0.1427777777777778</pos>
+			<pos>0.5 0.142</pos>
 			<origin>0.5 0</origin>
-			<size>0.15625 0.0555555555555556</size>
-			<fontSize>0.0444444444444444</fontSize>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<size>0.15625 0.055</size>
+			<fontSize>0.044</fontSize>
+			<fontPath>${fontNameBold}</fontPath>
 			<color>${baseColor}</color>
 			<forceUppercase>true</forceUppercase>
 		</text>
 		<text name="md_name" extra="true">
-			<pos>0.005 0.005</pos>
-			<alignment>left</alignment>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
+			<pos>0 0</pos>
+			<size>1 0.03</size>
+			<alignment>center</alignment>
+			<fontPath>${fontNameBold}</fontPath>
 			<color>FFFFFF1F</color>
-			<fontSize>0.02</fontSize>
+			<fontSize>0.024</fontSize>
 			<lineSpacing>1.1</lineSpacing>
 			<zIndex>140</zIndex>
 		</text>
@@ -31,15 +32,14 @@
 			<color>141414</color>
 		</image>
 		<image name="logo">
-			<path>./../../_inc/logos/${system.theme}.png</path>
-			<path>./../../_inc/logos/${system.theme}-${lang}.png</path>
-			<pos>.5 0.09</pos>
+			<pos>0.5 0.09</pos>
 			<maxSize>0.260 0.126</maxSize>
 			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
 		</image>
 		<imagegrid name="gamegrid">
 			<pos>0.016 0.16</pos>
-			<size>0.950 0.79</size>
+			<size>0.95 0.79</size>
 			<margin>0.005 0.010</margin>
 			<padding>0.03 0.04 0.03 0.1</padding>
 			<autoLayout>7 2</autoLayout>
@@ -48,16 +48,19 @@
 			<centerSelection>false</centerSelection>
 			<animateSelection>false</animateSelection>
 			<scrollSound>./../../_inc/sound/scroll.wav</scrollSound>
-			<scrollbarColor>333333ff</scrollbarColor>
+			<scrollbarColor>333333FF</scrollbarColor>
 			<scrollbarCorner>0.49</scrollbarCorner>
 			<scrollbarSize>0.005</scrollbarSize>
+			<zIndex>50</zIndex>
 		</imagegrid>
 		<gridtile name="default">
+			<backgroundCenterColor>FFFFFF00</backgroundCenterColor>
 			<backgroundColor>FFFFFF00</backgroundColor>
 			<backgroundCornerSize>9 9</backgroundCornerSize>
+			<imageSizeMode>maxSize</imageSizeMode>
 			<selectionMode>image</selectionMode>
 			<padding>5 5</padding>
-			<imageColor>FFFFFFB0</imageColor>
+			<imageColor>FFFFFFAA</imageColor>
 		</gridtile>
 		<gridtile name="selected">
 			<backgroundCenterColor>${centerFadeColor}</backgroundCenterColor>
@@ -85,7 +88,7 @@
 			<color>FFFF00B0</color>
 		</image>
 		<image name="gridtile.favorite:selected">
-			<color>ffffff</color>
+			<color>FFFFFF</color>
 		</image>
 		<ninepatch name="gridtile.background:selected">
 			<path>./../../_inc/images/framewselsq.png</path>
@@ -98,12 +101,12 @@
 		<datetime name="md_releasedate">
 			<origin>0.5 1</origin>
 			<pos>0.98 0.78</pos>
-			<size>0.1 0.0222222222222222</size>
+			<size>0.1 0.0222</size>
 			<rotation>-90</rotation>
 			<alignment>left</alignment>
 			<format>%Y</format>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<fontSize>0.0254444444444444</fontSize>
+			<fontPath>${fontDescReg}</fontPath>
+			<fontSize>0.024</fontSize>
 			<color>666666</color>
 			<zIndex>180</zIndex>
 		</datetime>
@@ -112,6 +115,7 @@
 			<pos>0.98 0.88</pos>
 			<maxSize>0.02 0.05</maxSize>
 			<color>FFFFFF90</color>
+			<zIndex>180</zIndex>
 		</image>
 		<rating name="md_rating">
 			<pos>0.98 0.21</pos>
@@ -120,18 +124,20 @@
 			<color>666666</color>
 			<origin>0.5 0</origin>
 			<horizontalAlignment>right</horizontalAlignment>
-			<unfilledColor>80808030</unfilledColor>
+			<unfilledColor>80808040</unfilledColor>
 			<unfilledPath>./../../_inc/images/star_filled.svg</unfilledPath>
+			<zIndex>160</zIndex>
 		</rating>
 		<text name="md_players">
 			<pos>0.98 0.37</pos>
 			<size>0.03 0.03</size>
 			<origin>0.5 0.5</origin>
-			<fontPath>./../../_inc/fonts/players.ttf</fontPath>
+			<fontPath>${fontPlayers}</fontPath>
 			<text>1</text>
 			<alignment>center</alignment>
 			<fontSize>0.034</fontSize>
 			<color>666666</color>
+			<zIndex>160</zIndex>
 		</text>
 		<image name="md_manual,md_nomanual">
 			<pos>0.98 0.42</pos>
@@ -139,7 +145,7 @@
 			<maxSize>0.02 0.03</maxSize>
 			<origin>0.5 0.5</origin>
 			<color>666666</color>
-			<zIndex>150</zIndex>
+			<zIndex>160</zIndex>
 		</image>
 		<image name="md_nomanual">
 			<color>80808040</color>
@@ -150,7 +156,15 @@
 			<pos>0.98 0.47</pos>
 			<maxSize>0.02 0.03</maxSize>
 			<color>666666</color>
-			<zIndex>100</zIndex>
+			<zIndex>160</zIndex>
+		</image>
+		<image name="fake_cheevos" extra="true">
+			<origin>0.5 0.5</origin>
+			<path>./../../_inc/icons/Contest.png</path>
+			<pos>0.98 0.47</pos>
+			<maxSize>0.02 0.03</maxSize>
+			<color>80808040</color>
+			<zIndex>90</zIndex>
 		</image>
 		<image name="md_notcheevos">
 			<color>80808040</color>
@@ -159,13 +173,13 @@
 			<origin>0.5 0.5</origin>
 			<path>./../../_inc/icons/SaveState.png</path>
 			<pos>0.98 0.52</pos>
-			<y ifCheevos="false">0.47</y>
+			<y ifCheevos="false">0.52</y>
 			<maxSize>0.02 0.03</maxSize>
 			<color>666666</color>
 			<zIndex>150</zIndex>
 		</image>
 		<image name="md_nosavestate">
-			<color>80808030</color>
+			<color>80808040</color>
 		</image>
 		<image name="md_hidden">
 			<pos>0.98 0.92</pos>
@@ -173,7 +187,7 @@
 			<maxSize>0.02 0.03</maxSize>
 			<origin>0.5 0.5</origin>
 			<color>666666</color>
-			<zIndex>150</zIndex>
+			<zIndex>160</zIndex>
 		</image>
 		<image name="md_kidgame,md_notkidgame">
 			<pos>0.98 0.57</pos>
@@ -181,7 +195,7 @@
 			<maxSize>0.02 0.03</maxSize>
 			<origin>0.5 0.5</origin>
 			<color>666666</color>
-			<zIndex>150</zIndex>
+			<zIndex>160</zIndex>
 		</image>
 		<image name="md_notkidgame"> 
 			<color>80808000</color>

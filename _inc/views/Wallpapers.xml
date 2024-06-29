@@ -4,57 +4,41 @@
 <formatVersion>7</formatVersion>
 <!-- Обои -->
 	<customView name="Wallpapers" inherits="grid" displayName="${WallViewName}">
-		<text name="md_name" extra="true">
-			<pos>0.005 0.005</pos>
-			<alignment>left</alignment>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>FFFFFF1F</color>
-			<fontSize>0.02</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-		</text>
-		<!-- <image name="art" extra="true">
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.5</pos>
-			<minSize>1 1</minSize>
-			<path>./../../_inc/images/overlay1.png</path>
-			<zIndex>80</zIndex>
-		</image> -->
-<!-- 		<image name="md_image">
-			<tile>true</tile>
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.5</pos>
-			<minSize>1 1</minSize>
-			<color>FFFFFFDF</color>
-		</image> -->
 		<image name="md_fanart">
 			<tile>true</tile>
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
 			<minSize>1 1</minSize>
 			<color>FFFFFF5F</color>
+			<linearSmooth>true</linearSmooth>
 			<storyboard event="open">
 				<animation property="opacity" from="0" to="1" duration="400" mode="easeIn"/>
 			</storyboard>
 			<storyboard event="activateNext">
 				<animation property="offsetY" from="-0.01" to="0" duration="600" mode="EaseOutQuint"/>
+				<animation property="scale" from="1" to="1.1" duration="8000"/>
+				<animation property="scale" begin="8000" to="1" duration="8000"/>
 			</storyboard>
 			<storyboard event="activatePrev">
 				<animation property="offsetY" from="0.01" to="0" duration="600" mode="EaseOutQuint"/>
+				<animation property="scale" from="1" to="1.1" duration="8000"/>
+				<animation property="scale" begin="8000" to="1" duration="8000"/>
 			</storyboard>
 			<storyboard event="deactivateNext">
 				<animation property="opacity" to="0" duration="400" mode="easeOut"/>
+				<animation property="scale" to="1" duration="250"/>
 			</storyboard>
 			<storyboard event="deactivatePrev">
 				<animation property="opacity" to="0" duration="400" mode="easeOut"/>
+				<animation property="scale" to="1" duration="250"/>
 			</storyboard>
 		</image>
 		<text name="md_description">
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<pos>0.025 0.226111111111111</pos>
-			<size>0.3098125 0.2880555555555556</size>
-			<fontSize>0.025</fontSize>
-			<color>FFFFFFff</color>
+			<fontPath>${fontDescReg}</fontPath>
+			<pos>0.025 0.226</pos>
+			<size>0.3098125 0.288</size>
+			<fontSize>0.024</fontSize>
+			<color>FFFFFFFF</color>
 			<glowColor>00000016</glowColor>
 			<glowSize>3</glowSize>
 			<zIndex>150</zIndex>
@@ -62,24 +46,15 @@
 		<imagegrid name="gamegrid">
 			<pos>0.75 0</pos>
 			<size>0.25 1</size>
-			<margin>0.005 0.010</margin>
 			<scrollDirection>vertical</scrollDirection>
 			<autoLayout>1 7</autoLayout>
-			<autoLayoutSelectedZoom>1.3</autoLayoutSelectedZoom>
-			<animateSelection>false</animateSelection>
-			<scrollSound>./../../_inc/sound/scroll.wav</scrollSound>
-			<scrollbarColor>333333ff</scrollbarColor>
-			<scrollbarCorner>0.49</scrollbarCorner>
-			<scrollbarSize>0.005</scrollbarSize>
+			<autoLayoutSelectedZoom>1.25</autoLayoutSelectedZoom>
 			<scrollbarAlignment>right</scrollbarAlignment>
 			<imageSource>marquee</imageSource>
 			<centerSelection>true</centerSelection>
-			<zIndex>80</zIndex>
 		</imagegrid>
 		<gridtile name="default">
-			<backgroundColor>FFFFFF00</backgroundColor>
 			<backgroundCornerSize>0 0</backgroundCornerSize>
-			<selectionMode>image</selectionMode>
 			<padding>0 0</padding>
 			<imageColor>A0A0A070</imageColor>
 		</gridtile>
@@ -109,8 +84,8 @@
 			<animateColorTime>0</animateColorTime>
 		</ninepatch>
 		<video name="md_video">
-			<pos>0.17 0.725555555555556</pos>
-			<maxSize>0.30 0.3833333333333333</maxSize>
+			<pos>0.17 0.725</pos>
+			<maxSize>0.30 0.383</maxSize>
 			<origin>0.5 0.5</origin>
 			<delay>1.0</delay>
 			<showSnapshotNoVideo>false</showSnapshotNoVideo>
@@ -120,77 +95,55 @@
 			<zIndex>150</zIndex>
 		</video>
 		<image name="logo">
-			<path>./../../_inc/logos/${system.theme}.png</path>
-			<path>./../../_inc/logos/${system.theme}-${lang}.png</path>
 			<pos>0.12 0.12</pos>
 			<maxSize>0.200 0.126</maxSize>
 			<origin>0.5 0.5</origin>
 			<zIndex>150</zIndex>
 		</image>
 		<text name="logoText">
-			<pos>0.784375 0.1527777777777778</pos>
-			<size>0.15625 0.0555555555555556</size>
-			<fontSize>0.0444444444444444</fontSize>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<forceUppercase>true</forceUppercase>
+			<pos>0.784375 0.152</pos>
 			<color>555555</color>
 		</text>
 
 		<datetime name="md_releasedate">
-			<origin>0.5 1</origin>
 			<pos>0.0358 0.79</pos>
 			<rotation>-90</rotation>
 			<zIndex>140</zIndex>
 		</datetime>
-		<rating name="md_rating">
-			<pos>0.051 0.92</pos>
-			<origin>0.5 0</origin>
-			<horizontalAlignment>left</horizontalAlignment>
-			<rotation>0</rotation>
-			<zIndex>150</zIndex>
-		</rating>
 		<image name="md_flag">
 			<pos>0.0262 0.905</pos>
 			<origin>0 0.5</origin>
-			<color>FFFFFF90</color>
-			<zIndex>150</zIndex>
 		</image>
+		<rating name="md_rating">
+			<pos>0.051 0.92</pos>
+			<horizontalAlignment>left</horizontalAlignment>
+			<rotation>0</rotation>
+		</rating>
 		<text name="md_players">
 			<pos>0.124 0.935</pos>
-			<zIndex>150</zIndex>
 		</text>
 		<image name="md_manual,md_nomanual">
 			<pos>0.1475 0.935</pos>
-			<zIndex>150</zIndex>
 		</image>
 		<image name="md_cheevos,md_notcheevos">
 			<pos>0.1685 0.935</pos>
-			<zIndex>150</zIndex>
 		</image>
 		<image name="fake_cheevos" extra="true">
-			<origin>0.5 0.5</origin>
-			<path>./../../_inc/icons/Contest.png</path>
 			<pos>0.1685 0.935</pos>
-			<maxSize>0.02 0.03</maxSize>
-			<color>80808040</color>
-			<zIndex>140</zIndex>
 		</image>
 		<image name="md_savestate,md_nosavestate">
 			<pos>0.19 0.935</pos>
 			<x ifCheevos="false">0.19</x>
 			<y ifCheevos="false">0.935</y>
-			<zIndex>150</zIndex>
 		</image>
 
 		<image name="md_hidden">
 			<pos>0.213 0.935</pos>
-			<zIndex>150</zIndex>
 		</image>
 		<image name="md_kidgame,md_notkidgame">
 			<pos>0.235 0.935</pos>
-			<zIndex>150</zIndex>
 		</image>
 	</customView>
 <!-- Navigation arrows, if enabled -->
-  	<include ifSubset="arrows:On">./../../_inc/views/arrows.xml</include>
+	<include ifSubset="arrows:On">./../../_inc/views/arrows.xml</include>
 </theme>

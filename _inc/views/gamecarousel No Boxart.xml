@@ -2,17 +2,14 @@
 
 <theme>
 <formatVersion>7</formatVersion>
-<!-- Подробно + Карусель -->
+<!-- Подробно + Карусель (без обложки) -->
 <customView name="gamecarousel No Boxart" inherits="gamecarousel" displayName="${gameCarouselNoBoxartViewName}">
 		<video name="md_video">
-			<pos>0.025 0.6777777777777778</pos>
+			<pos>0.025 0.677</pos>
 			<!-- <maxSize>0.6</maxSize> -->
 			<maxSize>0.51 0.6</maxSize>
 			<origin>0 1</origin>
 			<delay>0.8</delay>
-			<showSnapshotNoVideo>false</showSnapshotNoVideo>
-			<showSnapshotDelay>true</showSnapshotDelay>
-			<snapshotSource>image</snapshotSource>
 		</video>
 		<image name="md_thumbnail">
 			<visible>false</visible>
@@ -26,22 +23,15 @@
 			<pos>-0.15 0</pos>
 			<size>1 0.03</size>
 			<alignment>center</alignment>
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<color>aaaaaa</color>
-			<fontSize>0.025</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
+			<color>AAAAAA</color>
 		</text>
 		<image name="md-description-border" extra="true">
 			<visible>false</visible>
 			<zIndex>1</zIndex>
 		</image>
 		<text name="md_description">
-			<fontPath>./../../_inc/fonts/ubuntu_condensed.ttf</fontPath>
-			<pos>0.024875 0.705111111111111</pos>
-			<size>0.6768125 0.2240555555555556</size>
-			<fontSize>0.025</fontSize>
-			<zIndex>105</zIndex>
+			<pos>0.024875 0.705</pos>
+			<size>0.6768125 0.224</size>
 		</text>
 		<image name="md-description-border2" extra="true">
 			<visible>false</visible>
@@ -49,78 +39,78 @@
 		</image>
 
 		<image name="md_flag">
-			<pos>0.55 0.42</pos>
+			<pos>0.55 0.62</pos>
 		</image>
 		<rating name="md_rating">
-			<pos>0.5765 0.44</pos>
+			<pos>0.5765 0.64</pos>
 		</rating>
 		<text name="md_players">
-			<pos>0.56 0.102</pos>
+			<pos>0.56 0.302</pos>
 		</text>
 		<image name="md_manual,md_nomanual">
-			<pos>0.5835 0.105</pos>
+			<pos>0.5835 0.305</pos>
 		</image>
 		<image name="md_cheevos,md_notcheevos">
-			<pos>0.6040 0.105</pos>
+			<pos>0.6040 0.305</pos>
 		</image>
 		<image name="fake_cheevos" extra="true">
-			<pos>0.6040 0.105</pos>
+			<pos>0.6040 0.305</pos>
 		</image>
 		<image name="md_savestate,md_nosavestate">
-			<pos>0.6260 0.105</pos>
+			<pos>0.6260 0.305</pos>
 			<x ifCheevos="false">0.6260</x>
 		</image>
 
 		<image name="md_hidden">
-			<pos>0.6691 0.105</pos>
+			<pos>0.6691 0.305</pos>
 		</image>
 		<image name="md_kidgame,md_notkidgame">
-			<pos>0.6481 0.105</pos>
+			<pos>0.6481 0.305</pos>
 		</image>
 
 
 		<datetime name="md_releasedate">
-			<pos>0.5745 0.132</pos>
+			<pos>0.5745 0.332</pos>
 		</datetime>
 		<image name="release_date_logo" extra="true">
-			<pos>0.5595 0.143</pos>
+			<pos>0.5595 0.343</pos>
 		</image>
 		<text name="md_publisher">
-			<pos>0.5745 0.170</pos>
-			<size>0.128 0.0222222222222222</size>
+			<pos>0.5745 0.370</pos>
+			<size>0.128 0.0222</size>
 		</text>
 		<image name="publisher_logo" extra="true">
-			<pos>0.5595 0.181</pos>
+			<pos>0.5595 0.381</pos>
 		</image>
 		<text name="md_playcount">
-			<pos>0.5745 0.321</pos>
+			<pos>0.5745 0.521</pos>
 		</text>
 		<image name="playcount_logo" extra="true">
-			<pos>0.5595 0.332</pos>
+			<pos>0.5595 0.532</pos>
 		</image>
 
 		<text name="md_developer">
-			<pos>0.5745 0.208</pos>
+			<pos>0.5745 0.408</pos>
 		</text>
 		<image name="developer_logo" extra="true">
-			<pos>0.5595 0.219</pos>
+			<pos>0.5595 0.419</pos>
 		</image>
 		<text name="md_genre">
-			<pos>0.5745 0.246</pos>
+			<pos>0.5745 0.446</pos>
 		</text>
 		<image name="genre_logo" extra="true">
-			<pos>0.5595 0.257</pos>
+			<pos>0.5595 0.457</pos>
 		</image>
 		<datetime name="md_lastplayed">
-			<pos>0.7655 0.235</pos>
+			<pos>0.7655 0.435</pos>
 		</datetime>
 		<text name="md_gametime">
-			<pos>0.5745 0.284</pos>
+			<pos>0.5745 0.484</pos>
 		</text>
 		<image name="gametime_logo" extra="true">
-			<pos>0.5595 0.295</pos>
+			<pos>0.5595 0.495</pos>
 		</image>
 	</customView>
 <!-- Navigation arrows, if enabled -->
-  	<include ifSubset="arrows:On">./../../_inc/views/arrows.xml</include>
+	<include ifSubset="arrows:On">./../../_inc/views/arrows.xml</include>
 </theme>
