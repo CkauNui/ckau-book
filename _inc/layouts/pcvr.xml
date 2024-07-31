@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.41</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.465</origin>
+			<pos>0.5 0.41</pos>
+			<maxSize>0.36</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.473</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.3925</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.41" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.41</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.465</origin>
+			<pos>0.5 0.41</pos>
+			<maxSize>0.351</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.466</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.389</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.41" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>2016</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>HTC / Oculus / Pico / Valve / WMR</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>PC VR</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>Virtual reality (VR) is a technologically created world that is transmitted to a person through their senses: sight, hearing, touch and others. Virtual reality simulates both the impact and reactions to the impact. To create a convincing set of reality sensations, computer synthesis of virtual reality properties and reactions is performed in real time.
+
+Virtual reality objects typically behave closely to the behavior of similar material reality objects. The user can influence these objects in accordance with the real laws of physics (gravity, water properties, collision with objects, reflection, etc.). However, often for entertainment purposes, users of virtual worlds are allowed to do more than is possible in real life (for example: fly, create any objects, etc.).
+
+Virtual reality should not be confused with augmented reality (AR) or mixed reality (MR). Their fundamental difference is that virtual reality constructs a new artificial world, while augmented reality only introduces some artificial elements into the perception of the real world.</text>
+			<text lang="it">La realtà virtuale (VR) è un mondo creato tecnologicamente che viene trasmesso a una persona attraverso i suoi sensi: vista, udito, tatto e altri. La realtà virtuale simula sia l'impatto che le reazioni all'impatto. Per creare un insieme convincente di sensazioni di realtà, la sintesi computerizzata delle proprietà e delle reazioni della realtà virtuale viene eseguita in tempo reale.
+
+Gli oggetti della realtà virtuale si comportano in genere in modo molto simile a quello di oggetti simili della realtà materiale. L'utente può influenzare questi oggetti secondo le reali leggi della fisica (gravità, proprietà dell'acqua, collisione con gli oggetti, riflessione, ecc.) Tuttavia, spesso a scopo di intrattenimento, agli utenti dei mondi virtuali è consentito fare più di quanto sia possibile nella vita reale (ad esempio: volare, creare qualsiasi oggetto, ecc.).
+
+La realtà virtuale non deve essere confusa con la realtà aumentata (AR) o la realtà mista (MR). La loro differenza fondamentale è che la realtà virtuale costruisce un nuovo mondo artificiale, mentre la realtà aumentata introduce solo alcuni elementi artificiali nella percezione del mondo reale.</text>
+			<text lang="fr">La réalité virtuelle (VR) est un monde créé par la technologie qui est transmis à une personne par ses sens : la vue, l'ouïe, le toucher et d'autres. La réalité virtuelle simule à la fois l'impact et les réactions à l'impact. Pour créer un ensemble convaincant de sensations réelles, la synthèse informatique des propriétés et des réactions de la réalité virtuelle est effectuée en temps réel.
+
+Le comportement des objets de réalité virtuelle est généralement proche de celui d'objets de réalité matérielle similaires. L'utilisateur peut influencer ces objets conformément aux véritables lois de la physique (gravité, propriétés de l'eau, collision avec des objets, réflexion, etc.) Cependant, souvent à des fins de divertissement, les utilisateurs des mondes virtuels sont autorisés à faire plus que ce qui est possible dans la vie réelle (par exemple : voler, créer n'importe quel objet, etc.)
+
+La réalité virtuelle ne doit pas être confondue avec la réalité augmentée (AR) ou la réalité mixte (MR). Leur différence fondamentale réside dans le fait que la réalité virtuelle construit un nouveau monde artificiel, alors que la réalité augmentée ne fait qu'introduire certains éléments artificiels dans la perception du monde réel.</text>
+			<text lang="de">Virtuelle Realität (VR) ist eine technologisch geschaffene Welt, die dem Menschen durch seine Sinne vermittelt wird: Sehen, Hören, Tasten und andere. Die virtuelle Realität simuliert sowohl den Aufprall als auch die Reaktionen auf den Aufprall. Um einen überzeugenden Realitätseindruck zu erzeugen, werden die Eigenschaften und Reaktionen in der virtuellen Realität in Echtzeit am Computer synthetisiert.
+
+Objekte der virtuellen Realität verhalten sich in der Regel ähnlich wie ähnliche Objekte der materiellen Realität. Der Benutzer kann diese Objekte entsprechend den realen physikalischen Gesetzen beeinflussen (Schwerkraft, Wassereigenschaften, Zusammenstoß mit Objekten, Reflexion usw.). Zu Unterhaltungszwecken ist es den Nutzern virtueller Welten jedoch oft erlaubt, mehr zu tun, als im wirklichen Leben möglich ist (z. B. fliegen, beliebige Objekte erschaffen usw.).
+
+Die virtuelle Realität sollte nicht mit der erweiterten Realität (AR) oder der gemischten Realität (MR) verwechselt werden. Ihr grundlegender Unterschied besteht darin, dass die virtuelle Realität eine neue künstliche Welt erschafft, während die erweiterte Realität nur einige künstliche Elemente in die Wahrnehmung der realen Welt einführt.</text>
+			<text lang="es">La realidad virtual (VR) es un mundo creado tecnológicamente que se transmite a una persona a través de sus sentidos: vista, oído, tacto y otros. La realidad virtual simula tanto el impacto como las reacciones al mismo. Para crear un conjunto convincente de sensaciones de realidad, la síntesis informática de las propiedades y reacciones de la realidad virtual se realiza en tiempo real.
+
+Los objetos de realidad virtual suelen comportarse de forma muy similar a los objetos de realidad material similares. El usuario puede influir en estos objetos de acuerdo con las leyes reales de la física (gravedad, propiedades del agua, colisión con objetos, reflexión, etc.). Sin embargo, a menudo con fines de entretenimiento, a los usuarios de mundos virtuales se les permite hacer más de lo que es posible en la vida real (por ejemplo: volar, crear cualquier objeto, etc.).
+
+La realidad virtual no debe confundirse con la realidad aumentada (AR) o la realidad mixta (MR). Su diferencia fundamental es que la realidad virtual construye un nuevo mundo artificial, mientras que la realidad aumentada sólo introduce algunos elementos artificiales en la percepción del mundo real.</text>
+			<text lang="ru">Виртуальная реальность (VR) — созданный техническими средствами мир, передаваемый человеку через его ощущения: зрение, слух, осязание и другие. Виртуальная реальность имитирует как воздействие, так и реакции на воздействие. Для создания убедительного комплекса ощущений реальности компьютерный синтез свойств и реакций виртуальной реальности производится в реальном времени.
+
+Объекты виртуальной реальности обычно ведут себя близко к поведению аналогичных объектов материальной реальности. Пользователь может воздействовать на эти объекты в согласии с реальными законами физики (гравитация, свойства воды, столкновение с предметами, отражение и т. п.). Однако, часто в развлекательных целях пользователям виртуальных миров позволяется больше, чем возможно в реальной жизни (например: летать, создавать любые предметы и т. п.)
+
+Не следует путать виртуальную реальность с дополненной (AR) или смешанной (MR). Их коренное различие в том, что виртуальная конструирует новый искусственный мир, а дополненная реальность лишь вносит отдельные искусственные элементы в восприятие мира реального.</text>
+			<text lang="pl">Wirtualna rzeczywistość (VR) to technologicznie wykreowany świat, który jest przekazywany człowiekowi za pośrednictwem jego zmysłów: wzroku, słuchu, dotyku i innych. Wirtualna rzeczywistość symuluje zarówno uderzenie, jak i reakcje na uderzenie. Aby stworzyć przekonujący zestaw wrażeń rzeczywistości, komputerowa synteza właściwości i reakcji rzeczywistości wirtualnej jest wykonywana w czasie rzeczywistym.
+
+Obiekty rzeczywistości wirtualnej zazwyczaj zachowują się podobnie do podobnych obiektów rzeczywistości materialnej. Użytkownik może wpływać na te obiekty zgodnie z rzeczywistymi prawami fizyki (grawitacja, właściwości wody, kolizje z obiektami, odbicia itp.) Jednak często w celach rozrywkowych użytkownicy wirtualnych światów mogą robić więcej niż jest to możliwe w prawdziwym życiu (na przykład: latać, tworzyć dowolne obiekty itp.).
+
+Rzeczywistości wirtualnej nie należy mylić z rzeczywistością rozszerzoną (AR) lub rzeczywistością mieszaną (MR). Ich podstawowa różnica polega na tym, że rzeczywistość wirtualna konstruuje nowy sztuczny świat, podczas gdy rzeczywistość rozszerzona wprowadza jedynie pewne sztuczne elementy do postrzegania świata rzeczywistego.</text>
+		</text>
+	</view>
+</theme>
