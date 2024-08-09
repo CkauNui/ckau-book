@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme defaultView="Grid + Fanart">
+	<formatVersion>7</formatVersion>
+
+	<customView name="WallpapersHeroes">
+<!-- 		<text name="md_name" extra="true">
+			<color>FFFFFFFF</color>
+		</text> -->
+		<image name="md_fanart">
+			<color>FFFFFF9F</color>
+		</image>
+	</customView>
+	<customView name="Grid + Fanart">
+<!-- 		<text name="md_name" extra="true">
+			<color>FFFFFFFF</color>
+		</text> -->
+		<imagegrid name="gamegrid">
+			<margin>0.005 -0.010</margin>
+			<autoLayout>8 2</autoLayout>
+			<autoLayout if="${screen.ratio} == '21/9'">10 2</autoLayout>
+		</imagegrid>
+		<image name="md_fanart">
+			<color>FFFFFF9F</color>
+		</image>
+	</customView>
+	<customView name="Carousel + Fanart">
+<!-- 		<text name="md_name" extra="true">
+			<color>FFFFFFFF</color>
+		</text> -->
+		<imagegrid name="gamegrid">
+			<autoLayout>5 1</autoLayout>
+			<autoLayout if="${screen.ratio} == '21/9'">7 1</autoLayout>
+		</imagegrid>
+		<image name="md_fanart">
+			<color>FFFFFF9F</color>
+		</image>
+	</customView>
+</theme>
