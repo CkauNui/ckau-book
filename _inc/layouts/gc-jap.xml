@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.33</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+			<pos>0.499 0.367</pos>
+			<maxSize>0.284</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.219 0.367" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/gc.mp4</path>			
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/gc.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.33</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+			<pos>0.499 0.367</pos>
+			<maxSize>0.264</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.219 0.367" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>2001</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>Nintendo</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>GameCube</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>The Nintendo GameCube is a home video game console released by Nintendo in Japan and North America in 2001 and in PAL territories in 2002. The GameCube is Nintendo's entry in the sixth generation of video game consoles and is the successor to their previous console, the Nintendo 64. The GameCube competed with Sony's PlayStation 2 and Microsoft's Xbox.
+
+The GameCube is the first Nintendo console to use optical discs as its primary storage medium. The discs are in a miniDVD-based format but the system was not designed to play full-sized DVDs or audio CDs unlike its competitors, and mainly focused on gaming instead. The console supports limited online gaming for a small number of games via a GameCube broadband or modem adapter and can connect to a Game Boy Advance with a link cable, which allows players to access exclusive in-game features using the handheld as a second screen and controller like a Wii U.</text>
+			<text lang="pl">GameCube – konsola gier wideo szóstej generacji, wyprodukowana i wydana w 2001 przez japońskie przedsiębiorstwo Nintendo. Konsola, zgodnie z nazwą, ma kształt kostki, do której podłączane są kontrolery. Jest następczynią Nintendo 64.
+
+Pierwsze pogłoski o konsoli, początkowo znanej pod nazwą roboczą Dolphin, ukazały się w 1999 roku. Po raz pierwszy konsola została pokazana na targach SpaceWorld w 2000 roku. Po wydaniu konsola, według oficjalnych danych Nintendo do końca marca 2008, została sprzedana w liczbie około 21,7 mln sztuk.
+
+Dane techniczne:
+Wymiary: 11,4 cm (wysokość) × 15 cm (szerokość) × 16 cm (grubość)
+Procesor: IBM PowerPC „Gekko” o częstotliwości 485 MHz
+Pamięć operacyjna: 24 MB RAM
+Procesor graficzny: Flipper 162 MHz
+Karta dźwiękowa: 16-bit DSP, 64 kanały, pamięć audio 16 MB
+Nośnik danych: Nintendo GameCube Disc, pojemność 1,5 GB</text>
+			<text lang="ru">Четвёртая домашняя игровая консоль от Nintendo, относится к шестому поколению игровых систем. Предшественник Wii и преемник Nintendo 64.
+
+В отличие от конкурентов того поколения (PlayStation 2 и Xbox) GameCube использует диски на основе mini-DVD вместо полноразмерных DVD. Нет поддержки проигрывания DVD-Video и audio CD, а также возможностей других консолей, использующих полноразмерные оптические диски.
+
+Кроме того, GameCube вводила множество возможностей соединения с консолями Nintendo и была четвёртой консолью после Nintendo 64DD, Famicom Modem и Satellaview, поддерживающей официально онлайн-игру, через широкополосный модем Nintendo GameCube. Она также имела возможность соединяться с Game Boy Advance и получать доступ к исключительным особенностям определённых игр или использовать портативную систему как контроллер для Game Boy Player.
+
+GameCube впервые упоминалась в выпуске № 145 журнала Nintendo Power. Консоль была выпущена 14 сентября 2001 в Японии, 18 ноября 2001 в Северной Америке, 3 мая 2002 в Европе и 17 мая 2002 в Австралии. Nintendo GameCube продалась тиражом в 21,74 миллиона приставок по всему миру.</text>
+			<text lang="es">La Nintendo GameCube es una videoconsola doméstica lanzada por Nintendo en Japón y Norteamérica en 2001 y en territorios PAL en 2002. La GameCube es la entrada de Nintendo en la sexta generación de consolas de videojuegos y es la sucesora de su anterior consola, la Nintendo 64. La GameCube compitió con la PlayStation 2 de Sony y la Xbox de Microsoft. La GameCube compitió con la PlayStation 2 de Sony y la Xbox de Microsoft.
+
+La GameCube es la primera consola de Nintendo que utiliza discos ópticos como principal medio de almacenamiento. Los discos tienen un formato basado en miniDVD, pero la consola no se diseñó para reproducir DVD de tamaño completo ni CD de audio, como sus competidoras, y se centró principalmente en los juegos. La consola admite un número limitado de juegos en línea a través de un adaptador de banda ancha o módem para GameCube y puede conectarse a una Game Boy Advance con un cable de enlace, lo que permite a los jugadores acceder a funciones exclusivas del juego utilizando la consola portátil como segunda pantalla y mando, al igual que una Wii U.</text>
+			<text lang="de">Der Nintendo GameCube ist eine Videospielkonsole für den Heimgebrauch, die von Nintendo 2001 in Japan und Nordamerika und 2002 in PAL-Gebieten auf den Markt gebracht wurde. Der GameCube ist Nintendos Einstieg in die sechste Generation von Videospielkonsolen und ist der Nachfolger der vorherigen Konsole, des Nintendo 64. Der GameCube konkurrierte mit der PlayStation 2 von Sony und der Xbox von Microsoft.
+
+Der GameCube ist die erste Nintendo-Konsole, die optische Discs als primäres Speichermedium verwendet. Die Discs sind in einem miniDVD-basierten Format, aber das System wurde im Gegensatz zu seinen Konkurrenten nicht zum Abspielen von DVDs oder Audio-CDs in voller Größe entwickelt und konzentrierte sich stattdessen auf das Spielen. Die Konsole unterstützt begrenztes Online-Gaming für eine kleine Anzahl von Spielen über einen GameCube-Breitband- oder -Modemadapter und kann mit einem Link-Kabel an einen Game Boy Advance angeschlossen werden, was es den Spielern ermöglicht, auf exklusive In-Game-Funktionen zuzugreifen, indem sie den Handheld als zweiten Bildschirm und Controller wie eine Wii U verwenden.</text>
+			<text lang="fr">La Nintendo GameCube est une console de jeux vidéo de salon commercialisée par Nintendo au Japon et en Amérique du Nord en 2001 et dans les territoires PAL en 2002. La GameCube est l'entrée de Nintendo dans la sixième génération de consoles de jeux vidéo et le successeur de la console précédente, la Nintendo 64. La GameCube était en concurrence avec la PlayStation 2 de Sony et la Xbox de Microsoft.
+
+La GameCube est la première console Nintendo à utiliser des disques optiques comme principal support de stockage. Les disques sont au format miniDVD, mais la console n'a pas été conçue pour lire des DVD ou des CD audio de taille normale, contrairement à ses concurrents, et s'est plutôt concentrée sur les jeux. La console prend en charge un nombre limité de jeux en ligne via un adaptateur modem ou large bande GameCube et peut se connecter à un Game Boy Advance à l'aide d'un câble de liaison, ce qui permet aux joueurs d'accéder à des fonctions exclusives en jeu en utilisant l'ordinateur de poche comme second écran et manette, à l'instar d'une Wii U.</text>
+			<text lang="it">Il Nintendo GameCube è una console per videogiochi domestica pubblicata da Nintendo in Giappone e Nord America nel 2001 e nei territori PAL nel 2002. Il GameCube rappresenta l'ingresso di Nintendo nella sesta generazione di console per videogiochi ed è il successore della precedente console, il Nintendo 64. Il GameCube ha fatto concorrenza alla PlayStation 2 di Sony e alla Xbox di Microsoft.
+
+Il GameCube fu la prima console Nintendo a utilizzare dischi ottici come supporto di memorizzazione principale. I dischi erano in formato miniDVD, ma la console non era stata progettata per riprodurre DVD o CD audio a grandezza naturale, a differenza dei suoi concorrenti, e si è concentrata principalmente sul gioco. La console supporta un numero limitato di giochi online tramite un adattatore GameCube a banda larga o modem e può essere collegata a un Game Boy Advance con un cavo di collegamento, che consente ai giocatori di accedere a funzioni esclusive del gioco utilizzando il palmare come secondo schermo e controller, come una Wii U.</text>
+		</text>
+	</view>
+</theme>
