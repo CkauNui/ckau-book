@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.34</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+			<pos>0.5 0.36</pos>
+			<maxSize>0.237</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.209 0.398" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.34</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+			<pos>0.5 0.36</pos>
+			<maxSize>0.22</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>1986</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>Sega</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>Sega AI Computer</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>The Sega AI Computer, released in 1986, is one of Sega's most obscure and rare pieces of hardware. Designed primarily as an educational tool for children, the computer was intended for use in Japanese schools. It featured a 16-bit NEC V20 CPU running at 5 MHz, 128 KB of RAM, and a unique touchpad interface that utilized customizable overlays. The system's software was delivered on Sega My Cards and audio cassettes, and it ran on a custom operating system based on the Prolog programming language, which was notable for its early incorporation of artificial intelligence concepts.
+
+The Sega AI Computer was discontinued in 1989 and remained largely forgotten until recent efforts by preservationists who successfully emulated the system in 2024 using MAME, making its software accessible to a broader audience for the first time.</text>
+			<text lang="it">Il Sega AI Computer, rilasciato nel 1986, è uno dei pezzi di hardware più oscuri e rari di Sega. Progettato principalmente come strumento educativo per i bambini, il computer era destinato all'uso nelle scuole giapponesi. Disponeva di una CPU NEC V20 a 16 bit a 5 MHz, 128 KB di RAM e un'interfaccia touchpad unica che utilizzava overlay personalizzabili. Il software del sistema veniva fornito su Sega My Card e audiocassette e funzionava con un sistema operativo personalizzato basato sul linguaggio di programmazione Prolog, che si distingueva per la sua precoce incorporazione di concetti di intelligenza artificiale.
+
+Il Sega AI Computer è stato dismesso nel 1989 ed è rimasto in gran parte dimenticato fino ai recenti sforzi dei conservatori che hanno emulato con successo il sistema nel 2024 utilizzando il MAME, rendendo il suo software accessibile per la prima volta a un pubblico più ampio.</text>
+			<text lang="fr">Le Sega AI Computer, sorti en 1986, est l'une des pièces les plus obscures et les plus rares du matériel de Sega. Conçu principalement comme un outil éducatif pour les enfants, l'ordinateur était destiné à être utilisé dans les écoles japonaises. Il était équipé d'un processeur NEC V20 16 bits cadencé à 5 MHz, de 128 Ko de RAM et d'une interface tactile unique qui utilisait des superpositions personnalisables. Le logiciel du système était livré sur des Sega My Cards et des cassettes audio, et il fonctionnait sur un système d'exploitation personnalisé basé sur le langage de programmation Prolog, qui était remarquable pour son incorporation précoce de concepts d'intelligence artificielle.
+
+Le Sega AI Computer a été abandonné en 1989 et est resté largement oublié jusqu'aux efforts récents des conservateurs qui ont réussi à émuler le système en 2024 à l'aide de MAME, rendant son logiciel accessible à un public plus large pour la première fois.</text>
+			<text lang="de">Der Sega AI Computer, der 1986 auf den Markt kam, ist eines der obskursten und seltensten Hardwareprodukte von Sega. Der Computer wurde in erster Linie als pädagogisches Werkzeug für Kinder entwickelt und war für den Einsatz in japanischen Schulen gedacht. Er verfügte über eine 16-Bit NEC V20-CPU mit 5 MHz, 128 KB RAM und ein einzigartiges Touchpad-Interface, das anpassbare Overlays verwendete. Die Software des Systems wurde auf Sega My Cards und Audiokassetten ausgeliefert und lief auf einem eigenen Betriebssystem, das auf der Programmiersprache Prolog basierte, die sich durch ihre frühe Einbeziehung von Konzepten der künstlichen Intelligenz auszeichnete.
+
+Der Sega AI Computer wurde 1989 eingestellt und geriet weitgehend in Vergessenheit. Erst in jüngster Zeit gelang es Denkmalschützern, das System im Jahr 2024 mit MAME zu emulieren und die Software zum ersten Mal einem breiteren Publikum zugänglich zu machen.</text>
+			<text lang="es">El Sega AI Computer, lanzado en 1986, es una de las piezas de hardware más oscuras y raras de Sega. Diseñado principalmente como una herramienta educativa para niños, el ordenador estaba destinado a ser utilizado en las escuelas japonesas. Contaba con una CPU NEC V20 de 16 bits a 5 MHz, 128 KB de RAM y una interfaz táctil única que utilizaba superposiciones personalizables. El software del sistema se entregaba en Sega My Cards y casetes de audio, y funcionaba con un sistema operativo personalizado basado en el lenguaje de programación Prolog, que destacaba por su temprana incorporación de conceptos de inteligencia artificial.
+
+El Sega AI Computer se dejó de fabricar en 1989 y permaneció en el olvido hasta los recientes esfuerzos de los conservacionistas, que lograron emular el sistema en 2024 utilizando MAME, haciendo que su software fuera accesible a un público más amplio por primera vez.</text>
+			<text lang="ru">Компьютер Sega AI Computer, выпущенный в 1986 году, - одна из самых малоизвестных и редких разработок компании Sega. Созданный в первую очередь как образовательный инструмент для детей, компьютер предназначался для использования в японских школах. Он оснащался 16-битным процессором NEC V20 с частотой 5 МГц, 128 КБ оперативной памяти и уникальным интерфейсом с тачпадом, который использовал настраиваемые накладки. Программное обеспечение системы поставлялось на Sega My Cards и аудиокассетах, а сама она работала под управлением собственной операционной системы на базе языка программирования Prolog, который отличался ранним внедрением концепций искусственного интеллекта.
+
+Система Sega AI Computer была снята с производства в 1989 году и оставалась практически забытой до недавних усилий защитников природы, которые успешно эмулировали систему в 2024 году с помощью MAME, впервые сделав ее программное обеспечение доступным для широкой аудитории.</text>
+			<text lang="pl">Sega AI Computer, wydany w 1986 roku, jest jednym z najbardziej nieznanych i rzadkich urządzeń firmy Sega. Zaprojektowany głównie jako narzędzie edukacyjne dla dzieci, komputer był przeznaczony do użytku w japońskich szkołach. Wyposażony był w 16-bitowy procesor NEC V20 pracujący z częstotliwością 5 MHz, 128 KB pamięci RAM i unikalny interfejs touchpada, który wykorzystywał konfigurowalne nakładki. Oprogramowanie systemu było dostarczane na kartach Sega My Cards i kasetach audio i działało na niestandardowym systemie operacyjnym opartym na języku programowania Prolog, który był godny uwagi ze względu na wczesne włączenie koncepcji sztucznej inteligencji.
+				
+Sega AI Computer został wycofany z produkcji w 1989 roku i pozostał w dużej mierze zapomniany aż do niedawnych wysiłków konserwatorów zabytków, którzy z powodzeniem emulowali system w 2024 roku za pomocą MAME, dzięki czemu jego oprogramowanie było po raz pierwszy dostępne dla szerszej publiczności.</text>
+		</text>
+	</view>
+</theme>
