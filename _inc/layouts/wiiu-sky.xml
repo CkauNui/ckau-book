@@ -1,0 +1,113 @@
+<?xml version="1.0" ?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.426</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.475</origin>
+			<pos>0.5 0.415</pos>
+			<maxSize>0.415</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.543</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.454</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.415" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-right" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 1.1</origin>
+			<origin if="${screen.ratio} == '16/10'">0.508 0.67</origin>
+			<origin if="${screen.ratio} == '21/9'">0.9 0.5</origin>
+			<pos>0.602 0.718</pos>
+			<maxSize>0.12</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.12</maxSize>
+			<rotation>6</rotation>
+			<storyboard>
+				<animation property="pos" to="0.322 0.718" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.426</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.475</origin>
+			<pos>0.5 0.415</pos>
+			<maxSize>0.41</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.533</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.444</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.415" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<video name="videobox2" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}2.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}2.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}2.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}2.mp4</path>
+			<audio>false</audio>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 1.15</origin>
+			<origin if="${screen.ratio} == '16/10'">0.508 0.67</origin>
+			<origin if="${screen.ratio} == '21/9'">0.9 0.5</origin>
+			<pos>0.6 0.718</pos>
+			<maxSize>0.1</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.142</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.115</maxSize>
+			<rotation>0</rotation>
+			<zIndex>26</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.32 0.718" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>2012</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>Nintendo</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>Wii U - Skylanders</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>The Wii U version of &quot;Skylanders&quot; is part of the popular toys-to-life video game series where physical toy figures are placed on a portal to appear in the game.
+
+Released for the Wii U, the game allows players to embark on adventures in various fantastical worlds, battling enemies, solving puzzles, and collecting items. The game takes full advantage of the Wii U's GamePad, offering unique controls, off-TV play, and interactive features that enhance the overall gameplay experience. The vibrant graphics, engaging storylines, and the ability to bring toys to life make it a fun and immersive experience for players of all ages.</text>
+			<text lang="it">La versione Wii U di &quot;Skylanders&quot; fa parte della famosa serie di videogiochi &quot;toys-to-life&quot; in cui le figure fisiche dei giocattoli vengono inserite in un portale per apparire nel gioco.
+
+Pubblicato per Wii U, il gioco permette ai giocatori di intraprendere avventure in vari mondi fantastici, combattendo nemici, risolvendo enigmi e raccogliendo oggetti. Il gioco sfrutta appieno il GamePad di Wii U, offrendo controlli unici, gioco fuori dal televisore e funzioni interattive che migliorano l'esperienza di gioco complessiva. La grafica vivace, le trame coinvolgenti e la possibilità di dare vita ai giocattoli rendono l'esperienza divertente e coinvolgente per i giocatori di tutte le età.</text>
+			<text lang="fr">La version Wii U de &quot;Skylanders&quot; fait partie de la série de jeux vidéo populaires &quot;toys-to-life&quot; où des figurines physiques sont placées sur un portail pour apparaître dans le jeu.
+
+Sorti sur Wii U, le jeu permet aux joueurs de partir à l'aventure dans divers mondes fantastiques, d'affronter des ennemis, de résoudre des énigmes et de collecter des objets. Le jeu tire pleinement parti du GamePad de la Wii U, offrant des commandes uniques, un jeu en dehors de la télévision et des fonctions interactives qui améliorent l'expérience de jeu globale. Les graphismes éclatants, les scénarios captivants et la possibilité de donner vie aux jouets font de ce jeu une expérience amusante et immersive pour les joueurs de tous âges.</text>
+			<text lang="de">Die Wii U-Version von &quot;Skylanders&quot; ist Teil der beliebten Toys-to-Life-Videospielreihe, bei der physische Spielzeugfiguren auf ein Portal gestellt werden, um im Spiel zu erscheinen.
+
+Das Spiel wurde für die Wii U veröffentlicht und ermöglicht es den Spielern, Abenteuer in verschiedenen fantastischen Welten zu erleben, Feinde zu bekämpfen, Rätsel zu lösen und Gegenstände zu sammeln. Das Spiel nutzt das GamePad der Wii U voll aus und bietet eine einzigartige Steuerung, Off-TV-Spiel und interaktive Funktionen, die das Spielerlebnis verbessern. Die lebendige Grafik, die fesselnde Geschichte und die Möglichkeit, Spielzeug zum Leben zu erwecken, machen das Spiel zu einem unterhaltsamen und fesselnden Erlebnis für Spieler jeden Alters.</text>
+			<text lang="es">La versión para Wii U de &quot;Skylanders&quot; forma parte de la popular serie de videojuegos toys-to-life, en la que figuras físicas de juguete se colocan en un portal para aparecer en el juego.
+
+Lanzado para Wii U, el juego permite a los jugadores embarcarse en aventuras en varios mundos fantásticos, luchando contra enemigos, resolviendo puzles y recogiendo objetos. El juego aprovecha al máximo el GamePad de Wii U, ofreciendo controles únicos, juego fuera de la televisión y funciones interactivas que mejoran la experiencia de juego en general. Los vibrantes gráficos, el atractivo argumento y la posibilidad de dar vida a los juguetes lo convierten en una experiencia divertida y envolvente para jugadores de todas las edades.</text>
+			<text lang="ru">Версия Skylanders для Wii U является частью популярной серии видеоигр &quot;Игрушки в жизнь&quot;, в которой физические фигурки игрушек помещаются на портал, чтобы появиться в игре.
+
+Выпущенная для Wii U, игра позволяет игрокам отправиться в приключения по различным фантастическим мирам, сражаясь с врагами, решая головоломки и собирая предметы. Игра в полной мере использует возможности Wii U GamePad, предлагая уникальное управление, игру вне телевизора и интерактивные функции, которые улучшают общий игровой процесс. Яркая графика, увлекательные сюжетные линии и возможность оживить игрушки делают игру увлекательной и захватывающей для игроков всех возрастов.</text>
+			<text lang="pl">Wersja &quot;Skylanders&quot; na Wii U jest częścią popularnej serii gier wideo, w których fizyczne figurki zabawek są umieszczane w portalu, aby pojawić się w grze.
+				
+Wydana na Wii U gra pozwala graczom wyruszyć na przygody w różnych fantastycznych światach, walcząc z wrogami, rozwiązując zagadki i zbierając przedmioty. Gra w pełni wykorzystuje możliwości GamePada Wii U, oferując unikalne sterowanie, grę poza telewizorem i interaktywne funkcje, które zwiększają ogólne wrażenia z rozgrywki. Żywa grafika, wciągająca fabuła i możliwość ożywiania zabawek sprawiają, że jest to wciągające doświadczenie dla graczy w każdym wieku.</text>
+		</text>
+	</view>
+</theme>
