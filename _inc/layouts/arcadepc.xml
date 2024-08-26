@@ -1,0 +1,174 @@
+<?xml version="1.0" ?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-left" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.3 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
+			<pos>0.305 0.45</pos>
+			<minSize>0.1 0.3</minSize>
+			<rotation>14</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>27</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.025 0.45" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-right" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.6 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+			<pos>0.69 0.45</pos>
+			<minSize>0.1 0.3</minSize>
+			<rotation>-14</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>27</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.41 0.45" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<pos>0.499 0.47</pos>
+			<maxSize>0.175</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.184</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-left" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
+			<pos>0.392 0.48</pos>
+			<maxSize>0.14</maxSize>
+			<rotation>-76</rotation>
+			<storyboard>
+				<animation property="pos" to="0.112 0.48" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-right" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+			<pos>0.607 0.48</pos>
+			<maxSize>0.14</maxSize>
+			<rotation>76</rotation>
+			<storyboard>
+				<animation property="pos" to="0.327 0.48" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/teknoparrot.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/teknoparrot.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<pos>0.499 0.47</pos>
+			<maxSize>0.162</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.22</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.182</maxSize>
+			<zIndex>26</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<video name="videobox2" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/teknoparrot-right.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/teknoparrot-right.mp4</path>
+			<audio>false</audio>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+			<pos>0.621 0.47</pos>
+			<maxSize>0.14</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
+			<zIndex>25</zIndex>
+			<rotation>0</rotation>
+			<storyboard>
+				<animation property="pos" to="0.341 0.47" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<video name="videobox3" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/teknoparrot-left.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/teknoparrot-left.mp4</path>
+			<audio>false</audio>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
+			<pos>0.38 0.47</pos>
+			<maxSize>0.14</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
+			<zIndex>25</zIndex>
+			<rotation>0</rotation>
+			<storyboard>
+				<animation property="pos" to="0.1 0.47" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text/>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text/>
+		</text>
+		<text name="TextName" extra="true">
+			<text>Arcade PC</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>A collection of arcade systems built on standard PC hardware.
+
+These cabinets are powered by PC architectures running either a customized version of Windows 7 Embedded or Linux, featuring extensive DRM and custom drivers. The games can also be played on personal computers using specialized launcher programs like the popular TeknoParrot, or through non-commercial applications, without the need for any subscription fees.</text>
+			<text lang="it">Una collezione di sistemi arcade costruiti su hardware PC standard.
+
+Questi cabinati sono alimentati da architetture PC che eseguono una versione personalizzata di Windows 7 Embedded o Linux, con DRM estesi e driver personalizzati. I giochi possono essere giocati anche su personal computer utilizzando programmi di lancio specializzati, come il popolare TeknoParrot, o attraverso applicazioni non commerciali, senza dover pagare alcun abbonamento.</text>
+			<text lang="fr">Une collection de systèmes d'arcade construits sur du matériel PC standard.
+
+Ces consoles sont alimentées par des architectures PC fonctionnant sous une version personnalisée de Windows 7 Embedded ou de Linux, avec des DRM étendus et des pilotes personnalisés. Les jeux peuvent également être joués sur des ordinateurs personnels à l'aide de programmes de lancement spécialisés tels que le populaire TeknoParrot, ou par le biais d'applications non commerciales, sans qu'il soit nécessaire de payer un abonnement.</text>
+			<text lang="de">Eine Sammlung von Arcade-Systemen, die auf Standard-PC-Hardware aufgebaut sind.
+
+Diese Spielhallen werden von PC-Architekturen angetrieben, auf denen entweder eine angepasste Version von Windows 7 Embedded oder Linux läuft, mit umfangreichem DRM und eigenen Treibern. Die Spiele können auch auf PCs mit speziellen Startprogrammen wie dem beliebten TeknoParrot oder über nicht-kommerzielle Anwendungen gespielt werden, ohne dass dafür Abonnementgebühren anfallen.</text>
+			<text lang="es">Una colección de sistemas arcade construidos sobre hardware estándar de PC.
+
+Estos gabinetes funcionan con arquitecturas de PC que ejecutan una versión personalizada de Windows 7 Embedded o Linux, con DRM extensivo y controladores personalizados. Los juegos también pueden jugarse en ordenadores personales mediante programas de lanzamiento especializados, como el popular TeknoParrot, o a través de aplicaciones no comerciales, sin necesidad de pagar ninguna cuota de suscripción.</text>
+			<text lang="ru">Коллекция аркадных систем, построенных на стандартном оборудовании ПК.
+
+Эти шкафы работают на архитектуре ПК под управлением либо адаптированной версии Windows 7 Embedded, либо Linux, с широким DRM и собственными драйверами. В игры можно играть и на персональных компьютерах, используя специализированные программы запуска, такие как популярная TeknoParrot, или через некоммерческие приложения, не требующие абонентской платы.</text>
+			<text lang="pl">Kolekcja systemów arcade zbudowanych na standardowym sprzęcie PC.
+				
+Szafy te są zasilane przez architekturę PC z niestandardową wersją systemu Windows 7 Embedded lub Linux, z rozbudowanym DRM i niestandardowymi sterownikami. W gry można również grać na komputerach osobistych za pomocą specjalistycznych programów uruchamiających, takich jak popularny TeknoParrot, lub za pośrednictwem niekomercyjnych aplikacji, bez konieczności uiszczania jakichkolwiek opłat abonamentowych.</text>
+		</text>
+	</view>
+</theme>
