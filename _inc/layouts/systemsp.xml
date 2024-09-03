@@ -1,0 +1,169 @@
+<?xml version="1.0" ?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-left" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.4 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
+			<pos>0.287 0.36</pos>
+			<minSize>0.1 0.4</minSize>
+			<rotation>26</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>27</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.007 0.36" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-right" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.6 0.3</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '21/9'">0.95 0.5</origin>
+			<pos>0.713 0.36</pos>
+			<minSize>0.1 0.4</minSize>
+			<rotation>-26</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>27</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.433 0.36" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+			<pos>0.50 0.38</pos>
+			<maxSize>0.2</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.38" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-left" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.53 0.15</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+			<pos>0.371 0.39</pos>
+			<maxSize>0.13</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.15</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.14</maxSize>
+			<rotation>-64</rotation>
+			<storyboard>
+				<animation property="pos" to="0.091 0.39" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-right" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.47 0.15</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+			<pos>0.628 0.39</pos>
+			<maxSize>0.13</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.15</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.14</maxSize>
+			<rotation>64</rotation>
+			<storyboard>
+				<animation property="pos" to="0.348 0.39" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.27</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
+			<pos>0.50 0.38</pos>
+			<maxSize>0.182</maxSize>
+			<zIndex>26</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.38" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<video name="videobox2" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+			<audio>false</audio>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
+			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+			<pos>0.638 0.39</pos>
+			<maxSize>0.14</maxSize>
+			<zIndex>25</zIndex>
+			<rotation>0</rotation>
+			<storyboard>
+				<animation property="pos" to="0.358 0.39" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<video name="videobox3" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+			<audio>false</audio>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
+			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+			<pos>0.36 0.39</pos>
+			<maxSize>0.14</maxSize>
+			<zIndex>25</zIndex>
+			<rotation>0</rotation>
+			<storyboard>
+				<animation property="pos" to="0.08 0.39" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>2004</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>Sega</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>System SP</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>The Sega System SP, also known as the Aurora, is an arcade system board developed by Sega. It is essentially a “Dreamcast-on-a-chip,” featuring the same SH-4 CPU and PowerVR2 GPU as the Sega Dreamcast console. This system was designed to be versatile, supporting various arcade game formats and configurations.
+
+It was used in a range of arcade games, including some that involved gambling, ticket redemption, and children’s attractions. The Sega System SP was manufactured until 2014 and is notable for its compact and efficient design.</text>
+			<text lang="it">Il Sega System SP, noto anche come Aurora, è una scheda di sistema arcade sviluppata da Sega. Si tratta essenzialmente di un &quot;Dreamcast-on-a-chip&quot;, dotato della stessa CPU SH-4 e GPU PowerVR2 della console Sega Dreamcast. Questo sistema è stato progettato per essere versatile e per supportare diversi formati e configurazioni di giochi arcade.
+
+È stato utilizzato per una serie di giochi arcade, tra cui alcuni che prevedevano il gioco d'azzardo, la riscossione di biglietti e attrazioni per bambini. Il Sega System SP è stato prodotto fino al 2014 e si distingue per il suo design compatto ed efficiente.</text>
+			<text lang="fr">Le Sega System SP, également connu sous le nom d'Aurora, est un système d'arcade développé par Sega. Il s'agit essentiellement d'un &quot;Dreamcast sur puce&quot;, doté du même processeur SH-4 et du même GPU PowerVR2 que la console Sega Dreamcast. Ce système a été conçu pour être polyvalent et prendre en charge différents formats et configurations de jeux d'arcade.
+
+Il a été utilisé pour toute une série de jeux d'arcade, dont certains comportaient des jeux d'argent, des billets d'entrée et des attractions pour enfants. Le Sega System SP a été fabriqué jusqu'en 2014 et se distingue par son design compact et efficace.</text>
+			<text lang="de">Das Sega System SP, auch bekannt als Aurora, ist ein von Sega entwickeltes Arcade-System-Board. Es ist im Wesentlichen ein &quot;Dreamcast-on-a-chip&quot;, mit der gleichen SH-4 CPU und PowerVR2 GPU wie die Sega Dreamcast Konsole. Dieses System wurde entwickelt, um vielseitig zu sein und verschiedene Arcade-Spielformate und Konfigurationen zu unterstützen.
+
+Es wurde für eine Reihe von Arcade-Spielen verwendet, darunter einige, die Glücksspiele, die Einlösung von Eintrittskarten und Kinderattraktionen beinhalteten. Das Sega System SP wurde bis 2014 hergestellt und zeichnet sich durch sein kompaktes und effizientes Design aus.</text>
+			<text lang="es">El Sega System SP, también conocido como Aurora, es una placa de sistema arcade desarrollada por Sega. Se trata esencialmente de un &quot;Dreamcast-on-a-chip&quot;, con la misma CPU SH-4 y GPU PowerVR2 que la consola Sega Dreamcast. Este sistema fue diseñado para ser versátil, soportando varios formatos y configuraciones de juegos arcade.
+
+Se utilizó en una amplia gama de juegos arcade, incluidos algunos que implicaban apuestas, canje de entradas y atracciones infantiles. La Sega System SP se fabricó hasta 2014 y destaca por su diseño compacto y eficiente.</text>
+			<text lang="ru">Sega System SP, также известная как Aurora, - это аркадная системная плата, разработанная компанией Sega. По сути, это &quot;Dreamcast-на-чипе&quot;, оснащенный теми же процессором SH-4 и графическим процессором PowerVR2, что и консоль Sega Dreamcast. Эта система была разработана как универсальная, поддерживающая различные форматы и конфигурации аркадных игр.
+
+Она использовалась в различных аркадных играх, в том числе в азартных, выкупающих билеты и детских аттракционах. Sega System SP выпускалась до 2014 года и отличалась компактным и эффективным дизайном.</text>
+			<text lang="pl">Sega System SP, znany również jako Aurora, to płyta systemu arcade opracowana przez firmę Sega. Jest to zasadniczo &quot;Dreamcast-on-a-chip&quot;, wyposażony w ten sam procesor SH-4 i procesor graficzny PowerVR2, co konsola Sega Dreamcast. System ten został zaprojektowany tak, aby był wszechstronny, obsługując różne formaty i konfiguracje gier zręcznościowych.
+				
+Był wykorzystywany w wielu grach zręcznościowych, w tym takich, które wiązały się z hazardem, wykupem biletów i atrakcjami dla dzieci. Sega System SP był produkowany do 2014 roku i wyróżnia się kompaktową i wydajną konstrukcją.</text>
+		</text>
+	</view>
+</theme>
