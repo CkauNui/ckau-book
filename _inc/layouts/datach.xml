@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.49 0.4</pos>
+			<maxSize>0.237</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.49 0.4</pos>
+			<maxSize>0.227</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>1992</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>Bandai</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>Datach</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>The Datach or Datach Joint ROM System, is an enhancement accessory by Bandai for the Family Computer, allowing the system to play select compatible games. Released on December 29, 1992, it is packaged with one game, Dragon Ball Z: Gekitō Tenkaichi Budokai. Six other games were released for it, including one of the final games for the Famicom system in 1994. It is one of two mini systems compatible with the NES or Famicom, the other being the Aladdin Deck Enhancer.
+
+The Datach consists of a cartridge connection at its bottom, a central cartridge chamber on its back, with two spring-loaded pins on either side, which are pushed up when the unit is inserted into the Famicom, allowing the game to only be removed when the Datach has been removed from the Famicom. Its main feature is the card reading slot on the front. The cartridges resemble half-size Famicom cartridges. One side of the cartridge is flat with title sticker, while the other side is sloped inward with notches on the left and right, which correspond to the spring pins on the main Datach unit. The cards that come with the games are swiped from left to right along the card slot; they are glossy on the front with an image of the character and the backs are smooth usually having the title of the game and barcode. All cartridges, boxes, instructions have the standard FF (Famicom Family) insignia, showing they are officially licensed by Nintendo.</text>
+			<text lang="pl">Datach lub Datach Joint ROM System to akcesorium firmy Bandai do komputera rodzinnego, umożliwiające systemowi odtwarzanie wybranych kompatybilnych gier. Wydany 29 grudnia 1992 roku, jest zapakowany z jedną grą, Dragon Ball Z: Gekitō Tenkaichi Budokai. Wydano dla niego sześć innych gier, w tym jedną z ostatnich gier dla systemu Famicom w 1994 roku. Jest to jeden z dwóch mini systemów kompatybilnych z NES lub Famicom, drugim jest Aladdin Deck Enhancer.
+
+Datach składa się z połączenia kartridża na dole, centralnej komory kartridża z tyłu, z dwoma sprężynowymi kołkami po obu stronach, które są popychane w górę, gdy urządzenie jest włożone do Famicom, umożliwiając wyjęcie gry tylko wtedy, gdy Datach został usunięty z Famicom. Jego główną cechą jest gniazdo odczytu kart z przodu. Kartridże przypominają pół-wymiarowe kartridże Famicom. Jedna strona kartridża jest płaska z naklejką tytułową, podczas gdy druga strona jest nachylona do wewnątrz z nacięciami po lewej i prawej stronie, które odpowiadają kołkom sprężynowym na głównej jednostce Datach. Karty dołączone do gier są przesuwane od lewej do prawej wzdłuż gniazda karty; są błyszczące z przodu z wizerunkiem postaci, a tył jest gładki, zwykle z tytułem gry i kodem kreskowym. Wszystkie kartridże, pudełka i instrukcje mają standardowe oznaczenie FF (Famicom Family), wskazujące, że są oficjalnie licencjonowane przez Nintendo.</text>
+			<text lang="ru">Datach или Datach Joint ROM System - дополнительный аксессуар от Bandai для Family Computer, позволяющий играть в совместимые игры. Выпущенный 29 декабря 1992 года, он вкдючал одну игру - Dragon Ball Z: Gekitō Tenkaichi Budokai. Для неё было выпущено ещё шесть игр, в том числе одна из последних игр для системы Famicom в 1994 году. Это одна из двух мини-систем, совместимых с NES или Famicom, вторая - Aladdin Deck Enhancer.
+
+Datach состоит из разъёма для картриджей в нижней части, центрального отсека для картриджей на задней стороне и двух подпружиненных штырьков по обеим сторонам, которые выталкиваются вверх, когда устройство вставлено в Famicom, что позволяет извлечь игру только после того, как Datach будет извлечён из Famicom. Его главной особенностью является слот для чтения карт на передней панели. Картриджи похожи на картриджи Famicom половинного размера. Одна сторона картриджа плоская, с наклейкой и названием, а другая - наклонная, с выемками слева и справа, которые соответствуют пружинным штифтам на основном блоке Datach. Карточки, прилагаемые к играм, пролистываются слева направо вдоль слота для карточек; с лицевой стороны они глянцевые с изображением персонажа, а с обратной стороны, как правило, гладкие с названием игры и штрих-кодом. На всех картриджах, коробках и инструкциях есть стандартный знак FF (Famicom Family), показывающий, что они официально лицензированы Nintendo.</text>
+			<text lang="es">El Datach o Datach Joint ROM System, es un accesorio de mejora de Bandai para el Family Computer, que permite al sistema jugar a determinados juegos compatibles. Lanzado el 29 de diciembre de 1992, viene empaquetado con un juego, Dragon Ball Z: Gekitō Tenkaichi Budokai. Otros seis juegos fueron lanzados para él, incluyendo uno de los juegos finales para el sistema Famicom en 1994. Es uno de los dos minisistemas compatibles con la NES o la Famicom, el otro es el Aladdin Deck Enhancer.
+
+El Datach consta de una conexión para cartuchos en su parte inferior, una cámara central para cartuchos en su parte posterior, con dos pasadores con resorte a cada lado, que se empujan hacia arriba cuando la unidad se inserta en la Famicom, permitiendo que el juego sólo se extraiga cuando el Datach se ha retirado de la Famicom. Su principal característica es la ranura de lectura de tarjetas situada en la parte frontal. Los cartuchos se asemejan a los cartuchos de tamaño medio de Famicom. Un lado del cartucho es plano con la pegatina del título, mientras que el otro lado está inclinado hacia dentro con muescas a izquierda y derecha, que se corresponden con los pasadores de resorte de la unidad Datach principal. Las tarjetas que acompañan a los juegos se deslizan de izquierda a derecha a lo largo del tarjetero; son brillantes en el anverso, con una imagen del personaje, y los reversos son lisos, normalmente con el título del juego y el código de barras. Todos los cartuchos, cajas e instrucciones llevan la insignia estándar FF (Famicom Family), que indica que tienen licencia oficial de Nintendo.</text>
+			<text lang="de">Das Datach oder Datach Joint ROM System ist ein Erweiterungszubehör von Bandai für den Family Computer, mit dem das System ausgewählte kompatible Spiele spielen kann. Es wurde am 29. Dezember 1992 veröffentlicht und enthält ein Spiel, Dragon Ball Z: Gekitō Tenkaichi Budokai. Sechs weitere Spiele wurden für das System veröffentlicht, darunter eines der letzten Spiele für das Famicom-System im Jahr 1994. Es ist eines von zwei Minisystemen, die mit dem NES oder Famicom kompatibel sind, das andere ist der Aladdin Deck Enhancer.
+
+Das Datach besteht aus einem Kassettenanschluss an der Unterseite, einer zentralen Kassettenkammer auf der Rückseite und zwei federbelasteten Stiften auf beiden Seiten, die beim Einsetzen des Geräts in das Famicom nach oben gedrückt werden, so dass das Spiel nur herausgenommen werden kann, wenn das Datach aus dem Famicom entfernt wurde. Sein Hauptmerkmal ist der Kartenleseschacht auf der Vorderseite. Die Cartridges ähneln den halbgroßen Famicom-Cartridges. Eine Seite der Kassette ist flach mit einem Titelaufkleber, während die andere Seite nach innen geneigt ist und links und rechts Einkerbungen aufweist, die den Federstiften der Datach-Haupteinheit entsprechen. Die Karten, die mit den Spielen geliefert werden, werden von links nach rechts durch den Kartenschlitz gezogen; sie sind auf der Vorderseite glänzend und mit einem Bild der Spielfigur versehen, während die Rückseiten glatt sind und normalerweise den Titel des Spiels und den Barcode enthalten. Alle Cartridges, Schachteln und Anleitungen sind mit dem standardmäßigen FF (Famicom Family)-Zeichen versehen, das zeigt, dass sie offiziell von Nintendo lizenziert sind.</text>
+			<text lang="fr">Le Datach ou Datach Joint ROM System, est un accessoire d'amélioration de Bandai pour le Family Computer, permettant au système de jouer à certains jeux compatibles. Sorti le 29 décembre 1992, il est livré avec un jeu, Dragon Ball Z : Gekitō Tenkaichi Budokai. Six autres jeux sont sortis pour ce système, dont l'un des derniers jeux pour le système Famicom en 1994. C'est l'un des deux mini-systèmes compatibles avec la NES ou la Famicom, l'autre étant l'Aladdin Deck Enhancer.
+
+Le Datach se compose d'une connexion de cartouche à sa base, d'une chambre de cartouche centrale à l'arrière, et de deux broches à ressort de chaque côté, qui sont poussées vers le haut lorsque l'unité est insérée dans la Famicom, ce qui permet de retirer le jeu uniquement lorsque le Datach a été retiré de la Famicom. Sa principale caractéristique est la fente de lecture de cartes située à l'avant. Les cartouches ressemblent à des demi-cartouches Famicom. Un côté de la cartouche est plat avec un autocollant de titre, tandis que l'autre côté est incliné vers l'intérieur avec des encoches à gauche et à droite, qui correspondent aux goupilles à ressort de l'unité principale Datach. Les cartes fournies avec les jeux sont glissées de gauche à droite le long de la fente pour cartes ; elles sont brillantes au recto avec une image du personnage et le verso est lisse et comporte généralement le titre du jeu et le code-barres. Toutes les cartouches, boîtes et instructions portent l'insigne FF (Famicom Family) standard, indiquant qu'elles sont officiellement autorisées par Nintendo.</text>
+			<text lang="it">Il Datach o Datach Joint ROM System è un accessorio di Bandai per il Family Computer, che permette al sistema di giocare a determinati giochi compatibili. Rilasciato il 29 dicembre 1992, è confezionato con un gioco, Dragon Ball Z: Gekitō Tenkaichi Budokai. Sono stati pubblicati altri sei giochi, tra cui uno dei giochi finali per il sistema Famicom nel 1994. È uno dei due mini sistemi compatibili con il NES o il Famicom, l'altro è l'Aladdin Deck Enhancer.
+
+Il Datach è costituito da un attacco per la cartuccia nella parte inferiore, da una camera centrale per la cartuccia sul retro e da due perni a molla su entrambi i lati, che vengono spinti verso l'alto quando l'unità viene inserita nel Famicom, consentendo al gioco di essere rimosso solo quando il Datach è stato rimosso dal Famicom. La sua caratteristica principale è lo slot per la lettura delle schede sul lato anteriore. Le cartucce assomigliano alle cartucce Famicom di metà formato. Un lato della cartuccia è piatto con l'adesivo del titolo, mentre l'altro lato è inclinato verso l'interno con tacche a sinistra e a destra, che corrispondono ai perni a molla dell'unità Datach principale. Le schede che accompagnano i giochi vengono strisciate da sinistra a destra lungo lo slot per le schede; sono lucide sul fronte con l'immagine del personaggio, mentre il retro è liscio e di solito riporta il titolo del gioco e il codice a barre. Tutte le cartucce, le scatole e le istruzioni riportano l'emblema standard FF (Famicom Family), a dimostrazione del fatto che sono state concesse in licenza ufficiale da Nintendo.</text>
+		</text>
+	</view>
+</theme>
