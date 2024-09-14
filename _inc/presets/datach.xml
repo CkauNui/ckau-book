@@ -7,20 +7,19 @@
 		<image name="md_cartridge">
 			<tile>true</tile>
 			<origin>0 1</origin>
-			<pos>0.023 0.88</pos>
-			<maxSize>0.38</maxSize>
+			<pos>0.06 0.36</pos>
+			<maxSize>0.215 0.20</maxSize>
 			<zIndex>70</zIndex>
 			<linearSmooth>true</linearSmooth>
 			<storyboard event="open">
 				<animation property="opacity" from="1" to="0" begin="0" duration="0" mode="EaseOutQuint"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="EaseOutQuint"/>
-				<animation property="y" from="0.88" to="0.55" begin="2000" duration="2500" mode="EaseOutQuint"/>
+				<animation property="opacity" from="0" to="1" begin="2000" duration="500" mode="EaseOutQuint"/>
+				<animation property="offsetY" from="0.46" to="0" begin="2000" duration="2500" mode="EaseOutQuint"/>
 			</storyboard>
 			<storyboard event="activate">
 				<animation property="opacity" from="1" to="0" begin="0" duration="0" mode="EaseOutQuint"/>
-				<animation property="opacity" from="0" to="1" begin="500" duration="500" mode="EaseOutQuint"/>
-				<animation property="y" from="0.88" to="0.55" begin="2000" duration="2500" mode="EaseOutQuint"/>
-				<animation property="rotation" from="-360" begin="4000" duration="6800" repeat="forever" mode="easeOutInQuint"/> 
+				<animation property="opacity" from="0" to="1" begin="2000" duration="500" mode="EaseOutQuint"/>
+				<animation property="offsetY" from="0.46" to="0" begin="2000" duration="2500" mode="EaseOutQuint"/>
 			</storyboard>
 			<storyboard event="deactivate">
 				<animation property="opacity" from="1" to="0" duration="" mode="Linear"/>
@@ -28,8 +27,12 @@
 		</image>
 		<image name="md_thumbnail">
 			<zIndex>71</zIndex>
+			<maxSize>0.23 0.56</maxSize>
 			<linearSmooth>true</linearSmooth>
 		</image>
+		<text name="md_name" extra="true">
+			<color>FFFFFFFF</color>
+		</text>
 		<image name="logo">
 			<pos>0.12 0.1</pos>
 		</image>
