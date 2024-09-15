@@ -1,0 +1,174 @@
+<?xml version="1.0" ?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-left" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.3 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
+			<pos>0.305 0.45</pos>
+			<minSize>0.1 0.3</minSize>
+			<rotation>14</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>27</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.025 0.45" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-right" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.6 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+			<pos>0.69 0.45</pos>
+			<minSize>0.1 0.3</minSize>
+			<rotation>-14</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>27</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.41 0.45" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<pos>0.499 0.47</pos>
+			<maxSize>0.175</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.184</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-left" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
+			<pos>0.392 0.48</pos>
+			<maxSize>0.14</maxSize>
+			<rotation>-76</rotation>
+			<storyboard>
+				<animation property="pos" to="0.112 0.48" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-right" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+			<pos>0.607 0.48</pos>
+			<maxSize>0.14</maxSize>
+			<rotation>76</rotation>
+			<storyboard>
+				<animation property="pos" to="0.327 0.48" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<pos>0.499 0.47</pos>
+			<maxSize>0.162</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.22</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.182</maxSize>
+			<zIndex>26</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<video name="videobox2" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+			<audio>false</audio>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+			<pos>0.621 0.47</pos>
+			<maxSize>0.14</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
+			<zIndex>25</zIndex>
+			<rotation>0</rotation>
+			<storyboard>
+				<animation property="pos" to="0.341 0.47" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<video name="videobox3" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+			<audio>false</audio>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
+			<pos>0.38 0.47</pos>
+			<maxSize>0.14</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
+			<zIndex>25</zIndex>
+			<rotation>0</rotation>
+			<storyboard>
+				<animation property="pos" to="0.1 0.47" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>2018</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>exA-Arcadia Pte. Ltd.</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>exA-Arcadia</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>exA-Arcadia is a state-of-the-art cartridge-based arcade video game system. It is available both as a dedicated upright cabinet and as a conversion kit for existing cabinets. The system features a wide variety of games from different genres, including fighters, shooters, action, and music, developed by talented creators from around the world.
+
+exA-Arcadia aims to revitalize the global arcade industry by offering high-performance games without the need for online connections, monthly fees, or revenue sharing per play.</text>
+			<text lang="it">exA-Arcadia è un sistema di videogiochi arcade all'avanguardia basato su cartucce. È disponibile sia come cabinet verticale dedicato che come kit di conversione per cabinet esistenti. Il sistema offre un'ampia varietà di giochi di diversi generi, tra cui picchiaduro, sparatutto, azione e musica, sviluppati da creatori di talento provenienti da tutto il mondo.
+
+exA-Arcadia mira a rivitalizzare l'industria arcade globale offrendo giochi ad alte prestazioni senza la necessità di connessioni online, canoni mensili o condivisione dei ricavi per gioco.</text>
+			<text lang="fr">exA-Arcadia est un système de jeux vidéo d'arcade à cartouches à la pointe de la technologie. Il est disponible à la fois sous la forme d'un meuble vertical dédié et d'un kit de conversion pour les meubles existants. Le système propose une grande variété de jeux de différents genres, notamment des jeux de combat, des jeux de tir, des jeux d'action et des jeux musicaux, développés par des créateurs talentueux du monde entier.
+
+exA-Arcadia vise à revitaliser l'industrie mondiale des salles d'arcade en offrant des jeux de haute performance sans nécessiter de connexions en ligne, de frais mensuels ou de partage des revenus par jeu.</text>
+			<text lang="de">exA-Arcadia ist ein hochmodernes Kassetten-basiertes Arcade-Videospielsystem. Es ist sowohl als eigenständiges Standgerät als auch als Umbausatz für bestehende Geräte erhältlich. Das System bietet eine große Auswahl an Spielen aus verschiedenen Genres, darunter Fighter, Shooter, Action und Musik, die von talentierten Entwicklern aus der ganzen Welt entwickelt wurden.
+
+exA-Arcadia hat sich zum Ziel gesetzt, die globale Arcade-Industrie neu zu beleben, indem es leistungsstarke Spiele anbietet, ohne dass Online-Verbindungen, monatliche Gebühren oder eine Umsatzbeteiligung pro Spiel erforderlich sind.</text>
+			<text lang="es">exA-Arcadia es un sistema de videojuegos arcade de última generación basado en cartuchos. Está disponible como mueble vertical dedicado y como kit de conversión para armarios existentes. El sistema ofrece una amplia variedad de juegos de diferentes géneros, como lucha, disparos, acción y música, desarrollados por creadores de talento de todo el mundo.
+
+exA-Arcadia pretende revitalizar la industria mundial de los salones recreativos ofreciendo juegos de alto rendimiento sin necesidad de conexiones en línea, cuotas mensuales ni reparto de ingresos por juego.</text>
+			<text lang="ru">exA-Arcadia - это современная система аркадных видеоигр на основе картриджей. Она выпускается как в виде отдельного вертикального шкафа, так и в виде комплекта для переоборудования существующих шкафов. В системе представлен широкий спектр игр различных жанров, включая боевики, шутеры, экшены и музыку, разработанных талантливыми авторами со всего мира.
+
+exA-Arcadia призвана оживить мировую аркадную индустрию, предлагая высокопроизводительные игры без необходимости подключения к Интернету, ежемесячной платы или разделения доходов от игры.</text>
+			<text lang="pl">exA-Arcadia to najnowocześniejszy system zręcznościowych gier wideo oparty na kartridżach. Jest dostępny zarówno jako dedykowana szafka stojąca, jak i zestaw do konwersji istniejących szafek. System oferuje szeroką gamę gier z różnych gatunków, w tym bijatyki, strzelanki, gry akcji i muzyczne, opracowane przez utalentowanych twórców z całego świata.
+				
+exA-Arcadia ma na celu ożywienie globalnej branży gier zręcznościowych poprzez oferowanie gier o wysokiej wydajności bez konieczności łączenia się z Internetem, miesięcznych opłat lub dzielenia się przychodami za grę.</text>
+		</text>
+	</view>
+</theme>
