@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>
+			<pos>0.489 0.461</pos>
+			<maxSize>0.28</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.37</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.31</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.209 0.461" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>
+			<pos>0.489 0.4602</pos>
+			<maxSize>0.27</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.36</maxSize>			
+			<maxSize if="${screen.ratio} == '16/10'">0.30</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.209 0.4602" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>2010</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>ET: Legacy team</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>ET: Legacy</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>Wolfenstein: Enemy Territory is a free multiplayer first-person shooter. Set during World War II and heavily focused on team work, it was initially released in 2003 by Splash Damage and id Software. More than a decade after its release, after spending countless hours of escorting tanks and trucks, stealing gold and radar parts and transmitting confidential documents, it was time to dust off the game which consistently refused to go down.
+
+ET: Legacy is an open source project based on the code of Wolfenstein: Enemy Territory which was released in 2010 under the terms of GPLv3 license.</text>
+			<text lang="it">Wolfenstein: Enemy Territory è uno sparatutto in prima persona multiplayer gratuito. Ambientato durante la Seconda Guerra Mondiale e fortemente incentrato sul lavoro di squadra, è stato inizialmente pubblicato nel 2003 da Splash Damage e id Software. A più di dieci anni dalla sua uscita, dopo aver trascorso innumerevoli ore a scortare carri armati e camion, a rubare oro e pezzi di radar e a trasmettere documenti riservati, è arrivato il momento di rispolverare il gioco che si è sempre rifiutato di andare a fondo.
+
+ET: Legacy è un progetto open source basato sul codice di Wolfenstein: Enemy Territory, rilasciato nel 2010 sotto i termini della licenza GPLv3.</text>
+			<text lang="fr">Wolfenstein : Enemy Territory est un jeu de tir à la première personne multijoueur gratuit. Se déroulant pendant la Seconde Guerre mondiale et fortement axé sur le travail d'équipe, il a été initialement publié en 2003 par Splash Damage et id Software. Plus de dix ans après sa sortie, après avoir passé d'innombrables heures à escorter des chars et des camions, à voler de l'or et des pièces de radar et à transmettre des documents confidentiels, il était temps de dépoussiérer le jeu qui refusait constamment de tomber.
+
+ET : Legacy est un projet open source basé sur le code de Wolfenstein : Enemy Territory sorti en 2010 sous licence GPLv3.</text>
+			<text lang="de">Wolfenstein: Enemy Territory ist ein kostenloser Multiplayer-Ego-Shooter. Es spielt während des Zweiten Weltkriegs und konzentriert sich stark auf Teamarbeit und wurde ursprünglich 2003 von Splash Damage und id Software veröffentlicht. Mehr als ein Jahrzehnt nach seiner Veröffentlichung war es nach unzähligen Stunden des Eskortierens von Panzern und Lastwagen, des Stehlens von Gold und Radarteilen und des Übermittelns vertraulicher Dokumente an der Zeit, das Spiel, das sich konsequent weigerte, unterzugehen, abzustauben.
+
+ET: Legacy ist ein Open-Source-Projekt, das auf dem Code von Wolfenstein: Enemy Territory, das 2010 unter den Bedingungen der GPLv3-Lizenz veröffentlicht wurde.</text>
+			<text lang="es">Wolfenstein: Enemy Territory es un shooter multijugador gratuito en primera persona. Ambientado en la Segunda Guerra Mundial y muy centrado en el trabajo en equipo, fue lanzado inicialmente en 2003 por Splash Damage e id Software. Más de una década después de su lanzamiento, tras pasar incontables horas escoltando tanques y camiones, robando oro y piezas de radar y transmitiendo documentos confidenciales, había llegado el momento de desempolvar el juego que se negaba sistemáticamente a caer.
+
+ET: Legacy es un proyecto de código abierto basado en el código de Wolfenstein: Enemy Territory que fue lanzado en 2010 bajo los términos de la licencia GPLv3.</text>
+			<text lang="ru">Wolfenstein: Enemy Territory - это бесплатный многопользовательский шутер от первого лица. Игра, действие которой разворачивается во время Второй мировой войны и в которой большое внимание уделяется командной работе, была выпущена в 2003 году компаниями Splash Damage и id Software. Спустя более десяти лет после релиза, проведя бесчисленные часы за сопровождением танков и грузовиков, кражей золота и деталей радаров и передачей секретных документов, пришло время смахнуть пыль с игры, которая упорно отказывалась выходить из строя.
+
+ET: Legacy - это проект с открытым исходным кодом, основанный на коде Wolfenstein: Enemy Territory, который был выпущен в 2010 году на условиях лицензии GPLv3.</text>
+			<text lang="pl">Wolfenstein: Enemy Territory to darmowa strzelanka pierwszoosobowa dla wielu graczy. Rozgrywająca się podczas II wojny światowej i silnie skoncentrowana na pracy zespołowej, została pierwotnie wydana w 2003 roku przez Splash Damage i id Software. Ponad dekadę po premierze, po spędzeniu niezliczonych godzin na eskortowaniu czołgów i ciężarówek, kradzieży złota i części radarów oraz przesyłaniu poufnych dokumentów, nadszedł czas, aby odkurzyć grę, która konsekwentnie odmawiała zejścia na dno.
+				
+ET: Legacy to projekt open source oparty na kodzie gry Wolfenstein: Enemy Territory, który został wydany w 2010 roku na warunkach licencji GPLv3.</text>
+		</text>
+	</view>
+</theme>
