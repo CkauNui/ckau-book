@@ -1,77 +1,84 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.49 0.4</pos>
-			<maxSize>0.237</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.49 0.4</pos>
-			<maxSize>0.227</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1982</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Sinclair</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>ZX Spectrum</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The ZX Spectrum is an 8-bit personal home computer released in the United Kingdom in 1982 by Sinclair Research.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.49 0.4</pos>
+      <maxSize>0.237</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.49 0.4</pos>
+      <maxSize>0.227</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1982</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Sinclair</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>ZX Spectrum</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The ZX Spectrum is an 8-bit personal home computer released in the United Kingdom in 1982 by Sinclair Research.
 
 Referred to during development as the ZX81 Colour and ZX82, it was launched as the ZX Spectrum by Sinclair to highlight the machine's colour display, compared with the black and white display of its predecessor, the ZX81. The Spectrum was released as eight different models, ranging from the entry level with 16 KB RAM released in 1982 to the ZX Spectrum +3 with 128 KB RAM and built in floppy disk drive in 1987; together they sold over 5 million units worldwide (not counting clones).</text>
-			<text lang="pl">ZX Spectrum – jeden z wczesnych mikrokomputerów domowych wyprodukowanych przez angielską firmę Sinclair Research w roku 1982, następca ZX-81. Początkowo komputer miał nazywać się ZX-82. Za sprzętową stronę ZX Spectrum odpowiedzialny był Richard Altwasser, uprzednio pracujący również nad konstrukcją komputera ZX-81. Zawartość pamięci ROM zaprogramował Steve Vickers, pracownik Nine Tiles Information Handling Ltd., choć część kodu zapożyczono z komputera ZX-80 (tę część zaprogramował John Grant). Klawiaturę komputera opracował Rick Dickinson, pracownik Sinclaira.
+      <text lang="pl">ZX Spectrum – jeden z wczesnych mikrokomputerów domowych wyprodukowanych przez angielską firmę Sinclair Research w roku 1982, następca ZX-81. Początkowo komputer miał nazywać się ZX-82. Za sprzętową stronę ZX Spectrum odpowiedzialny był Richard Altwasser, uprzednio pracujący również nad konstrukcją komputera ZX-81. Zawartość pamięci ROM zaprogramował Steve Vickers, pracownik Nine Tiles Information Handling Ltd., choć część kodu zapożyczono z komputera ZX-80 (tę część zaprogramował John Grant). Klawiaturę komputera opracował Rick Dickinson, pracownik Sinclaira.
 
 Unikatową cechą ZX Spectrum był sposób wprowadzania programów na klawiaturze: słowa kluczowe BASIC-a były skojarzone z odpowiednimi przyciskami. Ponieważ słów było znacznie więcej niż przycisków na klawiaturze, niektóre można było uzyskać np. wciskając jednocześnie przyciski caps shift i symbol shift, a następnie symbol shift i którąś literę. Było to trudne dla początkujących, jednak po przyzwyczajeniu się pozwalało na szybkie wprowadzanie programu.
 
 Komputer w wersji podstawowej (16 kB RAM) sprzedawano w Wielkiej Brytanii w cenie 125 funtów (po pół roku cenę zmniejszono do 99,95 funtów, co sprawiło, że ZX Spectrum był pierwszym komputerem generującym obraz kolorowy w cenie nieprzekraczającej 100 funtów), wersja z 48 kB pamięci kosztowała 175 funtów (obniżona do 129,95). Znaczną część sprzedaży stanowił uboższy w RAM model; rozszerzenie pamięci kosztowało około 50 funtów. Pierwsze dni sprzedaży komputera przy kampanii reklamowej podkreślającej walory edukacyjne nowego produktu przyniosły zamówienia przekraczające możliwości produkcyjne; mimo miesięcznej produkcji wynoszącej 20 tysięcy komputerów nabywcy, którzy zamówienia złożyli najszybciej, czekali na dostawę od 12 do 16 tygodni.
 
 W Polsce jego klon – Timex Sinclair 2048 – sprzedawały sklepy Centralnej Składnicy Harcerskiej.</text>
-			<text lang="ru">8-разрядный домашний компьютер, созданный английской компанией «Sinclair Research Ltd» на основе микропроцессора Zilog Z80. В ходе разработки компьютер назывался «ZX81 Colour» и «ZX82», название «ZX Spectrum» должно было подчеркнуть одно из главных отличий от его предшественника ZX81 — цветное изображение. Почитатели этого компьютера часто называют его «Спекки» (англ. Speccy).
+      <text lang="pt">ZX Spectrum – um dos primeiros microcomputadores domésticos produzidos pela empresa inglesa Sinclair Research em 1982, sucessor do ZX-81. Inicialmente, o computador deveria se chamar ZX-82. Richard Altwasser, que também havia trabalhado na construção do computador ZX-81, ficou responsável pelo lado do hardware do ZX Spectrum. Steve Vickers, funcionário da Nine Tiles Information Handling Ltd., programou o conteúdo da memória ROM, embora parte do código tenha sido emprestada do computador ZX-80 (esta parte foi programada por John Grant). A equipe de design do Sinclair, liderada por Rick Dickinson, criou o teclado do computador.
+
+Uma característica única do ZX Spectrum era a forma como os programas eram inseridos no teclado: as palavras-chave BASIC eram associadas a botões específicos. Como havia muito mais palavras do que botões no teclado, algumas podiam ser obtidas, por exemplo, pressionando simultaneamente os botões caps shift e symbol shift, e em seguida symbol shift e uma letra específica. Isso era difícil para iniciantes, mas, depois de se acostumar, permitia a inserção rápida do programa.
+
+O computador na versão básica (16 kB RAM) foi vendido no Reino Unido por 125 libras (após seis meses, o preço foi reduzido para 99,95 libras, o que fez do ZX Spectrum o primeiro computador a gerar imagens coloridas com preço inferior a 100 libras), a versão com 48 kB de memória custava 175 libras (reduzida para 129,95). Uma parte considerável das vendas era do modelo mais modesto em RAM; a expansão de memória custava cerca de 50 libras. Os primeiros dias de vendas do computador, com uma campanha publicitária que destacava as virtudes educacionais do novo produto, geraram pedidos que ultrapassavam as capacidades de produção; apesar da produção mensal de 20 mil computadores, os compradores que fizeram os pedidos mais rapidamente esperaram de 12 a 16 semanas pela entrega.
+
+Na Polônia, seu clone – Timex Sinclair 2048 – era vendido nas lojas da Centralna Składnica Harcerska.</text>
+      <text lang="ru">8-разрядный домашний компьютер, созданный английской компанией «Sinclair Research Ltd» на основе микропроцессора Zilog Z80. В ходе разработки компьютер назывался «ZX81 Colour» и «ZX82», название «ZX Spectrum» должно было подчеркнуть одно из главных отличий от его предшественника ZX81 — цветное изображение. Почитатели этого компьютера часто называют его «Спекки» (англ. Speccy).
 
 В начале 1980-х «ZX Spectrum» был одним из самых популярных компьютеров в Европе, а его многочисленные клоны в начале 1990-х получили широкое распространение на территории бывшего СССР/СНГ. Благодаря невысокой цене, за первые 17 месяцев было продано более миллиона этих машин. Низкая стоимость компьютера была обусловлена рядом факторов: использованием технологии ULA, с помощью которой большая часть схемы размещалась в одном чипе; низкими техническими и пользовательскими характеристиками по сравнению с более дорогими компьютерами того времени; использованием бытового телевизора в качестве монитора и магнитофона в качестве внешнего накопителя.
 
 В 1980-х основным соперником ZX Spectrum на европейском рынке был «Commodore 64». Другими важными конкурентами были 8-битные «Atari», «BBC Micro», «Amstrad CPC» и в некоторых странах MSX.</text>
-			<text lang="es">El ZX Spectrum es un ordenador personal de 8 bits lanzado en el Reino Unido en 1982 por Sinclair Research.
+      <text lang="es">El ZX Spectrum es un ordenador personal de 8 bits lanzado en el Reino Unido en 1982 por Sinclair Research.
 
 Conocido durante su desarrollo como ZX81 Colour y ZX82, Sinclair lo lanzó como ZX Spectrum para destacar la pantalla en color de la máquina, en comparación con la pantalla en blanco y negro de su predecesor, el ZX81. El Spectrum se comercializó en ocho modelos diferentes, desde el básico con 16 KB de RAM lanzado en 1982 hasta el ZX Spectrum +3 con 128 KB de RAM y disquetera incorporada en 1987; juntos vendieron más de 5 millones de unidades en todo el mundo (sin contar los clones).</text>
-			<text lang="de">Der ZX Spectrum ist ein 8-Bit-Heimcomputer, der 1982 im Vereinigten Königreich von Sinclair Research auf den Markt gebracht wurde.
+      <text lang="de">Der ZX Spectrum ist ein 8-Bit-Heimcomputer, der 1982 im Vereinigten Königreich von Sinclair Research auf den Markt gebracht wurde.
 
 Während der Entwicklung als ZX81 Colour und ZX82 bezeichnet, wurde er von Sinclair als ZX Spectrum auf den Markt gebracht, um das Farbdisplay des Geräts im Vergleich zum Schwarz-Weiß-Display seines Vorgängers, des ZX81, hervorzuheben. Der Spectrum wurde in acht verschiedenen Modellen auf den Markt gebracht, vom Einstiegsmodell mit 16 KB RAM, das 1982 auf den Markt kam, bis zum ZX Spectrum +3 mit 128 KB RAM und eingebautem Diskettenlaufwerk im Jahr 1987; insgesamt wurden weltweit über 5 Millionen Exemplare verkauft (Klone nicht mitgerechnet).</text>
-			<text lang="fr">Le ZX Spectrum est un ordinateur personnel 8 bits commercialisé au Royaume-Uni en 1982 par Sinclair Research.
+      <text lang="fr">Le ZX Spectrum est un ordinateur personnel 8 bits commercialisé au Royaume-Uni en 1982 par Sinclair Research.
 
 Appelé ZX81 Colour et ZX82 au cours de son développement, il a été lancé sous le nom de ZX Spectrum par Sinclair pour mettre en valeur l'écran couleur de la machine, comparé à l'écran noir et blanc de son prédécesseur, le ZX81. Le Spectrum a été commercialisé sous la forme de huit modèles différents, allant du modèle d'entrée de gamme avec 16 Ko de RAM sorti en 1982 au ZX Spectrum +3 avec 128 Ko de RAM et un lecteur de disquettes intégré en 1987 ; ensemble, ils se sont vendus à plus de 5 millions d'exemplaires dans le monde (sans compter les clones).</text>
-			<text lang="it">Lo ZX Spectrum è un personal computer a 8 bit rilasciato nel Regno Unito nel 1982 da Sinclair Research.
+      <text lang="it">Lo ZX Spectrum è un personal computer a 8 bit rilasciato nel Regno Unito nel 1982 da Sinclair Research.
 
 Denominato durante lo sviluppo ZX81 Colour e ZX82, fu lanciato sul mercato come ZX Spectrum da Sinclair per evidenziare il display a colori della macchina, rispetto a quello in bianco e nero del suo predecessore, lo ZX81. Lo Spectrum è stato commercializzato in otto modelli diversi, dall'entry level con 16 KB di RAM del 1982 allo ZX Spectrum +3 con 128 KB di RAM e unità floppy disk integrata del 1987; insieme hanno venduto oltre 5 milioni di unità in tutto il mondo (senza contare i cloni).</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

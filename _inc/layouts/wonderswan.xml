@@ -1,56 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.52 0.5</origin>
-			<pos>0.525 0.488</pos>
-			<maxSize>0.272</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.35</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.29</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.245 0.488" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.52 0.5</origin>
-			<pos>0.525 0.488</pos>
-			<maxSize>0.262</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.29</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.245 0.488" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1999</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Bandai</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>WonderSwan</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The WonderSwan is a handheld game console released in Japan by Bandai. It was developed by Gunpei Yokoi's company Koto Laboratory and Bandai, and was the last piece of hardware Yokoi developed before his death in 1997.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.52 0.5</origin>
+      <pos>0.525 0.488</pos>
+      <maxSize>0.272</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.35</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.29</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.245 0.488" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.52 0.5</origin>
+      <pos>0.525 0.488</pos>
+      <maxSize>0.262</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.29</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.245 0.488" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1999</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Bandai</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>WonderSwan</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The WonderSwan is a handheld game console released in Japan by Bandai. It was developed by Gunpei Yokoi's company Koto Laboratory and Bandai, and was the last piece of hardware Yokoi developed before his death in 1997.
 
 Released in 1999 in the fifth generation of video game consoles, the WonderSwan and its two later models, the WonderSwan Color and SwanCrystal were officially supported until being discontinued by Bandai in 2003. During its lifespan, no variation of the WonderSwan was released outside of Japan.</text>
-			<text lang="pl">WonderSwan – przenośna konsola stworzona przez Bandai. Wydana została 4 marca 1999 roku w Japonii.
+      <text lang="pl">WonderSwan – przenośna konsola stworzona przez Bandai. Wydana została 4 marca 1999 roku w Japonii.
 
 System stworzyli: firma Gunpei Yokoia (współtworca Game Boya) Koto oraz Bandai. W założeniach WonderSwan miał konkurować z konsolkami Neo Geo Pocket Color oraz liderem rynku Nintendo Game Boy Color (mimo że Gunpei Yokoi był współtworcą Game Boya).
 
@@ -58,21 +58,28 @@ Wonderswana zastąpiono później Wonderswanem Color. Niektóre gry WonderSwan C
 
 Podczas, gdy Game Boye miały problemy z walką z pirackimi kopiami gier, na Wonderswanie nie stwierdzono ani jednego przypadku piractwa. Prawdopodobnie było to spowodowane niewielką popularnością konsoli.
 </text>
-			<text lang="ru">Портативная игровая консоль компании Bandai, выпущенная в 1999 году в Японии. Её разработкой занималась сама компания Bandai, при содействии компании Koto Гумпэя Ёкои. WonderSwan должна была стать соперником таких портативных консолей как Neo Geo Pocket Color и Game Boy Color (и это несмотря на то, что разработчик WonderSwan, Гумпэй Ёкои, также разработал для Nintendo оригинальный Game Boy).
+      <text lang="pt">WonderSwan – console portátil criada pela Bandai. Foi lançada em 4 de março de 1999 no Japão.
+
+O sistema foi desenvolvido por: a empresa Gunpei Yokoi (co-criador do Game Boy) Koto e Bandai. Na concepção, o WonderSwan pretendia competir com os consoles Neo Geo Pocket Color e o líder de mercado Nintendo Game Boy Color (apesar de Gunpei Yokoi ter sido co-criador do Game Boy).
+
+O Wonderswan foi posteriormente substituído pelo Wonderswan Color. Alguns jogos do Wonderswan Color eram compatíveis com a versão anterior do console, embora a maioria tenha sido lançada especificamente para a nova plataforma. O Wonderswan estava disponível em dez versões de cores diferentes, era possível jogar nele segurando o dispositivo na horizontal ou na vertical e possuía uma biblioteca razoável de títulos, dos quais uma parte considerável foi lançada apenas no Japão.
+
+Enquanto os Game Boys tinham problemas para combater cópias piratas de jogos, não foi registrado nenhum caso de pirataria no Wonderswan. Provavelmente isso se deveu à pequena popularidade do console.</text>
+      <text lang="ru">Портативная игровая консоль компании Bandai, выпущенная в 1999 году в Японии. Её разработкой занималась сама компания Bandai, при содействии компании Koto Гумпэя Ёкои. WonderSwan должна была стать соперником таких портативных консолей как Neo Geo Pocket Color и Game Boy Color (и это несмотря на то, что разработчик WonderSwan, Гумпэй Ёкои, также разработал для Nintendo оригинальный Game Boy).
 
 Консоль WonderSwan была позднее заменена на WonderSwan Color. И хотя некоторые игры для WonderSwan Color были совместимы с WonderSwan, многие были разработаны специально для неё и выдавали сообщение об ошибке, когда их пытались использовать вместе с WonderSwan. Для WonderSwan было выпущено достаточно большое количество игр, в которые можно было играть с вертикальным или горизонтальным экраном. Однако, поскольку консоль была нацелена в первую очередь на японский рынок, то только небольшое количество игр имеет английский текст.</text>
-			<text lang="es">WonderSwan es una videoconsola portátil lanzada en Japón por Bandai. Fue desarrollada por Koto Laboratory, la empresa de Gunpei Yokoi, y Bandai, y fue la última pieza de hardware desarrollada por Yokoi antes de su muerte en 1997.
+      <text lang="es">WonderSwan es una videoconsola portátil lanzada en Japón por Bandai. Fue desarrollada por Koto Laboratory, la empresa de Gunpei Yokoi, y Bandai, y fue la última pieza de hardware desarrollada por Yokoi antes de su muerte en 1997.
 
 Lanzada en 1999 en la quinta generación de consolas de videojuegos, la WonderSwan y sus dos modelos posteriores, la WonderSwan Color y la SwanCrystal, fueron compatibles oficialmente hasta que Bandai las dejó de fabricar en 2003. Durante su vida útil, no se lanzó ninguna variante de la WonderSwan fuera de Japón.</text>
-			<text lang="de">Der WonderSwan ist eine Handheld-Spielkonsole, die in Japan von Bandai veröffentlicht wurde. Er wurde von Gunpei Yokois Firma Koto Laboratory und Bandai entwickelt und war die letzte Hardware, die Yokoi vor seinem Tod im Jahr 1997 entwickelte.
+      <text lang="de">Der WonderSwan ist eine Handheld-Spielkonsole, die in Japan von Bandai veröffentlicht wurde. Er wurde von Gunpei Yokois Firma Koto Laboratory und Bandai entwickelt und war die letzte Hardware, die Yokoi vor seinem Tod im Jahr 1997 entwickelte.
 
 Der WonderSwan und seine beiden späteren Modelle, der WonderSwan Color und der SwanCrystal, wurden 1999 in der fünften Generation von Videospielkonsolen veröffentlicht und bis zu ihrer Einstellung durch Bandai im Jahr 2003 offiziell unterstützt. Während seiner Lebensdauer wurde keine Variante des WonderSwan außerhalb von Japan veröffentlicht.</text>
-			<text lang="fr">Le WonderSwan est une console de jeu portable commercialisée au Japon par Bandai. Elle a été développée par la société Koto Laboratory de Gunpei Yokoi et Bandai, et a été le dernier matériel développé par Yokoi avant sa mort en 1997.
+      <text lang="fr">Le WonderSwan est une console de jeu portable commercialisée au Japon par Bandai. Elle a été développée par la société Koto Laboratory de Gunpei Yokoi et Bandai, et a été le dernier matériel développé par Yokoi avant sa mort en 1997.
 
 Sorti en 1999 dans la cinquième génération de consoles de jeux vidéo, le WonderSwan et ses deux modèles ultérieurs, le WonderSwan Color et le SwanCrystal, ont été officiellement pris en charge jusqu'à ce qu'ils soient abandonnés par Bandai en 2003. Pendant toute sa durée de vie, aucune variante du WonderSwan n'a été commercialisée en dehors du Japon.</text>
-			<text lang="it">Il WonderSwan è una console portatile rilasciata in Giappone da Bandai. È stata sviluppata dalla società di Gunpei Yokoi, Koto Laboratory, e da Bandai, ed è stata l'ultima console sviluppata da Yokoi prima della sua morte nel 1997.
+      <text lang="it">Il WonderSwan è una console portatile rilasciata in Giappone da Bandai. È stata sviluppata dalla società di Gunpei Yokoi, Koto Laboratory, e da Bandai, ed è stata l'ultima console sviluppata da Yokoi prima della sua morte nel 1997.
 
 Uscito nel 1999 nella quinta generazione di console per videogiochi, il WonderSwan e i suoi due modelli successivi, il WonderSwan Color e lo SwanCrystal, sono stati ufficialmente supportati fino alla loro dismissione da parte di Bandai nel 2003. Durante la sua vita, nessuna variante del WonderSwan è stata rilasciata al di fuori del Giappone.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

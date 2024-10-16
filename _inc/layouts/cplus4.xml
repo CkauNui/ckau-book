@@ -1,61 +1,66 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.24</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<pos>0.5 0.356</pos>
-			<maxSize>0.24</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.356" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.24</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<pos>0.5 0.356</pos>
-			<maxSize>0.23</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.356" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1984</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Commodore</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Plus/4</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Commodore Plus/4 is a home computer released by Commodore International in 1984. The "Plus/4" name refers to the four-application ROM resident office suite (word processor, spreadsheet, database, and graphing); it was billed as "the productivity computer with software built-in."
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.24</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <pos>0.5 0.356</pos>
+      <maxSize>0.24</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.356" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.24</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <pos>0.5 0.356</pos>
+      <maxSize>0.23</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.356" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1984</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Commodore</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Plus/4</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Commodore Plus/4 is a home computer released by Commodore International in 1984. The "Plus/4" name refers to the four-application ROM resident office suite (word processor, spreadsheet, database, and graphing); it was billed as "the productivity computer with software built-in."
 
 Internally, the Plus/4 shared the same basic architecture as the lower-end Commodore 16 and 116 models, and was able to use software and peripherals designed for them. The Plus/4 was incompatible with the Commodore 64's software and some of its hardware. Although the Commodore 64 was more established, the Plus/4 was aimed at the more business oriented part of the personal computer market.
 
 While the Plus/4 had some success in Europe, it was a failure in the United States, where it was derided as the "Minus/60".</text>
-			<text lang="pl">Commodore Plus/4 – komputer domowy wyprodukowany przez amerykańską firmę Commodore w 1984 roku, kompatybilny z komputerami Commodore 16 i Commodore 116. Został zaprezentowany podczas targów CES w styczniu 1984, jako Commodore 264. Firma Commodore planowała wyposażanie komputera w różne odmiany pamięci ROM, zależnie od oczekiwań użytkowników, z możliwością wyboru modułu pamięci stałej w momencie zakupu komputera. Plan został jednak zatrzymany w pół roku po premierze urządzenia. Podobnie zaniechano przedstawienia modelu 364, który miał być wyposażony w syntezator mowy oraz odrębną klawiaturę numeryczną.
+      <text lang="pl">Commodore Plus/4 – komputer domowy wyprodukowany przez amerykańską firmę Commodore w 1984 roku, kompatybilny z komputerami Commodore 16 i Commodore 116. Został zaprezentowany podczas targów CES w styczniu 1984, jako Commodore 264. Firma Commodore planowała wyposażanie komputera w różne odmiany pamięci ROM, zależnie od oczekiwań użytkowników, z możliwością wyboru modułu pamięci stałej w momencie zakupu komputera. Plan został jednak zatrzymany w pół roku po premierze urządzenia. Podobnie zaniechano przedstawienia modelu 364, który miał być wyposażony w syntezator mowy oraz odrębną klawiaturę numeryczną.
 
 Nazwa Plus/4 oznacza cztery aplikacje autorstwa International Tri Micro, umieszczone w pamięci ROM: (procesor tekstu, arkusz kalkulacyjny, baza danych i program graficzny; możliwe było tworzenie dokumentów zawierających elementy pochodzące z więcej niż jednej zainstalowanej aplikacji) - komputer miał być urządzeniem przeznaczonym do biznesu. W odróżnieniu od Commodore 16 i Commodore 116, Plus/4 posiadał 64 KB RAM-u. Miał także możliwość podłączenia dedykowanej dla niego stacji dyskietek Commodore 1551. Podłączana ona była przez port równoległy i działała od trzech do pięciu razy szybciej niż stosowana z innymi komputerami Commodore stacja Commodore 1541. Komputer ten wyposażony był w 2-kanałowy generator dźwięku oraz układ wyświetlania obrazu zintegrowany w jednej kości MOS 8360R2 „TED”. Jakość dźwięku zdecydowanie ustępowała C64, natomiast paleta kolorów została rozszerzona do 128 kolorów (C64 dysponował paletą 16 barw). Dokładnie było to 16 kolorów oraz 8 poziomów luminancji dla każdego z nich. Ponieważ jednak czarny kolor nie zmieniał swojej jasności, możliwe było uzyskanie tylko 121 kolorów (15 kolorów × 8 poziomów luminancji + czarny).
 
 Komputer wyposażony był w znacznie bardziej rozbudowaną wersję języka BASIC 3.5. Dzięki niemu oraz zmianie adresowania pamięci, użytkownik w BASIC-u miał do dyspozycji 59 KB pamięci RAM. Było to dużym skokiem w porównaniu do 38 KB RAM-u, dostępnej w C64. Podstawowymi wadami komputera Plus/4 była niekompatybilność z C64 (m.in. układ graficzny TED nie obsługiwał sprite'ów) oraz małe możliwości dźwiękowe. Dodatkowo model ten nie posiadał standardowego portu dżojstika oraz portu magnetofonowego (możliwe było podłączenie je przez specjalne adaptery). Sprawiło to, że rynek nie przyjął dobrze odmiany tych komputerów, w następstwie czego powstał model C128, w którym zastosowano architekturę dwuprocesorową, by zachować pełną zgodność z modelem C64.</text>
-			<text lang="ru">Домашний компьютер, выпущенный компанией Commodore в 1984 году. Под «Plus/4» подразумевался набор из четырёх встроенных приложений — текстовый процессор, электронная таблица, база данных и графическая программа. Компьютер был довольно успешен в Европе, но в США продажи полностью провалились — покупатели отдавали предпочтение Commodore 64.
+      <text lang="pt">Commodore Plus/4 – um computador doméstico produzido pela empresa americana Commodore em 1984, compatível com os computadores Commodore 16 e Commodore 116. Foi apresentado durante a CES em janeiro de 1984, como Commodore 264. A empresa Commodore planejava equipar o computador com diferentes variações de memória ROM, dependendo das expectativas dos usuários, com a possibilidade de escolher o módulo de memória permanente no momento da compra do computador. No entanto, o plano foi interrompido seis meses após o lançamento do dispositivo. Da mesma forma, a apresentação do modelo 364, que teria um sintetizador de voz e um teclado numérico separado, foi abandonada.
+
+O nome Plus/4 significa quatro aplicativos criados pela International Tri Micro, armazenados na memória ROM: (processador de texto, planilha eletrônica, banco de dados e programa gráfico; era possível criar documentos contendo elementos de mais de um aplicativo instalado) - o computador deveria ser um dispositivo para negócios. Ao contrário do Commodore 16 e do Commodore 116, o Plus/4 tinha 64 KB de RAM. Também tinha a capacidade de conectar um drive de disquete dedicado a ele, o Commodore 1551. Ele era conectado através de uma porta paralela e funcionava de três a cinco vezes mais rápido que o drive Commodore 1541 usado com outros computadores Commodore. Este computador era equipado com um gerador de som de 2 canais e um circuito de exibição de imagem integrado em um único chip MOS 8360R2 "TED". A qualidade do som era muito inferior ao C64, mas a paleta de cores foi expandida para 128 cores (o C64 tinha uma paleta de 16 cores). Exatamente 16 cores e 8 níveis de luminância para cada uma delas. No entanto, como a cor preta não mudava seu brilho, era possível obter apenas 121 cores (15 cores × 8 níveis de luminância + preto).
+
+O computador era equipado com uma versão muito mais completa da linguagem BASIC 3.5. Graças a ele e à mudança de endereçamento de memória, o usuário tinha à disposição 59 KB de RAM no BASIC. Este foi um grande salto em comparação com os 38 KB de RAM disponíveis no C64. As principais desvantagens do computador Plus/4 eram a incompatibilidade com o C64 (entre outras coisas, o chip gráfico TED não suportava sprites) e as limitadas capacidades de som. Além disso, este modelo não tinha uma porta de joystick padrão e uma porta de gravador (era possível conectá-los através de adaptadores especiais). Isso fez com que o mercado não aceitasse bem essas variações de computadores, levando ao desenvolvimento do modelo C128, que usava uma arquitetura de dois processadores para manter a compatibilidade total com o modelo C64.</text>
+      <text lang="ru">Домашний компьютер, выпущенный компанией Commodore в 1984 году. Под «Plus/4» подразумевался набор из четырёх встроенных приложений — текстовый процессор, электронная таблица, база данных и графическая программа. Компьютер был довольно успешен в Европе, но в США продажи полностью провалились — покупатели отдавали предпочтение Commodore 64.
 
 Технические характеристики
 - Процессор: MOS Technology 7501 на частоте 1,77 МГц (PAL) / 1,79 МГц (NTSC)
@@ -73,26 +78,26 @@ Komputer wyposażony był w znacznie bardziej rozbudowaną wersję języka BASIC
    Пользовательский порт (для модема или нестандартных устройств)
    Композитный видеовыход, со звуковым моно-сигналом
    Выход на телевизор</text>
-			<text lang="es">El Commodore Plus/4 es un ordenador doméstico lanzado por Commodore International en 1984. El nombre "Plus/4" hace referencia a la suite ofimática residente en ROM con cuatro aplicaciones (procesador de textos, hoja de cálculo, base de datos y gráficos); se anunciaba como "el ordenador de productividad con software incorporado".
+      <text lang="es">El Commodore Plus/4 es un ordenador doméstico lanzado por Commodore International en 1984. El nombre "Plus/4" hace referencia a la suite ofimática residente en ROM con cuatro aplicaciones (procesador de textos, hoja de cálculo, base de datos y gráficos); se anunciaba como "el ordenador de productividad con software incorporado".
 
 Internamente, el Plus/4 compartía la misma arquitectura básica que los modelos Commodore 16 y 116 de gama baja, y podía utilizar software y periféricos diseñados para ellos. El Plus/4 era incompatible con el software del Commodore 64 y con parte de su hardware. Aunque el Commodore 64 estaba más consolidado, el Plus/4 se dirigía a la parte más empresarial del mercado de los ordenadores personales.
 
 Aunque el Plus/4 tuvo cierto éxito en Europa, fue un fracaso en Estados Unidos, donde fue ridiculizado como el "Minus/60".</text>
-			<text lang="de">Der Commodore Plus/4 ist ein Heimcomputer, der 1984 von Commodore International auf den Markt gebracht wurde. Der Name "Plus/4" bezieht sich auf das im ROM enthaltene Office-Paket mit vier Anwendungen (Textverarbeitung, Tabellenkalkulation, Datenbank und Grafik); er wurde als "der Produktivitätscomputer mit eingebauter Software" angepriesen.
+      <text lang="de">Der Commodore Plus/4 ist ein Heimcomputer, der 1984 von Commodore International auf den Markt gebracht wurde. Der Name "Plus/4" bezieht sich auf das im ROM enthaltene Office-Paket mit vier Anwendungen (Textverarbeitung, Tabellenkalkulation, Datenbank und Grafik); er wurde als "der Produktivitätscomputer mit eingebauter Software" angepriesen.
 
 Intern verfügte der Plus/4 über dieselbe Grundarchitektur wie die günstigeren Commodore 16- und 116-Modelle und war in der Lage, Software und Peripheriegeräte zu verwenden, die für diese Modelle entwickelt worden waren. Der Plus/4 war mit der Software und einem Teil der Hardware des Commodore 64 nicht kompatibel. Obwohl der Commodore 64 etablierter war, richtete sich der Plus/4 an den eher geschäftlich orientierten Teil des Personal Computer Marktes.
 
 Während der Plus/4 in Europa einen gewissen Erfolg hatte, war er in den Vereinigten Staaten ein Misserfolg, wo er als "Minus/60" verspottet wurde.</text>
-			<text lang="fr">Le Commodore Plus/4 est un ordinateur domestique commercialisé par Commodore International en 1984. Le nom "Plus/4" fait référence à la suite bureautique résidente en ROM à quatre applications (traitement de texte, tableur, base de données et graphique) ; il a été présenté comme "l'ordinateur de productivité avec logiciel intégré".
+      <text lang="fr">Le Commodore Plus/4 est un ordinateur domestique commercialisé par Commodore International en 1984. Le nom "Plus/4" fait référence à la suite bureautique résidente en ROM à quatre applications (traitement de texte, tableur, base de données et graphique) ; il a été présenté comme "l'ordinateur de productivité avec logiciel intégré".
 
 En interne, le Plus/4 partageait la même architecture de base que les modèles bas de gamme Commodore 16 et 116, et pouvait utiliser les logiciels et périphériques conçus pour eux. Le Plus/4 était incompatible avec les logiciels et certains matériels du Commodore 64. Bien que le Commodore 64 ait été mieux établi, le Plus/4 était destiné à la partie du marché des ordinateurs personnels plus orientée vers les entreprises.
 
 Si le Plus/4 a connu un certain succès en Europe, il a été un échec aux États-Unis, où il a été tourné en dérision sous le nom de "Minus/60".</text>
-			<text lang="it">Il Commodore Plus/4 è un home computer rilasciato da Commodore International nel 1984. Il nome "Plus/4" si riferisce alla suite da ufficio residente in una ROM con quattro applicazioni (elaboratore di testi, foglio di calcolo, database e grafici); fu pubblicizzato come "il computer per la produttività con software integrato".
+      <text lang="it">Il Commodore Plus/4 è un home computer rilasciato da Commodore International nel 1984. Il nome "Plus/4" si riferisce alla suite da ufficio residente in una ROM con quattro applicazioni (elaboratore di testi, foglio di calcolo, database e grafici); fu pubblicizzato come "il computer per la produttività con software integrato".
 
 Internamente, il Plus/4 condivideva la stessa architettura di base dei modelli Commodore 16 e 116 di fascia bassa ed era in grado di utilizzare software e periferiche progettati per questi ultimi. Il Plus/4 era incompatibile con il software del Commodore 64 e con parte del suo hardware. Sebbene il Commodore 64 fosse più affermato, il Plus/4 si rivolgeva alla parte del mercato dei personal computer più orientata al business.
 
 Mentre il Plus/4 ebbe un certo successo in Europa, fu un fallimento negli Stati Uniti, dove fu deriso come "Minus/60".</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

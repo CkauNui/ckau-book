@@ -1,84 +1,85 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.356</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4539</origin>
-			<pos>0.5 0.377</pos>
-			<maxSize>0.30</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.39</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.325</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.377" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.356</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4539</origin>
-			<pos>0.5 0.377</pos>
-			<maxSize>0.284</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.38</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.315</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.377" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2009</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Sony</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>PlayStation Minis</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>PlayStation Minis, also known simply as minis, is a line of small, casual games available to download from the PlayStation Store.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.356</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4539</origin>
+      <pos>0.5 0.377</pos>
+      <maxSize>0.30</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.39</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.325</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.377" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.356</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4539</origin>
+      <pos>0.5 0.377</pos>
+      <maxSize>0.284</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.38</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.315</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.377" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2009</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Sony</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>PlayStation Minis</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>PlayStation Minis, also known simply as minis, is a line of small, casual games available to download from the PlayStation Store.
 The series was launched on October 1, 2009 for the PlayStation Portable, specifically for the launch of the digital-only model PSP go.
 Compatibility with the PlayStation 3 was added on December 17, 2009 with firmware update 3.15 and the PlayStation Vita at the handheld's launch.
 
 By July 14, 2010, over 1 million minis had been downloaded worldwide.</text>
-			<text lang="pl">PlayStation minis (PS minis) dla PlayStation Portable, czyli gry dostępne do pobrania z PlayStation Store. Wiele z nich jest również kompatybilnych z konsolami PlayStation 3 (PS3), PlayStation Vita (PSVita) i PlayStation TV (PSTV).</text>
-			<text lang="ru">Minis для PSP. Речь идёт о программе, в рамках которой выпускались небольшие игры для данной платформы. Портативная игровая консоль производства Sony Computer Entertainment. PlayStation Portable — четвертый продукт компании Sony в линейке PlayStation. Анонс PSP состоялся на выставке E3 2003, а первая консоль была продемонстрирована публике 11 мая 2004 года на пресс-конференции, проводимой Sony в рамках E3 2004. Первые продажи консоли были начаты в Японии 12 декабря 2004 года, в Северной Америке 24 марта 2005 года, и в PAL-регионах 1 сентября 2005 года.
+      <text lang="pl">PlayStation minis (PS minis) dla PlayStation Portable, czyli gry dostępne do pobrania z PlayStation Store. Wiele z nich jest również kompatybilnych z konsolami PlayStation 3 (PS3), PlayStation Vita (PSVita) i PlayStation TV (PSTV).</text>
+      <text lang="pt">PlayStation minis (PS minis) para PlayStation Portable, ou seja, jogos disponíveis para download na PlayStation Store. Muitos deles também são compatíveis com os consoles PlayStation 3 (PS3), PlayStation Vita (PSVita) e PlayStation TV (PSTV).</text>
+      <text lang="ru">Minis для PSP. Речь идёт о программе, в рамках которой выпускались небольшие игры для данной платформы. Портативная игровая консоль производства Sony Computer Entertainment. PlayStation Portable — четвертый продукт компании Sony в линейке PlayStation. Анонс PSP состоялся на выставке E3 2003, а первая консоль была продемонстрирована публике 11 мая 2004 года на пресс-конференции, проводимой Sony в рамках E3 2004. Первые продажи консоли были начаты в Японии 12 декабря 2004 года, в Северной Америке 24 марта 2005 года, и в PAL-регионах 1 сентября 2005 года.
 
 PlayStation Portable стала первой портативной игровой консолью, которая использовала оптический накопитель Universal Media Disc (UMD) в качестве основного носителя.
 
 27 января 2011 года Sony анонсировала следующую портативную консоль — PlayStation Vita, известную ранее как Next Generation Portable (NGP).</text>
-			<text lang="es">PlayStation Minis, también conocido simplemente como minis, es una línea de pequeños juegos casuales disponibles para descargar desde PlayStation Store.
+      <text lang="es">PlayStation Minis, también conocido simplemente como minis, es una línea de pequeños juegos casuales disponibles para descargar desde PlayStation Store.
 La serie se lanzó el 1 de octubre de 2009 para la PlayStation Portable, concretamente con motivo del lanzamiento del modelo PSP go, sólo digital.
 La compatibilidad con PlayStation 3 se añadió el 17 de diciembre de 2009 con la actualización de firmware 3.15 y con PlayStation Vita en el lanzamiento de la consola portátil.
 
 El 14 de julio de 2010 ya se habían descargado más de un millón de minijuegos en todo el mundo.</text>
-			<text lang="de">PlayStation Minis, auch einfach als Minis bekannt, ist eine Reihe von kleinen Gelegenheitsspielen, die im PlayStation Store zum Download angeboten werden.
+      <text lang="de">PlayStation Minis, auch einfach als Minis bekannt, ist eine Reihe von kleinen Gelegenheitsspielen, die im PlayStation Store zum Download angeboten werden.
 Die Serie wurde am 1. Oktober 2009 für die PlayStation Portable eingeführt, speziell für die Einführung des digitalen Modells PSP go.
 Die Kompatibilität mit der PlayStation 3 wurde am 17. Dezember 2009 mit dem Firmware-Update 3.15 und der PlayStation Vita bei der Einführung des Handhelds hinzugefügt.
 
 Bis zum 14. Juli 2010 wurden weltweit über 1 Million Minis heruntergeladen.</text>
-			<text lang="fr">PlayStation Minis, également connu sous le nom de minis, est une gamme de petits jeux occasionnels disponibles en téléchargement sur le PlayStation Store.
+      <text lang="fr">PlayStation Minis, également connu sous le nom de minis, est une gamme de petits jeux occasionnels disponibles en téléchargement sur le PlayStation Store.
 La série a été lancée le 1er octobre 2009 pour la PlayStation Portable, spécifiquement pour le lancement du modèle numérique PSP go.
 La compatibilité avec la PlayStation 3 a été ajoutée le 17 décembre 2009 avec la mise à jour 3.15 du micrologiciel et avec la PlayStation Vita lors du lancement de l'ordinateur de poche.
 
 Le 14 juillet 2010, plus d'un million de figurines avaient été téléchargées dans le monde entier.</text>
-			<text lang="it">PlayStation Minis, nota anche semplicemente come minis, è una linea di piccoli giochi casual scaricabili dal PlayStation Store.
+      <text lang="it">PlayStation Minis, nota anche semplicemente come minis, è una linea di piccoli giochi casual scaricabili dal PlayStation Store.
 La serie è stata lanciata il 1° ottobre 2009 per PlayStation Portable, in particolare per il lancio del modello PSP go, solo digitale.
 La compatibilità con la PlayStation 3 è stata aggiunta il 17 dicembre 2009 con l'aggiornamento firmware 3.15 e con la PlayStation Vita al lancio della console portatile.
 
 Al 14 luglio 2010 erano stati scaricati oltre 1 milione di minis in tutto il mondo.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

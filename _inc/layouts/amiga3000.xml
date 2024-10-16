@@ -1,85 +1,90 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
-			<pos>0.499 0.354</pos>
-			<maxSize>0.245</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.219 0.354" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
-			<pos>0.499 0.354</pos>
-			<maxSize>0.22</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.219 0.354" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1990</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Commodore</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Amiga 3000</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Amiga 3000, or A3000, is a personal computer released by Commodore in June 1990. It is the successor to the Amiga 2000 and its upgraded model Amiga 2500 with more processing speed, improved graphics, and a new revision of the operating system.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+      <pos>0.499 0.354</pos>
+      <maxSize>0.245</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.219 0.354" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+      <pos>0.499 0.354</pos>
+      <maxSize>0.22</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.219 0.354" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1990</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Commodore</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Amiga 3000</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Amiga 3000, or A3000, is a personal computer released by Commodore in June 1990. It is the successor to the Amiga 2000 and its upgraded model Amiga 2500 with more processing speed, improved graphics, and a new revision of the operating system.
 
 Its predecessors, the Amiga 500, 1000 and 2000, share the same fundamental system architecture and consequently perform without much variation in processing speed despite considerable variation in purchase price. The A3000 however, was entirely reworked and rethought as a high-end workstation. The new Motorola 32-bit 68030 CPU, 68882 math co-processor, and 32-bit system memory increase the integer processing speed by a factor of 5 to 18, and the floating-point processing speed by a factor of 7 to 200 times. The new 32-bit Zorro III expansion slots provide for faster and more powerful expansion capabilities.
 
 In common with earlier Amigas the 3000 runs a 32-bit operating system called AmigaOS. Version 2.0 is generally considered to have a more ergonomic and attractive interface than previous versions, which were designed with television sets as a lowest common denominator display. Access for application developers was simplified.</text>
-			<text lang="pl">Amiga 3000 lub A3000 to komputer osobisty wydany przez firmę Commodore w czerwcu 1990 roku. Jest następcą Amigi 2000 i jej ulepszonego modelu Amiga 2500 z większą szybkością przetwarzania, ulepszoną grafiką i nową wersją systemu operacyjnego.
+      <text lang="pl">Amiga 3000 lub A3000 to komputer osobisty wydany przez firmę Commodore w czerwcu 1990 roku. Jest następcą Amigi 2000 i jej ulepszonego modelu Amiga 2500 z większą szybkością przetwarzania, ulepszoną grafiką i nową wersją systemu operacyjnego.
 
 Jej poprzedniczki, Amiga 500, 1000 i 2000, miały tę samą podstawową architekturę systemu i w konsekwencji działały bez większych różnic w szybkości przetwarzania, pomimo znacznych różnic w cenie zakupu. A3000 została jednak całkowicie przerobiona i przemyślana jako wysokiej klasy stacja robocza. Nowy 32-bitowy procesor Motorola 68030, koprocesor matematyczny 68882 i 32-bitowa pamięć systemowa zwiększają szybkość przetwarzania liczb całkowitych od 5 do 18 razy, a szybkość przetwarzania zmiennoprzecinkowego od 7 do 200 razy. Nowe 32-bitowe gniazda rozszerzeń Zorro III zapewniają szybsze i potężniejsze możliwości rozbudowy.
 
 Podobnie jak w przypadku wcześniejszych Amig, 3000 uruchamia 32-bitowy system operacyjny o nazwie AmigaOS. Wersja 2.0 jest ogólnie uważana za posiadającą bardziej ergonomiczny i atrakcyjny interfejs niż poprzednie wersje, które zostały zaprojektowane z myślą o telewizorach jako wyświetlaczu o najniższym wspólnym mianowniku. Dostęp dla twórców aplikacji został uproszczony.</text>
-			<text lang="ru">Amiga 3000, или A3000, - персональный компьютер, выпущенный компанией Commodore в июне 1990 года. Он является преемником Amiga 2000 и его модернизированной модели Amiga 2500, обладающей большей скоростью обработки данных, улучшенной графикой и новой версией операционной системы.
+      <text lang="pt">Amiga 3000 ou A3000 é um computador pessoal lançado pela Commodore em junho de 1990. É o sucessor da Amiga 2000 e de seu modelo aprimorado, Amiga 2500, com maior velocidade de processamento, gráficos aprimorados e uma nova versão do sistema operacional.
+
+Suas predecessoras, Amiga 500, 1000 e 2000, tinham a mesma arquitetura básica do sistema e, consequentemente, operavam sem grandes diferenças em termos de velocidade de processamento, apesar de diferenças significativas no preço de compra. A A3000, no entanto, foi completamente reformulada e pensada como uma estação de trabalho de alto nível. O novo processador de 32 bits Motorola 68030, o coprocessador matemático 68882 e a memória do sistema de 32 bits aumentam a velocidade de processamento de números inteiros de 5 a 18 vezes, e a velocidade de processamento de ponto flutuante de 7 a 200 vezes. Os novos slots de expansão Zorro III de 32 bits oferecem capacidades de expansão mais rápidas e poderosas.
+
+Assim como as Amigas anteriores, a 3000 executa o sistema operacional de 32 bits chamado AmigaOS. A versão 2.0 é geralmente considerada como tendo uma interface mais ergonômica e atraente do que as versões anteriores, que foram projetadas pensando em televisores como o display de menor denominador comum. O acesso para desenvolvedores de aplicativos foi simplificado.</text>
+      <text lang="ru">Amiga 3000, или A3000, - персональный компьютер, выпущенный компанией Commodore в июне 1990 года. Он является преемником Amiga 2000 и его модернизированной модели Amiga 2500, обладающей большей скоростью обработки данных, улучшенной графикой и новой версией операционной системы.
 
 Его предшественники, Amiga 500, 1000 и 2000, имеют одинаковую фундаментальную архитектуру системы и, соответственно, не сильно отличаются по скорости обработки данных, несмотря на значительные различия в цене. Однако модель A3000 была полностью переработана и переосмыслена как рабочая станция высокого класса. Новый 32-разрядный процессор Motorola 68030, математический сопроцессор 68882 и 32-разрядная системная память увеличивают скорость обработки целых чисел в 5-18 раз, а скорость обработки плавающей точки - в 7-200 раз. Новые 32-разрядные слоты расширения Zorro III обеспечивают более быстрые и мощные возможности расширения.
 
 Как и более ранние модели Amigas, 3000 работает под управлением 32-разрядной операционной системы AmigaOS. Версия 2.0, по общему мнению, имеет более эргономичный и привлекательный интерфейс по сравнению с предыдущими версиями, которые разрабатывались с учетом того, что телевизоры являются дисплеем наименьшего общего знаменателя. Упрощен доступ для разработчиков приложений.</text>
-			<text lang="es">El Amiga 3000, o A3000, es un ordenador personal lanzado por Commodore en junio de 1990. Es el sucesor del Amiga 2000 y de su modelo actualizado Amiga 2500, con más velocidad de procesamiento, gráficos mejorados y una nueva revisión del sistema operativo.
+      <text lang="es">El Amiga 3000, o A3000, es un ordenador personal lanzado por Commodore en junio de 1990. Es el sucesor del Amiga 2000 y de su modelo actualizado Amiga 2500, con más velocidad de procesamiento, gráficos mejorados y una nueva revisión del sistema operativo.
 
 Sus predecesores, el Amiga 500, 1000 y 2000, comparten la misma arquitectura de sistema fundamental y, en consecuencia, funcionan sin grandes variaciones en la velocidad de procesamiento a pesar de la considerable variación en el precio de compra. El A3000, sin embargo, fue totalmente reelaborado y replanteado como estación de trabajo de gama alta. La nueva CPU Motorola 68030 de 32 bits, el coprocesador matemático 68882 y la memoria de sistema de 32 bits multiplican por 5 a 18 la velocidad de procesamiento de enteros y por 7 a 200 la velocidad de procesamiento de coma flotante. Las nuevas ranuras de expansión Zorro III de 32 bits proporcionan capacidades de expansión más rápidas y potentes.
 
 Al igual que los anteriores Amigas, el 3000 ejecuta un sistema operativo de 32 bits llamado AmigaOS. En general, se considera que la versión 2.0 tiene una interfaz más ergonómica y atractiva que las versiones anteriores, que se diseñaron pensando en los televisores como pantalla del mínimo común denominador. Se simplificó el acceso para los desarrolladores de aplicaciones.</text>
-			<text lang="de">Der Amiga 3000, oder A3000, ist ein Personal Computer, der im Juni 1990 von Commodore auf den Markt gebracht wurde. Er ist der Nachfolger des Amiga 2000 und seines aufgerüsteten Modells Amiga 2500 mit höherer Verarbeitungsgeschwindigkeit, verbesserter Grafik und einer neuen Revision des Betriebssystems.
+      <text lang="de">Der Amiga 3000, oder A3000, ist ein Personal Computer, der im Juni 1990 von Commodore auf den Markt gebracht wurde. Er ist der Nachfolger des Amiga 2000 und seines aufgerüsteten Modells Amiga 2500 mit höherer Verarbeitungsgeschwindigkeit, verbesserter Grafik und einer neuen Revision des Betriebssystems.
 
 Seine Vorgänger, der Amiga 500, 1000 und 2000, haben die gleiche grundlegende Systemarchitektur und weisen daher trotz erheblicher Preisunterschiede keine großen Unterschiede in der Verarbeitungsgeschwindigkeit auf. Der A3000 hingegen wurde komplett überarbeitet und als High-End-Workstation neu konzipiert. Die neue Motorola 32-Bit-CPU 68030, der Mathematik-Coprozessor 68882 und der 32-Bit-Systemspeicher erhöhen die Ganzzahlverarbeitungsgeschwindigkeit um den Faktor 5 bis 18 und die Gleitkommaverarbeitungsgeschwindigkeit um den Faktor 7 bis 200. Die neuen 32-Bit-Zorro-III-Erweiterungssteckplätze sorgen für schnellere und leistungsfähigere Erweiterungsmöglichkeiten.
 
 Wie bei früheren Amigas läuft auch auf dem 3000 ein 32-Bit-Betriebssystem namens AmigaOS. Die Version 2.0 wird allgemein als ergonomischer und attraktiver angesehen als frühere Versionen, die mit Fernsehgeräten als kleinstem gemeinsamen Nenner entworfen wurden. Der Zugang für Anwendungsentwickler wurde vereinfacht.</text>
-			<text lang="fr">L'Amiga 3000, ou A3000, est un ordinateur personnel commercialisé par Commodore en juin 1990. Il succède à l'Amiga 2000 et à son modèle amélioré, l'Amiga 2500, avec une plus grande vitesse de traitement, des graphismes améliorés et une nouvelle révision du système d'exploitation.
+      <text lang="fr">L'Amiga 3000, ou A3000, est un ordinateur personnel commercialisé par Commodore en juin 1990. Il succède à l'Amiga 2000 et à son modèle amélioré, l'Amiga 2500, avec une plus grande vitesse de traitement, des graphismes améliorés et une nouvelle révision du système d'exploitation.
 
 Ses prédécesseurs, les Amiga 500, 1000 et 2000, partagent la même architecture système fondamentale et fonctionnent par conséquent sans grande variation de vitesse de traitement malgré une variation considérable du prix d'achat. L'A3000, en revanche, a été entièrement retravaillé et repensé comme une station de travail haut de gamme. Le nouveau processeur Motorola 68030 32 bits, le coprocesseur mathématique 68882 et la mémoire système 32 bits augmentent la vitesse de traitement des nombres entiers d'un facteur de 5 à 18, et la vitesse de traitement des nombres à virgule flottante d'un facteur de 7 à 200 fois. Les nouveaux emplacements d'extension Zorro III 32 bits offrent des possibilités d'extension plus rapides et plus puissantes.
 
 Comme les Amiga précédents, le 3000 utilise un système d'exploitation 32 bits appelé AmigaOS. La version 2.0 est généralement considérée comme ayant une interface plus ergonomique et plus attrayante que les versions précédentes, qui ont été conçues avec des téléviseurs comme plus petit dénominateur commun. L'accès pour les développeurs d'applications a été simplifié.</text>
-			<text lang="it">L'Amiga 3000, o A3000, è un personal computer rilasciato da Commodore nel giugno 1990. È il successore dell'Amiga 2000 e del suo modello aggiornato Amiga 2500 con maggiore velocità di elaborazione, grafica migliorata e una nuova revisione del sistema operativo.
+      <text lang="it">L'Amiga 3000, o A3000, è un personal computer rilasciato da Commodore nel giugno 1990. È il successore dell'Amiga 2000 e del suo modello aggiornato Amiga 2500 con maggiore velocità di elaborazione, grafica migliorata e una nuova revisione del sistema operativo.
 
 I suoi predecessori, Amiga 500, 1000 e 2000, condividono la stessa architettura di sistema fondamentale e, di conseguenza, non presentano grandi variazioni in termini di velocità di elaborazione, nonostante la notevole variazione del prezzo di acquisto. L'A3000, tuttavia, è stato interamente rielaborato e ripensato come una workstation di fascia alta. La nuova CPU Motorola 68030 a 32 bit, il coprocessore matematico 68882 e la memoria di sistema a 32 bit aumentano la velocità di elaborazione dei numeri interi di un fattore compreso tra 5 e 18 e la velocità di elaborazione in virgola mobile di un fattore compreso tra 7 e 200 volte. I nuovi slot di espansione Zorro III a 32 bit consentono capacità di espansione più rapide e potenti.
 
 In comune con i precedenti Amiga, il 3000 esegue un sistema operativo a 32 bit chiamato AmigaOS. La versione 2.0 è generalmente considerata un'interfaccia più ergonomica e attraente rispetto alle versioni precedenti, che erano state progettate pensando ai televisori come minimo comune denominatore. L'accesso per gli sviluppatori di applicazioni è stato semplificato.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

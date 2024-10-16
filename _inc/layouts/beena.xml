@@ -1,80 +1,84 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.35 0.5</origin>
-			<pos>0.422 0.382</pos>
-			<maxSize>0.252</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.142 0.382" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.35 0.5</origin>
-			<pos>0.422 0.382</pos>
-			<maxSize>0.242</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.142 0.382" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2005</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Sega</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Advanced Pico Beena</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Advanced Pico Beena, also known simply as Beena or BeenaLite, is an educational console system targeted at young children sold by Sega Toys, released in 2005 in Japan. It is the successor to the Pico, and marketed around the "learn while playing" concept. According to Sega Toys, the focus of the Advanced Pico Beena is on learning in a new social environment, and is listed as their upper-end product. Topics listed as being educational focuses for the Beena include intellectual, moral, physical, dietary, and safety education.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0.35 0.5</origin>
+      <pos>0.422 0.382</pos>
+      <maxSize>0.252</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.142 0.382" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0.35 0.5</origin>
+      <pos>0.422 0.382</pos>
+      <maxSize>0.242</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.142 0.382" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2005</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Sega</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Advanced Pico Beena</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Advanced Pico Beena, also known simply as Beena or BeenaLite, is an educational console system targeted at young children sold by Sega Toys, released in 2005 in Japan. It is the successor to the Pico, and marketed around the "learn while playing" concept. According to Sega Toys, the focus of the Advanced Pico Beena is on learning in a new social environment, and is listed as their upper-end product. Topics listed as being educational focuses for the Beena include intellectual, moral, physical, dietary, and safety education.
 
 The name of the console was chosen to sound like the first syllables of "Be Natural".
 Compared to the Pico, Beena adds several functions. Beena can be played without a television, and supports multiplayer via a separately sold additional Magic Pen. The console also supports data saving.</text>
-			<text lang="pl">Advanced Pico Beena, znana również po prostu jako Beena lub BeenaLite, to konsola edukacyjna skierowana do małych dzieci sprzedawana przez Sega Toys, wydana w 2005 roku w Japonii. Jest to następca Pico, sprzedawany zgodnie z koncepcją "ucz się grając". Według Sega Toys, Advanced Pico Beena koncentruje się na nauce w nowym środowisku społecznym i jest wymieniona jako produkt z wyższej półki. Tematy wymienione jako edukacyjne dla Beena obejmują edukację intelektualną, moralną, fizyczną, dietetyczną i bezpieczeństwa.
+      <text lang="pl">Advanced Pico Beena, znana również po prostu jako Beena lub BeenaLite, to konsola edukacyjna skierowana do małych dzieci sprzedawana przez Sega Toys, wydana w 2005 roku w Japonii. Jest to następca Pico, sprzedawany zgodnie z koncepcją "ucz się grając". Według Sega Toys, Advanced Pico Beena koncentruje się na nauce w nowym środowisku społecznym i jest wymieniona jako produkt z wyższej półki. Tematy wymienione jako edukacyjne dla Beena obejmują edukację intelektualną, moralną, fizyczną, dietetyczną i bezpieczeństwa.
 
 Nazwa konsoli została wybrana tak, aby brzmiała jak pierwsze sylaby słowa "Be Natural".
 W porównaniu do Pico, Beena dodaje kilka funkcji. Beena może być używana bez telewizora i obsługuje grę wieloosobową za pośrednictwem sprzedawanego oddzielnie dodatkowego pióra Magic Pen. Konsola obsługuje również zapisywanie danych.</text>
-			<text lang="ru">Advanced Pico Beena, также известная как Beena или BeenaLite, - образовательная консоль, ориентированная на детей младшего возраста и выпущенная компанией Sega Toys в 2005 году в Японии. Она является преемницей Pico и продается по концепции "учись, пока играешь". Согласно заявлению компании Sega Toys, основное внимание в Advanced Pico Beena уделяется обучению в новой социальной среде, и она является продуктом высшего класса. В качестве образовательных тем для Beena перечислены такие, как интеллектуальное, моральное, физическое, диетическое и безопасное обучение.
+      <text lang="pt">Advanced Pico Beena, também conhecida simplesmente como Beena ou BeenaLite, é um console educacional direcionado a crianças pequenas vendido pela Sega Toys, lançado em 2005 no Japão. É o sucessor do Pico, vendido de acordo com o conceito "aprender brincando". Segundo a Sega Toys, o Advanced Pico Beena se concentra na aprendizagem em um novo ambiente social e é listado como um produto de alta qualidade. Os tópicos mencionados como educacionais para o Beena incluem educação intelectual, moral, física, dietética e de segurança.
+
+O nome do console foi escolhido para soar como as primeiras sílabas da palavra "Be Natural".
+Em comparação com o Pico, o Beena adiciona algumas funcionalidades. O Beena pode ser usado sem televisão e suporta jogos multiplayer por meio de uma caneta Magic Pen adicional vendida separadamente. O console também suporta o salvamento de dados.</text>
+      <text lang="ru">Advanced Pico Beena, также известная как Beena или BeenaLite, - образовательная консоль, ориентированная на детей младшего возраста и выпущенная компанией Sega Toys в 2005 году в Японии. Она является преемницей Pico и продается по концепции "учись, пока играешь". Согласно заявлению компании Sega Toys, основное внимание в Advanced Pico Beena уделяется обучению в новой социальной среде, и она является продуктом высшего класса. В качестве образовательных тем для Beena перечислены такие, как интеллектуальное, моральное, физическое, диетическое и безопасное обучение.
 
 Название консоли было выбрано таким образом, чтобы оно звучало как первые слоги слова "Be Natural".
 По сравнению с Pico, Beena обладает рядом дополнительных функций. В Beena можно играть без телевизора, поддерживается многопользовательская игра с помощью отдельно продаваемого дополнительного пера Magic Pen. Консоль также поддерживает функцию сохранения данных.</text>
-			<text lang="es">La Advanced Pico Beena, también conocida simplemente como Beena o BeenaLite, es una consola educativa dirigida a niños de corta edad comercializada por Sega Toys y lanzada en 2005 en Japón. Es la sucesora de la Pico y se comercializa en torno al concepto de "aprender jugando". Según Sega Toys, el objetivo de la Advanced Pico Beena es el aprendizaje en un nuevo entorno social, y está catalogada como su producto de gama alta. Entre los temas educativos de la Beena figuran la educación intelectual, moral, física, dietética y de seguridad.
+      <text lang="es">La Advanced Pico Beena, también conocida simplemente como Beena o BeenaLite, es una consola educativa dirigida a niños de corta edad comercializada por Sega Toys y lanzada en 2005 en Japón. Es la sucesora de la Pico y se comercializa en torno al concepto de "aprender jugando". Según Sega Toys, el objetivo de la Advanced Pico Beena es el aprendizaje en un nuevo entorno social, y está catalogada como su producto de gama alta. Entre los temas educativos de la Beena figuran la educación intelectual, moral, física, dietética y de seguridad.
 
 El nombre de la consola se eligió para que sonara como las primeras sílabas de "Be Natural".
 Comparada con la Pico, la Beena añade varias funciones. Beena puede jugarse sin televisor y admite multijugador mediante un Magic Pen adicional que se vende por separado. La consola también permite guardar datos.</text>
-			<text lang="de">Das Advanced Pico Beena, auch einfach als Beena oder BeenaLite bekannt, ist eine Lernkonsole für Kleinkinder, die von Sega Toys verkauft und 2005 in Japan veröffentlicht wurde. Es ist der Nachfolger des Pico und wird nach dem Konzept "spielend lernen" vermarktet. Nach Angaben von Sega Toys liegt der Schwerpunkt der Advanced Pico Beena auf dem Lernen in einer neuen sozialen Umgebung und wird als ihr Spitzenprodukt aufgeführt. Als pädagogische Schwerpunkte für die Beena werden Themen wie intellektuelle, moralische, körperliche, Ernährungs- und Sicherheitserziehung genannt.
+      <text lang="de">Das Advanced Pico Beena, auch einfach als Beena oder BeenaLite bekannt, ist eine Lernkonsole für Kleinkinder, die von Sega Toys verkauft und 2005 in Japan veröffentlicht wurde. Es ist der Nachfolger des Pico und wird nach dem Konzept "spielend lernen" vermarktet. Nach Angaben von Sega Toys liegt der Schwerpunkt der Advanced Pico Beena auf dem Lernen in einer neuen sozialen Umgebung und wird als ihr Spitzenprodukt aufgeführt. Als pädagogische Schwerpunkte für die Beena werden Themen wie intellektuelle, moralische, körperliche, Ernährungs- und Sicherheitserziehung genannt.
 
 Der Name der Konsole wurde so gewählt, dass er wie die ersten Silben von "Be Natural" klingt.
 Im Vergleich zum Pico bietet Beena mehrere zusätzliche Funktionen. Beena kann ohne Fernseher gespielt werden und unterstützt Multiplayer-Spiele über einen separat erhältlichen zusätzlichen Magic Pen. Die Konsole unterstützt auch die Datenspeicherung.</text>
-			<text lang="fr">L'Advanced Pico Beena, également connu sous le nom de Beena ou BeenaLite, est une console éducative destinée aux jeunes enfants vendue par Sega Toys, sortie en 2005 au Japon. Elle succède à la Pico et est commercialisée autour du concept "apprendre en jouant". Selon Sega Toys, l'Advanced Pico Beena est axé sur l'apprentissage dans un nouvel environnement social et est considéré comme un produit haut de gamme. Les thèmes abordés par la Beena sont l'éducation intellectuelle, morale, physique, diététique et la sécurité.
+      <text lang="fr">L'Advanced Pico Beena, également connu sous le nom de Beena ou BeenaLite, est une console éducative destinée aux jeunes enfants vendue par Sega Toys, sortie en 2005 au Japon. Elle succède à la Pico et est commercialisée autour du concept "apprendre en jouant". Selon Sega Toys, l'Advanced Pico Beena est axé sur l'apprentissage dans un nouvel environnement social et est considéré comme un produit haut de gamme. Les thèmes abordés par la Beena sont l'éducation intellectuelle, morale, physique, diététique et la sécurité.
 
 Le nom de la console a été choisi pour ressembler aux premières syllabes de "Be Natural".
 Par rapport à la Pico, la Beena ajoute plusieurs fonctions. Beena peut être jouée sans télévision et supporte le multijoueur grâce à un Magic Pen supplémentaire vendu séparément. La console permet également de sauvegarder des données.</text>
-			<text lang="it">Advanced Pico Beena, noto anche semplicemente come Beena o BeenaLite, è un sistema di console educativo rivolto ai bambini, venduto da Sega Toys nel 2005 in Giappone. È il successore del Pico e viene commercializzato con il concetto di "imparare giocando". Secondo Sega Toys, l'Advanced Pico Beena è incentrato sull'apprendimento in un nuovo ambiente sociale ed è indicato come prodotto di fascia alta. Tra i temi educativi indicati per Beena figurano l'educazione intellettuale, morale, fisica, alimentare e alla sicurezza.
+      <text lang="it">Advanced Pico Beena, noto anche semplicemente come Beena o BeenaLite, è un sistema di console educativo rivolto ai bambini, venduto da Sega Toys nel 2005 in Giappone. È il successore del Pico e viene commercializzato con il concetto di "imparare giocando". Secondo Sega Toys, l'Advanced Pico Beena è incentrato sull'apprendimento in un nuovo ambiente sociale ed è indicato come prodotto di fascia alta. Tra i temi educativi indicati per Beena figurano l'educazione intellettuale, morale, fisica, alimentare e alla sicurezza.
 
 Il nome della console è stato scelto per assomigliare alle prime sillabe di "Be Natural".
 Rispetto al Pico, Beena aggiunge diverse funzioni. Beena può essere giocata senza televisore e supporta il multiplayer tramite una penna magica aggiuntiva venduta separatamente. La console supporta anche il salvataggio dei dati.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

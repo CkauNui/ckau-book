@@ -1,65 +1,70 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.5 0.5</origin>
-			<pos>0.489 0.395</pos>
-			<maxSize>0.242</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.234</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.209 0.395" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.5 0.5</origin>
-			<pos>0.489 0.395</pos>
-			<maxSize>0.232</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.234</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.209 0.395" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1980</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Acorn</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Atom</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Acorn Atom is a home computer made by Acorn Computers Ltd from 1980 to 1982, when it was replaced by the BBC Micro. The Micro began life as an upgrade to the Atom, originally known as the Proton.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0.5 0.5</origin>
+      <pos>0.489 0.395</pos>
+      <maxSize>0.242</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.234</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.209 0.395" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0.5 0.5</origin>
+      <pos>0.489 0.395</pos>
+      <maxSize>0.232</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.234</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.209 0.395" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1980</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Acorn</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Atom</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Acorn Atom is a home computer made by Acorn Computers Ltd from 1980 to 1982, when it was replaced by the BBC Micro. The Micro began life as an upgrade to the Atom, originally known as the Proton.
 
 The Atom was a progression of the MOS Technology 6502-based machines that the company had been making from 1979. The Atom was a cut-down Acorn System 3 without a disk drive but with an integral keyboard and cassette tape interface, sold in either kit or complete form. In 1980 it was priced between £120 in kit form, £170 (equivalent to £745 in 2020) ready assembled, to over £200 for the fully expanded version with 12 KB of RAM and the floating-point extension ROM.
 
 It had an MC6847 Video Display Generator (VDG) video chip, allowing for both text and graphics modes. It could be connected to a TV or modified to output to a video monitor. Basic video memory was 1 KB but could be expanded to 6 KB. Since the MC6847 could only output at 60 Hz, meaning that the video could not be resolved on a large proportion of European TV sets, a 50 Hz PAL colour card was later made available. Six video modes were available, with resolutions from 64×64 in 4 colours, up to 256×192 in monochrome. At the time, 256×192 was considered to be high resolution.</text>
-			<text lang="pl">Acorn Atom to komputer domowy produkowany przez firmę Acorn Computers Ltd. w latach 1980-1982, kiedy to został zastąpiony przez BBC Micro. Początkowo Micro był ulepszoną wersją Atoma, pierwotnie znanego jako Proton.
+      <text lang="pl">Acorn Atom to komputer domowy produkowany przez firmę Acorn Computers Ltd. w latach 1980-1982, kiedy to został zastąpiony przez BBC Micro. Początkowo Micro był ulepszoną wersją Atoma, pierwotnie znanego jako Proton.
 
 Atom stanowił rozwinięcie maszyn opartych na technologii MOS Technology 6502, które firma produkowała od 1979 roku. Atom był okrojonym komputerem Acorn System 3 bez stacji dysków, ale z wbudowaną klawiaturą i interfejsem taśmy magnetofonowej, sprzedawanym w zestawie lub w całości. W 1980 roku cena wynosiła od 120 funtów za zestaw, przez 170 funtów (równowartość 745 funtów w 2020 roku) za gotowy zestaw, do ponad 200 funtów za w pełni rozbudowaną wersję z 12 KB pamięci RAM i rozszerzeniem zmiennoprzecinkowym ROM.
 
 Komputer był wyposażony w układ wideo MC6847 Video Display Generator (VDG), umożliwiający pracę w trybie tekstowym i graficznym. Można go było podłączyć do telewizora lub zmodyfikować tak, aby wysyłał sygnał do monitora wideo. Podstawowa pamięć wideo wynosiła 1 KB, ale można ją było rozszerzyć do 6 KB. Ponieważ MC6847 mógł wysyłać sygnał tylko z częstotliwością 60 Hz, co oznaczało, że obraz nie mógł być wyświetlany na dużej części europejskich odbiorników telewizyjnych, później udostępniono kartę kolorową PAL 50 Hz. Dostępnych było sześć trybów wideo o rozdzielczości od 64×64 w 4 kolorach do 256×192 w trybie monochromatycznym. W tamtych czasach rozdzielczość 256×192 była uważana za wysoką.</text>
-			<text lang="ru">Домашний компьютер, выпускавшийся компанией Acorn Computers с 1981 по 1983 год; был заменён компьютером BBC Micro (первоначальное название — Acorn Proton), а позднее — Acorn Electron.
+      <text lang="pt">Acorn Atom é um computador doméstico produzido pela Acorn Computers Ltd. entre 1980 e 1982, quando foi substituído pelo BBC Micro. Inicialmente, o Micro era uma versão aprimorada do Atom, originalmente conhecido como Proton.
+
+O Atom representava uma evolução das máquinas baseadas na tecnologia MOS Technology 6502 que a empresa fabricava desde 1979. O Atom era um computador Acorn System 3 simplificado sem unidade de disco, mas com teclado integrado e interface de fita cassete, vendido em kit ou pronto. Em 1980, o preço variava de 120 libras para um kit, passando por 170 libras (equivalente a 745 libras em 2020) para um kit pronto, até mais de 200 libras para uma versão totalmente expandida com 12 KB de RAM e expansão de ponto flutuante ROM.
+
+O computador era equipado com o chip de vídeo MC6847 Video Display Generator (VDG), permitindo operação em modo texto e gráfico. Ele podia ser conectado a uma televisão ou modificado para enviar sinal para um monitor de vídeo. A memória de vídeo básica era de 1 KB, mas podia ser expandida para 6 KB. Como o MC6847 só podia enviar sinal a 60 Hz, o que significava que a imagem não podia ser exibida na maioria dos receptores de televisão europeus, uma placa de cores PAL de 50 Hz foi disponibilizada posteriormente. Havia seis modos de vídeo disponíveis, com resolução variando de 64×64 em 4 cores a 256×192 em modo monocromático. Naquela época, a resolução de 256×192 era considerada alta.</text>
+      <text lang="ru">Домашний компьютер, выпускавшийся компанией Acorn Computers с 1981 по 1983 год; был заменён компьютером BBC Micro (первоначальное название — Acorn Proton), а позднее — Acorn Electron.
 
 Atom стал очередным шагом в ряду машин на основе MOS Technology 6502, которые компания выпускала с 1979 года. Atom был усечённой версией Acorn System 3 — без привода дисковода, но с интегрированной клавиатурой и с интерфейсом для кассетного магнитофона. Компьютер продавался в виде набора для сборки либо в виде готового изделия.
 
@@ -68,26 +73,26 @@ Atom стал очередным шагом в ряду машин на осно
 В компьютер был встроен интерпретатор собственного диалекта языка Бейсик (Atom BASIC). В программу можно было встраивать код на ассемблере, перед исполнением программы этот код ассемблировался.
 
 Корпус компьютера был разработан индустриальным дизайнером Allen Boothroyd из компании Cambridge Product Design Ltd. К компьютеру прилагалось печатное руководство, носившее название «Атомная теория и практика».</text>
-			<text lang="es">El Acorn Atom es un ordenador doméstico fabricado por Acorn Computers Ltd de 1980 a 1982, cuando fue sustituido por el BBC Micro. El Micro comenzó su vida como una actualización del Atom, originalmente conocido como Proton.
+      <text lang="es">El Acorn Atom es un ordenador doméstico fabricado por Acorn Computers Ltd de 1980 a 1982, cuando fue sustituido por el BBC Micro. El Micro comenzó su vida como una actualización del Atom, originalmente conocido como Proton.
 
 El Atom era una evolución de las máquinas basadas en MOS Technology 6502 que la empresa había estado fabricando desde 1979. El Atom era un Acorn System 3 recortado, sin unidad de disco, pero con teclado integrado e interfaz de cinta de casete, que se vendía en forma de kit o completo. En 1980 su precio oscilaba entre 120 libras esterlinas en forma de kit, 170 libras esterlinas (equivalentes a 745 libras esterlinas en 2020) ya montado, y más de 200 libras esterlinas por la versión totalmente ampliada con 12 KB de RAM y la ROM de ampliación de punto flotante.
 
 Tenía un chip de vídeo MC6847 Video Display Generator (VDG), que permitía tanto el modo de texto como el de gráficos. Podía conectarse a un televisor o modificarse para dar salida a un monitor de vídeo. La memoria de vídeo básica era de 1 KB, pero podía ampliarse hasta 6 KB. Dado que el MC6847 sólo podía emitir a 60 Hz, lo que significaba que el vídeo no podía resolverse en una gran parte de los televisores europeos, posteriormente se puso a disposición una tarjeta de color PAL de 50 Hz. Había seis modos de vídeo disponibles, con resoluciones desde 64×64 en 4 colores hasta 256×192 en monocromo. En aquella época, 256×192 se consideraba alta resolución.</text>
-			<text lang="de">Der Acorn Atom ist ein Heimcomputer, der von 1980 bis 1982 von Acorn Computers Ltd. hergestellt wurde. Danach wurde er durch den BBC Micro ersetzt. Der Micro war ursprünglich eine Weiterentwicklung des Atom, der ursprünglich als Proton bekannt war.
+      <text lang="de">Der Acorn Atom ist ein Heimcomputer, der von 1980 bis 1982 von Acorn Computers Ltd. hergestellt wurde. Danach wurde er durch den BBC Micro ersetzt. Der Micro war ursprünglich eine Weiterentwicklung des Atom, der ursprünglich als Proton bekannt war.
 
 Der Atom war eine Weiterentwicklung der MOS Technology 6502-basierten Computer, die das Unternehmen seit 1979 hergestellt hatte. Der Atom war ein abgespecktes Acorn System 3 ohne Diskettenlaufwerk, aber mit integrierter Tastatur und Kassettenschnittstelle, das entweder als Bausatz oder komplett verkauft wurde. Im Jahr 1980 lag der Preis zwischen 120 Pfund für den Bausatz, 170 Pfund (entspricht 745 Pfund im Jahr 2020) für die fertig montierte Version und über 200 Pfund für die voll ausgebaute Version mit 12 KB RAM und dem Gleitkomma-Erweiterungs-ROM.
 
 Er hatte einen MC6847 Video Display Generator (VDG) Videochip, der sowohl Text- als auch Grafikmodi ermöglichte. Er konnte an einen Fernseher angeschlossen oder für die Ausgabe an einen Videomonitor modifiziert werden. Der grundlegende Videospeicher betrug 1 KB, konnte aber auf 6 KB erweitert werden. Da der MC6847 nur mit 60 Hz ausgeben konnte, was bedeutete, dass das Video auf einem Großteil der europäischen Fernsehgeräte nicht aufgelöst werden konnte, wurde später eine 50-Hz-PAL-Farbkarte verfügbar gemacht. Sechs Videomodi waren verfügbar, mit Auflösungen von 64×64 in 4 Farben bis zu 256×192 in Monochrom. Zu dieser Zeit galt 256×192 als hohe Auflösung.</text>
-			<text lang="fr">L'Acorn Atom est un ordinateur domestique fabriqué par Acorn Computers Ltd de 1980 à 1982, date à laquelle il a été remplacé par le BBC Micro. Le Micro a commencé sa vie comme une amélioration de l'Atom, connu à l'origine sous le nom de Proton.
+      <text lang="fr">L'Acorn Atom est un ordinateur domestique fabriqué par Acorn Computers Ltd de 1980 à 1982, date à laquelle il a été remplacé par le BBC Micro. Le Micro a commencé sa vie comme une amélioration de l'Atom, connu à l'origine sous le nom de Proton.
 
 L'Atom était une évolution des machines basées sur la technologie MOS 6502 que la société avait fabriquées à partir de 1979. L'Atom était un Acorn System 3 réduit sans lecteur de disque mais avec un clavier intégré et une interface de cassette, vendu en kit ou complet. En 1980, son prix variait entre 120 £ en kit, 170 £ (équivalent à 745 £ en 2020) prêt à l'emploi et plus de 200 £ pour la version entièrement développée avec 12 Ko de RAM et la ROM d'extension en virgule flottante.
 
 Il était équipé d'une puce vidéo MC6847 Video Display Generator (VDG), permettant les modes texte et graphique. Il pouvait être connecté à un téléviseur ou modifié pour sortir sur un moniteur vidéo. La mémoire vidéo de base était de 1 Ko mais pouvait être étendue à 6 Ko. Comme le MC6847 ne pouvait sortir qu'à 60 Hz, ce qui signifiait que la vidéo ne pouvait pas être résolue sur une grande partie des téléviseurs européens, une carte couleur PAL 50 Hz a été mise à disposition ultérieurement. Six modes vidéo étaient disponibles, avec des résolutions allant de 64×64 en 4 couleurs à 256×192 en monochrome. À l'époque, 256×192 était considéré comme une haute résolution.</text>
-			<text lang="it">L'Acorn Atom è un home computer prodotto da Acorn Computers Ltd dal 1980 al 1982, quando fu sostituito dal BBC Micro. Il Micro nasceva come aggiornamento dell'Atom, originariamente noto come Proton.
+      <text lang="it">L'Acorn Atom è un home computer prodotto da Acorn Computers Ltd dal 1980 al 1982, quando fu sostituito dal BBC Micro. Il Micro nasceva come aggiornamento dell'Atom, originariamente noto come Proton.
 
 L'Atom era un'evoluzione delle macchine basate sulla tecnologia MOS 6502 che l'azienda aveva prodotto a partire dal 1979. L'Atom è un Acorn System 3 ridotto senza unità disco, ma con una tastiera integrata e un'interfaccia a cassette, venduto in kit o in forma completa. Nel 1980 il prezzo oscillava tra le 120 sterline in kit, le 170 sterline (equivalenti a 745 sterline nel 2020) per la versione pronta per l'assemblaggio e le oltre 200 sterline per la versione completamente espansa con 12 KB di RAM e la ROM di estensione in virgola mobile.
 
 Era dotato di un chip video MC6847 Video Display Generator (VDG), che consentiva di utilizzare sia la modalità testo che quella grafica. Poteva essere collegato a un televisore o modificato per l'uscita a un monitor video. La memoria video di base era di 1 KB, ma poteva essere espansa fino a 6 KB. Poiché l'MC6847 era in grado di emettere solo immagini a 60 Hz, il che significava che il video non poteva essere gestito da gran parte dei televisori europei, in seguito fu resa disponibile una scheda a colori PAL a 50 Hz. Erano disponibili sei modalità video, con risoluzioni da 64×64 in 4 colori, fino a 256×192 in monocromia. All'epoca, 256×192 era considerata un'alta risoluzione.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

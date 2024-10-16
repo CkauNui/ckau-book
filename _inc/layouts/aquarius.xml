@@ -1,80 +1,85 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.48 0.5</origin>
-			<pos>0.48 0.4</pos>
-			<maxSize>0.24</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.20 0.4" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.48 0.5</origin>
-			<pos>0.48 0.4</pos>
-			<maxSize>0.22</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.20 0.4" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1983</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Mattel</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Aquarius Home Computer System</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Mattel Aquarius Home Computer System  is a home computer designed by Radofin and released by Mattel in 1983. It features a Zilog Z80microprocessor, a rubber chiclet keyboard, 4K of RAM, and a subset of Microsoft BASIC in ROM. It connects to a television set for audio and visual output, and uses a cassette tape recorder for secondary data storage.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.48 0.5</origin>
+      <pos>0.48 0.4</pos>
+      <maxSize>0.24</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.20 0.4" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.48 0.5</origin>
+      <pos>0.48 0.4</pos>
+      <maxSize>0.22</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.20 0.4" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1983</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Mattel</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Aquarius Home Computer System</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Mattel Aquarius Home Computer System  is a home computer designed by Radofin and released by Mattel in 1983. It features a Zilog Z80microprocessor, a rubber chiclet keyboard, 4K of RAM, and a subset of Microsoft BASIC in ROM. It connects to a television set for audio and visual output, and uses a cassette tape recorder for secondary data storage.
 
 Although less expensive than the TI-99/4A and Commodore VIC-20, the Aquarius had comparatively weak graphics and limited memory. Of the 32 software titles Mattel announced for the unit, only 21 were released, most of which were ports from Mattel's Intellivision game console. 
 Shortly after the release of the Aquarius, Mattel announced plans for another home computer, the Aquarius II. There is evidence that the Aquarius II reached the market in small numbers, but it was never a commercial success.</text>
-			<text lang="pl">Mattel Aquarius Home Computer System to komputer domowy zaprojektowany przez firmę Radofin i wydany przez Mattel w 1983 roku. Posiada mikroprocesor Zilog Z80, gumową klawiaturę chiclet, 4K pamięci RAM i podzbiór Microsoft BASIC w pamięci ROM. Podłącza się go do telewizora w celu odtwarzania dźwięku i obrazu, a do przechowywania danych wykorzystuje magnetofon kasetowy.
+      <text lang="pl">Mattel Aquarius Home Computer System to komputer domowy zaprojektowany przez firmę Radofin i wydany przez Mattel w 1983 roku. Posiada mikroprocesor Zilog Z80, gumową klawiaturę chiclet, 4K pamięci RAM i podzbiór Microsoft BASIC w pamięci ROM. Podłącza się go do telewizora w celu odtwarzania dźwięku i obrazu, a do przechowywania danych wykorzystuje magnetofon kasetowy.
 
 Chociaż tańszy niż TI-99/4A i Commodore VIC-20, Aquarius miał stosunkowo słabą grafikę i ograniczoną pamięć. Z 32 tytułów oprogramowania, które Mattel zapowiedział dla tego urządzenia, wydano tylko 21, z których większość była portami z konsoli do gier Intellivision firmy Mattel. 
 Wkrótce po wydaniu Aquariusa, Mattel ogłosił plany dotyczące kolejnego komputera domowego, Aquariusa II. Istnieją dowody na to, że Aquarius II trafił na rynek w niewielkiej liczbie, ale nigdy nie odniósł komercyjnego sukcesu.</text>
-			<text lang="ru">Mattel Aquarius Home Computer System - домашний компьютер, разработанный компанией Radofin и выпущенный фирмой Mattel в 1983 году. Он оснащен микропроцессором Zilog Z80, резиновой клавиатурой chiclet, 4 Кбайт оперативной памяти и подмножеством Microsoft BASIC в ПЗУ. Для вывода звука и изображения он подключается к телевизору, а для хранения вторичных данных используется кассетный магнитофон.
+      <text lang="pt">Mattel Aquarius Home Computer System foi um computador doméstico projetado pela Radofin e lançado pela Mattel em 1983. Ele possui um microprocessador Zilog Z80, um teclado de membrana chiclet, 4K de memória RAM e um subconjunto do Microsoft BASIC na memória ROM. Conecta-se à televisão para reprodução de áudio e vídeo e usa um gravador de fita cassete para armazenamento de dados.
+
+Embora mais barato que o TI-99/4A e o Commodore VIC-20, o Aquarius tinha gráficos relativamente fracos e memória limitada. Dos 32 títulos de software que a Mattel anunciou para o dispositivo, apenas 21 foram lançados, sendo a maioria deles ports do console de jogos Intellivision da Mattel.
+
+Logo após o lançamento do Aquarius, a Mattel anunciou planos para outro computador doméstico, o Aquarius II. Há evidências de que o Aquarius II chegou ao mercado em pequena escala, mas nunca obteve sucesso comercial.</text>
+      <text lang="ru">Mattel Aquarius Home Computer System - домашний компьютер, разработанный компанией Radofin и выпущенный фирмой Mattel в 1983 году. Он оснащен микропроцессором Zilog Z80, резиновой клавиатурой chiclet, 4 Кбайт оперативной памяти и подмножеством Microsoft BASIC в ПЗУ. Для вывода звука и изображения он подключается к телевизору, а для хранения вторичных данных используется кассетный магнитофон.
 
 Несмотря на меньшую стоимость по сравнению с TI-99/4A и Commodore VIC-20, Aquarius имел сравнительно слабую графику и ограниченный объем памяти. Из 32 программ, заявленных компанией Mattel для этого устройства, была выпущена только 21, причем большинство из них были портами с игровой приставки Intellivision компании Mattel. 
 Вскоре после выпуска Aquarius компания Mattel объявила о планах по созданию еще одного домашнего компьютера - Aquarius II. Есть сведения, что Aquarius II поступил в продажу в небольшом количестве, но коммерческого успеха он так и не имел.</text>
-			<text lang="es">El Mattel Aquarius Home Computer System es un ordenador doméstico diseñado por Radofin y comercializado por Mattel en 1983. Cuenta con un microprocesador Zilog Z80, un teclado de goma, 4K de RAM y un subconjunto de Microsoft BASIC en ROM. Se conecta a un televisor para la salida de audio y vídeo, y utiliza una grabadora de casete para el almacenamiento secundario de datos.
+      <text lang="es">El Mattel Aquarius Home Computer System es un ordenador doméstico diseñado por Radofin y comercializado por Mattel en 1983. Cuenta con un microprocesador Zilog Z80, un teclado de goma, 4K de RAM y un subconjunto de Microsoft BASIC en ROM. Se conecta a un televisor para la salida de audio y vídeo, y utiliza una grabadora de casete para el almacenamiento secundario de datos.
 
 Aunque era menos caro que la TI-99/4A y el Commodore VIC-20, el Aquarius tenía unos gráficos comparativamente débiles y una memoria limitada. De los 32 títulos de software que Mattel anunció para la unidad, sólo se lanzaron 21, la mayoría de los cuales eran adaptaciones de la videoconsola Intellivision de Mattel. 
 Poco después del lanzamiento del Aquarius, Mattel anunció planes para otro ordenador doméstico, el Aquarius II. Hay pruebas de que el Aquarius II llegó al mercado en pequeñas cantidades, pero nunca fue un éxito comercial.</text>
-			<text lang="de">Das Mattel Aquarius Home Computer System ist ein Heimcomputer, der von Radofin entwickelt und von Mattel 1983 herausgegeben wurde. Er verfügt über einen Zilog Z80-Mikroprozessor, eine Gummi-Chiplet-Tastatur, 4K RAM und eine Teilmenge von Microsoft BASIC im ROM. Für die Audio- und Bildausgabe wird er an einen Fernseher angeschlossen, und für die sekundäre Datenspeicherung wird ein Kassettenrekorder verwendet.
+      <text lang="de">Das Mattel Aquarius Home Computer System ist ein Heimcomputer, der von Radofin entwickelt und von Mattel 1983 herausgegeben wurde. Er verfügt über einen Zilog Z80-Mikroprozessor, eine Gummi-Chiplet-Tastatur, 4K RAM und eine Teilmenge von Microsoft BASIC im ROM. Für die Audio- und Bildausgabe wird er an einen Fernseher angeschlossen, und für die sekundäre Datenspeicherung wird ein Kassettenrekorder verwendet.
 
 Der Aquarius war zwar billiger als der TI-99/4A und der Commodore VIC-20, hatte aber eine vergleichsweise schwache Grafik und einen begrenzten Speicher. Von den 32 Software-Titeln, die Mattel für das Gerät angekündigt hatte, wurden nur 21 veröffentlicht, die meisten davon waren Portierungen von Mattels Intellivision-Spielkonsole. 
 Kurz nach der Veröffentlichung des Aquarius kündigte Mattel Pläne für einen weiteren Heimcomputer an, den Aquarius II. Es gibt Hinweise darauf, dass der Aquarius II in kleinen Stückzahlen auf den Markt kam, aber er war nie ein kommerzieller Erfolg.</text>
-			<text lang="fr">Le Mattel Aquarius Home Computer System est un ordinateur domestique conçu par Radofin et commercialisé par Mattel en 1983. Il est équipé d'un microprocesseur Zilog Z80, d'un clavier chiclet en caoutchouc, de 4K de RAM et d'un sous-ensemble de Microsoft BASIC en ROM. Il se connecte à un téléviseur pour les sorties audio et visuelles, et utilise un magnétophone à cassettes pour le stockage secondaire des données.
+      <text lang="fr">Le Mattel Aquarius Home Computer System est un ordinateur domestique conçu par Radofin et commercialisé par Mattel en 1983. Il est équipé d'un microprocesseur Zilog Z80, d'un clavier chiclet en caoutchouc, de 4K de RAM et d'un sous-ensemble de Microsoft BASIC en ROM. Il se connecte à un téléviseur pour les sorties audio et visuelles, et utilise un magnétophone à cassettes pour le stockage secondaire des données.
 
 Bien que moins cher que la TI-99/4A et le Commodore VIC-20, l'Aquarius avait des graphismes comparativement faibles et une mémoire limitée. Sur les 32 logiciels annoncés par Mattel pour l'Aquarius, seuls 21 sont sortis, la plupart étant des portages de la console de jeu Intellivision de Mattel. 
 Peu après la sortie de l'Aquarius, Mattel a annoncé des plans pour un autre ordinateur domestique, l'Aquarius II. Il existe des preuves que l'Aquarius II a été commercialisé en petit nombre, mais il n'a jamais été un succès commercial.</text>
-			<text lang="it">Il Mattel Aquarius Home Computer System è un home computer progettato da Radofin e distribuito da Mattel nel 1983. È dotato di un microprocessore Zilog Z80, una tastiera chiclet in gomma, 4K di RAM e un sottoinsieme di Microsoft BASIC in ROM. Si collega a un televisore per l'uscita audio e visiva e utilizza un registratore a cassette per l'archiviazione secondaria dei dati.
+      <text lang="it">Il Mattel Aquarius Home Computer System è un home computer progettato da Radofin e distribuito da Mattel nel 1983. È dotato di un microprocessore Zilog Z80, una tastiera chiclet in gomma, 4K di RAM e un sottoinsieme di Microsoft BASIC in ROM. Si collega a un televisore per l'uscita audio e visiva e utilizza un registratore a cassette per l'archiviazione secondaria dei dati.
 
 Sebbene meno costoso del TI-99/4A e del Commodore VIC-20, l'Aquarius aveva una grafica relativamente debole e una memoria limitata. Dei 32 titoli software annunciati da Mattel per l'unità, ne furono rilasciati solo 21, la maggior parte dei quali erano dei porting dalla console Intellivision di Mattel. 
 Poco dopo l'uscita dell'Aquarius, Mattel annunciò i piani per un altro home computer, l'Aquarius II. Ci sono evidenze che l'Aquarius II raggiunse il mercato in piccole quantità, ma non fu mai un successo commerciale.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

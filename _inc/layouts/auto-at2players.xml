@@ -1,98 +1,101 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 -0.55</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.14</origin>
-			<pos>0.498 0.18</pos>
-			<minSize>0.4 0.1</minSize>
-			<minSize if="${screen.ratio} == '4/3'">0.59 0.1</minSize>
-			<minSize if="${screen.ratio} == '16/10'">0.49 0.1</minSize>
-			<rotation>0</rotation>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.218 0.18" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 1</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.74</origin>
-			<pos>0.498 0.65</pos>
-			<minSize>0.4 0.1</minSize>
-			<minSize if="${screen.ratio} == '4/3'">0.59 0.1</minSize>
-			<minSize if="${screen.ratio} == '16/10'">0.49 0.1</minSize>
-			<rotation>0</rotation>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.218 0.65" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.41</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.465</origin>
-			<pos>0.5 0.41</pos>
-			<maxSize>0.36</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.473</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.3925</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.41" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.41</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.465</origin>
-			<pos>0.5 0.41</pos>
-			<maxSize>0.351</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.41" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text/>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Collection</text>
-			<text lang="pl">Kolekcja</text>
-			<text lang="ru">Коллекция</text>
-			<text lang="es">Recopilación</text>
-			<text lang="fr">Collection</text>
-			<text lang="it">Collezione</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>2 Players</text>
-			<text lang="pl">2 graczy</text>
-			<text lang="ru">2 игрока</text>
-			<text lang="es">2 jugadores</text>
-			<text lang="fr">2 joueurs</text>
-			<text lang="it">2 giocatori</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>A two-player game is a multiplayer game played by exactly two players. Here is a collection of your games that support two-player play.</text>
-			<text lang="pl">Gra dwuosobowa to gra wieloosobowa, w którą gra dokładnie dwóch graczy. Oto zbiór twoich gier obsługujący grę dla dwóch graczy.</text>
-			<text lang="ru">Игры для двух игроков - это многопользовательская игры, в которую играют ровно два игрока. Здесь собраны игры, поддерживающие двух игроков.</text>
-			<text lang="es">Un juego para dos jugadores es un juego multijugador en el que participan exactamente dos jugadores. Aquí tienes una colección de tus juegos compatibles con dos jugadores.</text>
-			<text lang="de">Ein Zwei-Spieler-Spiel ist ein Mehrspieler-Spiel, das von genau zwei Spielern gespielt wird. Hier ist eine Sammlung von Spielen, die zwei Spieler unterstützen.</text>
-			<text lang="fr">Un jeu à deux joueurs est un jeu multijoueur auquel jouent exactement deux joueurs. Voici une collection de vos jeux qui permettent de jouer à deux.</text>
-			<text lang="it">Un gioco a due giocatori è un gioco multigiocatore giocato esattamente da due giocatori. Ecco una raccolta di giochi che supportano il gioco a due giocatori.</text>
-		</text>
-	</view>
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-left" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 -0.55</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.14</origin>
+      <pos>0.498 0.18</pos>
+      <minSize>0.4 0.1</minSize>
+      <minSize if="${screen.ratio} == '4/3'">0.59 0.1</minSize>
+      <minSize if="${screen.ratio} == '16/10'">0.49 0.1</minSize>
+      <rotation>0</rotation>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.218 0.18" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-right" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 1</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.74</origin>
+      <pos>0.498 0.65</pos>
+      <minSize>0.4 0.1</minSize>
+      <minSize if="${screen.ratio} == '4/3'">0.59 0.1</minSize>
+      <minSize if="${screen.ratio} == '16/10'">0.49 0.1</minSize>
+      <rotation>0</rotation>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.218 0.65" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.41</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.465</origin>
+      <pos>0.5 0.41</pos>
+      <maxSize>0.36</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.473</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.3925</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.41" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.41</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.465</origin>
+      <pos>0.5 0.41</pos>
+      <maxSize>0.351</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.41" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text/>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Collection</text>
+      <text lang="pl">Kolekcja</text>
+      <text lang="pt">Coleção</text>
+      <text lang="ru">Коллекция</text>
+      <text lang="es">Recopilación</text>
+      <text lang="fr">Collection</text>
+      <text lang="it">Collezione</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>2 Players</text>
+      <text lang="pl">2 graczy</text>
+      <text lang="pt">2 jogadores</text>
+      <text lang="ru">2 игрока</text>
+      <text lang="es">2 jugadores</text>
+      <text lang="fr">2 joueurs</text>
+      <text lang="it">2 giocatori</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>A two-player game is a multiplayer game played by exactly two players. Here is a collection of your games that support two-player play.</text>
+      <text lang="pl">Gra dwuosobowa to gra wieloosobowa, w którą gra dokładnie dwóch graczy. Oto zbiór twoich gier obsługujący grę dla dwóch graczy.</text>
+      <text lang="pt">Um jogo para dois jogadores é um jogo multijogador no qual exatamente dois jogadores participam. Aqui está uma coleção dos seus jogos que suportam jogos para dois jogadores.</text>
+      <text lang="ru">Игры для двух игроков - это многопользовательская игры, в которую играют ровно два игрока. Здесь собраны игры, поддерживающие двух игроков.</text>
+      <text lang="es">Un juego para dos jugadores es un juego multijugador en el que participan exactamente dos jugadores. Aquí tienes una colección de tus juegos compatibles con dos jugadores.</text>
+      <text lang="de">Ein Zwei-Spieler-Spiel ist ein Mehrspieler-Spiel, das von genau zwei Spielern gespielt wird. Hier ist eine Sammlung von Spielen, die zwei Spieler unterstützen.</text>
+      <text lang="fr">Un jeu à deux joueurs est un jeu multijoueur auquel jouent exactement deux joueurs. Voici une collection de vos jeux qui permettent de jouer à deux.</text>
+      <text lang="it">Un gioco a due giocatori è un gioco multigiocatore giocato esattamente da due giocatori. Ecco una raccolta di giochi che supportano il gioco a due giocatori.</text>
+    </text>
+  </view>
 </theme>

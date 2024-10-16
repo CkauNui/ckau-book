@@ -1,170 +1,173 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.3 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.26 0.36</pos>
-			<minSize>0.1 0.2</minSize>
-			<rotation>8</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="-0.02 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.7 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.54 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.74 0.36</pos>
-			<minSize>0.1 0.2</minSize>
-			<rotation>-8</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.46 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<pos>0.5 0.363</pos>
-			<maxSize>0.15</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-left" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.36 0.37</pos>
-			<maxSize>0.14</maxSize>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.08 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-right" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.638 0.37</pos>
-			<maxSize>0.14</maxSize>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.358 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<pos>0.5 0.363</pos>
-			<maxSize>0.14</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}-right.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.655 0.37</pos>
-			<maxSize>0.13</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.375 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox3" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}-left.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.345 0.37</pos>
-			<maxSize>0.13</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.065 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1996</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Capcom</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>CP System III</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The CP System III (CPシステムIII, shīpī shisutemu surī) or CPS-3 is an arcade system board that was first used by Capcom in 1996 with the arcade game Red Earth. It was the second successor to the CP System arcade hardware, following the CP System II.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-left" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.3 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.26 0.36</pos>
+      <minSize>0.1 0.2</minSize>
+      <rotation>8</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="-0.02 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-right" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.7 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.54 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.74 0.36</pos>
+      <minSize>0.1 0.2</minSize>
+      <rotation>-8</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.46 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <pos>0.5 0.363</pos>
+      <maxSize>0.15</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-left" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.36 0.37</pos>
+      <maxSize>0.14</maxSize>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.08 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-right" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.638 0.37</pos>
+      <maxSize>0.14</maxSize>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.358 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <pos>0.5 0.363</pos>
+      <maxSize>0.14</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}-right.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.655 0.37</pos>
+      <maxSize>0.13</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.375 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox3" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}-left.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.345 0.37</pos>
+      <maxSize>0.13</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.065 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1996</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Capcom</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>CP System III</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The CP System III (CPシステムIII, shīpī shisutemu surī) or CPS-3 is an arcade system board that was first used by Capcom in 1996 with the arcade game Red Earth. It was the second successor to the CP System arcade hardware, following the CP System II.
 
 It would be the last proprietary system board Capcom would produce before moving on to the Dreamcast-based Naomi platform.</text>
-			<text lang="pl">CP System III (CPシステムIII, shīpī shisutemu surī) lub CPS-3 to system zręcznościowy, który został po raz pierwszy użyty przez Capcom w 1996 roku w grze Red Earth. Był to drugi następca systemu CP System, po CP System II.
+      <text lang="pl">CP System III (CPシステムIII, shīpī shisutemu surī) lub CPS-3 to system zręcznościowy, który został po raz pierwszy użyty przez Capcom w 1996 roku w grze Red Earth. Był to drugi następca systemu CP System, po CP System II.
 
 Była to ostatnia płyta systemowa produkowana przez firmę Capcom przed przejściem na platformę Naomi opartą na Dreamcast.</text>
-			<text lang="ru">CPS-3 была последней аркадной системой, разработанной Capcom. В системе использовалась следующий механизм защиты от нарушения авторского права: игры поставлялись на CD с зашифрованным игровым контентом, и особый картридж, содержащий BIOS игры и центральный процессор SH-2 с интегрированной системой логической расшифровки и игровым ключом, хранившимся в плате памяти SRAM. При первом запуске машины, содержимое CD передается в память SIMM на материнской плате, где содержимое и воспроизводится. Картридж безопасности весьма чувствителен к любым фальсификациям, так как ключ расшифровки мог стереться, и соответственно, картридж становился бесполезен.
+      <text lang="pt">CP System III (CPシステムIII, shīpī shisutemu surī) ou CPS-3 é um sistema de arcade que foi usado pela primeira vez pela Capcom em 1996 no jogo Red Earth. Era o segundo sucessor do sistema CP System, depois do CP System II.
+
+Foi a última placa de sistema fabricada pela Capcom antes de passar para a plataforma Naomi baseada no Dreamcast.</text>
+      <text lang="ru">CPS-3 была последней аркадной системой, разработанной Capcom. В системе использовалась следующий механизм защиты от нарушения авторского права: игры поставлялись на CD с зашифрованным игровым контентом, и особый картридж, содержащий BIOS игры и центральный процессор SH-2 с интегрированной системой логической расшифровки и игровым ключом, хранившимся в плате памяти SRAM. При первом запуске машины, содержимое CD передается в память SIMM на материнской плате, где содержимое и воспроизводится. Картридж безопасности весьма чувствителен к любым фальсификациям, так как ключ расшифровки мог стереться, и соответственно, картридж становился бесполезен.
 
 Игры становились неиграбельными, когда батарея, расположенная в картридже безопасности, прекращала работать, и потому для дальнейшей работы требовалось менять её. Также, CPS-3 могла поддерживать только более сложную 2D-графику, что было одновременно и достоинством, и недостатком системы, в то время как многие другие аркадные системы (в частности, от Sega и Namco) уже использовали средства воспроизведения трёхмерной графики.</text>
-			<text lang="es">El CP System III (CPシステムIII, shīpī shisutemu surī) o CPS-3 es una placa de sistema arcade que fue utilizada por primera vez por Capcom en 1996 con el juego arcade Red Earth. Fue la segunda sucesora del hardware arcade CP System, tras la CP System II.
+      <text lang="es">El CP System III (CPシステムIII, shīpī shisutemu surī) o CPS-3 es una placa de sistema arcade que fue utilizada por primera vez por Capcom en 1996 con el juego arcade Red Earth. Fue la segunda sucesora del hardware arcade CP System, tras la CP System II.
 
 Sería la última placa de sistema propietaria que Capcom produciría antes de pasar a la plataforma Naomi basada en Dreamcast.</text>
-			<text lang="de">Das CP System III (CPシステムIII, shīpī shisutemu surī) oder CPS-3 ist ein Arcade-System-Board, das erstmals 1996 von Capcom mit dem Arcade-Spiel Red Earth verwendet wurde. Es war der zweite Nachfolger der CP System Arcade-Hardware, nach dem CP System II.
+      <text lang="de">Das CP System III (CPシステムIII, shīpī shisutemu surī) oder CPS-3 ist ein Arcade-System-Board, das erstmals 1996 von Capcom mit dem Arcade-Spiel Red Earth verwendet wurde. Es war der zweite Nachfolger der CP System Arcade-Hardware, nach dem CP System II.
 
 Es war die letzte proprietäre Systemplatine, die Capcom produzierte, bevor sie auf die Dreamcast-basierte Naomi-Plattform umstieg.</text>
-			<text lang="fr">Le CP System III (CPシステムIII, shīpī shisutemu surī) ou CPS-3 est une carte de système d'arcade qui a été utilisée pour la première fois par Capcom en 1996 avec le jeu d'arcade Red Earth. Il s'agit du deuxième successeur du système d'arcade CP System, après le CP System II.
+      <text lang="fr">Le CP System III (CPシステムIII, shīpī shisutemu surī) ou CPS-3 est une carte de système d'arcade qui a été utilisée pour la première fois par Capcom en 1996 avec le jeu d'arcade Red Earth. Il s'agit du deuxième successeur du système d'arcade CP System, après le CP System II.
 
 Il s'agit de la dernière carte système propriétaire que Capcom produira avant de passer à la plateforme Naomi basée sur la Dreamcast.</text>
-			<text lang="it">Il CP System III (CPシステムIII, shīpī shisutemu surī) o CPS-3 è una scheda di sistema arcade utilizzata per la prima volta da Capcom nel 1996 con il gioco arcade Red Earth. È stato il secondo successore dell'hardware arcade CP System, dopo il CP System II.
+      <text lang="it">Il CP System III (CPシステムIII, shīpī shisutemu surī) o CPS-3 è una scheda di sistema arcade utilizzata per la prima volta da Capcom nel 1996 con il gioco arcade Red Earth. È stato il secondo successore dell'hardware arcade CP System, dopo il CP System II.
 
 Sarebbe stata l'ultima scheda di sistema proprietaria che Capcom avrebbe prodotto prima di passare alla piattaforma Naomi basata su Dreamcast.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

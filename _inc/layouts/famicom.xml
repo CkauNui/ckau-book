@@ -1,71 +1,74 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.49 0.4</pos>
-			<maxSize>0.237</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.49 0.4</pos>
-			<maxSize>0.227</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1983</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Nintendo</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Family Computer</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Nintendo Entertainment System (NES) is an 8-bit third-generation home video game console produced by Nintendo. Nintendo first released it in Japan as the Family Computer, commonly known as the Famicom, in 1983. The NES, a remodelled version, was released internationally in the following years.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.49 0.4</pos>
+      <maxSize>0.237</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.49 0.4</pos>
+      <maxSize>0.227</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1983</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Nintendo</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Family Computer</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Nintendo Entertainment System (NES) is an 8-bit third-generation home video game console produced by Nintendo. Nintendo first released it in Japan as the Family Computer, commonly known as the Famicom, in 1983. The NES, a remodelled version, was released internationally in the following years.
 
 The NES featured a number of groundbreaking games, such as the platform game Super Mario Bros, the action-adventure game The Legend of Zelda and the action game Metroid. As one of the best-selling gaming consoles of its time, the NES helped revitalize the US video game industry following the video game crash of 1983. Nintendo introduced a now-standard business model of licensing third-party developers to produce and distribute games for the NES. The NES was succeeded by the Super Nintendo Entertainment System.</text>
-			<text lang="pl">Nintendo Entertainment System (NES) to 8-bitowa domowa konsola gier wideo trzeciej generacji wyprodukowana przez Nintendo. Nintendo po raz pierwszy wydało go w Japonii jako Family Computer, powszechnie znany jako Famicom, w 1983 roku. NES, przebudowana wersja, została wydana na arenie międzynarodowej w kolejnych latach.
+      <text lang="pl">Nintendo Entertainment System (NES) to 8-bitowa domowa konsola gier wideo trzeciej generacji wyprodukowana przez Nintendo. Nintendo po raz pierwszy wydało go w Japonii jako Family Computer, powszechnie znany jako Famicom, w 1983 roku. NES, przebudowana wersja, została wydana na arenie międzynarodowej w kolejnych latach.
 
 NES zawierał wiele przełomowych gier, takich jak gra platformowa Super Mario Bros, gra action-adventure The Legend of Zelda i gra akcji Metroid. Jako jedna z najlepiej sprzedających się konsol do gier w swoim czasie, NES pomógł ożywić amerykański przemysł gier wideo po katastrofie gier wideo w 1983 roku. Nintendo wprowadził teraz standardowy model biznesowy licencjonowania deweloperów stron trzecich do produkcji i dystrybucji gier dla NES. NES został zastąpiony przez Super Nintendo Entertainment System.</text>
-			<text lang="ru">Восьмибитная игровая приставка, популярная в середине 1980-х и начале 1990-х годов. Впервые консоль появилась на японском рынке в 1983 году под названием Famicom, а затем, переименованная в NES, вышла в Европе и США в 1985 году. Новинка оказалась исключительно удачной и сумела завоевать практически весь американский и японский рынок. Консоль появилась с большим пакетом игр, среди которых самым известным и продаваемым стало семейство игр Super Mario Bros. Марио стал талисманом корпорации Nintendo. Всего, по официальным данным, было продано более 60 млн приставок и более 500 млн игр.
+      <text lang="pt">Nintendo Entertainment System (NES) é um console de videogame doméstico de 8 bits de terceira geração produzido pela Nintendo. A Nintendo lançou o console pela primeira vez no Japão como Family Computer, conhecido popularmente como Famicom, em 1983. O NES, uma versão reestilizada, foi lançado internacionalmente nos anos seguintes.
+
+O NES incluiu muitos jogos inovadores, como o jogo de plataforma Super Mario Bros, o jogo de ação e aventura The Legend of Zelda e o jogo de ação Metroid. Sendo uma das consolas de videogame mais vendidas da época, o NES ajudou a revitalizar a indústria de jogos norte-americana após a queda dos videogames de 1983. A Nintendo introduziu agora o modelo de negócios padrão de licenciar desenvolvedores de terceiros para produzir e distribuir jogos para o NES. O NES foi substituído pelo Super Nintendo Entertainment System.</text>
+      <text lang="ru">Восьмибитная игровая приставка, популярная в середине 1980-х и начале 1990-х годов. Впервые консоль появилась на японском рынке в 1983 году под названием Famicom, а затем, переименованная в NES, вышла в Европе и США в 1985 году. Новинка оказалась исключительно удачной и сумела завоевать практически весь американский и японский рынок. Консоль появилась с большим пакетом игр, среди которых самым известным и продаваемым стало семейство игр Super Mario Bros. Марио стал талисманом корпорации Nintendo. Всего, по официальным данным, было продано более 60 млн приставок и более 500 млн игр.
 
 Поскольку выход консоли произошёл вскоре после кризиса игровой индустрии, многие критики именно ей приписывают возрождение игрового рынка и открытие третьего поколения видеоприставок, так как удачные аппаратные характеристики и богатая библиотека игр вызвали интерес как у потребителей, так и у разработчиков, отвернувшихся было от игровой индустрии после краха.</text>
-			<text lang="es">La Nintendo Entertainment System (NES) es una videoconsola doméstica de 8 bits de tercera generación producida por Nintendo. Nintendo la lanzó por primera vez en Japón como Family Computer, comúnmente conocida como Famicom, en 1983. La NES, una versión remodelada, se lanzó internacionalmente en los años siguientes.
+      <text lang="es">La Nintendo Entertainment System (NES) es una videoconsola doméstica de 8 bits de tercera generación producida por Nintendo. Nintendo la lanzó por primera vez en Japón como Family Computer, comúnmente conocida como Famicom, en 1983. La NES, una versión remodelada, se lanzó internacionalmente en los años siguientes.
 
 La NES incluía una serie de juegos innovadores, como el juego de plataformas Super Mario Bros, el juego de acción y aventuras The Legend of Zelda y el juego de acción Metroid. La NES, una de las consolas más vendidas de su época, ayudó a revitalizar la industria estadounidense del videojuego tras la crisis de 1983. Nintendo introdujo un modelo de negocio que se ha convertido en estándar: conceder licencias a desarrolladores externos para producir y distribuir juegos para la NES. A la NES le sucedió la Super Nintendo Entertainment System.</text>
-			<text lang="de">Das Nintendo Entertainment System (NES) ist eine 8-Bit-Videospielkonsole der dritten Generation, die von Nintendo hergestellt wurde. Nintendo brachte es erstmals 1983 in Japan als Family Computer, allgemein bekannt als Famicom, heraus. Das NES, eine umgestaltete Version, wurde in den folgenden Jahren auch international veröffentlicht.
+      <text lang="de">Das Nintendo Entertainment System (NES) ist eine 8-Bit-Videospielkonsole der dritten Generation, die von Nintendo hergestellt wurde. Nintendo brachte es erstmals 1983 in Japan als Family Computer, allgemein bekannt als Famicom, heraus. Das NES, eine umgestaltete Version, wurde in den folgenden Jahren auch international veröffentlicht.
 
 Das NES enthielt eine Reihe bahnbrechender Spiele, wie das Jump'n'Run-Spiel Super Mario Bros, das Action-Adventure The Legend of Zelda und das Actionspiel Metroid. Als eine der meistverkauften Spielkonsolen seiner Zeit trug das NES dazu bei, die US-Videospielindustrie nach dem Videospiel-Crash von 1983 wiederzubeleben. Nintendo führte das heute übliche Geschäftsmodell ein, das darin bestand, Drittentwicklern Lizenzen für die Produktion und den Vertrieb von Spielen für das NES zu erteilen. Das NES wurde durch das Super Nintendo Entertainment System abgelöst.</text>
-			<text lang="fr">La Nintendo Entertainment System (NES) est une console de jeux vidéo de salon 8 bits de troisième génération produite par Nintendo. Nintendo l'a d'abord commercialisée au Japon sous le nom de Family Computer, communément appelé Famicom, en 1983. La NES, une version remodelée, a été commercialisée à l'échelle internationale dans les années qui ont suivi.
+      <text lang="fr">La Nintendo Entertainment System (NES) est une console de jeux vidéo de salon 8 bits de troisième génération produite par Nintendo. Nintendo l'a d'abord commercialisée au Japon sous le nom de Family Computer, communément appelé Famicom, en 1983. La NES, une version remodelée, a été commercialisée à l'échelle internationale dans les années qui ont suivi.
 
 La NES proposait un certain nombre de jeux révolutionnaires, tels que le jeu de plateforme Super Mario Bros, le jeu d'action et d'aventure The Legend of Zelda et le jeu d'action Metroid. La NES, l'une des consoles de jeu les plus vendues de son époque, a contribué à revitaliser l'industrie américaine du jeu vidéo après le krach de 1983. Nintendo a introduit un modèle commercial désormais standard consistant à accorder des licences à des développeurs tiers pour qu'ils produisent et distribuent des jeux pour la NES. La NES a été remplacée par la Super Nintendo Entertainment System.</text>
-			<text lang="it">Il Nintendo Entertainment System (NES) è una console per videogiochi di terza generazione a 8 bit prodotta da Nintendo. Nintendo la distribuì per la prima volta in Giappone con il nome di Family Computer, comunemente noto come Famicom, nel 1983. Il NES, una versione rimodellata, è stato rilasciato a livello internazionale negli anni successivi.
+      <text lang="it">Il Nintendo Entertainment System (NES) è una console per videogiochi di terza generazione a 8 bit prodotta da Nintendo. Nintendo la distribuì per la prima volta in Giappone con il nome di Family Computer, comunemente noto come Famicom, nel 1983. Il NES, una versione rimodellata, è stato rilasciato a livello internazionale negli anni successivi.
 
 Il NES ha offerto una serie di giochi innovativi, come il platform Super Mario Bros, il gioco d'azione e avventura The Legend of Zelda e il gioco d'azione Metroid. Essendo una delle console più vendute dell'epoca, il NES contribuì a rivitalizzare l'industria videoludica statunitense dopo il crollo dei videogiochi del 1983. Nintendo introdusse un modello commerciale ormai standard che prevedeva la concessione di licenze a sviluppatori terzi per la produzione e la distribuzione di giochi per il NES. Al NES successe il Super Nintendo Entertainment System.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

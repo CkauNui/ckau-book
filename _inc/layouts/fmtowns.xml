@@ -1,71 +1,74 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.29</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
-			<pos>0.50 0.335</pos>
-			<maxSize>0.257</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.335" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.29</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
-			<pos>0.50 0.335</pos>
-			<maxSize>0.247</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.335" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1993</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Fujitsu</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>FM-Towns Marty</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The FM Towns Marty is a fifth-generation home video game console released in 1993 by Fujitsu, exclusively for the Japanese market. It is often claimed to be the first 32-bit CD-based home video game system, although it has a 16-bit data bus, just like the earlier Commodore CDTV and Sega CD, which both have Motorola 68000 processors that is similarly internally 16/32-bit, but with a 16-bit data bus.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.29</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+      <pos>0.50 0.335</pos>
+      <maxSize>0.257</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.335" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.29</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+      <pos>0.50 0.335</pos>
+      <maxSize>0.247</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.335" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1993</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Fujitsu</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>FM-Towns Marty</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The FM Towns Marty is a fifth-generation home video game console released in 1993 by Fujitsu, exclusively for the Japanese market. It is often claimed to be the first 32-bit CD-based home video game system, although it has a 16-bit data bus, just like the earlier Commodore CDTV and Sega CD, which both have Motorola 68000 processors that is similarly internally 16/32-bit, but with a 16-bit data bus.
 
 The console came complete with a built in CD-ROM drive and disk drive. It was based on the earlier FM Towns computer system Fujitsu had released in 1989. The Marty was backward-compatible with older FM Towns games.</text>
-			<text lang="pl">FM Towns Marty to domowa konsola gier wideo piątej generacji wydana w 1993 roku przez Fujitsu, wyłącznie na rynek japoński. Często twierdzi się, że jest to pierwszy 32-bitowy system gier wideo oparty na CD, chociaż ma 16-bitową magistralę danych, podobnie jak wcześniejsze Commodore CDTV i Sega CD, które mają procesory Motorola 68000, który jest podobnie wewnętrznie 16/32-bitowy, ale z 16-bitową magistralą danych.
+      <text lang="pl">FM Towns Marty to domowa konsola gier wideo piątej generacji wydana w 1993 roku przez Fujitsu, wyłącznie na rynek japoński. Często twierdzi się, że jest to pierwszy 32-bitowy system gier wideo oparty na CD, chociaż ma 16-bitową magistralę danych, podobnie jak wcześniejsze Commodore CDTV i Sega CD, które mają procesory Motorola 68000, który jest podobnie wewnętrznie 16/32-bitowy, ale z 16-bitową magistralą danych.
 
 Konsola była wyposażona we wbudowany napęd CD-ROM i stację dysków. Bazowała ona na wcześniejszym systemie komputerowym FM Towns, który Fujitsu wypuściło w 1989 roku. Marty był wstecznie kompatybilny ze starszymi grami FM Towns.</text>
-			<text lang="ru">Игровая приставка, выпущенная компанией Fujitsu в 1993 году исключительно для японского рынка. Являлась первой 32-разрядной игровой системой (однако, в остальном мире таковой считается более известная Amiga CD32, вышедшая в конце 1993 года), имела привод CD-ROM и встроенный дисковод. Marty обратно совместима со старыми играми для компьютеров FM Towns.
+      <text lang="pt">FM Towns Marty é um console doméstico de videogame de quinta geração lançado em 1993 pela Fujitsu, exclusivamente para o mercado japonês. É frequentemente afirmado ser o primeiro sistema de videogame de 32 bits baseado em CD, embora tenha um barramento de dados de 16 bits, semelhante aos anteriores Commodore CDTV e Sega CD, que possuem processadores Motorola 68000, que é internamente semelhante a 16/32 bits, mas com um barramento de dados de 16 bits.
+
+O console era equipado com um drive de CD-ROM e uma unidade de disquete integrados. Ele era baseado no sistema de computador FM Towns anterior, que a Fujitsu lançou em 1989. O Marty era retrocompatível com jogos mais antigos do FM Towns.</text>
+      <text lang="ru">Игровая приставка, выпущенная компанией Fujitsu в 1993 году исключительно для японского рынка. Являлась первой 32-разрядной игровой системой (однако, в остальном мире таковой считается более известная Amiga CD32, вышедшая в конце 1993 года), имела привод CD-ROM и встроенный дисковод. Marty обратно совместима со старыми играми для компьютеров FM Towns.
 
 Также существовали: специальное издание системы FM Towns Marty TC-Station (или просто FM Towns TCMarty), удешевленное переиздание FM Towns Marty 2 (обе имели возможность подключения к сети Интернет), а также специальный переносной вариант приставки Car Marty с возможностью использования в качестве автомобильного навигатора. Существовало мнение, что Car Marty использовала процессор 386DX, а Marty 2 - процессор 486, однако на практике это не подтвердилось.</text>
-			<text lang="es">La FM Towns Marty es una videoconsola doméstica de quinta generación lanzada en 1993 por Fujitsu, exclusivamente para el mercado japonés. A menudo se afirma que es el primer sistema de videojuegos doméstico basado en CD de 32 bits, aunque tiene un bus de datos de 16 bits, al igual que los anteriores Commodore CDTV y Sega CD, ambos con procesadores Motorola 68000 de 16/32 bits internamente, pero con un bus de datos de 16 bits.
+      <text lang="es">La FM Towns Marty es una videoconsola doméstica de quinta generación lanzada en 1993 por Fujitsu, exclusivamente para el mercado japonés. A menudo se afirma que es el primer sistema de videojuegos doméstico basado en CD de 32 bits, aunque tiene un bus de datos de 16 bits, al igual que los anteriores Commodore CDTV y Sega CD, ambos con procesadores Motorola 68000 de 16/32 bits internamente, pero con un bus de datos de 16 bits.
 
 La consola se completaba con una unidad de CD-ROM y una unidad de disco. Se basaba en el anterior sistema informático FM Towns que Fujitsu había lanzado en 1989. La Marty era compatible con los juegos anteriores de FM Towns.</text>
-			<text lang="de">Der FM Towns Marty ist eine Heimvideospielkonsole der fünften Generation, die 1993 von Fujitsu exklusiv für den japanischen Markt herausgebracht wurde. Es wird oft behauptet, das erste 32-Bit-CD-basierte Videospielsystem für den Heimgebrauch zu sein, obwohl es einen 16-Bit-Datenbus hat, genau wie das frühere Commodore CDTV und das Sega CD, die beide Motorola 68000-Prozessoren haben, die ähnlich intern 16/32-Bit sind, aber einen 16-Bit-Datenbus haben.
+      <text lang="de">Der FM Towns Marty ist eine Heimvideospielkonsole der fünften Generation, die 1993 von Fujitsu exklusiv für den japanischen Markt herausgebracht wurde. Es wird oft behauptet, das erste 32-Bit-CD-basierte Videospielsystem für den Heimgebrauch zu sein, obwohl es einen 16-Bit-Datenbus hat, genau wie das frühere Commodore CDTV und das Sega CD, die beide Motorola 68000-Prozessoren haben, die ähnlich intern 16/32-Bit sind, aber einen 16-Bit-Datenbus haben.
 
 Die Konsole wurde komplett mit einem eingebauten CD-ROM-Laufwerk und einem Diskettenlaufwerk geliefert. Sie basierte auf dem früheren Computersystem FM Towns, das Fujitsu 1989 herausgebracht hatte. Der Marty war rückwärtskompatibel mit älteren FM Towns-Spielen.</text>
-			<text lang="fr">La FM Towns Marty est une console de jeu vidéo de salon de cinquième génération commercialisée en 1993 par Fujitsu, exclusivement pour le marché japonais. Elle est souvent considérée comme la première console de jeu vidéo de salon à CD 32 bits, bien qu'elle dispose d'un bus de données 16 bits, tout comme le Commodore CDTV et le Sega CD, qui sont tous deux équipés de processeurs Motorola 68000 16/32 bits en interne, mais avec un bus de données 16 bits.
+      <text lang="fr">La FM Towns Marty est une console de jeu vidéo de salon de cinquième génération commercialisée en 1993 par Fujitsu, exclusivement pour le marché japonais. Elle est souvent considérée comme la première console de jeu vidéo de salon à CD 32 bits, bien qu'elle dispose d'un bus de données 16 bits, tout comme le Commodore CDTV et le Sega CD, qui sont tous deux équipés de processeurs Motorola 68000 16/32 bits en interne, mais avec un bus de données 16 bits.
 
 La console était équipée d'un lecteur de CD-ROM et d'un lecteur de disque intégrés. Elle était basée sur le système informatique FM Towns que Fujitsu avait lancé en 1989. La Marty était rétrocompatible avec les anciens jeux FM Towns.</text>
-			<text lang="it">FM Towns Marty è una console per videogiochi domestica di quinta generazione rilasciata nel 1993 da Fujitsu, esclusivamente per il mercato giapponese. Spesso si sostiene che sia il primo sistema di videogiochi domestico basato su CD a 32 bit, anche se ha un bus dati a 16 bit, proprio come i precedenti Commodore CDTV e Sega CD, entrambi dotati di processori Motorola 68000, che internamente sono simili a 16/32 bit, ma con un bus dati a 16 bit.
+      <text lang="it">FM Towns Marty è una console per videogiochi domestica di quinta generazione rilasciata nel 1993 da Fujitsu, esclusivamente per il mercato giapponese. Spesso si sostiene che sia il primo sistema di videogiochi domestico basato su CD a 32 bit, anche se ha un bus dati a 16 bit, proprio come i precedenti Commodore CDTV e Sega CD, entrambi dotati di processori Motorola 68000, che internamente sono simili a 16/32 bit, ma con un bus dati a 16 bit.
 
 La console era dotata di un lettore CD-ROM e di un'unità disco integrati. Era basata sul precedente sistema informatico FM Towns che Fujitsu aveva rilasciato nel 1989. Il Marty era retrocompatibile con i vecchi giochi FM Towns.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

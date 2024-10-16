@@ -1,97 +1,98 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.375</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
-			<origin if="${screen.ratio} == '21/9'">-0.1 0.5</origin>
-			<pos>0.338 0.45</pos>
-			<maxSize>0.16</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.058 0.45" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-right" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.595</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.53</origin>
-			<origin if="${screen.ratio} == '21/9'">1.1 0.5</origin>
-			<pos>0.66 0.54</pos>
-			<maxSize>0.16</maxSize>
-			<rotation>180</rotation>
-			<storyboard>
-				<animation property="pos" to="0.38 0.54" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/gb.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/gb.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.375</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
-			<origin if="${screen.ratio} == '21/9'">-0.1 0.5</origin>
-			<pos>0.336 0.446</pos>
-			<maxSize>0.14</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.056 0.446" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/gb.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/gb.mp4</path>
-			<delay>0</delay>
-			<audio>false</audio>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.595</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.53</origin>
-			<origin if="${screen.ratio} == '21/9'">1.1 0.5</origin>
-			<pos>0.662 0.54</pos>
-			<maxSize>0.14</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>180</rotation>
-			<storyboard>
-				<animation property="pos" to="0.382 0.54" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1989</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Nintendo</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Game Boy
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.375</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
+      <origin if="${screen.ratio} == '21/9'">-0.1 0.5</origin>
+      <pos>0.338 0.45</pos>
+      <maxSize>0.16</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.058 0.45" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-right" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.595</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.53</origin>
+      <origin if="${screen.ratio} == '21/9'">1.1 0.5</origin>
+      <pos>0.66 0.54</pos>
+      <maxSize>0.16</maxSize>
+      <rotation>180</rotation>
+      <storyboard>
+        <animation property="pos" to="0.38 0.54" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/gb.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/gb.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.375</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
+      <origin if="${screen.ratio} == '21/9'">-0.1 0.5</origin>
+      <pos>0.336 0.446</pos>
+      <maxSize>0.14</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.056 0.446" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/gb.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/gb.mp4</path>
+      <delay>0</delay>
+      <audio>false</audio>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.595</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.53</origin>
+      <origin if="${screen.ratio} == '21/9'">1.1 0.5</origin>
+      <pos>0.662 0.54</pos>
+      <maxSize>0.14</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>180</rotation>
+      <storyboard>
+        <animation property="pos" to="0.382 0.54" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1989</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Nintendo</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Game Boy
 (2 Players)</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Nintendo Game Link Cable is an accessory for the Game Boy line of handheld video game systems, allowing players to connect Game Boy's of all types for multiplayer play. Depending on the games, the Game Link Cable can be used to connect two games with the same title, such as Tetris, or two compatible games, such as Pokémon Red and Blue. Games can be linked together to compete, cooperate, trade items, unlock hidden features, etc.</text>
-			<text lang="pl">Nintendo Game Link Cable jest akcesorium dla linii Game Boy ręcznych systemów gier wideo, umożliwiając graczom połączenie Game Boy'ów wszystkich typów do gry wieloosobowej. W zależności od gier, kabel Game Link może być używany do łączenia dwóch gier o tym samym tytule, takich jak Tetris, lub dwóch kompatybilnych gier, takich jak Pokémon Red i Blue. Gry można łączyć ze sobą w celu rywalizacji, współpracy, handlu przedmiotami, odblokowywania ukrytych funkcji itp.</text>
-			<text lang="ru">Линейка портативных игровых устройств, разработанная и производившаяся Nintendo.
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Nintendo Game Link Cable is an accessory for the Game Boy line of handheld video game systems, allowing players to connect Game Boy's of all types for multiplayer play. Depending on the games, the Game Link Cable can be used to connect two games with the same title, such as Tetris, or two compatible games, such as Pokémon Red and Blue. Games can be linked together to compete, cooperate, trade items, unlock hidden features, etc.</text>
+      <text lang="pl">Nintendo Game Link Cable jest akcesorium dla linii Game Boy ręcznych systemów gier wideo, umożliwiając graczom połączenie Game Boy'ów wszystkich typów do gry wieloosobowej. W zależności od gier, kabel Game Link może być używany do łączenia dwóch gier o tym samym tytule, takich jak Tetris, lub dwóch kompatybilnych gier, takich jak Pokémon Red i Blue. Gry można łączyć ze sobą w celu rywalizacji, współpracy, handlu przedmiotami, odblokowywania ukrytych funkcji itp.</text>
+      <text lang="pt">O Cabo Game Link da Nintendo é um acessório para a linha de sistemas de jogos de videogame Game Boy, permitindo que os jogadores conectem Game Boys de todos os tipos para jogos multiplayer. Dependendo dos jogos, o cabo Game Link pode ser usado para conectar dois jogos do mesmo título, como Tetris, ou dois jogos compatíveis, como Pokémon Red e Blue. Os jogos podem ser conectados para competir, cooperar, negociar itens, desbloquear funções ocultas etc.</text>
+      <text lang="ru">Линейка портативных игровых устройств, разработанная и производившаяся Nintendo.
 Первый Game Boy был выпущен ещё в 1989 году, как продолжение к известным карманным играм Nintendo Game &amp; Watch. Это была первая популярная портативная игровая система, и многие компании пытались повторить успех Game Boy, но никому сделать этого так и не удалось.
 
 Устройство имело монохромный жидкокристаллический экран с размерами 160×144 пикселей, стереозвук на четыре канала и функцию GameLink, позволяющую соединять две консоли вместе и играть вдвоём в поддерживающие данную технологию игры.
 
 Всякий раз, если по каким-либо причинам продажи Game Boy шли на убыль, Nintendo выпускала новые разновидности Game Boy, чтобы снова увеличить продажи. Таким образом, в ноябре 1996 года появился Game Boy Pocket, который был меньше в размерах на 30 %, чем свой предшественник, но с экраном большего размера и всего с двумя батареями AAA. Позже был выпущен Game Boy Color c цветным экраном, затем — Game Boy Advance.</text>
-			<text lang="es">El cable Game Link de Nintendo es un accesorio para la línea Game Boy de consolas portátiles de videojuegos, que permite a los jugadores conectar Game Boy de todo tipo para jugar en modo multijugador. Dependiendo de los juegos, el cable Game Link puede utilizarse para conectar dos juegos con el mismo título, como Tetris, o dos juegos compatibles, como Pokémon Rojo y Azul. Los juegos pueden conectarse entre sí para competir, cooperar, intercambiar objetos, desbloquear funciones ocultas, etc.</text>
-			<text lang="de">Das Nintendo Game Link Cable ist ein Zubehör für die Game Boy-Reihe von Handheld-Videospielsystemen, mit dem Spieler Game Boy's aller Art für Multiplayer-Spiele verbinden können. Je nach Spiel kann das Game Link Cable verwendet werden, um zwei Spiele mit demselben Titel zu verbinden, wie z. B. Tetris, oder zwei kompatible Spiele, wie z. B. Pokémon Rot und Blau. Die Spiele können miteinander verbunden werden, um zu konkurrieren, zu kooperieren, Gegenstände zu tauschen, versteckte Funktionen freizuschalten usw.</text>
-			<text lang="fr">Le câble Game Link de Nintendo est un accessoire pour la gamme de consoles de jeux vidéo portables Game Boy, permettant aux joueurs de connecter des Game Boy de tous types pour jouer à plusieurs. Selon les jeux, le câble Game Link peut être utilisé pour connecter deux jeux portant le même titre, comme Tetris, ou deux jeux compatibles, comme Pokémon Rouge et Bleu. Les jeux peuvent être reliés entre eux pour s'affronter, coopérer, échanger des objets, débloquer des fonctions cachées, etc.</text>
-			<text lang="it">Il cavo Game Link di Nintendo è un accessorio per la linea di console portatili per videogiochi Game Boy, che consente ai giocatori di collegare Game Boy di ogni tipo per giocare in multiplayer. A seconda dei giochi, il cavo Game Link può essere utilizzato per collegare due giochi con lo stesso titolo, come Tetris, o due giochi compatibili, come Pokémon Rosso e Blu. I giochi possono essere collegati tra loro per competere, cooperare, scambiare oggetti, sbloccare funzioni nascoste, ecc.</text>
-		</text>
-	</view>
+      <text lang="es">El cable Game Link de Nintendo es un accesorio para la línea Game Boy de consolas portátiles de videojuegos, que permite a los jugadores conectar Game Boy de todo tipo para jugar en modo multijugador. Dependiendo de los juegos, el cable Game Link puede utilizarse para conectar dos juegos con el mismo título, como Tetris, o dos juegos compatibles, como Pokémon Rojo y Azul. Los juegos pueden conectarse entre sí para competir, cooperar, intercambiar objetos, desbloquear funciones ocultas, etc.</text>
+      <text lang="de">Das Nintendo Game Link Cable ist ein Zubehör für die Game Boy-Reihe von Handheld-Videospielsystemen, mit dem Spieler Game Boy's aller Art für Multiplayer-Spiele verbinden können. Je nach Spiel kann das Game Link Cable verwendet werden, um zwei Spiele mit demselben Titel zu verbinden, wie z. B. Tetris, oder zwei kompatible Spiele, wie z. B. Pokémon Rot und Blau. Die Spiele können miteinander verbunden werden, um zu konkurrieren, zu kooperieren, Gegenstände zu tauschen, versteckte Funktionen freizuschalten usw.</text>
+      <text lang="fr">Le câble Game Link de Nintendo est un accessoire pour la gamme de consoles de jeux vidéo portables Game Boy, permettant aux joueurs de connecter des Game Boy de tous types pour jouer à plusieurs. Selon les jeux, le câble Game Link peut être utilisé pour connecter deux jeux portant le même titre, comme Tetris, ou deux jeux compatibles, comme Pokémon Rouge et Bleu. Les jeux peuvent être reliés entre eux pour s'affronter, coopérer, échanger des objets, débloquer des fonctions cachées, etc.</text>
+      <text lang="it">Il cavo Game Link di Nintendo è un accessorio per la linea di console portatili per videogiochi Game Boy, che consente ai giocatori di collegare Game Boy di ogni tipo per giocare in multiplayer. A seconda dei giochi, il cavo Game Link può essere utilizzato per collegare due giochi con lo stesso titolo, come Tetris, o due giochi compatibili, come Pokémon Rosso e Blu. I giochi possono essere collegati tra loro per competere, cooperare, scambiare oggetti, sbloccare funzioni nascoste, ecc.</text>
+    </text>
+  </view>
 </theme>

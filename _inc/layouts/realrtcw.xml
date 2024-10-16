@@ -1,55 +1,55 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<pos>0.529 0.461</pos>
-			<maxSize>0.28</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.37</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.309</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.249 0.461" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<pos>0.529 0.4602</pos>
-			<maxSize>0.275</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.368</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.307</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.249 0.4602" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2016</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Return to Castle Wolfenstein</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>RealRTCW</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>RealRTCW is a global mod for the classic Wolfenstein, based on the ioRTCW port, which provides support for widescreen resolutions and 64 bit systems. It includes a new graphical renderer, expanded arsenal, reimagined shooting mechanics, new high quality models, textures and sounds.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <pos>0.529 0.461</pos>
+      <maxSize>0.28</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.37</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.309</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.249 0.461" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <pos>0.529 0.4602</pos>
+      <maxSize>0.275</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.368</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.307</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.249 0.4602" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2016</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Return to Castle Wolfenstein</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>RealRTCW</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>RealRTCW is a global mod for the classic Wolfenstein, based on the ioRTCW port, which provides support for widescreen resolutions and 64 bit systems. It includes a new graphical renderer, expanded arsenal, reimagined shooting mechanics, new high quality models, textures and sounds.
 
 • Expanded arsenal including 12 new weapons
 • New HD models for the original weapons
@@ -66,7 +66,7 @@
 • Integration with Steam Workshop for custom maps and modifications
 • Steam achievements support
 • Restored content including a training level and unused soundtrack</text>
-			<text lang="pl">RealRTCW to globalny mod do klasycznego Wolfensteina, oparty na porcie ioRTCW, który zapewnia obsługę rozdzielczości panoramicznych i systemów 64-bitowych. Zawiera nowy renderer graficzny, rozszerzony arsenał, przeprojektowaną mechanikę strzelania, nowe wysokiej jakości modele, tekstury i dźwięki.
+      <text lang="pl">RealRTCW to globalny mod do klasycznego Wolfensteina, oparty na porcie ioRTCW, który zapewnia obsługę rozdzielczości panoramicznych i systemów 64-bitowych. Zawiera nowy renderer graficzny, rozszerzony arsenał, przeprojektowaną mechanikę strzelania, nowe wysokiej jakości modele, tekstury i dźwięki.
 
 • Rozszerzony arsenał, w tym 12 nowych broni
 • Nowe modele HD dla oryginalnych broni
@@ -83,7 +83,24 @@
 • Integracja z Warsztatem Steam dla niestandardowych map i modyfikacji
 • Obsługa osiągnięć Steam
 • Przywrócona zawartość, w tym poziom treningowy i niewykorzystana ścieżka dźwiękowa</text>
-			<text lang="ru">RealRTCW - глобальный мод для классического Wolfenstein, основан на порте ioRTCW, который обеспечивает поддержку широкоформатных разрешений и 64 битных систем. Он включает в себя новый графический рендер, расширенный арсенал, переосмысленную механику стрельбы, новые высококачественные модели, текстуры и звуки.
+      <text lang="pt">RealRTCW é um mod global para o Wolfenstein clássico, baseado na porta ioRTCW, que oferece suporte para resoluções widescreen e sistemas de 64 bits. Inclui um novo renderizador gráfico, arsenal expandido, mecânicas de tiro redesenhadas, novos modelos de alta qualidade, texturas e sons.
+
+• Arsenal expandido, incluindo 12 novas armas
+• Novos modelos HD para as armas originais
+• Texturas HD para ambientes e personagens, mantendo o estilo e a atmosfera do original.
+• Suporte para efeitos climáticos - chuva e neve
+• Novos itens de equipamento - adrenalina e bandagens
+• Sistema de recuo real
+• Características de armas atualizadas
+• Inteligência artificial aprimorada
+• Novos sons de alta qualidade
+• Nova interface
+• Novo sistema de níveis de dificuldade
+• Suporte para legendas
+• Integração com a Oficina Steam para mapas e mods personalizados
+• Suporte para conquistas do Steam
+• Conteúdo restaurado, incluindo o nível de treinamento e a trilha sonora não utilizada</text>
+      <text lang="ru">RealRTCW - глобальный мод для классического Wolfenstein, основан на порте ioRTCW, который обеспечивает поддержку широкоформатных разрешений и 64 битных систем. Он включает в себя новый графический рендер, расширенный арсенал, переосмысленную механику стрельбы, новые высококачественные модели, текстуры и звуки.
 
 • Расширенный арсенал, включающий в себя 12 новых оружий
 • Новые HD модели для оригинального оружия
@@ -100,7 +117,7 @@
 • Интеграция с Steam Workshop для пользовательских карт и модификаций
 • Поддержка достижений Steam
 • Восстановленный контент включающий в себя тренировочный уровень и неиспользованный саундтрек</text>
-			<text lang="es">RealRTCW es un mod global para el clásico Wolfenstein, basado en el port ioRTCW, que proporciona soporte para resoluciones panorámicas y sistemas de 64 bits. Incluye un nuevo renderizador gráfico, arsenal ampliado, mecánica de disparo reimaginada, nuevos modelos de alta calidad, texturas y sonidos.
+      <text lang="es">RealRTCW es un mod global para el clásico Wolfenstein, basado en el port ioRTCW, que proporciona soporte para resoluciones panorámicas y sistemas de 64 bits. Incluye un nuevo renderizador gráfico, arsenal ampliado, mecánica de disparo reimaginada, nuevos modelos de alta calidad, texturas y sonidos.
 
 • Arsenal ampliado con 12 nuevas armas
 • Nuevos modelos HD para las armas originales
@@ -117,7 +134,7 @@
 • Integración con Steam Workshop para mapas personalizados y modificaciones
 • Compatibilidad con logros de Steam
 • Contenido restaurado que incluye un nivel de entrenamiento y una banda sonora sin usar</text>
-			<text lang="de">RealRTCW ist ein globaler Mod für den Klassiker Wolfenstein, der auf der ioRTCW-Portierung basiert, die Unterstützung für Breitbildauflösungen und 64-Bit-Systeme bietet. Sie enthält einen neuen grafischen Renderer, ein erweitertes Arsenal, eine überarbeitete Schießmechanik, neue hochwertige Modelle, Texturen und Sounds.
+      <text lang="de">RealRTCW ist ein globaler Mod für den Klassiker Wolfenstein, der auf der ioRTCW-Portierung basiert, die Unterstützung für Breitbildauflösungen und 64-Bit-Systeme bietet. Sie enthält einen neuen grafischen Renderer, ein erweitertes Arsenal, eine überarbeitete Schießmechanik, neue hochwertige Modelle, Texturen und Sounds.
 
 • Erweitertes Arsenal mit 12 neuen Waffen
 • Neue HD-Modelle für die Originalwaffen
@@ -134,7 +151,7 @@
 • Integration mit Steam Workshop für eigene Karten und Modifikationen
 • Unterstützung von Steam-Erfolgen
 • Wiederhergestellte Inhalte einschließlich eines Trainingslevels und eines nicht verwendeten Soundtracks</text>
-			<text lang="fr">RealRTCW est un mod global pour Wolfenstein classique, basé sur le portage ioRTCW, qui prend en charge les résolutions grand écran et les systèmes 64 bits. Il comprend un nouveau moteur de rendu graphique, un arsenal étendu, des mécanismes de tir réimaginés, de nouveaux modèles, textures et sons de haute qualité.
+      <text lang="fr">RealRTCW est un mod global pour Wolfenstein classique, basé sur le portage ioRTCW, qui prend en charge les résolutions grand écran et les systèmes 64 bits. Il comprend un nouveau moteur de rendu graphique, un arsenal étendu, des mécanismes de tir réimaginés, de nouveaux modèles, textures et sons de haute qualité.
 
 • Arsenal étendu comprenant 12 nouvelles armes
 • Nouveaux modèles HD pour les armes originales
@@ -151,7 +168,7 @@
 • Intégration avec Steam Workshop pour les cartes personnalisées et les modifications
 • Prise en charge des succès Steam
 • Contenu restauré comprenant un niveau d'entraînement et une bande-son inutilisée</text>
-			<text lang="it">RealRTCW è un mod globale per il classico Wolfenstein, basato sul port ioRTCW, che fornisce il supporto per le risoluzioni widescreen e i sistemi a 64 bit. Include un nuovo renderer grafico, un arsenale ampliato, una meccanica di tiro ripensata, nuovi modelli, texture e suoni di alta qualità.
+      <text lang="it">RealRTCW è un mod globale per il classico Wolfenstein, basato sul port ioRTCW, che fornisce il supporto per le risoluzioni widescreen e i sistemi a 64 bit. Include un nuovo renderer grafico, un arsenale ampliato, una meccanica di tiro ripensata, nuovi modelli, texture e suoni di alta qualità.
 
 • Arsenale ampliato con 12 nuove armi
 • Nuovi modelli HD per le armi originali
@@ -168,6 +185,6 @@
 • Integrazione con Steam Workshop per mappe e modifiche personalizzate
 • Supporto per gli obiettivi di Steam
 • Contenuti ripristinati, tra cui un livello di allenamento e una colonna sonora inutilizzata</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

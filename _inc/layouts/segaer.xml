@@ -1,184 +1,188 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.3 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
-			<pos>0.305 0.45</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>14</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.025 0.45" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.6 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
-			<pos>0.69 0.45</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>-14</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.41 0.45" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<pos>0.499 0.47</pos>
-			<maxSize>0.175</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.184</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-left" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
-			<pos>0.392 0.48</pos>
-			<maxSize>0.14</maxSize>
-			<rotation>-76</rotation>
-			<storyboard>
-				<animation property="pos" to="0.112 0.48" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-right" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
-			<pos>0.607 0.48</pos>
-			<maxSize>0.14</maxSize>
-			<rotation>76</rotation>
-			<storyboard>
-				<animation property="pos" to="0.327 0.48" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<pos>0.499 0.47</pos>
-			<maxSize>0.162</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.22</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.182</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
-			<pos>0.618 0.47</pos>
-			<maxSize>0.14</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.338 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox3" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
-			<pos>0.385 0.47</pos>
-			<maxSize>0.14</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.105 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2008</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Sega</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Europa-R</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>SEGA Europa-R is an arcade system board developed by SEGA Amusements Europe. It is a PC-based design that runs only two games: SEGA Rally 3 and Race Driver: GRID.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-left" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.3 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
+      <pos>0.305 0.45</pos>
+      <minSize>0.1 0.3</minSize>
+      <rotation>14</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.025 0.45" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-right" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.6 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+      <pos>0.69 0.45</pos>
+      <minSize>0.1 0.3</minSize>
+      <rotation>-14</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.41 0.45" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <pos>0.499 0.47</pos>
+      <maxSize>0.175</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.184</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-left" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
+      <pos>0.392 0.48</pos>
+      <maxSize>0.14</maxSize>
+      <rotation>-76</rotation>
+      <storyboard>
+        <animation property="pos" to="0.112 0.48" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-right" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+      <pos>0.607 0.48</pos>
+      <maxSize>0.14</maxSize>
+      <rotation>76</rotation>
+      <storyboard>
+        <animation property="pos" to="0.327 0.48" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <pos>0.499 0.47</pos>
+      <maxSize>0.162</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.22</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.182</maxSize>
+      <zIndex>26</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+      <pos>0.618 0.47</pos>
+      <maxSize>0.14</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.338 0.47" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox3" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
+      <pos>0.385 0.47</pos>
+      <maxSize>0.14</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.105 0.47" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2008</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Sega</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Europa-R</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>SEGA Europa-R is an arcade system board developed by SEGA Amusements Europe. It is a PC-based design that runs only two games: SEGA Rally 3 and Race Driver: GRID.
 
 The board features a Core 2 Duo CPU, a Radeon HD 2600 graphics card, and a 32 GB solid state drive. It supports high-definition video output and surround sound.
 SEGA Europa-R is one of the latest arcade systems from SEGA, released in 2008</text>
-			<text lang="it">SEGA Europa-R è una scheda di sistema arcade sviluppata da SEGA Amusements Europe. Si tratta di un progetto basato su PC che esegue solo due giochi: SEGA Rally 3 e Race Driver: GRID.
+      <text lang="it">SEGA Europa-R è una scheda di sistema arcade sviluppata da SEGA Amusements Europe. Si tratta di un progetto basato su PC che esegue solo due giochi: SEGA Rally 3 e Race Driver: GRID.
 
 La scheda è dotata di una CPU Core 2 Duo, una scheda grafica Radeon HD 2600 e un'unità a stato solido da 32 GB. Supporta l'uscita video ad alta definizione e il suono surround.
 SEGA Europa-R è uno degli ultimi sistemi arcade di SEGA, rilasciato nel 2008.</text>
-			<text lang="fr">SEGA Europa-R est un système d'arcade développé par SEGA Amusements Europe. Il s'agit d'une conception basée sur PC qui ne fonctionne qu'avec deux jeux : SEGA Rally 3 et Race Driver : GRID.
+      <text lang="fr">SEGA Europa-R est un système d'arcade développé par SEGA Amusements Europe. Il s'agit d'une conception basée sur PC qui ne fonctionne qu'avec deux jeux : SEGA Rally 3 et Race Driver : GRID.
 
 La carte est équipée d'un processeur Core 2 Duo, d'une carte graphique Radeon HD 2600 et d'un disque dur de 32 Go. Elle prend en charge la sortie vidéo haute définition et le son surround.
 SEGA Europa-R est l'un des derniers systèmes d'arcade de SEGA, sorti en 2008.</text>
-			<text lang="de">SEGA Europa-R ist ein von SEGA Amusements Europe entwickeltes Spielhallen-Systembrett. Es ist ein PC-basiertes Design, auf dem nur zwei Spiele laufen: SEGA Rally 3 und Race Driver: GRID.
+      <text lang="de">SEGA Europa-R ist ein von SEGA Amusements Europe entwickeltes Spielhallen-Systembrett. Es ist ein PC-basiertes Design, auf dem nur zwei Spiele laufen: SEGA Rally 3 und Race Driver: GRID.
 
 Das Board verfügt über eine Core 2 Duo-CPU, eine Radeon HD 2600-Grafikkarte und ein 32-GB-Solid-State-Laufwerk. Es unterstützt High-Definition-Videoausgabe und Surround-Sound.
 SEGA Europa-R ist eines der neuesten Arcade-Systeme von SEGA und wurde 2008 veröffentlicht.</text>
-			<text lang="es">SEGA Europa-R es una placa de sistema arcade desarrollada por SEGA Amusements Europe. Se trata de un diseño basado en PC que ejecuta sólo dos juegos: SEGA Rally 3 y Race Driver: GRID.
+      <text lang="es">SEGA Europa-R es una placa de sistema arcade desarrollada por SEGA Amusements Europe. Se trata de un diseño basado en PC que ejecuta sólo dos juegos: SEGA Rally 3 y Race Driver: GRID.
 
 La placa cuenta con una CPU Core 2 Duo, una tarjeta gráfica Radeon HD 2600 y una unidad de estado sólido de 32 GB. Soporta salida de vídeo de alta definición y sonido envolvente.
 SEGA Europa-R es uno de los últimos sistemas arcade de SEGA, lanzado en 2008.</text>
-			<text lang="ru">SEGA Europa-R - настольная аркадная система, разработанная компанией SEGA Amusements Europe. Она представляет собой конструкцию на базе ПК, на которой запускаются только две игры: SEGA Rally 3 и Race Driver: GRID.
+      <text lang="ru">SEGA Europa-R - настольная аркадная система, разработанная компанией SEGA Amusements Europe. Она представляет собой конструкцию на базе ПК, на которой запускаются только две игры: SEGA Rally 3 и Race Driver: GRID.
 
 Плата оснащена процессором Core 2 Duo, видеокартой Radeon HD 2600 и твердотельным накопителем емкостью 32 Гб. Она поддерживает вывод видео высокой четкости и объемный звук.
 SEGA Europa-R - одна из последних аркадных систем от компании SEGA, выпущенная в 2008 году.</text>
-			<text lang="pl">SEGA Europa-R to system zręcznościowy opracowany przez SEGA Amusements Europe. Jest to projekt oparty na PC, który obsługuje tylko dwie gry: SEGA Rally 3 i Race Driver: GRID.
+      <text lang="pl">SEGA Europa-R to system zręcznościowy opracowany przez SEGA Amusements Europe. Jest to projekt oparty na PC, który obsługuje tylko dwie gry: SEGA Rally 3 i Race Driver: GRID.
 
 Płyta jest wyposażona w procesor Core 2 Duo, kartę graficzną Radeon HD 2600 i dysk SSD o pojemności 32 GB. Obsługuje wyjście wideo w wysokiej rozdzielczości i dźwięk przestrzenny.
 SEGA Europa-R to jeden z najnowszych systemów arcade firmy SEGA, wydany w 2008 roku</text>
-		</text>
-	</view>
+      <text lang="pt">SEGA Europa-R é um sistema de fliperama desenvolvido pela SEGA Amusements Europe. É um projeto baseado em PC que suporta apenas dois jogos: SEGA Rally 3 e Race Driver: GRID.
+
+A placa é equipada com um processador Core 2 Duo, uma placa gráfica Radeon HD 2600 e um disco SSD de 32 GB. Suporta saída de vídeo de alta resolução e som surround.
+SEGA Europa-R é um dos sistemas de fliperama mais recentes da SEGA, lançado em 2008.</text>
+    </text>
+  </view>
 </theme>

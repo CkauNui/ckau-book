@@ -1,75 +1,78 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.37</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
-			<origin if="${screen.ratio} == '21/9'">0.545 0.5</origin>
-			<pos>0.524 0.4</pos>
-			<maxSize>0.25</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.244 0.4" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.37</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
-			<origin if="${screen.ratio} == '21/9'">0.545 0.5</origin>
-			<pos>0.524 0.4</pos>
-			<maxSize>0.235</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.244 0.4" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1982</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Dragon Data</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Dragon 32/64</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Dragon 32 and Dragon 64 are home computers that were built in the 1980s. The Dragons are very similar to the TRS-80 Color Computer, and were produced for the European market by Dragon Data, Ltd., initially in Swansea, Wales before moving to Port Talbot, Wales (until 1984) and by Eurohard S.A. in Casar de Cáceres, Spain (from 1984 to 1987), and for the US market by Tano of New Orleans, Louisiana.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.37</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
+      <origin if="${screen.ratio} == '21/9'">0.545 0.5</origin>
+      <pos>0.524 0.4</pos>
+      <maxSize>0.25</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.244 0.4" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.37</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
+      <origin if="${screen.ratio} == '21/9'">0.545 0.5</origin>
+      <pos>0.524 0.4</pos>
+      <maxSize>0.235</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.244 0.4" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1982</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Dragon Data</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Dragon 32/64</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Dragon 32 and Dragon 64 are home computers that were built in the 1980s. The Dragons are very similar to the TRS-80 Color Computer, and were produced for the European market by Dragon Data, Ltd., initially in Swansea, Wales before moving to Port Talbot, Wales (until 1984) and by Eurohard S.A. in Casar de Cáceres, Spain (from 1984 to 1987), and for the US market by Tano of New Orleans, Louisiana.
 
 The model numbers reflect the primary difference between the two machines, which have 32 and 64 kilobytes (32,768 and 65,536 bytes) of RAM, respectively.</text>
-			<text lang="pl">Dragon 32 i Dragon 64 to komputery domowe, które powstały w latach osiemdziesiątych. Dragony są bardzo podobne do komputerów TRS-80 Color Computer i były produkowane na rynek europejski przez Dragon Data, Ltd., początkowo w Swansea w Walii, a następnie w Port Talbot w Walii (do 1984 r.) oraz przez Eurohard S.A. w Casar de Cáceres w Hiszpanii (od 1984 do 1987 r.), a na rynek amerykański przez firmę Tano z Nowego Orleanu w Luizjanie.
+      <text lang="pl">Dragon 32 i Dragon 64 to komputery domowe, które powstały w latach osiemdziesiątych. Dragony są bardzo podobne do komputerów TRS-80 Color Computer i były produkowane na rynek europejski przez Dragon Data, Ltd., początkowo w Swansea w Walii, a następnie w Port Talbot w Walii (do 1984 r.) oraz przez Eurohard S.A. w Casar de Cáceres w Hiszpanii (od 1984 do 1987 r.), a na rynek amerykański przez firmę Tano z Nowego Orleanu w Luizjanie.
 
 Numery modeli odzwierciedlają podstawową różnicę między tymi dwoma maszynami, które mają odpowiednio 32 i 64 kilobajty (32 768 i 65 536 bajtów) pamięci RAM.</text>
-			<text lang="ru">Dragon 32 и Dragon 64 — домашние компьютеры, которые выпускались в 1980-х. Dragon 32/64 похожи на TRS-80 Color Computer (CoCo), цифры в названии отражают объём оперативной памяти — 32 и 64 килобайта. Машины выпускались в Европе компанией Dragon Data Ltd. NTSC-версия продавалась на американском рынке компанией Tano из Нового Орлеана. Также известно о продажах моделей Dragon 200/200E в Испании компанией Eurohard SA.
+      <text lang="pt">Dragon 32 e Dragon 64 são computadores domésticos que surgiram na década de 1980. Os Dragons são muito semelhantes aos computadores TRS-80 Color Computer e foram produzidos para o mercado europeu pela Dragon Data, Ltd., inicialmente em Swansea no País de Gales, e depois em Port Talbot no País de Gales (até 1984), e pela Eurohard S.A. em Casar de Cáceres na Espanha (de 1984 a 1987), e para o mercado americano pela Tano de Nova Orleans na Louisiana.
+
+Os números dos modelos refletem a principal diferença entre as duas máquinas, que possuem, respectivamente, 32 e 64 kilobytes (32.768 e 65.536 bytes) de memória RAM.</text>
+      <text lang="ru">Dragon 32 и Dragon 64 — домашние компьютеры, которые выпускались в 1980-х. Dragon 32/64 похожи на TRS-80 Color Computer (CoCo), цифры в названии отражают объём оперативной памяти — 32 и 64 килобайта. Машины выпускались в Европе компанией Dragon Data Ltd. NTSC-версия продавалась на американском рынке компанией Tano из Нового Орлеана. Также известно о продажах моделей Dragon 200/200E в Испании компанией Eurohard SA.
 
 В начале 1980-х британский рынок рынок домашних компьютеров расширялся взрывообразно, новые модели компьютеров появлялись почти каждый месяц. Dragon Data вышла на этот рынок в августе 1982 года с компьютером Dragon 32, через год вышел Dragon 64.
 
 Сначала Dragon продавался довольно неплохо и привлекал интерес независимых разработчиков. Через некоторое время также начал выходить журнал «Dragon User». Но на рынке домашних компьютеров драйвером являются компьютерные игры, и в этом Dragon 32/64 проигрывал конкурентам из-за более слабых графических возможностей.</text>
-			<text lang="es">Los Dragon 32 y Dragon 64 son ordenadores domésticos fabricados en la década de 1980. Los Dragon son muy similares al TRS-80 Color Computer, y fueron fabricados para el mercado europeo por Dragon Data, Ltd., inicialmente en Swansea, Gales, antes de trasladarse a Port Talbot, Gales (hasta 1984) y por Eurohard S.A. en Casar de Cáceres, España (de 1984 a 1987), y para el mercado estadounidense por Tano de Nueva Orleans, Luisiana.
+      <text lang="es">Los Dragon 32 y Dragon 64 son ordenadores domésticos fabricados en la década de 1980. Los Dragon son muy similares al TRS-80 Color Computer, y fueron fabricados para el mercado europeo por Dragon Data, Ltd., inicialmente en Swansea, Gales, antes de trasladarse a Port Talbot, Gales (hasta 1984) y por Eurohard S.A. en Casar de Cáceres, España (de 1984 a 1987), y para el mercado estadounidense por Tano de Nueva Orleans, Luisiana.
 
 Los números de modelo reflejan la principal diferencia entre las dos máquinas, que tienen 32 y 64 kilobytes (32.768 y 65.536 bytes) de RAM, respectivamente.</text>
-			<text lang="de">Der Dragon 32 und der Dragon 64 sind Heimcomputer, die in den 1980er Jahren gebaut wurden. Die Dragons sind dem TRS-80 Color Computer sehr ähnlich und wurden für den europäischen Markt von Dragon Data, Ltd. zunächst in Swansea, Wales, dann in Port Talbot, Wales (bis 1984) und von Eurohard S.A. in Casar de Cáceres, Spanien (von 1984 bis 1987) und für den US-Markt von Tano in New Orleans, Louisiana, hergestellt.
+      <text lang="de">Der Dragon 32 und der Dragon 64 sind Heimcomputer, die in den 1980er Jahren gebaut wurden. Die Dragons sind dem TRS-80 Color Computer sehr ähnlich und wurden für den europäischen Markt von Dragon Data, Ltd. zunächst in Swansea, Wales, dann in Port Talbot, Wales (bis 1984) und von Eurohard S.A. in Casar de Cáceres, Spanien (von 1984 bis 1987) und für den US-Markt von Tano in New Orleans, Louisiana, hergestellt.
 
 Die Modellnummern spiegeln den Hauptunterschied zwischen den beiden Maschinen wider, die über 32 bzw. 64 Kilobyte (32.768 bzw. 65.536 Byte) RAM verfügen.</text>
-			<text lang="fr">Le Dragon 32 et le Dragon 64 sont des ordinateurs domestiques construits dans les années 1980. Ils sont très similaires au TRS-80 Color Computer et ont été produits pour le marché européen par Dragon Data, Ltd, initialement à Swansea, au Pays de Galles, puis à Port Talbot, au Pays de Galles (jusqu'en 1984) et par Eurohard S.A. à Casar de Cáceres, en Espagne (de 1984 à 1987), et pour le marché américain par Tano, à la Nouvelle-Orléans, en Louisiane.
+      <text lang="fr">Le Dragon 32 et le Dragon 64 sont des ordinateurs domestiques construits dans les années 1980. Ils sont très similaires au TRS-80 Color Computer et ont été produits pour le marché européen par Dragon Data, Ltd, initialement à Swansea, au Pays de Galles, puis à Port Talbot, au Pays de Galles (jusqu'en 1984) et par Eurohard S.A. à Casar de Cáceres, en Espagne (de 1984 à 1987), et pour le marché américain par Tano, à la Nouvelle-Orléans, en Louisiane.
 
 Les numéros de modèle reflètent la principale différence entre les deux machines, qui disposent respectivement de 32 et 64 kilo-octets (32 768 et 65 536 octets) de mémoire vive.</text>
-			<text lang="it">I Dragon 32 e Dragon 64 sono home computer costruiti negli anni Ottanta. I Dragon sono molto simili al TRS-80 Color Computer e sono stati prodotti per il mercato europeo da Dragon Data, Ltd., inizialmente a Swansea, Galles, prima di trasferirsi a Port Talbot, Galles (fino al 1984) e da Eurohard S.A. a Casar de Cáceres, Spagna (dal 1984 al 1987), e per il mercato statunitense da Tano di New Orleans, Louisiana.
+      <text lang="it">I Dragon 32 e Dragon 64 sono home computer costruiti negli anni Ottanta. I Dragon sono molto simili al TRS-80 Color Computer e sono stati prodotti per il mercato europeo da Dragon Data, Ltd., inizialmente a Swansea, Galles, prima di trasferirsi a Port Talbot, Galles (fino al 1984) e da Eurohard S.A. a Casar de Cáceres, Spagna (dal 1984 al 1987), e per il mercato statunitense da Tano di New Orleans, Louisiana.
 
 I numeri di modello riflettono la differenza principale tra le due macchine, che hanno rispettivamente 32 e 64 kilobyte (32.768 e 65.536 byte) di RAM.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

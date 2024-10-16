@@ -1,156 +1,160 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.35 0.29</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.36</origin>
-			<origin if="${screen.ratio} == '21/9'">0.085 0.5</origin>
-			<pos>0.285 0.35</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>19</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.005 0.35" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.65 0.29</origin>
-			<origin if="${screen.ratio} == '16/10'">0.54 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.9 0.5</origin>
-			<pos>0.713 0.35</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>-19</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.433 0.35" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<pos>0.50 0.35</pos>
-			<maxSize>0.188</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-left" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.26</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>
-			<pos>0.385 0.37</pos>
-			<maxSize>0.16</maxSize>
-			<rotation>-71</rotation>
-			<storyboard>
-				<animation property="pos" to="0.105 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-right" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.39</origin>
-			<origin if="${screen.ratio} == '21/9'">0.85 0.5</origin>
-			<pos>0.6152 0.378</pos>
-			<maxSize>0.165</maxSize>
-			<rotation>71</rotation>
-			<storyboard>
-				<animation property="pos" to="0.3352 0.378" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<pos>0.50 0.35</pos>
-			<maxSize>0.168</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.27</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
-			<origin if="${screen.ratio} == '21/9'">0.85 0.5</origin>
-			<pos>0.635 0.378</pos>
-			<maxSize>0.165</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.355 0.378" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox3" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.39</origin>
-			<origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>
-			<pos>0.365 0.37</pos>
-			<maxSize>0.16</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.085 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2002</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Sega</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Chihiro</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Chihiro is an arcade system produced by Sega and Microsoft based on the Xbox home video game console. It was the second such partnership, with Sega also siding with Namco and Nintendo with the Nintendo GameCube-powered Triforce system.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-left" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.35 0.29</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.36</origin>
+      <origin if="${screen.ratio} == '21/9'">0.085 0.5</origin>
+      <pos>0.285 0.35</pos>
+      <minSize>0.1 0.3</minSize>
+      <rotation>19</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.005 0.35" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-right" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.65 0.29</origin>
+      <origin if="${screen.ratio} == '16/10'">0.54 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0.9 0.5</origin>
+      <pos>0.713 0.35</pos>
+      <minSize>0.1 0.3</minSize>
+      <rotation>-19</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.433 0.35" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <pos>0.50 0.35</pos>
+      <maxSize>0.188</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-left" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.26</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>
+      <pos>0.385 0.37</pos>
+      <maxSize>0.16</maxSize>
+      <rotation>-71</rotation>
+      <storyboard>
+        <animation property="pos" to="0.105 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-right" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.39</origin>
+      <origin if="${screen.ratio} == '21/9'">0.85 0.5</origin>
+      <pos>0.6152 0.378</pos>
+      <maxSize>0.165</maxSize>
+      <rotation>71</rotation>
+      <storyboard>
+        <animation property="pos" to="0.3352 0.378" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <pos>0.50 0.35</pos>
+      <maxSize>0.168</maxSize>
+      <zIndex>26</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.27</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+      <origin if="${screen.ratio} == '21/9'">0.85 0.5</origin>
+      <pos>0.635 0.378</pos>
+      <maxSize>0.165</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.355 0.378" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox3" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.39</origin>
+      <origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>
+      <pos>0.365 0.37</pos>
+      <maxSize>0.16</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.085 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2002</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Sega</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Chihiro</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Chihiro is an arcade system produced by Sega and Microsoft based on the Xbox home video game console. It was the second such partnership, with Sega also siding with Namco and Nintendo with the Nintendo GameCube-powered Triforce system.
 
 The Chihiro is based upon the Xbox, using the same Pentium III CPU and NVIDIA graphics card. Unlike the Xbox, however, it uses GD-ROM media instead of DVDs, has more RAM and an earlier revision chipset which is used in the Xbox debugging unit (MCPX2).
 Because of the similar hardware, it is in theory relatively easy to port Chihiro games to the Xbox and PC. The GD-ROM board can be configured to store up to 1GB of data from the GD-ROM like with the Triforce.</text>
-			<text lang="pl">Chihiro to system arcade wyprodukowany przez firmy Sega i Microsoft na bazie domowej konsoli gier wideo Xbox. Było to drugie tego typu partnerstwo - Sega współpracowała również z Namco i Nintendo przy systemie Triforce napędzanym przez Nintendo GameCube.
+      <text lang="pl">Chihiro to system arcade wyprodukowany przez firmy Sega i Microsoft na bazie domowej konsoli gier wideo Xbox. Było to drugie tego typu partnerstwo - Sega współpracowała również z Namco i Nintendo przy systemie Triforce napędzanym przez Nintendo GameCube.
 
 Chihiro bazuje na konsoli Xbox, wykorzystując ten sam procesor Pentium III i kartę graficzną NVIDIA. Jednak w przeciwieństwie do konsoli Xbox używa nośników GD-ROM zamiast DVD, ma więcej pamięci RAM i chipset wcześniejszej wersji, który jest używany w jednostce debugującej konsoli Xbox (MCPX2).
 Ze względu na podobny sprzęt przenoszenie gier Chihiro na konsolę Xbox i komputer PC jest teoretycznie stosunkowo łatwe. Płytę GD-ROM można skonfigurować do przechowywania do 1 GB danych z GD-ROM, podobnie jak w przypadku Triforce.</text>
-			<text lang="ru">Аркадный автомат, базирующийся на архитектуре Microsoft Xbox.
+      <text lang="pt">Chihiro é um sistema arcade produzido pelas empresas Sega e Microsoft com base no console doméstico de videogame Xbox. Foi a segunda parceria desse tipo - a Sega também colaborou com a Namco e a Nintendo no sistema Triforce, impulsionado pelo Nintendo GameCube.
+
+O Chihiro é baseado no console Xbox, utilizando o mesmo processador Pentium III e placa gráfica NVIDIA. No entanto, ao contrário do console Xbox, ele usa mídia GD-ROM em vez de DVD, possui mais memória RAM e um chipset de uma versão anterior, que é usado na unidade de depuração do console Xbox (MCPX2).
+Devido ao hardware semelhante, portar jogos Chihiro para o console Xbox e PC é teoricamente relativamente fácil. O disco GD-ROM pode ser configurado para armazenar até 1 GB de dados do GD-ROM, da mesma forma que o Triforce.</text>
+      <text lang="ru">Аркадный автомат, базирующийся на архитектуре Microsoft Xbox.
 
 Процессор: Intel Pentium III 733 МГц (133 МГц FSB)
 Графика: nVidia XChip 200 МГц (основан на nVidia GeForce 3)
@@ -160,22 +164,22 @@ Ze względu na podobny sprzęt przenoszenie gier Chihiro na konsolę Xbox i komp
 nVidia nForce (Real time Dolby Digital 5.1 encoding)
 ОЗУ: Обновляемый модуль, от 64 до 512 МБ
 Носитель: Sega GD-ROM</text>
-			<text lang="es">El Chihiro es un sistema arcade producido por Sega y Microsoft basado en la videoconsola doméstica Xbox. Fue la segunda asociación de este tipo, ya que Sega también se alió con Namco y Nintendo con la consola Triforce, basada en Nintendo GameCube.
+      <text lang="es">El Chihiro es un sistema arcade producido por Sega y Microsoft basado en la videoconsola doméstica Xbox. Fue la segunda asociación de este tipo, ya que Sega también se alió con Namco y Nintendo con la consola Triforce, basada en Nintendo GameCube.
 
 La Chihiro se basa en la Xbox y utiliza la misma CPU Pentium III y tarjeta gráfica NVIDIA. Sin embargo, a diferencia de la Xbox, utiliza soportes GD-ROM en lugar de DVD, tiene más RAM y un chipset de revisión anterior que se utiliza en la unidad de depuración de la Xbox (MCPX2).
 Debido a la similitud del hardware, en teoría es relativamente fácil portar los juegos de Chihiro a la Xbox y al PC. La placa GD-ROM puede configurarse para almacenar hasta 1GB de datos de la GD-ROM como con la Triforce.</text>
-			<text lang="de">Das Chihiro ist ein Arcade-System, das von Sega und Microsoft auf der Grundlage der Xbox-Videospielkonsole entwickelt wurde. Es war die zweite Partnerschaft dieser Art, da Sega auch mit Namco und Nintendo mit dem Nintendo GameCube-getriebenen Triforce-System zusammenarbeitete.
+      <text lang="de">Das Chihiro ist ein Arcade-System, das von Sega und Microsoft auf der Grundlage der Xbox-Videospielkonsole entwickelt wurde. Es war die zweite Partnerschaft dieser Art, da Sega auch mit Namco und Nintendo mit dem Nintendo GameCube-getriebenen Triforce-System zusammenarbeitete.
 
 Der Chihiro basiert auf der Xbox und verwendet die gleiche Pentium-III-CPU und NVIDIA-Grafikkarte. Im Gegensatz zur Xbox verwendet er jedoch GD-ROM-Medien anstelle von DVDs, verfügt über mehr Arbeitsspeicher und einen älteren Chipsatz, der in der Debugging-Einheit der Xbox (MCPX2) verwendet wird.
 Aufgrund der ähnlichen Hardware ist es theoretisch relativ einfach, Chihiro-Spiele auf die Xbox und den PC zu portieren. Das GD-ROM-Board kann so konfiguriert werden, dass es wie beim Triforce bis zu 1 GB Daten vom GD-ROM speichern kann.</text>
-			<text lang="fr">La Chihiro est une console d'arcade produite par Sega et Microsoft sur la base de la console de jeux vidéo de salon Xbox. Il s'agit du deuxième partenariat de ce type, Sega s'étant également associé à Namco et Nintendo avec la console Triforce alimentée par la Nintendo GameCube.
+      <text lang="fr">La Chihiro est une console d'arcade produite par Sega et Microsoft sur la base de la console de jeux vidéo de salon Xbox. Il s'agit du deuxième partenariat de ce type, Sega s'étant également associé à Namco et Nintendo avec la console Triforce alimentée par la Nintendo GameCube.
 
 Le Chihiro est basé sur la Xbox, utilisant le même CPU Pentium III et la même carte graphique NVIDIA. Toutefois, contrairement à la Xbox, il utilise des supports GD-ROM au lieu de DVD, dispose de plus de mémoire vive et d'un chipset de révision antérieure utilisé dans l'unité de débogage de la Xbox (MCPX2).
 En raison de la similitude du matériel, il est en théorie relativement facile de porter les jeux Chihiro sur la Xbox et le PC. La carte GD-ROM peut être configurée pour stocker jusqu'à 1 Go de données à partir du GD-ROM, comme c'est le cas avec la Triforce.</text>
-			<text lang="it">Il Chihiro è un sistema arcade prodotto da Sega e Microsoft basato sulla console per videogiochi Xbox. Si tratta della seconda collaborazione di questo tipo: Sega si era infatti alleata anche con Namco e Nintendo per la console Triforce, alimentata dal Nintendo GameCube.
+      <text lang="it">Il Chihiro è un sistema arcade prodotto da Sega e Microsoft basato sulla console per videogiochi Xbox. Si tratta della seconda collaborazione di questo tipo: Sega si era infatti alleata anche con Namco e Nintendo per la console Triforce, alimentata dal Nintendo GameCube.
 
 Il Chihiro è basato sulla Xbox e utilizza la stessa CPU Pentium III e la stessa scheda grafica NVIDIA. A differenza della Xbox, però, utilizza supporti GD-ROM anziché DVD, ha una maggiore quantità di RAM e un chipset di revisione precedente, utilizzato nell'unità di debug della Xbox (MCPX2).
 A causa dell'hardware simile, il porting dei giochi Chihiro su Xbox e PC è, in teoria, relativamente facile. La scheda GD-ROM può essere configurata per memorizzare fino a 1 GB di dati dalla GD-ROM come nel caso della Triforce.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

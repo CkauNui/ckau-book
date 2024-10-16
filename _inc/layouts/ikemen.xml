@@ -1,74 +1,77 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.535 0.5</origin>
-			<pos>0.5 0.382</pos>
-			<maxSize>0.315</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.42</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.35</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.382" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.55 0.36</origin>
-			<origin if="${screen.ratio} == '16/10'">0.55 0.4465</origin>
-			<origin if="${screen.ratio} == '21/9'">0.535 0.5</origin>
-			<pos>0.51 0.382</pos>
-			<maxSize>0.305</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.4</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.33</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.23 0.382" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2017</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>I.K.E.M.E.N</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>I.K.E.M.E.N (short for Itsumademo Kanseishinai Eienni Mikansei ENgine) is a free and open-source fighting game engine designed to be compatible with M.U.G.E.N content, while also expanding on its feature set to allow for more flexible customization. The engine is notable for introducing stage zoom prior to the release of the M.U.G.E.N 1.1 beta, and for allowing netplay matches, a feature that is not supported in any official build of M.U.G.E.N.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0.535 0.5</origin>
+      <pos>0.5 0.382</pos>
+      <maxSize>0.315</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.42</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.35</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.382" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.55 0.36</origin>
+      <origin if="${screen.ratio} == '16/10'">0.55 0.4465</origin>
+      <origin if="${screen.ratio} == '21/9'">0.535 0.5</origin>
+      <pos>0.51 0.382</pos>
+      <maxSize>0.305</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.4</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.33</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.23 0.382" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2017</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>I.K.E.M.E.N</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>I.K.E.M.E.N (short for Itsumademo Kanseishinai Eienni Mikansei ENgine) is a free and open-source fighting game engine designed to be compatible with M.U.G.E.N content, while also expanding on its feature set to allow for more flexible customization. The engine is notable for introducing stage zoom prior to the release of the M.U.G.E.N 1.1 beta, and for allowing netplay matches, a feature that is not supported in any official build of M.U.G.E.N.
 
 Unlike M.U.G.E.N, the engine is open source, which allows users to modify the engine outside of simple content additions, as well as the addition of new features, such as new state controllers and menus.</text>
-			<text lang="pl">I.K.E.M.E.N (skrót od Itsumademo Kanseishinai Eienni Mikansei ENgine) to darmowy i open-source'owy silnik do gier walki, zaprojektowany tak, aby był kompatybilny z zawartością M.U.G.E.N, jednocześnie rozszerzając jego zestaw funkcji, aby umożliwić bardziej elastyczne dostosowanie. Silnik ten jest godny uwagi ze względu na wprowadzenie stage zoom przed wydaniem bety M.U.G.E.N 1.1 oraz umożliwienie rozgrywania meczów w sieci, co nie jest wspierane w żadnej oficjalnej wersji M.U.G.E.N.
+      <text lang="pl">I.K.E.M.E.N (skrót od Itsumademo Kanseishinai Eienni Mikansei ENgine) to darmowy i open-source'owy silnik do gier walki, zaprojektowany tak, aby był kompatybilny z zawartością M.U.G.E.N, jednocześnie rozszerzając jego zestaw funkcji, aby umożliwić bardziej elastyczne dostosowanie. Silnik ten jest godny uwagi ze względu na wprowadzenie stage zoom przed wydaniem bety M.U.G.E.N 1.1 oraz umożliwienie rozgrywania meczów w sieci, co nie jest wspierane w żadnej oficjalnej wersji M.U.G.E.N.
 
 W przeciwieństwie do M.U.G.E.N, silnik jest open source, co pozwala użytkownikom na modyfikację silnika poza prostym dodawaniem zawartości, jak również dodawanie nowych funkcji, takich jak nowe kontrolery stanów i menu.</text>
-			<text lang="ru">I.K.E.M.E.N (сокращение от Itsumademo Kanseishinai Eienni Mikansei ENgine) - это бесплатный движок для файтингов с открытым исходным кодом, разработанный для совместимости с контентом M.U.G.E.N, а также расширяющий его набор функций для более гибкой настройки. Движок примечателен тем, что в нем появилась функция масштабирования сцены до выхода бета-версии M.U.G.E.N 1.1, а также возможность проведения матчей по сети, которая не поддерживается ни в одной официальной сборке M.U.G.E.N.
+      <text lang="pt">I.K.E.M.E.N (abreviação de Itsumademo Kanseishinai Eienni Mikansei ENgine) é um motor de jogos de luta gratuito e de código aberto, projetado para ser compatível com o conteúdo de M.U.G.E.N, ao mesmo tempo em que expande seu conjunto de recursos para permitir uma personalização mais flexível. Este motor é notável por ter introduzido o zoom de fase antes do lançamento da versão beta do M.U.G.E.N 1.1 e por permitir que partidas fossem jogadas online, o que não é suportado em nenhuma versão oficial do M.U.G.E.N.
+
+Ao contrário do M.U.G.E.N, o motor é de código aberto, o que permite aos usuários modificar o motor além da simples adição de conteúdo, além de adicionar novas funcionalidades, como novos controladores de estado e menus.</text>
+      <text lang="ru">I.K.E.M.E.N (сокращение от Itsumademo Kanseishinai Eienni Mikansei ENgine) - это бесплатный движок для файтингов с открытым исходным кодом, разработанный для совместимости с контентом M.U.G.E.N, а также расширяющий его набор функций для более гибкой настройки. Движок примечателен тем, что в нем появилась функция масштабирования сцены до выхода бета-версии M.U.G.E.N 1.1, а также возможность проведения матчей по сети, которая не поддерживается ни в одной официальной сборке M.U.G.E.N.
 
 В отличие от M.U.G.E.N, движок имеет открытый исходный код, что позволяет пользователям изменять движок, не ограничиваясь простым добавлением контента, а также добавлением новых функций, таких как новые контроллеры состояний и меню.</text>
-			<text lang="es">I.K.E.M.E.N (abreviatura de Itsumademo Kanseishinai Eienni Mikansei ENgine) es un motor de juegos de lucha gratuito y de código abierto diseñado para ser compatible con el contenido de M.U.G.E.N, al tiempo que amplía sus características para permitir una personalización más flexible. El motor destaca por haber introducido el zoom de escenarios antes del lanzamiento de la beta 1.1 de M.U.G.E.N y por permitir combates en red, una función que no está disponible en ninguna versión oficial de M.U.G.E.N.
+      <text lang="es">I.K.E.M.E.N (abreviatura de Itsumademo Kanseishinai Eienni Mikansei ENgine) es un motor de juegos de lucha gratuito y de código abierto diseñado para ser compatible con el contenido de M.U.G.E.N, al tiempo que amplía sus características para permitir una personalización más flexible. El motor destaca por haber introducido el zoom de escenarios antes del lanzamiento de la beta 1.1 de M.U.G.E.N y por permitir combates en red, una función que no está disponible en ninguna versión oficial de M.U.G.E.N.
 
 A diferencia de M.U.G.E.N, el motor es de código abierto, lo que permite a los usuarios modificarlo al margen de simples añadidos de contenido, así como la adición de nuevas características, como nuevos controladores de estado y menús.</text>
-			<text lang="de">I.K.E.M.E.N (kurz für Itsumademo Kanseishinai Eienni Mikansei ENgine) ist eine freie und quelloffene Kampfspiel-Engine, die entwickelt wurde, um mit M.U.G.E.N-Inhalten kompatibel zu sein, während sie gleichzeitig dessen Funktionsumfang erweitert, um eine flexiblere Anpassung zu ermöglichen. Die Engine zeichnet sich dadurch aus, dass sie noch vor der Veröffentlichung der M.U.G.E.N 1.1-Beta den Stage-Zoom einführt und Netplay-Matches ermöglicht, eine Funktion, die in keinem offiziellen Build von M.U.G.E.N. unterstützt wird.
+      <text lang="de">I.K.E.M.E.N (kurz für Itsumademo Kanseishinai Eienni Mikansei ENgine) ist eine freie und quelloffene Kampfspiel-Engine, die entwickelt wurde, um mit M.U.G.E.N-Inhalten kompatibel zu sein, während sie gleichzeitig dessen Funktionsumfang erweitert, um eine flexiblere Anpassung zu ermöglichen. Die Engine zeichnet sich dadurch aus, dass sie noch vor der Veröffentlichung der M.U.G.E.N 1.1-Beta den Stage-Zoom einführt und Netplay-Matches ermöglicht, eine Funktion, die in keinem offiziellen Build von M.U.G.E.N. unterstützt wird.
 
 Im Gegensatz zu M.U.G.E.N. ist die Engine quelloffen, was es den Nutzern erlaubt, die Engine über einfache Inhaltserweiterungen hinaus zu modifizieren und neue Features wie neue Zustandsregler und Menüs hinzuzufügen.</text>
-			<text lang="fr">I.K.E.M.E.N (abréviation de Itsumademo Kanseishinai Eienni Mikansei ENgine) est un moteur de jeu de combat gratuit et open-source conçu pour être compatible avec le contenu de M.U.G.E.N, tout en élargissant ses fonctionnalités pour permettre une personnalisation plus souple. Le moteur a notamment introduit le zoom de scène avant la sortie de la version bêta 1.1 de M.U.G.E.N, et permet les matchs en réseau, une fonctionnalité qui n'est prise en charge par aucune version officielle de M.U.G.E.N.
+      <text lang="fr">I.K.E.M.E.N (abréviation de Itsumademo Kanseishinai Eienni Mikansei ENgine) est un moteur de jeu de combat gratuit et open-source conçu pour être compatible avec le contenu de M.U.G.E.N, tout en élargissant ses fonctionnalités pour permettre une personnalisation plus souple. Le moteur a notamment introduit le zoom de scène avant la sortie de la version bêta 1.1 de M.U.G.E.N, et permet les matchs en réseau, une fonctionnalité qui n'est prise en charge par aucune version officielle de M.U.G.E.N.
 
 Contrairement à M.U.G.E.N, le moteur est open source, ce qui permet aux utilisateurs de modifier le moteur en dehors des simples ajouts de contenu, ainsi que l'ajout de nouvelles fonctionnalités, telles que de nouveaux contrôleurs d'état et de nouveaux menus.</text>
-			<text lang="it">I.K.E.M.E.N (acronimo di Itsumademo Kanseishinai Eienni Mikansei ENgine) è un motore per giochi di combattimento libero e open source progettato per essere compatibile con i contenuti di M.U.G.E.N, ampliando al contempo il suo set di funzionalità per consentire una personalizzazione più flessibile. Il motore si distingue per l'introduzione dello stage zoom prima del rilascio della beta di M.U.G.E.N 1.1 e per la possibilità di giocare in rete, una caratteristica che non è supportata in nessuna build ufficiale di M.U.G.E.N.
+      <text lang="it">I.K.E.M.E.N (acronimo di Itsumademo Kanseishinai Eienni Mikansei ENgine) è un motore per giochi di combattimento libero e open source progettato per essere compatibile con i contenuti di M.U.G.E.N, ampliando al contempo il suo set di funzionalità per consentire una personalizzazione più flessibile. Il motore si distingue per l'introduzione dello stage zoom prima del rilascio della beta di M.U.G.E.N 1.1 e per la possibilità di giocare in rete, una caratteristica che non è supportata in nessuna build ufficiale di M.U.G.E.N.
 
 A differenza di M.U.G.E.N, il motore è open source, il che consente agli utenti di modificare il motore al di là delle semplici aggiunte di contenuti, nonché di aggiungere nuove funzionalità, come nuovi controller di stato e menu.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

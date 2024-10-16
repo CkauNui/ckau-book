@@ -1,75 +1,80 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.4995 0.39</pos>
-			<maxSize>0.252</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.2195 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.4995 0.39</pos>
-			<maxSize>0.242</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.2195 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1995</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Atari</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Jaguar CD</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Atari Jaguar CD or Jag CD is a CD-ROM peripheral for the Atari Jaguar video game console.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.4995 0.39</pos>
+      <maxSize>0.252</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.2195 0.39" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.4995 0.39</pos>
+      <maxSize>0.242</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.2195 0.39" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1995</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Atari</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Jaguar CD</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Atari Jaguar CD or Jag CD is a CD-ROM peripheral for the Atari Jaguar video game console.
 
 Atari announced a CD-ROM drive for the Jaguar before the console's November 1993 launch. Code-named the Jaguar II during development, the Jaguar CD was released on September 21, 1995, and retailed for $149.95. It suffered from multiple delays, having been originally intended for launch during the 1994 holiday shopping season. The device sits atop the Jaguar console, fitting into the ROM cartridge slot. The drive has its own cartridge slot to allow cartridge games to be played without removing the CD drive, and to run software that used cartridge and CD in tandem. There was a separate "Memory Track" cartridge for storing saved game position and high scores. Several publications have criticized the Jaguar CD's design for bearing an appearance similar to a toilet.</text>
-			<text lang="pl">Atari Jaguar CD (w skrócie Jag CD) – opcjonalny napęd CD do konsoli Atari Jaguar, wprowadzony przez Atari w roku 1995.
+      <text lang="pl">Atari Jaguar CD (w skrócie Jag CD) – opcjonalny napęd CD do konsoli Atari Jaguar, wprowadzony przez Atari w roku 1995.
 
 Dodatek ten łączył się z konsolą przez łącze na kartridże – był podłączany do niej z góry. Był to napęd CD dwukrotnej prędkości, płyty zaś mogły mieścić do 790 megabajtów. Z dodatkiem były sprzedawane dwie gry: Vid Grid i Blue Lightning. Poza grami Jaguar CD umożliwiało również słuchanie muzyki – jedną z dołączonych płyt był soundtrack z gry Tempest 2000.
 
 Jaguar CD, podobnie jak sama konsola Atari Jaguar, ukazał się zbyt późno w porównaniu z konkurencją w postaci konsol Sega Saturn oraz PlayStation. W efekcie na przystawkę ukazało się zaledwie 11 gier, poza tym wyprodukowano tylko 20 tysięcy egzemplarzy napędu.</text>
-			<text lang="ru">Игровая консоль, выпущенная в ноябре 1993 года компанией Atari. В своё время являлась мощной платформой следующего (пятого по счёту) поколения телевизионных игровых приставок. Поступила в продажу по цене 249,99 долларов. Рекламировалась как «первая 64-битная система», что было рекламной уловкой — CPU и GPU приставки имели RISC-подобную 32-битную архитектуру, 64-битным был графический сопроцессор «Том».
+      <text lang="pt">Atari Jaguar CD (abreviado como Jag CD) - um drive de CD opcional para o console Atari Jaguar, lançado pela Atari em 1995.
+
+Este acessório conectava-se ao console através da porta de cartucho - era conectado a ele por cima. Era um drive de CD de duas velocidades, e os discos podiam armazenar até 790 megabytes. Dois jogos foram vendidos com o acessório: Vid Grid e Blue Lightning. Além dos jogos, o Jaguar CD também permitia ouvir música - um dos discos incluídos era a trilha sonora do jogo Tempest 2000.
+
+O Jaguar CD, assim como o próprio console Atari Jaguar, foi lançado muito tarde em comparação com a concorrência, como os consoles Sega Saturn e PlayStation. Como resultado, apenas 11 jogos foram lançados para o acessório, e apenas 20.000 unidades do drive foram produzidas.</text>
+      <text lang="ru">Игровая консоль, выпущенная в ноябре 1993 года компанией Atari. В своё время являлась мощной платформой следующего (пятого по счёту) поколения телевизионных игровых приставок. Поступила в продажу по цене 249,99 долларов. Рекламировалась как «первая 64-битная система», что было рекламной уловкой — CPU и GPU приставки имели RISC-подобную 32-битную архитектуру, 64-битным был графический сопроцессор «Том».
 
 Однако для приставки было выпущено ограниченное число игр, большинство из которых были низкого качества, что отрицательно сказалось на продажах консоли. К причинам провала также можно отнести неудачно выбранный носитель (картридж), неудобный джойстик и ценовую политику. Конкуренция с другими приставками, особенно использовавшими CD-диски как PlayStation, обрекла Atari Jaguar на провал. В период с конца 1993 по конец 1995 года было продано всего 125 тыс. экземпляров.
 
 И хотя производителем были предприняты попытки привлечь к консоли интерес покупателей, выпустив в спешном порядке адаптер для чтения компакт-дисков Atari Jaguar CD, устройство для сохранения состояния игры Memory Track и устройство для совместной игры на двух приставках JagLink, эти действия не смогли повысить продажи. Претерпев серьёзные убытки, Atari была вынуждена покинуть рынок игровых приставок.</text>
-			<text lang="es">El Atari Jaguar CD o Jag CD es un periférico CD-ROM para la consola de videojuegos Atari Jaguar.
+      <text lang="es">El Atari Jaguar CD o Jag CD es un periférico CD-ROM para la consola de videojuegos Atari Jaguar.
 
 Atari anunció una unidad de CD-ROM para la Jaguar antes del lanzamiento de la consola en noviembre de 1993. Con el nombre en clave de Jaguar II durante su desarrollo, el Jaguar CD salió a la venta el 21 de septiembre de 1995 por 149,95 dólares. Sufrió múltiples retrasos, ya que su lanzamiento estaba previsto para la temporada de compras navideñas de 1994. El dispositivo se coloca sobre la consola Jaguar, encajando en la ranura para cartuchos ROM. La unidad tiene su propia ranura para cartuchos, lo que permite jugar a juegos de cartucho sin tener que extraer la unidad de CD y ejecutar software que utiliza cartucho y CD a la vez. Había un cartucho "Memory Track" independiente para almacenar la posición de las partidas guardadas y las puntuaciones más altas. Varias publicaciones han criticado el diseño del CD Jaguar por tener un aspecto similar al de un retrete.</text>
-			<text lang="de">Die Atari Jaguar CD oder Jag CD ist ein CD-ROM-Peripheriegerät für die Atari Jaguar Videospielkonsole.
+      <text lang="de">Die Atari Jaguar CD oder Jag CD ist ein CD-ROM-Peripheriegerät für die Atari Jaguar Videospielkonsole.
 
 Atari kündigte ein CD-ROM-Laufwerk für den Jaguar vor der Markteinführung der Konsole im November 1993 an. Das Jaguar CD, das während der Entwicklung den Codenamen Jaguar II trug, wurde am 21. September 1995 zum Preis von 149,95 $ im Handel veröffentlicht. Die Markteinführung wurde mehrfach verschoben, da sie ursprünglich für das Weihnachtsgeschäft 1994 geplant war. Das Gerät sitzt oben auf der Jaguar-Konsole und passt in den ROM-Cartridge-Schacht. Das Laufwerk hat einen eigenen Kassettenschacht, damit Kassettenspiele gespielt werden können, ohne dass das CD-Laufwerk entfernt werden muss, und um Software auszuführen, die Kassette und CD gleichzeitig verwendet. Es gab eine separate "Memory Track"-Kassette zum Speichern von Spielpositionen und Highscores. In mehreren Publikationen wurde das Design der Jaguar-CD kritisiert, weil es an eine Toilette erinnert.</text>
-			<text lang="fr">L'Atari Jaguar CD ou Jag CD est un périphérique CD-ROM pour la console de jeux vidéo Atari Jaguar.
+      <text lang="fr">L'Atari Jaguar CD ou Jag CD est un périphérique CD-ROM pour la console de jeux vidéo Atari Jaguar.
 
 Atari a annoncé un lecteur de CD-ROM pour la Jaguar avant le lancement de la console en novembre 1993. Sous le nom de code Jaguar II pendant son développement, le Jaguar CD est sorti le 21 septembre 1995 au prix de 149,95 $. Il a souffert de multiples retards, le lancement étant initialement prévu pour la période des fêtes de fin d'année 1994. L'appareil se place sur la console Jaguar, dans l'emplacement de la cartouche ROM. Le lecteur possède son propre emplacement de cartouche pour permettre de jouer à des jeux en cartouche sans retirer le lecteur de CD, et pour exécuter des logiciels qui utilisent la cartouche et le CD en tandem. Il y avait une cartouche séparée "Memory Track" pour stocker la position des jeux sauvegardés et les meilleurs scores. Plusieurs publications ont critiqué le design du CD Jaguar, lui reprochant de ressembler à des toilettes.</text>
-			<text lang="it">L'Atari Jaguar CD o Jag CD è una periferica CD-ROM per la console per videogiochi Atari Jaguar.
+      <text lang="it">L'Atari Jaguar CD o Jag CD è una periferica CD-ROM per la console per videogiochi Atari Jaguar.
 
 Atari annunciò un'unità CD-ROM per il Jaguar prima del lancio della console nel novembre 1993. Chiamato in codice Jaguar II durante lo sviluppo, il Jaguar CD è stato rilasciato il 21 settembre 1995, al prezzo di 149,95 dollari. Ha subito diversi ritardi, essendo stato originariamente previsto per il lancio durante la stagione dello shopping natalizio del 1994. Il dispositivo va posizionato sopra la console Jaguar, inserito nello slot per cartucce ROM. L'unità è dotata di un proprio alloggiamento per le cartucce, per consentire l'esecuzione di giochi su cartuccia senza rimuovere l'unità CD e per eseguire software che utilizzano cartuccia e CD in tandem. Esisteva una cartuccia "Memory Track" separata per memorizzare la posizione dei giochi salvati e i punteggi più alti. Diverse pubblicazioni hanno criticato il design del CD Jaguar per il suo aspetto simile a quello di una toilette.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

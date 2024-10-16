@@ -1,75 +1,80 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.5</pos>
-			<maxSize>0.29</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.38</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.32</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.5</pos>
-			<maxSize>0.27</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.37</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.31</maxSize>
-			<zIndex>250</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2017</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>TIC-80</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>TIC-80 is a fantasy computer for making, playing and sharing tiny games.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <pos>0.5 0.5</pos>
+      <maxSize>0.29</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.38</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.32</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.5 0.5</pos>
+      <maxSize>0.27</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.37</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.31</maxSize>
+      <zIndex>250</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2017</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>TIC-80</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>TIC-80 is a fantasy computer for making, playing and sharing tiny games.
 
 There are built-in tools for development: code, sprites, maps, sound editors and the command line, which is enough to create a mini retro game. At the exit you will get a cartridge file, which can be stored and played on the website.
 
 Also, the game can be packed into a player that works on all popular platforms and distribute as you wish. To make a retro styled game the whole process of creation takes place under some technical limitations: 240x136 pixels display, 16 color palette, 256 8x8 color sprites, 4 channel sound and etc.</text>
-			<text lang="pl">TIC-80 to komputer fantasy do tworzenia, grania i dzielenia się małymi grami.
+      <text lang="pl">TIC-80 to komputer fantasy do tworzenia, grania i dzielenia się małymi grami.
 
 Wbudowane są narzędzia do rozwoju: kod, sprite'y, mapy, edytory dźwięku i wiersz poleceń, co wystarczy, aby stworzyć mini grę retro. Po wyjściu otrzymasz plik kartridża, który można przechowywać i odtwarzać na stronie internetowej.
 
 Grę można również spakować do odtwarzacza, który działa na wszystkich popularnych platformach i rozpowszechniać według własnego uznania. Aby zrobić grę w stylu retro, cały proces tworzenia odbywa się przy pewnych ograniczeniach technicznych: wyświetlacz 240x136 pikseli, paleta 16 kolorów, 256 sprite'ów 8x8 kolorów, dźwięk 4 kanałowy i itp.</text>
-			<text lang="ru">TIC-80 это виртуальная игровая консоль, созданная в ретро стиле 80-90-х годов. Она написана создателем популярного эмулятора NesBOX Вадимом Григоруком. По своим характеристикам этот крошечный компьютер очень похож на игровые приставки 80-х годов. Небольшое разрешение экрана, ограниченная палитра, всего 80Кб оперативной памяти. Но выражая дух игровых приставок ретро эпохи, консоль реализована на передовых технологиях и запускается на всех популярных платформах: Windows, Linux, MacOS, Android. Реализация на HMTL5 позволяет запускать игры прямо в браузере. Имеются встроенные средства разработки: редакторы кода, спрайтов, карт и звука. Программный код можно писать как на Lua, MoonScript так и на JavaScript.
+      <text lang="pt">TIC-80 é um computador de fantasia para criar, jogar e compartilhar pequenos jogos.
+
+Ele possui ferramentas de desenvolvimento integradas: código, sprites, mapas, editores de som e linha de comando, o que é suficiente para criar um mini jogo retrô. Após a conclusão, você receberá um arquivo de cartucho que pode ser armazenado e reproduzido no site.
+
+O jogo também pode ser empacotado em um player que funciona em todas as plataformas populares e distribuído à vontade. Para fazer um jogo no estilo retrô, todo o processo de criação ocorre com algumas restrições técnicas: tela de 240x136 pixels, paleta de 16 cores, 256 sprites de 8x8 cores, som de 4 canais, etc.</text>
+      <text lang="ru">TIC-80 это виртуальная игровая консоль, созданная в ретро стиле 80-90-х годов. Она написана создателем популярного эмулятора NesBOX Вадимом Григоруком. По своим характеристикам этот крошечный компьютер очень похож на игровые приставки 80-х годов. Небольшое разрешение экрана, ограниченная палитра, всего 80Кб оперативной памяти. Но выражая дух игровых приставок ретро эпохи, консоль реализована на передовых технологиях и запускается на всех популярных платформах: Windows, Linux, MacOS, Android. Реализация на HMTL5 позволяет запускать игры прямо в браузере. Имеются встроенные средства разработки: редакторы кода, спрайтов, карт и звука. Программный код можно писать как на Lua, MoonScript так и на JavaScript.
 
 Стоит отметить, что на создание автора вдохновила "фантазийная" игровая консоль Pico-8.</text>
-			<text lang="es"/>
-			<text lang="de">TIC-80 ist ein Fantasie-Computer zum Erstellen, Spielen und Austauschen kleiner Spiele.
+      <text lang="es"/>
+      <text lang="de">TIC-80 ist ein Fantasie-Computer zum Erstellen, Spielen und Austauschen kleiner Spiele.
 
 Es gibt eingebaute Werkzeuge für die Entwicklung: Code, Sprites, Karten, Sound-Editoren und die Befehlszeile, die ausreicht, um ein Mini-Retro-Spiel zu erstellen. Am Ende erhält man eine Cartridge-Datei, die auf der Website gespeichert und gespielt werden kann.
 
 Außerdem kann das Spiel in einen Player gepackt werden, der auf allen gängigen Plattformen funktioniert und nach Belieben verteilt werden kann. Um ein Spiel im Retro-Stil zu erstellen, unterliegt der gesamte Erstellungsprozess einigen technischen Einschränkungen: 240x136 Pixel Bildschirm, 16 Farben, 256 8x8 Farben, 4-Kanal-Sound und so weiter.</text>
-			<text lang="fr">TIC-80 est un ordinateur fantaisiste qui permet de créer, de jouer et de partager des jeux miniatures.
+      <text lang="fr">TIC-80 est un ordinateur fantaisiste qui permet de créer, de jouer et de partager des jeux miniatures.
 
 Il dispose d'outils de développement intégrés : code, sprites, cartes, éditeurs sonores et ligne de commande, ce qui est suffisant pour créer un mini jeu rétro. À la fin du projet, vous obtiendrez un fichier cartouche, qui peut être stocké et joué sur le site web.
 
 Le jeu peut également être intégré dans un lecteur fonctionnant sur toutes les plates-formes courantes et distribué comme vous le souhaitez. Pour créer un jeu de style rétro, l'ensemble du processus de création est soumis à certaines limitations techniques : écran 240x136 pixels, palette de 16 couleurs, 256 sprites de 8x8 couleurs, son à 4 canaux, etc.</text>
-			<text lang="it">TIC-80 è un computer di fantasia per creare, giocare e condividere piccoli giochi.
+      <text lang="it">TIC-80 è un computer di fantasia per creare, giocare e condividere piccoli giochi.
 
 Ci sono strumenti integrati per lo sviluppo: codice, sprite, mappe, editor di suoni e linea di comando, sufficienti per creare un mini gioco retrò. All'uscita si otterrà un file di cartuccia, che potrà essere memorizzato e giocato sul sito web.
 
 Inoltre, il gioco può essere inserito in un lettore che funziona su tutte le piattaforme più diffuse e distribuito a piacimento. Per realizzare un gioco in stile retrò, l'intero processo di creazione si svolge con alcune limitazioni tecniche: Display da 240x136 pixel, tavolozza di 16 colori, 256 sprite da 8x8 colori, suono a 4 canali e così via.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

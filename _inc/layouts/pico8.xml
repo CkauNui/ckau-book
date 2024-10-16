@@ -1,53 +1,54 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.31</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
-			<pos>0.501 0.345</pos>
-			<maxSize>0.3</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.221 0.345" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.31</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
-			<pos>0.501 0.345</pos>
-			<maxSize>0.282</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.221 0.345" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2014</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>PICO-8</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>PICO-8 is a fantasy console for making, sharing and playing tiny games and other computer programs. It feels like a regular console, but runs on Windows / Mac / Linux. When you turn it on, the machine greets you with a commandline, a suite of cartridge creation tools, and an online cartridge browser called SPLORE.</text>
-			<text lang="pl">PICO-8 jest fantazyjną konsolą do tworzenia, dzielenia się i grania w małe gry i inne programy komputerowe. Wygląda jak zwykła konsola, ale działa na Windowsie / Macu / Linuksie. Kiedy ją włączasz, wita cię wierszem poleceń, zestawem narzędzi do tworzenia kartridży oraz przeglądarką kartridży online o nazwie SPLORE.</text>
-			<text lang="ru">PICO-8 является вымышленной консолью для создания, обмена и воспроизведения крошечных игр и других компьютерных программ. Когда вы включите её, машина встречает вас строкой для ввода Lua-команд и предоставляет простые встроенные инструменты для создания собственных картриджей.</text>
-			<text lang="es">PICO-8 es una consola de fantasía para crear, compartir y jugar a pequeños juegos y otros programas informáticos. Parece una consola normal, pero funciona con Windows / Mac / Linux. Al encenderla, la máquina te da la bienvenida con una línea de comandos, un conjunto de herramientas de creación de cartuchos y un navegador de cartuchos en línea llamado SPLORE.</text>
-			<text lang="de">PICO-8 ist eine fantastische Konsole zum Erstellen, Teilen und Spielen von kleinen Spielen und anderen Computerprogrammen. Sie fühlt sich an wie eine normale Konsole, läuft aber unter Windows/Mac/Linux. Beim Einschalten begrüßt dich das Gerät mit einer Kommandozeile, einer Reihe von Tools zur Erstellung von Cartridges und einem Online-Cartridge-Browser namens SPLORE.</text>
-			<text lang="fr">PICO-8 est une console fantaisiste permettant de créer, de partager et de jouer à des jeux miniatures et à d'autres programmes informatiques. Elle ressemble à une console classique, mais fonctionne sous Windows / Mac / Linux. Lorsque vous l'allumez, la machine vous accueille avec une ligne de commande, une suite d'outils de création de cartouches et un navigateur de cartouches en ligne appelé SPLORE.</text>
-			<text lang="it">PICO-8 è una console di fantasia per creare, condividere e giocare con piccoli giochi e altri programmi per computer. Sembra una normale console, ma funziona su Windows / Mac / Linux. Quando la si accende, la macchina ci accoglie con una linea di comando, una suite di strumenti per la creazione di cartucce e un browser online per le cartucce chiamato SPLORE.</text>
-		</text>
-	</view>
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.31</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+      <pos>0.501 0.345</pos>
+      <maxSize>0.3</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.221 0.345" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.31</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+      <pos>0.501 0.345</pos>
+      <maxSize>0.282</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.221 0.345" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2014</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>PICO-8</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>PICO-8 is a fantasy console for making, sharing and playing tiny games and other computer programs. It feels like a regular console, but runs on Windows / Mac / Linux. When you turn it on, the machine greets you with a commandline, a suite of cartridge creation tools, and an online cartridge browser called SPLORE.</text>
+      <text lang="pl">PICO-8 jest fantazyjną konsolą do tworzenia, dzielenia się i grania w małe gry i inne programy komputerowe. Wygląda jak zwykła konsola, ale działa na Windowsie / Macu / Linuksie. Kiedy ją włączasz, wita cię wierszem poleceń, zestawem narzędzi do tworzenia kartridży oraz przeglądarką kartridży online o nazwie SPLORE.</text>
+      <text lang="pt">PICO-8 é um console imaginativo para criar, compartilhar e jogar pequenos jogos e outros programas de computador. Parece um console comum, mas funciona em Windows/Mac/Linux. Quando você o liga, é recebido por um prompt de comando, um conjunto de ferramentas para criar cartuchos e um navegador de cartuchos online chamado SPLORE.</text>
+      <text lang="ru">PICO-8 является вымышленной консолью для создания, обмена и воспроизведения крошечных игр и других компьютерных программ. Когда вы включите её, машина встречает вас строкой для ввода Lua-команд и предоставляет простые встроенные инструменты для создания собственных картриджей.</text>
+      <text lang="es">PICO-8 es una consola de fantasía para crear, compartir y jugar a pequeños juegos y otros programas informáticos. Parece una consola normal, pero funciona con Windows / Mac / Linux. Al encenderla, la máquina te da la bienvenida con una línea de comandos, un conjunto de herramientas de creación de cartuchos y un navegador de cartuchos en línea llamado SPLORE.</text>
+      <text lang="de">PICO-8 ist eine fantastische Konsole zum Erstellen, Teilen und Spielen von kleinen Spielen und anderen Computerprogrammen. Sie fühlt sich an wie eine normale Konsole, läuft aber unter Windows/Mac/Linux. Beim Einschalten begrüßt dich das Gerät mit einer Kommandozeile, einer Reihe von Tools zur Erstellung von Cartridges und einem Online-Cartridge-Browser namens SPLORE.</text>
+      <text lang="fr">PICO-8 est une console fantaisiste permettant de créer, de partager et de jouer à des jeux miniatures et à d'autres programmes informatiques. Elle ressemble à une console classique, mais fonctionne sous Windows / Mac / Linux. Lorsque vous l'allumez, la machine vous accueille avec une ligne de commande, une suite d'outils de création de cartouches et un navigateur de cartouches en ligne appelé SPLORE.</text>
+      <text lang="it">PICO-8 è una console di fantasia per creare, condividere e giocare con piccoli giochi e altri programmi per computer. Sembra una normale console, ma funziona su Windows / Mac / Linux. Quando la si accende, la macchina ci accoglie con una linea di comando, una suite di strumenti per la creazione di cartucce e un browser online per le cartucce chiamato SPLORE.</text>
+    </text>
+  </view>
 </theme>

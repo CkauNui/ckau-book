@@ -1,91 +1,91 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysart" extra="true">
-			<path>./../../_inc/anim/gb.png</path>
-			<path>./../../../ckau-book-addons/_inc/anim/4K/gb.png</path>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.413</origin>
-			<pos>0.5 0.35</pos>
-			<maxSize>0.23</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/gb.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/gb.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.243</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.413</origin>
-			<pos>0.5 0.344</pos>
-			<maxSize>0.202</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.344" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-			<video name="videoglich" extra="true">
-			<path>./../../_inc/anim/video/glich.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
- 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.413</origin>
-			<pos>0.5 0.35</pos>
-			<maxSize>0.22</maxSize>
-			<zIndex>26</zIndex>
-			<color>FFFFFF50</color>
-			<storyboard>
-				<animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1989</text>
-			
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Nintendo</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Game Boy</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Game Boy is an 8-bit handheld game console developed and manufactured by Nintendo. The first handheld in the Game Boy family, it was first released in Japan on April 21, 1989, then North America, three months later, and lastly in Europe, more than one year later. It was designed by the same team that developed the Game &amp; Watch series of handheld electronic games and several Nintendo Entertainment System games: Satoru Okada, Gunpei Yokoi, and Nintendo Research and Development 1.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysart" extra="true">
+      <path>./../../_inc/anim/gb.png</path>
+      <path>./../../../ckau-book-addons/_inc/anim/4K/gb.png</path>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.413</origin>
+      <pos>0.5 0.35</pos>
+      <maxSize>0.23</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/gb.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/gb.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.243</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.413</origin>
+      <pos>0.5 0.344</pos>
+      <maxSize>0.202</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.344" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videoglich" extra="true">
+      <path>./../../_inc/anim/video/glich.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.413</origin>
+      <pos>0.5 0.35</pos>
+      <maxSize>0.22</maxSize>
+      <zIndex>26</zIndex>
+      <color>FFFFFF50</color>
+      <storyboard>
+        <animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1989</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Nintendo</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Game Boy</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Game Boy is an 8-bit handheld game console developed and manufactured by Nintendo. The first handheld in the Game Boy family, it was first released in Japan on April 21, 1989, then North America, three months later, and lastly in Europe, more than one year later. It was designed by the same team that developed the Game &amp; Watch series of handheld electronic games and several Nintendo Entertainment System games: Satoru Okada, Gunpei Yokoi, and Nintendo Research and Development 1.
 
 Nintendo's second handheld game console, the Game Boy, combines features from both the NES home system and Game &amp; Watch hardware. The console features a dull green dot-matrix screen with adjustable contrast dial, five control buttons (a directional pad, two game buttons, and "START" and "SELECT"), a single speaker with adjustable volume dial, and, like its rivals, uses cartridges as physical media for games. The color scheme is made from two tones of grey with accents of black, blue, and dark magenta. All the corners of the portrait-oriented rectangular unit are softly rounded, save for the bottom right, which is curved. At launch, it was sold either as a standalone unit, or bundled with one of several games, namely Super Mario Land or Tetris. Several accessories were also developed, including a carrying pouch, Game Genie, and printer.</text>
-			<text lang="pl">Game Boy (jap. ゲーム ボーイ) – seria przenośnych konsoli do gier produkcji japońskiej firmy Nintendo. Konsole z serii charakteryzowały się posiadaniem kontrolera krzyżakowego wzorowanego na konsoli Nintendo Entertainment System oraz miejsca na kartridże z grami. Konsole Game Boy przyczyniły się do zwiększenia popularności przenośnych konsol.</text>
-			<text lang="ru">Линейка портативных игровых устройств, разработанная и производившаяся Nintendo.
+      <text lang="pl">Game Boy (jap. ゲーム ボーイ) – seria przenośnych konsoli do gier produkcji japońskiej firmy Nintendo. Konsole z serii charakteryzowały się posiadaniem kontrolera krzyżakowego wzorowanego na konsoli Nintendo Entertainment System oraz miejsca na kartridże z grami. Konsole Game Boy przyczyniły się do zwiększenia popularności przenośnych konsol.</text>
+      <text lang="pt">Game Boy (jap. ゲーム ボーイ) - era uma linha de consoles de videogame portáteis produzidos pela empresa japonesa Nintendo. Os consoles da série eram caracterizados por possuírem um controle direcional (cruz direcional) baseado no console Nintendo Entertainment System e um slot para cartuchos de jogos. Os consoles Game Boy contribuíram para o aumento da popularidade dos consoles portáteis.</text>
+      <text lang="ru">Линейка портативных игровых устройств, разработанная и производившаяся Nintendo.
 Первый Game Boy был выпущен ещё в 1989 году, как продолжение к известным карманным играм Nintendo Game &amp; Watch. Это была первая популярная портативная игровая система, и многие компании пытались повторить успех Game Boy, но никому сделать этого так и не удалось.
 
 Устройство имело монохромный жидкокристаллический экран с размерами 160×144 пикселей, стереозвук на четыре канала и функцию GameLink, позволяющую соединять две консоли вместе и играть вдвоём в поддерживающие данную технологию игры.
 
 Всякий раз, если по каким-либо причинам продажи Game Boy шли на убыль, Nintendo выпускала новые разновидности Game Boy, чтобы снова увеличить продажи. Таким образом, в ноябре 1996 года появился Game Boy Pocket, который был меньше в размерах на 30 %, чем свой предшественник, но с экраном большего размера и всего с двумя батареями AAA. Позже был выпущен Game Boy Color c цветным экраном, затем — Game Boy Advance.</text>
-			<text lang="es">La Game Boy es una consola portátil de 8 bits desarrollada y fabricada por Nintendo. Fue la primera consola portátil de la familia Game Boy y salió a la venta por primera vez en Japón el 21 de abril de 1989, luego en Norteamérica, tres meses más tarde, y por último en Europa, más de un año después. Fue diseñada por el mismo equipo que desarrolló la serie de juegos electrónicos portátiles Game &amp; Watch y varios juegos de Nintendo Entertainment System: Satoru Okada, Gunpei Yokoi y Nintendo Research and Development 1.
+      <text lang="es">La Game Boy es una consola portátil de 8 bits desarrollada y fabricada por Nintendo. Fue la primera consola portátil de la familia Game Boy y salió a la venta por primera vez en Japón el 21 de abril de 1989, luego en Norteamérica, tres meses más tarde, y por último en Europa, más de un año después. Fue diseñada por el mismo equipo que desarrolló la serie de juegos electrónicos portátiles Game &amp; Watch y varios juegos de Nintendo Entertainment System: Satoru Okada, Gunpei Yokoi y Nintendo Research and Development 1.
 
 La segunda consola portátil de Nintendo, la Game Boy, combina características tanto de la consola doméstica NES como del hardware de Game &amp; Watch. La consola cuenta con una pantalla de matriz de puntos de color verde apagado con dial de contraste ajustable, cinco botones de control (un pad direccional, dos botones de juego y "START" y "SELECT"), un único altavoz con dial de volumen ajustable y, al igual que sus rivales, utiliza cartuchos como soporte físico para los juegos. La combinación de colores está formada por dos tonos de gris con toques de negro, azul y magenta oscuro. Todas las esquinas de la unidad rectangular orientada hacia el retrato están suavemente redondeadas, salvo la inferior derecha, que es curva. En el momento de su lanzamiento, se vendía como unidad independiente o junto con uno de varios juegos, como Super Mario Land o Tetris. También se desarrollaron varios accesorios, como una bolsa de transporte, un Game Genie y una impresora.</text>
-			<text lang="de">Der Game Boy ist eine 8-Bit-Handheld-Spielkonsole, die von Nintendo entwickelt und hergestellt wurde. Der erste Handheld der Game Boy-Familie wurde erstmals am 21. April 1989 in Japan, drei Monate später in Nordamerika und mehr als ein Jahr später in Europa veröffentlicht. Er wurde von demselben Team entworfen, das auch die Game &amp; Watch-Serie von elektronischen Handheld-Spielen und mehrere Nintendo Entertainment System-Spiele entwickelte: Satoru Okada, Gunpei Yokoi und Nintendo Research and Development 1.
+      <text lang="de">Der Game Boy ist eine 8-Bit-Handheld-Spielkonsole, die von Nintendo entwickelt und hergestellt wurde. Der erste Handheld der Game Boy-Familie wurde erstmals am 21. April 1989 in Japan, drei Monate später in Nordamerika und mehr als ein Jahr später in Europa veröffentlicht. Er wurde von demselben Team entworfen, das auch die Game &amp; Watch-Serie von elektronischen Handheld-Spielen und mehrere Nintendo Entertainment System-Spiele entwickelte: Satoru Okada, Gunpei Yokoi und Nintendo Research and Development 1.
 
 Nintendos zweite Handheld-Konsole, der Game Boy, vereinte Merkmale des NES-Heimsystems und der Game &amp; Watch-Hardware. Die Konsole verfügt über einen mattgrünen Dot-Matrix-Bildschirm mit einstellbarem Kontrast, fünf Steuertasten (ein Steuerkreuz, zwei Spieltasten sowie "START" und "SELECT"), einen einzigen Lautsprecher mit einstellbarer Lautstärke und verwendet wie seine Konkurrenten Cartridges als physische Datenträger für Spiele. Das Farbschema besteht aus zwei Grautönen mit Akzenten in Schwarz, Blau und dunklem Magenta. Alle Ecken des hochformatigen, rechteckigen Geräts sind sanft abgerundet, mit Ausnahme der unteren rechten Ecke, die gewölbt ist. Bei der Markteinführung wurde es entweder als eigenständiges Gerät oder im Paket mit einem von mehreren Spielen, nämlich Super Mario Land oder Tetris, verkauft. Es wurden auch mehrere Zubehörteile entwickelt, darunter eine Tragetasche, ein Game Genie und ein Drucker.</text>
-			<text lang="fr">Le Game Boy est une console de jeu portable 8 bits développée et fabriquée par Nintendo. Première console portable de la famille Game Boy, elle est sortie au Japon le 21 avril 1989, puis en Amérique du Nord, trois mois plus tard, et enfin en Europe, plus d'un an après. Il a été conçu par la même équipe qui a développé la série de jeux électroniques portables Game &amp; Watch et plusieurs jeux de la Nintendo Entertainment System : Satoru Okada, Gunpei Yokoi et Nintendo Research and Development 1.
+      <text lang="fr">Le Game Boy est une console de jeu portable 8 bits développée et fabriquée par Nintendo. Première console portable de la famille Game Boy, elle est sortie au Japon le 21 avril 1989, puis en Amérique du Nord, trois mois plus tard, et enfin en Europe, plus d'un an après. Il a été conçu par la même équipe qui a développé la série de jeux électroniques portables Game &amp; Watch et plusieurs jeux de la Nintendo Entertainment System : Satoru Okada, Gunpei Yokoi et Nintendo Research and Development 1.
 
 La deuxième console de jeu portable de Nintendo, la Game Boy, combine les caractéristiques de la console de salon NES et du matériel Game &amp; Watch. La console est dotée d'un écran matriciel vert terne à contraste réglable, de cinq boutons de commande (un pavé directionnel, deux boutons de jeu, ainsi que "START" et "SELECT"), d'un seul haut-parleur à volume réglable et, comme ses rivales, utilise des cartouches comme support physique pour les jeux. La palette de couleurs est composée de deux tons de gris avec des accents de noir, de bleu et de magenta foncé. Tous les coins de l'appareil rectangulaire orienté vers le portrait sont doucement arrondis, à l'exception du coin inférieur droit, qui est incurvé. Lors de son lancement, la console était vendue seule ou accompagnée d'un jeu parmi d'autres, notamment Super Mario Land ou Tetris. Plusieurs accessoires ont également été développés, notamment une pochette de transport, un Game Genie et une imprimante.</text>
-			<text lang="it">Il Game Boy è una console portatile a 8 bit sviluppata e prodotta da Nintendo. Prima console portatile della famiglia Game Boy, è stata rilasciata per la prima volta in Giappone il 21 aprile 1989, poi in Nord America, tre mesi dopo, e infine in Europa, più di un anno dopo. È stato progettato dallo stesso team che ha sviluppato la serie di giochi elettronici portatili Game &amp; Watch e diversi giochi per Nintendo Entertainment System: Satoru Okada, Gunpei Yokoi, e Nintendo Research and Development 1.
+      <text lang="it">Il Game Boy è una console portatile a 8 bit sviluppata e prodotta da Nintendo. Prima console portatile della famiglia Game Boy, è stata rilasciata per la prima volta in Giappone il 21 aprile 1989, poi in Nord America, tre mesi dopo, e infine in Europa, più di un anno dopo. È stato progettato dallo stesso team che ha sviluppato la serie di giochi elettronici portatili Game &amp; Watch e diversi giochi per Nintendo Entertainment System: Satoru Okada, Gunpei Yokoi, e Nintendo Research and Development 1.
 
 La seconda console portatile di Nintendo, il Game Boy, combina le caratteristiche della console domestica NES e dell'hardware Game &amp; Watch. La console è dotata di uno schermo verde opaco a matrice di punti con un contrasto regolabile, cinque pulsanti di controllo (un pad direzionale, due pulsanti di gioco, "START" e "SELECT"), un singolo altoparlante con volume regolabile e, come le sue rivali, utilizza le cartucce come supporto fisico per i giochi. La combinazione di colori è composta da due toni di grigio con accenti di nero, blu e magenta scuro. Tutti gli angoli dell'unità rettangolare orientata al ritratto sono dolcemente arrotondati, tranne quello in basso a destra, che è curvo. Al momento del lancio, è stato venduto sia come unità indipendente, sia in bundle con uno dei diversi giochi, in particolare Super Mario Land o Tetris. Sono stati sviluppati anche diversi accessori, tra cui una custodia per il trasporto, un Game Genie e una stampante.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

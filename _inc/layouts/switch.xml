@@ -1,140 +1,140 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 1.06</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.68</origin>
-			<origin if="${screen.ratio} == '21/9'">2.2 0.7</origin>
-			<pos>0.63 0.684</pos>
-			<minSize>0.02 0.11</minSize>
-			<zIndex>29</zIndex>
-			<rotation>13</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<storyboard>
-				<animation property="pos" to="0.35 0.684" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-down" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.4 3.5</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 1.6</origin>
-			<origin if="${screen.ratio} == '21/9'">1.5 0.8</origin>
-			<pos>0.645 0.735</pos>
-			<minSize>0.04 0.02</minSize>
-			<zIndex>29</zIndex>
-			<rotation>12</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<storyboard>
-				<animation property="pos" to="0.365 0.735" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 1.01</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.7</origin>
-			<origin if="${screen.ratio} == '21/9'">3.5 0.9</origin>
-			<pos>0.745 0.695</pos>
-			<minSize>0.02 0.13</minSize>
-			<zIndex>29</zIndex>
-			<rotation>13</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<storyboard>
-				<animation property="pos" to="0.465 0.695" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.435</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4777</origin>
-			<pos>0.5 0.42</pos>
-			<maxSize>0.418</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.549</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.457</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.42" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-right" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 1.04</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.68</origin>
-			<origin if="${screen.ratio} == '21/9'">1.05 0.5</origin>
-			<pos>0.6843 0.6798</pos>
-			<maxSize>0.11</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.11</maxSize>
-			<rotation>8</rotation>
-			<storyboard>
-				<animation property="pos" to="0.4043 0.6798" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.435</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4777</origin>
-			<pos>0.5 0.42</pos>
-			<maxSize>0.413</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.547</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.455</maxSize>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.42" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}2.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}2.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}2.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}2.mp4</path>
-			<delay>0</delay>
-			<audio>false</audio>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 1.08</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.7</origin>
-			<origin if="${screen.ratio} == '21/9'">1.05 0.5</origin>
-			<pos>0.685 0.681</pos>
-			<maxSize>0.11</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.14</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.12</maxSize>
-			<zIndex>28</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.405 0.681" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2017</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Nintendo</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Switch</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Nintendo Switch is a video game console, developed by Nintendo and released worldwide in most regions on March 3, 2017. It is a hybrid console that can be used as either a home console or a portable device. Its wireless Joy-Con controllers, with standard buttons and directional analog sticks for user input, motion sensing, and tactile feedback, can attach to both sides of the console to support handheld-style play. They can also connect to a grip accessory to provide a traditional home console gamepad form, or be used individually in the hand like the Wii Remote and Nunchuk, supporting local multiplayer modes.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-left" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 1.06</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.68</origin>
+      <origin if="${screen.ratio} == '21/9'">2.2 0.7</origin>
+      <pos>0.63 0.684</pos>
+      <minSize>0.02 0.11</minSize>
+      <zIndex>29</zIndex>
+      <rotation>13</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <storyboard>
+        <animation property="pos" to="0.35 0.684" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-down" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.4 3.5</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 1.6</origin>
+      <origin if="${screen.ratio} == '21/9'">1.5 0.8</origin>
+      <pos>0.645 0.735</pos>
+      <minSize>0.04 0.02</minSize>
+      <zIndex>29</zIndex>
+      <rotation>12</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <storyboard>
+        <animation property="pos" to="0.365 0.735" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-right" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 1.01</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.7</origin>
+      <origin if="${screen.ratio} == '21/9'">3.5 0.9</origin>
+      <pos>0.745 0.695</pos>
+      <minSize>0.02 0.13</minSize>
+      <zIndex>29</zIndex>
+      <rotation>13</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <storyboard>
+        <animation property="pos" to="0.465 0.695" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.435</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4777</origin>
+      <pos>0.5 0.42</pos>
+      <maxSize>0.418</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.549</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.457</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.42" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-right" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 1.04</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.68</origin>
+      <origin if="${screen.ratio} == '21/9'">1.05 0.5</origin>
+      <pos>0.6843 0.6798</pos>
+      <maxSize>0.11</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.11</maxSize>
+      <rotation>8</rotation>
+      <storyboard>
+        <animation property="pos" to="0.4043 0.6798" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.435</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4777</origin>
+      <pos>0.5 0.42</pos>
+      <maxSize>0.413</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.547</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.455</maxSize>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.42" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}2.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}2.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}2.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}2.mp4</path>
+      <delay>0</delay>
+      <audio>false</audio>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 1.08</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.7</origin>
+      <origin if="${screen.ratio} == '21/9'">1.05 0.5</origin>
+      <pos>0.685 0.681</pos>
+      <maxSize>0.11</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.14</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.12</maxSize>
+      <zIndex>28</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.405 0.681" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2017</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Nintendo</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Switch</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Nintendo Switch is a video game console, developed by Nintendo and released worldwide in most regions on March 3, 2017. It is a hybrid console that can be used as either a home console or a portable device. Its wireless Joy-Con controllers, with standard buttons and directional analog sticks for user input, motion sensing, and tactile feedback, can attach to both sides of the console to support handheld-style play. They can also connect to a grip accessory to provide a traditional home console gamepad form, or be used individually in the hand like the Wii Remote and Nunchuk, supporting local multiplayer modes.
 
 The Nintendo Switch's software supports online gaming through Internet connectivity, as well as local wireless ad hoc connectivity with other consoles. Nintendo Switch games and software are available on both physical flash-based ROM cartridges and digital distribution via Nintendo eShop; the system has no region lockout. A handheld-focused revision of the system, called the Nintendo Switch Lite, was released on September 20, 2019.</text>
-			<text lang="pl">Nintendo Switch (początkowo Nintendo NX) – konsola gier wideo firmy Nintendo wydana 3 marca 2017 roku. Jest następcą wydanego w 2012 roku Wii U.
+      <text lang="pl">Nintendo Switch (początkowo Nintendo NX) – konsola gier wideo firmy Nintendo wydana 3 marca 2017 roku. Jest następcą wydanego w 2012 roku Wii U.
 
 Konsola została wyposażona w procesor główny i procesor graficzny oparte na technologii Tegra X1 firmy Nvidia. Składa się on z czterech rdzeni Cortex-A57 oraz czterech Cortex-A53. Wyświetla rozdzielczość 1080p w trybie telewizyjnym oraz 720p w trybie przenośnym. Pojemność pamięci wewnętrznej urządzenia to 32 GB. Obsługuje karty pamięci microSDHC i microSDXC o pojemności do 2 terabajtów.
 
@@ -142,21 +142,29 @@ Stacja dokująca ma port HDMI, USB 3.0, dwa porty USB 2.0 oraz gniazdo ładowani
 W zestawie z konsolą dołączone są także kontrolery Joy-Con: Joy-Con L i Joy-Con R. Oba kontrolery są wyposażone w akcelerometr, żyroskop, a także w wibracje haptyczne. Joy-Con R został dodatkowo wyposażony w NFC oraz sensor podczerwieni, który potrafi identyfikować obiekty i gesty.
 
 Według danych ze stycznia 2017 roku 80% egzemplarzy, które miało trafić do sklepów w Japonii, zostało wykupione w przedpremierowych zamówieniach. W Stanach Zjednoczonych po trzech dniach od uruchomienia możliwości zamówień wykupione zostały wszystkie egzemplarze konsoli. W Wielkiej Brytanii w pierwszy weekend po premierze sprzedano 80 000 egzemplarzy. Do końca marca 2017 roku sprzedaż konsoli Nintendo Switch wynosiła 2,74 miliona. W styczniu 2018 roku Nintendo podało, iż Nintendo Switch do 31 grudnia 2017 roku sprzedało się w liczbie 14,86 miliona egzemplarzy, tym samym przewyższyło całkowitą sprzedaż Wii U w niecały rok.</text>
-			<text lang="ru">Гибридная игровая консоль, разработанная японской компанией Nintendo. Nintendo Switch совмещает в себе свойства домашней игровой приставки и портативной игровой системы и может использоваться в обоих качествах. На этапе разработки Nintendo Switch носила кодовое название «Nintendo NX», была впервые продемонстрирована в октябре 2016 года и выпущена в продажу во всём мире 3 марта 2017 года.
+      <text lang="pt">Nintendo Switch (inicialmente Nintendo NX) – console de videogame da Nintendo lançada em 3 de março de 2017. É o sucessor do Wii U, lançado em 2012.
+
+A console foi equipada com um processador principal e um processador gráfico baseados na tecnologia Tegra X1 da Nvidia. Ele se compõe de quatro núcleos Cortex-A57 e quatro Cortex-A53. Ele exibe resolução de 1080p no modo televisão e 720p no modo portátil. A capacidade de armazenamento interno do dispositivo é de 32 GB. Ele suporta cartões de memória microSDHC e microSDXC com capacidade de até 2 terabytes.
+
+A estação de acoplamento possui uma porta HDMI, USB 3.0, duas portas USB 2.0 e uma entrada de carregamento tipo USB-C.
+O conjunto da console também inclui os controles Joy-Con: Joy-Con L e Joy-Con R. Ambos os controles são equipados com acelerômetro, giroscópio e também com vibração tátil. O Joy-Con R foi equipado adicionalmente com NFC e um sensor infravermelho, que pode identificar objetos e gestos.
+
+De acordo com dados de janeiro de 2017, 80% dos exemplares que seriam lançados nas lojas do Japão foram comprados em pedidos de pré-venda. Nos Estados Unidos, três dias após a abertura da possibilidade de pedidos, todos os exemplares da console foram comprados. No Reino Unido, foram vendidos 80.000 exemplares no primeiro fim de semana após o lançamento. Até o final de março de 2017, as vendas da console Nintendo Switch totalizaram 2,74 milhões. Em janeiro de 2018, a Nintendo informou que o Nintendo Switch vendeu 14,86 milhões de unidades até 31 de dezembro de 2017, superando assim as vendas totais do Wii U em menos de um ano.</text>
+      <text lang="ru">Гибридная игровая консоль, разработанная японской компанией Nintendo. Nintendo Switch совмещает в себе свойства домашней игровой приставки и портативной игровой системы и может использоваться в обоих качествах. На этапе разработки Nintendo Switch носила кодовое название «Nintendo NX», была впервые продемонстрирована в октябре 2016 года и выпущена в продажу во всём мире 3 марта 2017 года.
 
 Nintendo Switch может работать как домашняя игровая приставка — в этом случае основное устройство приставки вставляется в специальную док-станцию, присоединённую к телевизору, и экран телевизора используется как средство вывода. Вне док-станции Nintendo Switch использует собственный сенсорный ЖК-экран — игрок может держать консоль в руках и взаимодействовать с ней как с планшетным компьютером либо разместить на столе перед несколькими участвующими в игре игроками, наподобие миниатюрного телевизора. Беспроводные контроллеры Joy-Con (джойконы), входящие в комплект с консолью, также можно использовать разными способами: прикрепить к обеим сторонам консоли для игры в портативном режиме, вставить их в аксессуар Grip, чтобы получить форму традиционного геймпада для домашней консоли, или использовать их отдельно от консоли как Wii Remote. Консоль не использует блокировку по региону.</text>
-			<text lang="es">La Nintendo Switch es una videoconsola, desarrollada por Nintendo y lanzada mundialmente en la mayoría de las regiones el 3 de marzo de 2017. Es una consola híbrida que puede utilizarse como consola doméstica o como dispositivo portátil. Sus mandos inalámbricos Joy-Con, con botones estándar y sticks analógicos direccionales para la entrada del usuario, detección de movimiento y retroalimentación táctil, pueden acoplarse a ambos lados de la consola para soportar el juego de estilo portátil. También pueden conectarse a un accesorio de agarre para ofrecer una forma de gamepad de consola doméstica tradicional, o utilizarse individualmente en la mano como el mando de Wii y el Nunchuk, con soporte para modos multijugador locales.
+      <text lang="es">La Nintendo Switch es una videoconsola, desarrollada por Nintendo y lanzada mundialmente en la mayoría de las regiones el 3 de marzo de 2017. Es una consola híbrida que puede utilizarse como consola doméstica o como dispositivo portátil. Sus mandos inalámbricos Joy-Con, con botones estándar y sticks analógicos direccionales para la entrada del usuario, detección de movimiento y retroalimentación táctil, pueden acoplarse a ambos lados de la consola para soportar el juego de estilo portátil. También pueden conectarse a un accesorio de agarre para ofrecer una forma de gamepad de consola doméstica tradicional, o utilizarse individualmente en la mano como el mando de Wii y el Nunchuk, con soporte para modos multijugador locales.
 
 El software de Nintendo Switch admite el juego en línea a través de la conectividad a Internet, así como la conectividad ad hoc inalámbrica local con otras consolas. Los juegos y el software de Nintendo Switch están disponibles tanto en cartuchos ROM físicos basados en flash como en distribución digital a través de Nintendo eShop; la consola no tiene bloqueo regional. El 20 de septiembre de 2019 se lanzó una revisión de la consola centrada en la consola portátil, llamada Nintendo Switch Lite.</text>
-			<text lang="de">Die Nintendo Switch ist eine Videospielkonsole, die von Nintendo entwickelt und am 3. März 2017 weltweit in den meisten Regionen veröffentlicht wurde. Es ist eine Hybridkonsole, die entweder als Heimkonsole oder als tragbares Gerät verwendet werden kann. Die kabellosen Joy-Con-Controller mit Standardtasten und richtungsabhängigen Analogsticks für Benutzereingaben, Bewegungserkennung und taktilem Feedback können an beiden Seiten der Konsole befestigt werden, um das Spielen im Handheld-Stil zu unterstützen. Sie können auch an ein Griffzubehör angeschlossen werden, um eine traditionelle Heimkonsolen-Gamepad-Form zu erhalten, oder sie können einzeln in der Hand wie die Wii-Fernbedienung und das Nunchuk verwendet werden und unterstützen lokale Multiplayer-Modi.
+      <text lang="de">Die Nintendo Switch ist eine Videospielkonsole, die von Nintendo entwickelt und am 3. März 2017 weltweit in den meisten Regionen veröffentlicht wurde. Es ist eine Hybridkonsole, die entweder als Heimkonsole oder als tragbares Gerät verwendet werden kann. Die kabellosen Joy-Con-Controller mit Standardtasten und richtungsabhängigen Analogsticks für Benutzereingaben, Bewegungserkennung und taktilem Feedback können an beiden Seiten der Konsole befestigt werden, um das Spielen im Handheld-Stil zu unterstützen. Sie können auch an ein Griffzubehör angeschlossen werden, um eine traditionelle Heimkonsolen-Gamepad-Form zu erhalten, oder sie können einzeln in der Hand wie die Wii-Fernbedienung und das Nunchuk verwendet werden und unterstützen lokale Multiplayer-Modi.
 
 Die Software der Nintendo Switch unterstützt Online-Spiele über eine Internetverbindung sowie eine lokale drahtlose Ad-hoc-Verbindung mit anderen Konsolen. Nintendo Switch-Spiele und -Software sind sowohl auf physischen Flash-basierten ROM-Kassetten als auch digital über den Nintendo eShop erhältlich; das System hat keine Regionalsperre. Eine auf Handhelds fokussierte Version des Systems, die Nintendo Switch Lite, wurde am 20. September 2019 veröffentlicht.</text>
-			<text lang="fr">La Nintendo Switch est une console de jeux vidéo, développée par Nintendo et sortie mondialement dans la plupart des régions le 3 mars 2017. Il s'agit d'une console hybride qui peut être utilisée comme console de salon ou comme appareil portable. Ses manettes Joy-Con sans fil, dotées de boutons standard et de sticks analogiques directionnels pour la saisie par l'utilisateur, la détection de mouvement et le retour tactile, peuvent se fixer des deux côtés de la console pour prendre en charge le jeu de type portable. Elles peuvent également se connecter à un accessoire de préhension pour prendre la forme d'une manette de jeu de console de salon traditionnelle, ou être utilisées individuellement dans la main, comme la télécommande Wii et le Nunchuk, et prendre en charge les modes multijoueurs locaux.
+      <text lang="fr">La Nintendo Switch est une console de jeux vidéo, développée par Nintendo et sortie mondialement dans la plupart des régions le 3 mars 2017. Il s'agit d'une console hybride qui peut être utilisée comme console de salon ou comme appareil portable. Ses manettes Joy-Con sans fil, dotées de boutons standard et de sticks analogiques directionnels pour la saisie par l'utilisateur, la détection de mouvement et le retour tactile, peuvent se fixer des deux côtés de la console pour prendre en charge le jeu de type portable. Elles peuvent également se connecter à un accessoire de préhension pour prendre la forme d'une manette de jeu de console de salon traditionnelle, ou être utilisées individuellement dans la main, comme la télécommande Wii et le Nunchuk, et prendre en charge les modes multijoueurs locaux.
 
 Le logiciel de la Nintendo Switch prend en charge le jeu en ligne via la connectivité Internet, ainsi que la connectivité locale sans fil ad hoc avec d'autres consoles. Les jeux et logiciels de la Nintendo Switch sont disponibles à la fois sur des cartouches ROM physiques à mémoire flash et en distribution numérique via Nintendo eShop ; la console n'a pas de verrouillage régional. Une révision de la console axée sur la console portable, appelée Nintendo Switch Lite, est sortie le 20 septembre 2019.</text>
-			<text lang="it">Nintendo Switch è una console per videogiochi, sviluppata da Nintendo e rilasciata in tutto il mondo nella maggior parte delle regioni il 3 marzo 2017. È una console ibrida che può essere utilizzata sia come console domestica che come dispositivo portatile. I suoi controller Joy-Con wireless, con pulsanti standard e stick analogici direzionali per l'input dell'utente, il rilevamento del movimento e il feedback tattile, possono essere collegati a entrambi i lati della console per supportare il gioco in stile portatile. Possono anche essere collegati a un accessorio per l'impugnatura per ottenere una forma tradizionale di gamepad per console domestica, o essere usati singolarmente nella mano come il telecomando Wii e il Nunchuk, supportando le modalità multiplayer locali.
+      <text lang="it">Nintendo Switch è una console per videogiochi, sviluppata da Nintendo e rilasciata in tutto il mondo nella maggior parte delle regioni il 3 marzo 2017. È una console ibrida che può essere utilizzata sia come console domestica che come dispositivo portatile. I suoi controller Joy-Con wireless, con pulsanti standard e stick analogici direzionali per l'input dell'utente, il rilevamento del movimento e il feedback tattile, possono essere collegati a entrambi i lati della console per supportare il gioco in stile portatile. Possono anche essere collegati a un accessorio per l'impugnatura per ottenere una forma tradizionale di gamepad per console domestica, o essere usati singolarmente nella mano come il telecomando Wii e il Nunchuk, supportando le modalità multiplayer locali.
 
 Il software di Nintendo Switch supporta il gioco online attraverso la connettività Internet e la connettività locale wireless ad hoc con altre console. I giochi e i software di Nintendo Switch sono disponibili sia su cartucce ROM fisiche basate su flash che in distribuzione digitale tramite il Nintendo eShop; la console non ha il blocco regionale. Il 20 settembre 2019 è stata rilasciata una versione della console incentrata sulla modalità portatile, chiamata Nintendo Switch Lite.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

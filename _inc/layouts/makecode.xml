@@ -1,78 +1,83 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.499 0.405</pos>
-			<maxSize>0.2</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.219 0.405" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.32</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.499 0.405</pos>
-			<maxSize>0.19</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.219 0.405" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2016</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Microsoft</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Makecode</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>Microsoft MakeCode is a free, open source platform for creating engaging computer science learning experiences that support a progression path into real-world programming.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.499 0.405</pos>
+      <maxSize>0.2</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.219 0.405" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.32</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.499 0.405</pos>
+      <maxSize>0.19</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.219 0.405" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2016</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Microsoft</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Makecode</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>Microsoft MakeCode is a free, open source platform for creating engaging computer science learning experiences that support a progression path into real-world programming.
 
 Available as a web-based environment for learning to code with physical computing devices such as the micro:bit, it has a handful of novel features all packed into a single web application (web app).
 No software installation is required: Microsoft MakeCode runs in any modern web browser on most any operating system.</text>
-			<text lang="pl">Microsoft MakeCode to darmowa, otwarta platforma do tworzenia wciągających doświadczeń w nauce informatyki, które wspierają ścieżkę progresji do programowania w świecie rzeczywistym.
+      <text lang="pl">Microsoft MakeCode to darmowa, otwarta platforma do tworzenia wciągających doświadczeń w nauce informatyki, które wspierają ścieżkę progresji do programowania w świecie rzeczywistym.
 
 Jest dostępna jako środowisko internetowe do nauki kodowania z fizycznymi urządzeniami komputerowymi, takimi jak micro:bit, i ma kilka nowych funkcji w jednej aplikacji internetowej (web app).
 Nie jest wymagana instalacja oprogramowania: Microsoft MakeCode działa w każdej nowoczesnej przeglądarce internetowej na większości systemów operacyjnych.</text>
-			<text lang="ru">Microsoft MakeCode - это бесплатная платформа с открытым исходным кодом для создания увлекательных учебных программ по информатике, которые помогают перейти к программированию в реальном мире.
+      <text lang="pt">Microsoft MakeCode é uma plataforma gratuita e aberta para criação de experiências cativantes no aprendizado de ciência da computação, que suportam o caminho de progressão para a programação no mundo real.
+
+Está disponível como um ambiente online para aprender a codificar com dispositivos computacionais físicos, como o micro:bit, e possui vários recursos novos em um único aplicativo web.
+
+Nenhuma instalação de software é necessária: Microsoft MakeCode funciona em qualquer navegador moderno em quase todos os sistemas operativos.</text>
+      <text lang="ru">Microsoft MakeCode - это бесплатная платформа с открытым исходным кодом для создания увлекательных учебных программ по информатике, которые помогают перейти к программированию в реальном мире.
 
 Доступная в виде веб-среды для обучения программированию с помощью физических вычислительных устройств, таких как micro:bit, она обладает рядом новых функций, объединенных в одном веб-приложении (веб-приложение).
 Установка программного обеспечения не требуется: Microsoft MakeCode работает в любом современном веб-браузере на большинстве операционных систем.</text>
-			<text lang="es">Microsoft MakeCode es una plataforma gratuita de código abierto para crear atractivas experiencias de aprendizaje de informática que facilitan la progresión hacia la programación en el mundo real.
+      <text lang="es">Microsoft MakeCode es una plataforma gratuita de código abierto para crear atractivas experiencias de aprendizaje de informática que facilitan la progresión hacia la programación en el mundo real.
 
 Disponible como entorno basado en la web para aprender a programar con dispositivos informáticos físicos como el micro:bit, cuenta con un puñado de características novedosas, todas ellas empaquetadas en una única aplicación web (web app).
 No es necesario instalar ningún software: Microsoft MakeCode se ejecuta en cualquier navegador web moderno y en casi cualquier sistema operativo.</text>
-			<text lang="de">Microsoft MakeCode ist eine kostenlose Open-Source-Plattform für die Erstellung von ansprechenden Lernerfahrungen im Bereich der Informatik, die den Einstieg in die reale Welt der Programmierung erleichtern.
+      <text lang="de">Microsoft MakeCode ist eine kostenlose Open-Source-Plattform für die Erstellung von ansprechenden Lernerfahrungen im Bereich der Informatik, die den Einstieg in die reale Welt der Programmierung erleichtern.
 
 Es ist als webbasierte Umgebung zum Erlernen des Programmierens mit physischen Computergeräten wie dem micro:bit verfügbar und bietet eine Handvoll neuer Funktionen, die alle in einer einzigen Webanwendung (Web-App) zusammengefasst sind.
 Es ist keine Software-Installation erforderlich: Microsoft MakeCode läuft in jedem modernen Webbrowser auf fast allen Betriebssystemen.</text>
-			<text lang="fr">Microsoft MakeCode est une plateforme gratuite et open source permettant de créer des expériences d'apprentissage de l'informatique attrayantes qui favorisent une progression vers la programmation dans le monde réel.
+      <text lang="fr">Microsoft MakeCode est une plateforme gratuite et open source permettant de créer des expériences d'apprentissage de l'informatique attrayantes qui favorisent une progression vers la programmation dans le monde réel.
 
 Disponible en tant qu'environnement web pour apprendre à coder avec des appareils informatiques physiques tels que le micro:bit, il possède une poignée de nouvelles fonctionnalités toutes regroupées dans une seule application web (web app).
 Aucune installation de logiciel n'est nécessaire : Microsoft MakeCode fonctionne dans n'importe quel navigateur web moderne sur la plupart des systèmes d'exploitation.</text>
-			<text lang="it">Microsoft MakeCode è una piattaforma gratuita e open source per la creazione di esperienze di apprendimento dell'informatica coinvolgenti che supportano un percorso di progressione verso la programmazione del mondo reale.
+      <text lang="it">Microsoft MakeCode è una piattaforma gratuita e open source per la creazione di esperienze di apprendimento dell'informatica coinvolgenti che supportano un percorso di progressione verso la programmazione del mondo reale.
 
 Disponibile come ambiente basato sul web per imparare a programmare con dispositivi informatici fisici come il micro:bit, presenta una serie di caratteristiche innovative racchiuse in un'unica applicazione web (web app).
 Non è richiesta l'installazione di alcun software: Microsoft MakeCode funziona in qualsiasi browser web moderno su quasi tutti i sistemi operativi.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

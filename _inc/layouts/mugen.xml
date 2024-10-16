@@ -1,91 +1,96 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.365</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.454</origin>ы
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.365</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.454</origin>ы
 			<origin if="${screen.ratio} == '21/9'">0.535 0.5</origin>
-			<pos>0.499 0.384</pos>
-			<maxSize>0.32</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.41</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.345</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.219 0.384" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.365</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.454</origin>
-			<origin if="${screen.ratio} == '21/9'">0.535 0.5</origin>
-			<pos>0.499 0.384</pos>
-			<maxSize>0.295</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.39</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.325</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.219 0.384" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1999</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>M.U.G.E.N</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>M.U.G.E.N - a freeware program to create your own 2D games (brawlers), written in C. The game engine was released in 1999 by Elecbyte and was developed for the next four years. Since 2003 the company discontinued support for the engine, however Elecbyte returned to the engine development and released a new version in 2009. Updates released between 2004 and 2008 were unofficial versions of the original engine.
+      <pos>0.499 0.384</pos>
+      <maxSize>0.32</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.41</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.345</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.219 0.384" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.365</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.454</origin>
+      <origin if="${screen.ratio} == '21/9'">0.535 0.5</origin>
+      <pos>0.499 0.384</pos>
+      <maxSize>0.295</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.39</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.325</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.219 0.384" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1999</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>M.U.G.E.N</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>M.U.G.E.N - a freeware program to create your own 2D games (brawlers), written in C. The game engine was released in 1999 by Elecbyte and was developed for the next four years. Since 2003 the company discontinued support for the engine, however Elecbyte returned to the engine development and released a new version in 2009. Updates released between 2004 and 2008 were unofficial versions of the original engine.
 
 The word "mugen" probably comes from the Japanese language where it means dream, fantasy, or infinity. Officially Elecbyte claims to have forgotten what the acronym they chose for the name means, but the included documentation suggests that the engine was originally intended for use in shoot'em ups.
 
 The engine is easily configurable. You can modify many elements of the game, including characters, arenas and the look of the engine itself. M.U.G.E.N community is centered around Internet themed forums, where users share the games they have created, as well as characters, which often represent characters from popular computer games.</text>
-			<text lang="pl">M.U.G.E.N – program na licencji freeware do tworzenia własnych gier 2D (bijatyk), napisany w C. Silnik gry został wydany w roku 1999 przez firmę Elecbyte i rozwijany był przez kolejne cztery lata. Od roku 2003 firma zaniechała wsparcia dla silnika, niemniej jednak Elecbyte powrócił do rozwoju silnika i wydał w 2009 jego nową wersję. Aktualizacje wypuszczone w latach 2004-2008 to nieoficjalne wersje oryginalnego silnika.
+      <text lang="pl">M.U.G.E.N – program na licencji freeware do tworzenia własnych gier 2D (bijatyk), napisany w C. Silnik gry został wydany w roku 1999 przez firmę Elecbyte i rozwijany był przez kolejne cztery lata. Od roku 2003 firma zaniechała wsparcia dla silnika, niemniej jednak Elecbyte powrócił do rozwoju silnika i wydał w 2009 jego nową wersję. Aktualizacje wypuszczone w latach 2004-2008 to nieoficjalne wersje oryginalnego silnika.
 
 Wyraz "mugen" wywodzi się prawdopodobnie z języka japońskiego gdzie oznacza sen, fantazje, tudzież nieskończoność. Oficjalnie firma Elecbyte twierdzi, że zapomnieli co miał oznaczać akronim, który wybrali do nazwy, niemniej dołączona dokumentacja sugeruje że silnik pierwotnie miał służyć w tworzeniu shoot'em'upów.
 
 Silnik jest łatwo konfigurowalny. Można modyfikować wiele elementów gry, m.in. postacie, areny i wygląd samego silnika. Społeczność M.U.G.E.N skupia się wokół internetowych for tematycznych, na których użytkownicy udostępniają stworzone przez siebie gry, a także postacie, które często przedstawiają bohaterów popularnych gier komputerowych.
 </text>
-			<text lang="ru">Бесплатный графический 2D-движок виртуальных сражений, разработанный компанией Elecbyte. Написан на языке программирования Си с использованием библиотек Allegro. Бета-версия MUGEN работает под управлением DOS, GNU/Linux и Microsoft Windows. Дата выпуска 17 июля 1999 года.
+      <text lang="pt">M.U.G.E.N – programa sob licença freeware para criação de jogos 2D (de luta), escrito em C. O motor de jogo foi lançado em 1999 pela empresa Elecbyte e desenvolvido por quatro anos. Em 2003, a empresa interrompeu o suporte para o motor, porém a Elecbyte voltou ao desenvolvimento do motor e lançou uma nova versão em 2009. As atualizações lançadas entre 2004 e 2008 são versões não oficiais do motor original.
+
+A palavra "mugen" provavelmente tem origem no idioma japonês, onde significa sonho, fantasia ou infinito. Oficialmente, a empresa Elecbyte afirma ter esquecido o significado da sigla que escolheram para o nome, no entanto, a documentação anexada sugere que o motor inicialmente era para ser usado na criação de jogos de tiro.
+
+O motor é facilmente configurável. É possível modificar vários elementos do jogo, incluindo personagens, arenas e a aparência do próprio motor. A comunidade M.U.G.E.N se concentra em fóruns temáticos online, onde os usuários compartilham os jogos que criaram, bem como personagens, que geralmente representam heróis de jogos de computador populares.</text>
+      <text lang="ru">Бесплатный графический 2D-движок виртуальных сражений, разработанный компанией Elecbyte. Написан на языке программирования Си с использованием библиотек Allegro. Бета-версия MUGEN работает под управлением DOS, GNU/Linux и Microsoft Windows. Дата выпуска 17 июля 1999 года.
 
 Разработка вновь начата 19 сентября 2009 года.
 
 Движок позволяет игрокам создавать своих персонажей, уровни и другие игровые объекты при помощи интерпретируемых игрой текстовых файлов, графики, и звуков. Для создания музыкального оформления заднего плана, антуража главного меню и т. д., имеется поддержка звуковых форматов: MP3, ADX, Ogg Vorbis и MIDI. Программный продукт позволяет воссоздавать атмосферу популярных и любимых игр.
 
 Механизм в полной [платной] комплектации даёт возможность достичь качества коммерческих 2D-проектов, вплоть до полного копирования персонажей и переноса игрового процесса (хотя, в силу некоторых ограничений, точного воспроизведения удаётся добиться не в полной мере).</text>
-			<text lang="es">M.U.G.E.N - un programa gratuito para crear tus propios juegos 2D (brawlers), escrito en C. El motor del juego fue lanzado en 1999 por Elecbyte y fue desarrollado durante los siguientes cuatro años. Desde 2003 la compañía dejó de dar soporte al motor, sin embargo Elecbyte volvió al desarrollo del motor y lanzó una nueva versión en 2009. Las actualizaciones lanzadas entre 2004 y 2008 eran versiones no oficiales del motor original.
+      <text lang="es">M.U.G.E.N - un programa gratuito para crear tus propios juegos 2D (brawlers), escrito en C. El motor del juego fue lanzado en 1999 por Elecbyte y fue desarrollado durante los siguientes cuatro años. Desde 2003 la compañía dejó de dar soporte al motor, sin embargo Elecbyte volvió al desarrollo del motor y lanzó una nueva versión en 2009. Las actualizaciones lanzadas entre 2004 y 2008 eran versiones no oficiales del motor original.
 
 La palabra "mugen" proviene probablemente del idioma japonés, donde significa sueño, fantasía o infinito. Oficialmente, Elecbyte afirma haber olvidado qué significan las siglas que eligieron para el nombre, pero la documentación incluida sugiere que el motor estaba pensado originalmente para su uso en shoot'em ups.
 
 El motor es fácilmente configurable. Puedes modificar muchos elementos del juego, como los personajes, los escenarios y el aspecto del propio motor. La comunidad de M.U.G.E.N se centra en foros temáticos de Internet, donde los usuarios comparten los juegos que han creado, así como los personajes, que a menudo representan a personajes de populares juegos de ordenador.</text>
-			<text lang="de">M.U.G.E.N - ein Freeware-Programm zum Erstellen eigener 2D-Spiele (Brawler), geschrieben in C. Die Spiel-Engine wurde 1999 von Elecbyte veröffentlicht und wurde für die nächsten vier Jahre entwickelt. Ab 2003 stellte das Unternehmen den Support für die Engine ein, jedoch kehrte Elecbyte zur Entwicklung der Engine zurück und veröffentlichte 2009 eine neue Version. Die zwischen 2004 und 2008 veröffentlichten Updates waren inoffizielle Versionen der ursprünglichen Engine.
+      <text lang="de">M.U.G.E.N - ein Freeware-Programm zum Erstellen eigener 2D-Spiele (Brawler), geschrieben in C. Die Spiel-Engine wurde 1999 von Elecbyte veröffentlicht und wurde für die nächsten vier Jahre entwickelt. Ab 2003 stellte das Unternehmen den Support für die Engine ein, jedoch kehrte Elecbyte zur Entwicklung der Engine zurück und veröffentlichte 2009 eine neue Version. Die zwischen 2004 und 2008 veröffentlichten Updates waren inoffizielle Versionen der ursprünglichen Engine.
 
 Das Wort "Mugen" stammt wahrscheinlich aus dem Japanischen und bedeutet Traum, Fantasie oder Unendlichkeit. Offiziell behauptet Elecbyte, vergessen zu haben, was das Akronym, das sie für den Namen gewählt haben, bedeutet, aber die mitgelieferte Dokumentation deutet darauf hin, dass die Engine ursprünglich für den Einsatz in Shoot'em-Ups gedacht war.
 
 Die Engine ist leicht konfigurierbar. Sie können viele Elemente des Spiels modifizieren, darunter Charaktere, Arenen und das Aussehen der Engine selbst. Die M.U.G.E.N-Gemeinschaft konzentriert sich auf Internet-Themenforen, in denen die Benutzer die von ihnen erstellten Spiele sowie die Charaktere, die oft Figuren aus beliebten Computerspielen darstellen, austauschen.</text>
-			<text lang="fr">M.U.G.E.N - un programme freeware pour créer vos propres jeux en 2D (brawlers), écrit en C. Le moteur de jeu a été publié en 1999 par Elecbyte et a été développé pendant les quatre années suivantes. Depuis 2003, la société a cessé d'assurer le support du moteur, mais Elecbyte a repris le développement du moteur et a publié une nouvelle version en 2009. Les mises à jour publiées entre 2004 et 2008 étaient des versions non officielles du moteur original.
+      <text lang="fr">M.U.G.E.N - un programme freeware pour créer vos propres jeux en 2D (brawlers), écrit en C. Le moteur de jeu a été publié en 1999 par Elecbyte et a été développé pendant les quatre années suivantes. Depuis 2003, la société a cessé d'assurer le support du moteur, mais Elecbyte a repris le développement du moteur et a publié une nouvelle version en 2009. Les mises à jour publiées entre 2004 et 2008 étaient des versions non officielles du moteur original.
 
 Le mot "mugen" vient probablement de la langue japonaise où il signifie rêve, fantaisie ou infini. Officiellement, Elecbyte affirme avoir oublié la signification de l'acronyme qu'ils ont choisi pour le nom, mais la documentation incluse suggère que le moteur était à l'origine destiné à être utilisé dans les shoot'em ups.
 
 Le moteur est facilement configurable. Vous pouvez modifier de nombreux éléments du jeu, y compris les personnages, les arènes et l'apparence du moteur lui-même. La communauté M.U.G.E.N est centrée sur des forums Internet, où les utilisateurs partagent les jeux qu'ils ont créés, ainsi que les personnages, qui représentent souvent des personnages de jeux informatiques populaires.</text>
-			<text lang="it">M.U.G.E.N - un programma freeware per creare giochi 2D (picchiaduro), scritto in C. Il motore di gioco è stato rilasciato nel 1999 da Elecbyte ed è stato sviluppato per i quattro anni successivi. Dal 2003 l'azienda ha interrotto il supporto per il motore, ma Elecbyte è tornata allo sviluppo del motore e ha rilasciato una nuova versione nel 2009. Gli aggiornamenti rilasciati tra il 2004 e il 2008 erano versioni non ufficiali del motore originale.
+      <text lang="it">M.U.G.E.N - un programma freeware per creare giochi 2D (picchiaduro), scritto in C. Il motore di gioco è stato rilasciato nel 1999 da Elecbyte ed è stato sviluppato per i quattro anni successivi. Dal 2003 l'azienda ha interrotto il supporto per il motore, ma Elecbyte è tornata allo sviluppo del motore e ha rilasciato una nuova versione nel 2009. Gli aggiornamenti rilasciati tra il 2004 e il 2008 erano versioni non ufficiali del motore originale.
 
 La parola "mugen" deriva probabilmente dalla lingua giapponese, dove significa sogno, fantasia o infinito. Ufficialmente Elecbyte dichiara di aver dimenticato il significato dell'acronimo scelto per il nome, ma la documentazione inclusa suggerisce che il motore era originariamente destinato agli shoot'em up.
 
 Il motore è facilmente configurabile. È possibile modificare molti elementi del gioco, compresi i personaggi, le arene e l'aspetto del motore stesso. La comunità di M.U.G.E.N è incentrata su forum tematici su Internet, dove gli utenti condividono i giochi che hanno creato, nonché i personaggi, che spesso rappresentano personaggi di popolari giochi per computer.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

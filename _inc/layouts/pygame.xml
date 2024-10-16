@@ -1,69 +1,72 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<pos>0.497 0.483</pos>
-			<maxSize>0.22</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.217 0.483" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<pos>0.497 0.483</pos>
-			<maxSize>0.195</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.217 0.483" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2000</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Pygame</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>Pygame is a cross-platform set of Python modules designed for writing video games. It includes computer graphics and sound libraries designed to be used with the Python programming language.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <pos>0.497 0.483</pos>
+      <maxSize>0.22</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.217 0.483" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <pos>0.497 0.483</pos>
+      <maxSize>0.195</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.217 0.483" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2000</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Pygame</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>Pygame is a cross-platform set of Python modules designed for writing video games. It includes computer graphics and sound libraries designed to be used with the Python programming language.
 
 Pygame was originally written by Pete Shinners to replace PySDL after its development stalled. It has been a community project since 2000 and is released under the open source free software GNU Lesser General Public License.</text>
-			<text lang="pl">Pygame to wieloplatformowy zestaw modułów Pythona przeznaczony do pisania gier wideo. Zawiera on biblioteki grafiki komputerowej i dźwięku zaprojektowane do użycia z językiem programowania Python.
+      <text lang="pl">Pygame to wieloplatformowy zestaw modułów Pythona przeznaczony do pisania gier wideo. Zawiera on biblioteki grafiki komputerowej i dźwięku zaprojektowane do użycia z językiem programowania Python.
 
 Pygame został pierwotnie napisany przez Pete'a Shinnersa, aby zastąpić PySDL po tym, jak jego rozwój utknął w martwym punkcie. Jest to projekt społecznościowy od 2000 roku i jest wydany na zasadach wolnego oprogramowania open source GNU Lesser General Public License.</text>
-			<text lang="ru">Pygame — набор модулей (библиотек) языка программирования Python, предназначенный для написания компьютерных игр и мультимедиа-приложений. Pygame базируется на мультимедийной библиотеке SDL.
+      <text lang="pt">Pygame é um conjunto multiplataforma de módulos Python destinado a escrever jogos de vídeo. Ele inclui bibliotecas de gráficos e som de computador projetadas para uso com a linguagem de programação Python.
+
+Pygame foi originalmente escrito por Pete Shinners para substituir PySDL depois que seu desenvolvimento ficou estagnado. É um projeto de comunidade desde 2000 e é lançado sob os termos da licença livre GNU Lesser General Public License.</text>
+      <text lang="ru">Pygame — набор модулей (библиотек) языка программирования Python, предназначенный для написания компьютерных игр и мультимедиа-приложений. Pygame базируется на мультимедийной библиотеке SDL.
 Изначально Pygame был написан Питом Шиннерсом (Pete Shinners). Начиная примерно с 2004/2005 года поддерживается и развивается сообществом свободного программного обеспечения.
 
 Pygame – это библиотека модулей для языка Python, созданная для разработки 2D игр. Также Pygame могут называть фреймворком. В программировании понятия "библиотека" и "фреймворк" несколько разные. Но когда дело касается классификации конкретного инструмента, не все так однозначно.
 В любом случае, фреймворк является более мощным по-сравнению с библиотекой, он накладывает свою специфику на особенности программирования и сферу использования продукта. С точки зрения специфики Pygame – это фреймворк. Однако его сложно назвать "мощным инструментом". По своему объему и функционалу это скорее библиотека.</text>
-			<text lang="es">Pygame es un conjunto multiplataforma de módulos Python diseñados para escribir videojuegos. Incluye librerías de gráficos por ordenador y sonido diseñadas para su uso con el lenguaje de programación Python.
+      <text lang="es">Pygame es un conjunto multiplataforma de módulos Python diseñados para escribir videojuegos. Incluye librerías de gráficos por ordenador y sonido diseñadas para su uso con el lenguaje de programación Python.
 
 Pygame fue escrito originalmente por Pete Shinners para sustituir a PySDL tras estancarse su desarrollo. Es un proyecto comunitario desde el año 2000 y se publica bajo la licencia de software libre GNU Lesser General Public License.</text>
-			<text lang="de">Pygame ist ein plattformübergreifender Satz von Python-Modulen für die Entwicklung von Videospielen. Es umfasst Computergrafik- und Soundbibliotheken, die für die Verwendung mit der Programmiersprache Python entwickelt wurden.
+      <text lang="de">Pygame ist ein plattformübergreifender Satz von Python-Modulen für die Entwicklung von Videospielen. Es umfasst Computergrafik- und Soundbibliotheken, die für die Verwendung mit der Programmiersprache Python entwickelt wurden.
 
 Pygame wurde ursprünglich von Pete Shinners geschrieben, um PySDL zu ersetzen, nachdem dessen Entwicklung ins Stocken geraten war. Es ist seit 2000 ein Gemeinschaftsprojekt und wird unter der GNU Lesser General Public License als freie Software veröffentlicht.</text>
-			<text lang="fr">Pygame est un ensemble de modules Python multiplateforme conçu pour l'écriture de jeux vidéo. Il comprend des bibliothèques graphiques et sonores conçues pour être utilisées avec le langage de programmation Python.
+      <text lang="fr">Pygame est un ensemble de modules Python multiplateforme conçu pour l'écriture de jeux vidéo. Il comprend des bibliothèques graphiques et sonores conçues pour être utilisées avec le langage de programmation Python.
 
 Pygame a été écrit à l'origine par Pete Shinners pour remplacer PySDL, dont le développement était au point mort. Il s'agit d'un projet communautaire depuis 2000 et il est publié sous la licence de logiciel libre GNU Lesser General Public License.</text>
-			<text lang="it">Pygame è un insieme multipiattaforma di moduli Python progettati per la scrittura di videogiochi. Include librerie di grafica computerizzata e audio progettate per essere utilizzate con il linguaggio di programmazione Python.
+      <text lang="it">Pygame è un insieme multipiattaforma di moduli Python progettati per la scrittura di videogiochi. Include librerie di grafica computerizzata e audio progettate per essere utilizzate con il linguaggio di programmazione Python.
 
 Pygame è stato originariamente scritto da Pete Shinners per sostituire PySDL dopo che il suo sviluppo si era arrestato. È un progetto comunitario dal 2000 ed è rilasciato sotto la licenza open source GNU Lesser General Public License.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

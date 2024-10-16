@@ -1,61 +1,68 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<pos>0.5 0.354</pos>
-			<maxSize>0.25</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.354" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<pos>0.5 0.354</pos>
-			<maxSize>0.24</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.354" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1987</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Commodore</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Amiga 500</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Amiga 500, also known as the A500, is the first low-end version of the Amiga home computer. It contains the same Motorola 68000 as the Amiga 1000, as well as the same graphics and sound coprocessors, but is in a smaller case similar to that of the Commodore 128.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <pos>0.5 0.354</pos>
+      <maxSize>0.25</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.354" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <pos>0.5 0.354</pos>
+      <maxSize>0.24</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.354" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1987</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Commodore</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Amiga 500</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Amiga 500, also known as the A500, is the first low-end version of the Amiga home computer. It contains the same Motorola 68000 as the Amiga 1000, as well as the same graphics and sound coprocessors, but is in a smaller case similar to that of the Commodore 128.
 
 The CPU implements a 32-bit model and has 32-bit registers, but it has a 16-bit main ALU and uses a 16-bit external data bus and a 23-bit address bus, providing a maximum of 16 MB of address space. Also built in to the base of the computer is a 3+1⁄2-inch floppy disk drive.
 
 The earliest Amiga 500 models use nearly the same Original Amiga chipset as the Amiga 1000. So graphics can be displayed in multiple resolutions and color depths, even on the same screen.
 The sound chip produces four hardware-mixed channels, two to the left and two to the right, of 8-bit PCM at a sampling frequency up to 28 kHz. Each hardware channel has its own independent volume level and sampling rate, and can be designated to another channel where it can modulate both volume and frequency using its own output.</text>
-			<text lang="pl">Amiga 500, znana również jako A500, to pierwsza wersja low-end komputera domowego Amiga. Zawiera ten sam procesor Motorola 68000, co Amiga 1000, a także te same koprocesory graficzne i dźwiękowe, ale znajduje się w mniejszej obudowie, podobnej do tej z Commodore 128.
+      <text lang="pl">Amiga 500, znana również jako A500, to pierwsza wersja low-end komputera domowego Amiga. Zawiera ten sam procesor Motorola 68000, co Amiga 1000, a także te same koprocesory graficzne i dźwiękowe, ale znajduje się w mniejszej obudowie, podobnej do tej z Commodore 128.
 
 Procesor implementuje model 32-bitowy i posiada 32-bitowe rejestry, ale ma 16-bitową główną jednostkę ALU i korzysta z 16-bitowej zewnętrznej szyny danych oraz 23-bitowej szyny adresowej, co zapewnia maksymalnie 16 MB przestrzeni adresowej. W podstawę komputera wbudowany jest również napęd dyskietek 3+1⁄2 cala.
 
 Najwcześniejsze modele Amigi 500 wykorzystują prawie ten sam chipset Original Amiga, co Amiga 1000. Dzięki temu grafika może być wyświetlana w wielu rozdzielczościach i głębiach kolorów, nawet na tym samym ekranie.
 Układ dźwiękowy wytwarza cztery sprzętowo miksowane kanały, dwa po lewej i dwa po prawej stronie, 8-bitowego PCM o częstotliwości próbkowania do 28 kHz. Każdy kanał sprzętowy ma własny, niezależny poziom głośności i częstotliwość próbkowania oraz może być przypisany do innego kanału, gdzie może modulować zarówno głośność, jak i częstotliwość za pomocą własnego wyjścia.</text>
-			<text lang="ru">Все отличия Amiga 500 от Amiga 1000 (для пользователя) сводились к тому, что системный блок и клавиатура здесь составляли единое целое, а также отсутствовали внутренние разъёмы шины Zorro II. В годы популярности Amiga 500 бытовал анекдот: «Программист спрашивает: клавиатуру вижу, а где же сам компьютер?». Сегодня, не будучи знакомым с Amiga 500, понять его уже сложно. Сам компьютер как-то поместился внутри собственной клавиатуры.
+      <text lang="pt">Amiga 500, também conhecida como A500, é a primeira versão low-end do computador doméstico Amiga. Possui o mesmo processador Motorola 68000 que a Amiga 1000, além dos mesmos coprocessadores gráficos e de áudio, mas em um gabinete menor, semelhante ao do Commodore 128.
+
+O processador implementa um modelo de 32 bits e possui registradores de 32 bits, mas tem uma unidade lógica e aritmética (ALU) principal de 16 bits e usa um barramento de dados externo de 16 bits e um barramento de endereço de 23 bits, fornecendo um máximo de 16 MB de espaço de endereço. O drive de disquetes de 3+1⁄2 polegadas também está integrado à base do computador.
+
+Os primeiros modelos da Amiga 500 usam quase o mesmo chipset Original Amiga que a Amiga 1000. Isso permite que a imagem seja exibida em várias resoluções e profundidades de cores, mesmo na mesma tela.
+
+O circuito de áudio gera quatro canais misturados em hardware, dois à esquerda e dois à direita, PCM de 8 bits com frequência de amostragem de até 28 kHz. Cada canal de hardware possui seu próprio nível de volume e frequência de amostragem independentes e pode ser atribuído a outro canal, onde pode modular tanto o volume quanto a frequência usando sua própria saída.</text>
+      <text lang="ru">Все отличия Amiga 500 от Amiga 1000 (для пользователя) сводились к тому, что системный блок и клавиатура здесь составляли единое целое, а также отсутствовали внутренние разъёмы шины Zorro II. В годы популярности Amiga 500 бытовал анекдот: «Программист спрашивает: клавиатуру вижу, а где же сам компьютер?». Сегодня, не будучи знакомым с Amiga 500, понять его уже сложно. Сам компьютер как-то поместился внутри собственной клавиатуры.
 
 Компьютер поставлялся с обновлённой AmigaOS 1.3, знаменитой появлением интерфейса командной строки Shell. Стали доступными оба телевизионных режима (PAL/NTSC), в отличие от Amiga 1000, где они существовали в разных модификациях компьютера.
 
@@ -68,30 +75,30 @@ Układ dźwiękowy wytwarza cztery sprzętowo miksowane kanały, dwa po lewej i 
 Впервые была применена система светодиодной индикации «питание/дисковод» (далее — «питание/дисковод/винчестер»), моментально воспринятая практически всеми производителями. Яркость свечения светодиодов на Amiga контролируется аппаратно и имеет интерфейс для программного управления. Появился звуковой фильтр (режим его работы привязан к яркости свечения светодиода питания), сглаживающий высокие и низкие частоты.
 
 К 1991 году распространённость Amiga 500 становится так велика, что в Греции и Италии множество журналов присуждают этому ПК премию «домашний компьютер года». Amiga 500 выпускалась вплоть до октября 1991 года.</text>
-			<text lang="es">El Amiga 500, también conocido como A500, es la primera versión de gama baja del ordenador doméstico Amiga. Contiene el mismo Motorola 68000 que el Amiga 1000, así como los mismos coprocesadores de gráficos y sonido, pero en una carcasa más pequeña similar a la del Commodore 128.
+      <text lang="es">El Amiga 500, también conocido como A500, es la primera versión de gama baja del ordenador doméstico Amiga. Contiene el mismo Motorola 68000 que el Amiga 1000, así como los mismos coprocesadores de gráficos y sonido, pero en una carcasa más pequeña similar a la del Commodore 128.
 
 La CPU implementa un modelo de 32 bits y dispone de registros de 32 bits, pero tiene una ALU principal de 16 bits y utiliza un bus de datos externo de 16 bits y un bus de direcciones de 23 bits, lo que proporciona un máximo de 16 MB de espacio de direcciones. También incorpora en la base del ordenador una unidad de disquete de 3+1⁄2 pulgadas.
 
 Los primeros modelos de Amiga 500 utilizan prácticamente el mismo chipset Original Amiga que el Amiga 1000. Así, los gráficos pueden mostrarse en múltiples resoluciones y profundidades de color, incluso en la misma pantalla.
 El chip de sonido produce cuatro canales mezclados por hardware, dos a la izquierda y dos a la derecha, de PCM de 8 bits a una frecuencia de muestreo de hasta 28 kHz. Cada canal de hardware tiene su propio nivel de volumen y frecuencia de muestreo independientes, y puede designarse a otro canal donde puede modular tanto el volumen como la frecuencia utilizando su propia salida.</text>
-			<text lang="de">Der Amiga 500, auch bekannt als A500, ist die erste Low-End-Version des Amiga-Heimcomputers. Er enthält den gleichen Motorola 68000 wie der Amiga 1000, sowie die gleichen Grafik- und Sound-Coprozessoren, ist aber in einem kleineren Gehäuse untergebracht, das dem des Commodore 128 ähnelt.
+      <text lang="de">Der Amiga 500, auch bekannt als A500, ist die erste Low-End-Version des Amiga-Heimcomputers. Er enthält den gleichen Motorola 68000 wie der Amiga 1000, sowie die gleichen Grafik- und Sound-Coprozessoren, ist aber in einem kleineren Gehäuse untergebracht, das dem des Commodore 128 ähnelt.
 
 Die CPU implementiert ein 32-Bit-Modell und hat 32-Bit-Register, aber sie hat eine 16-Bit-Haupt-ALU und verwendet einen 16-Bit-externen Datenbus und einen 23-Bit-Adressbus, was ein Maximum von 16 MB Adressraum ergibt. Im Sockel des Rechners ist außerdem ein 3+1⁄2-Zoll-Diskettenlaufwerk eingebaut.
 
 Die ersten Amiga 500-Modelle verwenden fast den gleichen Original-Amiga-Chipsatz wie der Amiga 1000. So können Grafiken in verschiedenen Auflösungen und Farbtiefen dargestellt werden, sogar auf demselben Bildschirm.
 Der Soundchip erzeugt vier hardwaregemischte Kanäle, zwei links und zwei rechts, mit 8-Bit-PCM bei einer Abtastfrequenz von bis zu 28 kHz. Jeder Hardware-Kanal hat seinen eigenen unabhängigen Lautstärkepegel und seine eigene Abtastrate und kann einem anderen Kanal zugewiesen werden, wo er sowohl Lautstärke als auch Frequenz über seinen eigenen Ausgang modulieren kann.</text>
-			<text lang="fr">L'Amiga 500, également connu sous le nom d'A500, est la première version bas de gamme de l'ordinateur familial Amiga. Il contient le même Motorola 68000 que l'Amiga 1000, ainsi que les mêmes coprocesseurs graphiques et sonores, mais dans un boîtier plus petit similaire à celui du Commodore 128.
+      <text lang="fr">L'Amiga 500, également connu sous le nom d'A500, est la première version bas de gamme de l'ordinateur familial Amiga. Il contient le même Motorola 68000 que l'Amiga 1000, ainsi que les mêmes coprocesseurs graphiques et sonores, mais dans un boîtier plus petit similaire à celui du Commodore 128.
 
 Le CPU implémente un modèle 32 bits et a des registres 32 bits, mais il a un ALU principal de 16 bits et utilise un bus de données externe de 16 bits et un bus d'adresse de 23 bits, fournissant un maximum de 16 Mo d'espace d'adressage. Un lecteur de disquettes de 3+1⁄2 pouces est également intégré à la base de l'ordinateur.
 
 Les premiers modèles d'Amiga 500 utilisent pratiquement le même chipset Original Amiga que l'Amiga 1000. Les graphiques peuvent donc être affichés dans plusieurs résolutions et profondeurs de couleurs, même sur le même écran.
 La puce sonore produit quatre canaux mixés matériellement, deux à gauche et deux à droite, de PCM 8 bits à une fréquence d'échantillonnage allant jusqu'à 28 kHz. Chaque canal matériel a son propre niveau de volume et sa propre fréquence d'échantillonnage, et peut être affecté à un autre canal où il peut moduler à la fois le volume et la fréquence en utilisant sa propre sortie.</text>
-			<text lang="it">L'Amiga 500, noto anche come A500, è la prima versione di fascia bassa dell'home computer Amiga. Contiene lo stesso Motorola 68000 dell'Amiga 1000, nonché gli stessi coprocessori grafici e sonori, ma in un case più piccolo, simile a quello del Commodore 128.
+      <text lang="it">L'Amiga 500, noto anche come A500, è la prima versione di fascia bassa dell'home computer Amiga. Contiene lo stesso Motorola 68000 dell'Amiga 1000, nonché gli stessi coprocessori grafici e sonori, ma in un case più piccolo, simile a quello del Commodore 128.
 
 La CPU implementa un modello a 32 bit e dispone di registri a 32 bit, ma ha un'ALU principale a 16 bit e utilizza un bus dati esterno a 16 bit e un bus indirizzi a 23 bit, fornendo un massimo di 16 MB di spazio per gli indirizzi. Alla base del computer è integrato anche un lettore di floppy disk da 3+1⁄2 pollici.
 
 I primi modelli di Amiga 500 utilizzavano quasi lo stesso chipset Original Amiga dell'Amiga 1000. Pertanto, la grafica poteva essere visualizzata in più risoluzioni e profondità di colore, anche sullo stesso schermo.
 Il chip audio produce quattro canali hardware mixati, due a sinistra e due a destra, di PCM a 8 bit con una frequenza di campionamento fino a 28 kHz. Ogni canale hardware ha il proprio livello di volume e la propria frequenza di campionamento indipendenti e può essere designato a un altro canale dove può modulare sia il volume che la frequenza utilizzando la propria uscita.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

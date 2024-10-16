@@ -1,85 +1,90 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.34</pos>
-			<maxSize>0.235</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.34" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.34</pos>
-			<maxSize>0.225</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.34" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1983</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Sega</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>SC-3000</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The SC-3000 (Sega Computer 3000) is the first and only computer to be designed and manufactured by Sega. It was first released in July of 1983 in Japan, and serves as the home computer equivalent of the SG-1000 cartridge-based video game console. The SC-3000, often known simply as the "Sega Computer" or even just the "Sega", is an 8-bit home computer almost identical in nature to the SG-1000, but with a built-in keyboard and support for more hardware expansions.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.5 0.34</pos>
+      <maxSize>0.235</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.34" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.5 0.34</pos>
+      <maxSize>0.225</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.34" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1983</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Sega</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>SC-3000</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The SC-3000 (Sega Computer 3000) is the first and only computer to be designed and manufactured by Sega. It was first released in July of 1983 in Japan, and serves as the home computer equivalent of the SG-1000 cartridge-based video game console. The SC-3000, often known simply as the "Sega Computer" or even just the "Sega", is an 8-bit home computer almost identical in nature to the SG-1000, but with a built-in keyboard and support for more hardware expansions.
 
 Unlike later Sega systems, the SC-3000 did not receive a worldwide release, but in markets where it did compete, including Japan, Australia, New Zealand, France, Italy and Finland, the computer fared well as a low price, entry-level machine for the home. By 1985, the SC-3000 had been displaced by more popular computer standards, but is nevertheless said to have fared better than the SG-1000 console on the global stage, and has a strong group of followers to this day.
 
 The SC-3000 was also Sega's last home computer to be released to the general public. The company would partner with Amstrad and IBM for the Amstrad Mega PC and TeraDrive respectively in later years, but other endeavours such as the extremely rare Sega AI Computer saw only a small fraction of the success the SC-3000 received, and were built with very different aims.</text>
-			<text lang="pl">SC-3000 (Sega Computer 3000) to pierwszy i jedyny komputer zaprojektowany i wyprodukowany przez firmę Sega. Po raz pierwszy został wydany w lipcu 1983 roku w Japonii i służył jako odpowiednik domowego komputera dla konsoli do gier SG-1000 z kartridżami. SC-3000, często znany po prostu jako "Sega Computer" lub po prostu "Sega", to 8-bitowy komputer domowy o niemal identycznym charakterze jak SG-1000, ale z wbudowaną klawiaturą i obsługą większej liczby rozszerzeń sprzętowych.
+      <text lang="pl">SC-3000 (Sega Computer 3000) to pierwszy i jedyny komputer zaprojektowany i wyprodukowany przez firmę Sega. Po raz pierwszy został wydany w lipcu 1983 roku w Japonii i służył jako odpowiednik domowego komputera dla konsoli do gier SG-1000 z kartridżami. SC-3000, często znany po prostu jako "Sega Computer" lub po prostu "Sega", to 8-bitowy komputer domowy o niemal identycznym charakterze jak SG-1000, ale z wbudowaną klawiaturą i obsługą większej liczby rozszerzeń sprzętowych.
 
 W przeciwieństwie do późniejszych systemów firmy Sega, SC-3000 nie został wprowadzony na rynek ogólnoświatowy, ale na rynkach, na których konkurował, w tym w Japonii, Australii, Nowej Zelandii, Francji, Włoszech i Finlandii, sprawdził się jako niedroga, podstawowa maszyna dla użytkowników domowych. Do 1985 roku SC-3000 został wyparty przez bardziej popularne standardy komputerowe, ale mimo to uważa się, że na arenie światowej poradził sobie lepiej niż konsola SG-1000 i do dziś ma silną grupę zwolenników.
 
 SC-3000 był także ostatnim komputerem domowym firmy Sega, który został wprowadzony do powszechnego użytku. W późniejszych latach firma nawiązała współpracę z firmami Amstrad i IBM, tworząc odpowiednio Amstrad Mega PC i TeraDrive, ale inne przedsięwzięcia, takie jak niezwykle rzadki Sega AI Computer, odniosły tylko niewielki ułamek sukcesu, jaki odniósł SC-3000, i zostały zbudowane w zupełnie innych celach.</text>
-			<text lang="ru">SC-3000 — эквивалент игровой консоли SG-1000 от SEGA, выполненный в виде домашнего компьютера. Продавался в Японии, Австралии, Новой Зеландии, Италии, Франции, Испании и Финляндии, конкурируя с компьютерами семейства MSX.
+      <text lang="pt">SC-3000 (Sega Computer 3000) foi o primeiro e único computador projetado e fabricado pela Sega. Lançado pela primeira vez em julho de 1983 no Japão, ele serviu como o equivalente a um computador doméstico para o console de jogos SG-1000 com cartuchos. O SC-3000, muitas vezes conhecido simplesmente como "Sega Computer" ou apenas "Sega", é um computador doméstico de 8 bits com características quase idênticas ao SG-1000, mas com um teclado embutido e suporte para mais extensões de hardware.
+
+Ao contrário dos sistemas posteriores da Sega, o SC-3000 não foi lançado globalmente, mas nos mercados onde competiu, incluindo Japão, Austrália, Nova Zelândia, França, Itália e Finlândia, ele se mostrou uma máquina básica e acessível para usuários domésticos. Até 1985, o SC-3000 foi suplantado por padrões de computadores mais populares, mas ainda assim é considerado que se saiu melhor em escala global do que o console SG-1000 e até hoje tem um forte grupo de fãs.
+
+O SC-3000 também foi o último computador doméstico da Sega lançado para uso generalizado. Nos anos seguintes, a empresa fez parceria com a Amstrad e a IBM para criar, respectivamente, o Amstrad Mega PC e o TeraDrive, mas outras iniciativas, como o extremamente raro Sega AI Computer, tiveram apenas uma fração do sucesso do SC-3000 e foram construídos para propósitos completamente diferentes.</text>
+      <text lang="ru">SC-3000 — эквивалент игровой консоли SG-1000 от SEGA, выполненный в виде домашнего компьютера. Продавался в Японии, Австралии, Новой Зеландии, Италии, Франции, Испании и Финляндии, конкурируя с компьютерами семейства MSX.
 
 SC-3000 был выпущен в 1983 году по цене 29 800 японских йен и позиционировался как компьютер для начинающих. Так как игры от SG-1000 подходили к SC-3000, и SC-3000 имел возможность запуска собственных приложений, его продажи превысили продажи SG-1000.
 
 Владельцы SC-3000 имели возможность создавать свои собственные программы и игры. Также, для него существовали дополнительные устройства от сторонних производителей — модуль голосового синтеза, световой пистолет, и некоторые другие.</text>
-			<text lang="es">El SC-3000 (Sega Computer 3000) es el primer y único ordenador diseñado y fabricado por Sega. Salió a la venta por primera vez en julio de 1983 en Japón y es el equivalente para ordenadores domésticos de la videoconsola de cartuchos SG-1000. El SC-3000, a menudo conocido simplemente como "Sega Computer" o incluso sólo "Sega", es un ordenador doméstico de 8 bits casi idéntico en su naturaleza al SG-1000, pero con un teclado incorporado y soporte para más expansiones de hardware.
+      <text lang="es">El SC-3000 (Sega Computer 3000) es el primer y único ordenador diseñado y fabricado por Sega. Salió a la venta por primera vez en julio de 1983 en Japón y es el equivalente para ordenadores domésticos de la videoconsola de cartuchos SG-1000. El SC-3000, a menudo conocido simplemente como "Sega Computer" o incluso sólo "Sega", es un ordenador doméstico de 8 bits casi idéntico en su naturaleza al SG-1000, pero con un teclado incorporado y soporte para más expansiones de hardware.
 
 A diferencia de los sistemas posteriores de Sega, el SC-3000 no salió a la venta en todo el mundo, pero en los mercados en los que compitió, como Japón, Australia, Nueva Zelanda, Francia, Italia y Finlandia, el ordenador funcionó bien como máquina básica de bajo precio para el hogar. En 1985, el SC-3000 había sido desplazado por estándares informáticos más populares, pero se dice que le fue mejor que a la consola SG-1000 en la escena mundial, y cuenta con un sólido grupo de seguidores hasta el día de hoy.
 
 El SC-3000 fue también el último ordenador doméstico de Sega que se puso a la venta al gran público. En años posteriores, la empresa se asoció con Amstrad e IBM para crear el Amstrad Mega PC y el TeraDrive, respectivamente, pero otros proyectos, como el rarísimo Sega AI Computer, sólo obtuvieron una pequeña parte del éxito de la SC-3000 y se crearon con objetivos muy diferentes.</text>
-			<text lang="de">Der SC-3000 (Sega Computer 3000) ist der erste und einzige Computer, der von Sega entwickelt und hergestellt wurde. Er kam erstmals im Juli 1983 in Japan auf den Markt und dient als Heimcomputer-Äquivalent zur SG-1000-Videospielkonsole auf Kassettenbasis. Der SC-3000, oft einfach als "Sega Computer" oder sogar nur als "Sega" bezeichnet, ist ein 8-Bit-Heimcomputer, der fast identisch mit dem SG-1000 ist, aber über eine eingebaute Tastatur und Unterstützung für mehr Hardware-Erweiterungen verfügt.
+      <text lang="de">Der SC-3000 (Sega Computer 3000) ist der erste und einzige Computer, der von Sega entwickelt und hergestellt wurde. Er kam erstmals im Juli 1983 in Japan auf den Markt und dient als Heimcomputer-Äquivalent zur SG-1000-Videospielkonsole auf Kassettenbasis. Der SC-3000, oft einfach als "Sega Computer" oder sogar nur als "Sega" bezeichnet, ist ein 8-Bit-Heimcomputer, der fast identisch mit dem SG-1000 ist, aber über eine eingebaute Tastatur und Unterstützung für mehr Hardware-Erweiterungen verfügt.
 
 Im Gegensatz zu späteren Sega-Systemen kam der SC-3000 nicht weltweit auf den Markt, aber auf den Märkten, auf denen er konkurrierte, darunter Japan, Australien, Neuseeland, Frankreich, Italien und Finnland, war der Computer als preisgünstiges Einsteigergerät für den Heimgebrauch sehr erfolgreich. Bis 1985 wurde der SC-3000 von populäreren Computerstandards verdrängt, aber er soll sich dennoch weltweit besser als die SG-1000-Konsole behauptet haben und hat bis heute eine große Anhängerschaft.
 
 Der SC-3000 war auch der letzte Heimcomputer von Sega, der für die breite Öffentlichkeit freigegeben wurde. In späteren Jahren arbeitete das Unternehmen mit Amstrad und IBM zusammen, um den Amstrad Mega PC bzw. das TeraDrive zu entwickeln, aber andere Projekte wie der äußerst seltene Sega AI Computer hatten nur einen Bruchteil des Erfolgs, den der SC-3000 hatte, und wurden mit ganz anderen Zielen entwickelt.</text>
-			<text lang="fr">Le SC-3000 (Sega Computer 3000) est le premier et le seul ordinateur conçu et fabriqué par Sega. Il a été commercialisé pour la première fois en juillet 1983 au Japon et constitue l'équivalent pour l'ordinateur domestique de la console de jeux vidéo à cartouches SG-1000. Le SC-3000, souvent appelé simplement "Sega Computer" ou même simplement "Sega", est un ordinateur domestique 8 bits presque identique au SG-1000, mais avec un clavier intégré et la possibilité d'ajouter d'autres extensions matérielles.
+      <text lang="fr">Le SC-3000 (Sega Computer 3000) est le premier et le seul ordinateur conçu et fabriqué par Sega. Il a été commercialisé pour la première fois en juillet 1983 au Japon et constitue l'équivalent pour l'ordinateur domestique de la console de jeux vidéo à cartouches SG-1000. Le SC-3000, souvent appelé simplement "Sega Computer" ou même simplement "Sega", est un ordinateur domestique 8 bits presque identique au SG-1000, mais avec un clavier intégré et la possibilité d'ajouter d'autres extensions matérielles.
 
 Contrairement aux systèmes Sega ultérieurs, le SC-3000 n'a pas été commercialisé dans le monde entier, mais sur les marchés où il était présent, notamment le Japon, l'Australie, la Nouvelle-Zélande, la France, l'Italie et la Finlande, l'ordinateur s'est bien comporté en tant que machine d'entrée de gamme à bas prix pour le grand public. En 1985, le SC-3000 a été supplanté par des ordinateurs plus populaires, mais on dit qu'il s'est mieux comporté que la console SG-1000 sur la scène mondiale, et qu'il a encore aujourd'hui de nombreux adeptes.
 
 Le SC-3000 a également été le dernier ordinateur domestique de Sega à être commercialisé auprès du grand public. Plus tard, la société s'associera avec Amstrad et IBM pour créer respectivement l'Amstrad Mega PC et le TeraDrive, mais d'autres projets tels que le rarissime Sega AI Computer ne connaîtront qu'une petite fraction du succès qu'a connu le SC-3000, et ont été conçus avec des objectifs très différents.</text>
-			<text lang="it">L'SC-3000 (Sega Computer 3000) è stato il primo e unico computer progettato e prodotto da Sega. Rilasciato per la prima volta nel luglio del 1983 in Giappone, rappresenta l'equivalente per home computer della console per videogiochi a cartucce SG-1000. L'SC-3000, spesso conosciuto semplicemente come "Sega Computer" o anche solo "Sega", è un home computer a 8 bit quasi identico all'SG-1000, ma con una tastiera integrata e il supporto per un maggior numero di espansioni hardware.
+      <text lang="it">L'SC-3000 (Sega Computer 3000) è stato il primo e unico computer progettato e prodotto da Sega. Rilasciato per la prima volta nel luglio del 1983 in Giappone, rappresenta l'equivalente per home computer della console per videogiochi a cartucce SG-1000. L'SC-3000, spesso conosciuto semplicemente come "Sega Computer" o anche solo "Sega", è un home computer a 8 bit quasi identico all'SG-1000, ma con una tastiera integrata e il supporto per un maggior numero di espansioni hardware.
 
 A differenza dei sistemi Sega successivi, l'SC-3000 non è stato distribuito in tutto il mondo, ma nei mercati in cui era presente, tra cui Giappone, Australia, Nuova Zelanda, Francia, Italia e Finlandia, il computer ha avuto successo come macchina entry-level a basso prezzo per la casa. Nel 1985, l'SC-3000 era stato soppiantato da standard informatici più diffusi, ma si dice che abbia avuto un successo migliore della console SG-1000 sulla scena mondiale e che ancora oggi abbia un forte gruppo di seguaci.
 
 L'SC-3000 è stato anche l'ultimo home computer di Sega a essere distribuito al pubblico. Negli anni successivi, l'azienda avrebbe collaborato con Amstrad e IBM rispettivamente per l'Amstrad Mega PC e il TeraDrive, ma altre iniziative, come il rarissimo Sega AI Computer, hanno riscosso solo una piccola parte del successo ottenuto dall'SC-3000 e sono state realizzate con obiettivi molto diversi.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

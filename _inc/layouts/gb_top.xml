@@ -1,109 +1,112 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.24</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.415</origin>
-			<origin if="${screen.ratio} == '21/9'">0.9 0.5</origin>
-			<pos>0.645 0.32</pos>
-			<maxSize>0.225</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.365 0.32" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-left" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.28</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
-			<origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>	
-			<pos>0.352 0.35</pos>
-			<maxSize>0.23</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.072 0.35" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/gbc.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/gbc.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.215</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
-			<origin if="${screen.ratio} == '21/9'">0.9 0.5</origin>
-			<pos>0.643 0.32</pos>
-			<maxSize>0.21</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.363 0.32" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/gb.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/gb.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.24</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.415</origin>
-			<origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>	
-			<pos>0.357 0.3445</pos>
-			<maxSize>0.20</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.077 0.3445" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1989 / 1998</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Nintendo</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Game Boy + Color - TOP</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Game Boy is an 8-bit handheld game console developed and manufactured by Nintendo. The first handheld in the Game Boy family, it was first released in Japan on April 21, 1989, then North America, three months later, and lastly in Europe, more than one year later. It was designed by the same team that developed the Game &amp; Watch series of handheld electronic games and several Nintendo Entertainment System games: Satoru Okada, Gunpei Yokoi, and Nintendo Research and Development 1.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.24</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.415</origin>
+      <origin if="${screen.ratio} == '21/9'">0.9 0.5</origin>
+      <pos>0.645 0.32</pos>
+      <maxSize>0.225</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.365 0.32" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-left" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.28</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
+      <origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
+      <pos>0.352 0.35</pos>
+      <maxSize>0.23</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.072 0.35" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/gbc.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/gbc.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.215</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
+      <origin if="${screen.ratio} == '21/9'">0.9 0.5</origin>
+      <pos>0.643 0.32</pos>
+      <maxSize>0.21</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.363 0.32" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/gb.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/gb.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.24</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.415</origin>
+      <origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
+      <pos>0.357 0.3445</pos>
+      <maxSize>0.20</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.077 0.3445" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1989 / 1998</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Nintendo</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Game Boy + Color - TOP</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Game Boy is an 8-bit handheld game console developed and manufactured by Nintendo. The first handheld in the Game Boy family, it was first released in Japan on April 21, 1989, then North America, three months later, and lastly in Europe, more than one year later. It was designed by the same team that developed the Game &amp; Watch series of handheld electronic games and several Nintendo Entertainment System games: Satoru Okada, Gunpei Yokoi, and Nintendo Research and Development 1.
 
 The Game Boy Color (commonly abbreviated as GBC) is a handheld game console, manufactured by Nintendo, which was released in Japan on October 21, 1998 and to international markets that November. It is the successor to the original Game Boy and is part of the Game Boy family.</text>
-			<text lang="pl">Game Boy (jap. ゲーム ボーイ) – seria przenośnych konsoli do gier produkcji japońskiej firmy Nintendo. Konsole z serii charakteryzowały się posiadaniem kontrolera krzyżakowego wzorowanego na konsoli Nintendo Entertainment System oraz miejsca na kartridże z grami. Konsole Game Boy przyczyniły się do zwiększenia popularności przenośnych konsol.
+      <text lang="pl">Game Boy (jap. ゲーム ボーイ) – seria przenośnych konsoli do gier produkcji japońskiej firmy Nintendo. Konsole z serii charakteryzowały się posiadaniem kontrolera krzyżakowego wzorowanego na konsoli Nintendo Entertainment System oraz miejsca na kartridże z grami. Konsole Game Boy przyczyniły się do zwiększenia popularności przenośnych konsol.
 
 Game Boy Color (jap. ゲームボーイカラー Gēmu Bōi Karā, w skrócie GBC) – przenośna konsola gier wideo wyprodukowana i wydana w 1998 roku przez Nintendo, będąca następcą konsoli Game Boy. Nowością w stosunku do poprzednika było wprowadzenie kolorowego wyświetlacza oraz portu podczerwieni. Najlepiej sprzedającą się grą na konsolę była Pokémon Gold i Silver.</text>
-			<text lang="ru">Game Boy - линейка портативных игровых устройств, разработанная и производившаяся Nintendo.
+      <text lang="pt">Game Boy (jap. ゲーム ボーイ) – era um console portátil de videogame produzido pela empresa japonesa Nintendo. Os consoles da série se caracterizavam por ter um controle direcional inspirado no console Nintendo Entertainment System e um compartimento para cartuchos de jogos. Os consoles Game Boy contribuíram para aumentar a popularidade dos consoles portáteis.
+
+Game Boy Color (jap. ゲームボーイカラー Gēmu Bōi Karā, abreviado como GBC) – console portátil de videogame produzido e lançado em 1998 pela Nintendo, sendo o sucessor do console Game Boy. A novidade em relação ao seu antecessor foi a introdução de uma tela colorida e uma porta de infravermelho. O jogo de maior sucesso para o console foi Pokémon Gold e Silver.</text>
+      <text lang="ru">Game Boy - линейка портативных игровых устройств, разработанная и производившаяся Nintendo.
 Первый Game Boy был выпущен ещё в 1989 году, как продолжение к известным карманным играм Nintendo Game &amp; Watch. Это была первая популярная портативная игровая система, и многие компании пытались повторить успех Game Boy, но никому сделать этого так и не удалось.
 
 Game Boy Color - портативная игровая система, наследница Game Boy, выпущенная компанией Nintendo 21 октября 1998 года в Японии, в ноябре 1998 года в Северной Америке и в 1999 году в Европе.
 Игровая консоль оснащалась ЖК-дисплеем с цветовой гаммой, сравнимой с NES. Для системы вышло более 700 игр в различных жанрах (аркады, RPG, стратегии, симуляторы, спортивные игры), большую долю игр составляли игры про вселенную покемонов (Pokemon). Также выходили игры в самых неожиданных для портативной консоли жанрах, например, в жанре Survival Horror (Alone in the Dark: The New Nightmare и Resident Evil Gaiden).</text>
-			<text lang="es">La Game Boy es una consola portátil de 8 bits desarrollada y fabricada por Nintendo. Fue la primera consola portátil de la familia Game Boy y salió a la venta por primera vez en Japón el 21 de abril de 1989, luego en Norteamérica, tres meses más tarde, y por último en Europa, más de un año después. Fue diseñada por el mismo equipo que desarrolló la serie de juegos electrónicos portátiles Game &amp; Watch y varios juegos de Nintendo Entertainment System: Satoru Okada, Gunpei Yokoi y Nintendo Research and Development 1.
+      <text lang="es">La Game Boy es una consola portátil de 8 bits desarrollada y fabricada por Nintendo. Fue la primera consola portátil de la familia Game Boy y salió a la venta por primera vez en Japón el 21 de abril de 1989, luego en Norteamérica, tres meses más tarde, y por último en Europa, más de un año después. Fue diseñada por el mismo equipo que desarrolló la serie de juegos electrónicos portátiles Game &amp; Watch y varios juegos de Nintendo Entertainment System: Satoru Okada, Gunpei Yokoi y Nintendo Research and Development 1.
 
 La Game Boy Color (comúnmente abreviada como GBC) es una videoconsola portátil, fabricada por Nintendo, que salió a la venta en Japón el 21 de octubre de 1998 y en los mercados internacionales en noviembre. Es la sucesora de la Game Boy original y forma parte de la familia Game Boy.</text>
-			<text lang="de">Der Game Boy ist eine 8-Bit-Handheld-Spielkonsole, die von Nintendo entwickelt und hergestellt wurde. Der erste Handheld der Game Boy-Familie wurde erstmals am 21. April 1989 in Japan, drei Monate später in Nordamerika und mehr als ein Jahr später in Europa veröffentlicht. Er wurde von demselben Team entworfen, das auch die Game &amp; Watch-Serie von elektronischen Handheld-Spielen und mehrere Nintendo Entertainment System-Spiele entwickelte: Satoru Okada, Gunpei Yokoi und Nintendo Research and Development 1.
+      <text lang="de">Der Game Boy ist eine 8-Bit-Handheld-Spielkonsole, die von Nintendo entwickelt und hergestellt wurde. Der erste Handheld der Game Boy-Familie wurde erstmals am 21. April 1989 in Japan, drei Monate später in Nordamerika und mehr als ein Jahr später in Europa veröffentlicht. Er wurde von demselben Team entworfen, das auch die Game &amp; Watch-Serie von elektronischen Handheld-Spielen und mehrere Nintendo Entertainment System-Spiele entwickelte: Satoru Okada, Gunpei Yokoi und Nintendo Research and Development 1.
 
 Der Game Boy Color (üblicherweise als GBC abgekürzt) ist eine von Nintendo hergestellte Handheld-Spielkonsole, die am 21. Oktober 1998 in Japan und im November 1998 auf internationalen Märkten veröffentlicht wurde. Er ist der Nachfolger des ursprünglichen Game Boy und gehört zur Game Boy Familie.</text>
-			<text lang="fr">Le Game Boy est une console de jeu portable 8 bits développée et fabriquée par Nintendo. Première console portable de la famille Game Boy, elle est sortie au Japon le 21 avril 1989, puis en Amérique du Nord, trois mois plus tard, et enfin en Europe, plus d'un an après. Il a été conçu par la même équipe qui a développé la série de jeux électroniques portables Game &amp; Watch et plusieurs jeux de la Nintendo Entertainment System : Satoru Okada, Gunpei Yokoi et Nintendo Research and Development 1.
+      <text lang="fr">Le Game Boy est une console de jeu portable 8 bits développée et fabriquée par Nintendo. Première console portable de la famille Game Boy, elle est sortie au Japon le 21 avril 1989, puis en Amérique du Nord, trois mois plus tard, et enfin en Europe, plus d'un an après. Il a été conçu par la même équipe qui a développé la série de jeux électroniques portables Game &amp; Watch et plusieurs jeux de la Nintendo Entertainment System : Satoru Okada, Gunpei Yokoi et Nintendo Research and Development 1.
 
 La Game Boy Color (communément abrégée en GBC) est une console de jeu portable, fabriquée par Nintendo, qui a été lancée au Japon le 21 octobre 1998 et sur les marchés internationaux en novembre de la même année. Elle succède à la Game Boy originale et fait partie de la famille Game Boy.</text>
-			<text lang="it">Il Game Boy è una console portatile a 8 bit sviluppata e prodotta da Nintendo. Prima console portatile della famiglia Game Boy, è stata rilasciata per la prima volta in Giappone il 21 aprile 1989, poi in Nord America, tre mesi dopo, e infine in Europa, più di un anno dopo. È stato progettato dallo stesso team che ha sviluppato la serie di giochi elettronici portatili Game &amp; Watch e diversi giochi per Nintendo Entertainment System: Satoru Okada, Gunpei Yokoi, e Nintendo Research and Development 1.
+      <text lang="it">Il Game Boy è una console portatile a 8 bit sviluppata e prodotta da Nintendo. Prima console portatile della famiglia Game Boy, è stata rilasciata per la prima volta in Giappone il 21 aprile 1989, poi in Nord America, tre mesi dopo, e infine in Europa, più di un anno dopo. È stato progettato dallo stesso team che ha sviluppato la serie di giochi elettronici portatili Game &amp; Watch e diversi giochi per Nintendo Entertainment System: Satoru Okada, Gunpei Yokoi, e Nintendo Research and Development 1.
 
 Il Game Boy Color (comunemente abbreviato in GBC) è una console portatile per videogiochi, prodotta da Nintendo, uscita in Giappone il 21 ottobre 1998 e sui mercati internazionali nel novembre dello stesso anno. È il successore del Game Boy originale e fa parte della famiglia Game Boy.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

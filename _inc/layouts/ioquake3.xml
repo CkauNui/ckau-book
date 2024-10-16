@@ -1,70 +1,73 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.485</origin>
-			<origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
-			<pos>0.4485 0.457</pos>
-			<maxSize>0.26</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.1685 0.457" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.485</origin>
-			<origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
-			<pos>0.4485 0.457</pos>
-			<maxSize>0.247</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.1685 0.457" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2005</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>ioquake3</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>ioquake3 is a project that aims to improve and update the Quake 3 engine, which was released by id Software as open source in 2005. ioquake3 adds many features and fixes to the original engine, such as SDL 2, OpenAL, VoIP, x86_64 support, PNG support, and more.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.485</origin>
+      <origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
+      <pos>0.4485 0.457</pos>
+      <maxSize>0.26</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.1685 0.457" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.485</origin>
+      <origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
+      <pos>0.4485 0.457</pos>
+      <maxSize>0.247</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.1685 0.457" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2005</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>ioquake3</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>ioquake3 is a project that aims to improve and update the Quake 3 engine, which was released by id Software as open source in 2005. ioquake3 adds many features and fixes to the original engine, such as SDL 2, OpenAL, VoIP, x86_64 support, PNG support, and more.
 
 ioquake3 also supports various games and mods based on the Quake 3 engine, such as OpenArena. ioquake3 has been ported to many platforms, including the Nintendo 3DS.</text>
-			<text lang="pl">ioquake3 to projekt mający na celu ulepszenie i aktualizację silnika Quake 3, który został wydany przez id Software jako open source w 2005 roku. ioquake3 dodaje wiele funkcji i poprawek do oryginalnego silnika, takich jak SDL 2, OpenAL, VoIP, obsługa x86_64, obsługa PNG i wiele innych.
+      <text lang="pl">ioquake3 to projekt mający na celu ulepszenie i aktualizację silnika Quake 3, który został wydany przez id Software jako open source w 2005 roku. ioquake3 dodaje wiele funkcji i poprawek do oryginalnego silnika, takich jak SDL 2, OpenAL, VoIP, obsługa x86_64, obsługa PNG i wiele innych.
 
 ioquake3 obsługuje również różne gry i mody oparte na silniku Quake 3, takie jak OpenArena. ioquake3 został przeniesiony na wiele platform, w tym Nintendo 3DS.</text>
-			<text lang="ru">ioquake3 - проект, направленный на улучшение и обновление движка Quake 3, выпущенного компанией id Software с открытым исходным кодом в 2005 г. В ioquake3 добавлено множество функций и исправлений, таких как SDL 2, OpenAL, VoIP, поддержка x86_64, поддержка PNG и др.
+      <text lang="pt">ioquake3 é um projeto que visa melhorar e atualizar o motor Quake 3, que foi lançado pela id Software como código aberto em 2005. O ioquake3 adiciona várias funcionalidades e correções ao motor original, como SDL 2, OpenAL, VoIP, suporte a x86_64, suporte a PNG e muito mais.
+
+O ioquake3 também oferece suporte a vários jogos e mods baseados no motor Quake 3, como o OpenArena. O ioquake3 foi portado para diversas plataformas, incluindo Nintendo 3DS.</text>
+      <text lang="ru">ioquake3 - проект, направленный на улучшение и обновление движка Quake 3, выпущенного компанией id Software с открытым исходным кодом в 2005 г. В ioquake3 добавлено множество функций и исправлений, таких как SDL 2, OpenAL, VoIP, поддержка x86_64, поддержка PNG и др.
 
 ioquake3 также поддерживает различные игры и моды, основанные на движке Quake 3, например OpenArena. Эмулятор был портирован на многие платформы, включая Nintendo 3DS.</text>
-			<text lang="es">ioquake3 es un proyecto que tiene como objetivo mejorar y actualizar el motor de Quake 3, que fue lanzado por id Software como código abierto en 2005. ioquake3 añade muchas características y correcciones al motor original, como SDL 2, OpenAL, VoIP, soporte x86_64, soporte PNG, y más. ioquake3 también es compatible con varios juegos y mods basados en el motor de Quake 3, como OpenArena. ioquake3 ha sido portado a muchas plataformas, incluyendo Nintendo 3DS.
+      <text lang="es">ioquake3 es un proyecto que tiene como objetivo mejorar y actualizar el motor de Quake 3, que fue lanzado por id Software como código abierto en 2005. ioquake3 añade muchas características y correcciones al motor original, como SDL 2, OpenAL, VoIP, soporte x86_64, soporte PNG, y más. ioquake3 también es compatible con varios juegos y mods basados en el motor de Quake 3, como OpenArena. ioquake3 ha sido portado a muchas plataformas, incluyendo Nintendo 3DS.
 
 ioquake3 también es compatible con varios juegos y mods basados en el motor de Quake 3, como OpenArena. ioquake3 ha sido portado a muchas plataformas, incluida la Nintendo 3DS.</text>
-			<text lang="de">ioquake3 ist ein Projekt, das darauf abzielt, die Quake 3-Engine zu verbessern und zu aktualisieren, die 2005 von id Software als Open Source veröffentlicht wurde. ioquake3 fügt der ursprünglichen Engine viele Funktionen und Korrekturen hinzu, wie SDL 2, OpenAL, VoIP, x86_64-Unterstützung, PNG-Unterstützung und mehr.
+      <text lang="de">ioquake3 ist ein Projekt, das darauf abzielt, die Quake 3-Engine zu verbessern und zu aktualisieren, die 2005 von id Software als Open Source veröffentlicht wurde. ioquake3 fügt der ursprünglichen Engine viele Funktionen und Korrekturen hinzu, wie SDL 2, OpenAL, VoIP, x86_64-Unterstützung, PNG-Unterstützung und mehr.
 
 ioquake3 unterstützt auch verschiedene Spiele und Mods, die auf der Quake 3-Engine basieren, wie z. B. OpenArena. ioquake3 wurde auf viele Plattformen portiert, darunter auch auf den Nintendo 3DS.</text>
-			<text lang="fr">ioquake3 est un projet qui vise à améliorer et à mettre à jour le moteur Quake 3, qui a été publié par id Software en tant que source ouverte en 2005. ioquake3 ajoute de nombreuses fonctionnalités et corrections au moteur original, telles que SDL 2, OpenAL, VoIP, le support x86_64, le support PNG, et plus encore.
+      <text lang="fr">ioquake3 est un projet qui vise à améliorer et à mettre à jour le moteur Quake 3, qui a été publié par id Software en tant que source ouverte en 2005. ioquake3 ajoute de nombreuses fonctionnalités et corrections au moteur original, telles que SDL 2, OpenAL, VoIP, le support x86_64, le support PNG, et plus encore.
 
 ioquake3 supporte également divers jeux et mods basés sur le moteur Quake 3, comme OpenArena. ioquake3 a été porté sur de nombreuses plateformes, y compris la Nintendo 3DS.</text>
-			<text lang="it">ioquake3 è un progetto che mira a migliorare e aggiornare il motore di Quake 3, rilasciato da id Software come open source nel 2005. ioquake3 aggiunge molte caratteristiche e correzioni al motore originale, come SDL 2, OpenAL, VoIP, supporto x86_64, supporto PNG e altro ancora.
+      <text lang="it">ioquake3 è un progetto che mira a migliorare e aggiornare il motore di Quake 3, rilasciato da id Software come open source nel 2005. ioquake3 aggiunge molte caratteristiche e correzioni al motore originale, come SDL 2, OpenAL, VoIP, supporto x86_64, supporto PNG e altro ancora.
 
 ioquake3 supporta anche diversi giochi e mod basati sul motore di Quake 3, come OpenArena. ioquake3 è stato portato su molte piattaforme, tra cui il Nintendo 3DS.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

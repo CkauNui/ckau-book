@@ -1,75 +1,78 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.47</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.49</origin>
-			<pos>0.5 0.462</pos>
-			<maxSize>0.472</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.618</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.514</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.462" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.47</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.49</origin>
-			<pos>0.5 0.462</pos>
-			<maxSize>0.462</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.614</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.514</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.462" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2015</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Pau Oliva</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Fightcade</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>Fightcade is a software client used to enable online capabilities to play of various arcade and home console systems via emulation.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.47</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.49</origin>
+      <pos>0.5 0.462</pos>
+      <maxSize>0.472</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.618</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.514</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.462" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.47</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.49</origin>
+      <pos>0.5 0.462</pos>
+      <maxSize>0.462</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.614</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.514</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.462" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2015</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Pau Oliva</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Fightcade</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>Fightcade is a software client used to enable online capabilities to play of various arcade and home console systems via emulation.
 
 Fightcade utilizes networking middleware GGPO to mitigate the effects of network latency on gameplay, and functions as a successor of GGPO's now-defunct matchmaking client.</text>
-			<text lang="pl">Fightcade to klient oprogramowania służący do udostępniania możliwości gry online na różnych konsolach zręcznościowych i domowych poprzez emulację.
+      <text lang="pl">Fightcade to klient oprogramowania służący do udostępniania możliwości gry online na różnych konsolach zręcznościowych i domowych poprzez emulację.
 
 Fightcade wykorzystuje sieciowe oprogramowanie pośredniczące GGPO w celu złagodzenia wpływu opóźnień sieciowych na rozgrywkę i działa jako następca nieistniejącego już klienta dobierania graczy GGPO.</text>
-			<text lang="ru">Fightcade - это программный клиент, используемый для организации сетевых возможностей игры на различных аркадных и домашних консолях с помощью эмуляции.
+      <text lang="pt">Fightcade é um cliente de software que permite a possibilidade de jogos online em várias plataformas de arcade e consoles domésticos por meio de emulação.
+
+Fightcade utiliza o software de rede GGPO para minimizar o impacto do lag na jogabilidade e serve como sucessor do cliente de matchmaking GGPO que não está mais disponível.</text>
+      <text lang="ru">Fightcade - это программный клиент, используемый для организации сетевых возможностей игры на различных аркадных и домашних консолях с помощью эмуляции.
 
 Fightcade использует сетевое промежуточное ПО GGPO для уменьшения влияния сетевых задержек на игровой процесс и является преемником ныне не существующего клиента GGPO для создания матчей.</text>
-			<text lang="es">Fightcade es un cliente de software utilizado para habilitar las capacidades online de juego de varios sistemas arcade y consolas domésticas mediante emulación.
+      <text lang="es">Fightcade es un cliente de software utilizado para habilitar las capacidades online de juego de varios sistemas arcade y consolas domésticas mediante emulación.
 
 Fightcade utiliza el middleware de red GGPO para mitigar los efectos de la latencia de la red en el juego, y funciona como sucesor del ya desaparecido cliente de matchmaking de GGPO.</text>
-			<text lang="de">Fightcade ist ein Software-Client, der es ermöglicht, verschiedene Arcade- und Heimkonsolensysteme über Emulationen online zu spielen.
+      <text lang="de">Fightcade ist ein Software-Client, der es ermöglicht, verschiedene Arcade- und Heimkonsolensysteme über Emulationen online zu spielen.
 
 Fightcade nutzt die Netzwerk-Middleware GGPO, um die Auswirkungen der Netzwerklatenz auf das Spielgeschehen zu mildern, und fungiert als Nachfolger des inzwischen eingestellten Matchmaking-Clients von GGPO.</text>
-			<text lang="fr">Fightcade est un logiciel client utilisé pour permettre de jouer en ligne à divers systèmes d'arcade et de console de salon via l'émulation.
+      <text lang="fr">Fightcade est un logiciel client utilisé pour permettre de jouer en ligne à divers systèmes d'arcade et de console de salon via l'émulation.
 
 Fightcade utilise le logiciel intermédiaire GGPO pour atténuer les effets de la latence du réseau sur le gameplay, et fonctionne comme le successeur du client de matchmaking de GGPO, aujourd'hui disparu.</text>
-			<text lang="it">Fightcade è un client software utilizzato per abilitare le capacità online di gioco di vari sistemi arcade e console domestiche tramite emulazione.
+      <text lang="it">Fightcade è un client software utilizzato per abilitare le capacità online di gioco di vari sistemi arcade e console domestiche tramite emulazione.
 
 Fightcade utilizza il middleware di rete GGPO per mitigare gli effetti della latenza di rete sul gameplay e funziona come successore del client di matchmaking di GGPO, ormai defunto.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

@@ -1,88 +1,89 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 -0.25</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.2475</origin>
-			<pos>0.498 0.2753</pos>
-			<minSize>0.45 0.1</minSize>
-			<minSize if="${screen.ratio} == '4/3'">0.59 0.1</minSize>
-			<minSize if="${screen.ratio} == '16/10'">0.49 0.1</minSize>
-			<rotation>0</rotation>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.218 0.2753" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 1.22</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.74</origin>
-			<pos>0.498 0.7175</pos>
-			<minSize>0.45 0.1</minSize>
-			<minSize if="${screen.ratio} == '4/3'">0.59 0.1</minSize>
-			<minSize if="${screen.ratio} == '16/10'">0.49 0.1</minSize>
-			<rotation>0</rotation>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.218 0.7175" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.49</pos>
-			<maxSize>0.4238</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.5565</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.463</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.2195 0.49" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.49</pos>
-			<maxSize>0.4155</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.556</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.461</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.49" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2007</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Apple</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>iOS</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>iOS (formerly iPhone OS or iPhone Operating System) is a mobile operating system created and developed by Apple Inc. exclusively for its hardware. It is the operating system that powers many of the company's mobile devices, including the iPhone and iPod Touch; the term also included the versions running on iPads until iPadOS was introduced in 2019. It is the world's second-most widely installed mobile operating system, after Android. It is the basis for three other operating systems made by Apple: iPadOS, tvOS, and watchOS. It is proprietary software, although some parts of it are open source under the Apple Public Source License and other licenses.</text>
-			<text lang="pl">iOS (dawniej iPhone OS lub iPhone Operating System) to mobilny system operacyjny stworzony i rozwijany przez firmę Apple Inc. wyłącznie dla jej sprzętu. Jest to system operacyjny, który obsługuje wiele urządzeń mobilnych firmy, w tym iPhone'a i iPoda Touch; termin ten obejmował również wersje działające na iPadach do czasu wprowadzenia systemu iPadOS w 2019 roku. Jest to drugi, po Androidzie, najczęściej instalowany mobilny system operacyjny na świecie. Stanowi podstawę dla trzech innych systemów operacyjnych firmy Apple: iPadOS, tvOS i watchOS. Jest to oprogramowanie prawnie zastrzeżone, choć niektóre jego części są udostępniane na zasadach licencji Apple Public Source License i innych licencji open source.</text>
-			<text lang="ru">Мобильная операционная система для смартфонов, электронных планшетов, носимых проигрывателей, разрабатываемая и выпускаемая американской компанией Apple. Выпущена в 2007 году; первоначально — для iPhone и iPod touch, позже — для таких устройств, как iPad. В 2014 году появилась поддержка автомобильных мультимедийных систем Apple CarPlay. В отличие от Android (Google), выпускается только для устройств, производимых фирмой Apple.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-left" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 -0.25</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.2475</origin>
+      <pos>0.498 0.2753</pos>
+      <minSize>0.45 0.1</minSize>
+      <minSize if="${screen.ratio} == '4/3'">0.59 0.1</minSize>
+      <minSize if="${screen.ratio} == '16/10'">0.49 0.1</minSize>
+      <rotation>0</rotation>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.218 0.2753" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-right" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 1.22</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.74</origin>
+      <pos>0.498 0.7175</pos>
+      <minSize>0.45 0.1</minSize>
+      <minSize if="${screen.ratio} == '4/3'">0.59 0.1</minSize>
+      <minSize if="${screen.ratio} == '16/10'">0.49 0.1</minSize>
+      <rotation>0</rotation>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.218 0.7175" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <pos>0.5 0.49</pos>
+      <maxSize>0.4238</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.5565</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.463</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.2195 0.49" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.5 0.49</pos>
+      <maxSize>0.4155</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.556</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.461</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.49" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2007</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Apple</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>iOS</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>iOS (formerly iPhone OS or iPhone Operating System) is a mobile operating system created and developed by Apple Inc. exclusively for its hardware. It is the operating system that powers many of the company's mobile devices, including the iPhone and iPod Touch; the term also included the versions running on iPads until iPadOS was introduced in 2019. It is the world's second-most widely installed mobile operating system, after Android. It is the basis for three other operating systems made by Apple: iPadOS, tvOS, and watchOS. It is proprietary software, although some parts of it are open source under the Apple Public Source License and other licenses.</text>
+      <text lang="pl">iOS (dawniej iPhone OS lub iPhone Operating System) to mobilny system operacyjny stworzony i rozwijany przez firmę Apple Inc. wyłącznie dla jej sprzętu. Jest to system operacyjny, który obsługuje wiele urządzeń mobilnych firmy, w tym iPhone'a i iPoda Touch; termin ten obejmował również wersje działające na iPadach do czasu wprowadzenia systemu iPadOS w 2019 roku. Jest to drugi, po Androidzie, najczęściej instalowany mobilny system operacyjny na świecie. Stanowi podstawę dla trzech innych systemów operacyjnych firmy Apple: iPadOS, tvOS i watchOS. Jest to oprogramowanie prawnie zastrzeżone, choć niektóre jego części są udostępniane na zasadach licencji Apple Public Source License i innych licencji open source.</text>
+      <text lang="pt">iOS (anteriormente iPhone OS ou iPhone Operating System) é um sistema operacional móvel criado e desenvolvido pela Apple Inc. exclusivamente para seus dispositivos. É um sistema operacional que suporta vários dispositivos móveis da empresa, incluindo iPhone e iPod Touch; o termo também abrangia versões que rodavam em iPads até a introdução do iPadOS em 2019. É o segundo sistema operacional móvel mais instalado no mundo, depois do Android. Ele serve como base para outros três sistemas operacionais da Apple: iPadOS, tvOS e watchOS. É um software proprietário, embora algumas de suas partes sejam distribuídas sob a licença Apple Public Source License e outras licenças de código aberto.</text>
+      <text lang="ru">Мобильная операционная система для смартфонов, электронных планшетов, носимых проигрывателей, разрабатываемая и выпускаемая американской компанией Apple. Выпущена в 2007 году; первоначально — для iPhone и iPod touch, позже — для таких устройств, как iPad. В 2014 году появилась поддержка автомобильных мультимедийных систем Apple CarPlay. В отличие от Android (Google), выпускается только для устройств, производимых фирмой Apple.
 
 В iOS используется ядро XNU, основанное на микроядре Mach и содержащее программный код, разработанный компанией Apple, а также код из ОС NeXTSTEP и FreeBSD. Ядро iOS почти идентично ядру настольной операционной системы Apple macOS (ранее называвшейся OS X). Начиная с самой первой версии iOS работает только на планшетных компьютерах и смартфонах с процессорами архитектуры ARM.</text>
-			<text lang="es">iOS (anteriormente iPhone OS o iPhone Operating System) es un sistema operativo móvil creado y desarrollado por Apple Inc. exclusivamente para su hardware. Es el sistema operativo que impulsa muchos de los dispositivos móviles de la compañía, incluidos el iPhone y el iPod Touch; el término también incluyó las versiones que se ejecutan en iPads hasta que se introdujo iPadOS en 2019. Es el segundo sistema operativo móvil más instalado del mundo, después de Android. Es la base de otros tres sistemas operativos fabricados por Apple: iPadOS, tvOS y watchOS. Es software propietario, aunque algunas partes son de código abierto bajo la licencia Apple Public Source License y otras licencias.</text>
-			<text lang="de">iOS (früher iPhone OS oder iPhone Operating System) ist ein mobiles Betriebssystem, das von Apple Inc. ausschließlich für seine Hardware entwickelt wurde. Es ist das Betriebssystem, mit dem viele der mobilen Geräte des Unternehmens betrieben werden, darunter das iPhone und der iPod Touch; der Begriff umfasste auch die Versionen, die auf iPads liefen, bis iPadOS im Jahr 2019 eingeführt wurde. Es ist nach Android das weltweit am zweithäufigsten installierte mobile Betriebssystem. Es ist die Grundlage für drei weitere Betriebssysteme von Apple: iPadOS, tvOS und watchOS. Es handelt sich um proprietäre Software, obwohl einige Teile davon unter der Apple Public Source License und anderen Lizenzen als Open Source verfügbar sind.</text>
-			<text lang="fr">iOS (anciennement iPhone OS ou iPhone Operating System) est un système d'exploitation mobile créé et développé par Apple Inc. exclusivement pour son matériel. Il s'agit du système d'exploitation qui équipe de nombreux appareils mobiles de la société, notamment l'iPhone et l'iPod Touch ; le terme englobe également les versions fonctionnant sur les iPads jusqu'à l'introduction d'iPadOS en 2019. Il s'agit du deuxième système d'exploitation mobile le plus installé au monde, après Android. Il est à la base de trois autres systèmes d'exploitation conçus par Apple : iPadOS, tvOS et watchOS. Il s'agit d'un logiciel propriétaire, bien que certaines de ses parties soient ouvertes sous la licence Apple Public Source License et d'autres licences.</text>
-			<text lang="it">iOS (precedentemente iPhone OS o iPhone Operating System) è un sistema operativo mobile creato e sviluppato da Apple Inc. esclusivamente per il suo hardware. È il sistema operativo che alimenta molti dei dispositivi mobili dell'azienda, tra cui l'iPhone e l'iPod Touch; il termine includeva anche le versioni in esecuzione sugli iPad fino all'introduzione di iPadOS nel 2019. È il secondo sistema operativo mobile più installato al mondo, dopo Android. È la base di altri tre sistemi operativi di Apple: iPadOS, tvOS e watchOS. È un software proprietario, anche se alcune sue parti sono open source sotto la Apple Public Source License e altre licenze.</text>
-		</text>
-	</view>
+      <text lang="es">iOS (anteriormente iPhone OS o iPhone Operating System) es un sistema operativo móvil creado y desarrollado por Apple Inc. exclusivamente para su hardware. Es el sistema operativo que impulsa muchos de los dispositivos móviles de la compañía, incluidos el iPhone y el iPod Touch; el término también incluyó las versiones que se ejecutan en iPads hasta que se introdujo iPadOS en 2019. Es el segundo sistema operativo móvil más instalado del mundo, después de Android. Es la base de otros tres sistemas operativos fabricados por Apple: iPadOS, tvOS y watchOS. Es software propietario, aunque algunas partes son de código abierto bajo la licencia Apple Public Source License y otras licencias.</text>
+      <text lang="de">iOS (früher iPhone OS oder iPhone Operating System) ist ein mobiles Betriebssystem, das von Apple Inc. ausschließlich für seine Hardware entwickelt wurde. Es ist das Betriebssystem, mit dem viele der mobilen Geräte des Unternehmens betrieben werden, darunter das iPhone und der iPod Touch; der Begriff umfasste auch die Versionen, die auf iPads liefen, bis iPadOS im Jahr 2019 eingeführt wurde. Es ist nach Android das weltweit am zweithäufigsten installierte mobile Betriebssystem. Es ist die Grundlage für drei weitere Betriebssysteme von Apple: iPadOS, tvOS und watchOS. Es handelt sich um proprietäre Software, obwohl einige Teile davon unter der Apple Public Source License und anderen Lizenzen als Open Source verfügbar sind.</text>
+      <text lang="fr">iOS (anciennement iPhone OS ou iPhone Operating System) est un système d'exploitation mobile créé et développé par Apple Inc. exclusivement pour son matériel. Il s'agit du système d'exploitation qui équipe de nombreux appareils mobiles de la société, notamment l'iPhone et l'iPod Touch ; le terme englobe également les versions fonctionnant sur les iPads jusqu'à l'introduction d'iPadOS en 2019. Il s'agit du deuxième système d'exploitation mobile le plus installé au monde, après Android. Il est à la base de trois autres systèmes d'exploitation conçus par Apple : iPadOS, tvOS et watchOS. Il s'agit d'un logiciel propriétaire, bien que certaines de ses parties soient ouvertes sous la licence Apple Public Source License et d'autres licences.</text>
+      <text lang="it">iOS (precedentemente iPhone OS o iPhone Operating System) è un sistema operativo mobile creato e sviluppato da Apple Inc. esclusivamente per il suo hardware. È il sistema operativo che alimenta molti dei dispositivi mobili dell'azienda, tra cui l'iPhone e l'iPod Touch; il termine includeva anche le versioni in esecuzione sugli iPad fino all'introduzione di iPadOS nel 2019. È il secondo sistema operativo mobile più installato al mondo, dopo Android. È la base di altri tre sistemi operativi di Apple: iPadOS, tvOS e watchOS. È un software proprietario, anche se alcune sue parti sono open source sotto la Apple Public Source License e altre licenze.</text>
+    </text>
+  </view>
 </theme>

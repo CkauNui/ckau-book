@@ -1,83 +1,88 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.34</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
-			<pos>0.489 0.398</pos>
-			<maxSize>0.237</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.209 0.398" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.34</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
-			<pos>0.489 0.398</pos>
-			<maxSize>0.227</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.209 0.398" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1983</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Acorn</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Electron</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Acorn Electron (nicknamed the Elk inside Acorn and beyond) was a budget version of the BBC Micro educational/home computer introduced by Acorn Computers Ltd on 25 August 1983. It had 32 kilobytes of RAM, and its ROM includes BBC BASIC v2 along with its operating system.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.34</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+      <pos>0.489 0.398</pos>
+      <maxSize>0.237</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.209 0.398" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.34</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+      <pos>0.489 0.398</pos>
+      <maxSize>0.227</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.209 0.398" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1983</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Acorn</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Electron</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Acorn Electron (nicknamed the Elk inside Acorn and beyond) was a budget version of the BBC Micro educational/home computer introduced by Acorn Computers Ltd on 25 August 1983. It had 32 kilobytes of RAM, and its ROM includes BBC BASIC v2 along with its operating system.
 
 The Electron was able to save and load programs onto audio cassette via a supplied converter cable that connected it to any standard tape recorder that had the correct sockets. It was capable of basic graphics, and could display onto either a television set, a colour (RGB) monitor or a monochrome monitor.
 
 For a short period, the Electron was reportedly the best selling micro in the United Kingdom, with an estimated 200,000 to 250,000 machines sold over its entire commercial lifespan.</text>
-			<text lang="pl">Acorn Electron (o kryptonimie Elk wewnątrz firmy Acorn i poza nią) był budżetową wersją komputera edukacyjnego/domowego BBC Micro, wprowadzoną na rynek przez firmę Acorn Computers Ltd. 25 sierpnia 1983 roku. Posiadał 32 kilobajty pamięci RAM, a w jego pamięci ROM znajdował się BBC BASIC v2 wraz z systemem operacyjnym.
+      <text lang="pl">Acorn Electron (o kryptonimie Elk wewnątrz firmy Acorn i poza nią) był budżetową wersją komputera edukacyjnego/domowego BBC Micro, wprowadzoną na rynek przez firmę Acorn Computers Ltd. 25 sierpnia 1983 roku. Posiadał 32 kilobajty pamięci RAM, a w jego pamięci ROM znajdował się BBC BASIC v2 wraz z systemem operacyjnym.
 
 Electron mógł zapisywać i ładować programy na kasetę audio za pomocą dostarczonego kabla konwertera, który łączył go z dowolnym standardowym magnetofonem wyposażonym w odpowiednie gniazda. Umożliwiał też wyświetlanie podstawowej grafiki na telewizorze, monitorze kolorowym (RGB) lub monochromatycznym.
 
 Przez krótki okres czasu Electron był podobno najlepiej sprzedającym się mikrokomputerem w Wielkiej Brytanii - szacuje się, że w całym okresie jego komercyjnej eksploatacji sprzedano od 200 000 do 250 000 urządzeń.</text>
-			<text lang="ru">Домашний компьютер, созданный компанией Acorn Computers Ltd в качестве урезанной бюджетной версии домашнего и учебного компьютера BBC Micro. Electron располагал ОЗУ в 32 Кб, в ПЗУ компьютера был записан интерпретатор BBC BASIC.
+      <text lang="pt">Acorn Electron (com o codinome Elk dentro e fora da Acorn) era uma versão mais barata do computador educacional/doméstico BBC Micro, lançada pela Acorn Computers Ltd. em 25 de agosto de 1983. Possuía 32 kilobytes de memória RAM, com BBC BASIC v2 e o sistema operacional armazenados em sua memória ROM.
+
+O Electron podia gravar e carregar programas em fitas cassete usando um cabo conversor fornecido, que o conectava a qualquer gravador padrão com tomadas adequadas. Também permitia a exibição de gráficos básicos em um televisor, monitor colorido (RGB) ou monocromático.
+
+Por um breve período, o Electron foi supostamente o microcomputador mais vendido no Reino Unido - estima-se que entre 200.000 e 250.000 unidades foram vendidas durante toda a sua vida comercial.</text>
+      <text lang="ru">Домашний компьютер, созданный компанией Acorn Computers Ltd в качестве урезанной бюджетной версии домашнего и учебного компьютера BBC Micro. Electron располагал ОЗУ в 32 Кб, в ПЗУ компьютера был записан интерпретатор BBC BASIC.
 
 После того как Acorn выпустил BBC Micro (£235 и £335 для версии A и B соответственно), менеджмент компании озаботился возможностью выпуска более дешёвого варианта для массового рынка. В июне 1982 года стало известно о том что ZX Spectrum будет продаваться по цене £175, и сооснователя компании Hermann Hauser спросили, не подорвёт ли это продажи BBC Micro. Он ответил, что в третьем квартале Acorn собирается выпустить компьютер по цене в £120-150, с графикой, превосходящей Spectrum и совместимый с BBC Micro.</text>
-			<text lang="es">El Acorn Electron (apodado Elk dentro de Acorn y más allá) fue una versión económica del ordenador educativo/doméstico BBC Micro presentado por Acorn Computers Ltd el 25 de agosto de 1983. Tenía 32 kilobytes de RAM, y su ROM incluye BBC BASIC v2 junto con su sistema operativo.
+      <text lang="es">El Acorn Electron (apodado Elk dentro de Acorn y más allá) fue una versión económica del ordenador educativo/doméstico BBC Micro presentado por Acorn Computers Ltd el 25 de agosto de 1983. Tenía 32 kilobytes de RAM, y su ROM incluye BBC BASIC v2 junto con su sistema operativo.
 
 El Electron era capaz de guardar y cargar programas en casetes de audio a través de un cable convertidor suministrado que lo conectaba a cualquier grabadora de cinta estándar que tuviera las tomas correctas. Era capaz de realizar gráficos básicos y podía mostrarlos en un televisor, un monitor en color (RGB) o un monitor monocromo.
 
 Durante un breve periodo, el Electron fue el micro más vendido en el Reino Unido, con unas 200.000 a 250.000 unidades vendidas durante toda su vida comercial.</text>
-			<text lang="de">Der Acorn Electron (innerhalb von Acorn und darüber hinaus auch Elk genannt) war eine preisgünstige Version des BBC Micro, der am 25. August 1983 von Acorn Computers Ltd. eingeführt wurde. Er hatte 32 Kilobyte RAM und sein ROM enthielt BBC BASIC v2 zusammen mit seinem Betriebssystem.
+      <text lang="de">Der Acorn Electron (innerhalb von Acorn und darüber hinaus auch Elk genannt) war eine preisgünstige Version des BBC Micro, der am 25. August 1983 von Acorn Computers Ltd. eingeführt wurde. Er hatte 32 Kilobyte RAM und sein ROM enthielt BBC BASIC v2 zusammen mit seinem Betriebssystem.
 
 Der Electron konnte über ein mitgeliefertes Konverterkabel, mit dem er an jedes handelsübliche Tonbandgerät mit den entsprechenden Anschlüssen angeschlossen werden konnte, Programme auf Audiokassette speichern und laden. Er war in der Lage, einfache Grafiken darzustellen und konnte entweder auf einem Fernsehgerät, einem Farbmonitor (RGB) oder einem Monochrommonitor angezeigt werden.
 
 Für eine kurze Zeit war der Electron Berichten zufolge der meistverkaufte Mikrocomputer im Vereinigten Königreich, mit schätzungsweise 200.000 bis 250.000 verkauften Geräten während seiner gesamten Lebensdauer.</text>
-			<text lang="fr">L'Acorn Electron (surnommé Elk à l'intérieur d'Acorn et au-delà) était une version économique de l'ordinateur éducatif/domestique BBC Micro lancée par Acorn Computers Ltd le 25 août 1983. Il disposait de 32 kilo-octets de mémoire vive et sa ROM comprenait BBC BASIC v2 ainsi que son système d'exploitation.
+      <text lang="fr">L'Acorn Electron (surnommé Elk à l'intérieur d'Acorn et au-delà) était une version économique de l'ordinateur éducatif/domestique BBC Micro lancée par Acorn Computers Ltd le 25 août 1983. Il disposait de 32 kilo-octets de mémoire vive et sa ROM comprenait BBC BASIC v2 ainsi que son système d'exploitation.
 
 L'Electron était capable d'enregistrer et de charger des programmes sur cassette audio grâce à un câble de conversion fourni qui le reliait à n'importe quel magnétophone standard doté des prises adéquates. Il était capable d'afficher des graphiques de base sur un téléviseur, un moniteur couleur (RGB) ou un moniteur monochrome.
 
 Pendant une courte période, l'Electron aurait été le micro le plus vendu au Royaume-Uni, avec environ 200 000 à 250 000 machines vendues pendant toute sa durée de vie commerciale.</text>
-			<text lang="it">L'Acorn Electron (soprannominato Elk all'interno di Acorn e non solo) era una versione economica del computer educativo/home BBC Micro introdotta da Acorn Computers Ltd il 25 agosto 1983. Aveva 32 kilobyte di RAM e la sua ROM includeva il BBC BASIC v2 insieme al sistema operativo.
+      <text lang="it">L'Acorn Electron (soprannominato Elk all'interno di Acorn e non solo) era una versione economica del computer educativo/home BBC Micro introdotta da Acorn Computers Ltd il 25 agosto 1983. Aveva 32 kilobyte di RAM e la sua ROM includeva il BBC BASIC v2 insieme al sistema operativo.
 
 L'Electron era in grado di salvare e caricare programmi su audiocassetta tramite un cavo convertitore in dotazione che lo collegava a qualsiasi registratore standard dotato delle prese corrette. Era in grado di realizzare grafica di base e di visualizzare su un televisore, un monitor a colori (RGB) o un monitor monocromatico.
 
 Per un breve periodo, l'Electron è stato il microcomputer più venduto nel Regno Unito, con una stima di 200.000-250.000 macchine vendute nel corso della sua intera vita commerciale.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

@@ -1,84 +1,89 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.48 0.5</origin>
-			<pos>0.48 0.4</pos>
-			<maxSize>0.24</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.20 0.4" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.48 0.5</origin>
-			<pos>0.48 0.4</pos>
-			<maxSize>0.235</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.20 0.4" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1982</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Vtech</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Creativision</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Video Technology CreatiVision is a hybrid computer and home video game console introduced by VTech in 1981 and released in 1982. The hybrid unit was similar in concept to computers such as the APF Imagination Machine, the older VideoBrain Family Computer, and to a lesser extent the Intellivision game console and Coleco Adam computer, all of which anticipated the trend of video game consoles becoming more like low-end computers.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.48 0.5</origin>
+      <pos>0.48 0.4</pos>
+      <maxSize>0.24</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.20 0.4" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.48 0.5</origin>
+      <pos>0.48 0.4</pos>
+      <maxSize>0.235</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.20 0.4" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1982</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Vtech</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Creativision</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Video Technology CreatiVision is a hybrid computer and home video game console introduced by VTech in 1981 and released in 1982. The hybrid unit was similar in concept to computers such as the APF Imagination Machine, the older VideoBrain Family Computer, and to a lesser extent the Intellivision game console and Coleco Adam computer, all of which anticipated the trend of video game consoles becoming more like low-end computers.
 
 The CreatiVision was distributed in many European countries, including most German-speaking countries like West Germany, Austria and Switzerland and also Italy, South Africa, in Israel under the Educat 2002 name, as well as in Australia and New Zealand under the Dick Smith Wizzard name. 
 
 The CreatiVision console sported an 8-bit Rockwell 6502 CPU at a speed of 2 MHz, 1KB of RAM and 16KB of Video RAM, and had a graphics resolution of 256 × 192 with 16 colors and 32 sprites. The console had two integrated joystick/membrane keypad controllers (much like the ColecoVision and Atari 5200) which, when set in a special compartment on top of the console, could be used as a computer keyboard.
 </text>
-			<text lang="pl">Video Technology CreatiVision to hybrydowy komputer i domowa konsola do gier wideo wprowadzona przez firmę VTech w 1981 roku i wydana w 1982 roku. Hybrydowa jednostka była podobna w koncepcji do komputerów takich jak APF Imagination Machine, starszy VideoBrain Family Computer, a w mniejszym stopniu do konsoli Intellivision i komputera Coleco Adam, z których wszystkie przewidywały trend rozwoju konsoli do gier wideo, które stawały się bardziej podobne do komputerów niskiej klasy.
+      <text lang="pl">Video Technology CreatiVision to hybrydowy komputer i domowa konsola do gier wideo wprowadzona przez firmę VTech w 1981 roku i wydana w 1982 roku. Hybrydowa jednostka była podobna w koncepcji do komputerów takich jak APF Imagination Machine, starszy VideoBrain Family Computer, a w mniejszym stopniu do konsoli Intellivision i komputera Coleco Adam, z których wszystkie przewidywały trend rozwoju konsoli do gier wideo, które stawały się bardziej podobne do komputerów niskiej klasy.
 
 CreatiVision był dystrybuowany w wielu krajach europejskich, w tym w większości krajów niemieckojęzycznych, takich jak Niemcy Zachodnie, Austria i Szwajcaria, a także we Włoszech, RPA, w Izraelu pod nazwą Educat 2002, a także w Australii i Nowej Zelandii pod nazwą Dick Smith Wizzard. 
 
 Konsola CreatiVision posiadała 8-bitowy procesor Rockwell 6502 o prędkości 2 MHz, 1KB pamięci RAM i 16KB pamięci Video RAM, oraz rozdzielczość grafiki 256 × 192 z 16 kolorami i 32 spritami. Konsola posiadała dwa zintegrowane kontrolery typu joystick/membranowa klawiatura (podobnie jak w ColecoVision i Atari 5200), które po umieszczeniu w specjalnym schowku na górze konsoli mogły być używane jako klawiatura komputerowa.</text>
-			<text lang="ru">Video Technology CreatiVision представляет собой гибридный компьютер и домашнюю игровую консоль, представленную VTech в 1981 году и выпущенную в 1982 году. Гибридное устройство было похоже по концепции на такие компьютеры, как APF Imagination Machine, старый компьютер семейства VideoBrain и, в меньшей степени, игровая консоль Intellivision и компьютер Coleco Adam, все из которых предвосхитили тенденцию к тому, что игровые приставки становятся все более похожими на недорогие компьютеры.</text>
-			<text lang="es">La Video Technology CreatiVision es una consola híbrida de ordenador y videojuego doméstico presentada por VTech en 1981 y lanzada al mercado en 1982. La unidad híbrida era similar en concepto a ordenadores como el APF Imagination Machine, el antiguo VideoBrain Family Computer y, en menor medida, la consola de juegos Intellivision y el ordenador Coleco Adam, todos los cuales anticipaban la tendencia de las consolas de videojuegos a parecerse más a ordenadores de gama baja.
+      <text lang="pt">A tecnologia de vídeo CreatiVision era um computador híbrido e console de videogame doméstico lançado pela VTech em 1981 e disponibilizado em 1982. A unidade híbrida era semelhante em conceito a computadores como o APF Imagination Machine, o antigo VideoBrain Family Computer e, em menor grau, ao console Intellivision e ao computador Coleco Adam, todos os quais previam a tendência do desenvolvimento de consoles de videogame, que se tornariam cada vez mais semelhantes a computadores de baixo custo.
+
+O CreatiVision foi distribuído em vários países europeus, incluindo a maioria dos países de língua alemã, como Alemanha Ocidental, Áustria e Suíça, além da Itália, África do Sul, Israel (sob o nome Educat 2002), Austrália e Nova Zelândia (sob o nome Dick Smith Wizzard).
+
+O console CreatiVision possuía um processador Rockwell 6502 de 8 bits a 2 MHz, 1 KB de RAM e 16 KB de Video RAM, e resolução gráfica de 256 × 192 com 16 cores e 32 sprites. O console tinha dois controladores integrados do tipo joystick/teclado de membrana (semelhante ao ColecoVision e Atari 5200), que, ao serem colocados em um compartimento especial na parte superior do console, podiam ser usados como teclado de computador.</text>
+      <text lang="ru">Video Technology CreatiVision представляет собой гибридный компьютер и домашнюю игровую консоль, представленную VTech в 1981 году и выпущенную в 1982 году. Гибридное устройство было похоже по концепции на такие компьютеры, как APF Imagination Machine, старый компьютер семейства VideoBrain и, в меньшей степени, игровая консоль Intellivision и компьютер Coleco Adam, все из которых предвосхитили тенденцию к тому, что игровые приставки становятся все более похожими на недорогие компьютеры.</text>
+      <text lang="es">La Video Technology CreatiVision es una consola híbrida de ordenador y videojuego doméstico presentada por VTech en 1981 y lanzada al mercado en 1982. La unidad híbrida era similar en concepto a ordenadores como el APF Imagination Machine, el antiguo VideoBrain Family Computer y, en menor medida, la consola de juegos Intellivision y el ordenador Coleco Adam, todos los cuales anticipaban la tendencia de las consolas de videojuegos a parecerse más a ordenadores de gama baja.
 
 La CreatiVision se distribuyó en muchos países europeos, incluidos la mayoría de los países de habla alemana como Alemania Occidental, Austria y Suiza, y también en Italia, Sudáfrica, en Israel con el nombre de Educat 2002, así como en Australia y Nueva Zelanda con el nombre de Dick Smith Wizzard.
 
 La consola CreatiVision llevaba una CPU Rockwell 6502 de 8 bits a una velocidad de 2 MHz, 1 KB de RAM y 16 KB de RAM de vídeo, y tenía una resolución gráfica de 256 × 192 con 16 colores y 32 sprites. La consola disponía de dos joysticks/teclados de membrana integrados (muy parecidos a los de la ColecoVision y la Atari 5200) que, colocados en un compartimento especial en la parte superior de la consola, podían utilizarse como teclado de ordenador.</text>
-			<text lang="de">Der Video Technology CreatiVision ist ein Hybrid aus Computer und Heimvideospielkonsole, der 1981 von VTech eingeführt und 1982 veröffentlicht wurde. Das hybride Gerät ähnelte vom Konzept her Computern wie der APF Imagination Machine, dem älteren VideoBrain Family Computer und in geringerem Maße der Intellivision-Spielkonsole und dem Coleco Adam Computer, die alle den Trend vorwegnahmen, dass Videospielkonsolen immer mehr wie Low-End-Computer wurden.
+      <text lang="de">Der Video Technology CreatiVision ist ein Hybrid aus Computer und Heimvideospielkonsole, der 1981 von VTech eingeführt und 1982 veröffentlicht wurde. Das hybride Gerät ähnelte vom Konzept her Computern wie der APF Imagination Machine, dem älteren VideoBrain Family Computer und in geringerem Maße der Intellivision-Spielkonsole und dem Coleco Adam Computer, die alle den Trend vorwegnahmen, dass Videospielkonsolen immer mehr wie Low-End-Computer wurden.
 
 Das CreatiVision wurde in vielen europäischen Ländern vertrieben, darunter in den meisten deutschsprachigen Ländern wie Westdeutschland, Österreich und der Schweiz, aber auch in Italien, Südafrika, in Israel unter dem Namen Educat 2002 sowie in Australien und Neuseeland unter dem Namen Dick Smith Wizzard.
 
 Die CreatiVision-Konsole verfügte über eine 8-Bit Rockwell 6502 CPU mit einer Geschwindigkeit von 2 MHz, 1KB RAM und 16KB Video-RAM und hatte eine Grafikauflösung von 256 × 192 mit 16 Farben und 32 Sprites. Die Konsole verfügte über zwei integrierte Joystick-/Membrantastatur-Controller (ähnlich wie beim ColecoVision und Atari 5200), die in einem speziellen Fach auf der Oberseite der Konsole als Computertastatur verwendet werden konnten.</text>
-			<text lang="fr">Le Video Technology CreatiVision est un ordinateur hybride et une console de jeux vidéo domestique introduits par VTech en 1981 et commercialisés en 1982. Le concept de cette unité hybride était similaire à celui d'ordinateurs tels que l'APF Imagination Machine, l'ancien VideoBrain Family Computer et, dans une moindre mesure, la console de jeu Intellivision et l'ordinateur Coleco Adam, qui anticipaient tous la tendance des consoles de jeux vidéo à devenir davantage des ordinateurs bas de gamme.
+      <text lang="fr">Le Video Technology CreatiVision est un ordinateur hybride et une console de jeux vidéo domestique introduits par VTech en 1981 et commercialisés en 1982. Le concept de cette unité hybride était similaire à celui d'ordinateurs tels que l'APF Imagination Machine, l'ancien VideoBrain Family Computer et, dans une moindre mesure, la console de jeu Intellivision et l'ordinateur Coleco Adam, qui anticipaient tous la tendance des consoles de jeux vidéo à devenir davantage des ordinateurs bas de gamme.
 
 La CreatiVision a été distribuée dans de nombreux pays européens, notamment dans la plupart des pays germanophones comme l'Allemagne de l'Ouest, l'Autriche et la Suisse, ainsi qu'en Italie, en Afrique du Sud, en Israël sous le nom d'Educat 2002, ainsi qu'en Australie et en Nouvelle-Zélande sous le nom de Dick Smith Wizzard.
 
 La console CreatiVision était équipée d'un processeur Rockwell 6502 8 bits cadencé à 2 MHz, d'une mémoire vive de 1 Ko et d'une mémoire vidéo de 16 Ko, et avait une résolution graphique de 256 × 192 avec 16 couleurs et 32 sprites. La console était équipée de deux manettes de jeu/clavier à membrane intégrés (comme sur la ColecoVision et l'Atari 5200) qui, placés dans un compartiment spécial sur le dessus de la console, pouvaient être utilisés comme un clavier d'ordinateur.</text>
-			<text lang="it">Il Video Technology CreatiVision è un computer ibrido e una console per videogiochi domestici introdotta da VTech nel 1981 e rilasciata nel 1982. L'unità ibrida era simile nel concetto a computer come l'APF Imagination Machine, il vecchio VideoBrain Family Computer e, in misura minore, la console per videogiochi Intellivision e il computer Coleco Adam, che anticipavano la tendenza delle console per videogiochi a diventare più simili a computer di fascia bassa.
+      <text lang="it">Il Video Technology CreatiVision è un computer ibrido e una console per videogiochi domestici introdotta da VTech nel 1981 e rilasciata nel 1982. L'unità ibrida era simile nel concetto a computer come l'APF Imagination Machine, il vecchio VideoBrain Family Computer e, in misura minore, la console per videogiochi Intellivision e il computer Coleco Adam, che anticipavano la tendenza delle console per videogiochi a diventare più simili a computer di fascia bassa.
 
 Il CreatiVision è stato distribuito in molti paesi europei, tra cui la maggior parte dei paesi di lingua tedesca come la Germania Ovest, l'Austria e la Svizzera e anche l'Italia, in Sudafrica, in Israele con il nome Educat 2002 e in Australia e Nuova Zelanda con il nome Dick Smith Wizzard.
 
 La console CreatiVision era dotata di una CPU Rockwell 6502 a 8 bit con una velocità di 2 MHz, 1KB di RAM e 16KB di Video RAM, e aveva una risoluzione grafica di 256 × 192 con 16 colori e 32 sprite. La console era dotata di due controller integrati joystick/tastiera a membrana (come il ColecoVision e l'Atari 5200) che, se inseriti in un apposito scomparto sulla parte superiore della console, potevano essere utilizzati come tastiera del computer.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

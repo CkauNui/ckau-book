@@ -1,86 +1,91 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.45 0.45</origin>
-			<pos>0.4755 0.39</pos>
-			<maxSize>0.257</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.1955 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.45 0.45</origin>
-			<pos>0.4755 0.39</pos>
-			<maxSize>0.237</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.1955 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1984</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Thomson</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>MO5</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Thomson MO5 is a home computer introduced in France in June 1984 to compete against systems such as the ZX Spectrum and Commodore 64. At the same time, Thomson also released the up-market Thomson TO7/70 machine.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0.45 0.45</origin>
+      <pos>0.4755 0.39</pos>
+      <maxSize>0.257</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.1955 0.39" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0.45 0.45</origin>
+      <pos>0.4755 0.39</pos>
+      <maxSize>0.237</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.1955 0.39" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1984</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Thomson</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>MO5</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Thomson MO5 is a home computer introduced in France in June 1984 to compete against systems such as the ZX Spectrum and Commodore 64. At the same time, Thomson also released the up-market Thomson TO7/70 machine.
 
 The MO5 was not sold in vast quantities outside France and was largely discontinued in favour of the improved Thomson MO6 in 1986. MO5s were used as educational tools in French schools for a period. The computer boots directly to the built-in Microsoft BASIC interpreter (MO5 Basic 1.0).
 
 The Thomson MO5 runs on a Motorola 6809E processor clocked at 1 MHz. It originally featured 48 KB of RAM, a EFGJ03L gate array generating a 40×25 text display. Around 200 pieces of software are known to exist for the MO5.</text>
-			<text lang="pl">Thomson MO5 to komputer domowy wprowadzony na rynek francuski w czerwcu 1984 roku w celu konkurowania z systemami takimi jak ZX Spectrum i Commodore 64. W tym samym czasie Thomson wypuścił również wysokiej klasy maszynę Thomson TO7/70.
+      <text lang="pl">Thomson MO5 to komputer domowy wprowadzony na rynek francuski w czerwcu 1984 roku w celu konkurowania z systemami takimi jak ZX Spectrum i Commodore 64. W tym samym czasie Thomson wypuścił również wysokiej klasy maszynę Thomson TO7/70.
 
 MO5 nie był sprzedawany w dużych ilościach poza Francją i został w dużej mierze wycofany z produkcji na rzecz ulepszonego Thomson MO6 w 1986 roku. Przez pewien czas komputery MO5 były używane jako narzędzia edukacyjne we francuskich szkołach. Komputer uruchamia się bezpośrednio z wbudowanym interpreterem Microsoft BASIC (MO5 Basic 1.0).
 
 Thomson MO5 działa na procesorze Motorola 6809E taktowanym zegarem 1 MHz. Pierwotnie posiadał 48 KB pamięci RAM, tablicę bramek EFGJ03L generującą tekst na wyświetlaczu 40×25. Wiadomo, że istnieje około 200 programów dla MO5.
 </text>
-			<text lang="ru">Домашний компьютер, представленный во Франции в июне 1984 года для конкуренции с такими системами, как ZX Spectrum и Commodore 64. В то же время Thomson также выпустила высококлассную машину Thomson TO7/70.
+      <text lang="pt">Thomson MO5 foi um computador doméstico lançado no mercado francês em junho de 1984, com o objetivo de competir com sistemas como ZX Spectrum e Commodore 64. Na mesma época, a Thomson também lançou a máquina de alta qualidade Thomson TO7/70.
+
+O MO5 não foi vendido em grande quantidade fora da França e foi em grande parte retirado da produção em favor do Thomson MO6 aprimorado em 1986. Por algum tempo, os computadores MO5 foram usados como ferramentas educacionais em escolas francesas. O computador inicia diretamente com um interpretador Microsoft BASIC integrado (MO5 Basic 1.0).
+
+O Thomson MO5 funciona com um processador Motorola 6809E com um clock de 1 MHz. Originalmente, ele tinha 48 KB de RAM, uma matriz de portas EFGJ03L que gerava texto em um display de 40×25. Sabe-se que existem cerca de 200 programas para o MO5.</text>
+      <text lang="ru">Домашний компьютер, представленный во Франции в июне 1984 года для конкуренции с такими системами, как ZX Spectrum и Commodore 64. В то же время Thomson также выпустила высококлассную машину Thomson TO7/70.
 
 MO5 не продавался в больших количествах за пределами Франции, и в 1986 году его производство было прекращено в пользу улучшенного Thomson MO6. Какое-то время MO5 использовались в качестве учебных пособий во французских школах. Компьютер загружается непосредственно со встроенным интерпретатором Microsoft BASIC (MO5 Basic 1.0).</text>
-			<text lang="es">El Thomson MO5 es un ordenador doméstico presentado en Francia en junio de 1984 para competir con sistemas como el ZX Spectrum y el Commodore 64. Al mismo tiempo, Thomson también lanzó al mercado el Thomson TO7/70.
+      <text lang="es">El Thomson MO5 es un ordenador doméstico presentado en Francia en junio de 1984 para competir con sistemas como el ZX Spectrum y el Commodore 64. Al mismo tiempo, Thomson también lanzó al mercado el Thomson TO7/70.
 
 El MO5 no se vendió en grandes cantidades fuera de Francia y se dejó de fabricar en 1986 en favor del Thomson MO6 mejorado. Los MO5 se utilizaron como herramientas educativas en las escuelas francesas durante un tiempo. El ordenador arranca directamente con el intérprete Microsoft BASIC integrado (MO5 Basic 1.0).
 
 El Thomson MO5 funciona con un procesador Motorola 6809E a 1 MHz. Originalmente contaba con 48 KB de RAM, una matriz de puertas EFGJ03L que generaba una pantalla de texto de 40×25. Se conocen unos 200 programas para el MO5.</text>
-			<text lang="de">Der Thomson MO5 ist ein Heimcomputer, der im Juni 1984 in Frankreich eingeführt wurde, um gegen Systeme wie den ZX Spectrum und den Commodore 64 anzutreten. Zur gleichen Zeit brachte Thomson auch den gehobenen Thomson TO7/70 auf den Markt.
+      <text lang="de">Der Thomson MO5 ist ein Heimcomputer, der im Juni 1984 in Frankreich eingeführt wurde, um gegen Systeme wie den ZX Spectrum und den Commodore 64 anzutreten. Zur gleichen Zeit brachte Thomson auch den gehobenen Thomson TO7/70 auf den Markt.
 
 Der MO5 wurde außerhalb Frankreichs nicht in großen Mengen verkauft und 1986 zugunsten des verbesserten Thomson MO6 weitgehend eingestellt. MO5s wurden eine Zeit lang in französischen Schulen als Lehrmittel eingesetzt. Der Computer bootet direkt zum eingebauten Microsoft BASIC-Interpreter (MO5 Basic 1.0).
 
 Der Thomson MO5 läuft mit einem Motorola 6809E Prozessor, der mit 1 MHz getaktet ist. Ursprünglich verfügte er über 48 KB Arbeitsspeicher, ein EFGJ03L-Gate-Array, das ein 40×25 großes Textdisplay erzeugte. Für den MO5 sind rund 200 Softwareprogramme bekannt.</text>
-			<text lang="fr">Le Thomson MO5 est un ordinateur domestique lancé en France en juin 1984 pour concurrencer des systèmes tels que le ZX Spectrum et le Commodore 64. À la même époque, Thomson a également lancé la machine haut de gamme Thomson TO7/70.
+      <text lang="fr">Le Thomson MO5 est un ordinateur domestique lancé en France en juin 1984 pour concurrencer des systèmes tels que le ZX Spectrum et le Commodore 64. À la même époque, Thomson a également lancé la machine haut de gamme Thomson TO7/70.
 
 Le MO5 n'a pas été vendu en grandes quantités en dehors de la France et a été largement abandonné en faveur du Thomson MO6 amélioré en 1986. Les MO5 ont été utilisés comme outils pédagogiques dans les écoles françaises pendant un certain temps. L'ordinateur démarre directement avec l'interpréteur Microsoft BASIC intégré (MO5 Basic 1.0).
 
 Le Thomson MO5 fonctionne avec un processeur Motorola 6809E cadencé à 1 MHz. Il disposait à l'origine de 48 Ko de mémoire vive, d'un réseau de portes EFGJ03L générant un écran de texte 40×25. Environ 200 logiciels sont connus pour le MO5.</text>
-			<text lang="it">Il Thomson MO5 è un home computer introdotto in Francia nel giugno del 1984 per competere con sistemi come lo ZX Spectrum e il Commodore 64. Nello stesso periodo, Thomson rilasciò anche la macchina di fascia alta Thomson TO7/70.
+      <text lang="it">Il Thomson MO5 è un home computer introdotto in Francia nel giugno del 1984 per competere con sistemi come lo ZX Spectrum e il Commodore 64. Nello stesso periodo, Thomson rilasciò anche la macchina di fascia alta Thomson TO7/70.
 
 L'MO5 non è stato venduto in grandi quantità al di fuori della Francia ed è stato ampiamente dismesso a favore del Thomson MO6, migliorato nel 1986. Per un certo periodo i MO5 furono utilizzati come strumenti didattici nelle scuole francesi. Il computer si avvia direttamente all'interprete Microsoft BASIC integrato (MO5 Basic 1.0).
 
 Il Thomson MO5 funziona con un processore Motorola 6809E a 1 MHz. Originariamente aveva 48 KB di RAM, un gate array EFGJ03L che generava un display di testo 40×25. Sono noti circa 200 software per l'MO5.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

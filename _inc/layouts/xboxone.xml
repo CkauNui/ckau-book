@@ -1,96 +1,103 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<pos>0.499 0.425</pos>
-			<maxSize>0.45</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.594</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.494</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.219 0.425" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.44</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<pos>0.4995 0.424</pos>
-			<maxSize>0.446</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.584</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.49</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.2195 0.424" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2013</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Microsoft</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Xbox One</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Xbox One is a home video game console developed by Microsoft. Announced in May 2013, it is the successor to Xbox 360 and the third console in the Xbox series.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <pos>0.499 0.425</pos>
+      <maxSize>0.45</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.594</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.494</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.219 0.425" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.44</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <pos>0.4995 0.424</pos>
+      <maxSize>0.446</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.584</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.49</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.2195 0.424" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2013</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Microsoft</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Xbox One</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Xbox One is a home video game console developed by Microsoft. Announced in May 2013, it is the successor to Xbox 360 and the third console in the Xbox series.
 Microsoft marketed the device as an "all-in-one entertainment system", hence the name "Xbox One". An eighth-generation console, it mainly competed against Sony's PlayStation 4 and Nintendo's Wii U and later the Switch.
 
 Moving away from its predecessor's PowerPC-based architecture, the Xbox One marks a shift back to the x86 architecture used in the original Xbox; it features an AMD Accelerated Processing Unit (APU) built around the x86-64 instruction set. Xbox One's controller was redesigned over the Xbox 360's, with a redesigned body, D-pad, and triggers capable of delivering directional haptic feedback.
 
 The Xbox One received positive reviews for its refined controller design, multimedia features, and voice navigation. Its quieter and cooler design was praised for making the console more reliable than its predecessor at launch, but the console was generally criticized for running games at a technically lower graphical level than the PlayStation 4.</text>
-			<text lang="pl">Xbox One to domowa konsola do gier wideo opracowana przez firmę Microsoft. Ogłoszony w maju 2013 roku, jest następcą Xbox 360 i trzecią konsolą z serii Xbox.
+      <text lang="pl">Xbox One to domowa konsola do gier wideo opracowana przez firmę Microsoft. Ogłoszony w maju 2013 roku, jest następcą Xbox 360 i trzecią konsolą z serii Xbox.
 Microsoft sprzedawał urządzenie jako "system rozrywki all-in-one", stąd nazwa "Xbox One". Konsola ósmej generacji, konkurowała głównie z PlayStation 4 firmy Sony oraz Wii U firmy Nintendo, a później Switch.
 
 Odchodząc od architektury PowerPC swojego poprzednika, Xbox One oznacza powrót do architektury x86 stosowanej w oryginalnym Xboxie; posiada jednostkę APU (Accelerated Processing Unit) firmy AMD zbudowaną na bazie zestawu instrukcji x86-64. Kontroler konsoli Xbox One został przeprojektowany w stosunku do kontrolera konsoli Xbox 360, z przeprojektowanym korpusem, D-padem i spustami zdolnymi do przekazywania kierunkowych haptycznych informacji zwrotnych.
 
 Xbox One otrzymał pozytywne recenzje za dopracowany projekt kontrolera, funkcje multimedialne i nawigację głosową. Chwalono cichszą i chłodniejszą konstrukcję, dzięki której konsola była bardziej niezawodna niż jej poprzedniczka w momencie premiery, ale ogólnie krytykowano ją za uruchamianie gier na technicznie niższym poziomie graficznym niż w przypadku PlayStation 4.</text>
-			<text lang="ru">Xbox One - это домашняя игровая консоль, разработанная компанией Microsoft. Анонсированная в мае 2013 года, она является преемницей Xbox 360 и третьей консолью в серии Xbox.
+      <text lang="pt">Xbox One é um console doméstico de videogame desenvolvido pela Microsoft. Anunciado em maio de 2013, é o sucessor do Xbox 360 e o terceiro console da série Xbox.
+
+A Microsoft comercializava o dispositivo como um "sistema de entretenimento tudo em um", daí o nome "Xbox One". O console de oitava geração, competia principalmente com o PlayStation 4 da Sony e o Wii U da Nintendo, e posteriormente com o Switch.
+
+Abrindo mão da arquitetura PowerPC de seu predecessor, o Xbox One marca o retorno à arquitetura x86 utilizada no Xbox original; ele possui uma unidade APU (Accelerated Processing Unit) da AMD baseada no conjunto de instruções x86-64. O controle do Xbox One foi redesenhado em relação ao controle do Xbox 360, com um corpo redesenhado, D-pad e gatilhos capazes de transmitir feedback háptico direcionado.
+
+O Xbox One recebeu críticas positivas pelo design aprimorado do controle, recursos multimídia e navegação por voz. Foi elogiado por seu design mais silencioso e frio, o que o tornava mais confiável que seu predecessor no lançamento, mas, em geral, foi criticado por executar jogos em nível gráfico tecnicamente inferior ao do PlayStation 4.</text>
+      <text lang="ru">Xbox One - это домашняя игровая консоль, разработанная компанией Microsoft. Анонсированная в мае 2013 года, она является преемницей Xbox 360 и третьей консолью в серии Xbox.
 Microsoft рекламирует устройство как "универсальную развлекательную систему", отсюда и название "Xbox One". Консоль восьмого поколения, она в основном конкурировала с PlayStation 4 от Sony и Wii U от Nintendo, а позже Switch.
 
 Отказавшись от архитектуры PowerPC, использовавшейся в предшественнике, Xbox One знаменует собой возврат к архитектуре x86, использовавшейся в оригинальной Xbox; она оснащена ускоренным процессором AMD (APU), построенным на базе набора инструкций x86-64. Контроллер Xbox One был переработан по сравнению с Xbox 360, с обновленным корпусом, D-pad и триггерами, способными обеспечивать направленную тактильную обратную связь.
 
 Xbox One получил положительные отзывы за усовершенствованный дизайн контроллера, мультимедийные функции и голосовую навигацию. Его более тихий и прохладный дизайн был высоко оценен за то, что консоль стала более надежной, чем ее предшественница на старте продаж, но консоль в целом критиковали за то, что она запускает игры на технически более низком графическом уровне, чем PlayStation 4.</text>
-			<text lang="es">La Xbox One es una videoconsola doméstica desarrollada por Microsoft. Anunciada en mayo de 2013, es la sucesora de Xbox 360 y la tercera consola de la serie Xbox.
+      <text lang="es">La Xbox One es una videoconsola doméstica desarrollada por Microsoft. Anunciada en mayo de 2013, es la sucesora de Xbox 360 y la tercera consola de la serie Xbox.
 Microsoft comercializó el dispositivo como un "sistema de entretenimiento todo en uno", de ahí el nombre de "Xbox One". Consola de octava generación, compitió principalmente contra la PlayStation 4 de Sony y la Wii U de Nintendo y, más tarde, la Switch.
 
 Alejándose de la arquitectura basada en PowerPC de su predecesora, la Xbox One marca un cambio de vuelta a la arquitectura x86 utilizada en la Xbox original; cuenta con una Unidad de Procesamiento Acelerado (APU) de AMD construida en torno al conjunto de instrucciones x86-64. El mando de la Xbox One se rediseñó con respecto al de la Xbox 360, con un cuerpo, un D-pad y unos gatillos rediseñados capaces de ofrecer una respuesta háptica direccional.
 
 La Xbox One recibió críticas positivas por el refinado diseño de su mando, sus funciones multimedia y la navegación por voz. Su diseño más silencioso y fresco fue elogiado por hacer la consola más fiable que su predecesora en el lanzamiento, pero la consola fue criticada en general por ejecutar juegos a un nivel gráfico técnicamente inferior al de la PlayStation 4.</text>
-			<text lang="de">Die Xbox One ist eine von Microsoft entwickelte Videospielkonsole für den Heimgebrauch. Sie wurde im Mai 2013 angekündigt und ist der Nachfolger der Xbox 360 und die dritte Konsole der Xbox-Serie.
+      <text lang="de">Die Xbox One ist eine von Microsoft entwickelte Videospielkonsole für den Heimgebrauch. Sie wurde im Mai 2013 angekündigt und ist der Nachfolger der Xbox 360 und die dritte Konsole der Xbox-Serie.
 Microsoft vermarktete das Gerät als "All-in-One-Entertainment-System", daher der Name "Xbox One". Als Konsole der achten Generation konkurrierte sie hauptsächlich mit Sonys PlayStation 4 und Nintendos Wii U und später mit der Switch.
 
 Die Xbox One löst sich von der PowerPC-basierten Architektur ihres Vorgängers und kehrt zur x86-Architektur zurück, die in der ursprünglichen Xbox verwendet wurde; sie verfügt über eine AMD Accelerated Processing Unit (APU), die auf dem x86-64-Befehlssatz basiert. Der Controller der Xbox One wurde im Vergleich zum Controller der Xbox 360 überarbeitet. Er verfügt über ein neu gestaltetes Gehäuse, ein D-Pad und Trigger, die in der Lage sind, ein haptisches Feedback zu geben.
 
 Die Xbox One erhielt positive Kritiken für ihr verfeinertes Controller-Design, die Multimedia-Funktionen und die Sprachsteuerung. Das leisere und kühlere Design wurde gelobt, da es die Konsole zuverlässiger machte als ihr Vorgänger bei der Markteinführung, aber die Konsole wurde allgemein dafür kritisiert, dass sie Spiele auf einem technisch niedrigeren grafischen Niveau ausführt als die PlayStation 4.</text>
-			<text lang="fr">La Xbox One est une console de jeux vidéo de salon développée par Microsoft. Annoncée en mai 2013, elle est le successeur de la Xbox 360 et la troisième console de la série Xbox.
+      <text lang="fr">La Xbox One est une console de jeux vidéo de salon développée par Microsoft. Annoncée en mai 2013, elle est le successeur de la Xbox 360 et la troisième console de la série Xbox.
 Microsoft a commercialisé l'appareil comme un "système de divertissement tout-en-un", d'où le nom "Xbox One". Console de huitième génération, elle était principalement en concurrence avec la PlayStation 4 de Sony et la Wii U de Nintendo, puis la Switch.
 
 S'éloignant de l'architecture PowerPC de son prédécesseur, la Xbox One marque un retour à l'architecture x86 utilisée dans la Xbox originale ; elle est dotée d'une unité de traitement accéléré (APU) AMD construite autour du jeu d'instructions x86-64. La manette de la Xbox One a été redessinée par rapport à celle de la Xbox 360, avec un corps redessiné, un D-pad et des gâchettes capables de fournir un retour haptique directionnel.
 
 La Xbox One a reçu des critiques positives pour le design raffiné de sa manette, ses fonctions multimédias et sa navigation vocale. Sa conception plus silencieuse et plus froide a été saluée pour avoir rendu la console plus fiable que son prédécesseur au lancement, mais la console a été généralement critiquée pour avoir fait tourner des jeux à un niveau graphique techniquement inférieur à celui de la PlayStation 4.</text>
-			<text lang="it">La Xbox One è una console per videogiochi domestica sviluppata da Microsoft. Annunciata nel maggio 2013, è il successore di Xbox 360 e la terza console della serie Xbox.
+      <text lang="it">La Xbox One è una console per videogiochi domestica sviluppata da Microsoft. Annunciata nel maggio 2013, è il successore di Xbox 360 e la terza console della serie Xbox.
 Microsoft ha commercializzato il dispositivo come un "sistema di intrattenimento all-in-one", da cui il nome "Xbox One". È una console di ottava generazione, che compete principalmente con la PlayStation 4 di Sony e la Wii U di Nintendo e successivamente con la Switch.
 
 Abbandonando l'architettura basata su PowerPC del suo predecessore, la Xbox One segna un ritorno all'architettura x86 utilizzata nella Xbox originale; è dotata di un'unità di elaborazione accelerata (APU) di AMD costruita attorno al set di istruzioni x86-64. Il controller della Xbox One è stato riprogettato rispetto a quello della Xbox 360, con un corpo ridisegnato, un D-pad e grilletti in grado di fornire un feedback aptico direzionale.
 
 La Xbox One ha ricevuto recensioni positive per il design raffinato del controller, le funzioni multimediali e la navigazione vocale. Il design più silenzioso e fresco è stato elogiato per aver reso la console più affidabile rispetto al suo predecessore al momento del lancio, ma la console è stata generalmente criticata per l'esecuzione di giochi a un livello grafico tecnicamente inferiore rispetto a quello della PlayStation 4.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

@@ -1,119 +1,122 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.426</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.475</origin>
-			<pos>0.5 0.415</pos>
-			<maxSize>0.415</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.543</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.454</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.415" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-right" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 1.1</origin>
-			<origin if="${screen.ratio} == '16/10'">0.508 0.67</origin>
-			<origin if="${screen.ratio} == '21/9'">0.9 0.5</origin>
-			<pos>0.602 0.718</pos>
-			<maxSize>0.12</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.12</maxSize>
-			<rotation>6</rotation>
-			<storyboard>
-				<animation property="pos" to="0.322 0.718" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.426</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.475</origin>
-			<pos>0.5 0.415</pos>
-			<maxSize>0.41</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.533</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.444</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.415" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}2.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}2.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}2.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}2.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 1.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.508 0.67</origin>
-			<origin if="${screen.ratio} == '21/9'">0.9 0.5</origin>
-			<pos>0.6 0.718</pos>
-			<maxSize>0.1</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.142</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.115</maxSize>
-			<rotation>0</rotation>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.32 0.718" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2012</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Nintendo</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Wii U</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Wii U (WEE YOO) is a home video game console developed by Nintendo as the successor to the Wii. Released in late 2012, it is the first eighth-generation video game console and competed with Microsoft's Xbox One and Sony's PlayStation 4.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.426</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.475</origin>
+      <pos>0.5 0.415</pos>
+      <maxSize>0.415</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.543</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.454</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.415" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-right" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 1.1</origin>
+      <origin if="${screen.ratio} == '16/10'">0.508 0.67</origin>
+      <origin if="${screen.ratio} == '21/9'">0.9 0.5</origin>
+      <pos>0.602 0.718</pos>
+      <maxSize>0.12</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.12</maxSize>
+      <rotation>6</rotation>
+      <storyboard>
+        <animation property="pos" to="0.322 0.718" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.426</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.475</origin>
+      <pos>0.5 0.415</pos>
+      <maxSize>0.41</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.533</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.444</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.415" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}2.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}2.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}2.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}2.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 1.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.508 0.67</origin>
+      <origin if="${screen.ratio} == '21/9'">0.9 0.5</origin>
+      <pos>0.6 0.718</pos>
+      <maxSize>0.1</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.142</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.115</maxSize>
+      <rotation>0</rotation>
+      <zIndex>26</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.32 0.718" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2012</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Nintendo</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Wii U</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Wii U (WEE YOO) is a home video game console developed by Nintendo as the successor to the Wii. Released in late 2012, it is the first eighth-generation video game console and competed with Microsoft's Xbox One and Sony's PlayStation 4.
 
 The Wii U is the first Nintendo console to support HD graphics. The system's primary controller is the Wii U GamePad, which features an embedded touchscreen, directional buttons, analog sticks, and action buttons. The screen can be used either as a supplement to the main display or in supported games to play the game directly on the GamePad. The Wii U Pro Controller can be used in its place as a more traditional alternative. The Wii U is backward compatible with all Wii software and accessories. Games can support any combination of the GamePad, Wii Remote, Nunchuk, Balance Board, or Nintendo's Classic Controller or Wii U Pro Controller. Online functionality centers around the Nintendo Network platform and Miiverse, an integrated social networking service which allows users to share content in game-specific communities.</text>
-			<text lang="pl">Wii U – konsola gier wideo wyprodukowana przez japońską firmę Nintendo. Konsola została oficjalnie zapowiedziana 25 kwietnia 2011. Pojawiła się w sprzedaży 18 listopada 2012 roku w Ameryce Północnej. Premiera w Europie odbyła się 30 listopada, w Japonii 8 grudnia 2012. Prototyp Wii U został zaprezentowany 7 czerwca 2011 na targach E3. Konsola przestała być produkowana na całym świecie 31 stycznia 2017 roku.
+      <text lang="pl">Wii U – konsola gier wideo wyprodukowana przez japońską firmę Nintendo. Konsola została oficjalnie zapowiedziana 25 kwietnia 2011. Pojawiła się w sprzedaży 18 listopada 2012 roku w Ameryce Północnej. Premiera w Europie odbyła się 30 listopada, w Japonii 8 grudnia 2012. Prototyp Wii U został zaprezentowany 7 czerwca 2011 na targach E3. Konsola przestała być produkowana na całym świecie 31 stycznia 2017 roku.
 
 Procesor konsoli, wytwarzany przez IBM w technologii 45 nanometrów, wykorzystuje rozwiązania opracowane na potrzeby superkomputera Watson. Kontroler Wii U, poza typowymi przyciskami sterującymi, jest wyposażony w ekran dotykowy o przekątnej 6,2 cala, żyroskop, akcelerometr, mikrofon, głośniki oraz kamerę.</text>
-			<text lang="ru">Является преемником Wii. Система была представлена на пресс-конференции Nintendo 7 июня 2011 года на выставке E3 2011, выпущена в 2012 году. Производство прекращено в 2017 году в связи с выходом Nintendo Switch.
+      <text lang="pt">Wii U – um console de videogame produzido pela empresa japonesa Nintendo. O console foi oficialmente anunciado em 25 de abril de 2011. Foi lançado em 18 de novembro de 2012 na América do Norte. O lançamento na Europa ocorreu em 30 de novembro e no Japão em 8 de dezembro de 2012. Um protótipo do Wii U foi apresentado em 7 de junho de 2011 na E3. A produção do console foi descontinuada em todo o mundo em 31 de janeiro de 2017.
+
+O processador do console, fabricado pela IBM usando tecnologia de 45 nanômetros, utiliza soluções desenvolvidas para o supercomputador Watson. O controle do Wii U, além dos botões de controle típicos, possui uma tela sensível ao toque de 6,2 polegadas, giroscópio, acelerômetro, microfone, alto-falantes e câmera.</text>
+      <text lang="ru">Является преемником Wii. Система была представлена на пресс-конференции Nintendo 7 июня 2011 года на выставке E3 2011, выпущена в 2012 году. Производство прекращено в 2017 году в связи с выходом Nintendo Switch.
 
 Особенностью Wii U является новый контроллер, который может использоваться как дополнительный сенсорный экран, что позволит игроку получить новые игровые ощущения, а в некоторых играх частично заменить телевизор. Контроллер не совместим с играми Wii.
 
 Новый контроллер включает в себя 6,2-дюймовый сенсорный экран с очень большой чувствительностью, который, однако, не поддерживает мультитач. При этом контроллер сохранил традиционные элементы управления: кнопки и аналоговые стики. Такая комбинация разбивает барьеры восприятия между играми, игроками и экраном, создавая так называемое «второе окно» в мир видеоигр. В контроллер встроен акселерометр и гироскоп, присутствует виброотдача, видеокамера, микрофон, динамики и стилус.
 
 Кроме того, Wii U также поддерживает все контроллеры от Nintendo Wii: Wii Remote или Wii Remote Plus (до четырёх одновременно), совместимый с ними Nunchuk, геймпады Classic Controller и Classic Controller Pro, а также Wii Balance Board.</text>
-			<text lang="es">La Wii U (WEE YOO) es una videoconsola doméstica desarrollada por Nintendo como sucesora de la Wii. Lanzada a finales de 2012, es la primera videoconsola de octava generación y compitió con la Xbox One de Microsoft y la PlayStation 4 de Sony.
+      <text lang="es">La Wii U (WEE YOO) es una videoconsola doméstica desarrollada por Nintendo como sucesora de la Wii. Lanzada a finales de 2012, es la primera videoconsola de octava generación y compitió con la Xbox One de Microsoft y la PlayStation 4 de Sony.
 
 La Wii U es la primera consola de Nintendo compatible con gráficos de alta definición. El mando principal de la consola es el Wii U GamePad, que incorpora una pantalla táctil, botones direccionales, sticks analógicos y botones de acción. La pantalla puede usarse como complemento de la pantalla principal o, en los juegos compatibles, para jugar directamente en el GamePad. El Wii U Pro Controller puede utilizarse en su lugar como una alternativa más tradicional. La Wii U es retrocompatible con todos los programas y accesorios de Wii. Los juegos son compatibles con cualquier combinación del GamePad, el mando de Wii, el Nunchuk, la tabla de equilibrio, el mando clásico de Nintendo o el mando profesional de Wii U. La funcionalidad en línea se centra en la plataforma Nintendo Network y Miiverse, un servicio integrado de redes sociales que permite a los usuarios compartir contenidos en comunidades específicas de juegos.</text>
-			<text lang="de">Die Wii U (WEE YOO) ist eine Videospielkonsole für den Heimgebrauch, die von Nintendo als Nachfolgerin der Wii entwickelt wurde. Sie wurde Ende 2012 veröffentlicht und ist die erste Videospielkonsole der achten Generation. Sie konkurriert mit der Xbox One von Microsoft und der PlayStation 4 von Sony.
+      <text lang="de">Die Wii U (WEE YOO) ist eine Videospielkonsole für den Heimgebrauch, die von Nintendo als Nachfolgerin der Wii entwickelt wurde. Sie wurde Ende 2012 veröffentlicht und ist die erste Videospielkonsole der achten Generation. Sie konkurriert mit der Xbox One von Microsoft und der PlayStation 4 von Sony.
 
 Die Wii U ist die erste Nintendo-Konsole, die HD-Grafik unterstützt. Der wichtigste Controller des Systems ist das Wii U GamePad, das über einen integrierten Touchscreen, Richtungstasten, Analogsticks und Aktionstasten verfügt. Der Bildschirm kann entweder als Ergänzung zum Hauptdisplay verwendet werden oder in unterstützten Spielen, um das Spiel direkt auf dem GamePad zu spielen. Der Wii U Pro Controller kann anstelle des GamePads als traditionelle Alternative verwendet werden. Die Wii U ist abwärtskompatibel mit der gesamten Wii-Software und dem Zubehör. Die Spiele können jede Kombination aus GamePad, Wii-Fernbedienung, Nunchuk, Balance Board oder Nintendos Classic Controller oder Wii U Pro Controller unterstützen. Die Online-Funktionalität konzentriert sich auf die Nintendo Network-Plattform und Miiverse, einen integrierten Social-Networking-Service, der es den Nutzern ermöglicht, Inhalte in spielspezifischen Communities zu teilen.</text>
-			<text lang="fr">La Wii U (WEE YOO) est une console de jeux vidéo de salon développée par Nintendo pour succéder à la Wii. Sortie fin 2012, elle est la première console de jeux vidéo de huitième génération et était en concurrence avec la Xbox One de Microsoft et la PlayStation 4 de Sony.
+      <text lang="fr">La Wii U (WEE YOO) est une console de jeux vidéo de salon développée par Nintendo pour succéder à la Wii. Sortie fin 2012, elle est la première console de jeux vidéo de huitième génération et était en concurrence avec la Xbox One de Microsoft et la PlayStation 4 de Sony.
 
 La Wii U est la première console Nintendo à prendre en charge les graphismes HD. La principale manette de la console est le Wii U GamePad, qui comprend un écran tactile intégré, des boutons directionnels, des sticks analogiques et des boutons d'action. L'écran peut être utilisé en complément de l'affichage principal ou, dans les jeux compatibles, pour jouer directement sur le GamePad. La manette Wii U Pro peut être utilisée à sa place comme alternative plus traditionnelle. La Wii U est rétrocompatible avec tous les logiciels et accessoires Wii. Les jeux peuvent prendre en charge n'importe quelle combinaison du GamePad, de la télécommande Wii, du Nunchuk, de la planche d'équilibre, de la manette classique de Nintendo ou de la manette Wii U Pro. Les fonctionnalités en ligne s'articulent autour de la plateforme Nintendo Network et de Miiverse, un service de réseau social intégré qui permet aux utilisateurs de partager du contenu dans des communautés spécifiques à un jeu.</text>
-			<text lang="it">La Wii U (WEE YOO) è una console per videogiochi domestica sviluppata da Nintendo come successore della Wii. Rilasciata alla fine del 2012, è la prima console per videogiochi di ottava generazione e compete con la Xbox One di Microsoft e la PlayStation 4 di Sony.
+      <text lang="it">La Wii U (WEE YOO) è una console per videogiochi domestica sviluppata da Nintendo come successore della Wii. Rilasciata alla fine del 2012, è la prima console per videogiochi di ottava generazione e compete con la Xbox One di Microsoft e la PlayStation 4 di Sony.
 
 La Wii U fu la prima console Nintendo a supportare la grafica HD. Il controller principale della console è il Wii U GamePad, dotato di touchscreen incorporato, tasti direzionali, stick analogici e tasti azione. Lo schermo può essere utilizzato come complemento del display principale o nei giochi supportati per giocare direttamente sul GamePad. Il Wii U Pro Controller può essere utilizzato al suo posto come alternativa più tradizionale. La console Wii U è retrocompatibile con tutti i software e gli accessori Wii. I giochi possono supportare qualsiasi combinazione di GamePad, telecomando Wii, Nunchuk, Balance Board, controller classico Nintendo o controller Wii U Pro. Le funzionalità online sono incentrate sulla piattaforma Nintendo Network e su Miiverse, un servizio di social networking integrato che consente agli utenti di condividere contenuti in comunità specifiche per i giochi.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

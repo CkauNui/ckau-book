@@ -1,50 +1,50 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.44</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
-			<pos>0.449 0.4565</pos>
-			<maxSize>0.268</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.169 0.4565" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.44</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
-			<pos>0.449 0.4565</pos>
-			<maxSize>0.248</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.169 0.4565" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2021</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Raze</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>Raze is a fork of Build engine games backed by GZDoom tech and combines Duke Nukem 3D, Blood, Redneck Rampage, Shadow Warrior and Exhumed/Powerslave in a single package. It is also capable of playing Nam and WW2 GI.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.44</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
+      <pos>0.449 0.4565</pos>
+      <maxSize>0.268</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.169 0.4565" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.44</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
+      <pos>0.449 0.4565</pos>
+      <maxSize>0.248</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.169 0.4565" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2021</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Raze</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>Raze is a fork of Build engine games backed by GZDoom tech and combines Duke Nukem 3D, Blood, Redneck Rampage, Shadow Warrior and Exhumed/Powerslave in a single package. It is also capable of playing Nam and WW2 GI.
 
 The game modules are based on the following sources:
 - Duke Nukem: JFDuke, EDuke 2.0, World Tour extensions from DukeGDX and some minor fixes from EDuke32.
@@ -53,7 +53,7 @@ The game modules are based on the following sources:
 - Shadow Warrior: SWP and VoidSW.
 - Exhumed/Powerslave: PCExhumed, with some enhancements inspired by PowerslaveGDX.
 </text>
-			<text lang="pl">Raze to zbór gier na Build engine wsparty technologią GZDoom i łączący w jednym pakiecie Duke Nukem 3D, Blood, Redneck Rampage, Shadow Warrior i Exhumed/Powerslave. Jest również w stanie uruchomić dodatki i mody takie jak np. NAM i WW2 GI.
+      <text lang="pl">Raze to zbór gier na Build engine wsparty technologią GZDoom i łączący w jednym pakiecie Duke Nukem 3D, Blood, Redneck Rampage, Shadow Warrior i Exhumed/Powerslave. Jest również w stanie uruchomić dodatki i mody takie jak np. NAM i WW2 GI.
 
 Moduły gry oparte są na następujących źródłach:
 - Duke Nukem: JFDuke, EDuke 2.0, rozszerzenia World Tour z DukeGDX i kilka drobnych poprawek z EDuke32.
@@ -61,7 +61,15 @@ Moduły gry oparte są na następujących źródłach:
 - Blood: NBlood.
 - Shadow Warrior: SWP i VoidSW.
 - Exhumed/Powerslave: PCExhumed, z pewnymi ulepszeniami inspirowanymi przez PowerslaveGDX.</text>
-			<text lang="ru">Кто бы мог подумать, что те, кто создал ZDOOM, LZDOOM и, наконец, GZDOOM, создадут source-порт и для игр, созданных на Build Engine. 
+      <text lang="pt">Esta é uma coletânea de jogos na Build engine suportada pela tecnologia GZDoom, que reúne em um único pacote Duke Nukem 3D, Blood, Redneck Rampage, Shadow Warrior e Exhumed/Powerslave. Também é capaz de executar addons e mods como NAM e WW2 GI.
+
+Os módulos do jogo são baseados nas seguintes fontes:
+- Duke Nukem: JFDuke, EDuke 2.0, extensões World Tour com DukeGDX e algumas pequenas correções do EDuke32.
+- Redneck Rampage: Fonte reconstruída Nuke.YKT disponível no repositório Rednukem Git.
+- Blood: NBlood.
+- Shadow Warrior: SWP e VoidSW.
+- Exhumed/Powerslave: PCExhumed, com algumas melhorias inspiradas no PowerslaveGDX.</text>
+      <text lang="ru">Кто бы мог подумать, что те, кто создал ZDOOM, LZDOOM и, наконец, GZDOOM, создадут source-порт и для игр, созданных на Build Engine. 
 
 RAZE - это source-порт EDuke32 с дополнительными механиками, использованных в GZDOOM. Первая версия вышла совсем недавно - 8 апреля 2021 года. Разработали его Кристофер "Graf Zahl" Олкерс и Рейчел "Rachael" Александерсон  с включением нескольких других кодовых баз, в первую очередь из Build и EDuke32.
 
@@ -71,7 +79,7 @@ RAZE - это source-порт EDuke32 с дополнительными меха
 - Blood: NBlood.
 - Shadow Warrior: SWP и VoidSW.
 - Exhumed/Powerslave: PCExhumed с некоторыми улучшениями, вдохновленными PowerslaveGDX.</text>
-			<text lang="es">Raze es un fork de juegos con motor Build respaldado por tecnología GZDoom y combina Duke Nukem 3D, Blood, Redneck Rampage, Shadow Warrior y Exhumed/Powerslave en un solo paquete. También es capaz de jugar Nam y WW2 GI.
+      <text lang="es">Raze es un fork de juegos con motor Build respaldado por tecnología GZDoom y combina Duke Nukem 3D, Blood, Redneck Rampage, Shadow Warrior y Exhumed/Powerslave en un solo paquete. También es capaz de jugar Nam y WW2 GI.
 
 Los módulos de juego se basan en las siguientes fuentes:
 - Duke Nukem: JFDuke, EDuke 2.0, extensiones World Tour de DukeGDX y algunas correcciones menores de EDuke32.
@@ -79,7 +87,7 @@ Los módulos de juego se basan en las siguientes fuentes:
 - Sangre: NBlood.
 - Shadow Warrior: SWP y VoidSW.
 - Exhumed/Powerslave: PCExhumed, con algunas mejoras inspiradas en PowerslaveGDX.</text>
-			<text lang="de">Raze ist eine Abspaltung von Build-Engine-Spielen, die durch GZDoom-Technologie unterstützt wird und Duke Nukem 3D, Blood, Redneck Rampage, Shadow Warrior und Exhumed/Powerslave in einem einzigen Paket vereint. Es ist auch in der Lage, Nam und WW2 GI zu spielen.
+      <text lang="de">Raze ist eine Abspaltung von Build-Engine-Spielen, die durch GZDoom-Technologie unterstützt wird und Duke Nukem 3D, Blood, Redneck Rampage, Shadow Warrior und Exhumed/Powerslave in einem einzigen Paket vereint. Es ist auch in der Lage, Nam und WW2 GI zu spielen.
 
 Die Spielmodule basieren auf den folgenden Quellen:
 - Duke Nukem: JFDuke, EDuke 2.0, World Tour Erweiterungen von DukeGDX und einige kleinere Korrekturen von EDuke32.
@@ -87,7 +95,7 @@ Die Spielmodule basieren auf den folgenden Quellen:
 - Blut: NBlood.
 - Shadow Warrior: SWP und VoidSW.
 - Exhumed/Powerslave: PCExhumed, mit einigen von PowerslaveGDX inspirierten Erweiterungen.</text>
-			<text lang="fr">Raze est un fork des jeux Build engine soutenu par la technologie GZDoom et combine Duke Nukem 3D, Blood, Redneck Rampage, Shadow Warrior et Exhumed/Powerslave dans un seul package. Il est également capable de jouer à Nam et WW2 GI.
+      <text lang="fr">Raze est un fork des jeux Build engine soutenu par la technologie GZDoom et combine Duke Nukem 3D, Blood, Redneck Rampage, Shadow Warrior et Exhumed/Powerslave dans un seul package. Il est également capable de jouer à Nam et WW2 GI.
 
 Les modules de jeu sont basés sur les sources suivantes :
 - Duke Nukem : JFDuke, EDuke 2.0, les extensions World Tour de DukeGDX et quelques corrections mineures de EDuke32.
@@ -95,7 +103,7 @@ Les modules de jeu sont basés sur les sources suivantes :
 - Blood : NBlood.
 - Shadow Warrior : SWP et VoidSW.
 - Exhumed/Powerslave : PCExhumed, avec quelques améliorations inspirées de PowerslaveGDX.</text>
-			<text lang="it">Raze è un fork dei giochi del motore Build supportato dalla tecnologia GZDoom e combina Duke Nukem 3D, Blood, Redneck Rampage, Shadow Warrior ed Exhumed/Powerslave in un unico pacchetto. È anche in grado di giocare a Nam e WW2 GI.
+      <text lang="it">Raze è un fork dei giochi del motore Build supportato dalla tecnologia GZDoom e combina Duke Nukem 3D, Blood, Redneck Rampage, Shadow Warrior ed Exhumed/Powerslave in un unico pacchetto. È anche in grado di giocare a Nam e WW2 GI.
 
 I moduli di gioco sono basati sulle seguenti fonti:
 - Duke Nukem: JFDuke, EDuke 2.0, estensioni World Tour da DukeGDX e alcune correzioni minori da EDuke32.
@@ -103,6 +111,6 @@ I moduli di gioco sono basati sulle seguenti fonti:
 - Sangue: NBlood.
 - Shadow Warrior: SWP e VoidSW.
 - Exhumed/Powerslave: PCExhumed, con alcuni miglioramenti ispirati a PowerslaveGDX.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

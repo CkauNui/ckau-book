@@ -1,175 +1,178 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.3 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.4 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>
-			<pos>0.29 0.36</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>26</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.01 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.7 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.6 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.85 0.5</origin>
-			<pos>0.71 0.36</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>-26</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.43 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.50 0.37</pos>
-			<maxSize>0.225</maxSize>
-			<rotation>90</rotation>
-			<storyboard>
-				<animation property="pos" to="0.22 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-left" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.375 0.398</pos>
-			<maxSize>0.135</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.175</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.15</maxSize>
-			<rotation>-64</rotation>
-			<storyboard>
-				<animation property="pos" to="0.095 0.398" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-right" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.626 0.395</pos>
-			<maxSize>0.135</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.175</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.15</maxSize>
-			<rotation>64</rotation>
-			<storyboard>
-				<animation property="pos" to="0.346 0.395" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.50 0.37</pos>
-			<maxSize>0.265</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/cave-right.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/cave-right.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.85 0.5</origin>
-			<pos>0.64 0.395</pos>
-			<maxSize>0.19</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.36 0.395" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox3" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/cave-left.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/cave-left.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>
-			<pos>0.360 0.395</pos>
-			<maxSize>0.19</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.080 0.395" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1995</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>CAVE Interactive Co.</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Cave</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>CAVE Interactive Co., Ltd. is a Japanese video game company founded in 1994 by former employees of Toaplan following its bankruptcy. They are known primarily for their "bullet hell" shoot 'em ups; from 1995 up to 2013, CAVE was one of the most prolific shoot 'em up developers in the Japanese market. Alongside this, CAVE has produced a variety of other types games for arcades, home consoles, PCs, and smartphones, also dating back to 1995.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-left" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.3 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.4 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>
+      <pos>0.29 0.36</pos>
+      <minSize>0.1 0.3</minSize>
+      <rotation>26</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.01 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-right" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.7 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.6 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0.85 0.5</origin>
+      <pos>0.71 0.36</pos>
+      <minSize>0.1 0.3</minSize>
+      <rotation>-26</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.43 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.50 0.37</pos>
+      <maxSize>0.225</maxSize>
+      <rotation>90</rotation>
+      <storyboard>
+        <animation property="pos" to="0.22 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-left" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.375 0.398</pos>
+      <maxSize>0.135</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.175</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.15</maxSize>
+      <rotation>-64</rotation>
+      <storyboard>
+        <animation property="pos" to="0.095 0.398" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-right" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.626 0.395</pos>
+      <maxSize>0.135</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.175</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.15</maxSize>
+      <rotation>64</rotation>
+      <storyboard>
+        <animation property="pos" to="0.346 0.395" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.50 0.37</pos>
+      <maxSize>0.265</maxSize>
+      <zIndex>26</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/cave-right.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/cave-right.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0.85 0.5</origin>
+      <pos>0.64 0.395</pos>
+      <maxSize>0.19</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.36 0.395" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox3" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/cave-left.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/cave-left.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>
+      <pos>0.360 0.395</pos>
+      <maxSize>0.19</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.080 0.395" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1995</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>CAVE Interactive Co.</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Cave</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>CAVE Interactive Co., Ltd. is a Japanese video game company founded in 1994 by former employees of Toaplan following its bankruptcy. They are known primarily for their "bullet hell" shoot 'em ups; from 1995 up to 2013, CAVE was one of the most prolific shoot 'em up developers in the Japanese market. Alongside this, CAVE has produced a variety of other types games for arcades, home consoles, PCs, and smartphones, also dating back to 1995.
 
 "CAVE" is an acronym for "Computer Art Visual Entertainment".</text>
-			<text lang="pl">CAVE Interactive Co., Ltd. to japońska firma zajmująca się grami wideo, założona w 1994 roku przez byłych pracowników firmy Toaplan po jej bankructwie.  Znane jest przede wszystkim z produkcji shoot 'em upów typu "bullet hell"; od 1995 do 2013 roku CAVE było jednym z najbardziej płodnych twórców shoot 'em upów na japońskim rynku. Oprócz tego, CAVE produkowało wiele innych rodzajów gier dla salonów gier, konsol domowych, komputerów PC i smartfonów, również od 1995 roku.
+      <text lang="pl">CAVE Interactive Co., Ltd. to japońska firma zajmująca się grami wideo, założona w 1994 roku przez byłych pracowników firmy Toaplan po jej bankructwie.  Znane jest przede wszystkim z produkcji shoot 'em upów typu "bullet hell"; od 1995 do 2013 roku CAVE było jednym z najbardziej płodnych twórców shoot 'em upów na japońskim rynku. Oprócz tego, CAVE produkowało wiele innych rodzajów gier dla salonów gier, konsol domowych, komputerów PC i smartfonów, również od 1995 roku.
 
 "CAVE" jest skrótem od "Computer Art Visual Entertainment".</text>
-			<text lang="ru">CAVE CO., LTD. — японская компания, разработчик компьютерных игр. Специализируется на «маниакальных» скролл-шутерах для аркадных игровых автоматов, оставаясь одним из самых активных разработчиков игр этого жанра на японском рынке. Компания была создана бывшими сотрудниками Toaplan, и многие из её ранних игр являются «духовными наследниками» некоторых игр Toaplan — в частности, Truxton и Batsugun. В настоящее время компания занимается разработкой игр для игровых автоматов, мобильных телефонов, Xbox 360, PC а также онлайновыми компьютерными играми.
+      <text lang="pt">CAVE Interactive Co., Ltd. é uma empresa japonesa de jogos eletrônicos fundada em 1994 por ex-funcionários da Toaplan após sua falência. É conhecida principalmente pela produção de jogos de tiro tipo "bullet hell"; de 1995 a 2013, a CAVE foi uma das empresas mais prolíficas na criação de jogos de tiro no mercado japonês. Além disso, a CAVE produziu muitos outros tipos de jogos para arcades, consoles domésticos, PCs e smartphones, também a partir de 1995.
+
+"CAVE" é a abreviação de "Computer Art Visual Entertainment".</text>
+      <text lang="ru">CAVE CO., LTD. — японская компания, разработчик компьютерных игр. Специализируется на «маниакальных» скролл-шутерах для аркадных игровых автоматов, оставаясь одним из самых активных разработчиков игр этого жанра на японском рынке. Компания была создана бывшими сотрудниками Toaplan, и многие из её ранних игр являются «духовными наследниками» некоторых игр Toaplan — в частности, Truxton и Batsugun. В настоящее время компания занимается разработкой игр для игровых автоматов, мобильных телефонов, Xbox 360, PC а также онлайновыми компьютерными играми.
 
 Компания не является издателем, её игры распространялись рядом различных компаний. У CAVE есть 3 дочерние компании. MINI4WD Networks Co, Declease ltd., Beads Mania Ltd. основана совместно с Tamiya в феврале 2006 года.
 
 TABOT, Inc. занимается играми, музыкой и разработкой контента для онлайна. Beads Mania занимается выпуском аксессуаров.</text>
-			<text lang="es">CAVE Interactive Co., Ltd. es una empresa japonesa de videojuegos fundada en 1994 por antiguos empleados de Toaplan tras su quiebra. Desde 1995 hasta 2013, CAVE fue uno de los desarrolladores de juegos de disparos más prolíficos del mercado japonés. Además, CAVE ha producido otros tipos de juegos para arcades, consolas domésticas, PC y smartphones, también desde 1995.
+      <text lang="es">CAVE Interactive Co., Ltd. es una empresa japonesa de videojuegos fundada en 1994 por antiguos empleados de Toaplan tras su quiebra. Desde 1995 hasta 2013, CAVE fue uno de los desarrolladores de juegos de disparos más prolíficos del mercado japonés. Además, CAVE ha producido otros tipos de juegos para arcades, consolas domésticas, PC y smartphones, también desde 1995.
 
 "CAVE" es el acrónimo de "Computer Art Visual Entertainment".</text>
-			<text lang="de">CAVE Interactive Co., Ltd. ist ein japanisches Videospielunternehmen, das 1994 von ehemaligen Mitarbeitern von Toaplan nach dessen Konkurs gegründet wurde. Das Unternehmen ist vor allem für seine "Bullet Hell"-Shooter bekannt; von 1995 bis 2013 war CAVE einer der produktivsten Entwickler von Shoot 'em Ups auf dem japanischen Markt. Daneben hat CAVE eine Vielzahl anderer Spiele für Spielhallen, Heimkonsolen, PCs und Smartphones entwickelt, die ebenfalls auf das Jahr 1995 zurückgehen.
+      <text lang="de">CAVE Interactive Co., Ltd. ist ein japanisches Videospielunternehmen, das 1994 von ehemaligen Mitarbeitern von Toaplan nach dessen Konkurs gegründet wurde. Das Unternehmen ist vor allem für seine "Bullet Hell"-Shooter bekannt; von 1995 bis 2013 war CAVE einer der produktivsten Entwickler von Shoot 'em Ups auf dem japanischen Markt. Daneben hat CAVE eine Vielzahl anderer Spiele für Spielhallen, Heimkonsolen, PCs und Smartphones entwickelt, die ebenfalls auf das Jahr 1995 zurückgehen.
 
 "CAVE" ist ein Akronym für "Computer Art Visual Entertainment".</text>
-			<text lang="fr">CAVE Interactive Co. est une société japonaise de jeux vidéo fondée en 1994 par d'anciens employés de Toaplan à la suite de la faillite de cette dernière. Elle est principalement connue pour ses shoot'em ups "bullet hell" ; de 1995 à 2013, CAVE a été l'un des développeurs de shoot'em up les plus prolifiques du marché japonais. Parallèlement, CAVE a produit une variété d'autres types de jeux pour les salles d'arcade, les consoles de salon, les PC et les smartphones, qui remontent également à 1995.
+      <text lang="fr">CAVE Interactive Co. est une société japonaise de jeux vidéo fondée en 1994 par d'anciens employés de Toaplan à la suite de la faillite de cette dernière. Elle est principalement connue pour ses shoot'em ups "bullet hell" ; de 1995 à 2013, CAVE a été l'un des développeurs de shoot'em up les plus prolifiques du marché japonais. Parallèlement, CAVE a produit une variété d'autres types de jeux pour les salles d'arcade, les consoles de salon, les PC et les smartphones, qui remontent également à 1995.
 
 "CAVE est l'acronyme de "Computer Art Visual Entertainment".</text>
-			<text lang="it">CAVE Interactive Co., Ltd. è una società giapponese di videogiochi fondata nel 1994 da ex dipendenti di Toaplan in seguito al suo fallimento. È nota soprattutto per i suoi sparatutto "bullet hell"; dal 1995 al 2013, CAVE è stata uno degli sviluppatori di sparatutto più prolifici del mercato giapponese. Oltre a questo, CAVE ha prodotto una serie di altri tipi di giochi per sale giochi, console domestiche, PC e smartphone, sempre a partire dal 1995.
+      <text lang="it">CAVE Interactive Co., Ltd. è una società giapponese di videogiochi fondata nel 1994 da ex dipendenti di Toaplan in seguito al suo fallimento. È nota soprattutto per i suoi sparatutto "bullet hell"; dal 1995 al 2013, CAVE è stata uno degli sviluppatori di sparatutto più prolifici del mercato giapponese. Oltre a questo, CAVE ha prodotto una serie di altri tipi di giochi per sale giochi, console domestiche, PC e smartphone, sempre a partire dal 1995.
 
 "CAVE" è l'acronimo di "Computer Art Visual Entertainment".</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

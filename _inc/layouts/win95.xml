@@ -1,94 +1,101 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
-			<origin if="${screen.ratio} == '21/9'">0.52 0.5</origin>
-			<pos>0.514 0.43</pos>
-			<maxSize>0.22</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.234 0.43" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
-			<origin if="${screen.ratio} == '21/9'">0.52 0.5</origin>
-			<pos>0.514 0.43</pos>
-			<maxSize>0.202</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.234 0.43" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1995</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Microsoft</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Windows 95</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>Windows 95 is a consumer-oriented operating system developed by Microsoft as part of its Windows 9x family of operating systems. The first operating system in the 9x family, it is the successor to Windows 3.1x, and was released to manufacturing on July 14, 1995, and generally to retail on August 24, 1995, almost three months after the release of Windows NT 3.51.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
+      <origin if="${screen.ratio} == '21/9'">0.52 0.5</origin>
+      <pos>0.514 0.43</pos>
+      <maxSize>0.22</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.234 0.43" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
+      <origin if="${screen.ratio} == '21/9'">0.52 0.5</origin>
+      <pos>0.514 0.43</pos>
+      <maxSize>0.202</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.234 0.43" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1995</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Microsoft</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Windows 95</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>Windows 95 is a consumer-oriented operating system developed by Microsoft as part of its Windows 9x family of operating systems. The first operating system in the 9x family, it is the successor to Windows 3.1x, and was released to manufacturing on July 14, 1995, and generally to retail on August 24, 1995, almost three months after the release of Windows NT 3.51.
 Windows 95 merged Microsoft's formerly separate MS-DOS and Microsoft Windows products, and featured significant improvements over its predecessor, most notably in the graphical user interface (GUI) and in its simplified "plug-and-play" features.
 
 Accompanied by an extensive marketing campaign, Windows 95 introduced numerous functions and features that were featured in later Windows versions, and continue in modern variations to this day, such as the taskbar, notification area, and the "Start" button.
 
 Three years after its introduction, Windows 95 was followed by Windows 98. Microsoft ended mainstream support for Windows 95 on December 31, 2000. Like Windows NT 3.51, Windows 95 received only one year of extended support, ending on December 31, 2001.</text>
-			<text lang="pl">Windows 95 to zorientowany na konsumenta system operacyjny opracowany przez firmę Microsoft jako część rodziny systemów operacyjnych Windows 9x. Pierwszy system operacyjny z rodziny 9x, jest następcą Windows 3.1x i został wydany do produkcji 14 lipca 1995 roku, a ogólnie do sprzedaży detalicznej 24 sierpnia 1995 roku, prawie trzy miesiące po wydaniu Windows NT 3.51.
+      <text lang="pl">Windows 95 to zorientowany na konsumenta system operacyjny opracowany przez firmę Microsoft jako część rodziny systemów operacyjnych Windows 9x. Pierwszy system operacyjny z rodziny 9x, jest następcą Windows 3.1x i został wydany do produkcji 14 lipca 1995 roku, a ogólnie do sprzedaży detalicznej 24 sierpnia 1995 roku, prawie trzy miesiące po wydaniu Windows NT 3.51.
 Windows 95 połączył wcześniej oddzielne produkty firmy Microsoft - MS-DOS i Microsoft Windows - i zawierał znaczące ulepszenia w stosunku do swojego poprzednika, przede wszystkim w graficznym interfejsie użytkownika (GUI) oraz w uproszczonych funkcjach "plug-and-play".
 
 Wraz z szeroko zakrojoną kampanią marketingową, Windows 95 wprowadził wiele funkcji i właściwości, które pojawiły się w późniejszych wersjach systemu Windows i są kontynuowane w nowoczesnych odmianach do dnia dzisiejszego, takich jak pasek zadań, obszar powiadomień i przycisk "Start".
 
 Trzy lata po wprowadzeniu Windows 95 pojawił się Windows 98. Microsoft zakończył główne wsparcie dla Windows 95 31 grudnia 2000 roku. Podobnie jak Windows NT 3.51, Windows 95 otrzymał tylko jeden rok rozszerzonego wsparcia, które zakończyło się 31 grudnia 2001 roku.</text>
-			<text lang="ru">Windows 95 - это ориентированная на потребителя операционная система, разработанная компанией Microsoft как часть семейства операционных систем Windows 9x. Первая операционная система семейства 9x, она является преемницей Windows 3.1x и была выпущена в производство 14 июля 1995 года, а в розничную продажу - 24 августа 1995 года, почти через три месяца после выпуска Windows NT 3.51.
+      <text lang="pt">O Windows 95 é um sistema operacional orientado para o consumidor desenvolvido pela Microsoft como parte da família de sistemas operacionais Windows 9x. O primeiro sistema operacional da família 9x, é o sucessor do Windows 3.1x e foi lançado para produção em 14 de julho de 1995, e para venda varejista em 24 de agosto de 1995, quase três meses após o lançamento do Windows NT 3.51.
+
+O Windows 95 combinou os produtos anteriormente separados da Microsoft - MS-DOS e Microsoft Windows - e incluiu melhorias significativas em relação ao seu predecessor, principalmente na interface gráfica do usuário (GUI) e nas funcionalidades simplificadas de "plug-and-play".
+
+Juntamente com uma ampla campanha de marketing, o Windows 95 introduziu muitas funcionalidades e características que apareceram em versões posteriores do Windows e continuam em versões modernas até hoje, como a barra de tarefas, a área de notificações e o botão "Iniciar".
+
+Três anos após a introdução do Windows 95, surgiu o Windows 98. A Microsoft encerrou o suporte principal para o Windows 95 em 31 de dezembro de 2000. Assim como o Windows NT 3.51, o Windows 95 recebeu apenas um ano de suporte estendido, que terminou em 31 de dezembro de 2001.</text>
+      <text lang="ru">Windows 95 - это ориентированная на потребителя операционная система, разработанная компанией Microsoft как часть семейства операционных систем Windows 9x. Первая операционная система семейства 9x, она является преемницей Windows 3.1x и была выпущена в производство 14 июля 1995 года, а в розничную продажу - 24 августа 1995 года, почти через три месяца после выпуска Windows NT 3.51.
 Windows 95 объединила ранее отдельные продукты Microsoft MS-DOS и Microsoft Windows и отличалась значительными улучшениями по сравнению с предшественницей, прежде всего в графическом интерфейсе пользователя (GUI) и в упрощенных функциях "plug-and-play".
 
 Сопровождаемая широкой маркетинговой кампанией, Windows 95 представила множество функций и возможностей, которые были реализованы в последующих версиях Windows и сохранились в современных вариантах по сей день, например, панель задач, область уведомлений и кнопка "Пуск".
 
 Через три года после появления Windows 95 за ней последовала Windows 98. Microsoft прекратила поддержку Windows 95 31 декабря 2000 года. Как и Windows NT 3.51, Windows 95 получила только один год расширенной поддержки, который закончился 31 декабря 2001 года.</text>
-			<text lang="es">Windows 95 es un sistema operativo orientado al consumidor desarrollado por Microsoft como parte de su familia de sistemas operativos Windows 9x. Es el primer sistema operativo de la familia 9x y el sucesor de Windows 3.1x. Se lanzó al mercado de fabricación el 14 de julio de 1995 y, en general, al mercado minorista el 24 de agosto de 1995, casi tres meses después del lanzamiento de Windows NT 3.51.
+      <text lang="es">Windows 95 es un sistema operativo orientado al consumidor desarrollado por Microsoft como parte de su familia de sistemas operativos Windows 9x. Es el primer sistema operativo de la familia 9x y el sucesor de Windows 3.1x. Se lanzó al mercado de fabricación el 14 de julio de 1995 y, en general, al mercado minorista el 24 de agosto de 1995, casi tres meses después del lanzamiento de Windows NT 3.51.
 Windows 95 fusionó los productos de Microsoft MS-DOS y Microsoft Windows, anteriormente separados, y presentó mejoras significativas con respecto a su predecesor, sobre todo en la interfaz gráfica de usuario (GUI) y en sus funciones simplificadas "plug-and-play".
 
 Acompañado de una amplia campaña de marketing, Windows 95 introdujo numerosas funciones y características que se incluyeron en versiones posteriores de Windows, y que continúan en variaciones modernas hasta nuestros días, como la barra de tareas, el área de notificación y el botón "Inicio".
 
 Tres años después de su introducción, Windows 95 fue seguido por Windows 98. Microsoft puso fin al soporte general de Windows 95 el 31 de diciembre de 2000. Al igual que Windows NT 3.51, Windows 95 sólo recibió un año de soporte ampliado, que finalizó el 31 de diciembre de 2001.</text>
-			<text lang="de">Windows 95 ist ein verbraucherorientiertes Betriebssystem, das von Microsoft als Teil der Windows 9x-Familie von Betriebssystemen entwickelt wurde. Als erstes Betriebssystem der 9x-Familie ist es der Nachfolger von Windows 3.1x und wurde am 14. Juli 1995 für die Produktion und am 24. August 1995 für den Einzelhandel freigegeben, fast drei Monate nach der Veröffentlichung von Windows NT 3.51.
+      <text lang="de">Windows 95 ist ein verbraucherorientiertes Betriebssystem, das von Microsoft als Teil der Windows 9x-Familie von Betriebssystemen entwickelt wurde. Als erstes Betriebssystem der 9x-Familie ist es der Nachfolger von Windows 3.1x und wurde am 14. Juli 1995 für die Produktion und am 24. August 1995 für den Einzelhandel freigegeben, fast drei Monate nach der Veröffentlichung von Windows NT 3.51.
 Windows 95 führte die ehemals getrennten Microsoft-Produkte MS-DOS und Microsoft Windows zusammen und wies gegenüber seinem Vorgänger erhebliche Verbesserungen auf, vor allem in der grafischen Benutzeroberfläche (GUI) und in den vereinfachten "Plug-and-Play"-Funktionen.
 
 Begleitet von einer umfangreichen Marketingkampagne führte Windows 95 zahlreiche Funktionen und Merkmale ein, die auch in späteren Windows-Versionen zu finden waren und in modernen Varianten bis heute fortbestehen, wie z. B. die Taskleiste, der Infobereich und die Schaltfläche "Start".
 
 Drei Jahre nach seiner Einführung wurde Windows 95 von Windows 98 abgelöst. Microsoft beendete den Mainstream-Support für Windows 95 am 31. Dezember 2000. Wie Windows NT 3.51 erhielt auch Windows 95 nur ein Jahr erweiterten Support, der am 31. Dezember 2001 endete.</text>
-			<text lang="fr">Windows 95 est un système d'exploitation grand public développé par Microsoft dans le cadre de sa famille de systèmes d'exploitation Windows 9x. Premier système d'exploitation de la famille 9x, il succède à Windows 3.1x et a été mis à la disposition des fabricants le 14 juillet 1995 et des détaillants le 24 août 1995, près de trois mois après la sortie de Windows NT 3.51.
+      <text lang="fr">Windows 95 est un système d'exploitation grand public développé par Microsoft dans le cadre de sa famille de systèmes d'exploitation Windows 9x. Premier système d'exploitation de la famille 9x, il succède à Windows 3.1x et a été mis à la disposition des fabricants le 14 juillet 1995 et des détaillants le 24 août 1995, près de trois mois après la sortie de Windows NT 3.51.
 Windows 95 a fusionné les produits MS-DOS et Microsoft Windows, auparavant séparés, et a apporté des améliorations significatives par rapport à son prédécesseur, notamment au niveau de l'interface utilisateur graphique (GUI) et de ses fonctions simplifiées "plug-and-play".
 
 Accompagné d'une vaste campagne de marketing, Windows 95 a introduit de nombreuses fonctions et caractéristiques qui ont été reprises dans les versions ultérieures de Windows et qui subsistent encore aujourd'hui dans des variantes modernes, telles que la barre des tâches, la zone de notification et le bouton "Démarrer".
 
 Trois ans après son lancement, Windows 95 a été suivi par Windows 98. Microsoft a mis fin au support général de Windows 95 le 31 décembre 2000. Comme Windows NT 3.51, Windows 95 n'a bénéficié que d'une année de support étendu, qui s'est achevée le 31 décembre 2001.</text>
-			<text lang="it">Windows 95 è un sistema operativo orientato al mercato consumer sviluppato da Microsoft come parte della famiglia di sistemi operativi Windows 9x. Primo sistema operativo della famiglia 9x, è il successore di Windows 3.1x ed è stato rilasciato alla produzione il 14 luglio 1995, e in generale alla vendita al dettaglio il 24 agosto 1995, quasi tre mesi dopo il rilascio di Windows NT 3.51.
+      <text lang="it">Windows 95 è un sistema operativo orientato al mercato consumer sviluppato da Microsoft come parte della famiglia di sistemi operativi Windows 9x. Primo sistema operativo della famiglia 9x, è il successore di Windows 3.1x ed è stato rilasciato alla produzione il 14 luglio 1995, e in generale alla vendita al dettaglio il 24 agosto 1995, quasi tre mesi dopo il rilascio di Windows NT 3.51.
 Windows 95 fondeva i prodotti Microsoft MS-DOS e Microsoft Windows, precedentemente separati, e presentava notevoli miglioramenti rispetto al suo predecessore, in particolare nell'interfaccia grafica utente (GUI) e nelle funzioni semplificate "plug-and-play".
 
 Accompagnato da una vasta campagna di marketing, Windows 95 introdusse numerose funzioni e caratteristiche che furono presenti nelle versioni successive di Windows e che continuano a essere presenti nelle varianti moderne fino ad oggi, come la barra delle applicazioni, l'area di notifica e il pulsante "Start".
 
 Tre anni dopo la sua introduzione, Windows 95 fu seguito da Windows 98. Microsoft ha terminato il supporto mainstream per Windows 95 il 31 dicembre 2000. Come Windows NT 3.51, Windows 95 ha ricevuto un solo anno di supporto esteso, terminato il 31 dicembre 2001.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

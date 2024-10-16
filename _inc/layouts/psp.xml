@@ -1,76 +1,81 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.488</pos>
-			<maxSize>0.30</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.4</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.32</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.488" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.485</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.495</origin>
-			<pos>0.5 0.488</pos>
-			<maxSize>0.282</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.372</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.31</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.488" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2004</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Sony</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>PlayStation Portable</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The PlayStation Portable (PSP) is a handheld game console developed and marketed by Sony Computer Entertainment. It was first released in Japan on December 12, 2004, in North America on March 24, 2005, and in PAL regions on September 1, 2005, and is the first handheld installment in the PlayStation line of consoles. As a seventh generation console it competed with the Nintendo DS.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <pos>0.5 0.488</pos>
+      <maxSize>0.30</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.4</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.32</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.488" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.485</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.495</origin>
+      <pos>0.5 0.488</pos>
+      <maxSize>0.282</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.372</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.31</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.488" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2004</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Sony</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>PlayStation Portable</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The PlayStation Portable (PSP) is a handheld game console developed and marketed by Sony Computer Entertainment. It was first released in Japan on December 12, 2004, in North America on March 24, 2005, and in PAL regions on September 1, 2005, and is the first handheld installment in the PlayStation line of consoles. As a seventh generation console it competed with the Nintendo DS.
 
 Development of the PSP was announced during E3 2003, and the console was unveiled at a Sony press conference on May 11, 2004. The system was the most powerful portable console when it was introduced, and was the first real competitor of Nintendo's handheld consoles after many challengers, such as Nokia's N-Gage, had failed. The PSP's advanced graphics capabilities made it a popular mobile entertainment device, which could connect to the PlayStation 2 and PlayStation 3 consoles, any computer with USB interface, other PSP systems, and the Internet. The PSP also had a vast array of multimedia features such as video playback, and so has been considered a portable media player as well. The PSP is the only handheld console to use an optical disc format – Universal Media Disc (UMD) – as its primary storage medium; both games and movies have been released on the format.</text>
-			<text lang="pl">PlayStation Portable (oficjalny skrót: PSP) – przenośna konsola gier wideo produkowana i sprzedawana przez Sony Computer Entertainment. Po raz pierwszy o pracach nad konsolą wspomniano na E3 2003, a pierwsza jej odsłona miała miejsce 11 maja 2004 na konferencji prasowej Sony przed E3 2004. Urządzenie zostało wydane w Japonii 12 grudnia 2004, w Ameryce Północnej 28 października 2004, w Europie 1 marca 2005 oraz w Australii 11 kwietnia 2005.
+      <text lang="pl">PlayStation Portable (oficjalny skrót: PSP) – przenośna konsola gier wideo produkowana i sprzedawana przez Sony Computer Entertainment. Po raz pierwszy o pracach nad konsolą wspomniano na E3 2003, a pierwsza jej odsłona miała miejsce 11 maja 2004 na konferencji prasowej Sony przed E3 2004. Urządzenie zostało wydane w Japonii 12 grudnia 2004, w Ameryce Północnej 28 października 2004, w Europie 1 marca 2005 oraz w Australii 11 kwietnia 2005.
 
 PlayStation Portable jest drugą podręczną konsolą gier wideo wykorzystującą format dysków optycznych, Universal Media Disc (UMD), jako główny nośnik danych. Innymi wyróżniającymi cechami konsoli są duży ekran, duże możliwości multimedialne i możliwość połączenia z PlayStation 3, innymi PSP i Internetem.
 
 Konsola PSP ma większą moc obliczeniową i szersze możliwości multimedialne niż jej konkurent Nintendo DS. Po wydaniu we wczesnej fazie sierpnia 2007 przebudowanej, węższej i lżejszej (ang. slimmer and lighter) wersji PlayStation Portable nazwanej „Slim and Lite” sprzedaż w październiku wzrosła czterokrotnie w Wielkiej Brytanii i zwiększyła się blisko dwukrotnie w Ameryce Północnej.</text>
-			<text lang="ru">Портативная игровая консоль производства Sony Computer Entertainment. PlayStation Portable — четвертый продукт компании Sony в линейке PlayStation. Анонс PSP состоялся на выставке E3 2003, а первая консоль была продемонстрирована публике 11 мая 2004 года на пресс-конференции, проводимой Sony в рамках E3 2004. Первые продажи консоли были начаты в Японии 12 декабря 2004 года, в Северной Америке 24 марта 2005 года, и в PAL-регионах 1 сентября 2005 года.
+      <text lang="pt">PlayStation Portable (abreviação oficial: PSP) – console portátil de videogame produzida e vendida pela Sony Computer Entertainment. Pela primeira vez, o desenvolvimento da console foi mencionado na E3 2003, e sua primeira aparição ocorreu em 11 de maio de 2004 em uma conferência de imprensa da Sony antes da E3 2004. O dispositivo foi lançado no Japão em 12 de dezembro de 2004, na América do Norte em 28 de outubro de 2004, na Europa em 1º de março de 2005 e na Austrália em 11 de abril de 2005.
+
+PlayStation Portable é a segunda console portátil de videogame a usar o formato de disco óptico Universal Media Disc (UMD) como meio de armazenamento principal. Outros recursos distintos da console incluem uma tela grande, amplas capacidades multimídia e a capacidade de se conectar ao PlayStation 3, outros PSPs e à internet.
+
+O console PSP possui mais poder de processamento e recursos multimídia mais amplos do que seu concorrente Nintendo DS. Após o lançamento, na primeira fase de agosto de 2007, de uma versão reformulada do PlayStation Portable, mais fina e leve (em inglês, "slimmer and lighter"), chamada "Slim and Lite", as vendas aumentaram quatro vezes no Reino Unido em outubro e quase dobraram na América do Norte.</text>
+      <text lang="ru">Портативная игровая консоль производства Sony Computer Entertainment. PlayStation Portable — четвертый продукт компании Sony в линейке PlayStation. Анонс PSP состоялся на выставке E3 2003, а первая консоль была продемонстрирована публике 11 мая 2004 года на пресс-конференции, проводимой Sony в рамках E3 2004. Первые продажи консоли были начаты в Японии 12 декабря 2004 года, в Северной Америке 24 марта 2005 года, и в PAL-регионах 1 сентября 2005 года.
 
 PlayStation Portable стала первой портативной игровой консолью, которая использовала оптический накопитель Universal Media Disc (UMD) в качестве основного носителя.
 
 27 января 2011 года Sony анонсировала следующую портативную консоль — PlayStation Vita, известную ранее как Next Generation Portable (NGP).</text>
-			<text lang="es">La PlayStation Portable (PSP) es una consola portátil desarrollada y comercializada por Sony Computer Entertainment. Salió a la venta por primera vez en Japón el 12 de diciembre de 2004, en Norteamérica el 24 de marzo de 2005 y en las regiones PAL el 1 de septiembre de 2005, y es la primera entrega portátil de la línea de consolas PlayStation. Como consola de séptima generación, compitió con la Nintendo DS.
+      <text lang="es">La PlayStation Portable (PSP) es una consola portátil desarrollada y comercializada por Sony Computer Entertainment. Salió a la venta por primera vez en Japón el 12 de diciembre de 2004, en Norteamérica el 24 de marzo de 2005 y en las regiones PAL el 1 de septiembre de 2005, y es la primera entrega portátil de la línea de consolas PlayStation. Como consola de séptima generación, compitió con la Nintendo DS.
 
 El desarrollo de la PSP se anunció durante el E3 2003, y la consola se presentó en una conferencia de prensa de Sony el 11 de mayo de 2004. En el momento de su presentación, la consola era la más potente de las consolas portátiles, y fue el primer competidor real de las consolas portátiles de Nintendo tras el fracaso de muchos aspirantes, como la N-Gage de Nokia. Las avanzadas capacidades gráficas de la PSP la convirtieron en un popular dispositivo de entretenimiento móvil, que podía conectarse a las consolas PlayStation 2 y PlayStation 3, a cualquier ordenador con interfaz USB, a otros sistemas PSP y a Internet. La PSP también disponía de una amplia gama de funciones multimedia, como la reproducción de vídeo, por lo que también se ha considerado un reproductor multimedia portátil. La PSP es la única consola portátil que utiliza un formato de disco óptico -Universal Media Disc (UMD)- como principal medio de almacenamiento; en este formato se han publicado tanto juegos como películas.</text>
-			<text lang="de">Die PlayStation Portable (PSP) ist eine Handheld-Spielkonsole, die von Sony Computer Entertainment entwickelt und vermarktet wird. Sie wurde erstmals am 12. Dezember 2004 in Japan, am 24. März 2005 in Nordamerika und am 1. September 2005 in den PAL-Regionen veröffentlicht und ist der erste Handheld der PlayStation-Konsolenreihe. Als Konsole der siebten Generation konkurrierte sie mit dem Nintendo DS.
+      <text lang="de">Die PlayStation Portable (PSP) ist eine Handheld-Spielkonsole, die von Sony Computer Entertainment entwickelt und vermarktet wird. Sie wurde erstmals am 12. Dezember 2004 in Japan, am 24. März 2005 in Nordamerika und am 1. September 2005 in den PAL-Regionen veröffentlicht und ist der erste Handheld der PlayStation-Konsolenreihe. Als Konsole der siebten Generation konkurrierte sie mit dem Nintendo DS.
 
 Die Entwicklung der PSP wurde auf der E3 2003 angekündigt, und die Konsole wurde auf einer Sony-Pressekonferenz am 11. Mai 2004 vorgestellt. Das System war bei seiner Einführung die leistungsstärkste tragbare Konsole und der erste echte Konkurrent für Nintendos Handheld-Konsolen, nachdem viele Herausforderer, wie z. B. Nokias N-Gage, gescheitert waren. Die fortschrittlichen Grafikfunktionen der PSP machten sie zu einem beliebten mobilen Unterhaltungsgerät, das mit den Konsolen PlayStation 2 und PlayStation 3, jedem Computer mit USB-Schnittstelle, anderen PSP-Systemen und dem Internet verbunden werden konnte. Die PSP verfügte außerdem über eine Vielzahl von Multimedia-Funktionen, wie z. B. die Videowiedergabe, und wurde daher auch als tragbarer Media-Player betrachtet. Die PSP ist die einzige Handheld-Konsole, die ein optisches Disc-Format - Universal Media Disc (UMD) - als primäres Speichermedium verwendet; sowohl Spiele als auch Filme wurden in diesem Format veröffentlicht.</text>
-			<text lang="fr">La PlayStation Portable (PSP) est une console de jeu portable développée et commercialisée par Sony Computer Entertainment. Elle est sortie pour la première fois au Japon le 12 décembre 2004, en Amérique du Nord le 24 mars 2005 et dans les régions PAL le 1er septembre 2005. Elle est la première console portable de la gamme PlayStation. En tant que console de septième génération, elle était en concurrence avec la Nintendo DS.
+      <text lang="fr">La PlayStation Portable (PSP) est une console de jeu portable développée et commercialisée par Sony Computer Entertainment. Elle est sortie pour la première fois au Japon le 12 décembre 2004, en Amérique du Nord le 24 mars 2005 et dans les régions PAL le 1er septembre 2005. Elle est la première console portable de la gamme PlayStation. En tant que console de septième génération, elle était en concurrence avec la Nintendo DS.
 
 Le développement de la PSP a été annoncé lors de l'E3 2003 et la console a été dévoilée lors d'une conférence de presse de Sony le 11 mai 2004. La console était la console portable la plus puissante au moment de son lancement, et constituait le premier véritable concurrent des consoles portables de Nintendo, après l'échec de nombreux challengers, tels que la N-Gage de Nokia. Les capacités graphiques avancées de la PSP en ont fait un appareil de divertissement mobile populaire, qui pouvait se connecter aux consoles PlayStation 2 et PlayStation 3, à n'importe quel ordinateur doté d'une interface USB, à d'autres systèmes PSP et à l'internet. La PSP disposait également d'une vaste gamme de fonctions multimédias telles que la lecture de vidéos, ce qui lui a valu d'être considérée comme un lecteur multimédia portable. La PSP est la seule console portable à utiliser un format de disque optique - Universal Media Disc (UMD) - comme principal support de stockage ; des jeux et des films ont été publiés sur ce format.</text>
-			<text lang="it">La PlayStation Portable (PSP) è una console portatile sviluppata e commercializzata da Sony Computer Entertainment. È stata rilasciata per la prima volta in Giappone il 12 dicembre 2004, in Nord America il 24 marzo 2005 e nelle regioni PAL il 1° settembre 2005 ed è la prima console portatile della linea PlayStation. Come console di settima generazione è stata in concorrenza con il Nintendo DS.
+      <text lang="it">La PlayStation Portable (PSP) è una console portatile sviluppata e commercializzata da Sony Computer Entertainment. È stata rilasciata per la prima volta in Giappone il 12 dicembre 2004, in Nord America il 24 marzo 2005 e nelle regioni PAL il 1° settembre 2005 ed è la prima console portatile della linea PlayStation. Come console di settima generazione è stata in concorrenza con il Nintendo DS.
 
 Lo sviluppo della PSP è stato annunciato durante l'E3 2003 e la console è stata presentata durante una conferenza stampa di Sony l'11 maggio 2004. Al momento della sua presentazione, la console era la più potente tra quelle portatili e rappresentava il primo vero concorrente delle console portatili di Nintendo dopo il fallimento di molti concorrenti, come N-Gage di Nokia. Le avanzate capacità grafiche della PSP la resero un popolare dispositivo di intrattenimento mobile, in grado di connettersi alle console PlayStation 2 e PlayStation 3, a qualsiasi computer dotato di interfaccia USB, ad altre console PSP e a Internet. La PSP disponeva anche di una vasta gamma di funzioni multimediali, come la riproduzione di video, e per questo è stata considerata anche un lettore multimediale portatile. La PSP è l'unica console portatile a utilizzare un formato di disco ottico - Universal Media Disc (UMD) - come supporto di memorizzazione principale; su questo formato sono stati pubblicati sia giochi che film.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

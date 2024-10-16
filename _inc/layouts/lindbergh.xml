@@ -1,191 +1,196 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.3 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
-			<pos>0.305 0.45</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>14</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.025 0.45" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.6 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
-			<pos>0.69 0.45</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>-14</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.41 0.45" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<pos>0.499 0.47</pos>
-			<maxSize>0.175</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.184</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-left" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
-			<pos>0.392 0.48</pos>
-			<maxSize>0.14</maxSize>
-			<rotation>-76</rotation>
-			<storyboard>
-				<animation property="pos" to="0.112 0.48" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-right" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
-			<pos>0.607 0.48</pos>
-			<maxSize>0.14</maxSize>
-			<rotation>76</rotation>
-			<storyboard>
-				<animation property="pos" to="0.327 0.48" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<pos>0.499 0.47</pos>
-			<maxSize>0.162</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.22</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.182</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
-			<pos>0.621 0.47</pos>
-			<maxSize>0.14</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.341 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox3" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
-			<pos>0.38 0.47</pos>
-			<maxSize>0.14</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.1 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2005</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Sega</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Lindbergh</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>Unlike previous arcade platforms which had either been bespoke systems or based on home console technology, the Lindbergh family (and virtually all of its successors) mirror the architecture seen in standard PCs, with a Intel Pentium 4 as its main CPU and graphics cards supplied by NVIDIA. Sega had originally planned to use the Microsoft's Xbox 360 as the basis for the arcade board, but is thought to have opted for standard PC hardware as this proved more cost-effective.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-left" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.3 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
+      <pos>0.305 0.45</pos>
+      <minSize>0.1 0.3</minSize>
+      <rotation>14</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.025 0.45" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-right" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.6 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+      <pos>0.69 0.45</pos>
+      <minSize>0.1 0.3</minSize>
+      <rotation>-14</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.41 0.45" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <pos>0.499 0.47</pos>
+      <maxSize>0.175</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.184</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-left" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
+      <pos>0.392 0.48</pos>
+      <maxSize>0.14</maxSize>
+      <rotation>-76</rotation>
+      <storyboard>
+        <animation property="pos" to="0.112 0.48" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-right" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+      <pos>0.607 0.48</pos>
+      <maxSize>0.14</maxSize>
+      <rotation>76</rotation>
+      <storyboard>
+        <animation property="pos" to="0.327 0.48" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <pos>0.499 0.47</pos>
+      <maxSize>0.162</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.22</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.182</maxSize>
+      <zIndex>26</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+      <pos>0.621 0.47</pos>
+      <maxSize>0.14</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.341 0.47" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox3" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
+      <pos>0.38 0.47</pos>
+      <maxSize>0.14</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.1 0.47" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2005</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Sega</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Lindbergh</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>Unlike previous arcade platforms which had either been bespoke systems or based on home console technology, the Lindbergh family (and virtually all of its successors) mirror the architecture seen in standard PCs, with a Intel Pentium 4 as its main CPU and graphics cards supplied by NVIDIA. Sega had originally planned to use the Microsoft's Xbox 360 as the basis for the arcade board, but is thought to have opted for standard PC hardware as this proved more cost-effective.
 
 According to Sega-AM2 head Hiroshi Kataoka, porting Lindbergh titles (such as Virtua Fighter 5) to Sony's PlayStation 3 was generally easier than porting to Xbox 360, because the Lindbergh and PS3 use a similar GPU.
 
 Lindbergh was introduced by Sega when the arcade industry and the company itself was at great change. Ultimately, only Initial D Arcade Stage 4 (Then renamed to Initial D: Extreme Stage), Virtua Fighter 5, After Burner Climax and The House of the Dead 4 were released on console, with the latter two being ported half a decade later. Arcade games became increasingly exclusive to arcade operators, to keep incentive for people to go to actual venues both in Japan and in the western world.</text>
-			<text lang="pl">W przeciwieństwie do poprzednich platform arcade, które były albo systemami na zamówienie, albo bazowały na technologii konsoli domowych, rodzina Lindbergh (i praktycznie wszyscy jej następcy) odzwierciedla architekturę standardowych komputerów PC, z procesorem Intel Pentium 4 jako głównym procesorem i kartami graficznymi dostarczonymi przez firmę NVIDIA. Firma Sega początkowo planowała wykorzystać konsolę Xbox 360 firmy Microsoft jako podstawę platformy, ale przypuszcza się, że zdecydowała się na standardowy sprzęt PC, ponieważ okazało się to bardziej opłacalne.
+      <text lang="pl">W przeciwieństwie do poprzednich platform arcade, które były albo systemami na zamówienie, albo bazowały na technologii konsoli domowych, rodzina Lindbergh (i praktycznie wszyscy jej następcy) odzwierciedla architekturę standardowych komputerów PC, z procesorem Intel Pentium 4 jako głównym procesorem i kartami graficznymi dostarczonymi przez firmę NVIDIA. Firma Sega początkowo planowała wykorzystać konsolę Xbox 360 firmy Microsoft jako podstawę platformy, ale przypuszcza się, że zdecydowała się na standardowy sprzęt PC, ponieważ okazało się to bardziej opłacalne.
 
 Według szefa Sega-AM2 Hiroshi Kataoka, portowanie gier z Lindbergh (takich jak Virtua Fighter 5) na PlayStation 3 firmy Sony było generalnie łatwiejsze niż na Xbox 360, ponieważ Lindbergh i PS3 wykorzystują podobny procesor graficzny.
 
 Lindbergh został wprowadzony przez firmę Sega w momencie, gdy branża gier arcade i sama firma przechodziły wielkie zmiany. Ostatecznie na konsolach ukazały się tylko Initial D Arcade Stage 4 (przemianowane następnie na Initial D: Extreme Stage), Virtua Fighter 5, After Burner Climax i The House of the Dead 4, przy czym dwie ostatnie zostały przeportowane pół dekady później. Gry zręcznościowe stawały się coraz bardziej ekskluzywne dla operatorów salonów, aby zachęcić ludzi do chodzenia do prawdziwych salonów, zarówno w Japonii, jak i na Zachodzie.</text>
-			<text lang="ru">Аркадная система, выпускаемая фирмой Sega. Построена на аппаратных средствах PC, стало быть имеет идентичную архитектуру. Было много разговоров про эмуляцию системы до её релиза, хотя Sega официально объявила что в системе применено множество способов защиты от нарушения авторского права. Они заключаются в использовании специфической материнской платы, на южном мосту которой расположен кодек-чип, шифрующий/дешифрующий информацию, поступающую с DVD привода и HDD.
+      <text lang="pt">Ao contrário das plataformas de fliperama anteriores, que eram ou sistemas sob encomenda ou baseados na tecnologia de consoles domésticos, a família Lindbergh (e praticamente todos os seus sucessores) reflete a arquitetura de computadores PC padrão, com um processador Intel Pentium 4 como o principal processador e placas gráficas fornecidas pela NVIDIA. A Sega inicialmente planejou usar o Xbox 360 da Microsoft como base para a plataforma, mas acredita-se que optou por hardware padrão de PC porque se mostrou mais econômico.
+
+De acordo com o chefe da Sega-AM2 Hiroshi Kataoka, portar jogos do Lindbergh (como Virtua Fighter 5) para o PlayStation 3 da Sony era geralmente mais fácil do que para o Xbox 360, pois o Lindbergh e o PS3 usam um processador gráfico semelhante.
+
+O Lindbergh foi lançado pela Sega em um momento em que a indústria de fliperama e a própria empresa estavam passando por grandes mudanças. No final das contas, apenas Initial D Arcade Stage 4 (renomeado posteriormente para Initial D: Extreme Stage), Virtua Fighter 5, After Burner Climax e The House of the Dead 4 foram lançados para consoles, sendo que os dois últimos foram portados meia década depois. Os jogos de fliperama estavam se tornando cada vez mais exclusivos para os operadores de salões, para incentivar as pessoas a ir para os salões reais, tanto no Japão quanto no Ocidente.</text>
+      <text lang="ru">Аркадная система, выпускаемая фирмой Sega. Построена на аппаратных средствах PC, стало быть имеет идентичную архитектуру. Было много разговоров про эмуляцию системы до её релиза, хотя Sega официально объявила что в системе применено множество способов защиты от нарушения авторского права. Они заключаются в использовании специфической материнской платы, на южном мосту которой расположен кодек-чип, шифрующий/дешифрующий информацию, поступающую с DVD привода и HDD.
 
 Согласно заявлению Хироси Катаоки, президента Sega AM2, портировать тайтлы Lindbergh (такие как Virtual Fighter 5) на PlayStation 3 легче, чем портировать на Xbox 360, поскольку Lindbergh и PS3 используют GPU, разработанные одной компанией, Nvidia.
 
 Наследником Lindbergh стала серия Ring (RingEdge и RingWide), что означает что для системы больше не будут выпускаться игры, и последней игрой для неё стала MJ4 Evolution.</text>
-			<text lang="es">A diferencia de las plataformas arcade anteriores, que habían sido sistemas a medida o basados en la tecnología de las consolas domésticas, la familia Lindbergh (y prácticamente todas sus sucesoras) refleja la arquitectura de los PC estándar, con un Intel Pentium 4 como CPU principal y tarjetas gráficas suministradas por NVIDIA. En un principio, Sega había planeado utilizar la Xbox 360 de Microsoft como base para la placa arcade, pero se cree que optó por el hardware estándar de PC al resultar más rentable.
+      <text lang="es">A diferencia de las plataformas arcade anteriores, que habían sido sistemas a medida o basados en la tecnología de las consolas domésticas, la familia Lindbergh (y prácticamente todas sus sucesoras) refleja la arquitectura de los PC estándar, con un Intel Pentium 4 como CPU principal y tarjetas gráficas suministradas por NVIDIA. En un principio, Sega había planeado utilizar la Xbox 360 de Microsoft como base para la placa arcade, pero se cree que optó por el hardware estándar de PC al resultar más rentable.
 
 Según el responsable de Sega-AM2, Hiroshi Kataoka, portar títulos de Lindbergh (como Virtua Fighter 5) a la PlayStation 3 de Sony fue, en general, más fácil que hacerlo a Xbox 360, porque Lindbergh y PS3 utilizan una GPU similar.
 
 Sega introdujo Lindbergh cuando la industria de los salones recreativos y la propia compañía se encontraban en plena transformación. Al final, sólo Initial D Arcade Stage 4 (luego rebautizado como Initial D: Extreme Stage), Virtua Fighter 5, After Burner Climax y The House of the Dead 4 se lanzaron en consola, siendo estos dos últimos portados media década después. Los juegos arcade se hicieron cada vez más exclusivos de los operadores de salones recreativos, para seguir incentivando a la gente a acudir a los locales reales, tanto en Japón como en Occidente.</text>
-			<text lang="de">Im Gegensatz zu früheren Arcade-Plattformen, die entweder maßgeschneiderte Systeme waren oder auf Heimkonsolentechnologie basierten, spiegelt die Lindbergh-Familie (und praktisch alle ihre Nachfolger) die Architektur von Standard-PCs wider, mit einem Intel Pentium 4 als Hauptprozessor und Grafikkarten von NVIDIA. Ursprünglich hatte Sega geplant, die Xbox 360 von Microsoft als Basis für die Spielhallenplatine zu verwenden, aber es wird angenommen, dass man sich für Standard-PC-Hardware entschieden hat, da sich diese als kostengünstiger erwies.
+      <text lang="de">Im Gegensatz zu früheren Arcade-Plattformen, die entweder maßgeschneiderte Systeme waren oder auf Heimkonsolentechnologie basierten, spiegelt die Lindbergh-Familie (und praktisch alle ihre Nachfolger) die Architektur von Standard-PCs wider, mit einem Intel Pentium 4 als Hauptprozessor und Grafikkarten von NVIDIA. Ursprünglich hatte Sega geplant, die Xbox 360 von Microsoft als Basis für die Spielhallenplatine zu verwenden, aber es wird angenommen, dass man sich für Standard-PC-Hardware entschieden hat, da sich diese als kostengünstiger erwies.
 
 Laut Sega-AM2-Chef Hiroshi Kataoka war die Portierung von Lindbergh-Titeln (wie Virtua Fighter 5) auf Sonys PlayStation 3 im Allgemeinen einfacher als die Portierung auf die Xbox 360, da Lindbergh und PS3 eine ähnliche GPU verwenden.
 
 Lindbergh wurde von Sega zu einer Zeit eingeführt, als sich die Arcade-Industrie und das Unternehmen selbst in einem großen Umbruch befanden. Letztendlich wurden nur Initial D Arcade Stage 4 (damals umbenannt in Initial D: Extreme Stage), Virtua Fighter 5, After Burner Climax und The House of the Dead 4 auf Konsolen veröffentlicht, wobei die beiden letzteren ein halbes Jahrzehnt später portiert wurden. Arcade-Spiele wurden zunehmend exklusiv für Arcade-Betreiber angeboten, um den Anreiz zu erhalten, sowohl in Japan als auch in der westlichen Welt in die Spielhallen zu gehen.</text>
-			<text lang="fr">Contrairement aux plateformes d'arcade précédentes qui étaient soit des systèmes sur mesure, soit basées sur la technologie des consoles de salon, la famille Lindbergh (et pratiquement tous ses successeurs) reflète l'architecture des PC standard, avec un Intel Pentium 4 comme processeur principal et des cartes graphiques fournies par NVIDIA. Sega avait initialement prévu d'utiliser la Xbox 360 de Microsoft comme base de la carte d'arcade, mais on pense qu'il a opté pour du matériel PC standard, qui s'est avéré plus rentable.
+      <text lang="fr">Contrairement aux plateformes d'arcade précédentes qui étaient soit des systèmes sur mesure, soit basées sur la technologie des consoles de salon, la famille Lindbergh (et pratiquement tous ses successeurs) reflète l'architecture des PC standard, avec un Intel Pentium 4 comme processeur principal et des cartes graphiques fournies par NVIDIA. Sega avait initialement prévu d'utiliser la Xbox 360 de Microsoft comme base de la carte d'arcade, mais on pense qu'il a opté pour du matériel PC standard, qui s'est avéré plus rentable.
 
 Selon Hiroshi Kataoka, responsable de Sega-AM2, le portage des titres Lindbergh (tels que Virtua Fighter 5) sur la PlayStation 3 de Sony était généralement plus facile que sur la Xbox 360, car le Lindbergh et la PS3 utilisent un GPU similaire.
 
 Lindbergh a été introduit par Sega alors que l'industrie des salles d'arcade et l'entreprise elle-même étaient en pleine mutation. En fin de compte, seuls Initial D Arcade Stage 4 (rebaptisé ensuite Initial D : Extreme Stage), Virtua Fighter 5, After Burner Climax et The House of the Dead 4 sont sortis sur console, les deux derniers ayant été portés une demi-décennie plus tard. Les jeux d'arcade sont devenus de plus en plus exclusifs aux exploitants de salles d'arcade, afin d'inciter les gens à se rendre dans les salles réelles, tant au Japon que dans le monde occidental.</text>
-			<text lang="it">A differenza delle precedenti piattaforme arcade, che erano sistemi su misura o basati sulla tecnologia delle console domestiche, la famiglia Lindbergh (e praticamente tutti i suoi successori) rispecchia l'architettura dei PC standard, con un Intel Pentium 4 come CPU principale e schede grafiche fornite da NVIDIA. Sega aveva inizialmente previsto di utilizzare la Xbox 360 di Microsoft come base per la scheda arcade, ma si pensa che abbia optato per l'hardware dei PC standard in quanto si è rivelato più conveniente.
+      <text lang="it">A differenza delle precedenti piattaforme arcade, che erano sistemi su misura o basati sulla tecnologia delle console domestiche, la famiglia Lindbergh (e praticamente tutti i suoi successori) rispecchia l'architettura dei PC standard, con un Intel Pentium 4 come CPU principale e schede grafiche fornite da NVIDIA. Sega aveva inizialmente previsto di utilizzare la Xbox 360 di Microsoft come base per la scheda arcade, ma si pensa che abbia optato per l'hardware dei PC standard in quanto si è rivelato più conveniente.
 
 Secondo il responsabile di Sega-AM2 Hiroshi Kataoka, il porting dei titoli Lindbergh (come Virtua Fighter 5) su PlayStation 3 di Sony è stato generalmente più semplice di quello su Xbox 360, perché Lindbergh e PS3 utilizzano una GPU simile.
 
 Lindbergh è stato introdotto da Sega quando l'industria degli arcade e l'azienda stessa erano in grande cambiamento. Alla fine, solo Initial D Arcade Stage 4 (poi rinominato Initial D: Extreme Stage), Virtua Fighter 5, After Burner Climax e The House of the Dead 4 vennero rilasciati su console, mentre gli ultimi due vennero riproposti mezzo decennio dopo. I giochi arcade divennero sempre più esclusivi per i gestori di sale giochi, per incentivare la gente a recarsi nei locali reali sia in Giappone che nel mondo occidentale.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

@@ -1,92 +1,94 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.364</pos>
-			<maxSize>0.34</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.364" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.364</pos>
-			<maxSize>0.33</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.364" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1996</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Apple</text>
-		</text>
-	<!-- Regional consoles/computers -->
-		<text name="TextManufacturer" extra="true" region="eu"/>
-		<text name="TextManufacturer" extra="true" region="us"/>
-		<text name="TextManufacturer" extra="true" region="jp">
-			<text>Bandai</text>
-		</text>
-		
-		<text name="TextName" extra="true">
-			<text>Pippin</text>
-		</text>
-	<!-- Regional consoles/computers -->
-		<text name="TextName" extra="true" region="eu"/>
-		<text name="TextName" extra="true" region="us"/>
-		<text name="TextName" extra="true" region="jp">
-			<text>Pippin Atmark</text>
-		</text>
-		
-		<text name="TextDesc" extra="true">
-			<text>The Apple Pippin is an open multimedia technology platform, designed by Apple Computer, and marketed as PiPP!N. According to Apple, Pippin was directed at the home market as "an integral part of the consumer audiovisual, stereo, and television environment."
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.5 0.364</pos>
+      <maxSize>0.34</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.364" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.5 0.364</pos>
+      <maxSize>0.33</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.364" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1996</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Apple</text>
+    </text>
+    <!-- Regional consoles/computers -->
+    <text name="TextManufacturer" extra="true" region="eu"/>
+    <text name="TextManufacturer" extra="true" region="us"/>
+    <text name="TextManufacturer" extra="true" region="jp">
+      <text>Bandai</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Pippin</text>
+    </text>
+    <!-- Regional consoles/computers -->
+    <text name="TextName" extra="true" region="eu"/>
+    <text name="TextName" extra="true" region="us"/>
+    <text name="TextName" extra="true" region="jp">
+      <text>Pippin Atmark</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Apple Pippin is an open multimedia technology platform, designed by Apple Computer, and marketed as PiPP!N. According to Apple, Pippin was directed at the home market as "an integral part of the consumer audiovisual, stereo, and television environment."
 
 Pippin is based on the Apple Macintosh platform, including the classic Mac OS architecture. Apple built a demonstration device based on Pippin called "Pippin Power Player," and used it to demonstrate the platform at trade shows and to the media, in order to attract potential software developers and hardware manufacturers.
 Apple licensed the Pippin technology to third-party companies. Bandai Company Ltd. developed the Atmark and @WORLD models, and focused them on the gaming and entertainment business in Japan, Canada and the United States. Katz Media developed the KMP 2000, and focused it on vertical markets throughout Europe and Canada.</text>
-			<text lang="pl">Apple Pippin to otwarta platforma technologii multimedialnych, zaprojektowana przez Apple Computer i sprzedawana jako PiPP!N. Według Apple, Pippin był skierowany na rynek domowy jako "integralna część konsumenckiego środowiska audiowizualnego, stereo i telewizyjnego".
+      <text lang="pl">Apple Pippin to otwarta platforma technologii multimedialnych, zaprojektowana przez Apple Computer i sprzedawana jako PiPP!N. Według Apple, Pippin był skierowany na rynek domowy jako "integralna część konsumenckiego środowiska audiowizualnego, stereo i telewizyjnego".
 
 Pippin bazuje na platformie Apple Macintosh, w tym na klasycznej architekturze Mac OS. Apple zbudowało urządzenie demonstracyjne oparte na Pippin o nazwie "Pippin Power Player" i wykorzystało je do zademonstrowania platformy na targach i w mediach, aby przyciągnąć potencjalnych twórców oprogramowania i producentów sprzętu.
 Apple licencjonowało technologię Pippin firmom zewnętrznym. Bandai Company Ltd. opracowała modele Atmark i @WORLD i skoncentrowała je na branży gier i rozrywki w Japonii, Kanadzie i Stanach Zjednoczonych. Firma Katz Media opracowała model KMP 2000 i skoncentrowała go na rynkach wertykalnych w Europie i Kanadzie.</text>
-			<text lang="ru">Apple Pippin - это открытая мультимедийная технологическая платформа, разработанная компанией Apple Computer и представленная на рынке под названием PiPP!N. По заявлению Apple, Pippin была ориентирована на домашний рынок как "неотъемлемая часть потребительской аудиовизуальной, стерео и телевизионной среды".
+      <text lang="pt">Apple Pippin é uma plataforma aberta de tecnologia multimídia, projetada pela Apple Computer e vendida como PiPP!N. De acordo com a Apple, o Pippin era direcionado para o mercado doméstico como "parte integral do ambiente de áudio e vídeo, estéreo e televisão do consumidor".
+
+O Pippin é baseado na plataforma Apple Macintosh, incluindo a arquitetura clássica do Mac OS. A Apple construiu um protótipo baseado no Pippin chamado "Pippin Power Player" e o usou para demonstrar a plataforma em feiras e na mídia, a fim de atrair potenciais desenvolvedores de software e fabricantes de hardware.
+A Apple licenciou a tecnologia Pippin para empresas externas. A Bandai Company Ltd. desenvolveu os modelos Atmark e @WORLD e os concentrou na indústria de jogos e entretenimento no Japão, Canadá e Estados Unidos. A Katz Media desenvolveu o modelo KMP 2000 e o concentrou em mercados verticais na Europa e no Canadá.</text>
+      <text lang="ru">Apple Pippin - это открытая мультимедийная технологическая платформа, разработанная компанией Apple Computer и представленная на рынке под названием PiPP!N. По заявлению Apple, Pippin была ориентирована на домашний рынок как "неотъемлемая часть потребительской аудиовизуальной, стерео и телевизионной среды".
 
 Pippin базируется на платформе Apple Macintosh, включая классическую архитектуру Mac OS. Компания Apple создала демонстрационное устройство на базе Pippin под названием "Pippin Power Player" и использовала его для демонстрации платформы на выставках и в СМИ с целью привлечения потенциальных разработчиков программного обеспечения и производителей оборудования.
 Apple лицензировала технологию Pippin сторонним компаниям. Компания Bandai Company Ltd. разработала модели Atmark и @WORLD и ориентировала их на игровой и развлекательный бизнес в Японии, Канаде и США. Компания Katz Media разработала модель KMP 2000 и ориентировала ее на вертикальные рынки в Европе и Канаде.</text>
-			<text lang="es">Apple Pippin es una plataforma de tecnología multimedia abierta, diseñada por Apple Computer y comercializada como PiPP!N. Según Apple, Pippin estaba dirigido al mercado doméstico como "parte integrante del entorno audiovisual, estéreo y televisivo del consumidor."
+      <text lang="es">Apple Pippin es una plataforma de tecnología multimedia abierta, diseñada por Apple Computer y comercializada como PiPP!N. Según Apple, Pippin estaba dirigido al mercado doméstico como "parte integrante del entorno audiovisual, estéreo y televisivo del consumidor."
 
 Pippin se basa en la plataforma Apple Macintosh, incluida la arquitectura clásica Mac OS. Apple construyó un dispositivo de demostración basado en Pippin llamado "Pippin Power Player", y lo utilizó para demostrar la plataforma en ferias comerciales y ante los medios de comunicación, con el fin de atraer a posibles desarrolladores de software y fabricantes de hardware.
 Apple concedió licencias de la tecnología Pippin a terceras empresas. Bandai Company Ltd. desarrolló los modelos Atmark y @WORLD, y los centró en el negocio del juego y el entretenimiento en Japón, Canadá y Estados Unidos. Katz Media desarrolló el KMP 2000, y lo centró en los mercados verticales de Europa y Canadá.</text>
-			<text lang="de">Apple Pippin ist eine offene Multimedia-Technologieplattform, die von Apple Computer entwickelt und als PiPP!N vermarktet wurde. Nach Angaben von Apple ist Pippin für den privaten Markt als "integraler Bestandteil der audiovisuellen, Stereo- und Fernsehumgebung für Verbraucher" gedacht.
+      <text lang="de">Apple Pippin ist eine offene Multimedia-Technologieplattform, die von Apple Computer entwickelt und als PiPP!N vermarktet wurde. Nach Angaben von Apple ist Pippin für den privaten Markt als "integraler Bestandteil der audiovisuellen, Stereo- und Fernsehumgebung für Verbraucher" gedacht.
 
 Pippin basiert auf der Apple Macintosh-Plattform, einschließlich der klassischen Mac OS-Architektur. Apple baute ein auf Pippin basierendes Vorführgerät namens "Pippin Power Player" und nutzte es zur Demonstration der Plattform auf Messen und gegenüber den Medien, um potenzielle Softwareentwickler und Hardwarehersteller zu gewinnen.
 Apple lizenzierte die Pippin-Technologie an Drittunternehmen. Bandai Company Ltd. entwickelte die Modelle Atmark und @WORLD und konzentrierte sie auf das Spiele- und Unterhaltungsgeschäft in Japan, Kanada und den Vereinigten Staaten. Katz Media entwickelte das KMP 2000 und konzentrierte es auf vertikale Märkte in Europa und Kanada.</text>
-			<text lang="fr">L'Apple Pippin est une plate-forme technologique multimédia ouverte, conçue par Apple Computer et commercialisée sous le nom de PiPP!N. Selon Apple, Pippin était destiné au marché domestique en tant que "partie intégrante de l'environnement audiovisuel, stéréo et télévisuel du consommateur".
+      <text lang="fr">L'Apple Pippin est une plate-forme technologique multimédia ouverte, conçue par Apple Computer et commercialisée sous le nom de PiPP!N. Selon Apple, Pippin était destiné au marché domestique en tant que "partie intégrante de l'environnement audiovisuel, stéréo et télévisuel du consommateur".
 
 Pippin est basé sur la plate-forme Apple Macintosh, y compris l'architecture classique Mac OS. Apple a construit un appareil de démonstration basé sur Pippin, appelé "Pippin Power Player", et l'a utilisé pour présenter la plate-forme lors de salons professionnels et aux médias, afin d'attirer des développeurs de logiciels et des fabricants de matériel potentiels.
 Apple a concédé des licences sur la technologie Pippin à des sociétés tierces. Bandai Company Ltd. a développé les modèles Atmark et @WORLD, qu'elle a axés sur les jeux et le divertissement au Japon, au Canada et aux États-Unis. Katz Media a développé le KMP 2000 et l'a axé sur les marchés verticaux en Europe et au Canada.</text>
-			<text lang="it">L'Apple Pippin è una piattaforma tecnologica multimediale aperta, progettata da Apple Computer e commercializzata con il nome di PiPP!N. Secondo Apple, Pippin era destinato al mercato domestico come "parte integrante dell'ambiente audiovisivo, stereo e televisivo dei consumatori".
+      <text lang="it">L'Apple Pippin è una piattaforma tecnologica multimediale aperta, progettata da Apple Computer e commercializzata con il nome di PiPP!N. Secondo Apple, Pippin era destinato al mercato domestico come "parte integrante dell'ambiente audiovisivo, stereo e televisivo dei consumatori".
 
 Pippin è basato sulla piattaforma Apple Macintosh, compresa la classica architettura Mac OS. Apple ha costruito un dispositivo dimostrativo basato su Pippin, chiamato "Pippin Power Player", e lo ha utilizzato per dimostrare la piattaforma alle fiere e ai media, al fine di attirare potenziali sviluppatori di software e produttori di hardware.
 Apple ha concesso in licenza la tecnologia Pippin a società terze. Bandai Company Ltd. ha sviluppato i modelli Atmark e @WORLD, concentrandosi sul settore dei giochi e dell'intrattenimento in Giappone, Canada e Stati Uniti. Katz Media ha sviluppato il modello KMP 2000, focalizzandolo su mercati verticali in Europa e Canada.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

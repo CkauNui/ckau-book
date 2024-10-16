@@ -1,57 +1,58 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
-			<pos>0.435 0.445</pos>
-			<maxSize>0.29</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.155 0.445" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
-			<pos>0.435 0.445</pos>
-			<maxSize>0.275</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.155 0.445" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2019</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>DevilutionX</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>DevilutionX is a source port of Diablo and Hellfire that strives to make it simple to run the game while providing engine improvements, bugfixes, and some optional quality of life features.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
+      <pos>0.435 0.445</pos>
+      <maxSize>0.29</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.155 0.445" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
+      <pos>0.435 0.445</pos>
+      <maxSize>0.275</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.155 0.445" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2019</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>DevilutionX</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>DevilutionX is a source port of Diablo and Hellfire that strives to make it simple to run the game while providing engine improvements, bugfixes, and some optional quality of life features.
 			</text>
-			<text lang="pl">DevilutionX jest źródłowym portem Diablo i Hellfire, który stara się ułatwić uruchamianie gry, a jednocześnie zapewnia ulepszenia silnika, poprawki błędów i kilka opcjonalnych funkcji poprawiających jakość gry.</text>
-			<text lang="ru">DevilutionX — проект реконструкции оригинального Diablo.
+      <text lang="pl">DevilutionX jest źródłowym portem Diablo i Hellfire, który stara się ułatwić uruchamianie gry, a jednocześnie zapewnia ulepszenia silnika, poprawki błędów i kilka opcjonalnych funkcji poprawiających jakość gry.</text>
+      <text lang="pt">DevilutionX é um porto de código-fonte do Diablo e Hellfire, que visa facilitar a execução do jogo, ao mesmo tempo em que fornece aprimoramentos de engine, correções de bugs e alguns recursos opcionais que melhoram a qualidade de jogo.</text>
+      <text lang="ru">DevilutionX — проект реконструкции оригинального Diablo.
 
 Открытый проект, основанный на восстановленном исходном коде оригинального Diablo. Его разработчики занимаются переносом игры на новые платформы, включая Mac, Linux, Nintendo 3DS, Nintendo Switch, PlayStation Vita и портативные консоли на базе OpenDingux, а также улучшением совместимости игры с современными версиями Windows. Постепенно также происходит реализация новых возможностей, вроде поддержки широкоэкранных мониторов и улучшений интерфейса и управления.</text>
-			<text lang="es">DevilutionX es un port fuente de Diablo y Hellfire que se esfuerza por simplificar la ejecución del juego a la vez que proporciona mejoras en el motor, correcciones de errores y algunas características opcionales de calidad de vida.</text>
-			<text lang="de">DevilutionX ist eine Quellcode-Portierung von Diablo und Hellfire, die darauf abzielt, die Ausführung des Spiels zu vereinfachen und gleichzeitig Verbesserungen an der Engine, Fehlerbehebungen und einige optionale Lebensqualitätsfunktionen bereitzustellen.</text>
-			<text lang="fr">DevilutionX est un portage source de Diablo et Hellfire qui s'efforce de simplifier l'exécution du jeu tout en apportant des améliorations au moteur, des corrections de bugs et quelques fonctionnalités optionnelles de qualité de vie.</text>
-			<text lang="it">DevilutionX è un porting sorgente di Diablo e Hellfire che si sforza di rendere semplice l'esecuzione del gioco, fornendo al contempo miglioramenti al motore, correzioni di bug e alcune caratteristiche opzionali di qualità della vita.</text>
-		</text>
-	</view>
+      <text lang="es">DevilutionX es un port fuente de Diablo y Hellfire que se esfuerza por simplificar la ejecución del juego a la vez que proporciona mejoras en el motor, correcciones de errores y algunas características opcionales de calidad de vida.</text>
+      <text lang="de">DevilutionX ist eine Quellcode-Portierung von Diablo und Hellfire, die darauf abzielt, die Ausführung des Spiels zu vereinfachen und gleichzeitig Verbesserungen an der Engine, Fehlerbehebungen und einige optionale Lebensqualitätsfunktionen bereitzustellen.</text>
+      <text lang="fr">DevilutionX est un portage source de Diablo et Hellfire qui s'efforce de simplifier l'exécution du jeu tout en apportant des améliorations au moteur, des corrections de bugs et quelques fonctionnalités optionnelles de qualité de vie.</text>
+      <text lang="it">DevilutionX è un porting sorgente di Diablo e Hellfire che si sforza di rendere semplice l'esecuzione del gioco, fornendo al contempo miglioramenti al motore, correzioni di bug e alcune caratteristiche opzionali di qualità della vita.</text>
+    </text>
+  </view>
 </theme>

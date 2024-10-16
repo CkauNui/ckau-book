@@ -1,78 +1,83 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.36</pos>
-			<maxSize>0.34</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.36</pos>
-			<maxSize>0.31</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2003</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>iQue</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>iQue Player</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The iQue Player is a handheld TV game version of the Nintendo 64 console that was manufactured by iQue, a joint venture between Nintendo and Taiwanese-American scientist Wei Yen after China had banned the sale of home video games.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.5 0.36</pos>
+      <maxSize>0.34</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.5 0.36</pos>
+      <maxSize>0.31</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2003</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>iQue</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>iQue Player</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The iQue Player is a handheld TV game version of the Nintendo 64 console that was manufactured by iQue, a joint venture between Nintendo and Taiwanese-American scientist Wei Yen after China had banned the sale of home video games.
 
 Its Chinese name is Shén Yóu Ji (神游机), literally "Divine Gaming Machine". Shényóu (神游) is a double entendre as "to make a mental journey". It was never released in any English-speaking countries, but the name "iQue Player" appears in the instruction manual.
 The console and its controller are one unit, plugging directly into the television. A box accessory allows multiplayer gaming.</text>
-			<text lang="pl">Odtwarzacz iQue to ręczna wersja gry telewizyjnej konsoli Nintendo 64, która została wyprodukowana przez iQue, wspólne przedsięwzięcie Nintendo i tajwańsko-amerykańskiego naukowca Wei Yen po tym, jak Chiny zakazały sprzedaży domowych gier wideo.
+      <text lang="pl">Odtwarzacz iQue to ręczna wersja gry telewizyjnej konsoli Nintendo 64, która została wyprodukowana przez iQue, wspólne przedsięwzięcie Nintendo i tajwańsko-amerykańskiego naukowca Wei Yen po tym, jak Chiny zakazały sprzedaży domowych gier wideo.
 
 Jego chińska nazwa to Shén Yóu Ji (神游机), dosłownie "Divine Gaming Machine". Shényóu (神游) to podwójne entendre jako "odbyć podróż mentalną". Nigdy nie została wydana w żadnym z krajów anglojęzycznych, ale w instrukcji obsługi pojawia się nazwa "iQue Player".
 Konsola i jej kontroler stanowią jedno urządzenie, podłączane bezpośrednio do telewizora. Dodatek w postaci pudełka umożliwia grę wieloosobową.</text>
-			<text lang="ru">iQue Player это портативная версия телевизионной игры для консоли Nintendo 64, которая была произведена компанией iQue, совместным предприятием Nintendo и тайваньско-американского ученого Вэй Ена после того, как в Китае запретили продажу домашних видеоигр.
+      <text lang="pt">O iQue Player é uma versão portátil do console de videogame Nintendo 64, produzida pela iQue, uma joint venture da Nintendo com o cientista taiwanês-americano Wei Yen, após a China proibir a venda de videogames domésticos.
+
+Seu nome chinês é Shén Yóu Ji (神游机), que significa literalmente "Máquina de Jogo Divina". Shényóu (神游) é um duplo sentido, também significando "fazer uma viagem mental". Ele nunca foi lançado em nenhum país de língua inglesa, mas o manual de instruções usa o nome "iQue Player".
+
+O console e seu controle formam um único dispositivo, conectado diretamente à TV. Um acessório em forma de caixa permite jogos multiplayer.</text>
+      <text lang="ru">iQue Player это портативная версия телевизионной игры для консоли Nintendo 64, которая была произведена компанией iQue, совместным предприятием Nintendo и тайваньско-американского ученого Вэй Ена после того, как в Китае запретили продажу домашних видеоигр.
 
 Ее китайское название - Shén Yóu Ji (神游机), буквально "Божественная игровая машина". Shényóu (神游) - это двойное значение, означающее "совершить мысленное путешествие". Она никогда не выпускалась в англоязычных странах, но название "iQue Player" встречается в инструкции по эксплуатации.
 Консоль и ее контроллер представляют собой единый блок, подключаемый непосредственно к телевизору. Аксессуар в виде коробки позволяет играть в многопользовательские игры.</text>
-			<text lang="es">El iQue Player es una versión portátil de la consola Nintendo 64 fabricada por iQue, una empresa conjunta de Nintendo y el científico estadounidense de origen taiwanés Wei Yen, después de que China prohibiera la venta de videojuegos domésticos.
+      <text lang="es">El iQue Player es una versión portátil de la consola Nintendo 64 fabricada por iQue, una empresa conjunta de Nintendo y el científico estadounidense de origen taiwanés Wei Yen, después de que China prohibiera la venta de videojuegos domésticos.
 
 Su nombre chino es Shén Yóu Ji (神游机), literalmente "Máquina de juego divina". Shényóu (神游) es un doble sentido como "hacer un viaje mental". Nunca salió a la venta en ningún país de habla inglesa, pero el nombre "iQue Player" aparece en el manual de instrucciones.
 La consola y su mando son una sola unidad, que se conecta directamente al televisor. Un accesorio en forma de caja permite el juego multijugador.</text>
-			<text lang="de">Der iQue Player ist eine tragbare TV-Spielversion der Nintendo 64-Konsole, die von iQue, einem Joint Venture zwischen Nintendo und dem taiwanesisch-amerikanischen Wissenschaftler Wei Yen, hergestellt wurde, nachdem China den Verkauf von Heimvideospielen verboten hatte.
+      <text lang="de">Der iQue Player ist eine tragbare TV-Spielversion der Nintendo 64-Konsole, die von iQue, einem Joint Venture zwischen Nintendo und dem taiwanesisch-amerikanischen Wissenschaftler Wei Yen, hergestellt wurde, nachdem China den Verkauf von Heimvideospielen verboten hatte.
 
 Ihr chinesischer Name ist Shén Yóu Ji (神游机), wörtlich "Göttliche Spielmaschine". Shényóu (神游) ist eine Doppeldeutigkeit im Sinne von "eine mentale Reise machen". Es wurde nie in englischsprachigen Ländern veröffentlicht, aber der Name "iQue Player" erscheint in der Bedienungsanleitung.
 Die Konsole und ihr Controller bilden eine Einheit, die direkt an den Fernseher angeschlossen wird. Eine Zubehörbox ermöglicht Multiplayer-Spiele.</text>
-			<text lang="fr">L'iQue Player est une version télévisuelle portable de la console Nintendo 64 fabriquée par iQue, une coentreprise entre Nintendo et le scientifique américain d'origine taïwanaise Wei Yen, après que la Chine a interdit la vente de jeux vidéo domestiques.
+      <text lang="fr">L'iQue Player est une version télévisuelle portable de la console Nintendo 64 fabriquée par iQue, une coentreprise entre Nintendo et le scientifique américain d'origine taïwanaise Wei Yen, après que la Chine a interdit la vente de jeux vidéo domestiques.
 
 Son nom chinois est Shén Yóu Ji (神游机), littéralement "Divine Gaming Machine". Shényóu (神游) est un double sens qui signifie "faire un voyage mental". La console n'a jamais été commercialisée dans les pays anglophones, mais le nom "iQue Player" apparaît dans le manuel d'instructions.
 La console et sa manette ne forment qu'une seule unité et se branchent directement sur la télévision. Une boîte accessoire permet de jouer en multijoueurs.</text>
-			<text lang="it">L'iQue Player è una versione portatile per TV della console Nintendo 64, prodotta da iQue, una joint venture tra Nintendo e lo scienziato taiwanese-americano Wei Yen, dopo che la Cina aveva vietato la vendita di videogiochi domestici.
+      <text lang="it">L'iQue Player è una versione portatile per TV della console Nintendo 64, prodotta da iQue, una joint venture tra Nintendo e lo scienziato taiwanese-americano Wei Yen, dopo che la Cina aveva vietato la vendita di videogiochi domestici.
 
 Il suo nome cinese è Shén Yóu Ji (神游机), letteralmente "Macchina da gioco divina". Shényóu (神游) è un doppio senso come "fare un viaggio mentale". Non è mai stato rilasciato in nessun paese di lingua inglese, ma il nome "iQue Player" compare nel manuale di istruzioni.
 La console e il suo controller sono un'unica unità che si collega direttamente al televisore. Un accessorio della scatola permette di giocare in multiplayer.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

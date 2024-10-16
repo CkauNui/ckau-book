@@ -1,85 +1,90 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
-			<pos>0.499 0.355</pos>
-			<maxSize>0.25</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.219 0.355" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
-			<pos>0.499 0.355</pos>
-			<maxSize>0.24</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.219 0.355" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1984</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Exelvision</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>EXL 100</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The EXL 100 is a computer released in 1984 by the French brand Exelvision, based on the TMS 7020 microprocessor from Texas Instruments. This was an uncommon design choice (at the time almost all home computers either used 6502 or Z80 microprocessors) but justified by the fact that the engineering team behind the machine (Jacques Palpacuer, Victor Zebrouck and Christian Petiot) came from Texas instruments. It was part of the government Computing for All plan and 9000 units were used in schools.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+      <pos>0.499 0.355</pos>
+      <maxSize>0.25</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.219 0.355" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+      <pos>0.499 0.355</pos>
+      <maxSize>0.24</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.219 0.355" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1984</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Exelvision</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>EXL 100</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The EXL 100 is a computer released in 1984 by the French brand Exelvision, based on the TMS 7020 microprocessor from Texas Instruments. This was an uncommon design choice (at the time almost all home computers either used 6502 or Z80 microprocessors) but justified by the fact that the engineering team behind the machine (Jacques Palpacuer, Victor Zebrouck and Christian Petiot) came from Texas instruments. It was part of the government Computing for All plan and 9000 units were used in schools.
 
 The design is unusual compared with similar machines of the time, as it had a separate central processing unit. Two keyboards are available: one with rubber keys and another with a more standard touch. Keyboard and joystick were not connected to the central unit by a cable but by infrared link, and are battery powered. Many extensions were available: modem, floppy disk drive and a 16 KB CMOS RAM powered by an integrated lithium battery. Its TMS 5220 sound processor was capable of French speech synthesis, another unusual feature.
 
 The machine came with a BASIC version on cartridge named ExelBasic.</text>
-			<text lang="it">L'EXL 100 è un computer rilasciato nel 1984 dal marchio francese Exelvision, basato sul microprocessore TMS 7020 di Texas Instruments. Si trattava di una scelta progettuale poco comune (all'epoca quasi tutti gli home computer utilizzavano microprocessori 6502 o Z80), ma giustificata dal fatto che il team di ingegneri dietro la macchina (Jacques Palpacuer, Victor Zebrouck e Christian Petiot) proveniva da Texas instruments. Faceva parte del piano governativo Computing for All e 9000 unità furono utilizzate nelle scuole.
+      <text lang="it">L'EXL 100 è un computer rilasciato nel 1984 dal marchio francese Exelvision, basato sul microprocessore TMS 7020 di Texas Instruments. Si trattava di una scelta progettuale poco comune (all'epoca quasi tutti gli home computer utilizzavano microprocessori 6502 o Z80), ma giustificata dal fatto che il team di ingegneri dietro la macchina (Jacques Palpacuer, Victor Zebrouck e Christian Petiot) proveniva da Texas instruments. Faceva parte del piano governativo Computing for All e 9000 unità furono utilizzate nelle scuole.
 
 Il design è insolito rispetto alle macchine simili dell'epoca, in quanto dispone di un'unità di elaborazione centrale separata. Sono disponibili due tastiere: una con tasti in gomma e l'altra con un tocco più standard. La tastiera e il joystick non erano collegati all'unità centrale con un cavo ma con un collegamento a infrarossi e sono alimentati a batteria. Erano disponibili numerose estensioni: modem, lettore di floppy disk e una RAM CMOS da 16 KB alimentata da una batteria al litio integrata. Il processore audio TMS 5220 era in grado di effettuare la sintesi vocale francese, un'altra caratteristica insolita.
 
 La macchina era dotata di una versione BASIC su cartuccia denominata ExelBasic.</text>
-			<text lang="fr">L'EXL 100 est un ordinateur commercialisé en 1984 par la marque française Exelvision, basé sur le microprocesseur TMS 7020 de Texas Instruments. Il s'agissait d'un choix de conception peu commun (à l'époque, presque tous les ordinateurs domestiques utilisaient des microprocesseurs 6502 ou Z80), mais justifié par le fait que l'équipe d'ingénieurs à l'origine de la machine (Jacques Palpacuer, Victor Zebrouck et Christian Petiot) provenait de Texas Instruments. Il faisait partie du plan gouvernemental "Informatique pour tous" et 9000 unités ont été utilisées dans les écoles.
+      <text lang="fr">L'EXL 100 est un ordinateur commercialisé en 1984 par la marque française Exelvision, basé sur le microprocesseur TMS 7020 de Texas Instruments. Il s'agissait d'un choix de conception peu commun (à l'époque, presque tous les ordinateurs domestiques utilisaient des microprocesseurs 6502 ou Z80), mais justifié par le fait que l'équipe d'ingénieurs à l'origine de la machine (Jacques Palpacuer, Victor Zebrouck et Christian Petiot) provenait de Texas Instruments. Il faisait partie du plan gouvernemental "Informatique pour tous" et 9000 unités ont été utilisées dans les écoles.
 
 Sa conception est inhabituelle par rapport aux machines similaires de l'époque, car il dispose d'une unité centrale de traitement séparée. Deux claviers sont disponibles : l'un avec des touches en caoutchouc et l'autre avec une touche plus standard. Le clavier et le joystick n'étaient pas reliés à l'unité centrale par un câble mais par une liaison infrarouge, et sont alimentés par des piles. De nombreuses extensions étaient disponibles : modem, lecteur de disquettes et une mémoire vive CMOS de 16 Ko alimentée par une pile au lithium intégrée. Son processeur de son TMS 5220 était capable de synthétiser la parole en français, une autre caractéristique inhabituelle.
 
 La machine était livrée avec une version BASIC sur cartouche nommée ExelBasic.</text>
-			<text lang="de">Der EXL 100 ist ein 1984 von der französischen Marke Exelvision herausgegebener Computer, der auf dem Mikroprozessor TMS 7020 von Texas Instruments basiert. Dies war eine ungewöhnliche Designwahl (zu dieser Zeit verwendeten fast alle Heimcomputer entweder 6502- oder Z80-Mikroprozessoren), die jedoch durch die Tatsache gerechtfertigt war, dass das Ingenieurteam hinter dem Gerät (Jacques Palpacuer, Victor Zebrouck und Christian Petiot) von Texas Instruments kam. Er war Teil des Regierungsplans "Computing for All" und 9000 Einheiten wurden in Schulen eingesetzt.
+      <text lang="de">Der EXL 100 ist ein 1984 von der französischen Marke Exelvision herausgegebener Computer, der auf dem Mikroprozessor TMS 7020 von Texas Instruments basiert. Dies war eine ungewöhnliche Designwahl (zu dieser Zeit verwendeten fast alle Heimcomputer entweder 6502- oder Z80-Mikroprozessoren), die jedoch durch die Tatsache gerechtfertigt war, dass das Ingenieurteam hinter dem Gerät (Jacques Palpacuer, Victor Zebrouck und Christian Petiot) von Texas Instruments kam. Er war Teil des Regierungsplans "Computing for All" und 9000 Einheiten wurden in Schulen eingesetzt.
 
 Das Design ist im Vergleich zu ähnlichen Maschinen der damaligen Zeit ungewöhnlich, da es eine separate zentrale Verarbeitungseinheit hatte. Es gibt zwei Tastaturen: eine mit Gummitasten und eine andere mit einem Standardanschlag. Tastatur und Joystick waren nicht über ein Kabel, sondern über eine Infrarotverbindung mit der Zentraleinheit verbunden und wurden mit Batterien betrieben. Zahlreiche Erweiterungen waren verfügbar: Modem, Diskettenlaufwerk und ein 16 KB CMOS-RAM, das von einer integrierten Lithiumbatterie gespeist wurde. Der Soundprozessor TMS 5220 ermöglichte die französische Sprachsynthese, ein weiteres ungewöhnliches Merkmal.
 
 Das Gerät wurde mit einer BASIC-Version auf Kassette namens ExelBasic geliefert.</text>
-			<text lang="es">El EXL 100 es un ordenador lanzado en 1984 por la marca francesa Exelvision, basado en el microprocesador TMS 7020 de Texas Instruments. Se trata de una elección de diseño poco común (en aquella época, casi todos los ordenadores domésticos utilizaban microprocesadores 6502 o Z80), pero justificada por el hecho de que el equipo de ingenieros detrás de la máquina (Jacques Palpacuer, Victor Zebrouck y Christian Petiot) procedía de Texas instruments. Formaba parte del plan gubernamental Computing for All y se utilizaron 9.000 unidades en las escuelas.
+      <text lang="es">El EXL 100 es un ordenador lanzado en 1984 por la marca francesa Exelvision, basado en el microprocesador TMS 7020 de Texas Instruments. Se trata de una elección de diseño poco común (en aquella época, casi todos los ordenadores domésticos utilizaban microprocesadores 6502 o Z80), pero justificada por el hecho de que el equipo de ingenieros detrás de la máquina (Jacques Palpacuer, Victor Zebrouck y Christian Petiot) procedía de Texas instruments. Formaba parte del plan gubernamental Computing for All y se utilizaron 9.000 unidades en las escuelas.
 
 El diseño es inusual en comparación con máquinas similares de la época, ya que disponía de una unidad central de procesamiento independiente. Dispone de dos teclados: uno con teclas de goma y otro táctil más estándar. El teclado y el joystick no estaban conectados a la unidad central por cable, sino por infrarrojos, y funcionaban con pilas. Había muchas extensiones disponibles: módem, disquetera y una memoria RAM CMOS de 16 KB alimentada por una batería de litio integrada. Su procesador de sonido TMS 5220 era capaz de sintetizar el habla francesa, otra característica poco habitual.
 
 La máquina venía con una versión BASIC en cartucho llamada ExelBasic.</text>
-			<text lang="ru">EXL 100 - компьютер, выпущенный в 1984 году французской фирмой Exelvision на базе микропроцессора TMS 7020 компании Texas Instruments. Это был необычный выбор дизайна (в то время почти все домашние компьютеры использовали микропроцессоры 6502 или Z80), но он был оправдан тем, что команда инженеров, создавших машину (Жак Пальпакуэр, Виктор Зебрук и Кристиан Петио), была из Texas Instruments. Она была частью правительственного плана "Вычислительная техника для всех", и 9000 единиц использовались в школах.
+      <text lang="ru">EXL 100 - компьютер, выпущенный в 1984 году французской фирмой Exelvision на базе микропроцессора TMS 7020 компании Texas Instruments. Это был необычный выбор дизайна (в то время почти все домашние компьютеры использовали микропроцессоры 6502 или Z80), но он был оправдан тем, что команда инженеров, создавших машину (Жак Пальпакуэр, Виктор Зебрук и Кристиан Петио), была из Texas Instruments. Она была частью правительственного плана "Вычислительная техника для всех", и 9000 единиц использовались в школах.
 
 Конструкция необычна по сравнению с аналогичными машинами того времени, поскольку она имела отдельный центральный процессор. Выпускались две клавиатуры: с резиновыми клавишами и более стандартной сенсорной. Клавиатура и джойстик соединялись с центральным блоком не кабелем, а инфракрасной связью, и питались от батарей. Имелось множество расширений: модем, флоппи-дисковод и 16 КБ CMOS ОЗУ, питающееся от встроенной литиевой батареи. Его звуковой процессор TMS 5220 был способен синтезировать французскую речь, что является еще одной необычной особенностью.
 
 Машина поставлялась с версией BASIC на картридже под названием ExelBasic.</text>
-			<text lang="pl">EXL 100 to komputer wydany w 1984 roku przez francuską markę Exelvision, oparty na mikroprocesorze TMS 7020 firmy Texas Instruments. Był to nietypowy wybór projektowy (w tamtym czasie prawie wszystkie komputery domowe korzystały z mikroprocesorów 6502 lub Z80), ale uzasadniony faktem, że zespół inżynierów stojący za maszyną (Jacques Palpacuer, Victor Zebrouck i Christian Petiot) pochodził z Texas Instruments. Był on częścią rządowego planu Computing for All i 9000 egzemplarzy zostało wykorzystanych w szkołach.
+      <text lang="pl">EXL 100 to komputer wydany w 1984 roku przez francuską markę Exelvision, oparty na mikroprocesorze TMS 7020 firmy Texas Instruments. Był to nietypowy wybór projektowy (w tamtym czasie prawie wszystkie komputery domowe korzystały z mikroprocesorów 6502 lub Z80), ale uzasadniony faktem, że zespół inżynierów stojący za maszyną (Jacques Palpacuer, Victor Zebrouck i Christian Petiot) pochodził z Texas Instruments. Był on częścią rządowego planu Computing for All i 9000 egzemplarzy zostało wykorzystanych w szkołach.
 
 Konstrukcja jest nietypowa w porównaniu z podobnymi maszynami z tamtych czasów, ponieważ posiada oddzielną jednostkę centralną. Dostępne są dwie klawiatury: jedna z gumowymi klawiszami i druga z bardziej standardowymi klawiszami dotykowymi. Klawiatura i joystick nie były połączone z jednostką centralną kablem, lecz łączem na podczerwień i były zasilane bateryjnie. Dostępnych było wiele rozszerzeń: modem, stacja dyskietek i 16 KB pamięci CMOS RAM zasilanej zintegrowaną baterią litową. Jego procesor dźwięku TMS 5220 był zdolny do syntezy mowy francuskiej, co było kolejną niezwykłą cechą.
 
 Maszyna była dostarczana z wersją BASIC na kartridżu o nazwie ExelBasic.</text>
-		</text>
-	</view>
+      <text lang="pt">EXL 100 foi um computador lançado em 1984 pela marca francesa Exelvision, baseado no microprocessador TMS 7020 da Texas Instruments. Era uma escolha de projeto incomum (naquela época, quase todos os computadores domésticos usavam microprocessadores 6502 ou Z80), mas justificada pelo fato de a equipe de engenheiros por trás da máquina (Jacques Palpacuer, Victor Zebrouck e Christian Petiot) ter vindo da Texas Instruments. Ele fazia parte do plano governamental Computing for All e 9000 unidades foram usadas em escolas.
+
+O design é incomum em comparação com máquinas semelhantes da época, pois possui uma unidade central separada. Duas opções de teclado estão disponíveis: uma com teclas de borracha e outra com teclas sensíveis ao toque mais padrão. O teclado e o joystick não eram conectados à unidade central por cabo, mas por um link de infravermelho e eram alimentados por bateria. Diversas extensões estavam disponíveis: modem, unidade de disquete e 16 KB de memória CMOS RAM alimentada por uma bateria de lítio integrada. Seu processador de som TMS 5220 era capaz de sintetizar fala em francês, outra característica notável.
+
+A máquina era fornecida com uma versão do BASIC em cartucho chamada ExelBasic.</text>
+    </text>
+  </view>
 </theme>

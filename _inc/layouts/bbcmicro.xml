@@ -1,89 +1,94 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
-			<pos>0.452 0.439</pos>
-			<maxSize>0.235</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.172 0.439" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
-			<origin if="${screen.ratio} == '21/9'">0.39 0.5</origin>
-			<pos>0.452 0.439</pos>
-			<maxSize>0.225</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.172 0.439" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1981</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Acorn</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>BBC Micro</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The British Broadcasting Corporation Microcomputer System, or BBC Micro, is a series of home computers produced since 1981 by Acorn Computers for the BBC Computer Literacy Project. Thanks to this microcomputer Great Britain became one of the most computerized countries in the world.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
+      <pos>0.452 0.439</pos>
+      <maxSize>0.235</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.172 0.439" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
+      <origin if="${screen.ratio} == '21/9'">0.39 0.5</origin>
+      <pos>0.452 0.439</pos>
+      <maxSize>0.225</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.172 0.439" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1981</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Acorn</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>BBC Micro</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The British Broadcasting Corporation Microcomputer System, or BBC Micro, is a series of home computers produced since 1981 by Acorn Computers for the BBC Computer Literacy Project. Thanks to this microcomputer Great Britain became one of the most computerized countries in the world.
 
 The first type Model A BBC Micro had MOS6502 processor clocked at 2 MHz and 16 KB RAM. It could operate in eight graphic modes: from 640×256 (from Model B) in two colors, to 40×25 in eight colors.
 
 Although 12 models of the microcomputer were produced, the term BBC Micro is usually used for the first 4 models: Model A, B, B+64 and B+128.</text>
-			<text lang="pl">BBC Micro – seria komputerów domowych produkowanych od roku 1981 przez firmę Acorn Computers na potrzeby projektu BBC Computer Literacy Project. Dzięki temu mikrokomputerowi Wielka Brytania stała się jednym z najbardziej zinformatyzowanych krajów w świecie.
+      <text lang="pl">BBC Micro – seria komputerów domowych produkowanych od roku 1981 przez firmę Acorn Computers na potrzeby projektu BBC Computer Literacy Project. Dzięki temu mikrokomputerowi Wielka Brytania stała się jednym z najbardziej zinformatyzowanych krajów w świecie.
 
 Pierwszy typ Model A BBC Micro posiadał procesor MOS6502 taktowany zegarem 2 MHz i 16 KB RAM. Mógł pracować w ośmiu trybach graficznych: od 640×256 (od modelu B) w dwu kolorach, do 40×25 w ośmiu barwach.
 
 Chociaż wyprodukowano 12 modeli mikrokomputera, to określenie BBC Micro używa się zazwyczaj w stosunku do pierwszych 4 modeli: Model A, B, B+64 i B+128.</text>
-			<text lang="ru">Один из ранних домашних компьютеров. Был спроектирован и разработан компанией Acorn Computers для British Broadcasting Corporation (BBC).
+      <text lang="pt">BBC Micro – foi uma linha de computadores domésticos fabricados a partir de 1981 pela Acorn Computers para o projeto BBC Computer Literacy Project. Graças a esse microcomputador, a Grã-Bretanha se tornou um dos países mais informatizados do mundo.
+
+O primeiro modelo, o Model A BBC Micro, possuía um processador MOS6502 com clock de 2 MHz e 16 KB de RAM. Ele podia operar em oito modos gráficos: de 640×256 (a partir do modelo B) em duas cores, a 40×25 em oito cores.
+
+Embora tenham sido produzidos 12 modelos de microcomputador, a denominação BBC Micro geralmente se refere aos quatro primeiros modelos: Model A, B, B+64 e B+128.</text>
+      <text lang="ru">Один из ранних домашних компьютеров. Был спроектирован и разработан компанией Acorn Computers для British Broadcasting Corporation (BBC).
 
 В начале 1980-х BBC начала проект, который стал известен как BBC Computer Literacy Project. Этот проект был начат во многом в ответ на документальный фильм The Mighty Micro, в котором доктор Кристофер Эванс (англ. Christopher Evans) предсказал начинающуюся (микро-) компьютерную революцию и её влияние на экономику, индустрию и стиль жизни Великобритании.
 
 Компьютер был выпущен на рынок Великобритании под названием BBC Microcomputer в конце 1981 года; получил широкую популярность в этой стране; использовался в большинстве школ Великобритании для изучения компьютерной грамоты и информационных технологий. Попытки выхода с компьютером на американский рынок провалились, в основном из-за популярности там серии Apple II.
 
 BBC Micro вышел в двух версиях: Model A и Model B; сначала цена на модели была 235 £ и 335 £, соответственно, но почти сразу она поднялась до 299 £ и 399 £. Acorn ожидала объёмов продаж в 12 тыс., но в конечном счёте было продано более 1,5 млн компьютеров.</text>
-			<text lang="es">El British Broadcasting Corporation Microcomputer System, o BBC Micro, es una serie de ordenadores domésticos producidos desde 1981 por Acorn Computers para el BBC Computer Literacy Project. Gracias a este microordenador, Gran Bretaña se convirtió en uno de los países más informatizados del mundo.
+      <text lang="es">El British Broadcasting Corporation Microcomputer System, o BBC Micro, es una serie de ordenadores domésticos producidos desde 1981 por Acorn Computers para el BBC Computer Literacy Project. Gracias a este microordenador, Gran Bretaña se convirtió en uno de los países más informatizados del mundo.
 
 El primer tipo Modelo A BBC Micro tenía un procesador MOS6502 a 2 MHz y 16 KB de RAM. Podía funcionar en ocho modos gráficos: desde 640×256 (del Modelo B) en dos colores, hasta 40×25 en ocho colores.
 
 Aunque se fabricaron 12 modelos del microordenador, el término BBC Micro se suele utilizar para los 4 primeros modelos: Modelo A, B, B+64 y B+128.</text>
-			<text lang="de">Das British Broadcasting Corporation Microcomputer System, kurz BBC Micro, ist eine Serie von Heimcomputern, die seit 1981 von Acorn Computers für das BBC Computer Literacy Project hergestellt werden. Dank dieses Mikrocomputers wurde Großbritannien zu einem der am stärksten computerisierten Länder der Welt.
+      <text lang="de">Das British Broadcasting Corporation Microcomputer System, kurz BBC Micro, ist eine Serie von Heimcomputern, die seit 1981 von Acorn Computers für das BBC Computer Literacy Project hergestellt werden. Dank dieses Mikrocomputers wurde Großbritannien zu einem der am stärksten computerisierten Länder der Welt.
 
 Das erste Modell A des BBC Micro hatte einen MOS6502-Prozessor mit einer Taktfrequenz von 2 MHz und 16 KB RAM. Er konnte in acht Grafikmodi arbeiten: von 640×256 (vom Modell B) in zwei Farben bis 40×25 in acht Farben.
 
 Obwohl 12 Modelle des Mikrocomputers hergestellt wurden, wird die Bezeichnung BBC Micro gewöhnlich für die ersten 4 Modelle verwendet: Modell A, B, B+64 und B+128.</text>
-			<text lang="fr">Le British Broadcasting Corporation Microcomputer System, ou BBC Micro, est une série d'ordinateurs domestiques produits depuis 1981 par Acorn Computers pour le BBC Computer Literacy Project. Grâce à ce micro-ordinateur, la Grande-Bretagne est devenue l'un des pays les plus informatisés au monde.
+      <text lang="fr">Le British Broadcasting Corporation Microcomputer System, ou BBC Micro, est une série d'ordinateurs domestiques produits depuis 1981 par Acorn Computers pour le BBC Computer Literacy Project. Grâce à ce micro-ordinateur, la Grande-Bretagne est devenue l'un des pays les plus informatisés au monde.
 
 Le premier modèle A de BBC Micro était équipé d'un processeur MOS6502 cadencé à 2 MHz et d'une mémoire vive de 16 Ko. Il pouvait fonctionner en huit modes graphiques : de 640×256 (à partir du modèle B) en deux couleurs, à 40×25 en huit couleurs.
 
 Bien que 12 modèles de micro-ordinateurs aient été produits, le terme BBC Micro est généralement utilisé pour les 4 premiers modèles : Modèle A, B, B+64 et B+128.</text>
-			<text lang="it">Il British Broadcasting Corporation Microcomputer System, o BBC Micro, è una serie di home computer prodotti dal 1981 da Acorn Computers per il BBC Computer Literacy Project. Grazie a questo microcomputer la Gran Bretagna è diventata uno dei Paesi più informatizzati al mondo.
+      <text lang="it">Il British Broadcasting Corporation Microcomputer System, o BBC Micro, è una serie di home computer prodotti dal 1981 da Acorn Computers per il BBC Computer Literacy Project. Grazie a questo microcomputer la Gran Bretagna è diventata uno dei Paesi più informatizzati al mondo.
 
 Il primo tipo Model A BBC Micro aveva un processore MOS6502 con clock a 2 MHz e 16 KB di RAM. Poteva operare in otto modalità grafiche: da 640×256 (dal Modello B) a due colori, a 40×25 a otto colori.
 
 Sebbene siano stati prodotti 12 modelli di microcomputer, il termine BBC Micro viene solitamente utilizzato per i primi 4 modelli: Modello A, B, B+64 e B+128.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

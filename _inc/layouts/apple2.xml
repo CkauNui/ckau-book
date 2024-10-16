@@ -1,59 +1,59 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
-			<origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
-			<pos>0.482 0.325</pos>
-			<maxSize>0.27</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.202 0.325" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
-			<origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
-			<pos>0.482 0.325</pos>
-			<maxSize>0.26</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.202 0.325" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1977</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Apple</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Apple II</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Apple II (stylized as apple ][) is an 8-bit home computer and one of the world's first highly successful mass-produced microcomputer products. It was designed primarily by Steve Wozniak; Steve Jobs oversaw the development of the Apple II's foam-molded plastic case and Rod Holt developed the switching power supply. It was introduced by Jobs and Wozniak at the 1977 West Coast Computer Faire and marks Apple's first launch of a personal computer aimed at a consumer market—branded toward American households rather than businessmen or computer hobbyists.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+      <origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
+      <pos>0.482 0.325</pos>
+      <maxSize>0.27</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.202 0.325" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+      <origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
+      <pos>0.482 0.325</pos>
+      <maxSize>0.26</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.202 0.325" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1977</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Apple</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Apple II</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Apple II (stylized as apple ][) is an 8-bit home computer and one of the world's first highly successful mass-produced microcomputer products. It was designed primarily by Steve Wozniak; Steve Jobs oversaw the development of the Apple II's foam-molded plastic case and Rod Holt developed the switching power supply. It was introduced by Jobs and Wozniak at the 1977 West Coast Computer Faire and marks Apple's first launch of a personal computer aimed at a consumer market—branded toward American households rather than businessmen or computer hobbyists.
 
 The three computers that Byte Magazine referred to as the "1977 Trinity" of home computing: the Commodore PET 2001, the Apple II, and the TRS-80 Model I.
 Byte magazine referred to the Apple II, Commodore PET 2001 and the TRS-80 as the "1977 Trinity." The Apple II had the defining feature of being able to display color graphics, and this was why the Apple logo was redesigned to have a spectrum of colors.
 
 The Apple II is the first model in the Apple II series, followed by the Apple II+, Apple IIe, Apple IIc, and the 16-bit Apple IIgs–all of which remained compatible. Production of the last available model, the Apple IIe, ceased in November 1993.</text>
-			<text lang="pl">Apple II – 8-bitowy komputer domowy opracowany w latach 70. XX wieku przez firmę Apple Computer (konstruktorem był Steve Wozniak). Maszyna zawierała procesor MOS 6502 firmy MOS Technology oraz 4 KB pamięci.
+      <text lang="pl">Apple II – 8-bitowy komputer domowy opracowany w latach 70. XX wieku przez firmę Apple Computer (konstruktorem był Steve Wozniak). Maszyna zawierała procesor MOS 6502 firmy MOS Technology oraz 4 KB pamięci.
 Sprzedawany był od 1977 roku. Jako pierwszy komputer na świecie mógł wyświetlić kolorową grafikę. Komputer był popularny w latach 80. XX wieku, równolegle z zyskującymi rynek komputerami osobistymi typu IBM PC pracującymi pod kontrolą MS-DOS oraz 8-bitowymi komputerami firm Commodore i Atari. Z uwagi na otwartą architekturę (możliwość rozszerzenia funkcjonalności poprzez instalację kart wewnątrz komputera, identycznie jak w IBM PC), Apple II stał się popularny również jako komputer do pracy.
 
 Produkowano następujące odmiany komputera Apple II, niejednokrotnie były to całkowicie odmienne konstrukcje:
@@ -72,35 +72,53 @@ Dane techniczne:
 - 4kB RAM, maksymalnie 48kB
 - rozdzielczość ekranu 280 × 192, Ekran pozwalał wyświetlić 24 wiersze w 40 kolumnach tekstu
 - System operacyjny WOZ Integer BASIC w ROM-ie</text>
-			<text lang="ru">Первый персональный компьютер, серийно выпускавшийся компанией Apple Computer. Apple II стал прямым наследником любительского компьютера Apple I, никогда не производившегося в больших количествах, но уже содержавшего многие идеи, которые обеспечили успех Apple II.
+      <text lang="pt">Apple II – um computador doméstico de 8 bits desenvolvido na década de 1970 pela Apple Computer (o designer foi Steve Wozniak). A máquina tinha um processador MOS 6502 da MOS Technology e 4 KB de memória. Foi vendido a partir de 1977. Foi o primeiro computador do mundo a poder exibir gráficos coloridos. O computador foi popular na década de 1980, paralelamente aos computadores pessoais do tipo IBM PC que estavam ganhando o mercado, operando sob o controle do MS-DOS, e aos computadores de 8 bits da Commodore e Atari. Devido à sua arquitetura aberta (possibilidade de expandir a funcionalidade através da instalação de placas dentro do computador, da mesma forma que no IBM PC), o Apple II também se tornou popular como computador de trabalho.
+
+Foram produzidas as seguintes versões do computador Apple II, muitas vezes com designs completamente diferentes:
+- Apple II – o primeiro modelo de 1977, Integer BASIC, em modo texto ele exibia apenas letras maiúsculas
+- Apple II Plus – 1979, 48 KB de RAM, recursos gráficos aprimorados, novo firmware (Applesoft BASIC)
+- Apple II J-Plus – 1979, versão para o mercado japonês com layout de teclado alterado para permitir digitação em katakana
+- Apple II Europlus – 1979, versão para o mercado europeu, saída de vídeo alterada para PAL monocromático
+- Apple IIe – 1983, 64 KB de RAM, teclado expandido, letras minúsculas na tela, 80 colunas de texto
+- Apple IIc – 1984, modelo integrado, não expansível (unidade de disquete e funcionalidade das placas de expansão mais populares em uma única caixa)
+- Apple IIc Plus – 1988, processador mais rápido, unidade de disquete de 3,5 polegadas
+- Apple IIGS
+- Apple IIGS WOZ Limited Edition com assinatura de Steve Wozniak.
+
+Especificações técnicas:
+- processador MOS 6502
+- 4kB de RAM, no máximo 48kB
+- resolução de tela 280 × 192, a tela permitia exibir 24 linhas em 40 colunas de texto
+- Sistema operacional WOZ Integer BASIC em ROM.</text>
+      <text lang="ru">Первый персональный компьютер, серийно выпускавшийся компанией Apple Computer. Apple II стал прямым наследником любительского компьютера Apple I, никогда не производившегося в больших количествах, но уже содержавшего многие идеи, которые обеспечили успех Apple II.
 
 Компьютер был впервые представлен в 1977 году на выставке West Coast Computer Faire и стал одним из первых и наиболее успешных персональных компьютеров того времени. Производилось несколько моделей Apple II, и наиболее популярная из них, с относительно небольшими изменениями, продавалась до 1990-х годов. Всего было произведено от 5 до 6 миллионов экземпляров Apple II.
 
 В отличие от конкурентов, внешний вид Apple II разрабатывался так, чтобы он органично смотрелся на офисном столе, а не в качестве оснащения специальных компьютерных залов и вычислительных центров. Также компьютер обладал многими уникальными для того времени возможностями, включая цветной графический режим, пусть и с определёнными ограничениями, воспроизведение звука, а также встроенный интерпретатор языка Бейсик. По сравнению с более ранними машинами, эти возможности были хорошо документированы и просты в изучении. Тем самым, Apple II дал начало революции в области персональных компьютеров: это была машина для обычных людей, а не только для любителей, учёных или инженеров.</text>
-			<text lang="es">El Apple II (estilizado como manzana ][) es un ordenador doméstico de 8 bits y uno de los primeros microordenadores de gran éxito producidos en masa. Fue diseñado principalmente por Steve Wozniak; Steve Jobs supervisó el desarrollo de la carcasa de plástico moldeada con espuma del Apple II y Rod Holt desarrolló la fuente de alimentación conmutada. Fue presentado por Jobs y Wozniak en la West Coast Computer Faire de 1977 y marca el primer lanzamiento por parte de Apple de un ordenador personal dirigido a un mercado de consumo -dirigido a los hogares estadounidenses en lugar de a hombres de negocios o aficionados a la informática.
+      <text lang="es">El Apple II (estilizado como manzana ][) es un ordenador doméstico de 8 bits y uno de los primeros microordenadores de gran éxito producidos en masa. Fue diseñado principalmente por Steve Wozniak; Steve Jobs supervisó el desarrollo de la carcasa de plástico moldeada con espuma del Apple II y Rod Holt desarrolló la fuente de alimentación conmutada. Fue presentado por Jobs y Wozniak en la West Coast Computer Faire de 1977 y marca el primer lanzamiento por parte de Apple de un ordenador personal dirigido a un mercado de consumo -dirigido a los hogares estadounidenses en lugar de a hombres de negocios o aficionados a la informática.
 
 Los tres ordenadores a los que Byte Magazine se refería como la "Trinidad de 1977" de la informática doméstica: el Commodore PET 2001, el Apple II y el TRS-80 Model I.
 La revista Byte se refirió al Apple II, el Commodore PET 2001 y el TRS-80 como la "Trinidad de 1977". El Apple II tenía la característica definitoria de poder mostrar gráficos en color, y por eso se rediseñó el logotipo de Apple para que tuviera un espectro de colores.
 
 El Apple II es el primer modelo de la serie Apple II, al que siguieron el Apple II+, el Apple IIe, el Apple IIc y el Apple IIgs de 16 bits, todos los cuales siguieron siendo compatibles. La producción del último modelo disponible, el Apple IIe, cesó en noviembre de 1993.</text>
-			<text lang="de">Der Apple II (stilisiert als apple ][) ist ein 8-Bit-Heimcomputer und eines der ersten sehr erfolgreichen, in Massenproduktion hergestellten Mikrocomputerprodukte der Welt. Er wurde hauptsächlich von Steve Wozniak entworfen; Steve Jobs überwachte die Entwicklung des schaumgeformten Kunststoffgehäuses des Apple II und Rod Holt entwickelte das Schaltnetzteil. Er wurde von Jobs und Wozniak auf der West Coast Computer Faire 1977 vorgestellt und markierte Apples erste Markteinführung eines Personalcomputers, der sich an einen Verbrauchermarkt richtete - und zwar an amerikanische Haushalte und nicht an Geschäftsleute oder Computerbastler.
+      <text lang="de">Der Apple II (stilisiert als apple ][) ist ein 8-Bit-Heimcomputer und eines der ersten sehr erfolgreichen, in Massenproduktion hergestellten Mikrocomputerprodukte der Welt. Er wurde hauptsächlich von Steve Wozniak entworfen; Steve Jobs überwachte die Entwicklung des schaumgeformten Kunststoffgehäuses des Apple II und Rod Holt entwickelte das Schaltnetzteil. Er wurde von Jobs und Wozniak auf der West Coast Computer Faire 1977 vorgestellt und markierte Apples erste Markteinführung eines Personalcomputers, der sich an einen Verbrauchermarkt richtete - und zwar an amerikanische Haushalte und nicht an Geschäftsleute oder Computerbastler.
 
 Die drei Computer, die das Byte Magazine als die "Dreifaltigkeit" des Heimcomputers von 1977 bezeichnete: der Commodore PET 2001, der Apple II und der TRS-80 Model I.
 Das Byte Magazine bezeichnete den Apple II, den Commodore PET 2001 und den TRS-80 als die "Dreifaltigkeit von 1977". Der Apple II zeichnete sich dadurch aus, dass er Farbgrafiken anzeigen konnte, weshalb das Apple-Logo neu gestaltet wurde und ein Farbspektrum enthielt.
 
 Der Apple II ist das erste Modell der Apple II-Serie, gefolgt vom Apple II+, Apple IIe, Apple IIc und dem 16-Bit-Apple IIgs, die alle kompatibel blieben. Die Produktion des letzten verfügbaren Modells, des Apple IIe, wurde im November 1993 eingestellt.</text>
-			<text lang="fr">L'Apple II (stylisé en apple ][) est un ordinateur domestique 8 bits et l'un des premiers micro-ordinateurs au monde à avoir connu un grand succès en termes de production de masse. Il a été conçu principalement par Steve Wozniak ; Steve Jobs a supervisé le développement du boîtier en plastique moulé en mousse de l'Apple II et Rod Holt a développé l'alimentation à découpage. Il a été présenté par Jobs et Wozniak lors de la West Coast Computer Faire de 1977 et marque le premier lancement par Apple d'un ordinateur personnel destiné à un marché de consommateurs, c'est-à-dire aux ménages américains plutôt qu'aux hommes d'affaires ou aux amateurs d'informatique.
+      <text lang="fr">L'Apple II (stylisé en apple ][) est un ordinateur domestique 8 bits et l'un des premiers micro-ordinateurs au monde à avoir connu un grand succès en termes de production de masse. Il a été conçu principalement par Steve Wozniak ; Steve Jobs a supervisé le développement du boîtier en plastique moulé en mousse de l'Apple II et Rod Holt a développé l'alimentation à découpage. Il a été présenté par Jobs et Wozniak lors de la West Coast Computer Faire de 1977 et marque le premier lancement par Apple d'un ordinateur personnel destiné à un marché de consommateurs, c'est-à-dire aux ménages américains plutôt qu'aux hommes d'affaires ou aux amateurs d'informatique.
 
 Les trois ordinateurs que Byte Magazine a qualifiés de "Trinité 1977" de l'informatique domestique : le Commodore PET 2001, l'Apple II et le TRS-80 Model I.
 Byte Magazine a appelé l'Apple II, le Commodore PET 2001 et le TRS-80 la "Trinité de 1977". L'Apple II avait la particularité de pouvoir afficher des graphiques en couleur, et c'est la raison pour laquelle le logo Apple a été redessiné pour présenter un spectre de couleurs.
 
 L'Apple II est le premier modèle de la série Apple II, suivi par l'Apple II+, l'Apple IIe, l'Apple IIc et l'Apple IIgs 16 bits, qui sont tous restés compatibles. La production du dernier modèle disponible, l'Apple IIe, a cessé en novembre 1993.</text>
-			<text lang="it">L'Apple II (stilizzato come mela ][) è un home computer a 8 bit e uno dei primi microcomputer di massa di grande successo al mondo. Fu progettato principalmente da Steve Wozniak; Steve Jobs supervisionò lo sviluppo del case in plastica espansa dell'Apple II e Rod Holt sviluppò l'alimentatore switching. Fu presentato da Jobs e Wozniak alla West Coast Computer Faire del 1977 e segna il primo lancio da parte di Apple di un personal computer destinato a un mercato consumer - indirizzato alle famiglie americane piuttosto che agli uomini d'affari o agli hobbisti del computer.
+      <text lang="it">L'Apple II (stilizzato come mela ][) è un home computer a 8 bit e uno dei primi microcomputer di massa di grande successo al mondo. Fu progettato principalmente da Steve Wozniak; Steve Jobs supervisionò lo sviluppo del case in plastica espansa dell'Apple II e Rod Holt sviluppò l'alimentatore switching. Fu presentato da Jobs e Wozniak alla West Coast Computer Faire del 1977 e segna il primo lancio da parte di Apple di un personal computer destinato a un mercato consumer - indirizzato alle famiglie americane piuttosto che agli uomini d'affari o agli hobbisti del computer.
 
 I tre computer che Byte Magazine ha definito la "Trinità del 1977" dell'home computing: il Commodore PET 2001, l'Apple II e il TRS-80 Model I.
 La rivista Byte si riferiva all'Apple II, al Commodore PET 2001 e al TRS-80 come alla "Trinità del 1977". L'Apple II aveva la caratteristica principale di poter visualizzare grafica a colori, e per questo motivo il logo Apple fu ridisegnato in modo da avere uno spettro di colori.
 
 L'Apple II fu il primo modello della serie Apple II, seguito dall'Apple II+, dall'Apple IIe, dall'Apple IIc e dall'Apple IIgs a 16 bit, tutti rimasti compatibili. La produzione dell'ultimo modello disponibile, l'Apple IIe, è cessata nel novembre 1993.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

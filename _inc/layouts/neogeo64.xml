@@ -1,187 +1,192 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.4 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
-			<pos>0.287 0.36</pos>
-			<minSize>0.1 0.4</minSize>
-			<rotation>26</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.007 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.6 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.95 0.5</origin>
-			<pos>0.713 0.36</pos>
-			<minSize>0.1 0.4</minSize>
-			<rotation>-26</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.433 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<pos>0.50 0.38</pos>
-			<maxSize>0.2</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.38" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-left" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.53 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.371 0.39</pos>
-			<maxSize>0.13</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.15</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.14</maxSize>
-			<rotation>-64</rotation>
-			<storyboard>
-				<animation property="pos" to="0.091 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-right" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.47 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.628 0.39</pos>
-			<maxSize>0.13</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.15</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.14</maxSize>
-			<rotation>64</rotation>
-			<storyboard>
-				<animation property="pos" to="0.348 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.27</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
-			<pos>0.50 0.38</pos>
-			<maxSize>0.182</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.38" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.638 0.39</pos>
-			<maxSize>0.14</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.358 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox3" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.36 0.39</pos>
-			<maxSize>0.14</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.08 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1997</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>SNK</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Hyper Neo Geo 64</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>Arcade system created by SNK, and released in September 1997, as the successor of the Neo Geo MVS, within the Neo Geo family.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-left" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.4 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
+      <pos>0.287 0.36</pos>
+      <minSize>0.1 0.4</minSize>
+      <rotation>26</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.007 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-right" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.6 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0.95 0.5</origin>
+      <pos>0.713 0.36</pos>
+      <minSize>0.1 0.4</minSize>
+      <rotation>-26</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.433 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <pos>0.50 0.38</pos>
+      <maxSize>0.2</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.38" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-left" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.53 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.371 0.39</pos>
+      <maxSize>0.13</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.15</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.14</maxSize>
+      <rotation>-64</rotation>
+      <storyboard>
+        <animation property="pos" to="0.091 0.39" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-right" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.47 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.628 0.39</pos>
+      <maxSize>0.13</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.15</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.14</maxSize>
+      <rotation>64</rotation>
+      <storyboard>
+        <animation property="pos" to="0.348 0.39" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.27</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
+      <pos>0.50 0.38</pos>
+      <maxSize>0.182</maxSize>
+      <zIndex>26</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.38" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.638 0.39</pos>
+      <maxSize>0.14</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.358 0.39" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox3" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.36 0.39</pos>
+      <maxSize>0.14</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.08 0.39" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1997</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>SNK</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Hyper Neo Geo 64</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>Arcade system created by SNK, and released in September 1997, as the successor of the Neo Geo MVS, within the Neo Geo family.
 
 It is the first and only SNK hardware set capable of rendering in 3D, and was meant to replace SNK's older MVS system on the market. Company executives planned for the project to bring SNK into the new era of 3D gaming that had arisen during the mid-1990s, and had planned for a corresponding home system to replace the aging and expensive AES home console.
 
 However it never managed to match the huge success of the MVS, and reached its end of life in 1999. Only seven games were produced for the arcade variation of the system, none of which proved particularly popular, and the project was discontinued. The proposed home system never got beyond initial planning stages and only one of the arcade games, Fatal Fury: Wild Ambition, has been ported to home systems.</text>
-			<text lang="pl">System zręcznościowy stworzony przez SNK, a wydany we wrześniu 1997 roku, jako następca Neo Geo MVS, w ramach rodziny Neo Geo.
+      <text lang="pl">System zręcznościowy stworzony przez SNK, a wydany we wrześniu 1997 roku, jako następca Neo Geo MVS, w ramach rodziny Neo Geo.
 
 Jest to pierwszy i jedyny zestaw sprzętowy SNK zdolny do renderowania w 3D i miał zastąpić na rynku starszy system MVS firmy SNK. Kierownictwo firmy planowało, że ten projekt wprowadzi SNK w nową erę gier 3D, która powstała w połowie lat 90-tych, a także zaplanowało odpowiedni system domowy, który miał zastąpić starzejącą się i drogą konsolę AES.
 
 Jednak nigdy nie udało się jej dorównać ogromnemu sukcesowi MVS i w 1999 roku zakończyła swój żywot. Na arcade'ową odmianę systemu wyprodukowano tylko siedem gier, z których żadna nie okazała się szczególnie popularna, a projekt został przerwany. Proponowany system domowy nigdy nie wyszedł poza wstępne etapy planowania i tylko jedna z gier arcade, Fatal Fury: Wild Ambition, została przeniesiona na systemy domowe.</text>
-			<text lang="ru">Аркадная система, созданная компанией SNK и выпущенная в сентябре 1997 года как преемник Neo Geo MVS в семействе Neo Geo.
+      <text lang="pt">Sistema de arcade criado pela SNK e lançado em setembro de 1997, como sucessor do Neo Geo MVS, dentro da família Neo Geo.
+
+É o primeiro e único conjunto de hardware da SNK capaz de renderização 3D e tinha como objetivo substituir no mercado o sistema MVS mais antigo da SNK. A direção da empresa planejava que esse projeto levasse a SNK a uma nova era de jogos 3D, que surgiu na metade da década de 1990, e também planejou um sistema doméstico apropriado que substituiria o console AES envelhecido e caro.
+
+No entanto, ela nunca conseguiu igualar o enorme sucesso do MVS e, em 1999, encerrou sua vida. Apenas sete jogos foram produzidos para a versão de arcade do sistema, nenhum dos quais se tornou particularmente popular, e o projeto foi abandonado. O sistema doméstico proposto nunca passou das etapas iniciais de planejamento e apenas um dos jogos de arcade, Fatal Fury: Wild Ambition, foi transferido para sistemas domésticos.</text>
+      <text lang="ru">Аркадная система, созданная компанией SNK и выпущенная в сентябре 1997 года как преемник Neo Geo MVS в семействе Neo Geo.
 
 Это первая и единственная аппаратная система SNK, способная к 3D-рендерингу, которая должна была заменить на рынке более старую систему SNK MVS. Руководители компании планировали, что этот проект введет SNK в новую эру 3D-игр, которая возникла в середине 1990-х годов, и планировали соответствующую домашнюю систему для замены устаревшей и дорогой домашней консоли AES.
 
 Однако она так и не смогла сравниться с огромным успехом MVS и закончила свое существование в 1999 году. Для аркадной версии системы было выпущено всего семь игр, ни одна из которых не оказалась особенно популярной, и проект был прекращен. Предполагаемая домашняя система так и не вышла за рамки начального планирования, и только одна из аркадных игр, Fatal Fury: Wild Ambition, была перенесена на домашние системы.</text>
-			<text lang="es">Sistema arcade creado por SNK, y lanzado en septiembre de 1997, como sucesor del Neo Geo MVS, dentro de la familia Neo Geo.
+      <text lang="es">Sistema arcade creado por SNK, y lanzado en septiembre de 1997, como sucesor del Neo Geo MVS, dentro de la familia Neo Geo.
 
 Es el primer y único hardware de SNK capaz de renderizar en 3D, y estaba destinado a sustituir al antiguo sistema MVS de SNK en el mercado. Los ejecutivos de la compañía planearon que el proyecto introdujera a SNK en la nueva era de los juegos en 3D que había surgido a mediados de la década de 1990, y habían previsto un sistema doméstico correspondiente para sustituir a la anticuada y costosa consola doméstica AES.
 
 Sin embargo, nunca consiguió igualar el enorme éxito de la MVS, y llegó al final de su vida útil en 1999. Sólo se produjeron siete juegos para la variante arcade del sistema, ninguno de los cuales resultó especialmente popular, y el proyecto se interrumpió. El sistema doméstico propuesto nunca superó las fases iniciales de planificación y sólo uno de los juegos arcade, Fatal Fury: Wild Ambition, ha sido portado a sistemas domésticos.</text>
-			<text lang="de">Arcade-System, das von SNK entwickelt und im September 1997 als Nachfolger des Neo Geo MVS innerhalb der Neo Geo-Familie veröffentlicht wurde.
+      <text lang="de">Arcade-System, das von SNK entwickelt und im September 1997 als Nachfolger des Neo Geo MVS innerhalb der Neo Geo-Familie veröffentlicht wurde.
 
 Es ist die erste und einzige SNK-Hardware, die in 3D gerendert werden kann, und sollte das ältere MVS-System von SNK auf dem Markt ersetzen. Die Unternehmensleitung plante, SNK mit diesem Projekt in die neue Ära der 3D-Spiele einzubinden, die Mitte der 1990er Jahre aufkam, und plante ein entsprechendes Heimsystem, das die alternde und teure AES-Heimkonsole ersetzen sollte.
 
 Es konnte jedoch nie an den großen Erfolg des MVS anknüpfen und erreichte 1999 das Ende seiner Lebensdauer. Für die Arcade-Variante des Systems wurden nur sieben Spiele produziert, von denen sich keines als besonders beliebt erwies, und das Projekt wurde eingestellt. Das geplante Heimsystem kam nie über das anfängliche Planungsstadium hinaus, und nur eines der Arcade-Spiele, Fatal Fury: Wild Ambition, wurde auf Heimsysteme portiert.</text>
-			<text lang="fr">Système d'arcade créé par SNK et sorti en septembre 1997, comme successeur du Neo Geo MVS, au sein de la famille Neo Geo.
+      <text lang="fr">Système d'arcade créé par SNK et sorti en septembre 1997, comme successeur du Neo Geo MVS, au sein de la famille Neo Geo.
 
 Il s'agit du premier et du seul ensemble de matériel SNK capable d'effectuer des rendus en 3D, et il était destiné à remplacer l'ancien système MVS de SNK sur le marché. Les dirigeants de la société prévoyaient que le projet ferait entrer SNK dans la nouvelle ère des jeux en 3D qui avait vu le jour au milieu des années 1990, et avaient prévu un système de salon correspondant pour remplacer la console de salon AES, vieillissante et coûteuse.
 
 Cependant, il n'a jamais réussi à égaler l'énorme succès de la MVS, et a atteint sa fin de vie en 1999. Seuls sept jeux ont été produits pour la version arcade du système, dont aucun ne s'est avéré particulièrement populaire, et le projet a été abandonné. Le système domestique proposé n'a jamais dépassé les premières étapes de planification et seul un des jeux d'arcade, Fatal Fury : Wild Ambition, a été porté sur les systèmes domestiques.</text>
-			<text lang="it">Sistema arcade creato da SNK e rilasciato nel settembre 1997, come successore del Neo Geo MVS, all'interno della famiglia Neo Geo.
+      <text lang="it">Sistema arcade creato da SNK e rilasciato nel settembre 1997, come successore del Neo Geo MVS, all'interno della famiglia Neo Geo.
 
 È il primo e unico hardware SNK in grado di eseguire il rendering in 3D e doveva sostituire il vecchio sistema MVS di SNK sul mercato. I dirigenti dell'azienda avevano previsto che il progetto portasse SNK nella nuova era del gioco in 3D, sorta a metà degli anni Novanta, e avevano pianificato un sistema domestico corrispondente per sostituire la vecchia e costosa console domestica AES.
 
 Tuttavia, non riuscì mai a eguagliare l'enorme successo dell'MVS e terminò la sua vita nel 1999. Per la variante arcade del sistema furono prodotti solo sette giochi, nessuno dei quali si rivelò particolarmente popolare, e il progetto fu interrotto. Il sistema domestico proposto non andò mai oltre le fasi iniziali di progettazione e solo uno dei giochi arcade, Fatal Fury: Wild Ambition, è stato portato su sistemi domestici.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

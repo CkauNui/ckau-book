@@ -1,78 +1,83 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.395</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.455</origin>
-			<pos>0.501 0.405</pos>
-			<maxSize>0.245</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.221 0.405" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.395</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.455</origin>
-			<pos>0.501 0.408</pos>
-			<maxSize>0.23</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.221 0.408" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2008</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Future Pinball</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>Future Pinball is a real time Pinball Development System. It uses Advanced Physics to provide the best possible Simulation of a true to life pinball machine.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.395</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.455</origin>
+      <pos>0.501 0.405</pos>
+      <maxSize>0.245</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.221 0.405" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.395</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.455</origin>
+      <pos>0.501 0.408</pos>
+      <maxSize>0.23</maxSize>
+      <zIndex>26</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.221 0.408" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2008</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Future Pinball</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>Future Pinball is a real time Pinball Development System. It uses Advanced Physics to provide the best possible Simulation of a true to life pinball machine.
 
 Tables are built up out of Standard components (Plastics, Pegs, Bumpers, Lights etc..) which are placed onto the playfield via the Editor. Objects like Surfaces, Lights and Rubbers are shapeable within the editor and generated real-time when the table is played. Other objects (Bumpers, Flippers, Gates, Triggers, Targets etc..) use pre-made 3d Models, of which there is a nice selection of each type.
 
 Full Sound / Music Support is also provided with multiple Music Channels to allow cross fading.
 	</text>
-			<text lang="pl">Future Pinball jest systemem do tworzenia pinballi w czasie rzeczywistym. Wykorzystuje on zaawansowaną fizykę, aby zapewnić najlepszą możliwą symulację prawdziwej maszyny pinballowej.
+      <text lang="pl">Future Pinball jest systemem do tworzenia pinballi w czasie rzeczywistym. Wykorzystuje on zaawansowaną fizykę, aby zapewnić najlepszą możliwą symulację prawdziwej maszyny pinballowej.
 
 Stoły są zbudowane z elementów standardowych (plastików, kołków, zderzaków, świateł itp.), które są umieszczane na polu gry za pomocą edytora. Obiekty takie jak powierzchnie, światła i gumy można kształtować w edytorze i generować w czasie rzeczywistym, gdy stół jest grany. Inne obiekty (Zderzaki, Płetwy, Bramki, Wyzwalacze, Cele itd...) używają gotowych modeli 3d z których jest spory wybór każdego typu.
 
 Pełne wsparcie dźwiękowe / muzyczne jest również zapewnione z wieloma kanałami muzycznymi, aby umożliwić cross fading.</text>
-			<text lang="ru">Бесплатное приложение для редактирования и игры в 3D-пинбол для Microsoft Windows. Программное обеспечение похоже на Visual Pinball и другие современные приложения для моделирования пинбола.</text>
-			<text lang="es">Future Pinball es un Sistema de Desarrollo de Pinball en tiempo real. Utiliza física avanzada para proporcionar la mejor simulación posible de una máquina de pinball real.
+      <text lang="pt">Future Pinball é um sistema para criar pinball em tempo real. Ele utiliza física avançada para fornecer a melhor simulação possível de uma máquina de pinball real.
+
+As mesas são construídas com elementos padrão (plásticos, pinos, bumpers, luzes, etc.), que são colocados no campo de jogo usando o editor. Objetos como superfícies, luzes e borrachas podem ser moldados no editor e gerados em tempo real enquanto a mesa é jogada. Outros objetos (bumpers, flippers, portas, gatilhos, alvos, etc.) usam modelos 3D prontos, dos quais há uma grande variedade de cada tipo.
+
+Suporte completo de som / música também é fornecido com vários canais de música para permitir cross fading.</text>
+      <text lang="ru">Бесплатное приложение для редактирования и игры в 3D-пинбол для Microsoft Windows. Программное обеспечение похоже на Visual Pinball и другие современные приложения для моделирования пинбола.</text>
+      <text lang="es">Future Pinball es un Sistema de Desarrollo de Pinball en tiempo real. Utiliza física avanzada para proporcionar la mejor simulación posible de una máquina de pinball real.
 
 Las mesas se construyen a partir de componentes estándar (plásticos, clavijas, parachoques, luces, etc.) que se colocan en el campo de juego a través del editor. Objetos como Superficies, Luces y Gomas son modelables dentro del editor y generados en tiempo real cuando la mesa es jugada. Otros objetos (Bumpers, Flippers, Gates, Triggers, Targets etc..) usan Modelos 3d pre-hechos, de los cuales hay una buena selección de cada tipo.
 
 También se proporciona soporte completo de Sonido / Música con múltiples Canales de Música para permitir el cross fading.</text>
-			<text lang="de">Future Pinball ist ein Entwicklungssystem für Flipper in Echtzeit. Es verwendet fortschrittliche Physik, um die bestmögliche Simulation eines lebensechten Flipperautomaten zu bieten.
+      <text lang="de">Future Pinball ist ein Entwicklungssystem für Flipper in Echtzeit. Es verwendet fortschrittliche Physik, um die bestmögliche Simulation eines lebensechten Flipperautomaten zu bieten.
 
 Tische werden aus Standardkomponenten (Plastik, Pegs, Bumpers, Lights etc.) aufgebaut, die über den Editor auf dem Spielfeld platziert werden. Objekte wie Oberflächen, Lichter und Gummis sind im Editor formbar und werden in Echtzeit generiert, wenn der Tisch gespielt wird. Andere Objekte (Bumper, Flippers, Gates, Trigger, Targets etc.) verwenden vorgefertigte 3D-Modelle, von denen es eine schöne Auswahl an jedem Typ gibt.
 
 Vollständige Sound-/Musikunterstützung mit mehreren Musikkanälen für Überblendungen ist ebenfalls vorhanden.</text>
-			<text lang="fr">Future Pinball est un système de développement de flipper en temps réel. Il utilise la physique avancée pour fournir la meilleure simulation possible d'un flipper réel.
+      <text lang="fr">Future Pinball est un système de développement de flipper en temps réel. Il utilise la physique avancée pour fournir la meilleure simulation possible d'un flipper réel.
 
 Les tables sont construites à partir de composants standards (plastiques, piquets, pare-chocs, lumières, etc.) qui sont placés sur le terrain de jeu par l'intermédiaire de l'éditeur. Les objets tels que les surfaces, les lumières et les caoutchoucs sont modelables dans l'éditeur et générés en temps réel lorsque la table est jouée. D'autres objets (pare-chocs, palmes, portes, déclencheurs, cibles, etc.) utilisent des modèles 3D pré-fabriqués, dont il existe une belle sélection de chaque type.
 
 Un support sonore et musical complet est également fourni avec plusieurs canaux musicaux pour permettre un fondu enchaîné.</text>
-			<text lang="it">Future Pinball è un sistema di sviluppo di flipper in tempo reale. Utilizza la fisica avanzata per fornire la migliore simulazione possibile di un flipper reale.
+      <text lang="it">Future Pinball è un sistema di sviluppo di flipper in tempo reale. Utilizza la fisica avanzata per fornire la migliore simulazione possibile di un flipper reale.
 
 I tavoli sono costruiti con componenti standard (plastiche, pioli, paraurti, luci ecc.) che vengono posizionati sul campo di gioco tramite l'editor. Oggetti come superfici, luci e gomme sono modellabili all'interno dell'editor e generati in tempo reale quando il tavolo viene giocato. Gli altri oggetti (Bumpers, Flippers, Gates, Triggers, Targets ecc.) utilizzano modelli 3D preconfezionati, di cui esiste una bella selezione per ogni tipo.
 
 È previsto anche il supporto completo per suoni e musica, con canali musicali multipli per consentire la dissolvenza incrociata.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

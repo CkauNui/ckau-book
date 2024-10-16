@@ -1,70 +1,73 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
-			<pos>0.5 0.462</pos>
-			<maxSize>0.264</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.462" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
-			<pos>0.5 0.466</pos>
-			<maxSize>0.254</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.466" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1990</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Bit Corporation</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Gamate</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Gamate, known as 超級小子 (pinyin: chāojí xiǎozi, literally "Super Boy") in Taiwan and 超级神童 (pinyin: chāojí shéntóng, literally "Super Child Prodigy") in China, is a handheld game console manufactured by Bit Corporation in the early 1990s, and released in Australia, some parts of Europe, Asia (Taiwan and China), Argentina, and the United States.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
+      <pos>0.5 0.462</pos>
+      <maxSize>0.264</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.462" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
+      <pos>0.5 0.466</pos>
+      <maxSize>0.254</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.466" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1990</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Bit Corporation</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Gamate</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Gamate, known as 超級小子 (pinyin: chāojí xiǎozi, literally "Super Boy") in Taiwan and 超级神童 (pinyin: chāojí shéntóng, literally "Super Child Prodigy") in China, is a handheld game console manufactured by Bit Corporation in the early 1990s, and released in Australia, some parts of Europe, Asia (Taiwan and China), Argentina, and the United States.
 
 The only emulator that supports it is MESS. Over 70 games, not all dumped, are known to have been produced for the system.</text>
-			<text lang="pl">The Gamate, znany jako 超級小子 (pinyin: chāojí xiǎozi, dosłownie "Super Boy") na Tajwanie i 超级神童 (pinyin: chāojí shéntóng, dosłownie "Super Child Prodigy") w Chinach, to ręczna konsola do gier wyprodukowana przez Bit Corporation na początku lat 90. i wydana w Australii, niektórych częściach Europy, Azji (Tajwan i Chiny), Argentynie i Stanach Zjednoczonych.
+      <text lang="pl">The Gamate, znany jako 超級小子 (pinyin: chāojí xiǎozi, dosłownie "Super Boy") na Tajwanie i 超级神童 (pinyin: chāojí shéntóng, dosłownie "Super Child Prodigy") w Chinach, to ręczna konsola do gier wyprodukowana przez Bit Corporation na początku lat 90. i wydana w Australii, niektórych częściach Europy, Azji (Tajwan i Chiny), Argentynie i Stanach Zjednoczonych.
 
 Jedynym emulatorem, który ją obsługuje jest MESS. Wiadomo, że na ten system wyprodukowano ponad 70 gier, nie wszystkie zostały wydane.</text>
-			<text lang="ru">Портативная игровая консоль, выпущенная тайванской компанией Bit Corporation на волне успеха Game Boy. От других подобных консолей, Gamate отличается высоким качеством сборки. Продавалась Gamate в Австралии, Европе (Великобритании, Италии, Германии, Швейцарии, Швеции и Финляндии), Азии (Тайвань и Китай), Аргентине, США, Южной Америке.
+      <text lang="pt">O Gamate, conhecido como 超級小子 (pinyin: chāojí xiǎozi, literalmente "Super Menino") em Taiwan e 超级神童 (pinyin: chāojí shéntóng, literalmente "Super Criança Prodígio") na China, é um console portátil de videogame produzido pela Bit Corporation no início dos anos 90 e lançado na Austrália, em algumas partes da Europa, Ásia (Taiwan e China), Argentina e Estados Unidos.
+
+O único emulador que o suporta é o MESS. Sabe-se que mais de 70 jogos foram produzidos para este sistema, nem todos foram lançados.</text>
+      <text lang="ru">Портативная игровая консоль, выпущенная тайванской компанией Bit Corporation на волне успеха Game Boy. От других подобных консолей, Gamate отличается высоким качеством сборки. Продавалась Gamate в Австралии, Европе (Великобритании, Италии, Германии, Швейцарии, Швеции и Финляндии), Азии (Тайвань и Китай), Аргентине, США, Южной Америке.
 
 Bit Corp. была упразднена в 92 году, но United Microelectronics Corporation и её дочерняя компания Funtech продолжили выпускать консоль и игры для неё.</text>
-			<text lang="es">La Gamate, conocida como 超級小子 (pinyin: chāojí xiǎozi, literalmente "Súper Niño") en Taiwán y 超级神童 (pinyin: chāojí shéntóng, literalmente "Super Niño Prodigio") en China, es una videoconsola portátil fabricada por Bit Corporation a principios de la década de 1990 y lanzada en Australia, algunas partes de Europa, Asia (Taiwán y China), Argentina y Estados Unidos.
+      <text lang="es">La Gamate, conocida como 超級小子 (pinyin: chāojí xiǎozi, literalmente "Súper Niño") en Taiwán y 超级神童 (pinyin: chāojí shéntóng, literalmente "Super Niño Prodigio") en China, es una videoconsola portátil fabricada por Bit Corporation a principios de la década de 1990 y lanzada en Australia, algunas partes de Europa, Asia (Taiwán y China), Argentina y Estados Unidos.
 
 El único emulador compatible es MESS. Se sabe que se produjeron más de 70 juegos, no todos volcados, para el sistema.</text>
-			<text lang="de">Der Gamate, bekannt als 超級小子 (pinyin: chāojí xiǎozi, wörtlich "Super Boy") in Taiwan und 超级神童 (pinyin: chāojí shéntóng, wörtlich "Super Child Prodigy") in China, ist eine Handheld-Spielkonsole, die in den frühen 1990er Jahren von der Bit Corporation hergestellt und in Australien, einigen Teilen Europas, Asiens (Taiwan und China), Argentinien und den Vereinigten Staaten veröffentlicht wurde.
+      <text lang="de">Der Gamate, bekannt als 超級小子 (pinyin: chāojí xiǎozi, wörtlich "Super Boy") in Taiwan und 超级神童 (pinyin: chāojí shéntóng, wörtlich "Super Child Prodigy") in China, ist eine Handheld-Spielkonsole, die in den frühen 1990er Jahren von der Bit Corporation hergestellt und in Australien, einigen Teilen Europas, Asiens (Taiwan und China), Argentinien und den Vereinigten Staaten veröffentlicht wurde.
 
 Der einzige Emulator, der sie unterstützt, ist MESS. Es ist bekannt, dass über 70 Spiele für das System produziert wurden, von denen nicht alle veröffentlicht wurden.</text>
-			<text lang="fr">Le Gamate, connu sous le nom de 超級小子 (pinyin : chāojí xiǎozi, littéralement "Super Boy") à Taïwan et 超级神童 (pinyin : chāojí shéntóng, littéralement "Super Child Prodigy") en Chine, est une console de jeu portable fabriquée par Bit Corporation au début des années 1990 et commercialisée en Australie, dans certaines régions d'Europe, en Asie (Taïwan et Chine), en Argentine et aux États-Unis.
+      <text lang="fr">Le Gamate, connu sous le nom de 超級小子 (pinyin : chāojí xiǎozi, littéralement "Super Boy") à Taïwan et 超级神童 (pinyin : chāojí shéntóng, littéralement "Super Child Prodigy") en Chine, est une console de jeu portable fabriquée par Bit Corporation au début des années 1990 et commercialisée en Australie, dans certaines régions d'Europe, en Asie (Taïwan et Chine), en Argentine et aux États-Unis.
 
 Le seul émulateur compatible est MESS. Plus de 70 jeux, qui n'ont pas tous été abandonnés, ont été produits pour ce système.</text>
-			<text lang="it">Il Gamate, noto come 超級小子 (pinyin: chāojí xiǎozi, letteralmente "Super Boy") a Taiwan e 超级神童 (pinyin: chāojí shéntóng, letteralmente "Super Child Prodigy") in Cina, è una console portatile per videogiochi prodotta da Bit Corporation all'inizio degli anni '90 e distribuita in Australia, in alcune parti d'Europa, in Asia (Taiwan e Cina), in Argentina e negli Stati Uniti.
+      <text lang="it">Il Gamate, noto come 超級小子 (pinyin: chāojí xiǎozi, letteralmente "Super Boy") a Taiwan e 超级神童 (pinyin: chāojí shéntóng, letteralmente "Super Child Prodigy") in Cina, è una console portatile per videogiochi prodotta da Bit Corporation all'inizio degli anni '90 e distribuita in Australia, in alcune parti d'Europa, in Asia (Taiwan e Cina), in Argentina e negli Stati Uniti.
 
 L'unico emulatore che la supporta è MESS. Sono noti oltre 70 giochi, non tutti scaricati, prodotti per il sistema.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

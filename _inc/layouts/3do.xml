@@ -1,60 +1,60 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.26</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.42</origin>
-			<pos>0.5 0.325</pos>
-			<maxSize>0.254</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.325" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.26</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.42</origin>
-			<pos>0.5 0.325</pos>
-			<maxSize>0.244</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.325" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1993</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Panasonic</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>3DO</text>
-		</text>
-	<!-- Regional consoles/computers -->
-		<text name="TextName" extra="true" region="eu"/>
-		<text name="TextName" extra="true" region="us"/>
-		<text name="TextName" extra="true" region="jp">
-			<text>3DO REAL</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The 3DO Interactive Multiplayer, often called the 3DO, is a home video game console developed by The 3DO Company. Conceived by entrepreneur and Electronic Arts founder Trip Hawkins, the 3DO was not a console manufactured by the company itself, but a series of specifications, originally designed by Dave Needle and R. J. Mical of New Technologies Group, that could be licensed by third parties. Panasonic produced the first models in 1993, and further renditions of the hardware were released in 1994 by GoldStar (now LG Electronics) and in 1995 by Sanyo.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.26</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.42</origin>
+      <pos>0.5 0.325</pos>
+      <maxSize>0.254</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.325" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.26</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.42</origin>
+      <pos>0.5 0.325</pos>
+      <maxSize>0.244</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.325" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1993</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Panasonic</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>3DO</text>
+    </text>
+    <!-- Regional consoles/computers -->
+    <text name="TextName" extra="true" region="eu"/>
+    <text name="TextName" extra="true" region="us"/>
+    <text name="TextName" extra="true" region="jp">
+      <text>3DO REAL</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The 3DO Interactive Multiplayer, often called the 3DO, is a home video game console developed by The 3DO Company. Conceived by entrepreneur and Electronic Arts founder Trip Hawkins, the 3DO was not a console manufactured by the company itself, but a series of specifications, originally designed by Dave Needle and R. J. Mical of New Technologies Group, that could be licensed by third parties. Panasonic produced the first models in 1993, and further renditions of the hardware were released in 1994 by GoldStar (now LG Electronics) and in 1995 by Sanyo.
 
 Despite a highly promoted launch (including being named Time magazine's "1993 Product of the Year") and a host of cutting-edge technologies, the 3DO's high price and an oversaturated console market prevented the system from achieving success comparable to veteran competitors Sega and Nintendo. As a result, it was discontinued in early 1997, just after an unsuccessful holiday season.</text>
-			<text lang="pl">3DO Interactive Multiplayer (najczęściej po prostu 3DO) – konsola gier wideo produkowana od 1993 przez firmy Panasonic, Sanyo i GoldStar na podstawie specyfikacji stworzonej przez firmę The 3DO Company. Pierwszym celem firmy było stworzenie konsoli gier wideo piątej generacji z napędem CD, które byłyby produkowane przez partnerów firmy na podstawie różnych licencji. The 3DO Company zarabiałoby na opłacie licencyjnej od każdej sprzedanej konsoli i każdej wyprodukowanej gry. Firma oferowała lepsze warunki i niższe opłaty licencyjne (3 dolary od każdej wyprodukowanej gry) dla producentów gier niż konkurencja – Nintendo i Sega. Premiera platformy odbyła się w październiku 1993.
+      <text lang="pl">3DO Interactive Multiplayer (najczęściej po prostu 3DO) – konsola gier wideo produkowana od 1993 przez firmy Panasonic, Sanyo i GoldStar na podstawie specyfikacji stworzonej przez firmę The 3DO Company. Pierwszym celem firmy było stworzenie konsoli gier wideo piątej generacji z napędem CD, które byłyby produkowane przez partnerów firmy na podstawie różnych licencji. The 3DO Company zarabiałoby na opłacie licencyjnej od każdej sprzedanej konsoli i każdej wyprodukowanej gry. Firma oferowała lepsze warunki i niższe opłaty licencyjne (3 dolary od każdej wyprodukowanej gry) dla producentów gier niż konkurencja – Nintendo i Sega. Premiera platformy odbyła się w październiku 1993.
 
 W momencie premiery, cena konsoli w USA wynosiła 699.99$ i w porównaniu z konkurencyjnymi konsolami była to cena wysoka. Kiedy pojawiło się Sony PlayStation z ceną 299$ oraz sprzętową obsługą grafiki 3D, gry na konsolę 3DO zostały uznane za gorsze, a dla produktu 3DO nie było już żadnego ratunku. W 1996 roku firma 3DO sprzedała projekt konsoli kolejnej generacji o kodowej nazwie M2 firmie Matsushita Electric Industrial Co., Ltd. i zaczęła produkować oraz wydawać gry na platformę PlayStation.
 
@@ -64,23 +64,33 @@ Dane techniczne:
 - Procesor graficzny – tryby graficzne 320x240 lub 320x480, 24-bitowa paleta kolorów
 - Dźwięk – 20-bitowy procesor DSP, wsparcie dla dźwięku przestrzennego Dolby Surround
 - Napęd dysków CD-ROM podwójnej prędkości</text>
-			<text lang="ru">Игровая приставка, выпускавшаяся в 1993—1996 гг. компаниями Panasonic, Sanyo, Creative и Goldstar. Консоль производилась в соответствии с набором спецификаций, предложенных The 3DO Company, и изначально разработанных Дэйвом Нидлом и Робертом Дж. Микалом из New Technology Group. Идея создания консоли принадлежит предпринимателю Трипу Хоукинсу, который также является основателем EA Games.
+      <text lang="pt">3DO Interactive Multiplayer (geralmente chamado apenas de 3DO) - console de videogame produzida a partir de 1993 pelas empresas Panasonic, Sanyo e GoldStar com base em especificações criadas pela The 3DO Company. O primeiro objetivo da empresa era criar uma console de videogame de quinta geração com unidade de CD que seria produzida por parceiros da empresa sob diferentes licenças. A The 3DO Company lucrava com uma taxa de licença para cada console vendido e cada jogo produzido. A empresa oferecia melhores condições e taxas de licença mais baixas (US$ 3 por cada jogo produzido) para os produtores de jogos do que a concorrência - Nintendo e Sega. O lançamento da plataforma ocorreu em outubro de 1993.
+
+No momento do lançamento, o preço do console nos EUA era de US$ 699,99 e, em comparação com consoles concorrentes, era um preço alto. Quando o Sony PlayStation surgiu com um preço de US$ 299 e suporte de hardware para gráficos 3D, os jogos para o console 3DO foram considerados inferiores, e não havia mais salvação para o produto 3DO. Em 1996, a 3DO vendeu o projeto do console de próxima geração, com o nome de código M2, para a Matsushita Electric Industrial Co., Ltd. e começou a produzir e lançar jogos para a plataforma PlayStation.
+
+Especificações técnicas:
+- CPU - Processador RISC de 32 bits 12,5 MHz ARM60, coprocessador matemático, 32 kB SRAM
+- Memória do console - 2 MB RAM, 1 MB Video RAM
+- Processador gráfico - modos gráficos 320x240 ou 320x480, paleta de cores de 24 bits
+- Som - Processador DSP de 20 bits, suporte para som surround Dolby
+- Unidade de disco CD-ROM de dupla velocidade</text>
+      <text lang="ru">Игровая приставка, выпускавшаяся в 1993—1996 гг. компаниями Panasonic, Sanyo, Creative и Goldstar. Консоль производилась в соответствии с набором спецификаций, предложенных The 3DO Company, и изначально разработанных Дэйвом Нидлом и Робертом Дж. Микалом из New Technology Group. Идея создания консоли принадлежит предпринимателю Трипу Хоукинсу, который также является основателем EA Games.
 
 Несмотря на активную рекламу, сопровождавшую запуск системы, и использование передовых технологий, высокая цена системы (на момент выхода она составляла 599,95$) и перенасыщение рынка игровых систем привели к быстрому завершению её жизненного цикла.
 
 В 2009 году сайт IGN в своём списке лучших игровых консолей определил 3DO на 22-е место.</text>
-			<text lang="es">La 3DO Interactive Multiplayer, a menudo llamada 3DO, es una videoconsola doméstica desarrollada por The 3DO Company. Concebida por el empresario y fundador de Electronic Arts Trip Hawkins, la 3DO no era una consola fabricada por la propia empresa, sino una serie de especificaciones, diseñadas originalmente por Dave Needle y R. J. Mical de New Technologies Group, que podían ser licenciadas por terceros. Panasonic fabricó los primeros modelos en 1993, y GoldStar (ahora LG Electronics) y Sanyo lanzaron nuevas versiones en 1994 y 1995, respectivamente.
+      <text lang="es">La 3DO Interactive Multiplayer, a menudo llamada 3DO, es una videoconsola doméstica desarrollada por The 3DO Company. Concebida por el empresario y fundador de Electronic Arts Trip Hawkins, la 3DO no era una consola fabricada por la propia empresa, sino una serie de especificaciones, diseñadas originalmente por Dave Needle y R. J. Mical de New Technologies Group, que podían ser licenciadas por terceros. Panasonic fabricó los primeros modelos en 1993, y GoldStar (ahora LG Electronics) y Sanyo lanzaron nuevas versiones en 1994 y 1995, respectivamente.
 
 A pesar de un lanzamiento muy promocionado (incluido el nombramiento de la revista Time como "Producto del año 1993") y de una serie de tecnologías de vanguardia, el elevado precio de la 3DO y un mercado de consolas sobresaturado impidieron que la consola alcanzara un éxito comparable al de sus veteranas competidoras Sega y Nintendo. Como resultado, se dejó de fabricar a principios de 1997, justo después de una temporada navideña poco exitosa.</text>
-			<text lang="de">Der 3DO Interactive Multiplayer, oft auch 3DO genannt, ist eine Videospielkonsole für den Heimgebrauch, die von The 3DO Company entwickelt wurde. Der 3DO wurde vom Unternehmer und Electronic Arts-Gründer Trip Hawkins konzipiert und war keine Konsole, die von der Firma selbst hergestellt wurde, sondern eine Reihe von Spezifikationen, die ursprünglich von Dave Needle und R. J. Mical von der New Technologies Group entworfen wurden und von Dritten lizenziert werden konnten. Panasonic produzierte die ersten Modelle 1993, und weitere Versionen der Hardware wurden 1994 von GoldStar (jetzt LG Electronics) und 1995 von Sanyo herausgebracht.
+      <text lang="de">Der 3DO Interactive Multiplayer, oft auch 3DO genannt, ist eine Videospielkonsole für den Heimgebrauch, die von The 3DO Company entwickelt wurde. Der 3DO wurde vom Unternehmer und Electronic Arts-Gründer Trip Hawkins konzipiert und war keine Konsole, die von der Firma selbst hergestellt wurde, sondern eine Reihe von Spezifikationen, die ursprünglich von Dave Needle und R. J. Mical von der New Technologies Group entworfen wurden und von Dritten lizenziert werden konnten. Panasonic produzierte die ersten Modelle 1993, und weitere Versionen der Hardware wurden 1994 von GoldStar (jetzt LG Electronics) und 1995 von Sanyo herausgebracht.
 
 Trotz einer stark beworbenen Markteinführung (u. a. wurde der 3DO vom Time Magazine zum "Produkt des Jahres 1993" gekürt) und einer Vielzahl von Spitzentechnologien konnte das System aufgrund seines hohen Preises und eines übersättigten Konsolenmarktes keinen vergleichbaren Erfolg wie die altgedienten Konkurrenten Sega und Nintendo erzielen. Infolgedessen wurde das System Anfang 1997, kurz nach einer erfolglosen Urlaubssaison, eingestellt.</text>
-			<text lang="fr">La 3DO Interactive Multiplayer, souvent appelée la 3DO, est une console de jeux vidéo de salon développée par The 3DO Company. Conçue par Trip Hawkins, entrepreneur et fondateur d'Electronic Arts, la 3DO n'était pas une console fabriquée par la société elle-même, mais une série de spécifications, conçues à l'origine par Dave Needle et R. J. Mical du New Technologies Group, qui pouvaient être concédées sous licence à des tiers. Panasonic a produit les premiers modèles en 1993, et d'autres versions du matériel ont été commercialisées en 1994 par GoldStar (aujourd'hui LG Electronics) et en 1995 par Sanyo.
+      <text lang="fr">La 3DO Interactive Multiplayer, souvent appelée la 3DO, est une console de jeux vidéo de salon développée par The 3DO Company. Conçue par Trip Hawkins, entrepreneur et fondateur d'Electronic Arts, la 3DO n'était pas une console fabriquée par la société elle-même, mais une série de spécifications, conçues à l'origine par Dave Needle et R. J. Mical du New Technologies Group, qui pouvaient être concédées sous licence à des tiers. Panasonic a produit les premiers modèles en 1993, et d'autres versions du matériel ont été commercialisées en 1994 par GoldStar (aujourd'hui LG Electronics) et en 1995 par Sanyo.
 
 En dépit d'un lancement très prometteur (le magazine Time l'a notamment désignée "Produit de l'année 1993") et d'une multitude de technologies de pointe, le prix élevé de la 3DO et la sursaturation du marché des consoles ont empêché la console de connaître un succès comparable à celui de ses concurrents chevronnés, Sega et Nintendo. En conséquence, la console a été abandonnée au début de l'année 1997, juste après des fêtes de fin d'année infructueuses.</text>
-			<text lang="it">La 3DO Interactive Multiplayer, spesso chiamata 3DO, è una console per videogiochi domestici sviluppata da The 3DO Company. Ideata dall'imprenditore e fondatore di Electronic Arts Trip Hawkins, la 3DO non fu una console prodotta dall'azienda stessa, bensì una serie di specifiche, originariamente progettate da Dave Needle e R. J. Mical del New Technologies Group, che potevano essere concesse in licenza da terzi. Panasonic produsse i primi modelli nel 1993, mentre altre versioni dell'hardware furono rilasciate nel 1994 da GoldStar (ora LG Electronics) e nel 1995 da Sanyo.
+      <text lang="it">La 3DO Interactive Multiplayer, spesso chiamata 3DO, è una console per videogiochi domestici sviluppata da The 3DO Company. Ideata dall'imprenditore e fondatore di Electronic Arts Trip Hawkins, la 3DO non fu una console prodotta dall'azienda stessa, bensì una serie di specifiche, originariamente progettate da Dave Needle e R. J. Mical del New Technologies Group, che potevano essere concesse in licenza da terzi. Panasonic produsse i primi modelli nel 1993, mentre altre versioni dell'hardware furono rilasciate nel 1994 da GoldStar (ora LG Electronics) e nel 1995 da Sanyo.
 
 Nonostante un lancio molto pubblicizzato (tra cui la nomina a "Prodotto dell'anno 1993" da parte della rivista Time) e una serie di tecnologie all'avanguardia, il prezzo elevato del 3DO e l'eccessiva saturazione del mercato delle console impedirono alla console di raggiungere un successo paragonabile a quello dei concorrenti veterani Sega e Nintendo. Di conseguenza, la console fu dismessa all'inizio del 1997, subito dopo una stagione festiva di scarso successo.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

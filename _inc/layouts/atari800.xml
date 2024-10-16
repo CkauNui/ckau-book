@@ -1,54 +1,54 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.28</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.35</pos>
-			<maxSize>0.21</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.28</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.35</pos>
-			<maxSize>0.2</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1979</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Atari</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>800</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Atari 8-bit family is a series of 8-bit home computers introduced by Atari, Inc. in 1979 as the Atari 400 and Atari 800 and manufactured until 1992. All of the machines in the family are technically similar and differ primarily in packaging. They are based on the MOS Technology 6502 CPU running at 1.79 MHz, and were the first home computers designed with custom coprocessor chips. This architecture enabled graphics and sound more advanced than contemporary machines, and gaming was a major draw. First-person space combat simulator Star Raiders is considered the platform's killer app. The systems launched with plug and play peripherals using the Atari SIO serial bus, an early analog of USB.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.28</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.5 0.35</pos>
+      <maxSize>0.21</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.28</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.5 0.35</pos>
+      <maxSize>0.2</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1979</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Atari</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>800</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Atari 8-bit family is a series of 8-bit home computers introduced by Atari, Inc. in 1979 as the Atari 400 and Atari 800 and manufactured until 1992. All of the machines in the family are technically similar and differ primarily in packaging. They are based on the MOS Technology 6502 CPU running at 1.79 MHz, and were the first home computers designed with custom coprocessor chips. This architecture enabled graphics and sound more advanced than contemporary machines, and gaming was a major draw. First-person space combat simulator Star Raiders is considered the platform's killer app. The systems launched with plug and play peripherals using the Atari SIO serial bus, an early analog of USB.
 
 The Atari 400 was initially almost half the cost of the Atari 800. Instead of the 800's full-sized keyboard, the 400 has a pressure-sensitive panel. The 800 has a second cartridge slot and a larger case allowing RAM upgrades to 48K. Both models were replaced by the XL series in 1983, then–after the company was sold and reestablished as Atari Corporation–the XE models in 1985. The XL and XE are lighter in construction while having Atari BASIC built-in and 2 joystick ports instead of 4. The 130XE increased the memory to 128 KB of bank-switched RAM.</text>
-			<text lang="pl">Rodzina 8-bitowych Atari – seria 8-bitowych komputerów domowych wprowadzona przez amerykańskie przedsiębiorstwo Atari Inc.
+      <text lang="pl">Rodzina 8-bitowych Atari – seria 8-bitowych komputerów domowych wprowadzona przez amerykańskie przedsiębiorstwo Atari Inc.
 W roku 1978, po sukcesie konsoli Atari 2600, firma Atari Inc. postanowiła spróbować swych sił na rodzącym się dopiero rynku komputerów domowych. W listopadzie 1979 roku rozpoczęła sprzedaż modeli Atari 400 (nazwa kodowa Candy) i Atari 800 (nazwa kodowa Colleen) - tańszej i droższej wersji 8-bitowego komputera.
 
 Dane techniczne:
@@ -63,23 +63,39 @@ Dane techniczne:
 - do ośmiu "duszków", zwanych w terminologii Atari "graczami i pociskami"; w istocie dostępne są 4 duszki większe (gracze) oraz 4 duszki mniejsze (pociski), które można opcjonalnie połączyć w piątego "gracza"; każdy z graczy i pocisków ma niezależny kolor, a układy graficzne wykrywają i sprzętowo sygnalizują kolizje między nimi oraz pomiędzy każdym z obiektów a tłem (zwanym w terminologii Atari "polem gry")
 - dźwięk: układ POKEY, cztery ośmiobitowe kanały syntezy generujące obwiednię w teorii prostokątną, w istocie zaś falę o dość skomplikowanym przebiegu; każdy z kanałów ma niezależny rejestr głośności, trójzakresowy generator zakłóceń losowych (szumu); istnieje też możliwość wyboru jednej z trzech częstotliwości bazowych dla wszystkich generatorów, to jest 15 kHz, 64 kHz oraz 1,77 MHz; ponadto pary generatorów (1+2 oraz 3+4) można niezależnie połączyć w jeden generator szesnastobitowy
 - 57-klawiszowa klawiatura QWERTY oraz 4 klawisze funkcyjne</text>
-			<text lang="ru">Atari 400, Atari 800, серии XL и XE — семейство 8-разрядных домашних компьютеров производства компании Atari, которые выпускались с 1979 года и продавались в США. Последние модели семейства производились по 1992 год и распространялись в Европе.
+      <text lang="pt">A família Atari de 8 bits – uma série de computadores domésticos de 8 bits lançada pela empresa americana Atari Inc.
+
+Em 1978, após o sucesso do console Atari 2600, a Atari Inc. decidiu tentar sua sorte no mercado nascente de computadores domésticos. Em novembro de 1979, começou a vender os modelos Atari 400 (nome de código Candy) e Atari 800 (nome de código Colleen) - versões mais baratas e mais caras, respectivamente, do computador de 8 bits.
+
+Especificações técnicas:
+- microprocessador MOS 6502 com clock de 1,792 MHz (versão NTSC) ou 1,77 MHz (versões PAL e SECAM); no final da produção, 6502C "Sally"
+- memória ROM: 10 KB
+- memória RAM: inicialmente 8 KB; durante a produção, aumentada para 16 KB no modelo 400 e 48 KB no modelo 800
+- gráficos: chips ANTIC e CTIA ou (a partir de 1981) GTIA
+- 6 modos de texto com resolução de 20x12 a 40x24 caracteres em 2 ou 5 cores (3 disponíveis a partir do sistema operacional)
+- com o chip CTIA: 8 modos gráficos com resolução de 40x24 a 320x192 pixels em 2 ou 4 cores (6 disponíveis a partir do sistema operacional)
+- com o chip GTIA: 11 modos gráficos com resolução de 40x24 a 320x192 pixels em 2, 4 ou 16 cores (9 disponíveis a partir do sistema operacional)
+- paleta de cores: 128 cores (16 cores com 8 tons); após a introdução do GTIA, 256 cores (16 cores com 16 tons)
+- até oito "sprites", chamados na terminologia Atari de "jogadores e projéteis"; na verdade, existem 4 sprites maiores (jogadores) e 4 sprites menores (projéteis), que podem ser opcionalmente combinados em um quinto "jogador"; cada jogador e projétil tem uma cor independente, e os chips gráficos detectam e sinalizam por hardware colisões entre eles e entre cada um dos objetos e o fundo (chamado na terminologia Atari de "campo de jogo")
+- som: chip POKEY, quatro canais de síntese de 8 bits gerando envelope teoricamente retangular, mas na realidade, uma onda com um formato bastante complexo; cada canal tem um registrador de volume independente, um gerador de ruído aleatório de três bandas; também é possível escolher uma das três frequências base para todos os geradores, ou seja, 15 kHz, 64 kHz e 1,77 MHz; além disso, pares de geradores (1+2 e 3+4) podem ser independentemente combinados em um único gerador de 16 bits
+- teclado QWERTY de 57 teclas e 4 teclas de função</text>
+      <text lang="ru">Atari 400, Atari 800, серии XL и XE — семейство 8-разрядных домашних компьютеров производства компании Atari, которые выпускались с 1979 года и продавались в США. Последние модели семейства производились по 1992 год и распространялись в Европе.
 
 Центральный процессор всех моделей семейства — MOS Technology 6502, работающий на частоте 1,79 МГц (1,77 МГц для PAL-версии). Для обработки графики, звука, ввода/вывода были применены специализированные микросхемы — это разгружало процессор для других задач. Такая производительность и архитектура позволили успешно конкурировать с другими домашними компьютерами того времени — Apple II и Commodore PET.
 
 В целом, семейство имело коммерческий успех: с 1979 по 1985 год было продано около двух миллионов Atari 400 и 800, в 1981—1982 годах Atari лидировала на рынке домашних компьютеров. Наиболее популярной моделью семейства стала Atari 800XL, было продано более 600 тысяч экземпляров этой модели. Однако на продажи семейства драматично повлияло появление Commodore 64 и кризис индустрии компьютерных игр 1983 года.</text>
-			<text lang="es">La familia Atari de 8 bits es una serie de ordenadores domésticos de 8 bits presentada por Atari, Inc. en 1979 como Atari 400 y Atari 800 y fabricada hasta 1992. Todas las máquinas de la familia son técnicamente similares y difieren principalmente en el embalaje. Se basan en la CPU MOS Technology 6502 que funciona a 1,79 MHz, y fueron los primeros ordenadores domésticos diseñados con chips coprocesadores personalizados. Esta arquitectura permitía unos gráficos y un sonido más avanzados que los de las máquinas contemporáneas, y los juegos eran uno de sus principales atractivos. El simulador de combate espacial en primera persona Star Raiders se considera la aplicación estrella de la plataforma. Los sistemas se lanzaron con periféricos plug and play que utilizaban el bus serie SIO de Atari, un análogo temprano del USB.
+      <text lang="es">La familia Atari de 8 bits es una serie de ordenadores domésticos de 8 bits presentada por Atari, Inc. en 1979 como Atari 400 y Atari 800 y fabricada hasta 1992. Todas las máquinas de la familia son técnicamente similares y difieren principalmente en el embalaje. Se basan en la CPU MOS Technology 6502 que funciona a 1,79 MHz, y fueron los primeros ordenadores domésticos diseñados con chips coprocesadores personalizados. Esta arquitectura permitía unos gráficos y un sonido más avanzados que los de las máquinas contemporáneas, y los juegos eran uno de sus principales atractivos. El simulador de combate espacial en primera persona Star Raiders se considera la aplicación estrella de la plataforma. Los sistemas se lanzaron con periféricos plug and play que utilizaban el bus serie SIO de Atari, un análogo temprano del USB.
 
 En un principio, el Atari 400 costaba casi la mitad que el Atari 800. En lugar del teclado de tamaño normal del 800, el 400 tiene un panel sensible a la presión. El 800 tiene una segunda ranura para cartuchos y una carcasa más grande que permite ampliar la RAM a 48K. Ambos modelos fueron sustituidos por la serie XL en 1983 y, tras la venta de la empresa y su refundación como Atari Corporation, por los modelos XE en 1985. El XL y el XE son más ligeros en su construcción y tienen Atari BASIC incorporado y 2 puertos para joystick en lugar de 4. El 130XE aumentó la memoria a 128 KB de RAM conmutada por bancos.</text>
-			<text lang="de">Die Atari 8-Bit-Familie ist eine Serie von 8-Bit-Heimcomputern, die 1979 von Atari, Inc. als Atari 400 und Atari 800 eingeführt und bis 1992 hergestellt wurde. Alle Geräte der Familie sind technisch ähnlich und unterscheiden sich hauptsächlich in der Verpackung. Sie basieren auf der 6502-CPU von MOS Technology mit einer Taktfrequenz von 1,79 MHz und waren die ersten Heimcomputer, die mit speziellen Coprozessor-Chips ausgestattet waren. Diese Architektur ermöglichte eine fortschrittlichere Grafik und einen besseren Sound als bei zeitgenössischen Computern, und Spiele waren eine große Attraktion. Der First-Person-Weltraumkampfsimulator Star Raiders gilt als die "Killer-App" der Plattform. Die Systeme wurden mit Plug-and-Play-Peripheriegeräten auf den Markt gebracht, die den seriellen Atari SIO-Bus nutzten, ein frühes Analogon von USB.
+      <text lang="de">Die Atari 8-Bit-Familie ist eine Serie von 8-Bit-Heimcomputern, die 1979 von Atari, Inc. als Atari 400 und Atari 800 eingeführt und bis 1992 hergestellt wurde. Alle Geräte der Familie sind technisch ähnlich und unterscheiden sich hauptsächlich in der Verpackung. Sie basieren auf der 6502-CPU von MOS Technology mit einer Taktfrequenz von 1,79 MHz und waren die ersten Heimcomputer, die mit speziellen Coprozessor-Chips ausgestattet waren. Diese Architektur ermöglichte eine fortschrittlichere Grafik und einen besseren Sound als bei zeitgenössischen Computern, und Spiele waren eine große Attraktion. Der First-Person-Weltraumkampfsimulator Star Raiders gilt als die "Killer-App" der Plattform. Die Systeme wurden mit Plug-and-Play-Peripheriegeräten auf den Markt gebracht, die den seriellen Atari SIO-Bus nutzten, ein frühes Analogon von USB.
 
 Der Atari 400 war anfangs fast halb so teuer wie der Atari 800. Anstelle der vollwertigen Tastatur des 800 hat der 400er ein druckempfindliches Bedienfeld. Der 800 hat einen zweiten Kassettenschacht und ein größeres Gehäuse, das eine Aufrüstung des Arbeitsspeichers auf 48K ermöglicht. Beide Modelle wurden 1983 durch die XL-Serie und 1985 - nach dem Verkauf und der Neugründung der Firma als Atari Corporation - durch die XE-Modelle ersetzt. Die XL- und XE-Modelle sind leichter gebaut, haben Atari BASIC eingebaut und verfügen über 2 statt 4 Joystick-Anschlüsse. Der 130XE erhöhte den Speicher auf 128 KB bank-switched RAM.</text>
-			<text lang="fr">La famille Atari 8-bit est une série d'ordinateurs domestiques 8-bit introduits par Atari, Inc. en 1979 sous le nom d'Atari 400 et Atari 800 et fabriqués jusqu'en 1992. Toutes les machines de la famille sont techniquement similaires et diffèrent principalement par leur emballage. Elles sont basées sur le processeur MOS Technology 6502 cadencé à 1,79 MHz, et ont été les premiers ordinateurs domestiques conçus avec des coprocesseurs personnalisés. Cette architecture permettait des graphismes et des sons plus avancés que ceux des machines contemporaines, et les jeux ont constitué un attrait majeur. Le simulateur de combat spatial à la première personne Star Raiders est considéré comme la "killer app" de la plate-forme. Les systèmes ont été lancés avec des périphériques plug and play utilisant le bus série Atari SIO, un analogue précoce de l'USB.
+      <text lang="fr">La famille Atari 8-bit est une série d'ordinateurs domestiques 8-bit introduits par Atari, Inc. en 1979 sous le nom d'Atari 400 et Atari 800 et fabriqués jusqu'en 1992. Toutes les machines de la famille sont techniquement similaires et diffèrent principalement par leur emballage. Elles sont basées sur le processeur MOS Technology 6502 cadencé à 1,79 MHz, et ont été les premiers ordinateurs domestiques conçus avec des coprocesseurs personnalisés. Cette architecture permettait des graphismes et des sons plus avancés que ceux des machines contemporaines, et les jeux ont constitué un attrait majeur. Le simulateur de combat spatial à la première personne Star Raiders est considéré comme la "killer app" de la plate-forme. Les systèmes ont été lancés avec des périphériques plug and play utilisant le bus série Atari SIO, un analogue précoce de l'USB.
 
 L'Atari 400 coûtait initialement près de la moitié du prix de l'Atari 800. Au lieu du clavier de taille normale de l'Atari 800, l'Atari 400 dispose d'un panneau sensible à la pression. Le 800 dispose d'une deuxième fente pour cartouche et d'un boîtier plus grand permettant d'augmenter la RAM jusqu'à 48K. Les deux modèles ont été remplacés par la série XL en 1983, puis - après la vente de la société et sa reconstitution sous le nom d'Atari Corporation - par les modèles XE en 1985. Les modèles XL et XE sont plus légers, intègrent Atari BASIC et disposent de 2 ports joystick au lieu de 4. Le modèle 130XE augmente la mémoire à 128 Ko de RAM commutée par banque.</text>
-			<text lang="it">La famiglia Atari 8-bit è una serie di home computer a 8 bit introdotta da Atari, Inc. nel 1979 come Atari 400 e Atari 800 e prodotta fino al 1992. Tutte le macchine della famiglia sono tecnicamente simili e si differenziano principalmente per la confezione. Sono basati sulla CPU MOS Technology 6502 a 1,79 MHz e sono stati i primi home computer progettati con chip coprocessori personalizzati. Questa architettura consentiva una grafica e un suono più avanzati rispetto alle macchine contemporanee e i giochi erano una delle principali attrazioni. Il simulatore di combattimento spaziale in prima persona Star Raiders è considerato la killer app della piattaforma. I sistemi furono lanciati con periferiche plug and play che utilizzavano il bus seriale Atari SIO, un primo analogo dell'USB.
+      <text lang="it">La famiglia Atari 8-bit è una serie di home computer a 8 bit introdotta da Atari, Inc. nel 1979 come Atari 400 e Atari 800 e prodotta fino al 1992. Tutte le macchine della famiglia sono tecnicamente simili e si differenziano principalmente per la confezione. Sono basati sulla CPU MOS Technology 6502 a 1,79 MHz e sono stati i primi home computer progettati con chip coprocessori personalizzati. Questa architettura consentiva una grafica e un suono più avanzati rispetto alle macchine contemporanee e i giochi erano una delle principali attrazioni. Il simulatore di combattimento spaziale in prima persona Star Raiders è considerato la killer app della piattaforma. I sistemi furono lanciati con periferiche plug and play che utilizzavano il bus seriale Atari SIO, un primo analogo dell'USB.
 
 L'Atari 400 costava inizialmente quasi la metà dell'Atari 800. Al posto della tastiera a grandezza naturale dell'800, il 400 ha un pannello sensibile alla pressione. L'800 ha un secondo slot per cartucce e un case più grande che consente di aggiornare la RAM a 48K. Entrambi i modelli furono sostituiti dalla serie XL nel 1983 e poi, dopo la vendita dell'azienda e la sua ricostituzione come Atari Corporation, dai modelli XE nel 1985. L'XL e l'XE sono più leggeri e hanno l'Atari BASIC integrato e 2 porte joystick invece di 4. Il 130XE aumenta la memoria a 128 KB di RAM commutata in banchi.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

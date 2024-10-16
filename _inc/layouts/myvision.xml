@@ -1,73 +1,76 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
-			<origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
-			<pos>0.4815 0.402</pos>
-			<maxSize>0.22</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.2015 0.402" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
-			<origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
-			<pos>0.4815 0.402</pos>
-			<maxSize>0.215</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.2015 0.402" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1983</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Nichibutsu</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>My Vision</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The My Vision (Japanese: マイビジョン, Hepburn: Mai bijon) is a home video game console developed by Nichibutsu and released in Japan in 1983. The system was dedicated solely to playing video versions of popular board games.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
+      <origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
+      <pos>0.4815 0.402</pos>
+      <maxSize>0.22</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.2015 0.402" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
+      <origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
+      <pos>0.4815 0.402</pos>
+      <maxSize>0.215</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.2015 0.402" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1983</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Nichibutsu</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>My Vision</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The My Vision (Japanese: マイビジョン, Hepburn: Mai bijon) is a home video game console developed by Nichibutsu and released in Japan in 1983. The system was dedicated solely to playing video versions of popular board games.
 
 My Vision came equipped with the same Texas Instruments graphics chip used in the ColecoVision and allowed both RF &amp; composite video output. The console had no controllers; instead, players used a keyboard on the front of the console to input their actions.</text>
-			<text lang="pl">My Vision (jap. マイビジョン, Hepburn: Mai bijon) to domowa konsola do gier wideo opracowana przez Nichibutsu i wydana w Japonii w 1983 roku. System był przeznaczony wyłącznie do grania w wersje wideo popularnych gier planszowych.
+      <text lang="pl">My Vision (jap. マイビジョン, Hepburn: Mai bijon) to domowa konsola do gier wideo opracowana przez Nichibutsu i wydana w Japonii w 1983 roku. System był przeznaczony wyłącznie do grania w wersje wideo popularnych gier planszowych.
 
 My Vision była wyposażona w ten sam układ graficzny Texas Instruments, który był używany w ColecoVision i umożliwiała zarówno RF, jak i kompozytowe wyjście wideo. Konsola nie posiadała kontrolerów; zamiast tego gracze używali klawiatury z przodu konsoli do wprowadzania swoich działań.</text>
-			<text lang="ru">My Vision (японский язык: マイビジョン, хэпберн: Mai bijon) - домашняя игровая приставка, разработанная компанией Nichibutsu и выпущенная в Японии в 1983 году. Система предназначалась исключительно для воспроизведения видеоверсий популярных настольных игр.
+      <text lang="pt">My Vision (jap. マイビジョン, Hepburn: Mai bijon) é um console doméstico de videogame desenvolvido pela Nichibutsu e lançado no Japão em 1983. O sistema era destinado exclusivamente a jogar versões de videogame de populares jogos de tabuleiro.
+
+My Vision foi equipado com o mesmo chipset gráfico da Texas Instruments usado no ColecoVision e permitia saída de vídeo RF e composto. O console não tinha controladores; em vez disso, os jogadores usavam um teclado na frente do console para inserir suas ações.</text>
+      <text lang="ru">My Vision (японский язык: マイビジョン, хэпберн: Mai bijon) - домашняя игровая приставка, разработанная компанией Nichibutsu и выпущенная в Японии в 1983 году. Система предназначалась исключительно для воспроизведения видеоверсий популярных настольных игр.
 
 Консоль оснащалась тем же графическим чипом Texas Instruments, что и ColecoVision, и позволяла использовать как радиочастотный, так и композитный видеовыходы. Консоль не имела контроллеров, для ввода своих действий игроки использовали клавиатуру, расположенную на передней панели консоли.</text>
-			<text lang="es">La My Vision (japonés: マイビジョン, Hepburn: Mai bijon) es una videoconsola doméstica desarrollada por Nichibutsu y lanzada en Japón en 1983. El sistema estaba dedicado exclusivamente a reproducir versiones en vídeo de populares juegos de mesa.
+      <text lang="es">La My Vision (japonés: マイビジョン, Hepburn: Mai bijon) es una videoconsola doméstica desarrollada por Nichibutsu y lanzada en Japón en 1983. El sistema estaba dedicado exclusivamente a reproducir versiones en vídeo de populares juegos de mesa.
 
 My Vision estaba equipada con el mismo chip gráfico de Texas Instruments utilizado en la ColecoVision y permitía la salida de vídeo compuesto. La consola no tenía mandos; en su lugar, los jugadores utilizaban un teclado situado en la parte frontal de la consola para introducir sus acciones.</text>
-			<text lang="de">My Vision (japanisch: マイビジョン, Hepburn: Mai bijon) ist eine Videospielkonsole für den Heimgebrauch, die von Nichibutsu entwickelt und 1983 in Japan veröffentlicht wurde. Das System war ausschließlich für das Spielen von Videoversionen beliebter Brettspiele bestimmt.
+      <text lang="de">My Vision (japanisch: マイビジョン, Hepburn: Mai bijon) ist eine Videospielkonsole für den Heimgebrauch, die von Nichibutsu entwickelt und 1983 in Japan veröffentlicht wurde. Das System war ausschließlich für das Spielen von Videoversionen beliebter Brettspiele bestimmt.
 
 My Vision war mit demselben Grafikchip von Texas Instruments ausgestattet, der auch im ColecoVision verwendet wurde, und ermöglichte sowohl einen RF- als auch einen Composite-Videoausgang. Die Konsole hatte keine Controller; stattdessen benutzten die Spieler eine Tastatur an der Vorderseite der Konsole, um ihre Aktionen einzugeben.</text>
-			<text lang="fr">La My Vision (japonais : マイビジョン, Hepburn : Mai bijon) est une console de jeux vidéo de salon développée par Nichibutsu et commercialisée au Japon en 1983. La console était exclusivement dédiée aux versions vidéo des jeux de société les plus populaires.
+      <text lang="fr">La My Vision (japonais : マイビジョン, Hepburn : Mai bijon) est une console de jeux vidéo de salon développée par Nichibutsu et commercialisée au Japon en 1983. La console était exclusivement dédiée aux versions vidéo des jeux de société les plus populaires.
 
 My Vision était équipée de la même puce graphique Texas Instruments que celle utilisée dans la ColecoVision et permettait une sortie vidéo composite et RF. La console n'avait pas de manettes ; les joueurs utilisaient un clavier situé à l'avant de la console pour saisir leurs actions.</text>
-			<text lang="it">Il My Vision (giapponese: マイビジョン, Hepburn: Mai bijon) è una console per videogiochi domestici sviluppata da Nichibutsu e rilasciata in Giappone nel 1983. Il sistema era dedicato esclusivamente alla riproduzione di versioni video di popolari giochi da tavolo.
+      <text lang="it">Il My Vision (giapponese: マイビジョン, Hepburn: Mai bijon) è una console per videogiochi domestici sviluppata da Nichibutsu e rilasciata in Giappone nel 1983. Il sistema era dedicato esclusivamente alla riproduzione di versioni video di popolari giochi da tavolo.
 
 La console era dotata dello stesso chip grafico Texas Instruments utilizzato nel ColecoVision e consentiva sia l'uscita RF che quella video composita. La console non disponeva di controller; i giocatori utilizzavano invece una tastiera posta sulla parte anteriore della console per inserire le proprie azioni.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

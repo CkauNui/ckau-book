@@ -1,83 +1,88 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.49 0.4</pos>
-			<maxSize>0.237</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.49 0.4</pos>
-			<maxSize>0.227</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1983</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Spectravideo</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>SV-318</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The SV-318 is the basic model of the Spectravideo range. It was fitted with a chiclet style keyboard, difficult to use, alongside which sat a combination cursor pad/joystick. This is a disc-shaped affair with a hole in the centre; put a red plastic 'stick' in the hole and it is a built-in joystick, remove the stick and it is a directional arrow pad for word processing etc. This machine also had only 16 KB of user RAM (plus an additional 16 KB of video RAM), which limited its usefulness, though this could be expanded via an external peripheral box.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.49 0.4</pos>
+      <maxSize>0.237</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.49 0.4</pos>
+      <maxSize>0.227</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1983</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Spectravideo</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>SV-318</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The SV-318 is the basic model of the Spectravideo range. It was fitted with a chiclet style keyboard, difficult to use, alongside which sat a combination cursor pad/joystick. This is a disc-shaped affair with a hole in the centre; put a red plastic 'stick' in the hole and it is a built-in joystick, remove the stick and it is a directional arrow pad for word processing etc. This machine also had only 16 KB of user RAM (plus an additional 16 KB of video RAM), which limited its usefulness, though this could be expanded via an external peripheral box.
 
 This machine is basically identical to its big brother the SV-328, the only differences being in the keyboard and amount of memory. The ROM, expandability, mainboard and case of the two machines were identical.
 
 Reference to the operating system Microsoft Extended BASIC is not to be confused with MSX BASIC, although some marketing at the time claimed that Microsoft Extended is what MSX stood for. The SV-318 is not fully compliant with the MSX standard.</text>
-			<text lang="pl">SV-318 to podstawowy model z serii Spectravideo. Był wyposażony w klawiaturę typu chiclet, trudną w użyciu, obok której znajdowała się kombinacja kursora i joysticka. Jest to element w kształcie dysku z otworem w środku; po włożeniu czerwonego plastikowego "patyczka" w otwór jest to wbudowany joystick, po wyjęciu patyczka jest to strzałka kierunkowa do edytowania tekstu itp. Maszyna ta miała również tylko 16 KB pamięci RAM użytkownika (plus dodatkowe 16 KB pamięci RAM wideo), co ograniczało jej użyteczność, choć można ją było rozszerzyć za pomocą zewnętrznego modułu peryferyjnego.
+      <text lang="pl">SV-318 to podstawowy model z serii Spectravideo. Był wyposażony w klawiaturę typu chiclet, trudną w użyciu, obok której znajdowała się kombinacja kursora i joysticka. Jest to element w kształcie dysku z otworem w środku; po włożeniu czerwonego plastikowego "patyczka" w otwór jest to wbudowany joystick, po wyjęciu patyczka jest to strzałka kierunkowa do edytowania tekstu itp. Maszyna ta miała również tylko 16 KB pamięci RAM użytkownika (plus dodatkowe 16 KB pamięci RAM wideo), co ograniczało jej użyteczność, choć można ją było rozszerzyć za pomocą zewnętrznego modułu peryferyjnego.
 
 Maszyna ta jest w zasadzie identyczna jak jej starszy brat SV-328, a jedyne różnice dotyczą klawiatury i ilości pamięci. ROM, możliwości rozbudowy, płyta główna i obudowa obu maszyn były identyczne.
 
 Odniesienia do systemu operacyjnego Microsoft Extended BASIC nie należy mylić z MSX BASIC, chociaż niektórzy ówcześni marketingowcy twierdzili, że Microsoft Extended jest tym, co oznaczało MSX. SV-318 nie jest w pełni zgodny ze standardem MSX.</text>
-			<text lang="ru">Spectravideo, или SVI, — американская компания, основанная в 1981 году Гарри Фоксом (Harry Fox) под названием «SpectraVision». Изначально занималась производством видеоигр для игровых консолей Atari 2600 и ColecoVision, и домашнего компьютера Commodore VIC-20. Впоследствии также занималась производством собственных бытовых компьютеров; некоторые из них были совместимы со стандартами MSX и IBM PC. Наиболее известным продуктом фирмы является серия джойстиков Quickshot, первый из которых был разработан одним из основателей компании, и запатентован в 1982 году.
+      <text lang="pt">SV-318 é o modelo básico da série Spectravideo. Era equipado com um teclado tipo chiclet, difícil de usar, ao lado do qual estava uma combinação de cursor e joystick. Este é um elemento em forma de disco com um buraco no meio; após a inserção de um "bastão" de plástico vermelho no buraco, é um joystick embutido, após a remoção do bastão é uma seta direcional para edição de texto etc. Esta máquina também tinha apenas 16 KB de memória RAM do usuário (mais 16 KB adicionais de memória RAM de vídeo), o que limitava sua utilidade, embora pudesse ser expandida por meio de um módulo periférico externo.
+
+Esta máquina é essencialmente idêntica ao seu irmão mais velho, o SV-328, e as únicas diferenças estão no teclado e na quantidade de memória. ROM, capacidades de expansão, placa-mãe e gabinete de ambas as máquinas eram idênticos.
+
+As referências ao sistema operacional Microsoft Extended BASIC não devem ser confundidas com MSX BASIC, embora alguns profissionais de marketing da época afirmassem que Microsoft Extended era o que significava MSX. SV-318 não é totalmente compatível com o padrão MSX.</text>
+      <text lang="ru">Spectravideo, или SVI, — американская компания, основанная в 1981 году Гарри Фоксом (Harry Fox) под названием «SpectraVision». Изначально занималась производством видеоигр для игровых консолей Atari 2600 и ColecoVision, и домашнего компьютера Commodore VIC-20. Впоследствии также занималась производством собственных бытовых компьютеров; некоторые из них были совместимы со стандартами MSX и IBM PC. Наиболее известным продуктом фирмы является серия джойстиков Quickshot, первый из которых был разработан одним из основателей компании, и запатентован в 1982 году.
 
 Первой попыткой выхода компании на рынок аппаратного обеспечения был выпуск дополнения для Atari 2600, называвшегося Spectravideo CompuMate (Universum в Германии). Оно представляло собой мембранную клавиатуру, с помощью кабелей подключающуюся к слоту картриджа и портам джойстиков консоли. С помощью подобного устройства игровая консоль получала функции простейшего бытового компьютера.</text>
-			<text lang="es">El SV-318 es el modelo básico de la gama Spectravideo. Estaba equipado con un teclado tipo chiclet, difícil de usar, junto al que había una combinación de cursor y joystick. Se trata de un disco con un orificio en el centro; si se introduce un "palito" de plástico rojo en el orificio, se convierte en un joystick integrado; si se retira el palito, se convierte en un cursor direccional para el tratamiento de textos, etc. Esta máquina sólo tenía 16 KB de RAM de usuario (más 16 KB adicionales de RAM de vídeo), lo que limitaba su utilidad, aunque podía ampliarse mediante una caja de periféricos externa.
+      <text lang="es">El SV-318 es el modelo básico de la gama Spectravideo. Estaba equipado con un teclado tipo chiclet, difícil de usar, junto al que había una combinación de cursor y joystick. Se trata de un disco con un orificio en el centro; si se introduce un "palito" de plástico rojo en el orificio, se convierte en un joystick integrado; si se retira el palito, se convierte en un cursor direccional para el tratamiento de textos, etc. Esta máquina sólo tenía 16 KB de RAM de usuario (más 16 KB adicionales de RAM de vídeo), lo que limitaba su utilidad, aunque podía ampliarse mediante una caja de periféricos externa.
 
 Esta máquina es básicamente idéntica a su hermano mayor el SV-328, las únicas diferencias son el teclado y la cantidad de memoria. La ROM, la capacidad de ampliación, la placa base y la carcasa de ambas máquinas eran idénticas.
 
 La referencia al sistema operativo Microsoft Extended BASIC no debe confundirse con MSX BASIC, aunque algunas campañas de marketing de la época afirmaban que Microsoft Extended era lo que significaba MSX. El SV-318 no es totalmente compatible con el estándar MSX.</text>
-			<text lang="de">Der SV-318 ist das Basismodell der Spectravideo-Reihe. Es war mit einer schwer zu bedienenden Chiclet-Tastatur ausgestattet, neben der sich ein kombiniertes Cursorkreuz/Joystick befand. Das ist eine scheibenförmige Angelegenheit mit einem Loch in der Mitte; steckt man einen roten Plastikstab in das Loch, ist es ein eingebauter Joystick, entfernt man den Stab, ist es ein Richtungspfeil-Pad für Textverarbeitung usw. Das Gerät verfügte auch nur über 16 KB Arbeitsspeicher (plus weitere 16 KB Video-RAM), was seinen Nutzen einschränkte, obwohl dieser über eine externe Peripheriebox erweitert werden konnte.
+      <text lang="de">Der SV-318 ist das Basismodell der Spectravideo-Reihe. Es war mit einer schwer zu bedienenden Chiclet-Tastatur ausgestattet, neben der sich ein kombiniertes Cursorkreuz/Joystick befand. Das ist eine scheibenförmige Angelegenheit mit einem Loch in der Mitte; steckt man einen roten Plastikstab in das Loch, ist es ein eingebauter Joystick, entfernt man den Stab, ist es ein Richtungspfeil-Pad für Textverarbeitung usw. Das Gerät verfügte auch nur über 16 KB Arbeitsspeicher (plus weitere 16 KB Video-RAM), was seinen Nutzen einschränkte, obwohl dieser über eine externe Peripheriebox erweitert werden konnte.
 
 Dieser Rechner ist im Grunde identisch mit seinem großen Bruder, dem SV-328, die einzigen Unterschiede liegen in der Tastatur und der Größe des Speichers. Das ROM, die Erweiterungsmöglichkeiten, die Hauptplatine und das Gehäuse der beiden Maschinen waren identisch.
 
 Der Verweis auf das Betriebssystem Microsoft Extended BASIC ist nicht mit MSX BASIC zu verwechseln, auch wenn einige Marketingexperten damals behaupteten, dass Microsoft Extended für MSX stehe. Der SV-318 ist nicht vollständig konform mit dem MSX-Standard.</text>
-			<text lang="fr">Le SV-318 est le modèle de base de la gamme Spectravideo. Il était équipé d'un clavier de type chiclet, difficile à utiliser, à côté duquel se trouvait une combinaison curseur/joystick. Il s'agit d'un disque percé d'un trou en son centre ; insérez un "bâton" en plastique rouge dans le trou et vous obtenez un joystick intégré ; retirez le bâton et vous obtenez un pavé de flèches directionnelles pour le traitement de texte, etc. Cette machine ne disposait que de 16 Ko de RAM utilisateur (plus 16 Ko de RAM vidéo), ce qui limitait son utilité, bien qu'elle puisse être étendue grâce à un boîtier périphérique externe.
+      <text lang="fr">Le SV-318 est le modèle de base de la gamme Spectravideo. Il était équipé d'un clavier de type chiclet, difficile à utiliser, à côté duquel se trouvait une combinaison curseur/joystick. Il s'agit d'un disque percé d'un trou en son centre ; insérez un "bâton" en plastique rouge dans le trou et vous obtenez un joystick intégré ; retirez le bâton et vous obtenez un pavé de flèches directionnelles pour le traitement de texte, etc. Cette machine ne disposait que de 16 Ko de RAM utilisateur (plus 16 Ko de RAM vidéo), ce qui limitait son utilité, bien qu'elle puisse être étendue grâce à un boîtier périphérique externe.
 
 Cette machine est pratiquement identique à son grand frère, le SV-328, les seules différences se situant au niveau du clavier et de la quantité de mémoire. La ROM, les possibilités d'extension, la carte mère et le boîtier des deux machines étaient identiques.
 
 La référence au système d'exploitation Microsoft Extended BASIC ne doit pas être confondue avec MSX BASIC, bien qu'à l'époque un certain marketing ait prétendu que Microsoft Extended était l'acronyme de MSX. Le SV-318 n'est pas entièrement conforme à la norme MSX.</text>
-			<text lang="it">L'SV-318 è il modello base della gamma Spectravideo. Era dotato di una tastiera di tipo chiclet, difficile da usare, accanto alla quale si trovava una combinazione pad cursore/joystick. Si tratta di un oggetto a forma di disco con un foro al centro; inserendo un "bastoncino" di plastica rossa nel foro si ottiene un joystick incorporato, rimuovendo il bastoncino si ottiene un pad con frecce direzionali per l'elaborazione di testi ecc. Questa macchina disponeva inoltre di soli 16 KB di RAM utente (più altri 16 KB di RAM video), il che ne limitava l'utilità, anche se poteva essere espansa tramite un box periferico esterno.
+      <text lang="it">L'SV-318 è il modello base della gamma Spectravideo. Era dotato di una tastiera di tipo chiclet, difficile da usare, accanto alla quale si trovava una combinazione pad cursore/joystick. Si tratta di un oggetto a forma di disco con un foro al centro; inserendo un "bastoncino" di plastica rossa nel foro si ottiene un joystick incorporato, rimuovendo il bastoncino si ottiene un pad con frecce direzionali per l'elaborazione di testi ecc. Questa macchina disponeva inoltre di soli 16 KB di RAM utente (più altri 16 KB di RAM video), il che ne limitava l'utilità, anche se poteva essere espansa tramite un box periferico esterno.
 
 Questa macchina è fondamentalmente identica al fratello maggiore SV-328, con le sole differenze della tastiera e della quantità di memoria. La ROM, l'espandibilità, la scheda madre e il case delle due macchine erano identici.
 
 Il riferimento al sistema operativo Microsoft Extended BASIC non deve essere confuso con MSX BASIC, anche se alcuni marketing dell'epoca sostenevano che Microsoft Extended fosse l'acronimo di MSX. L'SV-318 non è completamente conforme allo standard MSX.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

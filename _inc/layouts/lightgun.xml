@@ -1,189 +1,194 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.4 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.25 0.36</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>0</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="-0.03 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.55 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.74 0.36</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>0</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.46 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.501 0.36</pos>
-			<maxSize>0.18</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.24</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.221 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-left" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.355 0.35</pos>
-			<maxSize>0.14</maxSize>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.075 0.35" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-right" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.655 0.34</pos>
-			<maxSize>0.14</maxSize>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.375 0.34" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.501 0.36</pos>
-			<maxSize>0.16</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.19</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.18</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.221 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}-right.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}-right.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.655 0.34</pos>
-			<maxSize>0.13</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.375 0.34" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox3" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}-left.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}-left.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.1</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.36</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.345 0.35</pos>
-			<maxSize>0.13</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.065 0.35" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text/>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Light Gun</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>A light gun is a pointing device for computers and a control device for arcade and video games, typically shaped to resemble a pistol. In aviation and shipping, it can also be a directional signal lamp.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-left" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.4 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.25 0.36</pos>
+      <minSize>0.1 0.3</minSize>
+      <rotation>0</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="-0.03 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-right" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.55 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.74 0.36</pos>
+      <minSize>0.1 0.3</minSize>
+      <rotation>0</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.46 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.501 0.36</pos>
+      <maxSize>0.18</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.24</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.221 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-left" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.355 0.35</pos>
+      <maxSize>0.14</maxSize>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.075 0.35" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-right" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.655 0.34</pos>
+      <maxSize>0.14</maxSize>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.375 0.34" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.501 0.36</pos>
+      <maxSize>0.16</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.19</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.18</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.221 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}-right.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}-right.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.655 0.34</pos>
+      <maxSize>0.13</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.375 0.34" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox3" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}-left.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}-left.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.1</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.36</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.345 0.35</pos>
+      <maxSize>0.13</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.065 0.35" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text/>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Light Gun</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>A light gun is a pointing device for computers and a control device for arcade and video games, typically shaped to resemble a pistol. In aviation and shipping, it can also be a directional signal lamp.
 
 Modern screen-based light guns work by building an optical sensor into the gun, which receives its input from the light emitted by on-screen target(s). The first device of this type, the light pen, was used on the MIT Whirlwind computer.
 
 The light gun and its ancestor the light pen are now rarely used as pointing devices due largely to the popularity of the mouse and changes in monitor display technology—conventional light guns work only with CRT monitors.</text>
-			<text lang="pl">Pistolet świetlny to urządzenie wskazujące dla komputerów i urządzenie sterujące dla gier arcade i gier wideo, zwykle w kształcie przypominającym pistolet. W lotnictwie i żegludze może to być również kierunkowa lampa sygnalizacyjna.
+      <text lang="pl">Pistolet świetlny to urządzenie wskazujące dla komputerów i urządzenie sterujące dla gier arcade i gier wideo, zwykle w kształcie przypominającym pistolet. W lotnictwie i żegludze może to być również kierunkowa lampa sygnalizacyjna.
 
 Nowoczesne, oparte na ekranie pistolety świetlne działają poprzez wbudowanie w pistolet czujnika optycznego, który otrzymuje dane wejściowe ze światła emitowanego przez cel(e) na ekranie. Pierwsze urządzenie tego typu, pióro świetlne, było używane w komputerze MIT Whirlwind.
 
 Pistolet świetlny i jego przodek pióro świetlne są obecnie rzadko używane jako urządzenia wskazujące, głównie ze względu na popularność myszy i zmiany w technologii wyświetlania monitorów - konwencjonalne pistolety świetlne działają tylko z monitorami CRT.</text>
-			<text lang="ru">Световой пистолет — указывающее устройство для компьютеров и телевизионных игровых приставок. Данное устройство позволяет «стрелять» в экран телевизора, с соответствующей реакцией «попал-промахнулся».
+      <text lang="pt">Pistola de luz é um dispositivo de apontamento para computadores e um dispositivo de controle para jogos de fliperama e videogames, geralmente em forma semelhante a uma pistola. Na aviação e navegação, também pode ser uma lâmpada de sinalização direcionada.
+
+Pistolas de luz modernas, baseadas em tela, funcionam através da integração de um sensor óptico no dispositivo, que recebe dados de entrada da luz emitida pelo(s) alvo(s) na tela. O primeiro dispositivo deste tipo, a caneta de luz, foi usado no computador MIT Whirlwind.
+
+A pistola de luz e seu precursor, a caneta de luz, são atualmente raramente utilizados como dispositivos de apontamento, principalmente devido à popularidade do mouse e às mudanças na tecnologia de exibição dos monitores - pistolas de luz convencionais funcionam apenas com monitores CRT.</text>
+      <text lang="ru">Световой пистолет — указывающее устройство для компьютеров и телевизионных игровых приставок. Данное устройство позволяет «стрелять» в экран телевизора, с соответствующей реакцией «попал-промахнулся».
 
 На массовый рынок световой пистолет вышел вместе с приставкой Magnavox Odyssey. Ружьё Shooting Gallery («тир») стало необязательным аксессуаром для этой приставки. Впоследствии пистолетом снабжали приставки NES, Sega Megadrive, SNES. Для приставок типа NES он был обязательным в наборе, вкупе с джойстиками и картриджем.
 
 Пистолет применялся в играх Duck Hunt, Clay Shooting и некоторых боевиках.
 
 Переход на HD-телевизоры, начавшийся в середине 1990-х, закрыл самую простую разновидность пистолета, к тому же развитие геймдизайна создало новые жанры и усложнило геймплей имеющихся — с пистолетом такое провернуть сложно (хотя несколько раз пытались: например, в Time Crisis под ногами игрока была педаль). Ностальгирующие геймеры испытывают различные конструкции, но ни одна из них не стала новым стандартом.</text>
-			<text lang="es">Una pistola de luz es un dispositivo apuntador para ordenadores y un dispositivo de control para máquinas recreativas y videojuegos, normalmente con forma de pistola. En la aviación y la navegación, también puede ser una lámpara de señalización direccional.
+      <text lang="es">Una pistola de luz es un dispositivo apuntador para ordenadores y un dispositivo de control para máquinas recreativas y videojuegos, normalmente con forma de pistola. En la aviación y la navegación, también puede ser una lámpara de señalización direccional.
 
 Las pistolas luminosas modernas funcionan mediante un sensor óptico integrado en la pistola, que recibe la información de la luz emitida por los objetivos en pantalla. El primer dispositivo de este tipo, el lápiz óptico, se utilizó en el ordenador Whirlwind del MIT.
 
 En la actualidad, la pistola de luz y su antecesor, el lápiz óptico, apenas se utilizan como dispositivos señaladores, debido sobre todo a la popularidad del ratón y a los cambios en la tecnología de visualización de los monitores: las pistolas de luz convencionales sólo funcionan con monitores CRT.</text>
-			<text lang="de">Eine Lightgun ist ein Zeigegerät für Computer und ein Steuergerät für Arcade- und Videospiele, das in der Regel die Form einer Pistole hat. In der Luftfahrt und Schifffahrt kann es sich auch um eine Signallampe mit Richtcharakter handeln.
+      <text lang="de">Eine Lightgun ist ein Zeigegerät für Computer und ein Steuergerät für Arcade- und Videospiele, das in der Regel die Form einer Pistole hat. In der Luftfahrt und Schifffahrt kann es sich auch um eine Signallampe mit Richtcharakter handeln.
 
 Moderne bildschirmbasierte Lichtpistolen funktionieren, indem ein optischer Sensor in die Pistole eingebaut wird, der seinen Input von dem Licht erhält, das von dem/den Ziel(en) auf dem Bildschirm ausgestrahlt wird. Das erste Gerät dieser Art, der Lichtstift, wurde auf dem MIT Whirlwind Computer verwendet.
 
 Die Lichtpistole und ihr Vorläufer, der Lichtstift, werden heute nur noch selten als Zeigegeräte verwendet, was vor allem auf die Popularität der Maus und die Veränderungen in der Bildschirmtechnologie zurückzuführen ist - herkömmliche Lichtpistolen funktionieren nur mit Röhrenmonitoren.</text>
-			<text lang="fr">Un pistolet lumineux est un dispositif de pointage pour les ordinateurs et un dispositif de contrôle pour les jeux d'arcade et les jeux vidéo, dont la forme ressemble généralement à celle d'un pistolet. Dans l'aviation et la navigation, il peut également s'agir d'une lampe de signalisation directionnelle.
+      <text lang="fr">Un pistolet lumineux est un dispositif de pointage pour les ordinateurs et un dispositif de contrôle pour les jeux d'arcade et les jeux vidéo, dont la forme ressemble généralement à celle d'un pistolet. Dans l'aviation et la navigation, il peut également s'agir d'une lampe de signalisation directionnelle.
 
 Les pistolets lumineux modernes à écran fonctionnent en intégrant un capteur optique dans le pistolet, qui reçoit ses données de la lumière émise par la ou les cible(s) affichée(s) à l'écran. Le premier dispositif de ce type, le stylo lumineux, était utilisé sur l'ordinateur Whirlwind du MIT.
 
 Le pistolet à lumière et son ancêtre le stylo à lumière sont aujourd'hui rarement utilisés comme dispositifs de pointage, en grande partie à cause de la popularité de la souris et des changements dans la technologie d'affichage des écrans - les pistolets à lumière conventionnels ne fonctionnent qu'avec les écrans à tube cathodique.</text>
-			<text lang="it">La light gun è un dispositivo di puntamento per computer e un dispositivo di controllo per videogiochi e sale giochi, tipicamente a forma di pistola. Nell'aviazione e nel trasporto marittimo, può anche fungere da lampada di segnalazione direzionale.
+      <text lang="it">La light gun è un dispositivo di puntamento per computer e un dispositivo di controllo per videogiochi e sale giochi, tipicamente a forma di pistola. Nell'aviazione e nel trasporto marittimo, può anche fungere da lampada di segnalazione direzionale.
 
 Le moderne light gun basate sullo schermo funzionano incorporando un sensore ottico nella pistola, che riceve l'input dalla luce emessa dai bersagli sullo schermo. Il primo dispositivo di questo tipo, la penna luminosa, è stato utilizzato nel computer Whirlwind del MIT.
 
 La light gun e la sua antenata light pen sono oggi raramente utilizzate come dispositivi di puntamento, soprattutto a causa della popolarità del mouse e dei cambiamenti nella tecnologia di visualizzazione dei monitor: le light gun convenzionali funzionano solo con i monitor CRT.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

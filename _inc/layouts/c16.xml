@@ -1,86 +1,93 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.26</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<pos>0.5 0.356</pos>
-			<maxSize>0.24</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.356" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.26</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<pos>0.5 0.356</pos>
-			<maxSize>0.23</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.356" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1984</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Commodore 16</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Commodore 16 is a home computer made by Commodore International with a 6502-compatible 7501 or 8501 CPU, released in 1984 and intended to be an entry-level computer to replace the VIC-20. A cost-reduced version, the Commodore 116, was mostly sold in Europe.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.26</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <pos>0.5 0.356</pos>
+      <maxSize>0.24</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.356" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.26</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <pos>0.5 0.356</pos>
+      <maxSize>0.23</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.356" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1984</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Commodore 16</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Commodore 16 is a home computer made by Commodore International with a 6502-compatible 7501 or 8501 CPU, released in 1984 and intended to be an entry-level computer to replace the VIC-20. A cost-reduced version, the Commodore 116, was mostly sold in Europe.
 
 The C16 and C116 belong to the same family as the higher-end Plus/4 and are internally very similar to it (albeit with less RAM – 16 KB rather than 64 KB – and lacking the Plus/4's user port and Three plus one software). Software is generally compatible among all three provided it can fit within the C16's smaller RAM and does not utilize the user port on the Plus/4.
 
 While the C16 was a failure on the US market, it enjoyed some success in certain European countries and Mexico.</text>
-			<text lang="pl">Commodore 16 – komputer domowy wyprodukowany przez amerykańską firmę Commodore w roku 1984 na bazie procesora 7501 – zmodyfikowanej wersji 6502.
+      <text lang="pl">Commodore 16 – komputer domowy wyprodukowany przez amerykańską firmę Commodore w roku 1984 na bazie procesora 7501 – zmodyfikowanej wersji 6502.
 
 Plasował się w dolnej półce cenowej komputerów poniżej 100 dolarów. Model ten nie był kompatybilny z Commodore 64, był kompatybilny z komputerami Commodore 116 i Commodore Plus/4. Uboższa wersja – Commodore 116 – sprzedawana była wyłącznie w Europie.
 
 C16 został zaprojektowany, aby konkurować z komputerami o cenach poniżej 100 dolarów firm Timex Corporation, Mattel i Texas Instruments. Maszyny firm Mattel i Timex były tańsze od Commodore VIC-20, a wprowadzenie C16 (mimo że VIC posiadał większy wybór urządzeń zewnętrznych, pełnowymiarową klawiaturę i więcej pamięci niż produkty konkurencji) miało dać możliwość wejścia Commodore w ten segment komputerów. Texas Instruments TI-99/4A plasował się cenowo między VIC-20 a C64, a jego możliwości również leżały między tymi dwoma komputerami, ale Texas Instruments zaniżało cenę produktu. C16 był bardziej zbliżony parametrami do TI-99/4A niż starzejący się już VIC-20.
 
 Największymi niedogodnościami C16 był brak kompatybilnego z VIC-20/C64 złącza magnetofonu Datassette, brak portu gier oraz złącza modemu. Commodore sprzedawało przeznaczone specjalnie dla rodziny C16 magnetofony Commodore 1531 oraz dżojstiki, ale wkrótce pojawiły się konwertery umożliwiające podłączenie urządzeń z VIC-20/C64. Oficjalną przyczyną zmiany portu dżojstików było zmniejszenie interferencji fal radiowych. Port szeregowy C16 posiadał interfejs IEEE-488.</text>
-			<text lang="ru">Commodore 16 — 8-разрядный домашний компьютер на базе процессора 8501 (6502-совместимый), производившийся компанией Commodore с 1984 года. Это компьютер начального уровня, созданный для замены VIC-20, но несовместимый с ним. Продавался по цене 99 долларов в США. Более дешёвая версия — Commodore 116 продавалась только в Европе.
+      <text lang="pt">Commodore 16 – um computador doméstico produzido pela empresa americana Commodore em 1984, baseado no processador 7501 – uma versão modificada do 6502.
+
+Ele se posicionava na faixa de preço inferior a US$ 100. Este modelo não era compatível com o Commodore 64, era compatível com os computadores Commodore 116 e Commodore Plus/4. Uma versão mais simples – o Commodore 116 – foi vendida exclusivamente na Europa.
+
+O C16 foi projetado para competir com computadores abaixo de US$ 100 das empresas Timex Corporation, Mattel e Texas Instruments. As máquinas das empresas Mattel e Timex eram mais baratas que o Commodore VIC-20, e o lançamento do C16 (apesar do VIC ter uma maior variedade de dispositivos externos, teclado de tamanho normal e mais memória que os produtos da concorrência) tinha como objetivo permitir que a Commodore entrasse nesse segmento de computadores. O Texas Instruments TI-99/4A se posicionava em termos de preço entre o VIC-20 e o C64, e suas capacidades também ficavam entre esses dois computadores, mas a Texas Instruments baixava o preço do produto. O C16 era mais próximo em termos de parâmetros ao TI-99/4A do que o já antigo VIC-20.
+
+As maiores desvantagens do C16 eram a falta de um conector de gravador Datassette compatível com o VIC-20/C64, a falta de uma porta de jogos e de um conector de modem. A Commodore vendia gravadores Commodore 1531 e joysticks especialmente projetados para a família C16, mas logo surgiram conversores que permitiam conectar dispositivos do VIC-20/C64. A razão oficial para a mudança na porta do joystick foi a redução da interferência de ondas de rádio. A porta serial do C16 tinha uma interface IEEE-488.</text>
+      <text lang="ru">Commodore 16 — 8-разрядный домашний компьютер на базе процессора 8501 (6502-совместимый), производившийся компанией Commodore с 1984 года. Это компьютер начального уровня, созданный для замены VIC-20, но несовместимый с ним. Продавался по цене 99 долларов в США. Более дешёвая версия — Commodore 116 продавалась только в Европе.
 
 Внешне C16 похож на VIC-20 и C64, но имеет тёмно-серый корпус и светло-серые клавиши. Раскладка клавиатуры немного отличается от предыдущих моделей, добавилась клавиша Escape и полноценные клавиши-стрелки. По производительности новая модель расположена между VIC-20 и C64, имеет 16 КБ ОЗУ (12 КБ доступны для программ на Бейсике), новый чипсет TED (англ.) предоставляет палитру в 128 цветов (на самом деле 16 цветов в 8-ми градациях яркости, что даёт 121 уникальный цвет). В ПЗУ размещён Commodore BASIC 3.5.
 
 С точки зрения пользователя, C16 был неудобен своими интерфейсами. Порты модема, магнитофона и джойстиков были несовместимы с VIC-20/C64. Commodore продавал для C16 специальный магнитофон (Commodore 1531) и джойстики, также вскоре появились переходники сторонних фирм для использования оборудования от VIC-20/C64.
 
 Commodore 16 стал одним из трёх компьютеров семейства. Commodore 116 был функционально и технически очень похожим на C16, но имел меньший корпус и резиновую клавиатуру. Эту модель предполагали продавать по цене около 50 долларов, но она стала ещё менее удачной и продавалась только в Европе. Флагманским компьютером серии стал Commodore Plus/4, с полноходовой клавиатурой, 64 КБ памяти и встроенным прикладным программным обеспечением.</text>
-			<text lang="es">El Commodore 16 es un ordenador doméstico fabricado por Commodore International con una CPU 7501 u 8501 compatible con 6502, lanzado en 1984 con la intención de ser un ordenador básico que sustituyera al VIC-20. Una versión más económica se vendió principalmente en Europa. Una versión más económica, el Commodore 116, se vendió principalmente en Europa.
+      <text lang="es">El Commodore 16 es un ordenador doméstico fabricado por Commodore International con una CPU 7501 u 8501 compatible con 6502, lanzado en 1984 con la intención de ser un ordenador básico que sustituyera al VIC-20. Una versión más económica se vendió principalmente en Europa. Una versión más económica, el Commodore 116, se vendió principalmente en Europa.
 
 El C16 y el C116 pertenecen a la misma familia que el Plus/4 de gama alta y son internamente muy similares (aunque con menos RAM -16 KB en lugar de 64 KB- y sin el puerto de usuario del Plus/4 ni el software Three plus one). El software es generalmente compatible entre los tres siempre que quepa en la RAM más pequeña del C16 y no utilice el puerto de usuario del Plus/4.
 
 Aunque el C16 fue un fracaso en el mercado estadounidense, tuvo cierto éxito en algunos países europeos y en México.</text>
-			<text lang="de">Der Commodore 16 ist ein von Commodore International hergestellter Heimcomputer mit einer 6502-kompatiblen 7501- oder 8501-CPU, der 1984 auf den Markt kam und als Einstiegscomputer den VIC-20 ersetzen sollte. Eine kostenreduzierte Version, der Commodore 116, wurde hauptsächlich in Europa verkauft.
+      <text lang="de">Der Commodore 16 ist ein von Commodore International hergestellter Heimcomputer mit einer 6502-kompatiblen 7501- oder 8501-CPU, der 1984 auf den Markt kam und als Einstiegscomputer den VIC-20 ersetzen sollte. Eine kostenreduzierte Version, der Commodore 116, wurde hauptsächlich in Europa verkauft.
 
 Der C16 und der C116 gehören zur gleichen Familie wie der höherwertige Plus/4 und sind ihm intern sehr ähnlich (wenn auch mit weniger RAM - 16 KB statt 64 KB - und ohne die Benutzerschnittstelle des Plus/4 und die Three plus one-Software). Die Software ist in der Regel mit allen drei kompatibel, sofern sie in den kleineren Arbeitsspeicher des C16 passt und nicht den Benutzeranschluss des Plus/4 verwendet.
 
 Während das C16 auf dem US-Markt ein Misserfolg war, hatte es in einigen europäischen Ländern und in Mexiko einigen Erfolg.</text>
-			<text lang="fr">Le Commodore 16 est un ordinateur domestique fabriqué par Commodore International avec un processeur 7501 ou 8501 compatible 6502, sorti en 1984 et destiné à être un ordinateur d'entrée de gamme pour remplacer le VIC-20. Une version plus économique, le Commodore 116, a été principalement vendue en Europe.
+      <text lang="fr">Le Commodore 16 est un ordinateur domestique fabriqué par Commodore International avec un processeur 7501 ou 8501 compatible 6502, sorti en 1984 et destiné à être un ordinateur d'entrée de gamme pour remplacer le VIC-20. Une version plus économique, le Commodore 116, a été principalement vendue en Europe.
 
 Le C16 et le C116 appartiennent à la même famille que le Plus/4, plus haut de gamme, et lui sont très similaires sur le plan interne (avec toutefois moins de mémoire vive - 16 Ko au lieu de 64 Ko - et sans le port utilisateur du Plus/4 ni le logiciel Three plus one). Les logiciels sont généralement compatibles entre les trois, à condition qu'ils puissent s'adapter à la RAM plus petite du C16 et qu'ils n'utilisent pas le port utilisateur du Plus/4.
 
 Si le C16 a été un échec sur le marché américain, il a connu un certain succès dans certains pays européens et au Mexique.</text>
-			<text lang="it">Il Commodore 16 è un home computer prodotto da Commodore International con una CPU 7501 o 8501 compatibile con il 6502, rilasciato nel 1984 e destinato ad essere un computer entry-level per sostituire il VIC-20. Una versione a costo ridotto, il Commodore 116, fu venduta soprattutto in Europa.
+      <text lang="it">Il Commodore 16 è un home computer prodotto da Commodore International con una CPU 7501 o 8501 compatibile con il 6502, rilasciato nel 1984 e destinato ad essere un computer entry-level per sostituire il VIC-20. Una versione a costo ridotto, il Commodore 116, fu venduta soprattutto in Europa.
 
 Il C16 e il C116 appartengono alla stessa famiglia del Plus/4 di fascia alta e sono internamente molto simili a quest'ultimo (anche se con meno RAM - 16 KB anziché 64 KB - e senza la porta utente e il software Three plus one del Plus/4). Il software è generalmente compatibile tra tutti e tre i modelli, a condizione che possa essere inserito nella RAM più piccola del C16 e che non utilizzi la porta utente del Plus/4.
 
 Sebbene il C16 sia stato un fallimento sul mercato statunitense, ha riscosso un certo successo in alcuni paesi europei e in Messico.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

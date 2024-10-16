@@ -1,56 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">0.52 0.5</origin>
-			<pos>0.518 0.33</pos>
-			<maxSize>0.23</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.238 0.33" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">0.52 0.5</origin>
-			<pos>0.518 0.33</pos>
-			<maxSize>0.22</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.238 0.33" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1982</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Commodore</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>64</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Commodore 64, also known as the C64 or the CBM 64, is an 8-bit home computer introduced in January 1982 by Commodore International (first shown at the Consumer Electronics Show, in Las Vegas, January 7–10, 1982). It has been listed in the Guinness World Records as the highest-selling single computer model of all time, with independent estimates placing the number sold between 12.5 and 17 million units. Volume production started in early 1982, marketing in August for US$595 (equivalent to $1,576 in 2019). Preceded by the Commodore VIC-20 and Commodore PET, the C64 took its name from its 64 kilobytes (65,536 bytes) of RAM. With support for multicolor sprites and a custom chip for waveform generation, the C64 could create superior visuals and audio compared to systems without such custom hardware.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">0.52 0.5</origin>
+      <pos>0.518 0.33</pos>
+      <maxSize>0.23</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.238 0.33" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">0.52 0.5</origin>
+      <pos>0.518 0.33</pos>
+      <maxSize>0.22</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.238 0.33" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1982</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Commodore</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>64</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Commodore 64, also known as the C64 or the CBM 64, is an 8-bit home computer introduced in January 1982 by Commodore International (first shown at the Consumer Electronics Show, in Las Vegas, January 7–10, 1982). It has been listed in the Guinness World Records as the highest-selling single computer model of all time, with independent estimates placing the number sold between 12.5 and 17 million units. Volume production started in early 1982, marketing in August for US$595 (equivalent to $1,576 in 2019). Preceded by the Commodore VIC-20 and Commodore PET, the C64 took its name from its 64 kilobytes (65,536 bytes) of RAM. With support for multicolor sprites and a custom chip for waveform generation, the C64 could create superior visuals and audio compared to systems without such custom hardware.
 
 The C64 dominated the low-end computer market (except in the UK) for most of the 1980s. For a substantial period (1983–1986), the C64 had between 30% and 40% share of the US market and two million units sold per year, outselling IBM PC compatibles, Apple computers, and the Atari 8-bit family of computers. Sam Tramiel, a later Atari president and the son of Commodore's founder, said in a 1989 interview, "When I was at Commodore we were building 400,000 C64s a month for a couple of years." In the UK market, the C64 faced competition from the BBC Micro and the ZX Spectrum, but the C64 was still the second most popular computer in the UK after the ZX Spectrum.</text>
-			<text lang="pl">Commodore 64, C64, CBM64 – komputer domowy z lat 80. XX wieku firmy Commodore Business Machines (CBM). C64 był dotychczas najlepiej sprzedającym się komputerem w historii informatyki – 17 mln sprzedanych egzemplarzy.
+      <text lang="pl">Commodore 64, C64, CBM64 – komputer domowy z lat 80. XX wieku firmy Commodore Business Machines (CBM). C64 był dotychczas najlepiej sprzedającym się komputerem w historii informatyki – 17 mln sprzedanych egzemplarzy.
 Powstała też wersja Commodore Educator 64 przeznaczona do szkół. Sprzętowo nie różniła się od Commodore 64 z wyjątkiem monochromatycznego monitora wbudowanego w obudowę. Komputer C64 powstał w styczniu 1982 r. jako następca modelu VIC-20. Początkowo sprzedawany był w cenie 595$, jednak cena ta była znacznie wyższa od ceny produktów konkurencji (ZX Spectrum), stąd nie przyniosła popularności modelowi.
 Firma Commodore, będąc właścicielem firmy MOS Technology, produkującej większość podzespołów do C64, oszacowała koszt produkcji każdego modelu na 135$. Cena maszyny znacznie spadła, a firma rozpoczęła agresywną politykę marketingową, kierując komputer w stronę rynku gier. Wkrótce model C64 stał się najpopularniejszym komputerem.
 
@@ -74,23 +74,47 @@ Dane techniczne:
 	USERPORT – port równoległy umożliwiający transmisję szeregową RS-232
 	szyna szeregowa dla drukarki lub stacji dysków
 	zasilanie: 5 V DC i 9 V AC</text>
-			<text lang="ru">Домашний компьютер с 64 КБ оперативной памяти. Выпущен на рынок компанией Commodore International в августе 1982 года по цене 595 долларов. За всё время выпуска Commodore 64 (1982—1994) было продано более 15 млн компьютеров. Согласно книге рекордов Гиннесса, Commodore 64 стал лидером продаж среди моделей компьютеров.
+      <text lang="pt">Commodore 64, C64, CBM64 – um computador doméstico dos anos 80 do século XX da Commodore Business Machines (CBM). O C64 foi o computador mais vendido da história da informática – 17 milhões de unidades vendidas. 
+Também foi criada uma versão Commodore Educator 64 destinada às escolas. Em termos de hardware, não diferia do Commodore 64, exceto pelo monitor monocromático embutido na caixa. O computador C64 foi criado em janeiro de 1982 como sucessor do modelo VIC-20. Inicialmente, foi vendido por US$ 595, mas esse preço era muito mais alto do que o preço dos produtos da concorrência (ZX Spectrum), por isso não trouxe popularidade ao modelo.
+A Commodore, proprietária da MOS Technology, que fabricava a maioria dos componentes do C64, estimou o custo de produção de cada modelo em US$ 135. O preço da máquina caiu consideravelmente e a empresa lançou uma agressiva política de marketing, direcionando o computador para o mercado de jogos. Em breve, o modelo C64 se tornou o computador mais popular.
+
+Especificações técnicas:
+- Processador: MOS Technology 6510 (ou nas versões mais recentes 8500), 0,985 MHz (PAL) ou 1,023 MHz (NTSC)
+- Chip de gráficos: MOS Technology 6567 (NTSC) ou 6569 (PAL) (nas versões mais recentes 8562 e 8565, respectivamente), conhecido como VIC-II (VIC - Video Interface Controller)
+- Chip de som: MOS Technology 6581 (nas versões mais recentes 8580), chamado SID (SID - Sound Interface Device)
+- Memória RAM: 64 KB
+- Memória ROM: 20 KB (8 KB BASIC, 8 KB KERNAL, 4 KB gerador de caracteres)
+- Modo de texto: 40×25 caracteres, cada caractere 8×8 pixels, em uma das 16 cores, possível redefinir o conjunto de caracteres.
+- Modos gráficos:
+	320×200, 1 bit por pixel (chamado de hi-res)
+	160×200, 2 bits/pixel (chamado de multicolor).
+- Som: 3 vozes independentes, 6 oitavas, 4 formas de onda para escolher (triangular, dente de serra, quadrado com preenchimento variável e ruído), possibilidade de alterar os parâmetros do envelope (ADSR) (4 bits para cada).
+- Portas de entrada/saída:
+	vídeo
+	TV RF
+	2 portas de joystick (9 pinos)
+	porta para cartucho
+	porta para gravador (Datasette)
+	USERPORT - porta paralela que permite transmissão serial RS-232
+	barramento serial para impressora ou unidade de disco
+	alimentação: 5 V DC e 9 V AC</text>
+      <text lang="ru">Домашний компьютер с 64 КБ оперативной памяти. Выпущен на рынок компанией Commodore International в августе 1982 года по цене 595 долларов. За всё время выпуска Commodore 64 (1982—1994) было продано более 15 млн компьютеров. Согласно книге рекордов Гиннесса, Commodore 64 стал лидером продаж среди моделей компьютеров.
 
 C64 можно было подключить непосредственно к телевизору и играть в игры, в той же манере, как это делалось с игровыми приставками, такими как Atari 2600. В отличие от других компьютеров, распространявшихся только через авторизованных дилеров, Commodore также нацеливался на крупные магазины и магазины игрушек. Считается, что ценовая политика Commodore 64 стала одной из основных причин сокращения рынка игровых приставок в 1983 году.
 
 Для Commodore 64 было создано порядка 10 тыс. различных программ, включая средства разработки, офисные приложения и игры.</text>
-			<text lang="es">El Commodore 64, también conocido como C64 o CBM 64, es un ordenador doméstico de 8 bits presentado en enero de 1982 por Commodore International (mostrado por primera vez en el Consumer Electronics Show, en Las Vegas, del 7 al 10 de enero de 1982). Ha sido incluido en los Récords Mundiales Guinness como el modelo de ordenador más vendido de todos los tiempos, con estimaciones independientes que sitúan el número de unidades vendidas entre 12,5 y 17 millones. La producción en serie comenzó a principios de 1982, comercializándose en agosto por 595 dólares (equivalentes a 1.576 dólares en 2019). Precedido por el Commodore VIC-20 y el Commodore PET, el C64 tomó su nombre de sus 64 kilobytes (65.536 bytes) de RAM. Con soporte para sprites multicolor y un chip personalizado para la generación de formas de onda, el C64 podía crear visuales y audio superiores en comparación con sistemas sin dicho hardware personalizado.
+      <text lang="es">El Commodore 64, también conocido como C64 o CBM 64, es un ordenador doméstico de 8 bits presentado en enero de 1982 por Commodore International (mostrado por primera vez en el Consumer Electronics Show, en Las Vegas, del 7 al 10 de enero de 1982). Ha sido incluido en los Récords Mundiales Guinness como el modelo de ordenador más vendido de todos los tiempos, con estimaciones independientes que sitúan el número de unidades vendidas entre 12,5 y 17 millones. La producción en serie comenzó a principios de 1982, comercializándose en agosto por 595 dólares (equivalentes a 1.576 dólares en 2019). Precedido por el Commodore VIC-20 y el Commodore PET, el C64 tomó su nombre de sus 64 kilobytes (65.536 bytes) de RAM. Con soporte para sprites multicolor y un chip personalizado para la generación de formas de onda, el C64 podía crear visuales y audio superiores en comparación con sistemas sin dicho hardware personalizado.
 
 El C64 dominó el mercado de ordenadores de gama baja (excepto en el Reino Unido) durante la mayor parte de la década de 1980. Durante un periodo sustancial (1983-1986), el C64 tuvo entre un 30% y un 40% de cuota de mercado en EE.UU. y dos millones de unidades vendidas al año, superando en ventas a los compatibles IBM PC, los ordenadores Apple y la familia de ordenadores Atari de 8 bits. Sam Tramiel, posterior presidente de Atari e hijo del fundador de Commodore, dijo en una entrevista en 1989: "Cuando yo estaba en Commodore estuvimos fabricando 400.000 C64 al mes durante un par de años". En el mercado británico, el C64 tuvo que hacer frente a la competencia del BBC Micro y el ZX Spectrum, pero el C64 seguía siendo el segundo ordenador más popular en el Reino Unido después del ZX Spectrum.</text>
-			<text lang="de">Der Commodore 64, auch bekannt als C64 oder CBM 64, ist ein 8-Bit-Heimcomputer, der im Januar 1982 von Commodore International vorgestellt wurde (erstmals auf der Consumer Electronics Show in Las Vegas, 7. bis 10. Januar 1982). Er ist im Guinness-Buch der Rekorde als das meistverkaufte Computermodell aller Zeiten aufgeführt, wobei unabhängige Schätzungen die Zahl der verkauften Einheiten auf 12,5 bis 17 Millionen beziffern. Die Serienproduktion begann Anfang 1982 und wurde im August für 595 US-Dollar (entspricht 1.576 US-Dollar im Jahr 2019) auf den Markt gebracht. Vorgänger des C64 waren der Commodore VIC-20 und der Commodore PET. Seinen Namen verdankt der C64 seinem 64 Kilobyte (65.536 Byte) großen Arbeitsspeicher. Mit der Unterstützung für mehrfarbige Sprites und einem speziellen Chip für die Erzeugung von Wellenformen konnte der C64 im Vergleich zu Systemen ohne diese spezielle Hardware eine bessere Bild- und Tonqualität erzeugen.
+      <text lang="de">Der Commodore 64, auch bekannt als C64 oder CBM 64, ist ein 8-Bit-Heimcomputer, der im Januar 1982 von Commodore International vorgestellt wurde (erstmals auf der Consumer Electronics Show in Las Vegas, 7. bis 10. Januar 1982). Er ist im Guinness-Buch der Rekorde als das meistverkaufte Computermodell aller Zeiten aufgeführt, wobei unabhängige Schätzungen die Zahl der verkauften Einheiten auf 12,5 bis 17 Millionen beziffern. Die Serienproduktion begann Anfang 1982 und wurde im August für 595 US-Dollar (entspricht 1.576 US-Dollar im Jahr 2019) auf den Markt gebracht. Vorgänger des C64 waren der Commodore VIC-20 und der Commodore PET. Seinen Namen verdankt der C64 seinem 64 Kilobyte (65.536 Byte) großen Arbeitsspeicher. Mit der Unterstützung für mehrfarbige Sprites und einem speziellen Chip für die Erzeugung von Wellenformen konnte der C64 im Vergleich zu Systemen ohne diese spezielle Hardware eine bessere Bild- und Tonqualität erzeugen.
 
 Der C64 dominierte den Low-End-Computermarkt (außer im Vereinigten Königreich) für den größten Teil der 1980er Jahre. Während eines beträchtlichen Zeitraums (1983-1986) hatte der C64 einen Marktanteil von 30 % bis 40 % in den USA und verkaufte zwei Millionen Einheiten pro Jahr, wobei er die IBM PC-kompatiblen Computer, die Apple Computer und die Atari 8-Bit-Computerfamilie übertraf. Sam Tramiel, ein späterer Atari-Präsident und Sohn des Commodore-Gründers, sagte 1989 in einem Interview: "Als ich bei Commodore war, haben wir ein paar Jahre lang 400.000 C64 pro Monat gebaut." Auf dem britischen Markt stand der C64 im Wettbewerb mit dem BBC Micro und dem ZX Spectrum, aber der C64 war nach dem ZX Spectrum immer noch der zweitbeliebteste Computer in Großbritannien.</text>
-			<text lang="fr">Le Commodore 64, également connu sous le nom de C64 ou CBM 64, est un ordinateur domestique 8 bits lancé en janvier 1982 par Commodore International (présenté pour la première fois au Consumer Electronics Show, à Las Vegas, du 7 au 10 janvier 1982). Il figure dans le Guinness World Records comme le modèle d'ordinateur unique le plus vendu de tous les temps, des estimations indépendantes situant le nombre d'unités vendues entre 12,5 et 17 millions. La production en série a commencé au début de l'année 1982 et a été commercialisée en août au prix de 595 dollars (équivalent à 1 576 dollars en 2019). Précédé par le Commodore VIC-20 et le Commodore PET, le C64 tire son nom de ses 64 kilo-octets (65 536 octets) de mémoire vive. Grâce à la prise en charge des sprites multicolores et à une puce personnalisée pour la génération de formes d'onde, le C64 pouvait créer des visuels et des sons de qualité supérieure à ceux des systèmes dépourvus de ce matériel personnalisé.
+      <text lang="fr">Le Commodore 64, également connu sous le nom de C64 ou CBM 64, est un ordinateur domestique 8 bits lancé en janvier 1982 par Commodore International (présenté pour la première fois au Consumer Electronics Show, à Las Vegas, du 7 au 10 janvier 1982). Il figure dans le Guinness World Records comme le modèle d'ordinateur unique le plus vendu de tous les temps, des estimations indépendantes situant le nombre d'unités vendues entre 12,5 et 17 millions. La production en série a commencé au début de l'année 1982 et a été commercialisée en août au prix de 595 dollars (équivalent à 1 576 dollars en 2019). Précédé par le Commodore VIC-20 et le Commodore PET, le C64 tire son nom de ses 64 kilo-octets (65 536 octets) de mémoire vive. Grâce à la prise en charge des sprites multicolores et à une puce personnalisée pour la génération de formes d'onde, le C64 pouvait créer des visuels et des sons de qualité supérieure à ceux des systèmes dépourvus de ce matériel personnalisé.
 
 Le C64 a dominé le marché des ordinateurs bas de gamme (sauf au Royaume-Uni) pendant la majeure partie des années 1980. Pendant une longue période (1983-1986), le C64 a détenu entre 30 et 40 % du marché américain et s'est vendu à deux millions d'exemplaires par an, dépassant les ventes de compatibles IBM PC, d'ordinateurs Apple et de la famille d'ordinateurs Atari 8 bits. Sam Tramiel, futur président d'Atari et fils du fondateur de Commodore, a déclaré lors d'une interview en 1989 : "Lorsque j'étais chez Commodore, nous avons construit 400 000 C64 par mois pendant quelques années". Sur le marché britannique, le C64 a dû faire face à la concurrence du BBC Micro et du ZX Spectrum, mais il est resté le deuxième ordinateur le plus populaire au Royaume-Uni après le ZX Spectrum.</text>
-			<text lang="it">Il Commodore 64, noto anche come C64 o CBM 64, è un home computer a 8 bit introdotto nel gennaio 1982 da Commodore International (presentato per la prima volta al Consumer Electronics Show, a Las Vegas, dal 7 al 10 gennaio 1982). È stato inserito nel Guinness World Records come il modello di computer singolo più venduto di tutti i tempi, con stime indipendenti che collocano il numero di unità vendute tra i 12,5 e i 17 milioni. La produzione in serie è iniziata all'inizio del 1982, con la commercializzazione in agosto al prezzo di 595 dollari (equivalenti a 1.576 dollari nel 2019). Preceduto dal Commodore VIC-20 e dal Commodore PET, il C64 prendeva il nome dai suoi 64 kilobyte (65.536 byte) di RAM. Grazie al supporto per gli sprite multicolore e a un chip personalizzato per la generazione di forme d'onda, il C64 poteva creare immagini e audio di qualità superiore rispetto ai sistemi privi di tale hardware personalizzato.
+      <text lang="it">Il Commodore 64, noto anche come C64 o CBM 64, è un home computer a 8 bit introdotto nel gennaio 1982 da Commodore International (presentato per la prima volta al Consumer Electronics Show, a Las Vegas, dal 7 al 10 gennaio 1982). È stato inserito nel Guinness World Records come il modello di computer singolo più venduto di tutti i tempi, con stime indipendenti che collocano il numero di unità vendute tra i 12,5 e i 17 milioni. La produzione in serie è iniziata all'inizio del 1982, con la commercializzazione in agosto al prezzo di 595 dollari (equivalenti a 1.576 dollari nel 2019). Preceduto dal Commodore VIC-20 e dal Commodore PET, il C64 prendeva il nome dai suoi 64 kilobyte (65.536 byte) di RAM. Grazie al supporto per gli sprite multicolore e a un chip personalizzato per la generazione di forme d'onda, il C64 poteva creare immagini e audio di qualità superiore rispetto ai sistemi privi di tale hardware personalizzato.
 
 Il C64 dominò il mercato dei computer di fascia bassa (tranne che nel Regno Unito) per la maggior parte degli anni Ottanta. Per un periodo consistente (1983-1986), il C64 ha avuto una quota tra il 30% e il 40% del mercato statunitense e due milioni di unità vendute all'anno, superando i compatibili IBM PC, i computer Apple e la famiglia di computer Atari a 8 bit. Sam Tramiel, in seguito presidente di Atari e figlio del fondatore di Commodore, ha dichiarato in un'intervista del 1989: "Quando ero in Commodore abbiamo costruito 400.000 C64 al mese per un paio d'anni". Nel mercato britannico, il C64 dovette affrontare la concorrenza del BBC Micro e dello ZX Spectrum, ma il C64 era comunque il secondo computer più popolare nel Regno Unito dopo lo ZX Spectrum.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

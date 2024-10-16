@@ -1,87 +1,91 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.28</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
-			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>
-			<pos>0.5 0.36</pos>
-			<maxSize>0.22</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.28</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
-			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>
-			<pos>0.5 0.36</pos>
-			<maxSize>0.21</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1982</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Commodore</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>MAX Machine</text>
-		</text>
-	<!-- Regional consoles/computers -->
-		<text name="TextName" extra="true" region="eu"/>
-		<text name="TextName" extra="true" region="us">
-			<text>Ultimax</text>
-		</text>
-		<text name="TextName" extra="true" region="jp"/>
-		
-		<text name="TextDesc" extra="true">
-			<text>MAX Machine, also known as Ultimax in the United States and Canada and VC-10 in Germany, is a Video game console designed and sold by Commodore International in Japan, beginning in early 1982, a predecessor to the popular Commodore 64.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.28</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+      <origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>
+      <pos>0.5 0.36</pos>
+      <maxSize>0.22</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.28</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+      <origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>
+      <pos>0.5 0.36</pos>
+      <maxSize>0.21</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1982</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Commodore</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>MAX Machine</text>
+    </text>
+    <!-- Regional consoles/computers -->
+    <text name="TextName" extra="true" region="eu"/>
+    <text name="TextName" extra="true" region="us">
+      <text>Ultimax</text>
+    </text>
+    <text name="TextName" extra="true" region="jp"/>
+    <text name="TextDesc" extra="true">
+      <text>MAX Machine, also known as Ultimax in the United States and Canada and VC-10 in Germany, is a Video game console designed and sold by Commodore International in Japan, beginning in early 1982, a predecessor to the popular Commodore 64.
 The unit has a membrane keyboard and 2 KB of RAM internally and 0.5 KB of color RAM (1024 × 4 bits). It uses a television set for a display. It uses the same chipset and 6510 CPU as the Commodore 64, the same SID sound chip, and a MOS Technology 6566 graphics chip, a version of the VIC-II that powers the C-64 graphics for the MAX' static RAM. 
 
 Software is loaded from plug-in cartridges - turning on the MAX with no cartridge inserted yielded only a blank screen. Its ROM cartridge architecture was compatible with that of the C-64, so that MAX cartridges will work in the C-64.</text>
-			<text lang="pl">MAX Machine, znana również jako Ultimax w Stanach Zjednoczonych i Kanadzie oraz VC-10 w Niemczech, to konsola do gier wideo zaprojektowana i sprzedawana przez Commodore International w Japonii od początku 1982 roku, poprzedniczka popularnego Commodore 64.
+      <text lang="pl">MAX Machine, znana również jako Ultimax w Stanach Zjednoczonych i Kanadzie oraz VC-10 w Niemczech, to konsola do gier wideo zaprojektowana i sprzedawana przez Commodore International w Japonii od początku 1982 roku, poprzedniczka popularnego Commodore 64.
 Urządzenie posiada klawiaturę membranową i 2 KB wewnętrznej pamięci RAM oraz 0,5 KB kolorowej pamięci RAM (1024 × 4 bity). Jako wyświetlacza używa telewizora. Wykorzystuje ten sam chipset i procesor 6510 co Commodore 64, ten sam układ dźwiękowy SID i układ graficzny MOS Technology 6566, wersję VIC-II, która zasila grafikę C-64 dla statycznej pamięci RAM MAX. 
 
 Oprogramowanie jest ładowane z kartridży - włączenie MAX bez włożonego kartridża skutkowało jedynie pustym ekranem. Architektura kartridża ROM była kompatybilna z architekturą C-64, więc kartridże MAX będą działać w C-64.</text>
-			<text lang="ru">MAX Machine, также известная как Ultimax в США и Канаде и VC-10 в Германии, - игровая приставка, разработанная и продававшаяся компанией Commodore International в Японии с начала 1982 года, предшественница популярной модели Commodore 64.
+      <text lang="pt">MAX Machine, também conhecida como Ultimax nos Estados Unidos e Canadá e VC-10 na Alemanha, é um console de videogame projetado e vendido pela Commodore International no Japão desde o início de 1982, antecessor do popular Commodore 64.
+
+O dispositivo possui um teclado de membrana e 2 KB de RAM interna e 0,5 KB de RAM colorida (1024 × 4 bits). Ele usa um televisor como tela. Utiliza o mesmo chipset e processador 6510 do Commodore 64, o mesmo chip de som SID e o chip gráfico MOS Technology 6566, uma versão do VIC-II, que alimenta os gráficos do C-64 para a memória RAM estática do MAX.
+
+O software é carregado de cartuchos - ligar o MAX sem um cartucho inserido resulta apenas em uma tela vazia. A arquitetura do cartucho ROM era compatível com a arquitetura do C-64, portanto os cartuchos do MAX funcionarão no C-64.</text>
+      <text lang="ru">MAX Machine, также известная как Ultimax в США и Канаде и VC-10 в Германии, - игровая приставка, разработанная и продававшаяся компанией Commodore International в Японии с начала 1982 года, предшественница популярной модели Commodore 64.
 Устройство имеет мембранную клавиатуру, 2 КБ внутренней оперативной памяти и 0,5 КБ цветной оперативной памяти (1024 × 4 бита). В качестве дисплея используется телевизор. В нем используется тот же чипсет и процессор 6510, что и в Commodore 64, тот же звуковой чип SID, а также графический чип MOS Technology 6566, версия VIC-II, которая обеспечивает графику C-64 для статического ОЗУ MAX. 
 
 Программное обеспечение загружается со сменных картриджей - включение MAX без установленного картриджа приводило лишь к появлению пустого экрана. Архитектура картриджей ROM совместима с архитектурой C-64, так что картриджи MAX будут работать в C-64.</text>
-			<text lang="es">MAX Machine, también conocida como Ultimax en Estados Unidos y Canadá y VC-10 en Alemania, es una consola de videojuegos diseñada y vendida por Commodore International en Japón, a partir de principios de 1982, predecesora de la popular Commodore 64.
+      <text lang="es">MAX Machine, también conocida como Ultimax en Estados Unidos y Canadá y VC-10 en Alemania, es una consola de videojuegos diseñada y vendida por Commodore International en Japón, a partir de principios de 1982, predecesora de la popular Commodore 64.
 La unidad tiene un teclado de membrana y 2 KB de RAM interna y 0,5 KB de RAM en color (1024 × 4 bits). Utiliza un televisor como pantalla. Utiliza el mismo chipset y CPU 6510 que el Commodore 64, el mismo chip de sonido SID y un chip gráfico MOS Technology 6566, una versión del VIC-II que alimenta los gráficos del C-64 para la RAM estática del MAX. 
 
 El software se carga desde cartuchos enchufables - encender el MAX sin cartucho insertado sólo producía una pantalla en blanco. Su arquitectura de cartuchos ROM era compatible con la del C-64, por lo que los cartuchos MAX funcionarán en el C-64.</text>
-			<text lang="de">MAX Machine, in den Vereinigten Staaten und Kanada auch als Ultimax und in Deutschland als VC-10 bekannt, ist eine Videospielkonsole, die von Commodore International entwickelt und ab Anfang 1982 in Japan verkauft wurde und ein Vorgänger des beliebten Commodore 64 war.
+      <text lang="de">MAX Machine, in den Vereinigten Staaten und Kanada auch als Ultimax und in Deutschland als VC-10 bekannt, ist eine Videospielkonsole, die von Commodore International entwickelt und ab Anfang 1982 in Japan verkauft wurde und ein Vorgänger des beliebten Commodore 64 war.
 Das Gerät verfügt über eine Membrantastatur, 2 KB internen Arbeitsspeicher und 0,5 KB Farb-RAM (1024 × 4 Bit). Als Bildschirm wird ein Fernsehgerät verwendet. Es verwendet denselben Chipsatz und dieselbe 6510-CPU wie der Commodore 64, denselben SID-Soundchip und einen MOS Technology 6566-Grafikchip, eine Version des VIC-II, der die C-64-Grafik für das statische RAM des MAX betreibt. 
 
 Die Software wird von Steckkassetten geladen - schaltet man den MAX ein, ohne dass eine Kassette eingelegt ist, erscheint nur ein leerer Bildschirm. Die ROM-Cartridge-Architektur war mit der des C-64 kompatibel, so dass die MAX-Cartridges auch im C-64 funktionieren.</text>
-			<text lang="fr">MAX Machine, également connue sous le nom d'Ultimax aux États-Unis et au Canada et de VC-10 en Allemagne, est une console de jeux vidéo conçue et vendue par Commodore International au Japon, à partir du début de l'année 1982, prédécesseur du populaire Commodore 64.
+      <text lang="fr">MAX Machine, également connue sous le nom d'Ultimax aux États-Unis et au Canada et de VC-10 en Allemagne, est une console de jeux vidéo conçue et vendue par Commodore International au Japon, à partir du début de l'année 1982, prédécesseur du populaire Commodore 64.
 L'unité dispose d'un clavier à membrane, de 2 Ko de RAM en interne et de 0,5 Ko de RAM couleur (1024 × 4 bits). Il utilise un téléviseur comme écran. Il utilise le même chipset et le même processeur 6510 que le Commodore 64, la même puce sonore SID et une puce graphique MOS Technology 6566, une version du VIC-II qui alimente les graphiques du C-64 pour la RAM statique du MAX. 
 
 Les logiciels sont chargés à partir de cartouches enfichables - allumer la MAX sans cartouche insérée ne produisait qu'un écran vide. L'architecture de ses cartouches ROM était compatible avec celle du C-64, de sorte que les cartouches MAX fonctionnent sur le C-64.</text>
-			<text lang="it">MAX Machine, conosciuta anche come Ultimax negli Stati Uniti e in Canada e VC-10 in Germania, è una console per videogiochi progettata e venduta da Commodore International in Giappone, a partire dall'inizio del 1982, un predecessore del popolare Commodore 64.
+      <text lang="it">MAX Machine, conosciuta anche come Ultimax negli Stati Uniti e in Canada e VC-10 in Germania, è una console per videogiochi progettata e venduta da Commodore International in Giappone, a partire dall'inizio del 1982, un predecessore del popolare Commodore 64.
 L'unità dispone di una tastiera a membrana e di 2 KB di RAM interna e 0,5 KB di RAM a colori (1024 × 4 bit). Utilizza un televisore come display. Utilizza lo stesso chipset e la stessa CPU 6510 del Commodore 64, lo stesso chip audio SID e un chip grafico MOS Technology 6566, una versione del VIC-II che alimenta la grafica del C-64 per la RAM statica del MAX. 
 
 Il software viene caricato da cartucce plug-in: accendendo il MAX senza cartucce inserite si ottiene solo una schermata vuota. L'architettura delle cartucce ROM è compatibile con quella del C-64, quindi le cartucce MAX funzionano nel C-64.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

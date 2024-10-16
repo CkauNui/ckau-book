@@ -1,179 +1,184 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.3 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.26 0.36</pos>
-			<minSize>0.1 0.2</minSize>
-			<rotation>8</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="-0.02 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.7 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.54 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.74 0.36</pos>
-			<minSize>0.1 0.2</minSize>
-			<rotation>-8</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.46 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<pos>0.5 0.363</pos>
-			<maxSize>0.15</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-left" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.36 0.37</pos>
-			<maxSize>0.14</maxSize>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.08 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-right" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.638 0.37</pos>
-			<maxSize>0.14</maxSize>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.358 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<pos>0.5 0.363</pos>
-			<maxSize>0.14</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}-right.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">0.9 0.5</origin>
-			<pos>0.655 0.37</pos>
-			<maxSize>0.13</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.375 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox3" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}-left.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
-			<pos>0.345 0.37</pos>
-			<maxSize>0.13</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.065 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1997</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>HomeBrew MAME</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>HBMAME (HomeBrew MAME), formerly known as MisfitMAME, is a derivative of MAME, and contains various hacks and homebrews.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-left" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.3 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.26 0.36</pos>
+      <minSize>0.1 0.2</minSize>
+      <rotation>8</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="-0.02 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-right" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.7 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.54 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.74 0.36</pos>
+      <minSize>0.1 0.2</minSize>
+      <rotation>-8</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.46 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <pos>0.5 0.363</pos>
+      <maxSize>0.15</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-left" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.36 0.37</pos>
+      <maxSize>0.14</maxSize>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.08 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-right" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.638 0.37</pos>
+      <maxSize>0.14</maxSize>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.358 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <pos>0.5 0.363</pos>
+      <maxSize>0.14</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}-right.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">0.9 0.5</origin>
+      <pos>0.655 0.37</pos>
+      <maxSize>0.13</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.375 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox3" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}-left.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
+      <pos>0.345 0.37</pos>
+      <maxSize>0.13</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.065 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1997</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>HomeBrew MAME</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>HBMAME (HomeBrew MAME), formerly known as MisfitMAME, is a derivative of MAME, and contains various hacks and homebrews.
 
 HBMAME versions are released with each major MAME version and are based on the MAME source at the time of release. It is available in both command line/MEWUI and MAMEUI forms, and should work with any frontend that supports running clone romsets. While regular MAME does include some arcade hacks and homebrews, it is only focused on software that made money with a real-life arcade presence. By contrast, HBMAME includes many hacks and homebrews that were designed on emulators and never had an arcade presence, as well as non-revenue generating test ROMs. As some of these were developed on inaccurate emulators, some will not work on real hardware or on accurate emulators, so HBMAME uses inaccurate hacked drivers to run them in these cases.
 
 HBMAME has support for a remake of Monaco G.P., which was Sega's final game to rely primarily upon discrete analog circuitry - an oddity for a game made in 1979, some three years after microprocessors were introduced to the market. As this was among the most complex games of its kind, don't bet on seeing it working in MAME anytime soon.</text>
-			<text lang="pl">HBMAME (HomeBrew MAME), wcześniej znany jako MisfitMAME, jest pochodną MAME i zawiera różne hacki i homebrews.
+      <text lang="pl">HBMAME (HomeBrew MAME), wcześniej znany jako MisfitMAME, jest pochodną MAME i zawiera różne hacki i homebrews.
 
 Wersje HBMAME są wydawane z każdą większą wersją MAME i są oparte na źródłach MAME w momencie wydania. Jest dostępny zarówno w formie wiersza poleceń/MEWUI, jak i MAMEUI, i powinien działać z każdym frontendem, który obsługuje uruchamianie klonowanych romsetów. Podczas gdy zwykłe MAME zawiera kilka arcade hacków i homebrews, skupia się tylko na oprogramowaniu, które zarobiło pieniądze w prawdziwym salonie gier. Natomiast HBMAME zawiera wiele hacków i homebrews, które zostały zaprojektowane na emulatorach i nigdy nie były obecne w salonach gier, a także testowe ROM-y, które nie generują przychodów. Ponieważ niektóre z nich zostały stworzone na niedokładnych emulatorach, niektóre nie będą działać na prawdziwym sprzęcie lub na dokładnych emulatorach, więc HBMAME używa niedokładnych, zhakowanych sterowników do ich uruchomienia w tych przypadkach.
 
 HBMAME posiada wsparcie dla remake'u Monaco G.P., która była ostatnią grą firmy Sega, która opierała się głównie na dyskretnych obwodach analogowych - co było dziwne w przypadku gry wyprodukowanej w 1979 roku, około trzy lata po wprowadzeniu na rynek mikroprocesorów. Ponieważ była to jedna z najbardziej skomplikowanych gier w swoim rodzaju, nie spodziewaj się, że w najbliższym czasie zobaczysz ją działającą w MAME.</text>
-			<text lang="ru">HBMAME расшифровывается как HomeBrew MAME. Он работает под управлением Windows 7 или более поздней версии.
+      <text lang="pt">HBMAME (HomeBrew MAME), anteriormente conhecido como MisfitMAME, é uma derivação do MAME e contém diversos hacks e homebrews.
+
+As versões do HBMAME são lançadas com cada versão principal do MAME e são baseadas no código-fonte do MAME no momento do lançamento. Está disponível tanto na forma de linha de comando/MEWUI quanto MAMEUI, e deve funcionar com qualquer frontend que suporte a execução de romsets clonados. Enquanto o MAME comum contém alguns hacks e homebrews de arcade, ele se concentra apenas em software que gerou lucro em um salão de jogos real. Já o HBMAME inclui muitos hacks e homebrews que foram projetados para emuladores e nunca estiveram presentes em salões de jogos, além de ROMs de teste que não geram receita. Como alguns deles foram criados em emuladores imprecisos, alguns não funcionarão em hardware real ou em emuladores precisos, por isso o HBMAME utiliza drivers imprecisos e hackeados para executá-los nesses casos.
+
+O HBMAME possui suporte para o remake de Monaco G.P., que foi o último jogo da Sega a se basear principalmente em circuitos analógicos discretos – algo estranho para um jogo produzido em 1979, cerca de três anos após a introdução dos microprocessadores no mercado. Por ser um dos jogos mais complexos do gênero, não espere vê-lo funcionando no MAME tão cedo.</text>
+      <text lang="ru">HBMAME расшифровывается как HomeBrew MAME. Он работает под управлением Windows 7 или более поздней версии.
 
 HBMAME преследует две цели: Во-первых, это сохранение самодельных игр, написанных для аркадных автоматов или эмуляторов аркад. Во-вторых, это включение достойных хаков аркадных игр. Всю документацию по аппаратному обеспечению можно найти в исходниках MAME.</text>
-			<text lang="es">HBMAME (HomeBrew MAME), antes conocido como MisfitMAME, es un derivado de MAME, y contiene varios hacks y homebrews.
+      <text lang="es">HBMAME (HomeBrew MAME), antes conocido como MisfitMAME, es un derivado de MAME, y contiene varios hacks y homebrews.
 
 Las versiones de HBMAME se publican con cada versión principal de MAME y se basan en el código fuente de MAME en el momento de su publicación. Está disponible tanto en línea de comandos/MEWUI como en MAMEUI, y debería funcionar con cualquier interfaz que soporte la ejecución de romsets clónicos. Mientras que el MAME normal incluye algunos hacks arcade y homebrews, sólo se centra en el software que hizo dinero con una presencia arcade en la vida real. Por el contrario, HBMAME incluye muchos hacks y homebrews que fueron diseñados en emuladores y nunca tuvieron presencia arcade, así como ROMs de prueba que no generaron ingresos. Como algunos de ellos se desarrollaron en emuladores imprecisos, algunos no funcionarán en hardware real o en emuladores precisos, por lo que HBMAME utiliza controladores pirateados imprecisos para ejecutarlos en estos casos.
 
 HBMAME es compatible con un remake de Monaco G.P., que fue el último juego de Sega que se basó principalmente en circuitos analógicos discretos, una rareza para un juego creado en 1979, unos tres años después de la introducción de los microprocesadores en el mercado. Como se trata de uno de los juegos más complejos de su clase, no apuestes por verlo pronto funcionando en MAME.</text>
-			<text lang="de">HBMAME (HomeBrew MAME), früher bekannt als MisfitMAME, ist eine Ableitung von MAME und enthält verschiedene Hacks und Homebrews.
+      <text lang="de">HBMAME (HomeBrew MAME), früher bekannt als MisfitMAME, ist eine Ableitung von MAME und enthält verschiedene Hacks und Homebrews.
 
 HBMAME-Versionen werden mit jeder größeren MAME-Version veröffentlicht und basieren auf dem MAME-Quellcode zum Zeitpunkt der Veröffentlichung. Es ist sowohl als Kommandozeilen-/MEWUI- als auch als MAMEUI-Version verfügbar und sollte mit jedem Frontend funktionieren, das die Ausführung von Klon-Romsets unterstützt. Während das reguläre MAME einige Arcade-Hacks und Homebrews enthält, konzentriert es sich nur auf Software, die mit einer realen Arcade-Präsenz Geld verdient hat. Im Gegensatz dazu enthält HBMAME viele Hacks und Homebrews, die auf Emulatoren entwickelt wurden und nie in Spielhallen zum Einsatz kamen, sowie nicht-umsatzbringende Test-ROMs. Da einige von ihnen auf ungenauen Emulatoren entwickelt wurden, funktionieren einige nicht auf echter Hardware oder auf genauen Emulatoren, so dass HBMAME in diesen Fällen ungenaue, gehackte Treiber verwendet, um sie auszuführen.
 
 HBMAME unterstützt ein Remake von Monaco G.P., dem letzten Spiel von Sega, das hauptsächlich auf diskreten analogen Schaltkreisen basierte - eine Kuriosität für ein Spiel aus dem Jahr 1979, etwa drei Jahre nach der Einführung von Mikroprozessoren auf dem Markt. Da es zu den komplexesten Spielen seiner Art gehörte, sollten Sie nicht darauf wetten, dass es in nächster Zeit in MAME funktioniert.</text>
-			<text lang="fr">HBMAME (HomeBrew MAME), anciennement connu sous le nom de MisfitMAME, est un dérivé de MAME, et contient divers hacks et homebrews.
+      <text lang="fr">HBMAME (HomeBrew MAME), anciennement connu sous le nom de MisfitMAME, est un dérivé de MAME, et contient divers hacks et homebrews.
 
 Les versions de HBMAME sont publiées avec chaque version majeure de MAME et sont basées sur les sources de MAME au moment de la publication. Il est disponible à la fois en ligne de commande/MEWUI et sous forme de MAMEUI, et devrait fonctionner avec n'importe quel frontend qui supporte l'exécution de romsets clonés. Bien que MAME normal inclue quelques hacks d'arcade et homebrews, il est uniquement axé sur les logiciels qui ont gagné de l'argent avec une présence réelle dans les salles d'arcade. En revanche, HBMAME inclut de nombreux hacks et homebrews qui ont été conçus sur des émulateurs et n'ont jamais eu de présence dans les salles d'arcade, ainsi que des ROM de test qui ne génèrent pas de revenus. Comme certains d'entre eux ont été développés sur des émulateurs imprécis, certains ne fonctionneront pas sur du matériel réel ou sur des émulateurs précis, HBMAME utilise donc des pilotes piratés imprécis pour les faire fonctionner dans ces cas-là.
 
 HBMAME supporte un remake de Monaco G.P., qui fut le dernier jeu de Sega à s'appuyer principalement sur des circuits analogiques discrets - une bizarrerie pour un jeu réalisé en 1979, environ trois ans après l'introduction des microprocesseurs sur le marché. Comme il s'agit d'un des jeux les plus complexes de son genre, il ne faut pas s'attendre à le voir fonctionner dans MAME de sitôt.</text>
-			<text lang="it">HBMAME (HomeBrew MAME), precedentemente noto come MisfitMAME, è un derivato del MAME e contiene vari hack e homebrew.
+      <text lang="it">HBMAME (HomeBrew MAME), precedentemente noto come MisfitMAME, è un derivato del MAME e contiene vari hack e homebrew.
 
 Le versioni di HBMAME vengono rilasciate con ogni versione principale del MAME e sono basate sul sorgente del MAME al momento del rilascio. È disponibile sia in forma di riga di comando/MEWUI che di MAMEUI e dovrebbe funzionare con qualsiasi frontend che supporti l'esecuzione di romset clonati. Sebbene il MAME normale includa alcuni hack arcade e homebrew, si concentra solo sul software che ha fatto soldi con una presenza reale in sala giochi. Al contrario, HBMAME include molti hack e homebrew che sono stati progettati su emulatori e non hanno mai avuto una presenza in sala giochi, così come ROM di prova non generatrici di profitti. Poiché alcuni di questi sono stati sviluppati su emulatori non accurati, alcuni non funzioneranno sull'hardware reale o su emulatori accurati, quindi HBMAME usa driver non accurati per farli funzionare in questi casi.
 
 HBMAME supporta un remake di Monaco G.P., che fu l'ultimo gioco di Sega a basarsi principalmente su circuiti analogici discreti - una stranezza per un gioco realizzato nel 1979, circa tre anni dopo l'introduzione dei microprocessori sul mercato. Poiché si trattava di uno dei giochi più complessi del suo genere, non scommettete di vederlo funzionare presto nel MAME.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

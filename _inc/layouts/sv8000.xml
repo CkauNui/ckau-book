@@ -1,73 +1,76 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.48 0.5</origin>
-			<pos>0.49 0.4</pos>
-			<maxSize>0.237</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.48 0.5</origin>
-			<pos>0.49 0.4</pos>
-			<maxSize>0.227</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1979</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Bandai</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Super Vision 8000</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Bandai Super Vision 8000, also known as the TV Jack 8000, is a home video game console released by Bandai in 1979 belonging to the second generation. The console can be directly connected to a TV.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0.48 0.5</origin>
+      <pos>0.49 0.4</pos>
+      <maxSize>0.237</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0.48 0.5</origin>
+      <pos>0.49 0.4</pos>
+      <maxSize>0.227</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1979</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Bandai</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Super Vision 8000</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Bandai Super Vision 8000, also known as the TV Jack 8000, is a home video game console released by Bandai in 1979 belonging to the second generation. The console can be directly connected to a TV.
 
 This console was the last of the Bandai TV Jack console series but was completely different from the other consoles of the series. The Super Vision 8000 had a central CPU. The other consoles belonged to the first generation: they didn't feature a microprocessor, and were based on custom codeless state machine computers consisting of discrete logic circuits comprising each element of the game itself (Pong-style console).</text>
-			<text lang="pl">Bandai Super Vision 8000, znana również jako TV Jack 8000, to domowa konsola do gier wideo wydana przez Bandai w 1979 roku, należąca do drugiej generacji. Konsolę można podłączyć bezpośrednio do telewizora.
+      <text lang="pl">Bandai Super Vision 8000, znana również jako TV Jack 8000, to domowa konsola do gier wideo wydana przez Bandai w 1979 roku, należąca do drugiej generacji. Konsolę można podłączyć bezpośrednio do telewizora.
 
 Konsola ta była ostatnią z serii konsol Bandai TV Jack, ale całkowicie różniła się od innych konsol z tej serii. Super Vision 8000 posiadała centralny procesor. Pozostałe konsole należały do pierwszej generacji: nie posiadały mikroprocesora i były oparte na niestandardowych bezkodowych komputerach maszyn stanowych składających się z dyskretnych obwodów logicznych obejmujących każdy element samej gry (konsola w stylu Pong).</text>
-			<text lang="ru">Bandai Super Vision 8000, также известная как TV Jack 8000, - домашняя игровая приставка, выпущенная компанией Bandai в 1979 году и относящаяся ко второму поколению. Консоль может быть напрямую подключена к телевизору.
+      <text lang="pt">Bandai Super Vision 8000, também conhecida como TV Jack 8000, é um console doméstico de videogame lançado pela Bandai em 1979, pertencente à segunda geração. O console pode ser conectado diretamente à televisão.
+
+Este console foi o último da série de consoles Bandai TV Jack, mas era completamente diferente dos outros consoles da série. O Super Vision 8000 possuía uma unidade central de processamento (CPU). Os outros consoles pertenciam à primeira geração: não possuíam microprocessador e eram baseados em computadores de estado finito não programáveis ​​personalizados, compostos por circuitos lógicos discretos que incluíam cada elemento do próprio jogo (console no estilo Pong).</text>
+      <text lang="ru">Bandai Super Vision 8000, также известная как TV Jack 8000, - домашняя игровая приставка, выпущенная компанией Bandai в 1979 году и относящаяся ко второму поколению. Консоль может быть напрямую подключена к телевизору.
 
 Эта консоль была последней из серии консолей Bandai TV Jack, но она полностью отличалась от других консолей этой серии. Super Vision 8000 имела центральный процессор. Остальные консоли относились к первому поколению: они не имели микропроцессора и были основаны на пользовательских бескодовых компьютерах с государственными машинами, состоящих из дискретных логических схем, включающих каждый элемент самой игры (консоль Pong-style).</text>
-			<text lang="es">La Bandai Super Vision 8000, también conocida como TV Jack 8000, es una videoconsola doméstica lanzada por Bandai en 1979 perteneciente a la segunda generación. La consola puede conectarse directamente a un televisor.
+      <text lang="es">La Bandai Super Vision 8000, también conocida como TV Jack 8000, es una videoconsola doméstica lanzada por Bandai en 1979 perteneciente a la segunda generación. La consola puede conectarse directamente a un televisor.
 
 Esta consola fue la última de la serie de consolas TV Jack de Bandai, pero era completamente diferente de las demás consolas de la serie. La Super Vision 8000 tenía una CPU central. Las demás consolas pertenecían a la primera generación: no contaban con microprocesador y se basaban en ordenadores personalizados de máquina de estados sin código, compuestos por circuitos lógicos discretos que comprendían cada elemento del juego en sí (consola de estilo Pong).</text>
-			<text lang="de">Die Bandai Super Vision 8000, auch bekannt als TV Jack 8000, ist eine Heimvideospielkonsole, die 1979 von Bandai veröffentlicht wurde und zur zweiten Generation gehört. Die Konsole kann direkt an ein Fernsehgerät angeschlossen werden.
+      <text lang="de">Die Bandai Super Vision 8000, auch bekannt als TV Jack 8000, ist eine Heimvideospielkonsole, die 1979 von Bandai veröffentlicht wurde und zur zweiten Generation gehört. Die Konsole kann direkt an ein Fernsehgerät angeschlossen werden.
 
 Diese Konsole war die letzte der Bandai TV Jack Konsolenserie, unterschied sich aber völlig von den anderen Konsolen der Serie. Die Super Vision 8000 hatte eine zentrale CPU. Die anderen Konsolen gehörten zur ersten Generation: Sie besaßen keinen Mikroprozessor und basierten auf speziell angefertigten kodierungslosen Zustandsmaschinen, die aus diskreten logischen Schaltkreisen bestanden, die jedes Element des Spiels selbst enthielten (Konsole im Pong-Stil).</text>
-			<text lang="fr">La Bandai Super Vision 8000, également connue sous le nom de TV Jack 8000, est une console de jeux vidéo de salon commercialisée par Bandai en 1979 et appartenant à la deuxième génération. La console peut être directement connectée à un téléviseur.
+      <text lang="fr">La Bandai Super Vision 8000, également connue sous le nom de TV Jack 8000, est une console de jeux vidéo de salon commercialisée par Bandai en 1979 et appartenant à la deuxième génération. La console peut être directement connectée à un téléviseur.
 
 Cette console était la dernière de la série des consoles TV Jack de Bandai, mais elle était complètement différente des autres consoles de la série. La Super Vision 8000 était équipée d'un processeur central. Les autres consoles appartenaient à la première génération : elles ne comportaient pas de microprocesseur et étaient basées sur des ordinateurs à machine d'état sans code personnalisés, composés de circuits logiques discrets comprenant chaque élément du jeu lui-même (console de type Pong).</text>
-			<text lang="it">La Bandai Super Vision 8000, nota anche come TV Jack 8000, è una console per videogiochi domestica rilasciata da Bandai nel 1979 e appartenente alla seconda generazione. La console può essere collegata direttamente a un televisore.
+      <text lang="it">La Bandai Super Vision 8000, nota anche come TV Jack 8000, è una console per videogiochi domestica rilasciata da Bandai nel 1979 e appartenente alla seconda generazione. La console può essere collegata direttamente a un televisore.
 
 Questa console è stata l'ultima della serie di console TV Jack di Bandai, ma era completamente diversa dalle altre console della serie. La Super Vision 8000 aveva una CPU centrale. Le altre console appartenevano alla prima generazione: non disponevano di un microprocessore e si basavano su computer personalizzati a macchina a stati senza codice, costituiti da circuiti logici discreti che comprendevano ogni elemento del gioco stesso (console in stile Pong).</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

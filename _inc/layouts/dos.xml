@@ -1,74 +1,77 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<pos>0.475 0.335</pos>
-			<maxSize>0.21</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.195 0.335" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.18</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<pos>0.475 0.335</pos>
-			<maxSize>0.20</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.195 0.335" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1981</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Microsoft</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>MS-DOS</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>MS-DOS (em-es-DOSS; acronym for Microsoft Disk Operating System) is an operating system for x86-based personal computers mostly developed by Microsoft. Collectively, MS-DOS, its rebranding as IBM PC DOS, and some operating systems attempting to be compatible with MS-DOS, are sometimes referred to as "DOS" (which is also the generic acronym for disk operating system). MS-DOS was the main operating system for IBM PC compatible personal computers during the 1980s, from which point it was gradually superseded by operating systems offering a graphical user interface (GUI), in various generations of the graphical Microsoft Windows operating system.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <pos>0.475 0.335</pos>
+      <maxSize>0.21</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.195 0.335" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.18</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <pos>0.475 0.335</pos>
+      <maxSize>0.20</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.195 0.335" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1981</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Microsoft</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>MS-DOS</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>MS-DOS (em-es-DOSS; acronym for Microsoft Disk Operating System) is an operating system for x86-based personal computers mostly developed by Microsoft. Collectively, MS-DOS, its rebranding as IBM PC DOS, and some operating systems attempting to be compatible with MS-DOS, are sometimes referred to as "DOS" (which is also the generic acronym for disk operating system). MS-DOS was the main operating system for IBM PC compatible personal computers during the 1980s, from which point it was gradually superseded by operating systems offering a graphical user interface (GUI), in various generations of the graphical Microsoft Windows operating system.
 
 IBM licensed and re-released it in 1981 as PC DOS 1.0 for use in its PCs. Although MS-DOS and PC DOS were initially developed in parallel by Microsoft and IBM, the two products diverged after twelve years, in 1993, with recognizable differences in compatibility, syntax, and capabilities.</text>
-			<text lang="pl">MS-DOS (em-es-DOSS; akronim od Microsoft Disk Operating System) to system operacyjny dla komputerów osobistych opartych na architekturze x86, opracowany głównie przez firmę Microsoft. Wspólnie, MS-DOS, jego rebranding jako IBM PC DOS, i niektóre systemy operacyjne próbujące być kompatybilne z MS-DOS, są czasami określane jako "DOS" (który jest również skrótem). MS-DOS był głównym systemem operacyjnym dla komputerów osobistych kompatybilnych z IBM PC w latach osiemdziesiątych, od tego momentu był stopniowo zastępowany przez systemy operacyjne oferujące graficzny interfejs użytkownika (GUI), w różnych generacjach graficznego systemu operacyjnego Microsoft Windows.
+      <text lang="pl">MS-DOS (em-es-DOSS; akronim od Microsoft Disk Operating System) to system operacyjny dla komputerów osobistych opartych na architekturze x86, opracowany głównie przez firmę Microsoft. Wspólnie, MS-DOS, jego rebranding jako IBM PC DOS, i niektóre systemy operacyjne próbujące być kompatybilne z MS-DOS, są czasami określane jako "DOS" (który jest również skrótem). MS-DOS był głównym systemem operacyjnym dla komputerów osobistych kompatybilnych z IBM PC w latach osiemdziesiątych, od tego momentu był stopniowo zastępowany przez systemy operacyjne oferujące graficzny interfejs użytkownika (GUI), w różnych generacjach graficznego systemu operacyjnego Microsoft Windows.
 
 Firma IBM udzieliła licencji i ponownie wydała go w 1981 roku jako PC DOS 1.0 do użytku w swoich komputerach PC. Chociaż MS-DOS i PC DOS były początkowo rozwijane równolegle przez Microsoft i IBM, oba produkty rozeszły się po dwunastu latach, w 1993 roku, z rozpoznawalnymi różnicami w kompatybilności, składni i możliwościach.</text>
-			<text lang="ru">Дисковая операционная система для компьютеров на базе архитектуры x86. MS-DOS — самая известная ОС среди семейства DOS-совместимых операционных систем и самая используемая среди IBM PC-совместимых компьютеров с 1980-х до середины 1990-х годов, пока её не вытеснили операционные системы с графическим пользовательским интерфейсом, в основном из семейства Microsoft Windows.
+      <text lang="pt">MS-DOS (em-es-DOSS; acrônimo de Microsoft Disk Operating System) é um sistema operacional para computadores pessoais baseados na arquitetura x86, desenvolvido principalmente pela Microsoft. Em conjunto, MS-DOS, seu renome como IBM PC DOS e alguns sistemas operacionais que tentam ser compatíveis com o MS-DOS, são às vezes chamados de "DOS" (que também é uma abreviação). O MS-DOS foi o sistema operacional principal para computadores pessoais compatíveis com IBM PC nos anos 1980, sendo gradualmente substituído por sistemas operacionais que oferecem interface gráfica do usuário (GUI), em várias gerações do sistema operacional gráfico Microsoft Windows.
+
+A IBM licenciou e relançou em 1981 como PC DOS 1.0 para uso em seus computadores PC. Embora o MS-DOS e o PC DOS fossem inicialmente desenvolvidos em paralelo pela Microsoft e IBM, ambos os produtos divergiram após doze anos, em 1993, com diferenças perceptíveis em compatibilidade, sintaxe e capacidades.</text>
+      <text lang="ru">Дисковая операционная система для компьютеров на базе архитектуры x86. MS-DOS — самая известная ОС среди семейства DOS-совместимых операционных систем и самая используемая среди IBM PC-совместимых компьютеров с 1980-х до середины 1990-х годов, пока её не вытеснили операционные системы с графическим пользовательским интерфейсом, в основном из семейства Microsoft Windows.
 
 В 1981 году корпорация IBM разместила запрос на создание операционной системы, которая должна была использоваться в новом семействе компьютеров IBM PC. Microsoft выкупила права на операционную систему 86-DOS у Seattle Computer Products и начала работу по её модификации под требования IBM. Впоследствии IBM лицензировала MS-DOS и выпустила её в августе 1981 года под наименованием PC DOS 1.0. В дальнейшем разработка MS-DOS и PC DOS велась Microsoft и IBM совместно до 1993 года, когда были выпущены два раздельных релиза — 6.0 от Microsoft и 6.1 от IBM.
 
 25 марта 2014 года музей компьютерной истории в Маунтин-Вью с разрешения компании Microsoft обнародовал исходный код операционной системы MS-DOS (версии 1.1 и 2.0), вышедшей в 1981 году, а также текстового редактора Word (1.1а) для Windows. В 2018 году был опубликован исходный код ОС MS-DOS версий 1.25 и 2.0 под свободной лицензией MIT.</text>
-			<text lang="es">MS-DOS (em-es-DOSS; acrónimo de Microsoft Disk Operating System) es un sistema operativo para ordenadores personales basados en x86 desarrollado principalmente por Microsoft. En conjunto, MS-DOS, su renombrado como IBM PC DOS y algunos sistemas operativos que intentan ser compatibles con MS-DOS se denominan a veces "DOS" (que también es el acrónimo genérico de sistema operativo de disco). MS-DOS fue el principal sistema operativo para ordenadores personales compatibles con IBM PC durante la década de 1980, momento a partir del cual fue sustituido gradualmente por sistemas operativos que ofrecían una interfaz gráfica de usuario (GUI), en varias generaciones del sistema operativo gráfico Microsoft Windows.
+      <text lang="es">MS-DOS (em-es-DOSS; acrónimo de Microsoft Disk Operating System) es un sistema operativo para ordenadores personales basados en x86 desarrollado principalmente por Microsoft. En conjunto, MS-DOS, su renombrado como IBM PC DOS y algunos sistemas operativos que intentan ser compatibles con MS-DOS se denominan a veces "DOS" (que también es el acrónimo genérico de sistema operativo de disco). MS-DOS fue el principal sistema operativo para ordenadores personales compatibles con IBM PC durante la década de 1980, momento a partir del cual fue sustituido gradualmente por sistemas operativos que ofrecían una interfaz gráfica de usuario (GUI), en varias generaciones del sistema operativo gráfico Microsoft Windows.
 
 IBM lo licenció y relanzó en 1981 como PC DOS 1.0 para su uso en sus PC. Aunque MS-DOS y PC DOS fueron desarrollados inicialmente en paralelo por Microsoft e IBM, los dos productos divergieron después de doce años, en 1993, con diferencias reconocibles en compatibilidad, sintaxis y capacidades.</text>
-			<text lang="de">MS-DOS (em-es-DOSS; Akronym für Microsoft Disk Operating System) ist ein Betriebssystem für x86-basierte Personal Computer, das hauptsächlich von Microsoft entwickelt wurde. MS-DOS, sein Rebranding als IBM PC DOS und einige Betriebssysteme, die versuchen, mit MS-DOS kompatibel zu sein, werden manchmal als "DOS" bezeichnet (was auch das generische Akronym für Disk Operating System ist). MS-DOS war in den 1980er Jahren das Hauptbetriebssystem für IBM-PC-kompatible Personalcomputer. Danach wurde es nach und nach durch Betriebssysteme mit grafischer Benutzeroberfläche (GUI) ersetzt, und zwar in verschiedenen Generationen des grafischen Betriebssystems Microsoft Windows.
+      <text lang="de">MS-DOS (em-es-DOSS; Akronym für Microsoft Disk Operating System) ist ein Betriebssystem für x86-basierte Personal Computer, das hauptsächlich von Microsoft entwickelt wurde. MS-DOS, sein Rebranding als IBM PC DOS und einige Betriebssysteme, die versuchen, mit MS-DOS kompatibel zu sein, werden manchmal als "DOS" bezeichnet (was auch das generische Akronym für Disk Operating System ist). MS-DOS war in den 1980er Jahren das Hauptbetriebssystem für IBM-PC-kompatible Personalcomputer. Danach wurde es nach und nach durch Betriebssysteme mit grafischer Benutzeroberfläche (GUI) ersetzt, und zwar in verschiedenen Generationen des grafischen Betriebssystems Microsoft Windows.
 
 IBM lizenzierte es und brachte es 1981 als PC DOS 1.0 für seine PCs wieder auf den Markt. Obwohl MS-DOS und PC-DOS anfangs parallel von Microsoft und IBM entwickelt wurden, trennten sich die beiden Produkte nach zwölf Jahren, im Jahr 1993, mit erkennbaren Unterschieden in Kompatibilität, Syntax und Fähigkeiten.</text>
-			<text lang="fr">MS-DOS (em-es-DOSS ; acronyme de Microsoft Disk Operating System) est un système d'exploitation pour les ordinateurs personnels basés sur x86, principalement développé par Microsoft. Collectivement, MS-DOS, son rebranding sous le nom de IBM PC DOS, et certains systèmes d'exploitation tentant d'être compatibles avec MS-DOS, sont parfois désignés sous le nom de "DOS" (qui est également l'acronyme générique pour système d'exploitation de disque). MS-DOS était le principal système d'exploitation pour les ordinateurs personnels compatibles IBM PC dans les années 1980. Il a ensuite été progressivement remplacé par des systèmes d'exploitation offrant une interface utilisateur graphique (GUI), dans les différentes générations du système d'exploitation graphique Microsoft Windows.
+      <text lang="fr">MS-DOS (em-es-DOSS ; acronyme de Microsoft Disk Operating System) est un système d'exploitation pour les ordinateurs personnels basés sur x86, principalement développé par Microsoft. Collectivement, MS-DOS, son rebranding sous le nom de IBM PC DOS, et certains systèmes d'exploitation tentant d'être compatibles avec MS-DOS, sont parfois désignés sous le nom de "DOS" (qui est également l'acronyme générique pour système d'exploitation de disque). MS-DOS était le principal système d'exploitation pour les ordinateurs personnels compatibles IBM PC dans les années 1980. Il a ensuite été progressivement remplacé par des systèmes d'exploitation offrant une interface utilisateur graphique (GUI), dans les différentes générations du système d'exploitation graphique Microsoft Windows.
 
 IBM l'a licencié et réédité en 1981 sous le nom de PC DOS 1.0 pour l'utiliser dans ses PC. Bien que MS-DOS et PC DOS aient été initialement développés en parallèle par Microsoft et IBM, les deux produits ont divergé au bout de douze ans, en 1993, avec des différences reconnaissables en termes de compatibilité, de syntaxe et de capacités.</text>
-			<text lang="it">MS-DOS (em-es-DOSS; acronimo di Microsoft Disk Operating System) è un sistema operativo per personal computer basati su x86 sviluppato principalmente da Microsoft. Collettivamente, MS-DOS, il suo rebranding come IBM PC DOS e alcuni sistemi operativi che tentano di essere compatibili con MS-DOS, sono a volte indicati come "DOS" (che è anche l'acronimo generico per sistema operativo su disco). L'MS-DOS è stato il principale sistema operativo per i personal computer IBM PC compatibili durante gli anni '80. Da quel momento è stato gradualmente sostituito da sistemi operativi che offrivano un'interfaccia grafica (GUI), in varie generazioni del sistema operativo grafico Microsoft Windows.
+      <text lang="it">MS-DOS (em-es-DOSS; acronimo di Microsoft Disk Operating System) è un sistema operativo per personal computer basati su x86 sviluppato principalmente da Microsoft. Collettivamente, MS-DOS, il suo rebranding come IBM PC DOS e alcuni sistemi operativi che tentano di essere compatibili con MS-DOS, sono a volte indicati come "DOS" (che è anche l'acronimo generico per sistema operativo su disco). L'MS-DOS è stato il principale sistema operativo per i personal computer IBM PC compatibili durante gli anni '80. Da quel momento è stato gradualmente sostituito da sistemi operativi che offrivano un'interfaccia grafica (GUI), in varie generazioni del sistema operativo grafico Microsoft Windows.
 
 IBM lo concesse in licenza e lo ripubblicò nel 1981 come PC DOS 1.0 per l'uso nei suoi PC. Sebbene MS-DOS e PC DOS siano stati inizialmente sviluppati in parallelo da Microsoft e IBM, i due prodotti si sono separati dopo dodici anni, nel 1993, con differenze riconoscibili in termini di compatibilità, sintassi e capacità.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

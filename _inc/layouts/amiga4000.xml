@@ -1,83 +1,88 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.51 0.378</pos>
-			<maxSize>0.242</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.23 0.378" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.32</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
-			<pos>0.51 0.378</pos>
-			<maxSize>0.232</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.23 0.378" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1992</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Commodore</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Amiga 4000</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Commodore Amiga 4000, or A4000, is the successor of the A2000 and A3000 computers. There are two models: the A4000/040 released in October 1992 with a Motorola 68040 CPU, and the A4000/030 released in April 1993 with a Motorola 68EC030.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.51 0.378</pos>
+      <maxSize>0.242</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.23 0.378" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.32</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+      <pos>0.51 0.378</pos>
+      <maxSize>0.232</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.23 0.378" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1992</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Commodore</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Amiga 4000</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Commodore Amiga 4000, or A4000, is the successor of the A2000 and A3000 computers. There are two models: the A4000/040 released in October 1992 with a Motorola 68040 CPU, and the A4000/030 released in April 1993 with a Motorola 68EC030.
 
 The Amiga 4000 system design was generally similar to that of the A3000, but introduced the Advanced Graphics Architecture (AGA) chipset with enhanced graphics. The SCSI system from previous Amigas was replaced by the lower-cost Parallel ATA.
 
 The original A4000 is housed in a beige horizontal desktop box with a separate keyboard. Later, Commodore released an expanded tower version called the A4000T.</text>
-			<text lang="pl">Komputer Commodore Amiga 4000, czyli A4000, to następca komputerów A2000 i A3000. Powstały dwa modele: A4000/040 wydany w październiku 1992 roku z procesorem Motorola 68040 oraz A4000/030 wydany w kwietniu 1993 roku z procesorem Motorola 68EC030.
+      <text lang="pl">Komputer Commodore Amiga 4000, czyli A4000, to następca komputerów A2000 i A3000. Powstały dwa modele: A4000/040 wydany w październiku 1992 roku z procesorem Motorola 68040 oraz A4000/030 wydany w kwietniu 1993 roku z procesorem Motorola 68EC030.
 
 Konstrukcja systemu Amigi 4000 była ogólnie podobna do A3000, ale wprowadzono chipset AGA (Advanced Graphics Architecture) z ulepszoną grafiką. System SCSI z poprzednich Amig został zastąpiony tańszym Parallel ATA.
 
 Oryginalna A4000 mieści się w beżowej, poziomej obudowie typu desktop z oddzielną klawiaturą. Później Commodore wypuściło rozbudowaną wersję tower o nazwie A4000T.</text>
-			<text lang="ru">Amiga 4000 или A4000, была выпущена в октябре 1992 года. Этот компьютер создавался на базе передового чипсета Commodore — AGA, позволял отображать 262 144 цвета на экран (из палитры 16 777 216 цветов) и поставлялся с AmigaOS 3.0. Существовало несколько вариантов поставки, но стандартным стало наличие 3,5" дисковода 1,76 Мб, 120 Мб IDE ATA винчестера и 6 Мб предустановленной памяти (2 Мб Chip- и 4 Мб Fast-памяти).
+      <text lang="pt">O computador Commodore Amiga 4000, ou A4000, é o sucessor dos computadores A2000 e A3000. Foram lançados dois modelos: o A4000/040 lançado em outubro de 1992 com o processador Motorola 68040 e o A4000/030 lançado em abril de 1993 com o processador Motorola 68EC030.
+
+O design do sistema Amiga 4000 era geralmente similar ao A3000, mas introduziu o chipset AGA (Advanced Graphics Architecture) com gráficos aprimorados. O sistema SCSI das Amigas anteriores foi substituído pelo Parallel ATA mais barato.
+
+O A4000 original é alojado em um gabinete bege horizontal tipo desktop com um teclado separado. Mais tarde, a Commodore lançou uma versão tower expandida chamada A4000T.</text>
+      <text lang="ru">Amiga 4000 или A4000, была выпущена в октябре 1992 года. Этот компьютер создавался на базе передового чипсета Commodore — AGA, позволял отображать 262 144 цвета на экран (из палитры 16 777 216 цветов) и поставлялся с AmigaOS 3.0. Существовало несколько вариантов поставки, но стандартным стало наличие 3,5" дисковода 1,76 Мб, 120 Мб IDE ATA винчестера и 6 Мб предустановленной памяти (2 Мб Chip- и 4 Мб Fast-памяти).
 
 Позиционируясь как преемник Amiga 3000 и Amiga 3000T, дизайн компьютера комбинировался из корпуса форм-фактора A2000 (большой бокс), материнской платы A3000 (вертикальные разъёмы расширения) и материнской платы A1200 (чипсет AGA). Компьютер поставлялся с процессором Motorola MC68EC030 25 МГц (и сопроцессором MC68882) или MC68040 50 МГц.</text>
-			<text lang="es">El Commodore Amiga 4000, o A4000, es el sucesor de los ordenadores A2000 y A3000. Existen dos modelos: el A4000/040, lanzado en octubre de 1992 con una CPU Motorola 68040, y el A4000/030, lanzado en abril de 1993 con una Motorola 68EC030.
+      <text lang="es">El Commodore Amiga 4000, o A4000, es el sucesor de los ordenadores A2000 y A3000. Existen dos modelos: el A4000/040, lanzado en octubre de 1992 con una CPU Motorola 68040, y el A4000/030, lanzado en abril de 1993 con una Motorola 68EC030.
 
 El diseño del sistema Amiga 4000 era en general similar al del A3000, pero introdujo el chipset Advanced Graphics Architecture (AGA) con gráficos mejorados. El sistema SCSI de los Amigas anteriores fue sustituido por el Parallel ATA de menor coste.
 
 El A4000 original está alojado en una caja de sobremesa horizontal de color beige con un teclado independiente. Más tarde, Commodore lanzó una versión de torre ampliada llamada A4000T.</text>
-			<text lang="de">Der Commodore Amiga 4000, oder A4000, ist der Nachfolger der A2000 und A3000 Computer. Es gibt zwei Modelle: den A4000/040, der im Oktober 1992 mit einer Motorola 68040 CPU veröffentlicht wurde, und den A4000/030, der im April 1993 mit einem Motorola 68EC030 veröffentlicht wurde.
+      <text lang="de">Der Commodore Amiga 4000, oder A4000, ist der Nachfolger der A2000 und A3000 Computer. Es gibt zwei Modelle: den A4000/040, der im Oktober 1992 mit einer Motorola 68040 CPU veröffentlicht wurde, und den A4000/030, der im April 1993 mit einem Motorola 68EC030 veröffentlicht wurde.
 
 Das Systemdesign des Amiga 4000 ähnelte im Allgemeinen dem des A3000, führte aber den Advanced Graphics Architecture (AGA)-Chipsatz mit verbesserter Grafik ein. Das SCSI-System der vorherigen Amigas wurde durch das kostengünstigere Parallel ATA ersetzt.
 
 Der ursprüngliche A4000 ist in einem beigen, horizontalen Desktop-Gehäuse mit einer separaten Tastatur untergebracht. Später brachte Commodore eine erweiterte Tower-Version namens A4000T heraus.</text>
-			<text lang="fr">Le Commodore Amiga 4000, ou A4000, est le successeur des ordinateurs A2000 et A3000. Il existe deux modèles : le A4000/040 sorti en octobre 1992 avec un processeur Motorola 68040, et le A4000/030 sorti en avril 1993 avec un Motorola 68EC030.
+      <text lang="fr">Le Commodore Amiga 4000, ou A4000, est le successeur des ordinateurs A2000 et A3000. Il existe deux modèles : le A4000/040 sorti en octobre 1992 avec un processeur Motorola 68040, et le A4000/030 sorti en avril 1993 avec un Motorola 68EC030.
 
 La conception du système Amiga 4000 était généralement similaire à celle de l'A3000, mais introduisait le chipset AGA (Advanced Graphics Architecture) avec des graphismes améliorés. Le système SCSI des Amiga précédents a été remplacé par le Parallel ATA, moins coûteux.
 
 Le A4000 original se présente sous la forme d'un boîtier horizontal beige avec un clavier séparé. Plus tard, Commodore a sorti une version tour agrandie appelée A4000T.</text>
-			<text lang="it">Il Commodore Amiga 4000, o A4000, è il successore dei computer A2000 e A3000. Esistono due modelli: l'A4000/040, rilasciato nell'ottobre 1992 con una CPU Motorola 68040, e l'A4000/030, rilasciato nell'aprile 1993 con una CPU Motorola 68EC030.
+      <text lang="it">Il Commodore Amiga 4000, o A4000, è il successore dei computer A2000 e A3000. Esistono due modelli: l'A4000/040, rilasciato nell'ottobre 1992 con una CPU Motorola 68040, e l'A4000/030, rilasciato nell'aprile 1993 con una CPU Motorola 68EC030.
 
 Il design del sistema Amiga 4000 era generalmente simile a quello dell'A3000, ma introduceva il chipset Advanced Graphics Architecture (AGA) con grafica migliorata. Il sistema SCSI dei precedenti Amiga fu sostituito dal più economico Parallel ATA.
 
 L'A4000 originale è alloggiato in una scatola da tavolo orizzontale beige con una tastiera separata. In seguito, Commodore rilasciò una versione ampliata a torre chiamata A4000T.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

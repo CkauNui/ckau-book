@@ -1,56 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.32</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
-			<pos>0.5 0.348</pos>
-			<maxSize>0.29</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.348" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.32</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
-			<pos>0.5 0.348</pos>
-			<maxSize>0.28</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.348" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1993</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Commodore</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Amiga CD32</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Amiga CD32 (code-named "Spellbound") is a 32-bit home video game console developed by Commodore and released in Europe, Australia, Canada and Brazil. It was first announced at the Science Museum in London on July 16, 1993, and was released in September of the same year.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.32</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+      <pos>0.5 0.348</pos>
+      <maxSize>0.29</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.348" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.32</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+      <pos>0.5 0.348</pos>
+      <maxSize>0.28</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.348" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1993</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Commodore</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Amiga CD32</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Amiga CD32 (code-named "Spellbound") is a 32-bit home video game console developed by Commodore and released in Europe, Australia, Canada and Brazil. It was first announced at the Science Museum in London on July 16, 1993, and was released in September of the same year.
 
 The CD32 is part of a family of Amiga computers and other hardware. It uses CD-ROM as its storage medium. It was based on Commodore's Advanced Graphics Architecture chipset, and is of similar specification to the Amiga 1200 personal computer. Using third party devices, it is possible to upgrade the CD32 with a keyboard, floppy drive, hard drive, RAM and mouse, turning it into the equivalent of an Amiga 1200. A hardware MPEG decompression module for playing Video CD was also released.
 
 In the Christmas period following its launch, the CD32 accounted for 38% of all CD-ROM drive sales in the UK, exceeding sales of the Mega-CD; however, it was discontinued as Commodore went into bankruptcy.</text>
-			<text lang="pl">Amiga CD32 – pierwsza 32-bitowa konsola z CD-ROMem. Została zaprezentowana po raz pierwszy 16 lipca 1993 w Science Museum w Londynie. Trzecim państwem, w którym została zaprezentowana, była Polska. Konsola bazowała na podzespołach komputera Amiga 1200 i właściwie była A1200 pozbawioną klawiatury, stacji dyskietek, czy myszy, zamkniętą w innym opakowaniu (istniały jednakże przystawki, np. SX-1, ProModuleCD32 pozwalające podłączyć urządzenia peryferyjne, co czyniło z tej konsoli normalny komputer). Do nierozbudowanej AmigiCD32 można podłączyć standardową mysz do portu nr 2, natomiast klawiaturę do portu AUX.
+      <text lang="pl">Amiga CD32 – pierwsza 32-bitowa konsola z CD-ROMem. Została zaprezentowana po raz pierwszy 16 lipca 1993 w Science Museum w Londynie. Trzecim państwem, w którym została zaprezentowana, była Polska. Konsola bazowała na podzespołach komputera Amiga 1200 i właściwie była A1200 pozbawioną klawiatury, stacji dyskietek, czy myszy, zamkniętą w innym opakowaniu (istniały jednakże przystawki, np. SX-1, ProModuleCD32 pozwalające podłączyć urządzenia peryferyjne, co czyniło z tej konsoli normalny komputer). Do nierozbudowanej AmigiCD32 można podłączyć standardową mysz do portu nr 2, natomiast klawiaturę do portu AUX.
 
 Dane techniczne:
 - procesor Motorola MC68EC020 o taktowaniu 14,32 MHz (NTSC) lub 14,18 MHz (PAL)
@@ -64,29 +64,43 @@ Dane techniczne:
 - wbudowana stacja CD-ROM podwójnej prędkości
 - złącze rozszerzeń (na akcelerator, twardy dysk, kartridż FMV MPEG VCD)
 - gamepad, 2 porty gier, złącze dla klawiatury, S-Video (miniDIN), composite-Video, gniazdo słuchawkowe mini-jack + potencjometr suwakowy do regulacji głośności</text>
-			<text lang="ru">32-разрядная игровая приставка на основе CD-ROM. Часто называется первой домашней 32-разрядной игровой системой во всем мире кроме Японии. Её запуск состоялся в Музее науки в Лондоне (Великобритания) 16 июля 1993 года, в Европе — в сентябре 1993 года. В качестве основы CD32 использовался чипсет AGA от Commodore, а её характеристики были похожи на характеристики компьютера Amiga 1200. Была предусмотрена возможность дополнения CD32 клавиатурой, дисководом, жёстким диском и манипулятором «мышь», что превращало её в персональный компьютер. Также был доступен модуль декодирования MPEG-видео, предназначенный для воспроизведения Video CD.
+      <text lang="pt">Amiga CD32 – o primeiro console de 32 bits com CD-ROM. Foi apresentado pela primeira vez em 16 de julho de 1993 no Science Museum em Londres. O terceiro país onde foi apresentado foi a Polônia. O console era baseado nos componentes do computador Amiga 1200 e, na verdade, era um A1200 sem teclado, unidade de disquetes ou mouse, fechado em uma embalagem diferente (no entanto, havia acessórios, como o SX-1, ProModuleCD32, permitindo a conexão de periféricos, o que tornava este console um computador normal). Ao AmigaCD32 não expandido, pode-se conectar um mouse padrão na porta nº 2 e um teclado na porta AUX.
+
+Especificações técnicas:
+- processador Motorola MC68EC020 com clock de 14,32 MHz (NTSC) ou 14,18 MHz (PAL)
+- 2 MB de memória Amiga Chip RAM / VRAM
+- 1 MB de memória ROM com sistema Kickstart ROM 3.1 e sistema de arquivos CDFS integrado
+- 1 KB de memória EEPROM para salvar o estado do jogo
+- chipset AGA
+- Amiga OS 3.1
+- chip Akiko que fornece conversão de hardware Chunky para Planar e suporte a CDROM com DMA
+- som Paula quatro canais de áudio de 8 bits (2 para o lado esquerdo, 2 para o lado direito) ou dois de 14 bits
+- unidade de CD-ROM de dupla velocidade integrada
+- conector de expansão (para acelerador, disco rígido, cartucho FMV MPEG VCD)
+- gamepad, 2 portas de jogos, conector para teclado, S-Video (miniDIN), vídeo composto, tomada de fone de ouvido mini-jack + potenciômetro deslizante para ajuste de volume</text>
+      <text lang="ru">32-разрядная игровая приставка на основе CD-ROM. Часто называется первой домашней 32-разрядной игровой системой во всем мире кроме Японии. Её запуск состоялся в Музее науки в Лондоне (Великобритания) 16 июля 1993 года, в Европе — в сентябре 1993 года. В качестве основы CD32 использовался чипсет AGA от Commodore, а её характеристики были похожи на характеристики компьютера Amiga 1200. Была предусмотрена возможность дополнения CD32 клавиатурой, дисководом, жёстким диском и манипулятором «мышь», что превращало её в персональный компьютер. Также был доступен модуль декодирования MPEG-видео, предназначенный для воспроизведения Video CD.
 
 CD32 поступила в продажу в Европе, Австралии, Бразилии и Канаде. Планировалось начать продажи в США, однако компания Commodore просрочила выплаты за использование патента Cad Track, результатом чего стал судебный иск и постановление федерального судьи о запрете для Commodore импорта на территорию США любых товаров. Вскоре после этого началась процедура банкротства компании, так что приставка CD32 никогда не продавалась в США легально (хотя и ввозилась в страну небольшими партиями с территории Канады; также некоторые торговые дома Великобритании позволяли покупателям из США оформлять заказ с трансконтинентальной доставкой). В рекордные сроки, спустя всего месяц после выхода CD32 на рынок, Commodore объявила о прекращении продаж и гарантийного обслуживания товара.</text>
-			<text lang="es">La Amiga CD32 (nombre en clave "Spellbound") es una videoconsola doméstica de 32 bits desarrollada por Commodore y lanzada en Europa, Australia, Canadá y Brasil. Se anunció por primera vez en el Museo de la Ciencia de Londres el 16 de julio de 1993 y salió a la venta en septiembre del mismo año.
+      <text lang="es">La Amiga CD32 (nombre en clave "Spellbound") es una videoconsola doméstica de 32 bits desarrollada por Commodore y lanzada en Europa, Australia, Canadá y Brasil. Se anunció por primera vez en el Museo de la Ciencia de Londres el 16 de julio de 1993 y salió a la venta en septiembre del mismo año.
 
 El CD32 forma parte de una familia de ordenadores Amiga y otro hardware. Utiliza CD-ROM como medio de almacenamiento. Se basa en el chipset de Arquitectura Gráfica Avanzada de Commodore y tiene especificaciones similares a las del ordenador personal Amiga 1200. Utilizando dispositivos de terceros, es posible actualizar el CD32 con un teclado, disquetera, disco duro, RAM y ratón, convirtiéndolo en el equivalente de un Amiga 1200. También se lanzó un módulo de descompresión MPEG por hardware para reproducir Video CD.
 
 En el periodo navideño posterior a su lanzamiento, el CD32 representó el 38% de todas las ventas de unidades de CD-ROM en el Reino Unido, superando las ventas del Mega-CD; sin embargo, se dejó de fabricar al declararse Commodore en quiebra.</text>
-			<text lang="de">Der Amiga CD32 (Codename "Spellbound") ist eine 32-Bit-Videospielkonsole, die von Commodore entwickelt und in Europa, Australien, Kanada und Brasilien veröffentlicht wurde. Es wurde erstmals am 16. Juli 1993 im Science Museum in London angekündigt und kam im September desselben Jahres auf den Markt.
+      <text lang="de">Der Amiga CD32 (Codename "Spellbound") ist eine 32-Bit-Videospielkonsole, die von Commodore entwickelt und in Europa, Australien, Kanada und Brasilien veröffentlicht wurde. Es wurde erstmals am 16. Juli 1993 im Science Museum in London angekündigt und kam im September desselben Jahres auf den Markt.
 
 Das CD32 ist Teil einer Familie von Amiga-Computern und anderer Hardware. Es verwendet CD-ROM als Speichermedium. Er basiert auf Commodores Advanced Graphics Architecture-Chipsatz und hat ähnliche Spezifikationen wie der Amiga 1200 Personal Computer. Mit Geräten von Drittanbietern ist es möglich, das CD32 mit einer Tastatur, einem Diskettenlaufwerk, einer Festplatte, einem Arbeitsspeicher und einer Maus aufzurüsten und es so in das Äquivalent eines Amiga 1200 zu verwandeln. Ein Hardware-MPEG-Dekompressionsmodul für die Wiedergabe von Video-CDs wurde ebenfalls veröffentlicht.
 
 In der Weihnachtszeit nach seiner Markteinführung machte das CD32 38% aller Verkäufe von CD-ROM-Laufwerken in Großbritannien aus und übertraf damit die Verkäufe des Mega-CD; es wurde jedoch eingestellt, als Commodore in Konkurs ging.</text>
-			<text lang="fr">L'Amiga CD32 (nom de code "Spellbound") est une console de jeu vidéo de salon 32 bits développée par Commodore et commercialisée en Europe, en Australie, au Canada et au Brésil. Elle a été annoncée pour la première fois au Science Museum de Londres le 16 juillet 1993 et est sortie en septembre de la même année.
+      <text lang="fr">L'Amiga CD32 (nom de code "Spellbound") est une console de jeu vidéo de salon 32 bits développée par Commodore et commercialisée en Europe, en Australie, au Canada et au Brésil. Elle a été annoncée pour la première fois au Science Museum de Londres le 16 juillet 1993 et est sortie en septembre de la même année.
 
 Le CD32 fait partie d'une famille d'ordinateurs Amiga et d'autres matériels. Il utilise le CD-ROM comme support de stockage. Il est basé sur le chipset Advanced Graphics Architecture de Commodore, et ses spécifications sont similaires à celles de l'ordinateur personnel Amiga 1200. En utilisant des périphériques tiers, il est possible d'ajouter au CD32 un clavier, un lecteur de disquettes, un disque dur, de la mémoire vive et une souris, le transformant ainsi en l'équivalent d'un Amiga 1200. Un module matériel de décompression MPEG pour la lecture de CD vidéo a également été mis sur le marché.
 
 Pendant la période de Noël qui a suivi son lancement, le CD32 a représenté 38 % de toutes les ventes de lecteurs de CD-ROM au Royaume-Uni, dépassant les ventes du Mega-CD ; cependant, il a été abandonné lorsque Commodore a fait faillite.</text>
-			<text lang="it">L'Amiga CD32 (nome in codice "Spellbound") è una console per videogiochi domestici a 32 bit sviluppata da Commodore e rilasciata in Europa, Australia, Canada e Brasile. Fu annunciata per la prima volta al Museo della Scienza di Londra il 16 luglio 1993 ed è stata rilasciata nel settembre dello stesso anno.
+      <text lang="it">L'Amiga CD32 (nome in codice "Spellbound") è una console per videogiochi domestici a 32 bit sviluppata da Commodore e rilasciata in Europa, Australia, Canada e Brasile. Fu annunciata per la prima volta al Museo della Scienza di Londra il 16 luglio 1993 ed è stata rilasciata nel settembre dello stesso anno.
 
 Il CD32 faceva parte della famiglia di computer Amiga e di altro hardware. Utilizza il CD-ROM come supporto di memorizzazione. È basato sul chipset Advanced Graphics Architecture di Commodore e ha specifiche simili a quelle del personal computer Amiga 1200. Utilizzando dispositivi di terze parti, è possibile aggiornare il CD32 con una tastiera, un'unità floppy, un disco rigido, RAM e mouse, trasformandolo nell'equivalente di un Amiga 1200. È stato inoltre rilasciato un modulo di decompressione MPEG hardware per la riproduzione di Video CD.
 
 Nel periodo natalizio successivo al lancio, il CD32 rappresentò il 38% di tutte le vendite di unità CD-ROM nel Regno Unito, superando le vendite del Mega-CD.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

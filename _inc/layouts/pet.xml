@@ -1,91 +1,96 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<pos>0.5 0.297</pos>
-			<maxSize>0.24</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.297" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<pos>0.5 0.2995</pos>
-			<maxSize>0.215</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.2995" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1977</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Commodore</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Pet</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Commodore PET is a line of personal computers produced starting in 1977 by Commodore International. A single all-in-one case combines a MOS Technology 6502 microprocessor, Commodore BASIC in read-only memory, keyboard, computer monitor, and in early models a cassette deck.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <pos>0.5 0.297</pos>
+      <maxSize>0.24</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.297" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <pos>0.5 0.2995</pos>
+      <maxSize>0.215</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.2995" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1977</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Commodore</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Pet</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Commodore PET is a line of personal computers produced starting in 1977 by Commodore International. A single all-in-one case combines a MOS Technology 6502 microprocessor, Commodore BASIC in read-only memory, keyboard, computer monitor, and in early models a cassette deck.
 
 Development of the system began in 1976 and a prototype was demonstrated at the January 1977 Consumer Electronics Show. A series of problems delayed production versions until December 1977, by which time the TRS-80 and Apple II had already begun deliveries. Byte referred to the three machines collectively as the "1977 trinity".
 
 The PET design underwent a series of updates: more memory, better keyboard, larger screen, and other modifications. The systems were a top seller in the Canadian and United States education markets, as well as for business use in Europe.
 
 The name was suggested by Andre Souson after he saw the Pet Rock in Los Gatos, and stated they were going to make the "pet computer". It was backronymed to Personal Electronic Transactor.</text>
-			<text lang="pl">Commodore PET (Personal Electronic Transactor) – linia komputerów domowych (osobistych) produkowanych przez firmę Commodore International w latach 1977 – 1982. PET był pierwszym w pełni funkcjonalnym komputerem firmy Commodore; na jego podstawie firma stworzyła później całą linię 8-bitowych komputerów domowych, takich jak Commodore VIC-20 czy Commodore 64. PET najlepiej sprzedawał się na kanadyjskim oraz amerykańskim rynku edukacyjnym. Pierwszy model, PET 2001, został zaprezentowany podczas targów Consumer Electronics Show w 1977 roku.
+      <text lang="pl">Commodore PET (Personal Electronic Transactor) – linia komputerów domowych (osobistych) produkowanych przez firmę Commodore International w latach 1977 – 1982. PET był pierwszym w pełni funkcjonalnym komputerem firmy Commodore; na jego podstawie firma stworzyła później całą linię 8-bitowych komputerów domowych, takich jak Commodore VIC-20 czy Commodore 64. PET najlepiej sprzedawał się na kanadyjskim oraz amerykańskim rynku edukacyjnym. Pierwszy model, PET 2001, został zaprezentowany podczas targów Consumer Electronics Show w 1977 roku.
 
 Pierwsza wersja produkcyjna PET-a miała 4 lub 8 kB RAM-u, do generowania obrazu używała chipa MOS 6545. Wyświetlał on obraz na wbudowanym monitorze o rozdzielczości 40*25 znaków. Komputer miał także wbudowany magnetofon kasetowy i raczej niewygodną, bardzo małą klawiaturę.
 
 Komputer sprzedawał się nieźle, ale często krytykowano jego klawiaturę, w wyniku czego Commodore wprowadził na rynek nowe wersje 2001-N i 2001-B, w których magnetofon nie stanowił już integralnej części obudowy, co pozwoliło na użycie większej i wygodniejszej klawiatury. Dodatkowo wprowadzono także zmiany na płycie głównej i produkowano modele z powiększoną pamięcią 2001-N-8, -N-16 oraz -N-31 (z kolejno 8, 16 i 32 kilobajtami pamięci).</text>
-			<text lang="ru">(Personal Electronic Transactor) — домашний персональный компьютер, выпускавшийся компанией Commodore с 1977 года. Хотя это устройство не получило широкого распространения за пределами Северной Америки и Великобритании, это был первый полноценный компьютер Commodore, и он послужил основой для будущего успеха компании.</text>
-			<text lang="es">El Commodore PET es una línea de ordenadores personales fabricados a partir de 1977 por Commodore International. Una única carcasa todo en uno combina un microprocesador MOS Technology 6502, Commodore BASIC en memoria de sólo lectura, teclado, monitor de ordenador y, en los primeros modelos, una pletina de casete.
+      <text lang="pt">Commodore PET (Personal Electronic Transactor) – linha de computadores domésticos (pessoais) fabricados pela empresa Commodore International entre 1977 e 1982. O PET foi o primeiro computador totalmente funcional da Commodore; a partir dele, a empresa criou posteriormente toda uma linha de computadores domésticos de 8 bits, como o Commodore VIC-20 e o Commodore 64. O PET teve maior sucesso de vendas no mercado educacional canadense e americano. O primeiro modelo, PET 2001, foi apresentado na feira Consumer Electronics Show em 1977.
+
+A primeira versão de produção do PET tinha 4 ou 8 kB de RAM, utilizava o chip MOS 6545 para gerar imagens. Ele exibia imagens em um monitor embutido com resolução de 40*25 caracteres. O computador também tinha um gravador de fita cassete embutido e um teclado bastante pequeno e desconfortável.
+
+O computador vendeu bem, mas seu teclado era frequentemente criticado, o que levou a Commodore a lançar novas versões 2001-N e 2001-B, nas quais o gravador não fazia mais parte da caixa, permitindo o uso de um teclado maior e mais confortável. Além disso, foram introduzidas alterações na placa-mãe e modelos com memória ampliada 2001-N-8, -N-16 e -N-31 foram produzidos (com 8, 16 e 32 kilobytes de memória, respectivamente).</text>
+      <text lang="ru">(Personal Electronic Transactor) — домашний персональный компьютер, выпускавшийся компанией Commodore с 1977 года. Хотя это устройство не получило широкого распространения за пределами Северной Америки и Великобритании, это был первый полноценный компьютер Commodore, и он послужил основой для будущего успеха компании.</text>
+      <text lang="es">El Commodore PET es una línea de ordenadores personales fabricados a partir de 1977 por Commodore International. Una única carcasa todo en uno combina un microprocesador MOS Technology 6502, Commodore BASIC en memoria de sólo lectura, teclado, monitor de ordenador y, en los primeros modelos, una pletina de casete.
 
 El sistema comenzó a desarrollarse en 1976 y se presentó un prototipo en el Consumer Electronics Show de enero de 1977. Una serie de problemas retrasaron las versiones de producción hasta diciembre de 1977, momento en el que el TRS-80 y el Apple II ya habían comenzado a entregarse. Byte se refería a las tres máquinas colectivamente como la "trinidad de 1977".
 
 El diseño del PET sufrió una serie de actualizaciones: más memoria, mejor teclado, pantalla más grande y otras modificaciones. Los sistemas fueron un éxito de ventas en los mercados educativos de Canadá y Estados Unidos, así como para uso empresarial en Europa.
 
 El nombre fue sugerido por Andre Souson después de ver el Pet Rock en Los Gatos, y afirmó que iban a fabricar el "ordenador mascota". El nombre se cambió por el de Personal Electronic Transactor.</text>
-			<text lang="de">Der Commodore PET ist eine Reihe von Personal Computern, die ab 1977 von Commodore International hergestellt wurden. Ein einziges All-in-One-Gehäuse vereint einen MOS Technology 6502-Mikroprozessor, Commodore BASIC im Festwertspeicher, eine Tastatur, einen Computermonitor und in frühen Modellen ein Kassettendeck.
+      <text lang="de">Der Commodore PET ist eine Reihe von Personal Computern, die ab 1977 von Commodore International hergestellt wurden. Ein einziges All-in-One-Gehäuse vereint einen MOS Technology 6502-Mikroprozessor, Commodore BASIC im Festwertspeicher, eine Tastatur, einen Computermonitor und in frühen Modellen ein Kassettendeck.
 
 Die Entwicklung des Systems begann 1976 und ein Prototyp wurde auf der Consumer Electronics Show im Januar 1977 vorgestellt. Aufgrund einer Reihe von Problemen verzögerte sich die Produktion bis Dezember 1977, als die Auslieferung des TRS-80 und des Apple II bereits begonnen hatte. Byte bezeichnete die drei Geräte zusammen als die "1977 Trinity".
 
 Das PET-Design erfuhr eine Reihe von Aktualisierungen: mehr Speicher, bessere Tastatur, größerer Bildschirm und andere Änderungen. Die Systeme waren ein Verkaufsschlager auf dem kanadischen und US-amerikanischen Bildungsmarkt sowie für den geschäftlichen Einsatz in Europa.
 
 Der Name wurde von Andre Souson vorgeschlagen, nachdem er den Pet Rock in Los Gatos gesehen hatte und erklärte, dass sie den "Pet Computer" herstellen würden. Er wurde in Personal Electronic Transactor umbenannt.</text>
-			<text lang="fr">Le Commodore PET est une gamme d'ordinateurs personnels produits à partir de 1977 par Commodore International. Un seul boîtier tout-en-un combine un microprocesseur MOS Technology 6502, Commodore BASIC en mémoire morte, un clavier, un écran d'ordinateur et, dans les premiers modèles, une platine à cassettes.
+      <text lang="fr">Le Commodore PET est une gamme d'ordinateurs personnels produits à partir de 1977 par Commodore International. Un seul boîtier tout-en-un combine un microprocesseur MOS Technology 6502, Commodore BASIC en mémoire morte, un clavier, un écran d'ordinateur et, dans les premiers modèles, une platine à cassettes.
 
 Le développement du système a commencé en 1976 et un prototype a été présenté au Consumer Electronics Show de janvier 1977. Une série de problèmes a retardé les versions de production jusqu'en décembre 1977, date à laquelle le TRS-80 et l'Apple II avaient déjà commencé à être livrés. Byte a appelé ces trois machines la "trinité de 1977".
 
 La conception du PET a fait l'objet d'une série de mises à jour : plus de mémoire, un meilleur clavier, un écran plus grand et d'autres modifications. Les systèmes ont été très populaires sur les marchés de l'éducation au Canada et aux États-Unis, ainsi que dans les entreprises en Europe.
 
 Le nom a été suggéré par André Souson après qu'il ait vu le Pet Rock à Los Gatos, et qu'il ait déclaré qu'ils allaient fabriquer l'"ordinateur pour animaux de compagnie". Il a été rebaptisé Personal Electronic Transactor.</text>
-			<text lang="it">Il Commodore PET è una linea di personal computer prodotta a partire dal 1977 da Commodore International. Un singolo case all-in-one combina un microprocessore MOS Technology 6502, Commodore BASIC in memoria di sola lettura, tastiera, monitor e, nei primi modelli, una piastra a cassette.
+      <text lang="it">Il Commodore PET è una linea di personal computer prodotta a partire dal 1977 da Commodore International. Un singolo case all-in-one combina un microprocessore MOS Technology 6502, Commodore BASIC in memoria di sola lettura, tastiera, monitor e, nei primi modelli, una piastra a cassette.
 
 Lo sviluppo del sistema iniziò nel 1976 e un prototipo fu presentato al Consumer Electronics Show del gennaio 1977. Una serie di problemi ritardarono la produzione delle versioni fino al dicembre 1977, quando le consegne del TRS-80 e dell'Apple II erano già iniziate. Byte si riferiva a queste tre macchine come alla "trinità del 1977".
 
 Il design del PET subì una serie di aggiornamenti: più memoria, tastiera migliore, schermo più grande e altre modifiche. I sistemi furono molto venduti nei mercati dell'istruzione canadese e statunitense, oltre che in Europa per uso aziendale.
 
 Il nome fu suggerito da Andre Souson dopo aver visto il Pet Rock a Los Gatos, e dichiarò che avrebbero realizzato il "computer da compagnia". Il nome è stato poi cambiato in Personal Electronic Transactor.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

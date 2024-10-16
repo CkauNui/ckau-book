@@ -1,69 +1,70 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.45 0.5</origin>
-			<pos>0.475 0.39</pos>
-			<maxSize>0.25</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.195 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.45 0.5</origin>
-			<pos>0.475 0.39</pos>
-			<maxSize>0.24</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.195 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1983</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Tomy</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Tutor</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Tomy Tutor, originally sold in Japan as the Pyūta (ぴゅう太) and in the UK as the Grandstand Tutor, is a home computer produced by the Japanese toymaker Tomy. It was architecturally similar, but not identical, to the Texas Instruments TI-99/4A, and used a similar Texas Instruments 16-bit CPU.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0.45 0.5</origin>
+      <pos>0.475 0.39</pos>
+      <maxSize>0.25</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.195 0.39" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0.45 0.5</origin>
+      <pos>0.475 0.39</pos>
+      <maxSize>0.24</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.195 0.39" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1983</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Tomy</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Tutor</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Tomy Tutor, originally sold in Japan as the Pyūta (ぴゅう太) and in the UK as the Grandstand Tutor, is a home computer produced by the Japanese toymaker Tomy. It was architecturally similar, but not identical, to the Texas Instruments TI-99/4A, and used a similar Texas Instruments 16-bit CPU.
 
 The computer was launched in Japan in 1982, and in the UK and the United States in the next year.</text>
-			<text lang="pl">Tomy Tutor, pierwotnie sprzedawany w Japonii jako Pyūta (ぴゅう太), a w Wielkiej Brytanii jako Grandstand Tutor, to komputer domowy wyprodukowany przez japońskiego producenta zabawek Tomy. Architektonicznie był podobny, ale nie identyczny, do Texas Instruments TI-99/4A i wykorzystywał podobny 16-bitowy procesor Texas Instruments. Komputer został wprowadzony na rynek w Japonii w 1982 roku, a w Wielkiej Brytanii i Stanach Zjednoczonych w następnym roku.</text>
-			<text lang="ru">Tomy Tutor, изначально продававшийся в Японии под названием Pyūta (ぴゅう太) а в Англии как Grandstand Tutor - это домашний компьютер японского производителя игрушек Tomy. Архитектура была подобна (но не идентична) компьютеру Texas Instruments TI-99/4A и даже использовала аналогичный 16-разрядный процессор Texas Instruments. Продажи компьютера стартовали в Японии в 1982 году, а в следующем году - в Великобритании и США.</text>
-			<text lang="es">El Tomy Tutor, vendido originalmente en Japón como Pyūta (ぴゅう太) y en el Reino Unido como Grandstand Tutor, es un ordenador doméstico producido por el fabricante de juguetes japonés Tomy. Era arquitectónicamente similar, pero no idéntico, al Texas Instruments TI-99/4A, y utilizaba una CPU de 16 bits Texas Instruments similar.
+      <text lang="pl">Tomy Tutor, pierwotnie sprzedawany w Japonii jako Pyūta (ぴゅう太), a w Wielkiej Brytanii jako Grandstand Tutor, to komputer domowy wyprodukowany przez japońskiego producenta zabawek Tomy. Architektonicznie był podobny, ale nie identyczny, do Texas Instruments TI-99/4A i wykorzystywał podobny 16-bitowy procesor Texas Instruments. Komputer został wprowadzony na rynek w Japonii w 1982 roku, a w Wielkiej Brytanii i Stanach Zjednoczonych w następnym roku.</text>
+      <text lang="pt">Tomy Tutor, originalmente vendido no Japão como Pyūta (ぴゅう太), e no Reino Unido como Grandstand Tutor, foi um computador doméstico produzido pela fabricante japonesa de brinquedos Tomy. Arquiteturalmente, era similar, mas não idêntico, ao Texas Instruments TI-99/4A e utilizava um processador Texas Instruments de 16 bits semelhante. O computador foi lançado no Japão em 1982 e no Reino Unido e nos Estados Unidos no ano seguinte.</text>
+      <text lang="ru">Tomy Tutor, изначально продававшийся в Японии под названием Pyūta (ぴゅう太) а в Англии как Grandstand Tutor - это домашний компьютер японского производителя игрушек Tomy. Архитектура была подобна (но не идентична) компьютеру Texas Instruments TI-99/4A и даже использовала аналогичный 16-разрядный процессор Texas Instruments. Продажи компьютера стартовали в Японии в 1982 году, а в следующем году - в Великобритании и США.</text>
+      <text lang="es">El Tomy Tutor, vendido originalmente en Japón como Pyūta (ぴゅう太) y en el Reino Unido como Grandstand Tutor, es un ordenador doméstico producido por el fabricante de juguetes japonés Tomy. Era arquitectónicamente similar, pero no idéntico, al Texas Instruments TI-99/4A, y utilizaba una CPU de 16 bits Texas Instruments similar.
 
 El ordenador se lanzó en Japón en 1982, y en el Reino Unido y Estados Unidos al año siguiente.</text>
-			<text lang="de">Der Tomy Tutor, der ursprünglich in Japan als Pyūta (ぴゅう太) und im Vereinigten Königreich als Grandstand Tutor verkauft wurde, ist ein Heimcomputer des japanischen Spielzeugherstellers Tomy. Er war architektonisch ähnlich, aber nicht identisch mit dem Texas Instruments TI-99/4A und verwendete eine ähnliche Texas Instruments 16-Bit-CPU.
+      <text lang="de">Der Tomy Tutor, der ursprünglich in Japan als Pyūta (ぴゅう太) und im Vereinigten Königreich als Grandstand Tutor verkauft wurde, ist ein Heimcomputer des japanischen Spielzeugherstellers Tomy. Er war architektonisch ähnlich, aber nicht identisch mit dem Texas Instruments TI-99/4A und verwendete eine ähnliche Texas Instruments 16-Bit-CPU.
 
 Der Computer wurde 1982 in Japan auf den Markt gebracht, ein Jahr später auch im Vereinigten Königreich und in den Vereinigten Staaten.</text>
-			<text lang="fr">Le Tomy Tutor, vendu à l'origine au Japon sous le nom de Pyūta (ぴゅう太) et au Royaume-Uni sous le nom de Grandstand Tutor, est un ordinateur domestique produit par le fabricant japonais de jouets Tomy. Son architecture était similaire, mais pas identique, à celle de la TI-99/4A de Texas Instruments, et il utilisait un processeur 16 bits Texas Instruments similaire.
+      <text lang="fr">Le Tomy Tutor, vendu à l'origine au Japon sous le nom de Pyūta (ぴゅう太) et au Royaume-Uni sous le nom de Grandstand Tutor, est un ordinateur domestique produit par le fabricant japonais de jouets Tomy. Son architecture était similaire, mais pas identique, à celle de la TI-99/4A de Texas Instruments, et il utilisait un processeur 16 bits Texas Instruments similaire.
 
 L'ordinateur a été lancé au Japon en 1982, et au Royaume-Uni et aux États-Unis l'année suivante.</text>
-			<text lang="it">Il Tomy Tutor, originariamente venduto in Giappone come Pyūta (ぴゅう太) e nel Regno Unito come Grandstand Tutor, è un home computer prodotto dal produttore di giocattoli giapponese Tomy. Era architettonicamente simile, ma non identico, al Texas Instruments TI-99/4A e utilizzava una CPU Texas Instruments a 16 bit simile.
+      <text lang="it">Il Tomy Tutor, originariamente venduto in Giappone come Pyūta (ぴゅう太) e nel Regno Unito come Grandstand Tutor, è un home computer prodotto dal produttore di giocattoli giapponese Tomy. Era architettonicamente simile, ma non identico, al Texas Instruments TI-99/4A e utilizzava una CPU Texas Instruments a 16 bit simile.
 
 Il computer fu lanciato in Giappone nel 1982 e nel Regno Unito e negli Stati Uniti l'anno successivo.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

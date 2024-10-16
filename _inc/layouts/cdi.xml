@@ -1,73 +1,76 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.37</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
-			<pos>0.5 0.385</pos>
-			<maxSize>0.25</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.385" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.37</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
-			<pos>0.5 0.385</pos>
-			<maxSize>0.24</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.385" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1991</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Philips</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>CD-i</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>CD-i (Compact Disc Interactive) is an interactive multimedia CD player manufactured by Royal Phillips Electronics N.V.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.37</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
+      <pos>0.5 0.385</pos>
+      <maxSize>0.25</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.385" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.37</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
+      <pos>0.5 0.385</pos>
+      <maxSize>0.24</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.385" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1991</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Philips</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>CD-i</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>CD-i (Compact Disc Interactive) is an interactive multimedia CD player manufactured by Royal Phillips Electronics N.V.
 
 The first Philips CD-i player was released in 1991, priced at around $700 at the time. The device played CD-i, CD-Audio, CD+G, karaoke CD and Video CD. For VCD playback, it was necessary to purchase a special video card to provide the player with MPEG-1 codecs. The player was produced in a dozen different versions, but they were all compatible with each other.</text>
-			<text lang="pl">CD-i (Compact Disc Interactive) – interaktywny, multimedialny odtwarzacz CD, produkowany przez Royal Phillips Electronics N.V.
+      <text lang="pl">CD-i (Compact Disc Interactive) – interaktywny, multimedialny odtwarzacz CD, produkowany przez Royal Phillips Electronics N.V.
 
 Pierwszy odtwarzacz CD-i Philipsa został wydany w roku 1991, a jego cena wynosiła wtedy około 700 dolarów. Urządzenie odtwarzało dyski CD-i, CD-Audio, CD+G, karaoke CD oraz Video CD. Do odtwarzania VCD niezbędne było dokupienie specjalnej karty wideo, aby zapewnić odtwarzaczowi kodeki MPEG-1. Odtwarzacz był produkowany w kilkunastu różnych wersjach, lecz wszystkie one były ze sobą kompatybilne.</text>
-			<text lang="ru">CD-i, или Compact Disc Interactive, — название мультимедийного интерактивного CD-плеера, разработанного и распространяемого Royal Philips Electronics N.V.
+      <text lang="pt">CD-i (Compact Disc Interativo) – um reprodutor de CD interativo e multimídia, produzido pela Royal Philips Electronics N.V.
+
+O primeiro reprodutor CD-i da Philips foi lançado em 1991, e seu preço na época era de cerca de 700 dólares. O dispositivo reproduzia discos CD-i, CD-Audio, CD+G, karaoke CD e Video CD. Para reproduzir VCD, era necessário adquirir uma placa de vídeo especial para fornecer ao reprodutor os codecs MPEG-1. O reprodutor foi produzido em cerca de uma dúzia de versões diferentes, mas todas eram compatíveis entre si.</text>
+      <text lang="ru">CD-i, или Compact Disc Interactive, — название мультимедийного интерактивного CD-плеера, разработанного и распространяемого Royal Philips Electronics N.V.
 
 Первый плеер Philips CD-i, выпущенный в 1991 году, и изначально стоивший около 700 долларов, имел возможность воспроизведения интерактивных дисков CD-i, аудио-CD, CD+G (CD+Graphics), Karaoke CD, и Video CDs (VCDs). Для воспроизведения последних необходимо было приобрести «Digital Video Card» (карта для цифрового видео), выполнявшая декодирование видео в формате MPEG-1.
 
 Несмотря на интенсивные попытки продвижения консоли CD-i со стороны Philips, потребительский интерес к программному обеспечению CD-i оставался низким. В 1994 году продажи систем CD-i начали снижаться, и в 1998 вся линейка продуктов была снята с производства. После истощения домашнего рынка Philips с некоторым успехом попыталась позиционировать технологию как решение для торговых точек и промышленной мультимедиа.</text>
-			<text lang="es">CD-i (Compact Disc Interactive) es un reproductor de CD multimedia interactivo fabricado por Royal Phillips Electronics N.V.
+      <text lang="es">CD-i (Compact Disc Interactive) es un reproductor de CD multimedia interactivo fabricado por Royal Phillips Electronics N.V.
 
 El primer reproductor CD-i de Philips salió a la venta en 1991, con un precio de unos 700 dólares de la época. El aparato reproducía CD-i, CD-Audio, CD+G, CD karaoke y Vídeo CD. Para la reproducción de VCD, era necesario adquirir una tarjeta de vídeo especial para dotar al reproductor de códecs MPEG-1. El reproductor se fabricó en una docena de versiones diferentes, pero todas eran compatibles entre sí.</text>
-			<text lang="de">CD-i (Compact Disc Interactive) ist ein interaktiver Multimedia-CD-Player, der von Royal Phillips Electronics N.V. hergestellt wird.
+      <text lang="de">CD-i (Compact Disc Interactive) ist ein interaktiver Multimedia-CD-Player, der von Royal Phillips Electronics N.V. hergestellt wird.
 
 Der erste Philips CD-i-Player kam 1991 auf den Markt und kostete damals etwa 700 Dollar. Das Gerät spielte CD-i, CD-Audio, CD+G, Karaoke-CD und Video-CD ab. Für die Wiedergabe von VCDs war der Kauf einer speziellen Videokarte erforderlich, um den Player mit MPEG-1-Codecs auszustatten. Der Player wurde in einem Dutzend verschiedener Versionen hergestellt, die jedoch alle miteinander kompatibel waren.</text>
-			<text lang="fr">CD-i (Compact Disc Interactive) est un lecteur de CD multimédia interactif fabriqué par Royal Phillips Electronics N.V.
+      <text lang="fr">CD-i (Compact Disc Interactive) est un lecteur de CD multimédia interactif fabriqué par Royal Phillips Electronics N.V.
 
 Le premier lecteur CD-i de Philips est sorti en 1991, à un prix d'environ 700 dollars à l'époque. L'appareil lisait les CD-i, les CD-Audio, les CD+G, les CD karaoké et les CD vidéo. Pour la lecture des VCD, il était nécessaire d'acheter une carte vidéo spéciale pour doter le lecteur des codecs MPEG-1. Le lecteur a été produit dans une douzaine de versions différentes, mais elles étaient toutes compatibles entre elles.</text>
-			<text lang="it">CD-i (Compact Disc Interactive) è stato un lettore CD multimediale interattivo prodotto da Royal Phillips Electronics N.V.
+      <text lang="it">CD-i (Compact Disc Interactive) è stato un lettore CD multimediale interattivo prodotto da Royal Phillips Electronics N.V.
 
 Il primo lettore Philips CD-i fu commercializzato nel 1991, al prezzo di circa 700 dollari. Il dispositivo riproduceva CD-i, CD-Audio, CD+G, CD karaoke e Video CD. Per la riproduzione di VCD, era necessario acquistare una scheda video speciale per dotare il lettore di codec MPEG-1. Il lettore è stato prodotto in una dozzina di versioni diverse, ma tutte compatibili tra loro.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

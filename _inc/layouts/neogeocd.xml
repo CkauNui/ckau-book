@@ -1,73 +1,78 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
-			<pos>0.5 0.355</pos>
-			<maxSize>0.256</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.355" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
-			<pos>0.5 0.355</pos>
-			<maxSize>0.246</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.355" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1994</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>SNK</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Neo Geo CD</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Neo Geo CD (Japanese: ネオジオCD, Hepburn: Neo Jio Shī Dī) is the second home video game console of SNK Corporation's Neo Geo family, released in September 9, 1994, four years after its cartridge-based equivalent. This is the same platform, converted to the cheaper CD format retailing at $49 to $79 per title, compared to the $300 cartridges. The system was originally priced at US$399, or £399 in the UK. The unit's 1× CD-ROM drive is slow, with very long loading times. The system can also play Audio CDs. All three versions of the system have no region-lock. The Neo Geo CD was launched bundled with a control pad instead of a joystick like the AES version. However, the original AES joystick can be used with all three Neo Geo CD models.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+      <pos>0.5 0.355</pos>
+      <maxSize>0.256</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.355" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+      <pos>0.5 0.355</pos>
+      <maxSize>0.246</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.355" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1994</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>SNK</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Neo Geo CD</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Neo Geo CD (Japanese: ネオジオCD, Hepburn: Neo Jio Shī Dī) is the second home video game console of SNK Corporation's Neo Geo family, released in September 9, 1994, four years after its cartridge-based equivalent. This is the same platform, converted to the cheaper CD format retailing at $49 to $79 per title, compared to the $300 cartridges. The system was originally priced at US$399, or £399 in the UK. The unit's 1× CD-ROM drive is slow, with very long loading times. The system can also play Audio CDs. All three versions of the system have no region-lock. The Neo Geo CD was launched bundled with a control pad instead of a joystick like the AES version. However, the original AES joystick can be used with all three Neo Geo CD models.
 
 As of March 1997, there had been 570,000 Neo Geo CD units sold worldwide.</text>
-			<text lang="pl">Neo Geo – konsola gier wideo stworzona przez firmę SNK w 1990 roku. Była dostępna w dwóch wersjach: AES (Advanced Entertainment System) jako konsola domowa i MVS (Multi Video System) jako automat do gier. Konsola oferowała kolorową grafikę 2D oraz dźwięk wysokiej jakości. Zostały na nią wydane 154 gry. Jako nośnika danych używała kartridży. W następnej generacji konsol, w 1994 roku pojawiło się Neo Geo CD - z specyfikacją techniczną taką jak w zwykłym Neo Geo, wykorzystujące jako nośnik płyty CD.
+      <text lang="pl">Neo Geo – konsola gier wideo stworzona przez firmę SNK w 1990 roku. Była dostępna w dwóch wersjach: AES (Advanced Entertainment System) jako konsola domowa i MVS (Multi Video System) jako automat do gier. Konsola oferowała kolorową grafikę 2D oraz dźwięk wysokiej jakości. Zostały na nią wydane 154 gry. Jako nośnika danych używała kartridży. W następnej generacji konsol, w 1994 roku pojawiło się Neo Geo CD - z specyfikacją techniczną taką jak w zwykłym Neo Geo, wykorzystujące jako nośnik płyty CD.
 
 W 2009 roku Neo Geo zostało umieszczone na 19 miejscu na liście najlepszych konsol w historii, stworzonej przez IGN
 
 Najrzadszą grą na ten system (a także jedną z najrzadszych na świecie) jest Kizuna Encounter w wersji PAL - wyprodukowano tylko 12 kopii z czego 7 jest zaginionych (prawdopodobnie zniszczone)</text>
-			<text lang="ru">Игровая система, созданная японской компанией SNK в 1994 году.
+      <text lang="pt">Neo Geo – console de videogame criada pela empresa SNK em 1990. Estava disponível em duas versões: AES (Advanced Entertainment System) como console doméstico e MVS (Multi Video System) como máquina de fliperama. A console oferecia gráficos 2D coloridos e som de alta qualidade. Foram lançados 154 jogos para ela. Usava cartuchos como mídia de armazenamento. Na próxima geração de consoles, em 1994, surgiu o Neo Geo CD - com especificações técnicas semelhantes ao Neo Geo original, usando discos CD como mídia.
+
+Em 2009, o Neo Geo foi colocado na 19ª posição na lista das melhores consoles de todos os tempos, criada pela IGN.
+
+O jogo mais raro para este sistema (e também um dos mais raros do mundo) é o Kizuna Encounter na versão PAL - foram produzidas apenas 12 cópias, das quais 7 estão desaparecidas (provavelmente destruídas).</text>
+      <text lang="ru">Игровая система, созданная японской компанией SNK в 1994 году.
 
 Использованием модной технологии SNK надеялась убить сразу двух зайцев: удешевить производство (диски и сейчас, и тогда обходились на порядок дешевле печатных плат), а заодно снять ограничения, которые на игры накладывал малый объем памяти в картриджах. Но в итоге, как гласит поговорка: за двумя зайцами погонишься – ни одного не поймаешь. Цены все равно высокие, а игры сильно тормозились при загрузках (хоть и обладали качеством, более высоким, чем у оригинала Neo Geo AES). А почему, спросите вы? Да вот: компоновалась консоль вместе с CD-Rom на скорости 1Х, что было полным провалом. Оптика просто была не в состоянии справиться с потоком информации (а раз был CD, то информации было предостаточно) на такой низкой скорости. Частые паузы в таких динамичных играх как King of Fighters и Last Blade (да и в других), просто не выносились геймерами. Еще в добавок, консоль могла проигрывать Audio CD, что было очень неплохо в то время.</text>
-			<text lang="es">La Neo Geo CD (japonés: ネオジオCD, Hepburn: Neo Jio Shī Dī) es la segunda videoconsola doméstica de la familia Neo Geo de SNK Corporation, lanzada el 9 de septiembre de 1994, cuatro años después de su equivalente basada en cartuchos. Se trata de la misma plataforma, convertida al formato más barato de CD que se vende al por menor entre 49 y 79 dólares por título, en comparación con los cartuchos de 300 dólares. El precio original del sistema era de 399 dólares, o 399 libras en el Reino Unido. La unidad de CD-ROM 1× de la unidad es lenta, con tiempos de carga muy largos. El sistema también puede reproducir CD de audio. Las tres versiones del sistema no tienen bloqueo regional. La Neo Geo CD se lanzó con un mando de control en lugar de un joystick como la versión AES. Sin embargo, el joystick original de AES puede utilizarse con los tres modelos de Neo Geo CD.
+      <text lang="es">La Neo Geo CD (japonés: ネオジオCD, Hepburn: Neo Jio Shī Dī) es la segunda videoconsola doméstica de la familia Neo Geo de SNK Corporation, lanzada el 9 de septiembre de 1994, cuatro años después de su equivalente basada en cartuchos. Se trata de la misma plataforma, convertida al formato más barato de CD que se vende al por menor entre 49 y 79 dólares por título, en comparación con los cartuchos de 300 dólares. El precio original del sistema era de 399 dólares, o 399 libras en el Reino Unido. La unidad de CD-ROM 1× de la unidad es lenta, con tiempos de carga muy largos. El sistema también puede reproducir CD de audio. Las tres versiones del sistema no tienen bloqueo regional. La Neo Geo CD se lanzó con un mando de control en lugar de un joystick como la versión AES. Sin embargo, el joystick original de AES puede utilizarse con los tres modelos de Neo Geo CD.
 
 En marzo de 1997, se habían vendido 570.000 unidades de Neo Geo CD en todo el mundo.</text>
-			<text lang="de">Die Neo Geo CD (japanisch: ネオジオCD, Hepburn: Neo Jio Shī Dī) ist die zweite Heimvideospielkonsole der Neo Geo-Familie der SNK Corporation, die am 9. September 1994, vier Jahre nach ihrem kassettenbasierten Pendant, veröffentlicht wurde. Es handelt sich um dieselbe Plattform, die auf das billigere CD-Format umgestellt wurde und im Vergleich zu den 300 $ teuren Cartridges 49 bis 79 $ pro Titel kostet. Der ursprüngliche Preis für das System lag bei 399 US-Dollar bzw. 399 Pfund in Großbritannien. Das 1× CD-ROM-Laufwerk des Geräts ist langsam und hat sehr lange Ladezeiten. Das System kann auch Audio-CDs abspielen. Alle drei Versionen des Systems haben keinen Region-Lock. Das Neo Geo CD wurde mit einem Steuerkreuz anstelle eines Joysticks wie bei der AES-Version ausgeliefert. Der ursprüngliche AES-Joystick kann jedoch mit allen drei Neo Geo CD-Modellen verwendet werden.
+      <text lang="de">Die Neo Geo CD (japanisch: ネオジオCD, Hepburn: Neo Jio Shī Dī) ist die zweite Heimvideospielkonsole der Neo Geo-Familie der SNK Corporation, die am 9. September 1994, vier Jahre nach ihrem kassettenbasierten Pendant, veröffentlicht wurde. Es handelt sich um dieselbe Plattform, die auf das billigere CD-Format umgestellt wurde und im Vergleich zu den 300 $ teuren Cartridges 49 bis 79 $ pro Titel kostet. Der ursprüngliche Preis für das System lag bei 399 US-Dollar bzw. 399 Pfund in Großbritannien. Das 1× CD-ROM-Laufwerk des Geräts ist langsam und hat sehr lange Ladezeiten. Das System kann auch Audio-CDs abspielen. Alle drei Versionen des Systems haben keinen Region-Lock. Das Neo Geo CD wurde mit einem Steuerkreuz anstelle eines Joysticks wie bei der AES-Version ausgeliefert. Der ursprüngliche AES-Joystick kann jedoch mit allen drei Neo Geo CD-Modellen verwendet werden.
 
 Bis März 1997 wurden weltweit 570.000 Neo Geo CD-Einheiten verkauft.</text>
-			<text lang="fr">La Neo Geo CD (japonais : ネオジオCD, Hepburn : Neo Jio Shī Dī) est la deuxième console de jeux vidéo de salon de la famille Neo Geo de SNK Corporation, sortie le 9 septembre 1994, quatre ans après son équivalent à cartouches. Il s'agit de la même plate-forme, convertie au format CD, moins cher, dont le prix de vente est compris entre 49 et 79 dollars par titre, contre 300 dollars pour les cartouches. Le prix initial du système était de 399 dollars, ou 399 livres sterling au Royaume-Uni. Le lecteur de CD-ROM 1× de l'unité est lent, avec des temps de chargement très longs. Le système peut également lire des CD audio. Les trois versions du système n'ont pas de verrouillage régional. Le Neo Geo CD a été lancé avec un pavé de commande au lieu d'un joystick comme la version AES. Cependant, le joystick original de l'AES peut être utilisé avec les trois modèles de Neo Geo CD.
+      <text lang="fr">La Neo Geo CD (japonais : ネオジオCD, Hepburn : Neo Jio Shī Dī) est la deuxième console de jeux vidéo de salon de la famille Neo Geo de SNK Corporation, sortie le 9 septembre 1994, quatre ans après son équivalent à cartouches. Il s'agit de la même plate-forme, convertie au format CD, moins cher, dont le prix de vente est compris entre 49 et 79 dollars par titre, contre 300 dollars pour les cartouches. Le prix initial du système était de 399 dollars, ou 399 livres sterling au Royaume-Uni. Le lecteur de CD-ROM 1× de l'unité est lent, avec des temps de chargement très longs. Le système peut également lire des CD audio. Les trois versions du système n'ont pas de verrouillage régional. Le Neo Geo CD a été lancé avec un pavé de commande au lieu d'un joystick comme la version AES. Cependant, le joystick original de l'AES peut être utilisé avec les trois modèles de Neo Geo CD.
 
 En mars 1997, 570 000 Neo Geo CD avaient été vendus dans le monde.</text>
-			<text lang="it">Il Neo Geo CD (giapponese: ネオジオCD, Hepburn: Neo Jio Shī Dī) è la seconda console per videogiochi domestici della famiglia Neo Geo di SNK Corporation, uscita il 9 settembre 1994, quattro anni dopo l'equivalente a cartucce. Si tratta della stessa piattaforma, convertita nel più economico formato CD che viene venduto a 49-79 dollari per titolo, rispetto alle cartucce da 300 dollari. Il prezzo iniziale del sistema era di 399 dollari, o 399 sterline nel Regno Unito. Il lettore CD-ROM 1× dell'unità è lento, con tempi di caricamento molto lunghi. Il sistema può anche riprodurre CD audio. Tutte e tre le versioni del sistema non sono dotate di region-lock. Il Neo Geo CD è stato lanciato con un pad di controllo invece di un joystick come la versione AES. Tuttavia, il joystick originale AES può essere utilizzato con tutti e tre i modelli di Neo Geo CD.
+      <text lang="it">Il Neo Geo CD (giapponese: ネオジオCD, Hepburn: Neo Jio Shī Dī) è la seconda console per videogiochi domestici della famiglia Neo Geo di SNK Corporation, uscita il 9 settembre 1994, quattro anni dopo l'equivalente a cartucce. Si tratta della stessa piattaforma, convertita nel più economico formato CD che viene venduto a 49-79 dollari per titolo, rispetto alle cartucce da 300 dollari. Il prezzo iniziale del sistema era di 399 dollari, o 399 sterline nel Regno Unito. Il lettore CD-ROM 1× dell'unità è lento, con tempi di caricamento molto lunghi. Il sistema può anche riprodurre CD audio. Tutte e tre le versioni del sistema non sono dotate di region-lock. Il Neo Geo CD è stato lanciato con un pad di controllo invece di un joystick come la versione AES. Tuttavia, il joystick originale AES può essere utilizzato con tutti e tre i modelli di Neo Geo CD.
 
 A marzo 1997, erano state vendute 570.000 unità di Neo Geo CD in tutto il mondo.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

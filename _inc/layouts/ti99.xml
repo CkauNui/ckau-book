@@ -1,73 +1,78 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.31</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
-			<origin if="${screen.ratio} == '21/9'">0.43 0.5</origin>
-			<pos>0.46 0.37</pos>
-			<maxSize>0.27</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.18 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.31</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
-			<origin if="${screen.ratio} == '21/9'">0.43 0.5</origin>
-			<pos>0.46 0.37</pos>
-			<maxSize>0.255</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.18 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1979</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Texas Instruments</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>TI-99/4A</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The TI-99/4 is a home computer released in late 1979 by Texas Instruments. Based on the Texas Instruments TMS9900 microprocessor originally used in minicomputers, it was the first 16-bit home computer. The associated video display controller provides color graphics and among the best sprite support of its era.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.31</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+      <origin if="${screen.ratio} == '21/9'">0.43 0.5</origin>
+      <pos>0.46 0.37</pos>
+      <maxSize>0.27</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.18 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.31</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+      <origin if="${screen.ratio} == '21/9'">0.43 0.5</origin>
+      <pos>0.46 0.37</pos>
+      <maxSize>0.255</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.18 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1979</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Texas Instruments</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>TI-99/4A</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The TI-99/4 is a home computer released in late 1979 by Texas Instruments. Based on the Texas Instruments TMS9900 microprocessor originally used in minicomputers, it was the first 16-bit home computer. The associated video display controller provides color graphics and among the best sprite support of its era.
 
 It includes a simplified internal design, a full-travel keyboard, improved graphics, and a unique expansion system. At half the price of the original model, sales picked up significantly. TI supported the 4A with peripherals, including a speech synthesizer and a "Peripheral Expansion System" box to contain hardware add-ons. TI released developer information and tools, but the insistence on remaining sole publisher continued to starve the platform of software.</text>
-			<text lang="pl">TI-99/4 to komputer domowy wydany pod koniec 1979 roku przez Texas Instruments. Oparty na mikroprocesorze Texas Instruments TMS9900, pierwotnie używanym w minikomputerach, był pierwszym 16-bitowym komputerem domowym. Powiązany z nim kontroler wyświetlacza wideo zapewnia kolorową grafikę i jedną z najlepszych w swojej epoce obsługę sprite'ów. Słabym punktem jest klawiatura w stylu kalkulatora, a system cierpiał na brak komercyjnego oprogramowania z powodu wymagań TI dotyczących kaset ROM i udostępniania informacji o programistach tylko wybranym firmom trzecim.
+      <text lang="pl">TI-99/4 to komputer domowy wydany pod koniec 1979 roku przez Texas Instruments. Oparty na mikroprocesorze Texas Instruments TMS9900, pierwotnie używanym w minikomputerach, był pierwszym 16-bitowym komputerem domowym. Powiązany z nim kontroler wyświetlacza wideo zapewnia kolorową grafikę i jedną z najlepszych w swojej epoce obsługę sprite'ów. Słabym punktem jest klawiatura w stylu kalkulatora, a system cierpiał na brak komercyjnego oprogramowania z powodu wymagań TI dotyczących kaset ROM i udostępniania informacji o programistach tylko wybranym firmom trzecim.
 
 Uproszczona konstrukcja wewnętrzna, klawiatura o pełnym zakresie ruchu, ulepszona grafika i unikalny system rozszerzeń. Przy cenie o połowę niższej niż w przypadku oryginalnego modelu, sprzedaż znacznie wzrosła. TI wspierała model 4A urządzeniami peryferyjnymi, w tym syntezatorem mowy i pudełkiem "Peripheral Expansion System", które zawierało dodatki sprzętowe. TI udostępniało informacje i narzędzia dla programistów, ale upór w pozostawaniu jedynym wydawcą nadal powodował głód oprogramowania na platformie.
 
 TI-99/4A pojawił się na rynku mniej więcej w tym samym czasie, co Commodore VIC-20. Prezes Commodore, Jack Tramiel, został kiedyś urażony drapieżnymi cenami TI w połowie lat 70-tych i w odwecie rozpoczął wojnę cenową, wielokrotnie obniżając cenę VIC-20 i zmuszając TI do tego samego. Do 1983 roku 99/4A był sprzedawany za mniej niż 100 USD, ze stratą. Nawet przy zwiększonej bazie użytkowników, stworzonej dzięki dużym rabatom, po stracie 330 milionów dolarów w trzecim kwartale 1983 roku, Texas Instruments ogłosiło zaprzestanie produkcji TI-99/4A w październiku 1983 roku i wstrzymało produkcję w marcu 1984 roku.</text>
-			<text lang="ru">Домашний компьютер, созданный компанией Texas Instruments (TI) и выпущенный на рынок в 1981 году, первоначально по цене в 525 долларов (продавался без монитора). Модель TI-99/4A — это улучшенный вариант не очень удачной (и довольно редкой) модели TI-99/4, выпущенной в 1979 году по цене в 1150 долларов (продавалась с монитором).
+      <text lang="pt">TI-99/4 é um computador doméstico lançado no final de 1979 pela Texas Instruments. Baseado no microprocessador Texas Instruments TMS9900, inicialmente usado em minicomputadores, foi o primeiro computador doméstico de 16 bits. Seu controlador de exibição de vídeo associado fornece gráficos coloridos e uma das melhores manutenções de sprites da época. O ponto fraco é o teclado estilo calculadora, e o sistema sofria com a falta de software comercial devido aos requisitos da TI para cartuchos ROM e o compartilhamento de informações de desenvolvimento apenas com empresas terceirizadas selecionadas.
+
+Uma construção interna simplificada, teclado de curso completo, gráficos aprimorados e um sistema de expansão exclusivo. Com um preço pela metade do modelo original, as vendas aumentaram consideravelmente. A TI apoiou o modelo 4A com periféricos, incluindo sintetizador de voz e uma caixa "Peripheral Expansion System", que continha adições de hardware. A TI disponibilizava informações e ferramentas para desenvolvedores, mas a insistência em ser o único editor ainda causava uma fome de software na plataforma.
+
+O TI-99/4A apareceu no mercado mais ou menos na mesma época que o Commodore VIC-20. O CEO da Commodore, Jack Tramiel, já havia sido ofendido pelos preços predatórios da TI no meio dos anos 70 e, em retaliação, começou uma guerra de preços, baixando repetidamente o preço do VIC-20 e forçando a TI a fazer o mesmo. Em 1983, o 99/4A estava sendo vendido por menos de US$ 100, com prejuízo. Mesmo com uma base de usuários ampliada, criada por meio de grandes descontos, após uma perda de US$ 330 milhões no terceiro trimestre de 1983, a Texas Instruments anunciou o fim da produção do TI-99/4A em outubro de 1983 e interrompeu a produção em março de 1984.</text>
+      <text lang="ru">Домашний компьютер, созданный компанией Texas Instruments (TI) и выпущенный на рынок в 1981 году, первоначально по цене в 525 долларов (продавался без монитора). Модель TI-99/4A — это улучшенный вариант не очень удачной (и довольно редкой) модели TI-99/4, выпущенной в 1979 году по цене в 1150 долларов (продавалась с монитором).
 
 Компьютер представляет собой моноблок, материнская плата с процессором находится в том же корпусе под клавиатурой. Блок питания размещён справа от клавиатуры за слотом картриджа — эта выемка в корпусе была довольно горячей, пользователи называли его «местом для разогрева чашки с кофе». Внешний блок питания, отличающийся в разных странах, был по сути понижающим трансформатором.</text>
-			<text lang="es"/>
-			<text lang="de">Der TI-99/4 ist ein Heimcomputer, der Ende 1979 von Texas Instruments auf den Markt gebracht wurde. Basierend auf dem Texas Instruments TMS9900 Mikroprozessor, der ursprünglich in Minicomputern verwendet wurde, war er der erste 16-Bit-Heimcomputer. Der zugehörige Video-Display-Controller bietet Farbgrafiken und eine der besten Sprite-Unterstützungen seiner Zeit.
+      <text lang="es"/>
+      <text lang="de">Der TI-99/4 ist ein Heimcomputer, der Ende 1979 von Texas Instruments auf den Markt gebracht wurde. Basierend auf dem Texas Instruments TMS9900 Mikroprozessor, der ursprünglich in Minicomputern verwendet wurde, war er der erste 16-Bit-Heimcomputer. Der zugehörige Video-Display-Controller bietet Farbgrafiken und eine der besten Sprite-Unterstützungen seiner Zeit.
 
 Er verfügt über ein vereinfachtes internes Design, eine Vollhubtastatur, verbesserte Grafiken und ein einzigartiges Erweiterungssystem. Zum halben Preis des ursprünglichen Modells zogen die Verkaufszahlen deutlich an. TI unterstützte den 4A mit Peripheriegeräten, einschließlich eines Sprachsynthesizers und einer "Peripheral Expansion System"-Box, die Hardware-Erweiterungen enthielt. TI gab Informationen und Tools für Entwickler heraus, aber das Beharren darauf, alleiniger Herausgeber zu bleiben, ließ die Plattform weiterhin in Bezug auf Software verarmen.</text>
-			<text lang="fr">Le TI-99/4 est un ordinateur domestique commercialisé à la fin de l'année 1979 par Texas Instruments. Basé sur le microprocesseur Texas Instruments TMS9900 utilisé à l'origine dans les mini-ordinateurs, il s'agit du premier ordinateur domestique 16 bits. Le contrôleur d'affichage vidéo associé fournit des graphiques en couleur et l'un des meilleurs supports de sprites de l'époque.
+      <text lang="fr">Le TI-99/4 est un ordinateur domestique commercialisé à la fin de l'année 1979 par Texas Instruments. Basé sur le microprocesseur Texas Instruments TMS9900 utilisé à l'origine dans les mini-ordinateurs, il s'agit du premier ordinateur domestique 16 bits. Le contrôleur d'affichage vidéo associé fournit des graphiques en couleur et l'un des meilleurs supports de sprites de l'époque.
 
 Il comprend une conception interne simplifiée, un clavier à course complète, des graphiques améliorés et un système d'extension unique. À la moitié du prix du modèle original, les ventes ont augmenté de manière significative. TI a soutenu le 4A avec des périphériques, y compris un synthétiseur vocal et une boîte "Peripheral Expansion System" pour contenir des compléments matériels. TI a publié des informations et des outils pour les développeurs, mais l'insistance à rester le seul éditeur a continué à priver la plate-forme de logiciels.</text>
-			<text lang="it">Il TI-99/4 è un home computer rilasciato alla fine del 1979 da Texas Instruments. Basato sul microprocessore Texas Instruments TMS9900, originariamente utilizzato nei minicomputer, è stato il primo home computer a 16 bit. Il controller video associato fornisce grafica a colori e uno dei migliori supporti per gli sprite dell'epoca.
+      <text lang="it">Il TI-99/4 è un home computer rilasciato alla fine del 1979 da Texas Instruments. Basato sul microprocessore Texas Instruments TMS9900, originariamente utilizzato nei minicomputer, è stato il primo home computer a 16 bit. Il controller video associato fornisce grafica a colori e uno dei migliori supporti per gli sprite dell'epoca.
 
 Include un design interno semplificato, una tastiera a corsa completa, una grafica migliorata e un sistema di espansione unico. Con un prezzo dimezzato rispetto al modello originale, le vendite aumentarono notevolmente. TI supportò il 4A con periferiche, tra cui un sintetizzatore vocale e un box "Peripheral Expansion System" per contenere componenti hardware aggiuntivi. TI rilasciò informazioni e strumenti per gli sviluppatori, ma l'insistenza nel voler rimanere l'unico editore continuò a privare la piattaforma di software.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

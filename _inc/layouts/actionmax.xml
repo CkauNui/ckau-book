@@ -1,79 +1,83 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
-			<pos>0.5 0.348</pos>
-			<maxSize>0.29</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.348" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
-			<pos>0.5 0.348</pos>
-			<maxSize>0.245</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.27</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.348" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2020</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Worlds of Wonder</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Action Max</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>Action Max from Worlds of Wonder (WoW), released in the US in 1987, was a unique, if simple and ultimately unimpressive game system that used special pre-recorded VHS video tapes for software. The original package came bundled with the base unit, light gun, television sensor, headphones, connection cables, documentation and one game, "Sonic Fury". 
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+      <pos>0.5 0.348</pos>
+      <maxSize>0.29</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.348" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+      <pos>0.5 0.348</pos>
+      <maxSize>0.245</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.27</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.348" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2020</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Worlds of Wonder</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Action Max</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>Action Max from Worlds of Wonder (WoW), released in the US in 1987, was a unique, if simple and ultimately unimpressive game system that used special pre-recorded VHS video tapes for software. The original package came bundled with the base unit, light gun, television sensor, headphones, connection cables, documentation and one game, "Sonic Fury". 
 In total, five games were released for the system, all emulated by SINGE, the Somewhat Interactive Nostalgic Game Engine, (named after the dragon in Dragon's Lair): a Lua-based scripting system that also allows for rapid prototyping of new laserdisc games, or the creation of entirely new games.
 
 Since the original release of SINGE back in 2006, several revisions have been released, both officially and unofficially. In 2020, SINGE 2.0 was released. This is a total rewrite from the ground up adding numerous features while staying compatible with existing 1.x games.</text>
-			<text lang="pl">Action Max od Worlds of Wonder (WoW), wydany w USA w 1987 roku, był unikalnym, choć prostym i ostatecznie nie imponującym systemem gier, który wykorzystywał specjalne, nagrane wcześniej kasety wideo VHS do tworzenia oprogramowania. W oryginalnym opakowaniu znajdowała się jednostka bazowa, pistolet świetlny, czujnik telewizyjny, słuchawki, kable połączeniowe, dokumentacja i jedna gra, "Sonic Fury". 
+      <text lang="pl">Action Max od Worlds of Wonder (WoW), wydany w USA w 1987 roku, był unikalnym, choć prostym i ostatecznie nie imponującym systemem gier, który wykorzystywał specjalne, nagrane wcześniej kasety wideo VHS do tworzenia oprogramowania. W oryginalnym opakowaniu znajdowała się jednostka bazowa, pistolet świetlny, czujnik telewizyjny, słuchawki, kable połączeniowe, dokumentacja i jedna gra, "Sonic Fury". 
 W sumie na system wydano pięć gier, wszystkie emulowane przez SINGE, Somewhat Interactive Nostalgic Game Engine, (nazwany tak na cześć smoka w Dragon's Lair): system skryptowy oparty na Lua, który pozwala również na szybkie tworzenie prototypów nowych gier na laserdisc, lub tworzenie zupełnie nowych gier.
 
 Od czasu oryginalnego wydania SINGE w 2006 roku, wydano kilka rewizji, zarówno oficjalnie jak i nieoficjalnie. W 2020 roku wydany został SINGE 2.0. Jest to całkowite przepisanie od podstaw, dodanie wielu funkcji przy jednoczesnym zachowaniu kompatybilności z istniejącymi grami 1.x.</text>
-			<text lang="ru">Action Max от компании Worlds of Wonder (WoW), выпущенная в США в 1987 году, была уникальной, хотя и простой и в конечном итоге не впечатляющей игровой системой, которая использовала специальные предварительно записанные видеокассеты VHS для программного обеспечения. В комплект поставки входили базовый блок, световой пистолет, телевизионный датчик, наушники, соединительные кабели, документация и одна игра "Sonic Fury". 
+      <text lang="pt">Action Max da Worlds of Wonder (WoW), lançado nos EUA em 1987, era um sistema de jogos único, embora simples e finalmente não impressionante, que utilizava fitas de vídeo VHS pré-gravadas especiais para criar softwares. A embalagem original continha uma unidade base, uma pistola de luz, um sensor de televisão, fones de ouvido, cabos de conexão, documentação e um jogo, "Sonic Fury". 
+Ao todo, cinco jogos foram lançados para o sistema, todos emulados pelo SINGE, Somewhat Interactive Nostalgic Game Engine, (nomeado em homenagem ao dragão em Dragon's Lair): um sistema de script baseado em Lua, que também permite a rápida criação de protótipos de novos jogos em laserdisc, ou a criação de jogos totalmente novos.
+
+Desde o lançamento original do SINGE em 2006, várias revisões foram lançadas, tanto oficiais quanto não oficiais. Em 2020, foi lançado o SINGE 2.0. Esta é uma reescrita completa do zero, adicionando muitos recursos e mantendo a compatibilidade com os jogos 1.x existentes.</text>
+      <text lang="ru">Action Max от компании Worlds of Wonder (WoW), выпущенная в США в 1987 году, была уникальной, хотя и простой и в конечном итоге не впечатляющей игровой системой, которая использовала специальные предварительно записанные видеокассеты VHS для программного обеспечения. В комплект поставки входили базовый блок, световой пистолет, телевизионный датчик, наушники, соединительные кабели, документация и одна игра "Sonic Fury". 
 Всего для системы было выпущено пять игр, все они эмулировались с помощью SINGE, Somewhat Interactive Nostalgic Game Engine (названного в честь дракона из Dragon's Lair): системы сценариев на основе Lua, которая также позволяет быстро создавать прототипы новых игр для лазердисков или совершенно новые игры.
 
 С момента первоначального выпуска SINGE в 2006 году было выпущено несколько версий, как официальных, так и неофициальных. В 2020 году была выпущена версия SINGE 2.0. Это полная переработка с нуля, добавляющая множество функций и сохраняющая совместимость с существующими играми версии 1.x.</text>
-			<text lang="es">Action Max de Worlds of Wonder (WoW), lanzado en EE.UU. en 1987, era un sistema de juego único, aunque sencillo y, en última instancia, poco impresionante, que utilizaba cintas de vídeo VHS especiales pregrabadas como software. El paquete original incluía la unidad base, una pistola de luz, un sensor de televisión, auriculares, cables de conexión, documentación y un juego, "Sonic Fury".
+      <text lang="es">Action Max de Worlds of Wonder (WoW), lanzado en EE.UU. en 1987, era un sistema de juego único, aunque sencillo y, en última instancia, poco impresionante, que utilizaba cintas de vídeo VHS especiales pregrabadas como software. El paquete original incluía la unidad base, una pistola de luz, un sensor de televisión, auriculares, cables de conexión, documentación y un juego, "Sonic Fury".
 En total, se lanzaron cinco juegos para el sistema, todos emulados por SINGE, el Somewhat Interactive Nostalgic Game Engine, (llamado así por el dragón de Dragon's Lair): un sistema de scripting basado en Lua que también permite crear rápidamente prototipos de nuevos juegos para laserdisc, o crear juegos completamente nuevos.
 
 Desde el lanzamiento original de SINGE en 2006, se han publicado varias revisiones, tanto oficiales como extraoficiales. En 2020, se lanzó SINGE 2.0. Se trata de una reescritura total desde cero, añadiendo numerosas características y manteniendo la compatibilidad con los juegos 1.x existentes.</text>
-			<text lang="de">Action Max von Worlds of Wonder (WoW), das 1987 in den USA auf den Markt kam, war ein einzigartiges, wenn auch einfaches und letztlich unscheinbares Spielsystem, das spezielle voraufgezeichnete VHS-Videokassetten als Software verwendete. Das Originalpaket enthielt das Basisgerät, eine Lichtpistole, einen Fernsehsensor, Kopfhörer, Anschlusskabel, Dokumentation und ein Spiel, "Sonic Fury".
+      <text lang="de">Action Max von Worlds of Wonder (WoW), das 1987 in den USA auf den Markt kam, war ein einzigartiges, wenn auch einfaches und letztlich unscheinbares Spielsystem, das spezielle voraufgezeichnete VHS-Videokassetten als Software verwendete. Das Originalpaket enthielt das Basisgerät, eine Lichtpistole, einen Fernsehsensor, Kopfhörer, Anschlusskabel, Dokumentation und ein Spiel, "Sonic Fury".
 Insgesamt wurden fünf Spiele für das System veröffentlicht, die alle von SINGE, der Somewhat Interactive Nostalgic Game Engine (benannt nach dem Drachen in Dragon's Lair), emuliert wurden: ein Lua-basiertes Skripting-System, das auch das schnelle Prototyping neuer Laserdisc-Spiele oder die Entwicklung völlig neuer Spiele ermöglicht.
 
 Seit der ursprünglichen Veröffentlichung von SINGE im Jahr 2006 wurden mehrere Überarbeitungen veröffentlicht, sowohl offiziell als auch inoffiziell. Im Jahr 2020 wurde SINGE 2.0 veröffentlicht. Dabei handelt es sich um eine komplette Neufassung von Grund auf, die zahlreiche Funktionen hinzufügt und gleichzeitig mit bestehenden 1.x-Spielen kompatibel bleibt.</text>
-			<text lang="fr">Action Max de Worlds of Wonder (WoW), sorti aux États-Unis en 1987, était un système de jeu unique, bien que simple et finalement peu impressionnant, qui utilisait des cassettes vidéo VHS préenregistrées spéciales pour le logiciel. L'emballage d'origine comprenait l'unité de base, un pistolet lumineux, un capteur de télévision, des écouteurs, des câbles de connexion, de la documentation et un jeu, "Sonic Fury".
+      <text lang="fr">Action Max de Worlds of Wonder (WoW), sorti aux États-Unis en 1987, était un système de jeu unique, bien que simple et finalement peu impressionnant, qui utilisait des cassettes vidéo VHS préenregistrées spéciales pour le logiciel. L'emballage d'origine comprenait l'unité de base, un pistolet lumineux, un capteur de télévision, des écouteurs, des câbles de connexion, de la documentation et un jeu, "Sonic Fury".
 Au total, cinq jeux sont sortis pour le système, tous émulés par SINGE, le Somewhat Interactive Nostalgic Game Engine (nommé d'après le dragon de Dragon's Lair) : un système de script basé sur Lua qui permet également le prototypage rapide de nouveaux jeux laserdisc, ou la création de jeux entièrement nouveaux.
 
 Depuis la première version de SINGE en 2006, plusieurs révisions ont été publiées, officiellement et officieusement. En 2020, SINGE 2.0 a été publié. Il s'agit d'une réécriture totale qui ajoute de nombreuses fonctionnalités tout en restant compatible avec les jeux 1.x existants.</text>
-			<text lang="it">Action Max di Worlds of Wonder (WoW), uscito negli Stati Uniti nel 1987, è stato un sistema di gioco unico, anche se semplice e in fondo poco impressionante, che utilizzava speciali videocassette VHS preregistrate per il software. La confezione originale comprendeva l'unità base, la pistola luminosa, il sensore televisivo, le cuffie, i cavi di collegamento, la documentazione e un gioco, "Sonic Fury". 
+      <text lang="it">Action Max di Worlds of Wonder (WoW), uscito negli Stati Uniti nel 1987, è stato un sistema di gioco unico, anche se semplice e in fondo poco impressionante, che utilizzava speciali videocassette VHS preregistrate per il software. La confezione originale comprendeva l'unità base, la pistola luminosa, il sensore televisivo, le cuffie, i cavi di collegamento, la documentazione e un gioco, "Sonic Fury". 
 In totale, sono stati rilasciati cinque giochi per il sistema, tutti emulati da SINGE, il Somewhat Interactive Nostalgic Game Engine (dal nome del drago di Dragon's Lair): un sistema di scripting basato su Lua che consente anche la prototipazione rapida di nuovi giochi laserdisc o la creazione di giochi completamente nuovi.
 
 Dal rilascio originale di SINGE nel 2006, sono state rilasciate diverse revisioni, sia ufficiali che non. Nel 2020 è stato rilasciato SINGE 2.0. Si tratta di una riscrittura totale da zero che aggiunge numerose funzionalità pur rimanendo compatibile con i giochi 1.x esistenti.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

@@ -1,184 +1,187 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.3 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
-			<pos>0.305 0.45</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>14</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.025 0.45" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.6 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
-			<pos>0.69 0.45</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>-14</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.41 0.45" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<pos>0.499 0.47</pos>
-			<maxSize>0.175</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.184</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-left" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
-			<pos>0.392 0.48</pos>
-			<maxSize>0.14</maxSize>
-			<rotation>-76</rotation>
-			<storyboard>
-				<animation property="pos" to="0.112 0.48" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-right" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
-			<pos>0.607 0.48</pos>
-			<maxSize>0.14</maxSize>
-			<rotation>76</rotation>
-			<storyboard>
-				<animation property="pos" to="0.327 0.48" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<pos>0.499 0.47</pos>
-			<maxSize>0.162</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.22</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.182</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
-			<pos>0.616 0.47</pos>
-			<maxSize>0.14</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.336 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox3" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
-			<pos>0.38 0.47</pos>
-			<maxSize>0.14</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.1 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2010</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Taito</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>NESICAxLive</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>NESiCAxLive (Japanese: ネシカ　クロス　ライブ, Hepburn: Neshika Kurosu Raibu) is a digital distribution system for arcade video games made by Taito, similar to the SEGA ALL.Net game distribution system.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-left" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.3 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
+      <pos>0.305 0.45</pos>
+      <minSize>0.1 0.3</minSize>
+      <rotation>14</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.025 0.45" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-right" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.6 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+      <pos>0.69 0.45</pos>
+      <minSize>0.1 0.3</minSize>
+      <rotation>-14</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.41 0.45" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <pos>0.499 0.47</pos>
+      <maxSize>0.175</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.184</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-left" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
+      <pos>0.392 0.48</pos>
+      <maxSize>0.14</maxSize>
+      <rotation>-76</rotation>
+      <storyboard>
+        <animation property="pos" to="0.112 0.48" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-right" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+      <pos>0.607 0.48</pos>
+      <maxSize>0.14</maxSize>
+      <rotation>76</rotation>
+      <storyboard>
+        <animation property="pos" to="0.327 0.48" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <pos>0.499 0.47</pos>
+      <maxSize>0.162</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.22</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.182</maxSize>
+      <zIndex>26</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+      <pos>0.616 0.47</pos>
+      <maxSize>0.14</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.336 0.47" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox3" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
+      <pos>0.38 0.47</pos>
+      <maxSize>0.14</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.1 0.47" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2010</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Taito</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>NESICAxLive</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>NESiCAxLive (Japanese: ネシカ　クロス　ライブ, Hepburn: Neshika Kurosu Raibu) is a digital distribution system for arcade video games made by Taito, similar to the SEGA ALL.Net game distribution system.
 The NESiCAxLive system consists of an arcade system board combined with a dedicated router to access and download games. The system currently works on the Taito Type X2, Taito Type X Zero, Taito Type X3, and Taito Type X4 arcade boards.
 
 Taito uses NESiCAxLive to distribute not only its own games, but also allows other companies to use it as a publication platform. On its introduction SNK, Cave, and Arc System Works had agreed to distribute games on NESiCAxLive.</text>
-			<text lang="pl">NESiCAxLive (jap. ネシカ クロス ライブ, Hepburn: Neshika Kurosu Raibu) to cyfrowy system dystrybucji gier zręcznościowych stworzony przez Taito, podobny do systemu dystrybucji gier SEGA ALL.Net.
+      <text lang="pl">NESiCAxLive (jap. ネシカ クロス ライブ, Hepburn: Neshika Kurosu Raibu) to cyfrowy system dystrybucji gier zręcznościowych stworzony przez Taito, podobny do systemu dystrybucji gier SEGA ALL.Net.
 System NESiCAxLive składa się z płyty systemu arcade połączonej z dedykowanym routerem umożliwiającym dostęp i pobieranie gier. System działa obecnie na kartach zręcznościowych Taito Type X2, Taito Type X Zero, Taito Type X3 i Taito Type X4.
 
 Taito używa NESiCAxLive do dystrybucji nie tylko własnych gier, ale także pozwala innym firmom używać go jako platformy do publikacji. W momencie jej wprowadzenia SNK, Cave i Arc System Works zgodziły się na dystrybucję gier na NESiCAxLive.</text>
-			<text lang="ru">NESiCAxLive (японский: ネシカ クロス ライブ, хепберн: Neshika Kurosu Raibu) - система цифровой дистрибуции аркадных видеоигр, созданная компанией Taito, аналогичная системе распространения игр SEGA ALL.Net.
+      <text lang="pt">NESiCAxLive (jap. ネシカ クロス ライブ, Hepburn: Neshika Kurosu Raibu) é um sistema digital de distribuição de jogos de arcade criado pela Taito, similar ao sistema de distribuição de jogos SEGA ALL.Net. O sistema NESiCAxLive consiste em uma placa de sistema de arcade conectada a um roteador dedicado que permite o acesso e download de jogos. O sistema funciona atualmente em placas de arcade Taito Type X2, Taito Type X Zero, Taito Type X3 e Taito Type X4.
+
+A Taito utiliza o NESiCAxLive para distribuir não apenas seus próprios jogos, mas também permite que outras empresas o utilizem como plataforma de publicação. No momento de seu lançamento, SNK, Cave e Arc System Works concordaram em distribuir seus jogos no NESiCAxLive.</text>
+      <text lang="ru">NESiCAxLive (японский: ネシカ クロス ライブ, хепберн: Neshika Kurosu Raibu) - система цифровой дистрибуции аркадных видеоигр, созданная компанией Taito, аналогичная системе распространения игр SEGA ALL.Net.
 Система NESiCAxLive состоит из платы аркадной системы, совмещенной со специальным маршрутизатором для доступа и загрузки игр. В настоящее время система работает на аркадных платах Taito Type X2, Taito Type X Zero, Taito Type X3 и Taito Type X4.
 
 Taito использует NESiCAxLive не только для распространения собственных игр, но и позволяет другим компаниям использовать ее в качестве издательской платформы. На момент ее появления SNK, Cave и Arc System Works дали согласие на распространение игр на NESiCAxLive.</text>
-			<text lang="es">NESiCAxLive (japonés: ネシカ クロス ライブ, Hepburn: Neshika Kurosu Raibu) es un sistema de distribución digital de videojuegos arcade fabricado por Taito, similar al sistema de distribución de juegos ALL.Net de SEGA.
+      <text lang="es">NESiCAxLive (japonés: ネシカ クロス ライブ, Hepburn: Neshika Kurosu Raibu) es un sistema de distribución digital de videojuegos arcade fabricado por Taito, similar al sistema de distribución de juegos ALL.Net de SEGA.
 El sistema NESiCAxLive consiste en una placa de sistema arcade combinada con un router dedicado para acceder a los juegos y descargarlos. Actualmente, el sistema funciona con las placas arcade Taito Type X2, Taito Type X Zero, Taito Type X3 y Taito Type X4.
 
 Taito utiliza NESiCAxLive para distribuir no sólo sus propios juegos, sino que también permite que otras empresas lo utilicen como plataforma de publicación. En el momento de su introducción, SNK, Cave y Arc System Works habían acordado distribuir juegos en NESiCAxLive.</text>
-			<text lang="de">NESiCAxLive (japanisch: ネシカ クロス ライブ, Hepburn: Neshika Kurosu Raibu) ist ein digitales Vertriebssystem für Arcade-Videospiele der Firma Taito, ähnlich dem SEGA ALL.Net Game Distribution System.
+      <text lang="de">NESiCAxLive (japanisch: ネシカ クロス ライブ, Hepburn: Neshika Kurosu Raibu) ist ein digitales Vertriebssystem für Arcade-Videospiele der Firma Taito, ähnlich dem SEGA ALL.Net Game Distribution System.
 Das NESiCAxLive-System besteht aus einer Spielhallen-Systemplatine in Kombination mit einem speziellen Router für den Zugriff auf und das Herunterladen von Spielen. Das System funktioniert derzeit mit den Spielhallenplatinen Taito Type X2, Taito Type X Zero, Taito Type X3 und Taito Type X4.
 
 Taito nutzt NESiCAxLive nicht nur für den Vertrieb seiner eigenen Spiele, sondern erlaubt auch anderen Unternehmen, es als Veröffentlichungsplattform zu nutzen. Bei seiner Einführung hatten SNK, Cave und Arc System Works zugestimmt, Spiele auf NESiCAxLive zu vertreiben.</text>
-			<text lang="fr">NESiCAxLive (japonais : ネシカ クロス ライブ, Hepburn : Neshika Kurosu Raibu) est un système de distribution numérique pour les jeux vidéo d'arcade fabriqués par Taito, similaire au système de distribution de jeux ALL.Net de SEGA.
+      <text lang="fr">NESiCAxLive (japonais : ネシカ クロス ライブ, Hepburn : Neshika Kurosu Raibu) est un système de distribution numérique pour les jeux vidéo d'arcade fabriqués par Taito, similaire au système de distribution de jeux ALL.Net de SEGA.
 Le système NESiCAxLive se compose d'une carte de système d'arcade combinée à un routeur dédié permettant d'accéder aux jeux et de les télécharger. Le système fonctionne actuellement sur les cartes d'arcade Taito Type X2, Taito Type X Zero, Taito Type X3 et Taito Type X4.
 
 Taito utilise NESiCAxLive non seulement pour distribuer ses propres jeux, mais aussi pour permettre à d'autres sociétés de l'utiliser comme plate-forme de publication. Lors de son lancement, SNK, Cave et Arc System Works ont accepté de distribuer des jeux sur NESiCAxLive.</text>
-			<text lang="it">NESiCAxLive (giapponese: ネシカ クロス ライブ, Hepburn: Neshika Kurosu Raibu) è un sistema di distribuzione digitale di videogiochi arcade prodotto da Taito, simile al sistema di distribuzione di giochi SEGA ALL.Net.
+      <text lang="it">NESiCAxLive (giapponese: ネシカ クロス ライブ, Hepburn: Neshika Kurosu Raibu) è un sistema di distribuzione digitale di videogiochi arcade prodotto da Taito, simile al sistema di distribuzione di giochi SEGA ALL.Net.
 Il sistema NESiCAxLive consiste in una scheda di sistema arcade combinata con un router dedicato per accedere e scaricare i giochi. Il sistema funziona attualmente sulle schede arcade Taito Type X2, Taito Type X Zero, Taito Type X3 e Taito Type X4.
 
 Taito utilizza NESiCAxLive per distribuire non solo i propri giochi, ma permette anche ad altre aziende di utilizzarlo come piattaforma di pubblicazione. Al momento della sua introduzione, SNK, Cave e Arc System Works avevano accettato di distribuire giochi su NESiCAxLive.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

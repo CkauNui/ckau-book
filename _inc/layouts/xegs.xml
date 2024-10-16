@@ -1,81 +1,86 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.45 0.5</origin>
-			<pos>0.475 0.39</pos>
-			<maxSize>0.26</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.195 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.45 0.5</origin>
-			<pos>0.475 0.39</pos>
-			<maxSize>0.25</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.195 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1987</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Atari</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>XE Video Game System</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Atari XE Video Game System (Atari XEGS) is an industrial redesign of the Atari 65XE home computer and the final model in the Atari 8-bit family.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0.45 0.5</origin>
+      <pos>0.475 0.39</pos>
+      <maxSize>0.26</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.195 0.39" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0.45 0.5</origin>
+      <pos>0.475 0.39</pos>
+      <maxSize>0.25</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.195 0.39" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1987</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Atari</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>XE Video Game System</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Atari XE Video Game System (Atari XEGS) is an industrial redesign of the Atari 65XE home computer and the final model in the Atari 8-bit family.
 It was released by Atari Corporation in 1987 and marketed as a home video game console alongside the Nintendo Entertainment System, Sega's Master System, and Atari's own Atari 7800. The XEGS is compatible with existing Atari 8-bit family hardware and software. Without keyboard, the system operates as a stand-alone game console. With the keyboard, it boots identically to the Atari XE computers. Atari packaged the XEGS as a basic set consisting of only the console and joystick, and as a deluxe set consisting of the console, keyboard, CX40 joystick, and XG-1 light gun.
 
 Support for the system was dropped in 1992, along with the rest of Atari's 8-bit computers, the Atari 2600, and the Atari 7800.</text>
-			<text lang="pl">Atari XE Video Game System (Atari XEGS) to industrialna przeprojektowana wersja komputera domowego Atari 65XE i ostatni model z rodziny Atari 8-bit.
+      <text lang="pl">Atari XE Video Game System (Atari XEGS) to industrialna przeprojektowana wersja komputera domowego Atari 65XE i ostatni model z rodziny Atari 8-bit.
 Został wydany przez Atari Corporation w 1987 roku i wprowadzony na rynek jako domowa konsola do gier wideo, obok Nintendo Entertainment System, Sega Master System i Atari 7800. XEGS jest kompatybilny z istniejącym sprzętem i oprogramowaniem z rodziny Atari 8-bit. Bez klawiatury system działa jako samodzielna konsola do gier. Z klawiaturą uruchamia się tak samo jak komputery Atari XE. Atari oferowało XEGS jako zestaw podstawowy, składający się tylko z konsoli i joysticka, oraz jako zestaw luksusowy, składający się z konsoli, klawiatury, joysticka CX40 i pistoletu świetlnego XG-1.
 
 Wsparcie dla tego systemu zostało zakończone w 1992 roku, wraz z pozostałymi komputerami 8-bitowymi Atari, Atari 2600 i Atari 7800.</text>
-			<text lang="ru">Atari 400, Atari 800, серии XL и XE — семейство 8-разрядных домашних компьютеров производства компании Atari, которые выпускались с 1979 года и продавались в США. Последние модели семейства производились по 1992 год и распространялись в Европе.
+      <text lang="pt">Atari XE Video Game System (Atari XEGS) é uma versão redesenhada industrialmente do computador doméstico Atari 65XE e o último modelo da família Atari de 8 bits.
+
+Lançado pela Atari Corporation em 1987, foi comercializado como um console doméstico para videogames, ao lado do Nintendo Entertainment System, Sega Master System e Atari 7800. O XEGS é compatível com o hardware e software existentes da família Atari de 8 bits. Sem o teclado, o sistema funciona como um console de jogos autônomo. Com o teclado, ele funciona da mesma forma que os computadores Atari XE. A Atari ofereceu o XEGS como um kit básico, que incluía apenas o console e um joystick, e como um kit de luxo, que incluía o console, o teclado, o joystick CX40 e a pistola de luz XG-1.
+
+O suporte para este sistema foi encerrado em 1992, junto com os outros computadores de 8 bits da Atari, Atari 2600 e Atari 7800.</text>
+      <text lang="ru">Atari 400, Atari 800, серии XL и XE — семейство 8-разрядных домашних компьютеров производства компании Atari, которые выпускались с 1979 года и продавались в США. Последние модели семейства производились по 1992 год и распространялись в Европе.
 
 Последней моделью серии стала XE Game System (XEGS), выпущенная в 1987 году по цене 199 долларов. Система поставлялась вместе с отдельной отключаемой клавиатурой, джойстиком, световым пистолетом и парой игровых картриджей. В сущности, это была машина 65XE, выпущенная в новом корпусе и тем самым совместимая со всем программным обеспечением 8-разрядного семейства. Продажи системы были в целом провальными, что было связано с неудачным маркетингом и малым числом релизов новых игр.
 
 С января 1992 года Atari официально прекратила поддержку всех 8-разрядных систем.</text>
-			<text lang="es">El Atari XE Video Game System (Atari XEGS) es un rediseño industrial del ordenador doméstico Atari 65XE y el último modelo de la familia Atari de 8 bits.
+      <text lang="es">El Atari XE Video Game System (Atari XEGS) es un rediseño industrial del ordenador doméstico Atari 65XE y el último modelo de la familia Atari de 8 bits.
 Fue lanzada por Atari Corporation en 1987 y comercializada como consola de videojuegos doméstica junto con la Nintendo Entertainment System, la Master System de Sega y la propia Atari 7800. La XEGS es compatible con el hardware y el software existentes de la familia de 8 bits de Atari. Sin teclado, el sistema funciona como una videoconsola independiente. Con el teclado, arranca de forma idéntica a los ordenadores Atari XE. Atari comercializó el XEGS como un juego básico compuesto únicamente por la consola y el joystick, y como un juego de lujo compuesto por la consola, el teclado, el joystick CX40 y la pistola de luz XG-1.
 
 El sistema dejó de recibir soporte en 1992, junto con el resto de ordenadores de 8 bits de Atari, el Atari 2600 y el Atari 7800.</text>
-			<text lang="de">Das Atari XE Video Game System (Atari XEGS) ist ein industrielles Redesign des Atari 65XE Heimcomputers und das letzte Modell der Atari 8-bit Familie.
+      <text lang="de">Das Atari XE Video Game System (Atari XEGS) ist ein industrielles Redesign des Atari 65XE Heimcomputers und das letzte Modell der Atari 8-bit Familie.
 Es wurde 1987 von der Atari Corporation auf den Markt gebracht und als Heimvideospielkonsole neben dem Nintendo Entertainment System, dem Master System von Sega und dem Atari 7800 vermarktet. Der XEGS ist mit der vorhandenen Hardware und Software der Atari 8-Bit-Familie kompatibel. Ohne Tastatur arbeitet das System wie eine eigenständige Spielkonsole. Mit der Tastatur bootet es identisch zu den Atari XE-Computern. Atari bot den XEGS als Basisset an, das nur aus der Konsole und dem Joystick bestand, und als Luxusset, das aus der Konsole, der Tastatur, dem CX40-Joystick und der XG-1-Lichtpistole bestand.
 
 Die Unterstützung für das System wurde 1992 eingestellt, zusammen mit dem Rest der 8-Bit-Computer von Atari, dem Atari 2600 und dem Atari 7800.</text>
-			<text lang="fr">Le système de jeu vidéo Atari XE (Atari XEGS) est une refonte industrielle de l'ordinateur domestique Atari 65XE et le dernier modèle de la famille Atari 8-bit.
+      <text lang="fr">Le système de jeu vidéo Atari XE (Atari XEGS) est une refonte industrielle de l'ordinateur domestique Atari 65XE et le dernier modèle de la famille Atari 8-bit.
 Elle a été lancée par Atari Corporation en 1987 et commercialisée en tant que console de jeux vidéo domestique, aux côtés de la Nintendo Entertainment System, de la Master System de Sega et de l'Atari 7800 d'Atari. Le XEGS est compatible avec le matériel et les logiciels existants de la famille Atari 8 bits. Sans clavier, le système fonctionne comme une console de jeu autonome. Avec le clavier, il démarre de la même manière que les ordinateurs Atari XE. Atari a conditionné le XEGS comme un ensemble de base composé uniquement de la console et du joystick, et comme un ensemble de luxe composé de la console, du clavier, du joystick CX40 et du pistolet lumineux XG-1.
 
 Le support du système a été abandonné en 1992, en même temps que le reste des ordinateurs 8 bits d'Atari, l'Atari 2600 et l'Atari 7800.</text>
-			<text lang="it">L'Atari XE Video Game System (Atari XEGS) è una riprogettazione industriale dell'home computer Atari 65XE e il modello finale della famiglia Atari 8-bit.
+      <text lang="it">L'Atari XE Video Game System (Atari XEGS) è una riprogettazione industriale dell'home computer Atari 65XE e il modello finale della famiglia Atari 8-bit.
 È stato rilasciato da Atari Corporation nel 1987 e commercializzato come console per videogiochi domestici insieme al Nintendo Entertainment System, al Master System di Sega e all'Atari 7800. L'XEGS è compatibile con l'hardware e il software esistenti della famiglia Atari 8-bit. Senza tastiera, il sistema funziona come una console di gioco indipendente. Con la tastiera, si avvia in modo identico ai computer Atari XE. Atari ha confezionato l'XEGS in un set di base che comprende solo la console e il joystick e in un set deluxe che comprende la console, la tastiera, il joystick CX40 e la pistola luminosa XG-1.
 
 Il supporto per il sistema fu abbandonato nel 1992, insieme al resto dei computer a 8 bit di Atari, l'Atari 2600 e l'Atari 7800.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

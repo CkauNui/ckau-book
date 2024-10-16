@@ -1,74 +1,77 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>			
-			<pos>0.4901 0.461</pos>
-			<maxSize>0.28</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.37</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.309</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.2101 0.461" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>	
-			<pos>0.4901 0.4602</pos>
-			<maxSize>0.275</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.368</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.307</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.2101 0.4602" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2016</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Boom 3</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>Boom 3 is a Doom 3 and Doom 3: Resurrection Of Evil GPL source port, known to work on Windows and Linux.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>
+      <pos>0.4901 0.461</pos>
+      <maxSize>0.28</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.37</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.309</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.2101 0.461" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>
+      <pos>0.4901 0.4602</pos>
+      <maxSize>0.275</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.368</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.307</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.2101 0.4602" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2016</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Boom 3</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>Boom 3 is a Doom 3 and Doom 3: Resurrection Of Evil GPL source port, known to work on Windows and Linux.
 
 Doom 3 is a sci-fi horror fantasy first-person shooter computer game developed by id Software and published by ActiVision.</text>
-			<text lang="pl">Boom 3 to port Doom 3 i Doom 3: Resurrection Of Evil na licencji GPL, działający w systemach Windows i Linux.
+      <text lang="pl">Boom 3 to port Doom 3 i Doom 3: Resurrection Of Evil na licencji GPL, działający w systemach Windows i Linux.
 
 Doom 3 to gra komputerowa z gatunku sci-fi horror fantasy first-person shooter, stworzona przez id Software i wydana przez ActiVision.</text>
-			<text lang="ru">Boom 3 - это порт Doom 3 и Doom 3: Resurrection Of Evil с исходным кодом GPL, известный по работе под Windows и Linux.
+      <text lang="pt">Boom 3 é um port de Doom 3 e Doom 3: Resurrection Of Evil sob licença GPL, funcionando em sistemas Windows e Linux.
+
+Doom 3 é um jogo de tiro em primeira pessoa de ficção científica, terror e fantasia, criado pela id Software e publicado pela Activision.</text>
+      <text lang="ru">Boom 3 - это порт Doom 3 и Doom 3: Resurrection Of Evil с исходным кодом GPL, известный по работе под Windows и Linux.
 
 Doom 3 - компьютерная игра в жанре фэнтези-шутера от первого лица, разработанная компанией id Software и изданная ActiVision.</text>
-			<text lang="es">Boom 3 es un port de Doom 3 y Doom 3: Resurrection Of Evil GPL source, conocido por funcionar en Windows y Linux.
+      <text lang="es">Boom 3 es un port de Doom 3 y Doom 3: Resurrection Of Evil GPL source, conocido por funcionar en Windows y Linux.
 
 Doom 3 es un juego de disparos en primera persona de ciencia ficción y terror desarrollado por id Software y publicado por ActiVision.</text>
-			<text lang="de">Boom 3 es un port de Doom 3 y Doom 3: Resurrection Of Evil GPL source, conocido por funcionar en Windows y Linux.
+      <text lang="de">Boom 3 es un port de Doom 3 y Doom 3: Resurrection Of Evil GPL source, conocido por funcionar en Windows y Linux.
 
 Doom 3 es un juego de disparos en primera persona de ciencia ficción y terror desarrollado por id Software y publicado por ActiVision.</text>
-			<text lang="fr">Boom 3 est un portage GPL de Doom 3 et Doom 3 : Resurrection Of Evil, connu pour fonctionner sous Windows et Linux.
+      <text lang="fr">Boom 3 est un portage GPL de Doom 3 et Doom 3 : Resurrection Of Evil, connu pour fonctionner sous Windows et Linux.
 
 Doom 3 est un jeu de tir à la première personne de science-fiction, d'horreur et de fantaisie développé par id Software et publié par ActiVision.</text>
-			<text lang="it">Boom 3 è un porting di Doom 3 e Doom 3: Resurrection Of Evil con licenza GPL, noto per funzionare su Windows e Linux.
+      <text lang="it">Boom 3 è un porting di Doom 3 e Doom 3: Resurrection Of Evil con licenza GPL, noto per funzionare su Windows e Linux.
 
 Doom 3 è un gioco per computer sparatutto in prima persona di genere fantascientifico e horror sviluppato da id Software e pubblicato da ActiVision.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

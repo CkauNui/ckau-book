@@ -1,82 +1,87 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.5 0.5</origin>
-			<pos>0.515 0.43</pos>
-			<maxSize>0.23</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.235 0.43" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.5 0.5</origin>
-			<pos>0.515 0.43</pos>
-			<maxSize>0.21</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.235 0.43" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2000</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>PrBoom</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>PrBoom, originally short for "Proff Boom", is a source port based initially on Boom, but later merged with LxDoom and LsdlDoom. As a result of this merger, PrBoom is compatible with both Boom and MBF. It includes OpenGL features for the renderer (as GLBoom) as well as some enhancements over the engines it is based on, such as being able to handle levels with twice as many segs, vertices and sidedefs than usual. In addition to the code from its predecessors, it incorporates bits of code from the Eternity Engine, and PrBoom+.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.5 0.5</origin>
+      <pos>0.515 0.43</pos>
+      <maxSize>0.23</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.235 0.43" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.5 0.5</origin>
+      <pos>0.515 0.43</pos>
+      <maxSize>0.21</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.235 0.43" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2000</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>PrBoom</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>PrBoom, originally short for "Proff Boom", is a source port based initially on Boom, but later merged with LxDoom and LsdlDoom. As a result of this merger, PrBoom is compatible with both Boom and MBF. It includes OpenGL features for the renderer (as GLBoom) as well as some enhancements over the engines it is based on, such as being able to handle levels with twice as many segs, vertices and sidedefs than usual. In addition to the code from its predecessors, it incorporates bits of code from the Eternity Engine, and PrBoom+.
 
 Unlike other source ports that concentrate on offering many new game features or changes, such as ZDoom, EDGE and the Eternity Engine, PrBoom aims to act as a stable port of the more established or traditional engines.
 
 PrBoom uses the SDL library to abstract away operating system or platform specifics. As a result it supports a very large variety of platforms In addition to the PC, it has been compiled for the GP2X and various Mac models, among others. The source port, packaged with Freedoom, is included in the Fedora RPM software repository.</text>
-			<text lang="pl">PrBoom, pierwotnie skrót od "Proff Boom", to port źródłowy oparty początkowo na Boomie, ale później połączony z LxDoomem i LsdlDoomem. W wyniku tej fuzji PrBoom jest kompatybilny zarówno z Boomem, jak i MBF. Zawiera funkcje OpenGL dla renderera (jako GLBoom), jak również pewne ulepszenia w stosunku do silników, na których bazuje, takie jak możliwość obsługi poziomów z dwukrotnie większą liczbą segmentów, wierzchołków i sidedefów niż zwykle. Oprócz kodu z poprzedników, zawiera on fragmenty kodu z silnika Eternity oraz PrBoom+.
+      <text lang="pl">PrBoom, pierwotnie skrót od "Proff Boom", to port źródłowy oparty początkowo na Boomie, ale później połączony z LxDoomem i LsdlDoomem. W wyniku tej fuzji PrBoom jest kompatybilny zarówno z Boomem, jak i MBF. Zawiera funkcje OpenGL dla renderera (jako GLBoom), jak również pewne ulepszenia w stosunku do silników, na których bazuje, takie jak możliwość obsługi poziomów z dwukrotnie większą liczbą segmentów, wierzchołków i sidedefów niż zwykle. Oprócz kodu z poprzedników, zawiera on fragmenty kodu z silnika Eternity oraz PrBoom+.
 
 W przeciwieństwie do innych portów źródłowych, które koncentrują się na oferowaniu wielu nowych funkcji lub zmian w grze, takich jak ZDoom, EDGE i Eternity Engine, PrBoom ma na celu działanie jako stabilny port bardziej uznanych lub tradycyjnych silników.
 
 PrBoom wykorzystuje bibliotekę SDL do abstrahowania od specyfiki systemu operacyjnego i platformy. W rezultacie obsługuje bardzo wiele różnych platform. Oprócz komputerów PC, został skompilowany między innymi dla GP2X i różnych modeli komputerów Mac. Port źródłowy, spakowany programem Freedoom, znajduje się w repozytorium Fedora RPM.</text>
-			<text lang="ru">Максимально стабильный порт компьютерной игры Doom, являющийся кульминацией многолетней работы различных людей и проектов. Порт объединил в себе наработки DosDoom (первый серьёзный порт Doom для Dos), Boom (полностью переработанный и расширенный порт движка Doom), MBF (форк проекта Boom с специальными функциями), LxDoom (POSIX Doom port) и lSDLDoom (SDL версия LxDoom). Также в проект включены новаторские идеи из других проектов (например xdoom и Eternity) и индивидуальных разработчиков.
+      <text lang="pt">PrBoom, originalmente abreviação de "Proff Boom", é um port de código-fonte inicialmente baseado no Boom, mas posteriormente combinado com LxDooom e LsdlDooom. Como resultado dessa fusão, o PrBoom é compatível com Boom e MBF. Ele inclui recursos OpenGL para renderização (como GLBoom), além de algumas melhorias em relação aos motores em que se baseia, como a capacidade de suportar níveis com o dobro do número de segmentos, vértices e sidedefs do que o normal. Além do código de seus predecessores, ele contém partes de código do motor Eternity e PrBoom+.
+
+Ao contrário de outros ports de código-fonte que se concentram em oferecer muitos novos recursos ou mudanças no jogo, como ZDoom, EDGE e Eternity Engine, o PrBoom visa funcionar como um port estável para motores mais estabelecidos ou tradicionais.
+
+O PrBoom utiliza a biblioteca SDL para abstrair as especificidades do sistema operacional e da plataforma. Como resultado, ele suporta uma ampla variedade de plataformas. Além dos computadores pessoais, foi compilado para GP2X e vários modelos de computadores Mac, entre outros. O port de código-fonte, empacotado com o programa Freedoom, está disponível no repositório Fedora RPM.</text>
+      <text lang="ru">Максимально стабильный порт компьютерной игры Doom, являющийся кульминацией многолетней работы различных людей и проектов. Порт объединил в себе наработки DosDoom (первый серьёзный порт Doom для Dos), Boom (полностью переработанный и расширенный порт движка Doom), MBF (форк проекта Boom с специальными функциями), LxDoom (POSIX Doom port) и lSDLDoom (SDL версия LxDoom). Также в проект включены новаторские идеи из других проектов (например xdoom и Eternity) и индивидуальных разработчиков.
 
 Целью PrBoom являлось создание максимально стабильным портом, совместимым основными версиями Doom. Несмотря на все внесённые изменения порт очень приближен к оригиналу и почти идеально поддерживает воспроизведение демок уровней для классического Doom, чего лишены остальные порты (за исключением Chocolate).</text>
-			<text lang="es">PrBoom, originalmente abreviatura de "Proff Boom", es un port fuente basado inicialmente en Boom, pero fusionado posteriormente con LxDoom y LsdlDoom. Como resultado de esta fusión, PrBoom es compatible tanto con Boom como con MBF. Incluye características OpenGL para el renderizador (como GLBoom) así como algunas mejoras sobre los motores en los que se basa, como ser capaz de manejar niveles con el doble de segs, vértices y sidedefs de lo habitual. Además del código de sus predecesores, incorpora fragmentos de código de Eternity Engine y PrBoom+.
+      <text lang="es">PrBoom, originalmente abreviatura de "Proff Boom", es un port fuente basado inicialmente en Boom, pero fusionado posteriormente con LxDoom y LsdlDoom. Como resultado de esta fusión, PrBoom es compatible tanto con Boom como con MBF. Incluye características OpenGL para el renderizador (como GLBoom) así como algunas mejoras sobre los motores en los que se basa, como ser capaz de manejar niveles con el doble de segs, vértices y sidedefs de lo habitual. Además del código de sus predecesores, incorpora fragmentos de código de Eternity Engine y PrBoom+.
 
 A diferencia de otros ports de código fuente que se concentran en ofrecer muchas nuevas características o cambios en el juego, como ZDoom, EDGE y el Eternity Engine, PrBoom pretende actuar como un port estable de los motores más establecidos o tradicionales.
 
 PrBoom utiliza la biblioteca SDL para abstraer las particularidades del sistema operativo o de la plataforma. Además del PC, se ha compilado para el GP2X y varios modelos de Mac, entre otros. El port fuente, empaquetado con Freedoom, está incluido en el repositorio de software Fedora RPM.</text>
-			<text lang="de">PrBoom, ursprünglich die Abkürzung für "Proff Boom", ist eine Source-Portierung, die ursprünglich auf Boom basierte, später aber mit LxDoom und LsdlDoom fusioniert wurde. Als Ergebnis dieser Fusion ist PrBoom sowohl mit Boom als auch mit MBF kompatibel. Es enthält OpenGL-Funktionen für den Renderer (als GLBoom) sowie einige Verbesserungen gegenüber den Engines, auf denen es basiert, wie z. B. die Fähigkeit, Level mit doppelt so vielen Segs, Vertices und Sidedefs als üblich zu verarbeiten. Zusätzlich zum Code seiner Vorgänger enthält es Teile des Codes der Eternity Engine und von PrBoom+.
+      <text lang="de">PrBoom, ursprünglich die Abkürzung für "Proff Boom", ist eine Source-Portierung, die ursprünglich auf Boom basierte, später aber mit LxDoom und LsdlDoom fusioniert wurde. Als Ergebnis dieser Fusion ist PrBoom sowohl mit Boom als auch mit MBF kompatibel. Es enthält OpenGL-Funktionen für den Renderer (als GLBoom) sowie einige Verbesserungen gegenüber den Engines, auf denen es basiert, wie z. B. die Fähigkeit, Level mit doppelt so vielen Segs, Vertices und Sidedefs als üblich zu verarbeiten. Zusätzlich zum Code seiner Vorgänger enthält es Teile des Codes der Eternity Engine und von PrBoom+.
 
 Im Gegensatz zu anderen Quellcode-Portierungen, die sich darauf konzentrieren, viele neue Spielfunktionen oder Änderungen anzubieten, wie ZDoom, EDGE und die Eternity Engine, zielt PrBoom darauf ab, als stabile Portierung der etablierteren oder traditionellen Engines zu fungieren.
 
 PrBoom verwendet die SDL-Bibliothek, um Betriebssystem- oder Plattformspezifika zu umgehen. Daher unterstützt es eine Vielzahl von Plattformen. Neben dem PC wurde es unter anderem auch für den GP2X und verschiedene Mac-Modelle kompiliert. Die Quelltextportierung ist zusammen mit Freedoom in das Fedora RPM Software Repository aufgenommen worden.</text>
-			<text lang="fr">PrBoom, abréviation de "Proff Boom", est un portage source basé initialement sur Boom, mais qui a ensuite fusionné avec LxDoom et LsdlDoom. Suite à cette fusion, PrBoom est compatible avec Boom et MBF. Il inclut des fonctionnalités OpenGL pour le moteur de rendu (comme GLBoom) ainsi que quelques améliorations par rapport aux moteurs sur lesquels il est basé, comme la possibilité de gérer des niveaux avec deux fois plus de segs, de vertices et de sidedefs que d'habitude. En plus du code de ses prédécesseurs, il incorpore des bouts de code du moteur Eternity et de PrBoom+.
+      <text lang="fr">PrBoom, abréviation de "Proff Boom", est un portage source basé initialement sur Boom, mais qui a ensuite fusionné avec LxDoom et LsdlDoom. Suite à cette fusion, PrBoom est compatible avec Boom et MBF. Il inclut des fonctionnalités OpenGL pour le moteur de rendu (comme GLBoom) ainsi que quelques améliorations par rapport aux moteurs sur lesquels il est basé, comme la possibilité de gérer des niveaux avec deux fois plus de segs, de vertices et de sidedefs que d'habitude. En plus du code de ses prédécesseurs, il incorpore des bouts de code du moteur Eternity et de PrBoom+.
 
 Contrairement à d'autres portages de sources qui se concentrent sur l'offre de nouvelles fonctionnalités ou de changements, tels que ZDoom, EDGE et le moteur Eternity, PrBoom vise à agir comme un portage stable des moteurs les plus établis ou traditionnels.
 
 PrBoom utilise la bibliothèque SDL pour faire abstraction des spécificités du système d'exploitation ou de la plate-forme. En plus du PC, il a été compilé pour le GP2X et divers modèles de Mac, entre autres. Le portage des sources, empaqueté avec Freedoom, est inclus dans le dépôt de logiciels Fedora RPM.</text>
-			<text lang="it">PrBoom, originariamente abbreviazione di "Proff Boom", è un port sorgente basato inizialmente su Boom, ma successivamente fuso con LxDoom e LsdlDoom. Come risultato di questa fusione, PrBoom è compatibile sia con Boom che con MBF. Include funzioni OpenGL per il renderer (come GLBoom) e alcuni miglioramenti rispetto ai motori su cui si basa, come la capacità di gestire livelli con un numero doppio di segmenti, vertici e sidedef rispetto al solito. Oltre al codice dei suoi predecessori, incorpora parti di codice dell'Eternity Engine e di PrBoom+.
+      <text lang="it">PrBoom, originariamente abbreviazione di "Proff Boom", è un port sorgente basato inizialmente su Boom, ma successivamente fuso con LxDoom e LsdlDoom. Come risultato di questa fusione, PrBoom è compatibile sia con Boom che con MBF. Include funzioni OpenGL per il renderer (come GLBoom) e alcuni miglioramenti rispetto ai motori su cui si basa, come la capacità di gestire livelli con un numero doppio di segmenti, vertici e sidedef rispetto al solito. Oltre al codice dei suoi predecessori, incorpora parti di codice dell'Eternity Engine e di PrBoom+.
 
 A differenza di altri port di origine che si concentrano sull'offerta di molte nuove funzionalità o modifiche al gioco, come ZDoom, EDGE e l'Eternity Engine, PrBoom mira ad agire come un port stabile dei motori più consolidati o tradizionali.
 
 PrBoom utilizza la libreria SDL per astrarre dalle specificità del sistema operativo o della piattaforma. Oltre che per il PC, è stato compilato anche per il GP2X e per vari modelli di Mac. Il port sorgente, confezionato con Freedoom, è incluso nel repository software Fedora RPM.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

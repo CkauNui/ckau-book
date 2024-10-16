@@ -1,51 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.39</pos>
-			<maxSize>0.25</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.39</pos>
-			<maxSize>0.24</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1986</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Nintendo</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Entertainment System MSU-1</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>Nintendo Entertainment System games enhanced with the Mesen emulator or ported to the Super Nintendo as part of the NES2SNES and Nested project, because of which they were able to be enhanced with MSU-1
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.5 0.39</pos>
+      <maxSize>0.25</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.5 0.39</pos>
+      <maxSize>0.24</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1986</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Nintendo</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Entertainment System MSU-1</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>Nintendo Entertainment System games enhanced with the Mesen emulator or ported to the Super Nintendo as part of the NES2SNES and Nested project, because of which they were able to be enhanced with MSU-1
 
 Some examples of MSU-1 modded games would be:
 
@@ -55,8 +55,9 @@ Mega Man X with a new CD quality soundtrack.
 
 The MSU-1 chip itself only needs to be in the game cartridge to run on an actual unmodded SNES system. Emulators, on the other hand, need to be modified to support playback of MSU-1 modded games. This is due to the emulator needing to access files outside the ROM while playing the ROM.
 The chip does have some limitations, such as only being able to stream one data track at a time, but it essentially turns the SNES into what it could have been with a CD attachment.</text>
-			<text lang="pl">Gry Nintendo Entertainment System ulepszone za pomocą emulatora Mesen lub przeniesione na Super Nintendo w ramach projektu NES2SNES i Nested, dzięki czemu mogły zostać ulepszone za pomocą MSU-1.</text>
-			<text lang="ru">Игры Nintendo Entertainment System, улучшенные с помощью эмулятора Mesen или портированные на Super Nintendo в рамках проекта NES2SNES и Nested из-за чего они смогли получить улучшенние с помощью MSU-1.
+      <text lang="pl">Gry Nintendo Entertainment System ulepszone za pomocą emulatora Mesen lub przeniesione na Super Nintendo w ramach projektu NES2SNES i Nested, dzięki czemu mogły zostać ulepszone za pomocą MSU-1.</text>
+      <text lang="pt">Jogos do Nintendo Entertainment System aprimorados com o emulador Mesen ou portados para o Super Nintendo através do projeto NES2SNES e Nested, permitindo que fossem aprimorados com MSU-1.</text>
+      <text lang="ru">Игры Nintendo Entertainment System, улучшенные с помощью эмулятора Mesen или портированные на Super Nintendo в рамках проекта NES2SNES и Nested из-за чего они смогли получить улучшенние с помощью MSU-1.
 
 MSU-1 это специальный сопроцессор, добавляющий игровой приставке Super Nintendo несколько интересных возможностей:
 
@@ -68,7 +69,7 @@ MSU-1 это специальный сопроцессор, добавляющи
 Благодаря таким возможностям, ROM хакеры могут заменять фоновую музыку в играх на их высококачественные версии, и даже воспроизводить полнометражные видеоролики.
 Аббревиатура MSU означает "Media Streaming Unit 1".
 Это современная разработка от автора эмуляторов bsnes и higan - byuu. Примерный год создания - 2010, однако, понадобилось много лет, чтобы данный чип расширения получил поддержку со стороны программистов. К сожалению, странички проекта были полностью удалены из веб-архива, поэтому, не удаётся выяснить больше подробностей. Но известно, что MSU1 начинался как 21fx ещё в 2009-м году.</text>
-			<text lang="es">Juegos de Nintendo Entertainment System mejorados con el emulador Mesen o portados a Super Nintendo como parte del proyecto NES2SNES y Nested, gracias a lo cual pudieron mejorarse con MSU-1
+      <text lang="es">Juegos de Nintendo Entertainment System mejorados con el emulador Mesen o portados a Super Nintendo como parte del proyecto NES2SNES y Nested, gracias a lo cual pudieron mejorarse con MSU-1
 
 Algunos ejemplos de juegos modificados con MSU-1 serían:
 
@@ -78,7 +79,7 @@ Mega Man X con una nueva banda sonora de calidad CD.
 
 El chip MSU-1 sólo necesita estar en el cartucho para funcionar en un sistema SNES sin modificar. En cambio, los emuladores deben modificarse para poder reproducir juegos modificados con MSU-1. Esto se debe a que el emulador no puede reproducir juegos modificados. Esto se debe a que el emulador necesita acceder a archivos fuera de la ROM mientras reproduce la ROM.
 El chip tiene algunas limitaciones, como que sólo puede transmitir una pista de datos a la vez, pero básicamente convierte la SNES en lo que podría haber sido con un accesorio de CD.</text>
-			<text lang="de">Nintendo Entertainment System-Spiele, die mit dem Mesen-Emulator verbessert oder im Rahmen des NES2SNES- und des Nested-Projekts auf das Super Nintendo portiert wurden, wodurch sie mit MSU-1 verbessert werden konnten
+      <text lang="de">Nintendo Entertainment System-Spiele, die mit dem Mesen-Emulator verbessert oder im Rahmen des NES2SNES- und des Nested-Projekts auf das Super Nintendo portiert wurden, wodurch sie mit MSU-1 verbessert werden konnten
 
 Einige Beispiele für MSU-1 modifizierte Spiele sind:
 
@@ -88,7 +89,7 @@ Mega Man X mit einer neuen Tonspur in CD-Qualität.
 
 Der MSU-1-Chip selbst muss sich nur in der Spielkassette befinden, um auf einem aktuellen, nicht modifizierten SNES-System zu laufen. Emulatoren hingegen müssen modifiziert werden, um die Wiedergabe von MSU-1-modifizierten Spielen zu unterstützen. Das liegt daran, dass der Emulator beim Abspielen des ROMs auf Dateien außerhalb des ROMs zugreifen muss.
 Der Chip hat einige Einschränkungen, wie z. B. die Möglichkeit, nur einen Datentrack gleichzeitig zu übertragen, aber er macht das SNES im Wesentlichen zu dem, was es mit einem CD-Aufsatz hätte sein können.</text>
-			<text lang="fr">Jeux de la Nintendo Entertainment System améliorés avec l'émulateur Mesen ou portés sur la Super Nintendo dans le cadre des projets NES2SNES et Nested, grâce auxquels ils ont pu être améliorés avec le MSU-1
+      <text lang="fr">Jeux de la Nintendo Entertainment System améliorés avec l'émulateur Mesen ou portés sur la Super Nintendo dans le cadre des projets NES2SNES et Nested, grâce auxquels ils ont pu être améliorés avec le MSU-1
 
 Voici quelques exemples de jeux modifiés par le MSU-1 :
 
@@ -98,7 +99,7 @@ Mega Man X avec une nouvelle bande sonore de qualité CD.
 
 La puce MSU-1 elle-même n'a besoin que d'être dans la cartouche du jeu pour fonctionner sur un système SNES non modifié. Les émulateurs, en revanche, doivent être modifiés pour pouvoir lire les jeux modifiés par la puce MSU-1. Cela est dû au fait que l'émulateur doit accéder à des fichiers en dehors de la ROM pendant la lecture de la ROM.
 La puce a quelques limitations, comme le fait de ne pouvoir lire qu'une piste de données à la fois, mais elle transforme essentiellement la SNES en ce qu'elle aurait pu être avec un attachement CD.</text>
-			<text lang="it">Giochi per Nintendo Entertainment System migliorati con l'emulatore Mesen o portati sul Super Nintendo nell'ambito dei progetti NES2SNES e Nested, grazie ai quali hanno potuto essere migliorati con l'MSU-1.
+      <text lang="it">Giochi per Nintendo Entertainment System migliorati con l'emulatore Mesen o portati sul Super Nintendo nell'ambito dei progetti NES2SNES e Nested, grazie ai quali hanno potuto essere migliorati con l'MSU-1.
 
 Alcuni esempi di giochi modificati con MSU-1 sono:
 
@@ -108,6 +109,6 @@ Mega Man X con una nuova colonna sonora di qualità CD.
 
 Lo stesso chip MSU-1 deve essere presente nella cartuccia del gioco per funzionare su un sistema SNES non modificato. Gli emulatori, invece, devono essere modificati per supportare la riproduzione dei giochi modificati con MSU-1. Ciò è dovuto al fatto che l'emulatore deve accedere a file esterni alla ROM durante la riproduzione di quest'ultima.
 Il chip ha alcune limitazioni, come la possibilità di trasmettere una sola traccia di dati alla volta, ma essenzialmente trasforma lo SNES in quello che avrebbe potuto essere con una periferica CD.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

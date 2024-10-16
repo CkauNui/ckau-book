@@ -1,68 +1,71 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.39</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
-			<pos>0.499 0.43</pos>
-			<maxSize>0.23</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.219 0.43" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.39</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
-			<pos>0.499 0.43</pos>
-			<maxSize>0.215</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.219 0.43" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2021</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Sonic Retro Engine</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Retro Engine (currently known as the Star Engine) is an engine created by "The Taxman" (Christian Whitehead). It is designed to deliver features from the 32-bit console era and below, and focuses on things like raster effects, palette manipulations, 'mode 7', and other features of retro games from back then, unlike modern engines today. The engine is multi-platform, and it fully supports modern essentials such as widescreen and online functionality. The Taxman and Stealth (Simon Thomley) remade and remastered Sonic the Hedgehog CD (2011) for Xbox Live Arcade, PlayStation Network, iOS, and Android, Sonic the Hedgehog (2013) for iOS and Android, and Sonic the Hedgehog 2 (2013) for iOS and Android using the Retro Engine. These new features for the games include upgraded graphics, widescreen display, 60 fps, remastered soundtracks, and many more features.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.39</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
+      <pos>0.499 0.43</pos>
+      <maxSize>0.23</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.219 0.43" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.39</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
+      <pos>0.499 0.43</pos>
+      <maxSize>0.215</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.219 0.43" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2021</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Sonic Retro Engine</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Retro Engine (currently known as the Star Engine) is an engine created by "The Taxman" (Christian Whitehead). It is designed to deliver features from the 32-bit console era and below, and focuses on things like raster effects, palette manipulations, 'mode 7', and other features of retro games from back then, unlike modern engines today. The engine is multi-platform, and it fully supports modern essentials such as widescreen and online functionality. The Taxman and Stealth (Simon Thomley) remade and remastered Sonic the Hedgehog CD (2011) for Xbox Live Arcade, PlayStation Network, iOS, and Android, Sonic the Hedgehog (2013) for iOS and Android, and Sonic the Hedgehog 2 (2013) for iOS and Android using the Retro Engine. These new features for the games include upgraded graphics, widescreen display, 60 fps, remastered soundtracks, and many more features.
 
 In January 2021, 3 games based on Retro Engine were reverse engineered. The user Rubberduckycooly released two projects on GitHub: one for Sonic 1 and 2, and the other for Sonic CD. Despite binaries being freely available, the player is still required to obtain a copy of the game's data through official sources such as Google Play, AppStore or Steam.</text>
-			<text lang="pl">Retro Engine (obecnie znany jako Star Engine) to silnik stworzony przez "The Taxman" (Christian Whitehead). Został on zaprojektowany, aby zapewnić funkcje z ery konsol 32-bitowych i niższych, i skupia się na takich rzeczach, jak efekty rastrowe, manipulacje paletami, "tryb 7" i inne cechy gier retro z tamtych czasów, w przeciwieństwie do współczesnych silników. Silnik jest wieloplatformowy i w pełni obsługuje nowoczesne funkcje, takie jak szeroki ekran i funkcjonalność online. The Taxman i Stealth (Simon Thomley) zremasterowali grę Sonic the Hedgehog CD (2011) na Xbox Live Arcade, PlayStation Network, iOS i Android, Sonic the Hedgehog (2013) na iOS i Android oraz Sonic the Hedgehog 2 (2013) na iOS i Android przy użyciu silnika Retro. Nowe funkcje tych gier obejmują ulepszoną grafikę, wyświetlanie na szerokim ekranie, 60 klatek na sekundę, zremasterowane ścieżki dźwiękowe i wiele innych funkcji.
+      <text lang="pl">Retro Engine (obecnie znany jako Star Engine) to silnik stworzony przez "The Taxman" (Christian Whitehead). Został on zaprojektowany, aby zapewnić funkcje z ery konsol 32-bitowych i niższych, i skupia się na takich rzeczach, jak efekty rastrowe, manipulacje paletami, "tryb 7" i inne cechy gier retro z tamtych czasów, w przeciwieństwie do współczesnych silników. Silnik jest wieloplatformowy i w pełni obsługuje nowoczesne funkcje, takie jak szeroki ekran i funkcjonalność online. The Taxman i Stealth (Simon Thomley) zremasterowali grę Sonic the Hedgehog CD (2011) na Xbox Live Arcade, PlayStation Network, iOS i Android, Sonic the Hedgehog (2013) na iOS i Android oraz Sonic the Hedgehog 2 (2013) na iOS i Android przy użyciu silnika Retro. Nowe funkcje tych gier obejmują ulepszoną grafikę, wyświetlanie na szerokim ekranie, 60 klatek na sekundę, zremasterowane ścieżki dźwiękowe i wiele innych funkcji.
 
 W styczniu 2021 r. przeprowadzono inżynierię wsteczną 3 gier opartych na Retro Engine. Użytkownik Rubberduckycooly opublikował na GitHubie dwa projekty: jeden dla Sonic 1 i 2, a drugi dla Sonic CD. Mimo że binaria są swobodnie dostępne, gracz nadal musi uzyskać kopię danych gry za pośrednictwem oficjalnych źródeł, takich jak Google Play, AppStore czy Steam.</text>
-			<text lang="ru">The Retro Engine (в настоящее время известный как Star Engine) - движок, созданный "Налоговиком" (Кристианом Уайтхедом). Он предназначен для реализации возможностей 32-битной консольной эры и ниже. В отличие от современных движков, он фокусируется на таких вещах, как растровые эффекты, работа с палитрой, "mode-7" и другие особенности ретро-игр того времени. Движок является мультиплатформенным и полностью поддерживает такие современные вещи, как широкоформатный экран и онлайн-функции. The Taxman и Stealth (Саймон Томли) переделали и ремастировали Sonic the Hedgehog CD (2011) для Xbox Live Arcade, PlayStation Network, iOS и Android, Sonic the Hedgehog (2013) для iOS и Android и Sonic the Hedgehog 2 (2013) для iOS и Android, используя движок Retro Engine. Среди новых возможностей игр - обновленная графика, широкоформатный экран, 60 кадров в секунду, ремастированные саундтреки и многое другое.
+      <text lang="pt">Retro Engine (atualmente conhecido como Star Engine) é um motor criado por "The Taxman" (Christian Whitehead). Ele foi projetado para fornecer recursos da era dos consoles de 32 bits e anteriores, focando em elementos como efeitos rasterizados, manipulação de paletas, "modo 7" e outras características de jogos retro daquela época, ao contrário dos motores modernos. O motor é multiplataforma e suporta totalmente recursos modernos, como tela widescreen e funcionalidade online. The Taxman e Stealth (Simon Thomley) remasterizaram o jogo Sonic the Hedgehog CD (2011) para Xbox Live Arcade, PlayStation Network, iOS e Android, Sonic the Hedgehog (2013) para iOS e Android, e Sonic the Hedgehog 2 (2013) para iOS e Android usando o motor Retro. Novas funcionalidades desses jogos incluem gráficos aprimorados, exibição em tela widescreen, 60 quadros por segundo, trilhas sonoras remasterizadas e muitas outras funções.
+
+Em janeiro de 2021, foi realizada engenharia reversa em 3 jogos baseados no Retro Engine. O usuário Rubberduckycooly publicou no GitHub dois projetos: um para Sonic 1 e 2, e outro para Sonic CD. Apesar dos binários estarem livremente disponíveis, o jogador ainda precisa obter uma cópia dos dados do jogo através de fontes oficiais, como Google Play, AppStore ou Steam.</text>
+      <text lang="ru">The Retro Engine (в настоящее время известный как Star Engine) - движок, созданный "Налоговиком" (Кристианом Уайтхедом). Он предназначен для реализации возможностей 32-битной консольной эры и ниже. В отличие от современных движков, он фокусируется на таких вещах, как растровые эффекты, работа с палитрой, "mode-7" и другие особенности ретро-игр того времени. Движок является мультиплатформенным и полностью поддерживает такие современные вещи, как широкоформатный экран и онлайн-функции. The Taxman и Stealth (Саймон Томли) переделали и ремастировали Sonic the Hedgehog CD (2011) для Xbox Live Arcade, PlayStation Network, iOS и Android, Sonic the Hedgehog (2013) для iOS и Android и Sonic the Hedgehog 2 (2013) для iOS и Android, используя движок Retro Engine. Среди новых возможностей игр - обновленная графика, широкоформатный экран, 60 кадров в секунду, ремастированные саундтреки и многое другое.
 
 В январе 2021 года был произведен реверс-инжиниринг 3 игр на базе Retro Engine. Пользователь Rubberduckycooly опубликовал на GitHub два проекта: один для Sonic 1 и 2, а другой - для Sonic CD. Несмотря на то, что двоичные файлы находятся в свободном доступе, игроку все равно приходится приобретать копию данных игры через официальные источники, такие как Google Play, AppStore или Steam.</text>
-			<text lang="es">El Retro Engine (actualmente conocido como Star Engine) es un motor creado por "The Taxman" (Christian Whitehead). Está diseñado para ofrecer características de la era de las consolas de 32 bits e inferiores, y se centra en cosas como los efectos de trama, las manipulaciones de paleta, el "modo 7" y otras características de los juegos retro de entonces, a diferencia de los motores modernos de hoy en día. El motor es multiplataforma y es totalmente compatible con los elementos esenciales modernos, como la pantalla panorámica y la funcionalidad en línea. The Taxman y Stealth (Simon Thomley) rehicieron y remasterizaron Sonic the Hedgehog CD (2011) para Xbox Live Arcade, PlayStation Network, iOS y Android, Sonic the Hedgehog (2013) para iOS y Android, y Sonic the Hedgehog 2 (2013) para iOS y Android utilizando el Retro Engine. Estas novedades para los juegos incluyen gráficos mejorados, pantalla panorámica, 60 fps, bandas sonoras remasterizadas y muchas más características.
+      <text lang="es">El Retro Engine (actualmente conocido como Star Engine) es un motor creado por "The Taxman" (Christian Whitehead). Está diseñado para ofrecer características de la era de las consolas de 32 bits e inferiores, y se centra en cosas como los efectos de trama, las manipulaciones de paleta, el "modo 7" y otras características de los juegos retro de entonces, a diferencia de los motores modernos de hoy en día. El motor es multiplataforma y es totalmente compatible con los elementos esenciales modernos, como la pantalla panorámica y la funcionalidad en línea. The Taxman y Stealth (Simon Thomley) rehicieron y remasterizaron Sonic the Hedgehog CD (2011) para Xbox Live Arcade, PlayStation Network, iOS y Android, Sonic the Hedgehog (2013) para iOS y Android, y Sonic the Hedgehog 2 (2013) para iOS y Android utilizando el Retro Engine. Estas novedades para los juegos incluyen gráficos mejorados, pantalla panorámica, 60 fps, bandas sonoras remasterizadas y muchas más características.
 
 En enero de 2021, 3 juegos basados en Retro Engine fueron sometidos a ingeniería inversa. El usuario Rubberduckycooly publicó dos proyectos en GitHub: uno para Sonic 1 y 2, y otro para Sonic CD. A pesar de que los binarios están disponibles de forma gratuita, el jugador debe obtener una copia de los datos del juego a través de fuentes oficiales como Google Play, AppStore o Steam.</text>
-			<text lang="de">Die Retro-Engine (derzeit als Star-Engine bekannt) ist eine von "The Taxman" (Christian Whitehead) entwickelte Engine. Sie wurde entwickelt, um Funktionen aus der 32-Bit-Konsolen-Ära und darunter zu liefern, und konzentriert sich auf Dinge wie Rastereffekte, Palettenmanipulationen, "Modus 7" und andere Funktionen von Retro-Spielen von damals, im Gegensatz zu modernen Engines heute. Die Engine ist plattformübergreifend und unterstützt alle wichtigen modernen Funktionen wie Widescreen und Online-Funktionalität. The Taxman und Stealth (Simon Thomley) haben Sonic the Hedgehog CD (2011) für Xbox Live Arcade, PlayStation Network, iOS und Android, Sonic the Hedgehog (2013) für iOS und Android und Sonic the Hedgehog 2 (2013) für iOS und Android unter Verwendung der Retro-Engine neu aufgelegt und neu gemastert. Diese neuen Funktionen für die Spiele umfassen verbesserte Grafiken, Widescreen-Darstellung, 60 fps, neu bearbeitete Soundtracks und viele weitere Funktionen.
+      <text lang="de">Die Retro-Engine (derzeit als Star-Engine bekannt) ist eine von "The Taxman" (Christian Whitehead) entwickelte Engine. Sie wurde entwickelt, um Funktionen aus der 32-Bit-Konsolen-Ära und darunter zu liefern, und konzentriert sich auf Dinge wie Rastereffekte, Palettenmanipulationen, "Modus 7" und andere Funktionen von Retro-Spielen von damals, im Gegensatz zu modernen Engines heute. Die Engine ist plattformübergreifend und unterstützt alle wichtigen modernen Funktionen wie Widescreen und Online-Funktionalität. The Taxman und Stealth (Simon Thomley) haben Sonic the Hedgehog CD (2011) für Xbox Live Arcade, PlayStation Network, iOS und Android, Sonic the Hedgehog (2013) für iOS und Android und Sonic the Hedgehog 2 (2013) für iOS und Android unter Verwendung der Retro-Engine neu aufgelegt und neu gemastert. Diese neuen Funktionen für die Spiele umfassen verbesserte Grafiken, Widescreen-Darstellung, 60 fps, neu bearbeitete Soundtracks und viele weitere Funktionen.
 
 Im Januar 2021 wurden 3 Spiele, die auf der Retro Engine basieren, zurückentwickelt. Der Benutzer Rubberduckycooly veröffentlichte zwei Projekte auf GitHub: eines für Sonic 1 und 2 und das andere für Sonic CD. Obwohl die Binärdateien frei verfügbar sind, muss der Spieler eine Kopie der Spieldaten über offizielle Quellen wie Google Play, AppStore oder Steam erwerben.</text>
-			<text lang="fr">Le Retro Engine (actuellement connu sous le nom de Star Engine) est un moteur créé par "The Taxman" (Christian Whitehead). Il est conçu pour offrir les fonctionnalités de l'ère des consoles 32 bits et moins, et se concentre sur des éléments tels que les effets de trame, les manipulations de palette, le "mode 7" et d'autres caractéristiques des jeux rétro de l'époque, contrairement aux moteurs modernes d'aujourd'hui. Le moteur est multiplateforme et prend pleinement en charge les éléments essentiels modernes tels que l'écran large et les fonctionnalités en ligne. The Taxman et Stealth (Simon Thomley) ont remodelé et remastérisé Sonic the Hedgehog CD (2011) pour Xbox Live Arcade, PlayStation Network, iOS et Android, Sonic the Hedgehog (2013) pour iOS et Android, et Sonic the Hedgehog 2 (2013) pour iOS et Android en utilisant le Retro Engine. Ces nouvelles fonctionnalités pour les jeux comprennent des graphismes améliorés, un affichage sur écran large, 60 fps, des bandes sonores remasterisées, et bien d'autres fonctionnalités.
+      <text lang="fr">Le Retro Engine (actuellement connu sous le nom de Star Engine) est un moteur créé par "The Taxman" (Christian Whitehead). Il est conçu pour offrir les fonctionnalités de l'ère des consoles 32 bits et moins, et se concentre sur des éléments tels que les effets de trame, les manipulations de palette, le "mode 7" et d'autres caractéristiques des jeux rétro de l'époque, contrairement aux moteurs modernes d'aujourd'hui. Le moteur est multiplateforme et prend pleinement en charge les éléments essentiels modernes tels que l'écran large et les fonctionnalités en ligne. The Taxman et Stealth (Simon Thomley) ont remodelé et remastérisé Sonic the Hedgehog CD (2011) pour Xbox Live Arcade, PlayStation Network, iOS et Android, Sonic the Hedgehog (2013) pour iOS et Android, et Sonic the Hedgehog 2 (2013) pour iOS et Android en utilisant le Retro Engine. Ces nouvelles fonctionnalités pour les jeux comprennent des graphismes améliorés, un affichage sur écran large, 60 fps, des bandes sonores remasterisées, et bien d'autres fonctionnalités.
 
 En janvier 2021, 3 jeux basés sur le Retro Engine ont fait l'objet d'une ingénierie inverse. L'utilisateur Rubberduckycooly a publié deux projets sur GitHub : l'un pour Sonic 1 et 2, et l'autre pour Sonic CD. Bien que les binaires soient disponibles gratuitement, le joueur doit toujours obtenir une copie des données du jeu par le biais de sources officielles telles que Google Play, AppStore ou Steam.</text>
-			<text lang="it">Il Retro Engine (attualmente conosciuto come Star Engine) è un motore creato da "The Taxman" (Christian Whitehead). È stato progettato per offrire le caratteristiche dell'era delle console a 32 bit e oltre, e si concentra su aspetti come gli effetti raster, le manipolazioni della tavolozza, il "mode 7" e altre caratteristiche dei giochi retro di allora, a differenza dei motori moderni. Il motore è multipiattaforma e supporta pienamente gli elementi essenziali moderni come il widescreen e la funzionalità online. The Taxman e Stealth (Simon Thomley) hanno rifatto e rimasterizzato Sonic the Hedgehog CD (2011) per Xbox Live Arcade, PlayStation Network, iOS e Android, Sonic the Hedgehog (2013) per iOS e Android e Sonic the Hedgehog 2 (2013) per iOS e Android utilizzando il Retro Engine. Le nuove caratteristiche dei giochi includono grafica aggiornata, visualizzazione widescreen, 60 fps, colonne sonore rimasterizzate e molte altre caratteristiche.
+      <text lang="it">Il Retro Engine (attualmente conosciuto come Star Engine) è un motore creato da "The Taxman" (Christian Whitehead). È stato progettato per offrire le caratteristiche dell'era delle console a 32 bit e oltre, e si concentra su aspetti come gli effetti raster, le manipolazioni della tavolozza, il "mode 7" e altre caratteristiche dei giochi retro di allora, a differenza dei motori moderni. Il motore è multipiattaforma e supporta pienamente gli elementi essenziali moderni come il widescreen e la funzionalità online. The Taxman e Stealth (Simon Thomley) hanno rifatto e rimasterizzato Sonic the Hedgehog CD (2011) per Xbox Live Arcade, PlayStation Network, iOS e Android, Sonic the Hedgehog (2013) per iOS e Android e Sonic the Hedgehog 2 (2013) per iOS e Android utilizzando il Retro Engine. Le nuove caratteristiche dei giochi includono grafica aggiornata, visualizzazione widescreen, 60 fps, colonne sonore rimasterizzate e molte altre caratteristiche.
 
 Nel gennaio 2021, 3 giochi basati su Retro Engine sono stati sottoposti a reverse engineering. L'utente Rubberduckycooly ha pubblicato due progetti su GitHub: uno per Sonic 1 e 2 e l'altro per Sonic CD. Nonostante i binari siano liberamente disponibili, il giocatore deve comunque ottenere una copia dei dati del gioco attraverso fonti ufficiali come Google Play, AppStore o Steam.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

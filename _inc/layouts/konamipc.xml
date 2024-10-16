@@ -1,183 +1,187 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.3 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
-			<pos>0.305 0.45</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>14</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.025 0.45" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.6 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
-			<pos>0.69 0.45</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>-14</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.41 0.45" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<pos>0.499 0.47</pos>
-			<maxSize>0.175</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.184</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-left" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.392 0.48</pos>
-			<maxSize>0.14</maxSize>
-			<rotation>-76</rotation>
-			<storyboard>
-				<animation property="pos" to="0.112 0.48" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-right" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
-			<pos>0.607 0.48</pos>
-			<maxSize>0.14</maxSize>
-			<rotation>76</rotation>
-			<storyboard>
-				<animation property="pos" to="0.327 0.48" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<pos>0.499 0.47</pos>
-			<maxSize>0.162</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.22</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.182</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
-			<pos>0.621 0.47</pos>
-			<maxSize>0.14</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.341 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox3" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
-			<pos>0.38 0.47</pos>
-			<maxSize>0.14</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.1 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2004</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Arcade</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Konami PC</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>Konami PC Based is an arcade board created by Konami intended for arcades .
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-left" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.3 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
+      <pos>0.305 0.45</pos>
+      <minSize>0.1 0.3</minSize>
+      <rotation>14</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.025 0.45" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-right" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.6 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+      <pos>0.69 0.45</pos>
+      <minSize>0.1 0.3</minSize>
+      <rotation>-14</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.41 0.45" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <pos>0.499 0.47</pos>
+      <maxSize>0.175</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.184</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-left" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.392 0.48</pos>
+      <maxSize>0.14</maxSize>
+      <rotation>-76</rotation>
+      <storyboard>
+        <animation property="pos" to="0.112 0.48" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-right" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+      <pos>0.607 0.48</pos>
+      <maxSize>0.14</maxSize>
+      <rotation>76</rotation>
+      <storyboard>
+        <animation property="pos" to="0.327 0.48" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <pos>0.499 0.47</pos>
+      <maxSize>0.162</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.22</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.182</maxSize>
+      <zIndex>26</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+      <pos>0.621 0.47</pos>
+      <maxSize>0.14</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.341 0.47" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox3" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
+      <pos>0.38 0.47</pos>
+      <maxSize>0.14</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.1 0.47" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2004</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Arcade</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Konami PC</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>Konami PC Based is an arcade board created by Konami intended for arcades .
 
 Konami PC Based was launched by Konami in 2004.
 Since it is basically a PC inside an arcade cabinet, the configuration depends a lot on the game it hosts, but it can have an Intel processor and there are also configurations with an AMD processor . At least 15 titles work on this board.</text>
-			<text lang="pl">Konami PC Based to zręcznościowa gra planszowa stworzona przez firmę Konami z myślą o automatach arcade.
+      <text lang="pl">Konami PC Based to zręcznościowa gra planszowa stworzona przez firmę Konami z myślą o automatach arcade.
 
 Konami PC Based została wprowadzona na rynek przez Konami w 2004 roku.
 Ponieważ jest to w zasadzie komputer PC w szafce arcade, konfiguracja zależy w dużej mierze od gry, którą obsługuje, ale może mieć procesor Intel, a są też konfiguracje z procesorem AMD . Na tej płycie działa co najmniej 15 tytułów.</text>
-			<text lang="ru">Konami PC Based - это аркадная плата, созданная компанией Konami и предназначенная для аркадных автоматов. Первая игра была выпущена в 2004 году.
+      <text lang="pt">Konami PC Based é um jogo de arcade de tabuleiro criado pela Konami para fliperamas.
+
+O Konami PC Based foi lançado pela Konami em 2004.
+Como é basicamente um PC dentro de um gabinete de arcade, a configuração depende muito do jogo que ele está executando, mas pode ter um processador Intel e também existem configurações com processador AMD. Pelo menos 15 títulos rodam nessa plataforma.</text>
+      <text lang="ru">Konami PC Based - это аркадная плата, созданная компанией Konami и предназначенная для аркадных автоматов. Первая игра была выпущена в 2004 году.
 
 Поскольку по сути это ПК внутри аркадного автомата, конфигурация во многом зависит от игры, которая на ней установлена, она может иметь процессор Intel, а также есть конфигурации с процессором AMD. На этой плате работает не менее 15 игр.</text>
-			<text lang="es">Konami PC Based es una placa arcade creada por Konami destinada a los salones recreativos .
+      <text lang="es">Konami PC Based es una placa arcade creada por Konami destinada a los salones recreativos .
 
 Konami PC Based fue lanzada por Konami en 2004.
 Al tratarse básicamente de un PC dentro de un mueble arcade, la configuración depende mucho del juego que aloje, pero puede tener procesador Intel y también hay configuraciones con procesador AMD . Al menos 15 títulos funcionan en esta placa.</text>
-			<text lang="de">Konami PC Based ist ein Arcade-Spielbrett, das von Konami für Spielhallen entwickelt wurde.
+      <text lang="de">Konami PC Based ist ein Arcade-Spielbrett, das von Konami für Spielhallen entwickelt wurde.
 
 Konami PC Based wurde von Konami im Jahr 2004 auf den Markt gebracht.
 Da es sich im Grunde um einen PC in einem Spielhallengehäuse handelt, hängt die Konfiguration stark von dem Spiel ab, das darauf läuft, aber es kann einen Intel-Prozessor haben und es gibt auch Konfigurationen mit einem AMD-Prozessor. Mindestens 15 Titel laufen auf diesem Board.</text>
-			<text lang="fr">Konami PC Based est une carte d'arcade créée par Konami et destinée aux salles d'arcade.
+      <text lang="fr">Konami PC Based est une carte d'arcade créée par Konami et destinée aux salles d'arcade.
 
 Konami PC Based a été lancé par Konami en 2004.
 Comme il s'agit en fait d'un PC à l'intérieur d'une borne d'arcade, la configuration dépend beaucoup du jeu qu'elle héberge, mais elle peut avoir un processeur Intel et il y a aussi des configurations avec un processeur AMD. Au moins 15 titres fonctionnent sur cette carte.</text>
-			<text lang="it">Konami PC Based è una scheda arcade creata da Konami e destinata alle sale giochi.
+      <text lang="it">Konami PC Based è una scheda arcade creata da Konami e destinata alle sale giochi.
 
 Konami PC Based è stato lanciato da Konami nel 2004.
 Poiché si tratta fondamentalmente di un PC all'interno di un cabinet arcade, la configurazione dipende molto dal gioco che ospita, ma può avere un processore Intel e ci sono anche configurazioni con un processore AMD. Almeno 15 titoli funzionano su questa scheda.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

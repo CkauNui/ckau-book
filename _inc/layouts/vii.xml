@@ -1,103 +1,109 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.394</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4625</origin>
-			<pos>0.5 0.39</pos>
-			<maxSize>0.38</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.49</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.41</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.394</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4625</origin>
-			<pos>0.5 0.39</pos>
-			<maxSize>0.37</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.48</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.4</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2008</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>KenSingTon</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Vii</text>
-		</text>
-	<!-- Regional consoles/computers -->
-		<text name="TextName" extra="true" region="eu"/>
-		<text name="TextName" extra="true" region="us"/>
-		<text name="TextName" extra="true" region="jp">
-			<text>Sport Vii</text>
-		</text>
-		
-		<text name="TextDesc" extra="true">
-			<text>The Vii (Chinese: 威力棒; pinyin: Wēilì bàng; lit. "Power Stick" or "The Power is Great") is a Shanzhai video game console similar in design to Nintendo's Wii. It was originally released in China in 2007. The Vii was not intended to be a seventh-generation console like the Wii, and was instead part of the dedicated console genre of inexpensive consoles with built-in games.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.394</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4625</origin>
+      <pos>0.5 0.39</pos>
+      <maxSize>0.38</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.49</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.41</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.394</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4625</origin>
+      <pos>0.5 0.39</pos>
+      <maxSize>0.37</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.48</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.4</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2008</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>KenSingTon</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Vii</text>
+    </text>
+    <!-- Regional consoles/computers -->
+    <text name="TextName" extra="true" region="eu"/>
+    <text name="TextName" extra="true" region="us"/>
+    <text name="TextName" extra="true" region="jp">
+      <text>Sport Vii</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Vii (Chinese: 威力棒; pinyin: Wēilì bàng; lit. "Power Stick" or "The Power is Great") is a Shanzhai video game console similar in design to Nintendo's Wii. It was originally released in China in 2007. The Vii was not intended to be a seventh-generation console like the Wii, and was instead part of the dedicated console genre of inexpensive consoles with built-in games.
 
 The Vii's Puppy Rod controller is similar in size and design to the Wii Remote. It features motion detection but not the pointing capability of the Wii Remote. The Vii also comes in three colors: "Arctic White", "Hot Pink" and "Mint Blue".
 A redesign of the console, colloquially called the Vii 2 by bloggers, features remodeled controllers and a design reminiscent of the Nintendo Entertainment System and the PlayStation 3, as well as support for both NTSC and PAL televisions.
 
 In 2008, the Vii was released in Japan under the name V Sports (Sport Vii).</text>
-			<text lang="it">Il Vii (cinese: 威力棒; pinyin: Wēilì bàng; lett. "Bastone del potere" o "Il potere è grande") è una console per videogiochi dal design simile a quello della Nintendo Wii. È stata originariamente rilasciata in Cina nel 2007. Il Vii non era destinato a essere una console di settima generazione come la Wii e faceva invece parte del genere di console dedicate, ovvero console economiche con giochi integrati.
+      <text lang="it">Il Vii (cinese: 威力棒; pinyin: Wēilì bàng; lett. "Bastone del potere" o "Il potere è grande") è una console per videogiochi dal design simile a quello della Nintendo Wii. È stata originariamente rilasciata in Cina nel 2007. Il Vii non era destinato a essere una console di settima generazione come la Wii e faceva invece parte del genere di console dedicate, ovvero console economiche con giochi integrati.
 
 Il controller Puppy Rod del Vii è simile per dimensioni e design al telecomando Wii. È dotato di rilevamento dei movimenti, ma non della capacità di puntamento del telecomando Wii. Il Vii è disponibile in tre colori: "Arctic White", "Hot Pink" e "Mint Blue".
 Una riprogettazione della console, chiamata colloquialmente Vii 2 dai blogger, presenta controller rinnovati e un design che ricorda il Nintendo Entertainment System e la PlayStation 3, oltre al supporto per televisori NTSC e PAL.
 
 Nel 2008, il Vii è stato rilasciato in Giappone con il nome di V Sports (Sport Vii).</text>
-			<text lang="fr">La Vii (chinois : 威力棒 ; pinyin : Wēilì bàng ; lit. "Power Stick" ou "The Power is Great") est une console de jeu vidéo Shanzhai dont le design est similaire à celui de la Wii de Nintendo. Elle a été lancée en Chine en 2007. La Vii n'était pas destinée à être une console de septième génération comme la Wii, et faisait plutôt partie du genre des consoles dédiées, c'est-à-dire des consoles bon marché avec des jeux intégrés.
+      <text lang="fr">La Vii (chinois : 威力棒 ; pinyin : Wēilì bàng ; lit. "Power Stick" ou "The Power is Great") est une console de jeu vidéo Shanzhai dont le design est similaire à celui de la Wii de Nintendo. Elle a été lancée en Chine en 2007. La Vii n'était pas destinée à être une console de septième génération comme la Wii, et faisait plutôt partie du genre des consoles dédiées, c'est-à-dire des consoles bon marché avec des jeux intégrés.
 
 La manette Puppy Rod de la Vii a une taille et un design similaires à ceux de la télécommande Wii. Elle est dotée d'une fonction de détection des mouvements, mais pas de la fonction de pointage de la télécommande Wii. La Vii est également disponible en trois couleurs : "Arctic White", "Hot Pink" et "Mint Blue".
 Une nouvelle version de la console, appelée familièrement Vii 2 par les blogueurs, présente des manettes remodelées et un design rappelant la Nintendo Entertainment System et la PlayStation 3, ainsi qu'une prise en charge des téléviseurs NTSC et PAL.
 
 En 2008, la Vii est sortie au Japon sous le nom de V Sports (Sport Vii).</text>
-			<text lang="de">Der Vii (chinesisch: 威力棒; pinyin: Wēilì bàng; lit. "Power Stick" oder "The Power is Great") ist eine Shanzhai-Videospielkonsole, die in ihrem Design der Wii von Nintendo ähnelt. Sie wurde ursprünglich 2007 in China veröffentlicht. Die Vii war nicht als Konsole der siebten Generation wie die Wii gedacht, sondern gehörte zum Genre der preiswerten Konsolen mit eingebauten Spielen.
+      <text lang="de">Der Vii (chinesisch: 威力棒; pinyin: Wēilì bàng; lit. "Power Stick" oder "The Power is Great") ist eine Shanzhai-Videospielkonsole, die in ihrem Design der Wii von Nintendo ähnelt. Sie wurde ursprünglich 2007 in China veröffentlicht. Die Vii war nicht als Konsole der siebten Generation wie die Wii gedacht, sondern gehörte zum Genre der preiswerten Konsolen mit eingebauten Spielen.
 
 Der Puppy Rod-Controller der Vii ist in Größe und Design der Wii-Fernbedienung ähnlich. Er verfügt über eine Bewegungserkennung, aber nicht über die Zeigefunktion der Wii-Fernbedienung. Die Vii ist außerdem in drei Farben erhältlich: "Arctic White", "Hot Pink" und "Mint Blue".
 Ein Redesign der Konsole, von Bloggern umgangssprachlich Vii 2 genannt, bietet überarbeitete Controller und ein Design, das an das Nintendo Entertainment System und die PlayStation 3 erinnert, sowie Unterstützung für NTSC- und PAL-Fernseher.
 
 Im Jahr 2008 wurde der Vii in Japan unter dem Namen V Sports (Sport Vii) veröffentlicht.</text>
-			<text lang="es">La Vii (en chino: 威力棒; pinyin: Wēilì bàng; lit. "Power Stick" o "El poder es grande") es una videoconsola de Shanzhai similar en diseño a la Wii de Nintendo. Salió a la venta en China en 2007. La Vii no pretendía ser una consola de séptima generación como la Wii, sino que formaba parte del género de consolas dedicadas de bajo coste con juegos incorporados.
+      <text lang="es">La Vii (en chino: 威力棒; pinyin: Wēilì bàng; lit. "Power Stick" o "El poder es grande") es una videoconsola de Shanzhai similar en diseño a la Wii de Nintendo. Salió a la venta en China en 2007. La Vii no pretendía ser una consola de séptima generación como la Wii, sino que formaba parte del género de consolas dedicadas de bajo coste con juegos incorporados.
 
 El mando Puppy Rod de la Vii es similar en tamaño y diseño al mando de Wii. Cuenta con detección de movimiento, pero no con la capacidad de apuntar del mando de Wii. La Vii también está disponible en tres colores: "Arctic White", "Hot Pink" y "Mint Blue".
 Un rediseño de la consola, coloquialmente llamada Vii 2 por los blogueros, presenta mandos remodelados y un diseño que recuerda a la Nintendo Entertainment System y la PlayStation 3, así como compatibilidad con televisores NTSC y PAL.
 
 En 2008, la Vii salió a la venta en Japón con el nombre de V Sports (Sport Vii).</text>
-			<text lang="ru">Vii (китайский: 威力棒; пиньинь: Wēilì bàng; букв. "Силовая палка" или "Сила велика") - игровая приставка Shanzhai, аналогичная по дизайну Wii от Nintendo. Первоначально она была выпущена в Китае в 2007 году. Vii не задумывалась как консоль седьмого поколения, как Wii, а относилась к жанру специализированных консолей - недорогих приставок со встроенными играми.
+      <text lang="ru">Vii (китайский: 威力棒; пиньинь: Wēilì bàng; букв. "Силовая палка" или "Сила велика") - игровая приставка Shanzhai, аналогичная по дизайну Wii от Nintendo. Первоначально она была выпущена в Китае в 2007 году. Vii не задумывалась как консоль седьмого поколения, как Wii, а относилась к жанру специализированных консолей - недорогих приставок со встроенными играми.
 
 Контроллер Vii по размеру и дизайну напоминает пульт Wii Remote. Он распознает движения, но не имеет возможности наведения, как Wii Remote. Vii также выпускается в трех цветах: "Arctic White", "Hot Pink" и "Mint Blue".
 Новая версия консоли, которую блоггеры в шутку называют Vii 2, отличается измененными контроллерами и дизайном, напоминающим Nintendo Entertainment System и PlayStation 3, а также поддержкой телевизоров NTSC и PAL.
 
 В 2008 г. Vii была выпущена в Японии под названием V Sports (Sport Vii).</text>
-			<text lang="pl">Vii (chiński: 威力棒; pinyin: Wēilì bàng; lit. "Power Stick" lub "The Power is Great") to konsola do gier wideo Shanzhai podobna w konstrukcji do Wii firmy Nintendo. Pierwotnie została wydana w Chinach w 2007 roku. Vii nie miała być konsolą siódmej generacji, jak Wii, a zamiast tego była częścią dedykowanego gatunku niedrogich konsol z wbudowanymi grami.
+      <text lang="pl">Vii (chiński: 威力棒; pinyin: Wēilì bàng; lit. "Power Stick" lub "The Power is Great") to konsola do gier wideo Shanzhai podobna w konstrukcji do Wii firmy Nintendo. Pierwotnie została wydana w Chinach w 2007 roku. Vii nie miała być konsolą siódmej generacji, jak Wii, a zamiast tego była częścią dedykowanego gatunku niedrogich konsol z wbudowanymi grami.
 
 Kontroler Puppy Rod w Vii ma podobny rozmiar i konstrukcję do Wii Remote. Posiada funkcję wykrywania ruchu, ale nie ma możliwości wskazywania, jak Wii Remote. Vii jest również dostępna w trzech kolorach: "Arctic White", "Hot Pink" i "Mint Blue".
 Przeprojektowana konsola, potocznie nazywana przez blogerów Vii 2, posiada zmodernizowane kontrolery i wygląd przypominający Nintendo Entertainment System i PlayStation 3, a także wsparcie dla telewizorów NTSC i PAL.
 
 W 2008 roku Vii został wydany w Japonii pod nazwą V Sports (Sport Vii).</text>
-		</text>
-	</view>
+      <text lang="pt">Vii (chinês: 威力棒; pinyin: Wēilì bàng; lit. "Power Stick" ou "O Poder é Grande") é um console de videogame Shanzhai semelhante em construção ao Wii da Nintendo. Foi inicialmente lançado na China em 2007. A Vii não pretendia ser um console de sétima geração, como o Wii, e, em vez disso, fazia parte de um gênero dedicado de consoles baratos com jogos embutidos.
+
+O controle Puppy Rod na Vii tem tamanho e construção semelhantes ao Wii Remote. Possui função de detecção de movimento, mas não tem capacidade de apontar como o Wii Remote. A Vii também está disponível em três cores: "Arctic White", "Hot Pink" e "Mint Blue".
+
+Um console redesenhado, popularmente conhecido pelos blogueiros como Vii 2, possui controles modernizados e uma aparência que lembra o Nintendo Entertainment System e o PlayStation 3, além de suporte para televisores NTSC e PAL.
+
+Em 2008, a Vii foi lançada no Japão sob o nome de V Sports (Sport Vii).</text>
+    </text>
+  </view>
 </theme>

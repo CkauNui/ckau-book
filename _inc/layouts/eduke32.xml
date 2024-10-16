@@ -1,68 +1,71 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.455</origin>
-			<origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
-			<pos>0.432 0.45</pos>
-			<maxSize>0.27</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.152 0.45" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.455</origin>
-			<origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
-			<pos>0.432 0.45</pos>
-			<maxSize>0.25</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.152 0.45" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2015</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>EDuke32</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>EDuke32 is an awesome, free homebrew game engine and source port of the classic PC first person shooter Duke Nukem 3D— Duke3D for short—to Windows, Linux, Mac OS X, FreeBSD, several handhelds, your family toaster, and to your girlfriend's vibrator. Thousands of cool and useful features and upgrades for regular players and additional editing capabilities and scripting extensions for homebrew developers and mod creators have beem added. EDuke32 is open source software that is completely free to use for all non-commercial purposes.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.455</origin>
+      <origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
+      <pos>0.432 0.45</pos>
+      <maxSize>0.27</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.152 0.45" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.455</origin>
+      <origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
+      <pos>0.432 0.45</pos>
+      <maxSize>0.25</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.152 0.45" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2015</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>EDuke32</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>EDuke32 is an awesome, free homebrew game engine and source port of the classic PC first person shooter Duke Nukem 3D— Duke3D for short—to Windows, Linux, Mac OS X, FreeBSD, several handhelds, your family toaster, and to your girlfriend's vibrator. Thousands of cool and useful features and upgrades for regular players and additional editing capabilities and scripting extensions for homebrew developers and mod creators have beem added. EDuke32 is open source software that is completely free to use for all non-commercial purposes.
 
 Created by Duke4.net community leader Richard "TerminX" Gobeille and a team of elite ninja programmers including Pierre-Loup "Plagman" Griffais, Philipp "Helixhorned" Kutin, and Evan "Hendricks266" Ramos (based on work by Todd Replogle/Ken Silverman/Jonathon Fowler/Matt Saettler), EDuke32 is the undeniable king of Duke Nukem 3D ports.</text>
-			<text lang="pl">EDuke32 jest wspaniałym, darmowym silnikiem gry homebrew i portem źródłowym klasycznej pecetowej strzelanki z perspektywy pierwszej osoby Duke Nukem 3D - w skrócie Duke3D - na Windows, Linux, Mac OS X, FreeBSD, kilka handheldów, twój rodzinny toster i na wibrator twojej dziewczyny. Dodano tysiące fajnych i przydatnych funkcji i ulepszeń dla zwykłych graczy oraz dodatkowe możliwości edycji i rozszerzenia skryptów dla twórców homebrew i modów. EDuke32 jest oprogramowaniem open source, które można używać całkowicie za darmo do wszystkich niekomercyjnych celów.
+      <text lang="pl">EDuke32 jest wspaniałym, darmowym silnikiem gry homebrew i portem źródłowym klasycznej pecetowej strzelanki z perspektywy pierwszej osoby Duke Nukem 3D - w skrócie Duke3D - na Windows, Linux, Mac OS X, FreeBSD, kilka handheldów, twój rodzinny toster i na wibrator twojej dziewczyny. Dodano tysiące fajnych i przydatnych funkcji i ulepszeń dla zwykłych graczy oraz dodatkowe możliwości edycji i rozszerzenia skryptów dla twórców homebrew i modów. EDuke32 jest oprogramowaniem open source, które można używać całkowicie za darmo do wszystkich niekomercyjnych celów.
 
 Stworzony przez lidera społeczności Duke4.net, Richarda "TerminX" Gobeille, oraz zespół elitarnych programistów ninja, w tym Pierre-Loup "Plagman" Griffais, Philipp "Helixhorned" Kutin, oraz Evan "Hendricks266" Ramos (na podstawie prac Todda Replogle'a/Kena Silvermana/Jonathona Fowlera/Matta Saettlera), EDuke32 jest niezaprzeczalnym królem portów Duke Nukem 3d</text>
-			<text lang="ru">EDuke32 - это потрясающий, бесплатный игровой движок и порт классического шутера от первого лица Duke Nukem 3D - Duke3D для краткости - на Windows, Linux, Mac OS X, FreeBSD, несколько карманных компьютеров, ваш семейный тостер и вибратор вашей девушки. Мы добавили тысячи классных и полезных функций и обновлений для обычных игроков и дополнительные возможности редактирования и скриптовые расширения для разработчиков домашних игр и создателей модов. EDuke32 - это программное обеспечение с открытым исходным кодом, которое можно использовать совершенно бесплатно в любых некоммерческих целях.
+      <text lang="pt">EDuke32 é um fantástico e gratuito motor de jogo homebrew e um port de código-fonte da clássica  "first-person shooter" para PC Duke Nukem 3D - resumidamente Duke3D - para Windows, Linux, Mac OS X, FreeBSD, vários handhelds, seu tostadora doméstico e o vibrador da sua namorada. Foram adicionados milhares de recursos legais e úteis para jogadores comuns, além de recursos adicionais de edição e expansão de scripts para criadores de homebrew e mods. EDuke32 é um software de código aberto que pode ser usado totalmente de graça para todos os fins não comerciais.
+
+Criado pelo líder da comunidade Duke4.net, Richard "TerminX" Gobeille, e uma equipe de programadores ninja de elite, incluindo Pierre-Loup "Plagman" Griffais, Philipp "Helixhorned" Kutin e Evan "Hendricks266" Ramos (com base no trabalho de Todd Replogle/Ken Silverman/Jonathan Fowler/Matt Saettler), EDuke32 é o inegável rei dos ports de Duke Nukem 3d.</text>
+      <text lang="ru">EDuke32 - это потрясающий, бесплатный игровой движок и порт классического шутера от первого лица Duke Nukem 3D - Duke3D для краткости - на Windows, Linux, Mac OS X, FreeBSD, несколько карманных компьютеров, ваш семейный тостер и вибратор вашей девушки. Мы добавили тысячи классных и полезных функций и обновлений для обычных игроков и дополнительные возможности редактирования и скриптовые расширения для разработчиков домашних игр и создателей модов. EDuke32 - это программное обеспечение с открытым исходным кодом, которое можно использовать совершенно бесплатно в любых некоммерческих целях.
 
 Созданный лидером сообщества Duke4.net Ричардом "TerminX" Гобелем и командой элитных программистов-ниндзя, включая Пьера-Лупа "Plagman" Гриффа, Филиппа "Helixhorned" Кутина и Эвана "Hendricks266" Рамоса (на основе работ Тодда Реплогла/Кена Сильвермана/Джонатона Фаулера/Мэтта Саеттлера), EDuke32 является неоспоримым королем портов Duke Nukem 3D.</text>
-			<text lang="es">EDuke32 es un impresionante motor de juego casero gratuito y un port del clásico shooter en primera persona para PC Duke Nukem 3D -Duke3D para abreviar- a Windows, Linux, Mac OS X, FreeBSD, varios dispositivos portátiles, la tostadora de tu familia y el vibrador de tu novia. Se han añadido miles de funciones y mejoras interesantes y útiles para los jugadores habituales, así como capacidades de edición adicionales y extensiones de secuencias de comandos para desarrolladores caseros y creadores de mods. EDuke32 es un software de código abierto totalmente gratuito para todos los fines no comerciales.
+      <text lang="es">EDuke32 es un impresionante motor de juego casero gratuito y un port del clásico shooter en primera persona para PC Duke Nukem 3D -Duke3D para abreviar- a Windows, Linux, Mac OS X, FreeBSD, varios dispositivos portátiles, la tostadora de tu familia y el vibrador de tu novia. Se han añadido miles de funciones y mejoras interesantes y útiles para los jugadores habituales, así como capacidades de edición adicionales y extensiones de secuencias de comandos para desarrolladores caseros y creadores de mods. EDuke32 es un software de código abierto totalmente gratuito para todos los fines no comerciales.
 
 Creado por Richard "TerminX" Gobeille, líder de la comunidad Duke4.net, y un equipo de programadores ninja de élite entre los que se encuentran Pierre-Loup "Plagman" Griffais, Philipp "Helixhorned" Kutin y Evan "Hendricks266" Ramos (basado en el trabajo de Todd Replogle/Ken Silverman/Jonathon Fowler/Matt Saettler), EDuke32 es el rey indiscutible de los ports de Duke Nukem 3D.</text>
-			<text lang="de">EDuke32 ist eine fantastische, kostenlose Homebrew-Spielengine und Source-Portierung des klassischen PC-Ego-Shooters Duke Nukem 3D - kurz Duke3D - für Windows, Linux, Mac OS X, FreeBSD, verschiedene Handhelds, den Toaster der Familie und den Vibrator der Freundin. Tausende von coolen und nützlichen Features und Upgrades für normale Spieler und zusätzliche Bearbeitungsmöglichkeiten und Skripterweiterungen für Homebrew-Entwickler und Mod-Ersteller wurden hinzugefügt. EDuke32 ist eine Open-Source-Software, die für alle nicht-kommerziellen Zwecke völlig kostenlos genutzt werden kann.
+      <text lang="de">EDuke32 ist eine fantastische, kostenlose Homebrew-Spielengine und Source-Portierung des klassischen PC-Ego-Shooters Duke Nukem 3D - kurz Duke3D - für Windows, Linux, Mac OS X, FreeBSD, verschiedene Handhelds, den Toaster der Familie und den Vibrator der Freundin. Tausende von coolen und nützlichen Features und Upgrades für normale Spieler und zusätzliche Bearbeitungsmöglichkeiten und Skripterweiterungen für Homebrew-Entwickler und Mod-Ersteller wurden hinzugefügt. EDuke32 ist eine Open-Source-Software, die für alle nicht-kommerziellen Zwecke völlig kostenlos genutzt werden kann.
 
 EDuke32 wurde von Richard "TerminX" Gobeille, dem Leiter der Duke4.net-Community, und einem Team von Elite-Ninja-Programmierern wie Pierre-Loup "Plagman" Griffais, Philipp "Helixhorned" Kutin und Evan "Hendricks266" Ramos (basierend auf der Arbeit von Todd Replogle/Ken Silverman/Jonathon Fowler/Matt Saettler) entwickelt und ist der unbestrittene König der Duke Nukem 3D-Portierungen.</text>
-			<text lang="fr">EDuke32 est un moteur de jeu homebrew gratuit et un portage source du jeu de tir à la première personne Duke Nukem 3D (Duke3D) sur Windows, Linux, Mac OS X, FreeBSD, plusieurs ordinateurs de poche, le grille-pain familial et le vibromasseur de votre petite amie. Des milliers de fonctionnalités et d'améliorations intéressantes et utiles pour les joueurs réguliers, ainsi que des capacités d'édition supplémentaires et des extensions de script pour les développeurs de homebrew et les créateurs de mods ont été ajoutées. EDuke32 est un logiciel open source dont l'utilisation est entièrement gratuite à des fins non commerciales.
+      <text lang="fr">EDuke32 est un moteur de jeu homebrew gratuit et un portage source du jeu de tir à la première personne Duke Nukem 3D (Duke3D) sur Windows, Linux, Mac OS X, FreeBSD, plusieurs ordinateurs de poche, le grille-pain familial et le vibromasseur de votre petite amie. Des milliers de fonctionnalités et d'améliorations intéressantes et utiles pour les joueurs réguliers, ainsi que des capacités d'édition supplémentaires et des extensions de script pour les développeurs de homebrew et les créateurs de mods ont été ajoutées. EDuke32 est un logiciel open source dont l'utilisation est entièrement gratuite à des fins non commerciales.
 
 Créé par Richard "TerminX" Gobeille, leader de la communauté Duke4.net, et une équipe de programmeurs ninja d'élite comprenant Pierre-Loup "Plagman" Griffais, Philipp "Helixhorned" Kutin et Evan "Hendricks266" Ramos (sur la base du travail de Todd Replogle/Ken Silverman/Jonathon Fowler/Matt Saettler), EDuke32 est le roi incontestable des portages de Duke Nukem 3D.</text>
-			<text lang="it">EDuke32 è un fantastico motore di gioco homebrew gratuito e un port sorgente del classico sparatutto in prima persona per PC Duke Nukem 3D - Duke3D per brevità - su Windows, Linux, Mac OS X, FreeBSD, diversi palmari, il tostapane di famiglia e il vibratore della vostra ragazza. Sono stati aggiunti migliaia di funzioni e aggiornamenti utili e interessanti per i giocatori abituali e ulteriori capacità di editing ed estensioni di scripting per gli sviluppatori di homebrew e i creatori di mod. EDuke32 è un software open source completamente libero di essere utilizzato per tutti gli scopi non commerciali.
+      <text lang="it">EDuke32 è un fantastico motore di gioco homebrew gratuito e un port sorgente del classico sparatutto in prima persona per PC Duke Nukem 3D - Duke3D per brevità - su Windows, Linux, Mac OS X, FreeBSD, diversi palmari, il tostapane di famiglia e il vibratore della vostra ragazza. Sono stati aggiunti migliaia di funzioni e aggiornamenti utili e interessanti per i giocatori abituali e ulteriori capacità di editing ed estensioni di scripting per gli sviluppatori di homebrew e i creatori di mod. EDuke32 è un software open source completamente libero di essere utilizzato per tutti gli scopi non commerciali.
 
 Creato dal leader della comunità Duke4.net Richard "TerminX" Gobeille e da un team di programmatori ninja d'élite, tra cui Pierre-Loup "Plagman" Griffais, Philipp "Helixhorned" Kutin e Evan "Hendricks266" Ramos (sulla base del lavoro di Todd Replogle/Ken Silverman/Jonathon Fowler/Matt Saettler), EDuke32 è l'indiscutibile re dei port di Duke Nukem 3D.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

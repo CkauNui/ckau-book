@@ -1,66 +1,69 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.364</pos>
-			<maxSize>0.34</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.364" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.364</pos>
-			<maxSize>0.33</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.364" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1998</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Plug &amp; Play TV Games</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>TV game (TV game for short) or plug and play game (plug-'n'-play game for short) is an interactive entertainment device designed for use on a television set that integrates the video game console with the game controller.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.5 0.364</pos>
+      <maxSize>0.34</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.364" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.5 0.364</pos>
+      <maxSize>0.33</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.364" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1998</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Plug &amp; Play TV Games</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>TV game (TV game for short) or plug and play game (plug-'n'-play game for short) is an interactive entertainment device designed for use on a television set that integrates the video game console with the game controller.
 
 The term "TV game" can be used to refer to any number of self-contained, portable game systems operating on either batteries or an electronic power supply which plugs directly into a TV or VCR. The game software is built directly into the unit, which is typically designed to look like a toy or classic game console/controller with the addition of two AV ports. These systems usually contain either highly specialized games or activities, or a collection of classic games. Thus, it could be viewed as a video game console without interchangeable game software. As the game software is integrated into the game unit and almost never designed to be changed by the user, these game systems are typically sold by retailers as electronic toys or collectibles rather than game consoles.</text>
-			<text lang="pl">Gra plug and play (w skrócie gra plug-'n'-play) to interaktywne urządzenie rozrywkowe przeznaczone do użytku na telewizorze, które integruje konsolę do gier wideo z kontrolerem gry.
+      <text lang="pl">Gra plug and play (w skrócie gra plug-'n'-play) to interaktywne urządzenie rozrywkowe przeznaczone do użytku na telewizorze, które integruje konsolę do gier wideo z kontrolerem gry.
 
 Termin "gra telewizyjna" może być stosowany w odniesieniu do dowolnej liczby niezależnych, przenośnych systemów gier działających na baterie lub zasilanie elektroniczne, które podłącza się bezpośrednio do telewizora lub magnetowidu. Oprogramowanie gry jest wbudowane bezpośrednio w jednostkę, która jest zazwyczaj zaprojektowana tak, aby wyglądała jak zabawka lub klasyczna konsola/kontroler do gier z dodatkiem dwóch portów AV. Systemy te zazwyczaj zawierają albo wysoce wyspecjalizowane gry lub zajęcia, albo kolekcję klasycznych gier. Można je zatem postrzegać jako konsolę do gier wideo bez wymiennego oprogramowania do gier. Ponieważ oprogramowanie do gier jest zintegrowane z jednostką gry i prawie nigdy nie jest przeznaczone do zmiany przez użytkownika, te systemy gier są zazwyczaj sprzedawane przez sprzedawców detalicznych raczej jako elektroniczne zabawki lub przedmioty kolekcjonerskie niż jako konsole do gier.</text>
-			<text lang="ru">Специальное устройство «все в одном», обычно работающее от батарей, которое подключается непосредственно к телевизору. Основным их производителем является Jakks Pacific, хотя они также производятся такими компаниями, как Radica, Tiger Electronics, Majesco и Techno Source.</text>
-			<text lang="es">El juego de televisión (juego de televisión para abreviar) o juego plug and play (juego plug-'n'-play para abreviar) es un dispositivo de entretenimiento interactivo diseñado para su uso en un televisor que integra la consola de videojuegos con el mando de juego.
+      <text lang="pt">Jogo plug and play (abreviado como jogo plug-'n'-play) é um dispositivo interativo de entretenimento projetado para uso em televisores, que integra um console de videogame com um controle.
+
+O termo "jogo de televisão" pode ser usado para se referir a qualquer número de sistemas de jogos independentes e portáteis que funcionam a bateria ou energia eletrônica, os quais se conectam diretamente à televisão ou videocassete. O software do jogo é embutido diretamente na unidade, que geralmente é projetada para parecer um brinquedo ou um console/controle clássico de jogos com a adição de duas portas AV. Esses sistemas geralmente incluem jogos ou atividades altamente especializados, ou uma coleção de jogos clássicos. Portanto, podem ser vistos como um console de videogame sem software de jogo intercambiável. Como o software de jogo é integrado à unidade de jogo e quase nunca é destinado a ser modificado pelo usuário, esses sistemas de jogos são normalmente vendidos por varejistas como brinquedos eletrônicos ou itens colecionáveis, em vez de consoles de jogos.</text>
+      <text lang="ru">Специальное устройство «все в одном», обычно работающее от батарей, которое подключается непосредственно к телевизору. Основным их производителем является Jakks Pacific, хотя они также производятся такими компаниями, как Radica, Tiger Electronics, Majesco и Techno Source.</text>
+      <text lang="es">El juego de televisión (juego de televisión para abreviar) o juego plug and play (juego plug-'n'-play para abreviar) es un dispositivo de entretenimiento interactivo diseñado para su uso en un televisor que integra la consola de videojuegos con el mando de juego.
 
 El término "juego de televisión" puede utilizarse para referirse a cualquier número de sistemas de juego autónomos y portátiles que funcionan con pilas o con una fuente de alimentación electrónica que se conecta directamente a un televisor o vídeo. El software del juego está integrado directamente en la unidad, que suele estar diseñada para parecerse a un juguete o a una consola/controlador de juegos clásicos con la adición de dos puertos AV. Estos sistemas suelen contener juegos o actividades muy especializados, o una colección de juegos clásicos. Por tanto, podría considerarse una videoconsola sin software de juego intercambiable. Como el software del juego está integrado en la unidad de juego y casi nunca está diseñado para ser cambiado por el usuario, estos sistemas de juego suelen ser vendidos por los minoristas como juguetes electrónicos o artículos de colección en lugar de consolas de juegos.</text>
-			<text lang="de">TV-Spiel (kurz TV-Spiel) oder Plug-and-Play-Spiel (kurz Plug-'n'-Play-Spiel) ist ein interaktives Unterhaltungsgerät, das für die Verwendung auf einem Fernsehgerät konzipiert ist und die Videospielkonsole mit dem Spielcontroller integriert.
+      <text lang="de">TV-Spiel (kurz TV-Spiel) oder Plug-and-Play-Spiel (kurz Plug-'n'-Play-Spiel) ist ein interaktives Unterhaltungsgerät, das für die Verwendung auf einem Fernsehgerät konzipiert ist und die Videospielkonsole mit dem Spielcontroller integriert.
 
 Der Begriff "TV-Spiel" kann sich auf eine beliebige Anzahl von eigenständigen, tragbaren Spielsystemen beziehen, die entweder mit Batterien oder einem elektronischen Netzteil betrieben werden, das direkt an einen Fernseher oder Videorecorder angeschlossen wird. Die Spielesoftware ist direkt in das Gerät integriert, das in der Regel wie ein Spielzeug oder eine klassische Spielkonsole/ein klassischer Spielcontroller aussieht und zusätzlich über zwei AV-Anschlüsse verfügt. Diese Systeme enthalten in der Regel entweder hochspezialisierte Spiele oder Aktivitäten oder eine Sammlung von klassischen Spielen. Man könnte sie also als Videospielkonsole ohne austauschbare Spielesoftware betrachten. Da die Spielesoftware in die Spieleinheit integriert ist und fast nie vom Benutzer geändert werden kann, werden diese Spielesysteme von den Einzelhändlern in der Regel als elektronisches Spielzeug oder Sammlerstücke und nicht als Spielkonsolen verkauft.</text>
-			<text lang="fr">Le jeu TV (TV game en abrégé) ou jeu plug and play (plug-'n'-play game en abrégé) est un appareil de divertissement interactif conçu pour être utilisé sur un téléviseur et qui intègre la console de jeu vidéo et la manette de jeu.
+      <text lang="fr">Le jeu TV (TV game en abrégé) ou jeu plug and play (plug-'n'-play game en abrégé) est un appareil de divertissement interactif conçu pour être utilisé sur un téléviseur et qui intègre la console de jeu vidéo et la manette de jeu.
 
 Le terme "jeu télévisé" peut être utilisé pour désigner un certain nombre de systèmes de jeu autonomes et portables fonctionnant soit avec des piles, soit avec une alimentation électronique qui se branche directement sur un téléviseur ou un magnétoscope. Le logiciel de jeu est intégré directement dans l'unité, qui est généralement conçue pour ressembler à un jouet ou à une console/contrôleur de jeu classique, avec l'ajout de deux ports AV. Ces systèmes contiennent généralement des jeux ou des activités très spécialisés, ou une collection de jeux classiques. Ils peuvent donc être considérés comme des consoles de jeux vidéo sans logiciel de jeu interchangeable. Comme le logiciel de jeu est intégré dans l'unité de jeu et n'est presque jamais conçu pour être modifié par l'utilisateur, ces systèmes de jeu sont généralement vendus par les détaillants comme des jouets électroniques ou des objets de collection plutôt que comme des consoles de jeu.</text>
-			<text lang="it">Il gioco televisivo (in breve TV game) o gioco plug and play (in breve plug-'n'-play game) è un dispositivo di intrattenimento interattivo progettato per essere utilizzato su un televisore che integra la console per videogiochi con il controller di gioco.
+      <text lang="it">Il gioco televisivo (in breve TV game) o gioco plug and play (in breve plug-'n'-play game) è un dispositivo di intrattenimento interattivo progettato per essere utilizzato su un televisore che integra la console per videogiochi con il controller di gioco.
 
 Il termine "gioco televisivo" può essere utilizzato per indicare un numero qualsiasi di sistemi di gioco portatili e autonomi che funzionano a batterie o con un alimentatore elettronico che si collega direttamente a un televisore o a un videoregistratore. Il software di gioco è incorporato direttamente nell'unità, che in genere è progettata per assomigliare a una console/controller giocattolo o a un gioco classico, con l'aggiunta di due porte AV. Questi sistemi di solito contengono giochi o attività altamente specializzate, oppure una collezione di giochi classici. Pertanto, possono essere considerati come una console per videogiochi senza software di gioco intercambiabile. Poiché il software di gioco è integrato nell'unità di gioco e non è quasi mai progettato per essere modificato dall'utente, questi sistemi di gioco sono in genere venduti dai rivenditori come giocattoli elettronici o oggetti da collezione piuttosto che come console di gioco.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

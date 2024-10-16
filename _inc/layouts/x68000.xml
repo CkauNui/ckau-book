@@ -1,71 +1,74 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.29</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
-			<pos>0.5 0.35</pos>
-			<maxSize>0.25</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.29</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
-			<pos>0.5 0.35</pos>
-			<maxSize>0.24</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1987</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Sharp</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>X68000</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The X68000 (Japanese: エックス ろくまんはっせん, Hepburn: Ekkusu Rokuman Hassen) is a home computer created by Sharp Corporation, first released in 1987, sold only in Japan.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.29</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+      <pos>0.5 0.35</pos>
+      <maxSize>0.25</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.29</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+      <pos>0.5 0.35</pos>
+      <maxSize>0.24</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1987</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Sharp</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>X68000</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The X68000 (Japanese: エックス ろくまんはっせん, Hepburn: Ekkusu Rokuman Hassen) is a home computer created by Sharp Corporation, first released in 1987, sold only in Japan.
 
 The first model features a 10 MHz Motorola 68000 CPU (hence the name), 1 MB of RAM, and no hard drive; the last model was released in 1993 with a 25 MHz Motorola 68030 CPU, 4 MB of RAM, and optional 80 MB SCSI hard drive. RAM in these systems is expandable to 12 MB, though most games and applications do not require more than 2 MB.</text>
-			<text lang="pl">X68000 ( Japoński: エックス ろくまんはっせん, Hepburn: Ekkusu Rokuman Hassen) to komputer domowy stworzony przez Sharp Corporation, po raz pierwszy wprowadzony na rynek w 1987 roku, sprzedawany tylko w Japonii.
+      <text lang="pl">X68000 ( Japoński: エックス ろくまんはっせん, Hepburn: Ekkusu Rokuman Hassen) to komputer domowy stworzony przez Sharp Corporation, po raz pierwszy wprowadzony na rynek w 1987 roku, sprzedawany tylko w Japonii.
 
 Pierwszy model wyposażony jest w procesor Motorola 68000 10 MHz (stąd nazwa), 1 MB pamięci RAM i nie posiada dysku twardego; ostatni model został wydany w 1993 roku z procesorem Motorola 68030 25 MHz, 4 MB pamięci RAM i opcjonalnym dyskiem twardym 80 MB SCSI. Pamięć RAM w tych systemach można rozszerzyć do 12 MB, choć większość gier i aplikacji nie wymaga więcej niż 2 MB.</text>
-			<text lang="ru">Серия бытовых компьютеров, выпускавшихся в Японии компанией Sharp Corporation. В других странах эти компьютеры не продавались. Первая модель была выпущена в 1987 году. Она имела процессор Motorola 68000 на частоте 10 МГц, 1 мегабайт ОЗУ, и не имела жёсткого диска. Последняя модель выпущена в 1993 году, она использовала процессор Motorola 68030 на частоте 25 МГц, имела 4 мегабайта ОЗУ, и опциональный жёсткий диск стандарта SCSI объёмом 80 МБ. ОЗУ этих компьютеров могло быть расширено до 12 мегабайт, однако большинство приложений и игр требовали для своей работы не более 2 МБ ОЗУ.
+      <text lang="pt">X68000 (Japonês: エックス ろくまんはっせん, Hepburn: Ekkusu Rokuman Hassen) é um computador doméstico criado pela Sharp Corporation, lançado pela primeira vez em 1987, vendido apenas no Japão.
+
+O primeiro modelo é equipado com um processador Motorola 68000 de 10 MHz (daí o nome), 1 MB de RAM e não possui disco rígido; o último modelo foi lançado em 1993 com um processador Motorola 68030 de 25 MHz, 4 MB de RAM e disco rígido SCSI de 80 MB opcional. A RAM nesses sistemas pode ser expandida para 12 MB, embora a maioria dos jogos e aplicativos não exija mais do que 2 MB.</text>
+      <text lang="ru">Серия бытовых компьютеров, выпускавшихся в Японии компанией Sharp Corporation. В других странах эти компьютеры не продавались. Первая модель была выпущена в 1987 году. Она имела процессор Motorola 68000 на частоте 10 МГц, 1 мегабайт ОЗУ, и не имела жёсткого диска. Последняя модель выпущена в 1993 году, она использовала процессор Motorola 68030 на частоте 25 МГц, имела 4 мегабайта ОЗУ, и опциональный жёсткий диск стандарта SCSI объёмом 80 МБ. ОЗУ этих компьютеров могло быть расширено до 12 мегабайт, однако большинство приложений и игр требовали для своей работы не более 2 МБ ОЗУ.
 
 Компьютер X68000 работают под управлением операционной системы Human68K, разработанной для Sharp компанией Hudson Soft. Она имеет интерфейс командной строки, и набор команд, очень похожий на набор команд ОС DOS (вводятся английскими буквами). Было выпущено три версии этой ОС, с несколькими промежуточными обновлениями между ними. Помимо Human68K, было возможно использование специальных версий NetBSD для X68030 и OS-9.</text>
-			<text lang="es">El X68000 (japonés: エックス ろくまんはっせん, Hepburn: Ekkusu Rokuman Hassen) es un ordenador doméstico creado por Sharp Corporation, lanzado por primera vez en 1987 y vendido sólo en Japón.
+      <text lang="es">El X68000 (japonés: エックス ろくまんはっせん, Hepburn: Ekkusu Rokuman Hassen) es un ordenador doméstico creado por Sharp Corporation, lanzado por primera vez en 1987 y vendido sólo en Japón.
 
 El primer modelo cuenta con una CPU Motorola 68000 a 10 MHz (de ahí el nombre), 1 MB de RAM y sin disco duro; el último modelo salió a la venta en 1993 con una CPU Motorola 68030 a 25 MHz, 4 MB de RAM y disco duro SCSI opcional de 80 MB. La RAM de estos sistemas se puede ampliar hasta 12 MB, aunque la mayoría de los juegos y aplicaciones no requieren más de 2 MB.</text>
-			<text lang="de">Der X68000 (japanisch: エックス ろくまんはっせん, Hepburn: Ekkusu Rokuman Hassen) ist ein von der Sharp Corporation entwickelter Heimcomputer, der erstmals 1987 veröffentlicht und nur in Japan verkauft wurde.
+      <text lang="de">Der X68000 (japanisch: エックス ろくまんはっせん, Hepburn: Ekkusu Rokuman Hassen) ist ein von der Sharp Corporation entwickelter Heimcomputer, der erstmals 1987 veröffentlicht und nur in Japan verkauft wurde.
 
 Das erste Modell verfügt über eine 10-MHz-Motorola-68000-CPU (daher der Name), 1 MB RAM und keine Festplatte; das letzte Modell wurde 1993 mit einer 25-MHz-Motorola-68030-CPU, 4 MB RAM und einer optionalen 80-MB-SCSI-Festplatte herausgebracht. Der Arbeitsspeicher ist bei diesen Systemen auf 12 MB erweiterbar, obwohl die meisten Spiele und Anwendungen nicht mehr als 2 MB benötigen.</text>
-			<text lang="fr">Le X68000 (japonais : エックス ろくまんはっせん, Hepburn : Ekkusu Rokuman Hassen) est un ordinateur domestique créé par Sharp Corporation, sorti pour la première fois en 1987 et vendu uniquement au Japon.
+      <text lang="fr">Le X68000 (japonais : エックス ろくまんはっせん, Hepburn : Ekkusu Rokuman Hassen) est un ordinateur domestique créé par Sharp Corporation, sorti pour la première fois en 1987 et vendu uniquement au Japon.
 
 Le premier modèle est équipé d'un processeur Motorola 68000 à 10 MHz (d'où son nom), d'une mémoire vive de 1 Mo et d'aucun disque dur ; le dernier modèle est sorti en 1993 avec un processeur Motorola 68030 à 25 MHz, une mémoire vive de 4 Mo et un disque dur SCSI de 80 Mo en option. La mémoire vive de ces systèmes est extensible jusqu'à 12 Mo, bien que la plupart des jeux et applications ne nécessitent pas plus de 2 Mo.</text>
-			<text lang="it">L'X68000 (giapponese: エックス ろくまんはっせん, Hepburn: Ekkusu Rokuman Hassen) è un home computer creato da Sharp Corporation, rilasciato per la prima volta nel 1987 e venduto solo in Giappone.
+      <text lang="it">L'X68000 (giapponese: エックス ろくまんはっせん, Hepburn: Ekkusu Rokuman Hassen) è un home computer creato da Sharp Corporation, rilasciato per la prima volta nel 1987 e venduto solo in Giappone.
 
 Il primo modello è dotato di una CPU Motorola 68000 a 10 MHz (da cui il nome), 1 MB di RAM e nessun disco rigido; l'ultimo modello è stato rilasciato nel 1993 con una CPU Motorola 68030 a 25 MHz, 4 MB di RAM e un disco rigido SCSI opzionale da 80 MB. La RAM di questi sistemi è espandibile fino a 12 MB, anche se la maggior parte dei giochi e delle applicazioni non richiede più di 2 MB.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

@@ -1,69 +1,72 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<pos>0.475 0.335</pos>
-			<maxSize>0.21</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.195 0.335" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.18</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<pos>0.475 0.335</pos>
-			<maxSize>0.20</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.195 0.335" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1997</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Commander Genius</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>CGenius (Commander Genius) is a platform to run the classic DOS games of the Commander Keen series.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <pos>0.475 0.335</pos>
+      <maxSize>0.21</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.195 0.335" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.18</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <pos>0.475 0.335</pos>
+      <maxSize>0.20</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.195 0.335" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1997</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Commander Genius</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>CGenius (Commander Genius) is a platform to run the classic DOS games of the Commander Keen series.
 
 Commander Keen is a series of computer games developed in the early 1990s, by id Software. Games in the series were characterized by innovative use of EGA-graphics, the series contains seven official games, divided into mini-series and are considered "episodes".</text>
-			<text lang="pl">CGenius (Commander Genius) to platforma do uruchamiania klasycznych gier DOS-owych z serii Commander Keen.
+      <text lang="pl">CGenius (Commander Genius) to platforma do uruchamiania klasycznych gier DOS-owych z serii Commander Keen.
 
 Commander Keen to seria gier komputerowych stworzonych na początku lat 90-tych, przez firmę id Software. Gry z serii charakteryzowały się innowacyjnym wykorzystaniem grafiki EGA, seria zawiera siedem oficjalnych gier, podzielonych na mini serie i uznawanych za "epizody".</text>
-			<text lang="ru">CGenius (Commander Genius) — платформа для запуска классических DOS игр серии Commander Keen.
+      <text lang="pt">CGenius (Commander Genius) é uma plataforma para executar jogos clássicos DOS da série Commander Keen.
+
+Commander Keen é uma série de jogos de computador criada no início dos anos 90 pela empresa id Software. Os jogos da série se caracterizavam pelo uso inovador de gráficos EGA, a série contém sete jogos oficiais, divididos em minisséries e considerados "episódios".</text>
+      <text lang="ru">CGenius (Commander Genius) — платформа для запуска классических DOS игр серии Commander Keen.
 
 Commander Keen (Командир Кин) — серия компьютерных игр, разработанная в начале 1990-х годов, компанией id Software. Игры серии отличались новаторским использованием EGA-графики, серия содержит семь официальных игр, разделённых на мини-серии и считаются "эпизодами".</text>
-			<text lang="es">CGenius (Commander Genius) es una plataforma para ejecutar los juegos clásicos de DOS de la serie Commander Keen.
+      <text lang="es">CGenius (Commander Genius) es una plataforma para ejecutar los juegos clásicos de DOS de la serie Commander Keen.
 
 Commander Keen es una serie de juegos de ordenador desarrollados a principios de la década de 1990, por id Software. Los juegos de la serie se caracterizaron por el uso innovador de gráficos EGA, la serie contiene siete juegos oficiales, divididos en mini-series y son considerados "episodios".</text>
-			<text lang="de">CGenius (Commander Genius) ist eine Plattform, auf der die klassischen DOS-Spiele der Commander Keen-Serie laufen.
+      <text lang="de">CGenius (Commander Genius) ist eine Plattform, auf der die klassischen DOS-Spiele der Commander Keen-Serie laufen.
 
 Commander Keen ist eine Serie von Computerspielen, die in den frühen 1990er Jahren von id Software entwickelt wurde. Spiele in der Serie wurden durch innovative Nutzung von EGA-Grafik gekennzeichnet, die Serie enthält sieben offizielle Spiele, in Mini-Serien unterteilt und sind als "Episoden".</text>
-			<text lang="fr">CGenius (Commander Genius) est une plate-forme permettant d'exécuter les jeux DOS classiques de la série Commander Keen.
+      <text lang="fr">CGenius (Commander Genius) est une plate-forme permettant d'exécuter les jeux DOS classiques de la série Commander Keen.
 
 Commander Keen est une série de jeux informatiques développés au début des années 1990 par id Software. Les jeux de la série se caractérisent par une utilisation innovante des graphiques EGA. La série contient sept jeux officiels, divisés en mini-séries et considérés comme des "épisodes".</text>
-			<text lang="it">CGenius (Commander Genius) è una piattaforma per eseguire i classici giochi DOS della serie Commander Keen.
+      <text lang="it">CGenius (Commander Genius) è una piattaforma per eseguire i classici giochi DOS della serie Commander Keen.
 
 Commander Keen è una serie di giochi per computer sviluppata nei primi anni '90 da id Software. I giochi della serie erano caratterizzati da un uso innovativo della grafica EGA; la serie contiene sette giochi ufficiali, divisi in mini-serie e considerati "episodi".</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

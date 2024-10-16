@@ -1,81 +1,86 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.43</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.475</origin>
-			<pos>0.5 0.45</pos>
-			<maxSize>0.27</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.45" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.43</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.475</origin>
-			<pos>0.5 0.45</pos>
-			<maxSize>0.25</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.45" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text/>
-		</text>
-		<text name="TextName" extra="true">
-			<text>LCD Games</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>Handheld electronic games are very small, portable devices for playing interactive electronic games, often miniaturized versions of video games. The controls, display and speakers are all part of a single unit.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.43</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.475</origin>
+      <pos>0.5 0.45</pos>
+      <maxSize>0.27</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.45" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.43</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.475</origin>
+      <pos>0.5 0.45</pos>
+      <maxSize>0.25</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.45" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text/>
+    </text>
+    <text name="TextName" extra="true">
+      <text>LCD Games</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>Handheld electronic games are very small, portable devices for playing interactive electronic games, often miniaturized versions of video games. The controls, display and speakers are all part of a single unit.
 
 Rather than a general-purpose screen made up of a grid of small pixels, they usually have custom displays designed to play one game. This simplicity means they can be made as small as a smartwatch, and sometimes are. The visual output of these games can range from a few small light bulbs or LED lights to calculator-like alphanumerical screens; later these were mostly displaced by liquid crystal and vacuum fluorescent display screens with detailed images and in the case of VFD games, color. 
 
 Handhelds' popularity was at its peak from the late 1970s into the early 1990s before declining. They are the precursors to the handheld game console.</text>
-			<text lang="pl">Podręczne gry elektroniczne to bardzo małe, przenośne urządzenia do grania w interaktywne gry elektroniczne, często zminiaturyzowane wersje gier wideo. Elementy sterujące, wyświetlacz i głośniki stanowią jedną całość.
+      <text lang="pl">Podręczne gry elektroniczne to bardzo małe, przenośne urządzenia do grania w interaktywne gry elektroniczne, często zminiaturyzowane wersje gier wideo. Elementy sterujące, wyświetlacz i głośniki stanowią jedną całość.
 
 Zamiast uniwersalnego ekranu składającego się z siatki małych pikseli, urządzenia te mają zwykle wyświetlacze dostosowane do jednej gry. Ta prostota oznacza, że mogą być tak małe jak smartwatch, i czasami są. Wygląd tych gier może być różny - od kilku małych żarówek lub diod LED po przypominające kalkulatory ekrany alfanumeryczne; później zostały one w większości wyparte przez ekrany ciekłokrystaliczne i fluorescencyjne, na których wyświetlane są szczegółowe obrazy, a w przypadku gier VFD - także kolory. 
 
 Popularność komputerów kieszonkowych była największa od końca lat 70. do początku lat 90. ubiegłego wieku, a następnie spadła. Są one prekursorami ręcznych konsol do gier.</text>
-			<text lang="ru">Серия портативных электронных игр с ЖК-экраном. Серия была создана разработчиком игр Гумпэем Ёкои в компании Nintendo, игры выпускались с 1980 по 1991 год и в 2020 году (только Game &amp; Watch: Super Mario Bros). Большинство устройств позволяло играть только в одну игру — это ограничение было вызвано использованием сегментированного ЖК-экрана. На многих играх находились кнопки «Игра A» и «Игра B», причём игра B обычно была просто более быстрой и сложной версией игры A. Скорость игры и скорость отклика тоже были ограничены скоростью изменения состояния индикатора. Также устройство включало в себя часы и будильник.
+      <text lang="pt">Jogos eletrônicos portáteis são dispositivos muito pequenos e portáteis para jogar jogos eletrônicos interativos, muitas vezes versões miniaturizadas de videogames. Os controles, tela e alto-falantes formam uma única unidade.
+
+Em vez de uma tela universal composta por uma grade de pequenos pixels, esses dispositivos geralmente têm telas adaptadas para um único jogo. Essa simplicidade significa que eles podem ser tão pequenos quanto um smartwatch, e às vezes são. O visual desses jogos pode variar - de algumas pequenas lâmpadas ou LEDs a telas alfanuméricas que se assemelham a calculadoras; posteriormente, eles foram em grande parte substituídos por telas de cristal líquido e fluorescentes, nas quais imagens detalhadas são exibidas, e no caso dos jogos VFD, também cores.
+
+A popularidade dos computadores de bolso foi maior do final dos anos 1970 ao início dos anos 1990 e, em seguida, diminuiu. Eles são precursores dos consoles de jogos portáteis.</text>
+      <text lang="ru">Серия портативных электронных игр с ЖК-экраном. Серия была создана разработчиком игр Гумпэем Ёкои в компании Nintendo, игры выпускались с 1980 по 1991 год и в 2020 году (только Game &amp; Watch: Super Mario Bros). Большинство устройств позволяло играть только в одну игру — это ограничение было вызвано использованием сегментированного ЖК-экрана. На многих играх находились кнопки «Игра A» и «Игра B», причём игра B обычно была просто более быстрой и сложной версией игры A. Скорость игры и скорость отклика тоже были ограничены скоростью изменения состояния индикатора. Также устройство включало в себя часы и будильник.
 
 Game &amp; Watch работали от батареек-«таблеток»; из серии LR4x/SR4x использовались батарейки минимальной высоты.
 
 Устройство появилось благодаря тому, что Гумпэй Ёкои, путешествуя на поезде синкансэне, заметил скучающего бизнесмена, который пытался развлечь себя, нажимая на кнопки калькулятора. Ёкои тогда пришла в голову идея маленькой игровой машинки, которая может использоваться как часы и позволит скоротать время.</text>
-			<text lang="es">Los juegos electrónicos portátiles son dispositivos muy pequeños y portátiles para jugar a juegos electrónicos interactivos, a menudo versiones miniaturizadas de videojuegos. Los mandos, la pantalla y los altavoces forman parte de una sola unidad.
+      <text lang="es">Los juegos electrónicos portátiles son dispositivos muy pequeños y portátiles para jugar a juegos electrónicos interactivos, a menudo versiones miniaturizadas de videojuegos. Los mandos, la pantalla y los altavoces forman parte de una sola unidad.
 
 En lugar de una pantalla de uso general formada por una cuadrícula de pequeños píxeles, suelen tener pantallas personalizadas diseñadas para jugar a un solo juego. Esta simplicidad hace que puedan ser tan pequeños como un smartwatch, y a veces lo son. La salida visual de estos juegos puede variar desde unas pequeñas bombillas o luces LED hasta pantallas alfanuméricas similares a las de las calculadoras; más tarde, éstas fueron desplazadas en su mayoría por pantallas de cristal líquido y fluorescentes al vacío con imágenes detalladas y, en el caso de los juegos VFD, en color.
 
 La popularidad de los dispositivos portátiles alcanzó su punto álgido entre finales de los años 70 y principios de los 90, antes de declinar. Son los precursores de las videoconsolas portátiles.</text>
-			<text lang="de">Elektronische Handheld-Spiele sind sehr kleine, tragbare Geräte zum Spielen interaktiver elektronischer Spiele, oft miniaturisierte Versionen von Videospielen. Die Bedienelemente, das Display und die Lautsprecher sind in einem einzigen Gerät untergebracht.
+      <text lang="de">Elektronische Handheld-Spiele sind sehr kleine, tragbare Geräte zum Spielen interaktiver elektronischer Spiele, oft miniaturisierte Versionen von Videospielen. Die Bedienelemente, das Display und die Lautsprecher sind in einem einzigen Gerät untergebracht.
 
 Anstelle eines allgemeinen Bildschirms, der aus einem Gitter aus kleinen Pixeln besteht, verfügen sie in der Regel über spezielle Displays, die für ein bestimmtes Spiel entwickelt wurden. Diese Einfachheit bedeutet, dass sie so klein wie eine Smartwatch sein können, was sie manchmal auch sind. Die visuelle Ausgabe dieser Spiele kann von einigen kleinen Glühbirnen oder LED-Leuchten bis hin zu taschenrechnerähnlichen alphanumerischen Bildschirmen reichen; später wurden diese meist durch Flüssigkristall- und Vakuumfluoreszenzbildschirme mit detaillierten Bildern und im Fall von VFD-Spielen auch Farbe ersetzt.
 
 Die Popularität von Handhelds erreichte Ende der 1970er bis Anfang der 1990er Jahre ihren Höhepunkt, bevor sie zurückging. Sie sind die Vorläufer der Handheld-Konsolen.</text>
-			<text lang="fr">Les jeux électroniques de poche sont de très petits appareils portables permettant de jouer à des jeux électroniques interactifs, souvent des versions miniaturisées de jeux vidéo. Les commandes, l'écran et les haut-parleurs font partie d'une seule unité.
+      <text lang="fr">Les jeux électroniques de poche sont de très petits appareils portables permettant de jouer à des jeux électroniques interactifs, souvent des versions miniaturisées de jeux vidéo. Les commandes, l'écran et les haut-parleurs font partie d'une seule unité.
 
 Plutôt qu'un écran polyvalent composé d'une grille de petits pixels, ils sont généralement dotés d'un affichage personnalisé conçu pour jouer à un seul jeu. Cette simplicité signifie qu'ils peuvent être aussi petits qu'une smartwatch, et le sont parfois. La sortie visuelle de ces jeux peut aller de quelques petites ampoules ou lumières LED à des écrans alphanumériques de type calculatrice. Plus tard, ces écrans ont été remplacés par des écrans à cristaux liquides et des écrans fluorescents à vide avec des images détaillées et, dans le cas des jeux VFD, en couleur.
 
 La popularité des ordinateurs de poche a atteint son apogée de la fin des années 1970 au début des années 1990, avant de décliner. Ils sont les précurseurs de la console de jeu portable.</text>
-			<text lang="it">I giochi elettronici portatili sono dispositivi molto piccoli e facilmente trasportabili per giocare a giochi elettronici interattivi, spesso versioni miniaturizzate di videogiochi. I comandi, il display e gli altoparlanti fanno parte di un'unica unità.
+      <text lang="it">I giochi elettronici portatili sono dispositivi molto piccoli e facilmente trasportabili per giocare a giochi elettronici interattivi, spesso versioni miniaturizzate di videogiochi. I comandi, il display e gli altoparlanti fanno parte di un'unica unità.
 
 Invece di uno schermo generico composto da una griglia di piccoli pixel, di solito hanno display personalizzati progettati per la riproduzione di un solo gioco. Grazie a questa semplicità, possono essere realizzati con le dimensioni di uno smartwatch, e a volte lo sono. L'output visivo di questi giochi può variare da alcune piccole lampadine o luci LED a schermi alfanumerici simili a quelli di una calcolatrice; in seguito questi schermi sono stati sostituiti da schermi a cristalli liquidi e a fluorescenza sottovuoto con immagini dettagliate e, nel caso dei giochi VFD, a colori.
 
 La popolarità dei giochi portatili ha raggiunto il suo apice tra la fine degli anni '70 e l'inizio degli anni '90, prima di diminuire. Sono i precursori delle console di gioco portatili.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

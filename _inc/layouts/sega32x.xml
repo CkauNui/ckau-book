@@ -1,84 +1,88 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.34</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.375</pos>
-			<maxSize>0.255</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.375" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.34</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.375</pos>
-			<maxSize>0.245</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.375" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1994</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Sega</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Mega Drive 32X</text>
-		</text>
-	<!-- Regional consoles/computers -->
-		<text name="TextName" extra="true" region="eu"/>
-		<text name="TextName" extra="true" region="us">
-			<text>Genesis 32X</text>
-		</text>
-		<text name="TextName" extra="true" region="jp">
-			<text>Super 32X</text>
-		</text>
-		
-		<text name="TextDesc" extra="true">
-			<text>The 32X is an add-on for the Sega Mega Drive/Genesis video game console. Codenamed "Project Mars", the 32X was designed to expand the power of the Mega Drive/Genesis and serve as a transitional console into the 32-bit era until the release of the Sega Saturn. Independent of the console, the 32X uses its own ROM cartridges and has its own library of games. It was distributed under the name Super 32X in Japan, Genesis 32X in North America, Mega Drive 32X in the PAL region, and Mega 32X in Brazil.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.34</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.5 0.375</pos>
+      <maxSize>0.255</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.375" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.34</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.5 0.375</pos>
+      <maxSize>0.245</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.375" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1994</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Sega</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Mega Drive 32X</text>
+    </text>
+    <!-- Regional consoles/computers -->
+    <text name="TextName" extra="true" region="eu"/>
+    <text name="TextName" extra="true" region="us">
+      <text>Genesis 32X</text>
+    </text>
+    <text name="TextName" extra="true" region="jp">
+      <text>Super 32X</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The 32X is an add-on for the Sega Mega Drive/Genesis video game console. Codenamed "Project Mars", the 32X was designed to expand the power of the Mega Drive/Genesis and serve as a transitional console into the 32-bit era until the release of the Sega Saturn. Independent of the console, the 32X uses its own ROM cartridges and has its own library of games. It was distributed under the name Super 32X in Japan, Genesis 32X in North America, Mega Drive 32X in the PAL region, and Mega 32X in Brazil.
 
 Unveiled by Sega at June 1994's Consumer Electronics Show, the 32X was presented as a low-cost option for consumers looking to play 32-bit games. It was developed in response to the Atari Jaguar and concerns that the Saturn would not make it to market by the end of 1994. Though it was conceived as an entirely new console, at the suggestion of Sega of America executive Joe Miller and his team, it was converted into an add-on for the Genesis and made more powerful. The final design contained two 32-bit central processing units and a 3D graphics processor.</text>
-			<text lang="pl">Sega 32X – dodatek do konsoli Sega Mega Drive. 32X, znany też pod kryptonimem „Project Mars”, został zaprojektowany aby zwiększyć moc konsoli Mega Drive jako przejściowa forma przed wydaniem 32-bitowej konsoli Sega Saturn. Niezależnie od Mega Drive, 32X używa własnych kartridżów ROM i posiada własną bibliotekę gier. Był dystrybuowany pod nazwą Super 32X (ス ー パ ー 32X?) w Japonii, Sega Genesis 32X w Ameryce Północnej, Sega Mega Drive 32X w regionie PAL i Sega Mega 32X w Brazylii.
+      <text lang="pl">Sega 32X – dodatek do konsoli Sega Mega Drive. 32X, znany też pod kryptonimem „Project Mars”, został zaprojektowany aby zwiększyć moc konsoli Mega Drive jako przejściowa forma przed wydaniem 32-bitowej konsoli Sega Saturn. Niezależnie od Mega Drive, 32X używa własnych kartridżów ROM i posiada własną bibliotekę gier. Był dystrybuowany pod nazwą Super 32X (ス ー パ ー 32X?) w Japonii, Sega Genesis 32X w Ameryce Północnej, Sega Mega Drive 32X w regionie PAL i Sega Mega 32X w Brazylii.
 
 Zaprezentowany przez firmę Sega w czerwcu 1994 roku podczas targów Consumer Electronics Show, 32X został przedstawiony jako tania opcja dla konsumentów, którzy chcą grać w 32-bitowe gry. Opracowany został w odpowiedzi na konsolę Atari Jaguar i z obawy, że Saturn nie trafi na rynek pod koniec 1994 roku. Joe Miller z Sega of America wraz z jego zespołem, stworzyli dodatek do konsoli, który zwiększał jej wydajność. Ostateczny projekt zawierał dwa 32-bitowe procesory centralne i procesor graficzny 3D. Aby wprowadzić nowy dodatek na rynek przed jego planowanym terminem wydania w listopadzie 1994 roku, rozwój nowego systemu i jego gry były tworzone w pośpiechu. Nie udało się przyciągnąć firm produkujących gry komputerowe i konsumentów z powodu zapowiedzi wydania Sega Saturn w Japonii. Sega spieszyła się z wydaniem 32X na rynek, przez co twórcy mieli niewiele czasu na przygotowanie biblioteki gier. Powstało tylko 40 tytułów, które nie w pełni wykorzystywały dodatek. Po obniżce cen w 1995 roku, sprzedaż spadła i w 1996 roku Sega skupiła się na Saturnie. Szacuje się, że sprzedano ok. 200 tys. sztuk tego urządzenia.
 
 32X jest uważany za komercyjną porażkę. Gracze tuż po premierze dodatku przyjęli sprzęt pozytywnie, podkreślając niską cenę rozbudowy systemu. Jednak z upływem czasu opinie się zmieniły – redaktorzy serwisów o grach negatywnie ocenili niewielką liczbę dostępnych gier, słabe wyniki sprzedaży i złą politykę marketingową firmy.</text>
-			<text lang="ru">Дополнение к игровой приставке Sega Mega Drive от компании SEGA. В Японии оно распространялось под названием Sega Super 32X, в Северной Америке — Sega Genesis 32X, а в Европе, Австралии и других странах, использующих систему PAL, — Sega Mega Drive 32X. Большинство геймеров называло это дополнение просто «32X».
+      <text lang="pt">Sega 32X – um acessório para o console Sega Mega Drive. O 32X, também conhecido pelo codinome "Projeto Marte", foi projetado para aumentar a potência do console Mega Drive como uma forma de transição antes do lançamento do console de 32 bits Sega Saturn. Independentemente do Mega Drive, o 32X usa seus próprios cartuchos ROM e possui sua própria biblioteca de jogos. Foi distribuído sob o nome de Super 32X (ス ー パ ー 32X?) no Japão, Sega Genesis 32X na América do Norte, Sega Mega Drive 32X na região PAL e Sega Mega 32X no Brasil.
+
+Apresentado pela Sega em junho de 1994 durante a Consumer Electronics Show, o 32X foi apresentado como uma opção barata para consumidores que queriam jogar jogos de 32 bits. Foi desenvolvido em resposta ao console Atari Jaguar e por medo de que o Saturn não fosse lançado no final de 1994. Joe Miller da Sega of America, junto com sua equipe, criou um acessório para o console que aumentava seu desempenho. O projeto final incluiu dois processadores centrais de 32 bits e um processador gráfico 3D. Para lançar o novo acessório no mercado antes de sua data de lançamento prevista para novembro de 1994, o desenvolvimento do novo sistema e de seus jogos foi feito às pressas. Não conseguiu atrair empresas de desenvolvimento de jogos e consumidores devido ao anúncio do lançamento do Sega Saturn no Japão. A Sega se apressou em lançar o 32X no mercado, o que deu aos desenvolvedores pouco tempo para preparar uma biblioteca de jogos. Foram criados apenas 40 títulos, que não exploraram totalmente o acessório. Após o corte de preços em 1995, as vendas diminuíram e em 1996 a Sega se concentrou no Saturn. Estima-se que foram vendidas cerca de 200 mil unidades do dispositivo.
+
+O 32X é considerado um fracasso comercial. Os jogadores, logo após o lançamento do acessório, receberam o equipamento positivamente, destacando o baixo custo de expansão do sistema. No entanto, com o tempo, as opiniões mudaram – editores de sites de jogos avaliaram negativamente a pequena quantidade de jogos disponíveis, as baixas vendas e a má política de marketing da empresa.</text>
+      <text lang="ru">Дополнение к игровой приставке Sega Mega Drive от компании SEGA. В Японии оно распространялось под названием Sega Super 32X, в Северной Америке — Sega Genesis 32X, а в Европе, Австралии и других странах, использующих систему PAL, — Sega Mega Drive 32X. Большинство геймеров называло это дополнение просто «32X».
 
 Sega 32X может использоваться только вместе с Sega Mega Drive/Genesis. Она подключается через стандартный разъём для игровых картриджей, однако требует отдельного электропитания и кабеля, связывающего её с Sega Mega Drive. Sega 32X может помимо собственных картриджей проигрывать также и обычные картриджи Sega MegaDrive, что позволяет использовать модуль 32X постоянно, хотя существуют и исключения, например игра Virtua Racing для Sega MegaDrive не запускается через модуль 32X. Также через модуль 32X невозможно запустить Sega Power Base Converter — дополнение, позволяющее запускать картриджи от 8-битной консоли Sega Master System.
 
 32X также можно подключить к консоли Sega Multi-Mega, однако это физически неудобно из-за несовпадений размеров и форм приставок. 32X даже блокирует собой CD-дисковод Sega Multi-Mega.</text>
-			<text lang="es">La 32X es un complemento para la videoconsola Sega Mega Drive/Genesis. Con el nombre en clave de "Proyecto Marte", la 32X fue diseñada para ampliar la potencia de la Mega Drive/Genesis y servir como consola de transición a la era de los 32 bits hasta el lanzamiento de la Sega Saturn. Independiente de la consola, la 32X utiliza sus propios cartuchos ROM y tiene su propia biblioteca de juegos. Se distribuyó con el nombre de Super 32X en Japón, Genesis 32X en Norteamérica, Mega Drive 32X en la región PAL y Mega 32X en Brasil.
+      <text lang="es">La 32X es un complemento para la videoconsola Sega Mega Drive/Genesis. Con el nombre en clave de "Proyecto Marte", la 32X fue diseñada para ampliar la potencia de la Mega Drive/Genesis y servir como consola de transición a la era de los 32 bits hasta el lanzamiento de la Sega Saturn. Independiente de la consola, la 32X utiliza sus propios cartuchos ROM y tiene su propia biblioteca de juegos. Se distribuyó con el nombre de Super 32X en Japón, Genesis 32X en Norteamérica, Mega Drive 32X en la región PAL y Mega 32X en Brasil.
 
 Presentada por Sega en el Consumer Electronics Show de junio de 1994, la 32X se presentaba como una opción de bajo coste para los consumidores que quisieran jugar a juegos de 32 bits. Se desarrolló como respuesta a la Atari Jaguar y a la preocupación de que la Saturn no llegara al mercado a finales de 1994. Aunque se concibió como una consola completamente nueva, a sugerencia del ejecutivo de Sega of America Joe Miller y su equipo, se convirtió en un complemento para la Genesis y se hizo más potente. El diseño final contenía dos unidades centrales de procesamiento de 32 bits y un procesador de gráficos 3D.</text>
-			<text lang="de">Der 32X ist ein Zusatzgerät für die Videospielkonsole Sega Mega Drive/Genesis. Unter dem Codenamen "Project Mars" wurde der 32X entwickelt, um die Leistung des Mega Drive/Genesis zu erweitern und als Übergangskonsole in die 32-Bit-Ära bis zur Veröffentlichung des Sega Saturn zu dienen. Unabhängig von der Konsole verwendet der 32X seine eigenen ROM-Cartridges und verfügt über eine eigene Spielebibliothek. Es wurde unter dem Namen Super 32X in Japan, Genesis 32X in Nordamerika, Mega Drive 32X in der PAL-Region und Mega 32X in Brasilien vertrieben.
+      <text lang="de">Der 32X ist ein Zusatzgerät für die Videospielkonsole Sega Mega Drive/Genesis. Unter dem Codenamen "Project Mars" wurde der 32X entwickelt, um die Leistung des Mega Drive/Genesis zu erweitern und als Übergangskonsole in die 32-Bit-Ära bis zur Veröffentlichung des Sega Saturn zu dienen. Unabhängig von der Konsole verwendet der 32X seine eigenen ROM-Cartridges und verfügt über eine eigene Spielebibliothek. Es wurde unter dem Namen Super 32X in Japan, Genesis 32X in Nordamerika, Mega Drive 32X in der PAL-Region und Mega 32X in Brasilien vertrieben.
 
 Der 32X wurde von Sega auf der Consumer Electronics Show im Juni 1994 vorgestellt und war eine preisgünstige Option für Verbraucher, die 32-Bit-Spiele spielen wollten. Es wurde als Antwort auf den Atari Jaguar und die Befürchtung entwickelt, dass der Saturn bis Ende 1994 nicht auf den Markt kommen würde. Obwohl sie als völlig neue Konsole konzipiert war, wurde sie auf Vorschlag von Joe Miller, dem Geschäftsführer von Sega of America, und seinem Team in ein Add-on für die Genesis umgewandelt und leistungsstärker gemacht. Das endgültige Design enthielt zwei 32-Bit-Zentraleinheiten und einen 3D-Grafikprozessor.</text>
-			<text lang="fr">La 32X est une extension de la console de jeu vidéo Sega Mega Drive/Genesis. Sous le nom de code "Project Mars", le 32X a été conçu pour augmenter la puissance de la Mega Drive/Genesis et servir de console de transition vers l'ère 32 bits jusqu'à la sortie de la Sega Saturn. Indépendante de la console, la 32X utilise ses propres cartouches ROM et possède sa propre bibliothèque de jeux. Elle a été distribuée sous le nom de Super 32X au Japon, Genesis 32X en Amérique du Nord, Mega Drive 32X dans la région PAL et Mega 32X au Brésil.
+      <text lang="fr">La 32X est une extension de la console de jeu vidéo Sega Mega Drive/Genesis. Sous le nom de code "Project Mars", le 32X a été conçu pour augmenter la puissance de la Mega Drive/Genesis et servir de console de transition vers l'ère 32 bits jusqu'à la sortie de la Sega Saturn. Indépendante de la console, la 32X utilise ses propres cartouches ROM et possède sa propre bibliothèque de jeux. Elle a été distribuée sous le nom de Super 32X au Japon, Genesis 32X en Amérique du Nord, Mega Drive 32X dans la région PAL et Mega 32X au Brésil.
 
 Dévoilé par Sega lors du Consumer Electronics Show de juin 1994, le 32X a été présenté comme une option bon marché pour les consommateurs souhaitant jouer à des jeux 32 bits. Il a été développé en réponse à l'Atari Jaguar et à la crainte que la Saturn ne soit pas commercialisée avant la fin de l'année 1994. Bien qu'elle ait été conçue comme une console entièrement nouvelle, à la suggestion de Joe Miller, cadre de Sega of America, et de son équipe, elle a été convertie en un module complémentaire pour la Genesis et rendue plus puissante. La conception finale contenait deux unités centrales de traitement 32 bits et un processeur graphique 3D.</text>
-			<text lang="it">Il 32X è un componente aggiuntivo per la console per videogiochi Sega Mega Drive/Genesis. Con il nome in codice "Project Mars", il 32X è stato progettato per espandere la potenza del Mega Drive/Genesis e fungere da console di transizione nell'era dei 32 bit fino all'uscita del Sega Saturn. Indipendente dalla console, il 32X utilizza le proprie cartucce ROM e dispone di una propria libreria di giochi. È stato distribuito con il nome di Super 32X in Giappone, Genesis 32X in Nord America, Mega Drive 32X nella regione PAL e Mega 32X in Brasile.
+      <text lang="it">Il 32X è un componente aggiuntivo per la console per videogiochi Sega Mega Drive/Genesis. Con il nome in codice "Project Mars", il 32X è stato progettato per espandere la potenza del Mega Drive/Genesis e fungere da console di transizione nell'era dei 32 bit fino all'uscita del Sega Saturn. Indipendente dalla console, il 32X utilizza le proprie cartucce ROM e dispone di una propria libreria di giochi. È stato distribuito con il nome di Super 32X in Giappone, Genesis 32X in Nord America, Mega Drive 32X nella regione PAL e Mega 32X in Brasile.
 
 Presentato da Sega al Consumer Electronics Show del giugno 1994, il 32X fu presentato come un'opzione a basso costo per i consumatori che volevano giocare a 32 bit. Fu sviluppato in risposta all'Atari Jaguar e alle preoccupazioni che il Saturn non sarebbe arrivato sul mercato entro la fine del 1994. Sebbene fosse stata concepita come una console completamente nuova, su suggerimento di Joe Miller, dirigente di Sega of America, e del suo team, fu convertita in un componente aggiuntivo per il Genesis e resa più potente. Il progetto finale conteneva due unità di elaborazione centrale a 32 bit e un processore grafico 3D.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

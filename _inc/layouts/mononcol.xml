@@ -1,82 +1,87 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.475</origin>
-			<pos>0.5 0.47</pos>
-			<maxSize>0.245</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.255</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.255</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.475</origin>
-			<pos>0.5 0.47</pos>
-			<maxSize>0.235</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.245</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.245</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2014</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>M&amp;D</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Monon Color</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Monon Color (梦龙彩色掌机) is a handheld video game console system manufactured and distributed by the Chinese toy company M&amp;D during 2014.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.475</origin>
+      <pos>0.5 0.47</pos>
+      <maxSize>0.245</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.255</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.255</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.47" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.475</origin>
+      <pos>0.5 0.47</pos>
+      <maxSize>0.235</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.245</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.245</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.47" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2014</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>M&amp;D</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Monon Color</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Monon Color (梦龙彩色掌机) is a handheld video game console system manufactured and distributed by the Chinese toy company M&amp;D during 2014.
 
 Intended to be a low-cost competitor to other handheld systems at the time, the Monon Color used 2D graphics comparable to the Game Boy Advance's performance and had 21 games released for it in total, most of them being licensed by franchises including Dragon Ball, Marvel and Roco Kingdom.
 The Monon Color is powered by an AX208 SOC, which contains a 8051 derived CPU with 16-bit opcodes clocked at 96 megahertz with additional facilities such as AV decoders. The system is said to have 16 kilobytes of RAM.</text>
-			<text lang="pl">Monon Color (梦龙彩色掌机) to przenośna konsola do gier wideo wyprodukowana i dystrybuowana przez chińską firmę zabawkarską M&amp;D w 2014 roku.
+      <text lang="pl">Monon Color (梦龙彩色掌机) to przenośna konsola do gier wideo wyprodukowana i dystrybuowana przez chińską firmę zabawkarską M&amp;D w 2014 roku.
 
 Monon Color, który miał być tanim konkurentem dla innych systemów przenośnych w tamtym czasie, wykorzystywał grafikę 2D porównywalną z wydajnością Game Boy Advance i wydano na niego łącznie 21 gier, z których większość była licencjonowana przez franczyzy, w tym Dragon Ball, Marvel i Roco Kingdom.
 Monon Color jest zasilany przez AX208 SOC, który zawiera procesor wywodzący się z 8051 z 16-bitowymi kodami operacyjnymi taktowanymi zegarem 96 megaherców z dodatkowymi udogodnieniami, takimi jak dekodery AV. System ma mieć 16 kilobajtów pamięci RAM.</text>
-			<text lang="ru">Monon Color (梦龙彩色掌机) - портативная игровая консоль, выпускавшаяся и распространявшаяся китайской компанией M&amp;D в 2014 году.
+      <text lang="pt">Monon Color (梦龙彩色掌机) é um console portátil de videogame produzido e distribuído pela empresa chinesa de brinquedos M&amp;D em 2014.
+
+O Monon Color, que pretendia ser um concorrente barato para outros sistemas portáteis da época, utilizava gráficos 2D comparáveis ​​ao desempenho do Game Boy Advance e teve um total de 21 jogos lançados, a maioria deles licenciados por franquias, incluindo Dragon Ball, Marvel e Roco Kingdom.
+
+O Monon Color é alimentado pelo SOC AX208, que inclui um processador derivado do 8051 com códigos operacionais de 16 bits com clock de 96 mega-hertz, com recursos adicionais, como decodificadores AV. O sistema possui 16 kilobytes de RAM.</text>
+      <text lang="ru">Monon Color (梦龙彩色掌机) - портативная игровая консоль, выпускавшаяся и распространявшаяся китайской компанией M&amp;D в 2014 году.
 
 Задуманная как недорогой конкурент другим портативным системам того времени, Monon Color использовала 2D-графику, сопоставимую по производительности с Game Boy Advance. Всего для нее была выпущена 21 игра, большинство из которых были лицензированы по таким франшизам, как Dragon Ball, Marvel и Roco Kingdom.
 Monon Color работает на базе микросхемы AX208 SOC, содержащей производный процессор 8051 с 16-разрядными операционными кодами, работающий на частоте 96 мегагерц, и дополнительные возможности, такие как AV-декодеры. Оперативная память системы составляет 16 килобайт.</text>
-			<text lang="es">La Monon Color (梦龙彩色掌机) es una consola de videojuegos portátil fabricada y distribuida por la empresa juguetera china M&amp;D durante 2014.
+      <text lang="es">La Monon Color (梦龙彩色掌机) es una consola de videojuegos portátil fabricada y distribuida por la empresa juguetera china M&amp;D durante 2014.
 
 Destinado a ser un competidor de bajo coste para otros sistemas portátiles de la época, el Monon Color utilizaba gráficos 2D comparables al rendimiento de la Game Boy Advance y tuvo 21 juegos lanzados para él en total, la mayoría de ellos con licencia de franquicias como Dragon Ball, Marvel y Roco Kingdom.
 El Monon Color funciona con un SOC AX208, que contiene una CPU derivada del 8051 con opcodes de 16 bits a 96 megahercios con funciones adicionales como decodificadores AV. Se dice que el sistema tiene 16 kilobytes de RAM.</text>
-			<text lang="de">Der Monon Color (梦龙彩色掌机) ist ein Handheld-Videospielkonsolensystem, das 2014 von der chinesischen Spielzeugfirma M&amp;D hergestellt und vertrieben wurde.
+      <text lang="de">Der Monon Color (梦龙彩色掌机) ist ein Handheld-Videospielkonsolensystem, das 2014 von der chinesischen Spielzeugfirma M&amp;D hergestellt und vertrieben wurde.
 
 Der Monon Color war als preiswerter Konkurrent zu anderen Handheld-Systemen gedacht, verwendete 2D-Grafiken, die mit der Leistung des Game Boy Advance vergleichbar waren, und hatte insgesamt 21 Spiele, von denen die meisten von Franchises wie Dragon Ball, Marvel und Roco Kingdom lizenziert wurden.
 Der Monon Color wird von einem AX208 SOC angetrieben, der eine von 8051 abgeleitete CPU mit 16-Bit-Opcodes enthält, die mit 96 Megahertz getaktet ist und zusätzliche Funktionen wie AV-Dekoder enthält. Das System soll über 16 Kilobyte RAM verfügen.</text>
-			<text lang="fr">Le Monon Color (梦龙彩色掌机) est une console de jeu vidéo portable fabriquée et distribuée par la société chinoise de jouets M&amp;D en 2014.
+      <text lang="fr">Le Monon Color (梦龙彩色掌机) est une console de jeu vidéo portable fabriquée et distribuée par la société chinoise de jouets M&amp;D en 2014.
 
 Conçue pour être un concurrent bon marché des autres systèmes portables de l'époque, la Monon Color utilisait des graphismes 2D comparables aux performances de la Game Boy Advance et a sorti 21 jeux au total, la plupart d'entre eux étant des licences de franchises telles que Dragon Ball, Marvel et Roco Kingdom.
 Le Monon Color est alimenté par un SOC AX208, qui contient un CPU dérivé du 8051 avec des opcodes 16 bits cadencés à 96 mégahertz avec des équipements supplémentaires tels que des décodeurs AV. Le système est censé disposer de 16 kilo-octets de mémoire vive.</text>
-			<text lang="it">Il Monon Color (梦龙彩色掌机) è una console portatile per videogiochi prodotta e distribuita dall'azienda cinese di giocattoli M&amp;D nel 2014.
+      <text lang="it">Il Monon Color (梦龙彩色掌机) è una console portatile per videogiochi prodotta e distribuita dall'azienda cinese di giocattoli M&amp;D nel 2014.
 
 Destinato a essere un concorrente a basso costo degli altri sistemi portatili dell'epoca, il Monon Color utilizzava una grafica 2D paragonabile alle prestazioni del Game Boy Advance e aveva 21 giochi rilasciati in totale, la maggior parte dei quali su licenza di franchise come Dragon Ball, Marvel e Roco Kingdom.
 Il Monon Color è alimentato da un SOC AX208, che contiene una CPU derivata dall'8051 con opcode a 16 bit e clock a 96 megahertz, con funzioni aggiuntive come i decoder AV. Il sistema è dotato di 16 kilobyte di RAM.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

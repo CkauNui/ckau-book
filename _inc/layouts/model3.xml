@@ -1,183 +1,188 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.3 0.2</origin>
-			<origin if="${screen.ratio} == '16/10'">0.4 0.35</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.285 0.36</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>26</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.005 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.7 0.2</origin>
-			<origin if="${screen.ratio} == '16/10'">0.6 0.35</origin>
-			<origin if="${screen.ratio} == '21/9'">0.95 0.5</origin>
-			<pos>0.72 0.36</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>-26</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.44 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.50 0.435</pos>
-			<maxSize>0.2</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.435" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-left" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.48 0.26</origin>
-			<origin if="${screen.ratio} == '16/10'">0.52 0.44</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.365 0.43</pos>
-			<maxSize>0.135</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.175</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.15</maxSize>
-			<rotation>-64</rotation>
-			<storyboard>
-				<animation property="pos" to="0.085 0.43" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-right" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.52 0.26</origin>
-			<origin if="${screen.ratio} == '16/10'">0.48 0.44</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.635 0.435</pos>
-			<maxSize>0.135</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.175</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.15</maxSize>
-			<rotation>64</rotation>
-			<storyboard>
-				<animation property="pos" to="0.355 0.435" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.50 0.436</pos>
-			<maxSize>0.175</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.436" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.48 0.325</origin>
-			<origin if="${screen.ratio} == '16/10'">0.48 0.44</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.64 0.435</pos>
-			<maxSize>0.13</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.36 0.435" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox3" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.52 0.325</origin>
-			<origin if="${screen.ratio} == '16/10'">0.52 0.44</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.36 0.435</pos>
-			<maxSize>0.13</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.08 0.435" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1996</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Sega</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Model 3</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>Sega Model 3 is an arcade platform released in 1996 as the successor to Sega Model 2. Model 3 continued several arcade games series established on previous Sega arcade boards, with games such as; Daytona USA 2, Sega Rally 2, Virtua Fighter 3 and Star Wars Trilogy Arcade.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-left" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.3 0.2</origin>
+      <origin if="${screen.ratio} == '16/10'">0.4 0.35</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.285 0.36</pos>
+      <minSize>0.1 0.3</minSize>
+      <rotation>26</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.005 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-right" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.7 0.2</origin>
+      <origin if="${screen.ratio} == '16/10'">0.6 0.35</origin>
+      <origin if="${screen.ratio} == '21/9'">0.95 0.5</origin>
+      <pos>0.72 0.36</pos>
+      <minSize>0.1 0.3</minSize>
+      <rotation>-26</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.44 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.50 0.435</pos>
+      <maxSize>0.2</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.435" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-left" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.48 0.26</origin>
+      <origin if="${screen.ratio} == '16/10'">0.52 0.44</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.365 0.43</pos>
+      <maxSize>0.135</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.175</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.15</maxSize>
+      <rotation>-64</rotation>
+      <storyboard>
+        <animation property="pos" to="0.085 0.43" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-right" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.52 0.26</origin>
+      <origin if="${screen.ratio} == '16/10'">0.48 0.44</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.635 0.435</pos>
+      <maxSize>0.135</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.175</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.15</maxSize>
+      <rotation>64</rotation>
+      <storyboard>
+        <animation property="pos" to="0.355 0.435" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.50 0.436</pos>
+      <maxSize>0.175</maxSize>
+      <zIndex>26</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.436" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.48 0.325</origin>
+      <origin if="${screen.ratio} == '16/10'">0.48 0.44</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.64 0.435</pos>
+      <maxSize>0.13</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.36 0.435" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox3" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.52 0.325</origin>
+      <origin if="${screen.ratio} == '16/10'">0.52 0.44</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.36 0.435</pos>
+      <maxSize>0.13</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.08 0.435" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1996</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Sega</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Model 3</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>Sega Model 3 is an arcade platform released in 1996 as the successor to Sega Model 2. Model 3 continued several arcade games series established on previous Sega arcade boards, with games such as; Daytona USA 2, Sega Rally 2, Virtua Fighter 3 and Star Wars Trilogy Arcade.
 
 Upon release, the Model 3 board was significantly more powerful than any other arcade platform on the market as well as any home console or computer at the time, with graphical fidelity roughly to par with Dreamcast or even some early PlayStation 2 titles; it took several years for home systems to catch-up.
 
 It had an IBM-Motorola PowerPC 603e CPU that could run at 66, 100 or 166 MHz, 33 MB of RAM and two Lockheed Martin Real3D/Pro-1000 GPUs. Model 3 was followed by Sega Naomi in 1998 which uses a similar architecture to the Sega Dreamcast.
 	</text>
-			<text lang="pl">Sega Model 3 to platforma arcade wydana w 1996 roku jako następca Sega Model 2. Model 3 kontynuował kilka serii gier zręcznościowych, które pojawiły się na wcześniejszych platformach firmy Sega. Były to takie gry jak: Daytona USA 2, Sega Rally 2, Virtua Fighter 3 i Star Wars Trilogy Arcade.
+      <text lang="pl">Sega Model 3 to platforma arcade wydana w 1996 roku jako następca Sega Model 2. Model 3 kontynuował kilka serii gier zręcznościowych, które pojawiły się na wcześniejszych platformach firmy Sega. Były to takie gry jak: Daytona USA 2, Sega Rally 2, Virtua Fighter 3 i Star Wars Trilogy Arcade.
 
 W momencie premiery, płyta Model 3 była znacznie potężniejsza niż jakakolwiek inna platforma arcade na rynku, a także jakakolwiek konsola domowa lub komputer w tamtym czasie, z wiernością graficzną zbliżoną do Dreamcasta, a nawet niektórych wczesnych tytułów PlayStation 2; potrzeba było kilku lat, aby systemy domowe nadrobiły zaległości.
 
 Posiadał on procesor IBM-Motorola PowerPC 603e, który mógł pracować z częstotliwością 66, 100 lub 166 MHz, 33 MB pamięci RAM i dwa procesory graficzne Lockheed Martin Real3D/Pro-1000. Po Modelu 3 w 1998 roku pojawiła się Sega Naomi, wykorzystująca architekturę podobną do Sega Dreamcast.</text>
-			<text lang="ru">Аркадный кабинет выпущенный в 1996 году на смену Sega Model 2. На Model 3 вышло несколько продолжений игр, таких как; Daytona USA 2, Sega Rally 2, Virtua Fighter 3 и Star Wars Trilogy. При выпуске Model 3 была самой мощной системой на рынке аркадных кабинетов и была сопоставима по мощности с Dreamcast или PlayStation 2. Домашним системам того времени потребовалось несколько лет, чтобы наверстать упущенное. Model 3 имела процессор IBM-Motorola PowerPC 603e с частотой 66, 100 или 166 MHz, 33 MB оперативной памяти и два графических процессора Lockheed Martin Real3D/Pro-1000. За Model 3 была выпущена Sega Naomi в 1998 году и в ней используется архитектура, схожая с Sega Dreamcast.</text>
-			<text lang="es">Sega Model 3 es una plataforma arcade lanzada en 1996 como sucesora de Sega Model 2. El Model 3 continuó varias series de juegos arcade establecidas en anteriores placas arcade de Sega, con juegos como; Daytona USA 2, Sega Rally 2, Virtua Fighter 3 y Star Wars Trilogy Arcade.
+      <text lang="pt">Sega Model 3 é uma plataforma de arcade lançada em 1996 como sucessor do Sega Model 2. O Model 3 continuou várias séries de jogos de arcade que apareceram nas plataformas anteriores da Sega. Essas jogos incluem: Daytona USA 2, Sega Rally 2, Virtua Fighter 3 e Star Wars Trilogy Arcade.
+
+No momento de seu lançamento, o hardware do Model 3 era consideravelmente mais potente que qualquer outra plataforma de arcade no mercado, além de qualquer console doméstico ou computador da época, com fidelidade gráfica próxima ao Dreamcast, e até mesmo alguns títulos iniciais do PlayStation 2; os sistemas domésticos levaram alguns anos para alcançar o mesmo nível.
+
+Ele possuía um processador IBM-Motorola PowerPC 603e que podia operar a 66, 100 ou 166 MHz, 33 MB de RAM e dois processadores gráficos Lockheed Martin Real3D/Pro-1000. Após o Model 3, em 1998, surgiu o Sega Naomi, que utilizava uma arquitetura semelhante ao Sega Dreamcast.</text>
+      <text lang="ru">Аркадный кабинет выпущенный в 1996 году на смену Sega Model 2. На Model 3 вышло несколько продолжений игр, таких как; Daytona USA 2, Sega Rally 2, Virtua Fighter 3 и Star Wars Trilogy. При выпуске Model 3 была самой мощной системой на рынке аркадных кабинетов и была сопоставима по мощности с Dreamcast или PlayStation 2. Домашним системам того времени потребовалось несколько лет, чтобы наверстать упущенное. Model 3 имела процессор IBM-Motorola PowerPC 603e с частотой 66, 100 или 166 MHz, 33 MB оперативной памяти и два графических процессора Lockheed Martin Real3D/Pro-1000. За Model 3 была выпущена Sega Naomi в 1998 году и в ней используется архитектура, схожая с Sega Dreamcast.</text>
+      <text lang="es">Sega Model 3 es una plataforma arcade lanzada en 1996 como sucesora de Sega Model 2. El Model 3 continuó varias series de juegos arcade establecidas en anteriores placas arcade de Sega, con juegos como; Daytona USA 2, Sega Rally 2, Virtua Fighter 3 y Star Wars Trilogy Arcade.
 
 En el momento de su lanzamiento, la placa Model 3 era significativamente más potente que cualquier otra plataforma arcade del mercado, así como que cualquier consola doméstica u ordenador de la época, con una fidelidad gráfica aproximadamente a la par que Dreamcast o incluso algunos de los primeros títulos de PlayStation 2; los sistemas domésticos tardaron varios años en ponerse a la altura.
 
 Tenía una CPU IBM-Motorola PowerPC 603e que podía funcionar a 66, 100 o 166 MHz, 33 MB de RAM y dos GPU Lockheed Martin Real3D/Pro-1000. Al Model 3 le siguió el Sega Naomi en 1998, que utiliza una arquitectura similar a la del Sega Dreamcast.</text>
-			<text lang="de">Das Sega Model 3 ist eine Spielhallenplattform, die 1996 als Nachfolger des Sega Model 2 veröffentlicht wurde. Das Modell 3 setzte mehrere Spielhallenserien fort, die auf früheren Sega-Spielhallenplattformen etabliert waren, darunter Spiele wie Daytona USA 2, Sega Rally 2, Virtua Fighter 3 und Star Wars Trilogy Arcade.
+      <text lang="de">Das Sega Model 3 ist eine Spielhallenplattform, die 1996 als Nachfolger des Sega Model 2 veröffentlicht wurde. Das Modell 3 setzte mehrere Spielhallenserien fort, die auf früheren Sega-Spielhallenplattformen etabliert waren, darunter Spiele wie Daytona USA 2, Sega Rally 2, Virtua Fighter 3 und Star Wars Trilogy Arcade.
 
 Bei der Veröffentlichung war das Modell 3 deutlich leistungsfähiger als jede andere Arcade-Plattform auf dem Markt sowie jede Heimkonsole oder jeder Computer zu dieser Zeit, mit einer grafischen Wiedergabetreue, die in etwa mit der Dreamcast oder sogar einigen frühen PlayStation 2-Titeln vergleichbar war; es dauerte mehrere Jahre, bis die Heimsysteme aufholten.
 
 Es hatte eine IBM-Motorola PowerPC 603e CPU, die mit 66, 100 oder 166 MHz laufen konnte, 33 MB RAM und zwei Lockheed Martin Real3D/Pro-1000 GPUs. Auf das Model 3 folgte 1998 das Sega Naomi, das eine ähnliche Architektur wie das Sega Dreamcast verwendet.</text>
-			<text lang="fr">Le Sega Model 3 est une plate-forme d'arcade sortie en 1996 pour succéder au Sega Model 2. La Model 3 a poursuivi plusieurs séries de jeux d'arcade établies sur les cartes d'arcade Sega précédentes, avec des jeux tels que Daytona USA 2, Sega Rally 2, Virtua Fighter 3 et Star Wars Trilogy Arcade.
+      <text lang="fr">Le Sega Model 3 est une plate-forme d'arcade sortie en 1996 pour succéder au Sega Model 2. La Model 3 a poursuivi plusieurs séries de jeux d'arcade établies sur les cartes d'arcade Sega précédentes, avec des jeux tels que Daytona USA 2, Sega Rally 2, Virtua Fighter 3 et Star Wars Trilogy Arcade.
 
 À sa sortie, la carte Model 3 était nettement plus puissante que toute autre plate-forme d'arcade sur le marché, ainsi que toute console de salon ou ordinateur de l'époque, avec une fidélité graphique à peu près équivalente à celle de la Dreamcast ou même de certains des premiers titres de la PlayStation 2 ; il a fallu plusieurs années pour que les systèmes de salon rattrapent leur retard.
 
 Il était équipé d'un processeur PowerPC 603e d'IBM-Motorola pouvant fonctionner à 66, 100 ou 166 MHz, de 33 Mo de RAM et de deux GPU Real3D/Pro-1000 de Lockheed Martin. Le modèle 3 a été suivi par le Sega Naomi en 1998, qui utilise une architecture similaire à celle de la Sega Dreamcast.</text>
-			<text lang="it">Sega Model 3 è una piattaforma arcade rilasciata nel 1996 come successore di Sega Model 2. Il Model 3 ha proseguito diverse serie di giochi arcade già presenti sulle precedenti schede arcade Sega, con giochi come Daytona USA 2, Sega Rally 2, Virtua Fighter 3 e Star Wars Trilogy Arcade.
+      <text lang="it">Sega Model 3 è una piattaforma arcade rilasciata nel 1996 come successore di Sega Model 2. Il Model 3 ha proseguito diverse serie di giochi arcade già presenti sulle precedenti schede arcade Sega, con giochi come Daytona USA 2, Sega Rally 2, Virtua Fighter 3 e Star Wars Trilogy Arcade.
 
 Al momento dell'uscita, la scheda Model 3 era significativamente più potente di qualsiasi altra piattaforma arcade sul mercato, nonché di qualsiasi console o computer domestico dell'epoca, con una fedeltà grafica pari a quella del Dreamcast o persino di alcuni titoli della prima PlayStation 2; ci vollero diversi anni prima che i sistemi domestici si mettessero al passo.
 
 Aveva una CPU IBM-Motorola PowerPC 603e che poteva funzionare a 66, 100 o 166 MHz, 33 MB di RAM e due GPU Lockheed Martin Real3D/Pro-1000. Il Model 3 fu seguito dal Sega Naomi nel 1998, che utilizzava un'architettura simile a quella del Sega Dreamcast.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

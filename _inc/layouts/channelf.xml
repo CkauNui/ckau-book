@@ -1,85 +1,90 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
-			<origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
-			<pos>0.4815 0.402</pos>
-			<maxSize>0.22</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.2015 0.402" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
-			<origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
-			<pos>0.4815 0.402</pos>
-			<maxSize>0.215</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.2015 0.402" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1976</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Fairchild</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Channel F</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Fairchild Channel F, short for "Channel Fun", was the first programmable ROM cartridge–based video game console, and the first console to use a microprocessor. It was released by Fairchild Semiconductor in November 1976 across North America.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
+      <origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
+      <pos>0.4815 0.402</pos>
+      <maxSize>0.22</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.2015 0.402" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
+      <origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
+      <pos>0.4815 0.402</pos>
+      <maxSize>0.215</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.2015 0.402" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1976</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Fairchild</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Channel F</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Fairchild Channel F, short for "Channel Fun", was the first programmable ROM cartridge–based video game console, and the first console to use a microprocessor. It was released by Fairchild Semiconductor in November 1976 across North America.
 It was originally named "Video Entertainment System", but when Atari released its Video Computer System the next year, Fairchild changed the name for its machine, although they continued to use the old name alongside it.
 
 By 1977, the Fairchild Channel F had sold about 250,000 units, trailing behind sales of the VCS.
 In 1983, the production of the system was discontinued.</text>
-			<text lang="pl">airchild Channel F – konsola gier wideo z systemem programowania, która ukazała się na rynku w 1976 roku, pierwsza konsola zaliczana do 2 generacji. Do konsoli podłączało się kartridże, które były wyposażone w pamięć ROM oraz kod mikroprocesora. Konsola zawierała przycisk „Hold”, który umożliwiał zatrzymanie gry, możliwa była również zmiana prędkości gry bez utraty wyników. Do konsoli dodawano charakterystyczny ośmioosiowy dżojstik, którego ruchomy drążek mógł być wciskany lub wyciągany.
+      <text lang="pl">airchild Channel F – konsola gier wideo z systemem programowania, która ukazała się na rynku w 1976 roku, pierwsza konsola zaliczana do 2 generacji. Do konsoli podłączało się kartridże, które były wyposażone w pamięć ROM oraz kod mikroprocesora. Konsola zawierała przycisk „Hold”, który umożliwiał zatrzymanie gry, możliwa była również zmiana prędkości gry bez utraty wyników. Do konsoli dodawano charakterystyczny ośmioosiowy dżojstik, którego ruchomy drążek mógł być wciskany lub wyciągany.
 
 Fairchild udostępnił dwadzieścia sześć kartridżów na ten system, na każdym kartridżu znajdowały się po cztery gry. Były to gry sportowe, takie jak hokej, tenis i baseball oraz gry edukacyjne zawierające zagadki czy łamigłówki matematyczne.
 
 Fairchild Channel F był pierwszą konsolą obsługującą wymienialne kartridże, rozwiązanie opracowane przez zespół Jerry'ego Lawsona.</text>
-			<text lang="ru">Вторая в мире игровая приставка со сменными играми на картриджах и первая приставка с картриджем, содержащим программу. Первой приставкой, использующей картриджи, была Magnavox Odyssey, но её картридж состоял только из набора перемычек. Приставка была выпущена компанией Fairchild Semiconductor в ноябре 1976 года под названием Video Entertainment System (VES), по розничной цене в 169.95 долларов США. В следующем году, после того как компания Atari выпустила VCS, приставка была переименована.
+      <text lang="pt">Fairchild Channel F – um console de videogame com sistema de programação, lançado no mercado em 1976, a primeira console considerada da 2ª geração. O console usava cartuchos que continham memória ROM e código de microprocessador. O console tinha um botão "Hold", que permitia pausar o jogo, e também era possível mudar a velocidade do jogo sem perder os resultados. O console vinha com um joystick de oito vias característico, cujo eixo móvel podia ser pressionado para dentro ou puxado para fora.
+
+A Fairchild disponibilizou vinte e seis cartuchos para este sistema, cada cartucho continha quatro jogos. Eram jogos esportivos, como hóquei, tênis e beisebol, e jogos educacionais que incluíam enigmas ou quebra-cabeças matemáticos.
+
+O Fairchild Channel F foi o primeiro console a suportar cartuchos intercambiáveis, uma solução desenvolvida pela equipe de Jerry Lawson.</text>
+      <text lang="ru">Вторая в мире игровая приставка со сменными играми на картриджах и первая приставка с картриджем, содержащим программу. Первой приставкой, использующей картриджи, была Magnavox Odyssey, но её картридж состоял только из набора перемычек. Приставка была выпущена компанией Fairchild Semiconductor в ноябре 1976 года под названием Video Entertainment System (VES), по розничной цене в 169.95 долларов США. В следующем году, после того как компания Atari выпустила VCS, приставка была переименована.
 
 Приставка построена на микропроцессоре Fairchild F8, созданном Робертом Нойсом (Robert Noyce) до того, как он покинул Fairchild, чтобы основать собственную компанию — Intel. Процессор F8 был довольно сложен по сравнению с типичными интегральными микросхемами того времени, и имел больше входов/выходов чем другие чипы того времени. Из-за недоступности на то время корпусов с необходимым количеством выводов, F8 был выпущен в виде двух отдельных микросхем, которые вместе составляли полноценный центральный процессор устройства. Графика была довольно простой, но цветной (поддерживалось отображение до 8 цветов), что было шагом вперёд по сравнению с приставкой Pong того же времени. Звук проигрывался через внутренний динамик, а не через телевизор.</text>
-			<text lang="es">La Fairchild Channel F, abreviatura de "Channel Fun", fue la primera consola de videojuegos basada en cartuchos ROM programables, y la primera consola en utilizar un microprocesador. Fue lanzada por Fairchild Semiconductor en noviembre de 1976 en Norteamérica.
+      <text lang="es">La Fairchild Channel F, abreviatura de "Channel Fun", fue la primera consola de videojuegos basada en cartuchos ROM programables, y la primera consola en utilizar un microprocesador. Fue lanzada por Fairchild Semiconductor en noviembre de 1976 en Norteamérica.
 Originalmente se llamaba "Video Entertainment System", pero cuando Atari lanzó su Video Computer System al año siguiente, Fairchild cambió el nombre para su máquina, aunque siguió utilizando el antiguo nombre junto a ella.
 
 En 1977, el Fairchild Channel F había vendido unas 250.000 unidades, por detrás de las ventas del VCS.
 En 1983, se interrumpió la producción del sistema.</text>
-			<text lang="de">Der Fairchild Channel F, kurz für "Channel Fun", war die erste programmierbare Videospielkonsole auf ROM-Kassettenbasis und die erste Konsole, die einen Mikroprozessor verwendete. Sie wurde von Fairchild Semiconductor im November 1976 in Nordamerika auf den Markt gebracht.
+      <text lang="de">Der Fairchild Channel F, kurz für "Channel Fun", war die erste programmierbare Videospielkonsole auf ROM-Kassettenbasis und die erste Konsole, die einen Mikroprozessor verwendete. Sie wurde von Fairchild Semiconductor im November 1976 in Nordamerika auf den Markt gebracht.
 Ursprünglich trug sie den Namen "Video Entertainment System", aber als Atari im darauf folgenden Jahr sein Video Computer System herausbrachte, änderte Fairchild den Namen für seine Maschine, obwohl sie den alten Namen weiterhin daneben verwendeten.
 
 Bis 1977 verkaufte Fairchild Channel F etwa 250.000 Einheiten und blieb damit hinter den Verkäufen des VCS zurück.
 Im Jahr 1983 wurde die Produktion des Systems eingestellt.</text>
-			<text lang="fr">La Fairchild Channel F, abréviation de "Channel Fun", est la première console de jeux vidéo à cartouche ROM programmable et la première console à utiliser un microprocesseur. Elle a été commercialisée par Fairchild Semiconductor en novembre 1976 en Amérique du Nord.
+      <text lang="fr">La Fairchild Channel F, abréviation de "Channel Fun", est la première console de jeux vidéo à cartouche ROM programmable et la première console à utiliser un microprocesseur. Elle a été commercialisée par Fairchild Semiconductor en novembre 1976 en Amérique du Nord.
 Elle s'appelait à l'origine "Video Entertainment System", mais lorsque Atari a sorti son Video Computer System l'année suivante, Fairchild a changé le nom de sa machine, bien qu'elle ait continué à utiliser l'ancien nom à côté.
 
 En 1977, le Fairchild Channel F s'était vendu à environ 250 000 exemplaires, derrière le VCS.
 En 1983, la production du système a été arrêtée.</text>
-			<text lang="it">Il Fairchild Channel F, abbreviazione di "Channel Fun", è stata la prima console per videogiochi basata su cartucce ROM programmabili e la prima console a utilizzare un microprocessore. Fu messa in commercio da Fairchild Semiconductor nel novembre 1976 in tutto il Nord America.
+      <text lang="it">Il Fairchild Channel F, abbreviazione di "Channel Fun", è stata la prima console per videogiochi basata su cartucce ROM programmabili e la prima console a utilizzare un microprocessore. Fu messa in commercio da Fairchild Semiconductor nel novembre 1976 in tutto il Nord America.
 Inizialmente si chiamava "Video Entertainment System", ma quando Atari rilasciò il suo Video Computer System l'anno successivo, Fairchild cambiò il nome della sua macchina, anche se continuò a usare il vecchio nome accanto ad esso.
 
 Nel 1977, il Fairchild Channel F aveva venduto circa 250.000 unità, rimanendo indietro rispetto alle vendite del VCS.
 Nel 1983 la produzione del sistema fu interrotta.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

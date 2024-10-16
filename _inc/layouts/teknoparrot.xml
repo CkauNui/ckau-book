@@ -1,160 +1,160 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.3 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
-			<pos>0.305 0.45</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>14</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.025 0.45" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.6 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
-			<pos>0.69 0.45</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>-14</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.41 0.45" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<pos>0.499 0.47</pos>
-			<maxSize>0.175</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.184</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-left" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.392 0.48</pos>
-			<maxSize>0.14</maxSize>
-			<rotation>-76</rotation>
-			<storyboard>
-				<animation property="pos" to="0.112 0.48" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-right" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
-			<pos>0.607 0.48</pos>
-			<maxSize>0.14</maxSize>
-			<rotation>76</rotation>
-			<storyboard>
-				<animation property="pos" to="0.327 0.48" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<pos>0.499 0.47</pos>
-			<maxSize>0.162</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.22</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.182</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
-			<pos>0.621 0.47</pos>
-			<maxSize>0.14</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.341 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox3" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
-			<pos>0.38 0.47</pos>
-			<maxSize>0.14</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.1 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2018</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Teknoparrot</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>TeknoParrot is a software package allowing to run selected PC-based arcade titles, with full support for keyboard and mouse controls, gamepads, steering wheels and joysticks.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-left" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.3 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
+      <pos>0.305 0.45</pos>
+      <minSize>0.1 0.3</minSize>
+      <rotation>14</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.025 0.45" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-right" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.6 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+      <pos>0.69 0.45</pos>
+      <minSize>0.1 0.3</minSize>
+      <rotation>-14</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.41 0.45" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <pos>0.499 0.47</pos>
+      <maxSize>0.175</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.184</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-left" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.392 0.48</pos>
+      <maxSize>0.14</maxSize>
+      <rotation>-76</rotation>
+      <storyboard>
+        <animation property="pos" to="0.112 0.48" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-right" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+      <pos>0.607 0.48</pos>
+      <maxSize>0.14</maxSize>
+      <rotation>76</rotation>
+      <storyboard>
+        <animation property="pos" to="0.327 0.48" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <pos>0.499 0.47</pos>
+      <maxSize>0.162</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.22</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.182</maxSize>
+      <zIndex>26</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+      <pos>0.621 0.47</pos>
+      <maxSize>0.14</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.341 0.47" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox3" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
+      <pos>0.38 0.47</pos>
+      <maxSize>0.14</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.1 0.47" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2018</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Teknoparrot</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>TeknoParrot is a software package allowing to run selected PC-based arcade titles, with full support for keyboard and mouse controls, gamepads, steering wheels and joysticks.
 
 It currently supports games for various arcade systems, mapping the proprietary add-on hardware found in these systems to commodity PC peripherals, and fixing any other limitations in the game software that prevents them from running on standard Windows systems.
 
 TeknoParrot currently supports over 170 arcade titles from a wide variety of arcade hardware, such as Taito Type-X/Type-X2/Type-X3, eX-Board, Namco N2, Namco ES3X, Sega Lindbergh, Sega Europa-R, Sega RingEdge/RingEdge 2/RingWide.
 	</text>
-			<text lang="pl">TeknoParrot to pakiet oprogramowania pozwalający na uruchamianie wybranych tytułów zręcznościowych na komputerach PC, z pełnym wsparciem dla sterowania za pomocą klawiatury i myszy, gamepadów, kierownic i joysticków.
+      <text lang="pl">TeknoParrot to pakiet oprogramowania pozwalający na uruchamianie wybranych tytułów zręcznościowych na komputerach PC, z pełnym wsparciem dla sterowania za pomocą klawiatury i myszy, gamepadów, kierownic i joysticków.
 
 Obecnie TeknoParrot obsługuje gry dla różnych systemów zręcznościowych, mapując opatentowany sprzęt dodatkowy znajdujący się w tych systemach na standardowe urządzenia peryferyjne PC i naprawiając wszelkie inne ograniczenia w oprogramowaniu gier, które uniemożliwiają ich uruchomienie na standardowych systemach Windows.
 
@@ -164,29 +164,39 @@ TeknoParrot obsługuje obecnie ponad 170 tytułów z szerokiej gamy urządzeń a
 - Sega Lindbergh, 
 - Sega Europa-R, 
 - Sega RingEdge/RingEdge 2/RingWide.</text>
-			<text lang="ru">Позволяет запускать некоторые аркадные игры для ПК на собственном оборудовании с полной поддержкой управления клавиатурой и мышью, геймпадами, рулями и джойстиками.
+      <text lang="pt">TeknoParrot é um pacote de software que permite executar títulos de arcade selecionados em computadores PC, com suporte completo para controle através de teclado e mouse, gamepads, volantes e joysticks.
+
+Atualmente, o TeknoParrot suporta jogos para diversos sistemas de arcade, mapeando o hardware adicional patenteado encontrado nesses sistemas para periféricos PC padrão e corrigindo quaisquer outras limitações no software dos jogos que impedem que eles sejam executados em sistemas Windows padrão.
+
+O TeknoParrot atualmente suporta mais de 170 títulos de uma ampla gama de dispositivos de arcade, como:
+- Taito Type-X/Type-X2/Type-X3,
+- eX-Board, Namco N2, Namco ES3X,
+- Sega Lindbergh,
+- Sega Europa-R,
+- Sega RingEdge/RingEdge 2/RingWide.</text>
+      <text lang="ru">Позволяет запускать некоторые аркадные игры для ПК на собственном оборудовании с полной поддержкой управления клавиатурой и мышью, геймпадами, рулями и джойстиками.
 
 В настоящее время TeknoParrot поддерживает более 170 аркадных игр для самых разных аркадных устройств, таких как Taito Type-X/Type-X2/Type-X3, eX-Board, Namco N2, Namco ES3X, Sega Lindbergh, Sega Europa-R, Sega RingEdge/RingEdge 2/RingWide.</text>
-			<text lang="es">TeknoParrot es un paquete de software que permite ejecutar determinados títulos arcade para PC, con total compatibilidad con controles de teclado y ratón, gamepads, volantes y joysticks.
+      <text lang="es">TeknoParrot es un paquete de software que permite ejecutar determinados títulos arcade para PC, con total compatibilidad con controles de teclado y ratón, gamepads, volantes y joysticks.
 
 Actualmente soporta juegos para varios sistemas arcade, mapeando el hardware complementario propietario que se encuentra en estos sistemas a periféricos de PC básicos, y corrigiendo cualquier otra limitación en el software del juego que impida su ejecución en sistemas Windows estándar.
 
 TeknoParrot soporta actualmente más de 170 títulos arcade de una amplia variedad de hardware arcade, como Taito Type-X/Type-X2/Type-X3, eX-Board, Namco N2, Namco ES3X, Sega Lindbergh, Sega Europa-R, Sega RingEdge/RingEdge 2/RingWide.</text>
-			<text lang="de">TeknoParrot ist ein Softwarepaket, das es ermöglicht, ausgewählte PC-basierte Arcade-Titel zu spielen, mit voller Unterstützung für Tastatur- und Maussteuerung, Gamepads, Lenkräder und Joysticks.
+      <text lang="de">TeknoParrot ist ein Softwarepaket, das es ermöglicht, ausgewählte PC-basierte Arcade-Titel zu spielen, mit voller Unterstützung für Tastatur- und Maussteuerung, Gamepads, Lenkräder und Joysticks.
 
 Es unterstützt derzeit Spiele für verschiedene Arcade-Systeme, indem es die proprietäre Zusatzhardware dieser Systeme auf handelsübliche PC-Peripheriegeräte abbildet und alle anderen Einschränkungen in der Spielesoftware behebt, die verhindern, dass sie auf Standard-Windows-Systemen laufen.
 
 TeknoParrot unterstützt derzeit über 170 Arcade-Titel von einer Vielzahl von Arcade-Hardware, wie Taito Type-X/Type-X2/Type-X3, eX-Board, Namco N2, Namco ES3X, Sega Lindbergh, Sega Europa-R, Sega RingEdge/RingEdge 2/RingWide.</text>
-			<text lang="fr">TeknoParrot est un logiciel permettant d'exécuter des titres d'arcade sélectionnés sur PC, avec une prise en charge complète des commandes au clavier et à la souris, des manettes de jeu, des volants et des joysticks.
+      <text lang="fr">TeknoParrot est un logiciel permettant d'exécuter des titres d'arcade sélectionnés sur PC, avec une prise en charge complète des commandes au clavier et à la souris, des manettes de jeu, des volants et des joysticks.
 
 Il prend actuellement en charge des jeux pour divers systèmes d'arcade, en associant le matériel d'extension propriétaire de ces systèmes à des périphériques PC courants, et en corrigeant toute autre limitation dans le logiciel de jeu qui les empêche de fonctionner sur des systèmes Windows standard.
 
 TeknoParrot prend actuellement en charge plus de 170 titres d'arcade provenant d'une grande variété de matériel d'arcade, tels que Taito Type-X/Type-X2/Type-X3, eX-Board, Namco N2, Namco ES3X, Sega Lindbergh, Sega Europa-R, Sega RingEdge/RingEdge 2/RingWide.</text>
-			<text lang="it">TeknoParrot è un pacchetto software che consente di eseguire titoli arcade selezionati basati su PC, con il pieno supporto dei comandi di tastiera e mouse, gamepad, volanti e joystick.
+      <text lang="it">TeknoParrot è un pacchetto software che consente di eseguire titoli arcade selezionati basati su PC, con il pieno supporto dei comandi di tastiera e mouse, gamepad, volanti e joystick.
 
 Attualmente supporta giochi per vari sistemi arcade, mappando l'hardware aggiuntivo proprietario presente in questi sistemi alle periferiche di base del PC e correggendo qualsiasi altra limitazione nel software di gioco che ne impedisce l'esecuzione su sistemi Windows standard.
 
 TeknoParrot supporta attualmente oltre 170 titoli arcade di un'ampia varietà di hardware arcade, come Taito Type-X/Type-X2/Type-X3, eX-Board, Namco N2, Namco ES3X, Sega Lindbergh, Sega Europa-R, Sega RingEdge/RingEdge 2/RingWide.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

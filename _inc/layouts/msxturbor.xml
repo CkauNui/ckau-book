@@ -1,86 +1,93 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.32</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.358</pos>
-			<maxSize>0.26</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.358" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.32</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.358</pos>
-			<maxSize>0.25</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.358" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1990</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>MSX Turbo R</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The MSX Turbo R is the last generation of MSX computers that was put to market by a household electronic brand. Only Panasonic was brave enough to put faith in the standard once again, by releasing two different models: the Panasonic FS-A1ST and the Panasonic FS-A1GT. MSX Turbo R computers were produced until 1994.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.32</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.5 0.358</pos>
+      <maxSize>0.26</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.358" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.32</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.5 0.358</pos>
+      <maxSize>0.25</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.358" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1990</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>MSX Turbo R</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The MSX Turbo R is the last generation of MSX computers that was put to market by a household electronic brand. Only Panasonic was brave enough to put faith in the standard once again, by releasing two different models: the Panasonic FS-A1ST and the Panasonic FS-A1GT. MSX Turbo R computers were produced until 1994.
 New features include: a new PCM sound chip which can produce digitized sound up to 44 KHz (in assembly language) and a new Z80 downward compatible R800 processor. The user can select the CPU (Z80 or R800) by software.
 
 According to Kay Nishi, the R on the MSX Turbo R stands for RISC (Reduced instruction set computing).
 
 There is not a lot of software specific for the MSX Turbo R, although a lot of MSX games can run smoother and/or faster on an MSX Turbo R. As with the MSX2+, some software uses the optional scroll features or higher screens.</text>
-			<text lang="pl">MSX Turbo R to ostatnia generacja komputerów MSX, która została wprowadzona na rynek przez markę elektroniki użytkowej. Jedynie Panasonic był na tyle odważny, aby ponownie zaufać standardowi, wypuszczając na rynek dwa różne modele: Panasonic FS-A1ST i Panasonic FS-A1GT. Komputery MSX Turbo R były produkowane do 1994 roku.
+      <text lang="pl">MSX Turbo R to ostatnia generacja komputerów MSX, która została wprowadzona na rynek przez markę elektroniki użytkowej. Jedynie Panasonic był na tyle odważny, aby ponownie zaufać standardowi, wypuszczając na rynek dwa różne modele: Panasonic FS-A1ST i Panasonic FS-A1GT. Komputery MSX Turbo R były produkowane do 1994 roku.
 Nowe funkcje obejmują: nowy układ dźwiękowy PCM, który może wytwarzać dźwięk cyfrowy o częstotliwości do 44 KHz (w języku asemblera) oraz nowy procesor R800 zgodny z Z80 w dół. Użytkownik może wybrać procesor (Z80 lub R800) za pomocą oprogramowania.
 
 Według Kaya Nishi, litera R w nazwie MSX Turbo R oznacza RISC (Reduced Instructions Set Computing).
 
 Nie ma zbyt wielu programów specyficznych dla MSX Turbo R, chociaż wiele gier MSX może działać płynniej i/lub szybciej na MSX Turbo R. Podobnie jak w przypadku MSX2+, niektóre programy wykorzystują opcjonalne funkcje przewijania lub wyższe rozdzielczości ekranu.</text>
-			<text lang="ru">Стандарт MSX имеет четыре версии (поколения): MSX 1 (1983), MSX 2 (1985), MSX 2+ (1988) и MSX Turbo R (1990). Компьютеры, соответствующие первым трём версиям стандарта, являются 8-разрядными, на базе микропроцессора Zilog Z80, тогда как компьютеры MSX Turbo R использовали улучшенный вариант процессора Zilog Z800, известный под названием R800. Стандарт Turbo R был представлен в 1990 году, однако не имел особого успеха из-за отсутствия поддержки программным обеспечением и возраставшей популярности IBM PC-совместимых компьютеров. Производство Turbo R было прекращено в 1995 году.
+      <text lang="pt">MSX Turbo R é a última geração de computadores MSX, lançada pela marca de eletrônicos de consumo. Apenas a Panasonic foi ousada o suficiente para confiar novamente no padrão, lançando dois modelos diferentes: Panasonic FS-A1ST e Panasonic FS-A1GT. Os computadores MSX Turbo R foram produzidos até 1994.
+
+Novas funcionalidades incluem: um novo chip de som PCM, capaz de produzir som digital com frequência de até 44 KHz (em linguagem assembly), e um novo processador R800 compatível com Z80 para baixo. O usuário pode escolher o processador (Z80 ou R800) por meio de software.
+
+De acordo com Kaya Nishi, a letra R no nome MSX Turbo R significa RISC (Reduced Instructions Set Computing).
+
+Não há muitos programas específicos para MSX Turbo R, embora muitos jogos MSX possam funcionar de forma mais suave e/ou rápida em um MSX Turbo R. Assim como no MSX2+, alguns programas utilizam funcionalidades opcionais de rolagem ou resoluções de tela mais altas.</text>
+      <text lang="ru">Стандарт MSX имеет четыре версии (поколения): MSX 1 (1983), MSX 2 (1985), MSX 2+ (1988) и MSX Turbo R (1990). Компьютеры, соответствующие первым трём версиям стандарта, являются 8-разрядными, на базе микропроцессора Zilog Z80, тогда как компьютеры MSX Turbo R использовали улучшенный вариант процессора Zilog Z800, известный под названием R800. Стандарт Turbo R был представлен в 1990 году, однако не имел особого успеха из-за отсутствия поддержки программным обеспечением и возраставшей популярности IBM PC-совместимых компьютеров. Производство Turbo R было прекращено в 1995 году.
 
 Компьютеры этого стандарта официально выпускались только в Японии.</text>
-			<text lang="es">El MSX Turbo R es la última generación de ordenadores MSX que sacó al mercado una marca de electrónica doméstica. Sólo Panasonic fue lo suficientemente valiente como para volver a confiar en el estándar, lanzando dos modelos diferentes: el Panasonic FS-A1ST y el Panasonic FS-A1GT. Los ordenadores MSX Turbo R se produjeron hasta 1994.
+      <text lang="es">El MSX Turbo R es la última generación de ordenadores MSX que sacó al mercado una marca de electrónica doméstica. Sólo Panasonic fue lo suficientemente valiente como para volver a confiar en el estándar, lanzando dos modelos diferentes: el Panasonic FS-A1ST y el Panasonic FS-A1GT. Los ordenadores MSX Turbo R se produjeron hasta 1994.
 Las nuevas características incluyen: un nuevo chip de sonido PCM que puede producir sonido digitalizado hasta 44 KHz (en lenguaje ensamblador) y un nuevo procesador R800 compatible con Z80 descendente. El usuario puede seleccionar la CPU (Z80 o R800) por software.
 
 Según Kay Nishi, la R del MSX Turbo R significa RISC (Reduced instruction set computing).
 
 No hay mucho software específico para el MSX Turbo R, aunque muchos juegos de MSX pueden ejecutarse de forma más fluida y/o rápida en un MSX Turbo R. Al igual que con el MSX2+, algunos programas utilizan las funciones de desplazamiento opcionales o pantallas más altas.</text>
-			<text lang="de">Der MSX Turbo R ist die letzte Generation von MSX-Computern, die von einer bekannten Elektronikmarke auf den Markt gebracht wurde. Nur Panasonic war mutig genug, noch einmal auf den Standard zu setzen, indem es zwei verschiedene Modelle herausbrachte: den Panasonic FS-A1ST und den Panasonic FS-A1GT. Die MSX Turbo R Computer wurden bis 1994 produziert.
+      <text lang="de">Der MSX Turbo R ist die letzte Generation von MSX-Computern, die von einer bekannten Elektronikmarke auf den Markt gebracht wurde. Nur Panasonic war mutig genug, noch einmal auf den Standard zu setzen, indem es zwei verschiedene Modelle herausbrachte: den Panasonic FS-A1ST und den Panasonic FS-A1GT. Die MSX Turbo R Computer wurden bis 1994 produziert.
 Zu den neuen Funktionen gehören: ein neuer PCM-Soundchip, der digitalisierten Sound bis zu 44 KHz (in Assembler) erzeugen kann, und ein neuer Z80-abwärtskompatibler R800-Prozessor. Der Benutzer kann die CPU (Z80 oder R800) per Software auswählen.
 
 Laut Kay Nishi steht das R auf dem MSX Turbo R für RISC (Reduced instruction set computing).
 
 Es gibt nicht viel Software speziell für den MSX Turbo R, obwohl viele MSX-Spiele auf einem MSX Turbo R flüssiger und/oder schneller laufen. Wie beim MSX2+ nutzt einige Software die optionalen Scrollfunktionen oder höhere Bildschirme.</text>
-			<text lang="fr">Le MSX Turbo R est la dernière génération d'ordinateurs MSX à avoir été mise sur le marché par une marque d'électronique grand public. Seul Panasonic a eu le courage de faire à nouveau confiance au standard, en sortant deux modèles différents : le Panasonic FS-A1ST et le Panasonic FS-A1GT. Les ordinateurs MSX Turbo R ont été produits jusqu'en 1994.
+      <text lang="fr">Le MSX Turbo R est la dernière génération d'ordinateurs MSX à avoir été mise sur le marché par une marque d'électronique grand public. Seul Panasonic a eu le courage de faire à nouveau confiance au standard, en sortant deux modèles différents : le Panasonic FS-A1ST et le Panasonic FS-A1GT. Les ordinateurs MSX Turbo R ont été produits jusqu'en 1994.
 Les nouvelles caractéristiques comprennent : une nouvelle puce sonore PCM qui peut produire un son numérisé jusqu'à 44 KHz (en langage d'assemblage) et un nouveau processeur R800 compatible avec le Z80. L'utilisateur peut sélectionner le processeur (Z80 ou R800) par logiciel.
 
 Selon Kay Nishi, le R du MSX Turbo R signifie RISC (Reduced instruction set computing).
 
 Il n'existe pas beaucoup de logiciels spécifiques au MSX Turbo R, bien que de nombreux jeux MSX puissent fonctionner de manière plus fluide et/ou plus rapide sur un MSX Turbo R. Comme pour le MSX2+, certains logiciels utilisent les fonctions de défilement optionnelles ou des écrans plus grands.</text>
-			<text lang="it">L'MSX Turbo R è l'ultima generazione di computer MSX immessa sul mercato da un marchio di elettronica familiare. Solo Panasonic ebbe il coraggio di puntare ancora una volta sullo standard, rilasciando due modelli diversi: il Panasonic FS-A1ST e il Panasonic FS-A1GT. I computer MSX Turbo R furono prodotti fino al 1994.
+      <text lang="it">L'MSX Turbo R è l'ultima generazione di computer MSX immessa sul mercato da un marchio di elettronica familiare. Solo Panasonic ebbe il coraggio di puntare ancora una volta sullo standard, rilasciando due modelli diversi: il Panasonic FS-A1ST e il Panasonic FS-A1GT. I computer MSX Turbo R furono prodotti fino al 1994.
 Le nuove caratteristiche includono: un nuovo chip audio PCM in grado di produrre suoni digitalizzati fino a 44 KHz (in linguaggio assembly) e un nuovo processore R800 compatibile con lo Z80. L'utente può selezionare la CPU (Z80 o R800) tramite software.
 
 Secondo Kay Nishi, la R di MSX Turbo R sta per RISC (Reduced instruction set computing).
 
 Non esiste molto software specifico per l'MSX Turbo R, anche se molti giochi MSX possono essere eseguiti in modo più fluido e/o veloce su un MSX Turbo R. Come per l'MSX2+, alcuni software utilizzano le funzioni di scorrimento opzionali o schermi più alti.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

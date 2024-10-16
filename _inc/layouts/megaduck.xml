@@ -1,68 +1,71 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.35</pos>
-			<maxSize>0.215</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.35</pos>
-			<maxSize>0.205</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1993</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Creatonic/Videojet/Timlex</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Mega Duck</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Mega Duck was released by Creatronic, Videojet and Timlex in 1993 mainly in Germany and France. Looks alike a Game Boy with the monochrome green screen, it's "start", "Select", "A" and "B" buttons and directional pad but that's were the similiraties ends.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.5 0.35</pos>
+      <maxSize>0.215</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.5 0.35</pos>
+      <maxSize>0.205</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1993</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Creatonic/Videojet/Timlex</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Mega Duck</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Mega Duck was released by Creatronic, Videojet and Timlex in 1993 mainly in Germany and France. Looks alike a Game Boy with the monochrome green screen, it's "start", "Select", "A" and "B" buttons and directional pad but that's were the similiraties ends.
 
 The carts are about 2 1/8 inchs by 2 1/2 inchs with 36 pins to connect with the cartridge slot of the Mega Duck (unlike the 32-pins of the Game Boy or the 40-pins of the Supervision).</text>
-			<text lang="pl">Mega Duck został wydany przez Creatronic, Videojet i Timlex w 1993 roku głównie w Niemczech i Francji. Wygląda podobnie jak Game Boy z monochromatycznym zielonym ekranem, przyciskami "Start", "Select", "A" i "B" oraz klawiaturą kierunkową, ale na tym podobieństwa się kończą.
+      <text lang="pl">Mega Duck został wydany przez Creatronic, Videojet i Timlex w 1993 roku głównie w Niemczech i Francji. Wygląda podobnie jak Game Boy z monochromatycznym zielonym ekranem, przyciskami "Start", "Select", "A" i "B" oraz klawiaturą kierunkową, ale na tym podobieństwa się kończą.
 
 Carts są około 2 1/8 cala na 2 1/2 cala z 36 pinami, aby połączyć się z gniazdem kartridża Mega Duck (w przeciwieństwie do 32-pinów Game Boy lub 40-pinów Supervision).</text>
-			<text lang="ru">Mega Duck был выпущен компаниями Creatronic, Videojet и Timlex в 1993 году в основном в Германии и Франции. Похож на Game Boy с монохромным зеленым экраном, кнопками "Start", "Select", "A" и "B" и джойстиком, но на этом сходство заканчивается.</text>
-			<text lang="es">El Mega Duck fue lanzado por Creatronic, Videojet y Timlex en 1993, principalmente en Alemania y Francia. Se parece a una Game Boy por la pantalla verde monocroma, sus botones "start", "Select", "A" y "B" y el pad direccional, pero ahí acaban las similitudes.
+      <text lang="pt">Mega Duck foi lançado pela Creatronic, Videojet e Timlex em 1993, principalmente na Alemanha e na França. Ele se parece com o Game Boy, com uma tela verde monocromática, botões "Start", "Select", "A" e "B" e um direcional, mas as similaridades param por aí.
+
+Os cartuchos têm cerca de 5,4 cm por 6,35 cm com 36 pinos para se conectar à entrada de cartucho do Mega Duck (ao contrário dos 32 pinos do Game Boy ou dos 40 pinos do Supervision).</text>
+      <text lang="ru">Mega Duck был выпущен компаниями Creatronic, Videojet и Timlex в 1993 году в основном в Германии и Франции. Похож на Game Boy с монохромным зеленым экраном, кнопками "Start", "Select", "A" и "B" и джойстиком, но на этом сходство заканчивается.</text>
+      <text lang="es">El Mega Duck fue lanzado por Creatronic, Videojet y Timlex en 1993, principalmente en Alemania y Francia. Se parece a una Game Boy por la pantalla verde monocroma, sus botones "start", "Select", "A" y "B" y el pad direccional, pero ahí acaban las similitudes.
 
 Los cartuchos miden aproximadamente 2 1/8 pulgadas por 2 1/2 pulgadas y tienen 36 clavijas para conectar con la ranura de cartuchos de la Mega Duck (a diferencia de las 32 clavijas de la Game Boy o las 40 clavijas de la Supervision).</text>
-			<text lang="de">Der Mega Duck wurde 1993 von Creatronic, Videojet und Timlex hauptsächlich in Deutschland und Frankreich veröffentlicht. Er sieht mit dem monochromen grünen Bildschirm, den "Start"-, "Select"-, "A"- und "B"-Tasten und dem Steuerkreuz wie ein Game Boy aus, aber damit enden die Ähnlichkeiten auch schon.
+      <text lang="de">Der Mega Duck wurde 1993 von Creatronic, Videojet und Timlex hauptsächlich in Deutschland und Frankreich veröffentlicht. Er sieht mit dem monochromen grünen Bildschirm, den "Start"-, "Select"-, "A"- und "B"-Tasten und dem Steuerkreuz wie ein Game Boy aus, aber damit enden die Ähnlichkeiten auch schon.
 
 Die Carts sind etwa 2 1/8 Zoll mal 2 1/2 Zoll groß und haben 36 Pins zum Anschluss an den Cartridge-Slot des Mega Duck (im Gegensatz zu den 32 Pins des Game Boy oder den 40 Pins des Supervision).</text>
-			<text lang="fr">La Mega Duck a été commercialisée par Creatronic, Videojet et Timlex en 1993, principalement en Allemagne et en France. Il ressemble à un Game Boy avec son écran vert monochrome, ses boutons "start", "Select", "A" et "B" et son pavé directionnel, mais les similitudes s'arrêtent là.
+      <text lang="fr">La Mega Duck a été commercialisée par Creatronic, Videojet et Timlex en 1993, principalement en Allemagne et en France. Il ressemble à un Game Boy avec son écran vert monochrome, ses boutons "start", "Select", "A" et "B" et son pavé directionnel, mais les similitudes s'arrêtent là.
 
 Les cartouches mesurent environ 2 pouces sur 2 pouces et demi avec 36 broches pour se connecter à l'emplacement de la cartouche du Mega Duck (contrairement aux 32 broches du Game Boy ou aux 40 broches de la Supervision).</text>
-			<text lang="it">Il Mega Duck è stato distribuito da Creatronic, Videojet e Timlex nel 1993, principalmente in Germania e Francia. Assomiglia a un Game Boy con lo schermo verde monocromatico, i tasti "start", "Select", "A" e "B" e il pad direzionale, ma le somiglianze finiscono qui.
+      <text lang="it">Il Mega Duck è stato distribuito da Creatronic, Videojet e Timlex nel 1993, principalmente in Germania e Francia. Assomiglia a un Game Boy con lo schermo verde monocromatico, i tasti "start", "Select", "A" e "B" e il pad direzionale, ma le somiglianze finiscono qui.
 
 Le cartucce sono di circa 2,8 pollici per 2,5 pollici con 36 pin da collegare allo slot per cartucce del Mega Duck (a differenza dei 32 pin del Game Boy o dei 40 pin del Supervision).</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

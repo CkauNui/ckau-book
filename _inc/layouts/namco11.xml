@@ -1,170 +1,173 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.3 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.26 0.36</pos>
-			<minSize>0.1 0.2</minSize>
-			<rotation>8</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="-0.02 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.7 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.54 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.74 0.36</pos>
-			<minSize>0.1 0.2</minSize>
-			<rotation>-8</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.46 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<pos>0.5 0.363</pos>
-			<maxSize>0.15</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-left" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.36 0.37</pos>
-			<maxSize>0.14</maxSize>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.08 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-right" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.638 0.37</pos>
-			<maxSize>0.14</maxSize>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.358 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<pos>0.5 0.363</pos>
-			<maxSize>0.14</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}-right.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.655 0.37</pos>
-			<maxSize>0.13</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.375 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox3" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}-left.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.345 0.37</pos>
-			<maxSize>0.13</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.065 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1994</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Namco</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>System 11</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Namco System 11 is a 32-bit arcade system board developed jointly by Namco and Sony Computer Entertainment. Released in 1994, the System 11 is based on a prototype of the PlayStation, Sony's first home video game console, using a 512 KB operating system and several custom processors.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-left" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.3 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.26 0.36</pos>
+      <minSize>0.1 0.2</minSize>
+      <rotation>8</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="-0.02 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-right" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.7 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.54 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.74 0.36</pos>
+      <minSize>0.1 0.2</minSize>
+      <rotation>-8</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.46 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <pos>0.5 0.363</pos>
+      <maxSize>0.15</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-left" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.36 0.37</pos>
+      <maxSize>0.14</maxSize>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.08 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-right" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.638 0.37</pos>
+      <maxSize>0.14</maxSize>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.358 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <pos>0.5 0.363</pos>
+      <maxSize>0.14</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}-right.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.655 0.37</pos>
+      <maxSize>0.13</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.375 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox3" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}-left.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.345 0.37</pos>
+      <maxSize>0.13</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.065 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1994</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Namco</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>System 11</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Namco System 11 is a 32-bit arcade system board developed jointly by Namco and Sony Computer Entertainment. Released in 1994, the System 11 is based on a prototype of the PlayStation, Sony's first home video game console, using a 512 KB operating system and several custom processors.
 
 The Namco System 12 is an upgraded version of the System 11 that was released in 1996, featuring faster processing power.</text>
-			<text lang="pl">Namco System 11 to 32-bitowy system zręcznościowy opracowany wspólnie przez Namco i Sony Computer Entertainment. Wydany w 1994 roku System 11 został oparty na prototypie PlayStation, pierwszej domowej konsoli do gier wideo firmy Sony, wykorzystującej system operacyjny 512 KB i kilka niestandardowych procesorów.
+      <text lang="pl">Namco System 11 to 32-bitowy system zręcznościowy opracowany wspólnie przez Namco i Sony Computer Entertainment. Wydany w 1994 roku System 11 został oparty na prototypie PlayStation, pierwszej domowej konsoli do gier wideo firmy Sony, wykorzystującej system operacyjny 512 KB i kilka niestandardowych procesorów.
 
 Namco System 12 to ulepszona wersja Systemu 11, która została wydana w 1996 roku i charakteryzowała się większą mocą obliczeniową.</text>
-			<text lang="ru">Namco System 11 - 32-разрядная аркадная системная плата, разработанная совместно компаниями Namco и Sony Computer Entertainment. Выпущенная в 1994 году, System 11 была основана на прототипе PlayStation, первой домашней видеоигровой консоли компании Sony, и использовала операционную систему объемом 512 КБ и несколько специализированных процессоров.
+      <text lang="pt">Namco System 11 é um sistema de arcade de 32 bits desenvolvido em conjunto pela Namco e Sony Computer Entertainment. Lançado em 1994, o System 11 foi baseado no protótipo do PlayStation, o primeiro console doméstico de videogame da Sony, utilizando um sistema operacional de 512 KB e vários processadores não padronizados.
+
+Namco System 12 é uma versão aprimorada do System 11, lançada em 1996 e que se caracterizava por maior poder de processamento.</text>
+      <text lang="ru">Namco System 11 - 32-разрядная аркадная системная плата, разработанная совместно компаниями Namco и Sony Computer Entertainment. Выпущенная в 1994 году, System 11 была основана на прототипе PlayStation, первой домашней видеоигровой консоли компании Sony, и использовала операционную систему объемом 512 КБ и несколько специализированных процессоров.
 
 Namco System 12 - это модернизированная версия System 11, выпущенная в 1996 году и обладающая более высокой вычислительной мощностью.</text>
-			<text lang="es">El Namco System 11 es una placa de sistema arcade de 32 bits desarrollada conjuntamente por Namco y Sony Computer Entertainment. Lanzada en 1994, la System 11 se basa en un prototipo de la PlayStation, la primera videoconsola doméstica de Sony, y utiliza un sistema operativo de 512 KB y varios procesadores personalizados.
+      <text lang="es">El Namco System 11 es una placa de sistema arcade de 32 bits desarrollada conjuntamente por Namco y Sony Computer Entertainment. Lanzada en 1994, la System 11 se basa en un prototipo de la PlayStation, la primera videoconsola doméstica de Sony, y utiliza un sistema operativo de 512 KB y varios procesadores personalizados.
 
 La Namco System 12 es una versión mejorada de la System 11 que salió a la venta en 1996, con una mayor capacidad de procesamiento.</text>
-			<text lang="de">Das Namco System 11 ist eine 32-Bit-Arcade-Systemplatine, die gemeinsam von Namco und Sony Computer Entertainment entwickelt wurde. Das 1994 veröffentlichte System 11 basiert auf einem Prototyp der PlayStation, Sonys erster Videospielkonsole für den Heimgebrauch, und verwendet ein 512-KB-Betriebssystem und mehrere spezielle Prozessoren.
+      <text lang="de">Das Namco System 11 ist eine 32-Bit-Arcade-Systemplatine, die gemeinsam von Namco und Sony Computer Entertainment entwickelt wurde. Das 1994 veröffentlichte System 11 basiert auf einem Prototyp der PlayStation, Sonys erster Videospielkonsole für den Heimgebrauch, und verwendet ein 512-KB-Betriebssystem und mehrere spezielle Prozessoren.
 
 Das Namco System 12 ist eine verbesserte Version des System 11, die 1996 auf den Markt kam und über eine höhere Rechenleistung verfügt.</text>
-			<text lang="fr">Le Namco System 11 est un système d'arcade 32 bits développé conjointement par Namco et Sony Computer Entertainment. Sorti en 1994, le System 11 est basé sur un prototype de la PlayStation, la première console de jeux vidéo de Sony, utilisant un système d'exploitation de 512 Ko et plusieurs processeurs personnalisés.
+      <text lang="fr">Le Namco System 11 est un système d'arcade 32 bits développé conjointement par Namco et Sony Computer Entertainment. Sorti en 1994, le System 11 est basé sur un prototype de la PlayStation, la première console de jeux vidéo de Sony, utilisant un système d'exploitation de 512 Ko et plusieurs processeurs personnalisés.
 
 Le Namco System 12 est une version améliorée du System 11 qui est sortie en 1996, avec une puissance de traitement plus élevée.</text>
-			<text lang="it">Il Namco System 11 è una scheda di sistema arcade a 32 bit sviluppata congiuntamente da Namco e Sony Computer Entertainment. Rilasciato nel 1994, il System 11 è basato su un prototipo della PlayStation, la prima console di videogiochi domestica di Sony, e utilizza un sistema operativo da 512 KB e diversi processori personalizzati.
+      <text lang="it">Il Namco System 11 è una scheda di sistema arcade a 32 bit sviluppata congiuntamente da Namco e Sony Computer Entertainment. Rilasciato nel 1994, il System 11 è basato su un prototipo della PlayStation, la prima console di videogiochi domestica di Sony, e utilizza un sistema operativo da 512 KB e diversi processori personalizzati.
 
 Il Namco System 12 è una versione aggiornata del System 11, rilasciata nel 1996 e dotata di una maggiore potenza di elaborazione.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

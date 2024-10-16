@@ -1,74 +1,81 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.33</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.51 0.377</pos>
-			<maxSize>0.24</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.23 0.377" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.33</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.51 0.377</pos>
-			<maxSize>0.23</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.23 0.377" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1985</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Commodore</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Amiga</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Amiga is a family of personal computers introduced by Commodore in 1985. The original model was one of a number of 16/32- and 32-bit computers that featured 256 KB or more of RAM, mouse-based GUIs, and significantly improved graphics and audio over 8-bit systems. This wave included the Atari ST—released the same year—Apple's Macintosh, and later the Apple IIGS. Based on the Motorola 68000 microprocessor, the Amiga differed from its contemporaries through the inclusion of custom hardware to accelerate graphics and sound, including sprites and a blitter, and a pre-emptive multitasking operating system called AmigaOS.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.33</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.51 0.377</pos>
+      <maxSize>0.24</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.23 0.377" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.33</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.51 0.377</pos>
+      <maxSize>0.23</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.23 0.377" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1985</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Commodore</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Amiga</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Amiga is a family of personal computers introduced by Commodore in 1985. The original model was one of a number of 16/32- and 32-bit computers that featured 256 KB or more of RAM, mouse-based GUIs, and significantly improved graphics and audio over 8-bit systems. This wave included the Atari ST—released the same year—Apple's Macintosh, and later the Apple IIGS. Based on the Motorola 68000 microprocessor, the Amiga differed from its contemporaries through the inclusion of custom hardware to accelerate graphics and sound, including sprites and a blitter, and a pre-emptive multitasking operating system called AmigaOS.
 
 The Amiga 1000 was released in July 1985, but a series of production problems kept it from becoming widely available until early 1986. The best selling model, the Amiga 500, introduced in 1987 (along with the more expandable / professional oriented Amiga 2000) became one of the leading home computers of the late 1980s and early 1990s with four to six million sold. The A3000 was introduced in 1990, followed by the A500+, and the A600 in March 1992. Finally, the A1200 and the A4000 were released in late 1992. The platform became particularly popular for gaming and programming demos. It also found a prominent role in the desktop video, video production, and show control business, leading to video editing systems such as the Video Toaster. The Amiga's native ability to simultaneously play back multiple digital sound samples made it a popular platform for early tracker music software. The relatively powerful processor and ability to access several megabytes of memory enabled the development of 3D rendering packages, including LightWave 3D, Imagine, Aladdin4D, TurboSilver and Traces, a predecessor to Blender.</text>
-			<text lang="pl">Amiga (hiszp. amiga – przyjaciółka) – marka komputerów produkowanych od 1985 r. między innymi przez firmę Commodore, popularna w XX wieku. Po bankructwie Commodore marka została przejęta przez firmę Escom, a następnie przez Gateway. W końcu wyłoniła się samodzielna firma Amiga INC, która po bankructwie sprzedała wszelkie prawa firmie KMOS. Z kolei KMOS zmienił nazwę na Amiga Inc.
+      <text lang="pl">Amiga (hiszp. amiga – przyjaciółka) – marka komputerów produkowanych od 1985 r. między innymi przez firmę Commodore, popularna w XX wieku. Po bankructwie Commodore marka została przejęta przez firmę Escom, a następnie przez Gateway. W końcu wyłoniła się samodzielna firma Amiga INC, która po bankructwie sprzedała wszelkie prawa firmie KMOS. Z kolei KMOS zmienił nazwę na Amiga Inc.
 Systemem operacyjnym Amigi jest AmigaOS z interfejsem Workbench. W momencie wydania AmigaOS był jednym z pierwszych systemów wielozadaniowych na komputery osobiste, znacznie przewyższającym pod tym względem systemy operacyjne produkowane w tamtych latach, na przykład Windows produkowany przez Microsoft.
 
 Przez lata system Amigi stale ewoluował. Najbardziej znaczące zmiany nastąpiły przy wydaniu wersji 3.x, która w wersji 3.9 była ostatnią obsługującą procesory linii 68k. Wersja 4 systemu została przepisana całkowicie pod procesory PowerPC i jest obecnie nadal rozwijana przez firmę Hyperion Entertainment. Najnowsza wersja AmigaOS oznaczona jest numerem 4.1 i pojawiło się do niej uaktualnienie Update 1.
 
 Istnieją również bazujące na AmigaOS systemy rozwijane niezależnie. Zalicza się do nich AROS Research Operating System (AROS) oraz MorphOS. Dla komputerów Amiga powstały również dystrybucje Linuksa oraz NetBSD.</text>
-			<text lang="ru">Семейство домашних персональных компьютеров и операционных систем к ним, разработанные Amiga Corporation.
+      <text lang="pt">Amiga (em polonês: przyjaciółka) – marca de computadores fabricados a partir de 1985, entre outras, pela empresa Commodore, popular no século XX. Após a falência da Commodore, a marca foi adquirida pela Escom e, posteriormente, pela Gateway. Finalmente, surgiu a empresa independente Amiga INC, que após a falência vendeu todos os direitos para a KMOS. Por sua vez, a KMOS mudou seu nome para Amiga Inc.
+
+O sistema operacional da Amiga é o AmigaOS, com interface Workbench. Na época de seu lançamento, o AmigaOS foi um dos primeiros sistemas multitarefa para computadores pessoais, superando em muito os sistemas operacionais produzidos na época, como o Windows, produzido pela Microsoft.
+
+Ao longo dos anos, o sistema Amiga evoluiu constantemente. As mudanças mais significativas ocorreram com o lançamento da versão 3.x, que na versão 3.9 foi a última a suportar processadores da linha 68k. A versão 4 do sistema foi totalmente reescrita para processadores PowerPC e ainda está sendo desenvolvida pela Hyperion Entertainment. A versão mais recente do AmigaOS é a 4.1, para a qual foi lançado o Update 1.
+
+Existem também sistemas baseados no AmigaOS, desenvolvidos de forma independente. Estes incluem o AROS Research Operating System (AROS) e o MorphOS. Para computadores Amiga, também foram criadas distribuições Linux e NetBSD.</text>
+      <text lang="ru">Семейство домашних персональных компьютеров и операционных систем к ним, разработанные Amiga Corporation.
 
 Разработка компьютера началась в 1982 году, в городе Лос-Гатос (Калифорния, США). Кроме 7 миллионов долларов, которые было решено потратить на самофинансирование, у разработчиков имелся значительный опыт в конструировании как аппаратуры, так и программного обеспечения: один из них — Джей Майнер — был разработчиком специализированных микросхем для домашних компьютеров, другой — Роберт Дж. Микал — был известным программистом компании WMS Industries; Дэйв Морс и Карл Сэсенрес также не были новичками. Целью стало создание компьютера, далеко превосходившего бы любые существовавшие на тот момент времени компьютерные системы, предназначенные, в первую очередь, для домашнего использования. Первоначально проект назывался Хай-Торо (Hi-Toro), затем было решено сменить название на более лаконичное и привлекательное — Amiga (с исп.«подружка»). Разработка происходила в обстановке строжайшей секретности и прикрывалась параллельной разработкой манипулятора «доска для серфинга» с обратной связью.</text>
-			<text lang="es">Amiga es una familia de ordenadores personales presentada por Commodore en 1985. El modelo original formaba parte de una serie de ordenadores de 16/32 y 32 bits que ofrecían 256 KB o más de RAM, interfaces gráficas de usuario basadas en ratón y gráficos y audio significativamente mejorados con respecto a los sistemas de 8 bits. Esta oleada incluía el Atari ST -lanzado el mismo año-, el Macintosh de Apple y, más tarde, el Apple IIGS. Basado en el microprocesador Motorola 68000, el Amiga se diferenciaba de sus contemporáneos por la inclusión de hardware personalizado para acelerar los gráficos y el sonido, incluidos sprites y un blitter, y un sistema operativo multitarea preventivo llamado AmigaOS.
+      <text lang="es">Amiga es una familia de ordenadores personales presentada por Commodore en 1985. El modelo original formaba parte de una serie de ordenadores de 16/32 y 32 bits que ofrecían 256 KB o más de RAM, interfaces gráficas de usuario basadas en ratón y gráficos y audio significativamente mejorados con respecto a los sistemas de 8 bits. Esta oleada incluía el Atari ST -lanzado el mismo año-, el Macintosh de Apple y, más tarde, el Apple IIGS. Basado en el microprocesador Motorola 68000, el Amiga se diferenciaba de sus contemporáneos por la inclusión de hardware personalizado para acelerar los gráficos y el sonido, incluidos sprites y un blitter, y un sistema operativo multitarea preventivo llamado AmigaOS.
 
 El Amiga 1000 salió a la venta en julio de 1985, pero una serie de problemas de producción impidieron su comercialización hasta principios de 1986. El modelo más vendido, el Amiga 500, presentado en 1987 (junto con el Amiga 2000, más ampliable y orientado al mercado profesional) se convirtió en uno de los principales ordenadores domésticos de finales de los 80 y principios de los 90, con entre cuatro y seis millones de unidades vendidas. El A3000 se presentó en 1990, seguido del A500+ y el A600 en marzo de 1992. Por último, el A1200 y el A4000 salieron al mercado a finales de 1992. La plataforma se hizo especialmente popular para juegos y demostraciones de programación. También encontró un papel destacado en el negocio del vídeo de sobremesa, la producción de vídeo y el control de espectáculos, dando lugar a sistemas de edición de vídeo como el Video Toaster. La capacidad nativa del Amiga para reproducir simultáneamente múltiples muestras de sonido digital lo convirtió en una plataforma popular para los primeros programas de música tracker. El procesador relativamente potente y la capacidad de acceder a varios megabytes de memoria permitieron el desarrollo de paquetes de renderizado 3D, como LightWave 3D, Imagine, Aladdin4D, TurboSilver y Traces, un predecesor de Blender.</text>
-			<text lang="de">Der Amiga ist eine Familie von Personal Computern, die 1985 von Commodore eingeführt wurde. Das ursprüngliche Modell gehörte zu einer Reihe von 16/32- und 32-Bit-Computern, die 256 KB oder mehr Arbeitsspeicher, mausbasierte Benutzeroberflächen und deutlich verbesserte Grafik- und Audiofunktionen gegenüber 8-Bit-Systemen aufwiesen. Zu dieser Welle gehörten auch der Atari ST, der im selben Jahr auf den Markt kam, der Macintosh von Apple und später der Apple IIGS. Basierend auf dem Motorola 68000-Mikroprozessor, unterschied sich der Amiga von seinen Zeitgenossen durch die Einbeziehung spezieller Hardware zur Beschleunigung von Grafik und Sound, einschließlich Sprites und einem Blitter, und einem präemptiven Multitasking-Betriebssystem namens AmigaOS.
+      <text lang="de">Der Amiga ist eine Familie von Personal Computern, die 1985 von Commodore eingeführt wurde. Das ursprüngliche Modell gehörte zu einer Reihe von 16/32- und 32-Bit-Computern, die 256 KB oder mehr Arbeitsspeicher, mausbasierte Benutzeroberflächen und deutlich verbesserte Grafik- und Audiofunktionen gegenüber 8-Bit-Systemen aufwiesen. Zu dieser Welle gehörten auch der Atari ST, der im selben Jahr auf den Markt kam, der Macintosh von Apple und später der Apple IIGS. Basierend auf dem Motorola 68000-Mikroprozessor, unterschied sich der Amiga von seinen Zeitgenossen durch die Einbeziehung spezieller Hardware zur Beschleunigung von Grafik und Sound, einschließlich Sprites und einem Blitter, und einem präemptiven Multitasking-Betriebssystem namens AmigaOS.
 
 Der Amiga 1000 wurde im Juli 1985 veröffentlicht, aber eine Reihe von Produktionsproblemen hielt ihn davon ab, bis Anfang 1986 weithin erhältlich zu sein. Das meistverkaufte Modell, der Amiga 500, der 1987 eingeführt wurde (zusammen mit dem erweiterbaren/professionelleren Amiga 2000), wurde mit vier bis sechs Millionen verkauften Exemplaren einer der führenden Heimcomputer der späten 1980er und frühen 1990er Jahre. Der A3000 wurde 1990 eingeführt, gefolgt vom A500+ und dem A600 im März 1992. Der A1200 und der A4000 wurden schließlich Ende 1992 auf den Markt gebracht. Die Plattform wurde besonders für Spiele und Programmierdemos beliebt. Es fand auch eine herausragende Rolle im Desktop-Video-, Video-Produktions- und Show-Control-Geschäft, was zu Videoschnitt-Systemen wie dem Video Toaster führte. Die Fähigkeit des Amigas, mehrere digitale Soundsamples gleichzeitig abzuspielen, machte ihn zu einer beliebten Plattform für frühe Tracker-Musiksoftware. Der relativ leistungsstarke Prozessor und die Fähigkeit, auf mehrere Megabyte Speicher zuzugreifen, ermöglichten die Entwicklung von 3D-Rendering-Paketen, darunter LightWave 3D, Imagine, Aladdin4D, TurboSilver und Traces, ein Vorgänger von Blender.</text>
-			<text lang="fr">L'Amiga est une famille d'ordinateurs personnels lancée par Commodore en 1985. Le modèle original faisait partie d'une série d'ordinateurs 16/32 et 32 bits dotés d'une mémoire vive de 256 Ko ou plus, d'interfaces graphiques basées sur la souris et d'une amélioration significative des graphismes et de l'audio par rapport aux systèmes 8 bits. Cette vague comprenait l'Atari ST, sorti la même année, le Macintosh d'Apple et, plus tard, l'Apple IIGS. Basé sur le microprocesseur Motorola 68000, l'Amiga se distinguait de ses contemporains par l'inclusion de matériel personnalisé pour accélérer le graphisme et le son, y compris des sprites et un blitter, et un système d'exploitation multitâche préemptif appelé AmigaOS.
+      <text lang="fr">L'Amiga est une famille d'ordinateurs personnels lancée par Commodore en 1985. Le modèle original faisait partie d'une série d'ordinateurs 16/32 et 32 bits dotés d'une mémoire vive de 256 Ko ou plus, d'interfaces graphiques basées sur la souris et d'une amélioration significative des graphismes et de l'audio par rapport aux systèmes 8 bits. Cette vague comprenait l'Atari ST, sorti la même année, le Macintosh d'Apple et, plus tard, l'Apple IIGS. Basé sur le microprocesseur Motorola 68000, l'Amiga se distinguait de ses contemporains par l'inclusion de matériel personnalisé pour accélérer le graphisme et le son, y compris des sprites et un blitter, et un système d'exploitation multitâche préemptif appelé AmigaOS.
 
 L'Amiga 1000 est sorti en juillet 1985, mais une série de problèmes de production l'ont empêché d'être largement disponible jusqu'au début de 1986. Le modèle le plus vendu, l'Amiga 500, introduit en 1987 (avec l'Amiga 2000, plus extensible et orienté vers les professionnels) est devenu l'un des principaux ordinateurs domestiques de la fin des années 1980 et du début des années 1990, avec quatre à six millions d'unités vendues. L'A3000 a été introduit en 1990, suivi de l'A500+ et de l'A600 en mars 1992. Enfin, l'A1200 et l'A4000 ont été commercialisés à la fin de l'année 1992. La plate-forme est devenue particulièrement populaire pour les jeux et les démonstrations de programmation. Elle a également joué un rôle important dans le domaine de la vidéo de bureau, de la production vidéo et du contrôle des spectacles, ce qui a donné naissance à des systèmes d'édition vidéo tels que le Video Toaster. La capacité native de l'Amiga à lire simultanément plusieurs échantillons sonores numériques en a fait une plate-forme populaire pour les premiers logiciels de musique de piste. Le processeur relativement puissant et la capacité d'accéder à plusieurs mégaoctets de mémoire ont permis le développement de logiciels de rendu 3D, notamment LightWave 3D, Imagine, Aladdin4D, TurboSilver et Traces, un prédécesseur de Blender.</text>
-			<text lang="it">Amiga è una famiglia di personal computer introdotta da Commodore nel 1985. Il modello originale faceva parte di una serie di computer a 16/32 e 32 bit con 256 KB o più di RAM, interfaccia grafica basata su mouse e grafica e audio notevolmente migliorati rispetto ai sistemi a 8 bit. Questa ondata comprendeva l'Atari ST, uscito lo stesso anno, il Macintosh di Apple e successivamente l'Apple IIGS. Basato sul microprocessore Motorola 68000, Amiga si differenziava dai suoi contemporanei per l'inclusione di hardware personalizzato per accelerare la grafica e il suono, tra cui sprite e blitter, e un sistema operativo multitasking pre-emptive chiamato AmigaOS.
+      <text lang="it">Amiga è una famiglia di personal computer introdotta da Commodore nel 1985. Il modello originale faceva parte di una serie di computer a 16/32 e 32 bit con 256 KB o più di RAM, interfaccia grafica basata su mouse e grafica e audio notevolmente migliorati rispetto ai sistemi a 8 bit. Questa ondata comprendeva l'Atari ST, uscito lo stesso anno, il Macintosh di Apple e successivamente l'Apple IIGS. Basato sul microprocessore Motorola 68000, Amiga si differenziava dai suoi contemporanei per l'inclusione di hardware personalizzato per accelerare la grafica e il suono, tra cui sprite e blitter, e un sistema operativo multitasking pre-emptive chiamato AmigaOS.
 
 L'Amiga 1000 fu rilasciato nel luglio 1985, ma una serie di problemi di produzione ne impedirono la diffusione fino all'inizio del 1986. Il modello più venduto, l'Amiga 500, introdotto nel 1987 (insieme all'Amiga 2000, più espandibile e orientato ai professionisti), divenne uno dei principali home computer della fine degli anni '80 e dell'inizio degli anni '90, con 4-6 milioni di pezzi venduti. L'A3000 fu introdotto nel 1990, seguito dall'A500+ e dall'A600 nel marzo 1992. Infine, alla fine del 1992 furono rilasciati l'A1200 e l'A4000. La piattaforma divenne particolarmente popolare per i giochi e le demo di programmazione. Ha anche trovato un ruolo di primo piano nel settore del video desktop, della produzione video e della regia, portando a sistemi di editing video come il Video Toaster. La capacità nativa di Amiga di riprodurre simultaneamente più campioni sonori digitali lo rese una piattaforma popolare per i primi software musicali tracker. Il processore relativamente potente e la capacità di accedere a diversi megabyte di memoria hanno permesso lo sviluppo di pacchetti di rendering 3D, tra cui LightWave 3D, Imagine, Aladdin4D, TurboSilver e Traces, un predecessore di Blender.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

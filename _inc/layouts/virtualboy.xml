@@ -1,75 +1,82 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 -0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.35</origin>
-			<pos>0.5 0.22</pos>
-			<maxSize>0.16</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.19</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.22" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 -0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.35</origin>
-			<pos>0.5 0.22</pos>
-			<maxSize>0.15</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.18</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.22" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1995</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Nintendo</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Virtual Boy</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Virtual Boy is a 32-bit tabletop portable video game console developed and manufactured by Nintendo. Released in 1995, it was marketed as the first console capable of displaying stereoscopic "3D" graphics. The player uses the console like a head-mounted display, placing the head against the eyepiece to see a red monochrome display.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 -0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.35</origin>
+      <pos>0.5 0.22</pos>
+      <maxSize>0.16</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.19</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.22" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 -0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.35</origin>
+      <pos>0.5 0.22</pos>
+      <maxSize>0.15</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.18</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.22" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1995</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Nintendo</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Virtual Boy</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Virtual Boy is a 32-bit tabletop portable video game console developed and manufactured by Nintendo. Released in 1995, it was marketed as the first console capable of displaying stereoscopic "3D" graphics. The player uses the console like a head-mounted display, placing the head against the eyepiece to see a red monochrome display.
 
 The games use a parallax effect to create the illusion of depth. Sales failed to meet targets, and Nintendo ceased distribution and game development in 1996, having released only 22 games for the system.</text>
-			<text lang="pl">Virtual Boy – konsola Nintendo zaprojektowana przez Gunpei Yokoi, twórcę Game Boya. Miała być rewolucją w świecie konsoli jako pierwsze urządzenie tego typu oferujące grafikę trójwymiarową, jednak okazała się finansowym fiaskiem. Pierwszy raz zaprezentowano ją na pokazie Shoshinka Show w Chibi w Japonii. Konsola nigdy nie trafiła do Europy. W Polsce była dostępna tylko dla dystrybutorów w celach pokazowych na targach komputerowych.
+      <text lang="pl">Virtual Boy – konsola Nintendo zaprojektowana przez Gunpei Yokoi, twórcę Game Boya. Miała być rewolucją w świecie konsoli jako pierwsze urządzenie tego typu oferujące grafikę trójwymiarową, jednak okazała się finansowym fiaskiem. Pierwszy raz zaprezentowano ją na pokazie Shoshinka Show w Chibi w Japonii. Konsola nigdy nie trafiła do Europy. W Polsce była dostępna tylko dla dystrybutorów w celach pokazowych na targach komputerowych.
 
 Trójwymiarowy obraz generowany był za pomocą zestawu czerwonych diod, oddzielnie dla prawego i lewego oka użytkownika. Aby efekt był pełny, należało przyłożyć głowę do gogli.
 
 Używanie konsoli wymagało ciągłego patrzenia w ekran, który odświeżany był z częstotliwością 50 Hz i oferował tylko kilkanaście odcieni koloru czerwonego. Dłuższe korzystanie z urządzenia mogło powodować bóle głowy i inne dolegliwości (osobom, u których stwierdzono padaczkę, zalecano w ogóle nie korzystać z Virtual Boya). Ze względu na to, gry na tę konsolę były wyposażone w funkcję automatycznej pauzy aktywowanej co 15-30 minut.
 
 Na konsolę wydano 22 gry, m.in. 3D Tetris oraz Mario Tennis – większość produkcji nie opuściła Japonii.</text>
-			<text lang="ru">Первая домашняя игровая консоль, созданная фирмой Nintendo, способная отображать «настоящую» трёхмерную графику. Большинство игровых систем использовало для создания кажущегося объёма перспективную проекцию на плоский экран. Virtual Boy позволяет создать более точную иллюзию объёма с помощью эффекта параллакса. Он использует технологию, аналогичную «головному дисплею» (так называемому «шлему виртуальной реальности») — пользователь погружает лицо в пару резиновых амортизаторов на передней части устройства, и два специальных монохромных (чёрно-красных) проектора передают изображение раздельно для каждого глаза. Система была выпущена 21 июля 1995 года в Японии, и 14 августа того же года в США, по цене около 180 долларов. Однако, интереса у покупателей она не вызвала, несмотря на постоянное снижение цены. Вследствие этого поддержка системы была прекращена уже в следующем году.</text>
-			<text lang="es">Virtual Boy es una videoconsola portátil de sobremesa de 32 bits desarrollada y fabricada por Nintendo. Lanzada en 1995, se comercializó como la primera consola capaz de mostrar gráficos "3D" estereoscópicos. El jugador utiliza la consola como una pantalla montada en la cabeza, colocando la cabeza contra el ocular para ver una pantalla monocroma roja.
+      <text lang="pt">Virtual Boy – console da Nintendo projetada por Gunpei Yokoi, o criador do Game Boy. Deveria ser uma revolução no mundo dos consoles como o primeiro dispositivo do tipo a oferecer gráficos tridimensionais, mas acabou sendo um fracasso financeiro. Foi apresentado pela primeira vez na feira Shoshinka Show em Chibi, no Japão. O console nunca chegou à Europa. No Brasil, estava disponível apenas para distribuidores com fins demonstrativos em feiras de computadores.
+
+A imagem tridimensional era gerada usando um conjunto de LEDs vermelhos, separadamente para o olho direito e esquerdo do usuário. Para que o efeito fosse completo, era necessário aproximar a cabeça dos óculos.
+
+Usar o console exigia olhar constantemente para a tela, que era atualizada a 50 Hz e oferecia apenas algumas poucas tonalidades de vermelho. O uso prolongado do dispositivo podia causar dores de cabeça e outros problemas (pessoas que sofriam de epilepsia eram aconselhadas a não usar o Virtual Boy). Devido a isso, os jogos para este console eram equipados com uma função de pausa automática ativada a cada 15 a 30 minutos.
+
+Foram lançados 22 jogos para o console, incluindo 3D Tetris e Mario Tennis – a maioria dos títulos não deixou o Japão.</text>
+      <text lang="ru">Первая домашняя игровая консоль, созданная фирмой Nintendo, способная отображать «настоящую» трёхмерную графику. Большинство игровых систем использовало для создания кажущегося объёма перспективную проекцию на плоский экран. Virtual Boy позволяет создать более точную иллюзию объёма с помощью эффекта параллакса. Он использует технологию, аналогичную «головному дисплею» (так называемому «шлему виртуальной реальности») — пользователь погружает лицо в пару резиновых амортизаторов на передней части устройства, и два специальных монохромных (чёрно-красных) проектора передают изображение раздельно для каждого глаза. Система была выпущена 21 июля 1995 года в Японии, и 14 августа того же года в США, по цене около 180 долларов. Однако, интереса у покупателей она не вызвала, несмотря на постоянное снижение цены. Вследствие этого поддержка системы была прекращена уже в следующем году.</text>
+      <text lang="es">Virtual Boy es una videoconsola portátil de sobremesa de 32 bits desarrollada y fabricada por Nintendo. Lanzada en 1995, se comercializó como la primera consola capaz de mostrar gráficos "3D" estereoscópicos. El jugador utiliza la consola como una pantalla montada en la cabeza, colocando la cabeza contra el ocular para ver una pantalla monocroma roja.
 
 Los juegos utilizan un efecto de paralaje para crear la ilusión de profundidad. Las ventas no alcanzaron los objetivos y Nintendo dejó de distribuir y desarrollar juegos en 1996, tras haber lanzado sólo 22 juegos para la consola.</text>
-			<text lang="de">Der Virtual Boy ist eine von Nintendo entwickelte und hergestellte tragbare 32-Bit-Videospielkonsole. Er kam 1995 auf den Markt und wurde als die erste Konsole vermarktet, die stereoskopische "3D"-Grafiken darstellen konnte. Der Spieler benutzt die Konsole wie ein Head-Mounted-Display, indem er den Kopf gegen das Okular hält, um ein rotes Monochrom-Display zu sehen.
+      <text lang="de">Der Virtual Boy ist eine von Nintendo entwickelte und hergestellte tragbare 32-Bit-Videospielkonsole. Er kam 1995 auf den Markt und wurde als die erste Konsole vermarktet, die stereoskopische "3D"-Grafiken darstellen konnte. Der Spieler benutzt die Konsole wie ein Head-Mounted-Display, indem er den Kopf gegen das Okular hält, um ein rotes Monochrom-Display zu sehen.
 
 Die Spiele nutzen einen Parallaxen-Effekt, um die Illusion von Tiefe zu erzeugen. Die Verkaufszahlen blieben hinter den Erwartungen zurück, und Nintendo stellte 1996 den Vertrieb und die Entwicklung von Spielen ein, nachdem nur 22 Spiele für das System veröffentlicht worden waren.</text>
-			<text lang="fr">Le Virtual Boy est une console de jeu vidéo portable 32 bits développée et fabriquée par Nintendo. Sortie en 1995, elle a été commercialisée comme la première console capable d'afficher des graphiques stéréoscopiques en "3D". Le joueur utilise la console comme un écran monté sur la tête, en plaçant sa tête contre l'oculaire pour voir un écran monochrome rouge.
+      <text lang="fr">Le Virtual Boy est une console de jeu vidéo portable 32 bits développée et fabriquée par Nintendo. Sortie en 1995, elle a été commercialisée comme la première console capable d'afficher des graphiques stéréoscopiques en "3D". Le joueur utilise la console comme un écran monté sur la tête, en plaçant sa tête contre l'oculaire pour voir un écran monochrome rouge.
 
 Les jeux utilisent un effet de parallaxe pour créer l'illusion de profondeur. Les ventes n'ont pas atteint les objectifs fixés et Nintendo a cessé la distribution et le développement des jeux en 1996, n'ayant sorti que 22 jeux pour la console.</text>
-			<text lang="it">Il Virtual Boy è una console portatile per videogiochi da tavolo a 32 bit sviluppata e prodotta da Nintendo. Rilasciata nel 1995, è stata commercializzata come la prima console in grado di visualizzare grafica stereoscopica "3D". Il giocatore utilizza la console come un display montato sulla testa, posizionando la testa contro l'oculare per vedere un display monocromatico rosso.
+      <text lang="it">Il Virtual Boy è una console portatile per videogiochi da tavolo a 32 bit sviluppata e prodotta da Nintendo. Rilasciata nel 1995, è stata commercializzata come la prima console in grado di visualizzare grafica stereoscopica "3D". Il giocatore utilizza la console come un display montato sulla testa, posizionando la testa contro l'oculare per vedere un display monocromatico rosso.
 
 I giochi utilizzano un effetto di parallasse per creare l'illusione della profondità. Le vendite non raggiunsero gli obiettivi prefissati e Nintendo cessò la distribuzione e lo sviluppo di giochi nel 1996, dopo aver pubblicato solo 22 giochi per la console.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

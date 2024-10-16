@@ -1,186 +1,191 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.3 0.2</origin>
-			<origin if="${screen.ratio} == '16/10'">0.4 0.35</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.285 0.36</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>26</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.005 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.7 0.2</origin>
-			<origin if="${screen.ratio} == '16/10'">0.6 0.35</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.72 0.36</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>-26</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.44 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.50 0.435</pos>
-			<maxSize>0.2</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.435" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-left" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.48 0.26</origin>
-			<origin if="${screen.ratio} == '16/10'">0.52 0.44</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.365 0.43</pos>
-			<maxSize>0.135</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.175</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.15</maxSize>
-			<rotation>-64</rotation>
-			<storyboard>
-				<animation property="pos" to="0.085 0.43" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-right" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.52 0.26</origin>
-			<origin if="${screen.ratio} == '16/10'">0.48 0.44</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.635 0.435</pos>
-			<maxSize>0.135</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.175</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.15</maxSize>
-			<rotation>64</rotation>
-			<storyboard>
-				<animation property="pos" to="0.355 0.435" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.50 0.435</pos>
-			<maxSize>0.175</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.435" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.48 0.325</origin>
-			<origin if="${screen.ratio} == '16/10'">0.48 0.44</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.64 0.435</pos>
-			<maxSize>0.13</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.36 0.435" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox3" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.52 0.325</origin>
-			<origin if="${screen.ratio} == '16/10'">0.52 0.44</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.36 0.435</pos>
-			<maxSize>0.13</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.08 0.435" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1998</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Sega</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Hikaru</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Sega Hikaru is a successor of the Sega NAOMI and Sega Model 3 arcade systems that was developed in 1998 and debuted in 1999. The Hikaru was used for a handful of deluxe dedicated-cabinet games, beginning with 1999's Brave Fire Fighters, in which the flame and water effects were largely a showpiece for the hardware.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-left" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.3 0.2</origin>
+      <origin if="${screen.ratio} == '16/10'">0.4 0.35</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.285 0.36</pos>
+      <minSize>0.1 0.3</minSize>
+      <rotation>26</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.005 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-right" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.7 0.2</origin>
+      <origin if="${screen.ratio} == '16/10'">0.6 0.35</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.72 0.36</pos>
+      <minSize>0.1 0.3</minSize>
+      <rotation>-26</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.44 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.50 0.435</pos>
+      <maxSize>0.2</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.435" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-left" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.48 0.26</origin>
+      <origin if="${screen.ratio} == '16/10'">0.52 0.44</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.365 0.43</pos>
+      <maxSize>0.135</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.175</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.15</maxSize>
+      <rotation>-64</rotation>
+      <storyboard>
+        <animation property="pos" to="0.085 0.43" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-right" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.52 0.26</origin>
+      <origin if="${screen.ratio} == '16/10'">0.48 0.44</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.635 0.435</pos>
+      <maxSize>0.135</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.175</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.15</maxSize>
+      <rotation>64</rotation>
+      <storyboard>
+        <animation property="pos" to="0.355 0.435" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.50 0.435</pos>
+      <maxSize>0.175</maxSize>
+      <zIndex>26</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.435" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.48 0.325</origin>
+      <origin if="${screen.ratio} == '16/10'">0.48 0.44</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.64 0.435</pos>
+      <maxSize>0.13</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.36 0.435" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox3" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.52 0.325</origin>
+      <origin if="${screen.ratio} == '16/10'">0.52 0.44</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.36 0.435</pos>
+      <maxSize>0.13</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.08 0.435" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1998</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Sega</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Hikaru</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Sega Hikaru is a successor of the Sega NAOMI and Sega Model 3 arcade systems that was developed in 1998 and debuted in 1999. The Hikaru was used for a handful of deluxe dedicated-cabinet games, beginning with 1999's Brave Fire Fighters, in which the flame and water effects were largely a showpiece for the hardware.
 
 It was significantly more powerful and expensive than the NAOMI. The Hikaru featured a custom Sega GPU with advanced graphical capabilities, additional CPU and sound processors, various custom processors, increased memory, and faster bandwidth. It was the first game platform capable of effective hardware Phong shading, the most intensive form of shading at the time, and was capable of the most complex lighting and particle effects of its time.
 
 It was the most powerful game system of its time (Planet Harriers, for example, was regarded as having the best video game graphics at the time), but it was very expensive and difficult to program. Since it was comparatively expensive to produce, Sega soon abandoned the Hikaru in favor of continued NAOMI development. It was succeeded by the more affordable NAOMI 2.</text>
-			<text lang="pl">Sega Hikaru to następca systemów arcade Sega NAOMI i Sega Model 3, który został opracowany w 1998 roku i zadebiutował w 1999 roku. Hikaru był używany do kilku gier w wersji deluxe, począwszy od Brave Fire Fighters z 1999 roku, w których efekty płomieni i wody były w dużej mierze wizytówką sprzętu.
+      <text lang="pl">Sega Hikaru to następca systemów arcade Sega NAOMI i Sega Model 3, który został opracowany w 1998 roku i zadebiutował w 1999 roku. Hikaru był używany do kilku gier w wersji deluxe, począwszy od Brave Fire Fighters z 1999 roku, w których efekty płomieni i wody były w dużej mierze wizytówką sprzętu.
 
 Był on znacznie potężniejszy i droższy od NAOMI. Hikaru posiadał niestandardowy procesor graficzny firmy Sega z zaawansowanymi możliwościami graficznymi, dodatkowe procesory CPU i dźwięku, różne niestandardowe procesory, zwiększoną ilość pamięci i szybsze pasmo. Była to pierwsza platforma do gier zdolna do efektywnego sprzętowego cieniowania Phong, najbardziej intensywnej formy cieniowania w tamtym czasie, i była zdolna do najbardziej złożonych efektów świetlnych i cząsteczkowych w tamtych czasach.
 
 Był to najpotężniejszy system do gier w tamtych czasach (na przykład Planet Harriers był uważany za grę z najlepszą grafiką w tamtych czasach), ale był bardzo drogi i trudny do zaprogramowania. Ponieważ jego produkcja była stosunkowo droga, Sega wkrótce porzuciła Hikaru na rzecz dalszego rozwoju NAOMI. Jego następcą został bardziej przystępny cenowo NAOMI 2.</text>
-			<text lang="ru">Является преемником аркадных систем Sega NAOMI и Sega Model 3, которые были разработаны в 1998 году и дебютировали в 1999 году. Эффекты пламени и воды были в значительной степени экспонатом оборудования.
+      <text lang="pt">Sega Hikaru foi o sucessor dos sistemas de arcade Sega NAOMI e Sega Model 3, desenvolvido em 1998 e lançado em 1999. Hikaru foi utilizado para vários jogos em versão deluxe, começando com Brave Fire Fighters de 1999, em que os efeitos de chamas e água eram em grande parte a marca registrada do equipamento.
+
+Ele era muito mais potente e caro que o NAOMI. Hikaru possuía um processador gráfico personalizado da Sega com capacidades gráficas avançadas, processadores CPU e de som adicionais, vários processadores personalizados, maior quantidade de memória e banda mais rápida. Foi a primeira plataforma de jogos capaz de sombreamento Phong de hardware eficaz, a forma mais intensa de sombreamento na época, e era capaz dos efeitos de luz e partículas mais complexos da época.
+
+Era o sistema de jogos mais potente da época (por exemplo, Planet Harriers era considerado o jogo com a melhor qualidade gráfica da época), mas era muito caro e difícil de programar. Como sua produção era relativamente cara, a Sega logo abandonou o Hikaru em favor do desenvolvimento contínuo do NAOMI. Seu sucessor foi o NAOMI 2, mais acessível.</text>
+      <text lang="ru">Является преемником аркадных систем Sega NAOMI и Sega Model 3, которые были разработаны в 1998 году и дебютировали в 1999 году. Эффекты пламени и воды были в значительной степени экспонатом оборудования.
 
 Он был значительно мощнее и дороже, чем NAOMI. Hikaru оснащен специальным графическим процессором Sega с расширенными графическими возможностями, дополнительным процессором и звуковыми процессорами, различными пользовательскими процессорами, увеличенным объемом памяти и более высокой пропускной способностью. Это была первая игровая платформа, способная к эффективному аппаратному затенению Фонга, самой интенсивной форме затенения в то время, и была способна к самым сложным эффектам освещения и частиц своего времени.
 
 Это была самая мощная игровая система своего времени (например, Planet Harrier считалась лучшей графикой видеоигр в то время), но она была очень дорогой и сложной в программировании. Поскольку производство было относительно дорогим, Sega вскоре отказалась от Hikaru в пользу продолжения разработки NAOMI. На смену ему пришла самая доступная NAOMI 2. </text>
-			<text lang="es">El Sega Hikaru es un sucesor de los sistemas arcade Sega NAOMI y Sega Model 3 que se desarrolló en 1998 y debutó en 1999. El Hikaru se utilizó para un puñado de juegos de lujo dedicados, comenzando con Brave Fire Fighters de 1999, en el que los efectos de llamas y agua eran en gran medida una pieza de exhibición para el hardware.
+      <text lang="es">El Sega Hikaru es un sucesor de los sistemas arcade Sega NAOMI y Sega Model 3 que se desarrolló en 1998 y debutó en 1999. El Hikaru se utilizó para un puñado de juegos de lujo dedicados, comenzando con Brave Fire Fighters de 1999, en el que los efectos de llamas y agua eran en gran medida una pieza de exhibición para el hardware.
 
 Era mucho más potente y caro que el NAOMI. El Hikaru contaba con una GPU Sega personalizada con funciones gráficas avanzadas, CPU y procesadores de sonido adicionales, varios procesadores personalizados, más memoria y un ancho de banda más rápido. Fue la primera plataforma de juegos capaz de aplicar el sombreado Phong por hardware, la forma más intensiva de sombreado de la época, y de crear los efectos de iluminación y partículas más complejos de su tiempo.
 
 Era el sistema de juego más potente de su época (Planet Harriers, por ejemplo, estaba considerado como el que tenía los mejores gráficos de videojuego de la época), pero era muy caro y difícil de programar. Dado que su producción era comparativamente cara, Sega abandonó pronto el Hikaru en favor de continuar con el desarrollo del NAOMI. Le sucedió el más asequible NAOMI 2.</text>
-			<text lang="de">Der Sega Hikaru ist ein Nachfolger des Sega NAOMI und des Sega Model 3 Arcade-Systems, der 1998 entwickelt wurde und 1999 auf den Markt kam. Der Hikaru wurde für eine Handvoll Deluxe-Spiele mit eigenem Gehäuse verwendet, beginnend mit Brave Fire Fighters von 1999, bei dem die Flammen- und Wassereffekte vor allem ein Vorzeigeobjekt für die Hardware waren.
+      <text lang="de">Der Sega Hikaru ist ein Nachfolger des Sega NAOMI und des Sega Model 3 Arcade-Systems, der 1998 entwickelt wurde und 1999 auf den Markt kam. Der Hikaru wurde für eine Handvoll Deluxe-Spiele mit eigenem Gehäuse verwendet, beginnend mit Brave Fire Fighters von 1999, bei dem die Flammen- und Wassereffekte vor allem ein Vorzeigeobjekt für die Hardware waren.
 
 Er war wesentlich leistungsfähiger und teurer als der NAOMI. Der Hikaru verfügte über einen maßgeschneiderten Sega-Grafikprozessor mit erweiterten grafischen Fähigkeiten, zusätzliche CPU- und Soundprozessoren, verschiedene maßgeschneiderte Prozessoren, mehr Speicher und eine schnellere Bandbreite. Es war die erste Spieleplattform, die effektives Hardware-Phong-Shading, die damals intensivste Form des Shadings, beherrschte und zu den komplexesten Beleuchtungs- und Partikeleffekten der damaligen Zeit fähig war.
 
 Es war das leistungsstärkste Spielesystem seiner Zeit (Planet Harriers beispielsweise galt als das Spiel mit der besten Videospielgrafik seiner Zeit), aber es war sehr teuer und schwierig zu programmieren. Da es vergleichsweise teuer in der Herstellung war, gab Sega den Hikaru bald zugunsten der weiteren NAOMI-Entwicklung auf. Sein Nachfolger war das preiswertere NAOMI 2.</text>
-			<text lang="fr">Le Sega Hikaru est un successeur des systèmes d'arcade Sega NAOMI et Sega Model 3, développé en 1998 et lancé en 1999. Le Hikaru a été utilisé pour une poignée de jeux de luxe dédiés à une armoire, à commencer par Brave Fire Fighters en 1999, dans lequel les effets de flammes et d'eau étaient en grande partie une mise en valeur du matériel.
+      <text lang="fr">Le Sega Hikaru est un successeur des systèmes d'arcade Sega NAOMI et Sega Model 3, développé en 1998 et lancé en 1999. Le Hikaru a été utilisé pour une poignée de jeux de luxe dédiés à une armoire, à commencer par Brave Fire Fighters en 1999, dans lequel les effets de flammes et d'eau étaient en grande partie une mise en valeur du matériel.
 
 Il était nettement plus puissant et plus cher que le NAOMI. Le Hikaru était équipé d'un GPU Sega personnalisé doté de capacités graphiques avancées, d'une unité centrale et de processeurs audio supplémentaires, de divers processeurs personnalisés, d'une mémoire accrue et d'une bande passante plus rapide. Il s'agissait de la première plateforme de jeu capable de réaliser un ombrage matériel Phong efficace, la forme d'ombrage la plus intensive à l'époque, et capable des effets d'éclairage et de particules les plus complexes de l'époque.
 
 C'était le système de jeu le plus puissant de l'époque (Planet Harriers, par exemple, était considéré comme le meilleur jeu vidéo de l'époque), mais il était très cher et difficile à programmer. Comme il était relativement cher à produire, Sega a rapidement abandonné le Hikaru en faveur de la poursuite du développement du NAOMI. Il a été remplacé par le NAOMI 2, plus abordable.</text>
-			<text lang="it">Il Sega Hikaru è un successore dei sistemi arcade Sega NAOMI e Sega Model 3, sviluppato nel 1998 e presentato nel 1999. La Hikaru è stata utilizzata per una manciata di giochi deluxe per cabinati, a partire da Brave Fire Fighters del 1999, in cui gli effetti delle fiamme e dell'acqua erano in gran parte uno spettacolo per l'hardware.
+      <text lang="it">Il Sega Hikaru è un successore dei sistemi arcade Sega NAOMI e Sega Model 3, sviluppato nel 1998 e presentato nel 1999. La Hikaru è stata utilizzata per una manciata di giochi deluxe per cabinati, a partire da Brave Fire Fighters del 1999, in cui gli effetti delle fiamme e dell'acqua erano in gran parte uno spettacolo per l'hardware.
 
 Era molto più potente e costoso del NAOMI. La Hikaru era dotata di una GPU Sega personalizzata con capacità grafiche avanzate, CPU e processori audio aggiuntivi, vari processori personalizzati, una memoria maggiore e una larghezza di banda più veloce. Fu la prima piattaforma di gioco in grado di utilizzare efficacemente l'hardware Phong shading, la forma più intensiva di shading dell'epoca, e fu in grado di realizzare i più complessi effetti di illuminazione e particellari dell'epoca.
 
 Era il sistema di gioco più potente dell'epoca (Planet Harriers, ad esempio, era considerato il miglior videogioco grafico dell'epoca), ma era molto costoso e difficile da programmare. Poiché la produzione era relativamente costosa, Sega abbandonò presto la Hikaru a favore di un continuo sviluppo del NAOMI. A questo modello successe il più economico NAOMI 2.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

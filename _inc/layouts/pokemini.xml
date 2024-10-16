@@ -1,71 +1,74 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.31</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
-			<pos>0.5 0.4</pos>
-			<maxSize>0.21</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.4" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.31</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
-			<pos>0.499 0.405</pos>
-			<maxSize>0.18</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.219 0.405" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2001</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Nintendo</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Pokémon mini</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Pokémon Mini (officially stylized as Pokémon mini) is a handheld game console that was designed and manufactured by Nintendo and themed around the Pokémon media franchise. It is the smallest game system with interchangeable cartridges ever produced by Nintendo, weighing just under two and a half ounces (71 grams). It was first released in North America on November 16, 2001, (two days before the GameCube was released) then in Japan on December 14, 2001, and in Europe on March 15, 2002. The systems were released in three colors: Wooper Blue, Chikorita Green, and Smoochum Purple.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.31</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+      <pos>0.5 0.4</pos>
+      <maxSize>0.21</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.4" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.31</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+      <pos>0.499 0.405</pos>
+      <maxSize>0.18</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.219 0.405" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2001</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Nintendo</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Pokémon mini</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Pokémon Mini (officially stylized as Pokémon mini) is a handheld game console that was designed and manufactured by Nintendo and themed around the Pokémon media franchise. It is the smallest game system with interchangeable cartridges ever produced by Nintendo, weighing just under two and a half ounces (71 grams). It was first released in North America on November 16, 2001, (two days before the GameCube was released) then in Japan on December 14, 2001, and in Europe on March 15, 2002. The systems were released in three colors: Wooper Blue, Chikorita Green, and Smoochum Purple.
 
 Features of the Pokémon mini include an internal real-time clock, an infrared port used to facilitate multiplayer gaming, a reed switch for detecting shakes, and a motor used to implement force feedback. Pokémon Channel features playable emulated demo versions of Pokémon Mini games, including the console exclusive "Snorlax's Lunch Time". Games such as "Togepi's Adventure" were only released in Japan.</text>
-			<text lang="pl">Pokémon Mini – miniaturowa konsola firmy Nintendo przeznaczona do gier o Pokémonach.
+      <text lang="pl">Pokémon Mini – miniaturowa konsola firmy Nintendo przeznaczona do gier o Pokémonach.
 
 Jest to obecnie najmniejsza konsola z możliwością wymiany kartridży z grami. Wyposażono ją w urządzenie wibracyjne, czujnik wstrząsów oraz wbudowany zegar. Możliwe jest połączenie kilku urządzeń za pomocą podczerwieni dla gry bezprzewodowej. Konsola posiada monochromatyczny wyświetlacz LCD.</text>
-			<text lang="ru">Портативная игровая система, разработанная и выпущенная Nintendo и посвящённая принадлежащей ей медиа-франшизе «Покемон». Она вышла 16 ноября 2001 года в Америке, 14 декабря в Японии и 15 марта 2002 года в Европе. Портативную консоль выпустили с тремя различными вариантами цвета корпуса: Wooper Blue, Chikorita Green и Smoochum Purple. Pokémon mini самая лёгкая портативная игровая консоль от Nintendo со сменными картриджами: она весит всего 70 граммов.
+      <text lang="pt">Pokémon Mini – um console portátil da Nintendo dedicado aos jogos de Pokémon.
+
+Atualmente é o menor console com capacidade de troca de cartuchos de jogos. Possui dispositivo de vibração, sensor de choque e relógio embutido. É possível conectar vários dispositivos por infravermelho para jogos sem fio. O console possui um display LCD monocromático.</text>
+      <text lang="ru">Портативная игровая система, разработанная и выпущенная Nintendo и посвящённая принадлежащей ей медиа-франшизе «Покемон». Она вышла 16 ноября 2001 года в Америке, 14 декабря в Японии и 15 марта 2002 года в Европе. Портативную консоль выпустили с тремя различными вариантами цвета корпуса: Wooper Blue, Chikorita Green и Smoochum Purple. Pokémon mini самая лёгкая портативная игровая консоль от Nintendo со сменными картриджами: она весит всего 70 граммов.
 
 В Pokémon Mini присутствуют часы реального времени, инфракрасный порт для многопользовательской игры, акселерометр и вибратор. В игре Pokémon Channel для Nintendo GameCube присутствуют демоверсии некоторых игр для Pokémon mini — они запускаются на приставке посредством эмуляции. Фанаты, научившиеся программировать консоль, разработали много своих любительских игр для этой системы.</text>
-			<text lang="es">La Pokémon Mini (oficialmente estilizada como Pokémon mini) es una videoconsola portátil diseñada y fabricada por Nintendo en torno a la franquicia mediática Pokémon. Es la consola con cartuchos intercambiables más pequeña jamás fabricada por Nintendo, con un peso de 71 gramos. Salió a la venta en Norteamérica el 16 de noviembre de 2001 (dos días antes que la GameCube), en Japón el 14 de diciembre de 2001 y en Europa el 15 de marzo de 2002. Los sistemas salieron a la venta en tres colores: Azul Wooper, Verde Chikorita y Morado Smoochum.
+      <text lang="es">La Pokémon Mini (oficialmente estilizada como Pokémon mini) es una videoconsola portátil diseñada y fabricada por Nintendo en torno a la franquicia mediática Pokémon. Es la consola con cartuchos intercambiables más pequeña jamás fabricada por Nintendo, con un peso de 71 gramos. Salió a la venta en Norteamérica el 16 de noviembre de 2001 (dos días antes que la GameCube), en Japón el 14 de diciembre de 2001 y en Europa el 15 de marzo de 2002. Los sistemas salieron a la venta en tres colores: Azul Wooper, Verde Chikorita y Morado Smoochum.
 
 Entre las características del Pokémon mini se incluyen un reloj interno en tiempo real, un puerto de infrarrojos utilizado para facilitar el juego multijugador, un interruptor de láminas para detectar las sacudidas y un motor utilizado para implementar la retroalimentación de fuerza. Canal Pokémon ofrece versiones demo emuladas de los juegos de Pokémon Mini, incluido el exclusivo para consola "Snorlax's Lunch Time". Juegos como "Togepi's Adventure" sólo se lanzaron en Japón.</text>
-			<text lang="de">Pokémon Mini (offiziell: Pokémon mini) ist eine Handheld-Spielkonsole, die von Nintendo entwickelt und hergestellt wurde und sich an der Pokémon-Medienreihe orientiert. Mit einem Gewicht von knapp 71 Gramm ist es das kleinste jemals von Nintendo hergestellte Spielsystem mit austauschbaren Kassetten. Es wurde erstmals am 16. November 2001 in Nordamerika veröffentlicht (zwei Tage vor der Veröffentlichung des GameCube), dann am 14. Dezember 2001 in Japan und am 15. März 2002 in Europa. Die Systeme wurden in drei Farben veröffentlicht: Wooper Blue, Chikorita Green und Smoochum Purple.
+      <text lang="de">Pokémon Mini (offiziell: Pokémon mini) ist eine Handheld-Spielkonsole, die von Nintendo entwickelt und hergestellt wurde und sich an der Pokémon-Medienreihe orientiert. Mit einem Gewicht von knapp 71 Gramm ist es das kleinste jemals von Nintendo hergestellte Spielsystem mit austauschbaren Kassetten. Es wurde erstmals am 16. November 2001 in Nordamerika veröffentlicht (zwei Tage vor der Veröffentlichung des GameCube), dann am 14. Dezember 2001 in Japan und am 15. März 2002 in Europa. Die Systeme wurden in drei Farben veröffentlicht: Wooper Blue, Chikorita Green und Smoochum Purple.
 
 Zu den Merkmalen des Pokémon mini gehören eine interne Echtzeituhr, eine Infrarotschnittstelle zur Erleichterung von Multiplayer-Spielen, ein Reed-Schalter zur Erkennung von Erschütterungen und ein Motor zur Umsetzung von Force Feedback. Pokémon Channel bietet spielbare emulierte Demoversionen von Pokémon Mini-Spielen, darunter das konsolenexklusive "Snorlax's Lunch Time". Spiele wie "Togepi's Adventure" wurden nur in Japan veröffentlicht.</text>
-			<text lang="fr">La Pokémon Mini (officiellement stylisée en Pokémon mini) est une console de jeu portable conçue et fabriquée par Nintendo sur le thème de la franchise médiatique Pokémon. Il s'agit de la plus petite console de jeu à cartouches interchangeables jamais produite par Nintendo, pesant un peu moins de 71 grammes. Elle est sortie pour la première fois en Amérique du Nord le 16 novembre 2001 (deux jours avant la sortie de la GameCube), puis au Japon le 14 décembre 2001 et en Europe le 15 mars 2002. Les consoles ont été commercialisées en trois couleurs : Wooper Blue, Chikorita Green et Smoochum Purple.
+      <text lang="fr">La Pokémon Mini (officiellement stylisée en Pokémon mini) est une console de jeu portable conçue et fabriquée par Nintendo sur le thème de la franchise médiatique Pokémon. Il s'agit de la plus petite console de jeu à cartouches interchangeables jamais produite par Nintendo, pesant un peu moins de 71 grammes. Elle est sortie pour la première fois en Amérique du Nord le 16 novembre 2001 (deux jours avant la sortie de la GameCube), puis au Japon le 14 décembre 2001 et en Europe le 15 mars 2002. Les consoles ont été commercialisées en trois couleurs : Wooper Blue, Chikorita Green et Smoochum Purple.
 
 Les caractéristiques du Pokémon mini comprennent une horloge interne en temps réel, un port infrarouge utilisé pour faciliter les jeux multijoueurs, un interrupteur à lames pour détecter les secousses, et un moteur utilisé pour mettre en œuvre le retour de force. Le Pokémon Channel propose des versions de démonstration émulées des jeux Pokémon Mini, y compris l'exclusivité de la console "Snorlax's Lunch Time". Des jeux tels que "Togepi's Adventure" n'ont été commercialisés qu'au Japon.</text>
-			<text lang="it">Il Pokémon Mini (ufficialmente stilizzato come Pokémon mini) è una console portatile progettata e prodotta da Nintendo e incentrata sul franchise mediatico dei Pokémon. È la più piccola console di gioco con cartucce intercambiabili mai prodotta da Nintendo, con un peso di poco inferiore alle due once e mezzo (71 grammi). È stata rilasciata per la prima volta in Nord America il 16 novembre 2001 (due giorni prima dell'uscita del GameCube), poi in Giappone il 14 dicembre 2001 e in Europa il 15 marzo 2002. I sistemi sono stati distribuiti in tre colori: Wooper Blue, Chikorita Green e Smoochum Purple.
+      <text lang="it">Il Pokémon Mini (ufficialmente stilizzato come Pokémon mini) è una console portatile progettata e prodotta da Nintendo e incentrata sul franchise mediatico dei Pokémon. È la più piccola console di gioco con cartucce intercambiabili mai prodotta da Nintendo, con un peso di poco inferiore alle due once e mezzo (71 grammi). È stata rilasciata per la prima volta in Nord America il 16 novembre 2001 (due giorni prima dell'uscita del GameCube), poi in Giappone il 14 dicembre 2001 e in Europa il 15 marzo 2002. I sistemi sono stati distribuiti in tre colori: Wooper Blue, Chikorita Green e Smoochum Purple.
 
 Le caratteristiche del Pokémon mini includono un orologio interno in tempo reale, una porta a infrarossi utilizzata per facilitare il gioco multigiocatore, un interruttore reed per rilevare le scosse e un motore utilizzato per implementare il force feedback. Pokémon Channel offre versioni demo emulate giocabili dei giochi Pokémon Mini, tra cui l'esclusiva della console "Snorlax's Lunch Time". Giochi come "Togepi's Adventure" sono stati rilasciati solo in Giappone.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

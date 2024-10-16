@@ -1,73 +1,76 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.498 0.375</pos>
-			<maxSize>0.23</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.218 0.375" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.498 0.375</pos>
-			<maxSize>0.22</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.218 0.375" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1984</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Apple</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Macintosh</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Macintosh (mainly Mac since 1998) is a family of personal computers designed, manufactured, and sold by Apple Inc. (originally as Apple Computer, Inc.) since January 1984.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.498 0.375</pos>
+      <maxSize>0.23</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.218 0.375" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.498 0.375</pos>
+      <maxSize>0.22</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.218 0.375" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1984</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Apple</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Macintosh</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Macintosh (mainly Mac since 1998) is a family of personal computers designed, manufactured, and sold by Apple Inc. (originally as Apple Computer, Inc.) since January 1984.
 
 The original Macintosh is the first successful mass-market all-in-one desktop personal computer to have featured a graphical user interface, built-in screen, and mouse. Apple sold the Macintosh alongside its popular Apple II, Apple IIGS, Apple III, and Apple Lisa families of computers until the other models were discontinued in the 1990s.</text>
-			<text lang="pl">Macintosh, później jako Mac – seria komputerów osobistych produkowanych przez Apple, która jest projektem zastępującym Apple 2, tworzonym równolegle i wewnętrznie konkurującym z Apple Lisa.
+      <text lang="pl">Macintosh, później jako Mac – seria komputerów osobistych produkowanych przez Apple, która jest projektem zastępującym Apple 2, tworzonym równolegle i wewnętrznie konkurującym z Apple Lisa.
 
 Apple chciało stworzyć łatwy w obsłudze komputer, który będzie w stanie obsłużyć każdy użytkownik, bez konieczności posiadania specjalnej wiedzy informatycznej. W tym celu opracowano, opierając się na „zapożyczonych” od Xeroxa rozwiązaniach intuicyjny system operacyjny Mac OS, znany początkowo pod nazwą wyjaśniającą jego funkcję – „System” (nazywany do wersji 7.5), zastąpiony w 2000 przez nowy system Apple’a – OS X (do wersji 10.7 pod nazwą Mac OS X, której ostatnią wersją była 10.11, a obecną nazwą jest macOS).</text>
-			<text lang="ru">Mac — линейка персональных компьютеров производства корпорации Apple. Работают под управлением операционных систем семейства Mac OS, возможна также работа на ОС Windows NT, A/UX, NeXTSTEP, BeOS/Haiku, GNU/Linux и Rhapsody. Своё название получили от сорта яблок «Malus 'McIntosh'».
+      <text lang="pt">Macintosh, posteriormente conhecido como Mac, é uma série de computadores pessoais fabricados pela Apple, que foi projetada para substituir o Apple 2, sendo desenvolvida em paralelo e competindo internamente com o Apple Lisa.
+
+A Apple desejava criar um computador fácil de usar, acessível a todos os usuários, sem a necessidade de conhecimento técnico específico. Para isso, baseado em soluções "emprestadas" da Xerox, foi desenvolvido o sistema operacional intuitivo Mac OS, inicialmente conhecido como "System" (até a versão 7.5), substituído em 2000 por um novo sistema da Apple - OS X (até a versão 10.7 chamado de Mac OS X, cuja última versão foi a 10.11, e a denominação atual é macOS).</text>
+      <text lang="ru">Mac — линейка персональных компьютеров производства корпорации Apple. Работают под управлением операционных систем семейства Mac OS, возможна также работа на ОС Windows NT, A/UX, NeXTSTEP, BeOS/Haiku, GNU/Linux и Rhapsody. Своё название получили от сорта яблок «Malus 'McIntosh'».
 
 Первый Mac был выпущен 24 января 1984 года. Выходу компьютера на рынок предшествовал телевизионный рекламный ролик режиссёра Ридли Скотта, впервые показанный 22 января 1984 года и использовавший мотивы романа Джорджа Оруэлла «1984». Вскоре после этого компания прекратила разработку и производство семейства Apple III, которое оказалось неконкурентоспособным.
 
 Первоначально семейство Macintosh объединяло платформы, созданные на базе процессоров Motorola (68000, 68020), впоследствии заменённые более мощными процессорами IBM PowerPC (использовались в моделях компьютеров PowerMac), затем процессорами Intel, а в 2020 году был начат переход на архитектуру ARM.</text>
-			<text lang="es">El Macintosh (principalmente Mac desde 1998) es una familia de ordenadores personales diseñados, fabricados y vendidos por Apple Inc. (originalmente como Apple Computer, Inc.) desde enero de 1984.
+      <text lang="es">El Macintosh (principalmente Mac desde 1998) es una familia de ordenadores personales diseñados, fabricados y vendidos por Apple Inc. (originalmente como Apple Computer, Inc.) desde enero de 1984.
 
 El Macintosh original es el primer ordenador personal de sobremesa "todo en uno" del mercado de masas que contó con una interfaz gráfica de usuario, una pantalla integrada y un ratón. Apple vendió el Macintosh junto con sus populares familias de ordenadores Apple II, Apple IIGS, Apple III y Apple Lisa hasta que los demás modelos dejaron de fabricarse en la década de 1990.</text>
-			<text lang="de">Der Macintosh (seit 1998 hauptsächlich Mac) ist eine Familie von Personal Computern, die von Apple Inc. (ursprünglich als Apple Computer, Inc.) seit Januar 1984 entwickelt, hergestellt und verkauft wird.
+      <text lang="de">Der Macintosh (seit 1998 hauptsächlich Mac) ist eine Familie von Personal Computern, die von Apple Inc. (ursprünglich als Apple Computer, Inc.) seit Januar 1984 entwickelt, hergestellt und verkauft wird.
 
 Der ursprüngliche Macintosh ist der erste erfolgreiche All-in-One-Desktop-Personalcomputer für den Massenmarkt, der über eine grafische Benutzeroberfläche, einen eingebauten Bildschirm und eine Maus verfügte. Apple verkaufte den Macintosh zusammen mit seinen beliebten Computerfamilien Apple II, Apple IIGS, Apple III und Apple Lisa, bis die anderen Modelle in den 1990er Jahren eingestellt wurden.</text>
-			<text lang="fr">Le Macintosh (principalement Mac depuis 1998) est une famille d'ordinateurs personnels conçus, fabriqués et vendus par Apple Inc. (à l'origine sous le nom d'Apple Computer, Inc.) depuis janvier 1984.
+      <text lang="fr">Le Macintosh (principalement Mac depuis 1998) est une famille d'ordinateurs personnels conçus, fabriqués et vendus par Apple Inc. (à l'origine sous le nom d'Apple Computer, Inc.) depuis janvier 1984.
 
 Le Macintosh original est le premier ordinateur de bureau de masse tout-en-un à avoir été doté d'une interface utilisateur graphique, d'un écran intégré et d'une souris. Apple a vendu le Macintosh aux côtés de ses populaires familles d'ordinateurs Apple II, Apple IIGS, Apple III et Apple Lisa jusqu'à ce que les autres modèles soient abandonnés dans les années 1990.</text>
-			<text lang="it">Il Macintosh (principalmente Mac dal 1998) è una famiglia di personal computer progettati, prodotti e venduti da Apple Inc. (originariamente come Apple Computer, Inc.) dal gennaio 1984.
+      <text lang="it">Il Macintosh (principalmente Mac dal 1998) è una famiglia di personal computer progettati, prodotti e venduti da Apple Inc. (originariamente come Apple Computer, Inc.) dal gennaio 1984.
 
 Il Macintosh originale è il primo personal computer desktop all-in-one di successo per il mercato di massa ad avere un'interfaccia utente grafica, uno schermo integrato e un mouse. Apple ha venduto il Macintosh insieme alle popolari famiglie di computer Apple II, Apple IIGS, Apple III e Apple Lisa, fino a quando gli altri modelli non sono stati dismessi negli anni '90.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

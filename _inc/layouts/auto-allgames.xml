@@ -1,93 +1,95 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<!-- fix bg color -->
-		<image name="sysbg-fix" extra="true">
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.5</pos>
-			<maxSize>1 1</maxSize>
-			<scale if="${screen.ratio} == '16/10'">0.9</scale>
-			<scale if="${screen.ratio} == '4/3'">0.75</scale>
-			<path>./../../_inc/anim/auto-fix.png</path>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>3</zIndex>
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.492</pos>
-			<maxSize>0.6</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.492" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${system.theme}-${lang}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-${lang}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.48</origin>
-			<pos>0.508 0.492</pos>
-			<maxSize>0.103</maxSize>
-			<rotation>-2</rotation>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.228 0.492" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>./../../_inc/anim/video/favorites2.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/favorites2.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.49 0.4929</pos>
-			<maxSize>0.555</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.21 0.4929" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text/>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Collection</text>
-			<text lang="pl">Kolekcja</text>
-			<text lang="ru">Коллекция</text>
-			<text lang="es">Recopilación</text>
-			<text lang="fr">Collection</text>
-			<text lang="it">Collezione</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>All Games</text>
-			<text lang="pl">Wszystkie gry</text>
-			<text lang="ru">Все игры</text>
-			<text lang="es">Todos los juegos</text>
-			<text lang="fr">Tous les jeux</text>
-			<text lang="it">Tutti i giochi</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>Here is a collection of all the games, from all the systems you have in your retro collection on this machine.</text>
-			<text lang="pl">Oto kolekcja wszystkich gier, z wszystkich systemów jakie posiadasz w swojej retro kolekcji na tej maszynie.</text>
-			<text lang="ru">Здесь собраны все игры со всех систем, которые есть в вашей ретро-коллекции.</text>
-			<text lang="es">Aquí tienes una colección de todos los juegos, de todos los sistemas que tienes en tu colección retro en esta máquina.</text>
-			<text lang="de">Hier finden Sie eine Sammlung aller Spiele von allen Systemen, die Sie in Ihrer Retro-Sammlung haben, auf diesem Gerät.</text>
-			<text lang="fr">Voici une collection de tous les jeux, de tous les systèmes que vous avez dans votre collection rétro sur cette machine.</text>
-			<text lang="it">Ecco una raccolta di tutti i giochi, da tutti i sistemi che avete nella vostra collezione retro su questa macchina.</text>
-		</text>
-	</view>
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <!-- fix bg color -->
+    <image name="sysbg-fix" extra="true">
+      <origin>0.5 0.5</origin>
+      <pos>0.5 0.5</pos>
+      <maxSize>1 1</maxSize>
+      <scale if="${screen.ratio} == '16/10'">0.9</scale>
+      <scale if="${screen.ratio} == '4/3'">0.75</scale>
+      <path>./../../_inc/anim/auto-fix.png</path>
+      <zIndex>26</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>3</zIndex>
+      <origin>0.5 0.5</origin>
+      <pos>0.5 0.492</pos>
+      <maxSize>0.6</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.492" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${system.theme}-${lang}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-${lang}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.48</origin>
+      <pos>0.508 0.492</pos>
+      <maxSize>0.103</maxSize>
+      <rotation>-2</rotation>
+      <zIndex>26</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.228 0.492" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>./../../_inc/anim/video/favorites2.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/favorites2.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.49 0.4929</pos>
+      <maxSize>0.555</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.21 0.4929" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text/>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Collection</text>
+      <text lang="pl">Kolekcja</text>
+      <text lang="pt">Coleção</text>
+      <text lang="ru">Коллекция</text>
+      <text lang="es">Recopilación</text>
+      <text lang="fr">Collection</text>
+      <text lang="it">Collezione</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>All Games</text>
+      <text lang="pl">Wszystkie gry</text>
+      <text lang="pt">Todos os jogos</text>
+      <text lang="ru">Все игры</text>
+      <text lang="es">Todos los juegos</text>
+      <text lang="fr">Tous les jeux</text>
+      <text lang="it">Tutti i giochi</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>Here is a collection of all the games, from all the systems you have in your retro collection on this machine.</text>
+      <text lang="pl">Oto kolekcja wszystkich gier, z wszystkich systemów jakie posiadasz w swojej retro kolekcji na tej maszynie.</text>
+      <text lang="pt">Esta é a coleção de todos os jogos, de todos os sistemas que você possui em sua coleção retrô nesta máquina.</text>
+      <text lang="ru">Здесь собраны все игры со всех систем, которые есть в вашей ретро-коллекции.</text>
+      <text lang="es">Aquí tienes una colección de todos los juegos, de todos los sistemas que tienes en tu colección retro en esta máquina.</text>
+      <text lang="de">Hier finden Sie eine Sammlung aller Spiele von allen Systemen, die Sie in Ihrer Retro-Sammlung haben, auf diesem Gerät.</text>
+      <text lang="fr">Voici une collection de tous les jeux, de tous les systèmes que vous avez dans votre collection rétro sur cette machine.</text>
+      <text lang="it">Ecco una raccolta di tutti i giochi, da tutti i sistemi che avete nella vostra collezione retro su questa macchina.</text>
+    </text>
+  </view>
 </theme>

@@ -1,75 +1,78 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.32</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.48 0.5</origin>
-			<pos>0.5 0.36</pos>
-			<maxSize>0.238</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.32</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.48 0.5</origin>
-			<pos>0.5 0.36</pos>
-			<maxSize>0.228</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1990</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Amstrad</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>CPC 464 Plus</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Amstrad CPC 464 Plus model was intended as "more sophisticated and stylish" replacements for the CPC 464. The 464 Plus has 64KB RAM and a cassette tape drive.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.32</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0.48 0.5</origin>
+      <pos>0.5 0.36</pos>
+      <maxSize>0.238</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.32</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0.48 0.5</origin>
+      <pos>0.5 0.36</pos>
+      <maxSize>0.228</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1990</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Amstrad</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>CPC 464 Plus</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Amstrad CPC 464 Plus model was intended as "more sophisticated and stylish" replacements for the CPC 464. The 464 Plus has 64KB RAM and a cassette tape drive.
 
 The plus range is not equipped with an on-board ROM, and thus the 464 Plus and the 6128 Plus do not contain a firmware. Instead, Amstrad provided the firmware for both models via the ROM extension facility, contained on the included Burnin' Rubber and Locomotive BASIC cartridge. This resulted in reduced hardware localization cost (only some select key caps and case labels had to be localized) with the added benefit of a rudimentary copy protection mechanism (without a firmware present, the machine itself could not copy a game cartridge's content).</text>
-			<text lang="pl">Model Amstrad CPC 464 Plus miał być "bardziej wyrafinowanym i stylowym" zamiennikiem CPC 464. 464 Plus posiada 64 KB pamięci RAM i napęd kasetowy.
+      <text lang="pl">Model Amstrad CPC 464 Plus miał być "bardziej wyrafinowanym i stylowym" zamiennikiem CPC 464. 464 Plus posiada 64 KB pamięci RAM i napęd kasetowy.
 
 Seria plus nie jest wyposażona we wbudowaną pamięć ROM, a zatem 464 Plus i 6128 Plus nie zawierają oprogramowania układowego. Zamiast tego, Amstrad dostarczył oprogramowanie układowe dla obu modeli za pośrednictwem rozszerzenia ROM, zawartego na dołączonej kasecie Burnin' Rubber i Locomotive BASIC. Zaowocowało to zmniejszeniem kosztów lokalizacji sprzętu (tylko niektóre wybrane nakładki klawiszy i etykiety obudowy musiały zostać zlokalizowane) z dodatkową korzyścią w postaci podstawowego mechanizmu ochrony przed kopiowaniem (bez oprogramowania układowego sama maszyna nie mogła skopiować zawartości kasety z grą).</text>
-			<text lang="ru">Модель Amstrad CPC 464 Plus предназначалась в качестве "более сложной и стильной" замены CPC 464. Модель 464 Plus имеет 64 КБ ОЗУ и кассетный лентопротяжный механизм.
+      <text lang="pt">O modelo Amstrad CPC 464 Plus era para ser um substituto "mais sofisticado e elegante" do CPC 464. O 464 Plus possui 64 KB de memória RAM e um drive de fita cassete.
+
+A série Plus não vem equipada com memória ROM embutida, e portanto o 464 Plus e o 6128 Plus não incluem software de sistema. Em vez disso, a Amstrad forneceu o software de sistema para ambos os modelos por meio de uma expansão ROM, incluída na fita cassete Burnin' Rubber e Locomotive BASIC. Isso resultou em uma redução nos custos de localização do hardware (apenas algumas legendas de teclas e etiquetas de caixa selecionadas precisavam ser localizadas) com o benefício adicional de um mecanismo básico de proteção contra cópia (sem o software de sistema, a máquina não conseguia copiar o conteúdo de uma fita de jogo).</text>
+      <text lang="ru">Модель Amstrad CPC 464 Plus предназначалась в качестве "более сложной и стильной" замены CPC 464. Модель 464 Plus имеет 64 КБ ОЗУ и кассетный лентопротяжный механизм.
 
 Серия plus не оснащена встроенным ПЗУ, поэтому 464 Plus и 6128 Plus не содержат встроенного программного обеспечения. Вместо этого компания Amstrad предоставила прошивку для обеих моделей с помощью средства расширения ПЗУ, содержащегося на прилагаемом картридже Burnin' Rubber и Locomotive BASIC. Это позволило снизить затраты на локализацию аппаратного обеспечения (локализовать пришлось только некоторые накладки на клавиши и этикетки корпуса) и получить дополнительное преимущество в виде элементарного механизма защиты от копирования (без наличия микропрограммы машина сама не могла скопировать содержимое игрового картриджа).</text>
-			<text lang="es">El modelo Amstrad CPC 464 Plus fue concebido como sustituto "más sofisticado y elegante" del CPC 464. El 464 Plus tiene 64 KB de RAM y una unidad de cinta de casete.
+      <text lang="es">El modelo Amstrad CPC 464 Plus fue concebido como sustituto "más sofisticado y elegante" del CPC 464. El 464 Plus tiene 64 KB de RAM y una unidad de cinta de casete.
 
 La gama Plus no está equipada con una ROM a bordo, por lo que el 464 Plus y el 6128 Plus no contienen firmware. En su lugar, Amstrad proporcionó el firmware para ambos modelos a través de la función de ampliación de ROM, contenida en el cartucho Burnin' Rubber y Locomotive BASIC incluido. De este modo se redujo el coste de localización del hardware (sólo hubo que localizar algunas tapas de teclas y etiquetas de carcasas) con la ventaja añadida de un mecanismo rudimentario de protección contra copias (sin un firmware presente, la propia máquina no podía copiar el contenido de un cartucho de juego).</text>
-			<text lang="de">Das Modell Amstrad CPC 464 Plus war als "anspruchsvoller und eleganter" Ersatz für den CPC 464 gedacht. Der 464 Plus hat 64KB RAM und ein Kassettenlaufwerk.
+      <text lang="de">Das Modell Amstrad CPC 464 Plus war als "anspruchsvoller und eleganter" Ersatz für den CPC 464 gedacht. Der 464 Plus hat 64KB RAM und ein Kassettenlaufwerk.
 
 Die Plus-Reihe ist nicht mit einem On-Board-ROM ausgestattet, und so enthalten der 464 Plus und der 6128 Plus keine Firmware. Stattdessen stellte Amstrad die Firmware für beide Modelle über die ROM-Erweiterung zur Verfügung, die auf der mitgelieferten Burnin' Rubber- und Locomotive BASIC-Kassette enthalten war. Dies führte zu geringeren Kosten für die Lokalisierung der Hardware (nur einige ausgewählte Tastenkappen und Gehäusebeschriftungen mussten lokalisiert werden) mit dem zusätzlichen Vorteil eines rudimentären Kopierschutzmechanismus (ohne vorhandene Firmware konnte das Gerät selbst den Inhalt einer Spielkassette nicht kopieren).</text>
-			<text lang="fr">Le modèle Amstrad CPC 464 Plus était destiné à remplacer le CPC 464 par un modèle "plus sophistiqué et plus élégant". Le 464 Plus dispose de 64 Ko de RAM et d'un lecteur de cassettes.
+      <text lang="fr">Le modèle Amstrad CPC 464 Plus était destiné à remplacer le CPC 464 par un modèle "plus sophistiqué et plus élégant". Le 464 Plus dispose de 64 Ko de RAM et d'un lecteur de cassettes.
 
 La gamme Plus n'est pas équipée d'une ROM embarquée, et donc le 464 Plus et le 6128 Plus ne contiennent pas de firmware. Au lieu de cela, Amstrad a fourni le micrologiciel pour les deux modèles via la fonction d'extension de la ROM, contenue dans les cartouches Burnin' Rubber et Locomotive BASIC incluses. Cela a permis de réduire les coûts de localisation du matériel (seuls certains capuchons de touches et certaines étiquettes de boîtiers ont dû être localisés), avec l'avantage supplémentaire d'un mécanisme rudimentaire de protection contre la copie (sans microprogramme, la machine elle-même ne pouvait pas copier le contenu d'une cartouche de jeu).Das Modell Amstrad CPC 464 Plus war als "anspruchsvoller und eleganter" Ersatz für den CPC 464 gedacht. Der 464 Plus hat 64KB RAM und ein Kassettenlaufwerk.
 
 Die Plus-Reihe ist nicht mit einem On-Board-ROM ausgestattet, und so enthalten der 464 Plus und der 6128 Plus keine Firmware. Stattdessen stellte Amstrad die Firmware für beide Modelle über die ROM-Erweiterung zur Verfügung, die auf der mitgelieferten Burnin' Rubber- und Locomotive BASIC-Kassette enthalten war. Dies führte zu geringeren Kosten für die Lokalisierung der Hardware (nur einige ausgewählte Tastenkappen und Gehäusebeschriftungen mussten lokalisiert werden) mit dem zusätzlichen Vorteil eines rudimentären Kopierschutzmechanismus (ohne vorhandene Firmware konnte das Gerät selbst den Inhalt einer Spielkassette nicht kopieren).</text>
-			<text lang="it">Il modello Amstrad CPC 464 Plus era destinato a sostituire il CPC 464 in modo "più sofisticato ed elegante". Il 464 Plus dispone di 64KB di RAM e di un lettore di cassette.
+      <text lang="it">Il modello Amstrad CPC 464 Plus era destinato a sostituire il CPC 464 in modo "più sofisticato ed elegante". Il 464 Plus dispone di 64KB di RAM e di un lettore di cassette.
 
 La gamma plus non è dotata di una ROM a bordo e quindi il 464 Plus e il 6128 Plus non contengono un firmware. Amstrad ha invece fornito il firmware per entrambi i modelli tramite la funzione di estensione della ROM, contenuta nella cartuccia Burnin' Rubber e Locomotive BASIC inclusa. Questo ha permesso di ridurre i costi di localizzazione dell'hardware (è stato necessario localizzare solo alcuni tasti selezionati e le etichette delle custodie) con l'ulteriore vantaggio di un rudimentale meccanismo di protezione dalla copia (senza la presenza di un firmware, la macchina stessa non poteva copiare il contenuto di una cartuccia di gioco).</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

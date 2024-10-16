@@ -1,92 +1,99 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<pos>0.5 0.35</pos>
-			<maxSize>0.21</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<pos>0.5 0.35</pos>
-			<maxSize>0.2</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1979</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Elektronika Inženjering</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Galaksija</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>Galaksija was a DIY computer designed by Voja Antonić and published in a Yugoslav science magazine in 1983. It was based on a Z80 processor and used software to generate the video signal. It was cheap and simple to make with standard components.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <pos>0.5 0.35</pos>
+      <maxSize>0.21</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <pos>0.5 0.35</pos>
+      <maxSize>0.2</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1979</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Elektronika Inženjering</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Galaksija</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>Galaksija was a DIY computer designed by Voja Antonić and published in a Yugoslav science magazine in 1983. It was based on a Z80 processor and used software to generate the video signal. It was cheap and simple to make with standard components.
 
 It was featured with Galaksija BASIC, a BASIC interpreter partly based on TRS-80 Level 1 BASIC, but modified to include video generation code and improve the programming language. It was contained in a 4 KB ROM. An optional 4 KB ROM provided more BASIC commands, an assembler, and a monitor. Character ROM was a 2 KB ROM that contained character definitions, characters were 8 x 13 pixels, and included 64 pseudo-graphics characters. The character set was a modified ASCII with some Serbian letters.
 Galaksija had no sound according to specifications, but the tape interface could be used as audio output. It also had a 44-pin edge connector with Z80 Bus, a monochrome video out, and a UHF TV out. Cassette tape was used as secondary storage. Galaksija also had a unique feature of broadcasting software as sound over the radio, allowing users to record and share programs via cassette decks.
 
 Galaksija's case was not pre-built, but suggested to be made out of the same material as the mainboard. The keyboard was laid out such that keys had their own memory-mapped addresses that followed the ASCII order.</text>
-			<text lang="it">Galaksija era un computer fai-da-te progettato da Voja Antonić e pubblicato su una rivista scientifica jugoslava nel 1983. Era basato su un processore Z80 e utilizzava un software per generare il segnale video. Era economico e semplice da realizzare con componenti standard.
+      <text lang="it">Galaksija era un computer fai-da-te progettato da Voja Antonić e pubblicato su una rivista scientifica jugoslava nel 1983. Era basato su un processore Z80 e utilizzava un software per generare il segnale video. Era economico e semplice da realizzare con componenti standard.
 
 Era dotato di Galaksija BASIC, un interprete BASIC parzialmente basato sul TRS-80 Level 1 BASIC, ma modificato per includere il codice di generazione video e migliorare il linguaggio di programmazione. Era contenuto in una ROM da 4 KB. Una ROM opzionale da 4 KB forniva altri comandi BASIC, un assemblatore e un monitor. La ROM dei caratteri era una ROM da 2 KB che conteneva le definizioni dei caratteri; i caratteri erano di 8 x 13 pixel e includevano 64 caratteri pseudo-grafici. Il set di caratteri era un ASCII modificato con alcune lettere serbe.
 Secondo le specifiche, Galaksija non aveva audio, ma l'interfaccia a nastro poteva essere utilizzata come uscita audio. Disponeva inoltre di un connettore edge a 44 pin con Z80 Bus, un'uscita video monocromatica e un'uscita TV UHF. La cassetta era utilizzata come memoria secondaria. Galaksija aveva anche la caratteristica unica di trasmettere il software come suono via radio, consentendo agli utenti di registrare e condividere i programmi tramite le cassette.
 
 Il case di Galaksija non era precostruito, ma si suggeriva di realizzarlo con lo stesso materiale della scheda madre. La tastiera era disposta in modo tale che i tasti avessero i loro indirizzi mappati in memoria che seguivano l'ordine ASCII.</text>
-			<text lang="fr">Galaksija était un ordinateur bricolé conçu par Voja Antonić et publié dans un magazine scientifique yougoslave en 1983. Il était basé sur un processeur Z80 et utilisait un logiciel pour générer le signal vidéo. Il était bon marché et simple à fabriquer avec des composants standard.
+      <text lang="fr">Galaksija était un ordinateur bricolé conçu par Voja Antonić et publié dans un magazine scientifique yougoslave en 1983. Il était basé sur un processeur Z80 et utilisait un logiciel pour générer le signal vidéo. Il était bon marché et simple à fabriquer avec des composants standard.
 
 Il était équipé de Galaksija BASIC, un interprète BASIC partiellement basé sur le TRS-80 Level 1 BASIC, mais modifié pour inclure le code de génération vidéo et améliorer le langage de programmation. Il était contenu dans une ROM de 4 Ko. Une ROM optionnelle de 4 Ko fournissait plus de commandes BASIC, un assembleur et un moniteur. Character ROM était une ROM de 2 Ko qui contenait des définitions de caractères, des caractères de 8 x 13 pixels et 64 caractères pseudo-graphiques. Le jeu de caractères était un ASCII modifié avec quelques lettres serbes.
 Galaksija n'avait pas de son selon les spécifications, mais l'interface de bande pouvait être utilisée comme sortie audio. Il disposait également d'un connecteur 44 broches avec bus Z80, d'une sortie vidéo monochrome et d'une sortie TV UHF. La cassette était utilisée comme mémoire secondaire. Galaksija avait également la particularité de diffuser des logiciels sous forme de sons à la radio, ce qui permettait aux utilisateurs d'enregistrer et de partager des programmes via des platines à cassettes.
 
 Le boîtier de Galaksija n'était pas préconstruit, mais il a été suggéré de le fabriquer dans le même matériau que la carte mère. Le clavier était conçu de manière à ce que les touches aient leurs propres adresses en mémoire qui suivaient l'ordre ASCII.</text>
-			<text lang="de">Galaksija war ein von Voja Antonić entworfener Heimcomputer, der 1983 in einem jugoslawischen Wissenschaftsmagazin veröffentlicht wurde. Er basierte auf einem Z80-Prozessor und verwendete Software zur Erzeugung des Videosignals. Er war billig und einfach mit Standardkomponenten zu bauen.
+      <text lang="de">Galaksija war ein von Voja Antonić entworfener Heimcomputer, der 1983 in einem jugoslawischen Wissenschaftsmagazin veröffentlicht wurde. Er basierte auf einem Z80-Prozessor und verwendete Software zur Erzeugung des Videosignals. Er war billig und einfach mit Standardkomponenten zu bauen.
 
 Er war mit Galaksija BASIC ausgestattet, einem BASIC-Interpreter, der teilweise auf dem TRS-80 Level 1 BASIC basierte, aber modifiziert wurde, um den Code für die Videogenerierung aufzunehmen und die Programmiersprache zu verbessern. Es war in einem 4 KB ROM enthalten. Ein optionales 4-KB-ROM bot weitere BASIC-Befehle, einen Assembler und einen Monitor. Das 2 KB große ROM enthielt Zeichendefinitionen, die Zeichen waren 8 x 13 Pixel groß und enthielten 64 Pseudo-Grafikzeichen. Der Zeichensatz war ein modifiziertes ASCII mit einigen serbischen Buchstaben.
 Galaksija hatte laut Spezifikation keinen Ton, aber die Bandschnittstelle konnte als Audioausgang verwendet werden. Außerdem verfügte er über einen 44-poligen Randstecker mit Z80-Bus, einen monochromen Videoausgang und einen UHF-TV-Ausgang. Als Sekundärspeicher wurde Kassettenband verwendet. Galaksija hatte auch die einzigartige Eigenschaft, Software als Ton über das Radio auszustrahlen, was es den Benutzern ermöglichte, Programme über Kassettendecks aufzunehmen und weiterzugeben.
 
 Das Gehäuse von Galaksija war nicht vorgefertigt, sondern sollte aus dem gleichen Material wie die Hauptplatine bestehen. Die Tastatur war so ausgelegt, dass die Tasten ihre eigenen Speicheradressen hatten, die der ASCII-Reihenfolge folgten.</text>
-			<text lang="es">Galaksija era un ordenador de bricolaje diseñado por Voja Antonić y publicado en una revista científica yugoslava en 1983. Se basaba en un procesador Z80 y utilizaba software para generar la señal de vídeo. Era barato y sencillo de fabricar con componentes estándar.
+      <text lang="es">Galaksija era un ordenador de bricolaje diseñado por Voja Antonić y publicado en una revista científica yugoslava en 1983. Se basaba en un procesador Z80 y utilizaba software para generar la señal de vídeo. Era barato y sencillo de fabricar con componentes estándar.
 
 Aparecía con Galaksija BASIC, un intérprete de BASIC basado en parte en el BASIC de nivel 1 del TRS-80, pero modificado para incluir código de generación de vídeo y mejorar el lenguaje de programación. Estaba contenido en una ROM de 4 KB. Una ROM opcional de 4 KB proporcionaba más comandos BASIC, un ensamblador y un monitor. La ROM de caracteres era una ROM de 2 KB que contenía definiciones de caracteres, los caracteres eran de 8 x 13 píxeles, e incluía 64 caracteres pseudo-gráficos. El juego de caracteres era un ASCII modificado con algunas letras serbias.
 Galaksija no tenía sonido según las especificaciones, pero la interfaz de cinta podía utilizarse como salida de audio. También tenía un conector edge de 44 pines con bus Z80, una salida de vídeo monocromo y una salida de TV UHF. La cinta de casete se utilizaba como almacenamiento secundario. Galaksija también tenía la característica única de emitir programas como sonido a través de la radio, lo que permitía a los usuarios grabar y compartir programas a través de las pletinas de casete.
 
 La carcasa de Galaksija no estaba preconstruida, sino que se sugirió que se hiciera del mismo material que la placa base. El teclado estaba dispuesto de tal forma que las teclas tenían sus propias direcciones mapeadas en memoria que seguían el orden ASCII.</text>
-			<text lang="ru">Galaksija - это компьютер "сделай сам", разработанный Войей Антоничем и опубликованный в югославском научном журнале в 1983 году. Он был построен на базе процессора Z80 и использовал программное обеспечение для формирования видеосигнала. Он был дешев и прост в изготовлении с использованием стандартных компонентов.
+      <text lang="ru">Galaksija - это компьютер "сделай сам", разработанный Войей Антоничем и опубликованный в югославском научном журнале в 1983 году. Он был построен на базе процессора Z80 и использовал программное обеспечение для формирования видеосигнала. Он был дешев и прост в изготовлении с использованием стандартных компонентов.
 
 На нем был установлен Galaksija BASIC - интерпретатор языка BASIC, частично основанный на TRS-80 Level 1 BASIC, но модифицированный для включения кода генерации видеосигнала и улучшения языка программирования. Он содержался в ПЗУ объемом 4 КБ. Дополнительное ПЗУ объемом 4 КБ предоставляло больше команд BASIC, ассемблер и монитор. Character ROM - это 2 КБ ПЗУ, содержащее определения символов, символы имели размер 8 x 13 пикселей и включали 64 псевдографических символа. Набор символов представлял собой модифицированный ASCII с некоторыми сербскими буквами.
 Согласно спецификациям, Galaksija не имела звукового сопровождения, но ленточный интерфейс мог использоваться в качестве аудиовыхода. Кроме того, она имела 44-контактный краевой разъем с шиной Z80 Bus, монохромный видеовыход и выход UHF TV. В качестве вторичного накопителя использовалась кассетная лента. Galaksija также обладала уникальной функцией трансляции программ в виде звука по радио, что позволяло пользователям записывать программы и обмениваться ими через кассетные деки.
 
 Корпус Galaksija не был сборным, его предлагалось изготавливать из того же материала, что и материнскую плату. Клавиатура была выполнена таким образом, что клавиши имели свои адреса, занесенные в память, которые соответствовали порядку ASCII.</text>
-			<text lang="pl">Galaksija był komputerem DIY zaprojektowanym przez Voja Antonića i opublikowanym w jugosłowiańskim magazynie naukowym w 1983 roku. Opierał się na procesorze Z80 i wykorzystywał oprogramowanie do generowania sygnału wideo. Był tani i prosty do wykonania przy użyciu standardowych komponentów.
+      <text lang="pl">Galaksija był komputerem DIY zaprojektowanym przez Voja Antonića i opublikowanym w jugosłowiańskim magazynie naukowym w 1983 roku. Opierał się na procesorze Z80 i wykorzystywał oprogramowanie do generowania sygnału wideo. Był tani i prosty do wykonania przy użyciu standardowych komponentów.
 
 Był wyposażony w Galaksija BASIC, interpreter BASIC częściowo oparty na TRS-80 Level 1 BASIC, ale zmodyfikowany w celu włączenia kodu generowania wideo i ulepszenia języka programowania. Znajdował się on w pamięci ROM o pojemności 4 KB. Opcjonalna pamięć ROM o pojemności 4 KB zapewniała więcej poleceń BASIC, asembler i monitor. Character ROM to 2 KB ROM, który zawierał definicje znaków, znaki miały rozmiar 8 x 13 pikseli i zawierały 64 znaki pseudo-graficzne. Zestaw znaków był zmodyfikowanym ASCII z kilkoma serbskimi literami.
 Według specyfikacji Galaksija nie posiadała dźwięku, ale interfejs taśmowy mógł być używany jako wyjście audio. Posiadała również 44-pinowe złącze krawędziowe z magistralą Z80, monochromatyczne wyjście wideo i wyjście telewizyjne UHF. Kaseta magnetofonowa była używana jako pamięć dodatkowa. Galaksija miała również unikalną funkcję nadawania oprogramowania jako dźwięku przez radio, umożliwiając użytkownikom nagrywanie i udostępnianie programów za pośrednictwem magnetofonów kasetowych.
 
 Obudowa Galaksiji nie była wykonana fabrycznie, ale sugerowano, że zostanie wykonana z tego samego materiału co płyta główna. Klawiatura została ułożona w taki sposób, że klawisze miały własne adresy mapowane w pamięci, które były zgodne z kolejnością ASCII.</text>
-		</text>
-	</view>
+      <text lang="pt">Galaksija era um computador DIY projetado por Voja Antonić e publicado em uma revista científica iugoslava em 1983. Era baseado no processador Z80 e usava software para gerar sinal de vídeo. Era barato e fácil de construir usando componentes padrão.
+
+Ele vinha com Galaksija BASIC, um interpretador BASIC parcialmente baseado no TRS-80 Level 1 BASIC, mas modificado para incluir código de geração de vídeo e melhorar a linguagem de programação. Ele estava localizado na memória ROM de 4 KB. Uma memória ROM opcional de 4 KB fornecia mais comandos BASIC, um assembler e um monitor. A ROM de caracteres era uma ROM de 2 KB que continha definições de caracteres, os caracteres tinham 8 x 13 pixels de tamanho e incluíam 64 caracteres pseudo-gráficos. O conjunto de caracteres era um ASCII modificado com algumas letras sérvias.
+
+De acordo com as especificações, a Galaksija não tinha som, mas a interface de fita podia ser usada como saída de áudio. Ela também tinha um conector de borda de 44 pinos com barramento Z80, saída de vídeo monocromática e saída de televisão UHF. Um gravador de fita cassete era usado como memória adicional. Galaksija também tinha uma função única de transmitir software como áudio pelo rádio, permitindo que os usuários gravassem e compartilhassem programas por meio de gravadores de fita cassete.
+
+O gabinete da Galaksija não era fabricado, mas sugeria-se que fosse feito do mesmo material que a placa-mãe. O teclado foi organizado de forma que as teclas tivessem seus próprios endereços mapeados na memória, que eram compatíveis com a ordem ASCII.</text>
+    </text>
+  </view>
 </theme>

@@ -1,58 +1,59 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.34</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
-			<pos>0.50 0.374</pos>
-			<maxSize>0.295</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.374" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.34</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
-			<pos>0.50 0.374</pos>
-			<maxSize>0.278</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.374" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text/>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Lutro</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>Lutro is an experimental lua game framework that follows the LOVE API.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.34</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+      <pos>0.50 0.374</pos>
+      <maxSize>0.295</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.374" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.34</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+      <pos>0.50 0.374</pos>
+      <maxSize>0.278</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.374" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text/>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Lutro</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>Lutro is an experimental lua game framework that follows the LOVE API.
 Lutro games can be played with LibRetro/RetroArch through the Lutro core.</text>
-			<text lang="pl">Lutro jest eksperymentalnym frameworkiem gier lua, który podąża za LOVE API. Gry Lutro mogą być odtwarzane z LibRetro/RetroArch poprzez rdzeń Lutro.</text>
-			<text lang="ru">Находящаяся в разработке повторная реализация Love 2D, написанная на Lua и реализованная как ядро Libretro. С Lutro можно легко создавать игры на Lua, не зная "C" или необходимости компилировать какой-либо код.</text>
-			<text lang="es">Lutro es un framework experimental de juegos en lua que sigue la API LOVE.
+      <text lang="pl">Lutro jest eksperymentalnym frameworkiem gier lua, który podąża za LOVE API. Gry Lutro mogą być odtwarzane z LibRetro/RetroArch poprzez rdzeń Lutro.</text>
+      <text lang="pt">Lutro é um framework de jogos experimental Lua que segue a API LOVE. Jogos Lutro podem ser jogados com LibRetro/RetroArch através do núcleo Lutro.</text>
+      <text lang="ru">Находящаяся в разработке повторная реализация Love 2D, написанная на Lua и реализованная как ядро Libretro. С Lutro можно легко создавать игры на Lua, не зная "C" или необходимости компилировать какой-либо код.</text>
+      <text lang="es">Lutro es un framework experimental de juegos en lua que sigue la API LOVE.
 Los juegos de Lutro se pueden jugar con LibRetro/RetroArch a través del núcleo de Lutro.</text>
-			<text lang="de">Lutro ist ein experimentelles Lua-Spiel-Framework, das der LOVE-API folgt.
+      <text lang="de">Lutro ist ein experimentelles Lua-Spiel-Framework, das der LOVE-API folgt.
 Lutro-Spiele können mit LibRetro/RetroArch über den Lutro-Kern gespielt werden.</text>
-			<text lang="fr">Lutro est un cadre de jeu expérimental en Lua qui suit l'API LOVE.
+      <text lang="fr">Lutro est un cadre de jeu expérimental en Lua qui suit l'API LOVE.
 Les jeux Lutro peuvent être joués avec LibRetro/RetroArch à travers le noyau Lutro.</text>
-			<text lang="it">Lutro è un framework di gioco lua sperimentale che segue le API LOVE.
+      <text lang="it">Lutro è un framework di gioco lua sperimentale che segue le API LOVE.
 I giochi di Lutro possono essere giocati con LibRetro/RetroArch attraverso il core di Lutro.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

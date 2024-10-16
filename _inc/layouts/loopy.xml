@@ -1,79 +1,80 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.37</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
-			<pos>0.5 0.385</pos>
-			<maxSize>0.25</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.385" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.37</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
-			<pos>0.499 0.38</pos>
-			<maxSize>0.242</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.219 0.38" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1995</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Casio</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Loopy</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Casio Loopy (Japanese: ルーピー, Hepburn: Rūpī), subtitled My Seal Computer SV-100, is a 32-bit home video game console. Released exclusively in Japan in October 1995, it was unique in that the marketing for it was completely targeted to female gamers.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.37</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
+      <pos>0.5 0.385</pos>
+      <maxSize>0.25</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.385" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.37</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
+      <pos>0.499 0.38</pos>
+      <maxSize>0.242</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.219 0.38" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1995</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Casio</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Loopy</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Casio Loopy (Japanese: ルーピー, Hepburn: Rūpī), subtitled My Seal Computer SV-100, is a 32-bit home video game console. Released exclusively in Japan in October 1995, it was unique in that the marketing for it was completely targeted to female gamers.
 
 The Loopy includes a built-in thermal color printer that can be used to create stickers from game screenshots. An optional accessory, called Magical Shop (マジカルショップ, Majikaru Shoppu), is a video capture device to obtain images from VCRs and DVD players. Users may add text to these images and make stickers. Including Magical Shop's own built-in software, the Loopy library contains 10 games. The Loopy features one controller port for use with a standard game controller or with a mouse which was sold separately. Developer Kenji Terada worked on Loopy Town no Oheya ga Hoshii!.
 
 Casio ceased production of the console in December 1998, with software development ending in November 1996.</text>
-			<text lang="pl">Casio Loopy (jap. ルーピー Rūpī) – 32-bitowa konsola gier wideo stworzona przez firmę Casio i wydana wyłącznie w Japonii w 19 października 1995 roku. Konsola była stworzona z myślą o kobietach. Konsola była wyposażona w drukarkę, która pozwalała na tworzenie naklejek z zrzutów ekranów z gier. Dodatkowe akcesorium o nazwie „Magical Shop” pozwalało konsoli na podłączenie do takich urządzeń jak magnetowid czy odtwarzacz DVD, a następnie wydrukowanie obrazu na przykład z filmu. Na konsolę wydano jedenaście gier.</text>
-			<text lang="ru">(другое название — My Seal Computer SV-100) — 32-битная игровая приставка, выпущенная компанией Casio эксклюзивно для японского рынка в октябре 1995. Успеха консоль не имела, продажи и выпуск игр прекратились уже в 1996 году. Относится к пятому поколению игровых систем.
+      <text lang="pl">Casio Loopy (jap. ルーピー Rūpī) – 32-bitowa konsola gier wideo stworzona przez firmę Casio i wydana wyłącznie w Japonii w 19 października 1995 roku. Konsola była stworzona z myślą o kobietach. Konsola była wyposażona w drukarkę, która pozwalała na tworzenie naklejek z zrzutów ekranów z gier. Dodatkowe akcesorium o nazwie „Magical Shop” pozwalało konsoli na podłączenie do takich urządzeń jak magnetowid czy odtwarzacz DVD, a następnie wydrukowanie obrazu na przykład z filmu. Na konsolę wydano jedenaście gier.</text>
+      <text lang="pt">Casio Loopy (jap. ルーピー Rūpī) – console de videogame de 32 bits criada pela Casio e lançada exclusivamente no Japão em 19 de outubro de 1995. A console foi criada pensando nas mulheres. A console era equipada com uma impressora que permitia a criação de adesivos com capturas de tela dos jogos. Um acessório adicional chamado "Magical Shop" permitia que a console se conectasse a dispositivos como videocassete ou DVD player e depois imprimisse a imagem, por exemplo, de um filme. Onze jogos foram lançados para a console.</text>
+      <text lang="ru">(другое название — My Seal Computer SV-100) — 32-битная игровая приставка, выпущенная компанией Casio эксклюзивно для японского рынка в октябре 1995. Успеха консоль не имела, продажи и выпуск игр прекратились уже в 1996 году. Относится к пятому поколению игровых систем.
 
 Casio и раньше пыталась выйти на рынок игровых систем, выпустив в октябре 1983 года игровую приставку Casio PV-1000. Успеха приставка не имела, к ней было выпущено всего 15 игр, и продавалась она только в Японии. Кроме того, в 1980-х годах Casio занималась разработкой и выпуском видеоигр для персональных компьютеров MSX. В период с 1984 по 1987 год компанией было выпущено более двадцати компьютерных игр для японского рынка, в том числе: Circus Charlie (только версия для японского рынка), Ice World, Exoide-Z Area 5 и ролевая игра Kenja no ishi. На этот раз компания решила пойти несколько другим путём и выпустила первую в мире игровую приставку, полностью ориентированную на девочек дошкольного и младшего школьного возраста.</text>
-			<text lang="es">La Casio Loopy (japonés: ルーピー, Hepburn: Rūpī), subtitulada My Seal Computer SV-100, es una videoconsola doméstica de 32 bits. Salió a la venta exclusivamente en Japón en octubre de 1995, y fue única en el sentido de que su marketing estaba completamente dirigido a las jugadoras.
+      <text lang="es">La Casio Loopy (japonés: ルーピー, Hepburn: Rūpī), subtitulada My Seal Computer SV-100, es una videoconsola doméstica de 32 bits. Salió a la venta exclusivamente en Japón en octubre de 1995, y fue única en el sentido de que su marketing estaba completamente dirigido a las jugadoras.
 
 La Loopy incluye una impresora térmica en color integrada que puede utilizarse para crear pegatinas a partir de capturas de pantalla de juegos. Un accesorio opcional, llamado Magical Shop (マジカルショップ, Majikaru Shoppu), es un dispositivo de captura de vídeo para obtener imágenes de videograbadoras y reproductores de DVD. Los usuarios pueden añadir texto a estas imágenes y hacer pegatinas. Incluyendo el propio software incorporado de Magical Shop, la biblioteca de Loopy contiene 10 juegos. La Loopy dispone de un puerto para un mando de juegos estándar o un ratón que se vende por separado. El desarrollador Kenji Terada trabajó en Loopy Town no Oheya ga Hoshii.
 
 Casio cesó la producción de la consola en diciembre de 1998, y el desarrollo del software finalizó en noviembre de 1996.</text>
-			<text lang="de">Der Casio Loopy (japanisch: ルーピー, Hepburn: Rūpī), mit dem Untertitel My Seal Computer SV-100, ist eine 32-Bit-Videospielkonsole für zu Hause. Sie kam im Oktober 1995 ausschließlich in Japan auf den Markt und war insofern einzigartig, als sich das Marketing für sie ausschließlich an weibliche Spieler richtete.
+      <text lang="de">Der Casio Loopy (japanisch: ルーピー, Hepburn: Rūpī), mit dem Untertitel My Seal Computer SV-100, ist eine 32-Bit-Videospielkonsole für zu Hause. Sie kam im Oktober 1995 ausschließlich in Japan auf den Markt und war insofern einzigartig, als sich das Marketing für sie ausschließlich an weibliche Spieler richtete.
 
 Der Loopy verfügt über einen eingebauten Thermofarbdrucker, mit dem man Aufkleber aus Spiel-Screenshots erstellen kann. Ein optionales Zubehörteil namens Magical Shop (マジカルショップ, Majikaru Shoppu) ist ein Videoaufnahmegerät, mit dem Bilder von Videorekordern und DVD-Spielern aufgenommen werden können. Die Benutzer können diesen Bildern Text hinzufügen und Aufkleber erstellen. Zusammen mit der integrierten Software von Magical Shop enthält die Loopy-Bibliothek 10 Spiele. Loopy verfügt über einen Controller-Anschluss, der mit einem Standard-Gamecontroller oder einer separat erhältlichen Maus verwendet werden kann. Entwickler Kenji Terada hat an Loopy Town no Oheya ga Hoshii! gearbeitet.
 
 Casio stellte die Produktion der Konsole im Dezember 1998 ein, die Softwareentwicklung endete im November 1996.</text>
-			<text lang="fr">La Casio Loopy (japonais : ルーピー, Hepburn : Rūpī), sous-titrée My Seal Computer SV-100, est une console de jeu vidéo domestique 32 bits. Sortie exclusivement au Japon en octobre 1995, elle est unique en ce sens que son marketing était entièrement destiné aux joueuses.
+      <text lang="fr">La Casio Loopy (japonais : ルーピー, Hepburn : Rūpī), sous-titrée My Seal Computer SV-100, est une console de jeu vidéo domestique 32 bits. Sortie exclusivement au Japon en octobre 1995, elle est unique en ce sens que son marketing était entièrement destiné aux joueuses.
 
 La Loopy comprend une imprimante thermique couleur intégrée qui peut être utilisée pour créer des autocollants à partir de captures d'écran de jeux. Un accessoire optionnel, appelé Magical Shop (マジカルショップ, Majikaru Shoppu), est un dispositif de capture vidéo permettant d'obtenir des images à partir de magnétoscopes et de lecteurs DVD. Les utilisateurs peuvent ajouter du texte à ces images et créer des autocollants. En incluant le logiciel intégré de Magical Shop, la bibliothèque Loopy contient 10 jeux. Le Loopy est équipé d'un port pour manette de jeu standard ou d'une souris vendue séparément. Le développeur Kenji Terada a travaillé sur Loopy Town no Oheya ga Hoshii !
 
 Casio a cessé la production de la console en décembre 1998, et le développement du logiciel a pris fin en novembre 1996.</text>
-			<text lang="it">Il Casio Loopy (giapponese: ルーピー, Hepburn: Rūpī), sottotitolato My Seal Computer SV-100, è una console per videogiochi domestica a 32 bit. Rilasciata esclusivamente in Giappone nell'ottobre del 1995, è stata unica nel suo genere in quanto il marketing era completamente rivolto alle giocatrici.
+      <text lang="it">Il Casio Loopy (giapponese: ルーピー, Hepburn: Rūpī), sottotitolato My Seal Computer SV-100, è una console per videogiochi domestica a 32 bit. Rilasciata esclusivamente in Giappone nell'ottobre del 1995, è stata unica nel suo genere in quanto il marketing era completamente rivolto alle giocatrici.
 
 Il Loopy include una stampante termica a colori integrata che può essere utilizzata per creare adesivi dalle schermate dei giochi. Un accessorio opzionale, chiamato Magical Shop (マジカルショップ, Majikaru Shoppu), è un dispositivo di acquisizione video per ottenere immagini da videoregistratori e lettori DVD. Gli utenti possono aggiungere testo a queste immagini e creare adesivi. Compreso il software integrato di Magical Shop, la libreria Loopy contiene 10 giochi. Il Loopy dispone di una porta per il controller che può essere utilizzata con un controller di gioco standard o con un mouse venduto separatamente. Lo sviluppatore Kenji Terada ha lavorato a Loopy Town no Oheya ga Hoshii!.
 
 Casio ha cessato la produzione della console nel dicembre 1998 e lo sviluppo del software è terminato nel novembre 1996.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

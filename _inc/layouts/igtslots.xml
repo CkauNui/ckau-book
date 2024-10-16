@@ -1,114 +1,117 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.68 0.55</origin>
-			<origin if="${screen.ratio} == '16/10'">0.537 0.5</origin>
-			<origin if="${screen.ratio} == '21/9'">0.78 0.54</origin>
-			<pos>0.655 0.57</pos>
-			<minSize>0.1 0.2</minSize>
-			<rotation>-34</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.375 0.57" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.7</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.55</origin>
-			<origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
-			<pos>0.458 0.6</pos>
-			<maxSize>0.11</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.15</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.12</maxSize>
-			<maxSize if="${screen.ratio} == '21/9'">0.09</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.178 0.6" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.8</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.58</origin>
-			<origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
-			<pos>0.458 0.6</pos>
-			<maxSize>0.10</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.15</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.12</maxSize>
-			<maxSize if="${screen.ratio} == '21/9'">0.0945</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.178 0.6" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.7</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.55</origin>
-			<origin if="${screen.ratio} == '21/9'">0.9 0.5</origin>
-			<pos>0.59 0.595</pos>
-			<maxSize>0.10</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.12</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.31 0.595" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1988</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>International Game Technology</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>IGT Slots</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>IGT, short for International Game Technology, is a renowned casino industry player. Based in Nevada, IGT boasts decades of experience catering to casino enthusiasts. They specialize in designing, developing, and producing slot machines, casino games, and gaming software for online and mobile platforms. Collaborating with legal casinos, IGT is a global leader offering innovative gaming solutions worldwide.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-right" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.68 0.55</origin>
+      <origin if="${screen.ratio} == '16/10'">0.537 0.5</origin>
+      <origin if="${screen.ratio} == '21/9'">0.78 0.54</origin>
+      <pos>0.655 0.57</pos>
+      <minSize>0.1 0.2</minSize>
+      <rotation>-34</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.375 0.57" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.7</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.55</origin>
+      <origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
+      <pos>0.458 0.6</pos>
+      <maxSize>0.11</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.15</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.12</maxSize>
+      <maxSize if="${screen.ratio} == '21/9'">0.09</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.178 0.6" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.8</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.58</origin>
+      <origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
+      <pos>0.458 0.6</pos>
+      <maxSize>0.10</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.15</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.12</maxSize>
+      <maxSize if="${screen.ratio} == '21/9'">0.0945</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.178 0.6" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.7</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.55</origin>
+      <origin if="${screen.ratio} == '21/9'">0.9 0.5</origin>
+      <pos>0.59 0.595</pos>
+      <maxSize>0.10</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.12</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.31 0.595" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1988</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>International Game Technology</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>IGT Slots</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>IGT, short for International Game Technology, is a renowned casino industry player. Based in Nevada, IGT boasts decades of experience catering to casino enthusiasts. They specialize in designing, developing, and producing slot machines, casino games, and gaming software for online and mobile platforms. Collaborating with legal casinos, IGT is a global leader offering innovative gaming solutions worldwide.
 
 Their physical slot machines are user-friendly, flexible, and incorporate the latest technological advancements.</text>
-			<text lang="it">IGT, acronimo di International Game Technology, è un rinomato operatore del settore dei casinò. Con sede in Nevada, IGT vanta decenni di esperienza nel settore dei casinò. È specializzata nella progettazione, nello sviluppo e nella produzione di slot machine, giochi da casinò e software di gioco per piattaforme online e mobili. Collaborando con i casinò legali, IGT è un leader globale che offre soluzioni di gioco innovative in tutto il mondo.
+      <text lang="it">IGT, acronimo di International Game Technology, è un rinomato operatore del settore dei casinò. Con sede in Nevada, IGT vanta decenni di esperienza nel settore dei casinò. È specializzata nella progettazione, nello sviluppo e nella produzione di slot machine, giochi da casinò e software di gioco per piattaforme online e mobili. Collaborando con i casinò legali, IGT è un leader globale che offre soluzioni di gioco innovative in tutto il mondo.
 
 Le loro slot machine fisiche sono facili da usare, flessibili e incorporano gli ultimi progressi tecnologici.</text>
-			<text lang="fr">IGT, abréviation de International Game Technology, est un acteur renommé de l'industrie des casinos. Basée dans le Nevada, IGT s'enorgueillit de plusieurs décennies d'expérience au service des passionnés de casino. Elle est spécialisée dans la conception, le développement et la production de machines à sous, de jeux de casino et de logiciels de jeu pour les plateformes en ligne et mobiles. Collaborant avec des casinos légaux, IGT est un leader mondial offrant des solutions de jeu innovantes dans le monde entier.
+      <text lang="fr">IGT, abréviation de International Game Technology, est un acteur renommé de l'industrie des casinos. Basée dans le Nevada, IGT s'enorgueillit de plusieurs décennies d'expérience au service des passionnés de casino. Elle est spécialisée dans la conception, le développement et la production de machines à sous, de jeux de casino et de logiciels de jeu pour les plateformes en ligne et mobiles. Collaborant avec des casinos légaux, IGT est un leader mondial offrant des solutions de jeu innovantes dans le monde entier.
 
 Ses machines à sous physiques sont conviviales, flexibles et intègrent les dernières avancées technologiques.</text>
-			<text lang="de">IGT, die Abkürzung für International Game Technology, ist ein renommiertes Unternehmen der Casino-Branche. IGT hat seinen Sitz in Nevada und verfügt über jahrzehntelange Erfahrung in der Betreuung von Casino-Enthusiasten. Das Unternehmen ist spezialisiert auf das Design, die Entwicklung und die Produktion von Spielautomaten, Casinospielen und Spielsoftware für Online- und mobile Plattformen. IGT arbeitet mit legalen Casinos zusammen und ist ein globaler Marktführer, der weltweit innovative Spiellösungen anbietet.
+      <text lang="de">IGT, die Abkürzung für International Game Technology, ist ein renommiertes Unternehmen der Casino-Branche. IGT hat seinen Sitz in Nevada und verfügt über jahrzehntelange Erfahrung in der Betreuung von Casino-Enthusiasten. Das Unternehmen ist spezialisiert auf das Design, die Entwicklung und die Produktion von Spielautomaten, Casinospielen und Spielsoftware für Online- und mobile Plattformen. IGT arbeitet mit legalen Casinos zusammen und ist ein globaler Marktführer, der weltweit innovative Spiellösungen anbietet.
 
 Ihre physischen Spielautomaten sind benutzerfreundlich, flexibel und beinhalten die neuesten technologischen Fortschritte.</text>
-			<text lang="es">IGT, abreviatura de International Game Technology, es una empresa de renombre en el sector de los casinos. Con sede en Nevada, IGT cuenta con décadas de experiencia atendiendo a los entusiastas de los casinos. Está especializada en el diseño, desarrollo y producción de máquinas tragaperras, juegos de casino y software de juego para plataformas en línea y móviles. Colaborando con casinos legales, IGT es un líder global que ofrece soluciones de juego innovadoras en todo el mundo.
+      <text lang="es">IGT, abreviatura de International Game Technology, es una empresa de renombre en el sector de los casinos. Con sede en Nevada, IGT cuenta con décadas de experiencia atendiendo a los entusiastas de los casinos. Está especializada en el diseño, desarrollo y producción de máquinas tragaperras, juegos de casino y software de juego para plataformas en línea y móviles. Colaborando con casinos legales, IGT es un líder global que ofrece soluciones de juego innovadoras en todo el mundo.
 
 Sus máquinas tragaperras físicas son fáciles de usar, flexibles e incorporan los últimos avances tecnológicos.</text>
-			<text lang="ru">IGT, сокращение от International Game Technology, является известным игроком индустрии казино. Расположенная в штате Невада, компания IGT имеет десятилетний опыт работы с любителями казино. Компания специализируется на проектировании, разработке и производстве игровых автоматов, игр для казино и игрового программного обеспечения для онлайн и мобильных платформ. Сотрудничая с легальными казино, IGT является мировым лидером, предлагающим инновационные игровые решения по всему миру.
+      <text lang="ru">IGT, сокращение от International Game Technology, является известным игроком индустрии казино. Расположенная в штате Невада, компания IGT имеет десятилетний опыт работы с любителями казино. Компания специализируется на проектировании, разработке и производстве игровых автоматов, игр для казино и игрового программного обеспечения для онлайн и мобильных платформ. Сотрудничая с легальными казино, IGT является мировым лидером, предлагающим инновационные игровые решения по всему миру.
 
 Их физические игровые автоматы удобны в использовании, гибки и включают в себя самые последние технологические достижения.</text>
-			<text lang="pl">IGT, skrót od International Game Technology, jest znanym graczem w branży kasynowej. Z siedzibą w Nevadzie, IGT szczyci się wieloletnim doświadczeniem w obsłudze entuzjastów kasyn. Specjalizuje się w projektowaniu, opracowywaniu i produkcji automatów do gier, gier kasynowych i oprogramowania do gier na platformy internetowe i mobilne. Współpracując z legalnymi kasynami, IGT jest globalnym liderem oferującym innowacyjne rozwiązania w zakresie gier na całym świecie.
+      <text lang="pl">IGT, skrót od International Game Technology, jest znanym graczem w branży kasynowej. Z siedzibą w Nevadzie, IGT szczyci się wieloletnim doświadczeniem w obsłudze entuzjastów kasyn. Specjalizuje się w projektowaniu, opracowywaniu i produkcji automatów do gier, gier kasynowych i oprogramowania do gier na platformy internetowe i mobilne. Współpracując z legalnymi kasynami, IGT jest globalnym liderem oferującym innowacyjne rozwiązania w zakresie gier na całym świecie.
 
 Ich fizyczne automaty do gier są przyjazne dla użytkownika, elastyczne i zawierają najnowsze osiągnięcia technologiczne.</text>
-		</text>
-	</view>
+      <text lang="pt">IGT, abreviação de International Game Technology, é um jogador renomado na indústria de cassinos. Com sede em Nevada, a IGT orgulha-se de sua longa experiência atendendo entusiastas de cassinos. A empresa se especializa no projeto, desenvolvimento e produção de máquinas de jogos, jogos de cassino e software de jogos para plataformas online e móveis. Em parceria com cassinos legais, a IGT é uma líder global que oferece soluções inovadoras em jogos ao redor do mundo.
+
+Suas máquinas de jogos físicas são amigáveis, flexíveis e incorporam os últimos avanços tecnológicos.</text>
+    </text>
+  </view>
 </theme>

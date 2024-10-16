@@ -1,168 +1,171 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.3 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.26 0.36</pos>
-			<minSize>0.1 0.2</minSize>
-			<rotation>8</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="-0.02 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.7 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.54 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.74 0.36</pos>
-			<minSize>0.1 0.2</minSize>
-			<rotation>-8</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.46 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<pos>0.5 0.363</pos>
-			<maxSize>0.15</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-left" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.36 0.37</pos>
-			<maxSize>0.14</maxSize>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.08 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-right" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.638 0.37</pos>
-			<maxSize>0.14</maxSize>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.358 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<pos>0.5 0.363</pos>
-			<maxSize>0.14</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}-right.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.655 0.37</pos>
-			<maxSize>0.13</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.375 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox3" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}-left.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.345 0.37</pos>
-			<maxSize>0.13</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.065 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1992</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Sega</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Model 1</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Sega Model 1 (モデル1) is an arcade system board that was released by Sega in 1992. It is the successor to the Sega System 32 (released in 1990). While earlier Sega hardware was capable of handling 3D polygons (such as the Mega Drive, released in 1988), the Model 1 was Sega's first hardware specifically designed for 3D polygon graphics.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-left" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.3 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.26 0.36</pos>
+      <minSize>0.1 0.2</minSize>
+      <rotation>8</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="-0.02 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-right" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.7 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.54 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.74 0.36</pos>
+      <minSize>0.1 0.2</minSize>
+      <rotation>-8</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.46 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <pos>0.5 0.363</pos>
+      <maxSize>0.15</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-left" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.36 0.37</pos>
+      <maxSize>0.14</maxSize>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.08 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-right" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.638 0.37</pos>
+      <maxSize>0.14</maxSize>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.358 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <pos>0.5 0.363</pos>
+      <maxSize>0.14</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}-right.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.655 0.37</pos>
+      <maxSize>0.13</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.375 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox3" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}-left.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.345 0.37</pos>
+      <maxSize>0.13</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.065 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1992</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Sega</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Model 1</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Sega Model 1 (モデル1) is an arcade system board that was released by Sega in 1992. It is the successor to the Sega System 32 (released in 1990). While earlier Sega hardware was capable of handling 3D polygons (such as the Mega Drive, released in 1988), the Model 1 was Sega's first hardware specifically designed for 3D polygon graphics.
 
 Originally, the Model 1 was simply known as the CG Board (CGボード), but was retroactively given the Model 1 name after work on the Model 2 began. The Model 1 was succeeded by the Sega Model 2 (released in 1993). Both the Model 1 and Model 2 were eventually succeeded by the Sega Model 3.</text>
-			<text lang="pl">Sega Model 1 (モデル1) to system arcade wydany przez firmę Sega w 1992 roku. Jest to następca Sega System 32 (wydanego w 1990 roku). Podczas gdy wcześniejsze urządzenia firmy Sega potrafiły obsługiwać wielokąty 3D (np. Mega Drive, wydany w 1988 roku), Model 1 był pierwszym urządzeniem firmy Sega zaprojektowanym specjalnie z myślą o grafice trójwymiarowej.
+      <text lang="pl">Sega Model 1 (モデル1) to system arcade wydany przez firmę Sega w 1992 roku. Jest to następca Sega System 32 (wydanego w 1990 roku). Podczas gdy wcześniejsze urządzenia firmy Sega potrafiły obsługiwać wielokąty 3D (np. Mega Drive, wydany w 1988 roku), Model 1 był pierwszym urządzeniem firmy Sega zaprojektowanym specjalnie z myślą o grafice trójwymiarowej.
 
 Pierwotnie Model 1 był znany po prostu jako CG Board (CGボード), ale po rozpoczęciu prac nad Modelem 2 otrzymał wstecznie nazwę Model 1. Następcą Modelu 1 była Sega Model 2 (wydana w 1993 roku). Zarówno Model 1, jak i Model 2 zostały ostatecznie zastąpione przez Sega Model 3.</text>
-			<text lang="ru">аркадная система выпущенная компанией Sega в 1992 году. Является преемником Sega System 32. Model 1 это первый аркадный кабинет, разработанный специально для игр с 3D графикой. В то время было несколько популярных игр, таких как; Virtua Fighter, Virtua Racing и Star Wars Arcade. Однако выпущенная через год Sega Model 2 имела более обширную библиотеку игр. В системе установлен процессор NEC V60 на 16 MHz с 1936KB оперативной памяти. В качестве графического процессора стоял чип Sega 837-7894 171-6080D.</text>
-			<text lang="es">La Sega Model 1 (モデル1) es una placa de sistema arcade que fue lanzada por Sega en 1992. Es la sucesora de la Sega System 32 (lanzada en 1990). Mientras que el hardware anterior de Sega era capaz de manejar polígonos 3D (como la Mega Drive, lanzada en 1988), el Modelo 1 fue el primer hardware de Sega diseñado específicamente para gráficos poligonales 3D.
+      <text lang="pt">Sega Model 1 (モデル1) é um sistema de arcade lançado pela Sega em 1992. É o sucessor do Sega System 32 (lançado em 1990). Enquanto os dispositivos anteriores da Sega conseguiam lidar com polígonos 3D (por exemplo, Mega Drive, lançado em 1988), o Model 1 foi o primeiro dispositivo da Sega projetado especificamente para gráficos tridimensionais.
+
+Originalmente, o Model 1 era conhecido simplesmente como CG Board (CGボード), mas depois que o trabalho no Model 2 começou, ele recebeu retroativamente o nome de Model 1. O sucessor do Model 1 foi o Sega Model 2 (lançado em 1993). Tanto o Model 1 quanto o Model 2 foram eventualmente substituídos pelo Sega Model 3.</text>
+      <text lang="ru">аркадная система выпущенная компанией Sega в 1992 году. Является преемником Sega System 32. Model 1 это первый аркадный кабинет, разработанный специально для игр с 3D графикой. В то время было несколько популярных игр, таких как; Virtua Fighter, Virtua Racing и Star Wars Arcade. Однако выпущенная через год Sega Model 2 имела более обширную библиотеку игр. В системе установлен процессор NEC V60 на 16 MHz с 1936KB оперативной памяти. В качестве графического процессора стоял чип Sega 837-7894 171-6080D.</text>
+      <text lang="es">La Sega Model 1 (モデル1) es una placa de sistema arcade que fue lanzada por Sega en 1992. Es la sucesora de la Sega System 32 (lanzada en 1990). Mientras que el hardware anterior de Sega era capaz de manejar polígonos 3D (como la Mega Drive, lanzada en 1988), el Modelo 1 fue el primer hardware de Sega diseñado específicamente para gráficos poligonales 3D.
 
 Originalmente, el Model 1 se conocía simplemente como CG Board (CGボード), pero se le dio retroactivamente el nombre de Model 1 cuando se empezó a trabajar en el Model 2. Al Model 1 le sucedió el Sega Model 2 (lanzado en 1993). Tanto el Model 1 como el Model 2 fueron finalmente sucedidos por el Sega Model 3.</text>
-			<text lang="de">Das Sega Model 1 (モデル1) ist eine Spielhallen-Systemplatine, die 1992 von Sega veröffentlicht wurde. Es ist der Nachfolger des Sega System 32 (veröffentlicht im Jahr 1990). Während frühere Sega-Hardware in der Lage war, 3D-Polygone zu verarbeiten (wie z. B. das Mega Drive, das 1988 veröffentlicht wurde), war das Model 1 Segas erste Hardware, die speziell für 3D-Polygon-Grafiken entwickelt wurde.
+      <text lang="de">Das Sega Model 1 (モデル1) ist eine Spielhallen-Systemplatine, die 1992 von Sega veröffentlicht wurde. Es ist der Nachfolger des Sega System 32 (veröffentlicht im Jahr 1990). Während frühere Sega-Hardware in der Lage war, 3D-Polygone zu verarbeiten (wie z. B. das Mega Drive, das 1988 veröffentlicht wurde), war das Model 1 Segas erste Hardware, die speziell für 3D-Polygon-Grafiken entwickelt wurde.
 
 Ursprünglich war das Modell 1 einfach als CG-Board (CGボード) bekannt, erhielt aber rückwirkend den Namen Modell 1, nachdem die Arbeit am Modell 2 begonnen hatte. Das Modell 1 wurde vom Sega Modell 2 abgelöst (erschienen 1993). Sowohl das Model 1 als auch das Model 2 wurden schließlich durch das Sega Model 3 abgelöst.</text>
-			<text lang="fr">Le Sega Model 1 (モデル1) est un système d'arcade commercialisé par Sega en 1992. Il s'agit du successeur du Sega System 32 (sorti en 1990). Alors que le matériel Sega précédent était capable de gérer les polygones 3D (comme la Mega Drive, sortie en 1988), le Model 1 a été le premier matériel Sega spécifiquement conçu pour les graphiques de polygones 3D.
+      <text lang="fr">Le Sega Model 1 (モデル1) est un système d'arcade commercialisé par Sega en 1992. Il s'agit du successeur du Sega System 32 (sorti en 1990). Alors que le matériel Sega précédent était capable de gérer les polygones 3D (comme la Mega Drive, sortie en 1988), le Model 1 a été le premier matériel Sega spécifiquement conçu pour les graphiques de polygones 3D.
 
 À l'origine, le Model 1 était simplement connu sous le nom de CG Board (CGボード), mais il a reçu rétroactivement le nom de Model 1 après le début des travaux sur le Model 2. Le modèle 1 a été remplacé par le Sega Model 2 (sorti en 1993). Les modèles 1 et 2 ont finalement été remplacés par le Sega Model 3.</text>
-			<text lang="it">Il Sega Model 1 (モデル1) è una scheda di sistema arcade rilasciata da Sega nel 1992. È il successore del Sega System 32 (uscito nel 1990). Mentre l'hardware Sega precedente era in grado di gestire poligoni 3D (come il Mega Drive, uscito nel 1988), il Model 1 è stato il primo hardware Sega specificamente progettato per la grafica poligonale 3D.
+      <text lang="it">Il Sega Model 1 (モデル1) è una scheda di sistema arcade rilasciata da Sega nel 1992. È il successore del Sega System 32 (uscito nel 1990). Mentre l'hardware Sega precedente era in grado di gestire poligoni 3D (come il Mega Drive, uscito nel 1988), il Model 1 è stato il primo hardware Sega specificamente progettato per la grafica poligonale 3D.
 
 In origine, il Model 1 era conosciuto semplicemente come CG Board (CGボード), ma gli fu attribuito retroattivamente il nome Model 1 dopo l'inizio dei lavori sul Model 2. Il Model 1 fu succeduto dal Sega Model 2 (rilasciato nel 1993). Sia il Model 1 che il Model 2 furono infine succeduti dal Sega Model 3.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

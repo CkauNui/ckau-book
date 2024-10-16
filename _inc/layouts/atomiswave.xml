@@ -1,172 +1,175 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.4 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
-			<pos>0.287 0.36</pos>
-			<minSize>0.1 0.4</minSize>
-			<rotation>26</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.007 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.6 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.95 0.5</origin>
-			<pos>0.713 0.36</pos>
-			<minSize>0.1 0.4</minSize>
-			<rotation>-26</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.433 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<pos>0.50 0.38</pos>
-			<maxSize>0.2</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.38" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-left" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.53 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.371 0.39</pos>
-			<maxSize>0.13</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.15</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.14</maxSize>
-			<rotation>-64</rotation>
-			<storyboard>
-				<animation property="pos" to="0.091 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-right" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.47 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.628 0.39</pos>
-			<maxSize>0.13</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.15</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.14</maxSize>
-			<rotation>64</rotation>
-			<storyboard>
-				<animation property="pos" to="0.348 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.27</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
-			<pos>0.50 0.38</pos>
-			<maxSize>0.182</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.38" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.638 0.39</pos>
-			<maxSize>0.14</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.358 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox3" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.36 0.39</pos>
-			<maxSize>0.14</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.08 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2003</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Sammy</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Atomiswave</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Atomiswave is a custom arcade system board and cabinet from Sammy Corporation. It is based on Sega's NAOMI system board (thus it is common to see the "Sega" logo on its boot up screen). The Atomiswave uses interchangeable game cartridges and the cabinet's control panel can be easily switched out with different control sets, including dual joysticks, dual light guns and a steering wheel.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-left" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.4 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
+      <pos>0.287 0.36</pos>
+      <minSize>0.1 0.4</minSize>
+      <rotation>26</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.007 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-right" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.6 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0.95 0.5</origin>
+      <pos>0.713 0.36</pos>
+      <minSize>0.1 0.4</minSize>
+      <rotation>-26</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.433 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <pos>0.50 0.38</pos>
+      <maxSize>0.2</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.38" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-left" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.53 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.371 0.39</pos>
+      <maxSize>0.13</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.15</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.14</maxSize>
+      <rotation>-64</rotation>
+      <storyboard>
+        <animation property="pos" to="0.091 0.39" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-right" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.47 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.628 0.39</pos>
+      <maxSize>0.13</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.15</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.14</maxSize>
+      <rotation>64</rotation>
+      <storyboard>
+        <animation property="pos" to="0.348 0.39" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.27</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
+      <pos>0.50 0.38</pos>
+      <maxSize>0.182</maxSize>
+      <zIndex>26</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.38" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.638 0.39</pos>
+      <maxSize>0.14</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.358 0.39" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox3" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.36 0.39</pos>
+      <maxSize>0.14</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.08 0.39" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2003</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Sammy</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Atomiswave</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Atomiswave is a custom arcade system board and cabinet from Sammy Corporation. It is based on Sega's NAOMI system board (thus it is common to see the "Sega" logo on its boot up screen). The Atomiswave uses interchangeable game cartridges and the cabinet's control panel can be easily switched out with different control sets, including dual joysticks, dual light guns and a steering wheel.
 
 With the retirement of the aging Neo Geo MVS system, SNK Playmore chose the Atomiswave as its next system to develop games for. In a contract with Sammy, SNK Playmore agreed to develop five games for the Atomiswave system. Metal Slug 6 was SNK Playmore's fifth game for the Atomiswave, after which SNK moved on to a Taito Type X2 arcade board.</text>
-			<text lang="pl">Atomiswave to niestandardowa płyta i obudowa systemu arcade firmy Sammy Corporation. Jest on oparty na płycie systemowej NAOMI firmy Sega (dlatego często można zobaczyć logo "Sega" na ekranie startowym). Atomiswave wykorzystuje wymienne kartridże z grami, a panel kontrolny obudowy może być łatwo zamieniony na różne zestawy kontrolne, w tym dwa joysticki, dwa pistolety świetlne i kierownicę.
+      <text lang="pl">Atomiswave to niestandardowa płyta i obudowa systemu arcade firmy Sammy Corporation. Jest on oparty na płycie systemowej NAOMI firmy Sega (dlatego często można zobaczyć logo "Sega" na ekranie startowym). Atomiswave wykorzystuje wymienne kartridże z grami, a panel kontrolny obudowy może być łatwo zamieniony na różne zestawy kontrolne, w tym dwa joysticki, dwa pistolety świetlne i kierownicę.
 
 Po wycofaniu z rynku starzejącego się systemu Neo Geo MVS, SNK Playmore wybrało Atomiswave jako następny system, na który będzie tworzyć gry. W umowie z firmą Sammy, SNK Playmore zgodziło się opracować pięć gier na system Atomiswave. Metal Slug 6 był piątą grą SNK Playmore na system Atomiswave, po czym SNK przeniosło się na platformę Taito Type X2.</text>
-			<text lang="ru">Специализированная системная плата и корпус для игровых автоматов от Sammy Corporation. Он основан на системной плате Sega NAOMI (поэтому на экране загрузки часто встречается логотип «Sega»). Многие известные компьютерные игры впервые появились на игровых автоматах и лишь спустя некоторое время были портированы на приставки и домашние компьютеры. С другой стороны, игровые автоматы иногда собираются на основе обычных компьютеров и игровых приставок.
+      <text lang="ru">Специализированная системная плата и корпус для игровых автоматов от Sammy Corporation. Он основан на системной плате Sega NAOMI (поэтому на экране загрузки часто встречается логотип «Sega»). Многие известные компьютерные игры впервые появились на игровых автоматах и лишь спустя некоторое время были портированы на приставки и домашние компьютеры. С другой стороны, игровые автоматы иногда собираются на основе обычных компьютеров и игровых приставок.
 
 Золотой век аркадных видеоигр обычно определяется как период, начинающийся где-то в конце 1970-х годов и заканчивающийся где-то в середине 1980-х годов. За исключением краткого возрождения в начале 1990-х, аркадная индустрия в Западном полушарии впоследствии пришла в упадок. По мере того как конкурирующие домашние игровые приставки, такие как Sony PlayStation и Microsoft Xbox, увеличивали свои графические и игровые возможности и снижали стоимость. В Восточном полушарии индустрии аркадных игр всё ещё удерживает свои позиции.</text>
-			<text lang="es">El Atomiswave es un sistema arcade personalizado de Sammy Corporation. Se basa en la placa del sistema NAOMI de Sega (por lo que es habitual ver el logotipo de "Sega" en su pantalla de arranque). El Atomiswave utiliza cartuchos de juego intercambiables y el panel de control del gabinete se puede cambiar fácilmente con diferentes conjuntos de control, incluyendo joysticks duales, pistolas de luz duales y un volante.
+      <text lang="es">El Atomiswave es un sistema arcade personalizado de Sammy Corporation. Se basa en la placa del sistema NAOMI de Sega (por lo que es habitual ver el logotipo de "Sega" en su pantalla de arranque). El Atomiswave utiliza cartuchos de juego intercambiables y el panel de control del gabinete se puede cambiar fácilmente con diferentes conjuntos de control, incluyendo joysticks duales, pistolas de luz duales y un volante.
 
 Tras la retirada de Neo Geo MVS, SNK Playmore eligió Atomiswave como su próximo sistema para desarrollar juegos. En un contrato con Sammy, SNK Playmore acordó desarrollar cinco juegos para el sistema Atomiswave. Metal Slug 6 fue el quinto juego de SNK Playmore para el Atomiswave, tras lo cual SNK pasó a una placa arcade Taito Type X2.</text>
-			<text lang="de">Der Atomiswave ist ein kundenspezifisches Arcade-System-Board und -Gehäuse der Sammy Corporation. Es basiert auf der NAOMI-Systemplatine von Sega (daher sieht man häufig das "Sega"-Logo auf dem Startbildschirm). Das Atomiswave verwendet austauschbare Spielkassetten, und das Bedienfeld des Gehäuses kann leicht mit verschiedenen Steuersätzen ausgetauscht werden, darunter zwei Joysticks, zwei Lichtpistolen und ein Lenkrad.
+      <text lang="pt">O Atomiswave é um sistema de arcade personalizado da Sammy Corporation. Ele é baseado na placa do sistema NAOMI da Sega (por isso é comum ver o logotipo da "Sega" em sua tela de inicialização). O Atomiswave utiliza cartuchos de jogo intercambiáveis e o painel de controle do gabinete pode ser facilmente trocado por diferentes conjuntos de controle, incluindo joysticks duplos, pistolas de luz duplas e um volante.
+
+Após a retirada do Neo Geo MVS, a SNK Playmore escolheu o Atomiswave como seu próximo sistema para desenvolver jogos. Em um contrato com a Sammy, a SNK Playmore concordou em desenvolver cinco jogos para o sistema Atomiswave. Metal Slug 6 foi o quinto jogo da SNK Playmore para o Atomiswave, após o qual a SNK passou para uma placa de arcade Taito Type X2.</text>
+      <text lang="de">Der Atomiswave ist ein kundenspezifisches Arcade-System-Board und -Gehäuse der Sammy Corporation. Es basiert auf der NAOMI-Systemplatine von Sega (daher sieht man häufig das "Sega"-Logo auf dem Startbildschirm). Das Atomiswave verwendet austauschbare Spielkassetten, und das Bedienfeld des Gehäuses kann leicht mit verschiedenen Steuersätzen ausgetauscht werden, darunter zwei Joysticks, zwei Lichtpistolen und ein Lenkrad.
 
 Mit der Ausmusterung des alternden Neo Geo MVS-Systems wählte SNK Playmore das Atomiswave als nächstes System, für das Spiele entwickelt werden sollten. In einem Vertrag mit Sammy stimmte SNK Playmore zu, fünf Spiele für das Atomiswave-System zu entwickeln. Metal Slug 6 war das fünfte Spiel von SNK Playmore für das Atomiswave-System, woraufhin SNK auf ein Taito Type X2 Arcade Board umstieg.</text>
-			<text lang="fr">L'Atomiswave est un système d'arcade personnalisé de Sammy Corporation. Il est basé sur la carte système NAOMI de Sega (il est donc courant de voir le logo "Sega" sur l'écran de démarrage). L'Atomiswave utilise des cartouches de jeu interchangeables et le panneau de commande de l'armoire peut être facilement remplacé par différents jeux de commande, y compris des manettes doubles, des pistolets lumineux doubles et un volant.
+      <text lang="fr">L'Atomiswave est un système d'arcade personnalisé de Sammy Corporation. Il est basé sur la carte système NAOMI de Sega (il est donc courant de voir le logo "Sega" sur l'écran de démarrage). L'Atomiswave utilise des cartouches de jeu interchangeables et le panneau de commande de l'armoire peut être facilement remplacé par différents jeux de commande, y compris des manettes doubles, des pistolets lumineux doubles et un volant.
 
 Avec le retrait du système Neo Geo MVS vieillissant, SNK Playmore a choisi l'Atomiswave comme prochain système pour lequel développer des jeux. Dans un contrat avec Sammy, SNK Playmore a accepté de développer cinq jeux pour le système Atomiswave. Metal Slug 6 a été le cinquième jeu de SNK Playmore pour l'Atomiswave, après quoi SNK est passé à une carte d'arcade Taito Type X2.</text>
-			<text lang="it">Atomiswave è una scheda e un cabinet per sistemi arcade personalizzati di Sammy Corporation. È basata sulla scheda di sistema NAOMI di Sega (per questo è comune vedere il logo "Sega" sulla schermata di avvio). Atomiswave utilizza cartucce di gioco intercambiabili e il pannello di controllo del cabinet può essere facilmente sostituito con diversi set di controllo, tra cui due joystick, due light gun e un volante.
+      <text lang="it">Atomiswave è una scheda e un cabinet per sistemi arcade personalizzati di Sammy Corporation. È basata sulla scheda di sistema NAOMI di Sega (per questo è comune vedere il logo "Sega" sulla schermata di avvio). Atomiswave utilizza cartucce di gioco intercambiabili e il pannello di controllo del cabinet può essere facilmente sostituito con diversi set di controllo, tra cui due joystick, due light gun e un volante.
 
 Con il pensionamento del vecchio sistema Neo Geo MVS, SNK Playmore scelse l'Atomiswave come sistema successivo per lo sviluppo di giochi. In un contratto con Sammy, SNK Playmore accettò di sviluppare cinque giochi per il sistema Atomiswave. Metal Slug 6 fu il quinto gioco di SNK Playmore per Atomiswave, dopodiché SNK passò a una scheda arcade Taito Type X2.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

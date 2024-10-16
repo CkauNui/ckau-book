@@ -1,164 +1,164 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.3 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
-			<pos>0.305 0.45</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>14</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.025 0.45" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.6 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
-			<pos>0.69 0.45</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>-14</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.41 0.45" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<pos>0.499 0.47</pos>
-			<maxSize>0.175</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.184</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-left" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
-			<pos>0.392 0.48</pos>
-			<maxSize>0.14</maxSize>
-			<rotation>-76</rotation>
-			<storyboard>
-				<animation property="pos" to="0.112 0.48" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-right" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
-			<pos>0.607 0.48</pos>
-			<maxSize>0.14</maxSize>
-			<rotation>76</rotation>
-			<storyboard>
-				<animation property="pos" to="0.327 0.48" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<pos>0.499 0.47</pos>
-			<maxSize>0.162</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.22</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.182</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
-			<pos>0.621 0.47</pos>
-			<maxSize>0.14</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.341 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox3" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
-			<pos>0.38 0.47</pos>
-			<maxSize>0.14</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.1 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2007</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Taito</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Type X²</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Taito Type X is an arcade system board released in 2004 by game developer and publisher Taito.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-left" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.3 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
+      <pos>0.305 0.45</pos>
+      <minSize>0.1 0.3</minSize>
+      <rotation>14</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.025 0.45" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-right" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.6 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+      <pos>0.69 0.45</pos>
+      <minSize>0.1 0.3</minSize>
+      <rotation>-14</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.41 0.45" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <pos>0.499 0.47</pos>
+      <maxSize>0.175</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.184</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-left" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
+      <pos>0.392 0.48</pos>
+      <maxSize>0.14</maxSize>
+      <rotation>-76</rotation>
+      <storyboard>
+        <animation property="pos" to="0.112 0.48" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-right" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+      <pos>0.607 0.48</pos>
+      <maxSize>0.14</maxSize>
+      <rotation>76</rotation>
+      <storyboard>
+        <animation property="pos" to="0.327 0.48" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <pos>0.499 0.47</pos>
+      <maxSize>0.162</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.22</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.182</maxSize>
+      <zIndex>26</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+      <pos>0.621 0.47</pos>
+      <maxSize>0.14</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.341 0.47" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox3" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+      <origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
+      <pos>0.38 0.47</pos>
+      <maxSize>0.14</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.1 0.47" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2007</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Taito</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Type X²</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Taito Type X is an arcade system board released in 2004 by game developer and publisher Taito.
 
 Based on commodity personal computer hardware architecture, Type X is not a specification for a single set of hardware, but rather a modular platform supporting multiple hardware configurations with different levels of graphical capability. This flexibility allows game developers limited choice in selecting a configuration to fit the game's specific requirements, and allows the platform as a whole to more efficiently support gaming titles with vastly different computing needs. For example, the Type X+ and Type X2 models have upgrade graphics processing power, which could be put toward better game visuals, or outputting to higher-resolution (HDTV) displays. The Type X7 board is used primarily for pachinko machines in Japan. Rawiya co-owned the company that produced this system board.
 
 Taito Type X and X7 use Microsoft Visual Studio .NET 2003 Professional as the recommended development platform.
 
 The Taito NESiCAxLive add-on allows arcade owners to use a digital distribution system to download games.</text>
-			<text lang="pl">Taito Type X to system arcade wydany w 2004 roku przez firmę Taito, producenta i wydawcę gier.
+      <text lang="pl">Taito Type X to system arcade wydany w 2004 roku przez firmę Taito, producenta i wydawcę gier.
 
 Oparty na architekturze sprzętowej zwykłych komputerów osobistych, Type X nie jest specyfikacją pojedynczego zestawu sprzętowego, ale raczej modułową platformą obsługującą wiele konfiguracji sprzętowych o różnych poziomach możliwości graficznych. Dzięki tej elastyczności twórcy gier mają ograniczone możliwości wyboru konfiguracji dostosowanej do konkretnych wymagań gry, a platforma jako całość może skuteczniej obsługiwać gry o bardzo zróżnicowanych potrzebach obliczeniowych. Na przykład modele Type X+ i Type X2 mają większą moc przetwarzania grafiki, którą można przeznaczyć na lepszą grafikę w grach lub wyświetlanie obrazu na ekranach o wyższej rozdzielczości (HDTV). Rawiya był współwłaścicielem firmy, która produkowała tę płytę systemową.
 
@@ -171,35 +171,48 @@ Dodatek Taito NESiCAxLive umożliwia właścicielom salonów gier korzystanie z 
 
 			- Terminal satelitarny Taito Type X²
 			Taito Type X² Satellite Terminal to po prostu Type X², tyle że z sieciowym trybem wieloosobowym.</text>
-			<text lang="ru">Cерия аркадных систем, выпускаемых корпорацией Taito начиная с 2004 года. Будучи созданными на базе аппаратных средств персонального компьютера, поддерживают несколько конфигураций с различными уровнями производительности, благодаря чему потребитель получает возможность с лёгкостью подстраивать мощность платформы под графику конкретных игр. Например, модели Type X+ и Type X² обладают повышенной графической производительностью и хорошо подходят для игр с высоким разрешением экрана, тогда как Type X7 не обладает большой мощностью и применяется в основном для японских патинко-машин, не требующих значительных затрат. Разработчикам игр для моделей Type X и X7 рекомендовано использовать программные инструменты Microsoft Visual Studio .NET 2003. Основными поставщиками игр для этих систем являются такие компании как Arc System Works, Atlus, Capcom, Namco Bandai Games (Bandai, Banpresto), SNK Playmore, Square Enix, Takara Tomy.</text>
-			<text lang="es">La Taito Type X es una placa de sistema arcade lanzada en 2004 por el desarrollador y editor de juegos Taito.
+      <text lang="pt">Taito Type X é um sistema arcade lançado em 2004 pela Taito, produtora e editora de jogos.
+
+Baseado na arquitetura de hardware de computadores pessoais comuns, o Type X não é uma especificação de um único conjunto de hardware, mas sim uma plataforma modular que suporta várias configurações de hardware com diferentes níveis de capacidades gráficas. Essa flexibilidade oferece aos desenvolvedores de jogos uma gama limitada de opções para escolher a configuração adequada às necessidades específicas do jogo, e a plataforma como um todo pode lidar de forma mais eficiente com jogos com necessidades computacionais muito diferentes. Por exemplo, os modelos Type X+ e Type X2 possuem maior capacidade de processamento gráfico, que pode ser direcionada para gráficos melhores nos jogos ou para a exibição de imagens em telas de alta resolução (HDTV). Rawiya era co-proprietário da empresa que fabricava esta placa de sistema.
+
+Devido aos drivers específicos da plataforma (Windows XP Embedded), o software de jogos não é intercambiável entre a plataforma Type X2 e a plataforma Type X/X+ mais antiga.
+
+O complemento Taito NESiCAxLive permite que os proprietários de arcades usem um sistema de distribuição digital para baixar jogos.
+
+			- Taito Type X²
+			O Taito Type X² era equipado com um processador Intel LGA 775. Outros processadores suportados incluem Celeron D 352, Pentium 4 651 e Intel Core 2 Duo E6400. A memória RAM poderia ter 512 MB, 1 GB ou 4 GB de capacidade. Cartas gráficas com interface PCI Express ×16, ATI Radeon x1600Pro, x1300LE, nVidia GeForce 7900GS, 7600GS e 7300GS eram suportadas.
+
+			- Terminal Satélite Taito Type X²
+			O Taito Type X² Satellite Terminal é simplesmente um Type X², exceto com modo multijogador em rede.</text>
+      <text lang="ru">Cерия аркадных систем, выпускаемых корпорацией Taito начиная с 2004 года. Будучи созданными на базе аппаратных средств персонального компьютера, поддерживают несколько конфигураций с различными уровнями производительности, благодаря чему потребитель получает возможность с лёгкостью подстраивать мощность платформы под графику конкретных игр. Например, модели Type X+ и Type X² обладают повышенной графической производительностью и хорошо подходят для игр с высоким разрешением экрана, тогда как Type X7 не обладает большой мощностью и применяется в основном для японских патинко-машин, не требующих значительных затрат. Разработчикам игр для моделей Type X и X7 рекомендовано использовать программные инструменты Microsoft Visual Studio .NET 2003. Основными поставщиками игр для этих систем являются такие компании как Arc System Works, Atlus, Capcom, Namco Bandai Games (Bandai, Banpresto), SNK Playmore, Square Enix, Takara Tomy.</text>
+      <text lang="es">La Taito Type X es una placa de sistema arcade lanzada en 2004 por el desarrollador y editor de juegos Taito.
 
 Basado en la arquitectura de hardware de ordenadores personales, el Type X no es una especificación para un único conjunto de hardware, sino una plataforma modular que admite múltiples configuraciones de hardware con diferentes niveles de capacidad gráfica. Esta flexibilidad permite a los desarrolladores de juegos elegir la configuración que mejor se adapte a los requisitos específicos de cada juego, y a la plataforma en su conjunto soportar con mayor eficacia títulos con necesidades informáticas muy diferentes. Por ejemplo, los modelos Type X+ y Type X2 disponen de una potencia de procesamiento gráfico superior, que podría destinarse a mejorar los efectos visuales de los juegos o a transmitirlos a pantallas de mayor resolución (HDTV). La placa Type X7 se utiliza principalmente en las máquinas pachinko de Japón. Rawiya era copropietaria de la empresa que fabricaba esta placa de sistema.
 
 Taito Type X y X7 utilizan Microsoft Visual Studio .NET 2003 Professional como plataforma de desarrollo recomendada.
 
 El complemento Taito NESiCAxLive permite a los propietarios de máquinas recreativas utilizar un sistema de distribución digital para descargar juegos.</text>
-			<text lang="de">Das Taito Type X ist ein Arcade-System-Board, das 2004 vom Spieleentwickler und -verleger Taito veröffentlicht wurde.
+      <text lang="de">Das Taito Type X ist ein Arcade-System-Board, das 2004 vom Spieleentwickler und -verleger Taito veröffentlicht wurde.
 
 Basierend auf der Hardware-Architektur von Standard-Personalcomputern ist Type X keine Spezifikation für einen einzigen Satz von Hardware, sondern eine modulare Plattform, die mehrere Hardware-Konfigurationen mit unterschiedlichen grafischen Fähigkeiten unterstützt. Diese Flexibilität erlaubt es den Spieleentwicklern, eine Konfiguration auszuwählen, die den spezifischen Anforderungen des Spiels entspricht, und ermöglicht es der Plattform als Ganzes, Spiele mit sehr unterschiedlichen Anforderungen an die Rechenleistung effizienter zu unterstützen. Die Modelle Typ X+ und Typ X2 verfügen beispielsweise über eine höhere Grafikverarbeitungsleistung, die für eine bessere Spielvisualisierung oder die Ausgabe auf hochauflösenden (HDTV-)Displays genutzt werden kann. Der Typ X7 wird vor allem für Pachinko-Maschinen in Japan verwendet. Rawiya war Miteigentümer der Firma, die diese Systemplatine herstellte.
 
 Taito Type X und X7 verwenden Microsoft Visual Studio .NET 2003 Professional als empfohlene Entwicklungsplattform.
 
 Das Taito NESiCAxLive Add-on ermöglicht es Spielhallenbesitzern, ein digitales Vertriebssystem zum Herunterladen von Spielen zu nutzen.</text>
-			<text lang="fr">Le Taito Type X est un système d'arcade sorti en 2004 par le développeur et éditeur de jeux Taito.
+      <text lang="fr">Le Taito Type X est un système d'arcade sorti en 2004 par le développeur et éditeur de jeux Taito.
 
 Basé sur l'architecture matérielle d'un ordinateur personnel, le Type X n'est pas une spécification pour un ensemble unique de matériel, mais plutôt une plateforme modulaire supportant de multiples configurations matérielles avec différents niveaux de capacité graphique. Cette flexibilité permet aux développeurs de jeux d'avoir un choix limité dans la sélection d'une configuration adaptée aux exigences spécifiques du jeu, et permet à la plateforme dans son ensemble de supporter plus efficacement des titres de jeux ayant des besoins informatiques très différents. Par exemple, les modèles Type X+ et Type X2 disposent d'une puissance de traitement graphique supérieure, qui peut être utilisée pour améliorer les visuels des jeux ou la sortie sur des écrans haute résolution (HDTV). La carte de type X7 est principalement utilisée pour les machines de pachinko au Japon. Rawiya était copropriétaire de la société qui produisait cette carte système.
 
 Les Taito Type X et X7 utilisent Microsoft Visual Studio .NET 2003 Professional comme plateforme de développement recommandée.
 
 Le module complémentaire Taito NESiCAxLive permet aux propriétaires de salles d'arcade d'utiliser un système de distribution numérique pour télécharger des jeux.</text>
-			<text lang="it">Il Taito Type X è una scheda di sistema arcade rilasciata nel 2004 dallo sviluppatore ed editore di giochi Taito.
+      <text lang="it">Il Taito Type X è una scheda di sistema arcade rilasciata nel 2004 dallo sviluppatore ed editore di giochi Taito.
 
 Basato sull'architettura hardware dei personal computer, il Type X non è una specifica per un singolo set di hardware, ma piuttosto una piattaforma modulare che supporta configurazioni hardware multiple con diversi livelli di capacità grafica. Questa flessibilità consente agli sviluppatori di giochi una scelta limitata nella selezione di una configurazione adatta ai requisiti specifici del gioco e permette alla piattaforma nel suo complesso di supportare in modo più efficiente titoli di gioco con esigenze di calcolo molto diverse. Ad esempio, i modelli Type X+ e Type X2 dispongono di una maggiore potenza di elaborazione grafica, che può essere utilizzata per migliorare la grafica dei giochi o per l'output su display ad alta risoluzione (HDTV). La scheda Type X7 è utilizzata principalmente per le macchine da pachinko in Giappone. Rawiya era co-proprietaria dell'azienda che produceva questa scheda di sistema.
 
 Taito Type X e X7 utilizzano Microsoft Visual Studio .NET 2003 Professional come piattaforma di sviluppo consigliata.
 
 Il componente aggiuntivo Taito NESiCAxLive consente ai proprietari di sale giochi di utilizzare un sistema di distribuzione digitale per scaricare i giochi.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

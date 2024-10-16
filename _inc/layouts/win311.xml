@@ -1,85 +1,90 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
-			<pos>0.498 0.36</pos>
-			<maxSize>0.25</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.218 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
-			<pos>0.498 0.358</pos>
-			<maxSize>0.238</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.218 0.358" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1992</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Microsoft</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Windows 3.11</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>Windows 3.1 is a major release of Microsoft Windows. It was released to manufacturing on April 6, 1992, as a successor to Windows 3.0.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+      <pos>0.498 0.36</pos>
+      <maxSize>0.25</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.218 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+      <pos>0.498 0.358</pos>
+      <maxSize>0.238</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.218 0.358" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1992</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Microsoft</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Windows 3.11</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>Windows 3.1 is a major release of Microsoft Windows. It was released to manufacturing on April 6, 1992, as a successor to Windows 3.0.
 
 Like its predecessors, the Windows 3.1 series ran as a shell on top of MS-DOS. Codenamed Janus, Windows 3.1 introduced the TrueType font system as a competitor to Adobe Type Manager. Its multimedia was also expanded, and screensavers were introduced, alongside new software such as Windows Media Player and Sound Recorder. File Manager and Control Panel received tweaks, while Windows 3.1 also saw the introduction of Windows Registry and add-ons. Windows 3.1 remains a 16-bit operating environment, although it can run more RAM.
 
 The series is considered to be an improvement on its predecessors. It was praised for its reinvigoration of the user interface and technical design. Windows 3.1 sold over three million copies during the first three months of its release, although its counterpart Windows for Workgroups was noted as a "business disappointment" due to its small amount of sold copies. It was succeeded by Windows NT 3.1 and Windows 95, and Microsoft ended the support for Windows 3.1 series on December 31, 2001, except for the embedded version, which was retired in 2008.</text>
-			<text lang="pl">Windows 3.1 to główne wydanie systemu operacyjnego Microsoft Windows. Zostało wydane do produkcji 6 kwietnia 1992 roku, jako następca Windows 3.0.
+      <text lang="pl">Windows 3.1 to główne wydanie systemu operacyjnego Microsoft Windows. Zostało wydane do produkcji 6 kwietnia 1992 roku, jako następca Windows 3.0.
 
 Podobnie jak jego poprzednicy, seria Windows 3.1 działała jako powłoka na szczycie MS-DOS. Nazwany kodowo Janus, Windows 3.1 wprowadził system czcionek TrueType jako konkurencję dla Adobe Type Manager. Rozbudowano także multimedia, wprowadzono wygaszacze ekranu oraz nowe programy, takie jak Windows Media Player i Sound Recorder. Menedżer plików i Panel sterowania zostały udoskonalone, a w Windows 3.1 wprowadzono także Rejestr Windows i dodatki. Windows 3.1 pozostaje 16-bitowym środowiskiem operacyjnym, choć może uruchomić więcej pamięci RAM.
 
 Seria jest uważana za ulepszenie w stosunku do swoich poprzedników. Chwalono ją za ożywienie interfejsu użytkownika i projektu technicznego. Windows 3.1 sprzedał się w ponad trzech milionach egzemplarzy w ciągu pierwszych trzech miesięcy od premiery, choć jego odpowiednik Windows for Workgroups został odnotowany jako "biznesowe rozczarowanie" ze względu na małą ilość sprzedanych egzemplarzy. Został on zastąpiony przez Windows NT 3.1 i Windows 95, a Microsoft zakończył wsparcie dla serii Windows 3.1 31 grudnia 2001 roku, z wyjątkiem wersji wbudowanej, która została wycofana w 2008 roku.</text>
-			<text lang="ru">Windows 3.1 - это основной выпуск Microsoft Windows. Он был выпущен в производство 6 апреля 1992 года в качестве преемника Windows 3.0.
+      <text lang="pt">Windows 3.1 foi a principal versão do sistema operacional Microsoft Windows. Foi lançado para produção em 6 de abril de 1992, como sucessor do Windows 3.0.
+
+Assim como seus predecessores, a série Windows 3.1 funcionava como uma camada sobre o MS-DOS. Chamado de Janus, o Windows 3.1 introduziu o sistema de fontes TrueType como uma competição com o Adobe Type Manager. Também houve expansões multimídia, introdução de protetores de tela e novos programas, como o Windows Media Player e o Sound Recorder. O Gerenciador de arquivos e o Painel de controle foram aprimorados, e o Windows 3.1 também introduziu o Registro do Windows e extensões. O Windows 3.1 permanece um ambiente operacional de 16 bits, embora possa executar mais memória RAM.
+
+A série é considerada uma melhoria em relação a seus predecessores. Foi elogiada por revitalizar a interface do usuário e o projeto técnico. O Windows 3.1 vendeu mais de três milhões de cópias nos três primeiros meses após o lançamento, embora seu equivalente, o Windows for Workgroups, tenha sido considerado um "fracasso comercial" devido ao baixo número de cópias vendidas. Foi substituído pelo Windows NT 3.1 e Windows 95, e a Microsoft encerrou o suporte para a série Windows 3.1 em 31 de dezembro de 2001, com exceção das versões integradas, que foram descontinuadas em 2008.</text>
+      <text lang="ru">Windows 3.1 - это основной выпуск Microsoft Windows. Он был выпущен в производство 6 апреля 1992 года в качестве преемника Windows 3.0.
 
 Как и ее предшественницы, Windows 3.1 запускалась как оболочка поверх MS-DOS. Под кодовым названием Janus, Windows 3.1 представила систему шрифтов TrueType в качестве конкурента Adobe Type Manager. Также была расширена мультимедийная составляющая, появились заставки, а также новые программы, такие как Windows Media Player и Sound Recorder. Диспетчер файлов и панель управления получили изменения, а в Windows 3.1 также появились реестр Windows и дополнения. Windows 3.1 остается 16-битной операционной средой, хотя она может работать с большим объемом оперативной памяти.
 
 Серия считается улучшенной по сравнению с предшественниками. Она получила высокую оценку за оживление пользовательского интерфейса и технического дизайна. За первые три месяца после выхода Windows 3.1 было продано более трех миллионов копий, хотя ее аналог Windows for Workgroups был отмечен как "деловое разочарование" из-за малого количества проданных копий. На смену ей пришли Windows NT 3.1 и Windows 95, а 31 декабря 2001 года компания Microsoft прекратила поддержку серии Windows 3.1, за исключением встроенной версии, которая была снята с производства в 2008 году.</text>
-			<text lang="es">Windows 3.1 es una versión mayor de Microsoft Windows. Se empezó a fabricar el 6 de abril de 1992, como sucesor de Windows 3.0.
+      <text lang="es">Windows 3.1 es una versión mayor de Microsoft Windows. Se empezó a fabricar el 6 de abril de 1992, como sucesor de Windows 3.0.
 
 Al igual que sus predecesores, la serie Windows 3.1 se ejecutaba como un intérprete de comandos sobre MS-DOS. Con el nombre en clave de Janus, Windows 3.1 introdujo el sistema de fuentes TrueType como competidor de Adobe Type Manager. También se amplió su multimedia y se introdujeron salvapantallas, junto con nuevos programas como Windows Media Player y Sound Recorder. El Administrador de archivos y el Panel de control recibieron retoques, mientras que Windows 3.1 también vio la introducción del Registro de Windows y los complementos. Windows 3.1 sigue siendo un entorno operativo de 16 bits, aunque puede ejecutar más RAM.
 
 La serie se considera una mejora de sus predecesoras. Recibió elogios por la revitalización de la interfaz de usuario y el diseño técnico. Windows 3.1 vendió más de tres millones de copias durante los tres primeros meses de su lanzamiento, aunque su homólogo Windows for Workgroups fue calificado de "decepción empresarial" por el escaso número de copias vendidas. Le sucedieron Windows NT 3.1 y Windows 95, y Microsoft puso fin al soporte de la serie Windows 3.1 el 31 de diciembre de 2001, salvo para la versión integrada, que se retiró en 2008.</text>
-			<text lang="de">Windows 3.1 ist eine Hauptversion von Microsoft Windows. Es wurde am 6. April 1992 als Nachfolger von Windows 3.0 zur Herstellung freigegeben.
+      <text lang="de">Windows 3.1 ist eine Hauptversion von Microsoft Windows. Es wurde am 6. April 1992 als Nachfolger von Windows 3.0 zur Herstellung freigegeben.
 
 Wie seine Vorgänger lief die Windows 3.1-Serie als Shell auf MS-DOS. Windows 3.1 trug den Codenamen Janus und führte das TrueType-Schriftsystem als Konkurrenz zum Adobe Type Manager ein. Die Multimediafunktionen wurden ebenfalls erweitert, und es wurden Bildschirmschoner sowie neue Software wie der Windows Media Player und der Sound Recorder eingeführt. Der Dateimanager und die Systemsteuerung wurden überarbeitet, und mit Windows 3.1 wurden auch die Windows-Registrierung und Add-ons eingeführt. Windows 3.1 ist nach wie vor eine 16-Bit-Betriebsumgebung, kann aber mit mehr Arbeitsspeicher arbeiten.
 
 Die Serie wird als eine Verbesserung gegenüber ihren Vorgängern angesehen. Sie wurde für die Wiederbelebung der Benutzeroberfläche und das technische Design gelobt. Windows 3.1 verkaufte sich in den ersten drei Monaten nach seiner Veröffentlichung mehr als drei Millionen Mal, obwohl sein Gegenstück Windows for Workgroups aufgrund der geringen Anzahl verkaufter Exemplare als "geschäftliche Enttäuschung" bezeichnet wurde. Es wurde von Windows NT 3.1 und Windows 95 abgelöst, und Microsoft stellte den Support für die Windows 3.1-Serie am 31. Dezember 2001 ein, mit Ausnahme der eingebetteten Version, die 2008 eingestellt wurde.</text>
-			<text lang="fr">Windows 3.1 est une version majeure de Microsoft Windows. Elle a été lancée en fabrication le 6 avril 1992, pour succéder à Windows 3.0.
+      <text lang="fr">Windows 3.1 est une version majeure de Microsoft Windows. Elle a été lancée en fabrication le 6 avril 1992, pour succéder à Windows 3.0.
 
 Comme ses prédécesseurs, la série Windows 3.1 fonctionnait comme un shell au-dessus de MS-DOS. Sous le nom de code Janus, Windows 3.1 a introduit le système de polices TrueType pour concurrencer Adobe Type Manager. Ses fonctions multimédias ont également été étendues et des économiseurs d'écran ont été introduits, ainsi que de nouveaux logiciels tels que Windows Media Player et Sound Recorder. Le gestionnaire de fichiers et le panneau de configuration ont été modifiés, tandis que Windows 3.1 a également introduit le registre Windows et les modules complémentaires. Windows 3.1 reste un environnement d'exploitation 16 bits, bien qu'il puisse utiliser plus de mémoire vive.
 
 La série est considérée comme une amélioration par rapport à ses prédécesseurs. Elle a été saluée pour sa revitalisation de l'interface utilisateur et de la conception technique. Windows 3.1 s'est vendu à plus de trois millions d'exemplaires au cours des trois premiers mois de sa commercialisation, bien que son homologue Windows for Workgroups ait été considéré comme une "déception commerciale" en raison du faible nombre d'exemplaires vendus. Windows NT 3.1 et Windows 95 lui ont succédé, et Microsoft a mis fin au support de la série Windows 3.1 le 31 décembre 2001, à l'exception de la version embarquée, qui a été retirée en 2008.</text>
-			<text lang="it">Windows 3.1 è una major release di Microsoft Windows. È stata rilasciata per la produzione il 6 aprile 1992, come successore di Windows 3.0.
+      <text lang="it">Windows 3.1 è una major release di Microsoft Windows. È stata rilasciata per la produzione il 6 aprile 1992, come successore di Windows 3.0.
 
 Come i suoi predecessori, la serie Windows 3.1 funzionava come una shell sopra MS-DOS. Con il nome in codice Janus, Windows 3.1 introdusse il sistema di caratteri TrueType come concorrente di Adobe Type Manager. Anche la multimedialità fu ampliata e vennero introdotti gli screensaver, oltre a nuovi software come Windows Media Player e Sound Recorder. Il File Manager e il Pannello di controllo furono modificati, mentre Windows 3.1 vide anche l'introduzione del Registro di Windows e dei componenti aggiuntivi. Windows 3.1 rimane un ambiente operativo a 16 bit, anche se può utilizzare più RAM.
 
 La serie è considerata un miglioramento rispetto ai suoi predecessori. È stata elogiata per il rinnovamento dell'interfaccia utente e del design tecnico. Windows 3.1 ha venduto più di tre milioni di copie nei primi tre mesi del suo rilascio, anche se la sua controparte Windows for Workgroups è stata considerata una "delusione commerciale" a causa della scarsa quantità di copie vendute. A questo sistema sono succeduti Windows NT 3.1 e Windows 95, e Microsoft ha terminato il supporto per la serie Windows 3.1 il 31 dicembre 2001, ad eccezione della versione embedded, che è stata ritirata nel 2008.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

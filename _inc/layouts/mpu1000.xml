@@ -1,94 +1,100 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
-			<origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
-			<pos>0.4815 0.402</pos>
-			<maxSize>0.235</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.2015 0.402" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
-			<origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
-			<pos>0.4815 0.402</pos>
-			<maxSize>0.215</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.2015 0.402" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1979</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Acetronic</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>MPU-1000</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Acetronic MPU-1000 Home Video Entertainment Center was a second-generation video game console introduced in the UK in 1979.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
+      <origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
+      <pos>0.4815 0.402</pos>
+      <maxSize>0.235</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.2015 0.402" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
+      <origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
+      <pos>0.4815 0.402</pos>
+      <maxSize>0.215</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.2015 0.402" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1979</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Acetronic</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>MPU-1000</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Acetronic MPU-1000 Home Video Entertainment Center was a second-generation video game console introduced in the UK in 1979.
 
 The console is a member of the 1292 Advanced Programmable Video System family, all of which are software compatible, but some of which use different shape or size cartridges. Cartridges for the Acetronic system would also work in the Prinztronic and Radofin consoles in the family.
 There were two controllers composed of a 12 keys keypad, two red fire buttons and an analogue joystick. The control panel has the same buttons found on all systems of the 1292 Advanced Programmable Video System family: Start, Load Programme, Game Select and on/off switch.
 
 There was also an Acetronic MPU-2000, which had a slightly different case design and built-in power supply. At least 33 cartridges were released for the Acetronic system.</text>
-			<text lang="pl">Acetronic MPU-1000 Home Video Entertainment Center była konsolą do gier wideo drugiej generacji wprowadzoną w Wielkiej Brytanii w 1979 roku.
+      <text lang="pl">Acetronic MPU-1000 Home Video Entertainment Center była konsolą do gier wideo drugiej generacji wprowadzoną w Wielkiej Brytanii w 1979 roku.
 
 Konsola jest członkiem rodziny 1292 Advanced Programmable Video System, z których wszystkie są kompatybilne z oprogramowaniem, ale niektóre używają kartridży o innym kształcie lub rozmiarze. Kartridże dla systemu Acetronic działały również w konsolach Prinztronic i Radofin z tej rodziny.
 W zestawie znajdowały się dwa kontrolery składające się z 12-klawiszowej klawiatury, dwóch czerwonych przycisków fire i analogowego joysticka. Panel sterowania posiada te same przyciski, które można znaleźć we wszystkich systemach z rodziny 1292 Advanced Programmable Video System: Start, Load Programme, Game Select i włącznik/wyłącznik.
 
 Istniał również Acetronic MPU-2000, który miał nieco inną konstrukcję obudowy i wbudowany zasilacz. Dla systemu Acetronic wydano co najmniej 33 kartridże.</text>
-			<text lang="ru">Acetronic MPU-1000 Home Video Entertainment Center - игровая приставка второго поколения, представленная в Великобритании в 1979 году.
+      <text lang="pt">Acetronic MPU-1000 Home Video Entertainment Center foi um console de videogame de segunda geração lançado na Grã-Bretanha em 1979.
+
+O console faz parte da família 1292 Advanced Programmable Video System, cujos membros são compatíveis com software, mas alguns usam cartuchos de formatos diferentes. Os cartuchos para o sistema Acetronic também funcionavam nos consoles Prinztronic e Radofin da mesma família.
+O conjunto incluia dois controladores, cada um com um teclado de 12 teclas, dois botões vermelhos de disparo e um joystick analógico. O painel de controle possui os mesmos botões encontrados em todos os sistemas da família 1292 Advanced Programmable Video System: Start, Load Programme, Game Select e interruptor liga/desliga.
+
+Também existia o Acetronic MPU-2000, que tinha um design de caixa ligeiramente diferente e uma fonte de alimentação integrada. Foram lançados pelo menos 33 cartuchos para o sistema Acetronic.</text>
+      <text lang="ru">Acetronic MPU-1000 Home Video Entertainment Center - игровая приставка второго поколения, представленная в Великобритании в 1979 году.
 
 Консоль относится к семейству 1292 Advanced Programmable Video System, все они программно совместимы, но некоторые из них используют картриджи другой формы или размера. Картриджи для системы Acetronic работали также в консолях семейства Prinztronic и Radofin.
 В комплект поставки входили два контроллера, состоящие из 12-клавишной клавиатуры, двух красных кнопок "огонь" и аналогового джойстика. На панели управления расположены те же кнопки, что и на всех системах семейства 1292 Advanced Programmable Video System: Start, Load Programme, Game Select и переключатель включения/выключения.
 
 Существовала также модель Acetronic MPU-2000, которая имела несколько иной дизайн корпуса и встроенный блок питания. Для системы Acetronic было выпущено не менее 33 картриджей.</text>
-			<text lang="es">El Acetronic MPU-1000 Home Video Entertainment Center fue una videoconsola de segunda generación introducida en el Reino Unido en 1979.
+      <text lang="es">El Acetronic MPU-1000 Home Video Entertainment Center fue una videoconsola de segunda generación introducida en el Reino Unido en 1979.
 
 La consola es miembro de la familia 1292 Advanced Programmable Video System, todas ellas compatibles por software, pero algunas de las cuales utilizan cartuchos de forma o tamaño diferentes. Los cartuchos del sistema Acetronic también funcionaban en las consolas Prinztronic y Radofin de la familia.
 Había dos mandos compuestos por un teclado de 12 teclas, dos botones rojos de disparo y un joystick analógico. El panel de control tiene los mismos botones que se encuentran en todos los sistemas de la familia 1292 Advanced Programmable Video System: Inicio, Cargar programa, Selección de juego e interruptor de encendido/apagado.
 
 También hubo un Acetronic MPU-2000, que tenía un diseño de carcasa ligeramente diferente y una fuente de alimentación incorporada. Se lanzaron al menos 33 cartuchos para el sistema Acetronic.</text>
-			<text lang="de">Das Acetronic MPU-1000 Home Video Entertainment Center war eine Videospielkonsole der zweiten Generation, die 1979 im Vereinigten Königreich eingeführt wurde.
+      <text lang="de">Das Acetronic MPU-1000 Home Video Entertainment Center war eine Videospielkonsole der zweiten Generation, die 1979 im Vereinigten Königreich eingeführt wurde.
 
 Die Konsole ist ein Mitglied der 1292 Advanced Programmable Video System-Familie, die alle softwarekompatibel sind, von denen einige jedoch Kassetten unterschiedlicher Form oder Größe verwenden. Kassetten für das Acetronic-System konnten auch in den Prinztronic- und Radofin-Konsolen der Familie verwendet werden.
 Es gab zwei Controller, die aus einer 12-Tasten-Tastatur, zwei roten Feuertasten und einem analogen Joystick bestanden. Das Bedienfeld verfügt über die gleichen Tasten, die bei allen Systemen der 1292 Advanced Programmable Video System-Familie zu finden sind: Start, Programm laden, Spielauswahl und Ein/Aus-Schalter.
 
 Es gab auch eine Acetronic MPU-2000, die ein etwas anderes Gehäusedesign und ein eingebautes Netzteil hatte. Mindestens 33 Kassetten wurden für das Acetronic-System herausgegeben.</text>
-			<text lang="fr">L'Acetronic MPU-1000 Home Video Entertainment Center est une console de jeux vidéo de deuxième génération introduite au Royaume-Uni en 1979.
+      <text lang="fr">L'Acetronic MPU-1000 Home Video Entertainment Center est une console de jeux vidéo de deuxième génération introduite au Royaume-Uni en 1979.
 
 La console fait partie de la famille des 1292 Advanced Programmable Video System, qui sont tous compatibles sur le plan logiciel, mais dont certains utilisent des cartouches de forme ou de taille différentes. Les cartouches du système Acetronic fonctionnent également dans les consoles Prinztronic et Radofin de la famille.
 Il y avait deux manettes composées d'un clavier à 12 touches, de deux boutons rouges de mise à feu et d'un joystick analogique. Le panneau de commande comporte les mêmes boutons que ceux que l'on trouve sur tous les systèmes de la famille 1292 Advanced Programmable Video System : Start, Load Programme, Game Select et on/off switch.
 
 Il existait également un Acetronic MPU-2000, dont le boîtier était légèrement différent et qui disposait d'une alimentation intégrée. Au moins 33 cartouches ont été commercialisées pour le système Acetronic.</text>
-			<text lang="it">L'Acetronic MPU-1000 Home Video Entertainment Center è una console per videogiochi di seconda generazione introdotta nel Regno Unito nel 1979.
+      <text lang="it">L'Acetronic MPU-1000 Home Video Entertainment Center è una console per videogiochi di seconda generazione introdotta nel Regno Unito nel 1979.
 
 La console fa parte della famiglia dei sistemi video programmabili avanzati 1292, tutti compatibili con il software, ma alcuni dei quali utilizzano cartucce di forma o dimensioni diverse. Le cartucce per il sistema Acetronic funzionavano anche nelle console Prinztronic e Radofin della famiglia.
 Erano presenti due controller composti da una tastiera a 12 tasti, due pulsanti di fuoco rossi e un joystick analogico. Il pannello di controllo presenta gli stessi pulsanti presenti in tutti i sistemi della famiglia 1292 Advanced Programmable Video System: Start, Load Programme, Game Select e interruttore on/off.
 
 Esisteva anche un Acetronic MPU-2000, che aveva un design del case leggermente diverso e un alimentatore incorporato. Per il sistema Acetronic furono rilasciate almeno 33 cartucce.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

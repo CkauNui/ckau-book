@@ -1,172 +1,175 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.3 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.26 0.36</pos>
-			<minSize>0.1 0.2</minSize>
-			<rotation>8</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="-0.02 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.7 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.54 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.74 0.36</pos>
-			<minSize>0.1 0.2</minSize>
-			<rotation>-8</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.46 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<pos>0.5 0.363</pos>
-			<maxSize>0.15</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-left" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.36 0.37</pos>
-			<maxSize>0.14</maxSize>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.08 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-right" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.638 0.37</pos>
-			<maxSize>0.14</maxSize>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.358 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<pos>0.5 0.363</pos>
-			<maxSize>0.14</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}-right.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.655 0.37</pos>
-			<maxSize>0.13</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.375 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox3" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}-left.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.345 0.37</pos>
-			<maxSize>0.13</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.065 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1993</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Capcom</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>CP System II</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The CP System II (CPシステムII, shīpī shisutemu tsū) or CPS-2 is an arcade system board that Capcom first used in 1993 for Super Street Fighter II. It was the successor to their previous CP System and Capcom Power System Changer arcade hardware and was succeeded by the CP System III hardware in 1996, of which the CPS-2 would outlive by over four years.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-left" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.3 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.26 0.36</pos>
+      <minSize>0.1 0.2</minSize>
+      <rotation>8</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="-0.02 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-right" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.7 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.54 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.74 0.36</pos>
+      <minSize>0.1 0.2</minSize>
+      <rotation>-8</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.46 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <pos>0.5 0.363</pos>
+      <maxSize>0.15</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-left" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.36 0.37</pos>
+      <maxSize>0.14</maxSize>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.08 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-right" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.638 0.37</pos>
+      <maxSize>0.14</maxSize>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.358 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <pos>0.5 0.363</pos>
+      <maxSize>0.14</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}-right.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.655 0.37</pos>
+      <maxSize>0.13</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.375 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox3" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}-left.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.345 0.37</pos>
+      <maxSize>0.13</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.065 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1993</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Capcom</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>CP System II</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The CP System II (CPシステムII, shīpī shisutemu tsū) or CPS-2 is an arcade system board that Capcom first used in 1993 for Super Street Fighter II. It was the successor to their previous CP System and Capcom Power System Changer arcade hardware and was succeeded by the CP System III hardware in 1996, of which the CPS-2 would outlive by over four years.
 
 The arcade system had new releases for it until the end of 2003, ending with Hyper Street Fighter II.</text>
-			<text lang="pl">CP System II (CPシステムII, shīpī shisutemu tsū) lub CPS-2 to system arcade, który Capcom wykorzystał w 1993 roku do gry Super Street Fighter II. Był on następcą wcześniejszych systemów CP System i Capcom Power System Changer, a w 1996 roku zastąpił go CP System III, który wyprzedził CPS-2 o ponad cztery lata.
+      <text lang="pl">CP System II (CPシステムII, shīpī shisutemu tsū) lub CPS-2 to system arcade, który Capcom wykorzystał w 1993 roku do gry Super Street Fighter II. Był on następcą wcześniejszych systemów CP System i Capcom Power System Changer, a w 1996 roku zastąpił go CP System III, który wyprzedził CPS-2 o ponad cztery lata.
 
 System arcade miał nowe wersje do końca 2003 roku, kończąc na Hyper Street Fighter II.</text>
-			<text lang="ru">Данная аркадная система оказалась более успешной, нежели её предшественницы CP System и Capcom Power System Changer, и игры для неё выпускались вплоть до начала 2000-х годов, несмотря на то, что формально в 1996 году её вытеснила система CPS-3.
+      <text lang="pt">CP System II (CPシステムII, shīpī shisutemu tsū) ou CPS-2 é um sistema de arcade que a Capcom usou em 1993 para o jogo Super Street Fighter II. Era o sucessor dos sistemas anteriores CP System e Capcom Power System Changer, e foi substituído em 1996 pelo CP System III, que o superou por mais de quatro anos.
+
+O sistema de arcade teve novas versões até o final de 2003, terminando com o Hyper Street Fighter II.</text>
+      <text lang="ru">Данная аркадная система оказалась более успешной, нежели её предшественницы CP System и Capcom Power System Changer, и игры для неё выпускались вплоть до начала 2000-х годов, несмотря на то, что формально в 1996 году её вытеснила система CPS-3.
 
 Более ранняя версия аркадной платформы CP System (или CPS-1) была достаточно успешной, но подверженной пиратству в плане нелегального копирования игр. Чтобы исправить ситуацию, Capcom выпустила новую версию аркадной системы, взяв за основу CP System (с чипом QSound) с минимальными изменениями и добавила шифрование ROM’ов. Благодаря шифрованию, незаконное копирование игр стало невозможным.
 
 CP System II состояла из двух независимых частей: плата A, которая имеет JAMMA-разъёмы и содержит все необходимые компоненты для запуска игр, и платы B, которая содержит в себе игру. Отношение плат типа A и B такое же, как между домашней игровой консолью и картриджем. Платы типа A и B имеют цветовую маркировку по регионам; каждая плата может работать с другой платой только той же самой цветовой маркировки. Исключением из этого правила является только тот факт, что платы зелёной и синей цветовой маркировки способны работать друг с другом.</text>
-			<text lang="es">El CP System II (CPシステムII, shīpī shisutemu tsū) o CPS-2 es una placa de sistema arcade que Capcom utilizó por primera vez en 1993 para Super Street Fighter II. Fue la sucesora de su anterior hardware arcade CP System y Capcom Power System Changer y fue sucedida por el hardware CP System III en 1996, del que la CPS-2 sobreviviría más de cuatro años.
+      <text lang="es">El CP System II (CPシステムII, shīpī shisutemu tsū) o CPS-2 es una placa de sistema arcade que Capcom utilizó por primera vez en 1993 para Super Street Fighter II. Fue la sucesora de su anterior hardware arcade CP System y Capcom Power System Changer y fue sucedida por el hardware CP System III en 1996, del que la CPS-2 sobreviviría más de cuatro años.
 
 El sistema arcade tuvo nuevas versiones hasta finales de 2003, terminando con Hyper Street Fighter II.</text>
-			<text lang="de">Das CP System II (CPシステムII, shīpī shisutemu tsū) oder CPS-2 ist ein Arcade-System-Board, das Capcom erstmals 1993 für Super Street Fighter II verwendete. Es war der Nachfolger der früheren CP System- und Capcom Power System Changer-Arcade-Hardware und wurde 1996 von der CP System III-Hardware abgelöst, die das CPS-2 um mehr als vier Jahre überleben sollte.
+      <text lang="de">Das CP System II (CPシステムII, shīpī shisutemu tsū) oder CPS-2 ist ein Arcade-System-Board, das Capcom erstmals 1993 für Super Street Fighter II verwendete. Es war der Nachfolger der früheren CP System- und Capcom Power System Changer-Arcade-Hardware und wurde 1996 von der CP System III-Hardware abgelöst, die das CPS-2 um mehr als vier Jahre überleben sollte.
 
 Für das Arcade-System gab es bis Ende 2003 neue Versionen, die mit Hyper Street Fighter II endeten.</text>
-			<text lang="fr">Le CP System II (CPシステムII, shīpī shisutemu tsū) ou CPS-2 est un système d'arcade que Capcom a utilisé pour la première fois en 1993 pour Super Street Fighter II. Il s'agit du successeur des systèmes d'arcade CP System et Capcom Power System Changer, remplacé par le CP System III en 1996, que le CPS-2 dépassera de plus de quatre ans.
+      <text lang="fr">Le CP System II (CPシステムII, shīpī shisutemu tsū) ou CPS-2 est un système d'arcade que Capcom a utilisé pour la première fois en 1993 pour Super Street Fighter II. Il s'agit du successeur des systèmes d'arcade CP System et Capcom Power System Changer, remplacé par le CP System III en 1996, que le CPS-2 dépassera de plus de quatre ans.
 
 Le système d'arcade a eu de nouvelles versions jusqu'à la fin de l'année 2003, se terminant avec Hyper Street Fighter II.</text>
-			<text lang="it">Il CP System II (CPシステムII, shīpī shisutemu tsū) o CPS-2 è una scheda di sistema arcade che Capcom utilizzò per la prima volta nel 1993 per Super Street Fighter II. Era il successore dei precedenti sistemi arcade CP System e Capcom Power System Changer ed è stato succeduto dal CP System III nel 1996, al quale il CPS-2 sarebbe sopravvissuto di oltre quattro anni.
+      <text lang="it">Il CP System II (CPシステムII, shīpī shisutemu tsū) o CPS-2 è una scheda di sistema arcade che Capcom utilizzò per la prima volta nel 1993 per Super Street Fighter II. Era il successore dei precedenti sistemi arcade CP System e Capcom Power System Changer ed è stato succeduto dal CP System III nel 1996, al quale il CPS-2 sarebbe sopravvissuto di oltre quattro anni.
 
 Il sistema arcade ha avuto nuove uscite fino alla fine del 2003, terminando con Hyper Street Fighter II.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

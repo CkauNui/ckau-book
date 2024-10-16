@@ -1,82 +1,87 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.13</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.35</origin>
-			<pos>0.5 0.26</pos>
-			<maxSize>0.22</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.26" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.13</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.35</origin>
-			<pos>0.5 0.26</pos>
-			<maxSize>0.21</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.26" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1984</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>MSX Laserdisc</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>LaserDisc is an optical disc technology, and looks like a very large CD-ROM. It was envisioned to be the future of Multimedia and was backed by amongst others Sony, Philips and Pioneer. While Philips never did anything with MSX and LaserDisc, Pioneer launched several MSX computers with integrated LaserDisc control ability, and various LaserDisc players.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.13</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.35</origin>
+      <pos>0.5 0.26</pos>
+      <maxSize>0.22</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.26" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.13</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.35</origin>
+      <pos>0.5 0.26</pos>
+      <maxSize>0.21</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.26" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1984</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>MSX Laserdisc</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>LaserDisc is an optical disc technology, and looks like a very large CD-ROM. It was envisioned to be the future of Multimedia and was backed by amongst others Sony, Philips and Pioneer. While Philips never did anything with MSX and LaserDisc, Pioneer launched several MSX computers with integrated LaserDisc control ability, and various LaserDisc players.
 
 While LaserDisc capable MSX systems from Pioneer were available in Japan, Europe and the US, commercially available software for the system was only published in Japan from 1984-1986 by the LaserDisc Corporation, a Pioneer subsidiary.
 
 Later, Sony released exclusively in Europe a series of professional MSX2 computers with LaserDisc support, but no compatible software has been publicly released. One possible explanation is that this support was only used in-house by large media organisations which used these systems.</text>
-			<text lang="pl">LaserDisc to technologia dysków optycznych, wyglądem przypominająca bardzo duży CD-ROM. Miała to być przyszłość multimediów i była wspierana między innymi przez Sony, Philipsa i Pioneera. Podczas gdy Philips nigdy nie zrobił nic z MSX i LaserDisc, Pioneer wypuścił kilka komputerów MSX ze zintegrowaną możliwością sterowania LaserDisc, oraz różne odtwarzacze LaserDisc.
+      <text lang="pl">LaserDisc to technologia dysków optycznych, wyglądem przypominająca bardzo duży CD-ROM. Miała to być przyszłość multimediów i była wspierana między innymi przez Sony, Philipsa i Pioneera. Podczas gdy Philips nigdy nie zrobił nic z MSX i LaserDisc, Pioneer wypuścił kilka komputerów MSX ze zintegrowaną możliwością sterowania LaserDisc, oraz różne odtwarzacze LaserDisc.
 
 Podczas gdy systemy MSX obsługujące LaserDisc firmy Pioneer były dostępne w Japonii, Europie i Stanach Zjednoczonych, komercyjne oprogramowanie dla tego systemu było publikowane tylko w Japonii w latach 1984-1986 przez LaserDisc Corporation, spółkę zależną firmy Pioneer.
 
 Później Sony wypuściło na wyłączność w Europie serię profesjonalnych komputerów MSX2 z obsługą LaserDisc, ale żadne kompatybilne oprogramowanie nie zostało publicznie wydane. Jednym z możliwych wyjaśnień jest to, że obsługa ta była wykorzystywana tylko przez duże organizacje medialne, które używały tych systemów.</text>
-			<text lang="ru">LaserDisc — это технология оптических дисков, которая выглядит как очень большой CD-ROM. Предполагалось, что это будущее мультимедиа, и его поддержали, среди прочего, Sony, Philips и Pioneer. Хотя Philips никогда ничего не делала с MSX и LaserDisc, Pioneer выпустила несколько компьютеров MSX со встроенной возможностью управления LaserDisc и различные проигрыватели LaserDisc.
+      <text lang="pt">LaserDisc é uma tecnologia de discos ópticos que se assemelha a um CD-ROM muito grande. Era vista como o futuro dos multimídias e foi apoiada por empresas como Sony, Philips e Pioneer. Enquanto a Philips nunca fez nada com o MSX e o LaserDisc, a Pioneer lançou alguns computadores MSX com capacidade integrada de controle de LaserDisc, além de vários players de LaserDisc.
+
+Embora os sistemas MSX com suporte a LaserDisc da Pioneer estivessem disponíveis no Japão, Europa e Estados Unidos, o software comercial para este sistema foi publicado apenas no Japão entre 1984 e 1986 pela LaserDisc Corporation, uma subsidiária da Pioneer.
+
+Posteriormente, a Sony lançou exclusivamente na Europa uma série de computadores MSX2 profissionais com suporte a LaserDisc, mas nenhum software compatível foi lançado publicamente. Uma possível explicação é que este recurso foi usado apenas por grandes organizações de mídia que utilizavam esses sistemas.</text>
+      <text lang="ru">LaserDisc — это технология оптических дисков, которая выглядит как очень большой CD-ROM. Предполагалось, что это будущее мультимедиа, и его поддержали, среди прочего, Sony, Philips и Pioneer. Хотя Philips никогда ничего не делала с MSX и LaserDisc, Pioneer выпустила несколько компьютеров MSX со встроенной возможностью управления LaserDisc и различные проигрыватели LaserDisc.
 
 В то время как системы MSX от Pioneer с поддержкой LaserDisc были доступны в Японии, Европе и США, коммерчески доступное программное обеспечение для этой системы было опубликовано только в Японии в 1984–1986 годах компанией LaserDisc Corporation, дочерней компанией Pioneer.
 
 Позже Sony выпустила исключительно в Европе серию профессиональных компьютеров MSX2 с поддержкой LaserDisc, но совместимое программное обеспечение не было выпущено публично. Одно из возможных объяснений состоит в том, что эта поддержка использовалась только внутри крупных медиа-организаций, которые использовали эти системы.</text>
-			<text lang="es">El LaserDisc es una tecnología de disco óptico que parece un CD-ROM muy grande. Fue concebido como el futuro de la multimedia y contó con el apoyo de Sony, Philips y Pioneer, entre otros. Mientras que Philips nunca hizo nada con MSX y LaserDisc, Pioneer lanzó varios ordenadores MSX con capacidad de control de LaserDisc integrada, y varios reproductores de LaserDisc.
+      <text lang="es">El LaserDisc es una tecnología de disco óptico que parece un CD-ROM muy grande. Fue concebido como el futuro de la multimedia y contó con el apoyo de Sony, Philips y Pioneer, entre otros. Mientras que Philips nunca hizo nada con MSX y LaserDisc, Pioneer lanzó varios ordenadores MSX con capacidad de control de LaserDisc integrada, y varios reproductores de LaserDisc.
 
 Aunque los sistemas MSX de Pioneer compatibles con LaserDisc estaban disponibles en Japón, Europa y EE.UU., el software comercial para el sistema sólo se publicó en Japón entre 1984 y 1986 por LaserDisc Corporation, una filial de Pioneer.
 
 Más tarde, Sony lanzó en exclusiva en Europa una serie de ordenadores profesionales MSX2 compatibles con LaserDisc, pero no se ha publicado ningún software compatible. Una posible explicación es que este soporte sólo se utilizaba internamente en las grandes organizaciones de medios de comunicación que utilizaban estos sistemas.</text>
-			<text lang="de">LaserDisc ist eine Technologie für optische Discs und sieht aus wie eine sehr große CD-ROM. Sie wurde als die Zukunft von Multimedia angesehen und wurde unter anderem von Sony, Philips und Pioneer unterstützt. Während Philips nie etwas mit MSX und LaserDisc gemacht hat, brachte Pioneer mehrere MSX-Computer mit integrierter LaserDisc-Steuerungsmöglichkeit und verschiedene LaserDisc-Player auf den Markt.
+      <text lang="de">LaserDisc ist eine Technologie für optische Discs und sieht aus wie eine sehr große CD-ROM. Sie wurde als die Zukunft von Multimedia angesehen und wurde unter anderem von Sony, Philips und Pioneer unterstützt. Während Philips nie etwas mit MSX und LaserDisc gemacht hat, brachte Pioneer mehrere MSX-Computer mit integrierter LaserDisc-Steuerungsmöglichkeit und verschiedene LaserDisc-Player auf den Markt.
 
 Während LaserDisc-fähige MSX-Systeme von Pioneer in Japan, Europa und den USA erhältlich waren, wurde kommerziell erhältliche Software für das System nur in Japan von 1984-1986 von der LaserDisc Corporation, einer Tochtergesellschaft von Pioneer, veröffentlicht.
 
 Später brachte Sony exklusiv in Europa eine Reihe von professionellen MSX2-Computern mit LaserDisc-Unterstützung heraus, aber es wurde keine kompatible Software veröffentlicht. Eine mögliche Erklärung ist, dass diese Unterstützung nur intern von großen Medienunternehmen genutzt wurde, die diese Systeme einsetzten.</text>
-			<text lang="fr">Le LaserDisc est une technologie de disque optique qui ressemble à un très grand CD-ROM. Il était considéré comme l'avenir du multimédia et était soutenu, entre autres, par Sony, Philips et Pioneer. Alors que Philips n'a jamais rien fait avec MSX et LaserDisc, Pioneer a lancé plusieurs ordinateurs MSX avec une capacité de contrôle LaserDisc intégrée, ainsi que divers lecteurs LaserDisc.
+      <text lang="fr">Le LaserDisc est une technologie de disque optique qui ressemble à un très grand CD-ROM. Il était considéré comme l'avenir du multimédia et était soutenu, entre autres, par Sony, Philips et Pioneer. Alors que Philips n'a jamais rien fait avec MSX et LaserDisc, Pioneer a lancé plusieurs ordinateurs MSX avec une capacité de contrôle LaserDisc intégrée, ainsi que divers lecteurs LaserDisc.
 
 Alors que les systèmes MSX de Pioneer compatibles avec le LaserDisc étaient disponibles au Japon, en Europe et aux États-Unis, les logiciels disponibles dans le commerce pour le système n'ont été publiés qu'au Japon de 1984 à 1986 par la LaserDisc Corporation, une filiale de Pioneer.
 
 Plus tard, Sony a commercialisé exclusivement en Europe une série d'ordinateurs professionnels MSX2 avec support LaserDisc, mais aucun logiciel compatible n'a été publié. Une explication possible est que ce support n'était utilisé qu'en interne par les grandes organisations de médias qui utilisaient ces systèmes.</text>
-			<text lang="it">Il LaserDisc è una tecnologia per dischi ottici e assomiglia a un CD-ROM di grandi dimensioni. Era stato immaginato come il futuro del multimedia ed era stato sostenuto, tra gli altri, da Sony, Philips e Pioneer. Philips non ha mai prodotto nulla con MSX e LaserDisc, ma Pioneer ha lanciato diversi computer MSX con capacità di controllo LaserDisc integrata e diversi lettori LaserDisc.
+      <text lang="it">Il LaserDisc è una tecnologia per dischi ottici e assomiglia a un CD-ROM di grandi dimensioni. Era stato immaginato come il futuro del multimedia ed era stato sostenuto, tra gli altri, da Sony, Philips e Pioneer. Philips non ha mai prodotto nulla con MSX e LaserDisc, ma Pioneer ha lanciato diversi computer MSX con capacità di controllo LaserDisc integrata e diversi lettori LaserDisc.
 
 Mentre i sistemi MSX Pioneer con capacità di controllo del LaserDisc erano disponibili in Giappone, Europa e Stati Uniti, il software commerciale per il sistema fu pubblicato in Giappone solo tra il 1984 e il 1986 dalla LaserDisc Corporation, una consociata di Pioneer.
 
 In seguito, Sony ha rilasciato in esclusiva in Europa una serie di computer professionali MSX2 con supporto LaserDisc, ma non è stato rilasciato pubblicamente alcun software compatibile. Una possibile spiegazione è che questo supporto fosse utilizzato solo internamente dalle grandi organizzazioni di media che utilizzavano questi sistemi.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

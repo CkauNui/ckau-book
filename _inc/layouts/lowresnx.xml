@@ -1,73 +1,76 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.42</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
-			<pos>0.5 0.44</pos>
-			<maxSize>0.26</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.44" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.42</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
-			<pos>0.5 0.445</pos>
-			<maxSize>0.25</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.445" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2018</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Lowres NX</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>Virtual Game Console.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.42</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
+      <pos>0.5 0.44</pos>
+      <maxSize>0.26</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.44" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.42</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
+      <pos>0.5 0.445</pos>
+      <maxSize>0.25</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.445" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2018</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Lowres NX</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>Virtual Game Console.
 Imagine LowRes NX as a handheld game console with a d-pad, two action buttons and a little rubber keyboard below a slidable touchscreen. LowRes NX was inspired by real 8- and 16-bit systems and simulates chips for graphics, sound and I/O, which actually work like classic hardware. It supports hardware sprites as well as hardware parallax scrolling, and even offers vertical blank and raster interrupts to create authentic retro effects.
 
 Make your own retro games on a virtual game console. Program in the classic BASIC language and create sprites, tile maps, sound and music with the included tools. As a beginner you will quickly understand how to create simple text games or show your first sprite on a tile map. As an experienced programmer you can discover the full potential of retro hardware tricks!</text>
-			<text lang="pl">LowRes NX to wirtualna konsola do gier. Wyobraź sobie LowRes NX jako ręczną konsolę do gier z d-padem, dwoma przyciskami akcji i małą gumową klawiaturą pod wysuwanym ekranem dotykowym. LowRes NX został zainspirowany prawdziwymi systemami 8- i 16-bitowymi i symuluje układy dla grafiki, dźwięku i I/O, które faktycznie działają jak klasyczny sprzęt. Obsługuje sprzętowe sprite'y, jak również sprzętowe przewijanie paralaksowe, a nawet oferuje pionowe puste miejsca i przerwania rastrowe, aby stworzyć autentyczne efekty retro.
+      <text lang="pl">LowRes NX to wirtualna konsola do gier. Wyobraź sobie LowRes NX jako ręczną konsolę do gier z d-padem, dwoma przyciskami akcji i małą gumową klawiaturą pod wysuwanym ekranem dotykowym. LowRes NX został zainspirowany prawdziwymi systemami 8- i 16-bitowymi i symuluje układy dla grafiki, dźwięku i I/O, które faktycznie działają jak klasyczny sprzęt. Obsługuje sprzętowe sprite'y, jak również sprzętowe przewijanie paralaksowe, a nawet oferuje pionowe puste miejsca i przerwania rastrowe, aby stworzyć autentyczne efekty retro.
 
 Twórz własne gry retro na wirtualnej konsoli do gier. Programuj w klasycznym języku BASIC i twórz sprite'y, mapy kafelkowe, dźwięk i muzykę za pomocą dołączonych narzędzi. Jako początkujący szybko zrozumiesz, jak tworzyć proste gry tekstowe lub pokazać swój pierwszy sprite na mapie kafelkowej. Jako doświadczony programista możesz odkryć pełen potencjał sprzętowych sztuczek retro!</text>
-			<text lang="ru">Виртуальная игровая консоль.
+      <text lang="pt">LowRes NX é um console de jogos virtual. Imagine LowRes NX como um console portátil de jogos com um D-pad, dois botões de ação e um pequeno teclado de borracha sob uma tela sensível ao toque retrátil. LowRes NX foi inspirado por sistemas reais de 8 e 16 bits e simula circuitos para gráficos, som e I/O que realmente funcionam como hardware clássico. Ele suporta sprites de hardware, bem como rolagem paralaxe de hardware, e até oferece espaços vazios verticais e interrupções raster para criar autênticos efeitos retrô.
+
+Crie seus próprios jogos retrô em um console de jogos virtual. Programe na linguagem clássica BASIC e crie sprites, mapas de ladrilhos, som e música usando as ferramentas incluídas. Como iniciante, você entenderá rapidamente como criar jogos de texto simples ou mostrar seu primeiro sprite em um mapa de ladrilhos. Como programador experiente, você pode descobrir todo o potencial dos truques retrô de hardware!</text>
+      <text lang="ru">Виртуальная игровая консоль.
 Представьте себе LowRes NX в виде портативной игровой консоли с d-pad, двумя кнопками управления и маленькой резиновой клавиатурой под выдвижным сенсорным экраном. LowRes NX была вдохновлена реальными 8- и 16-битными системами и имитирует чипы для графики, звука и ввода/вывода, которые на самом деле работают как классическое оборудование. Он поддерживает аппаратные спрайты, а также аппаратную параллакс-прокрутку, и даже предлагает вертикальные пустые и растровые прерывания для создания подлинных ретро-эффектов.
 
 Создавайте собственные ретро-игры на виртуальной игровой консоли. Программируйте на классическом языке BASIC и создавайте спрайты, карты тайлов, звук и музыку с помощью прилагаемых инструментов. Начинающий программист быстро поймет, как создавать простые текстовые игры или показать свой первый спрайт на плиточной карте. Как опытный программист вы сможете раскрыть весь потенциал ретро-техники!</text>
-			<text lang="es">Consola de juegos virtual.
+      <text lang="es">Consola de juegos virtual.
 Imagina LowRes NX como una videoconsola portátil con un d-pad, dos botones de acción y un pequeño teclado de goma debajo de una pantalla táctil deslizante. LowRes NX se inspira en los sistemas reales de 8 y 16 bits y simula chips para gráficos, sonido y E/S, que funcionan realmente como el hardware clásico. Admite sprites por hardware, así como desplazamiento de paralaje por hardware, e incluso ofrece interrupciones verticales en blanco y de trama para crear auténticos efectos retro.
 
 Crea tus propios juegos retro en una videoconsola virtual. Programa en el lenguaje BASIC clásico y crea sprites, mapas de tiles, sonido y música con las herramientas incluidas. Como principiante, comprenderás rápidamente cómo crear sencillos juegos de texto o mostrar tu primer sprite en un mapa de baldosas. Como programador experimentado podrás descubrir todo el potencial de los trucos del hardware retro.</text>
-			<text lang="de">Virtuelle Spielkonsole.
+      <text lang="de">Virtuelle Spielkonsole.
 Stellen Sie sich LowRes NX als eine Handheld-Spielkonsole mit einem D-Pad, zwei Aktionstasten und einer kleinen Gummitastatur unter einem verschiebbaren Touchscreen vor. LowRes NX wurde von echten 8- und 16-Bit-Systemen inspiriert und simuliert Chips für Grafik, Sound und I/O, die tatsächlich wie klassische Hardware funktionieren. Es unterstützt Hardware-Sprites sowie Hardware-Parallax-Scrolling und bietet sogar vertikale Leer- und Rasterunterbrechungen, um authentische Retro-Effekte zu erzeugen.
 
 Erstellen Sie Ihre eigenen Retro-Spiele auf einer virtuellen Spielkonsole. Programmieren Sie in der klassischen BASIC-Sprache und erstellen Sie Sprites, Kachelkarten, Sound und Musik mit den mitgelieferten Tools. Als Einsteiger werden Sie schnell verstehen, wie Sie einfache Textspiele erstellen oder Ihr erstes Sprite auf einer Kachelkarte darstellen können. Als erfahrener Programmierer können Sie das volle Potenzial der Retro-Hardware-Tricks entdecken!</text>
-			<text lang="fr">Console de jeu virtuelle.
+      <text lang="fr">Console de jeu virtuelle.
 Imaginez LowRes NX comme une console de jeu portable avec un d-pad, deux boutons d'action et un petit clavier en caoutchouc sous un écran tactile coulissant. LowRes NX s'inspire des systèmes 8 et 16 bits réels et simule des puces pour les graphiques, le son et les E/S, qui fonctionnent réellement comme du matériel classique. Il prend en charge les sprites matériels ainsi que le défilement parallaxe matériel, et offre même des interruptions de trame et des blancs verticaux pour créer des effets rétro authentiques.
 
 Créez vos propres jeux rétro sur une console de jeu virtuelle. Programmez dans le langage BASIC classique et créez des sprites, des cartes de tuiles, des sons et de la musique avec les outils inclus. En tant que débutant, vous comprendrez rapidement comment créer des jeux de texte simples ou montrer votre premier sprite sur une carte de tuiles. En tant que programmeur expérimenté, vous découvrirez tout le potentiel des astuces du matériel rétro !</text>
-			<text lang="it">Console di gioco virtuale.
+      <text lang="it">Console di gioco virtuale.
 Immaginate LowRes NX come una console di gioco portatile con un d-pad, due pulsanti di azione e una piccola tastiera di gomma sotto uno schermo tattile scorrevole. LowRes NX si ispira ai sistemi reali a 8 e 16 bit e simula i chip per la grafica, il suono e l'I/O, che funzionano effettivamente come l'hardware classico. Supporta gli sprite hardware e lo scorrimento parallasse hardware, e offre anche interruzioni verticali e raster per creare autentici effetti retrò.
 
 Create i vostri giochi retrò su una console virtuale. Programmate nel classico linguaggio BASIC e create sprite, mappe di tessere, suoni e musica con gli strumenti inclusi. I principianti capiranno rapidamente come creare semplici giochi di testo o mostrare il loro primo sprite su una mappa di tessere. Come programmatore esperto potrete scoprire tutto il potenziale dei trucchi dell'hardware retrò!</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

@@ -1,50 +1,50 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.42</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
-			<origin if="${screen.ratio} == '21/9'">0.5 0.5</origin>
-			<pos>0.541 0.447</pos>
-			<maxSize>0.23</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.261 0.447" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.42</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
-			<origin if="${screen.ratio} == '21/9'">0.6 0.5</origin>
-			<pos>0.541 0.447</pos>
-			<maxSize>0.204</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.261 0.447" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2005</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>GZDoom</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>GZDoom is a 3D-accelerated Doom source port based on ZDoom coded and maintained by Christoph Oelckers.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.42</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
+      <origin if="${screen.ratio} == '21/9'">0.5 0.5</origin>
+      <pos>0.541 0.447</pos>
+      <maxSize>0.23</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.261 0.447" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.42</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
+      <origin if="${screen.ratio} == '21/9'">0.6 0.5</origin>
+      <pos>0.541 0.447</pos>
+      <maxSize>0.204</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.261 0.447" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2005</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>GZDoom</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>GZDoom is a 3D-accelerated Doom source port based on ZDoom coded and maintained by Christoph Oelckers.
 
 GZDoom features an OpenGL renderer and lots of new features, among them:
 - Sloped 3D floors
@@ -53,7 +53,7 @@ GZDoom features an OpenGL renderer and lots of new features, among them:
 - True color support
 - Model support
 - It was originally based on the 2.0.96x community build but is now based on official versions of ZDoom, occasionally using slightly newer Git code. The source is of course available.</text>
-			<text lang="pl">GZDoom to źródłowy port Dooma akcelerowanego w 3D, bazujący na ZDoomie, kodowany i utrzymywany przez Christopha Oelckersa.
+      <text lang="pl">GZDoom to źródłowy port Dooma akcelerowanego w 3D, bazujący na ZDoomie, kodowany i utrzymywany przez Christopha Oelckersa.
 
 GZDoom posiada renderer OpenGL i wiele nowych funkcji, między innymi:
 - Pochyłe podłogi 3D
@@ -62,7 +62,16 @@ GZDoom posiada renderer OpenGL i wiele nowych funkcji, między innymi:
 - Obsługa prawdziwych kolorów
 - Wsparcie dla modeli
 - Pierwotnie bazował na kompilacji społecznościowej 2.0.96x, ale obecnie bazuje na oficjalnych wersjach ZDoom, sporadycznie używając nieco nowszego kodu Git. Źródło jest oczywiście dostępne.</text>
-			<text lang="ru">GZDoom — порт движка компьютерной игры Doom, форк проекта ZDoom с обеспечением улучшенной поддержки аппаратного обеспечения (OpenGL).
+      <text lang="pt">GZDoom é um port do Doom com aceleração 3D, baseado em ZDoom, codificado e mantido por Christoph Oelckers.
+
+GZDoom possui um renderizador OpenGL e muitas novas funcionalidades, entre elas:
+- Pisos inclinados em 3D
+- Efeitos de luz, incluindo luzes dinâmicas, brightmaps e moradias brilhantes.
+- Skyboxes no estilo Quake2
+- Suporte para cores verdadeiras
+- Suporte para modelos
+- Originalmente baseado na compilação da comunidade 2.0.96x, mas atualmente se baseia nas versões oficiais do ZDoom, ocasionalmente usando código Git um pouco mais recente. O código-fonte está, naturalmente, disponível.</text>
+      <text lang="ru">GZDoom — порт движка компьютерной игры Doom, форк проекта ZDoom с обеспечением улучшенной поддержки аппаратного обеспечения (OpenGL).
 
 - Полная поддержка 3D полов (включая наклонные и полупрозрачные)
 - Отражающие горизонтальные и наклонные поверхности
@@ -73,7 +82,7 @@ GZDoom posiada renderer OpenGL i wiele nowych funkcji, między innymi:
 - Полная поддержка TrueColor
 
 ZDoom — порт, расширенная версия движка компьютерной игры Doom (Doom engine), движок позволяет играть практически во все игры на движке id Tech (Doom, Doom 2, Heretic, HeXen, Strife). Разработка движка прекращена (на версии 2.8.1), но развитие проекта продолжено как GZDoom (стабильная версия) и QZDoom (служит для испытаний новых, стабильных функций).</text>
-			<text lang="es">GZDoom es un port fuente de Doom acelerado en 3D basado en ZDoom codificado y mantenido por Christoph Oelckers.
+      <text lang="es">GZDoom es un port fuente de Doom acelerado en 3D basado en ZDoom codificado y mantenido por Christoph Oelckers.
 
 GZDoom cuenta con un renderizador OpenGL y un montón de nuevas características, entre ellas:
 - Suelos 3D inclinados
@@ -82,7 +91,7 @@ GZDoom cuenta con un renderizador OpenGL y un montón de nuevas características
 - Soporte de color verdadero
 - Soporte de modelos
 - Originalmente se basaba en la versión 2.0.96x de la comunidad, pero ahora se basa en las versiones oficiales de ZDoom, utilizando ocasionalmente código Git ligeramente más reciente. El código fuente está disponible.</text>
-			<text lang="de">GZDoom ist eine 3D-beschleunigte Doom-Quellcode-Portierung auf der Basis von ZDoom, die von Christoph Oelckers programmiert und gepflegt wird.
+      <text lang="de">GZDoom ist eine 3D-beschleunigte Doom-Quellcode-Portierung auf der Basis von ZDoom, die von Christoph Oelckers programmiert und gepflegt wird.
 
 GZDoom bietet einen OpenGL-Renderer und viele neue Funktionen, darunter:
 - Schräge 3D-Böden
@@ -91,7 +100,7 @@ GZDoom bietet einen OpenGL-Renderer und viele neue Funktionen, darunter:
 - Unterstützung für echte Farben
 - Unterstützung von Modellen
 - Ursprünglich basierte es auf dem 2.0.96x Community-Build, aber jetzt basiert es auf offiziellen Versionen von ZDoom, wobei gelegentlich etwas neuerer Git-Code verwendet wird. Der Quellcode ist natürlich verfügbar.</text>
-			<text lang="fr">GZDoom est un portage source de Doom accéléré en 3D, basé sur ZDoom, codé et maintenu par Christoph Oelckers.
+      <text lang="fr">GZDoom est un portage source de Doom accéléré en 3D, basé sur ZDoom, codé et maintenu par Christoph Oelckers.
 
 GZDoom dispose d'un moteur de rendu OpenGL et d'un grand nombre de nouvelles fonctionnalités, parmi lesquelles :
 - Planchers 3D inclinés
@@ -100,7 +109,7 @@ GZDoom dispose d'un moteur de rendu OpenGL et d'un grand nombre de nouvelles fon
 - Prise en charge des couleurs réelles
 - Prise en charge des modèles
 - Il était à l'origine basé sur la version communautaire 2.0.96x, mais il est maintenant basé sur les versions officielles de ZDoom, utilisant occasionnellement un code Git légèrement plus récent. Le code source est bien sûr disponible.</text>
-			<text lang="it">GZDoom è un port sorgente di Doom accelerato in 3D basato su ZDoom, codificato e mantenuto da Christoph Oelckers.
+      <text lang="it">GZDoom è un port sorgente di Doom accelerato in 3D basato su ZDoom, codificato e mantenuto da Christoph Oelckers.
 
 GZDoom dispone di un renderer OpenGL e di molte nuove caratteristiche, tra cui:
 - Pavimenti 3D inclinati
@@ -109,6 +118,6 @@ GZDoom dispone di un renderer OpenGL e di molte nuove caratteristiche, tra cui:
 - Supporto per i colori reali
 - Supporto per i modelli
 - Originariamente era basato sulla versione comunitaria 2.0.96x, ma ora si basa sulle versioni ufficiali di ZDoom, utilizzando occasionalmente un codice Git leggermente più recente. Il sorgente è ovviamente disponibile.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

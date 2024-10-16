@@ -1,51 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.354</pos>
-			<maxSize>0.25</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.354" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
-			<pos>0.5 0.354</pos>
-			<maxSize>0.24</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.354" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1992</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Commodore</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Amiga 600</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Amiga 600, also known as the A600, is a home computer introduced in March 1992. It is the final Amiga model based on the Motorola 68000 and the 1990 Amiga Enhanced Chip Set.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.5 0.354</pos>
+      <maxSize>0.25</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.354" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
+      <pos>0.5 0.354</pos>
+      <maxSize>0.24</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.354" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1992</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Commodore</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Amiga 600</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Amiga 600, also known as the A600, is a home computer introduced in March 1992. It is the final Amiga model based on the Motorola 68000 and the 1990 Amiga Enhanced Chip Set.
 A redesign of the Amiga 500 Plus, it adds the option of an internal hard disk drive and a PCMCIA port. It shipped with AmigaOS 2.0, which was considered more user-friendly than earlier versions of the operating system.
 
 The A600 is the last Amiga model to use Commodore's Enhanced Chip Set (ECS), which can address 2 MB of RAM and adds higher resolution display modes.
@@ -53,44 +53,49 @@ Sound was unchanged from the original Amiga design, namely, 4 DMA-driven 8-bit c
 
 The A600 was the first Amiga model with a built-in RF modulator (RCA), which allowed the A600 to be used with a standard CRT television without the need for a Commodore A520 RF Modulator adaptor.
 </text>
-			<text lang="pl">Amiga 600 (A600) – wyprodukowany w 1992 r. fizycznie najmniejszy model Amigi. Jest pozbawiony bloku numerycznego klawiatury.
+      <text lang="pl">Amiga 600 (A600) – wyprodukowany w 1992 r. fizycznie najmniejszy model Amigi. Jest pozbawiony bloku numerycznego klawiatury.
 
 Komputer został wyposażony w procesor MC68000 taktowany zegarem 7,16 MHz, chipset graficzny ECS, 1 MB pamięci CHIP (z możliwością rozszerzenia do 2 MB CHIP, 4 MB FAST przez port PCMCIA lub więcej przy pomocy rozszerzeń nakładanych na procesor), kontroler dysku twardego IDE, miejsce na dysk 2,5 cala, stację dyskietek, Kickstart o numerze 37.299 (w pierwszych seriach zawierający błędy w obsłudze IDE, poprawiona wersja została opatrzona numerem 37.350), wbudowany modulator TV, a także złącze PCMCIA typu II. Pomimo tego, że komputer nie był przewidziany do rozbudowy, istnieją dla niego karty procesorowe oraz mające dodatkowy RAM.
 
 Amiga 600 została wycofana ze sprzedaży w 1993.</text>
-			<text lang="ru">Amiga 600 была выпущена в марте 1992 года, как замена Amiga 500+. Данная модель отличается отсутствием у клавиатуры цифрового блока (самая маленькая классическая Amiga из всех выпускавшихся когда-либо). Компьютер был нацелен в первую очередь на рынок консолей, не добавляя ничего нового ни к Amiga в целом, ни к её операционной системе. Основные характеристики: 1 Мб Chip-памяти, чипсет ECS, Kickstart 2.05. Чип Fatter Agnus в Amiga 600 позволяет адресовать до 2 Мб Chip-памяти, и ещё 4 Мб Fast-памяти можно добавить подключением карты-расширения в PCMCIA-слот. Также для модели Amiga 600HD предусматривался 2,5" жёсткий диск объёмом 40 Мб.
+      <text lang="pt">Amiga 600 (A600) – produzido em 1992, o modelo Amiga fisicamente menor. É desprovido do bloco numérico do teclado.
+
+O computador foi equipado com o processador MC68000 com clock de 7,16 MHz, chipset gráfico ECS, 1 MB de memória CHIP (com possibilidade de expansão para 2 MB CHIP, 4 MB FAST através da porta PCMCIA ou mais com a ajuda de expansões sobrepostas ao processador), controlador de disco rígido IDE, espaço para um disco de 2,5 polegadas, drive de disquete, Kickstart com o número 37.299 (nas primeiras séries contendo erros no gerenciamento do IDE, a versão corrigida recebeu o número 37.350), modulador de TV integrado, e também uma conexão PCMCIA tipo II. Apesar de o computador não ter sido projetado para expansão, existem para ele placas de processador e com RAM adicional.
+
+A Amiga 600 foi retirada de venda em 1993.</text>
+      <text lang="ru">Amiga 600 была выпущена в марте 1992 года, как замена Amiga 500+. Данная модель отличается отсутствием у клавиатуры цифрового блока (самая маленькая классическая Amiga из всех выпускавшихся когда-либо). Компьютер был нацелен в первую очередь на рынок консолей, не добавляя ничего нового ни к Amiga в целом, ни к её операционной системе. Основные характеристики: 1 Мб Chip-памяти, чипсет ECS, Kickstart 2.05. Чип Fatter Agnus в Amiga 600 позволяет адресовать до 2 Мб Chip-памяти, и ещё 4 Мб Fast-памяти можно добавить подключением карты-расширения в PCMCIA-слот. Также для модели Amiga 600HD предусматривался 2,5" жёсткий диск объёмом 40 Мб.
 
 Amiga 600 стала ещё одной попыткой Commodore нацелить ПК Amiga на рынок консолей и позиционировалась как компьютер для игр с клавиатурой которая «не работает». Клавиатура Amiga 600 насчитывает всего 78 клавиш (за счёт отказа от дополнительной клавиатуры калькулятора). Это, в свою очередь, послужило поводом для более поздних многочисленных любительских доработок в которых к корпусу добавлялись батареи и подходящий по размерам TFT-монитор. Также, эта модель оказалась последней в ECS-линейке классической Amiga и наиболее близкой к ноутбуку на базе Amiga (известном как Suzanne).
 
 С Amiga 600 связан исторический анекдот: первоначально она должна была называться Amiga 300. Пытаясь сократить затраты на CBM, менеджеры буквально в последние минуты решили поменять название модели. Поэтому Amiga 600 стали позиционировать как преемника Amiga 500 и Amiga 500+, а первые ревизии материнской платы имели гравировку Amiga 300.</text>
-			<text lang="es">El Amiga 600, también conocido como A600, es un ordenador doméstico presentado en marzo de 1992. Es el último modelo de Amiga basado en el Motorola 68000 y el Amiga Enhanced Chip Set de 1990.
+      <text lang="es">El Amiga 600, también conocido como A600, es un ordenador doméstico presentado en marzo de 1992. Es el último modelo de Amiga basado en el Motorola 68000 y el Amiga Enhanced Chip Set de 1990.
 Es un rediseño del Amiga 500 Plus, que añade la opción de un disco duro interno y un puerto PCMCIA. Se suministra con AmigaOS 2.0, que se considera más fácil de usar que las versiones anteriores del sistema operativo.
 
 El A600 es el último modelo de Amiga que utiliza el Enhanced Chip Set (ECS) de Commodore, que puede direccionar 2 MB de RAM y añade modos de visualización de mayor resolución.
 El sonido no se modificó con respecto al diseño original de Amiga, es decir, 4 canales de 8 bits controlados por DMA, con dos canales para el altavoz izquierdo y dos para el derecho.
 
 El A600 fue el primer modelo de Amiga con un modulador de RF integrado (RCA), que permitía utilizar el A600 con un televisor CRT estándar sin necesidad de un adaptador de modulador de RF Commodore A520.</text>
-			<text lang="de">Der Amiga 600, auch bekannt als A600, ist ein Heimcomputer, der im März 1992 eingeführt wurde. Er ist das letzte Amiga-Modell, das auf dem Motorola 68000 und dem Amiga Enhanced Chip Set von 1990 basiert.
+      <text lang="de">Der Amiga 600, auch bekannt als A600, ist ein Heimcomputer, der im März 1992 eingeführt wurde. Er ist das letzte Amiga-Modell, das auf dem Motorola 68000 und dem Amiga Enhanced Chip Set von 1990 basiert.
 Es handelt sich um ein Redesign des Amiga 500 Plus mit der Option eines internen Festplattenlaufwerks und eines PCMCIA-Anschlusses. Er wurde mit AmigaOS 2.0 ausgeliefert, das als benutzerfreundlicher als frühere Versionen des Betriebssystems angesehen wurde.
 
 Der A600 ist das letzte Amiga-Modell, das Commodores Enhanced Chip Set (ECS) verwendet, das 2 MB RAM adressieren kann und höhere Auflösungsmodi für die Anzeige bietet.
 Der Ton wurde vom ursprünglichen Amiga-Design nicht verändert, nämlich 4 DMA-gesteuerte 8-Bit-Kanäle, mit zwei Kanälen für den linken Lautsprecher und zwei für den rechten.
 
 Der A600 war das erste Amiga-Modell mit einem eingebauten RF-Modulator (RCA), der es ermöglichte, den A600 mit einem Standard-CRT-Fernseher zu benutzen, ohne dass ein Commodore A520 RF-Modulator-Adapter benötigt wurde.</text>
-			<text lang="fr">L'Amiga 600, également connu sous le nom d'A600, est un ordinateur domestique introduit en mars 1992. C'est le dernier modèle d'Amiga basé sur le Motorola 68000 et l'Amiga Enhanced Chip Set de 1990.
+      <text lang="fr">L'Amiga 600, également connu sous le nom d'A600, est un ordinateur domestique introduit en mars 1992. C'est le dernier modèle d'Amiga basé sur le Motorola 68000 et l'Amiga Enhanced Chip Set de 1990.
 Une refonte de l'Amiga 500 Plus, il ajoute l'option d'un disque dur interne et d'un port PCMCIA. Il est livré avec AmigaOS 2.0, considéré comme plus convivial que les versions précédentes du système d'exploitation.
 
 L'A600 est le dernier modèle Amiga à utiliser le Enhanced Chip Set (ECS) de Commodore, qui peut adresser 2 Mo de RAM et ajoute des modes d'affichage à plus haute résolution.
 Le son est resté inchangé par rapport à la conception originale de l'Amiga, à savoir 4 canaux 8 bits pilotés par DMA, avec deux canaux pour le haut-parleur gauche et deux pour le haut-parleur droit.
 
 L'A600 était le premier modèle Amiga avec un modulateur RF intégré (RCA), ce qui permettait à l'A600 d'être utilisé avec une télévision CRT standard sans avoir besoin d'un adaptateur Commodore A520 RF Modulator.</text>
-			<text lang="it">L'Amiga 600, noto anche come A600, è un home computer introdotto nel marzo 1992. È l'ultimo modello Amiga basato sul Motorola 68000 e sull'Amiga Enhanced Chip Set del 1990.
+      <text lang="it">L'Amiga 600, noto anche come A600, è un home computer introdotto nel marzo 1992. È l'ultimo modello Amiga basato sul Motorola 68000 e sull'Amiga Enhanced Chip Set del 1990.
 Si tratta di una riprogettazione dell'Amiga 500 Plus, con l'aggiunta di un disco rigido interno e di una porta PCMCIA. Veniva fornito con AmigaOS 2.0, considerato più facile da usare rispetto alle versioni precedenti del sistema operativo.
 
 L'A600 è stato l'ultimo modello Amiga a utilizzare l'Enhanced Chip Set (ECS) di Commodore, che può indirizzare 2 MB di RAM e aggiunge modalità di visualizzazione a risoluzione più elevata.
 L'audio è rimasto invariato rispetto al progetto Amiga originale, ovvero 4 canali DMA a 8 bit, con due canali per l'altoparlante sinistro e due per quello destro.
 
 L'A600 è stato il primo modello Amiga con un modulatore RF integrato (RCA), che ha permesso di utilizzare l'A600 con un televisore CRT standard senza la necessità di un adattatore per modulatore RF Commodore A520.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

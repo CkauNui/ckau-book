@@ -1,167 +1,170 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.3 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.26 0.36</pos>
-			<minSize>0.1 0.2</minSize>
-			<rotation>8</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="-0.02 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.7 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.54 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.74 0.36</pos>
-			<minSize>0.1 0.2</minSize>
-			<rotation>-8</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.46 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<pos>0.5 0.363</pos>
-			<maxSize>0.15</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-left" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.36 0.37</pos>
-			<maxSize>0.14</maxSize>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.08 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-right" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.638 0.37</pos>
-			<maxSize>0.14</maxSize>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.358 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<pos>0.5 0.363</pos>
-			<maxSize>0.14</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}-right.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.655 0.37</pos>
-			<maxSize>0.13</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.375 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox3" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}-left.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.345 0.37</pos>
-			<maxSize>0.13</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.065 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1997</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>MAME</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>MAME (originally an acronym of Multiple Arcade Machine Emulator) is a free and open-source emulator designed to recreate the hardware of arcade game systems in software on modern personal computers and other platforms. Its intention is to preserve gaming history by preventing vintage games from being lost or forgotten. It does this by emulating the inner workings of the emulated arcade machines; the ability to actually play the games is considered "a nice side effect". Joystiq has listed MAME as an application that every Windows and Mac gamer should have.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-left" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.3 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.26 0.36</pos>
+      <minSize>0.1 0.2</minSize>
+      <rotation>8</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="-0.02 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-right" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.7 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.54 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.74 0.36</pos>
+      <minSize>0.1 0.2</minSize>
+      <rotation>-8</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.46 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <pos>0.5 0.363</pos>
+      <maxSize>0.15</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-left" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.36 0.37</pos>
+      <maxSize>0.14</maxSize>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.08 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-right" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.638 0.37</pos>
+      <maxSize>0.14</maxSize>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.358 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <pos>0.5 0.363</pos>
+      <maxSize>0.14</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}-right.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.655 0.37</pos>
+      <maxSize>0.13</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.375 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox3" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}-left.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.345 0.37</pos>
+      <maxSize>0.13</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.065 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1997</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>MAME</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>MAME (originally an acronym of Multiple Arcade Machine Emulator) is a free and open-source emulator designed to recreate the hardware of arcade game systems in software on modern personal computers and other platforms. Its intention is to preserve gaming history by preventing vintage games from being lost or forgotten. It does this by emulating the inner workings of the emulated arcade machines; the ability to actually play the games is considered "a nice side effect". Joystiq has listed MAME as an application that every Windows and Mac gamer should have.
 
 The first public MAME release was by Nicola Salmoria on February 5, 1997. It now supports over 7,000 unique games and 10,000 actual ROM image sets, though not all of the games are playable. MESS, an emulator for many video game consoles and computer systems, based on the MAME core, was integrated into MAME in 2015.</text>
-			<text lang="pl">MAME (pierwotnie skrót od Multiple Arcade Machine Emulator) jest darmowym emulatorem typu open-source, zaprojektowanym w celu odtworzenia sprzętu systemów gier arcade w oprogramowaniu na nowoczesnych komputerach osobistych i innych platformach. Jego celem jest zachowanie historii gier poprzez zapobieganie utracie lub zapomnieniu starych gier. Czyni to poprzez emulację wewnętrznego działania emulowanych maszyn arcade; zdolność do rzeczywistego grania w gry jest uważana za "miły efekt uboczny". Joystiq umieścił MAME na liście aplikacji, które każdy gracz Windows i Mac powinien posiadać.
+      <text lang="pl">MAME (pierwotnie skrót od Multiple Arcade Machine Emulator) jest darmowym emulatorem typu open-source, zaprojektowanym w celu odtworzenia sprzętu systemów gier arcade w oprogramowaniu na nowoczesnych komputerach osobistych i innych platformach. Jego celem jest zachowanie historii gier poprzez zapobieganie utracie lub zapomnieniu starych gier. Czyni to poprzez emulację wewnętrznego działania emulowanych maszyn arcade; zdolność do rzeczywistego grania w gry jest uważana za "miły efekt uboczny". Joystiq umieścił MAME na liście aplikacji, które każdy gracz Windows i Mac powinien posiadać.
 
 Pierwsza publiczna wersja MAME została wydana przez Nicola Salmoria 5 lutego 1997 roku. Obecnie obsługuje on ponad 7000 unikalnych gier i 10 000 aktualnych zestawów obrazów ROM, choć nie wszystkie z nich są grywalne. MESS, emulator dla wielu konsol do gier wideo i systemów komputerowych, oparty na rdzeniu MAME, został zintegrowany z MAME w 2015 roku.</text>
-			<text lang="ru">Эмулятор, разработанный для воссоздания электронного оборудования аркадных автоматов в виде программного обеспечения, с целью сохранения истории игр и предотвращения исчезновения старых игр. Название программы является акронимом для Multiple Arcade Machine Emulator — эмулятор множества аркадных машин.
+      <text lang="pt">MAME (originalmente abreviação de Multiple Arcade Machine Emulator) é um emulador gratuito de código aberto, projetado para reproduzir o hardware de sistemas de jogos de arcade em software em computadores pessoais modernos e outras plataformas. Seu objetivo é preservar a história dos jogos, evitando a perda ou o esquecimento de jogos antigos. Ele faz isso emulando o funcionamento interno das máquinas de arcade emuladas; a capacidade de realmente jogar os jogos é considerada um "efeito colateral agradável". O Joystiq incluiu o MAME na lista de aplicativos que todo jogador de Windows e Mac deveria ter.
+
+A primeira versão pública do MAME foi lançada por Nicola Salmoria em 5 de fevereiro de 1997. Atualmente, ele suporta mais de 7.000 jogos únicos e 10.000 conjuntos atuais de imagens ROM, embora nem todos sejam jogáveis. MESS, um emulador para vários consoles de videogames e sistemas computacionais, baseado no núcleo do MAME, foi integrado ao MAME em 2015.</text>
+      <text lang="ru">Эмулятор, разработанный для воссоздания электронного оборудования аркадных автоматов в виде программного обеспечения, с целью сохранения истории игр и предотвращения исчезновения старых игр. Название программы является акронимом для Multiple Arcade Machine Emulator — эмулятор множества аркадных машин.
 
 Первый публичный релиз MAME (версия 0.1), автором которого был Никола Салмориа, состоялся 5 февраля 1997 года. Эмулятор поддерживает 4266 уникальных игр и 8286 ром-сет (каждая игра может иметь один или несколько клонов). Но не все игры, поддерживаемые MAME, на самом деле играбельны: в настоящий момент не работает 1188 образов игр, а ещё 45 — это образы BIOS. В настоящее время лидером проекта является Аарон Гилес.</text>
-			<text lang="es">MAME (originalmente un acrónimo de Multiple Arcade Machine Emulator) es un emulador gratuito y de código abierto diseñado para recrear el hardware de los sistemas de juegos arcade en software en ordenadores personales modernos y otras plataformas. Su intención es preservar la historia de los videojuegos evitando que los juegos antiguos se pierdan o caigan en el olvido. Para ello, emula el funcionamiento interno de las máquinas recreativas emuladas; la posibilidad de jugar realmente a los juegos se considera "un bonito efecto secundario". Joystiq considera que MAME es una aplicación que todo jugador de Windows y Mac debería tener.
+      <text lang="es">MAME (originalmente un acrónimo de Multiple Arcade Machine Emulator) es un emulador gratuito y de código abierto diseñado para recrear el hardware de los sistemas de juegos arcade en software en ordenadores personales modernos y otras plataformas. Su intención es preservar la historia de los videojuegos evitando que los juegos antiguos se pierdan o caigan en el olvido. Para ello, emula el funcionamiento interno de las máquinas recreativas emuladas; la posibilidad de jugar realmente a los juegos se considera "un bonito efecto secundario". Joystiq considera que MAME es una aplicación que todo jugador de Windows y Mac debería tener.
 
 La primera versión pública de MAME la realizó Nicola Salmoria el 5 de febrero de 1997. En la actualidad admite más de 7.000 juegos únicos y 10.000 conjuntos de imágenes ROM, aunque no todos los juegos son jugables. MESS, un emulador para muchas consolas de videojuegos y sistemas informáticos, basado en el núcleo de MAME, se integró en MAME en 2015.</text>
-			<text lang="de">MAME (ursprünglich ein Akronym für Multiple Arcade Machine Emulator) ist ein freier und quelloffener Emulator, der entwickelt wurde, um die Hardware von Spielhallensystemen in Software auf modernen PCs und anderen Plattformen nachzubilden. Sein Ziel ist es, die Spielegeschichte zu bewahren, indem er verhindert, dass alte Spiele verloren gehen oder in Vergessenheit geraten. Dies geschieht durch die Emulation des Innenlebens der emulierten Arcade-Automaten; die Möglichkeit, die Spiele tatsächlich zu spielen, wird als "netter Nebeneffekt" betrachtet. Joystiq hat MAME als eine Anwendung aufgeführt, die jeder Windows- und Mac-Spieler haben sollte.
+      <text lang="de">MAME (ursprünglich ein Akronym für Multiple Arcade Machine Emulator) ist ein freier und quelloffener Emulator, der entwickelt wurde, um die Hardware von Spielhallensystemen in Software auf modernen PCs und anderen Plattformen nachzubilden. Sein Ziel ist es, die Spielegeschichte zu bewahren, indem er verhindert, dass alte Spiele verloren gehen oder in Vergessenheit geraten. Dies geschieht durch die Emulation des Innenlebens der emulierten Arcade-Automaten; die Möglichkeit, die Spiele tatsächlich zu spielen, wird als "netter Nebeneffekt" betrachtet. Joystiq hat MAME als eine Anwendung aufgeführt, die jeder Windows- und Mac-Spieler haben sollte.
 
 Die erste öffentliche Veröffentlichung von MAME erfolgte durch Nicola Salmoria am 5. Februar 1997. Mittlerweile unterstützt MAME über 7.000 Spiele und 10.000 ROM-Images, obwohl nicht alle Spiele spielbar sind. MESS, ein Emulator für viele Videospielkonsolen und Computersysteme, der auf dem MAME-Kern basiert, wurde 2015 in MAME integriert.</text>
-			<text lang="fr">MAME (acronyme de Multiple Arcade Machine Emulator) est un émulateur libre et gratuit conçu pour recréer le matériel des systèmes de jeux d'arcade en logiciel sur les ordinateurs personnels modernes et d'autres plates-formes. Son objectif est de préserver l'histoire du jeu en empêchant que des jeux anciens ne soient perdus ou oubliés. Pour ce faire, il émule le fonctionnement interne des machines d'arcade émulées ; la possibilité de jouer réellement aux jeux est considérée comme "un effet secondaire agréable". Joystiq a classé MAME parmi les applications que tout joueur Windows et Mac devrait posséder.
+      <text lang="fr">MAME (acronyme de Multiple Arcade Machine Emulator) est un émulateur libre et gratuit conçu pour recréer le matériel des systèmes de jeux d'arcade en logiciel sur les ordinateurs personnels modernes et d'autres plates-formes. Son objectif est de préserver l'histoire du jeu en empêchant que des jeux anciens ne soient perdus ou oubliés. Pour ce faire, il émule le fonctionnement interne des machines d'arcade émulées ; la possibilité de jouer réellement aux jeux est considérée comme "un effet secondaire agréable". Joystiq a classé MAME parmi les applications que tout joueur Windows et Mac devrait posséder.
 
 La première version publique de MAME a été publiée par Nicola Salmoria le 5 février 1997. Il supporte aujourd'hui plus de 7 000 jeux uniques et 10 000 jeux d'images ROM, bien que tous les jeux ne soient pas jouables. MESS, un émulateur pour de nombreuses consoles de jeux vidéo et systèmes informatiques, basé sur le noyau MAME, a été intégré à MAME en 2015.</text>
-			<text lang="it">MAME (originariamente acronimo di Multiple Arcade Machine Emulator) è un emulatore gratuito e open-source progettato per ricreare l'hardware dei sistemi di gioco arcade nel software dei moderni personal computer e di altre piattaforme. Il suo scopo è quello di preservare la storia del gioco, evitando che i giochi d'epoca vadano persi o dimenticati. Lo fa emulando il funzionamento interno delle macchine arcade emulate; la possibilità di giocare effettivamente ai giochi è considerata "un piacevole effetto collaterale". Joystiq ha indicato MAME come un'applicazione che ogni giocatore Windows e Mac dovrebbe avere.
+      <text lang="it">MAME (originariamente acronimo di Multiple Arcade Machine Emulator) è un emulatore gratuito e open-source progettato per ricreare l'hardware dei sistemi di gioco arcade nel software dei moderni personal computer e di altre piattaforme. Il suo scopo è quello di preservare la storia del gioco, evitando che i giochi d'epoca vadano persi o dimenticati. Lo fa emulando il funzionamento interno delle macchine arcade emulate; la possibilità di giocare effettivamente ai giochi è considerata "un piacevole effetto collaterale". Joystiq ha indicato MAME come un'applicazione che ogni giocatore Windows e Mac dovrebbe avere.
 
 La prima versione pubblica del MAME è stata realizzata da Nicola Salmoria il 5 febbraio 1997. Attualmente supporta oltre 7.000 giochi unici e 10.000 immagini ROM, anche se non tutti i giochi sono giocabili. MESS, un emulatore per molte console di videogiochi e sistemi informatici, basato sul nucleo di MAME, è stato integrato in MAME nel 2015.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

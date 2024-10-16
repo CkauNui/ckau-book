@@ -1,93 +1,93 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 -0.28</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.24</origin>
-			<pos>0.498 0.263</pos>
-			<minSize>0.45 0.1</minSize>
-			<minSize if="${screen.ratio} == '4/3'">0.59 0.1</minSize>
-			<minSize if="${screen.ratio} == '16/10'">0.49 0.1</minSize>
-			
-			<rotation>0</rotation>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.218 0.263" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 1.24</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.74</origin>
-			<pos>0.498 0.722</pos>
-			<minSize>0.45 0.1</minSize>
-			<minSize if="${screen.ratio} == '4/3'">0.59 0.1</minSize>
-			<minSize if="${screen.ratio} == '16/10'">0.49 0.1</minSize>
-			<rotation>0</rotation>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.218 0.722" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<pos>0.498 0.49</pos>
-			<maxSize>0.43</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.559</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.465</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.218 0.49" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.498 0.49</pos>
-			<maxSize>0.42</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.558</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.464</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.218 0.49" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2008</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Google</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Android</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>Android is a mobile operating system based on a modified version of the Linux kernel and other open source software, designed primarily for touchscreen mobile devices such as smartphones and tablets. Android is developed by a consortium of developers known as the Open Handset Alliance and commercially sponsored by Google. It was unveiled in November 2007, with the first commercial Android device, the HTC Dream, being launched in September 2008.</text>
-			<text lang="pl">Android to mobilny system operacyjny oparty na zmodyfikowanej wersji jądra systemu Linux i innym oprogramowaniu open source, przeznaczony głównie dla urządzeń przenośnych z ekranem dotykowym, takich jak smartfony i tablety. Android jest rozwijany przez konsorcjum programistów znane jako Open Handset Alliance i sponsorowany komercyjnie przez firmę Google. Został zaprezentowany w listopadzie 2007 roku, a pierwsze komercyjne urządzenie z systemem Android, HTC Dream, zostało wprowadzone na rynek we wrześniu 2008 roku.</text>
-			<text lang="ru">Операционная система для смартфонов, планшетов, электронных книг, цифровых проигрывателей, наручных часов, фитнес-браслетов, игровых приставок, ноутбуков, нетбуков, смартбуков, очков Google Glass, телевизоров, проекторов и других устройств (в 2015 году появилась поддержка автомобильных развлекательных систем и бытовых роботов).
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-left" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 -0.28</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.24</origin>
+      <pos>0.498 0.263</pos>
+      <minSize>0.45 0.1</minSize>
+      <minSize if="${screen.ratio} == '4/3'">0.59 0.1</minSize>
+      <minSize if="${screen.ratio} == '16/10'">0.49 0.1</minSize>
+      <rotation>0</rotation>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.218 0.263" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-right" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 1.24</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.74</origin>
+      <pos>0.498 0.722</pos>
+      <minSize>0.45 0.1</minSize>
+      <minSize if="${screen.ratio} == '4/3'">0.59 0.1</minSize>
+      <minSize if="${screen.ratio} == '16/10'">0.49 0.1</minSize>
+      <rotation>0</rotation>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.218 0.722" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <pos>0.498 0.49</pos>
+      <maxSize>0.43</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.559</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.465</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.218 0.49" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.498 0.49</pos>
+      <maxSize>0.42</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.558</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.464</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.218 0.49" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2008</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Google</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Android</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>Android is a mobile operating system based on a modified version of the Linux kernel and other open source software, designed primarily for touchscreen mobile devices such as smartphones and tablets. Android is developed by a consortium of developers known as the Open Handset Alliance and commercially sponsored by Google. It was unveiled in November 2007, with the first commercial Android device, the HTC Dream, being launched in September 2008.</text>
+      <text lang="pl">Android to mobilny system operacyjny oparty na zmodyfikowanej wersji jądra systemu Linux i innym oprogramowaniu open source, przeznaczony głównie dla urządzeń przenośnych z ekranem dotykowym, takich jak smartfony i tablety. Android jest rozwijany przez konsorcjum programistów znane jako Open Handset Alliance i sponsorowany komercyjnie przez firmę Google. Został zaprezentowany w listopadzie 2007 roku, a pierwsze komercyjne urządzenie z systemem Android, HTC Dream, zostało wprowadzone na rynek we wrześniu 2008 roku.</text>
+      <text lang="pt">Android é um sistema operacional móvel baseado em uma versão modificada do kernel do Linux e outros softwares de código aberto, projetado principalmente para dispositivos portáteis com tela sensível ao toque, como smartphones e tablets. O Android é desenvolvido por um consórcio de desenvolvedores conhecido como Open Handset Alliance e patrocinado comercialmente pela Google. Foi apresentado em novembro de 2007 e o primeiro dispositivo comercial com Android, o HTC Dream, foi lançado em setembro de 2008.</text>
+      <text lang="ru">Операционная система для смартфонов, планшетов, электронных книг, цифровых проигрывателей, наручных часов, фитнес-браслетов, игровых приставок, ноутбуков, нетбуков, смартбуков, очков Google Glass, телевизоров, проекторов и других устройств (в 2015 году появилась поддержка автомобильных развлекательных систем и бытовых роботов).
 
 Изначально разрабатывалась компанией Android, Inc., которую затем приобрела Google. Основана на ядре Linux и собственной реализации виртуальной машины Java компании Google. Впоследствии Google инициировала создание альянса Open Handset Alliance (OHA), который занимается поддержкой и дальнейшим развитием платформы.
 
 Android позволяет запускать Java-приложения, управляющие устройством через разработанные Google библиотеки. Android Native Development Kit позволяет портировать библиотеки и компоненты приложений, написанные на Си и других языках.
 
 В 86 % смартфонов, проданных во всём мире во втором квартале 2014 года, была установлена операционная система Android. На конференции разработчиков в мае 2017 года Google объявила, что за всю историю Android было активировано более 2 млрд Android-устройств.</text>
-			<text lang="es">Android es un sistema operativo móvil basado en una versión modificada del núcleo de Linux y otro software de código abierto, diseñado principalmente para dispositivos móviles con pantalla táctil, como teléfonos inteligentes y tabletas. Android es desarrollado por un consorcio de desarrolladores conocido como Open Handset Alliance y patrocinado comercialmente por Google. Se presentó en noviembre de 2007 y el primer dispositivo comercial con Android, el HTC Dream, en septiembre de 2008.</text>
-			<text lang="de">Android ist ein mobiles Betriebssystem, das auf einer modifizierten Version des Linux-Kernels und anderer Open-Source-Software basiert und in erster Linie für mobile Geräte mit Touchscreen wie Smartphones und Tablets konzipiert ist. Android wird von einem Konsortium von Entwicklern entwickelt, das als Open Handset Alliance bekannt ist und von Google kommerziell unterstützt wird. Es wurde im November 2007 vorgestellt, und das erste kommerzielle Android-Gerät, das HTC Dream, kam im September 2008 auf den Markt.</text>
-			<text lang="fr">Android est un système d'exploitation mobile basé sur une version modifiée du noyau Linux et d'autres logiciels libres, conçu principalement pour les appareils mobiles à écran tactile tels que les smartphones et les tablettes. Android est développé par un consortium de développeurs connu sous le nom d'Open Handset Alliance et parrainé commercialement par Google. Il a été dévoilé en novembre 2007 et le premier appareil Android commercial, le HTC Dream, a été lancé en septembre 2008.</text>
-			<text lang="it">Android è un sistema operativo mobile basato su una versione modificata del kernel Linux e su altri software open source, progettato principalmente per dispositivi mobili touchscreen come smartphone e tablet. Android è sviluppato da un consorzio di sviluppatori noto come Open Handset Alliance e sponsorizzato commercialmente da Google. È stato presentato nel novembre 2007 e il primo dispositivo commerciale Android, l'HTC Dream, è stato lanciato nel settembre 2008.</text>
-		</text>
-	</view>
+      <text lang="es">Android es un sistema operativo móvil basado en una versión modificada del núcleo de Linux y otro software de código abierto, diseñado principalmente para dispositivos móviles con pantalla táctil, como teléfonos inteligentes y tabletas. Android es desarrollado por un consorcio de desarrolladores conocido como Open Handset Alliance y patrocinado comercialmente por Google. Se presentó en noviembre de 2007 y el primer dispositivo comercial con Android, el HTC Dream, en septiembre de 2008.</text>
+      <text lang="de">Android ist ein mobiles Betriebssystem, das auf einer modifizierten Version des Linux-Kernels und anderer Open-Source-Software basiert und in erster Linie für mobile Geräte mit Touchscreen wie Smartphones und Tablets konzipiert ist. Android wird von einem Konsortium von Entwicklern entwickelt, das als Open Handset Alliance bekannt ist und von Google kommerziell unterstützt wird. Es wurde im November 2007 vorgestellt, und das erste kommerzielle Android-Gerät, das HTC Dream, kam im September 2008 auf den Markt.</text>
+      <text lang="fr">Android est un système d'exploitation mobile basé sur une version modifiée du noyau Linux et d'autres logiciels libres, conçu principalement pour les appareils mobiles à écran tactile tels que les smartphones et les tablettes. Android est développé par un consortium de développeurs connu sous le nom d'Open Handset Alliance et parrainé commercialement par Google. Il a été dévoilé en novembre 2007 et le premier appareil Android commercial, le HTC Dream, a été lancé en septembre 2008.</text>
+      <text lang="it">Android è un sistema operativo mobile basato su una versione modificata del kernel Linux e su altri software open source, progettato principalmente per dispositivi mobili touchscreen come smartphone e tablet. Android è sviluppato da un consorzio di sviluppatori noto come Open Handset Alliance e sponsorizzato commercialmente da Google. È stato presentato nel novembre 2007 e il primo dispositivo commerciale Android, l'HTC Dream, è stato lanciato nel settembre 2008.</text>
+    </text>
+  </view>
 </theme>

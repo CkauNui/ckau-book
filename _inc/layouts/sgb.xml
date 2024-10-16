@@ -1,83 +1,88 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.39</pos>
-			<maxSize>0.25</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.39</pos>
-			<maxSize>0.24</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1994</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Nintendo</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Super Game Boy</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Super Game Boy (スーパーゲームボーイ, Sūpā Gēmu Bōi) is a peripheral that allows Game Boy cartridges to be played on a Super Nintendo Entertainment System console, compatible with the same cartridges as the original Game Boy: original Game Boy cartridges, the Game Boy Camera, and dual-mode Game Boy Color cartridges (in Game Boy-mode).
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.5 0.39</pos>
+      <maxSize>0.25</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.5 0.39</pos>
+      <maxSize>0.24</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1994</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Nintendo</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Super Game Boy</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Super Game Boy (スーパーゲームボーイ, Sūpā Gēmu Bōi) is a peripheral that allows Game Boy cartridges to be played on a Super Nintendo Entertainment System console, compatible with the same cartridges as the original Game Boy: original Game Boy cartridges, the Game Boy Camera, and dual-mode Game Boy Color cartridges (in Game Boy-mode).
 
 The unit could map the four shades of green to various colors on the screen. Later Game Boy games that were optimized to use the Super Game Boy had additional color information and could override the on-screen colors, display a graphical border around the screen, and display special background sprites. Those games would have printed a small "Super Game Boy Game Pak" logo on the box and cartridge. The adaptor could support up to 64 colors for the border, and 12 colors for the screen. Static screens could display all 10 colors. Certain games can load multiple borders depending on the player's location in the game.
 
 It is also possible for Super Game Boy games to make use of the Super NES hardware for extra effects: these games had expanded sound when used with the Super Game Boy. Some titles even allowed the second Super NES controller to be used for two-player action; using the Super Multitap, some games even supported four players.</text>
-			<text lang="pl">Super Game Boy (スーパーゲームボーイ, Sūpā Gēmu Bōi) to urządzenie peryferyjne pozwalające na odtwarzanie kartridży Game Boy na konsoli Super Nintendo Entertainment System, kompatybilne z tymi samymi kartridżami, co oryginalny Game Boy: oryginalnymi kartridżami Game Boy, Game Boy Camera i kartridżami Game Boy Color z dwoma trybami (w trybie Game Boy).
+      <text lang="pl">Super Game Boy (スーパーゲームボーイ, Sūpā Gēmu Bōi) to urządzenie peryferyjne pozwalające na odtwarzanie kartridży Game Boy na konsoli Super Nintendo Entertainment System, kompatybilne z tymi samymi kartridżami, co oryginalny Game Boy: oryginalnymi kartridżami Game Boy, Game Boy Camera i kartridżami Game Boy Color z dwoma trybami (w trybie Game Boy).
 
 Urządzenie potrafiło mapować cztery odcienie zieleni na różne kolory na ekranie. Późniejsze gry na Game Boya, które zostały zoptymalizowane do korzystania z Super Game Boya, zawierały dodatkowe informacje o kolorach i mogły zastępować kolory ekranowe, wyświetlać graficzne obramowanie wokół ekranu oraz specjalne obrazy tła. Gry te miały na pudełku i kartridżu nadrukowane małe logo "Super Game Boy Game Pak". Adapter mógł obsługiwać do 64 kolorów obramowania i 12 kolorów ekranu. Statyczne ekrany mogły wyświetlać wszystkie 10 kolorów. W niektórych grach można załadować wiele obramowań, w zależności od miejsca zajmowanego przez gracza w grze.
 
 W grach na Super Game Boya możliwe było także wykorzystanie sprzętu Super NES w celu uzyskania dodatkowych efektów: gry te miały rozszerzony dźwięk, gdy były używane z Super Game Boyem. Niektóre tytuły pozwalały nawet na wykorzystanie drugiego kontrolera Super NES do gry dla dwóch graczy; przy użyciu Super Multitapu niektóre gry obsługiwały nawet czterech graczy.</text>
-			<text lang="ru">(яп. スーパーゲームボーイ Sūpā Gēmu Bōi) является 16-битным картриджем-адаптером для игровой консоли Super Nintendo Entertainment System, в Японии также известной как Super Famicom. Super Game Boy позволяет запускать картриджи с играми для портативной консоли Game Boy на экране телевизора, используя в качестве игрового контроллера геймпад от SNES/Super Famicom. На момент выпуска в США Super Game Boy стоил $59.99. В Великобритании он продавался по цене £49.99. Super Game Boy является предшественником устройства Game Boy Player для консоли Nintendo GameCube, которое работало по схожей схеме.
+      <text lang="pt">Super Game Boy (スーパーゲームボーイ, Sūpā Gēmu Bōi) é um periférico que permite jogar cartuchos de Game Boy no console Super Nintendo Entertainment System, compatível com os mesmos cartuchos do Game Boy original: cartuchos originais do Game Boy, Game Boy Camera e cartuchos do Game Boy Color com dois modos (no modo Game Boy).
+
+O dispositivo podia mapear quatro tons de verde para diferentes cores na tela. Jogos posteriores do Game Boy que foram otimizados para usar o Super Game Boy continham informações adicionais sobre cores e podiam substituir as cores da tela, exibir uma moldura gráfica ao redor da tela e imagens de fundo especiais. Esses jogos tinham um pequeno logotipo "Super Game Boy Game Pak" impresso na caixa e no cartucho. O adaptador podia suportar até 64 cores de moldura e 12 cores de tela. Telas estáticas podiam exibir todas as 10 cores. Em alguns jogos, várias molduras podiam ser carregadas, dependendo da posição do jogador no jogo.
+
+Em jogos para Super Game Boy, também era possível usar o hardware do Super NES para obter efeitos adicionais: esses jogos tinham som expandido quando usados com o Super Game Boy. Alguns títulos até permitiam o uso de um segundo controle do Super NES para jogos de dois jogadores; usando o Super Multitap, alguns jogos até suportavam quatro jogadores.</text>
+      <text lang="ru">(яп. スーパーゲームボーイ Sūpā Gēmu Bōi) является 16-битным картриджем-адаптером для игровой консоли Super Nintendo Entertainment System, в Японии также известной как Super Famicom. Super Game Boy позволяет запускать картриджи с играми для портативной консоли Game Boy на экране телевизора, используя в качестве игрового контроллера геймпад от SNES/Super Famicom. На момент выпуска в США Super Game Boy стоил $59.99. В Великобритании он продавался по цене £49.99. Super Game Boy является предшественником устройства Game Boy Player для консоли Nintendo GameCube, которое работало по схожей схеме.
 
 Super Game Boy был совместим с картриджами для оригинального монохромного Game Boy и картриджами для Game Boy Color, если они поддерживали игру в чёрно-белом режиме. Он мог отображать только четыре оттенка зелёного цвета. Игры для Game Boy, вышедшие после Super Game Boy, были оптимизированы для игры с ним и содержали в своём коде добавочную информацию, позволявшую менять цвета на экране, отображать на экране телевизора специальную рамку и даже воспроизводить скрытые ранее спрайты, которые были, например, на загрузочном экране Mario's Picross. Такие игры содержали специальный логотип «Super Game Boy Game Pak» на коробке и на самом картридже. Всего этот адаптер поддерживал 64 цвета рамки и 12 цветов экрана. Статические изображения Super Game Boy мог воспроизводить в 10 цветах.</text>
-			<text lang="es">La Super Game Boy (スーパーゲームボーイ, Sūpā Gēmu Bōi) es un periférico que permite jugar con cartuchos de Game Boy en una consola Super Nintendo Entertainment System, compatible con los mismos cartuchos que la Game Boy original: cartuchos de Game Boy original, la Game Boy Camera y cartuchos de Game Boy Color de modo dual (en modo Game Boy).
+      <text lang="es">La Super Game Boy (スーパーゲームボーイ, Sūpā Gēmu Bōi) es un periférico que permite jugar con cartuchos de Game Boy en una consola Super Nintendo Entertainment System, compatible con los mismos cartuchos que la Game Boy original: cartuchos de Game Boy original, la Game Boy Camera y cartuchos de Game Boy Color de modo dual (en modo Game Boy).
 
 La unidad podía asignar los cuatro tonos de verde a varios colores en la pantalla. Los juegos posteriores de Game Boy que se optimizaron para usar la Super Game Boy tenían información de color adicional y podían anular los colores en pantalla, mostrar un borde gráfico alrededor de la pantalla y mostrar sprites de fondo especiales. Estos juegos llevaban impreso un pequeño logotipo "cartucho de Super Game Boy" en la caja y el cartucho. El adaptador admitía hasta 64 colores para el borde y 12 para la pantalla. Las pantallas estáticas podían mostrar los 10 colores. Algunos juegos podían cargar varios bordes en función de la posición del jugador en el juego.
 
 También es posible que los juegos de Super Game Boy hagan uso del hardware de Super NES para conseguir efectos extra: estos juegos tenían sonido expandido cuando se usaban con la Super Game Boy. Algunos títulos incluso permitían usar el segundo mando de Super NES para la acción de dos jugadores; usando el Super Multitap, algunos juegos incluso admitían cuatro jugadores.</text>
-			<text lang="de">Der Super Game Boy (スーパーゲームボーイ, Sūpā Gēmu Bōi) ist ein Peripheriegerät, das es ermöglicht, Game Boy-Kassetten auf einer Super Nintendo Entertainment System-Konsole abzuspielen, und das mit denselben Kassetten wie der ursprüngliche Game Boy kompatibel ist: Original Game Boy-Kassetten, die Game Boy Camera und Dual-Mode Game Boy Color-Kassetten (im Game Boy-Modus).
+      <text lang="de">Der Super Game Boy (スーパーゲームボーイ, Sūpā Gēmu Bōi) ist ein Peripheriegerät, das es ermöglicht, Game Boy-Kassetten auf einer Super Nintendo Entertainment System-Konsole abzuspielen, und das mit denselben Kassetten wie der ursprüngliche Game Boy kompatibel ist: Original Game Boy-Kassetten, die Game Boy Camera und Dual-Mode Game Boy Color-Kassetten (im Game Boy-Modus).
 
 Das Gerät konnte die vier Grüntöne verschiedenen Farben auf dem Bildschirm zuordnen. Spätere Game Boy-Spiele, die für die Verwendung mit dem Super Game Boy optimiert waren, verfügten über zusätzliche Farbinformationen und konnten die Farben auf dem Bildschirm überschreiben, einen grafischen Rahmen um den Bildschirm anzeigen und spezielle Hintergrund-Sprites darstellen. Bei diesen Spielen wurde ein kleines "Super Game Boy Game Pak"-Logo auf die Schachtel und die Kassette gedruckt. Der Adapter konnte bis zu 64 Farben für den Rand und 12 Farben für den Bildschirm unterstützen. Statische Bildschirme konnten alle 10 Farben anzeigen. Bestimmte Spiele können mehrere Rahmen laden, je nachdem, wo sich der Spieler im Spiel befindet.
 
 Es ist auch möglich, dass Super Game Boy-Spiele die Super NES-Hardware für zusätzliche Effekte nutzen: Diese Spiele hatten einen erweiterten Sound, wenn sie mit dem Super Game Boy verwendet wurden. Bei einigen Titeln konnte sogar der zweite Super NES-Controller für Zwei-Spieler-Action verwendet werden; bei Verwendung des Super Multitap unterstützten einige Spiele sogar vier Spieler.</text>
-			<text lang="fr">Le Super Game Boy (スーパーゲームボーイ, Sūpā Gēmu Bōi) est un périphérique qui permet de lire les cartouches Game Boy sur une console Super Nintendo Entertainment System, compatible avec les mêmes cartouches que la Game Boy originale : cartouches Game Boy originales, Game Boy Camera, et cartouches Game Boy Color bi-mode (en mode Game Boy).
+      <text lang="fr">Le Super Game Boy (スーパーゲームボーイ, Sūpā Gēmu Bōi) est un périphérique qui permet de lire les cartouches Game Boy sur une console Super Nintendo Entertainment System, compatible avec les mêmes cartouches que la Game Boy originale : cartouches Game Boy originales, Game Boy Camera, et cartouches Game Boy Color bi-mode (en mode Game Boy).
 
 L'appareil pouvait associer les quatre nuances de vert à différentes couleurs sur l'écran. Les jeux Game Boy ultérieurs optimisés pour le Super Game Boy disposaient d'informations supplémentaires sur les couleurs et pouvaient remplacer les couleurs à l'écran, afficher une bordure graphique autour de l'écran et des sprites d'arrière-plan spéciaux. Ces jeux comportaient un petit logo "Super Game Boy Game Pak" sur la boîte et la cartouche. L'adaptateur pouvait prendre en charge jusqu'à 64 couleurs pour la bordure et 12 couleurs pour l'écran. Les écrans statiques pouvaient afficher les 10 couleurs. Certains jeux peuvent charger plusieurs bordures en fonction de la position du joueur dans le jeu.
 
 Il est également possible pour les jeux Super Game Boy d'utiliser le matériel Super NES pour des effets supplémentaires : ces jeux avaient un son étendu lorsqu'ils étaient utilisés avec le Super Game Boy. Certains titres permettaient même d'utiliser la deuxième manette de la Super NES pour jouer à deux ; en utilisant la Super Multitap, certains jeux permettaient même de jouer à quatre.</text>
-			<text lang="it">Il Super Game Boy (スーパーゲームボーイ, Sūpā Gēmu Bōi) è una periferica che consente di giocare con le cartucce Game Boy su una console Super Nintendo Entertainment System, compatibile con le stesse cartucce del Game Boy originale: cartucce Game Boy, Game Boy Camera e cartucce Game Boy Color dual-mode (in modalità Game Boy).
+      <text lang="it">Il Super Game Boy (スーパーゲームボーイ, Sūpā Gēmu Bōi) è una periferica che consente di giocare con le cartucce Game Boy su una console Super Nintendo Entertainment System, compatibile con le stesse cartucce del Game Boy originale: cartucce Game Boy, Game Boy Camera e cartucce Game Boy Color dual-mode (in modalità Game Boy).
 
 L'unità poteva mappare le quattro tonalità di verde a vari colori sullo schermo. I giochi Game Boy successivi, ottimizzati per l'uso del Super Game Boy, disponevano di informazioni cromatiche aggiuntive e potevano sovrascrivere i colori sullo schermo, visualizzare un bordo grafico intorno allo schermo e visualizzare speciali sprite di sfondo. Questi giochi avrebbero stampato un piccolo logo "Super Game Boy Game Pak" sulla scatola e sulla cartuccia. L'adattatore poteva supportare fino a 64 colori per il bordo e 12 colori per lo schermo. Gli schermi statici potevano visualizzare tutti e 10 i colori. Alcuni giochi possono caricare più bordi a seconda della posizione del giocatore nel gioco.
 
 È anche possibile che i giochi per Super Game Boy utilizzino l'hardware del Super NES per ottenere effetti extra: questi giochi hanno un suono ampliato se utilizzati con il Super Game Boy. Alcuni titoli consentivano addirittura di utilizzare il secondo controller del Super NES per l'azione a due giocatori; utilizzando il Super Multitap, alcuni giochi supportavano addirittura quattro giocatori.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

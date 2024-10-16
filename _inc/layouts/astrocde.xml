@@ -1,81 +1,86 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
-			<origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
-			<pos>0.4815 0.402</pos>
-			<maxSize>0.22</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.2015 0.402" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
-			<origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
-			<pos>0.4815 0.402</pos>
-			<maxSize>0.215</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.2015 0.402" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1978</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Bally</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Astrocade</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Bally Astrocade (also known as Bally Arcade or initially as Bally ABA-1000) is a second-generation home video game console and simple computer system designed by a team at Midway, at that time the videogame division of Bally.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
+      <origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
+      <pos>0.4815 0.402</pos>
+      <maxSize>0.22</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.2015 0.402" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
+      <origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
+      <pos>0.4815 0.402</pos>
+      <maxSize>0.215</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.2015 0.402" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1978</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Bally</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Astrocade</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Bally Astrocade (also known as Bally Arcade or initially as Bally ABA-1000) is a second-generation home video game console and simple computer system designed by a team at Midway, at that time the videogame division of Bally.
 It was originally announced as the "Bally Home Library Computer" in October 1977 and initially made available for mail order in December 1977. But due to production delays, the units were first released to stores in April 1978 and its branding changed to "Bally Professional Arcade".
 
 It was marketed only for a limited time before Bally decided to exit the market. The rights were later picked up by a third-party company, who re-released it and sold it until around 1984. The Astrocade is particularly notable for its very powerful graphics capabilities for the time of release and for the difficulty in accessing those capabilities.</text>
-			<text lang="pl">Bally Astrocade (znany również jako Bally Arcade lub początkowo jako Bally ABA-1000) to domowa konsola gier wideo drugiej generacji i prosty system komputerowy zaprojektowany przez zespół w Midway, w tym czasie dział gier wideo firmy Bally.
+      <text lang="pl">Bally Astrocade (znany również jako Bally Arcade lub początkowo jako Bally ABA-1000) to domowa konsola gier wideo drugiej generacji i prosty system komputerowy zaprojektowany przez zespół w Midway, w tym czasie dział gier wideo firmy Bally.
 Został on pierwotnie ogłoszony jako "Bally Home Library Computer" w październiku 1977 roku i początkowo udostępniony do sprzedaży wysyłkowej w grudniu 1977 roku. Jednak z powodu opóźnień w produkcji, urządzenia trafiły do sklepów w kwietniu 1978 roku, a ich oznaczenie zmieniono na "Bally Professional Arcade".
 
 Była ona sprzedawana tylko przez ograniczony czas, zanim firma Bally postanowiła wycofać się z rynku. Prawa zostały później przejęte przez firmę zewnętrzną, która ponownie wypuściła je na rynek i sprzedawała do około 1984 roku. Astrocade jest szczególnie godny uwagi ze względu na bardzo potężne możliwości graficzne jak na czas wydania i trudności w dostępie do tych możliwości.</text>
-			<text lang="ru">Игровая приставка и простая компьютерная система, созданная Midway, игровым подразделением Bally Technologies. Она продавалась очень ограниченное время, пока Bally не решила уйти с рынка. Похоже права перешли сторонней компании,которая перевыпустила её и продавала примерно до 1983 года. Astrocade примечательна своими мощными графическими возможностями и трудностями в доступе к ним.
+      <text lang="pt">Bally Astrocade (também conhecido como Bally Arcade ou inicialmente como Bally ABA-1000) é um console de videogame doméstico de segunda geração e um sistema computacional simples projetado por uma equipe na Midway, na época a divisão de videogames da Bally.
+
+Ele foi inicialmente anunciado como "Bally Home Library Computer" em outubro de 1977 e inicialmente disponibilizado para venda por correspondência em dezembro de 1977. No entanto, devido a atrasos na produção, os dispositivos chegaram às lojas em abril de 1978 e sua designação foi alterada para "Bally Professional Arcade".
+
+Ele foi vendido por um período limitado, antes que a Bally decidisse sair do mercado. Os direitos foram posteriormente adquiridos por uma empresa externa, que os relançou e os vendeu até cerca de 1984. O Astrocade é especialmente notável por seus recursos gráficos muito poderosos para a época de seu lançamento e pela dificuldade de acessar esses recursos.</text>
+      <text lang="ru">Игровая приставка и простая компьютерная система, созданная Midway, игровым подразделением Bally Technologies. Она продавалась очень ограниченное время, пока Bally не решила уйти с рынка. Похоже права перешли сторонней компании,которая перевыпустила её и продавала примерно до 1983 года. Astrocade примечательна своими мощными графическими возможностями и трудностями в доступе к ним.
 
 Первоначально названная как Bally Home Library Computer, приставка была выпущена в 1977 году, но была доступна только при заказе через почту. Из-за задержек производства фактически ни один экземпляр не был отгружен до 1978 года, в то же время приставка была переименована в Bally Professional Arcade. В таком виде она продавалась в основном в компьютерных магазинах и изредка в розницу (в отличие от Atari VCS). В 1979 году Bally стала менее заинтересована в рыночной нише аркадных игр и продала свой отдел по потребительским продажам вместе с правами на разработку и производство приставки.
 
 В то же время другая компания безуспешно пыталась вывести на рынок консоль Astrovision. Корпоративный покупатель от Montgomery Ward, заплативший за покупку, свел 2 группы вместе, и сделка состоялась. В 1981 году они перевыпустили приставку с картриджем BASIC в комплекте; приставка тогда была известна как Bally Computer System, в 1982 году название опять сменилось на Astrocade. Она продавалась под этим названием вплоть до консольного кризиса 1983 года и ушла с рынка примерно в 1985 году.</text>
-			<text lang="es">La Bally Astrocade (también conocida como Bally Arcade o inicialmente como Bally ABA-1000) es una videoconsola doméstica de segunda generación y un sencillo sistema informático diseñado por un equipo de Midway, en aquel momento la división de videojuegos de Bally.
+      <text lang="es">La Bally Astrocade (también conocida como Bally Arcade o inicialmente como Bally ABA-1000) es una videoconsola doméstica de segunda generación y un sencillo sistema informático diseñado por un equipo de Midway, en aquel momento la división de videojuegos de Bally.
 Se anunció originalmente como "Bally Home Library Computer" en octubre de 1977 y se puso inicialmente a la venta por correo en diciembre de 1977. Pero debido a retrasos en la producción, las unidades se pusieron a la venta por primera vez en las tiendas en abril de 1978 y su marca cambió a "Bally Professional Arcade".
 
 Sólo se comercializó durante un tiempo limitado antes de que Bally decidiera abandonar el mercado. Posteriormente, los derechos fueron adquiridos por una tercera empresa, que volvió a comercializarla y venderla hasta 1984 aproximadamente. El Astrocade destaca especialmente por sus capacidades gráficas muy potentes para la época de su lanzamiento y por la dificultad para acceder a esas capacidades.</text>
-			<text lang="de">Der Bally Astrocade (auch bekannt als Bally Arcade oder ursprünglich als Bally ABA-1000) ist eine Videospielkonsole der zweiten Generation für den Heimgebrauch und ein einfaches Computersystem, das von einem Team bei Midway, der damaligen Videospielabteilung von Bally, entwickelt wurde.
+      <text lang="de">Der Bally Astrocade (auch bekannt als Bally Arcade oder ursprünglich als Bally ABA-1000) ist eine Videospielkonsole der zweiten Generation für den Heimgebrauch und ein einfaches Computersystem, das von einem Team bei Midway, der damaligen Videospielabteilung von Bally, entwickelt wurde.
 Ursprünglich wurde es im Oktober 1977 als "Bally Home Library Computer" angekündigt und war ab Dezember 1977 im Versandhandel erhältlich. Aufgrund von Produktionsverzögerungen wurden die Geräte jedoch erst im April 1978 in die Läden gebracht und der Markenname in "Bally Professional Arcade" geändert.
 
 Das Gerät wurde nur für eine begrenzte Zeit vermarktet, bevor Bally beschloss, sich aus dem Markt zurückzuziehen. Die Rechte wurden später von einer Drittfirma übernommen, die das Gerät wieder auf den Markt brachte und bis etwa 1984 verkaufte. Das Astrocade zeichnet sich besonders durch seine für die damalige Zeit sehr leistungsfähigen Grafikfunktionen und die Schwierigkeit aus, auf diese Funktionen zuzugreifen.</text>
-			<text lang="fr">L'Astrocade de Bally (également connu sous le nom de Bally Arcade ou initialement sous le nom de Bally ABA-1000) est une console de jeux vidéo domestique de deuxième génération et un système informatique simple conçu par une équipe de Midway, à l'époque la division jeux vidéo de Bally.
+      <text lang="fr">L'Astrocade de Bally (également connu sous le nom de Bally Arcade ou initialement sous le nom de Bally ABA-1000) est une console de jeux vidéo domestique de deuxième génération et un système informatique simple conçu par une équipe de Midway, à l'époque la division jeux vidéo de Bally.
 Elle a été initialement annoncée sous le nom de "Bally Home Library Computer" en octobre 1977 et mise en vente par correspondance en décembre 1977. Mais en raison de retards de production, les unités ont été commercialisées pour la première fois en avril 1978 et leur marque a été modifiée pour devenir "Bally Professional Arcade".
 
 Il n'a été commercialisé que pendant une période limitée avant que Bally ne décide de se retirer du marché. Les droits ont ensuite été repris par une société tierce, qui l'a réédité et vendu jusqu'en 1984 environ. L'Astrocade est particulièrement remarquable pour ses capacités graphiques très puissantes pour l'époque de sa sortie et pour la difficulté d'accès à ces capacités.</text>
-			<text lang="it">Il Bally Astrocade (noto anche come Bally Arcade o inizialmente come Bally ABA-1000) è una console per videogiochi domestici di seconda generazione e un semplice sistema informatico progettato da un team di Midway, all'epoca la divisione videogiochi di Bally.
+      <text lang="it">Il Bally Astrocade (noto anche come Bally Arcade o inizialmente come Bally ABA-1000) è una console per videogiochi domestici di seconda generazione e un semplice sistema informatico progettato da un team di Midway, all'epoca la divisione videogiochi di Bally.
 Fu annunciata originariamente come "Bally Home Library Computer" nell'ottobre 1977 e resa disponibile per la vendita per corrispondenza nel dicembre 1977. Ma a causa di ritardi nella produzione, le unità furono distribuite per la prima volta nei negozi nell'aprile del 1978 e il marchio fu cambiato in "Bally Professional Arcade".
 
 Fu commercializzato solo per un periodo limitato prima che Bally decidesse di uscire dal mercato. I diritti vennero poi acquisiti da un'azienda terza, che lo ripubblicò e lo vendette fino al 1984 circa. L'Astrocade è particolarmente degno di nota per le sue capacità grafiche molto potenti per l'epoca di uscita e per la difficoltà di accesso a tali capacità.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

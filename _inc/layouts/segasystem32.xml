@@ -1,169 +1,172 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.3 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.26 0.36</pos>
-			<minSize>0.1 0.2</minSize>
-			<rotation>8</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="-0.02 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.7 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.54 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.74 0.36</pos>
-			<minSize>0.1 0.2</minSize>
-			<rotation>-8</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.46 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<pos>0.5 0.363</pos>
-			<maxSize>0.15</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-left" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.36 0.37</pos>
-			<maxSize>0.14</maxSize>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.08 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-right" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.638 0.37</pos>
-			<maxSize>0.14</maxSize>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.358 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<pos>0.5 0.363</pos>
-			<maxSize>0.14</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}-right.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.655 0.37</pos>
-			<maxSize>0.13</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.375 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox3" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}-left.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.345 0.37</pos>
-			<maxSize>0.13</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.065 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1990</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Sega</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>System 32</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>Sega System 32 is the name of an arcade platform released by Sega that debuted in 1990. It was a successor to the Sega System 16, Sega System 24 and Sega Y Boards, and contains a 32-bit RISC processor at 16 MHz, hence its name.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-left" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.3 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.26 0.36</pos>
+      <minSize>0.1 0.2</minSize>
+      <rotation>8</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="-0.02 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-right" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.7 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.54 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.74 0.36</pos>
+      <minSize>0.1 0.2</minSize>
+      <rotation>-8</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.46 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <pos>0.5 0.363</pos>
+      <maxSize>0.15</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-left" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.36 0.37</pos>
+      <maxSize>0.14</maxSize>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.08 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-right" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.638 0.37</pos>
+      <maxSize>0.14</maxSize>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.358 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <pos>0.5 0.363</pos>
+      <maxSize>0.14</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}-right.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.655 0.37</pos>
+      <maxSize>0.13</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.375 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox3" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}-left.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.345 0.37</pos>
+      <maxSize>0.13</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.065 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1990</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Sega</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>System 32</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>Sega System 32 is the name of an arcade platform released by Sega that debuted in 1990. It was a successor to the Sega System 16, Sega System 24 and Sega Y Boards, and contains a 32-bit RISC processor at 16 MHz, hence its name.
 
 It was the last board to be released under the "Sega System" naming scheme, and was the last of the Sega System and Super Scaler series of arcade hardware – the "Sega Model" series would begin in 1992 with the Sega Model 1. Whereas Model 1 hardware was designed specifically with 3D polygon games in mind, System 32 primarily catered for sprite-based games, including 2D games and 3D sprite-scaling games. Like the Sega X Board and Sega Y Board, it is capable of scaling and rotating many sprites/textures in real-time, resulting in graphics ranging from a "pseudo-3D" look to a 3D texture-mapped look.</text>
-			<text lang="pl">Sega System 32 to nazwa platformy arcade wydanej przez firmę Sega, która zadebiutowała w 1990 roku. Była to następczyni kart Sega System 16, Sega System 24 i Sega Y. Zawierała 32-bitowy procesor RISC o częstotliwości 16 MHz, stąd jej nazwa.
+      <text lang="pl">Sega System 32 to nazwa platformy arcade wydanej przez firmę Sega, która zadebiutowała w 1990 roku. Była to następczyni kart Sega System 16, Sega System 24 i Sega Y. Zawierała 32-bitowy procesor RISC o częstotliwości 16 MHz, stąd jej nazwa.
 
 Była to ostatnia płyta wydana w schemacie nazewnictwa "Sega System" i ostatnia z serii Sega System i Super Scaler - seria "Sega Model" rozpoczęła się w 1992 roku wraz z Sega Model 1. Podczas gdy sprzęt Model 1 został zaprojektowany specjalnie z myślą o grach 3D z wielokątami, System 32 był przeznaczony głównie do gier opartych na sprite'ach, w tym gier 2D i 3D ze skalowaniem sprite'ów. Podobnie jak Sega X Board i Sega Y Board, umożliwia on skalowanie i obracanie wielu sprite'ów/tekstur w czasie rzeczywistym, co daje efekt graficzny od "pseudo-3D" po trójwymiarowe mapowanie tekstur.</text>
-			<text lang="ru">Последняя плата, выпущенная под схемой наименования «Sega System», и последняя из серии аркадного оборудования Sega System и Super Scaler — серия «Sega Model» началась в 1992 году с Sega Model 1. Принимая во внимание, что Аппаратное обеспечение Model 1 было разработано специально для трехмерных полигональных игр, System 32 в первую очередь предназначалась для игр на основе спрайтов, включая 2D-игры и игры с масштабированием 3D-спрайтов. 
+      <text lang="pt">Sega System 32 é o nome de uma plataforma de arcade lançada pela Sega em 1990. Era a sucessora das placas Sega System 16, Sega System 24 e Sega Y. Incluía um processador RISC de 32 bits com frequência de 16 MHz, daí seu nome.
+
+Foi a última placa lançada com o esquema de nomenclatura "Sega System" e a última da série Sega System e Super Scaler - a série "Sega Model" começou em 1992 com o Sega Model 1. Enquanto o hardware do Model 1 foi projetado especificamente para jogos 3D com polígonos, o System 32 era destinado principalmente para jogos baseados em sprites, incluindo jogos 2D e 3D com escala de sprites. Da mesma forma que o Sega X Board e o Sega Y Board, ele permite a escala e a rotação de vários sprites/texturas em tempo real, proporcionando um efeito gráfico que varia de "pseudo-3D" a mapeamento de textura tridimensional.</text>
+      <text lang="ru">Последняя плата, выпущенная под схемой наименования «Sega System», и последняя из серии аркадного оборудования Sega System и Super Scaler — серия «Sega Model» началась в 1992 году с Sega Model 1. Принимая во внимание, что Аппаратное обеспечение Model 1 было разработано специально для трехмерных полигональных игр, System 32 в первую очередь предназначалась для игр на основе спрайтов, включая 2D-игры и игры с масштабированием 3D-спрайтов. 
 Как и Sega X Board и Sega Y Board, он способен масштабировать и вращать множество спрайтов / текстур в режиме реального времени, в результате чего графика выглядит в диапазоне от «псевдо-3D» до вида с 3D-наложением текстур.</text>
-			<text lang="es">Sega System 32 es el nombre de una plataforma arcade lanzada por Sega que debutó en 1990. Fue sucesora de Sega System 16, Sega System 24 y Sega Y Boards, y contiene un procesador RISC de 32 bits a 16 MHz, de ahí su nombre.
+      <text lang="es">Sega System 32 es el nombre de una plataforma arcade lanzada por Sega que debutó en 1990. Fue sucesora de Sega System 16, Sega System 24 y Sega Y Boards, y contiene un procesador RISC de 32 bits a 16 MHz, de ahí su nombre.
 
 Fue la última placa que se lanzó bajo el esquema de nomenclatura "Sega System", y fue la última de las series Sega System y Super Scaler de hardware arcade - la serie "Sega Model" comenzaría en 1992 con la Sega Model 1. Mientras que el Model 1 se diseñó específicamente para juegos poligonales en 3D, el System 32 se centró principalmente en juegos basados en sprites, tanto en 2D como en 3D. Al igual que la Sega X Board y la Sega Y Board, es capaz de escalar y rotar muchos sprites/texturas en tiempo real, lo que da como resultado gráficos que van desde un aspecto "pseudo-3D" a un aspecto de mapa de texturas 3D.</text>
-			<text lang="de">Sega System 32 ist der Name einer Spielhallenplattform von Sega, die 1990 auf den Markt kam. Es war ein Nachfolger des Sega System 16, Sega System 24 und Sega Y Boards und enthält einen 32-Bit-RISC-Prozessor mit 16 MHz, daher der Name.
+      <text lang="de">Sega System 32 ist der Name einer Spielhallenplattform von Sega, die 1990 auf den Markt kam. Es war ein Nachfolger des Sega System 16, Sega System 24 und Sega Y Boards und enthält einen 32-Bit-RISC-Prozessor mit 16 MHz, daher der Name.
 
 Es war das letzte Board, das unter dem Namen "Sega System" veröffentlicht wurde, und das letzte der Sega System- und Super Scaler-Serie von Arcade-Hardware - die "Sega Model"-Serie begann 1992 mit dem Sega Model 1. Während die Model 1-Hardware speziell für 3D-Polygon-Spiele entwickelt wurde, war das System 32 in erster Linie für Sprite-basierte Spiele gedacht, einschließlich 2D-Spiele und 3D-Sprite-Scaler-Spiele. Wie das Sega X Board und das Sega Y Board ist es in der Lage, viele Sprites/Texturen in Echtzeit zu skalieren und zu drehen, was zu Grafiken führt, die von einem "Pseudo-3D"-Look bis zu einem 3D-Textur-Mapping-Look reichen.</text>
-			<text lang="fr">Le Sega System 32 est le nom d'une plate-forme d'arcade commercialisée par Sega et lancée en 1990. Elle succède aux Sega System 16, Sega System 24 et Sega Y Boards, et contient un processeur RISC 32 bits à 16 MHz, d'où son nom.
+      <text lang="fr">Le Sega System 32 est le nom d'une plate-forme d'arcade commercialisée par Sega et lancée en 1990. Elle succède aux Sega System 16, Sega System 24 et Sega Y Boards, et contient un processeur RISC 32 bits à 16 MHz, d'où son nom.
 
 C'est la dernière carte à avoir été commercialisée sous le nom de "Sega System", et la dernière des séries de matériel d'arcade Sega System et Super Scaler - la série "Sega Model" débutera en 1992 avec le Sega Model 1. Alors que le matériel du modèle 1 était conçu spécifiquement pour les jeux de polygones en 3D, le système 32 était principalement destiné aux jeux à base de sprites, y compris les jeux en 2D et les jeux à mise à l'échelle de sprites en 3D. Comme la Sega X Board et la Sega Y Board, il est capable de mettre à l'échelle et de faire pivoter de nombreux sprites/textures en temps réel, ce qui permet d'obtenir des graphismes allant d'un aspect "pseudo-3D" à un aspect 3D à texture mappée.</text>
-			<text lang="it">Sega System 32 è il nome di una piattaforma arcade rilasciata da Sega che ha debuttato nel 1990. Era il successore di Sega System 16, Sega System 24 e Sega Y Boards e contiene un processore RISC a 32 bit a 16 MHz, da cui il nome.
+      <text lang="it">Sega System 32 è il nome di una piattaforma arcade rilasciata da Sega che ha debuttato nel 1990. Era il successore di Sega System 16, Sega System 24 e Sega Y Boards e contiene un processore RISC a 32 bit a 16 MHz, da cui il nome.
 
 Fu l'ultima scheda a essere rilasciata con lo schema di denominazione "Sega System" e fu l'ultima della serie di hardware arcade Sega System e Super Scaler - la serie "Sega Model" inizierà nel 1992 con il Sega Model 1. Mentre l'hardware del Model 1 era stato progettato specificamente per i giochi poligonali in 3D, il System 32 si rivolgeva principalmente ai giochi basati sugli sprite, compresi quelli in 2D e quelli con scalatura degli sprite in 3D. Come la Sega X Board e la Sega Y Board, è in grado di scalare e ruotare molti sprite/texture in tempo reale, ottenendo una grafica che va da un aspetto "pseudo-3D" a un aspetto 3D texture-mapped.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

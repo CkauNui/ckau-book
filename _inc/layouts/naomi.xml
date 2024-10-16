@@ -1,174 +1,181 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.35 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
-			<pos>0.29 0.36</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>19</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.01 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.65 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.54 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.9 0.5</origin>
-			<pos>0.712 0.36</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>-19</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.432 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<pos>0.50 0.365</pos>
-			<maxSize>0.185</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.365" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-left" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.27</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
-			<origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>
-			<pos>0.3854 0.395</pos>
-			<maxSize>0.165</maxSize>
-			<rotation>-71</rotation>
-			<storyboard>
-				<animation property="pos" to="0.1054 0.395" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-right" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.39</origin>
-			<origin if="${screen.ratio} == '21/9'">0.85 0.5</origin>
-			<pos>0.6139 0.385</pos>
-			<maxSize>0.165</maxSize>
-			<rotation>71</rotation>
-			<storyboard>
-				<animation property="pos" to="0.3339 0.385" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<pos>0.50 0.365</pos>
-			<maxSize>0.165</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.365" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.18</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">0.85 0.5</origin>
-			<pos>0.635 0.378</pos>
-			<maxSize>0.165</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.355 0.378" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox3" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.18</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>
-			<pos>0.365 0.378</pos>
-			<maxSize>0.16</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.085 0.378" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1998</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Sega</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Naomi</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The NAOMI (New Arcade Operation Machine Idea) is an arcade system released by Sega in 1998. It was designed as a successor to Sega Model 3 hardware, using a similar architecture to the Sega Dreamcast.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-left" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.35 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
+      <pos>0.29 0.36</pos>
+      <minSize>0.1 0.3</minSize>
+      <rotation>19</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.01 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-right" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.65 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.54 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0.9 0.5</origin>
+      <pos>0.712 0.36</pos>
+      <minSize>0.1 0.3</minSize>
+      <rotation>-19</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.432 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <pos>0.50 0.365</pos>
+      <maxSize>0.185</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.365" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-left" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.27</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
+      <origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>
+      <pos>0.3854 0.395</pos>
+      <maxSize>0.165</maxSize>
+      <rotation>-71</rotation>
+      <storyboard>
+        <animation property="pos" to="0.1054 0.395" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-right" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.39</origin>
+      <origin if="${screen.ratio} == '21/9'">0.85 0.5</origin>
+      <pos>0.6139 0.385</pos>
+      <maxSize>0.165</maxSize>
+      <rotation>71</rotation>
+      <storyboard>
+        <animation property="pos" to="0.3339 0.385" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <pos>0.50 0.365</pos>
+      <maxSize>0.165</maxSize>
+      <zIndex>26</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.365" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.18</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">0.85 0.5</origin>
+      <pos>0.635 0.378</pos>
+      <maxSize>0.165</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.355 0.378" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox3" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.18</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>
+      <pos>0.365 0.378</pos>
+      <maxSize>0.16</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.085 0.378" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1998</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Sega</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Naomi</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The NAOMI (New Arcade Operation Machine Idea) is an arcade system released by Sega in 1998. It was designed as a successor to Sega Model 3 hardware, using a similar architecture to the Sega Dreamcast.
 
 The NAOMI was succeeded by the Sega Hikaru and Sega NAOMI 2 boards, though having out-lasted the NAOMI 2, Hikaru and Sega Aurora. The Sega Chihiro, or possibly even the Sega Lindbergh, could also be seen as successors.</text>
-			<text lang="pl">Sega NAOMI (New Arcade Operation Machine Idea) to system arcade oparty na technologii z konsoli Sega Dreamcast. Pierwszy sprzęt Naomi został wprowadzony przez firmę JAMMA w 1998 roku jako następca sprzętu Sega Model 3. Dzięki zastosowaniu gotowych komponentów, koszty produkcji zostały znacznie zredukowane w porównaniu z innymi systemami.
+      <text lang="pl">Sega NAOMI (New Arcade Operation Machine Idea) to system arcade oparty na technologii z konsoli Sega Dreamcast. Pierwszy sprzęt Naomi został wprowadzony przez firmę JAMMA w 1998 roku jako następca sprzętu Sega Model 3. Dzięki zastosowaniu gotowych komponentów, koszty produkcji zostały znacznie zredukowane w porównaniu z innymi systemami.
 
 Mimo, że pierwszy sprzęt Naomi jest na rynku od wielu lat i z technicznego punktu widzenia wydaje się dość przestarzały, gry na ten system wciąż powstają. To czyni ten system najdłużej używanym systemem arcade wszech czasów, zaraz po Neo-Geo.
 
 W 2000 roku Sega wprowadziła następcę Naomi 2. Posiadał on ulepszoną jednostkę graficzną, ale podstawowa architektura systemu pozostała taka sama, dzięki czemu moduły z oryginalnego Naomi mogły być używane na nowym sprzęcie bez modyfikacji.
 
 Wraz z pojawieniem się Naomi 2 wprowadzono również napędy GD-ROM dla platform arcade. Zarówno dla Naomi 2, jak i jego poprzednika, napęd GD-ROM był oferowany jako opcjonalny dodatek. Napęd GD-ROM został dostarczony z modułem rozszerzającym znanym jako płyta DIMM. Zawierał on dodatkową pamięć, dzięki której można było załadować do RAM całą grę. Miało to na celu zrekompensowanie wolniejszego czasu ładowania dyskowych GD-ROM-ów w porównaniu do konwencjonalnych modułów. Dodatkowo, GD-ROM może być wyłączony po zakończeniu procesu ładowania, co powinno zmniejszyć zużycie.</text>
-			<text lang="ru">Аналог Sega Dreamcast, выполненный в виде игрового автомата. Впервые Sega NAOMI была продемонстрирована в 1998 на JAMMA, в качестве преемника Sega Model 3. Большой выпуск устройства способствовал его низкой стоимости.
+      <text lang="pt">Sega NAOMI (New Arcade Operation Machine Idea) é um sistema de fliperama baseado na tecnologia do console Sega Dreamcast. O primeiro hardware Naomi foi lançado pela JAMMA em 1998 como sucessor do Sega Model 3. Graças ao uso de componentes prontos, os custos de produção foram significativamente reduzidos em comparação com outros sistemas.
+
+Apesar de o primeiro hardware Naomi estar no mercado há muitos anos e, do ponto de vista técnico, parecer bastante desatualizado, os jogos para este sistema ainda estão sendo lançados. Isso torna este sistema o sistema de fliperama de maior duração de todos os tempos, logo após o Neo-Geo.
+
+Em 2000, a Sega lançou o sucessor, Naomi 2. Ele tinha uma unidade gráfica aprimorada, mas a arquitetura básica do sistema permaneceu a mesma, permitindo que os módulos do Naomi original fossem usados ​​no novo hardware sem modificações.
+
+Com o lançamento do Naomi 2, também foram introduzidos drives GD-ROM para plataformas de fliperama. Tanto para o Naomi 2 quanto para seu antecessor, o drive GD-ROM foi oferecido como um acessório opcional. O drive GD-ROM foi fornecido com um módulo de expansão conhecido como placa DIMM. Ele continha memória adicional que permitia carregar o jogo inteiro na RAM. Isso tinha como objetivo compensar o tempo de carregamento mais lento dos drives GD-ROM em disco em comparação com os módulos convencionais. Além disso, o GD-ROM pode ser desligado após a conclusão do processo de carregamento, o que deve reduzir o desgaste.</text>
+      <text lang="ru">Аналог Sega Dreamcast, выполненный в виде игрового автомата. Впервые Sega NAOMI была продемонстрирована в 1998 на JAMMA, в качестве преемника Sega Model 3. Большой выпуск устройства способствовал его низкой стоимости.
 
 NAOMI и Dreamcast использовали одну и ту же системную архитектуру, то есть оба работали на базе процессора Hitachi SH-4, видеочипа PowerVR Series 2 GPU (PVR2DC) и звукового чипа Yamaha AICA, но сам NAOMI имеет в 2 раза больше оперативной памяти и видеопамяти, а так же в 4 раза больше звуковой памяти, нежели Dreamcast. Тактовая частота обоих устройств одинакова, однако NAOMI могла быть выполнена в виде нескольких "сложенных" материнских плат, что позволяло значительно улучшить графическую конфигурацию, или подключить к системе несколько мониторов. Другие отличия между Dreamcast и NAOMI заключаются в игровых носителях. Наряду с GD-ROM использовались ROM-платы (ROM PC-board's), умещающие в себе 168 мегабайт информации.
 
 В отличие от других аркадных систем того времени, NAOMI являлась самой лицензированной платформой, что способствовало выпуску игрового программного обеспечения сторонними производителями. Примером могут служить игры Mazan и Guilty Gear XX.</text>
-			<text lang="es">El NAOMI (New Arcade Operation Machine Idea) es un sistema arcade lanzado por Sega en 1998. Fue diseñado como sucesor del hardware Sega Model 3, utilizando una arquitectura similar a la Sega Dreamcast.
+      <text lang="es">El NAOMI (New Arcade Operation Machine Idea) es un sistema arcade lanzado por Sega en 1998. Fue diseñado como sucesor del hardware Sega Model 3, utilizando una arquitectura similar a la Sega Dreamcast.
 
 La NAOMI fue sucedida por las placas Sega Hikaru y Sega NAOMI 2, aunque habiendo superado a la NAOMI 2, la Hikaru y la Sega Aurora. La Sega Chihiro, o posiblemente incluso la Sega Lindbergh, también podrían considerarse sucesoras.</text>
-			<text lang="de">Die NAOMI (New Arcade Operation Machine Idea) ist ein Spielhallensystem, das 1998 von Sega veröffentlicht wurde. Es wurde als Nachfolger der Sega Model 3-Hardware entwickelt und verwendet eine ähnliche Architektur wie der Sega Dreamcast.
+      <text lang="de">Die NAOMI (New Arcade Operation Machine Idea) ist ein Spielhallensystem, das 1998 von Sega veröffentlicht wurde. Es wurde als Nachfolger der Sega Model 3-Hardware entwickelt und verwendet eine ähnliche Architektur wie der Sega Dreamcast.
 
 Das NAOMI wurde von den Sega Hikaru und Sega NAOMI 2 Boards abgelöst, obwohl es das NAOMI 2, Hikaru und Sega Aurora überdauert hat. Der Sega Chihiro oder möglicherweise sogar der Sega Lindbergh könnten ebenfalls als Nachfolger angesehen werden.</text>
-			<text lang="fr">Le NAOMI (New Arcade Operation Machine Idea) est un système d'arcade commercialisé par Sega en 1998. Il a été conçu comme le successeur du matériel Sega Model 3, utilisant une architecture similaire à celle de la Sega Dreamcast.
+      <text lang="fr">Le NAOMI (New Arcade Operation Machine Idea) est un système d'arcade commercialisé par Sega en 1998. Il a été conçu comme le successeur du matériel Sega Model 3, utilisant une architecture similaire à celle de la Sega Dreamcast.
 
 La NAOMI a été remplacée par les cartes Sega Hikaru et Sega NAOMI 2, qui ont cependant survécu à la NAOMI 2, à la Hikaru et à la Sega Aurora. Le Sega Chihiro, ou peut-être même le Sega Lindbergh, pourraient également être considérés comme des successeurs.</text>
-			<text lang="it">Il NAOMI (New Arcade Operation Machine Idea) è un sistema arcade rilasciato da Sega nel 1998. È stato progettato come successore dell'hardware del Sega Model 3, utilizzando un'architettura simile a quella del Sega Dreamcast.
+      <text lang="it">Il NAOMI (New Arcade Operation Machine Idea) è un sistema arcade rilasciato da Sega nel 1998. È stato progettato come successore dell'hardware del Sega Model 3, utilizzando un'architettura simile a quella del Sega Dreamcast.
 
 Il NAOMI è stato succeduto dalle schede Sega Hikaru e Sega NAOMI 2, pur avendo superato il NAOMI 2, la Hikaru e il Sega Aurora. Anche il Sega Chihiro, e probabilmente anche il Sega Lindbergh, possono essere considerate dei successori.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

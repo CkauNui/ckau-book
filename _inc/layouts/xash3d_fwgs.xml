@@ -1,64 +1,66 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
-			<pos>0.4482 0.457</pos>
-			<maxSize>0.27</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.1682 0.457" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
-			<pos>0.4482 0.457</pos>
-			<maxSize>0.2475</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.168 0.457" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2019</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Xash3D FWGS</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>Xash3D FWGS is a fork of Xash3D Engine, compatible with GoldSrc engine.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
+      <pos>0.4482 0.457</pos>
+      <maxSize>0.27</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.1682 0.457" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
+      <pos>0.4482 0.457</pos>
+      <maxSize>0.2475</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.168 0.457" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2019</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Xash3D FWGS</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>Xash3D FWGS is a fork of Xash3D Engine, compatible with GoldSrc engine.
 Allows to play Half-Life out-of-the-box and other Half-Life based modifications, with many new features: high portability, advanced multiplayer, touchscreen &amp; gamepad support and much more.</text>
-			<text lang="pl">Xash3D FWGS to fork silnika Xash3D, kompatybilny z silnikiem GoldSrc.
+      <text lang="pl">Xash3D FWGS to fork silnika Xash3D, kompatybilny z silnikiem GoldSrc.
 Umożliwia grę w Half-Life out-of-the-box oraz inne modyfikacje bazujące na Half-Life, z wieloma nowymi funkcjami: możliwość gry bez instalacji, zaawansowany multiplayer, obsługa ekranów dotykowych, gamepadów i wiele więcej.</text>
-			<text lang="ru">Клон движка GoldSrc с поддержкой дополнительных возможностей и почти полностью с ним совместимый. Присутствует порт на Android и другие мобильные ОС (получил популярность после портирования на него игры Counter-Strike)
+      <text lang="pt">Xash3D FWGS é um fork do motor Xash3D, compatível com o motor GoldSrc. 
+Ele permite jogar Half-Life diretamente, além de outras modificações baseadas em Half-Life, com muitas novas funcionalidades: possibilidade de jogar sem instalação, multiplayer avançado, suporte para telas sensíveis ao toque, gamepads e muito mais.</text>
+      <text lang="ru">Клон движка GoldSrc с поддержкой дополнительных возможностей и почти полностью с ним совместимый. Присутствует порт на Android и другие мобильные ОС (получил популярность после портирования на него игры Counter-Strike)
 
 Xash3D написан на основе исходных кодов таких движков, как Quake engine, Id Tech 2, Id Tech 3 и DarkPlaces.
 
 Движок позволяет запускать большинство игр и модов на GoldSrc, но, в отличие от последнего, обладает существенными улучшениями.</text>
-			<text lang="es">Xash3D FWGS es un fork de Xash3D Engine, compatible con el motor GoldSrc.
+      <text lang="es">Xash3D FWGS es un fork de Xash3D Engine, compatible con el motor GoldSrc.
 Permite jugar a Half-Life out-of-the-box y otras modificaciones basadas en Half-Life, con muchas nuevas características: alta portabilidad, multijugador avanzado, pantalla táctil &amp; soporte para gamepad y mucho más.</text>
-			<text lang="de">Xash3D FWGS ist ein Fork der Xash3D Engine, kompatibel mit der GoldSrc Engine.
+      <text lang="de">Xash3D FWGS ist ein Fork der Xash3D Engine, kompatibel mit der GoldSrc Engine.
 Ermöglicht das Spielen von Half-Life out-of-the-box und anderen Half-Life-basierten Modifikationen, mit vielen neuen Funktionen: hohe Portabilität, erweiterte Multiplayer, Touchscreen &amp; Gamepad-Unterstützung und vieles mehr.</text>
-			<text lang="fr">Xash3D FWGS est un fork de Xash3D Engine, compatible avec le moteur GoldSrc.
+      <text lang="fr">Xash3D FWGS est un fork de Xash3D Engine, compatible avec le moteur GoldSrc.
 Il permet de jouer à Half-Life et à d'autres modifications basées sur Half-Life, avec de nombreuses nouvelles fonctionnalités : grande portabilité, multijoueur avancé, prise en charge des écrans tactiles et des manettes de jeu, et bien plus encore.</text>
-			<text lang="it">Xash3D FWGS è un fork di Xash3D Engine, compatibile con il motore GoldSrc.
+      <text lang="it">Xash3D FWGS è un fork di Xash3D Engine, compatibile con il motore GoldSrc.
 Permette di giocare ad Half-Life out-of-the-box e ad altre modifiche basate su Half-Life, con molte nuove caratteristiche: alta portabilità, multiplayer avanzato, supporto per touchscreen e gamepad e molto altro.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

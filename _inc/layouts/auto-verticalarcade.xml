@@ -1,166 +1,168 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.3 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.4 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>
-			<pos>0.29 0.36</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>26</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.01 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.7 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.6 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.85 0.5</origin>
-			<pos>0.71 0.36</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>-26</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.43 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.50 0.37</pos>
-			<maxSize>0.225</maxSize>
-			<rotation>90</rotation>
-			<storyboard>
-				<animation property="pos" to="0.22 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-left" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.375 0.398</pos>
-			<maxSize>0.135</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.175</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.15</maxSize>
-			<rotation>-64</rotation>
-			<storyboard>
-				<animation property="pos" to="0.095 0.398" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-right" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.626 0.395</pos>
-			<maxSize>0.135</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.175</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.15</maxSize>
-			<rotation>64</rotation>
-			<storyboard>
-				<animation property="pos" to="0.346 0.395" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/cave.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/cave.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.50 0.37</pos>
-			<maxSize>0.265</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/cave-right.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/cave-right.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.85 0.5</origin>
-			<pos>0.64 0.395</pos>
-			<maxSize>0.19</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.36 0.395" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox3" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/cave-left.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/cave-left.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>
-			<pos>0.360 0.395</pos>
-			<maxSize>0.19</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.080 0.395" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text/>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Collection</text>
-			<text lang="pl">Kolekcja</text>
-			<text lang="ru">Коллекция</text>
-			<text lang="es">Recopilación</text>
-			<text lang="fr">Collection</text>
-			<text lang="it">Collezione</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Arcade Vertical Games</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>An arcade game or coin-op game is a coin-operated entertainment machine typically installed in public businesses such as restaurants, bars and amusement arcades. Most arcade games are video games, pinball machines, electro-mechanical games, redemption games or merchandisers. While exact dates are debated, the golden age of arcade video games is usually defined as a period beginning sometime in the late 1970s and ending sometime in the mid-1980s. Excluding a brief resurgence in the early 1990s, the arcade industry subsequently declined in the Western hemisphere as competing home video game consoles such as the Sony PlayStation and Microsoft Xbox increased in their graphics and game-play capability and decreased in cost. The Eastern Hemisphere retains a strong arcade industry.</text>
-			<text lang="pl">Automat do gry – konstrukcja służąca rozrywce, umieszczana najczęściej w salonach gier bądź też pubach lub klubach. Uruchomienie gry następuje w momencie wrzucenia monety bądź żetonu w otwór wrzutowy, zabawa ograniczona jest zwykle pewnym wyznacznikiem narzuconym przez producenta lub właściciela automatu (np. liczba prób/żyć, przejście na wyższy poziom, zdobycie określonego celu w zadanym czasie, ukończenie gry). Zwykle automaty do gier wyposażone były w gałkę sterującą (dżojstik) i kilka klawiszy; stosowane były również nawet 4 takie zestawy, aby mogło grać jednocześnie do 4 osób na jednym automacie. Wykorzystywano także inne rozwiązania, jak pokrętło w Pongu, pistolety świetlne w strzelankach, kierownice w grach wyścigowych (niekiedy nawet całe kokpity samochodowe), maty do tańczenia czy dwie gałki w niektórych strzelankach, będących prekursorami twin stick shooterów, lub grach walki jak International Karate.</text>
-			<text lang="ru">Стойка с аппаратурой для запуска игр, обычно аркадного жанра, устанавливаемые в общественных местах, игровых залах и т.д. Многие известные компьютерные игры впервые появились на игровых автоматах и лишь спустя некоторое время были портированы на приставки и домашние компьютеры. С другой стороны, игровые автоматы иногда собираются на основе обычных компьютеров и игровых приставок.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-left" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.3 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.4 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>
+      <pos>0.29 0.36</pos>
+      <minSize>0.1 0.3</minSize>
+      <rotation>26</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.01 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-right" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.7 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.6 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0.85 0.5</origin>
+      <pos>0.71 0.36</pos>
+      <minSize>0.1 0.3</minSize>
+      <rotation>-26</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.43 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.50 0.37</pos>
+      <maxSize>0.225</maxSize>
+      <rotation>90</rotation>
+      <storyboard>
+        <animation property="pos" to="0.22 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-left" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+      <pos>0.375 0.398</pos>
+      <maxSize>0.135</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.175</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.15</maxSize>
+      <rotation>-64</rotation>
+      <storyboard>
+        <animation property="pos" to="0.095 0.398" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-right" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">1 0.5</origin>
+      <pos>0.626 0.395</pos>
+      <maxSize>0.135</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.175</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.15</maxSize>
+      <rotation>64</rotation>
+      <storyboard>
+        <animation property="pos" to="0.346 0.395" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/cave.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/cave.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.50 0.37</pos>
+      <maxSize>0.265</maxSize>
+      <zIndex>26</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/cave-right.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/cave-right.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0.85 0.5</origin>
+      <pos>0.64 0.395</pos>
+      <maxSize>0.19</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.36 0.395" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox3" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/cave-left.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/cave-left.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>
+      <pos>0.360 0.395</pos>
+      <maxSize>0.19</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.080 0.395" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text/>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Collection</text>
+      <text lang="pl">Kolekcja</text>
+      <text lang="pt">Coleção</text>
+      <text lang="ru">Коллекция</text>
+      <text lang="es">Recopilación</text>
+      <text lang="fr">Collection</text>
+      <text lang="it">Collezione</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Arcade Vertical Games</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>An arcade game or coin-op game is a coin-operated entertainment machine typically installed in public businesses such as restaurants, bars and amusement arcades. Most arcade games are video games, pinball machines, electro-mechanical games, redemption games or merchandisers. While exact dates are debated, the golden age of arcade video games is usually defined as a period beginning sometime in the late 1970s and ending sometime in the mid-1980s. Excluding a brief resurgence in the early 1990s, the arcade industry subsequently declined in the Western hemisphere as competing home video game consoles such as the Sony PlayStation and Microsoft Xbox increased in their graphics and game-play capability and decreased in cost. The Eastern Hemisphere retains a strong arcade industry.</text>
+      <text lang="pl">Automat do gry – konstrukcja służąca rozrywce, umieszczana najczęściej w salonach gier bądź też pubach lub klubach. Uruchomienie gry następuje w momencie wrzucenia monety bądź żetonu w otwór wrzutowy, zabawa ograniczona jest zwykle pewnym wyznacznikiem narzuconym przez producenta lub właściciela automatu (np. liczba prób/żyć, przejście na wyższy poziom, zdobycie określonego celu w zadanym czasie, ukończenie gry). Zwykle automaty do gier wyposażone były w gałkę sterującą (dżojstik) i kilka klawiszy; stosowane były również nawet 4 takie zestawy, aby mogło grać jednocześnie do 4 osób na jednym automacie. Wykorzystywano także inne rozwiązania, jak pokrętło w Pongu, pistolety świetlne w strzelankach, kierownice w grach wyścigowych (niekiedy nawet całe kokpity samochodowe), maty do tańczenia czy dwie gałki w niektórych strzelankach, będących prekursorami twin stick shooterów, lub grach walki jak International Karate.</text>
+      <text lang="pt">Máquina de jogos - estrutura criada para entretenimento, normalmente encontrada em salões de jogos ou pubs e clubes. O jogo é iniciado ao inserir uma moeda ou ficha na ranhura de entrada, e a diversão é geralmente limitada por um fator predefinido pelo fabricante ou proprietário da máquina (por exemplo, número de tentativas/vidas, progressão para um nível superior, atingir um objetivo específico em um tempo determinado, completar o jogo). Normalmente, as máquinas de jogos eram equipadas com uma alavanca de controle (joystick) e várias teclas; até quatro desses conjuntos eram usados para que até quatro pessoas pudessem jogar simultaneamente em uma única máquina. Outras soluções também foram usadas, como um botão giratório no Pong, armas de luz em jogos de tiro, volantes em jogos de corrida (às vezes até cockpits de corrida completos), tapetes de dança ou duas alavancas em alguns jogos de tiro, que foram precursores dos jogos de tiro de dupla alavanca, ou jogos de luta como International Karate.</text>
+      <text lang="ru">Стойка с аппаратурой для запуска игр, обычно аркадного жанра, устанавливаемые в общественных местах, игровых залах и т.д. Многие известные компьютерные игры впервые появились на игровых автоматах и лишь спустя некоторое время были портированы на приставки и домашние компьютеры. С другой стороны, игровые автоматы иногда собираются на основе обычных компьютеров и игровых приставок.
 
 Золотой век аркадных видеоигр обычно определяется как период, начинающийся где-то в конце 1970-х годов и заканчивающийся где-то в середине 1980-х годов. За исключением краткого возрождения в начале 1990-х, аркадная индустрия в Западном полушарии впоследствии пришла в упадок. По мере того как конкурирующие домашние игровые приставки, такие как Sony PlayStation и Microsoft Xbox, увеличивали свои графические и игровые возможности и снижали стоимость. В Восточном полушарии индустрии аркадных игр всё ещё удерживает свои позиции.</text>
-			<text lang="es">Un juego arcade o juego de monedas es una máquina de entretenimiento que funciona con monedas y que suele instalarse en negocios públicos como restaurantes, bares y salones recreativos. La mayoría de los juegos arcade son videojuegos, máquinas de pinball, juegos electromecánicos, juegos de canje o merchandisers. Aunque las fechas exactas son objeto de debate, la edad de oro de los videojuegos arcade suele definirse como un periodo que comienza a finales de la década de 1970 y termina a mediados de la década de 1980. Exceptuando un breve resurgimiento a principios de los años 90, la industria de los salones recreativos decayó posteriormente en el hemisferio occidental a medida que las consolas de videojuegos domésticas de la competencia, como la PlayStation de Sony y la Xbox de Microsoft, aumentaban su capacidad gráfica y de juego y disminuían su coste. El hemisferio oriental conserva una fuerte industria de los salones recreativos.</text>
-			<text lang="de">Ein Arcade-Spiel oder Münzspiel ist ein münzbetriebenes Unterhaltungsgerät, das typischerweise in öffentlichen Einrichtungen wie Restaurants, Bars und Spielhallen aufgestellt wird. Bei den meisten Spielhallen handelt es sich um Videospiele, Flipperautomaten, elektromechanische Spiele, Rücknahmespiele oder Merchandiser. Obwohl die genauen Daten umstritten sind, wird das goldene Zeitalter der Spielhallen-Videospiele gewöhnlich als ein Zeitraum definiert, der irgendwann in den späten 1970er Jahren begann und irgendwann Mitte der 1980er Jahre endete. Abgesehen von einem kurzen Aufschwung in den frühen 1990er Jahren ging die Arcade-Industrie in der westlichen Hemisphäre zurück, als konkurrierende Videospielkonsolen wie die Sony PlayStation und die Microsoft Xbox ihre Grafik- und Spielfunktionen verbesserten und ihre Kosten senkten. In der östlichen Hemisphäre gibt es nach wie vor eine starke Spielhallenindustrie.</text>
-			<text lang="fr">Un jeu d'arcade ou jeu à pièces est une machine de divertissement fonctionnant avec des pièces de monnaie, généralement installée dans des établissements publics tels que des restaurants, des bars et des salles de jeux. La plupart des jeux d'arcade sont des jeux vidéo, des flippers, des jeux électromécaniques, des jeux de rachat ou des présentoirs. Bien que les dates exactes soient controversées, l'âge d'or des jeux vidéo d'arcade est généralement défini comme une période commençant à la fin des années 1970 et se terminant au milieu des années 1980. À l'exception d'une brève résurgence au début des années 1990, l'industrie des salles d'arcade a ensuite décliné dans l'hémisphère occidental à mesure que les consoles de jeux vidéo de salon concurrentes, telles que la PlayStation de Sony et la Xbox de Microsoft, amélioraient leurs graphismes et leurs capacités de jeu et diminuaient leurs coûts. L'hémisphère oriental conserve une forte industrie des salles d'arcade.</text>
-			<text lang="it">Un gioco arcade o coin-op è una macchina per l'intrattenimento a moneta tipicamente installata in esercizi pubblici come ristoranti, bar e sale giochi. La maggior parte dei giochi arcade sono videogiochi, flipper, giochi elettromeccanici, giochi a premio o merchandiser. Sebbene le date esatte siano discusse, l'età d'oro dei videogiochi arcade è solitamente definita come un periodo che inizia alla fine degli anni Settanta e termina alla metà degli anni Ottanta. Se si esclude una breve ripresa all'inizio degli anni Novanta, l'industria delle sale giochi ha subito un declino nell'emisfero occidentale a causa dell'aumento della grafica e delle capacità di gioco delle console domestiche concorrenti, come la PlayStation di Sony e la Xbox di Microsoft, e della riduzione dei costi. L'emisfero orientale conserva una forte industria delle sale giochi.</text>
-		</text>
-	</view>
+      <text lang="es">Un juego arcade o juego de monedas es una máquina de entretenimiento que funciona con monedas y que suele instalarse en negocios públicos como restaurantes, bares y salones recreativos. La mayoría de los juegos arcade son videojuegos, máquinas de pinball, juegos electromecánicos, juegos de canje o merchandisers. Aunque las fechas exactas son objeto de debate, la edad de oro de los videojuegos arcade suele definirse como un periodo que comienza a finales de la década de 1970 y termina a mediados de la década de 1980. Exceptuando un breve resurgimiento a principios de los años 90, la industria de los salones recreativos decayó posteriormente en el hemisferio occidental a medida que las consolas de videojuegos domésticas de la competencia, como la PlayStation de Sony y la Xbox de Microsoft, aumentaban su capacidad gráfica y de juego y disminuían su coste. El hemisferio oriental conserva una fuerte industria de los salones recreativos.</text>
+      <text lang="de">Ein Arcade-Spiel oder Münzspiel ist ein münzbetriebenes Unterhaltungsgerät, das typischerweise in öffentlichen Einrichtungen wie Restaurants, Bars und Spielhallen aufgestellt wird. Bei den meisten Spielhallen handelt es sich um Videospiele, Flipperautomaten, elektromechanische Spiele, Rücknahmespiele oder Merchandiser. Obwohl die genauen Daten umstritten sind, wird das goldene Zeitalter der Spielhallen-Videospiele gewöhnlich als ein Zeitraum definiert, der irgendwann in den späten 1970er Jahren begann und irgendwann Mitte der 1980er Jahre endete. Abgesehen von einem kurzen Aufschwung in den frühen 1990er Jahren ging die Arcade-Industrie in der westlichen Hemisphäre zurück, als konkurrierende Videospielkonsolen wie die Sony PlayStation und die Microsoft Xbox ihre Grafik- und Spielfunktionen verbesserten und ihre Kosten senkten. In der östlichen Hemisphäre gibt es nach wie vor eine starke Spielhallenindustrie.</text>
+      <text lang="fr">Un jeu d'arcade ou jeu à pièces est une machine de divertissement fonctionnant avec des pièces de monnaie, généralement installée dans des établissements publics tels que des restaurants, des bars et des salles de jeux. La plupart des jeux d'arcade sont des jeux vidéo, des flippers, des jeux électromécaniques, des jeux de rachat ou des présentoirs. Bien que les dates exactes soient controversées, l'âge d'or des jeux vidéo d'arcade est généralement défini comme une période commençant à la fin des années 1970 et se terminant au milieu des années 1980. À l'exception d'une brève résurgence au début des années 1990, l'industrie des salles d'arcade a ensuite décliné dans l'hémisphère occidental à mesure que les consoles de jeux vidéo de salon concurrentes, telles que la PlayStation de Sony et la Xbox de Microsoft, amélioraient leurs graphismes et leurs capacités de jeu et diminuaient leurs coûts. L'hémisphère oriental conserve une forte industrie des salles d'arcade.</text>
+      <text lang="it">Un gioco arcade o coin-op è una macchina per l'intrattenimento a moneta tipicamente installata in esercizi pubblici come ristoranti, bar e sale giochi. La maggior parte dei giochi arcade sono videogiochi, flipper, giochi elettromeccanici, giochi a premio o merchandiser. Sebbene le date esatte siano discusse, l'età d'oro dei videogiochi arcade è solitamente definita come un periodo che inizia alla fine degli anni Settanta e termina alla metà degli anni Ottanta. Se si esclude una breve ripresa all'inizio degli anni Novanta, l'industria delle sale giochi ha subito un declino nell'emisfero occidentale a causa dell'aumento della grafica e delle capacità di gioco delle console domestiche concorrenti, come la PlayStation di Sony e la Xbox di Microsoft, e della riduzione dei costi. L'emisfero orientale conserva una forte industria delle sale giochi.</text>
+    </text>
+  </view>
 </theme>

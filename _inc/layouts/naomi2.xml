@@ -1,184 +1,189 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.35 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
-			<pos>0.29 0.36</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>19</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.01 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.65 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.54 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.9 0.5</origin>
-			<pos>0.712 0.36</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>-19</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.432 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<pos>0.50 0.365</pos>
-			<maxSize>0.185</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.365" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-left" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.27</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
-			<origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>
-			<pos>0.3854 0.395</pos>
-			<maxSize>0.165</maxSize>
-			<rotation>-71</rotation>
-			<storyboard>
-				<animation property="pos" to="0.1054 0.395" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-right" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.39</origin>
-			<origin if="${screen.ratio} == '21/9'">0.85 0.5</origin>
-			<pos>0.6139 0.385</pos>
-			<maxSize>0.165</maxSize>
-			<rotation>71</rotation>
-			<storyboard>
-				<animation property="pos" to="0.3339 0.385" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<pos>0.50 0.365</pos>
-			<maxSize>0.165</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.365" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.18</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">0.85 0.5</origin>
-			<pos>0.635 0.378</pos>
-			<maxSize>0.165</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.355 0.378" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox3" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.18</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>
-			<pos>0.365 0.378</pos>
-			<maxSize>0.16</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.085 0.378" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2000</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Sega</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Naomi 2</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Sega NAOMI 2 is an arcade board developed by Sega and is a successor to Sega NAOMI hardware. It was originally released in 2000. Since it uses similar NAOMI architecture (but significantly beefed up), it is also fully backwards compatible with its predecessor.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-left" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.35 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
+      <pos>0.29 0.36</pos>
+      <minSize>0.1 0.3</minSize>
+      <rotation>19</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.01 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-right" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.65 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.54 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0.9 0.5</origin>
+      <pos>0.712 0.36</pos>
+      <minSize>0.1 0.3</minSize>
+      <rotation>-19</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.432 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <pos>0.50 0.365</pos>
+      <maxSize>0.185</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.365" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-left" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.27</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
+      <origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>
+      <pos>0.3854 0.395</pos>
+      <maxSize>0.165</maxSize>
+      <rotation>-71</rotation>
+      <storyboard>
+        <animation property="pos" to="0.1054 0.395" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-right" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.39</origin>
+      <origin if="${screen.ratio} == '21/9'">0.85 0.5</origin>
+      <pos>0.6139 0.385</pos>
+      <maxSize>0.165</maxSize>
+      <rotation>71</rotation>
+      <storyboard>
+        <animation property="pos" to="0.3339 0.385" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <pos>0.50 0.365</pos>
+      <maxSize>0.165</maxSize>
+      <zIndex>26</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.365" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.18</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">0.85 0.5</origin>
+      <pos>0.635 0.378</pos>
+      <maxSize>0.165</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.355 0.378" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox3" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.18</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>
+      <pos>0.365 0.378</pos>
+      <maxSize>0.16</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.085 0.378" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2000</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Sega</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Naomi 2</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Sega NAOMI 2 is an arcade board developed by Sega and is a successor to Sega NAOMI hardware. It was originally released in 2000. Since it uses similar NAOMI architecture (but significantly beefed up), it is also fully backwards compatible with its predecessor.
 
 The NAOMI 2 is significantly more powerful than the NAOMI, including a dual CPU setup, new TL GPU, dual rasterizer GPU, increased memory, and faster bandwidth. This leads to games with much more polygons than a NAOMI game, rendered at much faster speeds, while the new TL GPU adds advanced lighting and particle effects. It was also more affordable than the very expensive (and difficult to program) Sega Hikaru arcade system that preceded it. The NAOMI 2 was nevertheless more powerful than home systems at the time.
 
 As with the NAOMI, the NAOMI 2 was also available in GD-ROM and Satellite Terminal variants. It was Sega's last proprietary arcade system board; subsequent Sega arcade boards have been based on console and PC hardware.</text>
-			<text lang="pl">Sega NAOMI 2 to automat zręcznościowy opracowany przez firmę Sega, będący następcą sprzętu Sega NAOMI. Pierwotnie została wydana w 2000 roku. Ponieważ wykorzystuje podobną architekturę NAOMI (ale znacznie ulepszoną), jest również w pełni kompatybilna wstecz ze swoim poprzednikiem.
+      <text lang="pl">Sega NAOMI 2 to automat zręcznościowy opracowany przez firmę Sega, będący następcą sprzętu Sega NAOMI. Pierwotnie została wydana w 2000 roku. Ponieważ wykorzystuje podobną architekturę NAOMI (ale znacznie ulepszoną), jest również w pełni kompatybilna wstecz ze swoim poprzednikiem.
 
 NAOMI 2 jest znacznie potężniejszy niż NAOMI, włączając w to podwójną konfigurację CPU, nowy GPU TL, podwójny GPU rasteryzatora, zwiększoną pamięć i szybsze pasmo. Dzięki temu gry z dużo większą liczbą wielokątów niż gry NAOMI są renderowane z dużo większą szybkością, a nowy procesor graficzny TL dodaje zaawansowane efekty świetlne i cząsteczkowe. Był on także bardziej przystępny cenowo niż poprzedzający go bardzo drogi (i trudny do zaprogramowania) system arcade Sega Hikaru. NAOMI 2 był jednak mimo wszystko potężniejszy niż ówczesne systemy domowe.
 
 Podobnie jak NAOMI, NAOMI 2 był również dostępny w wersjach z GD-ROM-em i terminalem satelitarnym. Był to ostatni własny system arcade firmy Sega; kolejne systemy arcade firmy Sega były oparte na sprzęcie konsolowym i komputerowym.</text>
-			<text lang="ru">Является второй моделью аркадного автомата Sega NAOMI. Новая система предложила улучшенный графический блок, но основная архитектура системы осталась прежней, поэтому модули оригинального Naomi также могли использоваться на новом оборудовании без каких-либо модификаций. С запуском Naomi 2 также были запущены диски GD-ROM для аркадных платформ. Как для Naomi 2, так и для его предшественника в качестве расширения был дополнительно предложен диск GD-ROM. Привод GD-ROM поставляется вместе с модулем расширения, известным как плата DIMM. Он содержал дополнительную память, чтобы вся игра могла быть загружена в оперативную память. Это должно компенсировать более медленное время загрузки GD-ROM -&gt; ПЗУ, а также уменьшало износ оптического привода.
+      <text lang="pt">Sega NAOMI 2 é um sistema de arcade desenvolvido pela Sega, sendo o sucessor do Sega NAOMI. Foi lançado originalmente em 2000. Como utiliza uma arquitetura similar ao NAOMI (mas significativamente aprimorada), também é totalmente compatível com versões anteriores do seu antecessor.
+
+O NAOMI 2 é consideravelmente mais potente que o NAOMI, incluindo uma configuração dupla de CPU, novo GPU TL, dupla GPU de rasterização, memória aumentada e maior largura de banda. Isso permite que jogos com muito mais polígonos do que os jogos NAOMI sejam renderizados a uma velocidade muito maior, e o novo processador gráfico TL adiciona efeitos avançados de luz e partículas. Era também mais acessível do que seu antecessor, o sistema de arcade Sega Hikaru, muito caro (e difícil de programar). Mesmo assim, o NAOMI 2 era mais poderoso que os sistemas domésticos da época.
+
+Assim como o NAOMI, o NAOMI 2 também estava disponível em versões com GD-ROM e terminal satélite. Foi o último sistema de arcade próprio da Sega; os sistemas de arcade da Sega subsequentes eram baseados em hardware de console e computador.</text>
+      <text lang="ru">Является второй моделью аркадного автомата Sega NAOMI. Новая система предложила улучшенный графический блок, но основная архитектура системы осталась прежней, поэтому модули оригинального Naomi также могли использоваться на новом оборудовании без каких-либо модификаций. С запуском Naomi 2 также были запущены диски GD-ROM для аркадных платформ. Как для Naomi 2, так и для его предшественника в качестве расширения был дополнительно предложен диск GD-ROM. Привод GD-ROM поставляется вместе с модулем расширения, известным как плата DIMM. Он содержал дополнительную память, чтобы вся игра могла быть загружена в оперативную память. Это должно компенсировать более медленное время загрузки GD-ROM -&gt; ПЗУ, а также уменьшало износ оптического привода.
 
 Технические характеристики:
 (Здесь перечислены только основные отличия от предшественника)
 - Графический процессор: 2 × NEC CLX2 (PowerVR Series 2)
 - Основная память: 32 МБ 100 МГц SDRAM
 - Графическая память: 32 Мб</text>
-			<text lang="es">La Sega NAOMI 2 es una placa arcade desarrollada por Sega y es sucesora del hardware Sega NAOMI. Salió a la venta en el año 2000. Dado que utiliza una arquitectura NAOMI similar (pero significativamente reforzada), también es totalmente compatible con su predecesor.
+      <text lang="es">La Sega NAOMI 2 es una placa arcade desarrollada por Sega y es sucesora del hardware Sega NAOMI. Salió a la venta en el año 2000. Dado que utiliza una arquitectura NAOMI similar (pero significativamente reforzada), también es totalmente compatible con su predecesor.
 
 El NAOMI 2 es significativamente más potente que el NAOMI, ya que incluye una configuración de CPU dual, una nueva GPU TL, una GPU rasterizadora dual, más memoria y un ancho de banda más rápido. Esto da lugar a juegos con muchos más polígonos que un juego NAOMI, renderizados a velocidades mucho más rápidas, mientras que la nueva GPU TL añade efectos avanzados de iluminación y partículas. También era más asequible que el carísimo (y difícil de programar) sistema arcade Sega Hikaru que lo precedió. No obstante, el NAOMI 2 era más potente que los sistemas domésticos de la época.
 
 Al igual que el NAOMI, el NAOMI 2 también estaba disponible en variantes GD-ROM y Terminal Satélite. Fue la última placa de sistema arcade propia de Sega; las siguientes placas arcade de Sega se han basado en hardware de consola y PC.</text>
-			<text lang="de">Das Sega NAOMI 2 ist ein Arcade-Board, das von Sega entwickelt wurde und ein Nachfolger der Sega NAOMI-Hardware ist. Es wurde ursprünglich im Jahr 2000 veröffentlicht. Da es eine ähnliche NAOMI-Architektur verwendet (aber deutlich verbessert), ist es auch vollständig rückwärtskompatibel mit seinem Vorgänger.
+      <text lang="de">Das Sega NAOMI 2 ist ein Arcade-Board, das von Sega entwickelt wurde und ein Nachfolger der Sega NAOMI-Hardware ist. Es wurde ursprünglich im Jahr 2000 veröffentlicht. Da es eine ähnliche NAOMI-Architektur verwendet (aber deutlich verbessert), ist es auch vollständig rückwärtskompatibel mit seinem Vorgänger.
 
 Der NAOMI 2 ist wesentlich leistungsfähiger als der NAOMI, einschließlich eines Dual-CPU-Setups, einer neuen TL-GPU, einer Dual-Rasterizer-GPU, mehr Speicher und schnellerer Bandbreite. Dies führt zu Spielen mit viel mehr Polygonen als ein NAOMI-Spiel, die mit viel höherer Geschwindigkeit gerendert werden, während die neue TL-GPU fortschrittliche Beleuchtungs- und Partikeleffekte ermöglicht. Es war auch erschwinglicher als das sehr teure (und schwer zu programmierende) Sega Hikaru Arcade-System, das ihm vorausging. Dennoch war der NAOMI 2 leistungsfähiger als die damaligen Heimsysteme.
 
 Wie das NAOMI war auch das NAOMI 2 in den Varianten GD-ROM und Satellite Terminal erhältlich. Es war Segas letztes eigenes Arcade-System-Board; nachfolgende Sega-Arcade-Boards basierten auf Konsolen- und PC-Hardware.</text>
-			<text lang="fr">Le Sega NAOMI 2 est une carte d'arcade développée par Sega et qui succède au matériel Sega NAOMI. Elle est sortie en 2000. Comme il utilise une architecture NAOMI similaire (mais considérablement améliorée), il est également entièrement rétrocompatible avec son prédécesseur.
+      <text lang="fr">Le Sega NAOMI 2 est une carte d'arcade développée par Sega et qui succède au matériel Sega NAOMI. Elle est sortie en 2000. Comme il utilise une architecture NAOMI similaire (mais considérablement améliorée), il est également entièrement rétrocompatible avec son prédécesseur.
 
 Le NAOMI 2 est nettement plus puissant que le NAOMI, avec notamment une configuration à double CPU, un nouveau GPU TL, un double GPU rasterizer, une mémoire accrue et une bande passante plus rapide. Cela permet d'obtenir des jeux avec beaucoup plus de polygones qu'un jeu NAOMI, rendus à des vitesses beaucoup plus rapides, tandis que le nouveau GPU TL ajoute des effets d'éclairage et de particules avancés. Il était également plus abordable que le système d'arcade Sega Hikaru, très coûteux (et difficile à programmer), qui l'avait précédé. NAOMI 2 était néanmoins plus puissant que les systèmes domestiques de l'époque.
 
 Comme le NAOMI, le NAOMI 2 était également disponible en version GD-ROM et terminal satellite. Il s'agit de la dernière carte de système d'arcade propriétaire de Sega ; les cartes d'arcade Sega suivantes ont été basées sur du matériel de console et de PC.</text>
-			<text lang="it">Il Sega NAOMI 2 è una scheda arcade sviluppata da Sega ed è il successore dell'hardware Sega NAOMI. È stata originariamente rilasciata nel 2000. Poiché utilizza un'architettura NAOMI simile (ma notevolmente potenziata), è completamente retrocompatibile con il suo predecessore.
+      <text lang="it">Il Sega NAOMI 2 è una scheda arcade sviluppata da Sega ed è il successore dell'hardware Sega NAOMI. È stata originariamente rilasciata nel 2000. Poiché utilizza un'architettura NAOMI simile (ma notevolmente potenziata), è completamente retrocompatibile con il suo predecessore.
 
 Il NAOMI 2 è molto più potente del NAOMI, con una configurazione a doppia CPU, una nuova GPU TL, una GPU a doppio rasterizzatore, una memoria maggiore e una larghezza di banda più veloce. Questo porta a giochi con un numero di poligoni molto maggiore rispetto a un gioco NAOMI, renderizzati a velocità molto più elevate, mentre la nuova GPU TL aggiunge effetti avanzati di illuminazione e particellari. Il NAOMI 2 era anche più conveniente del costoso (e difficile da programmare) sistema arcade Sega Hikaru che lo aveva preceduto. Il NAOMI 2 era comunque più potente dei sistemi domestici dell'epoca.
 
 Come il NAOMI, anche il NAOMI 2 era disponibile nelle varianti GD-ROM e Satellite Terminal. È stata l'ultima scheda di sistema arcade proprietaria di Sega; le schede arcade successive di Sega sono state basate su hardware di console e PC.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

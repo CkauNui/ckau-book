@@ -1,71 +1,74 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
-			<pos>0.5 0.335</pos>
-			<maxSize>0.24</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.335" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
-			<pos>0.5 0.335</pos>
-			<maxSize>0.225</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.335" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1985</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Intelligent Software</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Enterprise 64/128</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Enterprise is a Zilog Z80-based home computer announced in 1983, but through a series of delays, not commercially available until 1985. It was developed by British company Intelligent Software and marketed by Enterprise Computers.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+      <pos>0.5 0.335</pos>
+      <maxSize>0.24</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.335" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+      <pos>0.5 0.335</pos>
+      <maxSize>0.225</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.335" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1985</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Intelligent Software</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Enterprise 64/128</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Enterprise is a Zilog Z80-based home computer announced in 1983, but through a series of delays, not commercially available until 1985. It was developed by British company Intelligent Software and marketed by Enterprise Computers.
 
 The specification as released was powerful and one of the higher end in its class (though not by the margin envisaged in 1983). This was due to the use of custom ASICs for graphics and sound which took workload away from the CPU, an extensive implementation of ANSI BASIC and a bank switching system to allow for larger amounts of RAM than the Z80 natively supported. It also featured a distinctive and colourful case design, and promise of multiple expansion options. Its two variants are the Enterprise 64, with 64 KB of RAM, and the Enterprise 128, with 128 KB of RAM.</text>
-			<text lang="pl">Enterprise to komputer domowy oparty na procesorze Zilog Z80, który został zapowiedziany w 1983 roku, ale z powodu szeregu opóźnień nie był dostępny w sprzedaży aż do 1985 roku. Został opracowany przez brytyjską firmę Intelligent Software i sprzedawany przez Enterprise Computers.
+      <text lang="pl">Enterprise to komputer domowy oparty na procesorze Zilog Z80, który został zapowiedziany w 1983 roku, ale z powodu szeregu opóźnień nie był dostępny w sprzedaży aż do 1985 roku. Został opracowany przez brytyjską firmę Intelligent Software i sprzedawany przez Enterprise Computers.
 
 Wydana specyfikacja była potężna i należała do wyższej półki w swojej klasie (choć nie z takim marginesem, jaki przewidywano w 1983 roku). Wynikało to z zastosowania niestandardowych układów ASIC do grafiki i dźwięku, które odciążały procesor, rozbudowanej implementacji ANSI BASIC i systemu przełączania banków, aby umożliwić większą ilość pamięci RAM niż natywnie obsługiwana przez Z80. Charakteryzował się również charakterystyczną i kolorową obudową oraz obietnicą wielu opcji rozszerzeń. Jego dwa warianty to Enterprise 64 z 64 KB pamięci RAM i Enterprise 128 z 128 KB pamięci RAM.</text>
-			<text lang="ru">Enterprise - домашний компьютер на базе Zilog Z80, анонсированный в 1983 году, но из-за ряда задержек поступивший в продажу только в 1985 году. Он был разработан британской компанией Intelligent Software и продавался компанией Enterprise Computers.
+      <text lang="pt">Enterprise foi um computador doméstico baseado no processador Zilog Z80, anunciado em 1983, mas que, devido a uma série de atrasos, não ficou disponível para venda até 1985. Foi desenvolvido pela empresa britânica Intelligent Software e vendido pela Enterprise Computers.
+
+A especificação lançada era poderosa e pertencia ao topo de linha em sua categoria (embora não com a mesma margem que se previa em 1983). Isso se devia ao uso de chips ASIC personalizados para gráficos e som, que aliviavam o processador, à implementação completa do ANSI BASIC e ao sistema de comutação de bancos, para permitir uma quantidade maior de memória RAM do que a suportada nativamente pelo Z80. Ele também se destacava por seu gabinete característico e colorido e pela promessa de diversas opções de expansão. Seus dois variantes eram o Enterprise 64 com 64 KB de RAM e o Enterprise 128 com 128 KB de RAM.</text>
+      <text lang="ru">Enterprise - домашний компьютер на базе Zilog Z80, анонсированный в 1983 году, но из-за ряда задержек поступивший в продажу только в 1985 году. Он был разработан британской компанией Intelligent Software и продавался компанией Enterprise Computers.
 
 По своим техническим характеристикам он был мощным и одним из лучших в своем классе (хотя и не настолько, как предполагалось в 1983 году). Это было обусловлено использованием специализированных ASIC для работы с графикой и звуком, которые снимали нагрузку с центрального процессора, расширенной реализацией ANSI BASIC и системой переключения банков, позволяющей использовать больший объем оперативной памяти, чем поддерживал Z80. Кроме того, он отличался оригинальным и ярким дизайном корпуса и обещал множество вариантов расширения. Две его разновидности - Enterprise 64 с 64 КБ оперативной памяти и Enterprise 128 с 128 КБ оперативной памяти.</text>
-			<text lang="es">El Enterprise es un ordenador doméstico basado en el Z80 de Zilog anunciado en 1983, pero que, debido a una serie de retrasos, no estuvo disponible comercialmente hasta 1985. Fue desarrollado por la empresa británica Intelligent Software y comercializado por Enterprise Computers.
+      <text lang="es">El Enterprise es un ordenador doméstico basado en el Z80 de Zilog anunciado en 1983, pero que, debido a una serie de retrasos, no estuvo disponible comercialmente hasta 1985. Fue desarrollado por la empresa británica Intelligent Software y comercializado por Enterprise Computers.
 
 La especificación con la que salió al mercado era potente y una de las más avanzadas de su clase (aunque no por el margen previsto en 1983). Esto se debía al uso de ASIC personalizados para gráficos y sonido que quitaban carga de trabajo a la CPU, una amplia implementación de ANSI BASIC y un sistema de conmutación de bancos para permitir mayores cantidades de RAM de las que el Z80 soportaba de forma nativa. También presentaba un diseño de carcasa distintivo y colorido, y prometía múltiples opciones de expansión. Sus dos variantes son el Enterprise 64, con 64 KB de RAM, y el Enterprise 128, con 128 KB de RAM.</text>
-			<text lang="de">Der Enterprise ist ein Zilog Z80-basierter Heimcomputer, der 1983 angekündigt wurde, aber aufgrund einer Reihe von Verzögerungen erst 1985 auf den Markt kam. Er wurde von der britischen Firma Intelligent Software entwickelt und von Enterprise Computers vermarktet.
+      <text lang="de">Der Enterprise ist ein Zilog Z80-basierter Heimcomputer, der 1983 angekündigt wurde, aber aufgrund einer Reihe von Verzögerungen erst 1985 auf den Markt kam. Er wurde von der britischen Firma Intelligent Software entwickelt und von Enterprise Computers vermarktet.
 
 Die Spezifikation in der veröffentlichten Form war leistungsfähig und gehörte zu den Spitzenreitern seiner Klasse (wenn auch nicht in dem Maße, wie es 1983 geplant war). Dies war auf die Verwendung von kundenspezifischen ASICs für Grafik und Sound zurückzuführen, die die CPU entlasteten, sowie auf eine umfangreiche Implementierung von ANSI BASIC und ein Bank-Switching-System, das größere Mengen an RAM ermöglichte, als der Z80 von Haus aus unterstützte. Außerdem zeichnete er sich durch ein markantes und farbenfrohes Gehäusedesign aus und versprach zahlreiche Erweiterungsmöglichkeiten. Es gibt zwei Varianten: den Enterprise 64 mit 64 KB RAM und den Enterprise 128 mit 128 KB RAM.</text>
-			<text lang="fr">L'Enterprise est un ordinateur domestique basé sur le Zilog Z80 annoncé en 1983, mais qui, en raison d'une série de retards, n'a été commercialisé qu'en 1985. Il a été développé par la société britannique Intelligent Software et commercialisé par Enterprise Computers.
+      <text lang="fr">L'Enterprise est un ordinateur domestique basé sur le Zilog Z80 annoncé en 1983, mais qui, en raison d'une série de retards, n'a été commercialisé qu'en 1985. Il a été développé par la société britannique Intelligent Software et commercialisé par Enterprise Computers.
 
 La spécification publiée était puissante et l'une des plus haut de gamme de sa catégorie (bien que pas avec la marge envisagée en 1983). Cela était dû à l'utilisation d'ASIC personnalisés pour les graphiques et le son, ce qui réduisait la charge de travail de l'unité centrale, à une implémentation étendue du BASIC ANSI et à un système de commutation de banque permettant d'utiliser des quantités de RAM plus importantes que celles que le Z80 prenait en charge de manière native. Il se caractérisait également par un boîtier distinctif et coloré, et promettait de multiples options d'extension. Ses deux variantes sont l'Enterprise 64, avec 64 Ko de RAM, et l'Enterprise 128, avec 128 Ko de RAM.</text>
-			<text lang="it">L'Enterprise è un home computer basato sullo Zilog Z80 annunciato nel 1983, ma che, a causa di una serie di ritardi, non fu disponibile in commercio fino al 1985. Fu sviluppato dalla società britannica Intelligent Software e commercializzato da Enterprise Computers.
+      <text lang="it">L'Enterprise è un home computer basato sullo Zilog Z80 annunciato nel 1983, ma che, a causa di una serie di ritardi, non fu disponibile in commercio fino al 1985. Fu sviluppato dalla società britannica Intelligent Software e commercializzato da Enterprise Computers.
 
 Le specifiche così come sono state rilasciate erano potenti e di fascia alta nella sua categoria (anche se non con il margine previsto nel 1983). Ciò era dovuto all'uso di ASIC personalizzati per la grafica e il suono, che sottraevano carico di lavoro alla CPU, a un'implementazione estesa dell'ANSI BASIC e a un sistema di commutazione dei banchi che consentiva di utilizzare quantità di RAM superiori a quelle supportate dallo Z80. Inoltre, presentava un design distintivo e colorato e prometteva molteplici opzioni di espansione. Le due varianti sono Enterprise 64, con 64 KB di RAM, e Enterprise 128, con 128 KB di RAM.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

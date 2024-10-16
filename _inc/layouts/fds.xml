@@ -1,71 +1,74 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.49 0.4</pos>
-			<maxSize>0.237</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.49 0.4</pos>
-			<maxSize>0.227</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1986</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Nintendo</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Family Computer Disk System</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Family Computer Disk System is a peripheral for Nintendo's Family Computer home video game console, released only in Japan on February 21, 1986. It uses proprietary floppy disks called "Disk Cards" for cheaper data storage and it adds a new high-fidelity sound channel for supporting Disk System games.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.49 0.4</pos>
+      <maxSize>0.237</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.49 0.4</pos>
+      <maxSize>0.227</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1986</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Nintendo</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Family Computer Disk System</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Family Computer Disk System is a peripheral for Nintendo's Family Computer home video game console, released only in Japan on February 21, 1986. It uses proprietary floppy disks called "Disk Cards" for cheaper data storage and it adds a new high-fidelity sound channel for supporting Disk System games.
 
 Fundamentally, the Disk System serves simply to enhance some aspects already inherent to the base Famicom system, with better sound and cheaper games—though with the disadvantages of high initial price, slow speed, and lower reliability. However, this boost to the market of affordable and writable mass storage temporarily served as an enabling technology for the creation of new types of video games. This includes the vast, open world, progress-saving adventures of the best-selling The Legend of Zelda (1986) and Metroid (1986), games with a cost-effective and swift release such as the best-selling Super Mario Bros. 2, and nationwide leaderboards and contests via the in-store Disk Fax kiosks, which are considered to be forerunners of today's online achievement and distribution systems.</text>
-			<text lang="pl">Family Computer Disk System jest peryferią dla Nintendo Family Computer domu konsoli gier wideo, wydany tylko w Japonii w dniu 21 lutego 1986 roku. Używa zastrzeżonych dyskietek zwanych "Disk Cards" do tańszego przechowywania danych i dodaje nowy kanał dźwięku wysokiej wierności do wspierania gier z systemem dyskowym.
+      <text lang="pl">Family Computer Disk System jest peryferią dla Nintendo Family Computer domu konsoli gier wideo, wydany tylko w Japonii w dniu 21 lutego 1986 roku. Używa zastrzeżonych dyskietek zwanych "Disk Cards" do tańszego przechowywania danych i dodaje nowy kanał dźwięku wysokiej wierności do wspierania gier z systemem dyskowym.
 
 Zasadniczo, System Dyskowy służy po prostu do wzmocnienia niektórych aspektów już nieodłącznych dla podstawowego systemu Famicom, z lepszym dźwiękiem i tańszymi grami - choć z wadami wysokiej ceny początkowej, powolnej prędkości i niższej niezawodności. Jednakże, ten impuls do rynku niedrogich i zapisywalnych pamięci masowych tymczasowo służył jako technologia umożliwiająca tworzenie nowych typów gier wideo. Obejmuje to rozległe, otwarte, przygodowe gry z zapisywaniem postępu, takie jak bestsellerowe The Legend of Zelda (1986) i Metroid (1986), gry z opłacalną i szybką premierą, takie jak bestsellerowy Super Mario Bros. 2, oraz ogólnokrajowe tablice liderów i konkursy za pośrednictwem sklepowych kiosków Disk Fax, które są uważane za prekursorów dzisiejszych systemów trofeów i dystrybucji online.</text>
-			<text lang="ru">Периферийное устройство для игровой приставки Family Computer (NES) компании Nintendo, выпущенное 21 февраля 1986 года эксклюзивно для японского рынка. Устройство использовало гибкие диски проприетарного формата (официальное название такой дискеты — Disk Card) для хранения данных. Был анонсирован выпуск устройства на территории Северной Америки и Европы (PAL регион), впоследствии не состоявшийся. За период с 1986 по 2003 год было продано 4,5 миллиона экземпляров устройства.
+      <text lang="pt">Family Computer Disk System é um periférico para o console de videogame doméstico Nintendo Family Computer, lançado apenas no Japão em 21 de fevereiro de 1986. Ele usa disquetes proprietários chamados "Disk Cards" para armazenamento de dados mais barato e adiciona um novo canal de áudio de alta fidelidade para suporte a jogos com o sistema de disco.
+
+Essencialmente, o Sistema de Disco serve simplesmente para aprimorar alguns aspectos já inerentes ao sistema Famicom básico, com som melhor e jogos mais baratos - embora com as desvantagens de um preço inicial alto, velocidade lenta e menor confiabilidade. No entanto, esse impulso para o mercado de armazenamento de dados barato e gravável serviu temporariamente como tecnologia que permitiu a criação de novos tipos de videogames. Isso inclui jogos de aventura extensos, abertos e com salvamento de progresso, como os best-sellers The Legend of Zelda (1986) e Metroid (1986), jogos com lançamento lucrativo e rápido, como o best-seller Super Mario Bros. 2, e tabelas de classificação nacionais e concursos por meio de kiosques Disk Fax nas lojas, que são considerados precursores dos atuais sistemas de troféus e distribuição online.</text>
+      <text lang="ru">Периферийное устройство для игровой приставки Family Computer (NES) компании Nintendo, выпущенное 21 февраля 1986 года эксклюзивно для японского рынка. Устройство использовало гибкие диски проприетарного формата (официальное название такой дискеты — Disk Card) для хранения данных. Был анонсирован выпуск устройства на территории Северной Америки и Европы (PAL регион), впоследствии не состоявшийся. За период с 1986 по 2003 год было продано 4,5 миллиона экземпляров устройства.
 
 Уже в 1986 году объём хранимой информации в 112 кб являлся недостаточным, так как первые компьютеры IBM PC (август 1981 года) снабжались дисководами, дискеты которых вмещали до 360 кб. В 1981 году были выпущены на рынок дискеты современного формата 3,5 дюйма, вмещавшие до 720 кб, а распространённый современный тип дискет, вмещающий 1,44 мегабайта был доступен ещё в 1984 году, однако, массовая на тот момент технология была значительно дешевле. Возможность перезаписи информации на магнитном диске открыли новые возможности для компьютерных игр. Так, версии следующих игр для FDS имели возможность сохранения: The Legend of Zelda, Metroid, Kid Icarus. Многие из игр, вышедших в Японии эксклюзивно для FDS, были портированы в формат картриджа и изданы на приставке NES, используя для сохранения питаемую от батареи ОЗУ или систему паролей.</text>
-			<text lang="es">El Family Computer Disk System es un periférico para la videoconsola doméstica Family Computer de Nintendo, lanzado sólo en Japón el 21 de febrero de 1986. Utiliza disquetes patentados llamados "Disk Cards" para un almacenamiento de datos más barato y añade un nuevo canal de sonido de alta fidelidad para los juegos de Disk System.
+      <text lang="es">El Family Computer Disk System es un periférico para la videoconsola doméstica Family Computer de Nintendo, lanzado sólo en Japón el 21 de febrero de 1986. Utiliza disquetes patentados llamados "Disk Cards" para un almacenamiento de datos más barato y añade un nuevo canal de sonido de alta fidelidad para los juegos de Disk System.
 
 Fundamentalmente, el Disk System sirve simplemente para mejorar algunos aspectos ya inherentes al sistema base Famicom, con mejor sonido y juegos más baratos, aunque con las desventajas de un elevado precio inicial, lentitud y menor fiabilidad. Sin embargo, este impulso al mercado del almacenamiento masivo asequible y grabable sirvió temporalmente como tecnología facilitadora para la creación de nuevos tipos de videojuegos. Entre ellos se encuentran las aventuras de mundo abierto y progreso salvable de los superventas The Legend of Zelda (1986) y Metroid (1986), juegos con un lanzamiento económico y rápido como el superventas Super Mario Bros. 2, y tablas de clasificación y concursos a escala nacional a través de los quioscos Disk Fax de las tiendas, considerados precursores de los actuales sistemas de logros y distribución en línea.</text>
-			<text lang="de">Das Family Computer Disk System ist ein Peripheriegerät für Nintendos Heimvideospielkonsole Family Computer, das am 21. Februar 1986 nur in Japan veröffentlicht wurde. Es verwendet proprietäre Disketten, genannt "Disk Cards", für billigere Datenspeicherung und fügt einen neuen High-Fidelity-Soundkanal zur Unterstützung von Disk System-Spielen hinzu.
+      <text lang="de">Das Family Computer Disk System ist ein Peripheriegerät für Nintendos Heimvideospielkonsole Family Computer, das am 21. Februar 1986 nur in Japan veröffentlicht wurde. Es verwendet proprietäre Disketten, genannt "Disk Cards", für billigere Datenspeicherung und fügt einen neuen High-Fidelity-Soundkanal zur Unterstützung von Disk System-Spielen hinzu.
 
 Im Grunde genommen dient das Disk System nur dazu, einige Aspekte des Famicom-Basissystems zu verbessern, mit besserem Sound und billigeren Spielen - allerdings mit den Nachteilen des hohen Anschaffungspreises, der langsamen Geschwindigkeit und der geringeren Zuverlässigkeit. Dennoch diente dieser Aufschwung auf dem Markt für erschwingliche und beschreibbare Massenspeicher vorübergehend als Grundlage für die Entwicklung neuer Arten von Videospielen. Dazu gehören die riesigen Abenteuer mit offener Welt und Fortschrittsanzeige der Bestseller The Legend of Zelda (1986) und Metroid (1986), Spiele mit kostengünstiger und schneller Veröffentlichung wie der Bestseller Super Mario Bros. 2 und landesweite Bestenlisten und Wettbewerbe über die Disk-Fax-Kioske in den Geschäften, die als Vorläufer der heutigen Online-Leistungs- und Vertriebssysteme gelten.</text>
-			<text lang="fr">Le Family Computer Disk System est un périphérique pour la console de jeux vidéo Family Computer de Nintendo, sorti uniquement au Japon le 21 février 1986. Il utilise des disquettes propriétaires appelées "Disk Cards" pour un stockage de données moins coûteux et ajoute un nouveau canal sonore haute-fidélité pour les jeux Disk System.
+      <text lang="fr">Le Family Computer Disk System est un périphérique pour la console de jeux vidéo Family Computer de Nintendo, sorti uniquement au Japon le 21 février 1986. Il utilise des disquettes propriétaires appelées "Disk Cards" pour un stockage de données moins coûteux et ajoute un nouveau canal sonore haute-fidélité pour les jeux Disk System.
 
 Fondamentalement, le Disk System sert simplement à améliorer certains aspects déjà inhérents au système Famicom de base, avec un meilleur son et des jeux moins chers, mais avec les inconvénients d'un prix initial élevé, d'une vitesse lente et d'une fiabilité moindre. Cependant, ce coup de pouce au marché du stockage de masse abordable et inscriptible a temporairement servi de technologie habilitante pour la création de nouveaux types de jeux vidéo. Il s'agit notamment des vastes aventures à monde ouvert avec sauvegarde de la progression des best-sellers The Legend of Zelda (1986) et Metroid (1986), des jeux à sortie rapide et économique tels que le best-seller Super Mario Bros. 2, ainsi que des tableaux de classement et des concours à l'échelle nationale par l'intermédiaire des kiosques Disk Fax en magasin, qui sont considérés comme les précurseurs des systèmes actuels de réussite et de distribution en ligne.</text>
-			<text lang="it">Il Family Computer Disk System è una periferica per la console di videogiochi domestica Family Computer di Nintendo, rilasciata solo in Giappone il 21 febbraio 1986. Utilizza dischi floppy proprietari chiamati "Disk Card" per una memorizzazione dei dati più economica e aggiunge un nuovo canale audio ad alta fedeltà per supportare i giochi del Disk System.
+      <text lang="it">Il Family Computer Disk System è una periferica per la console di videogiochi domestica Family Computer di Nintendo, rilasciata solo in Giappone il 21 febbraio 1986. Utilizza dischi floppy proprietari chiamati "Disk Card" per una memorizzazione dei dati più economica e aggiunge un nuovo canale audio ad alta fedeltà per supportare i giochi del Disk System.
 
 Fondamentalmente, il Disk System serviva semplicemente a migliorare alcuni aspetti già insiti nel sistema Famicom di base, con un suono migliore e giochi più economici, sebbene con gli svantaggi di un prezzo iniziale elevato, una velocità ridotta e una minore affidabilità. Tuttavia, questo impulso al mercato delle memorie di massa accessibili e scrivibili servì temporaneamente come tecnologia abilitante per la creazione di nuovi tipi di videogiochi. Tra questi, le vaste avventure open world con salvataggio dei progressi dei vendutissimi The Legend of Zelda (1986) e Metroid (1986), i giochi con un'uscita rapida ed economica come il vendutissimo Super Mario Bros. 2, e le classifiche e i concorsi a livello nazionale tramite i chioschi Disk Fax, considerati i precursori degli odierni sistemi di distribuzione e di acquisto online.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

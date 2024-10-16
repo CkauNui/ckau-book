@@ -1,97 +1,99 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysart" extra="true">
-			<path>./../../_inc/anim/auto-allgames.png</path>
-			<path>./../../../ckau-book-addons/_inc/anim/4K/auto-allgames.png</path>
-		</image>
-		<!-- fix bg color -->
-		<image name="sysbg-fix" extra="true">
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.5</pos>
-			<maxSize>1 1</maxSize>
-			<scale if="${screen.ratio} == '16/10'">0.9</scale>
-			<scale if="${screen.ratio} == '4/3'">0.75</scale>
-			<path>./../../_inc/anim/auto-fix.png</path>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>3</zIndex>
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.492</pos>
-			<maxSize>0.6</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.492" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${system.theme}-${lang}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-${lang}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.48</origin>
-			<pos>0.508 0.492</pos>
-			<maxSize>0.103</maxSize>
-			<rotation>-2</rotation>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.228 0.492" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>./../../_inc/anim/video/favorites2.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/favorites2.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.49 0.4929</pos>
-			<maxSize>0.555</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.21 0.4929" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text/>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Collection</text>
-			<text lang="pl">Kolekcja</text>
-			<text lang="ru">Коллекция</text>
-			<text lang="es">Recopilación</text>
-			<text lang="fr">Collection</text>
-			<text lang="it">Collezione</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Never Played</text>
-			<text lang="pl">Nigdy nie grałem</text>
-			<text lang="ru">Не запускали</text>
-			<text lang="es">Nunca jugó</text>
-			<text lang="fr">Jamais joué</text>
-			<text lang="it">Mai giocato</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>Here's a collection of all the games, from all the systems, that have not been launched so far.</text>
-			<text lang="pl">Oto kolekcja wszystkich gier, z wszystkich systemów jakie posiadasz w swojej retro kolekcji na tej maszynie.</text>
-			<text lang="ru">Здесь собраны все игры со всех систем, которые до сих пор не были запущены.</text>
-			<text lang="es">Aquí tienes una recopilación de todos los juegos, de todos los sistemas, que no se han lanzado hasta ahora.</text>
-			<text lang="de">Hier finden Sie eine Sammlung aller Spiele für alle Systeme, die bisher noch nicht auf den Markt gekommen sind.</text>
-			<text lang="fr">Voici une collection de tous les jeux, de tous les systèmes, qui n'ont pas encore été lancés.</text>
-			<text lang="it">Ecco una raccolta di tutti i giochi, di tutti i sistemi, che non sono stati lanciati finora.</text>
-		</text>
-	</view>
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysart" extra="true">
+      <path>./../../_inc/anim/auto-allgames.png</path>
+      <path>./../../../ckau-book-addons/_inc/anim/4K/auto-allgames.png</path>
+    </image>
+    <!-- fix bg color -->
+    <image name="sysbg-fix" extra="true">
+      <origin>0.5 0.5</origin>
+      <pos>0.5 0.5</pos>
+      <maxSize>1 1</maxSize>
+      <scale if="${screen.ratio} == '16/10'">0.9</scale>
+      <scale if="${screen.ratio} == '4/3'">0.75</scale>
+      <path>./../../_inc/anim/auto-fix.png</path>
+      <zIndex>26</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>3</zIndex>
+      <origin>0.5 0.5</origin>
+      <pos>0.5 0.492</pos>
+      <maxSize>0.6</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.492" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${system.theme}-${lang}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-${lang}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.48</origin>
+      <pos>0.508 0.492</pos>
+      <maxSize>0.103</maxSize>
+      <rotation>-2</rotation>
+      <zIndex>26</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.228 0.492" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>./../../_inc/anim/video/favorites2.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/favorites2.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <pos>0.49 0.4929</pos>
+      <maxSize>0.555</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.21 0.4929" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text/>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Collection</text>
+      <text lang="pl">Kolekcja</text>
+      <text lang="pt">Coleção</text>
+      <text lang="ru">Коллекция</text>
+      <text lang="es">Recopilación</text>
+      <text lang="fr">Collection</text>
+      <text lang="it">Collezione</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Never Played</text>
+      <text lang="pl">Nigdy nie grałem</text>
+      <text lang="pt">Nunca joguei.</text>
+      <text lang="ru">Не запускали</text>
+      <text lang="es">Nunca jugó</text>
+      <text lang="fr">Jamais joué</text>
+      <text lang="it">Mai giocato</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>Here's a collection of all the games, from all the systems, that have not been launched so far.</text>
+      <text lang="pl">Oto kolekcja wszystkich gier, z wszystkich systemów jakie posiadasz w swojej retro kolekcji na tej maszynie.</text>
+      <text lang="pt">Esta é a coleção de todos os jogos, de todos os sistemas que você possui em sua coleção retrô nesta máquina.</text>
+      <text lang="ru">Здесь собраны все игры со всех систем, которые до сих пор не были запущены.</text>
+      <text lang="es">Aquí tienes una recopilación de todos los juegos, de todos los sistemas, que no se han lanzado hasta ahora.</text>
+      <text lang="de">Hier finden Sie eine Sammlung aller Spiele für alle Systeme, die bisher noch nicht auf den Markt gekommen sind.</text>
+      <text lang="fr">Voici une collection de tous les jeux, de tous les systèmes, qui n'ont pas encore été lancés.</text>
+      <text lang="it">Ecco una raccolta di tutti i giochi, di tutti i sistemi, che non sono stati lanciati finora.</text>
+    </text>
+  </view>
 </theme>

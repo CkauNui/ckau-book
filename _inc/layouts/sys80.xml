@@ -1,84 +1,87 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.49 0.36</pos>
-			<maxSize>0.27</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.21 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.49 0.36</pos>
-			<maxSize>0.26</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.21 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1981</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Dick Smith Electronics</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>System 80</text>
-		</text>
-	<!-- Regional consoles/computers -->
-		<text name="TextName" extra="true" region="eu"/>
-		<text name="TextName" extra="true" region="us"/>
-		<text>PMC-80</text>
-		<text name="TextName" extra="true" region="jp"/>
-		
-		<text name="TextDesc" extra="true">
-			<text>The Dick Smith System 80, also known as the Video Genie in Europe and the PMC-80 in North America, was a Zilog Z80-based microcomputer. It gained popularity in Australia and New Zealand during the early 1980s.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.49 0.36</pos>
+      <maxSize>0.27</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.21 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.49 0.36</pos>
+      <maxSize>0.26</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.21 0.36" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1981</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Dick Smith Electronics</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>System 80</text>
+    </text>
+    <!-- Regional consoles/computers -->
+    <text name="TextName" extra="true" region="eu"/>
+    <text name="TextName" extra="true" region="us"/>
+    <text>PMC-80</text>
+    <text name="TextName" extra="true" region="jp"/>
+    <text name="TextDesc" extra="true">
+      <text>The Dick Smith System 80, also known as the Video Genie in Europe and the PMC-80 in North America, was a Zilog Z80-based microcomputer. It gained popularity in Australia and New Zealand during the early 1980s.
 
 While its software closely resembled that of the TRS-80 Model 1, the System 80 had its own unique appearance, interfaces, and quirks. In these regions, it was a more affordable alternative to the TRS-80, making it a beloved choice for enthusiasts who were just getting started in the world of computing.
 The System 80 left a significant mark in microcomputer history, especially Down Under.</text>
-			<text lang="it">Il Dick Smith System 80, noto anche come Video Genie in Europa e PMC-80 in Nord America, era un microcomputer basato su Zilog Z80. Ha guadagnato popolarità in Australia e Nuova Zelanda all'inizio degli anni Ottanta.
+      <text lang="it">Il Dick Smith System 80, noto anche come Video Genie in Europa e PMC-80 in Nord America, era un microcomputer basato su Zilog Z80. Ha guadagnato popolarità in Australia e Nuova Zelanda all'inizio degli anni Ottanta.
 
 Sebbene il suo software assomigliasse molto a quello del TRS-80 Model 1, il System 80 aveva un aspetto, delle interfacce e delle stranezze uniche. In queste regioni rappresentava un'alternativa più economica rispetto al TRS-80, e fu quindi una scelta molto apprezzata dagli appassionati che si affacciavano per la prima volta al mondo dell'informatica.
 Il System 80 ha lasciato un segno significativo nella storia dei microcomputer, soprattutto nel mondo underground.</text>
-			<text lang="fr">Le Dick Smith System 80, également connu sous le nom de Video Genie en Europe et de PMC-80 en Amérique du Nord, était un micro-ordinateur basé sur le Zilog Z80. Il a gagné en popularité en Australie et en Nouvelle-Zélande au début des années 1980.
+      <text lang="fr">Le Dick Smith System 80, également connu sous le nom de Video Genie en Europe et de PMC-80 en Amérique du Nord, était un micro-ordinateur basé sur le Zilog Z80. Il a gagné en popularité en Australie et en Nouvelle-Zélande au début des années 1980.
 
 Bien que son logiciel ressemble beaucoup à celui du TRS-80 Model 1, le System 80 avait une apparence, des interfaces et des bizarreries qui lui étaient propres. Dans ces régions, il constituait une alternative plus abordable au TRS-80, ce qui en faisait un choix apprécié des passionnés qui débutaient dans le monde de l'informatique.
 Le Système 80 a laissé une trace importante dans l'histoire de la micro-informatique, en particulier en Australie.</text>
-			<text lang="de">Das Dick Smith System 80, in Europa auch als Video Genie und in Nordamerika als PMC-80 bekannt, war ein Zilog Z80-basierter Mikrocomputer. Er wurde in den frühen 1980er Jahren in Australien und Neuseeland populär.
+      <text lang="de">Das Dick Smith System 80, in Europa auch als Video Genie und in Nordamerika als PMC-80 bekannt, war ein Zilog Z80-basierter Mikrocomputer. Er wurde in den frühen 1980er Jahren in Australien und Neuseeland populär.
 
 Während seine Software der des TRS-80 Model 1 sehr ähnlich war, hatte das System 80 sein eigenes Aussehen, seine Schnittstellen und seine Eigenheiten. In diesen Regionen war es eine erschwinglichere Alternative zum TRS-80, was es zu einer beliebten Wahl für Enthusiasten machte, die gerade erst in die Welt der Computer einsteigen wollten.
 Das System 80 hinterließ einen bedeutenden Eindruck in der Geschichte der Mikrocomputer, vor allem in Down Under.</text>
-			<text lang="es">El Dick Smith System 80, también conocido como Video Genie en Europa y PMC-80 en Norteamérica, era un microordenador basado en el Z80 de Zilog. Ganó popularidad en Australia y Nueva Zelanda a principios de la década de 1980.
+      <text lang="es">El Dick Smith System 80, también conocido como Video Genie en Europa y PMC-80 en Norteamérica, era un microordenador basado en el Z80 de Zilog. Ganó popularidad en Australia y Nueva Zelanda a principios de la década de 1980.
 
 Aunque su software se parecía mucho al del TRS-80 Modelo 1, el System 80 tenía su propia apariencia, interfaces y peculiaridades. En estas regiones, era una alternativa más asequible que el TRS-80, lo que lo convertía en una opción muy apreciada por los entusiastas que acababan de iniciarse en el mundo de la informática.
 El System 80 dejó una huella significativa en la historia de los microordenadores, especialmente en Australia.</text>
-			<text lang="ru">Dick Smith System 80, также известный как Video Genie в Европе и PMC-80 в Северной Америке, был микрокомпьютером на базе Zilog Z80. Он завоевал популярность в Австралии и Новой Зеландии в начале 1980-х годов.
+      <text lang="ru">Dick Smith System 80, также известный как Video Genie в Европе и PMC-80 в Северной Америке, был микрокомпьютером на базе Zilog Z80. Он завоевал популярность в Австралии и Новой Зеландии в начале 1980-х годов.
 
 Несмотря на то, что его программное обеспечение было очень похоже на программное обеспечение TRS-80 Model 1, System 80 имел свой собственный уникальный внешний вид, интерфейсы и причуды. В этих регионах он был более доступной альтернативой TRS-80, что сделало его любимым выбором энтузиастов, только начинающих осваивать компьютерную технику.
 System 80 оставила значительный след в истории микрокомпьютеров, особенно в Австралии.</text>
-			<text lang="pl">Dick Smith System 80, znany również jako Video Genie w Europie i PMC-80 w Ameryce Północnej, był mikrokomputerem opartym na Zilog Z80. Zyskał popularność w Australii i Nowej Zelandii we wczesnych latach 80-tych.
+      <text lang="pl">Dick Smith System 80, znany również jako Video Genie w Europie i PMC-80 w Ameryce Północnej, był mikrokomputerem opartym na Zilog Z80. Zyskał popularność w Australii i Nowej Zelandii we wczesnych latach 80-tych.
 
 Podczas gdy jego oprogramowanie bardzo przypominało to z TRS-80 Model 1, System 80 miał swój własny unikalny wygląd, interfejsy i dziwactwa. W tych regionach był bardziej przystępną cenowo alternatywą dla TRS-80, co czyniło go ulubionym wyborem dla entuzjastów, którzy dopiero zaczynali swoją przygodę ze światem komputerów.
 System 80 odcisnął znaczące piętno w historii mikrokomputerów, zwłaszcza w Azji.</text>
-		</text>
-	</view>
+      <text lang="pt">Dick Smith System 80, também conhecido como Video Genie na Europa e PMC-80 na América do Norte, foi um microcomputador baseado no Zilog Z80. Ele ganhou popularidade na Austrália e na Nova Zelândia no início dos anos 80.
+
+Embora seu software se assemelhasse muito ao do TRS-80 Modelo 1, o System 80 tinha seu próprio design, interfaces e peculiaridades únicos. Nesses países, ele era uma alternativa mais acessível ao TRS-80, tornando-se a escolha favorita para entusiastas que estavam apenas começando sua jornada no mundo dos computadores.
+O System 80 deixou uma marca significativa na história dos microcomputadores, especialmente na Ásia.</text>
+    </text>
+  </view>
 </theme>

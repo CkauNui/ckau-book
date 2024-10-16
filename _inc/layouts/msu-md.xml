@@ -1,71 +1,74 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.39</pos>
-			<maxSize>0.254</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.39</pos>
-			<maxSize>0.244</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1988</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Krikzz</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>MSU-MD</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>MSU-MD is a driver that allows CD quality music for properly patched Sega Megadrive games, mimicing the behavior of the CD hardware.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.5 0.39</pos>
+      <maxSize>0.254</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <pos>0.5 0.39</pos>
+      <maxSize>0.244</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1988</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Krikzz</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>MSU-MD</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>MSU-MD is a driver that allows CD quality music for properly patched Sega Megadrive games, mimicing the behavior of the CD hardware.
 
 Instead of basing the work on proprietary APIs like md+, MSU-MD is developed as a nice tiny driver which makes interfacing with the Sega CD hardware easier and all using official bios calls. This means that these hacks could run also on official unmodified hardware.</text>
-			<text lang="pl">MSU-MD to sterownik, który umożliwia odtwarzanie muzyki w jakości CD w odpowiednio przygotowanych grach na Sega Megadrive, imitując działanie napędu CD.
+      <text lang="pl">MSU-MD to sterownik, który umożliwia odtwarzanie muzyki w jakości CD w odpowiednio przygotowanych grach na Sega Megadrive, imitując działanie napędu CD.
 
 Zamiast opierać się na własnościowych API, jak md+, MSU-MD został stworzony jako mały sterownik, który ułatwia współpracę ze sprzętem Sega CD, a wszystko to przy użyciu oficjalnych wywołań biosu. Oznacza to, że wspomniane przeróbki mogą działać zarówno na oficjalnym, niezmodyfikowanym sprzęcie, jak i na zmodyfikowanym.</text>
-			<text lang="ru">MSU-MD — это драйвер, который позволяет воспроизводить музыку с CD качеством для правильно пропатченных игр Sega Megadrive, имитируя поведение аппаратного обеспечения CD.
+      <text lang="pt">MSU-MD é um driver que permite a reprodução de música em qualidade de CD em jogos de Sega Megadrive devidamente preparados, imitando o funcionamento de uma unidade de CD.
+
+Ao invés de depender de APIs proprietárias, como md+, o MSU-MD foi criado como um driver pequeno que facilita a interação com o hardware do Sega CD, tudo isso utilizando chamadas oficiais do BIOS. Isso significa que as modificações mencionadas podem funcionar tanto em hardware oficial, não modificado, quanto em hardware modificado.</text>
+      <text lang="ru">MSU-MD — это драйвер, который позволяет воспроизводить музыку с CD качеством для правильно пропатченных игр Sega Megadrive, имитируя поведение аппаратного обеспечения CD.
 
 Вместо того, чтобы основывать работу на проприетарных API, таких как md+, MSU-MD разработан как приятный крошечный драйвер, который упрощает взаимодействие с оборудованием Sega CD и использует официальные вызовы BIOS. Это означает, что эти хаки могут работать и на официальном не модифицированном оборудовании.</text>
-			<text lang="es">MSU-MD es un controlador que permite reproducir música con calidad de CD para juegos de Sega Megadrive debidamente parcheados, imitando el comportamiento del hardware de CD.
+      <text lang="es">MSU-MD es un controlador que permite reproducir música con calidad de CD para juegos de Sega Megadrive debidamente parcheados, imitando el comportamiento del hardware de CD.
 
 En lugar de basar el trabajo en APIs propietarias como md+, MSU-MD se ha desarrollado como un pequeño y bonito driver que facilita la interfaz con el hardware de Sega CD y todo ello usando llamadas a la bios oficiales. Esto significa que estos hacks podrían ejecutarse también en hardware oficial no modificado.</text>
-			<text lang="de">MSU-MD ist ein Treiber, der Musik in CD-Qualität für korrekt gepatchte Sega Megadrive-Spiele ermöglicht und das Verhalten der CD-Hardware nachahmt.
+      <text lang="de">MSU-MD ist ein Treiber, der Musik in CD-Qualität für korrekt gepatchte Sega Megadrive-Spiele ermöglicht und das Verhalten der CD-Hardware nachahmt.
 
 Anstatt auf proprietären APIs wie md+ zu basieren, wurde MSU-MD als netter kleiner Treiber entwickelt, der das Zusammenspiel mit der Sega-CD-Hardware vereinfacht und die offiziellen Bios-Aufrufe verwendet. Das bedeutet, dass diese Hacks auch auf offizieller, nicht modifizierter Hardware laufen könnten.</text>
-			<text lang="fr">MSU-MD est un pilote qui permet d'écouter de la musique de qualité CD pour les jeux Sega Megadrive correctement patchés, en imitant le comportement du matériel CD.
+      <text lang="fr">MSU-MD est un pilote qui permet d'écouter de la musique de qualité CD pour les jeux Sega Megadrive correctement patchés, en imitant le comportement du matériel CD.
 
 Au lieu de baser le travail sur des APIs propriétaires comme md+, MSU-MD est développé comme un petit pilote qui rend l'interface avec le matériel Sega CD plus facile et tout en utilisant les appels bios officiels. Cela signifie que ces hacks peuvent également fonctionner sur du matériel officiel non modifié.</text>
-			<text lang="it">MSU-MD è un driver che consente di ascoltare musica di qualità CD per i giochi Sega Megadrive correttamente patchati, imitando il comportamento dell'hardware CD.
+      <text lang="it">MSU-MD è un driver che consente di ascoltare musica di qualità CD per i giochi Sega Megadrive correttamente patchati, imitando il comportamento dell'hardware CD.
 
 Invece di basare il lavoro su API proprietarie come md+, MSU-MD è stato sviluppato come un piccolo driver che semplifica l'interfacciamento con l'hardware del Sega CD e utilizza le chiamate ufficiali del bios. Ciò significa che questi hack possono essere eseguiti anche su hardware ufficiale non modificato.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

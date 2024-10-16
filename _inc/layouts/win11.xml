@@ -1,61 +1,62 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.405</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
-			<pos>0.5 0.394</pos>
-			<maxSize>0.383</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.497</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.417</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.394" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/moonlight.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/moonlight.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.405</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
-			<pos>0.5 0.39</pos>
-			<maxSize>0.372</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.495</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.415</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2021</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Microsoft</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Windows 11</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>Windows 11 is the latest major release of Microsoft's Windows NT operating system, released on October 5, 2021. It was a free upgrade to its predecessor, Windows 10 (2015), and is available for any Windows 10 devices that meet the new Windows 11 system requirements, but can also be installed on unsupported devices by bypassing the restrictions of system requirements.</text>
-			<text lang="pl">Windows 11 to najnowsza główna wersja systemu operacyjnego Windows NT firmy Microsoft, wydana 5 października 2021 roku. Była to bezpłatna aktualizacja do swojego poprzednika, Windows 10 (2015), i jest dostępna dla wszystkich urządzeń z systemem Windows 10, które spełniają nowe wymagania systemowe Windows 11, ale można ją również zainstalować na nieobsługiwanych urządzeniach, omijając ograniczenia wymagań systemowych.</text>
-			<text lang="ru">Windows 11 - последний крупный выпуск операционной системы Windows NT компании Microsoft, выпущенный 5 октября 2021 года. Она стала бесплатным обновлением своей предшественницы, Windows 10 (2015), и доступна для любых устройств с Windows 10, отвечающих новым системным требованиям Windows 11, но может быть установлена и на неподдерживаемые устройства в обход ограничений системных требований.</text>
-			<text lang="es">Windows 11 es la última gran versión del sistema operativo Windows NT de Microsoft, lanzada el 5 de octubre de 2021. Fue una actualización gratuita de su predecesor, Windows 10 (2015), y está disponible para cualquier dispositivo con Windows 10 que cumpla los nuevos requisitos del sistema de Windows 11, aunque también puede instalarse en dispositivos no compatibles saltándose las restricciones de los requisitos del sistema.</text>
-			<text lang="de">Windows 11 ist die neueste Hauptversion des Betriebssystems Windows NT von Microsoft, die am 5. Oktober 2021 veröffentlicht wurde. Es war ein kostenloses Upgrade zu seinem Vorgänger, Windows 10 (2015), und ist für alle Windows 10-Geräte verfügbar, die die neuen Windows 11-Systemanforderungen erfüllen, kann aber auch auf nicht unterstützten Geräten unter Umgehung der Einschränkungen der Systemanforderungen installiert werden.</text>
-			<text lang="fr">Windows 11 est la dernière version majeure du système d'exploitation Windows NT de Microsoft, publiée le 5 octobre 2021. Il s'agit d'une mise à jour gratuite de son prédécesseur, Windows 10 (2015), et est disponible pour tous les appareils Windows 10 qui répondent à la nouvelle configuration requise pour Windows 11, mais peut également être installé sur des appareils non pris en charge en contournant les restrictions de la configuration requise.</text>
-			<text lang="it">Windows 11 è l'ultima major release del sistema operativo Windows NT di Microsoft, rilasciata il 5 ottobre 2021. È stato un aggiornamento gratuito del suo predecessore, Windows 10 (2015), ed è disponibile per tutti i dispositivi Windows 10 che soddisfano i nuovi requisiti di sistema di Windows 11, ma può anche essere installato su dispositivi non supportati aggirando le restrizioni dei requisiti di sistema.</text>
-		</text>
-	</view>
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.405</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
+      <pos>0.5 0.394</pos>
+      <maxSize>0.383</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.497</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.417</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.394" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/moonlight.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/moonlight.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.405</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
+      <pos>0.5 0.39</pos>
+      <maxSize>0.372</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.495</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.415</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2021</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Microsoft</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Windows 11</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>Windows 11 is the latest major release of Microsoft's Windows NT operating system, released on October 5, 2021. It was a free upgrade to its predecessor, Windows 10 (2015), and is available for any Windows 10 devices that meet the new Windows 11 system requirements, but can also be installed on unsupported devices by bypassing the restrictions of system requirements.</text>
+      <text lang="pl">Windows 11 to najnowsza główna wersja systemu operacyjnego Windows NT firmy Microsoft, wydana 5 października 2021 roku. Była to bezpłatna aktualizacja do swojego poprzednika, Windows 10 (2015), i jest dostępna dla wszystkich urządzeń z systemem Windows 10, które spełniają nowe wymagania systemowe Windows 11, ale można ją również zainstalować na nieobsługiwanych urządzeniach, omijając ograniczenia wymagań systemowych.</text>
+      <text lang="pt">Windows 11 é a versão principal mais recente do sistema operacional Windows NT da Microsoft, lançada em 5 de outubro de 2021. Foi uma atualização gratuita para seu antecessor, Windows 10 (2015), e está disponível para todos os dispositivos com Windows 10 que atendem aos novos requisitos de sistema do Windows 11, mas também pode ser instalado em dispositivos não suportados, contornando as restrições dos requisitos de sistema.</text>
+      <text lang="ru">Windows 11 - последний крупный выпуск операционной системы Windows NT компании Microsoft, выпущенный 5 октября 2021 года. Она стала бесплатным обновлением своей предшественницы, Windows 10 (2015), и доступна для любых устройств с Windows 10, отвечающих новым системным требованиям Windows 11, но может быть установлена и на неподдерживаемые устройства в обход ограничений системных требований.</text>
+      <text lang="es">Windows 11 es la última gran versión del sistema operativo Windows NT de Microsoft, lanzada el 5 de octubre de 2021. Fue una actualización gratuita de su predecesor, Windows 10 (2015), y está disponible para cualquier dispositivo con Windows 10 que cumpla los nuevos requisitos del sistema de Windows 11, aunque también puede instalarse en dispositivos no compatibles saltándose las restricciones de los requisitos del sistema.</text>
+      <text lang="de">Windows 11 ist die neueste Hauptversion des Betriebssystems Windows NT von Microsoft, die am 5. Oktober 2021 veröffentlicht wurde. Es war ein kostenloses Upgrade zu seinem Vorgänger, Windows 10 (2015), und ist für alle Windows 10-Geräte verfügbar, die die neuen Windows 11-Systemanforderungen erfüllen, kann aber auch auf nicht unterstützten Geräten unter Umgehung der Einschränkungen der Systemanforderungen installiert werden.</text>
+      <text lang="fr">Windows 11 est la dernière version majeure du système d'exploitation Windows NT de Microsoft, publiée le 5 octobre 2021. Il s'agit d'une mise à jour gratuite de son prédécesseur, Windows 10 (2015), et est disponible pour tous les appareils Windows 10 qui répondent à la nouvelle configuration requise pour Windows 11, mais peut également être installé sur des appareils non pris en charge en contournant les restrictions de la configuration requise.</text>
+      <text lang="it">Windows 11 è l'ultima major release del sistema operativo Windows NT di Microsoft, rilasciata il 5 ottobre 2021. È stato un aggiornamento gratuito del suo predecessore, Windows 10 (2015), ed è disponibile per tutti i dispositivi Windows 10 che soddisfano i nuovi requisiti di sistema di Windows 11, ma può anche essere installato su dispositivi non supportati aggirando le restrizioni dei requisiti di sistema.</text>
+    </text>
+  </view>
 </theme>

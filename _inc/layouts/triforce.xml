@@ -1,185 +1,190 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.35 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>
-			<pos>0.29 0.418</pos>
-			<minSize>0.1 0.2</minSize>
-			<rotation>0</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.01 0.418" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.65 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.54 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.85 0.5</origin>
-			<pos>0.71 0.418</pos>
-			<minSize>0.1 0.2</minSize>
-			<rotation>0</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.43 0.418" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<pos>0.50 0.383</pos>
-			<maxSize>0.175</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.383" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-left" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.27</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
-			<origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>
-			<pos>0.378 0.418</pos>
-			<maxSize>0.15</maxSize>
-			<rotation>90</rotation>
-			<storyboard>
-				<animation property="pos" to="0.098 0.418" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-right" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.39</origin>
-			<origin if="${screen.ratio} == '21/9'">0.85 0.5</origin>
-			<pos>0.622 0.418</pos>
-			<maxSize>0.15</maxSize>
-			<rotation>-90</rotation>
-			<storyboard>
-				<animation property="pos" to="0.342 0.418" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.22</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<pos>0.50 0.383</pos>
-			<maxSize>0.15</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.383" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}-right.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}-right.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.31</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.42</origin>
-			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
-			<pos>0.622 0.418</pos>
-			<maxSize>0.15</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.17</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.342 0.418" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox3" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}-left.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}-left.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.31</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
-			<origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>
-			<pos>0.378 0.418</pos>
-			<maxSize>0.15</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.098 0.418" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2002</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Namco / Sega / Nintendo</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Triforce</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Triforce (トライフォース) is an arcade board developed in a joint venture between Sega, Nintendo, and Namco. It is based upon the Nintendo GameCube video game console to reduce development costs, and allowed for arcade ports of home console games, and vice versa. It is named after the magical, often sought-after object in Nintendo's popular The Legend of Zelda series.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-left" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.35 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>
+      <pos>0.29 0.418</pos>
+      <minSize>0.1 0.2</minSize>
+      <rotation>0</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.01 0.418" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-right" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.65 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.54 0.4</origin>
+      <origin if="${screen.ratio} == '21/9'">0.85 0.5</origin>
+      <pos>0.71 0.418</pos>
+      <minSize>0.1 0.2</minSize>
+      <rotation>0</rotation>
+      <path>./../../_inc/images/space.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.43 0.418" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+      <pos>0.50 0.383</pos>
+      <maxSize>0.175</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.383" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-left" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.27</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
+      <origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>
+      <pos>0.378 0.418</pos>
+      <maxSize>0.15</maxSize>
+      <rotation>90</rotation>
+      <storyboard>
+        <animation property="pos" to="0.098 0.418" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video-right" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.39</origin>
+      <origin if="${screen.ratio} == '21/9'">0.85 0.5</origin>
+      <pos>0.622 0.418</pos>
+      <maxSize>0.15</maxSize>
+      <rotation>-90</rotation>
+      <storyboard>
+        <animation property="pos" to="0.342 0.418" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.22</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+      <pos>0.50 0.383</pos>
+      <maxSize>0.15</maxSize>
+      <zIndex>26</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.383" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox2" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}-right.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}-right.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.31</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.42</origin>
+      <origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+      <pos>0.622 0.418</pos>
+      <maxSize>0.15</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.17</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.342 0.418" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <video name="videobox3" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}-left.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}-left.mp4</path>
+      <audio>false</audio>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.31</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+      <origin if="${screen.ratio} == '21/9'">0.15 0.5</origin>
+      <pos>0.378 0.418</pos>
+      <maxSize>0.15</maxSize>
+      <zIndex>25</zIndex>
+      <rotation>0</rotation>
+      <storyboard>
+        <animation property="pos" to="0.098 0.418" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2002</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Namco / Sega / Nintendo</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Triforce</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Triforce (トライフォース) is an arcade board developed in a joint venture between Sega, Nintendo, and Namco. It is based upon the Nintendo GameCube video game console to reduce development costs, and allowed for arcade ports of home console games, and vice versa. It is named after the magical, often sought-after object in Nintendo's popular The Legend of Zelda series.
 
 The system hardware is based on the Nintendo GameCube with several differences, like provisions for add-ons such as Sega's GD-ROM system and upgradeable RAM modules.
 
 While the platform was shared between the three companies, Nintendo was not in the business of producing arcade games at the time, so licensed its properties to Sega and Namco. Sega were the first to launch a game for the system with Virtua Striker 2002 in the Autumn of 2002, which shipped on Sega's propietary GD-ROM format (with later releases doing the same). Namco would not release a game for the system until 2005, and would ship its software on bespoke ROM cartridges.
 </text>
-			<text lang="pl">Triforce jest wspólną maszyną arcade opracowaną przez Nintendo , Segę i Namco . Nazwa Triforce pochodzi od serii gier The Legend of Zelda i została wybrana, ponieważ konsola została opracowana wspólnie przez trzech producentów.
+      <text lang="pl">Triforce jest wspólną maszyną arcade opracowaną przez Nintendo , Segę i Namco . Nazwa Triforce pochodzi od serii gier The Legend of Zelda i została wybrana, ponieważ konsola została opracowana wspólnie przez trzech producentów.
 
 Konsola jest technicznie oparta na Nintendo GameCube . Ma taką samą pamięć główną jak Gamecube z 32 MB w standardzie . Można to jednak rozszerzyć. Możliwe jest również użycie systemu GD-ROM firmy Sega .
 
 Istnieją różne wersje sprzętowe. W jednym pamięć główna jest zewnętrzna i nie jest umieszczona w metalowej obudowie. W innych wariantach odczytywane są tylko kasety Flash ROM.</text>
-			<text lang="ru">Аркадная доска, разработанная совместным предприятием Sega, Nintendo и Namco. Она основана на игровой консоли Nintendo GameCube для снижения затрат на разработку и позволяет портировать аркадные игры для домашних консолей и наоборот. Названа в честь волшебного, часто востребованного объекта в популярной серии Nintendo - The Legend of Zelda.</text>
-			<text lang="es">La Triforce (トライフォース) es una placa arcade desarrollada en una empresa conjunta entre Sega, Nintendo y Namco. Se basa en la videoconsola Nintendo GameCube para reducir los costes de desarrollo, y permitió ports arcade de juegos de consolas domésticas, y viceversa. Debe su nombre al objeto mágico y a menudo codiciado de la popular serie de Nintendo The Legend of Zelda.
+      <text lang="pt">Triforce é uma máquina arcade conjunta desenvolvida pela Nintendo, Sega e Namco. O nome Triforce vem da série de jogos The Legend of Zelda e foi escolhido porque o console foi desenvolvido em conjunto por três fabricantes.
+
+O console é tecnicamente baseado no Nintendo GameCube. Ele possui a mesma memória principal que o Gamecube, com 32 MB como padrão. No entanto, isso pode ser expandido. Também é possível usar o sistema GD-ROM da Sega.
+
+Existem diferentes versões de hardware. Em uma delas, a memória principal é externa e não está alojada em uma caixa de metal. Em outras variantes, apenas os cartuchos Flash ROM são lidos.</text>
+      <text lang="ru">Аркадная доска, разработанная совместным предприятием Sega, Nintendo и Namco. Она основана на игровой консоли Nintendo GameCube для снижения затрат на разработку и позволяет портировать аркадные игры для домашних консолей и наоборот. Названа в честь волшебного, часто востребованного объекта в популярной серии Nintendo - The Legend of Zelda.</text>
+      <text lang="es">La Triforce (トライフォース) es una placa arcade desarrollada en una empresa conjunta entre Sega, Nintendo y Namco. Se basa en la videoconsola Nintendo GameCube para reducir los costes de desarrollo, y permitió ports arcade de juegos de consolas domésticas, y viceversa. Debe su nombre al objeto mágico y a menudo codiciado de la popular serie de Nintendo The Legend of Zelda.
 
 El hardware de la consola se basa en el de la Nintendo GameCube, con algunas diferencias, como la posibilidad de añadir complementos como el sistema GD-ROM de Sega y módulos RAM ampliables.
 
 Aunque la plataforma era compartida por las tres compañías, Nintendo no se dedicaba entonces a la producción de juegos arcade, por lo que licenció sus propiedades a Sega y Namco. Sega fue la primera en lanzar un juego para la consola con Virtua Striker 2002 en otoño de 2002, que se distribuyó en el formato GD-ROM propiedad de Sega (y en versiones posteriores). Namco no lanzaría un juego para el sistema hasta 2005, y enviaría su software en cartuchos ROM hechos a medida.</text>
-			<text lang="de">Das Triforce (トライフォース) ist ein Arcade-Board, das in einem Joint Venture zwischen Sega, Nintendo und Namco entwickelt wurde. Es basiert auf der Nintendo GameCube-Videospielkonsole, um die Entwicklungskosten zu senken, und ermöglichte Arcade-Portierungen von Heimkonsolenspielen und umgekehrt. Benannt ist es nach dem magischen, oft gesuchten Gegenstand in Nintendos beliebter The Legend of Zelda-Reihe.
+      <text lang="de">Das Triforce (トライフォース) ist ein Arcade-Board, das in einem Joint Venture zwischen Sega, Nintendo und Namco entwickelt wurde. Es basiert auf der Nintendo GameCube-Videospielkonsole, um die Entwicklungskosten zu senken, und ermöglichte Arcade-Portierungen von Heimkonsolenspielen und umgekehrt. Benannt ist es nach dem magischen, oft gesuchten Gegenstand in Nintendos beliebter The Legend of Zelda-Reihe.
 
 Die Hardware des Systems basiert auf dem Nintendo GameCube mit einigen Unterschieden, wie z. B. der Möglichkeit, Zusatzgeräte wie Segas GD-ROM-System und aufrüstbare RAM-Module einzusetzen.
 
 Während die Plattform von den drei Unternehmen gemeinsam genutzt wurde, war Nintendo zu dieser Zeit nicht in der Lage, Arcade-Spiele zu produzieren, und lizenzierte daher seine Eigenschaften an Sega und Namco. Sega war das erste Unternehmen, das im Herbst 2002 mit Virtua Striker 2002 ein Spiel für das System auf den Markt brachte, das auf Segas eigenem GD-ROM-Format ausgeliefert wurde (spätere Veröffentlichungen taten dies ebenfalls). Namco brachte bis 2005 kein Spiel für das System heraus und lieferte seine Software auf maßgeschneiderten ROM-Kassetten.</text>
-			<text lang="fr">La Triforce (トライフォース) est une console d'arcade développée dans le cadre d'une coentreprise entre Sega, Nintendo et Namco. Elle est basée sur la console de jeu vidéo Nintendo GameCube afin de réduire les coûts de développement, et a permis de réaliser des portages arcade de jeux pour consoles de salon, et vice versa. Elle porte le nom de l'objet magique, souvent recherché, de la célèbre série The Legend of Zelda de Nintendo.
+      <text lang="fr">La Triforce (トライフォース) est une console d'arcade développée dans le cadre d'une coentreprise entre Sega, Nintendo et Namco. Elle est basée sur la console de jeu vidéo Nintendo GameCube afin de réduire les coûts de développement, et a permis de réaliser des portages arcade de jeux pour consoles de salon, et vice versa. Elle porte le nom de l'objet magique, souvent recherché, de la célèbre série The Legend of Zelda de Nintendo.
 
 Le matériel de la console est basé sur le Nintendo GameCube avec plusieurs différences, comme la possibilité d'ajouter des modules supplémentaires tels que le système GD-ROM de Sega et des modules de mémoire vive évolutifs.
 
 Bien que la plate-forme ait été partagée entre les trois sociétés, Nintendo n'avait pas pour vocation de produire des jeux d'arcade à l'époque et a donc concédé des licences à Sega et Namco. Sega a été le premier à lancer un jeu pour la console avec Virtua Striker 2002 à l'automne 2002, qui a été livré sur le format GD-ROM propre à Sega (les versions ultérieures ont fait de même). Namco n'a pas sorti de jeu pour la console avant 2005, et a livré ses logiciels sur des cartouches ROM personnalisées.</text>
-			<text lang="it">Il Triforce (トライフォース) è una scheda arcade sviluppata in una joint venture tra Sega, Nintendo e Namco. Si basa sulla console per videogiochi Nintendo GameCube per ridurre i costi di sviluppo e ha permesso di portare in sala giochi i giochi per console domestiche e viceversa. Prende il nome dall'oggetto magico, spesso ricercato, della famosa serie The Legend of Zelda di Nintendo.
+      <text lang="it">Il Triforce (トライフォース) è una scheda arcade sviluppata in una joint venture tra Sega, Nintendo e Namco. Si basa sulla console per videogiochi Nintendo GameCube per ridurre i costi di sviluppo e ha permesso di portare in sala giochi i giochi per console domestiche e viceversa. Prende il nome dall'oggetto magico, spesso ricercato, della famosa serie The Legend of Zelda di Nintendo.
 
 L'hardware della console è basato sul Nintendo GameCube con diverse differenze, come la possibilità di installare componenti aggiuntivi come il sistema GD-ROM di Sega e moduli RAM aggiornabili.
 
 Sebbene la piattaforma fosse condivisa tra le tre aziende, Nintendo non era all'epoca attiva nella produzione di giochi arcade, quindi concesse in licenza le sue proprietà a Sega e Namco. Sega fu la prima a lanciare un gioco per la console con Virtua Striker 2002 nell'autunno del 2002, che venne distribuito sul formato GD-ROM proprietario di Sega (e le versioni successive fecero lo stesso). Namco non pubblicherà un gioco per il sistema fino al 2005 e spedirà il suo software su cartucce ROM personalizzate.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

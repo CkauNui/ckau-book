@@ -1,63 +1,68 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.47 0.5</origin>
-			<pos>0.49 0.4</pos>
-			<maxSize>0.235</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.49 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.47 0.5</origin>
-			<pos>0.489 0.4</pos>
-			<maxSize>0.22</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1983</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Oric Products International</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Oric Atmos</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Oric Atmos was the successor of the Oric 1 and had almost the same features. Its main difference with the Oric 1 was the keyboard and the debugged ROM (the ORIC 1 had several bugs). Although improved, the loading process from tape was still very uncertain. The real mechanical keyboard was really better.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0.47 0.5</origin>
+      <pos>0.49 0.4</pos>
+      <maxSize>0.235</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.49 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '21/9'">0.47 0.5</origin>
+      <pos>0.489 0.4</pos>
+      <maxSize>0.22</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.21 0.4" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1983</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Oric Products International</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Oric Atmos</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Oric Atmos was the successor of the Oric 1 and had almost the same features. Its main difference with the Oric 1 was the keyboard and the debugged ROM (the ORIC 1 had several bugs). Although improved, the loading process from tape was still very uncertain. The real mechanical keyboard was really better.
 
 Two versions were available, with 16 or 48 KB of RAM. 16 KB version couldn't be upgraded, very few of them were sold.
 
 There were also new Basic instructions and above all the Scart power supply was integrated on French models from 85. The Atmos had really large success in France, like its little brother, the Oric-1.</text>
-			<text lang="pl">Oric Atmos był następcą modelu Oric 1 i miał prawie takie same funkcje. Główną różnicą w stosunku do Orica 1 była klawiatura i debugowana pamięć ROM (ORIC 1 miał kilka błędów). Chociaż został ulepszony, proces ładowania z taśmy był nadal bardzo niepewny. Prawdziwa klawiatura mechaniczna była zdecydowanie lepsza.
+      <text lang="pl">Oric Atmos był następcą modelu Oric 1 i miał prawie takie same funkcje. Główną różnicą w stosunku do Orica 1 była klawiatura i debugowana pamięć ROM (ORIC 1 miał kilka błędów). Chociaż został ulepszony, proces ładowania z taśmy był nadal bardzo niepewny. Prawdziwa klawiatura mechaniczna była zdecydowanie lepsza.
 
 Dostępne były dwie wersje, z 16 lub 48 KB pamięci RAM. Wersji 16 KB nie można było rozbudowywać, dlatego sprzedano ich bardzo niewiele.
 
 Pojawiły się także nowe instrukcje Basic, a przede wszystkim w modelach francuskich z roku 85 zintegrowano zasilacz Scart. Atmos odniósł we Francji naprawdę duży sukces, podobnie jak jego młodszy brat, Oric-1.</text>
-			<text lang="ru">Oric — семейство домашних компьютеров, производившихся в 1983—1986 годах британской фирмой Tangerine Computer Systems
+      <text lang="pt">Oric Atmos era o sucessor do modelo Oric 1 e tinha quase as mesmas funcionalidades. A principal diferença em relação ao Oric 1 era o teclado e a memória ROM depurada (Oric 1 tinha alguns erros). Embora tivesse sido aprimorado, o processo de carregamento da fita ainda era muito imprevisível. O teclado mecânico verdadeiro era definitivamente melhor.
+
+Havia duas versões disponíveis, com 16 ou 48 KB de RAM. A versão de 16 KB não podia ser expandida, por isso foram vendidas muito poucas unidades.
+
+Também surgiram novas instruções Basic, e principalmente nos modelos franceses de 1985, a fonte de alimentação Scart foi integrada. O Atmos fez muito sucesso na França, assim como seu irmão mais novo, Oric-1.</text>
+      <text lang="ru">Oric — семейство домашних компьютеров, производившихся в 1983—1986 годах британской фирмой Tangerine Computer Systems
 
 Деньги Edenspring позволили Oric International начать выпуск Oric Atmos в феврале 1984 года. Объём ОЗУ был увеличен до 48 КБ, был исправлен ряд ошибок в ПЗУ, но ошибки в коде загрузки с ленты сохранились. Клавиатура стала полноходовой, была добавлена клавиша FN (Function). К звуковому чипу добавили генерацию белого шума и программно реализовали синтезатор речи.
 
@@ -66,26 +71,26 @@ Pojawiły się także nowe instrukcje Basic, a przede wszystkim w modelach franc
 Также почти сразу после выпуска Oric Atmos были анонсированы модем, принтер и 3,5" дисковод, эти дополнения были выпущены в конце 1984 года.
 
 В Югославии выпускались компьютеры Oric Nova — по-видимому, полные клоны Oric Atmos, произведённые по лицензии. В Болгарии также выпускался Правец 8D — клон Oric Atmos в большем корпусе белого цвета, со встроенным блоком питания.</text>
-			<text lang="es">El Oric Atmos fue el sucesor del Oric 1 y tenía casi las mismas características. Su principal diferencia con el Oric 1 era el teclado y la ROM depurada (el ORIC 1 tenía varios fallos). Aunque mejorado, el proceso de carga desde cinta seguía siendo muy incierto. El teclado mecánico real era realmente mejor.
+      <text lang="es">El Oric Atmos fue el sucesor del Oric 1 y tenía casi las mismas características. Su principal diferencia con el Oric 1 era el teclado y la ROM depurada (el ORIC 1 tenía varios fallos). Aunque mejorado, el proceso de carga desde cinta seguía siendo muy incierto. El teclado mecánico real era realmente mejor.
 
 Había dos versiones disponibles, con 16 o 48 KB de RAM. La versión de 16 KB no se podía actualizar, se vendieron muy pocas.
 
 También había nuevas instrucciones básicas y, sobre todo, la fuente de alimentación Scart se integró en los modelos franceses a partir del 85. El Atmos tuvo un gran éxito en Francia, al igual que su hermano pequeño, el Oric-1.</text>
-			<text lang="de">Der Oric Atmos war der Nachfolger des Oric 1 und hatte fast die gleichen Funktionen. Sein Hauptunterschied zum Oric 1 war die Tastatur und das fehlerfreie ROM (der ORIC 1 hatte mehrere Fehler). Obwohl verbessert, war der Ladevorgang vom Band immer noch sehr unsicher. Die echte mechanische Tastatur war wirklich besser.
+      <text lang="de">Der Oric Atmos war der Nachfolger des Oric 1 und hatte fast die gleichen Funktionen. Sein Hauptunterschied zum Oric 1 war die Tastatur und das fehlerfreie ROM (der ORIC 1 hatte mehrere Fehler). Obwohl verbessert, war der Ladevorgang vom Band immer noch sehr unsicher. Die echte mechanische Tastatur war wirklich besser.
 
 Es gab zwei Versionen, mit 16 oder 48 KB RAM. Die 16-KB-Version konnte nicht aufgerüstet werden, und es wurden nur sehr wenige Exemplare verkauft.
 
 Es gab auch neue Basic-Befehle und vor allem das Scart-Netzteil war bei den französischen Modellen ab 85 integriert. Der Atmos hatte in Frankreich wirklich großen Erfolg, wie auch sein kleiner Bruder, der Oric-1.</text>
-			<text lang="fr">L'Oric Atmos était le successeur de l'Oric 1 et avait presque les mêmes caractéristiques. Sa principale différence avec l'Oric 1 était le clavier et la ROM déboguée (l'ORIC 1 avait plusieurs bugs). Bien qu'amélioré, le processus de chargement à partir de la bande était encore très incertain. Le vrai clavier mécanique était vraiment meilleur.
+      <text lang="fr">L'Oric Atmos était le successeur de l'Oric 1 et avait presque les mêmes caractéristiques. Sa principale différence avec l'Oric 1 était le clavier et la ROM déboguée (l'ORIC 1 avait plusieurs bugs). Bien qu'amélioré, le processus de chargement à partir de la bande était encore très incertain. Le vrai clavier mécanique était vraiment meilleur.
 
 Deux versions étaient disponibles, avec 16 ou 48 KB de RAM. La version 16 KB ne pouvait pas être mise à jour, très peu d'entre elles ont été vendues.
 
 Il y avait aussi de nouvelles instructions de base et surtout l'alimentation Scart était intégrée sur les modèles français à partir de 85. L'Atmos a eu un très grand succès en France, tout comme son petit frère, l'Oric-1.</text>
-			<text lang="it">L'Oric Atmos era il successore dell'Oric 1 e aveva quasi le stesse caratteristiche. La differenza principale con l'Oric 1 era la tastiera e la ROM con debug (l'ORIC 1 aveva diversi bug). Anche se migliorato, il processo di caricamento da nastro era ancora molto incerto. La vera tastiera meccanica era decisamente migliore.
+      <text lang="it">L'Oric Atmos era il successore dell'Oric 1 e aveva quasi le stesse caratteristiche. La differenza principale con l'Oric 1 era la tastiera e la ROM con debug (l'ORIC 1 aveva diversi bug). Anche se migliorato, il processo di caricamento da nastro era ancora molto incerto. La vera tastiera meccanica era decisamente migliore.
 
 Erano disponibili due versioni, con 16 o 48 KB di RAM. La versione da 16 KB non poteva essere aggiornata e ne furono venduti pochissimi esemplari.
 
 C'erano anche nuove istruzioni di base e, soprattutto, l'alimentazione Scart era integrata nei modelli francesi a partire dall'85. L'Atmos ebbe un grande successo in Francia, così come il suo fratello minore, l'Oric-1.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

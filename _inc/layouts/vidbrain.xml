@@ -1,80 +1,85 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
-			<origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
-			<pos>0.4815 0.402</pos>
-			<maxSize>0.215</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.2015 0.402" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
-			<origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
-			<pos>0.4815 0.402</pos>
-			<maxSize>0.215</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.2015 0.402" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1977</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Umtech Incorporated</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>VideoBrain Family Computer</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The VideoBrain Family Computer (model 101) is an 8-bit home computer manufactured by Umtech Incorporated, starting in 1977.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
+      <origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
+      <pos>0.4815 0.402</pos>
+      <maxSize>0.215</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.2015 0.402" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
+      <origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
+      <pos>0.4815 0.402</pos>
+      <maxSize>0.215</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.2015 0.402" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1977</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Umtech Incorporated</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>VideoBrain Family Computer</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The VideoBrain Family Computer (model 101) is an 8-bit home computer manufactured by Umtech Incorporated, starting in 1977.
 It was built around the F8 processor from Fairchild Semiconductor, and featured 1KB of RAM and a 4KB ROM. It was able to output 384 x 336 graphics and 128 x 56 semigraphic characters in 16 colors, and sound to a connected television set through an RF connector.
 
 By far its most striking feature was the 36-key keyboard - though the keyboard of the VideoBrain was poorly designed and difficult to use, keyboards were not available on any of the more common video game consoles of the time. The system also features four joystick ports, a cartridge connector, and an expansion port.</text>
-			<text lang="pl">VideoBrain Family Computer (model 101) był 8-bitowym komputerem domowym produkowanym przez Umtech Incorporated od 1977 roku.
+      <text lang="pl">VideoBrain Family Computer (model 101) był 8-bitowym komputerem domowym produkowanym przez Umtech Incorporated od 1977 roku.
 Zbudowany był w oparciu o procesor Fairchild Semiconductor F8 i posiadał 1KB pamięci RAM i 4KB pamięci ROM. Był zdolny do odtwarzania 384 x 336 znaków graficznych i 128 x 56 16-kolorowych znaków półgraficznych oraz wysyłania dźwięku do telewizora podłączonego przez złącze RF.
 
 Zdecydowanie najbardziej uderzającą cechą była 36-klawiszowa klawiatura: chociaż klawiatura VideoBrain była źle zaprojektowana i trudna w użyciu, klawiatury nie były dostępne na żadnej z popularnych konsol do gier w tamtym czasie. System posiadał również cztery porty joysticka, złącze kartridża i port rozszerzeń.</text>
-			<text lang="ru">VideoBrain Family Computer (модель 101) - 8-разрядный домашний компьютер, выпускавшийся компанией Umtech Incorporated с 1977 года.
+      <text lang="pt">O VideoBrain Family Computer (modelo 101) era um computador doméstico de 8 bits fabricado pela Umtech Incorporated a partir de 1977.
+
+Ele era baseado no processador Fairchild Semiconductor F8 e tinha 1KB de memória RAM e 4KB de memória ROM. Era capaz de exibir 384 x 336 caracteres gráficos e 128 x 56 caracteres semi-gráficos de 16 cores, além de emitir som através de um televisor conectado através de uma entrada RF.
+
+Provavelmente a característica mais marcante era o teclado de 36 teclas: embora o teclado do VideoBrain fosse mal projetado e difícil de usar, teclados não estavam disponíveis em nenhum dos consoles de videogame populares da época. O sistema também possuía quatro portas para joystick, um slot de cartucho e uma porta de expansão.</text>
+      <text lang="ru">VideoBrain Family Computer (модель 101) - 8-разрядный домашний компьютер, выпускавшийся компанией Umtech Incorporated с 1977 года.
 Он был построен на базе процессора Fairchild Semiconductor F8, имел 1 Кб ОЗУ и 4 Кб ПЗУ. Он мог воспроизводить 384 x 336 графических и 128 x 56 16-цветных полуграфических символов, а также передавать звук на телевизор, подключенный через RF-разъем.
 
 Самой яркой особенностью системы была 36-клавишная клавиатура: хотя клавиатура VideoBrain была плохо продумана и сложна в использовании, таких клавиатур не было ни на одной из популярных игровых приставок того времени. Система также имела четыре порта для джойстиков, разъем для картриджей и порт расширения.</text>
-			<text lang="es">El VideoBrain Family Computer (modelo 101) fue un ordenador doméstico de 8 bits fabricado por Umtech Incorporated a partir de 1977.
+      <text lang="es">El VideoBrain Family Computer (modelo 101) fue un ordenador doméstico de 8 bits fabricado por Umtech Incorporated a partir de 1977.
 Se basaba en el procesador F8 de Fairchild Semiconductor y disponía de 1 KB de RAM y 4 KB de ROM. Era capaz de reproducir gráficos de 384 x 336 y caracteres semigráficos de 128 x 56 en 16 colores y enviar sonido a un televisor conectado mediante un conector RF.
 
 Con diferencia, la característica más llamativa era el teclado de 36 teclas: aunque el teclado del VideoBrain estaba mal diseñado y era difícil de usar, no había teclados disponibles en ninguna de las videoconsolas populares de la época. El sistema también disponía de cuatro puertos para joystick, un conector para cartuchos y un puerto de expansión.</text>
-			<text lang="de">Der VideoBrain Family Computer (Modell 101) war ein 8-Bit-Heimcomputer, der ab 1977 von Umtech Incorporated hergestellt wurde.
+      <text lang="de">Der VideoBrain Family Computer (Modell 101) war ein 8-Bit-Heimcomputer, der ab 1977 von Umtech Incorporated hergestellt wurde.
 Er basierte auf dem F8-Prozessor von Fairchild Semiconductor und verfügte über 1 KB RAM und 4 KB ROM. Er war in der Lage, 384 x 336 Grafiken und 128 x 56 16-farbige semigrafische Zeichen wiederzugeben und Ton an einen über einen RF-Anschluss angeschlossenen Fernseher zu senden.
 
 Das bei weitem auffälligste Merkmal war die 36-Tasten-Tastatur: Die Tastatur des VideoBrain war zwar schlecht gestaltet und schwer zu bedienen, aber Tastaturen waren bei keiner der damals gängigen Spielkonsolen vorhanden. Das System hatte außerdem vier Joystick-Anschlüsse, einen Kassettenanschluss und einen Erweiterungsanschluss.</text>
-			<text lang="fr">Le VideoBrain Family Computer (modèle 101) était un ordinateur domestique 8 bits fabriqué par Umtech Incorporated à partir de 1977.
+      <text lang="fr">Le VideoBrain Family Computer (modèle 101) était un ordinateur domestique 8 bits fabriqué par Umtech Incorporated à partir de 1977.
 Il était construit autour du processeur F8 de Fairchild Semiconductor et disposait de 1 Ko de RAM et de 4 Ko de ROM. Il était capable de reproduire des graphiques de 384 x 336 et des caractères semi-graphiques de 128 x 56 en 16 couleurs, et d'envoyer du son à un téléviseur connecté via un connecteur RF.
 
 La caractéristique la plus frappante était de loin le clavier à 36 touches : bien que le clavier du VideoBrain ait été mal conçu et difficile à utiliser, aucun clavier n'était disponible sur les consoles de jeu populaires de l'époque. Le système disposait également de quatre ports pour manettes de jeu, d'un connecteur pour cartouches et d'un port d'extension.</text>
-			<text lang="it">Il VideoBrain Family Computer (modello 101) è stato un home computer a 8 bit prodotto da Umtech Incorporated a partire dal 1977.
+      <text lang="it">Il VideoBrain Family Computer (modello 101) è stato un home computer a 8 bit prodotto da Umtech Incorporated a partire dal 1977.
 Era costruito attorno al processore F8 di Fairchild Semiconductor e disponeva di 1KB di RAM e 4KB di ROM. Era in grado di riprodurre grafici 384 x 336 e caratteri semigrafici 128 x 56 a 16 colori e di inviare il suono a un televisore collegato tramite un connettore RF.
 
 La caratteristica di gran lunga più sorprendente era la tastiera a 36 tasti: sebbene la tastiera del VideoBrain fosse mal progettata e difficile da usare, le tastiere non erano disponibili su nessuna delle più comuni console per videogiochi dell'epoca. Il sistema disponeva anche di quattro porte joystick, un connettore per cartucce e una porta di espansione.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

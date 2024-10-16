@@ -1,67 +1,74 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<pos>0.501 0.4935</pos>
-			<maxSize>0.33</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.44</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.36</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.221 0.4935" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.495</origin>
-			<pos>0.501 0.4935</pos>
-			<maxSize>0.312</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.418</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.348</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.221 0.4935" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2011</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Sony</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>PlayStation Vita</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The PlayStation Vita (PS Vita, or Vita) is a handheld video game console developed and marketed by Sony Interactive Entertainment. It was first released in Japan on December 17, 2011, and in North America, Europe, and other international territories beginning on February 22, 2012. The console is the successor to the PlayStation Portable, and a part of the PlayStation brand of gaming devices; as part of the eighth generation of video game consoles, it primarily competed with the Nintendo 3DS.</text>
-			<text lang="pl">PlayStation Vita (nazwa kodowa Next Generation Portable) – przenośna konsola gier wideo firmy Sony, która została oficjalnie zaprezentowana 27 stycznia 2011 roku. Jest to następca konsoli PlayStation Portable. Urządzenie zadebiutowało w Japonii 17 grudnia 2011 roku, a na rynku europejskim i amerykańskim pojawiła się 22 lutego 2012 roku. Jest konkurentem przenośnej konsoli Nintendo 3DS, która miała swą premierę w pierwszym kwartale 2011 roku. Przez cały okres istnienia sprzęt miał problem w przebiciu się do masowego klienta. Z powodu niskiej sprzedaży jej produkcja zakończyła się 1 marca 2019.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <pos>0.501 0.4935</pos>
+      <maxSize>0.33</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.44</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.36</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.221 0.4935" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.495</origin>
+      <pos>0.501 0.4935</pos>
+      <maxSize>0.312</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.418</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.348</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.221 0.4935" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2011</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Sony</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>PlayStation Vita</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The PlayStation Vita (PS Vita, or Vita) is a handheld video game console developed and marketed by Sony Interactive Entertainment. It was first released in Japan on December 17, 2011, and in North America, Europe, and other international territories beginning on February 22, 2012. The console is the successor to the PlayStation Portable, and a part of the PlayStation brand of gaming devices; as part of the eighth generation of video game consoles, it primarily competed with the Nintendo 3DS.</text>
+      <text lang="pl">PlayStation Vita (nazwa kodowa Next Generation Portable) – przenośna konsola gier wideo firmy Sony, która została oficjalnie zaprezentowana 27 stycznia 2011 roku. Jest to następca konsoli PlayStation Portable. Urządzenie zadebiutowało w Japonii 17 grudnia 2011 roku, a na rynku europejskim i amerykańskim pojawiła się 22 lutego 2012 roku. Jest konkurentem przenośnej konsoli Nintendo 3DS, która miała swą premierę w pierwszym kwartale 2011 roku. Przez cały okres istnienia sprzęt miał problem w przebiciu się do masowego klienta. Z powodu niskiej sprzedaży jej produkcja zakończyła się 1 marca 2019.
 
 W okolicach premiery gry na konsole wydawane były na specjalnym nośniku NVG Card. Karta ta oprócz samych oryginalnych zasobów gry może również przetrzymywać zapis postępu oraz pliki aktualizacji. Z czasem, gdy popularność konsoli malała podjęto decyzję o zaprzestaniu dystrybucji gier na kartach NVG, tym samym zwiększając biblioteki cyfrowego sklepu PlayStation Store o gry takie jak Tales from Space: Mutant Blobs Attack, Super Stardust Delta, Escape Plan i wiele innych.
 
 Urządzenie jest także w pełni kompatybilne z grami na PlayStation oraz PlayStation Portable dostępnymi na PS Store za pośrednictwem PS Network. Konsola nie posiada czytnika płyt UMD, dlatego nie jest kompatybilna z grami wydanymi na tym nośniku.
 
 Korzystając z funkcji Remote Play, konsola PlayStation 4 może połączyć się z PSV, dzięki czemu ekran Vity działa jak telewizor, na którym wyświetlany jest obraz gry uruchomionej na PS4, a jej przyciski działają jak w kontrolerze DualShock 4. PSV nie posiada jednak funkcji wibracji, a także fizycznych przycisków L2/R2 oraz L3/R3, które są emulowane tylnym lub przednim panelem dotykowym.</text>
-			<text lang="ru">Портативная консоль от Sony Computer Entertainment, преемник PlayStation Portable. Выпущена в Японии 17 декабря 2011 года, в Северной Америке и Европе — 22 февраля 2012 года.
+      <text lang="pt">PlayStation Vita (nome código Next Generation Portable) - console portátil de videogame da Sony, que foi oficialmente apresentada em 27 de janeiro de 2011. É a sucessora da console PlayStation Portable. O dispositivo estreou no Japão em 17 de dezembro de 2011, e no mercado europeu e americano em 22 de fevereiro de 2012. É concorrente da console portátil Nintendo 3DS, que teve sua estreia no primeiro trimestre de 2011. Durante todo o seu período de existência, o equipamento teve problemas para alcançar o cliente em massa. Devido às baixas vendas, sua produção foi encerrada em 1º de março de 2019.
+
+Por volta do lançamento, os jogos para o console eram lançados em um suporte especial chamado NVG Card. Essa carta, além de conter os recursos originais do jogo, também pode armazenar o progresso do jogo e arquivos de atualização. Com o tempo, à medida que a popularidade do console diminuía, foi tomada a decisão de interromper a distribuição de jogos em cartões NVG, aumentando assim as bibliotecas da loja digital PlayStation Store com jogos como Tales from Space: Mutant Blobs Attack, Super Stardust Delta, Escape Plan e muitos outros.
+
+O dispositivo também é totalmente compatível com jogos para PlayStation e PlayStation Portable disponíveis na PS Store por meio da PS Network. O console não possui leitor de disco UMD, portanto não é compatível com jogos lançados nesse suporte.
+
+Usando a função Remote Play, o console PlayStation 4 pode se conectar ao PSV, fazendo com que a tela do Vita funcione como uma TV, na qual é exibida a imagem do jogo iniciado no PS4, e seus botões funcionam como o controle DualShock 4. O PSV, no entanto, não possui a função de vibração, bem como botões físicos L2/R2 e L3/R3, que são emulados pelo painel de toque traseiro ou frontal.</text>
+      <text lang="ru">Портативная консоль от Sony Computer Entertainment, преемник PlayStation Portable. Выпущена в Японии 17 декабря 2011 года, в Северной Америке и Европе — 22 февраля 2012 года.
 
 Анонсирована 27 января 2011 вместе с PlayStation Suite на PlayStation Meeting 2011. До анонса называлась PSP2, о которой (как и о PlayStation Phone) было известно по слухам от сторонних разработчиков. До E3 2011 система была известна под рабочим названием Next Generation Portable (NGP). В России консоль представили на ИгроМире-2011.
 
 Игры для PlayStation Vita распространяются на флэш-картах нового проприетарного формата PlayStation Vita card, которые заменили UMD. Кроме этого, консоль имеет разъем для новых карт памяти, которые пришли на смену Memory Stick PRO DUO и выпускаются вместимостью до 64 ГБ. На старте в Европе были доступны карты от 4 до 16 ГБ. 5-10% свободного места зарезервировано для сохранений и патчей. Используя флеш-накопитель, Sony планирует ввести в использование карточки большей ёмкости. Также PSN аккаунт пользователя связан с картой памяти, но не с консолью. В 2016 году, когда появилась возможность устанавливать плагины, придумали переходники которые превращали сд карту в картридж. (Работает только с плагином)</text>
-			<text lang="es">La PlayStation Vita (PS Vita o Vita) es una videoconsola portátil desarrollada y comercializada por Sony Interactive Entertainment. Salió a la venta por primera vez en Japón el 17 de diciembre de 2011, y en Norteamérica, Europa y otros territorios internacionales a partir del 22 de febrero de 2012. La consola es la sucesora de la PlayStation Portable, y forma parte de la marca PlayStation de dispositivos de juego; como parte de la octava generación de consolas de videojuegos, compitió principalmente con la Nintendo 3DS.</text>
-			<text lang="de">Die PlayStation Vita (PS Vita, oder Vita) ist eine Handheld-Videospielkonsole, die von Sony Interactive Entertainment entwickelt und vermarktet wird. Sie wurde erstmals in Japan am 17. Dezember 2011 und in Nordamerika, Europa und anderen internationalen Gebieten ab dem 22. Februar 2012 veröffentlicht. Die Konsole ist der Nachfolger der PlayStation Portable und ein Teil der PlayStation-Marke von Gaming-Geräten; als Teil der achten Generation von Videospielkonsolen, konkurrierte es in erster Linie mit dem Nintendo 3DS.</text>
-			<text lang="fr">La PlayStation Vita (PS Vita ou Vita) est une console de jeux vidéo portable développée et commercialisée par Sony Interactive Entertainment. Elle a été commercialisée pour la première fois au Japon le 17 décembre 2011, puis en Amérique du Nord, en Europe et dans d'autres territoires internationaux à partir du 22 février 2012. La console est le successeur de la PlayStation Portable, et fait partie de la marque PlayStation d'appareils de jeu ; en tant qu'élément de la huitième génération de consoles de jeux vidéo, elle est principalement en concurrence avec la Nintendo 3DS.</text>
-			<text lang="it">La PlayStation Vita (PS Vita o Vita) è una console portatile per videogiochi sviluppata e commercializzata da Sony Interactive Entertainment. È stata rilasciata per la prima volta in Giappone il 17 dicembre 2011 e in Nord America, Europa e altri territori internazionali a partire dal 22 febbraio 2012. La console è il successore della PlayStation Portable e fa parte del marchio di dispositivi di gioco PlayStation; fa parte dell'ottava generazione di console per videogiochi e compete principalmente con il Nintendo 3DS.</text>
-		</text>
-	</view>
+      <text lang="es">La PlayStation Vita (PS Vita o Vita) es una videoconsola portátil desarrollada y comercializada por Sony Interactive Entertainment. Salió a la venta por primera vez en Japón el 17 de diciembre de 2011, y en Norteamérica, Europa y otros territorios internacionales a partir del 22 de febrero de 2012. La consola es la sucesora de la PlayStation Portable, y forma parte de la marca PlayStation de dispositivos de juego; como parte de la octava generación de consolas de videojuegos, compitió principalmente con la Nintendo 3DS.</text>
+      <text lang="de">Die PlayStation Vita (PS Vita, oder Vita) ist eine Handheld-Videospielkonsole, die von Sony Interactive Entertainment entwickelt und vermarktet wird. Sie wurde erstmals in Japan am 17. Dezember 2011 und in Nordamerika, Europa und anderen internationalen Gebieten ab dem 22. Februar 2012 veröffentlicht. Die Konsole ist der Nachfolger der PlayStation Portable und ein Teil der PlayStation-Marke von Gaming-Geräten; als Teil der achten Generation von Videospielkonsolen, konkurrierte es in erster Linie mit dem Nintendo 3DS.</text>
+      <text lang="fr">La PlayStation Vita (PS Vita ou Vita) est une console de jeux vidéo portable développée et commercialisée par Sony Interactive Entertainment. Elle a été commercialisée pour la première fois au Japon le 17 décembre 2011, puis en Amérique du Nord, en Europe et dans d'autres territoires internationaux à partir du 22 février 2012. La console est le successeur de la PlayStation Portable, et fait partie de la marque PlayStation d'appareils de jeu ; en tant qu'élément de la huitième génération de consoles de jeux vidéo, elle est principalement en concurrence avec la Nintendo 3DS.</text>
+      <text lang="it">La PlayStation Vita (PS Vita o Vita) è una console portatile per videogiochi sviluppata e commercializzata da Sony Interactive Entertainment. È stata rilasciata per la prima volta in Giappone il 17 dicembre 2011 e in Nord America, Europa e altri territori internazionali a partire dal 22 febbraio 2012. La console è il successore della PlayStation Portable e fa parte del marchio di dispositivi di gioco PlayStation; fa parte dell'ottava generazione di console per videogiochi e compete principalmente con il Nintendo 3DS.</text>
+    </text>
+  </view>
 </theme>

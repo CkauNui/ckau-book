@@ -1,72 +1,75 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
-			<pos>0.5 0.37</pos>
-			<maxSize>0.23</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
-			<pos>0.5 0.37</pos>
-			<maxSize>0.22</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1999</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Sony</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>PocketStation</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The PocketStation is a Memory Card peripheral by Sony Computer Entertainment for the PlayStation home video game console. Categorized by Sony as a combination of a Memory Card and a miniature personal digital assistant, the device features a monochrome liquid crystal display (LCD), infrared communication capability, a real-time clock, built-in flash memory, and sound capability. To use the device's memory card functionality, it must be connected to a PlayStation through a memory card slot. It was released exclusively in Japan on January 23, 1999.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+      <pos>0.5 0.37</pos>
+      <maxSize>0.23</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+      <pos>0.5 0.37</pos>
+      <maxSize>0.22</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.37" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1999</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Sony</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>PocketStation</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The PocketStation is a Memory Card peripheral by Sony Computer Entertainment for the PlayStation home video game console. Categorized by Sony as a combination of a Memory Card and a miniature personal digital assistant, the device features a monochrome liquid crystal display (LCD), infrared communication capability, a real-time clock, built-in flash memory, and sound capability. To use the device's memory card functionality, it must be connected to a PlayStation through a memory card slot. It was released exclusively in Japan on January 23, 1999.
 
 Software for the PocketStation was typically distributed as extras for PlayStation games, included in the CD-ROM, enhancing the games with added features. Stand-alone software could also be downloaded through the PlayStation console. The software is then transferred to the PocketStation for use. A built-in infrared data interface allows direct transfer of data such as game saves between PocketStation units, as well as multiplayer gaming.</text>
-			<text lang="pl">PocketStation to urządzenie peryferyjne na karty pamięci firmy Sony Computer Entertainment dla domowej konsoli do gier wideo PlayStation. Urządzenie, skategoryzowane przez Sony jako połączenie karty pamięci i miniaturowego osobistego asystenta cyfrowego, jest wyposażone w monochromatyczny wyświetlacz ciekłokrystaliczny (LCD), możliwość komunikacji w podczerwieni, zegar czasu rzeczywistego, wbudowaną pamięć flash i dźwięk. Aby korzystać z funkcji kart pamięci, urządzenie musi być podłączone do konsoli PlayStation przez gniazdo kart pamięci. Urządzenie zostało wydane wyłącznie w Japonii 23 stycznia 1999 roku.
+      <text lang="pl">PocketStation to urządzenie peryferyjne na karty pamięci firmy Sony Computer Entertainment dla domowej konsoli do gier wideo PlayStation. Urządzenie, skategoryzowane przez Sony jako połączenie karty pamięci i miniaturowego osobistego asystenta cyfrowego, jest wyposażone w monochromatyczny wyświetlacz ciekłokrystaliczny (LCD), możliwość komunikacji w podczerwieni, zegar czasu rzeczywistego, wbudowaną pamięć flash i dźwięk. Aby korzystać z funkcji kart pamięci, urządzenie musi być podłączone do konsoli PlayStation przez gniazdo kart pamięci. Urządzenie zostało wydane wyłącznie w Japonii 23 stycznia 1999 roku.
 
 Oprogramowanie dla PocketStation było zazwyczaj rozprowadzane jako dodatki do gier PlayStation, dołączane do płyt CD-ROM, wzbogacające gry o dodatkowe funkcje. Samodzielne oprogramowanie można było również pobrać za pośrednictwem konsoli PlayStation. Następnie oprogramowanie jest przenoszone do PocketStation, aby można było z niego korzystać. Wbudowany interfejs danych na podczerwień umożliwia bezpośrednie przesyłanie danych, takich jak zapisy gier, między urządzeniami PocketStation, a także grę w trybie multiplayer.</text>
-			<text lang="ru">Периферийное устройство для PlayStation, созданное Sony Computer Entertainment. Выпущено в продажу 23 января 1999 года и продавалось только в Японии. Имеет ЖК-дисплей, часы реального времени, может воспроизводить звук, обмениваться информацией через инфракрасный порт, а также присоединяться к PlayStation как стандартная карта памяти.
+      <text lang="pt">PocketStation é um dispositivo periférico para cartões de memória da Sony Computer Entertainment para o console doméstico de videogame PlayStation. O dispositivo, categorizado pela Sony como uma combinação de cartão de memória e um mini assistente digital pessoal, é equipado com uma tela de cristal líquido monocromática (LCD), capacidade de comunicação infravermelha, relógio de tempo real, memória flash embutida e som. Para usar as funções do cartão de memória, o dispositivo deve ser conectado ao console PlayStation através do slot do cartão de memória. O dispositivo foi lançado apenas no Japão em 23 de janeiro de 1999.
+
+O software para PocketStation geralmente era distribuído como complemento de jogos para PlayStation, incluído nos CDs-ROM, complementando os jogos com recursos adicionais. O software autônomo também podia ser baixado através do console PlayStation. Em seguida, o software é transferido para o PocketStation para que possa ser usado. O interface de dados infravermelho embutido permite o envio direto de dados, como salvamentos de jogos, entre dispositivos PocketStation, bem como o jogo em modo multiplayer.</text>
+      <text lang="ru">Периферийное устройство для PlayStation, созданное Sony Computer Entertainment. Выпущено в продажу 23 января 1999 года и продавалось только в Японии. Имеет ЖК-дисплей, часы реального времени, может воспроизводить звук, обмениваться информацией через инфракрасный порт, а также присоединяться к PlayStation как стандартная карта памяти.
 
 Программное обеспечение для PocketStation поставляется на дисках вместе с играми для PlayStation. При помощи инфракрасного порта можно играть в игру нескольким игрокам одновременно (multiplayer), а также обмениваться друг с другом данными, сохранёнными из игр.
 
 Хотя устройство так и не было выпущено в Северной Америке и Европе, были планы это сделать — так, например, Official UK PlayStation Magazine сообщал, что несколько игр (таких как Final Fantasy VIII) сохранят совместимость с PocketStation в локализованных версиях. В результате этого, в частности, в PC-версии Final Fantasy VIII появилась мини-игра Chocobo World.</text>
-			<text lang="es">La PocketStation es un periférico de tarjeta de memoria de Sony Computer Entertainment para la videoconsola doméstica PlayStation. Clasificado por Sony como una combinación de tarjeta de memoria y asistente digital personal en miniatura, el dispositivo cuenta con una pantalla monocroma de cristal líquido (LCD), capacidad de comunicación por infrarrojos, reloj en tiempo real, memoria flash integrada y capacidad de sonido. Para utilizar la funcionalidad de tarjeta de memoria del dispositivo, debe conectarse a una PlayStation a través de una ranura de tarjeta de memoria. Salió a la venta exclusivamente en Japón el 23 de enero de 1999.
+      <text lang="es">La PocketStation es un periférico de tarjeta de memoria de Sony Computer Entertainment para la videoconsola doméstica PlayStation. Clasificado por Sony como una combinación de tarjeta de memoria y asistente digital personal en miniatura, el dispositivo cuenta con una pantalla monocroma de cristal líquido (LCD), capacidad de comunicación por infrarrojos, reloj en tiempo real, memoria flash integrada y capacidad de sonido. Para utilizar la funcionalidad de tarjeta de memoria del dispositivo, debe conectarse a una PlayStation a través de una ranura de tarjeta de memoria. Salió a la venta exclusivamente en Japón el 23 de enero de 1999.
 
 El software para la PocketStation se distribuía normalmente como extras para los juegos de PlayStation, incluidos en el CD-ROM, mejorando los juegos con funciones añadidas. El software independiente también podía descargarse a través de la consola PlayStation. A continuación, el software se transfería a la PocketStation para su uso. Una interfaz de datos por infrarrojos integrada permite la transferencia directa de datos, como las partidas guardadas, entre unidades PocketStation, así como el juego multijugador.</text>
-			<text lang="de">Die PocketStation ist ein Speicherkarten-Peripheriegerät von Sony Computer Entertainment für die Heimvideospielkonsole PlayStation. Das Gerät, das von Sony als eine Kombination aus einer Memory Card und einem Miniatur-Personal-Digital-Assistenten bezeichnet wird, verfügt über ein monochromes Flüssigkristall-Display (LCD), eine Infrarot-Kommunikationsfunktion, eine Echtzeituhr, einen integrierten Flash-Speicher und eine Soundfunktion. Um die Speicherkartenfunktion des Geräts nutzen zu können, muss es über einen Speicherkartensteckplatz mit einer PlayStation verbunden werden. Es wurde am 23. Januar 1999 exklusiv in Japan veröffentlicht.
+      <text lang="de">Die PocketStation ist ein Speicherkarten-Peripheriegerät von Sony Computer Entertainment für die Heimvideospielkonsole PlayStation. Das Gerät, das von Sony als eine Kombination aus einer Memory Card und einem Miniatur-Personal-Digital-Assistenten bezeichnet wird, verfügt über ein monochromes Flüssigkristall-Display (LCD), eine Infrarot-Kommunikationsfunktion, eine Echtzeituhr, einen integrierten Flash-Speicher und eine Soundfunktion. Um die Speicherkartenfunktion des Geräts nutzen zu können, muss es über einen Speicherkartensteckplatz mit einer PlayStation verbunden werden. Es wurde am 23. Januar 1999 exklusiv in Japan veröffentlicht.
 
 Software für die PocketStation wurde in der Regel als Extras für PlayStation-Spiele vertrieben, die auf der CD-ROM enthalten waren und die Spiele mit zusätzlichen Funktionen ausstatteten. Eigenständige Software konnte auch über die PlayStation-Konsole heruntergeladen werden. Die Software wird dann zur Verwendung auf die PocketStation übertragen. Eine eingebaute Infrarot-Datenschnittstelle ermöglicht die direkte Übertragung von Daten wie Spielständen zwischen PocketStation-Einheiten sowie Multiplayer-Spiele.</text>
-			<text lang="fr">La PocketStation est un périphérique à carte mémoire de Sony Computer Entertainment pour la console de jeux vidéo PlayStation. Classé par Sony comme la combinaison d'une carte mémoire et d'un assistant numérique personnel miniature, l'appareil est doté d'un écran à cristaux liquides (LCD) monochrome, d'une capacité de communication infrarouge, d'une horloge en temps réel, d'une mémoire flash intégrée et d'une capacité sonore. Pour utiliser la fonctionnalité de carte mémoire de l'appareil, celui-ci doit être connecté à une PlayStation par le biais d'un emplacement de carte mémoire. Il est sorti exclusivement au Japon le 23 janvier 1999.
+      <text lang="fr">La PocketStation est un périphérique à carte mémoire de Sony Computer Entertainment pour la console de jeux vidéo PlayStation. Classé par Sony comme la combinaison d'une carte mémoire et d'un assistant numérique personnel miniature, l'appareil est doté d'un écran à cristaux liquides (LCD) monochrome, d'une capacité de communication infrarouge, d'une horloge en temps réel, d'une mémoire flash intégrée et d'une capacité sonore. Pour utiliser la fonctionnalité de carte mémoire de l'appareil, celui-ci doit être connecté à une PlayStation par le biais d'un emplacement de carte mémoire. Il est sorti exclusivement au Japon le 23 janvier 1999.
 
 Les logiciels pour la PocketStation étaient généralement distribués en tant qu'extras pour les jeux PlayStation, inclus dans le CD-ROM, améliorant les jeux avec des fonctionnalités supplémentaires. Les logiciels autonomes peuvent également être téléchargés via la console PlayStation. Le logiciel est ensuite transféré sur la PocketStation pour être utilisé. Une interface de données infrarouge intégrée permet le transfert direct de données telles que les sauvegardes de jeux entre les unités PocketStation, ainsi que les jeux multijoueurs.</text>
-			<text lang="it">PocketStation è una periferica per schede di memoria di Sony Computer Entertainment per la console di videogiochi domestica PlayStation. Classificato da Sony come una combinazione tra una Memory Card e un assistente digitale personale in miniatura, il dispositivo è dotato di un display monocromatico a cristalli liquidi (LCD), capacità di comunicazione a infrarossi, orologio in tempo reale, memoria flash integrata e capacità audio. Per utilizzare le funzionalità della scheda di memoria, il dispositivo deve essere collegato a una PlayStation attraverso uno slot per schede di memoria. È stato rilasciato esclusivamente in Giappone il 23 gennaio 1999.
+      <text lang="it">PocketStation è una periferica per schede di memoria di Sony Computer Entertainment per la console di videogiochi domestica PlayStation. Classificato da Sony come una combinazione tra una Memory Card e un assistente digitale personale in miniatura, il dispositivo è dotato di un display monocromatico a cristalli liquidi (LCD), capacità di comunicazione a infrarossi, orologio in tempo reale, memoria flash integrata e capacità audio. Per utilizzare le funzionalità della scheda di memoria, il dispositivo deve essere collegato a una PlayStation attraverso uno slot per schede di memoria. È stato rilasciato esclusivamente in Giappone il 23 gennaio 1999.
 
 Il software per la PocketStation veniva solitamente distribuito come extra per i giochi per PlayStation, incluso nel CD-ROM, migliorando i giochi con funzioni aggiuntive. Il software stand-alone poteva anche essere scaricato attraverso la console PlayStation. Il software viene poi trasferito alla PocketStation per essere utilizzato. Un'interfaccia dati a infrarossi integrata consente il trasferimento diretto di dati, come i salvataggi di gioco, tra le unità PocketStation e il gioco multiplayer.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

@@ -1,89 +1,94 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
-			<origin if="${screen.ratio} == '21/9'">0.45 0.5</origin>
-			<pos>0.451 0.368</pos>
-			<rotation>-1</rotation>
-			<maxSize>0.24</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.171 0.368" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
-			<origin if="${screen.ratio} == '21/9'">0.45 0.5</origin>
-			<pos>0.451 0.368</pos>
-			<rotation>-1</rotation>
-			<maxSize>0.23</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.171 0.368" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>1981</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Nec</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>PC-8800 Series</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The PC-8800 series (Japanese: PC-8800シリーズ, Hepburn: Pī Shī Hassen Happyaku Shirīzu), commonly shortened to PC-88, are a brand of Zilog Z80-based 8-bit home computers released by Nippon Electric Company (NEC) in 1981 and primarily sold in Japan.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+      <origin if="${screen.ratio} == '21/9'">0.45 0.5</origin>
+      <pos>0.451 0.368</pos>
+      <rotation>-1</rotation>
+      <maxSize>0.24</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.171 0.368" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+      <origin if="${screen.ratio} == '21/9'">0.45 0.5</origin>
+      <pos>0.451 0.368</pos>
+      <rotation>-1</rotation>
+      <maxSize>0.23</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.171 0.368" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>1981</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Nec</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>PC-8800 Series</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The PC-8800 series (Japanese: PC-8800シリーズ, Hepburn: Pī Shī Hassen Happyaku Shirīzu), commonly shortened to PC-88, are a brand of Zilog Z80-based 8-bit home computers released by Nippon Electric Company (NEC) in 1981 and primarily sold in Japan.
 
 The PC-8800 series sold extremely well and became one of the three major Japanese home computers of the 1980s, along with the Fujitsu FM-7 and Sharp X1. It was later eclipsed by NEC's 16-bit PC-9800 series, although it still maintained strong sales up until the early 90s.
 
 NEC's American subsidiary, NEC Home Electronics (USA), marketed variations of the PC-8800 in the United States as well as for Canada.</text>
-			<text lang="pl">Seria PC-8800 (japoński: PC-8800シリーズ, Hepburn: Pī Shī Hassen Happyaku Shirīzu), powszechnie skracana do PC-88, to marka 8-bitowych komputerów domowych opartych na Zilog Z80, wydanych przez Nippon Electric Company (NEC) w 1981 roku i sprzedawanych głównie w Japonii.
+      <text lang="pl">Seria PC-8800 (japoński: PC-8800シリーズ, Hepburn: Pī Shī Hassen Happyaku Shirīzu), powszechnie skracana do PC-88, to marka 8-bitowych komputerów domowych opartych na Zilog Z80, wydanych przez Nippon Electric Company (NEC) w 1981 roku i sprzedawanych głównie w Japonii.
 
 Seria PC-8800 sprzedawała się wyjątkowo dobrze i stała się jednym z trzech głównych japońskich komputerów domowych lat 80-tych, wraz z Fujitsu FM-7 i Sharp X1. Później została przyćmiona przez 16-bitową serię PC-9800 firmy NEC, choć nadal utrzymywała wysoką sprzedaż aż do początku lat 90.
 
 Amerykańska filia firmy NEC, NEC Home Electronics (USA), sprzedawała odmiany PC-8800 w Stanach Zjednoczonych i Kanadzie.</text>
-			<text lang="ru">NEC PC-8800 (неформальное название — PC-88) — семейство восьмибитных компьютеров компании NEC на базе Z80-совместимого процессора. Компьютеры семейства являлись одними из самых популярных в Японии благодаря сбалансированному соотношению «цена-характеристики». Начиная с модели mkII SR компьютеры поставлялись также в США, но там большой популярности им получить не удалось.
+      <text lang="pt">PC-8800 (japonês: PC-8800シリーズ, Hepburn: Pī Shī Hassen Happyaku Shirīzu), comumente abreviado para PC-88, é uma marca de computadores domésticos de 8 bits baseados no Zilog Z80, lançados pela Nippon Electric Company (NEC) em 1981 e vendidos principalmente no Japão.
+
+A série PC-8800 vendeu muito bem e se tornou um dos três principais computadores domésticos japoneses dos anos 1980, junto com o Fujitsu FM-7 e o Sharp X1. Posteriormente, foi ofuscada pela série de 16 bits PC-9800 da NEC, embora tenha mantido vendas altas até o início dos anos 1990.
+
+A filial americana da NEC, NEC Home Electronics (USA), vendeu variações do PC-8800 nos Estados Unidos e Canadá.</text>
+      <text lang="ru">NEC PC-8800 (неформальное название — PC-88) — семейство восьмибитных компьютеров компании NEC на базе Z80-совместимого процессора. Компьютеры семейства являлись одними из самых популярных в Японии благодаря сбалансированному соотношению «цена-характеристики». Начиная с модели mkII SR компьютеры поставлялись также в США, но там большой популярности им получить не удалось.
 
 Первые модели семейства позиционировались как бизнес-решения, но после выхода в 1982 году PC-9801 компьютер стал продвигаться как устройство для хобби и игр. Модель PC-8801 mk IISR, серьёзно улучшенная в плане графики и звука, окончательно закрепила это направление. Упадок семейства начался в 1987 году, когда вычислительных мощностей для игр стало не хватать. Игроки стали переходить на более мощные PC-98 и Sharp X68000.
 
 Видеоигровой композитор Юдзо Косиро использовал PC-8801 для написания саундтреков к играм для Mega Drive (например, Streets of Rage), несмотря на наличие более совершенных средств. Саундтрек к играм серии Etryan Odyssey для Nintendo DS также был написан на этом компьютере.</text>
-			<text lang="es">La serie PC-8800 (en japonés: PC-8800シリーズ, en hepburn: Pī Shī Hassen Happyaku Shirīzu), comúnmente abreviada como PC-88, es una marca de ordenadores domésticos de 8 bits basados en Z80 de Zilog lanzados por Nippon Electric Company (NEC) en 1981 y vendidos principalmente en Japón.
+      <text lang="es">La serie PC-8800 (en japonés: PC-8800シリーズ, en hepburn: Pī Shī Hassen Happyaku Shirīzu), comúnmente abreviada como PC-88, es una marca de ordenadores domésticos de 8 bits basados en Z80 de Zilog lanzados por Nippon Electric Company (NEC) en 1981 y vendidos principalmente en Japón.
 
 La serie PC-8800 se vendió muy bien y se convirtió en uno de los tres principales ordenadores domésticos japoneses de la década de 1980, junto con el Fujitsu FM-7 y el Sharp X1. Más tarde fue eclipsada por la serie PC-9800 de 16 bits de NEC, aunque mantuvo unas fuertes ventas hasta principios de los 90.
 
 La filial americana de NEC, NEC Home Electronics (USA), comercializó variaciones del PC-8800 en Estados Unidos y Canadá.</text>
-			<text lang="de">Die PC-8800-Serie (japanisch: PC-8800シリーズ, Hepburn: Pī Shī Hassen Happyaku Shirīzu), die üblicherweise mit PC-88 abgekürzt wird, ist eine Marke von Zilog Z80-basierten 8-Bit-Heimcomputern, die 1981 von der Nippon Electric Company (NEC) herausgebracht und hauptsächlich in Japan verkauft wurde.
+      <text lang="de">Die PC-8800-Serie (japanisch: PC-8800シリーズ, Hepburn: Pī Shī Hassen Happyaku Shirīzu), die üblicherweise mit PC-88 abgekürzt wird, ist eine Marke von Zilog Z80-basierten 8-Bit-Heimcomputern, die 1981 von der Nippon Electric Company (NEC) herausgebracht und hauptsächlich in Japan verkauft wurde.
 
 Die PC-8800-Serie verkaufte sich sehr gut und wurde zu einem der drei wichtigsten japanischen Heimcomputer der 1980er Jahre, zusammen mit dem Fujitsu FM-7 und dem Sharp X1. Später wurde sie von der 16-Bit-PC-9800-Serie von NEC verdrängt, obwohl sie sich bis Anfang der 90er Jahre noch gut verkaufte.
 
 Die amerikanische Tochtergesellschaft von NEC, NEC Home Electronics (USA), vermarktete Varianten des PC-8800 in den Vereinigten Staaten und in Kanada.</text>
-			<text lang="fr">La série PC-8800 (Japonais : PC-8800シリーズ, Hepburn : Pī Shī Hassen Happyaku Shirīzu), communément abrégée en PC-88, est une marque d'ordinateurs domestiques 8 bits basés sur le Zilog Z80, commercialisés par Nippon Electric Company (NEC) en 1981 et principalement vendus au Japon.
+      <text lang="fr">La série PC-8800 (Japonais : PC-8800シリーズ, Hepburn : Pī Shī Hassen Happyaku Shirīzu), communément abrégée en PC-88, est une marque d'ordinateurs domestiques 8 bits basés sur le Zilog Z80, commercialisés par Nippon Electric Company (NEC) en 1981 et principalement vendus au Japon.
 
 La série PC-8800 s'est extrêmement bien vendue et est devenue l'un des trois principaux ordinateurs domestiques japonais des années 1980, avec le Fujitsu FM-7 et le Sharp X1. Elle a ensuite été éclipsée par la série PC-9800 16 bits de NEC, bien qu'elle ait maintenu des ventes importantes jusqu'au début des années 90.
 
 La filiale américaine de NEC, NEC Home Electronics (USA), a commercialisé des variantes du PC-8800 aux États-Unis et au Canada.</text>
-			<text lang="it">La serie PC-8800 (giapponese: PC-8800シリーズ, Hepburn: Pī Shī Hassen Happyaku Shirīzu), comunemente abbreviata in PC-88, è una marca di home computer a 8 bit basati su Zilog Z80, rilasciati da Nippon Electric Company (NEC) nel 1981 e venduti principalmente in Giappone.
+      <text lang="it">La serie PC-8800 (giapponese: PC-8800シリーズ, Hepburn: Pī Shī Hassen Happyaku Shirīzu), comunemente abbreviata in PC-88, è una marca di home computer a 8 bit basati su Zilog Z80, rilasciati da Nippon Electric Company (NEC) nel 1981 e venduti principalmente in Giappone.
 
 La serie PC-8800 ebbe un ottimo successo di vendite e divenne uno dei tre principali home computer giapponesi degli anni '80, insieme al Fujitsu FM-7 e allo Sharp X1. In seguito fu eclissato dalla serie PC-9800 a 16 bit di NEC, anche se mantenne forti vendite fino agli inizi degli anni '90.
 
 La filiale americana di NEC, NEC Home Electronics (USA), commercializzò varianti del PC-8800 negli Stati Uniti e in Canada.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

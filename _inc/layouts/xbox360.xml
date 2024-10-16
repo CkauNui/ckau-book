@@ -1,75 +1,76 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3905</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
-			<pos>0.5 0.385</pos>
-			<maxSize>0.375</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.49</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.42</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.385" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3905</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.465</origin>
-			<pos>0.5 0.385</pos>
-			<maxSize>0.365</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.48</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.4</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.385" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2005</text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Microsoft</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Xbox 360</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Xbox 360 is a home video game console developed by Microsoft. As the successor to the original Xbox, it is the second console in the Xbox series. It competed with Sony's PlayStation 3 and Nintendo's Wii as part of the seventh generation of video game consoles. It was officially unveiled on MTV on May 12, 2005, with detailed launch and game information announced later that month at the 2005 Electronic Entertainment Expo.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.3905</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
+      <pos>0.5 0.385</pos>
+      <maxSize>0.375</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.49</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.42</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.385" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.3905</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.465</origin>
+      <pos>0.5 0.385</pos>
+      <maxSize>0.365</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.48</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.4</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.385" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2005</text>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Microsoft</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Xbox 360</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Xbox 360 is a home video game console developed by Microsoft. As the successor to the original Xbox, it is the second console in the Xbox series. It competed with Sony's PlayStation 3 and Nintendo's Wii as part of the seventh generation of video game consoles. It was officially unveiled on MTV on May 12, 2005, with detailed launch and game information announced later that month at the 2005 Electronic Entertainment Expo.
 
 The Xbox 360 features an online service, Xbox Live, which was expanded from its previous iteration on the original Xbox and received regular updates during the console's lifetime. Available in free and subscription-based varieties, Xbox Live allows users to: play games online; download games (through Xbox Live Arcade) and game demos; purchase and stream music, television programs, and films through the Xbox Music and Xbox Video portals; and access third-party content services through media streaming applications. In addition to online multimedia features, it allows users to stream media from local PCs. Several peripherals have been released, including wireless controllers, expanded hard drive storage, and the Kinect motion sensing camera. The release of these additional services and peripherals helped the Xbox brand grow from gaming-only to encompassing all multimedia, turning it into a hub for living-room computing entertainment.</text>
-			<text lang="pl">Xbox 360 – konsola gier wideo wyprodukowana przez firmę Microsoft. Została opracowana we współpracy z IBM, ATI i NEC. Xbox 360 to następca konsoli Xbox, konkuruje z Sony PlayStation 3 i Nintendo Wii w ramach siódmej generacji gier konsolowych. Platforma zintegrowana jest z usługą Xbox Live, usługą pozwalającą graczom na rywalizację w trybie online i pobieranie treści, takich jak gry zręcznościowe, dema gier, filmy z gier, programy telewizyjne oraz filmy. Konsola została wprowadzona do sprzedaży: w USA 22 listopada 2005, w Europie 2 grudnia 2005, w Japonii 10 grudnia 2005, w Czechach i Polsce 3 listopada 2006. 20 kwietnia 2016 Microsoft poinformował o zaprzestaniu produkcji konsoli Xbox 360.</text>
-			<text lang="ru">Вторая по счёту игровая приставка компании Microsoft, которая последовала за Xbox. Конкурентами Xbox 360 среди игровых платформ седьмого поколения являются PlayStation 3 от Sony Computer Entertainment и Wii от Nintendo. Некоторые из основных функций Xbox 360 представлены сервисом Xbox Live, позволяющим играть через Интернет, а также загружать разнообразный контент — видеоигры, демоверсии, трейлеры, музыку, ТВ-шоу и т. п.
+      <text lang="pl">Xbox 360 – konsola gier wideo wyprodukowana przez firmę Microsoft. Została opracowana we współpracy z IBM, ATI i NEC. Xbox 360 to następca konsoli Xbox, konkuruje z Sony PlayStation 3 i Nintendo Wii w ramach siódmej generacji gier konsolowych. Platforma zintegrowana jest z usługą Xbox Live, usługą pozwalającą graczom na rywalizację w trybie online i pobieranie treści, takich jak gry zręcznościowe, dema gier, filmy z gier, programy telewizyjne oraz filmy. Konsola została wprowadzona do sprzedaży: w USA 22 listopada 2005, w Europie 2 grudnia 2005, w Japonii 10 grudnia 2005, w Czechach i Polsce 3 listopada 2006. 20 kwietnia 2016 Microsoft poinformował o zaprzestaniu produkcji konsoli Xbox 360.</text>
+      <text lang="pt">Xbox 360 – console de videogame produzida pela Microsoft. Foi desenvolvida em colaboração com a IBM, ATI e NEC. O Xbox 360 é o sucessor do console Xbox, competindo com o Sony PlayStation 3 e o Nintendo Wii na sétima geração de jogos para console. A plataforma é integrada ao serviço Xbox Live, serviço que permite aos jogadores competirem online e baixarem conteúdo, como jogos arcade, demos de jogos, vídeos de jogos, programas de televisão e filmes. O console foi lançado: nos EUA em 22 de novembro de 2005, na Europa em 2 de dezembro de 2005, no Japão em 10 de dezembro de 2005, na República Tcheca e na Polônia em 3 de novembro de 2006. Em 20 de abril de 2016, a Microsoft anunciou o fim da produção do console Xbox 360.</text>
+      <text lang="ru">Вторая по счёту игровая приставка компании Microsoft, которая последовала за Xbox. Конкурентами Xbox 360 среди игровых платформ седьмого поколения являются PlayStation 3 от Sony Computer Entertainment и Wii от Nintendo. Некоторые из основных функций Xbox 360 представлены сервисом Xbox Live, позволяющим играть через Интернет, а также загружать разнообразный контент — видеоигры, демоверсии, трейлеры, музыку, ТВ-шоу и т. п.
 
 Xbox 360 была официально анонсирована на канале MTV 12 мая 2005 года, а более детальная информация о приставке была представлена в том же месяце на выставке Electronic Entertainment Expo (E3). Все доступные на время выпуска приставки были успешно проданы в каждой стране, кроме Японии. По состоянию на июнь 2010 года, существует 41,7 миллиона приставок Xbox 360 по всему миру.
 
 В 2009 году на веб-сайте компьютерной тематики IGN Xbox 360 была названа шестой величайшей игровой приставкой всех времён, попав в список из 25 позиций. На крупнейшей выставке игр Electronic Entertainment Expo 2013 был представлен обновлённый дизайн Xbox 360.</text>
-			<text lang="es">La Xbox 360 es una videoconsola doméstica desarrollada por Microsoft. Como sucesora de la Xbox original, es la segunda consola de la serie Xbox. Compitió con la PlayStation 3 de Sony y la Wii de Nintendo en la séptima generación de consolas de videojuegos. Se presentó oficialmente en MTV el 12 de mayo de 2005, y más tarde, en la Electronic Entertainment Expo 2005, se dio a conocer información detallada sobre el lanzamiento y los juegos.
+      <text lang="es">La Xbox 360 es una videoconsola doméstica desarrollada por Microsoft. Como sucesora de la Xbox original, es la segunda consola de la serie Xbox. Compitió con la PlayStation 3 de Sony y la Wii de Nintendo en la séptima generación de consolas de videojuegos. Se presentó oficialmente en MTV el 12 de mayo de 2005, y más tarde, en la Electronic Entertainment Expo 2005, se dio a conocer información detallada sobre el lanzamiento y los juegos.
 
 La Xbox 360 cuenta con un servicio en línea, Xbox Live, que se amplió con respecto a su versión anterior en la Xbox original y recibió actualizaciones periódicas durante la vida útil de la consola. Disponible en versiones gratuitas y de suscripción, Xbox Live permite a los usuarios: jugar en línea; descargar juegos (a través de Xbox Live Arcade) y demos de juegos; comprar y transmitir música, programas de televisión y películas a través de los portales Xbox Music y Xbox Video; y acceder a servicios de contenidos de terceros a través de aplicaciones de transmisión multimedia. Además de las funciones multimedia en línea, permite a los usuarios transmitir contenidos multimedia desde ordenadores locales. Se han lanzado varios periféricos, como mandos inalámbricos, almacenamiento en disco duro ampliado y la cámara de detección de movimiento Kinect. El lanzamiento de estos servicios y periféricos adicionales ha contribuido a que la marca Xbox pase de ser exclusiva para juegos a abarcar todos los contenidos multimedia, convirtiéndola en el centro neurálgico del entretenimiento informático en el salón.</text>
-			<text lang="de">Die Xbox 360 ist eine von Microsoft entwickelte Videospielkonsole für den Heimgebrauch. Als Nachfolgerin der ursprünglichen Xbox ist sie die zweite Konsole der Xbox-Reihe. Sie konkurrierte mit Sonys PlayStation 3 und Nintendos Wii als Teil der siebten Generation von Videospielkonsolen. Sie wurde am 12. Mai 2005 auf MTV offiziell vorgestellt. Detaillierte Informationen zur Markteinführung und zu den Spielen wurden später im selben Monat auf der Electronic Entertainment Expo 2005 bekannt gegeben.
+      <text lang="de">Die Xbox 360 ist eine von Microsoft entwickelte Videospielkonsole für den Heimgebrauch. Als Nachfolgerin der ursprünglichen Xbox ist sie die zweite Konsole der Xbox-Reihe. Sie konkurrierte mit Sonys PlayStation 3 und Nintendos Wii als Teil der siebten Generation von Videospielkonsolen. Sie wurde am 12. Mai 2005 auf MTV offiziell vorgestellt. Detaillierte Informationen zur Markteinführung und zu den Spielen wurden später im selben Monat auf der Electronic Entertainment Expo 2005 bekannt gegeben.
 
 Die Xbox 360 verfügt über einen Online-Dienst, Xbox Live, der gegenüber der ursprünglichen Xbox erweitert wurde und während der Lebensdauer der Konsole regelmäßig aktualisiert wurde. Xbox Live, das in kostenlosen und abonnementbasierten Varianten verfügbar ist, ermöglicht es den Nutzern, Spiele online zu spielen, Spiele (über Xbox Live Arcade) und Spieledemos herunterzuladen, Musik, Fernsehsendungen und Filme über die Portale Xbox Music und Xbox Video zu kaufen und zu streamen sowie über Media-Streaming-Anwendungen auf Inhaltsdienste von Drittanbietern zuzugreifen. Zusätzlich zu den Online-Multimedia-Funktionen können die Benutzer auch Medien von lokalen PCs streamen. Es wurden mehrere Peripheriegeräte auf den Markt gebracht, darunter drahtlose Controller, erweiterter Festplattenspeicher und die Kinect-Kamera mit Bewegungssensor. Die Veröffentlichung dieser zusätzlichen Dienste und Peripheriegeräte hat dazu beigetragen, dass sich die Marke Xbox von einer reinen Spielekonsole zu einer Multimedia-Plattform entwickelt hat, die sich zu einem Zentrum für Computerunterhaltung im Wohnzimmer entwickelt hat.</text>
-			<text lang="fr">La Xbox 360 est une console de jeux vidéo de salon développée par Microsoft. Succédant à la Xbox originale, elle est la deuxième console de la série Xbox. Elle était en concurrence avec la PlayStation 3 de Sony et la Wii de Nintendo dans le cadre de la septième génération de consoles de jeux vidéo. Elle a été officiellement dévoilée sur MTV le 12 mai 2005, et des informations détaillées sur le lancement et les jeux ont été annoncées plus tard dans le mois à l'occasion de l'Electronic Entertainment Expo 2005.
+      <text lang="fr">La Xbox 360 est une console de jeux vidéo de salon développée par Microsoft. Succédant à la Xbox originale, elle est la deuxième console de la série Xbox. Elle était en concurrence avec la PlayStation 3 de Sony et la Wii de Nintendo dans le cadre de la septième génération de consoles de jeux vidéo. Elle a été officiellement dévoilée sur MTV le 12 mai 2005, et des informations détaillées sur le lancement et les jeux ont été annoncées plus tard dans le mois à l'occasion de l'Electronic Entertainment Expo 2005.
 
 La Xbox 360 est dotée d'un service en ligne, Xbox Live, qui a été étendu par rapport à sa précédente itération sur la Xbox originale et a fait l'objet de mises à jour régulières pendant la durée de vie de la console. Disponible gratuitement ou sur abonnement, Xbox Live permet aux utilisateurs de jouer à des jeux en ligne, de télécharger des jeux (via Xbox Live Arcade) et des démos de jeux, d'acheter et de diffuser de la musique, des programmes télévisés et des films via les portails Xbox Music et Xbox Video, et d'accéder à des services de contenu tiers par le biais d'applications de diffusion multimédia en continu. Outre les fonctions multimédias en ligne, il permet aux utilisateurs de diffuser des médias en continu à partir de PC locaux. Plusieurs périphériques ont été lancés, notamment des contrôleurs sans fil, un disque dur de stockage étendu et la caméra de détection de mouvement Kinect. Le lancement de ces services et périphériques supplémentaires a permis à la marque Xbox de passer du jeu uniquement à l'ensemble du multimédia, la transformant en un centre de divertissement informatique pour le salon.</text>
-			<text lang="it">La Xbox 360 è una console per videogiochi domestica sviluppata da Microsoft. Successore della Xbox originale, è la seconda console della serie Xbox. È stata in competizione con la PlayStation 3 di Sony e la Wii di Nintendo come parte della settima generazione di console per videogiochi. È stata presentata ufficialmente su MTV il 12 maggio 2005, mentre informazioni dettagliate sul lancio e sui giochi sono state annunciate nel corso dello stesso mese all'Electronic Entertainment Expo 2005.
+      <text lang="it">La Xbox 360 è una console per videogiochi domestica sviluppata da Microsoft. Successore della Xbox originale, è la seconda console della serie Xbox. È stata in competizione con la PlayStation 3 di Sony e la Wii di Nintendo come parte della settima generazione di console per videogiochi. È stata presentata ufficialmente su MTV il 12 maggio 2005, mentre informazioni dettagliate sul lancio e sui giochi sono state annunciate nel corso dello stesso mese all'Electronic Entertainment Expo 2005.
 
 La Xbox 360 era dotata di un servizio online, Xbox Live, che è stato ampliato rispetto alla sua precedente iterazione sulla Xbox originale e ha ricevuto aggiornamenti regolari durante la vita della console. Disponibile in versione gratuita e in abbonamento, Xbox Live consentiva agli utenti di: giocare online; scaricare giochi (attraverso Xbox Live Arcade) e demo di giochi; acquistare e trasmettere musica, programmi televisivi e film attraverso i portali Xbox Music e Xbox Video; accedere a servizi di contenuti di terze parti attraverso applicazioni di media streaming. Oltre alle funzioni multimediali online, consente agli utenti di effettuare lo streaming di contenuti multimediali da PC locali. Sono state rilasciate diverse periferiche, tra cui i controller wireless, l'archiviazione su disco rigido ampliata e la telecamera di rilevamento del movimento Kinect. Il rilascio di questi servizi e periferiche aggiuntive ha aiutato il marchio Xbox a trasformarsi da gioco esclusivo a dispositivo multimediale completo, diventando un punto di riferimento per l'intrattenimento informatico in salotto.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

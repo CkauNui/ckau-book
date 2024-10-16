@@ -1,90 +1,96 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<pos>0.50 0.33</pos>
-			<maxSize>0.14</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.18</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.15</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.33" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<pos>0.50 0.33</pos>
-			<maxSize>0.12</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.16</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.13</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.33" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text>2015</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Arduboy</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>The Arduboy is a handheld game console with open source software, based on the Arduino hardware platform.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <pos>0.50 0.33</pos>
+      <maxSize>0.14</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.18</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.15</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.22 0.33" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
+      <pos>0.50 0.33</pos>
+      <maxSize>0.12</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.16</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.13</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.22 0.33" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text>2015</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Arduboy</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>The Arduboy is a handheld game console with open source software, based on the Arduino hardware platform.
 The original version of the Arduboy was 1.6 millimetres (0.063 in) thick, with the height and width of a credit card, and was initially designed by Kevin Bates as an electronic business card.
 In preparation for a consumer version, the developer moved to Shenzhen, China to work on the Arduboy at the HAX accelerator.
 
 Later consumer versions replaced the first version's touch-sensitive panels by physical buttons, and include a protective plastic case, raising the thickness to 5 millimetres (0.20 in).
 A non-production smaller formfactor "Arduboy Mini" was demonstrated in 2019. Another non-production system, the "Arduboy Nano" was demonstrated in 2021 with an smaller formfactor than the Arduboy Mini.</text>
-			<text lang="pl">Arduboy to przenośna konsola do gier z oprogramowaniem open source, oparta na platformie sprzętowej Arduino.
+      <text lang="pl">Arduboy to przenośna konsola do gier z oprogramowaniem open source, oparta na platformie sprzętowej Arduino.
 Oryginalna wersja Arduboya miała grubość 1,6 milimetra (0,063 cala), wysokość i szerokość karty kredytowej i została początkowo zaprojektowana przez Kevina Batesa jako elektroniczna wizytówka.
 W ramach przygotowań do wersji konsumenckiej deweloper przeniósł się do Shenzhen w Chinach, aby pracować nad Arduboyem w akceleratorze HAX.
 
 Późniejsze wersje konsumenckie zastąpiły panele dotykowe pierwszej wersji fizycznymi przyciskami i zawierały ochronną plastikową obudowę, zwiększając grubość do 5 milimetrów (0,20 cala).
 Nieprodukcyjny mniejszy formfactor "Arduboy Mini" został zademonstrowany w 2019 roku. Kolejny system nieprodukcyjny, "Arduboy Nano" został zademonstrowany w 2021 roku z mniejszym formfactorem niż Arduboy Mini.</text>
-			<text lang="ru">Портативная игровая консоль с открытым исходным кодом, основанная на аппаратной платформе Arduino.
+      <text lang="pt">Arduboy é um console portátil de jogos com software de código aberto, baseado na plataforma de hardware Arduino. 
+A versão original do Arduboy tinha 1,6 milímetros (0,063 polegadas) de espessura, a altura e largura de um cartão de crédito e foi inicialmente projetada por Kevin Bates como um cartão de visita eletrônico.
+Em preparação para a versão para consumidores, o desenvolvedor mudou-se para Shenzhen, na China, para trabalhar no Arduboy no acelerador HAX.
+
+Versões posteriores para consumidores substituíram os painéis sensíveis ao toque da primeira versão por botões físicos e incluíam uma caixa de plástico protetora, aumentando a espessura para 5 milímetros (0,20 polegadas).
+Um form factor menor não produzido, "Arduboy Mini", foi demonstrado em 2019. Outro sistema não produzido, "Arduboy Nano", foi demonstrado em 2021 com um form factor menor que o Arduboy Mini.</text>
+      <text lang="ru">Портативная игровая консоль с открытым исходным кодом, основанная на аппаратной платформе Arduino.
 Первоначальная версия Arduboy имела толщину 1,6 миллиметра (0,063 дюйма), высоту и ширину кредитной карты, и изначально была разработана Кевином Бейтсом как электронная визитная карточка.
 Для подготовки потребительской версии разработчик переехал в Шэньчжэнь, Китай, чтобы работать над Arduboy в HAX accelerator.
 
 В более поздних потребительских версиях сенсорные панели первой версии были заменены на физические кнопки, а защитный пластиковый корпус увеличил толщину до 5 миллиметров (0,20 дюйма).
 В 2019 году была продемонстрирована несерийная система "Arduboy Mini" меньшего форм-фактора. Еще одна несерийная система, "Arduboy Nano", была продемонстрирована в 2021 году с меньшим форм-фактором, чем Arduboy Mini.</text>
-			<text lang="es">El Arduboy es una videoconsola portátil con software de código abierto, basada en la plataforma de hardware Arduino.
+      <text lang="es">El Arduboy es una videoconsola portátil con software de código abierto, basada en la plataforma de hardware Arduino.
 La versión original del Arduboy tenía un grosor de 1,6 milímetros (0,063 pulgadas), con la altura y la anchura de una tarjeta de crédito, y fue diseñada inicialmente por Kevin Bates como una tarjeta de visita electrónica.
 Para preparar una versión de consumo, el desarrollador se trasladó a Shenzhen (China) para trabajar en el Arduboy en el acelerador HAX.
 
 Las versiones de consumo posteriores sustituyeron los paneles táctiles de la primera versión por botones físicos e incluyeron una carcasa protectora de plástico, lo que elevó su grosor a 5 milímetros (0,20 pulgadas).
 En 2019 se hizo una demostración de un "Arduboy Mini" no destinado a la producción. En 2021 se presentó otro sistema no destinado a la producción, el "Arduboy Nano", con un formato más pequeño que el Arduboy Mini.</text>
-			<text lang="de">Der Arduboy ist eine Handheld-Spielkonsole mit Open-Source-Software, die auf der Arduino-Hardwareplattform basiert.
+      <text lang="de">Der Arduboy ist eine Handheld-Spielkonsole mit Open-Source-Software, die auf der Arduino-Hardwareplattform basiert.
 Die ursprüngliche Version des Arduboy war 1,6 Millimeter dick, mit der Höhe und Breite einer Kreditkarte, und wurde von Kevin Bates ursprünglich als elektronische Visitenkarte entworfen.
 In Vorbereitung auf eine Verbraucherversion zog der Entwickler nach Shenzhen, China, um am HAX-Beschleuniger an dem Arduboy zu arbeiten.
 
 Spätere Verbraucherversionen ersetzten die berührungsempfindlichen Felder der ersten Version durch physische Tasten und enthielten ein schützendes Kunststoffgehäuse, wodurch die Dicke auf 5 Millimeter anstieg.
 Ein nicht serienmäßiger "Arduboy Mini" mit kleinerem Formfaktor wurde 2019 vorgestellt. Ein weiteres, nicht serienreifes System, der "Arduboy Nano", wurde 2021 mit einem kleineren Formfaktor als der Arduboy Mini vorgestellt.</text>
-			<text lang="fr">L'Arduboy est une console de jeu portable dotée d'un logiciel libre, basée sur la plate-forme matérielle Arduino.
+      <text lang="fr">L'Arduboy est une console de jeu portable dotée d'un logiciel libre, basée sur la plate-forme matérielle Arduino.
 La version originale de l'Arduboy mesurait 1,6 millimètre d'épaisseur, avec la hauteur et la largeur d'une carte de crédit, et a été initialement conçue par Kevin Bates comme une carte de visite électronique.
 Pour préparer une version grand public, le développeur a déménagé à Shenzhen, en Chine, pour travailler sur l'Arduboy à l'accélérateur HAX.
 
 Les versions grand public ultérieures ont remplacé les panneaux tactiles de la première version par des boutons physiques et ont inclus un boîtier de protection en plastique, portant l'épaisseur à 5 millimètres (0,20 in).
 Un système de petite taille non produit, l'"Arduboy Mini", a fait l'objet d'une démonstration en 2019. Un autre système de non-production, l'"Arduboy Nano", a été présenté en 2021 avec un format plus petit que l'Arduboy Mini.</text>
-			<text lang="it">Arduboy è una console di gioco portatile con software open source, basata sulla piattaforma hardware Arduino.
+      <text lang="it">Arduboy è una console di gioco portatile con software open source, basata sulla piattaforma hardware Arduino.
 La versione originale di Arduboy aveva uno spessore di 1,6 millimetri (0,063 pollici), l'altezza e la larghezza di una carta di credito, e fu inizialmente progettata da Kevin Bates come biglietto da visita elettronico.
 In preparazione di una versione consumer, lo sviluppatore si trasferì a Shenzhen, in Cina, per lavorare su Arduboy presso l'acceleratore HAX.
 
 Le versioni consumer successive sostituirono i pannelli sensibili al tocco della prima versione con pulsanti fisici e inclusero una custodia protettiva in plastica, portando lo spessore a 5 millimetri (0,20 pollici).
 Nel 2019 è stata presentata una versione non di produzione di formato ridotto, "Arduboy Mini". Un altro sistema non di produzione, l'"Arduboy Nano", è stato presentato nel 2021 con un formato più piccolo dell'Arduboy Mini.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

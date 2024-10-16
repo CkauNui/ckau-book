@@ -1,64 +1,66 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.49</origin>
-			<origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
-			<pos>0.45 0.457</pos>
-			<maxSize>0.27</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.17 0.457" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.49</origin>
-			<origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
-			<pos>0.448 0.4565</pos>
-			<maxSize>0.247</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.168 0.4565" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text/>
-		</text>
-		<text name="TextName" extra="true">
-			<text>vitaQuake 2</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>vitaQuake 2 is a port of a Quake II engine source port made originally for the PS Vita.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space43.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.49</origin>
+      <origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
+      <pos>0.45 0.457</pos>
+      <maxSize>0.27</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.17 0.457" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.49</origin>
+      <origin if="${screen.ratio} == '21/9'">0.4 0.5</origin>
+      <pos>0.448 0.4565</pos>
+      <maxSize>0.247</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.168 0.4565" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text/>
+    </text>
+    <text name="TextName" extra="true">
+      <text>vitaQuake 2</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>vitaQuake 2 is a port of a Quake II engine source port made originally for the PS Vita.
 It's based on glQuake but has several features from different source ports such as ProQuake and similars.</text>
-			<text lang="pl">vitaQuake 2 to port źródłowego silnika gry Quake II stworzony pierwotnie dla PS Vita.
+      <text lang="pl">vitaQuake 2 to port źródłowego silnika gry Quake II stworzony pierwotnie dla PS Vita.
 Bazuje na glQuake, ale posiada kilka elementów z innych portów takich, jak ProQuake i podobne.</text>
-			<text lang="ru">Порт Quake 2 и трёх его официальных дополнений: The Reckoning, Ground Zero, Netpack I: Extremities.
+      <text lang="pt">vitaQuake 2 é uma porta do motor original do jogo Quake II, originalmente criado para o PS Vita.
+Ele é baseado no glQuake, mas inclui alguns elementos de outras portas, como ProQuake e similares.</text>
+      <text lang="ru">Порт Quake 2 и трёх его официальных дополнений: The Reckoning, Ground Zero, Netpack I: Extremities.
 
 WinQuake используется как движок у порта. Так же в качестве базы порта Rinnegatamante использовал Quake2CTR, автором которого является MasterFeizz.</text>
-			<text lang="es">vitaQuake 2 es un port del motor fuente de Quake II hecho originalmente para la PS Vita.
+      <text lang="es">vitaQuake 2 es un port del motor fuente de Quake II hecho originalmente para la PS Vita.
 Está basado en glQuake pero tiene varias características de diferentes ports fuente como ProQuake y similares.</text>
-			<text lang="de">vitaQuake 2 ist eine Portierung der Quake II Engine, die ursprünglich für die PS Vita entwickelt wurde.
+      <text lang="de">vitaQuake 2 ist eine Portierung der Quake II Engine, die ursprünglich für die PS Vita entwickelt wurde.
 Es basiert auf glQuake, hat aber mehrere Funktionen aus verschiedenen Quellportierungen wie ProQuake und ähnlichen.</text>
-			<text lang="fr">vitaQuake 2 est un portage d'un moteur Quake II fait à l'origine pour la PS Vita.
+      <text lang="fr">vitaQuake 2 est un portage d'un moteur Quake II fait à l'origine pour la PS Vita.
 Il est basé sur glQuake mais possède plusieurs fonctionnalités provenant de différents portages sources tels que ProQuake et similaires.</text>
-			<text lang="it">vitaQuake 2 è un port di un motore sorgente di Quake II realizzato originariamente per PS Vita.
+      <text lang="it">vitaQuake 2 è un port di un motore sorgente di Quake II realizzato originariamente per PS Vita.
 È basato su glQuake, ma presenta diverse caratteristiche di diversi port di origine, come ProQuake e simili.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>

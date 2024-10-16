@@ -1,108 +1,112 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <theme>
-	<formatVersion>7</formatVersion>
-	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 -0.75</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.08</origin>
-			<pos>0.498 0.14</pos>
-			<minSize>0.5 0.1</minSize>
-			<minSize if="${screen.ratio} == '4/3'">0.6 0.1</minSize>
-			<minSize if="${screen.ratio} == '16/10'">0.5 0.1</minSize>
-			<rotation>0</rotation>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.218 0.14" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 1.1</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.74</origin>
-			<pos>0.498 0.7</pos>
-			<minSize>0.5 0.1</minSize>
-			<minSize if="${screen.ratio} == '4/3'">0.6 0.1</minSize>
-			<minSize if="${screen.ratio} == '16/10'">0.5 0.1</minSize>
-			<rotation>0</rotation>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.218 0.7" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.485</origin>
-			<pos>0.499 0.425</pos>
-			<maxSize>0.45</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.59</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.492</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.219 0.425" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.485</origin>
-			<pos>0.4995 0.424</pos>
-			<maxSize>0.446</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.58</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.482</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.2195 0.424" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
-			<text></text>
-		</text>
-		<text name="TextManufacturer" extra="true">
-			<text>Collection</text>
-			<text lang="pl">Kolekcja</text>
-			<text lang="ru">Коллекция</text>
-			<text lang="es">Recopilación</text>
-			<text lang="fr">Collection</text>
-			<text lang="it">Collezione</text>
-		</text>
-		<text name="TextName" extra="true">
-			<text>Video Game Movies</text>
-		</text>
-		<text name="TextDesc" extra="true">
-			<text>Films based on video games abound in interesting events and take on unusual stories, effectively piquing the interest of viewers. Action-packed stories offer enjoyable entertainment, and work well as a good movie for the evening. Among the numerous adaptations, there are several titles that are particularly noteworthy.
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <image name="sysbg-left" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 -0.75</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.08</origin>
+      <pos>0.498 0.14</pos>
+      <minSize>0.5 0.1</minSize>
+      <minSize if="${screen.ratio} == '4/3'">0.6 0.1</minSize>
+      <minSize if="${screen.ratio} == '16/10'">0.5 0.1</minSize>
+      <rotation>0</rotation>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.218 0.14" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-right" extra="true">
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 1.1</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.74</origin>
+      <pos>0.498 0.7</pos>
+      <minSize>0.5 0.1</minSize>
+      <minSize if="${screen.ratio} == '4/3'">0.6 0.1</minSize>
+      <minSize if="${screen.ratio} == '16/10'">0.5 0.1</minSize>
+      <rotation>0</rotation>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>27</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.218 0.7" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <image name="sysbg-video" extra="true">
+      <color>000000</color>
+      <path>./../../_inc/images/space169.png</path>
+      <zIndex>2</zIndex>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.485</origin>
+      <pos>0.499 0.425</pos>
+      <maxSize>0.45</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.59</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.492</maxSize>
+      <storyboard>
+        <animation property="pos" to="0.219 0.425" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </image>
+    <video name="videobox" extra="true">
+      <path>{random}</path>
+      <path>./../../_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../_inc/anim/video/${synonym}.mp4</path>
+      <!-- Loads platform video from addon directory, if available -->
+      <path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+      <path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+      <default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+      <delay>0</delay>
+      <effect>none</effect>
+      <origin>0.5 0.5</origin>
+      <origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+      <origin if="${screen.ratio} == '16/10'">0.5 0.485</origin>
+      <pos>0.4995 0.424</pos>
+      <maxSize>0.446</maxSize>
+      <maxSize if="${screen.ratio} == '4/3'">0.58</maxSize>
+      <maxSize if="${screen.ratio} == '16/10'">0.482</maxSize>
+      <zIndex>25</zIndex>
+      <storyboard>
+        <animation property="pos" to="0.2195 0.424" begin="2000" duration="1000" mode="linear"/>
+      </storyboard>
+    </video>
+    <text name="TextDate" extra="true">
+      <text/>
+    </text>
+    <text name="TextManufacturer" extra="true">
+      <text>Collection</text>
+      <text lang="pl">Kolekcja</text>
+      <text lang="pt">Coleção</text>
+      <text lang="ru">Коллекция</text>
+      <text lang="es">Recopilación</text>
+      <text lang="fr">Collection</text>
+      <text lang="it">Collezione</text>
+    </text>
+    <text name="TextName" extra="true">
+      <text>Video Game Movies</text>
+    </text>
+    <text name="TextDesc" extra="true">
+      <text>Films based on video games abound in interesting events and take on unusual stories, effectively piquing the interest of viewers. Action-packed stories offer enjoyable entertainment, and work well as a good movie for the evening. Among the numerous adaptations, there are several titles that are particularly noteworthy.
 
 This is a collection of theatrical films based on video games and films that made video games.</text>
-			<text lang="pl">Filmy na podstawie gier wideo obfitują w ciekawe wydarzenia i podejmują nietypowe historie, skutecznie wzbudzając zainteresowanie widzów. Pełne akcji historie zapewniają przyjemną rozrywkę i sprawdzają się jako dobry film na wieczór. Wśród licznych adaptacji na szczególną uwagę zasługuje kilka tytułów.
+      <text lang="pl">Filmy na podstawie gier wideo obfitują w ciekawe wydarzenia i podejmują nietypowe historie, skutecznie wzbudzając zainteresowanie widzów. Pełne akcji historie zapewniają przyjemną rozrywkę i sprawdzają się jako dobry film na wieczór. Wśród licznych adaptacji na szczególną uwagę zasługuje kilka tytułów.
 
 Jest to zbiór filmów kinowych opartych na grach wideo oraz filmów, na podstawie których powstały gry wideo.</text>
-			<text lang="ru">Коллекция фильмов, снятых по мотивам видеоигр, изобилуют интересными событиями и необычными сюжетами, эффективно вызывая интерес зрителей. Захватывающие истории предлагают приятное развлечение и отлично подходят в качестве хорошего фильма на вечер. Среди многочисленных адаптаций есть несколько тайтлов, которые заслуживают особого внимания.</text>
-			<text lang="es">Las películas basadas en videojuegos abundan en acontecimientos interesantes y abordan historias inusuales, despertando eficazmente el interés de los espectadores. Las historias llenas de acción ofrecen un entretenimiento agradable, y funcionan bien como una buena película para pasar la tarde. Entre las numerosas adaptaciones, hay varios títulos especialmente destacables.
+      <text lang="pt">Filmes baseados em jogos de videogame estão repletos de eventos interessantes e abordam histórias incomuns, despertando o interesse do público de forma eficaz. As histórias cheias de ação proporcionam entretenimento agradável e são uma boa opção para uma noite de cinema. Entre as inúmeras adaptações, alguns títulos merecem destaque.
+
+Este é um conjunto de filmes de cinema baseados em jogos de videogame e filmes que deram origem a jogos de videogame.</text>
+      <text lang="ru">Коллекция фильмов, снятых по мотивам видеоигр, изобилуют интересными событиями и необычными сюжетами, эффективно вызывая интерес зрителей. Захватывающие истории предлагают приятное развлечение и отлично подходят в качестве хорошего фильма на вечер. Среди многочисленных адаптаций есть несколько тайтлов, которые заслуживают особого внимания.</text>
+      <text lang="es">Las películas basadas en videojuegos abundan en acontecimientos interesantes y abordan historias inusuales, despertando eficazmente el interés de los espectadores. Las historias llenas de acción ofrecen un entretenimiento agradable, y funcionan bien como una buena película para pasar la tarde. Entre las numerosas adaptaciones, hay varios títulos especialmente destacables.
 
 Se trata de una colección de películas teatrales basadas en videojuegos y películas que hicieron videojuegos.</text>
-			<text lang="de">Filme, die auf Videospielen basieren, sind reich an interessanten Ereignissen und bieten ungewöhnliche Geschichten, die das Interesse der Zuschauer wecken. Die actiongeladenen Geschichten bieten angenehme Unterhaltung und eignen sich gut als Film für den Abend. Unter den zahlreichen Verfilmungen gibt es einige Titel, die besonders erwähnenswert sind.
+      <text lang="de">Filme, die auf Videospielen basieren, sind reich an interessanten Ereignissen und bieten ungewöhnliche Geschichten, die das Interesse der Zuschauer wecken. Die actiongeladenen Geschichten bieten angenehme Unterhaltung und eignen sich gut als Film für den Abend. Unter den zahlreichen Verfilmungen gibt es einige Titel, die besonders erwähnenswert sind.
 
 Dies ist eine Sammlung von Kinofilmen, die auf Videospielen basieren, und von Filmen, die zu Videospielen gemacht wurden.</text>
-			<text lang="fr">Les films basés sur des jeux vidéo regorgent d'événements intéressants et d'histoires inhabituelles, ce qui permet de piquer la curiosité des spectateurs. Les histoires pleines d'action offrent un divertissement agréable et constituent un bon film pour la soirée. Parmi les nombreuses adaptations, plusieurs titres sont particulièrement remarquables.
+      <text lang="fr">Les films basés sur des jeux vidéo regorgent d'événements intéressants et d'histoires inhabituelles, ce qui permet de piquer la curiosité des spectateurs. Les histoires pleines d'action offrent un divertissement agréable et constituent un bon film pour la soirée. Parmi les nombreuses adaptations, plusieurs titres sont particulièrement remarquables.
 
 Il s'agit d'une collection de films de cinéma basés sur des jeux vidéo et de films qui ont fait des jeux vidéo.</text>
-			<text lang="it">I film basati sui videogiochi sono ricchi di eventi interessanti e di storie insolite, che suscitano efficacemente l'interesse degli spettatori. Le storie ricche di azione offrono un intrattenimento piacevole e si prestano bene come film per la sera. Tra i numerosi adattamenti, alcuni titoli sono particolarmente degni di nota.
+      <text lang="it">I film basati sui videogiochi sono ricchi di eventi interessanti e di storie insolite, che suscitano efficacemente l'interesse degli spettatori. Le storie ricche di azione offrono un intrattenimento piacevole e si prestano bene come film per la sera. Tra i numerosi adattamenti, alcuni titoli sono particolarmente degni di nota.
 
 Si tratta di una raccolta di film teatrali basati su videogiochi e di film che hanno creato videogiochi.</text>
-		</text>
-	</view>
+    </text>
+  </view>
 </theme>
