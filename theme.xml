@@ -157,7 +157,7 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 	</view>
 
 	<view name="system">
-		<text name="systemInfo" extra="static">
+		<text ifSubset="showgamescount:yes" name="systemInfo" extra="static">
 			<backgroundColor>14141400</backgroundColor>
 			<color>777777FF</color>
 			<fontPath>${fontDescReg}</fontPath>
@@ -232,6 +232,12 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 	<include name="Greyful" displayName="${sysbgcolorGreyful}">./_inc/systemcolors/greyful.xml</include>
 	</subset>
 
+<!-- Subset option for showing number of games in Colorful -->
+	<subset name="showgamescount" displayName="${subset.showgamescount}">
+		<include name="yes" displayName="${yes}"/>
+		<include name="no" displayName="${no}"/>
+	</subset>
+
 <!-- Game views -->
 	<include>./_inc/views/basic.xml</include>
 	<include>./_inc/views/detailed.xml</include>
@@ -274,8 +280,8 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 
 <!-- Subset option for blur effects -->
 	<subset name="blurfx" displayName="${subset.blurfx}" ifArch="windows,x86_64" tinyScreen="false">
-	<include name="yes" displayName="${yes}">./_inc/fx/blurfx.xml</include>
-	<include name="no" displayName="${no}"/>
+		<include name="yes" displayName="${yes}">./_inc/fx/blurfx.xml</include>
+		<include name="no" displayName="${no}"/>
 	</subset>
 
 <!-- Animated gamelist logo on/off -->
