@@ -17,6 +17,61 @@
 <include>${themePath}/_inc/layouts/${system.theme}.xml</include>
 
 	<view name="system">
+
+		<image name="sysbg-left" extra="true">
+			<visible>false</visible>
+		</image>
+		<image name="sysbg-right" extra="true">
+			<visible>false</visible>
+		</image>
+		<image name="sysbg-video" extra="true">
+			<visible>false</visible>
+		</image>
+		<image name="sysbg-video-left" extra="true">
+			<visible>false</visible>
+		</image>
+		<image name="sysbg-video-right" extra="true">
+			<visible>false</visible>
+		</image>
+		<video name="videobox" extra="true">
+			<visible>false</visible>
+		</video>
+		<video name="videobox2" extra="true">
+			<visible>false</visible>
+		</video>
+		<video name="videobox3" extra="true">
+			<visible>false</visible>
+		</video>
+		<text name="TextDate" extra="true">
+			<visible>false</visible>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<pos>0.02 0</pos>
+			<size>0.47 0</size>
+			<alignment>right</alignment>
+			<fontPath>${fontNameBold}</fontPath>
+			<fontSize>0.04</fontSize>
+			<fontSize if="${screen.ratio} == '4/3'">0.03</fontSize>
+			<zIndex>140</zIndex>
+		</text>
+		<text name="TextName" extra="true">
+			<pos>0.5 0</pos>
+			<size>0.47 0</size>
+			<alignment>left</alignment>
+			<fontPath>${fontNameBold}</fontPath>
+			<fontSize>0.04</fontSize>
+			<fontSize if="${screen.ratio} == '4/3'">0.045</fontSize>
+			<zIndex>140</zIndex>
+		</text>
+		<text name="TextVariant" extra="true">
+			<visible>false</visible>
+		</text>
+		<text name="TextDesc" extra="true">
+			<visible>false</visible>
+		</text>
+
+
+
 		<imagegrid name="imagegrid">
 			<zIndex>20</zIndex>
 			<pos>0.008 0.05</pos>
