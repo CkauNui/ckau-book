@@ -1,0 +1,185 @@
+<?xml version="1.0" ?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-left" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.3 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
+			<pos>0.305 0.45</pos>
+			<minSize>0.1 0.3</minSize>
+			<rotation>14</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>27</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.025 0.45" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-right" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.6 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+			<pos>0.69 0.45</pos>
+			<minSize>0.1 0.3</minSize>
+			<rotation>-14</rotation>
+			<path>./../../_inc/images/space.png</path>
+			<zIndex>27</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.41 0.45" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<pos>0.499 0.47</pos>
+			<maxSize>0.175</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.184</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-left" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
+			<pos>0.392 0.48</pos>
+			<maxSize>0.14</maxSize>
+			<rotation>-76</rotation>
+			<storyboard>
+				<animation property="pos" to="0.112 0.48" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video-right" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+			<pos>0.607 0.48</pos>
+			<maxSize>0.14</maxSize>
+			<rotation>76</rotation>
+			<storyboard>
+				<animation property="pos" to="0.327 0.48" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<pos>0.499 0.47</pos>
+			<maxSize>0.162</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.22</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.182</maxSize>
+			<zIndex>26</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<video name="videobox2" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
+			<audio>false</audio>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '21/9'">0.8 0.5</origin>
+			<pos>0.616 0.47</pos>
+			<maxSize>0.14</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
+			<zIndex>25</zIndex>
+			<rotation>0</rotation>
+			<storyboard>
+				<animation property="pos" to="0.336 0.47" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<video name="videobox3" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
+			<audio>false</audio>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '21/9'">0.2 0.5</origin>
+			<pos>0.38 0.47</pos>
+			<maxSize>0.14</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
+			<zIndex>25</zIndex>
+			<rotation>0</rotation>
+			<storyboard>
+				<animation property="pos" to="0.1 0.47" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>2010</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>Wahlap Technology</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>Wahlap Arcade Machines</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>Wahlap Technology is a renowned global enterprise specializing in interactive arcade games and indoor entertainment products.
+With over 30 years of experience, Wahlap has established long-term partnerships with industry giants like Sega, Bandai Namco, and Konami.
+
+Their arcade game cabinets are known for their innovative designs and high-quality performance, featuring a variety of game genres including racing, shooting, and sports.</text>
+			<text lang="it">Wahlap Technology è una rinomata azienda globale specializzata in giochi arcade interattivi e prodotti per l'intrattenimento indoor.
+Con oltre 30 anni di esperienza, Wahlap ha stabilito partnership a lungo termine con giganti del settore come Sega, Bandai Namco e Konami.
+
+I loro cabinati arcade sono noti per il design innovativo e le prestazioni di alta qualità, con una varietà di generi di gioco tra cui corse, shooting e sport.</text>
+			<text lang="fr">Wahlap Technology est une entreprise mondiale de renom spécialisée dans les jeux d'arcade interactifs et les produits de divertissement d'intérieur.
+Avec plus de 30 ans d'expérience, Wahlap a établi des partenariats à long terme avec des géants de l'industrie tels que Sega, Bandai Namco et Konami.
+
+Ses consoles de jeux d'arcade sont réputées pour leur conception innovante et leurs performances de haute qualité. Elles proposent une grande variété de jeux, notamment des jeux de course, de tir et de sport.</text>
+			<text lang="de">Wahlap Technology ist ein renommiertes, weltweit tätiges Unternehmen, das sich auf interaktive Arcade-Spiele und Indoor-Unterhaltungsprodukte spezialisiert hat.
+Mit über 30 Jahren Erfahrung hat Wahlap langfristige Partnerschaften mit Branchenriesen wie Sega, Bandai Namco und Konami aufgebaut.
+
+Die Spielhallen von Wahlap sind für ihr innovatives Design und ihre hochwertige Leistung bekannt und bieten eine Vielzahl von Spielgenres wie Rennen, Schießen und Sport.</text>
+			<text lang="es">Wahlap Technology es una empresa mundial de renombre especializada en juegos arcade interactivos y productos de entretenimiento para interiores.
+Con más de 30 años de experiencia, Wahlap ha establecido asociaciones a largo plazo con gigantes del sector como Sega, Bandai Namco y Konami.
+
+Sus recreativas son conocidas por sus diseños innovadores y su rendimiento de alta calidad, y ofrecen una gran variedad de géneros de juego, como carreras, disparos y deportes.</text>
+			<text lang="ru">Wahlap Technology - известное международное предприятие, специализирующееся на интерактивных аркадных играх и развлекательных продуктах для помещений.
+Имея более чем 30-летний опыт работы, компания Wahlap установила долгосрочные партнерские отношения с такими гигантами индустрии, как Sega, Bandai Namco и Konami.
+
+Их аркадные игровые шкафы известны своим инновационным дизайном и высоким качеством исполнения, в них представлены различные игровые жанры, включая гонки, стрельбу и спорт.</text>
+			<text lang="pl">Wahlap Technology to renomowane globalne przedsiębiorstwo specjalizujące się w interaktywnych grach zręcznościowych i produktach do rozrywki w pomieszczeniach.
+Dzięki ponad 30-letniemu doświadczeniu Wahlap nawiązał długoterminową współpracę z gigantami branży, takimi jak Sega, Bandai Namco i Konami.
+
+Ich szafy do gier zręcznościowych są znane z innowacyjnych projektów i wysokiej jakości wykonania, oferując różnorodne gatunki gier, w tym wyścigi, strzelanki i sporty.</text>
+			<text lang="pt">A Wahlap Technology é uma empresa global de renome, especializada em jogos de arcada interactivos e produtos de entretenimento em recintos fechados.
+Com mais de 30 anos de experiência, a Wahlap estabeleceu parcerias a longo prazo com gigantes da indústria como a Sega, a Bandai Namco e a Konami.
+
+Os seus armários de jogos de arcada são conhecidos pelos seus designs inovadores e desempenho de alta qualidade, apresentando uma variedade de géneros de jogos, incluindo corridas, tiro e desporto.</text>
+		</text>
+	</view>
+</theme>
