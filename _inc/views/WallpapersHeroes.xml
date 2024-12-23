@@ -24,12 +24,13 @@
 			<path>./../../_inc/images/overlay3.png</path>
 			<zIndex>70</zIndex>
 		</image>
-		<image name="md_fanart">
+		<image name="fanart" extra="true">
 			<origin>0.5 0</origin>
 			<pos>0.5 0</pos>
 			<color>FFFFFF5F</color>
 			<maxSize>1 1</maxSize>
-			<imageSource>fanart</imageSource>
+			<maxSize if="${screen.ratio} == '4/3'">1.25 1.25</maxSize>
+			<path>{game:fanart}</path>
 			<zIndex>60</zIndex>
 			<linearSmooth>true</linearSmooth>
 			<storyboard event="open">
@@ -53,6 +54,19 @@
 				<animation property="opacity" to="0" duration="400" mode="easeOut"/>
 				<animation property="scale" to="1" duration="250"/>
 			</storyboard>
+		</image>
+		<image name="fanart_fix" extra="true">
+			<visible>!exists({game:fanart})</visible>
+			<path>./../../_inc/anim/${system.theme}.png</path>
+			<pos>0.5 -0.3</pos>
+			<origin>0.5 0</origin>
+			<maxSize>1 1</maxSize>
+			<color>FFFFFF16</color>
+			<zIndex>60</zIndex>
+		</image>
+		<image name="md_fanart">
+			<visible>false</visible>
+			<zIndex>1</zIndex>
 		</image>
 		<image name="md_thumbnail">
 			<tile>true</tile>
