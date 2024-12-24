@@ -5,7 +5,7 @@ Download [Old Ckau-Book (2023)](https://drive.google.com/file/d/1GOpP9HHNuaKdBdO
 <p>
 <img align="right" width="200px" src="https://i.imgur.com/eCZPBDE.png">
 Emulationstation Theme for Batocera, RetroBat, EmuELEC.<br/>
-250+ supported systems.<br/>
+430+ supported systems.<br/>
 Supported languages: English, French, German, Spanish, Italian, Polish, Portuguese, Russian.
 <br/>
 <br/>
