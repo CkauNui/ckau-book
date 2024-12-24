@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.285</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.425</origin>
+			<pos>0.501 0.363</pos>
+			<maxSize>0.232</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.221 0.363" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.285</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.425</origin>
+			<pos>0.501 0.363</pos>
+			<maxSize>0.212</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.221 0.363" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>1985</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>Tesla Liberec</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>Ondra</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>The Tesla Ondra is an 8-bit personal computer developed in 1985 by Tesla Liberec in Czechoslovakia. Designed primarily for educational purposes and home use, it features a U880D microprocessor (an East German clone of the Zilog Z80) running at 2 MHz, 64 KB of RAM, and 4 KB of ROM.
+
+The computer supports a monochrome display with a resolution of 320x255 pixels and offers basic sound capabilities.
+The Ondra was intended to be an affordable and reliable system for schools and households, but only around 2,000 units were produced.</text>
+			<text lang="pt">O Tesla Ondra é um computador pessoal de 8 bits desenvolvido em 1985 pela Tesla Liberec na Checoslováquia. Concebido principalmente para fins educativos e uso doméstico, possui um microprocessador U880D (um clone da Alemanha de Leste do Zilog Z80) que funciona a 2 MHz, 64 KB de RAM e 4 KB de ROM.
+
+O computador suporta um ecrã monocromático com uma resolução de 320x255 pixels e oferece capacidades básicas de som.
+O Ondra foi concebido para ser um sistema acessível e fiável para escolas e famílias, mas apenas foram produzidas cerca de 2.000 unidades.</text>
+			<text lang="it">Il Tesla Ondra è un personal computer a 8 bit sviluppato nel 1985 da Tesla Liberec in Cecoslovacchia. Progettato principalmente per scopi didattici e per uso domestico, è dotato di un microprocessore U880D (un clone della Germania Est dello Zilog Z80) funzionante a 2 MHz, 64 KB di RAM e 4 KB di ROM.
+
+Il computer supporta un display monocromatico con una risoluzione di 320x255 pixel e offre funzionalità audio di base.
+L'Ondra doveva essere un sistema economico e affidabile per le scuole e le famiglie, ma ne sono state prodotte solo circa 2.000 unità.</text>
+			<text lang="fr">Le Tesla Ondra est un ordinateur personnel 8 bits développé en 1985 par Tesla Liberec en Tchécoslovaquie. Conçu principalement à des fins éducatives et pour un usage domestique, il est équipé d'un microprocesseur U880D (un clone est-allemand du Zilog Z80) cadencé à 2 MHz, de 64 Ko de RAM et de 4 Ko de ROM.
+
+L'ordinateur est doté d'un écran monochrome d'une résolution de 320x255 pixels et offre des capacités sonores de base.
+L'Ondra devait être un système abordable et fiable pour les écoles et les ménages, mais il n'a été produit qu'à environ 2 000 exemplaires.</text>
+			<text lang="de">Der Tesla Ondra ist ein 8-Bit-Personalcomputer, der 1985 von Tesla Liberec in der Tschechoslowakei entwickelt wurde. Er wurde in erster Linie für Bildungszwecke und den Heimgebrauch entwickelt und verfügt über einen U880D-Mikroprozessor (ein ostdeutscher Klon des Zilog Z80), der mit 2 MHz läuft, 64 KB RAM und 4 KB ROM.
+
+Der Computer unterstützt ein monochromes Display mit einer Auflösung von 320x255 Pixeln und bietet einfache Soundfunktionen.
+Der Ondra sollte ein erschwingliches und zuverlässiges System für Schulen und Haushalte sein, aber es wurden nur etwa 2.000 Stück produziert.</text>
+			<text lang="es">El Tesla Ondra es un ordenador personal de 8 bits desarrollado en 1985 por Tesla Liberec en Checoslovaquia. Diseñado principalmente para fines educativos y uso doméstico, cuenta con un microprocesador U880D (un clon de Alemania Oriental del Zilog Z80) que funciona a 2 MHz, 64 KB de RAM y 4 KB de ROM.
+
+El ordenador soporta una pantalla monocroma con una resolución de 320x255 píxeles y ofrece capacidades básicas de sonido.
+El Ondra pretendía ser un sistema asequible y fiable para escuelas y hogares, pero sólo se fabricaron unas 2.000 unidades.</text>
+			<text lang="ru">Tesla Ondra - это 8-битный персональный компьютер, разработанный в 1985 году компанией Tesla Liberec в Чехословакии. Предназначенный в основном для образовательных целей и домашнего использования, он оснащен микропроцессором U880D (восточногерманским клоном Zilog Z80), работающим на частоте 2 МГц, 64 КБ ОЗУ и 4 КБ ПЗУ.
+
+Компьютер поддерживает монохромный дисплей с разрешением 320x255 пикселей и обладает базовыми звуковыми возможностями.
+Ondra должен был стать доступной и надежной системой для школ и домашних хозяйств, но было выпущено всего около 2 000 экземпляров.</text>
+			<text lang="pl">Tesla Ondra to 8-bitowy komputer osobisty opracowany w 1985 roku przez Tesla Liberec w Czechosłowacji. Zaprojektowany głównie do celów edukacyjnych i użytku domowego, posiada mikroprocesor U880D (wschodnioniemiecki klon Zilog Z80) pracujący z częstotliwością 2 MHz, 64 KB pamięci RAM i 4 KB pamięci ROM.
+				
+Komputer obsługuje monochromatyczny wyświetlacz o rozdzielczości 320x255 pikseli i oferuje podstawowe możliwości dźwiękowe.
+Ondra miała być niedrogim i niezawodnym systemem dla szkół i gospodarstw domowych, ale wyprodukowano tylko około 2000 sztuk.</text>
+		</text>
+	</view>
+</theme>
