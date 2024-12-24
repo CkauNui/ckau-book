@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.5 0.347</pos>
+			<maxSize>0.36</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.5</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.4</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.347" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.5 0.347</pos>
+			<maxSize>0.345</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.46</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.385</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.347" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>1986</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>Vircon32</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>The Vircon32 is a virtual 32-bit game console designed to be simple yet powerful enough to support full, elaborate games. It features a 15 MHz CPU with floating point support, 16 MB of RAM, and a screen resolution of 640 x 360 pixels with true color.
+
+The console supports rotation, scaling, and transparencies, and offers CD-quality stereo sound with 16 channels. It can handle up to 4 gamepads with 6 buttons each, plus a Start button.
+The Vircon32 is designed to be implemented either in software or hardware, making it a versatile platform for both developers and gamers</text>
+			<text lang="pt">O Vircon32 é uma consola virtual de jogos de 32 bits concebida para ser simples mas suficientemente poderosa para suportar jogos completos e elaborados. Possui um CPU de 15 MHz com suporte de ponto flutuante, 16 MB de RAM e uma resolução de ecrã de 640 x 360 pixels com cor verdadeira.
+
+A consola suporta rotação, escalonamento e transparências, e oferece som estéreo com qualidade de CD e 16 canais. Pode suportar até 4 gamepads com 6 botões cada, mais um botão Start.
+A Vircon32 foi concebida para ser implementada em software ou hardware, o que a torna uma plataforma versátil tanto para programadores como para jogadores</text>
+			<text lang="it">Vircon32 è una console virtuale a 32 bit progettata per essere semplice ma abbastanza potente da supportare giochi completi ed elaborati. Dispone di una CPU a 15 MHz con supporto in virgola mobile, 16 MB di RAM e una risoluzione dello schermo di 640 x 360 pixel con colori reali.
+
+La console supporta la rotazione, il ridimensionamento e le trasparenze e offre un suono stereo di qualità CD a 16 canali. Può gestire fino a 4 gamepad con 6 pulsanti ciascuno, più un pulsante di avvio.
+Vircon32 è stato progettato per essere implementato sia in software che in hardware, rendendolo una piattaforma versatile sia per gli sviluppatori che per i giocatori.</text>
+			<text lang="fr">Le Vircon32 est une console de jeu virtuelle 32 bits conçue pour être simple mais suffisamment puissante pour supporter des jeux complets et élaborés. Elle est équipée d'un processeur de 15 MHz avec support de la virgule flottante, de 16 Mo de RAM et d'un écran d'une résolution de 640 x 360 pixels en couleurs réelles.
+
+La console prend en charge la rotation, la mise à l'échelle et les transparences, et offre un son stéréo de qualité CD avec 16 canaux. Elle peut gérer jusqu'à 4 manettes de jeu avec 6 boutons chacune, plus un bouton Start.
+Le Vircon32 est conçu pour être implémenté soit en logiciel, soit en matériel, ce qui en fait une plateforme polyvalente pour les développeurs et les joueurs.</text>
+			<text lang="de">Der Vircon32 ist eine virtuelle 32-Bit-Spielkonsole, die einfach, aber dennoch leistungsfähig genug ist, um vollständige, aufwendige Spiele zu unterstützen. Er verfügt über eine 15-MHz-CPU mit Fließkomma-Unterstützung, 16 MB RAM und eine Bildschirmauflösung von 640 x 360 Pixeln mit True Color.
+
+Die Konsole unterstützt Rotation, Skalierung und Transparenzen und bietet Stereo-Sound in CD-Qualität mit 16 Kanälen. Sie kann bis zu 4 Gamepads mit je 6 Tasten sowie eine Starttaste bedienen.
+Der Vircon32 ist so konzipiert, dass er sowohl in Software als auch in Hardware implementiert werden kann, was ihn zu einer vielseitigen Plattform für Entwickler und Gamer macht.</text>
+			<text lang="es">La Vircon32 es una videoconsola virtual de 32 bits diseñada para ser sencilla pero lo suficientemente potente como para soportar juegos completos y elaborados. Tiene una CPU de 15 MHz con soporte de coma flotante, 16 MB de RAM y una resolución de pantalla de 640 x 360 píxeles con color verdadero.
+
+La consola admite rotación, escalado y transparencias, y ofrece sonido estéreo con calidad de CD y 16 canales. Puede manejar hasta 4 gamepads con 6 botones cada uno, además de un botón de Inicio.
+La Vircon32 está diseñada para implementarse tanto en software como en hardware, lo que la convierte en una plataforma versátil tanto para desarrolladores como para jugadores.</text>
+			<text lang="ru">Vircon32 - это виртуальная 32-битная игровая консоль, разработанная как простая, но достаточно мощная, чтобы поддерживать полноценные игры. Она оснащена процессором с частотой 15 МГц и поддержкой плавающей точки, 16 МБ оперативной памяти и экраном с разрешением 640 x 360 пикселей и истинным цветом.
+
+Консоль поддерживает вращение, масштабирование и прозрачность, а также предлагает стереозвук CD-качества с 16 каналами. Консоль поддерживает до 4 геймпадов с 6 кнопками на каждом, а также кнопку Start.
+Vircon32 может быть реализована как программно, так и аппаратно, что делает ее универсальной платформой как для разработчиков, так и для геймеров.</text>
+			<text lang="pl">Vircon32 to wirtualna 32-bitowa konsola do gier zaprojektowana tak, aby była prosta, ale wystarczająco wydajna, aby obsługiwać pełne, rozbudowane gry. Posiada procesor 15 MHz z obsługą zmiennoprzecinkową, 16 MB pamięci RAM i rozdzielczość ekranu 640 x 360 pikseli z prawdziwymi kolorami.
+
+Konsola obsługuje obracanie, skalowanie i przezroczystość oraz oferuje dźwięk stereo o jakości CD z 16 kanałami. Może obsługiwać do 4 gamepadów z 6 przyciskami każdy oraz przycisk Start.
+Vircon32 został zaprojektowany do implementacji w oprogramowaniu lub sprzęcie, dzięki czemu jest wszechstronną platformą zarówno dla programistów, jak i graczy</text>
+		</text>
+	</view>
+</theme>
