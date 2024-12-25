@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '21/9'">0.45 0.5</origin>
+			<pos>0.475 0.394</pos>
+			<maxSize>0.242</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.195 0.394" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '21/9'">0.45 0.5</origin>
+			<pos>0.475 0.394</pos>
+			<maxSize>0.232</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.195 0.394" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>1986</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>Atari</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>7800</text>
+		</text>
+		<text name="TextVariant" extra="true">
+			<text>Japanese version</text>
+			<text lang="pl">Wersja amerykańska</text>
+			<text lang="ru">Версия для США</text>
+			<text lang="es">Versión americana</text>
+			<text lang="de">US-Version</text>
+			<text lang="fr">Version américaine</text>
+			<text lang="it">Versione americana</text>
+			<text lang="pt">Versão americana</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>The Atari 7800 ProSystem, or simply the Atari 7800, is a home video game console officially released by Atari Corporation in 1986 as the successor to both the Atari 2600 and Atari 5200. It is able to run almost all Atari 2600 cartridges, making it the first console with built-in backward compatibility. It shipped with a different model of joystick from the 2600-standard CX40 and Pole Position II as the pack-in game. Most of the announced titles at launch were ports of 1980–83 arcade games.
+
+Designed by General Computer Corporation, the 7800 has significantly improved graphics hardware over Atari's previous consoles, but the same Television Interface Adapter chip that launched with the 2600 in 1977 is used to generate audio. In an effort to prevent the flood of poor quality games that contributed to the video game crash of 1983, cartridges had to be digitally signed by Atari.
+
+The Atari 7800 was first announced on May 21, 1984, but a general release was shelved due to the sale of the company. Atari dropped support for the 7800, along with the 2600 and the Atari 8-bit family, on January 1, 1992.</text>
+			<text lang="pl">Atari 7800 – konsola gier wideo wyprodukowana przez amerykańskie przedsiębiorstwo Atari. Jej premiera odbyła się w 1986 roku. W 2004 roku wydano konsolę wzorowaną na Atari 7800 – Atari Flashback.
+
+Dane techniczne:
+- procesor: 8-bitowy 6502C z zegarem 1,79 MHz
+- zegar 1,79 MHz, spada do 1,19 MHz kiedy TIA lub RIOT mają dostęp
+- RAM: 4 KB (2 szt. 6116 2Kx8 RAM)
+- ROM: wbudowane 4 KB BIOS ROM, 48 KB kartridż ROM bez przełączania banków
+- grafika: kontroler graficzny MARIA, rozdzielczość 160x240 (160x288 w PAL) lub 320x240/288, 25 kolorów z palety 256
+- DMA (ang. Direct Memory Access)
+- zegar 7,16 MHz
+- wejścia/wyjścia: dżojstik i przełącznik konsoli obsługiwany przez układ 6532 RIOT oraz TIA
+- dźwięk: obsługiwany przez układ audio-wideo TIA, taki sam jak w Atari 2600
+- opcjonalnie układ dźwiękowy POKEY na kartridżu dla polepszenia dźwięku
+- 2 złącza dżojstików, złącze kartridżów, złącze rozszerzeń, zasilania, antenowe</text>
+			<text lang="ru">Игровая приставка, выпущенная компанией Atari в июне 1986 года (пробный выпуск состоялся двумя годами раньше). Модель 7800 была разработана для замены неудачной Atari 5200 и с целью возвратить Atari превосходство на рынке игровых консолей, который она делила с Nintendo и Sega. В этой системе Atari устранила все недостатки Atari 5200: вместо аналоговых джойстиков она имела простые цифровые джойстики, была почти полностью совместима с Atari 2600 и она даже была дешевле — начальная цена составила 140 долларов.
+
+7800 стала первой игровой системой Atari, разработанной внешней компанией (General Computer Corporation; после этого вне компании были разработаны Atari Lynx и Atari Jaguar). Система была спроектирована так чтобы её можно было дополнить до полноценного домашнего компьютера — была разработана клавиатура, которая к тому же имела порт расширения (это был SIO-порт от 8-разрядного семейства Atari) для подключения периферии — такой как привод гибких дисков или принтер.
+
+В 2009 году IGN составил список лучших игровых консолей, поставив 7800 на 17-е место.</text>
+			<text lang="es">La Atari 7800 ProSystem, o simplemente Atari 7800, es una videoconsola doméstica lanzada oficialmente por Atari Corporation en 1986 como sucesora de la Atari 2600 y la Atari 5200. Es capaz de ejecutar casi todos los cartuchos de Atari 2600, lo que la convierte en la primera consola con retrocompatibilidad integrada. Se comercializó con un modelo de joystick distinto del CX40 estándar de la 2600 y con Pole Position II como juego incluido. La mayoría de los títulos anunciados en el lanzamiento eran adaptaciones de juegos arcade de 1980-83.
+
+Diseñada por General Computer Corporation, la 7800 cuenta con un hardware gráfico significativamente mejorado con respecto a las anteriores consolas de Atari, pero para generar el audio se utiliza el mismo chip Television Interface Adapter que se lanzó con la 2600 en 1977. En un esfuerzo por evitar la avalancha de juegos de mala calidad que contribuyó al crack de los videojuegos de 1983, los cartuchos tuvieron que ser firmados digitalmente por Atari.
+
+La Atari 7800 se anunció por primera vez el 21 de mayo de 1984, pero su lanzamiento general se aplazó debido a la venta de la empresa. Atari dejó de dar soporte a la 7800, junto con la 2600 y la familia Atari de 8 bits, el 1 de enero de 1992.</text>
+			<text lang="de">Das Atari 7800 ProSystem, oder einfach Atari 7800, ist eine Videospielkonsole für den Heimgebrauch, die 1986 offiziell von der Atari Corporation als Nachfolger des Atari 2600 und des Atari 5200 herausgebracht wurde. Es ist in der Lage, fast alle Atari 2600-Cartridges zu verwenden, was es zur ersten Konsole mit eingebauter Abwärtskompatibilität macht. Es wurde mit einem anderen Joystick-Modell als dem 2600-Standard CX40 und dem Spiel Pole Position II ausgeliefert. Die meisten der zum Start angekündigten Titel waren Portierungen von Arcade-Spielen aus den Jahren 1980-83.
+
+Der 7800 wurde von der General Computer Corporation entwickelt und verfügt über eine deutlich verbesserte Grafikhardware im Vergleich zu den früheren Atari-Konsolen. Für die Audiogenerierung wird jedoch derselbe Television Interface Adapter-Chip verwendet, der 1977 mit dem 2600 eingeführt wurde. Um die Flut minderwertiger Spiele zu verhindern, die zum Videospiel-Crash von 1983 beitrug, mussten die Cartridges von Atari digital signiert werden.
+
+Der Atari 7800 wurde erstmals am 21. Mai 1984 angekündigt, aber eine allgemeine Veröffentlichung wurde aufgrund des Verkaufs des Unternehmens aufgeschoben. Am 1. Januar 1992 stellte Atari die Unterstützung für den 7800 zusammen mit dem 2600 und der Atari 8-Bit-Familie ein.</text>
+			<text lang="fr">L'Atari 7800 ProSystem, ou simplement l'Atari 7800, est une console de jeu vidéo de salon officiellement lancée par Atari Corporation en 1986 pour succéder à l'Atari 2600 et à l'Atari 5200. Elle est capable de faire fonctionner presque toutes les cartouches Atari 2600, ce qui en fait la première console avec une rétrocompatibilité intégrée. Elle est livrée avec un modèle de joystick différent de celui de la 2600, le CX40, et Pole Position II comme jeu d'entrée de gamme. La plupart des titres annoncés au lancement étaient des portages de jeux d'arcade des années 1980-83.
+
+Conçue par General Computer Corporation, la 7800 dispose d'un matériel graphique nettement amélioré par rapport aux consoles Atari précédentes, mais la même puce Television Interface Adapter, lancée avec la 2600 en 1977, est utilisée pour générer de l'audio. Afin d'éviter l'afflux de jeux de mauvaise qualité qui a contribué au krach des jeux vidéo en 1983, les cartouches devaient être signées numériquement par Atari.
+
+L'Atari 7800 a été annoncé pour la première fois le 21 mai 1984, mais sa sortie générale a été reportée en raison de la vente de la société. Atari a cessé de soutenir le 7800, ainsi que le 2600 et la famille Atari 8-bit, le 1er janvier 1992.</text>
+			<text lang="it">L'Atari 7800 ProSystem, o semplicemente Atari 7800, è una console per videogiochi domestica rilasciata ufficialmente da Atari Corporation nel 1986 come successore sia dell'Atari 2600 che dell'Atari 5200. È in grado di eseguire quasi tutte le cartucce dell'Atari 2600, il che la rende la prima console con retrocompatibilità integrata. Veniva fornita con un modello di joystick diverso dal CX40 standard del 2600 e con Pole Position II come gioco in dotazione. La maggior parte dei titoli annunciati al lancio erano porting di giochi arcade del 1980-83.
+
+Progettata da General Computer Corporation, la 7800 presenta un hardware grafico notevolmente migliorato rispetto alle precedenti console Atari, ma per generare l'audio viene utilizzato lo stesso chip Television Interface Adapter lanciato con la 2600 nel 1977. Nel tentativo di prevenire l'ondata di giochi di scarsa qualità che contribuì al crollo dei videogiochi del 1983, le cartucce dovevano essere firmate digitalmente da Atari.
+
+L'Atari 7800 fu annunciato per la prima volta il 21 maggio 1984, ma il rilascio generale fu accantonato a causa della vendita dell'azienda. Atari abbandonò il supporto per il 7800, insieme al 2600 e alla famiglia Atari 8-bit, il 1° gennaio 1992.</text>
+			<text lang="pt">Atari 7800 – console de videogame produzida pela empresa americana Atari. Seu lançamento ocorreu em 1986. Em 2004, foi lançada uma console inspirada no Atari 7800 – Atari Flashback.
+
+Especificações técnicas:
+- Processador: 6502C de 8 bits com clock de 1,79 MHz
+- Clock de 1,79 MHz, cai para 1,19 MHz quando TIA ou RIOT têm acesso
+- RAM: 4 KB (2 peças de RAM 6116 2Kx8)
+- ROM: 4 KB de ROM de BIOS embutido, 48 KB de ROM de cartucho sem troca de bancos
+- Gráficos: controlador gráfico MARIA, resolução 160x240 (160x288 em PAL) ou 320x240/288, 25 cores de uma paleta de 256
+- DMA (Direct Memory Access)
+- Clock de 7,16 MHz
+- Entradas/saídas: joystick e chave de console operados pelo chip 6532 RIOT e TIA
+- Som: operado pelo chip de áudio-vídeo TIA, o mesmo do Atari 2600
+- Opcionalmente, chip de som POKEY no cartucho para melhorar o som
+- 2 conectores de joystick, conector de cartucho, conector de expansão, de energia, de antena</text>
+		</text>
+	</view>
+</theme>
