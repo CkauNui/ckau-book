@@ -58,7 +58,7 @@ To download addons, please refer to the file named `(OPTIONAL) download video, 4
 In addition to covering all systems in the latest version of Batocera/Retrobat, the theme also supports a list of other systems that are not (yet) officially part of Batocera/Retrobat, such as Aleck64, Amiga 600/4000, Casio Loopy, Dragon 32 etc.
 These systems can be easily added to your environment, without the need to setup new emulators or tamper with your existing configuration files.
 
-Check [Ckau Book Custom Systems](https://github.com/g-spawnPL/ckau-book-custom-systems) repository to download the additional XML files for your setup: Batocera on Rpi4, Batocera on a x86 PC, or Retrobat.
+Check **Ckau Book Custom Systems - [Batocera](https://github.com/g-spawnPL/ckau-book-custom-systems-Batocera) and [Retrobat](https://github.com/g-spawnPL/ckau-book-custom-systems-Retrobat)** repository to download the additional XML files for your setup.
 
 
 ## Credits
