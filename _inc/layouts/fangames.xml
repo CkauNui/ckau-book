@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.41</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.465</origin>
+			<pos>0.5 0.41</pos>
+			<maxSize>0.36</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.473</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.3925</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.41" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.41</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.465</origin>
+			<pos>0.5 0.41</pos>
+			<maxSize>0.351</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.466</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.389</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.41" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text></text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>Collection</text>
+			<text lang="pl">Kolekcja</text>
+			<text lang="ru">Коллекция</text>
+			<text lang="es">Recopilación</text>
+			<text lang="fr">Collection</text>
+			<text lang="it">Collezione</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>Fan Games</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>A fan game is a video game created by enthusiasts or fans of an existing game, series, or franchise. These games are typically developed without official authorization from the original creators and are often made as a tribute or to expand upon the original content.
+
+Fan games can range from simple modifications to entirely new games inspired by the original source material.</text>
+			<text lang="pt">Um jogo de fãs é um videojogo criado por entusiastas ou fãs de um jogo, série ou franchise existente. Estes jogos são normalmente desenvolvidos sem autorização oficial dos criadores originais e são muitas vezes feitos como um tributo ou para expandir o conteúdo original.
+
+Os jogos de fãs podem variar de simples modificações a jogos totalmente novos inspirados no material original.</text>
+			<text lang="it">Un fan game è un videogioco creato da appassionati o fan di un gioco, una serie o un franchise esistente. Questi giochi sono in genere sviluppati senza autorizzazione ufficiale da parte dei creatori originali e sono spesso realizzati come tributo o per ampliare il contenuto originale.
+
+I fan game possono variare da semplici modifiche a giochi completamente nuovi ispirati al materiale originale.</text>
+			<text lang="fr">Un fan game est un jeu vidéo créé par des passionnés ou des fans d'un jeu, d'une série ou d'une franchise existante. Ces jeux sont généralement développés sans l'autorisation officielle des créateurs originaux et sont souvent créés en hommage ou pour développer le contenu original.
+
+Les jeux de fans peuvent aller de simples modifications à des jeux entièrement nouveaux inspirés par le matériel d'origine.</text>
+			<text lang="de">Ein Fan-Spiel ist ein Videospiel, das von Enthusiasten oder Fans eines bestehenden Spiels, einer Serie oder eines Franchise entwickelt wird. Diese Spiele werden in der Regel ohne offizielle Genehmigung der ursprünglichen Schöpfer entwickelt und dienen oft als Hommage oder zur Erweiterung des ursprünglichen Inhalts.
+
+Fanspiele können von einfachen Modifikationen bis hin zu völlig neuen Spielen reichen, die von der Originalvorlage inspiriert sind.</text>
+			<text lang="es">Un fan game es un videojuego creado por entusiastas o fans de un juego, serie o franquicia ya existente. Estos juegos suelen desarrollarse sin autorización oficial de los creadores originales y a menudo se hacen como homenaje o para ampliar el contenido original.
+
+Pueden ser simples modificaciones o juegos completamente nuevos inspirados en el material original.</text>
+			<text lang="ru">Фан-игра - это видеоигра, созданная энтузиастами или фанатами существующей игры, серии или франшизы. Такие игры обычно разрабатываются без официального разрешения создателей и часто создаются как дань уважения или для расширения оригинального контента.
+
+Фанатские игры могут варьироваться от простых модификаций до совершенно новых игр, вдохновленных исходным материалом.</text>
+			<text lang="pl">Gra fanowska to gra wideo stworzona przez entuzjastów lub fanów istniejącej gry, serii lub serii. Gry te są zazwyczaj tworzone bez oficjalnej autoryzacji oryginalnych twórców i często są tworzone jako hołd lub w celu rozszerzenia oryginalnej zawartości.
+				
+Gry fanowskie mogą obejmować zarówno proste modyfikacje, jak i zupełnie nowe gry inspirowane oryginalnym materiałem źródłowym.</text>
+		</text>
+	</view>
+</theme>
