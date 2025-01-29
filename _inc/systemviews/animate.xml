@@ -2,13 +2,13 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	
-<variables>
-    <!-- Example evaluated variables, usable in if="" conditions -->
-    <wideScreen>${screen.ratio} == "16/9" || ${screen.ratio} == "16/10" || ${screen.ratio} == "16/15" || ${screen.ratio} == "21/9"</wideScreen>
-    <fullHD>${screen.height} >= 1080</fullHD>
-    <pxScale1>1080 / ${screen.height}</pxScale1>
-    <pxScale2>1920 / ${screen.whight}</pxScale2>
-  </variables>
+	<variables>
+		<!-- Example evaluated variables, usable in if="" conditions -->
+		<wideScreen>${screen.ratio} == "16/9" || ${screen.ratio} == "16/10" || ${screen.ratio} == "16/15" || ${screen.ratio} == "21/9"</wideScreen>
+		<fullHD>${screen.height} >= 1080</fullHD>
+		<pxScale1>1080 / ${screen.height}</pxScale1>
+		<pxScale2>1920 / ${screen.whight}</pxScale2>
+ 	 </variables>
 	
 	<!-- Loads system desc & animations, attemps to load synonym if not available -->
 	<include>./../../_inc/layouts/${system.theme}.xml</include>
