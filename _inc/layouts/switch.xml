@@ -2,123 +2,51 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-left" extra="true">
+		<!-- fix bg color -->
+		<image name="sysbg-fix" extra="true">
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 1.06</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.68</origin>
-			<origin if="${screen.ratio} == '21/9'">2.2 0.7</origin>
-			<pos>0.63 0.684</pos>
-			<minSize>0.02 0.11</minSize>
-			<zIndex>29</zIndex>
-			<rotation>13</rotation>
-			<path>./../../_inc/images/space.png</path>
+			<pos>0.5 0.5</pos>
+			<maxSize>1 1</maxSize>
+			<scale if="${screen.ratio} == '16/10'">0.9</scale>
+			<scale if="${screen.ratio} == '4/3'">0.75</scale>
+			<path>./../../_inc/anim/switch-fix.png</path>
+			<zIndex>27</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.35 0.684" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-down" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.4 3.5</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 1.6</origin>
-			<origin if="${screen.ratio} == '21/9'">1.5 0.8</origin>
-			<pos>0.645 0.735</pos>
-			<minSize>0.04 0.02</minSize>
-			<zIndex>29</zIndex>
-			<rotation>12</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<storyboard>
-				<animation property="pos" to="0.365 0.735" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 1.01</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.7</origin>
-			<origin if="${screen.ratio} == '21/9'">3.5 0.9</origin>
-			<pos>0.745 0.695</pos>
-			<minSize>0.02 0.13</minSize>
-			<zIndex>29</zIndex>
-			<rotation>13</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<storyboard>
-				<animation property="pos" to="0.465 0.695" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<image name="sysbg-video" extra="true">
 			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
+			<path>./../../_inc/images/space.png</path>
 			<zIndex>2</zIndex>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.435</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4777</origin>
-			<pos>0.5 0.42</pos>
-			<maxSize>0.418</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.549</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.457</maxSize>
+			<pos>0.5 0.5</pos>
+			<size>0.5 0.8</size>
+			<size if="${screen.ratio} == '4/3'">0.65 0.6</size>
+			<size if="${screen.ratio} == '16/10'">0.55 0.6</size>
+			<size if="${screen.ratio} == '21/9'">0.4 0.75</size>
 			<storyboard>
-				<animation property="pos" to="0.22 0.42" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-right" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 1.04</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.68</origin>
-			<origin if="${screen.ratio} == '21/9'">1.05 0.5</origin>
-			<pos>0.6843 0.6798</pos>
-			<maxSize>0.11</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.11</maxSize>
-			<rotation>8</rotation>
-			<storyboard>
-				<animation property="pos" to="0.4043 0.6798" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
-			<path>{random}</path>
 			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
 			<path>./../../_inc/anim/video/${synonym}.mp4</path>
 			<!-- Loads platform video from addon directory, if available -->
 			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
 			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.435</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4777</origin>
-			<pos>0.5 0.42</pos>
-			<maxSize>0.413</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.547</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.455</maxSize>
-			<zIndex>27</zIndex>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.485</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.495</origin>
+			<origin if="${screen.ratio} == '21/9'">0.51 0.5</origin>
+			<pos>0.512 0.475</pos>
+			<maxSize>0.52</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.58</maxSize>
+			<zIndex>26</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.22 0.42" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}2.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}2.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}2.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}2.mp4</path>
-			<delay>0</delay>
-			<audio>false</audio>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 1.08</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.7</origin>
-			<origin if="${screen.ratio} == '21/9'">1.05 0.5</origin>
-			<pos>0.685 0.681</pos>
-			<maxSize>0.11</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.14</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.12</maxSize>
-			<zIndex>28</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.405 0.681" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.232 0.475" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">
