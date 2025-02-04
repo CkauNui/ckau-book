@@ -6,7 +6,7 @@
 			<origin>0.5 0.5</origin>
 			<origin if="${screen.ratio} == '4/3'">0.3 0.2</origin>
 			<origin if="${screen.ratio} == '16/10'">0.4 0.35</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
+			<origin if="${screen.ratio} == '21/9'">0.1 0.5</origin>
 			<pos>0.285 0.36</pos>
 			<minSize>0.1 0.3</minSize>
 			<rotation>26</rotation>
@@ -18,67 +18,34 @@
 		</image>
 		<image name="sysbg-right" extra="true">
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.7 0.2</origin>
-			<origin if="${screen.ratio} == '16/10'">0.6 0.35</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.72 0.36</pos>
+			<origin if="${screen.ratio} == '4/3'">0.6 0.2</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '21/9'">0.9 0.5</origin>
+			<pos>0.71 0.36</pos>
 			<minSize>0.1 0.3</minSize>
 			<rotation>-26</rotation>
 			<path>./../../_inc/images/space.png</path>
 			<zIndex>27</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.44 0.36" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.43 0.36" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
-		<image name="sysbg-video" extra="true">
+		<image name="sysbg-video-arcade" extra="true">
 			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
+			<path>./../../_inc/images/space.png</path>
 			<zIndex>2</zIndex>
 			<origin>0.5 0.5</origin>
 			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
 			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
 			<pos>0.50 0.435</pos>
-			<maxSize>0.2</maxSize>
+			<size>0.38 0.2</size>
+			<size if="${screen.ratio} == '4/3'">0.38 0.15</size>
+			<size if="${screen.ratio} == '21/9'">0.29 0.2</size>
 			<storyboard>
 				<animation property="pos" to="0.22 0.435" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
-		<image name="sysbg-video-left" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.48 0.26</origin>
-			<origin if="${screen.ratio} == '16/10'">0.52 0.44</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.365 0.43</pos>
-			<maxSize>0.135</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.175</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.15</maxSize>
-			<rotation>-64</rotation>
-			<storyboard>
-				<animation property="pos" to="0.085 0.43" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video-right" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.52 0.26</origin>
-			<origin if="${screen.ratio} == '16/10'">0.48 0.44</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.635 0.435</pos>
-			<maxSize>0.135</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.175</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.15</maxSize>
-			<rotation>64</rotation>
-			<storyboard>
-				<animation property="pos" to="0.355 0.435" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
+		<video name="videoboxarcade" extra="true">
 			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
 			<path>./../../_inc/anim/video/${synonym}.mp4</path>
 			<!-- Loads platform video from addon directory, if available -->
@@ -87,53 +54,13 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.50 0.435</pos>
-			<maxSize>0.175</maxSize>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.38</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<pos>0.50 0.436</pos>
+			<maxSize>0.36</maxSize>
 			<zIndex>26</zIndex>
 			<storyboard>
-				<animation property="pos" to="0.22 0.435" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-right.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-right.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.48 0.325</origin>
-			<origin if="${screen.ratio} == '16/10'">0.48 0.44</origin>
-			<origin if="${screen.ratio} == '21/9'">1 0.5</origin>
-			<pos>0.64 0.435</pos>
-			<maxSize>0.13</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.36 0.435" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox3" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}-left.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-left.mp4</path>
-			<audio>false</audio>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.52 0.325</origin>
-			<origin if="${screen.ratio} == '16/10'">0.52 0.44</origin>
-			<origin if="${screen.ratio} == '21/9'">0 0.5</origin>
-			<pos>0.36 0.435</pos>
-			<maxSize>0.13</maxSize>
-			<zIndex>25</zIndex>
-			<rotation>0</rotation>
-			<storyboard>
-				<animation property="pos" to="0.08 0.435" begin="2000" duration="1000" mode="linear"/>
+				<animation property="pos" to="0.22 0.436" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</video>
 		<text name="TextDate" extra="true">

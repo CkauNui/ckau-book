@@ -15,7 +15,6 @@
 				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
 			</storyboard>
 		</image>
-
 		<image name="sysbg-video" extra="true">
 			<color>000000</color>
 			<path>./../../_inc/images/space43.png</path>
@@ -28,7 +27,6 @@
 			</storyboard>
 		</image>
 		<video name="videobox" extra="true">
-			<path>{random}</path>
 			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
 			<path>./../../_inc/anim/video/${system.theme}-${lang}.mp4</path>
 			<path>./../../_inc/anim/video/${synonym}.mp4</path>
@@ -39,21 +37,7 @@
 			<delay>0</delay>
 			<effect>none</effect>
 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.48</origin>
-			<pos>0.508 0.492</pos>
-			<maxSize>0.103</maxSize>
-			<rotation>-2</rotation>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.228 0.492" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<video name="videobox2" extra="true">
-			<path>./../../_inc/anim/video/favorites2.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/favorites2.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '21/9'">0.494 0.5</origin>
 			<pos>0.49 0.4929</pos>
 			<maxSize>0.555</maxSize>
 			<zIndex>25</zIndex>
