@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+	<formatVersion>7</formatVersion>
+
+	<customView name="WallpapersHeroes">
+		<image name="md_cartridge">
+			<tile>true</tile>
+			<origin>0 1</origin>
+			<pos>0.023 0.9</pos>
+			<maxSize>0.38</maxSize>
+			<zIndex>70</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="1" to="0" begin="0" duration="0" mode="EaseOutQuint"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="EaseOutQuint"/>
+				<animation property="y" to="0.515" begin="2000" duration="2500" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="0" begin="0" duration="0" mode="EaseOutQuint"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="500" mode="EaseOutQuint"/>
+				<animation property="y" to="0.515" begin="2000" duration="2500" mode="EaseOutQuint"/>
+				<animation property="rotation" from="-360" begin="4000" duration="6800" repeat="forever" mode="easeOutInQuint"/> 
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" from="1" to="0" duration="" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="md_thumbnail">
+			<zIndex>71</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="logo">
+			<pos>0.12 0.1</pos>
+		</image>
+	</customView>
+</theme>
