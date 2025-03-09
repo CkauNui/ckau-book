@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysart" extra="true">
+			<path>./../../_inc/anim/psx.png</path>
+			<path>./../../../ckau-book-addons/_inc/anim/4K/psx.png</path>
+		</image>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.33</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.5 0.37</pos>
+			<maxSize>0.254</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.37" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.33</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.5 0.37</pos>
+			<maxSize>0.244</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.37" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>1994</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>Sony</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>PlayStation</text>
+		</text>
+		<text name="TextVariant" extra="true">
+			<text>ROM Hacks</text>
+			<text lang="pl">Hacki rom</text>
+			<text lang="ru">Хаки</text>
+			<text lang="es">ROM Hacks</text>
+			<text lang="de">ROM-Hacks</text>
+			<text lang="fr">ROM Hacks</text>
+			<text lang="it">ROM Hacks</text>
+			<text lang="pt">Hacks de ROM</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>PlayStation (Japanese: プレイステーション, Hepburn: Pureisutēshon, officially abbreviated as PS) is a Japanese video game brand that consists of five home video game consoles, as well as a media center, an online service, a line of controllers, two handhelds and a phone, as well as multiple magazines. The brand is produced by Sony Interactive Entertainment, a division of Sony, with the first console releasing as the PlayStation in Japan released in December 1994, and worldwide the following year.
+
+The very first console in the series was the first console of any kind to exceed 100 million units, in less than a decade. Its successor, the PlayStation 2, was released in 2000. The PlayStation 2 is the best-selling home console to date, having exceeded 155 million units sold by the end of 2012. Sony's next console, the PlayStation 3, was released in 2006 and has sold over 87.4 million units as of March 2017. The next Playstation 4 was released in 2013 and sold one million units in a single day, making it the fastest-selling console in history. The last console in the series, the PlayStation 5, was released in November 2020.</text>
+			<text lang="pl">PlayStation (PS, znana także jako PSX) (jap. プレイステーション, pureisutēshon) – 32-bitowa konsola do gier wideo, wyprodukowana w Japonii przez firmę Sony Computer Entertainment, zaprojektowana przez Kena Kutaragiego.
+Premiera konsoli odbyła się 3 grudnia 1994 roku, kiedy to pierwsze egzemplarze trafiły na półki japońskich sklepów. Niecały rok później, 9 września 1995 roku, konsola ukazała się w Stanach Zjednoczonych, a 29 września tego samego roku w Europie.
+
+PlayStation miała zostać stworzona we współpracy z Nintendo, jako SNES-CD – Sony miało dostarczyć czytnik CD-ROM oraz ogólnie pomóc przy architekturze systemu. Jednak z powodu różnicy zdań, Nintendo rozpoczęło współpracę z Phillips, a w 1993 roku Sony samo zaczęło prace nad swoją konsolą, dodając literę X do jej nazwy – po premierze systemu litera została usunięta, jednak skrót pozostał – PSX. Sprzedaż konsoli osiągnęła 100 milionów sztuk, natomiast ówczesny potentat na rynku konsol - SEGA oferujący konsolę SEGA Saturn sprzedał niespełna 10 milionów sztuk, a Nintendo 33 mln.
+
+Początkowo do konsoli został dodawany pad bez analogów, który został dodany w kolejnej rewizji. Ostatecznie została wydana trzecia edycja pada ze zmienionym kształtem grzybka. 3 grudnia 2018 została wydana zminiaturyzowana wersja konsoli – PlayStation Classic.
+
+Specyfikacja techniczna:
+- Procesor główny oraz układ przekształceń geometrycznych odpowiedzialny za grafikę 3D
+- Procesor: 32-bitowy procesor RISC R3000A MIPS taktowany zegarem 33,8688 MHz Cache 4 kB[13]
+- Wydajność obliczeniowa CPU: 30 Mips
+- Przepustowość szyny: 132 MB/s
+- Pamięć RAM: 2 MB[13]
+- Pamięć Video RAM: 1 MB[13]
+- dźwiękowy RAM: 512 kB[13]
+- Maksymalna rozdzielczość: 640x480[13]
+- Paleta kolorów: 16,7 miliona[13]
+- Liczba generowanych wielokątów na sekundę: 180 000 oteksturowanych obiektów / 360 000 nieoteksturowanych[14]
+- Nośnik danych: płyta CD[13]
+- Dźwięk: 24-kanałowy procesor ADPCM[13]
+- Napęd CD-ROM podwójnej prędkości
+- karty pamięci o pojemnościach 128, 256, 512 kB oraz 1, 2, 4, 8 MB (two in one)</text>
+			<text lang="ru">Игровая приставка пятого поколения, разработанная компанией Sony Computer Entertainment под руководством Кэна Кутараги. Релиз консоли состоялся 3 декабря 1994 года в Японии, в США приставка появилась 9 сентября 1995 года, а в Европе — 29 сентября 1995 года. Консоль является первой игровой системой в линейке PlayStation. В 2000 году вышла обновлённая версия консоли под названием PSone, которая отличалась от оригинальной PlayStation значительно меньшим размером. Приставка оказалась очень популярной, обеспечив Sony прорыв в игровой индустрии, где до того момента безраздельно властвовали Nintendo и Sega.
+
+3 декабря 2018 года в честь 24-ой годовщины выпуска оригинальной консоли была выпущена миниатюрная версия под названием PlayStation Classic, которая включает 20 предустановленных игр, таких как Grand Theft Auto, Final Fantasy VII, Tekken 3, Resident Evil.</text>
+			<text lang="es">PlayStation (japonés: プレイステーション, Hepburn: Pureisutēshon, abreviado oficialmente como PS) es una marca japonesa de videojuegos que consta de cinco videoconsolas domésticas, así como un centro multimedia, un servicio en línea, una línea de mandos, dos dispositivos portátiles y un teléfono, además de múltiples revistas. La marca está producida por Sony Interactive Entertainment, una división de Sony, y la primera consola se lanzó como PlayStation en Japón en diciembre de 1994, y en todo el mundo al año siguiente.
+
+La primera consola de la serie fue la primera consola de cualquier tipo en superar los 100 millones de unidades, en menos de una década. Su sucesora, la PlayStation 2, salió a la venta en 2000. La PlayStation 2 es la consola doméstica más vendida hasta la fecha, habiendo superado los 155 millones de unidades vendidas a finales de 2012. La siguiente consola de Sony, la PlayStation 3, salió al mercado en 2006 y ha vendido más de 87,4 millones de unidades hasta marzo de 2017. La siguiente Playstation 4 salió a la venta en 2013 y vendió un millón de unidades en un solo día, convirtiéndose en la consola que más rápido se ha vendido en la historia. La última consola de la serie, la PlayStation 5, salió a la venta en noviembre de 2020.</text>
+			<text lang="de">PlayStation (japanisch: プレイステーション, Hepburn: Pureisutēshon, offiziell abgekürzt als PS) ist eine japanische Videospielmarke, die aus fünf Videospielkonsolen für den Heimgebrauch sowie einem Media Center, einem Online-Dienst, einer Reihe von Controllern, zwei Handhelds und einem Telefon sowie mehreren Zeitschriften besteht. Die Marke wird von Sony Interactive Entertainment, einer Abteilung von Sony, produziert. Die erste Konsole wurde als PlayStation im Dezember 1994 in Japan und im folgenden Jahr weltweit veröffentlicht.
+
+Die allererste Konsole der Serie war die erste Konsole überhaupt, die in weniger als einem Jahrzehnt mehr als 100 Millionen Mal verkauft wurde. Der Nachfolger, die PlayStation 2, wurde im Jahr 2000 veröffentlicht. Die PlayStation 2 ist bis heute die meistverkaufte Heimkonsole, von der bis Ende 2012 mehr als 155 Millionen Exemplare verkauft wurden. Die nächste Konsole von Sony, die PlayStation 3, kam 2006 auf den Markt und wurde bis März 2017 über 87,4 Millionen Mal verkauft. Die nächste Playstation 4 kam 2013 auf den Markt und verkaufte sich an einem einzigen Tag eine Million Mal, was sie zur am schnellsten verkauften Konsole der Geschichte machte. Die letzte Konsole der Reihe, die PlayStation 5, wurde im November 2020 veröffentlicht.</text>
+			<text lang="fr">PlayStation (japonais : プレイステーション, Hepburn : Pureisutēshon, officiellement abrégé en PS) est une marque japonaise de jeux vidéo qui comprend cinq consoles de jeux vidéo de salon, ainsi qu'un centre multimédia, un service en ligne, une gamme de contrôleurs, deux ordinateurs de poche et un téléphone, ainsi que de nombreux magazines. La marque est produite par Sony Interactive Entertainment, une division de Sony. La première console est sortie sous le nom de PlayStation au Japon en décembre 1994, et dans le monde entier l'année suivante.
+
+La toute première console de la série a été la première console, tous types confondus, à dépasser les 100 millions d'unités en moins d'une décennie. Son successeur, la PlayStation 2, est sorti en 2000. La PlayStation 2 est la console de salon la plus vendue à ce jour, avec plus de 155 millions d'unités vendues à la fin de l'année 2012. La console suivante de Sony, la PlayStation 3, est sortie en 2006 et s'est vendue à plus de 87,4 millions d'exemplaires en mars 2017. La Playstation 4 suivante est sortie en 2013 et s'est vendue à un million d'exemplaires en une seule journée, ce qui en fait la console la plus rapidement vendue de l'histoire. La dernière console de la série, la PlayStation 5, est sortie en novembre 2020.</text>
+			<text lang="it">PlayStation (giapponese: プレイステーション, Hepburn: Pureisutēshon, abbreviato ufficialmente in PS) è un marchio giapponese di videogiochi che consiste in cinque console per videogiochi domestici, oltre a un media center, un servizio online, una linea di controller, due palmari e un telefono, oltre a diverse riviste. Il marchio è prodotto da Sony Interactive Entertainment, una divisione di Sony, e la prima console è stata rilasciata come PlayStation in Giappone nel dicembre 1994 e in tutto il mondo l'anno successivo.
+
+La prima console della serie è stata la prima console di qualsiasi tipo a superare i 100 milioni di unità, in meno di un decennio. Il suo successore, la PlayStation 2, è stato rilasciato nel 2000. La PlayStation 2 è la console domestica più venduta fino ad oggi, avendo superato i 155 milioni di unità vendute alla fine del 2012. La console successiva di Sony, la PlayStation 3, è uscita nel 2006 e ha venduto oltre 87,4 milioni di unità a marzo 2017. La successiva Playstation 4 è stata rilasciata nel 2013 e ha venduto un milione di unità in un solo giorno, diventando la console che ha venduto più velocemente nella storia. L'ultima console della serie, la PlayStation 5, è uscita a novembre 2020.</text>
+			<text lang="pt">PlayStation (PS, também conhecida como PSX) (jap. プレイステーション, pureisutēshon) – console de videogame de 32 bits, produzido no Japão pela Sony Computer Entertainment, projetado por Ken Kutaragi.
+
+O lançamento do console aconteceu em 3 de dezembro de 1994, quando os primeiros exemplares chegaram às prateleiras das lojas japonesas. Menos de um ano depois, em 9 de setembro de 1995, o console foi lançado nos Estados Unidos e em 29 de setembro do mesmo ano na Europa.
+
+O PlayStation foi inicialmente concebido para ser desenvolvido em colaboração com a Nintendo, como SNES-CD – a Sony forneceria um leitor de CD-ROM e auxiliaria na arquitetura do sistema. No entanto, devido a divergências, a Nintendo começou a trabalhar com a Philips e, em 1993, a Sony começou a desenvolver seu próprio console, adicionando a letra X ao nome – após o lançamento do sistema, a letra foi removida, mas a abreviação permaneceu – PSX. As vendas do console alcançaram 100 milhões de unidades, enquanto o então gigante do mercado de consoles, a SEGA, que oferecia o console SEGA Saturn, vendeu menos de 10 milhões de unidades, e a Nintendo 33 milhões.
+
+Inicialmente, o console vinha com um controle sem analógicos, que foi adicionado em uma revisão posterior. Por fim, uma terceira edição do controle foi lançada com uma forma diferente do botão analógico. Em 3 de dezembro de 2018, foi lançada uma versão em miniatura do console – PlayStation Classic.</text>
+		</text>
+	</view>
+</theme>
