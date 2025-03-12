@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+<formatVersion>7</formatVersion>
+<!-- Сетка + подробно -->
+	<customView name="Modern Grid" inherits="grid" displayName="${modernGridViewName}">
+		<image name="logo1,transitionMaskUp,transitionMaskDown,gamelistPreloading,gamelistPreloadingShadow">
+			<visible>false</visible>
+		</image>
+		<image name="logo">
+			<pos>0.04 0.13</pos>
+			<maxSize>0.10 0.10</maxSize>
+			<origin>0 1</origin>
+			<bottom>0</bottom>
+			<zIndex>150</zIndex>
+		</image>
+		<imagegrid name="gamegrid">
+			<pos>0.016 0.5</pos>
+			<size>0.95 0.79</size>
+		</imagegrid>
+		<text name="gridtile">
+			<visible>false</visible>
+			<size>0 0</size>
+		</text>
+		<!-- Need to update to new format -->
+		<text name="md_name">
+			<pos>0.04 0.14</pos>
+			<size>0.5 0.08</size>
+			<color>FFFFFF</color>
+			<backgroundColor>FF000000</backgroundColor>
+			<fontSize>0.06</fontSize>
+			<alignment>left</alignment>
+			<verticalAlignment>center</verticalAlignment>
+			<fontPath>${fontNameBold}</fontPath>
+			<origin>0 0</origin>
+			<glowColor>00000035</glowColor>
+			<glowSize>1</glowSize>
+			<glowOffset>3 2</glowOffset>
+			<zIndex>05</zIndex>
+			<singleLineScroll>true</singleLineScroll>
+			<autoScrollDelay>0</autoScrollDelay>
+		</text>
+		
+		<!-- 1 Линия / 1 Line -->
+		<stackpanel name="container-gamedata" extra="true">
+			<separator>0.015</separator>
+			<pos>0.04 0.23</pos>
+			<size>0.5 0.025</size>
+			<orientation>horizontal</orientation>
+			<backgroundColor>FF000000</backgroundColor>
+			<zIndex>05</zIndex>
+	
+			<text name="gamedata-stars">
+				<fontSize>0.02</fontSize>
+				<text>{game:stars}</text>
+				<color>FFFFFFE6</color>
+				<glowColor>00000035</glowColor>
+				<glowSize>1</glowSize>
+				<glowOffset>3 2</glowOffset>
+				<visible>!empty({game:stars})</visible>
+			</text>
+
+			<image name="icons-releaseyear">
+				<path>${themePath}/_inc/images/game_info_releasedate.svg</path>
+				<linearSmooth>true</linearSmooth>
+				<color>EEEEEE</color>
+				<padding>0 0</padding>
+				<maxSize>0.8 0.8</maxSize>
+				<visible>!empty({game:releaseyear})</visible>
+			</image>
+			<text name="gamedata-releaseyear">
+				<fontSize>0.02</fontSize>
+				<fontPath>${fontNameReg}</fontPath>
+				<text>{game:releaseyear}</text>
+				<color>FFFFFF</color>
+				<glowColor>00000035</glowColor>
+				<glowSize>1</glowSize>
+				<glowOffset>3 2</glowOffset>
+				<visible>!empty({game:releaseyear})</visible>
+			</text>
+	
+			<image name="icons-publisher">
+				<path>${themePath}/_inc/images/game_info_publisher.svg</path>
+				<linearSmooth>true</linearSmooth>
+				<color>EEEEEE</color>
+				<padding>0 0</padding>
+				<maxSize>0.8 0.8</maxSize>
+				<visible>{game:publisher} != {game:developer} &amp;&amp; !empty({game:publisher})</visible>
+			</image>
+			<text name="gamedata-publisher">
+				<fontSize>0.02</fontSize>
+				<fontPath>${fontNameReg}</fontPath>
+				<text>{game:publisher}</text>
+				<color>FFFFFF</color>
+				<glowColor>00000035</glowColor>
+				<glowSize>1</glowSize>
+				<glowOffset>3 2</glowOffset>
+				<visible>{game:publisher} != {game:developer} &amp;&amp; !empty({game:publisher})</visible>
+			</text>
+	
+			<image name="icons-developer">
+				<path>${themePath}/_inc/images/game_info_developer.svg</path>
+				<linearSmooth>true</linearSmooth>
+				<color>EEEEEE</color>
+				<padding>0 0</padding>
+				<maxSize>0.8 0.8</maxSize>
+				<visible>{game:publisher} != {game:developer} &amp;&amp; !empty({game:developer})</visible>
+			</image>
+			<text name="gamedata-developer">
+				<fontSize>0.02</fontSize>
+				<fontPath>${fontNameReg}</fontPath>
+				<text>{game:developer}</text>
+				<color>FFFFFF</color>
+				<glowColor>00000035</glowColor>
+				<glowSize>1</glowSize>
+				<glowOffset>3 2</glowOffset>
+				<visible>{game:publisher} != {game:developer} &amp;&amp; !empty({game:developer})</visible>
+			</text>
+	
+			<image name="icons-developer-publisher">
+				<path>${themePath}/_inc/images/game_info_publisher.svg</path>
+				<linearSmooth>true</linearSmooth>
+				<color>EEEEEE</color>
+				<padding>0 0</padding>
+				<maxSize>0.8 0.8</maxSize>
+				<visible>{game:publisher} == {game:developer} &amp;&amp; !empty({game:publisher}) &amp;&amp; !empty({game:developer})</visible>
+			</image>
+			<image name="icons-developer-publisher2">
+				<path>${themePath}/_inc/images/game_info_developer.svg</path>
+				<linearSmooth>true</linearSmooth>
+				<color>EEEEEE</color>
+				<padding>0 0</padding>
+				<maxSize>0.8 0.8</maxSize>
+				<visible>{game:publisher} == {game:developer} &amp;&amp; !empty({game:publisher}) &amp;&amp; !empty({game:developer})</visible>
+			</image>
+			<text name="gamedata-developer-publisher">
+				<fontSize>0.02</fontSize>
+				<fontPath>${fontNameReg}</fontPath>
+				<text>{game:developer}</text>
+				<color>FFFFFF</color>
+				<glowColor>00000035</glowColor>
+				<glowSize>1</glowSize>
+				<glowOffset>3 2</glowOffset>
+				<visible>{game:publisher} == {game:developer} &amp;&amp; !empty({game:publisher}) &amp;&amp; !empty({game:developer})</visible>
+			</text>
+			<image name="icons-genre">
+				<path>${themePath}/_inc/images/game_info_genre.svg</path>
+				<linearSmooth>true</linearSmooth>
+				<color>EEEEEE</color>
+				<padding>0 0</padding>
+				<maxSize>0.8 0.8</maxSize>
+				<visible>!empty({game:genre})</visible>
+			</image>
+			<text name="gamedata-genre">
+				<fontSize>0.02</fontSize>
+				<fontPath>${fontNameReg}</fontPath>
+				<text> {game:genre}</text>
+				<color>FFFFFF</color>
+				<glowColor>00000035</glowColor>
+				<glowSize>1</glowSize>
+				<glowOffset>3 2</glowOffset>
+				<singleLineScroll>true</singleLineScroll>
+				<autoScrollDelay>0</autoScrollDelay>
+				<visible>!empty({game:genre})</visible>
+			</text>
+		<!--</stackpanel>-->
+
+			<!-- Флаги / Flags -->
+			<image name="flag-region">
+				<path>${themePath}/_inc/images/flags/{game:region}.png</path>
+				<maxSize>1</maxSize>
+				<linearSmooth>true</linearSmooth>
+				<opacity>0.8</opacity>
+				<visible>{game:region} != {game:lang} &amp;&amp; !contains(lower({game:region}), ',') &amp;&amp; !empty({game:region})</visible>
+			</image>
+	
+			<image name="flag-force-world">
+				<path>${themePath}/_inc/images/flags/wr.png</path>
+				<maxSize>1</maxSize>
+				<linearSmooth>true</linearSmooth>
+				<opacity>0.8</opacity>
+				<visible>contains(lower({game:region}), ',') &amp;&amp; !empty({game:region})</visible>
+			</image>
+	
+			<image name="flag-lang">
+				<path>${themePath}/_inc/images/flags/{game:lang}.png</path>
+				<maxSize>1</maxSize>
+				<linearSmooth>true</linearSmooth>
+				<opacity>0.8</opacity>
+				<visible>!contains(lower({game:lang}), ',') &amp;&amp; !empty({game:lang})</visible>
+			</image>
+	
+			<text name="gamedata-lang">
+				<fontSize>0.02</fontSize>
+				<fontPath>${fontNameReg}</fontPath>
+				<text>{game:lang}.upper()</text>
+				<color>FFFFFF</color>
+				<glowColor>00000035</glowColor>
+				<glowSize>1</glowSize>
+				<glowOffset>3 2</glowOffset>
+				<singleLineScroll>true</singleLineScroll>
+				<autoScrollDelay>0</autoScrollDelay>
+				<y>0.02</y>
+				<visible>contains(lower({game:lang}), ',') &amp;&amp; !empty({game:lang})</visible>
+			</text>
+
+			<text name="container-separator">
+				<text> •</text>
+				<fontSize>0.02</fontSize>
+				<color>FFFFFF</color>
+				<fontPath>${fontNameReg}</fontPath>
+				<visible>!empty({game:lang}) || !empty({game:region}) </visible>
+			  </text>
+			<!-- Иконки игроков, ачивок, руля и т.д. -->
+			<text name="icons-players">
+				<fontPath>${fontPlayers}</fontPath>
+				<text>{game:playerCount}</text>
+				<alignment>center</alignment>
+				<fontSize>0.02</fontSize>
+				<color>EEEEEE</color>
+			</text>
+	
+			<image name="icons-cheevos">
+				<visible>{game:cheevos}</visible>
+				<path>${themePath}/_inc/icons/Contest.png</path>
+				<linearSmooth>true</linearSmooth>
+				<color>EEEEEE</color>
+				<padding>0 0</padding>
+				<maxSize>0.8 0.8</maxSize>
+			</image>
+	
+			<image name="icons-wheel">
+				<visible>{game:wheelGame}</visible>
+				<linearSmooth>true</linearSmooth>
+				<padding>0 0</padding>
+				<path>${themePath}/_inc/images/wheel.svg</path>
+				<maxSize>0.8 0.8</maxSize>
+				<color>EEEEEE</color>
+			</image>
+	
+			<image name="icons-gun">
+				<visible>{game:gunGame}</visible>
+				<linearSmooth>true</linearSmooth>
+				<padding>0 0</padding>
+				<path>${themePath}/_inc/images/gun.svg</path>
+				<maxSize>0.8 0.8</maxSize>
+				<color>EEEEEE</color>
+			</image>
+
+			<image name="icons-padtokey">
+				<visible>{game:hasKeyboardMapping}</visible>
+				<linearSmooth>true</linearSmooth>
+				<padding>0 0</padding>
+				<path>${themePath}/_inc/images/padtokey.png</path>
+				<maxSize>0.8 0.8</maxSize>
+				<color>EEEEEE</color>
+			</image> 
+		</stackpanel>
+
+<!-- other elements - need to update to new format -->
+
+		<text name="md_description">
+			<pos>0.04 0.28</pos>
+			<origin>0 0</origin>
+			<size>0.5 0.19</size>
+			<orientation>horizontal</orientation>
+			<backgroundColor>FF000000</backgroundColor>
+			<zIndex>05</zIndex>
+			<color>A0A0B0</color>
+			<alignment>left</alignment>
+			<verticalAlignment>top</verticalAlignment>
+			<lineSpacing>1.1</lineSpacing>
+			<fontSize>0.024</fontSize>
+			<fontPath>${fontDescReg}</fontPath>
+			<color>D0D0D0</color>
+			<glowColor>00000016</glowColor>
+			<glowSize>2</glowSize>
+		</text>
+		<video name="md_video">
+			<pos>0.935 0.27</pos>
+			<maxSize>0.36 0.39</maxSize>
+			<origin>1 0.5</origin>
+			<delay>0</delay>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<snapshotSource>image</snapshotSource>
+			<effect>none</effect>
+			<zIndex>110</zIndex>
+		</video>
+		<!-- Bottom row info & icons -->
+		<image name="md_kidgame,md_notkidgame,md_hidden,md_savestate,md_nosavestate,md_cheevos,md_notcheevos,fake_cheevos,md_manual,md_nomanual,md_players,md_flag,md_releasedate,md_rating">
+			<visible>false</visible>
+		</image>
+	</customView>
+</theme>
