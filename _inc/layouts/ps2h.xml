@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysart" extra="true">
+			<path>./../../_inc/anim/ps2.png</path>
+			<path>./../../../ckau-book-addons/_inc/anim/4K/ps2.png</path>
+		</image>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.33</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+			<pos>0.499 0.367</pos>
+			<maxSize>0.284</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.219 0.367" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.33</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+			<pos>0.499 0.367</pos>
+			<maxSize>0.264</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.219 0.367" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>2000</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>Sony</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>PlayStation 2</text>
+		</text>
+		<text name="TextVariant" extra="true">
+			<text>ROM Hacks</text>
+			<text lang="pl">Hacki rom</text>
+			<text lang="ru">Хаки</text>
+			<text lang="es">ROM Hacks</text>
+			<text lang="de">ROM-Hacks</text>
+			<text lang="fr">ROM Hacks</text>
+			<text lang="it">ROM Hacks</text>
+			<text lang="pt">Hacks de ROM</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>The PlayStation 2 (PS2) is a home video game console developed and marketed by Sony Computer Entertainment. It was first released in Japan on March 4, 2000, in North America on October 26, 2000, in Europe on November 24, 2000, and Australia on November 24, 2000. It is the successor to the original PlayStation, as well as the second installment in the PlayStation console line-up. A sixth-generation console, it competed with Sega's Dreamcast, Nintendo's GameCube, and Microsoft's original Xbox.
+
+Announced in 1999, the PS2 offered backward-compatibility for its predecessor's DualShock controller, as well as its games. The PS2 is the best-selling video game console of all time, having sold over 155 million units worldwide. Over 3,800 game titles have been released for the PS2, with over 1.5 billion copies sold. Sony later manufactured several smaller, lighter revisions of the console known as Slimline models in 2004.</text>
+			<text lang="pl">PlayStation 2 (jap. プレイステーション２ Pureisutēshon Tsu, skrót PS2) – konsola gier wideo produkcji Sony Computer Entertainment, następca PlayStation. Konsola miała swoją premierę 4 marca 2000 w Japonii, a w Stanach Zjednoczonych 26 października 2000.
+
+Konsola pozwala na uruchamianie gier przeznaczonych specjalnie na tę platformę zapisanych na płytach CD-ROM i DVD-ROM. Urządzenie jest kompatybilne wstecz, tzn. umożliwia również korzystanie z większości starszych gier przeznaczonych dla konsoli PlayStation. Konsola pozwala również na odtwarzanie filmów na dyskach DVD-Video oraz muzyki na dyskach CD-Audio. Urządzenie sprzedawane jest w wersji standardowej i slim (zmniejszonej wersji, znanej również jako PSTwo) w kolorze czarnym oraz dwóch specjalnych wersjach kolorystycznych: Satin Silver (srebrnej) oraz Pink (różowej). Konsola pozwala również na grę wieloosobową przez Internet – wymaga to dodatkowego urządzenia o nazwie Network Adapter (w wersji slim jest on już wbudowany).
+
+W dniu premiery w Stanach Zjednoczonych sprzedano około 500 000 sztuk, a sprzedaż konsoli wygenerowała przychód ok. 149 mln USD.
+
+W styczniu 2013 roku firma Sony poinformowała, że kończy produkcję i sprzedaż konsoli na całym świecie.
+
+W 2020 opracowano metodę która pozwala na uruchamianie własnych kopii gier, tylko po włożeniu spreparowanej odpowiednio płyty DVD, bez konieczności instalowania tzw. "modchipa"(układu elektronicznego modyfikującego odczytywanie zabezpieczeń).</text>
+			<text lang="ru">Вторая игровая приставка, выпущенная компанией Sony, наследница PlayStation и предшественница PlayStation 3. О начале разработки было объявлено в марте 1999 г., продажа консоли в Японии началась 4 марта 2000 г., в Северной Америке — 26 октября 2000 г., в Европе — 24 ноября 2000 года, в России — 7 ноября 2002 года.
+
+Игровая приставка, ставшая наиболее быстро продаваемой и самой популярной игровой консолью в истории. На третий квартал 2011 года в мире продано почти 155 миллионов экземпляров PS2.
+
+28 декабря 2012 года было прекращено производство в Японии, а 4 января 2013 года Sony подтвердила, что производство PS2 прекращено по всему миру. Тем самым, PS2 выпускалась почти 13 лет, это один из самых длинных жизненных циклов в истории игровой индустрии.</text>
+			<text lang="es">La PlayStation 2 (PS2) es una videoconsola doméstica desarrollada y comercializada por Sony Computer Entertainment. Salió a la venta en Japón el 4 de marzo de 2000, en Norteamérica el 26 de octubre de 2000, en Europa el 24 de noviembre de 2000 y en Australia el 24 de noviembre de 2000. Es la sucesora de la PlayStation original y la segunda entrega de la gama de consolas PlayStation. Esta consola de sexta generación compitió con la Dreamcast de Sega, la GameCube de Nintendo y la Xbox original de Microsoft.
+
+Anunciada en 1999, la PS2 ofrecía retrocompatibilidad con el mando DualShock de su predecesora, así como con sus juegos. La PS2 es la videoconsola más vendida de todos los tiempos, con más de 155 millones de unidades vendidas en todo el mundo. Se han publicado más de 3.800 títulos para la PS2, con más de 1.500 millones de copias vendidas. Más tarde, en 2004, Sony fabricó varias revisiones más pequeñas y ligeras de la consola, conocidas como modelos Slimline.</text>
+			<text lang="de">Die PlayStation 2 (PS2) ist eine Videospielkonsole für den Heimgebrauch, die von Sony Computer Entertainment entwickelt und vermarktet wird. Sie wurde erstmals in Japan am 4. März 2000, in Nordamerika am 26. Oktober 2000, in Europa am 24. November 2000 und in Australien am 24. November 2000 veröffentlicht. Sie ist der Nachfolger der ursprünglichen PlayStation und der zweite Teil der PlayStation-Konsolenreihe. Als Konsole der sechsten Generation konkurrierte sie mit der Dreamcast von Sega, dem GameCube von Nintendo und der ursprünglichen Xbox von Microsoft.
+
+Die 1999 auf den Markt gebrachte PS2 bot Abwärtskompatibilität für den DualShock-Controller des Vorgängers sowie für dessen Spiele. Die PS2 ist die meistverkaufte Videospielkonsole aller Zeiten, von der weltweit über 155 Millionen Stück verkauft wurden. Für die PS2 wurden über 3.800 Spieletitel veröffentlicht und über 1,5 Milliarden Exemplare verkauft. Später stellte Sony mehrere kleinere, leichtere Versionen der Konsole her, die als Slimline-Modelle im Jahr 2004 bekannt wurden.</text>
+			<text lang="fr">La PlayStation 2 (PS2) est une console de jeux vidéo de salon développée et commercialisée par Sony Computer Entertainment. Elle est sortie pour la première fois au Japon le 4 mars 2000, en Amérique du Nord le 26 octobre 2000, en Europe le 24 novembre 2000 et en Australie le 24 novembre 2000. Il s'agit du successeur de la PlayStation originale, ainsi que du deuxième opus de la gamme de consoles PlayStation. Console de sixième génération, elle était en concurrence avec la Dreamcast de Sega, la GameCube de Nintendo et la Xbox originale de Microsoft.
+
+Annoncée en 1999, la PS2 offrait une compatibilité ascendante pour la manette DualShock de son prédécesseur, ainsi que pour ses jeux. La PS2 est la console de jeux vidéo la plus vendue de tous les temps, avec plus de 155 millions d'unités vendues dans le monde. Plus de 3 800 titres de jeux ont été publiés pour la PS2, et plus de 1,5 milliard d'exemplaires ont été vendus. En 2004, Sony a fabriqué plusieurs versions plus petites et plus légères de la console, connues sous le nom de modèles Slimline.</text>
+			<text lang="it">La PlayStation 2 (PS2) è una console per videogiochi domestica sviluppata e commercializzata da Sony Computer Entertainment. È stata rilasciata per la prima volta in Giappone il 4 marzo 2000, in Nord America il 26 ottobre 2000, in Europa il 24 novembre 2000 e in Australia il 24 novembre 2000. È il successore della PlayStation originale e il secondo capitolo della linea di console PlayStation. È una console di sesta generazione, in concorrenza con il Dreamcast di Sega, il GameCube di Nintendo e la Xbox originale di Microsoft.
+
+Annunciata nel 1999, la PS2 offriva la retrocompatibilità per il controller DualShock del suo predecessore e per i suoi giochi. La PS2 è la console per videogiochi più venduta di tutti i tempi, avendo venduto oltre 155 milioni di unità in tutto il mondo. Per la PS2 sono stati pubblicati oltre 3.800 titoli di gioco, con oltre 1,5 miliardi di copie vendute. Nel 2004 Sony ha prodotto diverse versioni più piccole e leggere della console, note come modelli Slimline.</text>
+			<text lang="pt">PlayStation 2 (jap. プレイステーション２ Pureisutēshon Tsu, abreviado PS2) – console de videogame produzida pela Sony Computer Entertainment, sucessora do PlayStation. A console teve seu lançamento em 4 de março de 2000 no Japão e nos Estados Unidos em 26 de outubro de 2000.
+
+A console permite executar jogos destinados especificamente para esta plataforma, gravados em CDs-ROM e DVDs-ROM. O dispositivo é compatível com versões anteriores, ou seja, também permite o uso da maioria dos jogos mais antigos destinados à console PlayStation. A console também permite a reprodução de filmes em DVDs-Vídeo e música em CDs-Áudio. O dispositivo é vendido na versão padrão e slim (versão menor, também conhecida como PSTwo) na cor preta e em duas versões especiais de cores: Satin Silver (prateada) e Pink (rosa). A console também permite jogos multiplayer online – isso requer um dispositivo adicional chamado Network Adapter (na versão slim ele já vem embutido).
+
+No dia do lançamento nos Estados Unidos, foram vendidas cerca de 500.000 unidades, e a venda da console gerou uma receita de cerca de US$ 149 milhões.
+
+Em janeiro de 2013, a Sony anunciou que encerraria a produção e venda da console em todo o mundo.
+
+Em 2020, foi desenvolvido um método que permite executar cópias próprias de jogos, apenas inserindo um DVD preparado adequadamente, sem a necessidade de instalar o chamado "modchip" (um circuito eletrônico que modifica a leitura das proteções).</text>
+		</text>
+	</view>
+</theme>
