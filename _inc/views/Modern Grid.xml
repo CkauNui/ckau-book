@@ -8,23 +8,26 @@
 			<visible>false</visible>
 		</image>
 		<image name="logo">
-			<pos>0.04 0.13</pos>
-			<maxSize>0.10 0.10</maxSize>
+			<pos>0.04 0.125</pos>
+			<maxSize>0.09 0.09</maxSize>
 			<origin>0 1</origin>
 			<bottom>0</bottom>
 			<zIndex>150</zIndex>
 		</image>
 		<imagegrid name="gamegrid">
 			<pos>0.016 0.5</pos>
-			<size>0.95 0.79</size>
+			<size>0.95 0.5</size>
+			<autoLayout>7 1</autoLayout>
+			<autoLayout if="${screen.ratio} == '21/9'">9 1</autoLayout>
 		</imagegrid>
-		<text name="gridtile">
+		<text name="gridtile,md_name">
 			<visible>false</visible>
 			<size>0 0</size>
 		</text>
-		<!-- Need to update to new format -->
-		<text name="md_name">
-			<pos>0.04 0.14</pos>
+
+		<text name="game-name" extra="true">
+			<text>{game:name}</text>
+			<pos>0.04 0.145</pos>
 			<size>0.5 0.08</size>
 			<color>FFFFFF</color>
 			<backgroundColor>FF000000</backgroundColor>
@@ -45,31 +48,21 @@
 		<stackpanel name="container-gamedata" extra="true">
 			<separator>0.015</separator>
 			<pos>0.04 0.23</pos>
-			<size>0.5 0.025</size>
+			<size>0.5 0.032</size>
 			<orientation>horizontal</orientation>
 			<backgroundColor>FF000000</backgroundColor>
 			<zIndex>05</zIndex>
-	
-			<text name="gamedata-stars">
-				<fontSize>0.02</fontSize>
-				<text>{game:stars}</text>
-				<color>FFFFFFE6</color>
-				<glowColor>00000035</glowColor>
-				<glowSize>1</glowSize>
-				<glowOffset>3 2</glowOffset>
-				<visible>!empty({game:stars})</visible>
-			</text>
 
 			<image name="icons-releaseyear">
 				<path>${themePath}/_inc/images/game_info_releasedate.svg</path>
 				<linearSmooth>true</linearSmooth>
 				<color>EEEEEE</color>
 				<padding>0 0</padding>
-				<maxSize>0.8 0.8</maxSize>
+				<maxSize>1 1</maxSize>
 				<visible>!empty({game:releaseyear})</visible>
 			</image>
 			<text name="gamedata-releaseyear">
-				<fontSize>0.02</fontSize>
+				<fontSize>0.028</fontSize>
 				<fontPath>${fontNameReg}</fontPath>
 				<text>{game:releaseyear}</text>
 				<color>FFFFFF</color>
@@ -84,11 +77,11 @@
 				<linearSmooth>true</linearSmooth>
 				<color>EEEEEE</color>
 				<padding>0 0</padding>
-				<maxSize>0.8 0.8</maxSize>
+				<maxSize>1 1</maxSize>
 				<visible>{game:publisher} != {game:developer} &amp;&amp; !empty({game:publisher})</visible>
 			</image>
 			<text name="gamedata-publisher">
-				<fontSize>0.02</fontSize>
+				<fontSize>0.028</fontSize>
 				<fontPath>${fontNameReg}</fontPath>
 				<text>{game:publisher}</text>
 				<color>FFFFFF</color>
@@ -103,11 +96,11 @@
 				<linearSmooth>true</linearSmooth>
 				<color>EEEEEE</color>
 				<padding>0 0</padding>
-				<maxSize>0.8 0.8</maxSize>
+				<maxSize>1 1</maxSize>
 				<visible>{game:publisher} != {game:developer} &amp;&amp; !empty({game:developer})</visible>
 			</image>
 			<text name="gamedata-developer">
-				<fontSize>0.02</fontSize>
+				<fontSize>0.028</fontSize>
 				<fontPath>${fontNameReg}</fontPath>
 				<text>{game:developer}</text>
 				<color>FFFFFF</color>
@@ -122,7 +115,7 @@
 				<linearSmooth>true</linearSmooth>
 				<color>EEEEEE</color>
 				<padding>0 0</padding>
-				<maxSize>0.8 0.8</maxSize>
+				<maxSize>1 1</maxSize>
 				<visible>{game:publisher} == {game:developer} &amp;&amp; !empty({game:publisher}) &amp;&amp; !empty({game:developer})</visible>
 			</image>
 			<image name="icons-developer-publisher2">
@@ -134,7 +127,7 @@
 				<visible>{game:publisher} == {game:developer} &amp;&amp; !empty({game:publisher}) &amp;&amp; !empty({game:developer})</visible>
 			</image>
 			<text name="gamedata-developer-publisher">
-				<fontSize>0.02</fontSize>
+				<fontSize>0.028</fontSize>
 				<fontPath>${fontNameReg}</fontPath>
 				<text>{game:developer}</text>
 				<color>FFFFFF</color>
@@ -143,16 +136,38 @@
 				<glowOffset>3 2</glowOffset>
 				<visible>{game:publisher} == {game:developer} &amp;&amp; !empty({game:publisher}) &amp;&amp; !empty({game:developer})</visible>
 			</text>
+		</stackpanel>
+		
+		<!-- 2nd row -->
+		<stackpanel name="container-gamedata2" extra="true">
+			<separator>0.015</separator>
+			<pos>0.04 0.28</pos>
+			<size>0.5 0.032</size>
+			<orientation>horizontal</orientation>
+			<backgroundColor>FF000000</backgroundColor>
+			<zIndex>05</zIndex>
+
+	
+			<text name="gamedata-stars">
+				<fontSize>0.028</fontSize>
+				<text>{game:stars}</text>
+				<color>FFFFFFE6</color>
+				<glowColor>00000035</glowColor>
+				<glowSize>1</glowSize>
+				<glowOffset>3 2</glowOffset>
+				<visible>!empty({game:stars})</visible>
+			</text>
+
 			<image name="icons-genre">
 				<path>${themePath}/_inc/images/game_info_genre.svg</path>
 				<linearSmooth>true</linearSmooth>
 				<color>EEEEEE</color>
 				<padding>0 0</padding>
-				<maxSize>0.8 0.8</maxSize>
+				<maxSize>1 1</maxSize>
 				<visible>!empty({game:genre})</visible>
 			</image>
 			<text name="gamedata-genre">
-				<fontSize>0.02</fontSize>
+				<fontSize>0.028</fontSize>
 				<fontPath>${fontNameReg}</fontPath>
 				<text> {game:genre}</text>
 				<color>FFFFFF</color>
@@ -163,7 +178,6 @@
 				<autoScrollDelay>0</autoScrollDelay>
 				<visible>!empty({game:genre})</visible>
 			</text>
-		<!--</stackpanel>-->
 
 			<!-- Флаги / Flags -->
 			<image name="flag-region">
@@ -191,7 +205,7 @@
 			</image>
 	
 			<text name="gamedata-lang">
-				<fontSize>0.02</fontSize>
+				<fontSize>0.028</fontSize>
 				<fontPath>${fontNameReg}</fontPath>
 				<text>{game:lang}.upper()</text>
 				<color>FFFFFF</color>
@@ -206,7 +220,7 @@
 
 			<text name="container-separator">
 				<text> •</text>
-				<fontSize>0.02</fontSize>
+				<fontSize>0.028</fontSize>
 				<color>FFFFFF</color>
 				<fontPath>${fontNameReg}</fontPath>
 				<visible>!empty({game:lang}) || !empty({game:region}) </visible>
@@ -216,7 +230,7 @@
 				<fontPath>${fontPlayers}</fontPath>
 				<text>{game:playerCount}</text>
 				<alignment>center</alignment>
-				<fontSize>0.02</fontSize>
+				<fontSize>0.028</fontSize>
 				<color>EEEEEE</color>
 			</text>
 	
@@ -226,7 +240,7 @@
 				<linearSmooth>true</linearSmooth>
 				<color>EEEEEE</color>
 				<padding>0 0</padding>
-				<maxSize>0.8 0.8</maxSize>
+				<maxSize>1 1</maxSize>
 			</image>
 	
 			<image name="icons-wheel">
@@ -234,7 +248,7 @@
 				<linearSmooth>true</linearSmooth>
 				<padding>0 0</padding>
 				<path>${themePath}/_inc/images/wheel.svg</path>
-				<maxSize>0.8 0.8</maxSize>
+				<maxSize>1 1</maxSize>
 				<color>EEEEEE</color>
 			</image>
 	
@@ -243,7 +257,7 @@
 				<linearSmooth>true</linearSmooth>
 				<padding>0 0</padding>
 				<path>${themePath}/_inc/images/gun.svg</path>
-				<maxSize>0.8 0.8</maxSize>
+				<maxSize>1 1</maxSize>
 				<color>EEEEEE</color>
 			</image>
 
@@ -252,7 +266,7 @@
 				<linearSmooth>true</linearSmooth>
 				<padding>0 0</padding>
 				<path>${themePath}/_inc/images/padtokey.png</path>
-				<maxSize>0.8 0.8</maxSize>
+				<maxSize>1 1</maxSize>
 				<color>EEEEEE</color>
 			</image> 
 		</stackpanel>
@@ -260,9 +274,9 @@
 <!-- other elements - need to update to new format -->
 
 		<text name="md_description">
-			<pos>0.04 0.28</pos>
+			<pos>0.04 0.35</pos>
 			<origin>0 0</origin>
-			<size>0.5 0.19</size>
+			<size>0.5 0.12</size>
 			<orientation>horizontal</orientation>
 			<backgroundColor>FF000000</backgroundColor>
 			<zIndex>05</zIndex>
