@@ -42,6 +42,7 @@
 			<zIndex>05</zIndex>
 			<singleLineScroll>true</singleLineScroll>
 			<autoScrollDelay>0</autoScrollDelay>
+			<zIndex>150</zIndex>
 		</text>
 		
 		<!-- 1 Линия / 1 Line -->
@@ -51,7 +52,7 @@
 			<size>0.5 0.032</size>
 			<orientation>horizontal</orientation>
 			<backgroundColor>FF000000</backgroundColor>
-			<zIndex>05</zIndex>
+			<zIndex>150</zIndex>
 
 			<image name="icons-releaseyear">
 				<path>${themePath}/_inc/images/game_info_releasedate.svg</path>
@@ -145,9 +146,8 @@
 			<size>0.5 0.032</size>
 			<orientation>horizontal</orientation>
 			<backgroundColor>FF000000</backgroundColor>
-			<zIndex>05</zIndex>
+			<zIndex>150</zIndex>
 
-	
 			<text name="gamedata-stars">
 				<fontSize>0.028</fontSize>
 				<text>{game:stars}</text>
@@ -271,9 +271,9 @@
 			</image> 
 		</stackpanel>
 
-<!-- other elements - need to update to new format -->
+		<!-- other elements -->
 
-		<text name="md_description">
+		<text name="md_description"> <!-- need to update to new version -->
 			<pos>0.04 0.35</pos>
 			<origin>0 0</origin>
 			<size>0.5 0.12</size>
@@ -289,8 +289,11 @@
 			<color>D0D0D0</color>
 			<glowColor>00000016</glowColor>
 			<glowSize>2</glowSize>
+			<zIndex>150</zIndex>
 		</text>
-		<video name="md_video">
+		
+		<video name="game-video" extra="true">
+			<path>{game:video}</path>
 			<pos>0.935 0.27</pos>
 			<maxSize>0.36 0.39</maxSize>
 			<origin>1 0.5</origin>
