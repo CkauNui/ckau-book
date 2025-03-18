@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysart" extra="true">
+			<path>./../../_inc/anim/tyrquake.png</path>
+			<path>./../../../ckau-book-addons/_inc/anim/4K/tyrquake.png</path>
+		</image>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '21/9'">0.42 0.5</origin>
+			<pos>0.4485 0.457</pos>
+			<maxSize>0.268</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.1685 0.457" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/tyrquake.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/tyrquake.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<origin if="${screen.ratio} == '21/9'">0.42 0.5</origin>
+			<pos>0.4485 0.457</pos>
+			<maxSize>0.248</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.1685 0.457" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>2003</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>TyrQuake</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>TyrQuake's goal is to port and maintain the Quake game on modern systems. It allows map designers to create larger and/or more detailed maps than the original game allowed while maintaining the original character of the game.
+
+Quake is a first-person shooter video game developed by id Software and published by GT Interactive in 1996. In the game, players must find their way through various medieval maze-like environments, fighting various monsters with different weapons. The overall atmosphere is dark and gritty, with lots of stone textures and rusty, large fonts.
+
+Quake, the successor to id Software's Doom series, was based on the technology and gameplay of its predecessor.</text>
+			<text lang="pl">Celem TyrQuake'a jest przeniesienie i utrzymanie gry Quake na nowoczesnych systemach. Umożliwia projektantom map tworzenie większych i/lub bardziej szczegółowych map, niż pozwalała na to oryginalna gra zachowując oryginalny charakter gry.
+
+Quake to gra wideo z gatunku first-person shooter, opracowana przez id Software i wydana przez GT Interactive w 1996 roku. W grze gracze muszą odnaleźć drogę przez różne średniowieczne środowiska przypominające labirynty, walcząc z różnymi potworami przy użyciu różnych rodzajów broni. Ogólna atmosfera jest mroczna i ziarnista, z dużą ilością tekstur kamienia i rdzawą, wielką czcionką.
+
+Quake, następca serii Doom firmy id Software, opierał się na technologii i rozgrywce swojego poprzednika.</text>
+			<text lang="ru">Цель TyrQuake — портировать и поддерживать игру Quake на современных системах. Это позволяет разработчикам карт создавать более крупные и / или более подробные карты, чем позволяла исходная игра, сохраняя при этом исходный характер игры.</text>
+			<text lang="es">El objetivo de TyrQuake es portar y mantener el juego Quake en sistemas modernos. Permite a los diseñadores de mapas crear mapas más grandes y/o detallados de lo que permitía el juego original, manteniendo el carácter original del juego.
+
+Quake es un videojuego de disparos en primera persona desarrollado por id Software y publicado por GT Interactive en 1996. En el juego, los jugadores deben encontrar su camino a través de varios laberintos medievales, luchando contra varios monstruos con diferentes armas. La atmósfera general es oscura y arenosa, con muchas texturas de piedra y fuentes grandes y oxidadas.
+
+Quake, el sucesor de la serie Doom de id Software, se basó en la tecnología y la jugabilidad de su predecesor.</text>
+			<text lang="de">Das Ziel von TyrQuake ist es, das Quake-Spiel auf moderne Systeme zu portieren und zu erhalten. Es erlaubt Kartendesignern, größere und/oder detailliertere Karten zu erstellen, als es das Originalspiel erlaubte, während der ursprüngliche Charakter des Spiels erhalten bleibt.
+
+Quake ist ein Ego-Shooter-Videospiel, das von id Software entwickelt und 1996 von GT Interactive veröffentlicht wurde. In dem Spiel müssen sich die Spieler einen Weg durch verschiedene mittelalterliche, labyrinthartige Umgebungen bahnen und verschiedene Monster mit unterschiedlichen Waffen bekämpfen. Die Gesamtatmosphäre ist dunkel und düster, mit vielen Steintexturen und rostigen, großen Schriftarten.
+
+Quake, der Nachfolger der Doom-Reihe von id Software, basierte auf der Technologie und dem Gameplay seines Vorgängers.</text>
+			<text lang="fr">L'objectif de TyrQuake est de porter et de maintenir le jeu Quake sur les systèmes modernes. Il permet aux concepteurs de cartes de créer des cartes plus grandes et/ou plus détaillées que ne le permettait le jeu original, tout en conservant le caractère original du jeu.
+
+Quake est un jeu vidéo de tir à la première personne développé par id Software et publié par GT Interactive en 1996. Dans ce jeu, les joueurs doivent se frayer un chemin dans des environnements médiévaux ressemblant à des labyrinthes, en combattant divers monstres à l'aide de différentes armes. L'atmosphère générale est sombre et grinçante, avec de nombreuses textures de pierre et de grandes polices rouillées.
+
+Quake, le successeur de la série Doom d'id Software, est basé sur la technologie et le gameplay de son prédécesseur.</text>
+			<text lang="it">L'obiettivo di TyrQuake è quello di portare e mantenere il gioco Quake sui sistemi moderni. Consente ai progettisti di mappe di creare mappe più grandi e/o più dettagliate rispetto a quelle consentite dal gioco originale, pur mantenendo il carattere originale del gioco.
+
+Quake è un videogioco sparatutto in prima persona sviluppato da id Software e pubblicato da GT Interactive nel 1996. Nel gioco, i giocatori devono farsi strada attraverso vari ambienti medievali simili a labirinti, combattendo vari mostri con armi diverse. L'atmosfera generale è cupa e grintosa, con molte texture di pietra e caratteri grandi e arrugginiti.
+
+Quake, il successore della serie Doom di id Software, si basa sulla tecnologia e sul gameplay del suo predecessore.</text>
+			<text lang="pt">O objetivo do TyrQuake é transferir e manter o jogo Quake em sistemas modernos. Permite que os designers de mapas criem mapas maiores e/ou mais detalhados do que a versão original permitia, preservando o caráter original do jogo.
+
+Quake é um jogo de tiro em primeira pessoa desenvolvido pela id Software e publicado pela GT Interactive em 1996. No jogo, os jogadores devem encontrar seu caminho através de vários ambientes medievais semelhantes a labirintos, lutando contra várias criaturas usando diferentes tipos de armas. A atmosfera geral é sombria e granulada, com muitas texturas de pedra e uma fonte grande e enferrujada.
+
+Quake, sucessor da série Doom da id Software, se baseava na tecnologia e jogabilidade de seu antecessor.</text>
+		</text>
+	</view>
+</theme>
