@@ -122,10 +122,10 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 <!-- Clock, gamepad icons, battery indicator -->
 	<view name="screen">
 		<text name="clock">
-			<fontSize>0.025</fontSize>
-			<pos>0.90 0.945</pos>
+			<fontSize>0.024</fontSize>
+			<pos>0.931 0.945</pos>
 			<size>0.09 0.058</size>
-			<alignment>right</alignment>
+			<alignment>center</alignment>
 			<verticalAlignment>center</verticalAlignment>
 			<fontPath>${fontDescReg}</fontPath>
 		</text>
@@ -161,19 +161,11 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 			<backgroundColor>14141400</backgroundColor>
 			<color>777777FF</color>
 			<fontPath>${fontDescReg}</fontPath>
-			<pos>0.93 0.945</pos>
-			<pos if="${screen.ratio} == '21/9'">0.94 0.945</pos>
-			<origin>1 0</origin>
-			<horizontalAlignment>right</horizontalAlignment>
+			<pos>0.85 0.945</pos>
 			<size>0.10 0.058</size>
 			<alignment>right</alignment>
 			<fontSize>0.025</fontSize>
 			<zIndex>93</zIndex>
-		</text>
-		<!-- Move gamecount to the right if the clock is disabled -->
-		<text ifSubset="showgamescount:yes" if="${global.clock} == 'false'" name="systemInfo" extra="static">
-			<pos>0.98 0.945</pos>
-			<pos if="${screen.ratio} == '21/9'">0.99 0.945</pos>
 		</text>
 		<carousel name="systemcarousel">
 			<color>00000000</color>
