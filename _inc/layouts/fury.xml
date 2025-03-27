@@ -2,6 +2,43 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<pos>0.4901 0.461</pos>
+			<maxSize>0.28</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.37</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.309</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.2101 0.461" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<pos>0.4901 0.4602</pos>
+			<maxSize>0.275</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.368</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.307</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.2101 0.4602" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
 		<text name="TextDate" extra="true">
 			<text>2019</text>
 		</text>
