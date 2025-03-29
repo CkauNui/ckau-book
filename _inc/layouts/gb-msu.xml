@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.5 0.39</pos>
+			<maxSize>0.25</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+			<pos>0.5 0.39</pos>
+			<maxSize>0.24</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>2012</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>Nintendo</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>Game Boy MSU</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>The Game Boy MSU is a modification that enhances Game Boy games by integrating features from the MSU1 chip, originally designed for the Super Nintendo Entertainment System (SNES).
+
+This allows Game Boy games to have CD-quality audio and additional data capabilities, creating a richer gaming experience.</text>
+			<text lang="pt">A Game Boy MSU é uma modificação que melhora os jogos da Game Boy integrando caraterísticas do chip MSU1, originalmente concebido para a Super Nintendo Entertainment System (SNES).
+
+Isto permite que os jogos Game Boy tenham áudio com qualidade de CD e capacidades de dados adicionais, criando uma experiência de jogo mais rica.</text>
+			<text lang="it">Il Game Boy MSU è una modifica che migliora i giochi per Game Boy integrando le funzioni del chip MSU1, originariamente progettato per il Super Nintendo Entertainment System (SNES).
+
+Ciò consente ai giochi per Game Boy di avere un audio di qualità CD e funzionalità di dati aggiuntive, creando un'esperienza di gioco più ricca.</text>
+			<text lang="fr">Le Game Boy MSU est une modification qui améliore les jeux Game Boy en intégrant des fonctions de la puce MSU1, conçue à l'origine pour la Super Nintendo Entertainment System (SNES).
+
+Cela permet aux jeux Game Boy d'avoir un son de qualité CD et des capacités de données supplémentaires, créant ainsi une expérience de jeu plus riche.</text>
+			<text lang="de">Der Game Boy MSU ist eine Modifikation, die Game Boy-Spiele durch die Integration von Funktionen des MSU1-Chips verbessert, der ursprünglich für das Super Nintendo Entertainment System (SNES) entwickelt wurde.
+
+Dadurch können Game Boy-Spiele mit Audio in CD-Qualität und zusätzlichen Datenfunktionen ausgestattet werden, was zu einem reichhaltigeren Spielerlebnis führt.</text>
+			<text lang="es">La Game Boy MSU es una modificación que mejora los juegos de Game Boy integrando funciones del chip MSU1, diseñado originalmente para la Super Nintendo Entertainment System (SNES).
+
+Esto permite que los juegos de Game Boy tengan audio con calidad de CD y capacidades de datos adicionales, creando una experiencia de juego más rica.</text>
+			<text lang="ru">Game Boy MSU - это модификация, которая улучшает игры для Game Boy за счет интеграции функций чипа MSU1, изначально разработанного для Super Nintendo Entertainment System (SNES).
+
+Благодаря этому в играх для Game Boy появляется звук CD-качества и дополнительные возможности передачи данных, что делает игровой процесс более насыщенным.</text>
+			<text lang="pl">Game Boy MSU to modyfikacja, która ulepsza gry Game Boy poprzez integrację funkcji układu MSU1, pierwotnie zaprojektowanego dla Super Nintendo Entertainment System (SNES).
+
+Dzięki temu gry na Game Boya mogą mieć dźwięk o jakości CD i dodatkowe funkcje danych, tworząc bogatsze wrażenia z gry.</text>
+		</text>
+	</view>
+</theme>
