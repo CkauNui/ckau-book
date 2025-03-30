@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-left" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 -0.55</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.14</origin>
+			<pos>0.498 0.18</pos>
+			<minSize>0.4 0.1</minSize>
+			<minSize if="${screen.ratio} == '4/3'">0.59 0.1</minSize>
+			<minSize if="${screen.ratio} == '16/10'">0.49 0.1</minSize>
+			<rotation>0</rotation>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>27</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.218 0.18" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-right" extra="true">
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 1</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.74</origin>
+			<pos>0.498 0.65</pos>
+			<minSize>0.4 0.1</minSize>
+			<minSize if="${screen.ratio} == '4/3'">0.59 0.1</minSize>
+			<minSize if="${screen.ratio} == '16/10'">0.49 0.1</minSize>
+			<rotation>0</rotation>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>27</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.218 0.65" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.41</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.465</origin>
+			<pos>0.5 0.41</pos>
+			<maxSize>0.36</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.473</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.3925</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.41" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.41</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.465</origin>
+			<pos>0.5 0.41</pos>
+			<maxSize>0.351</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.41" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text/>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>Collection</text>
+			<text lang="pl">Kolekcja</text>
+			<text lang="ru">Коллекция</text>
+			<text lang="es">Recopilación</text>
+			<text lang="fr">Collection</text>
+			<text lang="it">Collezione</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>Trackball</text>
+			<text lang="ru">трекбол</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>A collection of video games designed for or compatible with a trackball, offering precise control and a unique retro gameplay experience.</text>
+			<text lang="pt">Uma coleção de jogos de vídeo concebidos para ou compatíveis com uma trackball, oferecendo um controlo preciso e uma experiência de jogo retro única.</text>
+			<text lang="it">Una raccolta di videogiochi progettati o compatibili con una trackball, che offrono un controllo preciso e un'esperienza di gioco retrò unica.</text>
+			<text lang="fr">Une collection de jeux vidéo conçus pour ou compatibles avec un trackball, offrant un contrôle précis et une expérience de jeu rétro unique.</text>
+			<text lang="de">Eine Sammlung von Videospielen, die für einen Trackball entwickelt wurden oder mit diesem kompatibel sind und eine präzise Steuerung und ein einzigartiges Retro-Gameplay-Erlebnis bieten.</text>
+			<text lang="es">Una colección de videojuegos diseñados para un trackball o compatibles con él, que ofrecen un control preciso y una experiencia de juego retro única.</text>
+			<text lang="ru">Коллекция видеоигр, разработанных для трекбола или совместимых с ним, обеспечивающих точное управление и уникальный ретро-геймплей.</text>
+			<text lang="pl">Kolekcja gier wideo zaprojektowanych lub kompatybilnych z trackballem, oferujących precyzyjne sterowanie i wyjątkowe wrażenia z rozgrywki w stylu retro.</text>
+		</text>
+	</view>
+</theme>
