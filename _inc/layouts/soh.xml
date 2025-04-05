@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.41</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.465</origin>
+			<pos>0.5 0.41</pos>
+			<maxSize>0.36</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.473</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.3925</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.41" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.41</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.465</origin>
+			<pos>0.5 0.41</pos>
+			<maxSize>0.351</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.466</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.389</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.41" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>2022</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>Harbour Masters</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>Ship of Harkinian</text>
+		</text>
+		<text name="TextVariant" extra="true">
+			<text>Port</text>
+			<text lang="pl">Port</text>
+			<text lang="ru">Порт</text>
+			<text lang="es">Puerto</text>
+			<text lang="de">Hafen</text>
+			<text lang="fr">Port</text>
+			<text lang="it">Porto</text>
+			<text lang="pt">Porto</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>Ship of Harkinian (SoH) – A full decompilation project of The Legend of Zelda: Ocarina of Time from the N64 for modern operating systems. The name "SoH" is a reference to King Harkinian, Zelda's father in the Legend of Zelda CD-i games.
+
+The game can now be played at high resolutions and framerates, including support for 120 FPS and ultrawide displays. Other mods are also possible, such as high-resolution texture packs (e.g., Ocarina of Time Reloaded) and quality-of-life improvements like adjustable text speed and camera control mapped to the right stick. There are even mods that replace all textures with the 3DS remake’s assets and include a built-in randomizer for rewards.</text>
+			<text lang="it">Ship of Harkinian (SoH) – Un progetto di decompilazione completa di The Legend of Zelda: Ocarina of Time (N64) per sistemi operativi moderni. Il nome "SoH" è un riferimento a Re Harkinian, padre di Zelda nei giochi Legend of Zelda per CD-i.
+
+Ora il gioco può essere eseguito in alta risoluzione e con frame rate elevati, incluso il supporto per 120 FPS e schermi ultra-wide. Altre modifiche sono possibili, come pacchetti di texture ad alta risoluzione (ad esempio Ocarina of Time Reloaded) e miglioramenti alla qualità di vita, come la regolazione della velocità del testo e il controllo della telecamera con il joystick destro. Esistono persino mod che sostituiscono tutte le texture con quelle del remake per 3DS e includono un randomizer di ricompense integrato.</text>
+			<text lang="fr">Ship of Harkinian (SoH) – Un projet de décompilation complète de The Legend of Zelda: Ocarina of Time (N64) pour les systèmes d’exploitation modernes. Le nom « SoH » fait référence au roi Harkinian, père de Zelda dans les jeux Legend of Zelda sur CD-i.
+
+Le jeu peut désormais être exécuté en haute résolution et avec un taux de rafraîchissement élevé, incluant le support du 120 FPS et des écrans ultra-larges. D’autres modifications sont également possibles, comme des packs de textures haute résolution (par exemple Ocarina of Time Reloaded) et des améliorations de qualité de vie, comme la vitesse de texte réglable et le contrôle de la caméra sur le stick droit. Il existe même des mods qui remplacent toutes les textures par celles du remake 3DS et incluent un randomiseur de récompenses intégré.</text>
+			<text lang="de">Ship of Harkinian (SoH) – Ein vollständiges Dekompilationsprojekt von The Legend of Zelda: Ocarina of Time (N64) für moderne Betriebssysteme. Der Name „SoH“ bezieht sich auf König Harkinian, Zeldas Vater in den Legend of Zelda-CD-i-Spielen.
+
+Das Spiel kann nun in hoher Auflösung und mit hohen Bildraten gespielt werden, einschließlich Unterstützung für 120 FPS und Ultra-Wide-Displays. Weitere Mods sind möglich, z. B. Hochauflösende Texture-Packs (wie Ocarina of Time Reloaded) und Lebensqualitätsverbesserungen wie anpassbare Textgeschwindigkeit und Kamerasteuerung über den rechten Stick. Es gibt sogar Mods, die alle Texturen durch die des 3DS-Remakes ersetzen und einen integrierten Belohnungs-Randomizer enthalten.</text>
+			<text lang="es">Ship of Harkinian (SoH) – Un proyecto de descompilación completa de The Legend of Zelda: Ocarina of Time de N64 para sistemas operativos modernos. El nombre "SoH" hace referencia al Rey Harkinian, padre de Zelda en los juegos de Legend of Zelda para CD-i.
+
+Ahora el juego puede ejecutarse en alta resolución y con altas tasas de fotogramas, incluyendo soporte para 120 FPS y pantallas ultrapanorámicas. También son posibles otras modificaciones, como packs de texturas en alta resolución (por ejemplo, Ocarina of Time Reloaded) y mejoras de calidad de vida, como ajustar la velocidad del texto y asignar el control de la cámara al stick derecho. Incluso hay mods que reemplazan todas las texturas por las del remake de 3DS e incluyen un randomizador de recompensas integrado.</text>
+			<text lang="ru">Ship of Harkinian (SoH) - проект полной декомпиляции The Legend of Zelda: Ocarina of Time с N64 для современных операционных систем. Название SoH является отсылкой к королю Харкиниану, отцу Зельды в играх Legend of Zelda с CD-i.
+
+Теперь игру можно запускать с высоким разрешением и частотой кадров. Это включает поддержку 120 кадров в секунду, а также поддержку сверхширокого формата. Также возможны другие модификации, такие как пакеты текстур высокого разрешения, например «Ocarina of Time Reloaded», и улучшения качества жизни, такие как возможность изменять скорость прокрутки текста и назначение управления камерой на правый стик. Есть даже моды, которые заменяют все текстуры на ремейк с 3DS версии и встроенный рандомайзер наград.</text>
+			<text lang="pl">Ship of Harkinian (SoH) – Projekt pełnej dekompilacji The Legend of Zelda: Ocarina of Time z N64 na współczesne systemy operacyjne. Nazwa „SoH” nawiązuje do króla Harkiniana, ojca Zeldy w grach Legend of Zelda na CD-i.
+
+Grę można teraz uruchomić w wysokiej rozdzielczości i z wysoką liczbą klatek na sekundę, w tym z obsługą 120 FPS i monitorów panoramicznych. Możliwe są również inne modyfikacje, takie jak pakiety tekstur w wysokiej rozdzielczości (np. Ocarina of Time Reloaded) oraz ułatwienia rozgrywki, takie jak regulowana prędkość tekstu i przypisanie sterowania kamerą do prawego drążka. Istnieją nawet mody, które zastępują wszystkie tekstury wersją z remaku na 3DS oraz wbudowany randomizer nagród.</text>
+			<text lang="pt">Ship of Harkinian (SoH) – Um projeto de descompilação completa de The Legend of Zelda: Ocarina of Time (N64) para sistemas operacionais modernos. O nome "SoH" é uma referência ao Rei Harkinian, pai de Zelda nos jogos Legend of Zelda do CD-i.
+
+Agora o jogo pode ser executado em alta resolução e com altas taxas de quadros, incluindo suporte a 120 FPS e monitores ultrawide. Outras modificações também são possíveis, como packs de texturas em alta resolução (por exemplo, Ocarina of Time Reloaded) e melhorias de qualidade de vida, como velocidade de texto ajustável e controle da câmera no analógico direito. Há até mods que substituem todas as texturas pelas do remake de 3DS e incluem um randomizador de recompensas integrado.</text>
+		</text>
+	</view>
+</theme>

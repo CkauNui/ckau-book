@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space169.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.405</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
+			<pos>0.5 0.394</pos>
+			<maxSize>0.383</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.497</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.417</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.22 0.394" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/moonlight.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/moonlight.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.405</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
+			<pos>0.5 0.39</pos>
+			<maxSize>0.372</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.495</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.415</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>2022</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>n64decomp, fgsfdsfgs</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>Perfect Dark</text>
+		</text>
+		<text name="TextVariant" extra="true">
+			<text>Port</text>
+			<text lang="pl">Port</text>
+			<text lang="ru">Порт</text>
+			<text lang="es">Puerto</text>
+			<text lang="de">Hafen</text>
+			<text lang="fr">Port</text>
+			<text lang="it">Porto</text>
+			<text lang="pt">Porto</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>A full decompilation project of Perfect Dark from the N64 for modern platforms. Both single-player and split-screen multiplayer modes are fully functional.
+
+The following additional features have been implemented:
+• Mouse look
+• Support for dual analog controllers
+• Widescreen resolution support
+• Customizable field of view
+• 60 FPS support, including fixes for some framerate-related issues
+• Fixes for several original bugs and crashes
+• Basic mod support
+And much more.</text>
+			<text lang="pl">Projekt pełnej dekompilacji Perfect Dark z N64 na współczesne platformy. Tryb jednoosobowy i wieloosobowy z podziałem ekranu działają w pełni.
+
+Zaimplementowano następujące dodatkowe funkcje:
+• Sterowanie myszą
+• Obsługa dwóch analogowych kontrolerów
+• Obsługa rozdzielczości panoramicznej
+• Konfigurowalne pole widzenia
+• Obsługa 60 FPS, w tym poprawki problemów związanych z płynnością
+• Naprawiono kilka oryginalnych błędów i awarii
+• Podstawowa obsługa modyfikacji
+I wiele więcej.</text>
+			<text lang="ru">Проект полной декомпиляции Perfect Dark с N64 для современных операционных систем. Однопользовательский режим и многопользовательский режим с разделенным экраном полностью работают.
+
+Реализованы следующие дополнительные функции:
+• Взгляд мышью
+• Поддержка двух аналоговых контроллеров
+• Поддержка широкоэкранного разрешения
+• Настраиваемое поле зрения
+• Поддержка 60 FPS, включая исправления некоторых проблем, связанных с частотой кадров
+• Исправления нескольких оригинальных ошибок и сбоев
+• Базовая поддержка модов
+и многое другое.</text>
+			<text lang="es">Un proyecto de descompilación completa de Perfect Dark de la N64 para plataformas modernas. Tanto el modo para un jugador como el multijugador en pantalla dividida funcionan por completo.
+
+Se han implementado las siguientes funciones adicionales:
+• Movimiento con ratón
+• Soporte para dos controles analógicos
+• Soporte para resoluciones panorámicas
+• Campo de visión personalizable
+• Soporte para 60 FPS, incluyendo correcciones para problemas de velocidad de fotogramas
+• Corrección de varios errores y fallos originales
+• Soporte básico para mods
+Y mucho más.</text>
+			<text lang="de">Ein vollständiges Dekompilationsprojekt von Perfect Dark (N64) für moderne Plattformen. Der Einzelspieler-Modus und der geteilte Bildschirm-Multiplayer funktionieren vollständig.
+
+Folgende zusätzliche Funktionen wurden implementiert:
+• Maussteuerung
+• Unterstützung für zwei analoge Controller
+• Unterstützung für Breitbild-Auflösungen
+• Anpassbares Sichtfeld
+• 60 FPS-Unterstützung, inklusive Behebung von Bildratenproblemen
+• Behebung mehrerer Originalfehler und Abstürze
+• Grundlegende Mod-Unterstützung
+Und vieles mehr.</text>
+			<text lang="fr">Un projet de décompilation complète de Perfect Dark (N64) pour les plateformes modernes. Le mode solo et le multijoueur en écran partagé fonctionnent parfaitement.
+
+Les fonctionnalités supplémentaires suivantes ont été implémentées :
+• Visée à la souris
+• Prise en charge de deux manettes analogiques
+• Prise en charge des résolutions widescreen
+• Champ de vision personnalisable
+• Prise en charge du 60 FPS, avec corrections des problèmes de fréquence d'images
+• Correction de plusieurs bugs et plantages d'origine
+• Support basique des mods
+Et bien plus encore.</text>
+			<text lang="it">Un progetto di decompilazione completa di Perfect Dark (N64) per piattaforme moderne. Sia la modalità giocatore singolo che il multiplayer a schermo diviso funzionano perfettamente.
+
+Sono state implementate le seguenti funzionalità aggiuntive:
+• Movimento del mouse
+• Supporto per due controller analogici
+• Supporto per risoluzioni widescreen
+• Campo visivo personalizzabile
+• Supporto per 60 FPS, inclusi fix per problemi di framerate
+• Correzioni per diversi bug e crash originali
+• Supporto base per le mod
+E molto altro.</text>
+			<text lang="pt">Um projeto de descompilação completa de Perfect Dark (N64) para plataformas modernas. Tanto o modo single-player quanto o multiplayer em tela dividida funcionam perfeitamente.
+
+Foram implementados os seguintes recursos adicionais:
+• Controle com mouse
+• Suporte a dois controles analógicos
+• Suporte a resoluções widescreen
+• Campo de visão personalizável
+• Suporte a 60 FPS, incluindo correções para problemas de taxa de quadros
+• Correções de vários bugs e crashes originais
+• Suporte básico a mods
+E muito mais.</text>
+		</text>
+	</view>
+</theme>
