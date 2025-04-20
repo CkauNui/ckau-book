@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+<formatVersion>7</formatVersion>
+<!-- Test -->
+	<customView name="Test" inherits="detailed" displayName="${Test}">
+		<image name="logo">
+			<pos>0.8625 0.102</pos>
+			<maxSize>0.200 0.106</maxSize>
+		</image>
+		<textlist name="gamelist">
+			<backgroundColor>000000AA</backgroundColor>
+			<selectorColor>000000AA</selectorColor>
+			<selectedColor>FFFFFF</selectedColor>
+			<primaryColor>CCCCCC</primaryColor>
+			<secondaryColor>CCCCCC</secondaryColor>
+			<extraTextColor>CCCCCC</extraTextColor>
+			<extraTextSelectedColor>A0A0A0</extraTextSelectedColor>
+			<fontPath>${fontDescReg}</fontPath>
+			<forceUppercase>1</forceUppercase>
+			<pos>0.75 0.181</pos>
+			<size>0.24 0.145</size>
+			<alignment>left</alignment>
+			<lines>5</lines>
+			<lineSpacing>1.1</lineSpacing>
+			<horizontalMargin>0.005</horizontalMargin>
+			<fontSize>0.022</fontSize>
+			<scrollSound>./../../_inc/sound/scroll.wav</scrollSound>
+			<scrollbarColor>000000AA</scrollbarColor>
+			<scrollbarCorner>0.49</scrollbarCorner>
+			<scrollbarSize>0.005</scrollbarSize>
+			<scrollbarAlignment>outerright</scrollbarAlignment>
+		</textlist>
+
+	<image name="thumbnail-test, image-test, fanart-test, marquee-test, cartridge-test">
+		<default>${themePath}/_inc/images/no-image.svg</default>
+		<linearSmooth>true</linearSmooth>
+		<origin>0.5 0.5</origin>
+		<maxSize>0.19 0.25</maxSize>
+		<zIndex>90</zIndex>
+	</image>
+	<image name="thumbnail-test, image-test">
+		<y>0.19</y>
+	</image>
+	<image name="fanart-test, marquee-test, cartridge-test">
+		<y>0.52</y>
+	</image>
+
+	<text name="thumbnail-text, image-text, video-text, fanart-text, marquee-text, cartridge-text" extra="true">
+		<fontSize>0.023</fontSize>
+		<fontPath>${fontNameBold}</fontPath>
+		<fontSize>0.022</fontSize>
+		<backgroundColor>000000AA</backgroundColor>
+		<color>FFFFFF</color>
+		<padding>0.02 0</padding>
+		<origin>0.5 0.5</origin>
+		<zIndex>100</zIndex>
+	</text>
+	<text name="thumbnail-text, image-text, video-text" extra="true">
+		<y>0.35</y>
+	</text>
+	<text name="fanart-text, marquee-text, cartridge-text" extra="true">
+		<y>0.69</y>
+	</text>
+
+	<!-- 1 Line -->
+	<image name="thumbnail-test" extra="true">
+		<path>{game:thumbnail}</path>
+		<x>0.10</x>
+		<maxSize>0.17 0.25</maxSize>
+	</image>
+	<text name="thumbnail-text" extra="true">
+		<text>&lt;THUMBNAIL&gt;</text>
+		<x>0.10</x>
+	</text>
+	
+	<image name="image-test" extra="true">
+		<path>{game:image}</path>
+		<x>0.36</x>
+	</image>
+	<text name="image-text" extra="true">
+		<text>&lt;IMAGE&gt;</text>
+		<x>0.36</x>
+	</text>
+	
+	<video name="game-video" extra="true">
+		<default>${themePath}/_inc/anim/video/CRT_Noise.mp4</default>
+		<path>{game:video}</path>
+		<delay>0.01</delay>
+		<effect>none</effect>
+		<x>0.62</x>
+		<y>0.19</y>
+		<maxSize>0.2 0.25</maxSize>
+		<origin>0.5 0.5</origin>
+		<zIndex>100</zIndex>
+	</video>
+	<text name="video-text" extra="true">
+		<text>&lt;VIDEO&gt;</text>z
+		<x>0.62</x>
+	</text>
+
+	<!-- 2 Line -->
+	<image name="marquee-test" extra="true">
+		<x>0.10</x>
+		<path>{game:marquee}</path>
+		<maxSize>0.17 0.25</maxSize>
+	</image>
+	<text name="marquee-text" extra="true">
+		<text>&lt;MARQUEE&gt;</text>
+		<x>0.10</x>
+	</text>
+	
+	<image name="fanart-test" extra="true">
+		<path>{game:fanart}</path>
+		<maxSize>0.22 0.25</maxSize>
+		<x>0.36</x>
+	</image>
+	<text name="fanart-text" extra="true">
+		<text>&lt;FANART&gt;</text>
+		<x>0.36</x>
+	</text>
+	
+	<image name="cartridge-test" extra="true">
+		<path>{game:cartridge}</path>
+		<x>0.62</x>
+		<maxSize>0.17 0.25</maxSize>
+	</image>
+	<text name="cartridge-text" extra="true">
+		<text>&lt;CARTRIDGE • CD&gt;</text>
+		<x>0.62</x>
+	</text>
+
+<!-- Game name, game path, description and info -->
+	<text name="game-name-test" extra="true">
+		<text>{game:name}
+{game:rom}</text>
+<!-- 		<text>Name: {game:name}
+File: {game:rom}</text>
+		<text lang="ru">Название: {game:name}
+Файл: {game:rom}</text>
+		<text lang="pl">Nazwa: {game:name}
+Plik: {game:rom}</text>
+		<text lang="es">Nombre: {game:name}
+Archivo: {game:rom}</text>
+		<text lang="es">Nombre: {game:name}
+Archivo: {game:rom}</text>
+		<text lang="de">Name: {game:name}
+Datei: {game:rom}</text>
+		<text lang="fr">Nom: {game:name}
+Fichier: {game:rom}</text>
+		<text lang="it">Nome: {game:name}
+File: {game:rom}</text>
+		<text lang="pt">Nome: {game:name}
+Arquivo: {game:rom}</text> -->
+		<pos>0.01 0.72</pos>
+		<size>0.71 0</size>
+		<backgroundColor>000000AA</backgroundColor>
+		<color>FFFFFF</color>
+		<padding>0.02 0</padding>
+		<fontSize>0.026</fontSize>
+		<fontPath>${fontNameBold}</fontPath>
+		<origin>0 0</origin>
+		<glowColor>00000035</glowColor>
+		<glowSize>1</glowSize>
+		<glowOffset>3 2</glowOffset>
+		<singleLineScroll>false</singleLineScroll>
+		<zIndex>100</zIndex>
+	</text>
+
+	<text name="md_description">
+		<fontPath>${fontDescReg}</fontPath>
+		<origin>0 0</origin>
+		<pos>0.01 0.8</pos>
+		<size>0.71 0.124</size>
+		<backgroundColor>000000AA</backgroundColor>
+		<color>FFFFFF</color>
+		<padding>0.02 0</padding>
+		<fontSize>0.024</fontSize>
+		<lineSpacing>1.3</lineSpacing>
+		<zIndex>100</zIndex>
+	</text>
+
+	<text name="gamedata" extra="true">
+		<origin>0 0</origin>
+		<pos>0.73 0.454</pos>
+		<size>0.26 0</size>
+		<backgroundColor>000000AA</backgroundColor>
+		<color>FFFFFF</color>
+		<padding>0.01 0</padding>
+		<fontSize>0.02</fontSize>
+		<fontPath>${fontNameReg}</fontPath>
+		<text>
+Year: {game:releaseyear}
+Stars: {game:stars}
+Dev.: {game:developer}
+Publ.: {game:publisher}
+Genre: {game:genre}
+Players: {game:players}
+Region: {game:region}
+Lang: {game:lang}
+Manual: {game:hasManual}
+Pad2Key: {game:hasKeyboardMapping}
+Achievements: {game:cheevos}
+Favorite: {game:favorite}
+
+GameTime: {game:gametime}
+PlayCount: {game:playcount}
+</text>
+		<text lang="ru">
+Год: {game:releaseyear}
+Рейтинг: {game:stars}
+Разраб.: {game:developer}
+Издатель: {game:publisher}
+Жанр: {game:genre}
+Игроки: {game:players}
+Регион: {game:region}
+Язык: {game:lang}
+Мануал: {game:hasManual}
+Pad2Key: {game:hasKeyboardMapping}
+Достижения: {game:cheevos}
+Избранное: {game:favorite}
+
+Игровое время: {game:gametime}
+Кол-во запусков: {game:playcount}
+</text>
+		<text lang="pl">
+Rok: {game:releaseyear}
+Ocena: {game:stars}
+Deweloper: {game:developer}
+Wydawca: {game:publisher}
+Gatunek: {game:genre}
+Gracze: {game:players}
+Region: {game:region}
+Język: {game:lang}
+Instrukcja: {game:hasManual}
+Pad2Key: {game:hasKeyboardMapping}
+Osiągnięcia: {game:cheevos}
+Ulubione: {game:favorite}
+
+Czas gry: {game:gametime}
+Liczba uruchomień: {game:playcount}
+</text>
+		<text lang="es">
+Año: {game:releaseyear}
+Estrellas: {game:stars}
+Desarrollador: {game:developer}
+Editor: {game:publisher}
+Género: {game:genre}
+Jugadores: {game:players}
+Región: {game:region}
+Idioma: {game:lang}
+Manual: {game:hasManual}
+Pad2Key: {game:hasKeyboardMapping}
+Logros: {game:cheevos}
+Favorito: {game:favorite}
+
+Tiempo de juego: {game:gametime}
+Veces jugado: {game:playcount}
+</text>
+		<text lang="de">
+Jahr: {game:releaseyear}
+Sterne: {game:stars}
+Entwickler: {game:developer}
+Herausgeber: {game:publisher}
+Genre: {game:genre}
+Spieler: {game:players}
+Region: {game:region}
+Sprache: {game:lang}
+Handbuch: {game:hasManual}
+Pad2Key: {game:hasKeyboardMapping}
+Errungenschaften: {game:cheevos}
+Favorit: {game:favorite}
+
+Spielzeit: {game:gametime}
+Anzahl Spiele: {game:playcount}
+</text>
+		<text lang="fr">
+Année: {game:releaseyear}
+Étoiles: {game:stars}
+Développeur: {game:developer}
+Éditeur: {game:publisher}
+Genre: {game:genre}
+Joueurs: {game:players}
+Région: {game:region}
+Langue: {game:lang}
+Manuel: {game:hasManual}
+Pad2Key: {game:hasKeyboardMapping}
+Succès: {game:cheevos}
+Favori: {game:favorite}
+
+Temps de jeu: {game:gametime}
+Nombre de parties: {game:playcount}
+</text>
+		<text lang="it">
+Anno: {game:releaseyear}
+Stelle: {game:stars}
+Sviluppatore: {game:developer}
+Editore: {game:publisher}
+Genere: {game:genre}
+Giocatori: {game:players}
+Regione: {game:region}
+Lingua: {game:lang}
+Manuale: {game:hasManual}
+Pad2Key: {game:hasKeyboardMapping}
+Achievement: {game:cheevos}
+Preferito: {game:favorite}
+
+Tempo di gioco: {game:gametime}
+Conteggio partite: {game:playcount}
+</text>
+		<text lang="pt">
+Ano: {game:releaseyear}
+Estrelas: {game:stars}
+Desenvolvedor: {game:developer}
+Publicadora: {game:publisher}
+Gênero: {game:genre}
+Jogadores: {game:players}
+Região: {game:region}
+Idioma: {game:lang}
+Manual: {game:hasManual}
+Pad2Key: {game:hasKeyboardMapping}
+Conquistas: {game:cheevos}
+Favorito: {game:favorite}
+
+Tempo de jogo: {game:gametime}
+Número de jogadas: {game:playcount}
+</text>
+		<zIndex>100</zIndex>
+	</text>
+
+	<stackpanel name="container-icons" extra="true">
+		<separator>0.015</separator>
+		<pos>0.73 0.38</pos>
+		<size>0.26 0.032</size>
+		<orientation>horizontal</orientation>
+		<backgroundColor>000000AA</backgroundColor>
+		<zIndex>100</zIndex>
+
+		<!-- Флаги / Flags -->
+			<image name="flag-region">
+				<path>${themePath}/_inc/images/flags/{game:region}.png</path>
+				<maxSize>1</maxSize>
+				<linearSmooth>true</linearSmooth>
+				<opacity>0.8</opacity>
+				<visible>{game:region} != {game:lang} &amp;&amp; !contains(lower({game:region}), ',') &amp;&amp; !empty({game:region})</visible>
+			</image>
+			<image name="flag-no-region">
+				<path>${themePath}/_inc/images/flags/empty.png</path>
+				<maxSize>1</maxSize>
+				<linearSmooth>true</linearSmooth>
+				<opacity>0.8</opacity>
+				<visible>!contains(lower({game:region}), ',') &amp;&amp; empty({game:region})</visible>
+			</image>
+			<image name="flag-force-world">
+				<path>${themePath}/_inc/images/flags/wr.png</path>
+				<maxSize>1</maxSize>
+				<linearSmooth>true</linearSmooth>
+				<opacity>0.8</opacity>
+				<visible>contains(lower({game:region}), ',') &amp;&amp; !empty({game:region})</visible>
+			</image>
+			<image name="flag-lang">
+				<path>${themePath}/_inc/images/flags/{game:lang}.png</path>
+				<maxSize>1</maxSize>
+				<linearSmooth>true</linearSmooth>
+				<opacity>0.8</opacity>
+				<visible>!contains(lower({game:lang}), ',') &amp;&amp; !empty({game:lang})</visible>
+			</image>
+			<image name="flag-no-lang">
+				<path>${themePath}/_inc/images/flags/empty.png</path>
+				<maxSize>1</maxSize>
+				<linearSmooth>true</linearSmooth>
+				<opacity>0.8</opacity>
+				<visible>!contains(lower({game:lang}), ',') &amp;&amp; empty({game:lang})</visible>
+			</image>
+	
+			<text name="gamedata-lang">
+				<fontSize>0.02</fontSize>
+				<fontPath>${fontNameReg}</fontPath>
+				<text>{game:lang}.upper()</text>
+				<color>FFFFFF</color>
+				<glowColor>00000035</glowColor>
+				<glowSize>1</glowSize>
+				<glowOffset>3 2</glowOffset>
+				<singleLineScroll>true</singleLineScroll>
+				<autoScrollDelay>0</autoScrollDelay>
+				<y>0.02</y>
+				<visible>contains(lower({game:lang}), ',') &amp;&amp; !empty({game:lang})</visible>
+			</text>
+		<!-- Иконки игроков, ачивок, руля и т.д. -->
+			<text name="icons-players">
+				<fontPath>${fontPlayers}</fontPath>
+				<text>{game:playerCount}</text>
+				<alignment>center</alignment>
+				<fontSize>0.03</fontSize>
+				<color>EEEEEE</color>
+			</text>
+			<image name="icons-manual">
+				<visible>{game:hasManual}</visible>
+				<path>${themePath}/_inc/images/manual.svg</path>
+				<linearSmooth>true</linearSmooth>
+				<color>EEEEEE</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+			</image>
+			<image name="icons-cheevos">
+				<visible>{game:cheevos}</visible>
+				<path>${themePath}/_inc/icons/Contest.png</path>
+				<linearSmooth>true</linearSmooth>
+				<color>EEEEEE</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+			</image>
+			<image name="icons-save">
+				<visible>{game:hasSaveState}</visible>
+				<path>${themePath}/_inc/icons/SaveState.png</path>
+				<linearSmooth>true</linearSmooth>
+				<color>EEEEEE</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+			</image>
+			<image name="icons-wheel">
+				<visible>{game:wheelGame}</visible>
+				<linearSmooth>true</linearSmooth>
+				<padding>0 0</padding>
+				<path>${themePath}/_inc/images/wheel.svg</path>
+				<maxSize>1 1</maxSize>
+				<color>EEEEEE</color>
+			</image>
+			<image name="icons-gun">
+				<visible>{game:gunGame}</visible>
+				<linearSmooth>true</linearSmooth>
+				<padding>0 0</padding>
+				<path>${themePath}/_inc/images/gun.svg</path>
+				<maxSize>1 1</maxSize>
+				<color>EEEEEE</color>
+			</image>
+			<image name="icons-padtokey">
+				<visible>{game:hasKeyboardMapping}</visible>
+				<linearSmooth>true</linearSmooth>
+				<padding>0 0</padding>
+				<path>${themePath}/_inc/images/padtokey.png</path>
+				<maxSize>1 1</maxSize>
+				<color>EEEEEE</color>
+			</image>
+			<image name="icons-favorite">
+				<visible>{game:favorite}</visible>
+				<linearSmooth>true</linearSmooth>
+				<padding>0 0</padding>
+				<path>${themePath}/_inc/images/starfav.svg</path>
+				<maxSize>1 1</maxSize>
+				<color>EEEEEE</color>
+			</image>
+			<image name="icons-hidden">
+				<visible>{game:hidden}</visible>
+				<linearSmooth>true</linearSmooth>
+				<padding>0 0</padding>
+				<path>${themePath}/_inc/images/hidden.svg</path>
+				<maxSize>1 1</maxSize>
+				<color>EEEEEE</color>
+			</image>
+			<image name="icons-kidGame">
+				<visible>{game:kidGame}</visible>
+				<linearSmooth>true</linearSmooth>
+				<padding>0 0</padding>
+				<path>${themePath}/_inc/images/kid.svg</path>
+				<maxSize>1 1</maxSize>
+				<color>EEEEEE</color>
+			</image>
+			<image name="icons-padtokey">
+				<visible>{game:hasKeyboardMapping}</visible>
+				<linearSmooth>true</linearSmooth>
+				<padding>0 0</padding>
+				<path>${themePath}/_inc/images/padtokey.png</path>
+				<maxSize>1 1</maxSize>
+				<color>EEEEEE</color>
+			</image>
+		</stackpanel>
+
+	<!-- Hide elements -->
+		<video name="md_video">
+			<visible>false</visible>
+		</video>
+		<rating name="md_rating">
+			<visible>false</visible>
+		</rating>
+		<datetime name="md_releasedate, md_lastplayed">
+			<visible>false</visible>
+		</datetime>
+		<image name="md_thumbnail, md_marquee, md-description-border, md-description-border2, background, gamelist-background, md_flag, md_manual, md_nomanual, md_cheevos, md_notcheevos, fake_cheevos, md_savestate, md_nosavestate, md_hidden, md_kidgame, md_notkidgame, release_date_logo, publisher_logo, playcount_logo, developer_logo, genre_logo, gametime_logo, logo1">
+			<visible>false</visible>
+		</image>
+		<text name="logoText, md_players, md_publisher, md_playcount, md_developer, md_genre, md_gametime">
+			<visible>false</visible>
+		</text>
+
+	</customView>
+<!-- Navigation arrows, if enabled -->
+	<include ifSubset="arrows:On">./../../_inc/views/arrows.xml</include>
+</theme>
