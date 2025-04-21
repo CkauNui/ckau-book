@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+			<pos>0.475 0.335</pos>
+			<maxSize>0.21</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.195 0.335" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.18</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+			<pos>0.475 0.335</pos>
+			<maxSize>0.20</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.195 0.335" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>2018</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>ArnoAnsems</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>CatacombGL</text>
+		</text>
+		<text name="TextVariant" extra="true">
+			<text>Port</text>
+			<text lang="pl">Port</text>
+			<text lang="ru">Порт</text>
+			<text lang="es">Puerto</text>
+			<text lang="de">Hafen</text>
+			<text lang="fr">Port</text>
+			<text lang="it">Port</text>
+			<text lang="pt">Porto</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>CatacombGL is a source port of Catacomb 3D and the Catacomb Adventure series. These games were originally developed for MS-DOS. Catacomb 3D: The Descent was developed by Id Software in 1991. The Catacomb Adventure series was developed by Softdisk Publishing in 1992-1993 and consists of The Catacomb Abyss, The Catacomb Armageddon and The Catacomb Apocalypse. The original games visualized their 3D graphics in 16 colors and a 320x200 pixels view window. The main goal of the CatacombGL source port is to utilize OpenGL to improve the visual presentation of the Catacomb 3D games.
+
+• Runs native on Windows 7/8/10/11 and Linux.
+• Hardware accelerated 3D rendering via OpenGL, supporting widescreen resolutions, a customizable field of view and an uncapped frame rate.
+• Player, projectile and monster movement with floating point precision.
+• Configurable mouse and keyboard controls.
+• Supports all four Catacomb 3D games as included in the Catacombs Pack from GOG.com.
+• Supports The Catacomb Abyss version 1.13 (shareware).</text>
+			<text lang="pt">CatacombGL é um port da série Catacomb 3D e The Catacomb Adventure. Originalmente desenvolvidos para MS-DOS, Catacomb 3D: The Descent foi criado pela id Software em 1991, enquanto a série The Catacomb Adventure (composta por The Catacomb Abyss, The Catacomb Armageddon e The Catacomb Apocalypse) foi desenvolvida pela Softdisk Publishing entre 1992-1993. Os jogos originais exibiam gráficos 3D em 16 cores e uma janela de 320×200 pixels. O objetivo principal do CatacombGL é utilizar OpenGL para melhorar a qualidade visual desses jogos.
+
+• Compatível com Windows 7/8/10/11 e Linux.
+• Renderização 3D acelerada por hardware via OpenGL, suportando resoluções widescreen, campo de visão personalizável e framerate ilimitado.
+• Movimento do jogador, projéteis e monstros com precisão de ponto flutuante.
+• Controles configuráveis (teclado e mouse).
+• Suporte a todos os quatro jogos da série Catacomb 3D (inclusos no Catacombs Pack da GOG.com).
+• Suporte à versão 1.13 (shareware) de The Catacomb Abyss.</text>
+			<text lang="it">CatacombGL è un port della serie Catacomb 3D e The Catacomb Adventure, originariamente sviluppati per MS-DOS. Catacomb 3D: The Descent è stato creato da id Software nel 1991, mentre la serie The Catacomb Adventure (composta da The Catacomb Abyss, The Catacomb Armageddon e The Catacomb Apocalypse) è stata sviluppata da Softdisk Publishing tra il 1992-1993. I giochi originali utilizzavano grafica 3D a 16 colori con una finestra di gioco di 320×200 pixel. L'obiettivo principale di CatacombGL è migliorare la resa visiva utilizzando OpenGL.
+
+• Compatibile con Windows 7/8/10/11 e Linux.
+• Rendering 3D hardware-accelerato tramite OpenGL, con supporto per risoluzioni widescreen, campo visivo regolabile e framerate illimitato.
+• Movimento del giocatore, proiettili e mostri con precisione a virgola mobile.
+• Controlli personalizzabili (tastiera e mouse).
+• Supporto per tutti e quattro i giochi della serie Catacomb 3D (inclusi nel Catacombs Pack di GOG.com).
+• Supporto per la versione 1.13 (shareware) di The Catacomb Abyss.</text>
+			<text lang="fr">CatacombGL est un port des jeux Catacomb 3D et The Catacomb Adventure, initialement développés pour MS-DOS. Catacomb 3D: The Descent a été créé par id Software en 1991, tandis que la série The Catacomb Adventure (comprenant The Catacomb Abyss, The Catacomb Armageddon et The Catacomb Apocalypse) a été développée par Softdisk Publishing entre 1992-1993. Les jeux originaux affichaient des graphismes 3D en 16 couleurs avec une fenêtre de 320×200 pixels. L'objectif principal de CatacombGL est d'améliorer leur rendu visuel grâce à OpenGL.
+
+• Compatible avec Windows 7/8/10/11 et Linux.
+• Rendu 3D accéléré par matériel via OpenGL, prenant en charge les résolutions widescreen, un champ de vision personnalisable et un framerate déverrouillé.
+• Mouvement du joueur, des projectiles et des monstres avec précision en virgule flottante.
+• Contrôles configurables (clavier et souris).
+• Prise en charge des quatre jeux Catacomb 3D (inclus dans le Catacombs Pack de GOG.com).
+• Prise en charge de la version 1.13 (shareware) de The Catacomb Abyss.</text>
+			<text lang="de">CatacombGL ist ein Port der Catacomb 3D- und The Catacomb Adventure-Reihe, die ursprünglich für MS-DOS entwickelt wurden. Catacomb 3D: The Descent wurde 1991 von id Software veröffentlicht, während die The Catacomb Adventure-Serie (The Catacomb Abyss, The Catacomb Armageddon und The Catacomb Apocalypse) von Softdisk Publishing zwischen 1992-1993 entwickelt wurde. Die Originale nutzten 16 Farben und eine 320×200 Pixel-Ansicht. CatacombGL verbessert die Grafik durch OpenGL.
+
+• Läuft nativ unter Windows 7/8/10/11 und Linux.
+• Hardwarebeschleunigtes 3D-Rendering via OpenGL mit Unterstützung für Breitbild-Auflösungen, anpassbarem Sichtfeld und unbegrenzter Framerate.
+• Präzise Bewegungen (Spieler, Projektile, Monster) mit Fließkomma-Genauigkeit.
+• Konfigurierbare Steuerung (Tastatur & Maus).
+• Unterstützt alle vier Catacomb 3D-Spiele (im Catacombs Pack von GOG.com enthalten).
+• Unterstützt die 1.13 (Shareware)-Version von The Catacomb Abyss.</text>
+			<text lang="es">CatacombGL es un port de la serie Catacomb 3D y The Catacomb Adventure, desarrollada originalmente para MS-DOS. Catacomb 3D: The Descent fue creado por id Software en 1991, mientras que la serie The Catacomb Adventure (que incluye The Catacomb Abyss, The Catacomb Armageddon y The Catacomb Apocalypse) fue desarrollada por Softdisk Publishing entre 1992-1993. Los juegos originales usaban gráficos 3D en 16 colores con una ventana de 320×200 píxeles. CatacombGL mejora su aspecto visual mediante OpenGL.
+
+Características:
+• Compatible con Windows 7/8/10/11 y Linux.
+• Renderizado 3D acelerado por hardware con OpenGL, soporte para resoluciones widescreen, campo de visión ajustable y framerate ilimitado.
+• Movimiento del jugador, proyectiles y monstruos con precisión de punto flotante.
+• Controles personalizables (teclado y ratón).
+• Soporte para los cuatro juegos de Catacomb 3D (incluidos en el Catacombs Pack de GOG.com).
+• Soporte para la versión 1.13 (shareware) de The Catacomb Abyss.</text>
+			<text lang="ru">CatacombGL — это порт игр Catacomb 3D и серии The Catacomb Adventure, изначально выпущенных для MS-DOS. Catacomb 3D: The Descent была разработана id Software в 1991 году, а серия The Catacomb Adventure (The Catacomb Abyss, The Catacomb Armageddon и The Catacomb Apocalypse) создана Softdisk Publishing в 1992-1993. Оригинальные игры использовали 16-цветную 3D-графику с разрешением 320×200 пикселей. CatacombGL улучшает визуальную составляющую с помощью OpenGL.
+
+• Поддержка Windows 7/8/10/11 и Linux.
+• Аппаратное ускорение 3D-рендеринга через OpenGL с поддержкой широкоформатных разрешений, настраиваемого поля зрения и неограниченной частоты кадров.
+• Движение игрока, снарядов и монстров с точностью плавающей запятой.
+• Настраиваемое управление (клавиатура и мышь).
+• Поддержка всех четырёх игр Catacomb 3D (из Catacombs Pack на GOG.com).
+• Поддержка The Catacomb Abyss версии 1.13 (shareware).</text>
+			<text lang="pl">CatacombGL to port gier Catacomb 3D i serii The Catacomb Adventure, pierwotnie wydanych na MS-DOS. Catacomb 3D: The Descent powstał w 1991 roku w id Software, a seria The Catacomb Adventure (The Catacomb Abyss, The Catacomb Armageddon i The Catacomb Apocalypse) została opracowana przez Softdisk Publishing w latach 1992-1993. Oryginalne gry miały 16-kolorową grafikę 3D w oknie 320×200 pikseli. CatacombGL wykorzystuje OpenGL, aby poprawić ich wygląd.
+
+• Działa natywnie na Windows 7/8/10/11 i Linuxie.
+• Sprzętowe renderowanie 3D (OpenGL) z obsługą szerokich rozdzielczości, regulowanym polem widzenia i nieograniczoną liczbą klatek.
+• Ruch gracza, pocisków i potworów z precyzją zmiennoprzecinkową.
+• Konfigurowalne sterowanie (klawiatura i mysz).
+• Obsługa wszystkich czterech gier Catacomb 3D (z Catacombs Pack na GOG.com).
+• Obsługa wersji 1.13 (shareware) gry The Catacomb Abyss.</text>
+		</text>
+	</view>
+</theme>

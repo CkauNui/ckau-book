@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-video" extra="true">
+			<color>000000</color>
+			<path>./../../_inc/images/space43.png</path>
+			<zIndex>2</zIndex>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.31</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+			<pos>0.498 0.36</pos>
+			<maxSize>0.26</maxSize>
+			<storyboard>
+				<animation property="pos" to="0.218 0.36" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videobox" extra="true">
+			<path>{random}</path>
+			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
+			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
+			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
+			<delay>0</delay>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<origin if="${screen.ratio} == '4/3'">0.5 0.31</origin>
+			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+			<pos>0.498 0.36</pos>
+			<maxSize>0.24</maxSize>
+			<zIndex>25</zIndex>
+			<storyboard>
+				<animation property="pos" to="0.218 0.36" begin="2000" duration="1000" mode="linear"/>
+			</storyboard>
+		</video>
+		<text name="TextDate" extra="true">
+			<text>2014</text>
+		</text>
+		<text name="TextManufacturer" extra="true">
+			<text>bibendovsky</text>
+		</text>
+		<text name="TextName" extra="true">
+			<text>BStone</text>
+		</text>
+		<text name="TextVariant" extra="true">
+			<text>Port</text>
+			<text lang="pl">Port</text>
+			<text lang="ru">Порт</text>
+			<text lang="es">Puerto</text>
+			<text lang="de">Hafen</text>
+			<text lang="fr">Port</text>
+			<text lang="it">Port</text>
+			<text lang="pt">Porto</text>
+		</text>
+		<text name="TextDesc" extra="true">
+			<text>Unofficial source port for “Blake Stone” game series: “Aliens Of Gold” and “Planet Strike”.
+
+• High resolution vanilla rendering (SDL)
+• 3D rendering (OpenGL 2.0, OpenGL 3.2 Core, OpenGL ES 2.0)
+• OPL emulation (DOSBox DBOPL, Nuked OPL3)
+• Upscale texture filter (xBRZ)
+• Support for external textures (walls, sprites, floor and ceiling)
+• Allows to customize control bindings
+• 2D-audio (SDL) and 3D-audio (OpenAL)
+• Separate volume control of sound effects and music
+• Support Addons
+• Auto-detection of digital content (Steam / GOG)</text>
+			<text lang="pt">Porto não oficial para a série de jogos "Blake Stone": "Aliens Of Gold" e "Planet Strike".
+
+• Renderização vanilla em alta resolução (SDL)
+• Renderização 3D (OpenGL 2.0, OpenGL 3.2 Core, OpenGL ES 2.0)
+• Emulação OPL (DOSBox DBOPL, Nuked OPL3)
+• Filtro de upscale de texturas (xBRZ)
+• Suporte a texturas externas (paredes, sprites, chão e teto)
+• Permite personalizar os controles
+• Áudio 2D (SDL) e 3D (OpenAL)
+• Controle de volume separado para efeitos sonoros e música
+• Suporte a addons
+• Detecção automática de conteúdo digital (Steam / GOG)</text>
+			<text lang="it">Port non ufficiale per la serie di giochi "Blake Stone": "Aliens Of Gold" e "Planet Strike".
+
+• Rendering vanilla ad alta risoluzione (SDL)
+• Rendering 3D (OpenGL 2.0, OpenGL 3.2 Core, OpenGL ES 2.0)
+• Emulazione OPL (DOSBox DBOPL, Nuked OPL3)
+• Filtro di upscale per texture (xBRZ)
+• Supporto per texture esterne (pareti, sprite, pavimento e soffitto)
+• Possibilità di personalizzare i controlli
+• Audio 2D (SDL) e 3D (OpenAL)
+• Regolazione separata del volume per effetti sonori e musica
+• Supporto per addon
+• Rilevamento automatico dei contenuti digitali (Steam / GOG)</text>
+			<text lang="fr">Port non officiel pour la série de jeux "Blake Stone" : "Aliens Of Gold" et "Planet Strike".
+
+• Rendu vanilla haute résolution (SDL)
+• Rendu 3D (OpenGL 2.0, OpenGL 3.2 Core, OpenGL ES 2.0)
+• Émulation OPL (DOSBox DBOPL, Nuked OPL3)
+• Filtre d'upscale de textures (xBRZ)
+• Prise en charge des textures externes (murs, sprites, sol et plafond)
+• Personnalisation des contrôles
+• Audio 2D (SDL) et 3D (OpenAL)
+• Réglage séparé du volume des effets sonores et de la musique
+• Prise en charge des addons
+• Détection automatique des contenus numériques (Steam / GOG)</text>
+			<text lang="de">Inoffizielle Portierung der "Blake Stone"-Spieleserie: "Aliens Of Gold" und "Planet Strike".
+
+• High-Resolution-Vanilla-Rendering (SDL)
+• 3D-Rendering (OpenGL 2.0, OpenGL 3.2 Core, OpenGL ES 2.0)
+• OPL-Emulation (DOSBox DBOPL, Nuked OPL3)
+• Texture-Upscale-Filter (xBRZ)
+• Unterstützung für externe Texturen (Wände, Sprites, Boden und Decke)
+• Anpassbare Steuerung
+• 2D-Audio (SDL) und 3D-Audio (OpenAL)
+• Separate Lautstärkeregulierung für Soundeffekte und Musik
+• Addon-Unterstützung
+• Automatische Erkennung digitaler Inhalte (Steam / GOG)</text>
+			<text lang="es">Port no oficial de la serie de juegos "Blake Stone": "Aliens Of Gold" y "Planet Strike".
+
+• Renderizado vanilla en alta resolución (SDL)
+• Renderizado 3D (OpenGL 2.0, OpenGL 3.2 Core, OpenGL ES 2.0)
+• Emulación OPL (DOSBox DBOPL, Nuked OPL3)
+• Filtro de mejora de texturas (xBRZ)
+• Soporte para texturas externas (paredes, sprites, suelo y techo)
+• Personalización de controles
+• Audio 2D (SDL) y 3D (OpenAL)
+• Control de volumen separado para efectos de sonido y música
+• Soporte para addons
+• Detección automática de contenido digital (Steam / GOG)</text>
+			<text lang="ru">Неофициальный порт для серии игр "Blake Stone": "Aliens Of Gold" и "Planet Strike".
+
+• Рендеринг в высоком разрешении (SDL)
+• 3D-рендеринг (OpenGL 2.0, OpenGL 3.2 Core, OpenGL ES 2.0)
+• Эмуляция OPL (DOSBox DBOPL, Nuked OPL3)
+• Фильтр апскейла текстур (xBRZ)
+• Поддержка внешних текстур (стены, спрайты, пол и потолок)
+• Настройка управления
+• 2D-аудио (SDL) и 3D-аудио (OpenAL)
+• Отдельная регулировка громкости звуковых эффектов и музыки
+• Поддержка аддонов
+• Автоматическое обнаружение цифрового контента (Steam / GOG)</text>
+			<text lang="pl">Nieoficjalny port serii gier "Blake Stone": "Aliens Of Gold" i "Planet Strike".
+
+• Wysokorozdzielcza wersja vanilla (SDL)
+• Rendering 3D (OpenGL 2.0, OpenGL 3.2 Core, OpenGL ES 2.0)
+• Emulacja OPL (DOSBox DBOPL, Nuked OPL3)
+• Filtr upscale tekstur (xBRZ)
+• Obsługa zewnętrznych tekstur (ściany, sprajty, podłoga i sufit)
+• Możliwość dostosowania sterowania
+• Dźwięk 2D (SDL) i 3D (OpenAL)
+• Oddzielna regulacja głośności efektów dźwiękowych i muzyki
+• Obsługa dodatków
+• Automatyczne wykrywanie cyfrowej wersji gry (Steam / GOG)</text>
+		</text>
+	</view>
+</theme>
