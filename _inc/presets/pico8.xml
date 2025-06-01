@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme defaultView="Grid + Fanart">
+	<formatVersion>7</formatVersion>
+	<customView name="Grid + Fanart">
+		<imagegrid name="gamegrid">
+			<pos>0 0.405</pos>
+			<padding>0.03 0.03 0.03 0.09</padding>
+			<autoLayout if="${screen.ratio} == '4/3'">8 2</autoLayout>
+			<autoLayout if="${screen.ratio} == '16/10'">9 2</autoLayout>
+			<autoLayout if="${screen.ratio} == '21/9'">13 2</autoLayout>
+			<autoLayoutSelectedZoom>1.30</autoLayoutSelectedZoom>
+			<autoLayoutSelectedZoom if="${screen.ratio} == '4/3'">1.40</autoLayoutSelectedZoom>
+		</imagegrid>
+		<image name="fanart" extra="true">
+			<color>FFFFFFFF</color>
+			<maxSize if="${screen.ratio} == '4/3'">1.33 1.33</maxSize>
+			<origin if="${screen.ratio} == '4/3'">0.5705 0</origin>
+			<maxSize if="${screen.ratio} == '16/10'">1.11 1.11</maxSize>
+			<origin if="${screen.ratio} == '16/10'">0.528 0</origin>
+			<maxSize if="${screen.ratio} == '21/9'">0.75 0.75</maxSize>
+			<origin if="${screen.ratio} == '21/9'">0.405 0.0015</origin>
+		<storyboard></storyboard>
+			<storyboard event="activateNext"></storyboard>
+			<storyboard event="activatePrev"></storyboard>
+			<storyboard event="deactivateNext"></storyboard>
+			<storyboard event="deactivatePrev"></storyboard>
+		</image>
+		<video name="md_video">
+			<delay>0.3</delay>
+			<storyboard event="open"></storyboard>
+			<storyboard event="activate"></storyboard>
+			<storyboard event="deactivate"></storyboard>
+		</video>
+	</customView>
+</theme>
