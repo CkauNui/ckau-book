@@ -12,7 +12,8 @@
       </fadeShader>
       <!-- menuShader applies under the menu only -->
       <menuShader>
-        <path>:/shaders/kawase_blur_9pass.glslp</path>
+        <path>./gaussianblur.glsl</path>
+        <path ifSubset="blurfx:multipass">:/shaders/kawase_blur_9pass.glslp</path> <!-- Multipass does not work with every machines -->
       </menuShader>
     </menuBackground>
   </view>
