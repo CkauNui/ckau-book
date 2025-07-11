@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+	<formatVersion>7</formatVersion>
+
+	<customView name="WallpapersHeroes">
+		<image name="md_thumbnail">
+			<storyboard event="open">
+				<animation property="offsetX" from="-0.2" to="0" duration="500" mode="EaseOutQuint"/>
+				<animation property="offsetX" to="-0.03" begin="1500" duration="2500" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="offsetX" from="-0.2" to="0" begin="" duration="500" mode="EaseOutQuint"/>
+				<animation property="offsetX" to="-0.03" begin="1500" duration="2500" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" from="0" to="0" duration="" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="md_cartridge">
+			<tile>true</tile>
+			<origin>0.5 1</origin>
+			<linearSmooth>true</linearSmooth>
+			<pos>0.13 0.925</pos>
+			<maxSize>0.23 0.63</maxSize>
+			<zIndex>70</zIndex>
+			<storyboard event="open">
+				<animation property="offsetX" from="-0.2" to="0" duration="500" mode="EaseOutQuint"/>
+				<animation property="offsetX" to="0.08" begin="1500" duration="2500" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="offsetX" from="-0.2" to="0" begin="" duration="500" mode="EaseOutQuint"/>
+				<animation property="offsetX" to="0.08" begin="1500" duration="2500" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" from="0" to="0" duration="" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="md_thumbnail">
+			<zIndex>71</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<text name="md_description">
+			<pos>0.32 0.31</pos>
+			<size>0.4 0.23</size>
+			<lineSpacing>1.1</lineSpacing>
+			<fontSize>0.024</fontSize>
+			<color>FFFFFFFF</color>
+			<glowColor>00000016</glowColor>
+			<glowSize>3</glowSize>
+			<zIndex>65</zIndex>
+		</text>
+	</customView>
+</theme>
