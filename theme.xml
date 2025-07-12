@@ -59,7 +59,6 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 			<fontPath>${fontDescReg}</fontPath>
 			<fontSize>0.026</fontSize>
 			<color>969696</color>
-			<!-- <separatorColor>202020</separatorColor> -->
 			<separatorColor>363636FF</separatorColor>
 			<selectorColor>${baseColor}</selectorColor>
 			<selectorColorEnd>${gradientEndColor}</selectorColorEnd>
@@ -76,7 +75,6 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 			<fontSize>0.02</fontSize>
 			<color>${groupColor}</color>
 			<backgroundColor>00000000</backgroundColor>
-			<!-- <separatorColor>${groupSeparatorColor}</separatorColor> -->
 			<lineSpacing>2.3</lineSpacing>
 		</menuGroup>
 		<menuBackground name="menubg">
@@ -155,6 +153,10 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 			<planemodeIcon>./_inc/icons/Planemode.png</planemodeIcon>
 			<color>FFFFFFA0</color>
 		</batteryIndicator>
+		<batteryIndicator name="batteryIndicator" tinyScreen="true">
+			<pos>0.915 0.013</pos>
+			<size>0.07 0.07</size>
+		</batteryIndicator>
 	</view>
 
 	<view name="system">
@@ -179,18 +181,14 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 			<scrollSound>./_inc/sound/scroll.wav</scrollSound>
 			<defaultTransition>instant</defaultTransition>
 		</carousel>
-		<!-- <image name="art" extra="static">
-			<origin>0 0</origin>
-			<pos>0 0</pos>
-			<size>1 1</size>
-			<path>./_inc/images/overlay.png</path>
-			<zIndex>100</zIndex>
-		</image> -->
-
+		
 		<text name="logoText">
 			<fontPath>${fontDescReg}</fontPath>
-			<color>${baseColor}</color>
-			<forceUppercase>true</forceUppercase>
+			<fontSize>0.06</fontSize>
+			<color>FFFFFFFF</color>
+			<glowColor>00000010</glowColor>
+			<glowSize>3</glowSize>
+			<forceUppercase>false</forceUppercase>
 		</text>
 
 <!-- Custom music for systems -->
@@ -224,6 +222,7 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 	<include name="Colorful (no anim/video)" displayName="${ColorfulNoAnimNoVideo}">./_inc/systemviews/noanimatenovideo.xml</include>
 	<include name="Colorful (anim, sidebar)" displayName="${ColorfulAnimTransparent}">./_inc/systemviews/animatetransparent.xml</include>
 	<include name="Colorful (grid / WIP)" displayName="${ColorfulGrid}">./_inc/systemviews/grid.xml</include>
+	<include name="Textlist" displayName="${systemview.textlist}">./_inc/systemviews/textlist.xml</include>
 	<include name="Consoles" displayName="${Art_169}">./_inc/systemviews/art_169.xml</include>
 	<include name="Wallpapers" displayName="${Art2_169}">./_inc/systemviews/art2_169.xml</include>
 	<include name="Cinematic FullScreen" displayName="${CV1}">./_inc/systemviews/cinematic.xml</include>
@@ -360,35 +359,6 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 		<include name="ninbuttons" displayName="${ninbuttons}">./_inc/help/nintendo.xml</include>
 		<include name="standard" displayName="${stbuttons}">./_inc/help/default.xml</include>
 	</subset>
-
-<!-- Icon animations in gameviews -->
-<!-- 	<customView name="Colorful + Wheel Right (horizontally), Colorful + Wheel Left (horizontally), Colorful + Gamelist (horizontally), Colorful + Gamelist (horizontally 2), Colorful (horizontally), Colorful + Wheel Right (vertically), Colorful + Wheel Left (vertically), Colorful + Gamelist (vertically), Colorful (vertically)">
-			<image name="gametime_logo,genre_logo,developer_logo,playcount_logo,publisher_logo,release_date_logo,md_kidgame,md_notkidgame,md_hidden,md_savestate,md_nosavestate,md_cheevos,md_notcheevos,md_manual,md_nomanual,md_flag">
-				<storyboard>
-					<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-					<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-				</storyboard>
-			</image>
-			<text name="md_gametime,md_genre,md_developer,md_playcount,md_publisher,md_players">
-				<storyboard>
-					<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-					<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-				</storyboard>
-			</text>
-			<datetime name="md_lastplayed,md_releasedate">
-				<storyboard>
-					<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-					<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-				</storyboard>
-			</datetime>
-			<rating name="md_rating">
-				<unfilledColor>282828FF</unfilledColor>
-				<storyboard>
-					<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-					<animation property="opacity" from="0" to="1" begin="1500" duration="2000" mode="EaseIn"/>
-				</storyboard>
-			</rating>
-	</customView> -->
 
 <!-- Custom scroll sound -->
 	<include>./_inc/views/ScrollSound.xml</include>
