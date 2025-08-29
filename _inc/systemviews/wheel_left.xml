@@ -16,6 +16,10 @@
 			<maxLogoCount>7</maxLogoCount>
 			<systemInfoDelay>0.1</systemInfoDelay>
 			<zIndex>75</zIndex>
+			
+			<!-- 4:3 -->
+			<logoScale if="${screen.ratio} == '4/3'">1.8</logoScale>
+			<logoRotationOrigin if="${screen.ratio} == '4/3'">-5.0 0.3</logoRotationOrigin>
 		</carousel>
 	</view>
 </theme>

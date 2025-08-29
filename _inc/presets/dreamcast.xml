@@ -2,13 +2,29 @@
 
 <theme>
 	<formatVersion>7</formatVersion>
-
+	<view name="gamecarousel">
+		<image name="md_cartridge">
+			<storyboard event="activate">
+				<animation property="opacity" to="0" duration="0" mode="EaseOut"/>
+				<animation property="opacity" to="1" begin="2000" duration="600" mode="EaseIn"/>
+				<animation property="rotation" from="-360" begin="4000" duration="6800" repeat="forever" mode="easeOutInQuint"/> 
+			</storyboard>
+			<storyboard event="scroll">
+				<animation property="opacity" to="0" duration="150" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" to="0" duration="150" mode="EaseOut"/>
+			</storyboard>
+		</image>
+	</view>
 	<customView name="WallpapersHeroes">
 		<image name="md_cartridge">
 			<tile>true</tile>
 			<origin>0 1</origin>
 			<pos>0.023 0.9</pos>
 			<maxSize>0.38</maxSize>
+			<pos if="${screen.ratio} == '4/3'">0.02 0.92</pos>
+			<maxSize if="${screen.ratio} == '4/3'">0.245 0.30</maxSize>
 			<zIndex>70</zIndex>
 			<linearSmooth>true</linearSmooth>
 			<storyboard event="open">
@@ -26,12 +42,76 @@
 				<animation property="opacity" from="1" to="0" duration="" mode="Linear"/>
 			</storyboard>
 		</image>
-		<image name="md_thumbnail">
-			<zIndex>71</zIndex>
-			<linearSmooth>true</linearSmooth>
+		<image name="logo" extra="true">
+			<opacity>0</opacity>
+			<storyboard event="activate">
+				<animation property="opacity" to="1" begin="0" duration="0" mode="EaseIn"/>
+				<animation property="offsetY" to="-0.04" begin="2000" duration="450" mode="EaseIn"/>
+				<animation property="scale" to="0.7" begin="2000" duration="450" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="scale" to="1" duration="100" mode="EaseOut"/>
+				<animation property="offsetY" to="0" duration="100" mode="EaseOut"/>
+			</storyboard>
 		</image>
-		<image name="logo">
-			<pos>0.12 0.1</pos>
+	</customView>
+	<customView name="VideoFull">
+		<image name="md_cartridge">
+			<storyboard event="activate">
+				<animation property="opacity" to="0" duration="0" mode="EaseOut"/>
+				<animation property="opacity" to="1" begin="2000" duration="600" mode="EaseIn"/>
+				<animation property="opacity" from="1" to="0" begin="5000" duration="300" mode="linear"/>
+			</storyboard>
+			<storyboard event="scroll">
+				<animation property="opacity" to="0" duration="150" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" to="0" duration="150" mode="EaseOut"/>
+			</storyboard>
+		</image>
+	</customView>
+	<customView name="Vertically50">
+		<image name="md_cartridge">
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
+				<animation property="scale" to="0.6" begin="1500" duration="500" mode="linear"/>
+				<animation property="rotation" from="-360" begin="2500" duration="6800" repeat="forever" mode="easeOutInQuint"/> 
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
+				<animation property="scale" to="0.6" begin="1500" duration="500" mode="linear"/>
+				<animation property="rotation" from="-360" begin="2500" duration="6800" repeat="forever" mode="easeOutInQuint"/> 
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
+				<animation property="scale" to="0.6" begin="1500" duration="500" mode="linear"/>
+				<animation property="rotation" from="-360" begin="2500" duration="6800" repeat="forever" mode="easeOutInQuint"/> 
+			</storyboard>
+		</image>
+	</customView>
+	<customView name="Vertically50List">
+		<image name="md_cartridge">
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
+				<animation property="scale" to="0.6" begin="1500" duration="500" mode="linear"/>
+				<animation property="rotation" from="-360" begin="2500" duration="6800" repeat="forever" mode="easeOutInQuint"/> 
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
+				<animation property="scale" to="0.6" begin="1500" duration="500" mode="linear"/>
+				<animation property="rotation" from="-360" begin="2500" duration="6800" repeat="forever" mode="easeOutInQuint"/> 
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
+				<animation property="scale" to="0.6" begin="1500" duration="500" mode="linear"/>
+				<animation property="rotation" from="-360" begin="2500" duration="6800" repeat="forever" mode="easeOutInQuint"/> 
+			</storyboard>
 		</image>
 	</customView>
 </theme>

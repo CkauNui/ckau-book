@@ -11,9 +11,9 @@
  	 </variables>
 	
 	<!-- Loads system desc & animations, attemps to load synonym if not available -->
-	<include>./../../_inc/layouts/${system.theme}.xml</include>
-	<include>./../../_inc/layouts/${synonym}.xml</include>
-	<include tinyScreen="true" name="TinyScreen">./../../_inc/systemviews/tinyscreenAnim.xml</include>
+	<include>${themePath}/_inc/layouts/${system.theme}.xml</include>
+	<include>${themePath}/_inc/layouts/${synonym}.xml</include>
+	<!-- <include tinyScreen="true" name="TinyScreen">${themePath}/_inc/systemviews/tinyscreenAnim.xml</include> -->
 	<view name="system">
 <!-- System artwork -->
 		<image name="sysart" extra="true">
@@ -23,8 +23,8 @@
 			<scale if="${screen.ratio} == '16/10'">0.9</scale>
 			<scale if="${screen.ratio} == '4/3'">0.75</scale>
 			<!-- Loads system theme image, attemps to load synonym if not available-->
-			<path>./../../_inc/anim/${system.theme}.png</path>
-			<path>./../../_inc/anim/${synonym}.png</path>
+			<path>${themePath}/_inc/anim/${system.theme}.png</path>
+			<path>${themePath}/_inc/anim/${synonym}.png</path>
 			<!-- Loads 4K image, if addon is available -->
 			<path>./../../../ckau-book-addons/_inc/anim/4K/${system.theme}.png</path>
 			<path>./../../../ckau-book-addons/_inc/anim/4K/${synonym}.png</path>
@@ -93,6 +93,7 @@
 			<size>0.47 0</size>
 			<fontPath>${fontNameLight}</fontPath>
 			<fontSize>0.045</fontSize>
+			<fontSize if="${screen.ratio} == '4/3'">0.045</fontSize>
 			<zIndex>140</zIndex>
 			<storyboard>
 				<animation property="y" from="0.1" begin="3000" duration="500" mode="linear"/>
@@ -105,8 +106,11 @@
 			<size>0.47 0</size>
 			<fontPath>${fontNameBold}</fontPath>
 			<fontSize>0.04</fontSize>
-			<fontSize if="${screen.ratio} == '4/3'">0.03</fontSize>
+			<fontSize if="${screen.ratio} == '4/3'">0.04</fontSize>
 			<zIndex>140</zIndex>
+			<multiLine>false</multiLine>
+			<autoScrollDelay>3000</autoScrollDelay>
+			<singleLineScroll>true</singleLineScroll>
 			<storyboard>
 				<animation property="x" from="0.6" begin="2500" duration="600" mode="EaseOut"/>
 				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
@@ -119,9 +123,13 @@
 			<fontPath>${fontNameBold}</fontPath>
 			<fontSize>0.065</fontSize>
 			<fontSize if="${screen.ratio} == '21/9'">0.062</fontSize>
-			<fontSize if="${screen.ratio} == '4/3'">0.045</fontSize>
+			<fontSize if="${screen.ratio} == '4/3'">0.065</fontSize>
 			<lineSpacing>1.0</lineSpacing>
 			<zIndex>140</zIndex>
+			<padding>0 0 0 14</padding>
+			<multiLine>false</multiLine>
+			<autoScrollDelay>3000</autoScrollDelay>
+			<singleLineScroll>true</singleLineScroll>
 			<storyboard>
 				<animation property="x" from="0.6" begin="2500" duration="600" mode="EaseInOut"/>
 				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
@@ -135,12 +143,17 @@
 			<verticalAlignment>top</verticalAlignment>
 			<fontPath>${fontNameBold}</fontPath>
 			<fontSize>0.02</fontSize>
+			<pos if="${screen.ratio} == '4/3'">0.49 0.348</pos>
+			<fontSize if="${screen.ratio} == '4/3'">0.03</fontSize>
 			<lineSpacing>1.1</lineSpacing>
 			<zIndex>140</zIndex>
+			<multiLine>false</multiLine>
+			<autoScrollDelay>3000</autoScrollDelay>
+			<singleLineScroll>true</singleLineScroll>
 			<storyboard>
-				<animation property="y" from="0.3" begin="3000" duration="500" mode="linear"/>
+				<animation property="x" from="0.6" begin="2500" duration="700" mode="EaseInOut"/>
 				<animation property="opacity" to="0" begin="0" duration="0" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="3000" duration="500" mode="EaseIn"/>
+				<animation property="opacity" from="0" to="1" begin="2500" duration="500" mode="EaseIn"/>
 			</storyboard>
 		</text>
 		<text name="TextDesc" extra="true">
@@ -150,6 +163,9 @@
 			<verticalAlignment>top</verticalAlignment>
 			<fontPath>${fontDescLight}</fontPath>
 			<fontSize>0.025</fontSize>
+			<pos if="${screen.ratio} == '4/3'">0.49 0.394</pos>
+			<size if="${screen.ratio} == '4/3'">0.47 0.5</size>
+			<fontSize if="${screen.ratio} == '4/3'">0.04</fontSize>
 			<lineSpacing>1.1</lineSpacing>
 			<zIndex>140</zIndex>
 			<storyboard>
@@ -162,14 +178,14 @@
 <!-- Regional consoles/computers -->
 		<image name="sysart" extra="true" region="eu"></image>
 		<image name="sysart" extra="true" region="us">
-			<path>./../../_inc/anim/us/${system.theme}.png</path>
-			<path>./../../_inc/anim/${synonym}.png</path>
+			<path>${themePath}/_inc/anim/us/${system.theme}.png</path>
+			<path>${themePath}/_inc/anim/${synonym}.png</path>
 			<path>./../../../ckau-book-addons/_inc/anim/4K/us/${system.theme}.png</path>
 			<path>./../../../ckau-book-addons/_inc/anim/4K/${synonym}.png</path>
 		</image>
 		<image name="sysart" extra="true" region="jp">
-			<path>./../../_inc/anim/jp/${system.theme}.png</path>
-			<path>./../../_inc/anim/${synonym}.png</path>
+			<path>${themePath}/_inc/anim/jp/${system.theme}.png</path>
+			<path>${themePath}/_inc/anim/${synonym}.png</path>
 			<path>./../../../ckau-book-addons/_inc/anim/4K/jp/${system.theme}.png</path>
 			<path>./../../../ckau-book-addons/_inc/anim/4K/${synonym}.png</path>
 		</image>

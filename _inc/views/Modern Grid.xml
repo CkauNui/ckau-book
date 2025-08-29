@@ -3,17 +3,34 @@
 <theme>
 <formatVersion>7</formatVersion>
 <!-- Modern Grid -->
-	<customView name="Modern Grid" inherits="grid" displayName="${modernGridViewName}">
-		<image name="logo1,transitionMaskUp,transitionMaskDown,gamelistPreloading,gamelistPreloadingShadow">
+	<customView name="Modern Grid" inherits="grid" displayName="${modernGridViewName}" tinyScreen="false">
+		
+	<!-- Disable grid icons -->
+		<stackpanel name="container-icons-vertical" extra="true">
+			<visible>false</visible>
+		</stackpanel>
+		<stackpanel name="container-icons-vertical-invert" extra="true" reverse="true">
+			<visible>false</visible>
+		</stackpanel>
+
+		<image name="logo,logo1,transitionMaskUp,transitionMaskDown,gamelistPreloading,gamelistPreloadingShadow">
 			<visible>false</visible>
 		</image>
-		<image name="logo">
+		
+		<!-- Display system logo for each game -->
+		<!-- Prefer white system logo -->
+		<image name="game-logo" extra="true">
 			<pos>0.04 0.125</pos>
 			<maxSize>0.09 0.09</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.19 0.19</maxSize>
 			<origin>0 1</origin>
-			<bottom>0</bottom>
 			<zIndex>150</zIndex>
-			<!--<visible>false</visible>-->
+			<path>firstfile(
+				"${themePath}/_inc/logos/" + {game:system:theme} + "-w.svg",
+				"${themePath}/_inc/logos/" + {game:system:theme} + "-w.png",
+				"${themePath}/_inc/logos/" + {game:system:theme} + ".svg",
+				"${themePath}/_inc/logos/" + {game:system:theme} + ".png"
+			)</path>
 		</image>
 
 		<!-- Also shows the system logo if in "All games" or in a collection
@@ -35,6 +52,7 @@
 			<pos>0.016 0.5</pos>
 			<size>0.95 0.5</size>
 			<autoLayout>7 1</autoLayout>
+			<autoLayout if="${screen.ratio} == '4/3'">5 1</autoLayout>
 			<autoLayout if="${screen.ratio} == '21/9'">9 1</autoLayout>
 		</imagegrid>
 		<text name="gridtile,md_name">
@@ -247,10 +265,18 @@
 				<fontPath>${fontPlayers}</fontPath>
 				<text>{game:playerCount}</text>
 				<alignment>center</alignment>
-				<fontSize>0.028</fontSize>
+				<fontSize>0.03</fontSize>
 				<color>EEEEEE</color>
 			</text>
-	
+			<image name="icons-manual">
+				<visible>{game:hasManual}</visible>
+				<path>${themePath}/_inc/images/book.png</path>
+				<linearSmooth>true</linearSmooth>
+				<color>EEEEEE</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+			</image>
+			
 			<image name="icons-cheevos">
 				<visible>{game:cheevos}</visible>
 				<path>${themePath}/_inc/icons/Contest.png</path>
@@ -259,7 +285,15 @@
 				<padding>0 0</padding>
 				<maxSize>1 1</maxSize>
 			</image>
-	
+			<image name="icons-save">
+				<visible>{game:hasSaveState}</visible>
+				<path>${themePath}/_inc/icons/SaveState.png</path>
+				<linearSmooth>true</linearSmooth>
+				<color>EEEEEE</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+			</image>
+			
 			<image name="icons-wheel">
 				<visible>{game:wheelGame}</visible>
 				<linearSmooth>true</linearSmooth>
@@ -268,7 +302,7 @@
 				<maxSize>1 1</maxSize>
 				<color>EEEEEE</color>
 			</image>
-	
+			
 			<image name="icons-gun">
 				<visible>{game:gunGame}</visible>
 				<linearSmooth>true</linearSmooth>
@@ -277,7 +311,7 @@
 				<maxSize>1 1</maxSize>
 				<color>EEEEEE</color>
 			</image>
-
+			
 			<image name="icons-padtokey">
 				<visible>{game:hasKeyboardMapping}</visible>
 				<linearSmooth>true</linearSmooth>
@@ -285,13 +319,108 @@
 				<path>${themePath}/_inc/images/padtokey.png</path>
 				<maxSize>1 1</maxSize>
 				<color>EEEEEE</color>
-			</image> 
+			</image>
+			
+			<image name="icons-hidden">
+				<visible>{game:hidden}</visible>
+				<linearSmooth>true</linearSmooth>
+				<padding>0 0</padding>
+				<path>${themePath}/_inc/images/hidden.svg</path>
+				<maxSize>1 1</maxSize>
+				<color>EEEEEE</color>
+			</image>
+			<image name="icons-kid">
+				<visible>{game:kidGame}</visible>
+				<linearSmooth>true</linearSmooth>
+				<padding>0 0</padding>
+				<path>${themePath}/_inc/images/kid.svg</path>
+				<maxSize>1 1</maxSize>
+				<color>EEEEEE</color>
+			</image>
+		</stackpanel>
+
+		<!-- 3nd row -->
+	<!-- If no need, just delete ;) -->
+		<stackpanel name="container-gamedata3" extra="true">
+			<separator>0.015</separator>
+			<pos>0.04 0.33</pos>
+			<size>0.5 0.032</size>
+			<orientation>horizontal</orientation>
+			<backgroundColor>FF000000</backgroundColor>
+			<zIndex>150</zIndex>
+			
+			<!-- Кол-во запусков / Number of launches -->
+			<image name="icons-playcount">
+				<path>${themePath}/_inc/images/game_info_playcount3.svg</path>
+				<linearSmooth>true</linearSmooth>
+				<color>FFFFFF</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+				<visible>{game:playcount} &gt; 0 ? 1 : 0</visible>
+			</image>
+			<text name="gamedata-playcount">
+				<fontSize>0.022</fontSize>
+				<fontPath>${fontNameReg}</fontPath>
+				<text>{game:playcount}</text>
+				<padding>4 0 12 0</padding>
+				<color>FFFFFF</color>
+				<glowColor>00000035</glowColor>
+				<glowSize>1</glowSize>
+				<glowOffset>3 2</glowOffset>
+				<visible>{game:playcount} &gt; 0 ? 1 : 0</visible>
+			</text>
+			
+			<!-- Время игры / Playtime -->
+			<image name="icons-gametime">
+				<path>${themePath}/_inc/images/game_info_gametime.svg</path>
+				<linearSmooth>true</linearSmooth>
+				<color>FFFFFF</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+				<visible>{game:gametime} &gt; 0 ? 1 : 0</visible>
+			</image>
+			<text name="gamedata-gametime">
+				<fontSize>0.022</fontSize>
+				<fontPath>${fontNameReg}</fontPath>
+				<text>expandseconds({game:gametime})</text>
+				<padding>4 0 12 0</padding>
+				<color>FFFFFF</color>
+				<glowColor>00000035</glowColor>
+				<glowSize>1</glowSize>
+				<glowOffset>3 2</glowOffset>
+				<singleLineScroll>true</singleLineScroll>
+				<autoScrollDelay>3000</autoScrollDelay>
+				<visible>{game:gametime} &gt; 0 ? 1 : 0</visible>
+			</text>
+			
+			<!-- Последний запуск / Last launch -->
+			<image name="icons-lastplayed">
+				<path>${themePath}/_inc/images/game_info_lastplayed.svg</path>
+				<linearSmooth>true</linearSmooth>
+				<color>FFFFFF</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+				<visible>{game:gametime} &gt; 0 ? 1 : 0</visible>
+			</image>
+			<text name="gamedata-lastplayed">
+				<fontSize>0.022</fontSize>
+				<fontPath>${fontNameReg}</fontPath>
+				<text>day({game:lastplayed}) + '.' + month({game:lastplayed}) + '.' + year({game:lastplayed})</text>
+				<padding>4 0 12 0</padding>
+				<color>FFFFFF</color>
+				<glowColor>00000035</glowColor>
+				<glowSize>1</glowSize>
+				<glowOffset>3 2</glowOffset>
+				<singleLineScroll>true</singleLineScroll>
+				<autoScrollDelay>3000</autoScrollDelay>
+				<visible>{game:gametime} &gt; 0 ? 1 : 0</visible>
+			</text>
 		</stackpanel>
 
 		<!-- other elements -->
 
 		<text name="md_description"> <!-- need to update to new version -->
-			<pos>0.04 0.35</pos>
+			<pos>0.04 0.37</pos>
 			<origin>0 0</origin>
 			<size>0.5 0.12</size>
 			<orientation>horizontal</orientation>
@@ -302,10 +431,12 @@
 			<verticalAlignment>top</verticalAlignment>
 			<lineSpacing>1.1</lineSpacing>
 			<fontSize>0.024</fontSize>
-			<fontPath>${fontDescReg}</fontPath>
+			<fontSize if="${screen.ratio} == '4/3'">0.03</fontSize>
+			<fontPath>${fontNameReg}</fontPath>
 			<color>D0D0D0</color>
-			<glowColor>00000016</glowColor>
-			<glowSize>2</glowSize>
+			<glowColor>00000035</glowColor>
+			<glowSize>1</glowSize>
+			<glowOffset>3 2</glowOffset>
 			<zIndex>150</zIndex>
 		</text>
 		
@@ -320,6 +451,22 @@
 			<snapshotSource>image</snapshotSource>
 			<effect>none</effect>
 			<zIndex>110</zIndex>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="600" duration="300" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="600" duration="300" mode="linear"/>
+			</storyboard>
+			<shader>
+				<path>:/shaders/border.glsl</path>
+				<cornerRadius>0.01</cornerRadius>
+				<innerShadowSize>0.01</innerShadowSize>
+				<innerShadowColor>00000030</innerShadowColor>
+				<outerShadowSize>0.020</outerShadowSize>
+				<outerShadowColor>00000050</outerShadowColor>
+			</shader>
 		</video>
 		<!-- Bottom row info & icons -->
 		<image name="md_kidgame,md_notkidgame,md_hidden,md_savestate,md_nosavestate,md_cheevos,md_notcheevos,fake_cheevos,md_manual,md_nomanual,md_players,md_flag,md_releasedate,md_rating">

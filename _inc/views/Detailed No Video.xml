@@ -11,13 +11,27 @@
 			<visible>false</visible>
 		</video>
 		<image name="md_image">
-			<pos>0.520625 0.678</pos>
+			<pos>0.520 0.678</pos>
 			<maxSize>0.35</maxSize>
 			<origin>0.5 1</origin>
 			<scaleOrigin>1</scaleOrigin>
 			<zIndex>110</zIndex>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
+			</storyboard>
+			<shader>
+				<path>:/shaders/border.glsl</path>
+				<cornerRadius>0.01</cornerRadius>
+				<innerShadowSize>0.01</innerShadowSize>
+				<innerShadowColor>00000030</innerShadowColor>
+				<outerShadowSize>0.020</outerShadowSize>
+				<outerShadowColor>00000050</outerShadowColor>
+			</shader>
 		</image>
 	</customView>
-<!-- Navigation arrows, if enabled -->
-	<include ifSubset="arrows:On">./../../_inc/views/arrows.xml</include>
 </theme>

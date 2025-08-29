@@ -1,21 +1,195 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
   <formatVersion>7</formatVersion>
-
+<!-- Меню / Menu -->
 	<view name="menu">
+		<menuText name="menutitle">
+			<fontSize>0.04</fontSize>
+		</menuText>
+		<menuText name="menufooter">
+			<fontSize>0.03</fontSize>
+		</menuText>
 		<menuText name="menutext" extra="true">
-			<fontSize>0.0415</fontSize>
-			<color>969696</color>
-			<separatorColor>363636FF</separatorColor>
-			<selectorColor>${baseColor}</selectorColor>
-			<selectorColorEnd>${gradientEndColor}</selectorColorEnd>
-			<selectedColor>FFFFFF</selectedColor>
-			<selectorGradientType>horizontal</selectorGradientType>
+			<fontSize>0.045</fontSize>
 		</menuText>
 		<menuTextSmall name="menutextsmall" extra="true">
-			<fontSize>0.03</fontSize>
-			<color>deec00</color>
+			<fontSize>0.04</fontSize>
 		</menuTextSmall>
+		<menuGroup name="menugroup">
+			<fontSize>0.04</fontSize>
+		</menuGroup>
 	</view>
 
+<!-- Clock, gamepad icons, battery indicator -->
+	<view name="screen">
+		<text name="clock">
+			<fontSize>0.034</fontSize>
+			<pos>0.888 0.945</pos>
+			<size>0.1 0.058</size>
+		</text>
+		<controllerActivity name="controllerActivity">
+			<!-- <visible if="${controllerActivity} < 2">false</visible> -->
+			<pos>0.01 0.01</pos>
+			<size>0.58 0.0475</size>
+			<itemSpacing>0.012</itemSpacing>
+		</controllerActivity>
+		<!-- <batteryIndicator name="batteryIndicator">
+			<size>0.058 0.0775</size>
+		</batteryIndicator> -->
+		<stackpanel name="batteryIndicatorNew" extra="true">
+			<pos>0.4125 0.005</pos>
+			<size>0.58 0.0575</size>
+		</stackpanel>
+	</view>
+	<view name="system">
+		<text ifSubset="showgamescount:yes" name="systemInfo" extra="static">
+			<color>FFFFFF</color>
+			<pos>0.688 0.895</pos>
+			<size>0.30 0.058</size>
+			<fontSize>0.034</fontSize>
+		</text>
+		<!-- Move gamecount to the right if the clock is disabled -->
+		<text ifSubset="showgamescount:yes" if="${global.clock} == 'false'" name="systemInfo" extra="static">
+			<pos>0.688 0.895</pos>
+		</text>
+	</view>
+	
+	<view name="system, menu, basic, detailed, grid, gamecarousel">
+		<helpsystem name="help">
+			<fontSize>0.034</fontSize>
+			<origin>0 0.5</origin>
+			<pos>0.012 0.975</pos>
+		</helpsystem>
+	</view>
+
+<!-- Gamelist views -->
+	<view name="detailed">
+		<text name="md_description">
+			<fontSize>0.035</fontSize>
+		</text>
+	</view>
+	<view name="grid">
+		<imagegrid name="gamegrid">
+			<autoLayout>3 1</autoLayout>
+		</imagegrid>
+	</view>
+	<view name="gamecarousel">
+		<text name="md_description">
+			<fontSize>0.035</fontSize>
+		</text>
+	</view>
+	<customView name="Grid + Details" inherits="grid">
+		<imagegrid name="gamegrid">
+			<autoLayout>3 2</autoLayout>
+		</imagegrid>
+	</customView>
+	<customView name="Grid + Details" inherits="grid">
+		<text name="md_description">
+			<fontSize>0.035</fontSize>
+		</text>
+	</customView>
+	<customView name="Grid + Details + Marquee" inherits="Grid + Details">
+		<imagegrid name="gamegrid">
+			<autoLayout>3 2</autoLayout>
+		</imagegrid>
+	</customView>
+	<customView name="Grid + Fanart" inherits="grid">
+		<imagegrid name="gamegrid">
+			<autoLayout>5 1</autoLayout>
+		</imagegrid>
+		<text name="md_description">
+			<fontSize>0.035</fontSize>
+		</text>
+	</customView>
+	<!-- <customView name="Modern Grid" inherits="grid">
+		<imagegrid name="gamegrid">
+			<autoLayout>5 1</autoLayout>
+		</imagegrid>
+		<text name="md_description">
+			<fontSize>0.035</fontSize>
+		</text>
+	</customView> -->
+	<customView name="Logo + Details" inherits="Grid + Details">
+		<imagegrid name="gamegrid">
+			<autoLayout>3 3</autoLayout>
+		</imagegrid>
+	</customView>
+	<customView name="Carousel" inherits="grid">
+		<text name="md_name">
+			<fontSize>0.037</fontSize>
+		</text>
+		<text name="md_developer">
+			<fontSize>0.03</fontSize>
+		</text>
+	</customView>
+	<customView name="Carousel + Details" inherits="grid">
+		<imagegrid name="gamegrid">
+			<autoLayout>1 1</autoLayout>
+		</imagegrid>
+		<text name="md_description">
+			<fontSize>0.035</fontSize>
+		</text>
+	</customView>
+	<customView name="Carousel + Details + Marquee" inherits="grid">
+		<imagegrid name="gamegrid">
+			<autoLayout>1 1</autoLayout>
+		</imagegrid>
+		<text name="md_description">
+			<fontSize>0.035</fontSize>
+		</text>
+	</customView>
+	<customView name="Carousel + Fanart" inherits="grid">
+		<imagegrid name="gamegrid">
+			<margin>-0.010 -0.210</margin>
+			<autoLayout>5 1</autoLayout>
+		</imagegrid>
+		<text name="md_description">
+			<fontSize>0.035</fontSize>
+		</text>
+	</customView>
+	<customView name="Tiles" inherits="grid">
+		<imagegrid name="gamegrid">
+			<autoLayout>3 2</autoLayout>
+		</imagegrid>
+		<image name="gridtile.marquee">
+			<size>0.80 0.80</size>
+		</image>
+		<image name="gridtile.marquee:selected">
+			<size>0.95 0.95</size>
+		</image>
+	</customView>
+	<customView name="Tiles + Video" inherits="grid">
+		<imagegrid name="gamegrid">
+			<autoLayout>3 2</autoLayout>
+		</imagegrid>
+		<image name="gridtile.marquee">
+			<size>0.80 0.80</size>
+		</image>
+		<image name="gridtile.marquee:selected">
+			<size>0.95 0.95</size>
+		</image>
+	</customView>
+	<customView name="Icons" inherits="Tiles">
+		<imagegrid name="gamegrid">
+			<autoLayout>3 1</autoLayout>
+		</imagegrid>
+	</customView>
+	<customView name="Vertically50" inherits="grid">
+		<text name="md_description">
+			<fontSize>0.035</fontSize>
+		</text>
+	</customView>
+	<customView name="Vertically50List" inherits="detailed">
+		<text name="md_description">
+			<fontSize>0.035</fontSize>
+		</text>
+	</customView>
+	<customView name="Content" inherits="grid">
+		<imagegrid name="gamegrid">
+			<autoLayout>1 2</autoLayout>
+		</imagegrid>
+		<text name="md_description">
+			<fontSize>0.035</fontSize>
+		</text>
+	</customView>
 </theme>

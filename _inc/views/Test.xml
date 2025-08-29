@@ -3,8 +3,12 @@
 <theme>
 <formatVersion>7</formatVersion>
 <!-- Test -->
-	<customView name="Test" inherits="detailed" displayName="${Test}">
+	<customView name="Test" inherits="detailed" displayName="${Test}" tinyScreen="false">
 		<image name="logo">
+			<pos>0.8625 0.102</pos>
+			<maxSize>0.200 0.106</maxSize>
+		</image>
+		<image name="logo1">
 			<pos>0.8625 0.102</pos>
 			<maxSize>0.200 0.106</maxSize>
 		</image>
@@ -92,6 +96,7 @@
 		<y>0.19</y>
 		<maxSize>0.2 0.25</maxSize>
 		<origin>0.5 0.5</origin>
+		<delay>0</delay>
 		<zIndex>100</zIndex>
 	</video>
 	<text name="video-text" extra="true">
@@ -205,7 +210,7 @@ Favorite: {game:favorite}
 
 GameTime: {game:gametime}
 PlayCount: {game:playcount}
-</text>
+		</text>
 		<text lang="ru">
 Год: {game:releaseyear}
 Рейтинг: {game:stars}
@@ -222,7 +227,7 @@ Pad2Key: {game:hasKeyboardMapping}
 
 Игровое время: {game:gametime}
 Кол-во запусков: {game:playcount}
-</text>
+		</text>
 		<text lang="pl">
 Rok: {game:releaseyear}
 Ocena: {game:stars}
@@ -239,7 +244,7 @@ Ulubione: {game:favorite}
 
 Czas gry: {game:gametime}
 Liczba uruchomień: {game:playcount}
-</text>
+		</text>
 		<text lang="es">
 Año: {game:releaseyear}
 Estrellas: {game:stars}
@@ -256,7 +261,7 @@ Favorito: {game:favorite}
 
 Tiempo de juego: {game:gametime}
 Veces jugado: {game:playcount}
-</text>
+		</text>
 		<text lang="de">
 Jahr: {game:releaseyear}
 Sterne: {game:stars}
@@ -273,7 +278,7 @@ Favorit: {game:favorite}
 
 Spielzeit: {game:gametime}
 Anzahl Spiele: {game:playcount}
-</text>
+		</text>
 		<text lang="fr">
 Année: {game:releaseyear}
 Étoiles: {game:stars}
@@ -290,7 +295,7 @@ Favori: {game:favorite}
 
 Temps de jeu: {game:gametime}
 Nombre de parties: {game:playcount}
-</text>
+		</text>
 		<text lang="it">
 Anno: {game:releaseyear}
 Stelle: {game:stars}
@@ -307,7 +312,7 @@ Preferito: {game:favorite}
 
 Tempo di gioco: {game:gametime}
 Conteggio partite: {game:playcount}
-</text>
+		</text>
 		<text lang="pt">
 Ano: {game:releaseyear}
 Estrelas: {game:stars}
@@ -324,11 +329,11 @@ Favorito: {game:favorite}
 
 Tempo de jogo: {game:gametime}
 Número de jogadas: {game:playcount}
-</text>
+		</text>
 		<zIndex>100</zIndex>
 	</text>
 
-	<stackpanel name="container-icons" extra="true">
+	<stackpanel name="container-icons2" extra="true">
 		<separator>0.015</separator>
 		<pos>0.73 0.38</pos>
 		<size>0.26 0.032</size>
@@ -477,6 +482,25 @@ Número de jogadas: {game:playcount}
 		</stackpanel>
 
 	<!-- Hide elements -->
+		<stackpanel name="container-icons" extra="true">
+			<visible>false</visible>
+		</stackpanel>
+		<!-- Disable detailed icons -->
+		<container name="container-gamedata" extra="true">
+			<visible>false</visible>
+		</container>
+		<container name="container-gamedata2" extra="true">
+			<visible>false</visible>
+		</container>
+		<stackpanel name="container-gamedata3" extra="true">
+			<visible>false</visible>
+		</stackpanel>
+		<stackpanel name="container-flags" extra="true">
+			<visible>false</visible>
+		</stackpanel>
+		<stackpanel name="container-icons" extra="true">
+			<visible>false</visible>
+		</stackpanel>
 		<video name="md_video">
 			<visible>false</visible>
 		</video>
@@ -486,7 +510,7 @@ Número de jogadas: {game:playcount}
 		<datetime name="md_releasedate, md_lastplayed">
 			<visible>false</visible>
 		</datetime>
-		<image name="md_thumbnail, md_marquee, md-description-border, md-description-border2, background, gamelist-background, md_flag, md_manual, md_nomanual, md_cheevos, md_notcheevos, fake_cheevos, md_savestate, md_nosavestate, md_hidden, md_kidgame, md_notkidgame, release_date_logo, publisher_logo, playcount_logo, developer_logo, genre_logo, gametime_logo, logo1">
+		<image name="thumbnail-art, md_thumbnail, md_marquee, background, gamelist-background, md_flag, md_manual, md_nomanual, md_cheevos, md_notcheevos, fake_cheevos, md_savestate, md_nosavestate, md_hidden, md_kidgame, md_notkidgame, release_date_logo, publisher_logo, playcount_logo, developer_logo, genre_logo, gametime_logo">
 			<visible>false</visible>
 		</image>
 		<text name="logoText, md_players, md_publisher, md_playcount, md_developer, md_genre, md_gametime">
@@ -494,6 +518,4 @@ Número de jogadas: {game:playcount}
 		</text>
 
 	</customView>
-<!-- Navigation arrows, if enabled -->
-	<include ifSubset="arrows:On">./../../_inc/views/arrows.xml</include>
 </theme>

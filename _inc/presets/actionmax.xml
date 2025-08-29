@@ -2,44 +2,50 @@
 
 <theme>
 	<formatVersion>7</formatVersion>
-
+	<view name="gamecarousel">
+		<image name="md_cartridge">
+			<rotation>-90</rotation>
+		</image>
+	</view>
 	<customView name="WallpapersHeroes">
-		<image name="md_thumbnail">
+		<image name="thumbnail-art" extra="true">
+			<zIndex>71</zIndex>
+			<linearSmooth>true</linearSmooth>
 			<storyboard event="open">
-				<animation property="offsetX" from="-0.2" to="0" duration="500" mode="EaseOutQuint"/>
-				<animation property="offsetX" to="-0.03" begin="1500" duration="2500" mode="EaseOutQuint"/>
+				<animation property="offsetX" to="-0.03" begin="1500" duration="2500" mode="easeOut"/>
 			</storyboard>
-			<storyboard event="activate">
-				<animation property="offsetX" from="-0.2" to="0" begin="" duration="500" mode="EaseOutQuint"/>
-				<animation property="offsetX" to="-0.03" begin="1500" duration="2500" mode="EaseOutQuint"/>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
+				<animation property="offsetX" to="-0.03" begin="1500" duration="2500" mode="easeOut"/>
 			</storyboard>
-			<storyboard event="deactivate">
-				<animation property="opacity" from="0" to="0" duration="" mode="Linear"/>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
+				<animation property="offsetX" to="-0.03" begin="1500" duration="2500" mode="easeOut"/>
 			</storyboard>
 		</image>
 		<image name="md_cartridge">
 			<tile>true</tile>
 			<origin>0.5 1</origin>
 			<linearSmooth>true</linearSmooth>
-			<pos>0.13 0.925</pos>
-			<maxSize>0.23 0.63</maxSize>
+			<pos>0.12 0.923</pos>
+			<maxSize>0.23 0.61</maxSize>
+			<rotation>0</rotation>
 			<zIndex>70</zIndex>
-			<storyboard event="open">
-				<animation property="offsetX" from="-0.2" to="0" duration="500" mode="EaseOutQuint"/>
-				<animation property="offsetX" to="0.08" begin="1500" duration="2500" mode="EaseOutQuint"/>
-			</storyboard>
 			<storyboard event="activate">
-				<animation property="offsetX" from="-0.2" to="0" begin="" duration="500" mode="EaseOutQuint"/>
-				<animation property="offsetX" to="0.08" begin="1500" duration="2500" mode="EaseOutQuint"/>
+				<animation property="opacity" to="0" duration="0" mode="EaseOut"/>
+				<animation property="opacity" to="1" begin="400" duration="300" mode="EaseIn"/>
+				<animation property="offsetX" to="0.08" begin="1500" duration="2500" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="scroll">
+				<animation property="opacity" to="0" duration="0" mode="EaseOut"/>
 			</storyboard>
 			<storyboard event="deactivate">
-				<animation property="opacity" from="0" to="0" duration="" mode="Linear"/>
+				<animation property="opacity" to="0" duration="0" mode="EaseOut"/>
 			</storyboard>
 		</image>
-		<image name="md_thumbnail">
-			<zIndex>71</zIndex>
-			<linearSmooth>true</linearSmooth>
-		</image>
+		
 		<text name="md_description">
 			<pos>0.32 0.31</pos>
 			<size>0.4 0.23</size>
@@ -50,5 +56,9 @@
 			<glowSize>3</glowSize>
 			<zIndex>65</zIndex>
 		</text>
+		<video name="md_video">
+			<pos>0.46 0.932</pos>
+			<maxSize>0.36</maxSize>
+		</video>
 	</customView>
 </theme>

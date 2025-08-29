@@ -48,16 +48,19 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 		<menuText name="menutitle">
 			<fontPath>${fontNameBold}</fontPath>
 			<fontSize>0.035</fontSize>
+			<fontSize if="${screen.ratio} == '4/3'">0.04</fontSize>
 			<color>FAFAFA</color>
 		</menuText>
 		<menuText name="menufooter">
 			<fontPath>${fontNameReg}</fontPath>
 			<fontSize>0.02</fontSize>
+			<fontSize if="${screen.ratio} == '4/3'">0.03</fontSize>
 			<color>777777FF</color>
 		</menuText>
-		<menuText name="menutext" extra="true" tinyScreen="false">
+		<menuText name="menutext" extra="true">
 			<fontPath>${fontDescReg}</fontPath>
 			<fontSize>0.026</fontSize>
+			<fontSize if="${screen.ratio} == '4/3'">0.036</fontSize>
 			<color>969696</color>
 			<separatorColor>363636FF</separatorColor>
 			<selectorColor>${baseColor}</selectorColor>
@@ -65,14 +68,16 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 			<selectedColor>FFFFFF</selectedColor>
 			<selectorGradientType>horizontal</selectorGradientType>
 		</menuText>
-		<menuTextSmall name="menutextsmall" extra="true" tinyScreen="false">
+		<menuTextSmall name="menutextsmall" extra="true">
 			<fontPath>${fontDescReg}</fontPath>
 			<fontSize>0.02</fontSize>
+			<fontSize if="${screen.ratio} == '4/3'">0.03</fontSize>
 			<color>${groupColor}</color>
 		</menuTextSmall>
 		<menuGroup name="menugroup">
 			<fontPath>${fontNameBold}</fontPath>
 			<fontSize>0.02</fontSize>
+			<fontSize if="${screen.ratio} == '4/3'">0.025</fontSize>
 			<color>${groupColor}</color>
 			<backgroundColor>00000000</backgroundColor>
 			<lineSpacing>2.3</lineSpacing>
@@ -121,28 +126,36 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 	<view name="screen">
 		<text name="clock">
 			<fontSize>0.025</fontSize>
-			<pos>0.925 0.945</pos>
+			<pos>0.905 0.945</pos>
 			<size>0.09 0.058</size>
-			<alignment>center</alignment>
+			<alignment>right</alignment>
 			<verticalAlignment>center</verticalAlignment>
 			<fontPath>${fontDescReg}</fontPath>
 			<lineSpacing>1</lineSpacing>
+			
+			<!-- 4:3 -->
+			<fontSize if="${screen.ratio} == '4/3'">0.034</fontSize>
+			<pos if="${screen.ratio} == '4/3'">0.888 0.945</pos>
+			<size if="${screen.ratio} == '4/3'">0.1 0.058</size>
 		</text>
 		<controllerActivity name="controllerActivity">
 			<pos>0.005 0.005</pos>
 			<size>0.185 0.023</size>
 			<itemSpacing>0.003</itemSpacing>
 			<color>FFFFFF80</color>
-		<!-- controllers -->
 			<imagePath>./_inc/images/gamepad.svg</imagePath>
 			<gunPath>./_inc/images/gun.svg</gunPath>
 			<wheelPath>./_inc/images/wheel.svg</wheelPath>
 			<activityColor>${baseColor}</activityColor>
 			<hotkeyColor>FF0000</hotkeyColor>
+			
+			<!-- 4:3 -->
+			<pos if="${screen.ratio} == '4/3'">0.015 0.005</pos>
+			<size if="${screen.ratio} == '4/3'">0.285 0.033</size>
 		</controllerActivity>
-		<batteryIndicator name="batteryIndicator">
-			<pos>0.96 0.0</pos>
-			<size>0.033 0.0275</size>
+		<!-- <batteryIndicator name="batteryIndicator">
+			<pos>0.94 0.005</pos>
+			<size>0.058 0.0275</size>
 			<horizontalAlignment>right</horizontalAlignment>
 			<incharge>./_inc/images/battery/incharge.svg</incharge>
 			<full>./_inc/images/battery/full.svg</full>
@@ -152,11 +165,71 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 			<empty>./_inc/images/battery/empty.svg</empty>
 			<planemodeIcon>./_inc/icons/Planemode.png</planemodeIcon>
 			<color>FFFFFFA0</color>
+			
+			<size if="${screen.ratio} == '4/3'">0.058 0.0475</size>
+		</batteryIndicator> -->
+		<batteryIndicator name="batteryIndicator">
+			<visible>false</visible>
 		</batteryIndicator>
-		<batteryIndicator name="batteryIndicator" tinyScreen="true">
-			<pos>0.915 0.013</pos>
-			<size>0.07 0.07</size>
-		</batteryIndicator>
+		<!-- Панель с wifi, батареей -->
+		<stackpanel name="batteryIndicatorNew" extra="true">
+			<separator>2</separator>
+			<reverse>true</reverse>
+			<pos>0.4165 0.005</pos>
+			<size>0.58 0.0275</size>
+			<size if="${screen.ratio} == '4/3'">0.58 0.0475</size>
+			<orientation>horizontal</orientation>
+			<backgroundColor>FF000000</backgroundColor>
+			<batteryText name="batterytext">
+				<fontPath>${fontNameBold}</fontPath>
+				<fontSize>0.024</fontSize>
+				<fontSize if="${screen.ratio} == '4/3'">0.04</fontSize>
+				<color>FFFFFFA0</color>
+			</batteryText>
+			<batteryIcon name="battery">
+				<incharge>./_inc/images/battery/incharge.svg</incharge>
+				<full>./_inc/images/battery/full.svg</full>
+				<at75>./_inc/images/battery/75.svg</at75>
+				<at50>./_inc/images/battery/50.svg</at50>
+				<at25>./_inc/images/battery/25.svg</at25>
+				<empty>./_inc/images/battery/empty.svg</empty>
+				<planemodeIcon>./_inc/icons/Planemode.png</planemodeIcon>
+				<linearSmooth>true</linearSmooth>
+				<color>FFFFFFA0</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+			</batteryIcon>
+			<!-- Fake battery (for test) -->
+			<!-- <text name="batterytext_fake">
+				<fontPath>${fontNameBold}</fontPath>
+				<fontSize>0.024</fontSize>
+				<fontSize if="${screen.ratio} == '4/3'">0.04</fontSize>
+				<color>FFFFFFA0</color>
+				<text>5%</text>
+			</text>
+			<image name="battery_fake">
+				<path>./_inc/images/battery/empty.svg</path>
+				<incharge>./_inc/images/battery/incharge.svg</incharge>
+				<full>./_inc/images/battery/full.svg</full>
+				<at75>./_inc/images/battery/75.svg</at75>
+				<at50>./_inc/images/battery/50.svg</at50>
+				<at25>./_inc/images/battery/25.svg</at25>
+				<empty>./_inc/images/battery/empty.svg</empty>
+				<linearSmooth>true</linearSmooth>
+				<color>FFFFFFA0</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+			</image> -->
+			
+			<networkIcon name="network">
+				<networkIcon>./_inc/icons/Network.png</networkIcon>
+				<planemodeIcon>./_inc/icons/Planemode.png</planemodeIcon>
+				<maxSize>1 1</maxSize>
+				<linearSmooth>true</linearSmooth>
+				<color>FFFFFFA0</color>
+				
+			</networkIcon>
+		</stackpanel>
 	</view>
 
 	<view name="system">
@@ -169,6 +242,10 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 			<size>0.10 0.058</size>
 			<alignment>right</alignment>
 			<fontSize>0.025</fontSize>
+			<color if="${screen.ratio} == '4/3'">FFFFFF</color>
+			<pos if="${screen.ratio} == '4/3'">0.688 0.895</pos>
+			<size if="${screen.ratio} == '4/3'">0.30 0.058</size>
+			<fontSize if="${screen.ratio} == '4/3'">0.034</fontSize>
 			<zIndex>93</zIndex>
 		</text>
 		<!-- Move gamecount to the right if the clock is disabled -->
@@ -245,16 +322,18 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 	<include>./_inc/views/Detailed No Video.xml</include>
 	<include>./_inc/views/gamecarousel.xml</include>
 	<include>./_inc/views/DetailedWheel.xml</include>
-	<include>./_inc/views/gamecarousel No Boxart.xml</include>
 	<include>./_inc/views/grid.xml</include>
 	<include>./_inc/views/Grid + Details.xml</include>
 	<include>./_inc/views/Grid + Details + Marquee.xml</include>
 	<include>./_inc/views/Grid + Fanart.xml</include>
 	<include>./_inc/views/Modern Grid.xml</include>
 	<include>./_inc/views/Logo + Details.xml</include>
-	<include>./_inc/views/Wallpapers.xml</include>
 	<include>./_inc/views/WallpapersCarousel.xml</include>
+	<include>./_inc/views/Wallpapers.xml</include>
 	<include>./_inc/views/WallpapersHeroes.xml</include>
+	<include>./_inc/views/WallpapersHeroesHor.xml</include>
+	<include>./_inc/views/WallpapersHeroesListHor.xml</include>
+	<include>./_inc/views/WallpapersHeroesFullListHor.xml</include>
 	<include>./_inc/views/VideoFull.xml</include>
 	<include>./_inc/views/Carousel.xml</include>
 	<include>./_inc/views/Carousel + Details.xml</include>
@@ -263,11 +342,8 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 	<include>./_inc/views/Tiles.xml</include>
 	<include>./_inc/views/Tiles + Video.xml</include>
 	<include>./_inc/views/Icons.xml</include>
-	<include>./_inc/views/Colorful (vertically).xml</include>
-	<include>./_inc/views/Colorful + Gamelist (vertically).xml</include>
-	<include>./_inc/views/Colorful (horizontally).xml</include>
-	<include>./_inc/views/Colorful + Gamelist (horizontally).xml</include>
-	<include>./_inc/views/Colorful + Gamelist (horizontally 2).xml</include>
+	<include>./_inc/views/Vertically50.xml</include>
+	<include>./_inc/views/Vertically50List.xml</include>
 	<include>./_inc/views/Content.xml</include>
 	<include>./_inc/views/Test.xml</include>
 
@@ -301,21 +377,22 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 
 <!-- Animated gamelist logo on/off -->
 	<subset name="gamelist_logo" displayName="${gamelist_logo}">
-		<include name="On" displayName="${On_Logo3}">./_inc/views/gamelist_logo_bzz.xml</include>
+		<include name="Off" displayName="${Off_Logo}"></include>
 		<include name="On (Black Bars)" displayName="${On_Logo}">./_inc/views/gamelist_logo.xml</include>
 		<include name="On (No Black Bars)" displayName="${On_Logo2}">./_inc/views/gamelist_logo_noblack.xml</include>
-		<include name="Off" displayName="${Off_Logo}"></include>
 	</subset>
 
-<!-- Enable/Disable navigation arrows in System view -->
-	<subset name="arrows" displayName="${arrows}">
-		<include name="On" displayName="${on_arrows}"></include>
-		<include name="Off" displayName="${off_arrows}"></include>
+<!-- Description Scrolling Speed -->
+	<subset name="scrollSpeed" displayName="${subset.scrollSpeed}">
+		<include name="normal" displayName="${subset.scrollSpeed_Normal}">./_inc/elements/scrollSpeed.xml</include>
+		<include name="fast" displayName="${subset.scrollSpeed_Fast}">./_inc/elements/scrollSpeed.xml</include>
+		<include name="slow" displayName="${subset.scrollSpeed_Slow}">./_inc/elements/scrollSpeed.xml</include>
+		<include name="default" displayName="${subset.scrollSpeed_Default}">./_inc/elements/scrollSpeed.xml</include>
 	</subset>
 
 <!-- Game views (common elements) -->
 	<view name="basic,detailed,grid,gamecarousel">
-		<image name="logo">
+		<image name="logo, logo1">
 			<path>./_inc/logos/${system.theme}.png</path>
 
 			<path>./_inc/logos/${system.theme}.svg</path>
@@ -332,15 +409,15 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 			<linearSmooth>true</linearSmooth>
 		</image>
 	<!-- Regional consoles/computers -->
-		<image name="logo" region="eu"></image>
-		<image name="logo" region="us">
+		<image name="logo, logo1" region="eu"></image>
+		<image name="logo, logo1" region="us">
 			<path>./_inc/logos/us/${system.theme}.png</path>
 			<path>./_inc/logos/us/${system.theme}.svg</path>
 			<path>./_inc/logos/us/${system.theme}-w.svg</path>
 		</image>
 		
-		<image name="logo" region="jp">
-		  <path>./_inc/logos/jp/${system.theme}.png</path>
+		<image name="logo, logo1" region="jp">
+			<path>./_inc/logos/jp/${system.theme}.png</path>
 			<path>./_inc/logos/jp/${system.theme}.svg</path>
 			<path>./_inc/logos/jp/${system.theme}-w.svg</path>
 		</image>
@@ -362,8 +439,6 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 
 <!-- Custom scroll sound -->
 	<include>./_inc/views/ScrollSound.xml</include>
-<!-- Support 4:3 ratio -->
-  	<include if="${screen.ratio} == '4/3'" tinyScreen="false">./_inc/views/4 3.xml</include>
 <!-- Support TinyScreen (320x240) -->
 	<include tinyScreen="true" name="TinyScreen">./_inc/systemviews/tinyscreen.xml</include>
 

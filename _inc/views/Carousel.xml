@@ -3,24 +3,32 @@
 <theme>
 <formatVersion>7</formatVersion>
 <!-- Карусель -->
-	<customView name="Carousel" inherits="grid" tinyScreen="false" displayName="${carouselViewName}">
+	<customView name="Carousel" inherits="grid" displayName="${carouselViewName}">
 		<text name="md_name">
 			<color>FFFFFFFF</color>
 			<pos>0.5 0.82</pos>
 			<size>0.92 0.10</size>
 			<fontSize>0.026</fontSize>
-			<glowColor>00000016</glowColor>
-			<glowSize>4</glowSize>
+			<fontSize if="${screen.ratio} == '4/3'">0.035</fontSize>
+			<glowColor>00000035</glowColor>
+			<glowSize>1</glowSize>
+			<glowOffset>3 2</glowOffset>
+			<multiLine>false</multiLine>
+			<autoScrollDelay>3000</autoScrollDelay>
+			<singleLineScroll>true</singleLineScroll>
 		</text>
 		<text name="md_developer">
 			<color>808080FF</color>
 			<pos>0.04 0.80</pos>
 			<size>0.92 0.10</size>
 			<fontSize>0.020</fontSize>
+			<pos if="${screen.ratio} == '4/3'">0.04 0.82</pos>
+			<fontSize if="${screen.ratio} == '4/3'">0.026</fontSize>
 			<alignment>center</alignment>
 			<fontPath>${fontNameBold}</fontPath>
-			<glowColor>00000016</glowColor>
-			<glowSize>3</glowSize>
+			<glowColor>00000035</glowColor>
+			<glowSize>1</glowSize>
+			<glowOffset>3 2</glowOffset>
 			<zIndex>140</zIndex>
 		</text>
 		<imagegrid name="gamegrid">
@@ -29,6 +37,8 @@
 			<padding>0.01 0.14 0.01 0.30</padding>
 			<scrollDirection>horizontal</scrollDirection>
 			<autoLayout>5 1</autoLayout>
+			<autoLayout if="${screen.ratio} == '4/3'">3 1</autoLayout>
+			<margin if="${screen.ratio} == '4/3'">-0.14 0</margin>
 			<autoLayout if="${screen.ratio} == '21/9'">7 1</autoLayout>
 			<autoLayoutSelectedZoom>1.50</autoLayoutSelectedZoom>
 			<centerSelection>true</centerSelection>

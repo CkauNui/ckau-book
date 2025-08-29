@@ -4,6 +4,16 @@
 <formatVersion>7</formatVersion>
 <!-- Карусель + фанарт -->
 	<customView name="Carousel + Fanart" inherits="grid" displayName="${carouselFanartViewName}">
+			<!-- Отключает элменеты из grid -->
+		<!-- Вертикальная панель с иконками -->
+		<stackpanel name="container-icons-vertical" extra="true">
+			<visible>false</visible>
+		</stackpanel>
+
+		<stackpanel name="container-icons-vertical-invert" extra="true" reverse="true">
+			<visible>false</visible>
+		</stackpanel>
+
 		<imagegrid name="gamegrid">
 			<pos>0.0 0.22</pos>
 			<size>1 1</size>
@@ -11,6 +21,7 @@
 			<margin if="${screen.ratio} == '21/9'">-0.007 -0.14</margin>
 			<scrollDirection>horizontal</scrollDirection>
 			<autoLayout>7 1</autoLayout>
+			<autoLayout if="${screen.ratio} == '4/3'">5 1</autoLayout>
 			<autoLayout if="${screen.ratio} == '21/9'">9 1</autoLayout>
 			<autoLayoutSelectedZoom>1.20</autoLayoutSelectedZoom>
 			<centerSelection>true</centerSelection>
@@ -26,14 +37,18 @@
 			<padding>3 3</padding>
 		</gridtile>
 		<text name="gridtile">
+			<fontSize>0.016</fontSize>
 			<size>1 0</size>
 		</text>
 		<image name="art" extra="true">
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
 			<minSize>1 1</minSize>
-			<path>./../../_inc/images/overlay3.png</path>
+			<path>${themePath}/_inc/images/overlay3.png</path>
 			<zIndex>20</zIndex>
+		</image>
+		<image name="fanart-bg-fix" extra="true">
+			<visible>false</visible>
 		</image>
 		<image name="fanart" extra="true">
 			<origin>0.5 0</origin>
@@ -41,35 +56,22 @@
 			<color>FFFFFF5F</color>
 			<maxSize>1 1</maxSize>
 			<maxSize if="${screen.ratio} == '4/3'">1.25 1.25</maxSize>
-			<size if="${screen.ratio} == '21/9'">1</size>
+			<maxSize if="${screen.ratio} == '16/10'">1.12 1.12</maxSize>
 			<path>{game:fanart}</path>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>10</zIndex>
-			<storyboard event="open">
-				<animation property="opacity" from="0" to="1" duration="400" mode="easeIn"/>
-			</storyboard>
-			<storyboard event="activateNext">
-				<animation property="offsetX" from="-0.01" to="0" duration="600" mode="EaseOutQuint"/>
+			<storyboard event="activate" repeat="forever">
 				<animation property="scale" from="1" to="1.1" duration="8000"/>
 				<animation property="scale" begin="8000" to="1" duration="8000"/>
 			</storyboard>
-			<storyboard event="activatePrev">
-				<animation property="offsetX" from="0.01" to="0" duration="600" mode="EaseOutQuint"/>
-				<animation property="scale" from="1" to="1.1" duration="8000"/>
-				<animation property="scale" begin="8000" to="1" duration="8000"/>
-			</storyboard>
-			<storyboard event="deactivateNext">
-				<animation property="opacity" to="0" duration="400" mode="easeOut"/>
-				<animation property="scale" to="1" duration="250"/>
-			</storyboard>
-			<storyboard event="deactivatePrev">
+			<storyboard event="deactivate">
 				<animation property="opacity" to="0" duration="400" mode="easeOut"/>
 				<animation property="scale" to="1" duration="250"/>
 			</storyboard>
 		</image>
 		<image name="fanart_fix" extra="true">
 			<visible>!exists({game:fanart})</visible>
-			<path>./../../_inc/anim/${system.theme}.png</path>
+			<path>${themePath}/_inc/anim/${system.theme}.png</path>
 			<pos>0.5 -0.3</pos>
 			<origin>0.5 0</origin>
 			<maxSize>1 1</maxSize>
@@ -82,34 +84,30 @@
 		</image>
 		<image name="logo">
 			<visible>false</visible>
-		</image> 
-		<image name="logo1" extra="true">
-			<storyboard>
-				<animation property="opacity" from="1" to="0" begin="0" duration="4000" mode="EaseOut"/>
-				<animation property="scale" from="1.05" to="1.4" begin="0" duration="4000" mode="EaseOut"/>
-			</storyboard>
 		</image>
 		<image name="md_marquee">
 			<pos>0.185 0.14</pos>
+			<pos if="${screen.ratio} == '4/3'">0.185 0.13</pos>
 			<maxSize>0.25 0.14</maxSize>
 			<zIndex>36</zIndex>
 		</image>
 		<text name="md_description">
-			<pos>0.065 0.28</pos>
-			<size>0.34 0.145</size>
+			<pos>0.065 0.267</pos>
+			<size>0.34 0.16</size>
 			<lineSpacing>1.1</lineSpacing>
 			<fontSize>0.024</fontSize>
-			<fontPath>${fontDescReg}</fontPath>
+			<fontPath>${fontNameReg}</fontPath>
 			<color>D0D0D0</color>
-			<glowColor>00000016</glowColor>
-			<glowSize>3</glowSize>
+			<glowColor>00000035</glowColor>
+			<glowSize>1</glowSize>
+			<glowOffset>3 2</glowOffset>
+			<zIndex>65</zIndex>
 		</text>
 		<video name="md_video">
-			<pos>0.785 0.425</pos>
-			<!-- <size>0.35</size> -->
+			<pos>0.785 0.403</pos>
 			<maxSize>0.35</maxSize>
 			<origin>0.5 1</origin>
-			<delay>1.5</delay>
+			<delay>1.0</delay>
 			<showSnapshotNoVideo>false</showSnapshotNoVideo>
 			<showSnapshotDelay>true</showSnapshotDelay>
 			<snapshotSource>image</snapshotSource>
@@ -117,90 +115,201 @@
 			<effect>none</effect>
 			<zIndex>12</zIndex>
 			<scaleOrigin>1</scaleOrigin>
-			<storyboard event="open">
-				<animation property="opacity" to="0" begin="0" duration="0" mode="easeOut"/>
-				<animation property="opacity" from="0" to="1" begin="600" duration="400" mode="easeIn"/>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="600" duration="300" mode="linear"/>
 			</storyboard>
-			<storyboard event="activate">
-				<animation property="opacity" from="1" to="0" begin="0" duration="0" mode="easeOut"/>
-				<animation property="opacity" from="0" to="1" begin="600" duration="400" mode="easeIn"/>
-				<animation property="offsetX" from="0.2" to="0" begin="600" duration="500" mode="EaseOutQuint"/>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="600" duration="300" mode="linear"/>
 			</storyboard>
-			<storyboard event="deactivate">
-				<animation property="opacity" to="0" duration="0" mode="easeIn"/>
-			</storyboard>
+			<shader>
+				<path>:/shaders/border.glsl</path>
+				<cornerRadius>0.01</cornerRadius>
+				<innerShadowSize>0.01</innerShadowSize>
+				<innerShadowColor>00000030</innerShadowColor>
+				<outerShadowSize>0.020</outerShadowSize>
+				<outerShadowColor>00000050</outerShadowColor>
+			</shader>
 		</video>
-		<datetime name="md_releasedate">
-			<origin>0.5 0.5</origin>
-			<pos>0.17 0.25</pos>
-			<fontSize>0.026</fontSize>
-			<size>0.21 0.03</size>
-			<rotation>0</rotation>
-			<color>4cdf6c</color>
-			<fontPath>${fontNameReg}</fontPath>
-		</datetime>
-		<image name="md_flag">
-			<pos>0.14 0.238</pos>
-		</image>
-		<rating name="md_rating">
-			<pos>0.09 0.45</pos>
-			<rotation>0</rotation>
-			<color>D0D0D0D0</color>
-			<origin>0.5 0.5</origin>
-			<horizontalAlignment>left</horizontalAlignment>
-		</rating>
-		<text name="md_players">
-			<pos>0.111 0.245</pos>
-			<size>0.04 0.04</size>
-			<origin>0.5 0.5</origin>
-			<color>D0D0D0D0</color>
-		</text>
-		<image name="md_manual,md_nomanual">
-			<pos>0.212 0.249</pos>
-			<color>D0D0D0D0</color>
-		</image>
-		<image name="md_nomanual">
-			<color>80808040</color>
-		</image>
-		<image name="md_cheevos,md_notcheevos">
-			<pos>0.168 0.249</pos>
-			<color>D0D0D0D0</color>
-		</image>
-		<image name="fake_cheevos" extra="true">
-			<pos>0.19 0.249</pos>
-		</image>
-		<image name="md_notcheevos">
-			<color>80808040</color>
-		</image>
-		<image name="md_savestate,md_nosavestate">
-			<pos>0.168 0.249</pos>
-			<y ifCheevos="false">0.249</y>
-			<color>D0D0D0D0</color>
-		</image>
-		<image name="md_nosavestate">
-			<color>80808040</color>
-		</image>
-		<image name="md_hidden">
-			<pos>0.236 0.249</pos>
-			<color>D0D0D0D0</color>
-		</image>
-		<image name="md_kidgame,md_notkidgame">
-			<pos>0.256 0.249</pos>
-			<color>D0D0D0D0</color>
-		</image>
-		<image name="md_notkidgame"> 
-			<color>80808000</color>
-		</image>
-		<text name="md_developer">
-			<fontPath>${fontDescReg}</fontPath>
-			<alignment>left</alignment>
-			<fontSize>0.026</fontSize>
-			<size>0.21 0.03</size>
-			<color>D0D0D0D0</color>
-			<pos>0.156 0.436</pos>
-			<glowColor>00000016</glowColor>
-			<glowSize>3</glowSize>
-			<zIndex>42</zIndex>
-		</text>
+
+	<!-- Панель с иконками игроков, ачивок, руля и т.д.-->
+		<stackpanel name="container-icons" extra="true">
+			<separator>0.015</separator>
+			<pos>0.065 0.23</pos>
+			<size>0.47 0.032</size>
+			<pos if="${screen.ratio} == '4/3'">0.065 0.21</pos>
+			<size if="${screen.ratio} == '4/3'">0.47 0.05</size>
+			<orientation>horizontal</orientation>
+			<backgroundColor>FF000000</backgroundColor>
+			<zIndex>150</zIndex>
+			
+			<!-- Год выпуска -->
+			<text>
+				<fontSize>0.026</fontSize>
+				<fontSize if="${screen.ratio} == '4/3'">0.031</fontSize>
+				<fontPath>${fontNameReg}</fontPath>
+				<text>{game:releaseyear}</text>
+				<color>4CDF6C</color>
+				<padding>4 0 4 0</padding>
+				<multiLine>false</multiLine>
+				<autoScrollDelay>3000</autoScrollDelay>
+				<singleLineScroll>true</singleLineScroll>
+				<visible>!empty({game:releaseyear})</visible>
+			</text>
+			
+			<text name="icons-players">
+				<fontPath>${fontPlayers}</fontPath>
+				<text>{game:playerCount}</text>
+				<alignment>center</alignment>
+				<fontSize>0.03</fontSize>
+				<fontSize if="${screen.ratio} == '4/3'">0.036</fontSize>
+				<color>D0D0D0D0</color>
+			</text>
+			
+			<!-- Флаги / Flags -->
+			<image name="flag-region">
+				<path>${themePath}/_inc/images/flags/{game:region}.png</path>
+				<maxSize>0.8</maxSize>
+				<origin>0.5 0.5</origin>
+				<pos>0.5 0.4</pos>
+				<linearSmooth>true</linearSmooth>
+				<opacity>0.8</opacity>
+				<visible>{game:region} != {game:lang} &amp;&amp; !contains(lower({game:region}), ',') &amp;&amp; !empty({game:region})</visible>
+			</image>
+			<image name="flag-force-world">
+				<path>${themePath}/_inc/images/flags/wr.png</path>
+				<maxSize>0.8</maxSize>
+				<origin>0.5 0.5</origin>
+				<pos>0.5 0.4</pos>
+				<linearSmooth>true</linearSmooth>
+				<opacity>0.8</opacity>
+				<visible>contains(lower({game:region}), ',') &amp;&amp; !empty({game:region})</visible>
+			</image>
+			<image name="flag-lang">
+				<path>${themePath}/_inc/images/flags/{game:lang}.png</path>
+				<maxSize>0.8</maxSize>
+				<origin>0.5 0.5</origin>
+				<pos>0.5 0.4</pos>
+				<linearSmooth>true</linearSmooth>
+				<opacity>0.8</opacity>
+				<visible>!contains(lower({game:lang}), ',') &amp;&amp; !empty({game:lang})</visible>
+			</image>
+			<text name="gamedata-lang">
+				<fontSize>0.019</fontSize>
+				<fontPath>${fontNameReg}</fontPath>
+				<text>{game:lang}.upper()</text>
+				<color>FFFFFF</color>
+				<padding>4 0 4 0</padding>
+				<singleLineScroll>true</singleLineScroll>
+				<autoScrollDelay>0</autoScrollDelay>
+				<y>0.02</y>
+				<visible>contains(lower({game:lang}), ',') &amp;&amp; !empty({game:lang})</visible>
+			</text>
+			
+			<image name="icons-manual">
+				<visible>{game:hasManual}</visible>
+				<path>${themePath}/_inc/images/book.png</path>
+				<linearSmooth>true</linearSmooth>
+				<color>D0D0D0D0</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+			</image>
+			
+			<image name="icons-cheevos">
+				<visible>{game:cheevos}</visible>
+				<path>${themePath}/_inc/icons/Contest.png</path>
+				<linearSmooth>true</linearSmooth>
+				<color>D0D0D0D0</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+			</image>
+			<image name="icons-save">
+				<visible>{game:hasSaveState}</visible>
+				<path>${themePath}/_inc/icons/SaveState.png</path>
+				<linearSmooth>true</linearSmooth>
+				<color>D0D0D0D0</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+			</image>
+			
+			<image name="icons-wheel">
+				<visible>{game:wheelGame}</visible>
+				<linearSmooth>true</linearSmooth>
+				<padding>0 0</padding>
+				<path>${themePath}/_inc/images/wheel.svg</path>
+				<maxSize>1 1</maxSize>
+				<color>D0D0D0D0</color>
+			</image>
+			
+			<image name="icons-gun">
+				<visible>{game:gunGame}</visible>
+				<linearSmooth>true</linearSmooth>
+				<padding>0 0</padding>
+				<path>${themePath}/_inc/images/gun.svg</path>
+				<maxSize>1 1</maxSize>
+				<color>D0D0D0D0</color>
+			</image>
+			
+			<image name="icons-padtokey">
+				<visible>{game:hasKeyboardMapping}</visible>
+				<linearSmooth>true</linearSmooth>
+				<padding>0 0</padding>
+				<path>${themePath}/_inc/images/padtokey.png</path>
+				<maxSize>1 1</maxSize>
+				<color>D0D0D0D0</color>
+			</image>
+			
+			<image name="icons-hidden">
+				<visible>{game:hidden}</visible>
+				<linearSmooth>true</linearSmooth>
+				<padding>0 0</padding>
+				<path>${themePath}/_inc/images/hidden.svg</path>
+				<maxSize>1 1</maxSize>
+				<color>D0D0D0D0</color>
+			</image>
+			<image name="icons-kid">
+				<visible>{game:kidGame}</visible>
+				<linearSmooth>true</linearSmooth>
+				<padding>0 0</padding>
+				<path>${themePath}/_inc/images/kid.svg</path>
+				<maxSize>1 1</maxSize>
+				<color>D0D0D0D0</color>
+			</image>
+		</stackpanel>
+
+		<!-- Панель с рейтингом и разработчиком -->
+		<stackpanel name="game-data" extra="true">
+			<separator>0.015</separator>
+			<pos>0.065 0.43</pos>
+			<size>0.47 0.032</size>
+			<size if="${screen.ratio} == '4/3'">0.47 0.04</size>
+			<orientation>horizontal</orientation>
+			<backgroundColor>FF000000</backgroundColor>
+			<zIndex>150</zIndex>
+			
+			<!-- Рейтинг -->
+			<text name="gamedata-stars">
+				<fontSize>0.028</fontSize>
+				<text>{game:stars}</text>
+				<color>D0D0D0D0</color>
+				<visible>!empty({game:stars})</visible>
+			</text>
+			
+			<!-- Разработчик -->
+			<text>
+				<pos>0.08 0</pos> <!-- Сдвигает текст правее иконки -->
+				<fontSize>0.022</fontSize>
+				<fontSize if="${screen.ratio} == '4/3'">0.027</fontSize>
+				<fontPath>${fontNameReg}</fontPath>
+				<text>{game:developer}</text>
+				<color>D0D0D0D0</color>
+				<padding>4 0 4 0</padding>
+				<multiLine>false</multiLine>
+				<autoScrollDelay>3000</autoScrollDelay>
+				<singleLineScroll>true</singleLineScroll>
+				<visible>!empty({game:developer})</visible>
+			</text>
+		</stackpanel>
 	</customView>
 </theme>

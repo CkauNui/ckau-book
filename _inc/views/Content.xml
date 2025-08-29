@@ -20,9 +20,12 @@
 	</subset>
 
 	<customView name="Content" inherits="grid" displayName="${contentViewName}">
-
+		<image name="fanart, fanart_fix" extra="true">
+			<visible>false</visible>
+		</image>
 	<imagegrid name="gamegrid">
 		<autoLayout>1 4</autoLayout>
+		<autoLayout if="${screen.ratio} == '4/3'">1 2</autoLayout>
 		<autoLayout if="${wideScreen}">2 4</autoLayout>
 		<autoLayout if="${ultrawideScreen}">4 4</autoLayout>
 		<margin>0.006 0.010</margin>
@@ -315,6 +318,7 @@
 									<text>{game:nameShort}</text>
 									<fontPath>${fontNameBold}</fontPath>
 									<fontSize>0.026</fontSize>
+									<fontSize if="${screen.ratio} == '4/3'">0.035</fontSize>
 									<verticalAlignment>bottom</verticalAlignment>
 									<multiLine>false</multiLine>
 									<extraTextColor>707070</extraTextColor>
@@ -331,6 +335,7 @@
 									<color>FFFFFFFF</color>
 									<fontPath>${fontNameBold}</fontPath>
 									<fontSize>0.016</fontSize>
+									<fontSize if="${screen.ratio} == '4/3'">0.025</fontSize>
 									<padding>0 0 0 0.08</padding>
 									<verticalAlignment>bottom</verticalAlignment>
 									<multiLine>false</multiLine>
@@ -349,6 +354,7 @@
 									<color>FFCC00D0</color>
 									<fontPath>${fontNameReg}</fontPath>
 									<fontSize>0.016</fontSize>
+									<fontSize if="${screen.ratio} == '4/3'">0.025</fontSize>
 									<glowColor>00000040</glowColor>
 									<glowSize>1</glowSize>
 									<verticalAlignment>top</verticalAlignment>
@@ -361,6 +367,7 @@
 									<color>FFFFFF70</color>
 									<fontPath>${fontNameReg}</fontPath>
 									<fontSize>0.016</fontSize>
+									<fontSize if="${screen.ratio} == '4/3'">0.025</fontSize>
 									<verticalAlignment>top</verticalAlignment>
 									<multiLine>false</multiLine>
 								</text>
@@ -372,6 +379,7 @@
 									<color>FFFFFFA0</color>
 									<fontPath>${fontDescReg}</fontPath>
 									<fontSize>0.018</fontSize>
+									<fontSize if="${screen.ratio} == '4/3'">0.03</fontSize>
 									<autoScroll>false</autoScroll>
 									<multiLine>true</multiLine>
 									<lineSpacing>1.25</lineSpacing>

@@ -3,16 +3,14 @@
 <theme>
 <formatVersion>7</formatVersion>
 <!-- Карусель + подробно + лого -->
-	<customView name="Carousel + Details + Marquee" inherits="Carousel + Details" tinyScreen="false" displayName="${carouselDetailsMarqueeViewName}">
+	<customView name="Carousel + Details + Marquee" inherits="Carousel + Details" displayName="${carouselDetailsMarqueeViewName}">
 		<image name="md_marquee">
-			<pos>0.83 0.17</pos>
+			<pos>0.815 0.13</pos>
+			<pos if="${screen.ratio} == '4/3'">0.80 0.13</pos>
 			<maxSize>0.25 0.14</maxSize>
 			<visible>true</visible>
 			<zIndex>120</zIndex>
 		</image>
-		<text name="md_developer">
-			<visible>false</visible>
-		</text>
 		<text name="md_name" extra="true">
 			<pos>0.5 0.015</pos>
 			<size>1 0.03</size>

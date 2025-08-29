@@ -20,17 +20,13 @@
 			<origin if="${screen.ratio} == '16/10'">0.528 0</origin>
 			<maxSize if="${screen.ratio} == '21/9'">0.75 0.75</maxSize>
 			<origin if="${screen.ratio} == '21/9'">0.405 0.0015</origin>
-		<storyboard></storyboard>
-			<storyboard event="activateNext"></storyboard>
-			<storyboard event="activatePrev"></storyboard>
-			<storyboard event="deactivateNext"></storyboard>
-			<storyboard event="deactivatePrev"></storyboard>
+			<storyboard event="activate" repeat="forever">
+			</storyboard>
+			<storyboard event="deactivate">
+			</storyboard>
 		</image>
 		<video name="md_video">
-			<delay>0.3</delay>
-			<storyboard event="open"></storyboard>
-			<storyboard event="activate"></storyboard>
-			<storyboard event="deactivate"></storyboard>
+			<delay>0.2</delay>
 		</video>
 	</customView>
 </theme>

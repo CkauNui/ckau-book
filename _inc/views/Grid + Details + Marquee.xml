@@ -5,7 +5,8 @@
 <!-- Сетка + подробно + лого -->
 	<customView name="Grid + Details + Marquee" inherits="Grid + Details" displayName="${gridDetailsMarqueeViewName}">
 		<image name="md_marquee">
-			<pos>0.83 0.13</pos>
+			<pos>0.815 0.13</pos>
+			<pos if="${screen.ratio} == '4/3'">0.80 0.13</pos>
 			<maxSize>0.25 0.14</maxSize>
 			<visible>true</visible>
 			<zIndex>120</zIndex>

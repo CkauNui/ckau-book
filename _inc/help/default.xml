@@ -8,10 +8,15 @@
 			<!-- <pos>0.012 0.9625</pos> -->
 			<origin>0.5 0</origin>
 			<pos>0.5 0.9625</pos>
+			
+			<!-- 4:3 -->
+			<fontSize if="${screen.ratio} == '4/3'">0.034</fontSize>
+			<origin if="${screen.ratio} == '4/3'">0 0.5</origin>
+			<pos if="${screen.ratio} == '4/3'">0.012 0.975</pos>
 		</helpsystem>
-		<helpsystem name="help" if="{system.theme} == 'avgn'">
+		<!-- <helpsystem name="help" if="{system.theme} == 'avgn'">
 			<pos>2 2</pos>
-		</helpsystem>
+		</helpsystem> -->
 <!-- Helpsystem bottom bar bg
 \\\\
 Current in "\systemcolors\colorful.xml"

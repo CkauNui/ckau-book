@@ -3,19 +3,22 @@
 <theme defaultView="Grid + Fanart">
 	<formatVersion>7</formatVersion>
 	<customView name="Grid + Fanart">
-		<image name="md_fanart">
+		<image name="fanart">
 		<color>FFFFFFFF</color>
-		<storyboard></storyboard>
-			<storyboard event="activateNext"></storyboard>
-			<storyboard event="activatePrev"></storyboard>
-			<storyboard event="deactivateNext"></storyboard>
-			<storyboard event="deactivatePrev"></storyboard>
+			<storyboard event="activate" repeat="forever">
+			</storyboard>
+			<storyboard event="deactivate">
+			</storyboard>
 		</image>
 		<video name="md_video">
-			<delay>0.3</delay>
-			<storyboard event="open"></storyboard>
-			<storyboard event="activate"></storyboard>
-			<storyboard event="deactivate"></storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="300" duration="300" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="300" duration="300" mode="linear"/>
+			</storyboard>
 		</video>
 		<image name="md_marquee">
 			<pos>0.185 0.172</pos>

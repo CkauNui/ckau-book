@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
+<!-- Базовый -->
 <theme>
 <formatVersion>7</formatVersion>
-<!-- Базовый -->
 	<view name="basic">
 		<text name="logoText">
-			<pos>.5 0.1427777777777778</pos>
+			<pos>0.5 0.142</pos>
 			<origin>0.5 0</origin>
-			<size>0.15625 0.0555555555555556</size>
-			<fontSize>0.0444444444444444</fontSize>
-			<fontPath>${fontNameReg}</fontPath>
+			<size>0.156 0.055</size>
+			<fontSize>0.044</fontSize>
+			<fontPath>${fontNameBold}</fontPath>
 			<color>${baseColor}</color>
 			<forceUppercase>true</forceUppercase>
 		</text>
@@ -18,38 +18,143 @@
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
 			<size>1 1</size>
-			<path>./../../_inc/images/space.png</path>
+			<path>${themePath}/_inc/images/space.png</path>
 			<color>141414</color>
 		</image>
 		<image name="logo">
-			<path>./../../_inc/logos/${system.theme}.png</path>
-			<path>./../../_inc/logos/${system.theme}-${lang}.png</path>
-			<pos>.5 0.1427777777777778</pos>
-			<maxSize>0.260 0.126</maxSize>
+			<pos>0.5 0.09</pos>
+			<maxSize>0.240 0.126</maxSize>
 			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+		<!-- Logo anim bzz -->
+		<image name="logo1" extra="true">
+			<pos>0.5 0.09</pos> <!-- Должно совпадать с logo -->
+			<maxSize>0.260 0.126</maxSize> <!-- Должно совпадать с logo -->
+			<origin>0.5 0.5</origin> <!-- Должно совпадать с logo -->
+			<opacity>0</opacity>
+			<zIndex>20</zIndex>
+			<storyboard>
+				<animation property="opacity" from="0.75" to="0" begin="995" duration="4000" mode="EaseOut"/>
+				<animation property="scale" from="1.05" to="1.4" begin="995" duration="4000" mode="EaseOut"/>
+				<animation property="color" from="FFAAAA" to="FF7777" begin="975" duration="4000" mode="EaseOut"/>
+			</storyboard>
 		</image>
 		<textlist name="gamelist">
-			<selectorColor>333333ff</selectorColor>
-			<selectedColor>${baseColor}</selectedColor>
-			<primaryColor>cccccc</primaryColor>
-			<secondaryColor>cccccc</secondaryColor>
-			<extraTextColor>555555</extraTextColor>
-			<extraTextSelectedColor>A0A0A0</extraTextSelectedColor>
-			<fontPath>${fontDescReg}</fontPath>
-			<fontSize>0.024</fontSize>
-			<pos>0.1484375 0.2416666666666667</pos>
-			<size>0.703125 0.6555555555555556</size>
+			<pos>0.025 0.18</pos>
+			<size>0.95 0.73</size>
+			<size ifHelpPrompts="false">0.950 0.76</size>
 			<alignment>center</alignment>
-			<lines>20</lines>
-			<horizontalMargin>0.01</horizontalMargin>
-			<forceUppercase>1</forceUppercase>
-			<scrollSound>./../../_inc/sound/scroll.wav</scrollSound>
+			<lines>17</lines>
+			<lines if="${screen.ratio} == '4/3'">11</lines>
+			<horizontalMargin>0.005</horizontalMargin>
 			<scrollbarColor>333333ff</scrollbarColor>
 			<scrollbarCorner>0.49</scrollbarCorner>
 			<scrollbarSize>0.005</scrollbarSize>
 			<scrollbarAlignment>outerright</scrollbarAlignment>
+			<itemTemplate>
+				<image name="selectionBackground">
+					<path>${themePath}/_inc/images/space.png</path>
+					<color>transparent</color>
+					<roundCorners>2</roundCorners>
+					<storyboard event="activate">
+						<animation property="color" to="${centerFadeColor}"/>
+					</storyboard>
+					<storyboard event="deactivate">
+						<animation property="color" to="transparent"/>
+					</storyboard>
+					<container>
+						<padding>20 0</padding>
+						<text name="nameId" pos="0 0" size="0.48 1">
+							<text>{grid:label}</text>
+							<extraTextColor>606060</extraTextColor>
+							<verticalAlignment>center</verticalAlignment>
+							<fontPath>${fontNameBold}</fontPath>
+							<multiLine>false</multiLine>
+							<autoScrollDelay>250</autoScrollDelay>
+							<fontSize>0.026</fontSize>
+							<fontSize if="${screen.ratio} == '4/3'">0.032</fontSize>
+							<color>C0C0C0</color>
+							<storyboard event="activate">
+								<animation property="color" to="FFFFFFFF"/>
+								<animation property="singleLineScroll" to="true"/>
+							</storyboard>
+							<storyboard event="deactivate">
+								<animation property="color" to="C0C0C0"/>
+								<animation property="singleLineScroll" to="false"/>
+							</storyboard>
+						</text>
+						<text name="genreId" pos="0.5 0" size="0.18 1">
+							<text>{game:genre}</text>
+							<verticalAlignment>center</verticalAlignment>
+							<alignment>left</alignment>
+							<fontPath>${fontDescReg}</fontPath>
+							<fontSize>0.018</fontSize>
+							<fontSize if="${screen.ratio} == '4/3'">0.024</fontSize>
+							<color>A0A0A0</color>
+							<multiLine>false</multiLine>
+							<autoScrollDelay>250</autoScrollDelay>
+							<storyboard event="activate">
+								<animation property="singleLineScroll" to="true"/>
+							</storyboard>
+							<storyboard event="deactivate">
+								<animation property="singleLineScroll" to="false"/>
+							</storyboard>
+						</text>
+						<text name="publisherId" pos="0.7 0" size="0.18 1">
+							<text>{game:publisher}</text>
+							<verticalAlignment>center</verticalAlignment>
+							<alignment>left</alignment>
+							<fontPath>${fontDescReg}</fontPath>
+							<fontSize>0.018</fontSize>
+							<fontSize if="${screen.ratio} == '4/3'">0.024</fontSize>
+							<color>A0A0A0</color>
+							<multiLine>false</multiLine>
+							<autoScrollDelay>250</autoScrollDelay>
+							<storyboard event="activate">
+								<animation property="singleLineScroll" to="true"/>
+							</storyboard>
+							<storyboard event="deactivate">
+								<animation property="singleLineScroll" to="false"/>
+							</storyboard>
+						</text>
+						<text name="releasedateId" pos="0.89 0" size="0.1 1">
+							<text>{game:releaseyear}</text>
+							<verticalAlignment>center</verticalAlignment>
+							<alignment>left</alignment>
+							<fontPath>${fontDescReg}</fontPath>
+							<fontSize>0.018</fontSize>
+							<fontSize if="${screen.ratio} == '4/3'">0.024</fontSize>
+							<color>A0A0A0</color>
+							<multiLine>false</multiLine>
+							<autoScrollDelay>250</autoScrollDelay>
+							<storyboard event="activate">
+								<animation property="singleLineScroll" to="true"/>
+							</storyboard>
+							<storyboard event="deactivate">
+								<animation property="singleLineScroll" to="false"/>
+							</storyboard>
+						</text>
+						<text name="starsId" pos="0.94 0" size="0.1 1">
+							<text>{game:stars}</text>
+							<verticalAlignment>center</verticalAlignment>
+							<alignment>left</alignment>
+							<fontPath>${fontDescReg}</fontPath>
+							<fontSize>0.018</fontSize>
+							<pos if="${screen.ratio} == '4/3'">0.95 0</pos>
+							<color>FFCC00D0</color>
+							<multiLine>false</multiLine>
+							<autoScrollDelay>250</autoScrollDelay>
+							<storyboard event="activate">
+								<animation property="singleLineScroll" to="true"/>
+							</storyboard>
+							<storyboard event="deactivate">
+								<animation property="singleLineScroll" to="false"/>
+							</storyboard>
+						</text>
+					</container>
+				</image>
+			</itemTemplate>
 		</textlist>
 	</view>
-<!-- Navigation arrows, if enabled -->
-  	<include ifSubset="arrows:On">./../../_inc/views/arrows.xml</include>
 </theme>

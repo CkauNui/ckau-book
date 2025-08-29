@@ -1,85 +1,295 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <theme>
-	<formatVersion>7</formatVersion>
-<!-- add collections name for Grid = improve usability -->
-	<customView name="Grid + Details">
-		<text name="gridtile">
-			<visible>true</visible>
-			<color>D0D0D0</color>
-			<backgroundColor>00000000</backgroundColor>
-			<fontSize>0.022</fontSize>
-			<alignment>center</alignment>
-			<size>1 0.24</size>
-		</text>
-	</customView>
-	<customView name="Grid + Details + Marquee">
-		<text name="gridtile">
-			<visible>true</visible>
-			<color>D0D0D0</color>
-			<backgroundColor>00000000</backgroundColor>
-			<fontSize>0.022</fontSize>
-			<alignment>center</alignment>
-			<size>1 0.24</size>
-		</text>
-	</customView>
+<formatVersion>7</formatVersion>
+	<view name="basic">
+<!-- Display system logo for each game -->
+		<!-- Prefer white system logo -->
+		<image name="logo, logo1" extra="true">
+			<visible>false</visible>
+		</image>
+		<image name="game-logo" extra="true">
+			<pos>0.5 0.09</pos>
+			<maxSize>0.240 0.126</maxSize>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+			<path>firstfile(
+				"${themePath}/_inc/logos/" + {game:system:theme} + "-w.svg",
+				"${themePath}/_inc/logos/" + {game:system:theme} + "-w.png",
+				"${themePath}/_inc/logos/" + {game:system:theme} + ".svg",
+				"${themePath}/_inc/logos/" + {game:system:theme} + ".png"
+			)</path>
+		</image>
+		<!-- Logo anim bzz -->
+		<image name="game-logo1" extra="true">
+			<pos>0.5 0.09</pos> <!-- Должно совпадать с logo -->
+			<maxSize>0.260 0.126</maxSize> <!-- Должно совпадать с logo -->
+			<origin>0.5 0.5</origin> <!-- Должно совпадать с logo -->
+			<opacity>0</opacity>
+			<zIndex>20</zIndex>
+			<path>firstfile(
+				"${themePath}/_inc/logos/" + {game:system:theme} + "-w.svg",
+				"${themePath}/_inc/logos/" + {game:system:theme} + "-w.png",
+				"${themePath}/_inc/logos/" + {game:system:theme} + ".svg",
+				"${themePath}/_inc/logos/" + {game:system:theme} + ".png"
+			)</path>
+			<storyboard>
+				<animation property="opacity" from="0.75" to="0" begin="995" duration="4000" mode="EaseOut"/>
+				<animation property="scale" from="1.05" to="1.4" begin="995" duration="4000" mode="EaseOut"/>
+				<animation property="color" from="FFAAAA" to="FF7777" begin="975" duration="4000" mode="EaseOut"/>
+			</storyboard>
+		</image>
+	</view>
+
+	<view name="detailed">
+<!-- Display system logo for each game -->
+		<!-- Prefer white system logo -->
+		<image name="logo, logo1" extra="true">
+			<visible>false</visible>
+		</image>
+		<image name="game-logo" extra="true">
+			<pos>0.862 0.152</pos>
+			<maxSize>0.200 0.126</maxSize>
+			<origin>0.5 0.5</origin>
+			<zIndex>40</zIndex>
+			<path>firstfile(
+				"${themePath}/_inc/logos/" + {game:system:theme} + "-w.svg",
+				"${themePath}/_inc/logos/" + {game:system:theme} + "-w.png",
+				"${themePath}/_inc/logos/" + {game:system:theme} + ".svg",
+				"${themePath}/_inc/logos/" + {game:system:theme} + ".png"
+			)</path>
+		</image>
+		<!-- Logo anim bzz -->
+		<image name="game-logo1" extra="true">
+			<pos>0.862 0.152</pos> <!-- Должно совпадать с logo -->
+			<maxSize>0.200 0.126</maxSize> <!-- Должно совпадать с logo -->
+			<origin>0.5 0.5</origin> <!-- Должно совпадать с logo -->
+			<opacity>0</opacity>
+			<zIndex>20</zIndex>
+			<path>firstfile(
+				"${themePath}/_inc/logos/" + {game:system:theme} + "-w.svg",
+				"${themePath}/_inc/logos/" + {game:system:theme} + "-w.png",
+				"${themePath}/_inc/logos/" + {game:system:theme} + ".svg",
+				"${themePath}/_inc/logos/" + {game:system:theme} + ".png"
+			)</path>
+			<storyboard>
+				<animation property="opacity" from="0.75" to="0" begin="995" duration="4000" mode="EaseOut"/>
+				<animation property="scale" from="1.05" to="1.4" begin="995" duration="4000" mode="EaseOut"/>
+				<animation property="color" from="FFAAAA" to="FF7777" begin="975" duration="4000" mode="EaseOut"/>
+			</storyboard>
+		</image>
+	</view>
 
 	<view name="gamecarousel">
-		<text name="md_name" extra="true">
+		<!-- Display system logo for each game -->
+		<!-- Prefer white system logo -->
+		<image name="logo, logo1" extra="true">
 			<visible>false</visible>
-		</text>
-		<text name="game_name" extra="true">
-			<visible>true</visible>
-		</text>
+		</image>
+		<image name="game-logo" extra="true">
+			<pos>0.862 0.152</pos>
+			<maxSize>0.200 0.126</maxSize>
+			<origin>0.5 0.5</origin>
+			<opacity>0</opacity>
+			<zIndex>70</zIndex>
+			<path>firstfile(
+				"${themePath}/_inc/logos/" + {game:system:theme} + "-w.svg",
+				"${themePath}/_inc/logos/" + {game:system:theme} + "-w.png",
+				"${themePath}/_inc/logos/" + {game:system:theme} + ".svg",
+				"${themePath}/_inc/logos/" + {game:system:theme} + ".png"
+			)</path>
+			<storyboard event="activate">
+				<animation property="opacity" to="1" begin="2000" duration="600" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="scroll">
+				<animation property="opacity" to="0" duration="150" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" to="0" duration="150" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<!-- Logo anim bzz -->
+		<image name="game-logo1" extra="true">
+			<pos>0.862 0.152</pos> <!-- Должно совпадать с logo -->
+			<maxSize>0.200 0.126</maxSize> <!-- Должно совпадать с logo -->
+			<origin>0.5 0.5</origin> <!-- Должно совпадать с logo -->
+			<opacity>0</opacity>
+			<zIndex>20</zIndex>
+			<path>firstfile(
+				"${themePath}/_inc/logos/" + {game:system:theme} + "-w.svg",
+				"${themePath}/_inc/logos/" + {game:system:theme} + "-w.png",
+				"${themePath}/_inc/logos/" + {game:system:theme} + ".svg",
+				"${themePath}/_inc/logos/" + {game:system:theme} + ".png"
+			)</path>
+			<storyboard event="activate">
+				<animation property="opacity" from="0.75" to="0" begin="2600" duration="4000" mode="EaseOut"/>
+				<animation property="scale" from="1.05" to="1.4" begin="2600" duration="4000" mode="EaseOut"/>
+				<animation property="color" from="FFAAAA" to="FF7777" begin="2600" duration="4000" mode="EaseOut"/>
+			</storyboard>
+		</image>
 	</view>
-	
-	<customView name="Modern Grid">
-		<text name="game-name" extra="true">
-			<text>{game:name} [{game:system}]</text>
-		</text>
+
+	<view name="grid">
+		<!-- Display system logo for each game -->
+		<!-- Prefer white system logo -->
+		<image name="logo, logo1" extra="true">
+			<visible>false</visible>
+		</image>
+		<image name="game-logo" extra="true">
+			<pos>0.5 0.09</pos>
+			<maxSize>0.240 0.126</maxSize>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+			<path>firstfile(
+				"${themePath}/_inc/logos/" + {game:system:theme} + "-w.svg",
+				"${themePath}/_inc/logos/" + {game:system:theme} + "-w.png",
+				"${themePath}/_inc/logos/" + {game:system:theme} + ".svg",
+				"${themePath}/_inc/logos/" + {game:system:theme} + ".png"
+			)</path>
+		</image>
+		<!-- Logo anim bzz -->
+		<image name="game-logo1" extra="true">
+			<pos>0.5 0.09</pos> <!-- Должно совпадать с logo -->
+			<maxSize>0.240 0.126</maxSize> <!-- Должно совпадать с logo -->
+			<origin>0.5 0.5</origin> <!-- Должно совпадать с logo -->
+			<opacity>0</opacity>
+			<zIndex>20</zIndex>
+			<path>firstfile(
+				"${themePath}/_inc/logos/" + {game:system:theme} + "-w.svg",
+				"${themePath}/_inc/logos/" + {game:system:theme} + "-w.png",
+				"${themePath}/_inc/logos/" + {game:system:theme} + ".svg",
+				"${themePath}/_inc/logos/" + {game:system:theme} + ".png"
+			)</path>
+			<storyboard>
+				<animation property="opacity" from="0.75" to="0" begin="995" duration="4000" mode="EaseOut"/>
+				<animation property="scale" from="1.05" to="1.4" begin="995" duration="4000" mode="EaseOut"/>
+				<animation property="color" from="FFAAAA" to="FF7777" begin="975" duration="4000" mode="EaseOut"/>
+			</storyboard>
+		</image>
+	</view>
+
+	<customView name="WallpapersCarousel, WallpapersHeroes, VideoFull">
+		<image name="game-logo" extra="true">
+			<pos>0.12 0.12</pos>
+			<maxSize>0.200 0.126</maxSize>
+			<zIndex>150</zIndex>
+			<opacity>1</opacity>
+			<storyboard event="activate">
+			</storyboard>
+			<storyboard event="scroll">
+			</storyboard>
+			<storyboard event="deactivate">
+			</storyboard>
+		</image>
+		<!-- Logo anim bzz -->
+		<image name="game-logo1" extra="true">
+			<pos>0.12 0.12</pos> <!-- Должно совпадать с logo -->
+			<maxSize>0.200 0.126</maxSize> <!-- Должно совпадать с logo -->
+			<zIndex>20</zIndex>
+			<storyboard event="activate">
+			</storyboard>
+			<storyboard>
+				<animation property="opacity" from="0.75" to="0" begin="995" duration="4000" mode="EaseOut"/>
+				<animation property="scale" from="1.05" to="1.4" begin="995" duration="4000" mode="EaseOut"/>
+				<animation property="color" from="FFAAAA" to="FF7777" begin="975" duration="4000" mode="EaseOut"/>
+			</storyboard>
+		</image>
 	</customView>
-	
-	<customView name="WallpapersHeroes">
-		<text name="game_name" extra="true">
-			<pos>0.472 0.015</pos>
-			<extraTextColor>FFFFFF50</extraTextColor>
-			<color>FFFFFF80</color>
-			<visible>true</visible>
-		</text>
-	</customView>
-	
+
 	<customView name="Grid + Fanart, Carousel + Fanart">
-		<text name="md_name" extra="true">
-			<visible>false</visible>
-		</text>
-		<text name="game_name" extra="true">
-			<visible>true</visible>
-		</text>
+		<image name="game-logo" extra="true">
+			<pos>0.185 0.04</pos>
+			<maxSize>0.1 0.05</maxSize>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+		<!-- Logo anim bzz -->
+		<image name="game-logo1" extra="true">
+			<pos>0.185 0.04</pos>
+			<maxSize>0.1 0.05</maxSize>
+			<origin>0.5 0.5</origin>
+			<opacity>0</opacity>
+			<zIndex>20</zIndex>
+			<storyboard>
+				<animation property="opacity" from="0.75" to="0" begin="995" duration="4000" mode="EaseOut"/>
+				<animation property="scale" from="1.05" to="1.4" begin="995" duration="4000" mode="EaseOut"/>
+				<animation property="color" from="FFAAAA" to="FF7777" begin="975" duration="4000" mode="EaseOut"/>
+			</storyboard>
+		</image>
 	</customView>
-	
-	<customView name="Modern Grid, Content">
-		<text name="md_name" extra="true">
+
+	<customView name="Modern Grid">
+		<image name="game-logo" extra="true">
+			<pos>0.04 0.125</pos>
+			<maxSize>0.09 0.09</maxSize>
+			<origin>0 1</origin>
+			<zIndex>150</zIndex>
+		</image>
+		<!-- Logo anim bzz -->
+		<image name="game-logo1" extra="true">
 			<visible>false</visible>
-		</text>
-		<text name="game_name" extra="true">
-			<visible>false</visible>
-		</text>
+		</image>
 	</customView>
-	
-	<customView name="Carousel + Details + Marquee, Grid + Details + Marquee, Tiles, Tiles + Video, Icons, Wallpapers, WallpapersCarousel, VideoFull">
-		<text name="game_name" extra="true">
-			<pos>0.5 0.015</pos>
-			<fontSize>0.02</fontSize>
-			<visible>true</visible>
-		</text>
+
+	<customView name="Vertically50, Vertically50List">
+		<image name="game-logo" extra="true">
+			<pos>0.3 0.905</pos>
+			<maxSize>0.1 0.05</maxSize>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+		<!-- Logo anim bzz -->
+		<image name="game-logo1" extra="true">
+			<pos>0.3 0.905</pos>
+			<maxSize>0.1 0.05</maxSize>
+			<origin>0.5 0.5</origin>
+			<opacity>0</opacity>
+			<zIndex>100</zIndex>
+			<storyboard>
+				<animation property="opacity" from="0.75" to="0" begin="995" duration="4000" mode="EaseOut"/>
+				<animation property="scale" from="1.05" to="1.4" begin="995" duration="4000" mode="EaseOut"/>
+				<animation property="color" from="FFAAAA" to="FF7777" begin="975" duration="4000" mode="EaseOut"/>
+			</storyboard>
+		</image>
 	</customView>
-	
-	<customView name="Grid + Details, Logo + Details, Carousel, Carousel + Details, Colorful (vertically), Colorful (horizontally)">
-		<text name="md_name" extra="true">
-			<visible>true</visible>
-		</text>
-		<text name="game_name" extra="true">
-			<visible>false</visible>
-		</text>
+
+	<customView name="WallpapersHeroesHor, WallpapersHeroesListHor">
+		<image name="game-logo" extra="true">
+			<pos>0.1 0.12</pos>
+			<maxSize>0.156</maxSize>
+			<origin>0.5 0.5</origin>
+			<opacity>1</opacity>
+			<zIndex>175</zIndex>
+			<storyboard event="activate">
+			</storyboard>
+			<storyboard event="scroll">
+			</storyboard>
+			<storyboard event="deactivate">
+			</storyboard>
+		</image>
+		<!-- Logo anim bzz -->
+		<image name="game-logo1" extra="true">
+			<pos>0.1 0.12</pos>
+			<maxSize>0.156</maxSize>
+			<origin>0.5 0.5</origin>
+			<opacity>0</opacity>
+			<zIndex>100</zIndex>
+			<storyboard>
+				<animation property="opacity" from="0.75" to="0" begin="995" duration="4000" mode="EaseOut"/>
+				<animation property="scale" from="1.05" to="1.4" begin="995" duration="4000" mode="EaseOut"/>
+				<animation property="color" from="FFAAAA" to="FF7777" begin="975" duration="4000" mode="EaseOut"/>
+			</storyboard>
+		</image>
 	</customView>
+
+	<customView name="WallpapersHeroesFullListHor">
+		<image name="game-logo" extra="true">
+			<zIndex>175</zIndex>
+		</image>
+		<!-- Logo anim bzz -->
+		<image name="game-logo1" extra="true">
+			<zIndex>165</zIndex>
+		</image>
+	</customView>
+
 </theme>

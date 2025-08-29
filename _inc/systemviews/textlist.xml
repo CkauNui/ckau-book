@@ -3,6 +3,9 @@
 	<formatVersion>7</formatVersion>
 	<include>${themePath}/_inc/systemviews/noanimate.xml</include>
 	<view name="system" defaultTransition="fade">
+		<text name="systemInfo" extra="static">
+			<visible>false</visible>
+		</text>
 		<image name="sysart" extra="true">
 			<zIndex>12</zIndex>
 		</image>
@@ -29,6 +32,7 @@
 		</image>
 		<textlist name="textlist">
 			<lines>17</lines>
+			<lines if="${screen.ratio} == '4/3'">11</lines>
 			<primaryColor>C0C0C0</primaryColor>
 			<secondaryColor>F0F0F0</secondaryColor>
 			<selectorColor>${centerFadeColor}</selectorColor>
@@ -43,7 +47,7 @@
 			<fontSize>0.028</fontSize>
 			<scrollbarColor>96969620</scrollbarColor>
 			<scrollbarCorner>0.49</scrollbarCorner>
-			<scrollbarSize>0.0065</scrollbarSize>
+			<scrollbarSize>0.005</scrollbarSize>
 			<scrollbarAlignment>outerright</scrollbarAlignment>
 			<scrollSound>${themePath}/_inc/sound/scroll.wav</scrollSound>
 			<scrollSound>${themePath}/_inc/sound/${system.theme}.wav</scrollSound>
@@ -65,14 +69,16 @@
 					</storyboard>
 					<container>
 						<padding>40 0</padding>
-						<text name="nameId" pos="0 0" size="1 1">
+						<text name="nameId" pos="0 0">
 							<text>{system:fullName}</text>
 							<extraTextColor>606060</extraTextColor>
 							<verticalAlignment>center</verticalAlignment>
 							<fontPath>${fontNameBold}</fontPath>
 							<multiLine>false</multiLine>
 							<autoScrollDelay>250</autoScrollDelay>
+							<size>0.38 1</size>
 							<fontSize>0.026</fontSize>
+							<fontSize if="${screen.ratio} == '4/3'">0.032</fontSize>
 							<color>C0C0C0</color>
 							<storyboard event="activate">
 								<animation property="color" to="FFFFFFFF"/>
@@ -83,12 +89,14 @@
 								<animation property="singleLineScroll" to="false"/>
 							</storyboard>
 						</text>
-						<text name="genreId" pos="0.4 0" size="0.2 1">
+						<text name="genreId" pos="0.4 0">
 							<text>{system:manufacturer}</text>
 							<verticalAlignment>center</verticalAlignment>
 							<alignment>left</alignment>
+							<size>0.19 1</size>
 							<fontPath>${fontDescReg}</fontPath>
-							<fontSize>0.018</fontSize>
+							<fontSize>0.02</fontSize>
+							<fontSize if="${screen.ratio} == '4/3'">0.026</fontSize>
 							<color>A0A0A0</color>
 							<multiLine>false</multiLine>
 							<storyboard event="activate">
@@ -100,12 +108,14 @@
 								<animation property="singleLineScroll" to="false"/>
 							</storyboard>
 						</text>
-						<text name="publisherId" pos="0.6 0" size="0.2 1">
+						<text name="publisherId" pos="0.6 0">
 							<text>{system:hardwareType}.proper()</text>
 							<verticalAlignment>center</verticalAlignment>
 							<alignment>left</alignment>
 							<fontPath>${fontDescReg}</fontPath>
-							<fontSize>0.018</fontSize>
+							<size>0.19 1</size>
+							<fontSize>0.02</fontSize>
+							<fontSize if="${screen.ratio} == '4/3'">0.026</fontSize>
 							<color>A0A0A0</color>
 							<multiLine>false</multiLine>
 							<storyboard event="activate">
@@ -117,12 +127,14 @@
 								<animation property="singleLineScroll" to="false"/>
 							</storyboard>
 						</text>
-						<text name="releasedateId" pos="0.8 0" size="0.1 1">
+						<text name="releasedateId" pos="0.8 0">
 							<text>{system:releaseYear}</text>
 							<verticalAlignment>center</verticalAlignment>
 							<alignment>left</alignment>
 							<fontPath>${fontDescReg}</fontPath>
-							<fontSize>0.018</fontSize>
+							<size>0.1 1</size>
+							<fontSize>0.02</fontSize>
+							<fontSize if="${screen.ratio} == '4/3'">0.026</fontSize>
 							<color>A0A0A0</color>
 							<multiLine>false</multiLine>
 							<storyboard event="activate">
@@ -134,12 +146,14 @@
 								<animation property="singleLineScroll" to="false"/>
 							</storyboard>
 						</text>
-						<text name="totalId" pos="0.95 0" size="0.1 1">
+						<text name="totalId" pos="0.95 0">
 							<text>{system:total}</text>
 							<verticalAlignment>center</verticalAlignment>
 							<alignment>left</alignment>
 							<fontPath>${fontDescReg}</fontPath>
+							<size>0.1 1</size>
 							<fontSize>0.018</fontSize>
+							<fontSize if="${screen.ratio} == '4/3'">0.026</fontSize>
 							<color>A0A0A0</color>
 							<multiLine>false</multiLine>
 							<storyboard event="activate">

@@ -3,107 +3,24 @@
 <theme>
 <formatVersion>7</formatVersion>
 <!-- Лого + подробно -->
-	<customView name="Logo + Details" inherits="grid" displayName="${logoDetailsViewName}">
+	<customView name="Logo + Details" inherits="Grid + Details" displayName="${logoDetailsViewName}">
 		<imagegrid name="gamegrid">
 			<size>0.66 0.79</size>
 			<autoLayout>4 3</autoLayout>
+			<autoLayout if="${screen.ratio} == '4/3'">3 3</autoLayout>
 			<autoLayout if="${screen.ratio} == '21/9'">6 3</autoLayout>
 			<imageSource>marquee</imageSource>
 		</imagegrid>
-		<text name="gridtile">
-			<visible>false</visible>
-			<size>0 0</size>
-		</text>
 		<image name="gridtile.favorite">
-			<maxSize>0.14 0.44</maxSize>
+			<maxSize>0.14 0.24</maxSize>
 		</image>
 		<ninepatch name="gridtile.background:selected">
-			<path>./../../_inc/images/framewselsq2.png</path>
+			<path>${themePath}/_inc/images/framewselsq2.png</path>
 			<cornerSize>0 0</cornerSize>
 		</ninepatch>
-		<image name="md_image">
-			<visible>false</visible>
-		</image>
-		<text name="md_name">
-			<pos>0.83 0.158</pos>
-			<size>0.30 0.1</size>
-			<color>F0F0F0</color>
-			<fontSize>0.032</fontSize>
-			<verticalAlignment>bottom</verticalAlignment>
-			<horizontalAlignment>center</horizontalAlignment>
-			<glowColor>${glowColor}</glowColor>
-			<glowSize>2</glowSize>
-			<visible>true</visible>
-		</text>
-		<text name="md_developer">
-			<color>808080FF</color>
-			<pos>0.68 0.206</pos>
-			<size>0.30 0.05</size>
-			<alignment>center</alignment>
-			<fontSize>0.020</fontSize>
-			<glowColor>00000016</glowColor>
-			<glowSize>3</glowSize>
-			<fontPath>${fontNameBold}</fontPath>
-		</text>
 		<video name="md_video">
-			<pos>0.83 0.455</pos>
-			<maxSize>0.30 0.383</maxSize>
-			<origin>0.5 0.5</origin>
-			<delay>1.0</delay>
-			<showSnapshotNoVideo>false</showSnapshotNoVideo>
-			<showSnapshotDelay>true</showSnapshotDelay>
+			<delay>1.5</delay>
 			<snapshotSource>thumbnail</snapshotSource>
-			<effect>none</effect>
-			<zIndex>110</zIndex>
 		</video>
-		<image name="md_marquee">
-			<visible>false</visible>
-		</image>
-		<text name="md_description">
-			<pos>0.68 0.66</pos>
-			<size>0.30 0.255</size>
-			<fontSize>0.024</fontSize>
-			<color>A0A0B0</color>
-			<lineSpacing>1.3</lineSpacing>
-			<fontPath>${fontDescReg}</fontPath>
-		</text>
-
-		<datetime name="md_releasedate">
-			<origin>0 0</origin>
-			<pos>0.8725 0.9245</pos>
-			<size>0.03 0.022</size>
-			<rotation>0</rotation>
-		</datetime>
-		<image name="md_flag">
-			<origin>0 0</origin>
-			<pos>0.8475 0.9245</pos>
-		</image>
-		<rating name="md_rating">
-			<pos>0.9595 0.920</pos>
-			<rotation>0</rotation>
-		</rating>
-		<text name="md_players">
-			<pos>0.832 0.929</pos>
-		</text>
-		<image name="md_manual,md_nomanual">
-			<pos>0.808 0.934</pos>
-		</image>
-		<image name="md_cheevos,md_notcheevos">
-			<pos>0.7865 0.934</pos>
-		</image>
-		<image name="fake_cheevos" extra="true">
-			<pos>0.7865 0.934</pos>
-		</image>
-		<image name="md_savestate,md_nosavestate">
-			<pos>0.765 0.934</pos>
-			<x ifCheevos="false">0.765</x>
-			<y ifCheevos="false">0.934</y>
-		</image>
-		<image name="md_hidden">
-			<pos>0.7425 0.934</pos>
-		</image>
-		<image name="md_kidgame,md_notkidgame">
-			<pos>0.722 0.934</pos>
-		</image>
 	</customView>
 </theme>

@@ -6,6 +6,7 @@
 	<customView name="Icons" inherits="Tiles" displayName="${iconsViewName}">
 		<imagegrid name="gamegrid">
 			<autoLayout>7 2</autoLayout>
+			<autoLayout if="${screen.ratio} == '4/3'">5 2</autoLayout>
 			<cellProportion>0.6</cellProportion>
 			<cellProportion verticalScreen="true">0.77</cellProportion>
 			<autoLayout verticalScreen="true">2 0</autoLayout>
@@ -16,7 +17,7 @@
 			<size>1 0.12</size>
 			<padding>0 0.01 0 0.1</padding>
 		</text>
-		<text name="gridtile_selected">
+		<text name="gridtile:selected">
 			<singleLineScroll>true</singleLineScroll>
 		</text>
 		<image name="gridtile.image">

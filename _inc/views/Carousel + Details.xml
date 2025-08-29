@@ -3,101 +3,220 @@
 <theme>
 <formatVersion>7</formatVersion>
 <!-- Карусель + подробно -->
-	<customView name="Carousel + Details" inherits="Carousel" tinyScreen="false" displayName="${carouselDetailsViewName}">
+	<customView name="Carousel + Details" inherits="grid" displayName="${carouselDetailsViewName}">
 		<imagegrid name="gamegrid">
+			<pos>0 0.16</pos>
 			<size>0.66 0.84</size>
+			<padding>0.01 0.14 0.01 0.30</padding>
+			<scrollDirection>horizontal</scrollDirection>
 			<autoLayout>3 1</autoLayout>
+			
+			<margin if="${screen.ratio} == '4/3'">-0.06 0</margin>
+			<autoLayout if="${screen.ratio} == '4/3'">3 1</autoLayout>
 			<autoLayout if="${screen.ratio} == '21/9'">5 1</autoLayout>
+			<autoLayoutSelectedZoom>1.50</autoLayoutSelectedZoom>
+			<centerSelection>true</centerSelection>
+			<scrollLoop>true</scrollLoop>
 		</imagegrid>
+		<gridtile name="default">
+			<padding>64 16</padding>
+			<reflexion>0.24 0.0</reflexion>
+		</gridtile>
+		<gridtile name="selected">
+			<backgroundCenterColor>FFFFFF00</backgroundCenterColor>
+			<backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
+			<padding>64 16</padding>
+		</gridtile>
+		<text name="gridtile">
+			<color>80808080</color>
+			<fontSize>0.016</fontSize>
+			<size>1 0</size>
+		</text>
+		<text name="gridtile_selected">
+			<color>FFFFFF00</color>
+			<fontSize>0.035</fontSize>
+			<size>1 0</size>
+		</text>
+		<ninepatch name="gridtile.background:selected">
+			<color>FFFFFF00</color>
+			<visible>false</visible>
+			<animateColor>FFFFFF00</animateColor>
+			<animateColorTime>0</animateColorTime>
+		</ninepatch>
+		
 		<text name="md_name">
-			<pos>0.83 0.158</pos>
+			<pos>0.815 0.158</pos>
 			<size>0.30 0.1</size>
 			<color>F0F0F0</color>
 			<fontSize>0.032</fontSize>
+			<pos if="${screen.ratio} == '4/3'">0.80 0.158</pos>
+			<fontSize if="${screen.ratio} == '4/3'">0.034</fontSize>
 			<verticalAlignment>bottom</verticalAlignment>
 			<horizontalAlignment>center</horizontalAlignment>
 			<glowColor>${glowColor}</glowColor>
 			<glowSize>2</glowSize>
 			<visible>true</visible>
 		</text>
-		<text name="md_developer">
-			<pos>0.68 0.206</pos>
-			<size>0.30 0.05</size>
-			<fontSize>0.020</fontSize>
-			<fontPath>${fontNameReg}</fontPath>
-		</text>
+
+	<!-- Второй контейнер с иконками и текстом издателя, разработчика -->
+	<container name="container-gamedata2" extra="true">
+		<pos>0.665 0.21</pos>
+		<pos if="${screen.ratio} == '4/3'">0.65 0.21</pos>
+		<size>0.30 0.05</size>
+		<orientation>horizontal</orientation>
+		<backgroundColor>FF000000</backgroundColor>
+		<zIndex>150</zIndex>
+		<separator>0.01</separator>
+		
+		<!-- Разработчик (если не = издателю) -->
+		<container name="developer-container" visible="{game:publisher} != {game:developer} &amp;&amp; !empty({game:developer})">
+		<pos>0 0</pos>
+			<text>
+				<fontSize>0.024</fontSize>
+				<fontSize if="${screen.ratio} == '4/3'">0.03</fontSize>
+				<fontPath>${fontNameReg}</fontPath>
+				<text>{game:developer}</text>
+				<color>808080FF</color>
+				<size>1 1</size>
+				<alignment>center</alignment>
+				<multiLine>false</multiLine>
+				<autoScrollDelay>3000</autoScrollDelay>
+				<singleLineScroll>true</singleLineScroll>
+				<glowColor>00000035</glowColor>
+				<glowSize>1</glowSize>
+				<glowOffset>3 2</glowOffset>
+			</text>
+		</container>
+		
+		<!-- Если издатель == разработчик -->
+		<container name="dev-pub-container" visible="{game:publisher} == {game:developer} &amp;&amp; !empty({game:developer})">
+		<pos>0 0</pos>
+			<text>
+				<fontSize>0.024</fontSize>
+				<fontPath>${fontNameReg}</fontPath>
+				<text>{game:developer}</text>
+				<color>808080FF</color>
+				<size>1 1</size>
+				<alignment>center</alignment>
+				<multiLine>false</multiLine>
+				<autoScrollDelay>3000</autoScrollDelay>
+				<singleLineScroll>true</singleLineScroll>
+				<glowColor>00000035</glowColor>
+				<glowSize>1</glowSize>
+				<glowOffset>3 2</glowOffset>
+			</text>
+		</container>
+	</container>
+
 		<video name="md_video">
-			<pos>0.83 0.455</pos>
+			<pos>0.815 0.455</pos>
 			<maxSize>0.30 0.383</maxSize>
+			<pos if="${screen.ratio} == '4/3'">0.80 0.455</pos>
 			<origin>0.5 0.5</origin>
-			<delay>0.1</delay>
-			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<delay>1.0</delay>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
 			<showSnapshotDelay>true</showSnapshotDelay>
 			<snapshotSource>image</snapshotSource>
 			<effect>none</effect>
 			<zIndex>110</zIndex>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
+			</storyboard>
+			<shader>
+				<path>:/shaders/border.glsl</path>
+				<cornerRadius>0.01</cornerRadius>
+				<innerShadowSize>0.01</innerShadowSize>
+				<innerShadowColor>00000030</innerShadowColor>
+				<outerShadowSize>0.020</outerShadowSize>
+				<outerShadowColor>00000050</outerShadowColor>
+			</shader>
 		</video>
-		<image name="md_marquee">
-			<visible>false</visible>
-		</image>
 		<text name="md_description">
-			<pos>0.68 0.68</pos>
-			<size>0.3 0.2</size>
+			<fontPath>${fontNameReg}</fontPath>
+			<pos>0.665 0.66</pos>
+			<size>0.3 0.22</size>
 			<fontSize>0.024</fontSize>
+			<pos if="${screen.ratio} == '4/3'">0.65 0.66</pos>
+			<fontSize if="${screen.ratio} == '4/3'">0.03</fontSize>
 			<color>A0A0B0</color>
-			<lineSpacing>1.2</lineSpacing>
-			<fontPath>${fontDescReg}</fontPath>
+			<lineSpacing>1.1</lineSpacing>
 		</text>
-		<datetime name="md_releasedate">
-			<origin>0 0</origin>
-			<pos>0.8725 0.9145</pos>
-			<size>0.03 0.022</size>
-			<rotation>0</rotation>
-			<fontSize if="${screen.ratio} == '4/3'">0.02</fontSize>
-			<pos if="${screen.ratio} == '4/3'">0.8425 0.915</pos>
-		</datetime>
-		<image name="md_flag">
-			<origin>0 0</origin>
-			<pos>0.85 0.915</pos>
-			<pos if="${screen.ratio} == '21/9'">0.85 0.912</pos>
-			<pos if="${screen.ratio} == '4/3'">0.817 0.917</pos>
-		</image>
-		<rating name="md_rating">
-			<pos>0.9595 0.910</pos>
-			<rotation>0</rotation>
-			<pos if="${screen.ratio} == '4/3'">0.9595 0.910</pos>
-		</rating>
-		<text name="md_players">
-			<pos>0.832 0.922</pos>
-			<fontSize>0.03</fontSize>
-			<fontSize if="${screen.ratio} == '4/3'">0.029</fontSize>
-			<pos if="${screen.ratio} == '4/3'">0.802 0.922</pos>
-		</text>
-		<image name="md_manual,md_nomanual">
-			<pos>0.808 0.924</pos>
-			<pos if="${screen.ratio} == '4/3'">0.778 0.924</pos>
-		</image>
-		<image name="md_cheevos,md_notcheevos">
-			<pos>0.7865 0.924</pos>
-			<pos if="${screen.ratio} == '4/3'">0.7565 0.924</pos>
-		</image>
-		<image name="fake_cheevos" extra="true">
-			<pos>0.7865 0.924</pos>
-			<pos if="${screen.ratio} == '4/3'">0.7565 0.924</pos>
-		</image>
-		<image name="md_savestate,md_nosavestate">
-			<pos>0.765 0.924</pos>
-			<x ifCheevos="false">0.765</x>
-			<y ifCheevos="false">0.924</y>
-			<pos if="${screen.ratio} == '4/3'">0.735 0.924</pos>
-		</image>
-		<image name="md_hidden">
-			<pos>0.7425 0.924</pos>
-			<pos if="${screen.ratio} == '4/3'">0.7125 0.924</pos>
-		</image>
-		<image name="md_kidgame,md_notkidgame">
-			<pos>0.722 0.924</pos>
-			<pos if="${screen.ratio} == '4/3'">0.692 0.924</pos>
-		</image>
+		
+		<!-- Панель с рейтингом, годом и т.д. -->
+		<stackpanel name="container-stars" extra="true">
+			<separator>0.01</separator>
+			<pos>0.665 0.89</pos>
+			<size>0.298 0.032</size>
+			<pos if="${screen.ratio} == '4/3'">0.65 0.89</pos>
+			<size if="${screen.ratio} == '4/3'">0.298 0.042</size>
+			<orientation>horizontal</orientation>
+			<backgroundColor>FF000000</backgroundColor>
+			<zIndex>150</zIndex>
+			
+			<!-- Год выпуска -->
+			<image>
+				<path>${themePath}/_inc/images/game_info_releasedate.svg</path>
+				<linearSmooth>true</linearSmooth>
+				<color>666666</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+				<visible>!empty({game:releaseyear})</visible>
+			</image>
+			<text>
+				<pos>0.08 0</pos> <!-- Сдвигает текст правее иконки -->
+				<fontSize>0.022</fontSize>
+				<fontPath>${fontNameReg}</fontPath>
+				<text>{game:releaseyear}</text>
+				<color>666666</color>
+				<padding>4 0 4 0</padding>
+				<multiLine>false</multiLine>
+				<autoScrollDelay>3000</autoScrollDelay>
+				<singleLineScroll>true</singleLineScroll>
+				<visible>!empty({game:releaseyear})</visible>
+				<!-- 4:3 -->
+				<pos if="${screen.ratio} == '4/3'">0.1 0</pos>
+				<fontSize if="${screen.ratio} == '4/3'">0.027</fontSize>
+			</text>
+			
+			<!-- Рейтинг -->
+			<text name="gamedata-stars">
+				<fontSize>0.028</fontSize>
+				<text>{game:stars}</text>
+				<color>666666</color>
+				<padding>4 0 8 0</padding>
+				<visible>!empty({game:stars})</visible>
+				<visible if="${screen.ratio} == '4/3'">false</visible>
+			</text>
+			
+			<!-- Жанр -->
+			<image>
+				<path>${themePath}/_inc/images/game_info_genre.svg</path>
+				<linearSmooth>true</linearSmooth>
+				<color>666666</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize><pos>0.48 0</pos>
+				<visible>!empty({game:genre})</visible>
+			</image>
+			<text>
+				<pos>0.08 0</pos> <!-- Сдвигает текст правее иконки -->
+				<fontSize>0.022</fontSize>
+				<fontPath>${fontNameReg}</fontPath>
+				<text>{game:genre}</text>
+				<color>666666</color>
+				<padding>4 0 4 0</padding>
+				<multiLine>false</multiLine>
+				<autoScrollDelay>3000</autoScrollDelay>
+				<singleLineScroll>true</singleLineScroll>
+				<visible>!empty({game:genre})</visible>
+				<!-- 4:3 -->
+				<pos if="${screen.ratio} == '4/3'">0.1 0</pos>
+				<fontSize if="${screen.ratio} == '4/3'">0.027</fontSize>
+			</text>
+		</stackpanel>
 	</customView>
 </theme>

@@ -11,7 +11,7 @@
 			<autoLayoutSelectedZoom>1.02</autoLayoutSelectedZoom>
 			<imageSource>image</imageSource>
 			<padding>0.03 0.05 0.03 0.04</padding>
-			<zIndex>11</zIndex>
+			<zIndex>21</zIndex>
 		</imagegrid>
 		<gridtile name="default">
 			<size>0.225 0.254</size>
@@ -36,7 +36,7 @@
 			<glowColor>00000008</glowColor>
 			<glowSize>2</glowSize>
 		</text>
-		<text name="gridtile_selected">
+		<text name="gridtile:selected">
 			<singleLineScroll>false</singleLineScroll>
 		</text>
 		<image name="gridtile.marquee">
@@ -44,10 +44,12 @@
 			<pos>0.5 0.5</pos>
 			<origin>0.5 0.5</origin>
 			<size>0.50 0.50</size>
+			<size  if="${screen.ratio} == '4/3'">0.70 0.70</size>
 		</image>
 		<image name="gridtile.marquee:selected">
 			<color>FFFFFFFF</color>
 			<size>0.65 0.65</size>
+			<size  if="${screen.ratio} == '4/3'">0.85 0.85</size>
 		</image>
 		<image name="gridtile.marquee:videoplaying">
 			<color>FFFFFFA0</color>
