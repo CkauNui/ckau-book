@@ -1,8 +1,8 @@
 # Ckau-Book
 
 Download [Latest version](https://github.com/CkauNui/ckau-book/archive/refs/heads/master.zip). It is better to download and update via EmulationStation (ES).<br/>
-Download [Old Ckau-Book 2.0 (2025)](https://drive.google.com/file/d/1UrNCiXP8hPNvTUDILyaGTuyB1guhW-Xj/view?usp=sharing) for old ver. Batocera or old ES.<br/>
-Download [Very Old Ckau-Book (2023)](https://drive.google.com/file/d/1GOpP9HHNuaKdBdOTzB6GAZoH8uRjj6cm/view?usp=sharing) for old ver. Batocera or old ES.<br/><br/>
+Download [Old Ckau-Book 2.0 (2025)](https://drive.google.com/file/d/1UrNCiXP8hPNvTUDILyaGTuyB1guhW-Xj/view?usp=sharing) for old ver. Batocera/RetroBat or old ES.<br/>
+Download [Very Old Ckau-Book (2023)](https://drive.google.com/file/d/1GOpP9HHNuaKdBdOTzB6GAZoH8uRjj6cm/view?usp=sharing) for old ver. Batocera/RetroBat or old ES.<br/><br/>
 <p>
 <img align="right" width="200px" src="https://i.imgur.com/eCZPBDE.png">
 Emulationstation Theme for Batocera, RetroBat, EmuELEC.<br/>
