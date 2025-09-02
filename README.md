@@ -26,6 +26,8 @@ Supported languages: English, French, German, Spanish, Italian, Polish, Portugue
 
 ## Video Playlist
 [Ckau-Book 2.0 Update](https://youtu.be/ZZAhYxToddg)<br/>
+[Ckau-Book 3.0 Update](https://youtu.be/Vzy6Q1oy1y0?si=Uj4blm9zB6QUs6K9)<br/>
+[Ckau-Book 3.0 - Anbernic Update](https://youtu.be/BMwluAKQzsg?si=LKmv8PJ02bFg3FMK)<br/>
 [YouTube Playlist](https://www.youtube.com/playlist?list=PLlc3zkd7FLPScpaFz9Gf7WWrcR0v21pDv)
 
 ## Screenshots
