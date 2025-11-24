@@ -63,8 +63,8 @@ Batocera users can choose to use manual mode too.
 
 In this case, addons must be downloaded manually from the corresponding GitHub repositories:
 
-| Addon | Repository | Description |
-| :-- | :-- | :-- |
+| Addon | Description |
+| :-- | :-- |
 | [COLORFUL 4K Images](https://github.com/CkauNui/ckau-book-addons-Colorful-4K-Images) | High-detailed, beautiful 3840x2160 system images |
 | [COLORFUL Video Pack](https://github.com/CkauNui/ckau-book-addons-Colorful-Video) | Gameplay videos for each system |
 | [CINEMATIC Video Pack](https://github.com/CkauNui/ckau-book-addons-Cinematic-Video) | Full-screen cinematic system view |
