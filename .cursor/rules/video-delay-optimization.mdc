@@ -1,0 +1,46 @@
+---
+description: Changelog and documentation for video delay optimization in ckau-book theme
+alwaysApply: true
+---
+
+# Video Delay Optimization - Changelog (January 2026)
+
+## Problem Solved
+Videos in system views were starting too quickly, causing potential GPU crashes as the graphics card didn't have enough time to load the video.
+
+## Changes Applied
+
+### 1. Video Delay (+1 second)
+**Files:** `_inc/layouts/*.xml` (431 files)
+- `<delay>0</delay>` → `<delay>1</delay>`
+- The delay gives the GPU time to load the video without crashing
+
+### 2. Image Animations (+1000ms)
+**Files:** `_inc/layouts/*.xml`
+- `sysbg-video`: `begin="2000"` → `begin="3000"`
+- `videobox`: `begin="2000"` → `begin="2000"` (stays at 2000 because the 1s video delay effectively brings it to 3000ms)
+
+**Files:** `_inc/systemviews/animate.xml` and `animatetransparent.xml`
+- `sysart`: `begin="2000"` → `begin="3000"`
+
+### 3. Text Animations (+1000ms)
+**File:** `_inc/systemviews/animate.xml`
+- `TextManufacturer`: `begin="2500"` → `begin="3500"`
+- `TextName`: `begin="2500"` → `begin="3500"`
+- `TextVariant`: `begin="2500"` → `begin="3500"`
+- `TextDate`: `begin="3000"` → `begin="4000"`
+- `TextDesc`: `begin="3000"` → `begin="4000"`
+
+## Final Timing (from page load)
+| Element | Timing |
+|---------|--------|
+| Video starts loading | 0ms |
+| Video starts playing | 1000ms (delay) |
+| Images + video movement | 3000ms |
+| Manufacturer/Name/Variant texts | 3500ms |
+| Date/Desc texts | 4000ms |
+
+## Important Notes
+- The `<delay>1</delay>` is ESSENTIAL - never remove it
+- Video animation uses `begin="2000"` because it starts after the 1s delay
+- Other animations use `begin="3000"` because they start from page load
