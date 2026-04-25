@@ -2,51 +2,29 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
-			<origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
+		<image name="sysbg-video">
 			<pos>0.482 0.325</pos>
-			<maxSize>0.27</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.202 0.325" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.23 0.27</size>
+			<size if="${screen.ratio} == '16/10'">0.25 0.27</size>
+			<size if="${screen.ratio} == '4/3'">0.3 0.27</size>
+			<size if="${screen.ratio} == '21/9'">0.17 0.27</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
-			<origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
+		<video name="videobox">
 			<pos>0.482 0.325</pos>
 			<maxSize>0.26</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.202 0.325" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<pos if="${screen.ratio} == '4/3'">0.476 0.325</pos>
+			<pos if="${screen.ratio} == '21/9'">0.488 0.325</pos>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1977</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Apple</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Apple II</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Apple II (stylized as apple ][) is an 8-bit home computer and one of the world's first highly successful mass-produced microcomputer products. It was designed primarily by Steve Wozniak; Steve Jobs oversaw the development of the Apple II's foam-molded plastic case and Rod Holt developed the switching power supply. It was introduced by Jobs and Wozniak at the 1977 West Coast Computer Faire and marks Apple's first launch of a personal computer aimed at a consumer market—branded toward American households rather than businessmen or computer hobbyists.
 
 The three computers that Byte Magazine referred to as the "1977 Trinity" of home computing: the Commodore PET 2001, the Apple II, and the TRS-80 Model I.

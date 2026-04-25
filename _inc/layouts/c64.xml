@@ -2,51 +2,30 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">0.52 0.5</origin>
+		<image name="sysbg-video">
 			<pos>0.518 0.33</pos>
-			<maxSize>0.23</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.238 0.33" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.2 0.27</size>
+			<size if="${screen.ratio} == '16/10'">0.23 0.27</size>
+			<size if="${screen.ratio} == '4/3'">0.28 0.27</size>
+			<size if="${screen.ratio} == '21/9'">0.14 0.27</size>
+			<pos if="${screen.ratio} == '21/9'">0.512 0.33</pos>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '21/9'">0.52 0.5</origin>
+		<video name="videobox">
 			<pos>0.518 0.33</pos>
 			<maxSize>0.22</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.238 0.33" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<pos if="${screen.ratio} == '4/3'">0.524 0.33</pos>
+			<pos if="${screen.ratio} == '21/9'">0.512 0.33</pos>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1982</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Commodore</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>64</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Commodore 64, also known as the C64 or the CBM 64, is an 8-bit home computer introduced in January 1982 by Commodore International (first shown at the Consumer Electronics Show, in Las Vegas, January 7–10, 1982). It has been listed in the Guinness World Records as the highest-selling single computer model of all time, with independent estimates placing the number sold between 12.5 and 17 million units. Volume production started in early 1982, marketing in August for US$595 (equivalent to $1,576 in 2019). Preceded by the Commodore VIC-20 and Commodore PET, the C64 took its name from its 64 kilobytes (65,536 bytes) of RAM. With support for multicolor sprites and a custom chip for waveform generation, the C64 could create superior visuals and audio compared to systems without such custom hardware.
 
 The C64 dominated the low-end computer market (except in the UK) for most of the 1980s. For a substantial period (1983–1986), the C64 had between 30% and 40% share of the US market and two million units sold per year, outselling IBM PC compatibles, Apple computers, and the Atari 8-bit family of computers. Sam Tramiel, a later Atari president and the son of Commodore's founder, said in a 1989 interview, "When I was at Commodore we were building 400,000 C64s a month for a couple of years." In the UK market, the C64 faced competition from the BBC Micro and the ZX Spectrum, but the C64 was still the second most popular computer in the UK after the ZX Spectrum.</text>

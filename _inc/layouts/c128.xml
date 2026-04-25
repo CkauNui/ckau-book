@@ -2,49 +2,27 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.354</pos>
-			<maxSize>0.25</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.354" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.2 0.25</size>
+			<size if="${screen.ratio} == '16/10'">0.23 0.25</size>
+			<size if="${screen.ratio} == '4/3'">0.28 0.25</size>
+			<size if="${screen.ratio} == '21/9'">0.14 0.25</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+		<video name="videobox">
 			<pos>0.5 0.354</pos>
 			<maxSize>0.24</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.354" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1985</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Commodore</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>128</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Commodore 128, also known as the C128, C-128, C= 128, is the last 8-bit home computer that was commercially released by Commodore Business Machines (CBM). Introduced in January 1985 at the CES in Las Vegas, it appeared three years after its predecessor, the bestselling Commodore 64.
 
 The C128 is a significantly expanded successor to the C64, with nearly full compatibility. The newer machine has 128 KB of RAM in two 64 KB banks, and an 80-column color video output. It has a redesigned case and keyboard. Also included is a Zilog Z80 CPU which allows the C128 to run CP/M, as an alternative to the usual Commodore BASIC environment. The presence of the Z80 and the huge CP/M software library it brings, coupled with the C64's software library, gives the C128 one of the broadest ranges of available software among its competitors.

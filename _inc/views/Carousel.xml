@@ -1,73 +1,740 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 <formatVersion>7</formatVersion>
 <!-- Карусель -->
-	<customView name="Carousel" inherits="grid" displayName="${carouselViewName}">
-		<text name="md_name">
-			<color>FFFFFFFF</color>
-			<pos>0.5 0.82</pos>
-			<size>0.92 0.10</size>
-			<fontSize>0.026</fontSize>
-			<fontSize if="${screen.ratio} == '4/3'">0.035</fontSize>
-			<glowColor>00000035</glowColor>
-			<glowSize>1</glowSize>
-			<glowOffset>3 2</glowOffset>
-			<multiLine>false</multiLine>
-			<autoScrollDelay>3000</autoScrollDelay>
-			<singleLineScroll>true</singleLineScroll>
-		</text>
-		<text name="md_developer">
-			<color>808080FF</color>
+	<customView name="Carousel" inherits="gamecarousel" displayName="${carouselViewName}">
+	<!-- Disable gamecarousel view -->
+	<image name="thumbnail-art">
+		<visible>false</visible>
+	</image>
+	<image name="gamelist-background">
+		<visible>false</visible>
+	</image>
+	<stackpanel name="container-icons">
+		<visible>false</visible>
+	</stackpanel>
+	<container name="container-gamedata">
+		<visible>false</visible>
+	</container>
+	<container name="container-gamedata2">
+		<visible>false</visible>
+	</container>
+	<stackpanel name="container-gamedata3">
+		<visible>false</visible>
+	</stackpanel>
+	<stackpanel name="container-flags">
+		<visible>false</visible>
+	</stackpanel>
+	
+	<!-- Панель с иконками игроков, ачивок, руля и т.д.-->
+		<stackpanel name="stackpanel-icons">
+			<separator>0.01</separator>
 			<pos>0.04 0.80</pos>
-			<size>0.92 0.10</size>
-			<fontSize>0.020</fontSize>
-			<pos if="${screen.ratio} == '4/3'">0.04 0.82</pos>
-			<fontSize if="${screen.ratio} == '4/3'">0.026</fontSize>
-			<alignment>center</alignment>
-			<fontPath>${fontNameBold}</fontPath>
+			<size>0.9 0.032</size>
+			<size if="${screen.ratio} == '4/3'">0.9 0.036</size>
+			<orientation>horizontal</orientation>
+			<zIndex>750</zIndex>
+			
+			<image name="icons-favorite">
+				<visible>{game:favorite}</visible>
+				<path>${themePath}/_inc/images/heart.svg</path>
+				<linearSmooth>true</linearSmooth>
+				<color>D0D0D0D0</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+			</image>
+			<text name="icons-players">
+				<fontPath>${fontPlayers}</fontPath>
+				<text>{game:playerCount}</text>
+				<alignment>center</alignment>
+				<fontSize>0.03</fontSize>
+				<fontSize if="${screen.ratio} == '4/3'">0.036</fontSize>
+				<color>D0D0D0D0</color>
+			</text>
+			<image name="icons-manual">
+				<visible>{game:hasManual}</visible>
+				<path>${themePath}/_inc/images/book.png</path>
+				<linearSmooth>true</linearSmooth>
+				<color>D0D0D0D0</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+			</image>
+			
+			<image name="icons-cheevos">
+				<visible>{game:cheevos}</visible>
+				<path>${themePath}/_inc/icons/Contest.png</path>
+				<linearSmooth>true</linearSmooth>
+				<color>D0D0D0D0</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+			</image>
+			<image name="icons-save">
+				<visible>{game:hasSaveState}</visible>
+				<path>${themePath}/_inc/icons/SaveState.png</path>
+				<linearSmooth>true</linearSmooth>
+				<color>D0D0D0D0</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+			</image>
+			
+			<image name="icons-wheel">
+				<visible>{game:wheelGame}</visible>
+				<linearSmooth>true</linearSmooth>
+				<padding>0 0</padding>
+				<path>${themePath}/_inc/images/wheel.svg</path>
+				<maxSize>1 1</maxSize>
+				<color>D0D0D0D0</color>
+			</image>
+			
+			<image name="icons-gun">
+				<visible>{game:gunGame}</visible>
+				<linearSmooth>true</linearSmooth>
+				<padding>0 0</padding>
+				<path>${themePath}/_inc/images/gun.svg</path>
+				<maxSize>1 1</maxSize>
+				<color>D0D0D0D0</color>
+			</image>
+			
+			<image name="icons-padtokey">
+				<visible>{game:hasKeyboardMapping}</visible>
+				<linearSmooth>true</linearSmooth>
+				<padding>0 0</padding>
+				<path>${themePath}/_inc/images/padtokey.png</path>
+				<maxSize>1 1</maxSize>
+				<color>D0D0D0D0</color>
+			</image>
+			
+			<image name="icons-hidden">
+				<visible>{game:hidden}</visible>
+				<linearSmooth>true</linearSmooth>
+				<padding>0 0</padding>
+				<path>${themePath}/_inc/images/hidden.svg</path>
+				<maxSize>1 1</maxSize>
+				<color>D0D0D0D0</color>
+			</image>
+			<image name="icons-kid">
+				<visible>{game:kidGame}</visible>
+				<linearSmooth>true</linearSmooth>
+				<padding>0 0</padding>
+				<path>${themePath}/_inc/images/kid.svg</path>
+				<maxSize>1 1</maxSize>
+				<color>D0D0D0D0</color>
+			</image>
+		</stackpanel>
+
+	<!-- 2 панель -->
+		<stackpanel name="2st-line">
+			<separator>0.01</separator>
+			<pos>0.04 0.84</pos>
+			<size>0.9 0.032</size>
+			<!-- <size if="${screen.ratio} == '4/3'">0.9 0.042</size> -->
+			<size if="${screen.ratio} == '4/3'">0.9 0.036</size>
+			<orientation>horizontal</orientation>
+			<zIndex>750</zIndex>
+			
+			<!-- Год выпуска -->
+			<image name="icons-releaseyear">
+				<path>${themePath}/_inc/images/game_info_releasedate.svg</path>
+				<linearSmooth>true</linearSmooth>
+				<color>D0D0D0D0</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+				<visible>!empty({game:releaseyear})</visible>
+			</image>
+			<text name="gamedata-releaseyear">
+				<fontSize>0.024</fontSize>
+				<fontSize if="${screen.ratio} == '4/3'">0.029</fontSize>
+				<fontPath>${fontNameReg}</fontPath>
+				<text>{game:releaseyear}</text>
+				<color>D0D0D0D0</color>
+				<padding>4 0 4 0</padding>
+				<visible>!empty({game:releaseyear})</visible>
+			</text>
+			
+			<!-- Издатель (если не = разработчику) -->
+			<image name="icons-publisher">
+				<path>${themePath}/_inc/images/game_info_publisher.svg</path>
+				<linearSmooth>true</linearSmooth>
+				<color>D0D0D0D0</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+				<visible>{game:publisher} != {game:developer} &amp;&amp; !empty({game:publisher})</visible>
+			</image>
+			<text name="gamedata-publisher">
+				<fontSize>0.024</fontSize>
+				<fontSize if="${screen.ratio} == '4/3'">0.029</fontSize>
+				<fontPath>${fontNameReg}</fontPath>
+				<text>{game:publisher}</text>
+				<color>D0D0D0D0</color>
+				<padding>4 0 4 0</padding>
+				<visible>{game:publisher} != {game:developer} &amp;&amp; !empty({game:publisher})</visible>
+				<multiLine>false</multiLine>
+				<autoScrollDelay>3000</autoScrollDelay>
+				<singleLineScroll>true</singleLineScroll>
+			</text>
+			
+			<!-- Разработчик (если не = издателю) -->
+			<image name="icons-developer">
+				<path>${themePath}/_inc/images/game_info_developer.svg</path>
+				<linearSmooth>true</linearSmooth>
+				<color>D0D0D0D0</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+				<visible>{game:publisher} != {game:developer} &amp;&amp; !empty({game:developer})</visible>
+			</image>
+			<text name="gamedata-developer">
+				<fontSize>0.024</fontSize>
+				<fontSize if="${screen.ratio} == '4/3'">0.029</fontSize>
+				<fontPath>${fontNameReg}</fontPath>
+				<text>{game:developer}</text>
+				<color>D0D0D0D0</color>
+				<padding>4 0 4 0</padding>
+				<visible>{game:publisher} != {game:developer} &amp;&amp; !empty({game:developer})</visible>
+				<multiLine>false</multiLine>
+				<autoScrollDelay>3000</autoScrollDelay>
+				<singleLineScroll>true</singleLineScroll>
+			</text>
+			
+			<!-- Если издатель == разработчик -->
+			<image name="icons-developer-publisher">
+				<path>${themePath}/_inc/images/game_info_publisher.svg</path>
+				<linearSmooth>true</linearSmooth>
+				<color>D0D0D0D0</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+				<visible>{game:publisher} == {game:developer} &amp;&amp; !empty({game:publisher}) &amp;&amp; !empty({game:developer})</visible>
+			</image>
+			<image name="icons-developer-publisher2">
+				<path>${themePath}/_inc/images/game_info_developer.svg</path>
+				<linearSmooth>true</linearSmooth>
+				<color>D0D0D0D0</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+				<visible>{game:publisher} == {game:developer} &amp;&amp; !empty({game:publisher}) &amp;&amp; !empty({game:developer})</visible>
+			</image>
+			<text name="gamedata-developer-publisher">
+				<fontSize>0.024</fontSize>
+				<fontSize if="${screen.ratio} == '4/3'">0.029</fontSize>
+				<fontPath>${fontNameReg}</fontPath>
+				<text>{game:developer}</text>
+				<color>D0D0D0D0</color>
+				<padding>4 0 4 0</padding>
+				<visible>{game:publisher} == {game:developer} &amp;&amp; !empty({game:publisher}) &amp;&amp; !empty({game:developer})</visible>
+				<multiLine>false</multiLine>
+				<autoScrollDelay>3000</autoScrollDelay>
+				<singleLineScroll>true</singleLineScroll>
+			</text>
+			
+			<!-- Жанр -->
+			<image>
+				<path>${themePath}/_inc/images/game_info_genre.svg</path>
+				<linearSmooth>true</linearSmooth>
+				<color>D0D0D0D0</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+				<visible>!empty({game:genre})</visible>
+			</image>
+			<text>
+				<fontSize>0.024</fontSize>
+				<fontSize if="${screen.ratio} == '4/3'">0.029</fontSize>
+				<fontPath>${fontNameReg}</fontPath>
+				<text>{game:genre}</text>
+				<color>D0D0D0D0</color>
+				<padding>4 0 4 0</padding>
+				<multiLine>false</multiLine>
+				<autoScrollDelay>3000</autoScrollDelay>
+				<singleLineScroll>true</singleLineScroll>
+				<visible>!empty({game:genre})</visible>
+			</text>
+		</stackpanel>
+	
+	<!-- 3 панель -->
+		<stackpanel name="3st-line">
+			<separator>0.01</separator>
+			<pos>0.04 0.88</pos>
+			<size>0.9 0.032</size>
+			<size if="${screen.ratio} == '4/3'">0.9 0.036</size>
+			<orientation>horizontal</orientation>
+			<zIndex>750</zIndex>
+			<!-- Флаги / Flags -->
+			<image name="flag-region">
+				<path>${themePath}/_inc/images/flags/{game:region}.png</path>
+				<maxSize>0.8</maxSize>
+				<origin>0.5 0.5</origin>
+				<pos>0.5 0.4</pos>
+				<linearSmooth>true</linearSmooth>
+				<opacity>0.8</opacity>
+				<visible>{game:region} != {game:lang} &amp;&amp; !contains(lower({game:region}), ',') &amp;&amp; !empty({game:region})</visible>
+			</image>
+			<image name="flag-force-world">
+				<path>${themePath}/_inc/images/flags/wr.png</path>
+				<maxSize>0.8</maxSize>
+				<origin>0.5 0.5</origin>
+				<pos>0.5 0.4</pos>
+				<linearSmooth>true</linearSmooth>
+				<opacity>0.8</opacity>
+				<visible>contains(lower({game:region}), ',') &amp;&amp; !empty({game:region})</visible>
+			</image>
+			<image name="flag-lang">
+				<path>${themePath}/_inc/images/flags/{game:lang}.png</path>
+				<maxSize>0.8</maxSize>
+				<origin>0.5 0.5</origin>
+				<pos>0.5 0.4</pos>
+				<linearSmooth>true</linearSmooth>
+				<opacity>0.8</opacity>
+				<visible>!contains(lower({game:lang}), ',') &amp;&amp; !empty({game:lang})</visible>
+			</image>
+			<text name="gamedata-lang">
+				<fontSize>0.019</fontSize>
+				<fontPath>${fontNameReg}</fontPath>
+				<text>{game:lang}.upper()</text>
+				<color>D0D0D0D0</color>
+				<singleLineScroll>true</singleLineScroll>
+				<autoScrollDelay>0</autoScrollDelay>
+				<y>0.02</y>
+				<visible>contains(lower({game:lang}), ',') &amp;&amp; !empty({game:lang})</visible>
+			</text>
+			<!-- Рейтинг -->
+			<text name="gamedata-stars">
+				<fontSize>0.028</fontSize>
+				<text>{game:stars}</text>
+				<color>D0D0D0D0</color>
+				<visible>!empty({game:stars})</visible>
+			</text>
+			<text name="container-separator2">
+				<text>•</text>
+				<fontSize>0.03</fontSize>
+				<color>D0D0D0D0</color>
+				<fontPath>${fontNameReg}</fontPath>
+				<visible>({game:playcount}) &gt; 0 ? 1 : 0</visible>
+			</text>
+			
+			<!-- Кол-во запусков -->
+			<image name="icons-playcount">
+				<path>${themePath}/_inc/images/game_info_playcount3.svg</path>
+				<linearSmooth>true</linearSmooth>
+				<color>D0D0D0D0</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+				<visible>{game:playcount} &gt; 0 ? 1 : 0</visible>
+			</image>
+			<text name="gamedata-playcount">
+				<fontSize>0.022</fontSize>
+				<fontSize if="${screen.ratio} == '4/3'">0.029</fontSize>
+				<fontPath>${fontNameReg}</fontPath>
+				<text>{game:playcount}</text>
+				<color>D0D0D0D0</color>
+				<padding>4 0 12 0</padding>
+				<visible>{game:playcount} &gt; 0 ? 1 : 0</visible>
+			</text>
+			
+			<!-- Время игры -->
+			<image name="icons-gametime">
+				<path>${themePath}/_inc/images/game_info_gametime.svg</path>
+				<linearSmooth>true</linearSmooth>
+				<color>D0D0D0D0</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+				<visible>{game:gametime} &gt; 0 ? 1 : 0</visible>
+			</image>
+			<text name="gamedata-gametime">
+				<fontSize>0.022</fontSize>
+				<fontSize if="${screen.ratio} == '4/3'">0.029</fontSize>
+				<fontPath>${fontNameReg}</fontPath>
+				<text>expandseconds({game:gametime})</text>
+				<color>D0D0D0D0</color>
+				<padding>4 0 12 0</padding>
+				<multiLine>false</multiLine>
+				<autoScrollDelay>3000</autoScrollDelay>
+				<singleLineScroll>true</singleLineScroll>
+				<visible>{game:gametime} &gt; 0 ? 1 : 0</visible>
+			</text>
+			
+			<!-- Последний запуск -->
+			<image name="icons-lastplayed">
+				<path>${themePath}/_inc/images/game_info_lastplayed.svg</path>
+				<linearSmooth>true</linearSmooth>
+				<color>D0D0D0D0</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+				<visible>{game:gametime} &gt; 0 ? 1 : 0</visible>
+			</image>
+			<text name="gamedata-lastplayed">
+				<fontSize>0.022</fontSize>
+				<fontSize if="${screen.ratio} == '4/3'">0.029</fontSize>
+				<fontPath>${fontNameReg}</fontPath>
+				<text>day({game:lastplayed}) + '.' + month({game:lastplayed}) + '.' + year({game:lastplayed})</text>
+				<color>D0D0D0D0</color>
+				<padding>4 0 12 0</padding>
+				<multiLine>false</multiLine>
+				<autoScrollDelay>3000</autoScrollDelay>
+				<singleLineScroll>true</singleLineScroll>
+				<visible>{game:gametime} &gt; 0 ? 1 : 0</visible>
+			</text>
+		</stackpanel>
+
+		<!-- <image name="art">
+			<pos>0.5 0.6</pos>
+		</image> -->
+
+		<image name="fanart">
+			<color>FFFFFF3F</color>
+			<opacity>1</opacity>
+		</image>
+		<image name="fanart_fix">
+			<opacity>1</opacity>
+		</image>
+
+		<video name="md_video">
+			<delay>2</delay>
+			<pos>0.56 0.78</pos>
+			<opacity>0</opacity>
+			<zIndex>0</zIndex>
+			<storyboard event="activateNext"/>
+			<storyboard event="activatePrev"/>
+			<storyboard event="activate">
+				<animation property="zIndex" to="150" begin="1000" duration="" mode="Linear"/>
+				<animation property="opacity" to="0" duration="0" mode="EaseOut"/>
+				<animation property="opacity" to="1" begin="2000" duration="600" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="scroll">
+				<animation property="opacity" to="0" duration="150" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" to="0" duration="150" mode="EaseOut"/>
+			</storyboard>
+		</video>
+		<text name="md_description">
+			<visible>true</visible>
+			<color>D0D0D0</color>
 			<glowColor>00000035</glowColor>
 			<glowSize>1</glowSize>
 			<glowOffset>3 2</glowOffset>
-			<zIndex>140</zIndex>
+			<size>0.574 0.224</size>
+			<pos>0.384 0.205</pos>
+			<opacity>0</opacity>
+			<zIndex>0</zIndex>
+			<storyboard event="activate">
+				<animation property="zIndex" to="150" begin="1000" duration="" mode="Linear"/>
+				<animation property="opacity" to="0" duration="0" mode="EaseOut"/>
+				<animation property="opacity" to="1" begin="2000" duration="600" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="scroll">
+				<animation property="opacity" to="0" duration="0" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" to="0" duration="0" mode="EaseOut"/>
+			</storyboard>
 		</text>
-		<imagegrid name="gamegrid">
-			<pos>0 0.16</pos>
-			<size>1 0.84</size>
-			<padding>0.01 0.14 0.01 0.30</padding>
-			<scrollDirection>horizontal</scrollDirection>
-			<autoLayout>5 1</autoLayout>
-			<autoLayout if="${screen.ratio} == '4/3'">3 1</autoLayout>
-			<margin if="${screen.ratio} == '4/3'">-0.14 0</margin>
-			<autoLayout if="${screen.ratio} == '21/9'">7 1</autoLayout>
-			<autoLayoutSelectedZoom>1.50</autoLayoutSelectedZoom>
-			<centerSelection>true</centerSelection>
-			<scrollLoop>true</scrollLoop>
-		</imagegrid>
-		<gridtile name="default">
-			<padding>64 16</padding>
-			<reflexion>0.24 0.0</reflexion>
-		</gridtile>
-		<gridtile name="selected">
-			<backgroundCenterColor>FFFFFF00</backgroundCenterColor>
-			<backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
-			<padding>64 16</padding>
-		</gridtile>
-		<text name="gridtile">
-			<color>80808080</color>
-			<fontSize>0.016</fontSize>
-			<size>1 0</size>
-		</text>
-		<text name="gridtile_selected">
-			<color>FFFFFF00</color>
-			<fontSize>0.035</fontSize>
-			<size>1 0</size>
-		</text>
-		<ninepatch name="gridtile.background:selected">
-			<color>FFFFFF00</color>
-			<visible>false</visible>
-			<animateColor>FFFFFF00</animateColor>
-			<animateColorTime>0</animateColorTime>
-		</ninepatch>
+		<image name="md_marquee">
+			<pos>0.832 0.13</pos>
+			<maxSize>0.25 0.14</maxSize>
+			<visible>true</visible>
+			<zIndex>0</zIndex>
+			<storyboard event="activate">
+				<animation property="zIndex" to="150" begin="1000" duration="" mode="Linear"/>
+				<animation property="opacity" to="0" duration="0" mode="EaseOut"/>
+				<animation property="opacity" to="1" begin="2000" duration="600" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="scroll">
+				<animation property="opacity" to="0" duration="150" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" to="0" duration="150" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<image name="md_cartridge">
+			<visible>true</visible>
+			<origin>0.5 1</origin>
+			<pos>0.85 0.78</pos>
+			<maxSize>0.215 0.35</maxSize>
+			<origin if="${screen.ratio} == '4/3'">0.5 1.02</origin>
+		</image>
+		<image name="logo">
+			<pos>0.5 0.09</pos>
+			<maxSize>0.240 0.126</maxSize>
+			<opacity>1</opacity>
+			<zIndex>150</zIndex>
+			<maxSize if="${screen.ratio} == '21/9'">0.2 0.126</maxSize>
+			<storyboard event="activate"/>
+			<storyboard event="scroll"/>
+			<storyboard event="deactivate"/>
+		</image>
+		<!-- Logo anim bzz -->
+		<image name="logo1">
+			<pos>0.5 0.09</pos> <!-- Должно совпадать с logo -->
+			<maxSize>0.240 0.126</maxSize> <!-- Должно совпадать с logo -->
+			<zIndex>20</zIndex>
+			<maxSize if="${screen.ratio} == '21/9'">0.2 0.126</maxSize>
+			<storyboard event="activate"/>
+			<storyboard>
+				<animation property="opacity" from="0.75" to="0" begin="995" duration="4000" mode="EaseOut"/>
+				<animation property="scale" from="1.05" to="1.4" begin="995" duration="4000" mode="EaseOut"/>
+				<animation property="color" from="FFAAAA" to="FF7777" begin="975" duration="4000" mode="EaseOut"/>
+			</storyboard>
+		</image>
+
+		<!-- <image name="art-shadow-left" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>-0.018 0.722</pos>
+			<size>0.22 0.2</size>
+			<rotation>90</rotation>
+			<color>141414</color>
+			<path>${themePath}/_inc/images/gradient.png</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>109</zIndex>
+			<visible if="${screen.ratio} == '21/9'">false</visible>
+			<size if="${screen.ratio} == '4/3'">0.28 0.2</size>
+			<origin if="${screen.ratio} == '4/3'">0.6 0.4</origin>
+		</image>
+		<image name="art-shadow-right" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>1.018 0.722</pos>
+			<size>0.22 0.2</size>
+			<rotation>-90</rotation>
+			<color>141414</color>
+			<path>${themePath}/_inc/images/gradient.png</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>109</zIndex>
+			<visible if="${screen.ratio} == '21/9'">false</visible>
+			<size if="${screen.ratio} == '4/3'">0.28 0.2</size>
+			<origin if="${screen.ratio} == '4/3'">0.4 0.4</origin>
+		</image> -->
+
+		<gamecarousel name="gamecarousel">
+			<type>horizontal</type>
+			<pos>0 0.08</pos>
+			<size>1.65 1</size>
+			<logoScale>1.5</logoScale>
+			<color>00000000</color>
+			<logoAlignment>bottom</logoAlignment>
+			<minLogoOpacity>0.6</minLogoOpacity>
+			<transitionSpeed>750</transitionSpeed>
+			<!-- <transitionSpeed>1500</transitionSpeed> -->
+			<!-- <transitionSpeed>2000</transitionSpeed> -->
+			<imageSource>thumbnail</imageSource>
+			<defaultTransition>instant</defaultTransition>
+			<logoSize>0.400 0.400</logoSize>
+			<logoPos>0.30 0.22</logoPos>
+			<zIndex>100</zIndex>
+			<maxLogoCount>10</maxLogoCount>
+			<maxLogoCount if="${screen.ratio} == '21/9'">12</maxLogoCount>
+			<maxLogoCount if="${screen.ratio} == '4/3'">8</maxLogoCount>
+			<itemTemplate>
+				<container>
+					<image name="thumbnail-vert">
+						<visible if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'gameandwatch' || {system.theme} == 'solarus' || {system.theme} == 'ngage'">false</visible>
+						<pos>0.5 0.6</pos>
+						<origin>0.5</origin>
+						<maxSize>0.38 1</maxSize>
+						<maxSize if="${screen.ratio} == '4/3'">0.58 1</maxSize>
+						<path>{game:thumbnail}</path>
+						<path ifSubset="boxsource:thumbnail">{game:thumbnail})</path>
+						<path ifSubset="boxsource:boxart">{game:boxart})</path>
+						<path ifSubset="boxsource:image">{game:image})</path>
+						<path ifSubset="boxsource:mix">{game:mix})</path>
+						<!-- <opacity>0</opacity> -->
+						<storyboard event="activate">
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="150" mode="EaseOut"/>
+							<animation property="x" to="0" begin="1350" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.7" duration="150" mode="EaseOut"/>
+							<animation property="opacity" to="0" begin="1400" duration="600" mode="EaseOut"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.7" duration="1" mode="EaseOut"/>
+							<animation property="opacity" to="0" begin="1400" duration="600" mode="EaseOut"/>
+						</storyboard>
+						<shader>
+							<path>:/shaders/border.glsl</path>
+							<cornerRadius>0.01</cornerRadius>
+							<innerShadowSize>0.01</innerShadowSize>
+							<innerShadowColor>00000030</innerShadowColor>
+							<outerShadowSize>0.020</outerShadowSize>
+							<outerShadowColor>00000050</outerShadowColor>
+						</shader>
+					</image>
+					<image name="thumbnail-hor">
+						<visible>false</visible>
+						<visible if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'gameandwatch'|| {system.theme} == 'solarus' || {system.theme} == 'ngage'">{game:region} != 'jp'</visible>
+						<pos>0.5 0.6</pos>
+						<origin>0.5</origin>
+						<rotation>90</rotation>
+						<maxSize>0.55 1</maxSize>
+						<path>{game:thumbnail}</path>
+						<path ifSubset="boxsource:thumbnail">{game:thumbnail})</path>
+						<path ifSubset="boxsource:boxart">{game:boxart})</path>
+						<path ifSubset="boxsource:image">{game:image})</path>
+						<path ifSubset="boxsource:mix">{game:mix})</path>
+						<origin if="${screen.ratio} == '21/9'">0.5 0.58</origin>
+						<maxSize if="${screen.ratio} == '21/9'">0.53 0.8</maxSize>
+						<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+						<maxSize if="${screen.ratio} == '4/3'">0.6 1</maxSize>
+						<!-- <opacity>0</opacity> -->
+						<storyboard event="activate">
+							<animation property="y" to="0.8" begin="250" duration="350" mode="easeIn"/>
+							<animation property="rotation" to="0" begin="" duration="350" mode="easeOut"/>
+							<animation property="opacity" to="1" duration="150" mode="EaseOut"/>
+							<animation property="x" to="0" begin="1350" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="rotation" to="90" begin="" duration="150" mode="Linear"/>
+							<animation property="opacity" to="0.7" duration="150" mode="EaseOut"/>
+							<animation property="opacity" to="0" begin="1400" duration="600" mode="EaseOut"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="rotation" to="90" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.7" duration="1" mode="EaseOut"/>
+							<animation property="opacity" to="0" begin="1400" duration="600" mode="EaseOut"/>
+						</storyboard>
+						<shader>
+							<path>:/shaders/border.glsl</path>
+							<cornerRadius>0.01</cornerRadius>
+							<innerShadowSize>0.01</innerShadowSize>
+							<innerShadowColor>00000030</innerShadowColor>
+							<outerShadowSize>0.020</outerShadowSize>
+							<outerShadowColor>00000050</outerShadowColor>
+						</shader>
+					</image>
+					<image name="thumbnail-jp">
+						<visible>false</visible>
+						<visible if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'gameandwatch'|| {system.theme} == 'solarus' || {system.theme} == 'ngage'">{game:region} == 'jp'</visible>
+						<pos>0.5 0.6</pos>
+						<origin>0.5</origin>
+						<rotation>0</rotation>
+						<maxSize>0.38 1</maxSize>
+						<maxSize if="${screen.ratio} == '4/3'">0.58 1</maxSize>
+						<path>{game:thumbnail}</path>
+						<path ifSubset="boxsource:thumbnail">{game:thumbnail})</path>
+						<path ifSubset="boxsource:boxart">{game:boxart})</path>
+						<path ifSubset="boxsource:image">{game:image})</path>
+						<path ifSubset="boxsource:mix">{game:mix})</path>
+						<!-- <opacity>0</opacity> -->
+						<storyboard event="activate">
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="150" mode="EaseOut"/>
+							<animation property="x" to="0" begin="1350" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.7" duration="150" mode="EaseOut"/>
+							<animation property="opacity" to="0" begin="1400" duration="600" mode="EaseOut"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.7" duration="1" mode="EaseOut"/>
+							<animation property="opacity" to="0" begin="1400" duration="600" mode="EaseOut"/>
+						</storyboard>
+						<shader>
+							<path>:/shaders/border.glsl</path>
+							<cornerRadius>0.01</cornerRadius>
+							<innerShadowSize>0.01</innerShadowSize>
+							<innerShadowColor>00000030</innerShadowColor>
+							<outerShadowSize>0.020</outerShadowSize>
+							<outerShadowColor>00000050</outerShadowColor>
+						</shader>
+					</image>
+					<image name="nothumb">
+						<visible>!exists({game:thumbnail}) &amp;&amp; !exists({game:marquee})</visible>
+						<pos>0.5 0.6</pos>
+						<origin>0.5</origin>
+						<rotation>0</rotation>
+						<maxSize>0.38 0.38</maxSize>
+						<path>${themePath}/_inc/images/invader.png</path>
+						<!-- <opacity>0</opacity> -->
+						<storyboard event="activate">
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="0.8" duration="150" mode="EaseOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="y" to="0.6" begin="0" duration="0" mode="Linear"/>
+							<animation property="opacity" to="0.5" duration="150" mode="EaseOut"/>
+							<animation property="opacity" to="0" begin="1400" duration="600" mode="EaseOut"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="y" to="0.6" begin="0" duration="0" mode="Linear"/>
+							<animation property="opacity" to="0.5" duration="1" mode="EaseOut"/>
+							<animation property="opacity" to="0" begin="1400" duration="600" mode="EaseOut"/>
+						</storyboard>
+						<!-- <shader>
+							<path>:/shaders/border.glsl</path>
+							<cornerRadius>0.01</cornerRadius>
+							<innerShadowSize>0.01</innerShadowSize>
+							<innerShadowColor>00000030</innerShadowColor>
+							<outerShadowSize>0.020</outerShadowSize>
+							<outerShadowColor>00000050</outerShadowColor>
+						</shader> -->
+					</image>
+					<image name="nothumb-marq">
+						<visible>!exists({game:thumbnail})</visible>
+						<pos>0.5 0.55</pos>
+						<origin>0.5</origin>
+						<rotation>0</rotation>
+						<maxSize>0.33 1</maxSize>
+						<path>{game:marquee}</path>
+						<!-- <opacity>0</opacity> -->
+						<storyboard event="activate">
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="150" mode="EaseOut"/>
+							<animation property="x" to="0" begin="1350" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.5" duration="150" mode="EaseOut"/>
+							<animation property="opacity" to="0" begin="1400" duration="600" mode="EaseOut"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.5" duration="1" mode="EaseOut"/>
+							<animation property="opacity" to="0" begin="1400" duration="600" mode="EaseOut"/>
+						</storyboard>
+						<!-- <shader>
+							<path>:/shaders/border.glsl</path>
+							<cornerRadius>0.01</cornerRadius>
+							<innerShadowSize>0.01</innerShadowSize>
+							<innerShadowColor>00000030</innerShadowColor>
+							<outerShadowSize>0.020</outerShadowSize>
+							<outerShadowColor>00000050</outerShadowColor>
+						</shader> -->
+					</image>
+					<text name="gamename">
+						<visible>!exists({game:marquee}) &amp;&amp; !exists({game:thumbnail})</visible>
+						<origin>0.5</origin>
+						<text>{game:name}</text>
+						<fontPath>${fontNameBold}</fontPath>
+						<color>FFFFFF</color>
+						<alignment>center</alignment>
+						<fontSize>0.025</fontSize>
+						<lineSpacing>1</lineSpacing>
+						<size>0.3 2</size>
+						<pos>0.5 0.8</pos>
+						<glowColor>00000066</glowColor>
+						<glowSize>2</glowSize>
+						<zIndex>400</zIndex>
+						<!-- <opacity>0</opacity> -->
+						<storyboard event="activate">
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="150" mode="EaseOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="y" to="0.6" begin="0" duration="0" mode="Linear"/>
+							<animation property="opacity" to="0.5" duration="150" mode="EaseOut"/>
+							<animation property="opacity" to="0" begin="1400" duration="600" mode="EaseOut"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="y" to="0.6" begin="0" duration="0" mode="Linear"/>
+							<animation property="opacity" to="0.5" duration="1" mode="EaseOut"/>
+							<animation property="opacity" to="0" begin="1400" duration="600" mode="EaseOut"/>
+						</storyboard>
+					</text>
+				</container>
+			</itemTemplate>
+		</gamecarousel>
 	</customView>
 </theme>

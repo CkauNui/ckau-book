@@ -2,77 +2,48 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.35 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.48 0.4</origin>
+		<image name="sysbg-left">
+			<origin if="${screen.ratio} == '4/3'">1 0.5</origin>
+			<origin if="${screen.ratio} == '16/10'">0.68 0.5</origin>
 			<origin if="${screen.ratio} == '21/9'">0.09 0.5</origin>
 			<pos>0.284 0.36</pos>
 			<minSize>0.1 0.3</minSize>
 			<rotation>19</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.004 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<visible>true</visible>
 		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.66 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.52 0.4</origin>
+		<image name="sysbg-right">
+			<origin if="${screen.ratio} == '4/3'">0 0.5</origin>
+			<origin if="${screen.ratio} == '16/10'">0.32 0.5</origin>
 			<origin if="${screen.ratio} == '21/9'">0.91 0.5</origin>
 			<pos>0.715 0.36</pos>
 			<minSize>0.1 0.3</minSize>
 			<rotation>-19</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.435 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<visible>true</visible>
 		</image>
-		<image name="sysbg-video-arcade" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+		<image name="sysbg-video">
 			<pos>0.50 0.36</pos>
-			<size>0.36 0.2</size>
-			<size if="${screen.ratio} == '4/3'">0.36 0.16</size>
-			<size if="${screen.ratio} == '21/9'">0.27 0.2</size>
-			<storyboard>
-				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.38 0.2</size>
+			<size if="${screen.ratio} == '4/3'">0.5 0.2</size>
+			<size if="${screen.ratio} == '16/10'">0.4 0.2</size>
+			<size if="${screen.ratio} == '21/9'">0.28 0.2</size>
 		</image>
-		<video name="videoboxarcade" extra="true">
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<pos>0.5005 0.353</pos>
+		<video name="videobox">
+			<pos>0.5005 0.352</pos>
 			<maxSize>0.33</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.2205 0.353" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize if="${screen.ratio} == '16/10'">0.37</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.44</maxSize>
+			<maxSize if="${screen.ratio} == '21/9'">0.25</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2002</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Sega</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Chihiro</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Chihiro is an arcade system produced by Sega and Microsoft based on the Xbox home video game console. It was the second such partnership, with Sega also siding with Namco and Nintendo with the Nintendo GameCube-powered Triforce system.
 
 The Chihiro is based upon the Xbox, using the same Pentium III CPU and NVIDIA graphics card. Unlike the Xbox, however, it uses GD-ROM media instead of DVDs, has more RAM and an earlier revision chipset which is used in the Xbox debugging unit (MCPX2).

@@ -1,49 +1,28 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.285</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.425</origin>
+		<image name="sysbg-video">
 			<pos>0.501 0.363</pos>
-			<maxSize>0.232</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.221 0.363" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.17 0.24</size>
+			<size if="${screen.ratio} == '16/10'">0.19 0.24</size>
+			<size if="${screen.ratio} == '4/3'">0.23 0.24</size>
+			<size if="${screen.ratio} == '21/9'">0.13 0.24</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.285</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.425</origin>
+		<video name="videobox">
 			<pos>0.501 0.363</pos>
 			<maxSize>0.212</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.221 0.363" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1984</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>PEL Varaždin</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Orao</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Orao (meaning &quot;Eagle&quot; in Croatian) is an 8-bit personal computer developed by PEL Varaždin in 1984. It was primarily used in primary and secondary schools in the former Yugoslavia, particularly in Croatia and Vojvodina, from 1985 to 1991. The Orao was designed by Miroslav Kocijan as a successor to the Galeb computer, with the goal of creating a more advanced yet cost-effective machine.
 
 It features a MOS Technology 6502 CPU running at 1 MHz, 16 KB of RAM (expandable to 32 KB), and a graphics resolution of 256x256 pixels.

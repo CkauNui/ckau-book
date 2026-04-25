@@ -1,50 +1,28 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.41</pos>
-			<maxSize>0.255</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.41" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.18 0.255</size>
+			<size if="${screen.ratio} == '16/10'">0.2 0.255</size>
+			<size if="${screen.ratio} == '4/3'">0.25 0.255</size>
+			<size if="${screen.ratio} == '21/9'">0.13 0.255</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+		<video name="videobox">
 			<pos>0.5 0.41</pos>
 			<maxSize>0.235</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.41" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1982</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Applied Technology</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>MicroBee</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>MicroBee (or Micro Bee) was a series of networkable home computers by Applied Technology, which became publicly listed company MicroBee Systems Limited soon after its release.
 
 The MicroBee's most distinctive features are its user configurable video display (capable of mimicking the displays of other computers and devices including the TRS-80, Sorcerer and SOL20 with later colour and graphic models 40 and 80 column terminals, Super-80, ZX Spectrum, early arcade machines, Amstrad CPC 464) and its battery backed non-volatile RAM and small size allowing it to be powered off, transported, and powered back on and resume activities on the currently loaded program or document.

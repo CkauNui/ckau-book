@@ -2,44 +2,30 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
+		<image name="sysbg-video">
 			<pos>0.496 0.49</pos>
-			<maxSize>0.225</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.216 0.49" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.2 0.23</size>
+			<size if="${screen.ratio} == '16/10'">0.22 0.23</size>
+			<size if="${screen.ratio} == '4/3'">0.26 0.23</size>
+			<size if="${screen.ratio} == '21/9'">0.15 0.23</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/megadrive.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/megadrive.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
+		<video name="videobox">
+			<!-- need remade video -->
+			<path>./../../_inc/videos/megadrive.mp4</path>
+			<path ifSubset="addons:yes">./../../../ckau-book-addons/_inc/videos/megadrive.mp4</path>
 			<pos>0.496 0.49</pos>
-			<maxSize>0.215</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.216 0.49" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize>0.22</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1995</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Sega</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Nomad</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Genesis Nomad, also known as Sega Nomad, is a handheld game console manufactured by Sega and released in North America in October 1995. The Nomad is a portable variation of the Sega Genesis home video game console (known as the Mega Drive outside North America). It could also be used with a television set via a video port. It was based on the Mega Jet, a portable version of the home console designed for use on airline flights in Japan.
 
 The Nomad was the last handheld console released by Sega. Released late in the Genesis era, it had a short lifespan. It was sold exclusively in North America, and uses regional lockout. Sega's focus on the Sega Saturn left the Nomad under-supported, and it was incompatible with several Genesis peripherals, including the Power Base Converter, the Sega CD, and the 32X. About 1 million units of the Nomad were sold, and it is considered a commercial failure.</text>

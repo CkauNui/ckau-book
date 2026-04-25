@@ -2,49 +2,30 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+		<image name="sysbg-video">
 			<pos>0.49 0.4</pos>
-			<maxSize>0.237</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.19 0.24</size>
+			<size if="${screen.ratio} == '16/10'">0.21 0.24</size>
+			<size if="${screen.ratio} == '4/3'">0.26 0.24</size>
+			<size if="${screen.ratio} == '21/9'">0.14 0.24</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+		<video name="videobox">
 			<pos>0.49 0.4</pos>
 			<maxSize>0.227</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<pos if="${screen.ratio} == '16/10'">0.489 0.4</pos>
+			<pos if="${screen.ratio} == '4/3'">0.486 0.4</pos>
+			<pos if="${screen.ratio} == '21/9'">0.491 0.4</pos>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1981</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Technosys Research Labs</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Aamber Pegasus</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Aamber Pegasus is a home computer first produced in New Zealand in 1981 by Technosys Research Labs. It was based on a Motorola MC6809C CPU at 4 MHz, with 4k RAM memory. Later versions have been equipped with up to 64k RAM.
 An optional multi ROM board in conjunction with a rotating dial allowed switching between 6 EPROM banks containing multiple language environments, games and applications could be added. The EPROM based language environments included EXTENDED BASIC, PASCAL, BASIC (a variant of TinyBASIC), MAD (Assembler/Disassembler) and FORTH. Games available on EPROM are TANKS, INVADERS and GALAXY WARS. Other software included MONITOR (the system BIOS which needed to be present for the system to run) and a word processor application called WORD.
 The system also allowed loading of programs by cassette.

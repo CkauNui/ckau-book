@@ -2,52 +2,32 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysart" extra="true">
-			<path>./../../_inc/anim/fpinball.png</path>
-			<path>./../../../ckau-book-addons/_inc/anim/4K/fpinball.png</path>
+		<image name="sysart">
+			<path>./../../_inc/arts/fpinball.png</path>
+			<path ifSubset="addons:yes">./../../../ckau-book-addons/_inc/arts/4K/fpinball.png</path>
 		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.395</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.455</origin>
+		<image name="sysbg-video">
 			<pos>0.501 0.405</pos>
-			<maxSize>0.245</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.221 0.405" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.14 0.245</size>
+			<size if="${screen.ratio} == '16/10'">0.16 0.245</size>
+			<size if="${screen.ratio} == '4/3'">0.2 0.245</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/fpinball.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/fpinball.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.395</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.455</origin>
+		<video name="videobox">
+			<path>./../../_inc/videos/fpinball.mp4</path>
+			<path ifSubset="addons:yes">./../../../ckau-book-addons/_inc/videos/fpinball.mp4</path>
 			<pos>0.501 0.408</pos>
 			<maxSize>0.23</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.221 0.408" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2010</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Zen Studios</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Pinball FX2</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>Pinball FX 2 is a pinball video game for Xbox 360, Xbox One, and Microsoft Windows (XP and higher) and is the sequel to Pinball FX. It was developed by Zen Studios and published by Microsoft Studios. It was released on October 27, 2010, via the Xbox Live Arcade service. The game includes several new features, such as local multiplayer and the ability to tweak table settings. Players can also import all of the tables from Pinball FX they had previously purchased. The Windows 8 version of Pinball FX 2 was released on the Windows Store on October 27, 2012, two years after the original XBLA release. The game was subsequently released for other Windows platforms via Steam on May 10, 2013. Pinball FX 2 was announced for Windows Phone in February 2012. A sequel, Pinball FX 3 was released in September 2017.</text>
 			<text lang="pl">Pinball FX 2 to gra wideo w pinball na konsole Xbox 360, Xbox One i Microsoft Windows (XP i nowsze), będąca kontynuacją Pinball FX. Została opracowana przez Zen Studios i wydana przez Microsoft Studios. Gra została wydana 27 października 2010 roku za pośrednictwem usługi Xbox Live Arcade. Gra zawiera kilka nowych funkcji, takich jak lokalny tryb wieloosobowy i możliwość dostosowania ustawień stołu. Gracze mogą również importować wszystkie zakupione wcześniej stoły z Pinball FX. Wersja Pinball FX 2 dla systemu Windows 8 została wydana w sklepie Windows Store 27 października 2012 roku, dwa lata po oryginalnym wydaniu na XBLA. Gra została następnie wydana na inne platformy Windows za pośrednictwem Steam 10 maja 2013 roku. Pinball FX 2 został zapowiedziany na Windows Phone w lutym 2012 roku. Kontynuacja, Pinball FX 3, została wydana we wrześniu 2017 roku.</text>
 			<text lang="ru">Pinball FX 2 - видеоигра в жанре пинбола для Xbox 360, Xbox One и Microsoft Windows (XP и выше), продолжение Pinball FX. Она была разработана Zen Studios и издана Microsoft Studios. Игра была выпущена 27 октября 2010 года в сервисе Xbox Live Arcade. Игра включает в себя несколько новых функций, таких как локальный мультиплеер и возможность изменять настройки стола. Игроки также могут импортировать все столы из Pinball FX, которые они ранее приобрели. Версия Pinball FX 2 для Windows 8 была выпущена в Windows Store 27 октября 2012 года, спустя два года после релиза в XBLA. Впоследствии игра была выпущена для других платформ Windows через Steam 10 мая 2013 года. Pinball FX 2 был анонсирован для Windows Phone в феврале 2012 года. Сиквел, Pinball FX 3, был выпущен в сентябре 2017 года.</text>

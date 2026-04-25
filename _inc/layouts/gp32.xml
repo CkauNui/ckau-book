@@ -2,44 +2,27 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.495</pos>
-			<maxSize>0.342</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.495" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.31 0.342</size>
+			<size if="${screen.ratio} == '16/10'">0.33 0.342</size>
+			<size if="${screen.ratio} == '4/3'">0.38 0.342</size>
+			<size if="${screen.ratio} == '21/9'">0.24 0.342</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
+		<video name="videobox">
 			<pos>0.5 0.493</pos>
 			<maxSize>0.33</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.493" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2001</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>GamePark</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>GP32</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The GP32 (GamePark 32) is a handheld game console developed by the South Korean company Game Park. It was released on November 23, 2001, in South Korea and distributed in some parts of Europe.
 The overall design is not unlike the original version of the Game Boy Advance. The GP32 is based on a 133 MHz ARM 9 CPU and 8 MB of SDRAM. Unlike other handheld gaming systems, which tend to be proprietary cartridge-based, the GP32 uses SmartMedia cards (SMC) for storing programs and data, making it accessible for amateur developers as no further development hardware is required.
 

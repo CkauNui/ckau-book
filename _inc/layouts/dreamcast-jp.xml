@@ -2,49 +2,27 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.364</pos>
-			<maxSize>0.34</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.364" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<image name="sysbg-video">
+			<pos>0.5 0.37</pos>
+			<size>0.28 0.34</size>
+			<size if="${screen.ratio} == '16/10'">0.3 0.34</size>
+			<size if="${screen.ratio} == '4/3'">0.36 0.34</size>
+			<size if="${screen.ratio} == '21/9'">0.22 0.34</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.364</pos>
-			<maxSize>0.33</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.364" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<video name="videobox">
+			<pos>0.5 0.37</pos>
+			<maxSize>0.326</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1998</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Sega</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Dreamcast</text>
 		</text>
-		<text name="TextVariant" extra="true">
+		<text name="TextVariant">
 			<text>Japanese version</text>
 			<text lang="pl">Wersja japońska</text>
 			<text lang="ru">Японская версия</text>
@@ -54,7 +32,7 @@
 			<text lang="it">Versione giapponese</text>
 			<text lang="pt">Versão japonesa</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Dreamcast is a home video game console released by Sega on November 27, 1998 in Japan, September 9, 1999 in North America, and October 14, 1999 in Europe. It was the first in the sixth generation of video game consoles, preceding Sony's PlayStation 2, Nintendo's GameCube, and Microsoft's Xbox. The Dreamcast was Sega's final home console, marking the end of the company's eighteen years in the console market.
 
 In contrast to the expensive hardware of the unsuccessful Sega Saturn, the Dreamcast was designed to reduce costs with "off-the-shelf" components, including a Hitachi SH-4 CPU and an NEC PowerVR2 GPU. Released in Japan to a subdued reception, the Dreamcast enjoyed a successful U.S. launch backed by a large marketing campaign, but interest in the system steadily declined as Sony built hype for the upcoming PlayStation 2. Sales did not meet Sega's expectations despite several price cuts, and the company continued to incur significant financial losses. After a change in leadership, Sega discontinued the Dreamcast on March 31, 2001, withdrawing from the console business and restructuring itself as a third-party publisher. In total, 9.13 million Dreamcast units were sold worldwide.</text>

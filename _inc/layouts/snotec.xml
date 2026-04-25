@@ -2,53 +2,29 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.393</pos>
-			<maxSize>0.14</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.18</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.16</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.393" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.18 0.15</size>
+			<size if="${screen.ratio} == '16/10'">0.2 0.15</size>
+			<size if="${screen.ratio} == '4/3'">0.25 0.15</size>
+			<size if="${screen.ratio} == '21/9'">0.13 0.15</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+		<video name="videobox">
 			<pos>0.5 0.393</pos>
 			<maxSize>0.125</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.135</maxSize>
 			<maxSize if="${screen.ratio} == '4/3'">0.16</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.14</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.393" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1995</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Bandai / VTech</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Super Note Club</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Super Note Club computer is an educational device produced by Bandai and VTech in 1995. It is a portable computer with an LCD screen and a QWERTY keyboard, which allowed people to write texts, draw, play games, and learn English.
 
 Equipped with has an internal memory of 256 KB and a lithium battery that lasted up to 100 hours, the Super Note Club also had a monochrome LCD screen with a resolution of 320 x 240 pixels and a serial port to connect to other devices, as well as a port to connect cartridges with additional content and functions.</text>

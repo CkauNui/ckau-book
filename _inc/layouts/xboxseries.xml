@@ -2,55 +2,35 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.469</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.487</origin>
-			<origin if="${screen.ratio} == '21/9'">0.53 0.5</origin>	
+		<image name="sysbg-video">
 			<pos>0.538 0.4635</pos>
-			<maxSize>0.422</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.555</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.464</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.258 0.4635" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.416 0.422</size>
+			<size if="${screen.ratio} == '16/10'">0.461 0.422</size>
+			<pos if="${screen.ratio} == '16/10'">0.542 0.4635</pos>
+			<size if="${screen.ratio} == '4/3'">0.552 0.422</size>
+			<pos if="${screen.ratio} == '4/3'">0.551 0.4635</pos>
+			<size if="${screen.ratio} == '21/9'">0.312 0.422</size>
+			<pos if="${screen.ratio} == '21/9'">0.529 0.4635</pos>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.469</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.487</origin>
-			<origin if="${screen.ratio} == '21/9'">0.53 0.5</origin>
+		<video name="videobox">
 			<pos>0.538 0.4635</pos>
 			<maxSize>0.416</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.553</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.461</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.258 0.4635" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize if="${screen.ratio} == '4/3'">0.55</maxSize>
+			<pos if="${screen.ratio} == '4/3'">0.551 0.4635</pos>
+			<maxSize if="${screen.ratio} == '16/10'">0.456</maxSize>
+			<pos if="${screen.ratio} == '16/10'">0.542 0.4635</pos>
+			<pos if="${screen.ratio} == '21/9'">0.529 0.4635</pos>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2020</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Microsoft</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Xbox Series X/S</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Xbox Series X and Xbox Series S are, collectively, the fourth generation of the Xbox series of home video game consoles developed and sold by Microsoft. Released on November 10, 2020, the higher-end Xbox Series X and lower-end Xbox Series S are part of the ninth generation of video game consoles, which also includes Sony's PlayStation 5, released the same month. They superseded the Xbox One.
 
 Like the Xbox One, the consoles use an AMD 64-bit x86-64 CPU and GPU. Both models have solid-state drives to reduce loading times, support for hardware-accelerated ray-tracing and spatial audio, the ability to convert games to high-dynamic-range rendering using machine learning (Auto HDR), support for HDMI 2.1 variable refresh rate and low-latency modes, and updated controllers. Xbox Series X was designed to nominally render games in 2160p (4K resolution) at 60 frames per second (FPS). The lower-end, digital-only Xbox Series S, which has reduced specifications and does not include an optical drive, was designed to nominally render games in 1440p at 60 FPS, with support for 4K video scaling and ray tracing.</text>

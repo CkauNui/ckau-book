@@ -2,50 +2,29 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+		<image name="sysbg-video">
 			<pos>0.498 0.44</pos>
-			<maxSize>0.125</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.218 0.44" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.1 0.125</size>
+			<size if="${screen.ratio} == '16/10'">0.1 0.125</size>
+			<size if="${screen.ratio} == '4/3'">0.1 0.125</size>
+			<size if="${screen.ratio} == '21/9'">0.06 0.125</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+		<video name="videobox">
 			<pos>0.498 0.44</pos>
 			<maxSize>0.115</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.16</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.13</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.218 0.44" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize if="${screen.ratio} == '16/10'">0.125</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.165</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1979</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Milton Bradley Company</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Microvision</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Microvision (aka Milton Bradley Microvision or MB Microvision) was the first handheld game console that used interchangeable cartridges and in that sense is reprogrammable.
 Unlike most later consoles, the Microvision did not contain an onboard processor (CPU). Instead, each game included its own processor contained within the removable cartridge. This meant that the console itself effectively consisted of the controls, LCD panel and LCD controller.
 

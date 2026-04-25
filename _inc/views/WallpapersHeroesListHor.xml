@@ -1,23 +1,22 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 <formatVersion>7</formatVersion>
 <!-- Шапка + Видео + Список -->
 <customView name="WallpapersHeroesListHor" inherits="detailed" displayName="${WallpapersHeroesListHorName}">
 		<!-- Disable detailed icons -->
-		<container name="container-gamedata" extra="true">
+		<container name="container-gamedata">
 			<visible>false</visible>
 		</container>
-		<container name="container-gamedata2" extra="true">
+		<container name="container-gamedata2">
 			<visible>false</visible>
 		</container>
-		<stackpanel name="container-gamedata3" extra="true">
+		<stackpanel name="container-gamedata3">
 			<visible>false</visible>
 		</stackpanel>
-		<stackpanel name="container-flags" extra="true">
+		<stackpanel name="container-flags">
 			<visible>false</visible>
 		</stackpanel>
-		<stackpanel name="container-icons" extra="true">
+		<stackpanel name="container-icons">
 			<visible>false</visible>
 		</stackpanel>
 
@@ -25,7 +24,6 @@
 		<textlist name="gamelist">
 			<pos>0.74 0.59</pos>
 			<size>0.25 0.35</size>
-			<alignment>left</alignment>
 			<lines>11</lines>
 			<zIndex>180</zIndex>
 			<fontPath>${fontNameBold}</fontPath>
@@ -35,31 +33,25 @@
 			<lines if="${screen.ratio} == '4/3'">7</lines>
 			<fontSize if="${screen.ratio} == '4/3'">0.03</fontSize>
 		</textlist>
-		<image name="gamelist-background" extra="true">
-			<zIndex>0</zIndex>
+		<image name="gamelist-background">
 			<visible>false</visible>
 		</image>
-		<image name="art" extra="true">
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.5</pos>
-			<minSize>1 1</minSize>
-			<path>${themePath}/_inc/images/overlay3.png</path>
+		<image name="art">
+			<color>141414</color>
+			<pos>0.5 0.94</pos>
 			<zIndex>70</zIndex>
 		</image>
-		<image name="background" extra="true">
+		<image name="background">
 			<color>141414</color>
 		</image>
 		
-		<image name="fanart" extra="true">
-			<origin>0.5 0</origin>
+		<image name="fanart">
 			<pos>0.5 0</pos>
 			<color>FFFFFF5F</color>
-			<maxSize>1 1</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">1.25 1.25</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">1.12 1.12</maxSize>
-			<path>{game:fanart}</path>
-			<zIndex>60</zIndex>
-			<linearSmooth>true</linearSmooth>
+			<size>1 0</size>
+			<opacity>1</opacity>
+			<size if="${screen.ratio} == '4/3'">1.3 0</size>
+			<size if="${screen.ratio} == '16/10'">1.11 0</size>
 			<storyboard event="activate" repeat="forever">
 				<animation property="scale" from="1" to="1.1" duration="8000"/>
 				<animation property="scale" begin="8000" to="1" duration="8000"/>
@@ -69,69 +61,55 @@
 				<animation property="scale" to="1" duration="250"/>
 			</storyboard>
 		</image>
-		<image name="fanart_fix" extra="true">
-			<visible>!exists({game:fanart})</visible>
-			<path>${themePath}/_inc/anim/${system.theme}.png</path>
+		<image name="fanart_fix">
 			<pos>0.5 -0.3</pos>
-			<origin>0.5 0</origin>
-			<maxSize>1 1</maxSize>
 			<color>FFFFFF16</color>
-			<zIndex>60</zIndex>
-		</image>
-		<image name="md_fanart">
-			<visible>false</visible>
-			<zIndex>1</zIndex>
+			<opacity>1</opacity>
+			<origin>0.5 0</origin>
 		</image>
 		
-		<image name="thumbnail-art" extra="true">
-			<pos>0.13 0.95</pos>
+		<image name="thumbnail-art">
+			<pos>0.13 0.938</pos>
 			<maxSize>0.25 0.64</maxSize>
-			<zIndex>70</zIndex>
 		</image>
 		
-		<text name="md_name" extra="true">
+		<text name="md_name">
 			<visible>false</visible>
 		</text>
-		<text name="md_description" extra="true">
+		<text name="md_description">
 			<pos>0.273 0.71</pos>
 			<size>0.455 0.23</size>
 			<pos if="${screen.ratio} == '4/3'">0.273 0.72</pos>
 			<size if="${screen.ratio} == '4/3'">0.455 0.22</size>
 			<color>D0D0D0D0</color>
-			<zIndex>140</zIndex>
+		</text>
+		<text name="folderpath">
+			<pos>0.747 0.57</pos>
+			<size>0.239 0.02</size>
+		</text>
+		<text name="filterInfo">
+			<pos>0.747 0.55</pos>
+			<size>0.239 0.02</size>
 		</text>
 
 		<video name="md_video">
 			<pos>0.5 0</pos>
-			<maxSize>1 0.6</maxSize>
+			<maxSize>0.6</maxSize>
 			<origin>0.5 0</origin>
-			<delay>1</delay>
 			<showSnapshotNoVideo>true</showSnapshotNoVideo>
 			<showSnapshotDelay>false</showSnapshotDelay>
-			<snapshotSource>image</snapshotSource>
-			<effect>none</effect>
 			<zIndex>61</zIndex>
 		</video>
-		<image name="logo" extra="true">
+		<image name="logo">
 			<pos>0.1 0.12</pos>
 			<maxSize>0.156</maxSize>
-			<origin>0.5 0.5</origin>
-			<zIndex>175</zIndex>
 		</image>
 		<!-- Logo anim bzz -->
-		<image name="logo1" extra="true">
+		<image name="logo1">
 			<pos>0.1 0.12</pos> <!-- Должно совпадать с logo -->
 			<maxSize>0.156</maxSize> <!-- Должно совпадать с logo -->
-			<zIndex>20</zIndex>
-			<storyboard event="activate">
-			</storyboard>
-			<storyboard>
-				<animation property="opacity" from="0.75" to="0" begin="995" duration="4000" mode="EaseOut"/>
-				<animation property="scale" from="1.05" to="1.4" begin="995" duration="4000" mode="EaseOut"/>
-				<animation property="color" from="FFAAAA" to="FF7777" begin="975" duration="4000" mode="EaseOut"/>
-			</storyboard>
 		</image>
-		<image name="md_marquee" extra="true">
+		<image name="md_marquee">
 			<linearSmooth>true</linearSmooth>
 			<visible>true</visible>
 			<zIndex>175</zIndex>
@@ -146,14 +124,13 @@
 		</image>
 
 	<!-- Панель с иконками игроков, ачивок, руля и т.д.-->
-		<stackpanel name="stackpanel-icons" extra="true">
+		<stackpanel name="stackpanel-icons">
 			<separator>0.01</separator>
 			<pos>0.273 0.59</pos>
 			<size>0.455 0.032</size>
 			<pos if="${screen.ratio} == '4/3'">0.273 0.56</pos>
 			<size if="${screen.ratio} == '4/3'">0.455 0.05</size>
 			<orientation>horizontal</orientation>
-			<backgroundColor>FF000000</backgroundColor>
 			<zIndex>150</zIndex>
 			
 			<text name="icons-players">
@@ -236,18 +213,14 @@
 		</stackpanel>
 
 	<!-- 2 панель -->
-		<stackpanel name="2st-line" extra="true">
+		<stackpanel name="2st-line">
 			<separator>0.01</separator>
 			<pos>0.273 0.63</pos>
 			<size>0.455 0.032</size>
 			<pos if="${screen.ratio} == '4/3'">0.273 0.62</pos>
 			<size if="${screen.ratio} == '4/3'">0.455 0.042</size>
 			<orientation>horizontal</orientation>
-			<backgroundColor>FF000000</backgroundColor>
 			<zIndex>150</zIndex>
-			<multiLine>false</multiLine>
-			<autoScrollDelay>3000</autoScrollDelay>
-			<singleLineScroll>true</singleLineScroll>
 			
 			<!-- Год выпуска -->
 			<image name="icons-releaseyear">
@@ -368,14 +341,13 @@
 		</stackpanel>
 	
 	<!-- 3 панель -->
-		<stackpanel name="3st-line" extra="true">
+		<stackpanel name="3st-line">
 			<separator>0.01</separator>
 			<pos>0.273 0.67</pos>
 			<size>0.455 0.032</size>
 			<pos if="${screen.ratio} == '4/3'">0.273 0.672</pos>
 			<size if="${screen.ratio} == '4/3'">0.455 0.042</size>
 			<orientation>horizontal</orientation>
-			<backgroundColor>FF000000</backgroundColor>
 			<zIndex>150</zIndex>
 			<!-- Флаги / Flags -->
 			<image name="flag-region">
@@ -492,7 +464,7 @@
 				<autoScrollDelay>3000</autoScrollDelay>
 				<singleLineScroll>true</singleLineScroll>
 				<visible>{game:gametime} &gt; 0 ? 1 : 0</visible>
-			<visible if="${screen.ratio} == '4/3'">false</visible>
+				<visible if="${screen.ratio} == '4/3'">false</visible>
 			</text>
 		</stackpanel>
 	</customView>

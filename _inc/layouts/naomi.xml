@@ -2,77 +2,48 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.35 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.49 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.11 0.5</origin>
+		<image name="sysbg-left">
+			<origin if="${screen.ratio} == '4/3'">1.01 0.5</origin>
+			<origin if="${screen.ratio} == '16/10'">0.68 0.5</origin>
+			<origin if="${screen.ratio} == '21/9'">0.096 0.5</origin>
 			<pos>0.29 0.36</pos>
 			<minSize>0.1 0.3</minSize>
 			<rotation>19</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.01 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<visible>true</visible>
 		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.65 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.52 0.4</origin>
+		<image name="sysbg-right">
+			<origin if="${screen.ratio} == '4/3'">0 0.5</origin>
+			<origin if="${screen.ratio} == '16/10'">0.32 0.5</origin>
 			<origin if="${screen.ratio} == '21/9'">0.91 0.5</origin>
 			<pos>0.712 0.36</pos>
 			<minSize>0.1 0.3</minSize>
 			<rotation>-19</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.432 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<visible>true</visible>
 		</image>
-		<image name="sysbg-video-arcade" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+		<image name="sysbg-video">
 			<pos>0.50 0.375</pos>
 			<size>0.36 0.2</size>
-			<size if="${screen.ratio} == '4/3'">0.36 0.16</size>
-			<size if="${screen.ratio} == '21/9'">0.27 0.2</size>
-			<storyboard>
-				<animation property="pos" to="0.22 0.375" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size if="${screen.ratio} == '4/3'">0.5 0.2</size>
+			<size if="${screen.ratio} == '16/10'">0.4 0.2</size>
+			<size if="${screen.ratio} == '21/9'">0.28 0.2</size>
 		</image>
-		<video name="videoboxarcade" extra="true">
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.2</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+		<video name="videobox">
 			<pos>0.5005 0.365</pos>
 			<maxSize>0.343</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.2205 0.365" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize if="${screen.ratio} == '16/10'">0.383</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.453</maxSize>
+			<maxSize if="${screen.ratio} == '21/9'">0.263</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1998</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Sega</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Naomi</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The NAOMI (New Arcade Operation Machine Idea) is an arcade system released by Sega in 1998. It was designed as a successor to Sega Model 3 hardware, using a similar architecture to the Sega Dreamcast.
 
 The NAOMI was succeeded by the Sega Hikaru and Sega NAOMI 2 boards, though having out-lasted the NAOMI 2, Hikaru and Sega Aurora. The Sega Chihiro, or possibly even the Sega Lindbergh, could also be seen as successors.</text>
@@ -83,9 +54,9 @@ Mimo, że pierwszy sprzęt Naomi jest na rynku od wielu lat i z technicznego pun
 W 2000 roku Sega wprowadziła następcę Naomi 2. Posiadał on ulepszoną jednostkę graficzną, ale podstawowa architektura systemu pozostała taka sama, dzięki czemu moduły z oryginalnego Naomi mogły być używane na nowym sprzęcie bez modyfikacji.
 
 Wraz z pojawieniem się Naomi 2 wprowadzono również napędy GD-ROM dla platform arcade. Zarówno dla Naomi 2, jak i jego poprzednika, napęd GD-ROM był oferowany jako opcjonalny dodatek. Napęd GD-ROM został dostarczony z modułem rozszerzającym znanym jako płyta DIMM. Zawierał on dodatkową pamięć, dzięki której można było załadować do RAM całą grę. Miało to na celu zrekompensowanie wolniejszego czasu ładowania dyskowych GD-ROM-ów w porównaniu do konwencjonalnych modułów. Dodatkowo, GD-ROM może być wyłączony po zakończeniu procesu ładowania, co powinno zmniejszyć zużycie.</text>
-			<text lang="ru">Аналог Sega Dreamcast, выполненный в виде игрового автомата. Впервые Sega NAOMI была продемонстрирована в 1998 на JAMMA, в качестве преемника Sega Model 3. Большой выпуск устройства способствовал его низкой стоимости.
+			<text lang="ru">NAOMI (New Arcade Operation Machine Idea) — это аркадная система, выпущенная компанией Sega в 1998 году. Она была разработана как преемник аппаратной платформы Sega Model 3 и использовала схожую архитектуру с Sega Dreamcast.
 
-NAOMI и Dreamcast использовали одну и ту же системную архитектуру, то есть оба работали на базе процессора Hitachi SH-4, видеочипа PowerVR Series 2 GPU (PVR2DC) и звукового чипа Yamaha AICA, но сам NAOMI имеет в 2 раза больше оперативной памяти и видеопамяти, а так же в 4 раза больше звуковой памяти, нежели Dreamcast. Тактовая частота обоих устройств одинакова, однако NAOMI могла быть выполнена в виде нескольких "сложенных" материнских плат, что позволяло значительно улучшить графическую конфигурацию, или подключить к системе несколько мониторов. Другие отличия между Dreamcast и NAOMI заключаются в игровых носителях. Наряду с GD-ROM использовались ROM-платы (ROM PC-board's), умещающие в себе 168 мегабайт информации.
+NAOMI и Dreamcast работали на базе процессора Hitachi SH-4, видеочипа PowerVR Series 2 GPU (PVR2DC) и звукового чипа Yamaha AICA, но сам NAOMI имеет в 2 раза больше оперативной памяти и видеопамяти, а так же в 4 раза больше звуковой памяти, нежели Dreamcast. Тактовая частота обоих устройств одинакова, однако NAOMI могла быть выполнена в виде нескольких "сложенных" материнских плат, что позволяло значительно улучшить графическую конфигурацию, или подключить к системе несколько мониторов. Другие отличия между Dreamcast и NAOMI заключаются в игровых носителях. Наряду с GD-ROM использовались ROM-платы (ROM PC-board's), умещающие в себе 168 мегабайт информации.
 
 В отличие от других аркадных систем того времени, NAOMI являлась самой лицензированной платформой, что способствовало выпуску игрового программного обеспечения сторонними производителями. Примером могут служить игры Mazan и Guilty Gear XX.</text>
 			<text lang="es">El NAOMI (New Arcade Operation Machine Idea) es un sistema arcade lanzado por Sega en 1998. Fue diseñado como sucesor del hardware Sega Model 3, utilizando una arquitectura similar a la Sega Dreamcast.

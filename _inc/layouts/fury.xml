@@ -2,50 +2,33 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<pos>0.4901 0.461</pos>
-			<maxSize>0.28</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.37</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.309</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.2101 0.461" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<image name="sysbg-video">
+			<pos>0.4901 0.462</pos>
+			<size>0.276 0.278</size>
+			<size if="${screen.ratio} == '16/10'">0.306 0.278</size>
+			<pos if="${screen.ratio} == '16/10'">0.488 0.462</pos>
+			<size if="${screen.ratio} == '4/3'">0.368 0.278</size>
+			<pos if="${screen.ratio} == '4/3'">0.486 0.462</pos>
+			<size if="${screen.ratio} == '21/9'">0.206 0.278</size>
+			<pos if="${screen.ratio} == '21/9'">0.4921 0.462</pos>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+		<video name="videobox">
 			<pos>0.4901 0.4602</pos>
 			<maxSize>0.275</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.368</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.307</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.2101 0.4602" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize if="${screen.ratio} == '4/3'">0.367</maxSize>
+			<pos if="${screen.ratio} == '4/3'">0.4866 0.4602</pos>
+			<maxSize if="${screen.ratio} == '16/10'">0.306</maxSize>
+			<pos if="${screen.ratio} == '16/10'">0.4881 0.4602</pos>
+			<maxSize if="${screen.ratio} == '21/9'">0.273</maxSize>
+			<pos if="${screen.ratio} == '21/9'">0.4921 0.4602</pos>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2019</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Fury</text>
 		</text>
-		<text name="TextVariant" extra="true">
+		<text name="TextVariant">
 			<text>Port</text>
 			<text lang="pl">Port</text>
 			<text lang="ru">Порт</text>
@@ -55,7 +38,7 @@
 			<text lang="it">Port</text>
 			<text lang="pt">Porto</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>Ion Fury is a new Build Engine game from the creators of the EDuke32 source port.
 
 3D Realms and Voidpoint are proud to bring back the Build engine, which powered Duke Nukem 3D, Blood, and Shadow Warrior, in all of its hand-crafted pixelated glory. They’ve spent a lot of time tinkering under the hood to take advantage of new technology and techniques. Bigger levels, hundreds of new colors, and morphing maps that transform mid-level are all just a few of the advancements made to the engine.</text>

@@ -2,79 +2,50 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.3 0.33</origin>
-			<origin if="${screen.ratio} == '16/10'">0.44 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.105 0.51</origin>
+		<image name="sysbg-left">
 			<pos>0.287 0.36</pos>
-			<minSize>0.1 0.3</minSize>
+			<size>0.1 0.3</size>
 			<rotation>26</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.007 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<visible>true</visible>
+			<origin if="${screen.ratio} == '4/3'">1.02 0.5</origin>
+			<origin if="${screen.ratio} == '16/10'">0.66 0.5</origin>
+			<origin if="${screen.ratio} == '21/9'">0.12 0.5</origin>
+			<size if="${screen.ratio} == '21/9'">0.1 0.4</size>
 		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.7 0.33</origin>
-			<origin if="${screen.ratio} == '16/10'">0.57 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.915 0.51</origin>
+		<image name="sysbg-right">
 			<pos>0.713 0.36</pos>
-			<minSize>0.1 0.3</minSize>
+			<size>0.1 0.3</size>
 			<rotation>-26</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.433 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<visible>true</visible>
+			<origin if="${screen.ratio} == '4/3'">0 0.5</origin>
+			<origin if="${screen.ratio} == '16/10'">0.34 0.5</origin>
+			<origin if="${screen.ratio} == '21/9'">0.88 0.5</origin>
+			<size if="${screen.ratio} == '21/9'">0.1 0.4</size>
 		</image>
-		<image name="sysbg-video-arcade" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>20</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.5 0.47</origin>
+		<image name="sysbg-video">
 			<pos>0.50 0.385</pos>
-			<size>0.38 0.22</size>
-			<size if="${screen.ratio} == '4/3'">0.38 0.17</size>
-			<size if="${screen.ratio} == '16/10'">0.39 0.22</size>
-			<size if="${screen.ratio} == '21/9'">0.28 0.22</size>
-			<storyboard>
-				<animation property="pos" to="0.22 0.385" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.38 0.2</size>
+			<size if="${screen.ratio} == '16/10'">0.42 0.2</size>
+			<size if="${screen.ratio} == '4/3'">0.5 0.2</size>
+			<size if="${screen.ratio} == '21/9'">0.29 0.2</size>
 		</image>
-		<video name="videoboxarcade" extra="true">
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.27</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
+		<video name="videobox">
 			<pos>0.50 0.38</pos>
 			<maxSize>0.365</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.38" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize if="${screen.ratio} == '16/10'">0.4</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.485</maxSize>
+			<maxSize if="${screen.ratio} == '21/9'">0.275</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1997</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>IGS</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>PolyGame master</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The PolyGame Master (PGM) is an arcade system board developed by the Taiwanese company IGS and released in 1997. It was designed to compete with SNK’s Neo Geo MVS system in Taiwan. The PGM features several video games, with the most notable titles belonging to the Knights of Valour series.
 
 The PGM was succeeded by the IGS PolyGame Master 2 in 2007, which featured fewer games, with the most notable being Knights of Valour 3 from the same series, and the IGS PolyGame Master 3, released in 2012.</text>

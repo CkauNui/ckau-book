@@ -2,52 +2,29 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.445</pos>
-			<maxSize>0.16</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.17</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.445" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.15 0.16</size>
+			<size if="${screen.ratio} == '16/10'">0.16 0.16</size>
+			<size if="${screen.ratio} == '4/3'">0.2 0.16</size>
+			<size if="${screen.ratio} == '21/9'">0.11 0.16</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+		<video name="videobox">
 			<pos>0.5 0.445</pos>
 			<maxSize>0.15</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
 			<maxSize if="${screen.ratio} == '16/10'">0.17</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.445" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize if="${screen.ratio} == '4/3'">0.2</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2005</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>TimeTop</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>GameKing III</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>GameKing is a brand of handheld game consoles, designed and developed by Timetop and manufactured by Guangzhou Panyu Gaoming Electronics Co.,Ltd, for the Hong Kong consumer market.
 
 The 'GameKing III' or GM-220 was released in 2005. While early advertisements showed the GameKing III with the same "false color" background picture as the GameKing I and II, which indicated that the system was black and white like the previous GameKing models, the GM-220 is full colour. Another distinction of the GM-220 is that unlike its predecessors, the Gameking I and II, which were promoted and marketed worldwide, the Gameking III was not distributed outside of Asia, making it much less common than the earlier models.

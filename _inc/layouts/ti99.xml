@@ -2,51 +2,33 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.31</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
-			<origin if="${screen.ratio} == '21/9'">0.43 0.5</origin>
+		<image name="sysbg-video">
 			<pos>0.46 0.37</pos>
-			<maxSize>0.27</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.18 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.21 0.28</size>
+			<pos if="${screen.ratio} == '16/10'">0.454 0.37</pos>
+			<size if="${screen.ratio} == '16/10'">0.23 0.28</size>
+			<pos if="${screen.ratio} == '4/3'">0.444 0.37</pos>
+			<size if="${screen.ratio} == '4/3'">0.28 0.28</size>
+			<pos if="${screen.ratio} == '21/9'">0.47 0.37</pos>
+			<size if="${screen.ratio} == '21/9'">0.16 0.28</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.31</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
-			<origin if="${screen.ratio} == '21/9'">0.43 0.5</origin>
+		<video name="videobox">
 			<pos>0.46 0.37</pos>
 			<maxSize>0.255</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.18 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<pos if="${screen.ratio} == '16/10'">0.454 0.37</pos>
+			<pos if="${screen.ratio} == '4/3'">0.444 0.37</pos>
+			<pos if="${screen.ratio} == '21/9'">0.47 0.37</pos>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1979</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Texas Instruments</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>TI-99/4A</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The TI-99/4 is a home computer released in late 1979 by Texas Instruments. Based on the Texas Instruments TMS9900 microprocessor originally used in minicomputers, it was the first 16-bit home computer. The associated video display controller provides color graphics and among the best sprite support of its era.
 
 It includes a simplified internal design, a full-travel keyboard, improved graphics, and a unique expansion system. At half the price of the original model, sales picked up significantly. TI supported the 4A with peripherals, including a speech synthesizer and a "Peripheral Expansion System" box to contain hardware add-ons. TI released developer information and tools, but the insistence on remaining sole publisher continued to starve the platform of software.</text>

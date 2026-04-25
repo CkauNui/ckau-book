@@ -2,52 +2,32 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysart" extra="true">
-			<path>./../../_inc/anim/fpinball.png</path>
-			<path>./../../../ckau-book-addons/_inc/anim/4K/fpinball.png</path>
+		<image name="sysart">
+			<path>./../../_inc/arts/fpinball.png</path>
+			<path ifSubset="addons:yes">./../../../ckau-book-addons/_inc/arts/4K/fpinball.png</path>
 		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.395</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.455</origin>
+		<image name="sysbg-video">
 			<pos>0.501 0.405</pos>
-			<maxSize>0.245</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.221 0.405" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.14 0.245</size>
+			<size if="${screen.ratio} == '16/10'">0.16 0.245</size>
+			<size if="${screen.ratio} == '4/3'">0.2 0.245</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/fpinball.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/fpinball.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.395</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.455</origin>
+		<video name="videobox">
+			<path>./../../_inc/videos/fpinball.mp4</path>
+			<path ifSubset="addons:yes">./../../../ckau-book-addons/_inc/videos/fpinball.mp4</path>
 			<pos>0.501 0.408</pos>
 			<maxSize>0.23</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.221 0.408" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2023</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Zen Studios</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Pinball M</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>Get ready to tilt into terror. The new horror-inspired pinball platform for fearless players. Prove your skills on the most sinister, gory, and badass tables ever brought to life.
 
 Spine-chilling features:

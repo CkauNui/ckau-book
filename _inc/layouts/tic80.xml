@@ -2,45 +2,26 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.5</pos>
-			<maxSize>0.29</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.38</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.32</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.31 0.29</size>
+			<size if="${screen.ratio} == '16/10'">0.33 0.29</size>
+			<size if="${screen.ratio} == '4/3'">0.38 0.29</size>
+			<size if="${screen.ratio} == '21/9'">0.24 0.29</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
+		<video name="videobox">
 			<pos>0.5 0.5</pos>
 			<maxSize>0.27</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.37</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.31</maxSize>
-			<zIndex>250</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize if="${screen.ratio} == '16/10'">0.3</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.36</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2017</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>TIC-80</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>TIC-80 is a fantasy computer for making, playing and sharing tiny games.
 
 There are built-in tools for development: code, sprites, maps, sound editors and the command line, which is enough to create a mini retro game. At the exit you will get a cartridge file, which can be stored and played on the website.

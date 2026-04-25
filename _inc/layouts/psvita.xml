@@ -2,49 +2,29 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
+		<image name="sysbg-video">
 			<pos>0.501 0.4935</pos>
-			<maxSize>0.33</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.44</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.36</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.221 0.4935" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.32 0.33</size>
+			<size if="${screen.ratio} == '16/10'">0.35 0.33</size>
+			<size if="${screen.ratio} == '4/3'">0.42 0.33</size>
+			<size if="${screen.ratio} == '21/9'">0.24 0.33</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.495</origin>
+		<video name="videobox">
 			<pos>0.501 0.4935</pos>
 			<maxSize>0.312</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.418</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.348</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.221 0.4935" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize if="${screen.ratio} == '16/10'">0.344</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.414</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2011</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Sony</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>PlayStation Vita</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The PlayStation Vita (PS Vita, or Vita) is a handheld video game console developed and marketed by Sony Interactive Entertainment. It was first released in Japan on December 17, 2011, and in North America, Europe, and other international territories beginning on February 22, 2012. The console is the successor to the PlayStation Portable, and a part of the PlayStation brand of gaming devices; as part of the eighth generation of video game consoles, it primarily competed with the Nintendo 3DS.</text>
 			<text lang="pl">PlayStation Vita (nazwa kodowa Next Generation Portable) – przenośna konsola gier wideo firmy Sony, która została oficjalnie zaprezentowana 27 stycznia 2011 roku. Jest to następca konsoli PlayStation Portable. Urządzenie zadebiutowało w Japonii 17 grudnia 2011 roku, a na rynku europejskim i amerykańskim pojawiła się 22 lutego 2012 roku. Jest konkurentem przenośnej konsoli Nintendo 3DS, która miała swą premierę w pierwszym kwartale 2011 roku. Przez cały okres istnienia sprzęt miał problem w przebiciu się do masowego klienta. Z powodu niskiej sprzedaży jej produkcja zakończyła się 1 marca 2019.
 

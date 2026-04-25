@@ -7,51 +7,30 @@
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
 			<maxSize>1 1</maxSize>
-			<scale if="${screen.ratio} == '16/10'">0.9</scale>
-			<scale if="${screen.ratio} == '4/3'">0.75</scale>
-			<path>./../../_inc/anim/custom-coll-fix.png</path>
+			<path>./../../_inc/arts/custom-coll-fix.png</path>
 			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</image>
-		<image name="sysbg-video-arcade" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.49 0.42</pos>
+		<image name="sysbg-video">
+			<pos>0.495 0.42</pos>
 			<size>0.4 0.2</size>
-			<size if="${screen.ratio} == '4/3'">0.4 0.17</size>
-			<size if="${screen.ratio} == '21/9'">0.31 0.2</size>
-			<storyboard>
-				<animation property="pos" to="0.21 0.42" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size if="${screen.ratio} == '16/10'">0.46 0.2</size>
+			<size if="${screen.ratio} == '4/3'">0.54 0.2</size>
+			<size if="${screen.ratio} == '21/9'">0.303 0.2</size>
 		</image>
-		<video name="videoboxarcade" extra="true">
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+		<video name="videobox">
 			<pos>0.495 0.42</pos>
 			<maxSize>0.383</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.215 0.42" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<!-- <pos if="${screen.ratio} == '16/10'">0.488 0.4929</pos>
+			<pos if="${screen.ratio} == '4/3'">0.486 0.4929</pos>
+			<pos if="${screen.ratio} == '21/9'">0.492 0.4929</pos> -->
+			<maxSize if="${screen.ratio} == '16/10'">0.428</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.518</maxSize>
+			<maxSize if="${screen.ratio} == '21/9'">0.293</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text/>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Custom</text>
 			<text lang="pl">Obyczaj</text>
 			<text lang="ru">Пользовательская</text>
@@ -60,7 +39,7 @@
 			<text lang="it"></text>
 			<text lang="pt">Costume</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Collection</text>
 			<text lang="pl">Kolekcja</text>
 			<text lang="ru">Коллекция</text>
@@ -69,7 +48,7 @@
 			<text lang="it">Collezioni</text>
 			<text lang="pt">Coleção</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>Game Collections are a powerful way to sort your library in a different way as the default "per system" organization.
 
 The Game Collection Settings screen is available from the Main Menu.</text>

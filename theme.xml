@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 theme name:		ckau-book
 author:			Ckau
@@ -13,15 +13,20 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 	<formatVersion>7</formatVersion>
 
 	<variables>
+	<!-- Fonts , usable in <fontPath> -->
 		<fontPlayers>./_inc/fonts/players.ttf</fontPlayers>
 		<fontNameBold>./_inc/fonts/Gilroy-Bold.ttf</fontNameBold>
-		<fontNameExBold>./_inc/fonts/Gilroy-ExtraBold.ttf</fontNameExBold>
+		<!-- <fontNameExBold>./_inc/fonts/Gilroy-ExtraBold.ttf</fontNameExBold> -->
 		<fontNameReg>./_inc/fonts/Gilroy-Regular.ttf</fontNameReg>
-		<fontNameLight>./_inc/fonts/Gilroy-Light.ttf</fontNameLight>
+		<!-- <fontNameLight>./_inc/fonts/Gilroy-Light.ttf</fontNameLight> -->
 		<fontDescReg>./_inc/fonts/RobotoCondensed-Regular.ttf</fontDescReg>
-		<fontDescBold>./_inc/fonts/RobotoCondensed-Bold.ttf</fontDescBold>
-		<fontDescLight>./_inc/fonts/RobotoCondensed-Light.ttf</fontDescLight>
-		<fontUbuntu>./_inc/fonts/ubuntu_condensed.ttf</fontUbuntu>
+		<!-- <fontDescBold>./_inc/fonts/RobotoCondensed-Bold.ttf</fontDescBold> -->
+		<!-- <fontDescLight>./_inc/fonts/RobotoCondensed-Light.ttf</fontDescLight> -->
+		<!-- <fontUbuntu>./_inc/fonts/ubuntu_condensed.ttf</fontUbuntu> -->
+	<!-- Example evaluated variables, usable in if="" conditions -->
+		<wideScreen>${screen.ratio} == "16/9" || ${screen.ratio} == "16/10" || ${screen.ratio} == "16/15" || ${screen.ratio} == "21/9"</wideScreen>
+		<fullHD>${screen.height} >= 1080</fullHD>
+		<pxScale>1080 / ${screen.height}</pxScale>
 	</variables>
 
 <!-- Translations -->
@@ -31,254 +36,37 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 	<include>./_inc/elements/syscolors.xml</include>
 	<include>./_inc/elements/synonyms.xml</include>
 
-<!-- Цвета меню / Menu Color -->
-	<subset name="colorset" displayName="${subset.colorset}">
-		<include name="Blue" displayName="${blue}">./_inc/colors/blue.xml</include>
-		<include name="Cyan" displayName="${cyan}">./_inc/colors/cyan.xml</include>
-		<include name="Gray" displayName="${gray}">./_inc/colors/gray.xml</include>
-		<include name="Green" displayName="${green}">./_inc/colors/green.xml</include>
-		<include name="Orange" displayName="${orange}">./_inc/colors/orange.xml</include>
-		<include name="Red" displayName="${red}">./_inc/colors/red.xml</include>
-		<include name="Violet" displayName="${violet}">./_inc/colors/violet.xml</include>
-		<include name="Yellow" displayName="${yellow}">./_inc/colors/yellow.xml</include>
+<!-- Addons -->
+	<subset name="addons" displayName="${addons}">
+		<include name="yes" displayName="${yes}"/>
+		<include name="no" displayName="${no}"/>
 	</subset>
 
-<!-- Меню / Menu -->
-	<view name="menu">
-		<menuText name="menutitle">
-			<fontPath>${fontNameBold}</fontPath>
-			<fontSize>0.035</fontSize>
-			<fontSize if="${screen.ratio} == '4/3'">0.04</fontSize>
-			<color>FAFAFA</color>
-		</menuText>
-		<menuText name="menufooter">
-			<fontPath>${fontNameReg}</fontPath>
-			<fontSize>0.02</fontSize>
-			<fontSize if="${screen.ratio} == '4/3'">0.03</fontSize>
-			<color>777777FF</color>
-		</menuText>
-		<menuText name="menutext" extra="true">
-			<fontPath>${fontDescReg}</fontPath>
-			<fontSize>0.026</fontSize>
-			<fontSize if="${screen.ratio} == '4/3'">0.036</fontSize>
-			<color>969696</color>
-			<separatorColor>363636FF</separatorColor>
-			<selectorColor>${baseColor}</selectorColor>
-			<selectorColorEnd>${gradientEndColor}</selectorColorEnd>
-			<selectedColor>FFFFFF</selectedColor>
-			<selectorGradientType>horizontal</selectorGradientType>
-		</menuText>
-		<menuTextSmall name="menutextsmall" extra="true">
-			<fontPath>${fontDescReg}</fontPath>
-			<fontSize>0.02</fontSize>
-			<fontSize if="${screen.ratio} == '4/3'">0.03</fontSize>
-			<color>${groupColor}</color>
-		</menuTextSmall>
-		<menuGroup name="menugroup">
-			<fontPath>${fontNameBold}</fontPath>
-			<fontSize>0.02</fontSize>
-			<fontSize if="${screen.ratio} == '4/3'">0.025</fontSize>
-			<color>${groupColor}</color>
-			<backgroundColor>00000000</backgroundColor>
-			<lineSpacing>2.3</lineSpacing>
-		</menuGroup>
-		<menuBackground name="menubg">
-			<color>242424</color>
-			<path>./_inc/images/frame.png</path>
-			<cornerSize>18 18</cornerSize>
-			<scrollbarColor>96969620</scrollbarColor>
-			<scrollbarCorner>0.49</scrollbarCorner>
-			<scrollbarSize>0.003</scrollbarSize>
-			<scrollbarAlignment>innerright</scrollbarAlignment>
-		</menuBackground>
-		<menuIcons name="menuicons">
-			<iconKodi>./_inc/icons/Kodi.png</iconKodi>
-			<iconSystem>./_inc/icons/System.png</iconSystem>
-			<iconUpdates>./_inc/icons/Updates.png</iconUpdates>
-			<iconGames>./_inc/icons/Games.png</iconGames>
-			<iconControllers>./_inc/icons/Controllers.png</iconControllers>
-			<iconUI>./_inc/icons/UI.png</iconUI>
-			<iconSound>./_inc/icons/Sound.png</iconSound>
-			<iconNetwork>./_inc/icons/Network.png</iconNetwork>
-			<iconPlanemode>./_inc/icons/Planemode.png</iconPlanemode>
-			<iconScraper>./_inc/icons/Scraper.png</iconScraper>
-			<iconAdvanced>./_inc/icons/Advanced.png</iconAdvanced>
-			<iconQuit>./_inc/icons/Quit.png</iconQuit>
-			<iconRestart>./_inc/icons/Restart.png</iconRestart>
-			<iconShutdown>./_inc/icons/Shutdown.png</iconShutdown>
-			<iconFastShutdown>./_inc/icons/Fastshutdown.png</iconFastShutdown>
-			<iconRetroachievements>./_inc/icons/Contest.png</iconRetroachievements>
-			<iconManual>./_inc/icons/Manual.png</iconManual>
-			<iconEmuelec>./_inc/icons/Emuelec.png</iconEmuelec>
-		</menuIcons>
-		<menuTextEdit name="menutextedit">
-			<inactive>./_inc/images/textinput_ninepatch.png</inactive>
-			<active>./_inc/images/textinput_ninepatch_active.png</active>
-		</menuTextEdit>
-		<menuButton name="menubutton">
-			<path>./_inc/images/button.png</path>
-			<filledPath>./_inc/images/button_filled.png</filledPath>
-			<cornerSize>8 8</cornerSize>
-		</menuButton>
-	</view>
+	<!-- Цвета / Colorsets -->
+	<subset name="colorset" displayName="${subset.colorset}">
+		<include name="blue" displayName="${blue}">./_inc/colors/blue.xml</include>
+		<include name="red" displayName="${red}">./_inc/colors/red.xml</include>
+		<include name="green" displayName="${green}">./_inc/colors/green.xml</include>
+		<include name="cyan" displayName="${cyan}">./_inc/colors/cyan.xml</include>
+		<include name="yellow" displayName="${yellow}">./_inc/colors/yellow.xml</include>
+		<include name="violet" displayName="${violet}">./_inc/colors/violet.xml</include>
+		<include name="orange" displayName="${orange}">./_inc/colors/orange.xml</include>
+		<include name="gray" displayName="${gray}">./_inc/colors/gray.xml</include>
+	</subset>
 
-<!-- Clock, gamepad icons, battery indicator -->
-	<view name="screen">
-		<text name="clock">
-			<fontSize>0.025</fontSize>
-			<pos>0.905 0.945</pos>
-			<size>0.09 0.058</size>
-			<alignment>right</alignment>
-			<verticalAlignment>center</verticalAlignment>
-			<fontPath>${fontDescReg}</fontPath>
-			<lineSpacing>1</lineSpacing>
-			
-			<!-- 4:3 -->
-			<fontSize if="${screen.ratio} == '4/3'">0.034</fontSize>
-			<pos if="${screen.ratio} == '4/3'">0.888 0.945</pos>
-			<size if="${screen.ratio} == '4/3'">0.1 0.058</size>
-		</text>
-		<controllerActivity name="controllerActivity">
-			<pos>0.005 0.005</pos>
-			<size>0.185 0.023</size>
-			<itemSpacing>0.003</itemSpacing>
-			<color>FFFFFF80</color>
-			<imagePath>./_inc/images/gamepad.svg</imagePath>
-			<gunPath>./_inc/images/gun.svg</gunPath>
-			<wheelPath>./_inc/images/wheel.svg</wheelPath>
-			<activityColor>${baseColor}</activityColor>
-			<hotkeyColor>FF0000</hotkeyColor>
-			
-			<!-- 4:3 -->
-			<pos if="${screen.ratio} == '4/3'">0.015 0.005</pos>
-			<size if="${screen.ratio} == '4/3'">0.285 0.033</size>
-		</controllerActivity>
-		<!-- <batteryIndicator name="batteryIndicator">
-			<pos>0.94 0.005</pos>
-			<size>0.058 0.0275</size>
-			<horizontalAlignment>right</horizontalAlignment>
-			<incharge>./_inc/images/battery/incharge.svg</incharge>
-			<full>./_inc/images/battery/full.svg</full>
-			<at75>./_inc/images/battery/75.svg</at75>
-			<at50>./_inc/images/battery/50.svg</at50>
-			<at25>./_inc/images/battery/25.svg</at25>
-			<empty>./_inc/images/battery/empty.svg</empty>
-			<planemodeIcon>./_inc/icons/Planemode.png</planemodeIcon>
-			<color>FFFFFFA0</color>
-			
-			<size if="${screen.ratio} == '4/3'">0.058 0.0475</size>
-		</batteryIndicator> -->
-		<batteryIndicator name="batteryIndicator">
-			<visible>false</visible>
-		</batteryIndicator>
-		<!-- Панель с wifi, батареей -->
-		<stackpanel name="batteryIndicatorNew" extra="true">
-			<separator>2</separator>
-			<reverse>true</reverse>
-			<pos>0.4165 0.005</pos>
-			<size>0.58 0.0275</size>
-			<size if="${screen.ratio} == '4/3'">0.58 0.0475</size>
-			<orientation>horizontal</orientation>
-			<backgroundColor>FF000000</backgroundColor>
-			<batteryText name="batterytext">
-				<fontPath>${fontNameBold}</fontPath>
-				<fontSize>0.024</fontSize>
-				<fontSize if="${screen.ratio} == '4/3'">0.04</fontSize>
-				<color>FFFFFFA0</color>
-			</batteryText>
-			<batteryIcon name="battery">
-				<incharge>./_inc/images/battery/incharge.svg</incharge>
-				<full>./_inc/images/battery/full.svg</full>
-				<at75>./_inc/images/battery/75.svg</at75>
-				<at50>./_inc/images/battery/50.svg</at50>
-				<at25>./_inc/images/battery/25.svg</at25>
-				<empty>./_inc/images/battery/empty.svg</empty>
-				<planemodeIcon>./_inc/icons/Planemode.png</planemodeIcon>
-				<linearSmooth>true</linearSmooth>
-				<color>FFFFFFA0</color>
-				<padding>0 0</padding>
-				<maxSize>1 1</maxSize>
-			</batteryIcon>
-			<!-- Fake battery (for test) -->
-			<!-- <text name="batterytext_fake">
-				<fontPath>${fontNameBold}</fontPath>
-				<fontSize>0.024</fontSize>
-				<fontSize if="${screen.ratio} == '4/3'">0.04</fontSize>
-				<color>FFFFFFA0</color>
-				<text>5%</text>
-			</text>
-			<image name="battery_fake">
-				<path>./_inc/images/battery/empty.svg</path>
-				<incharge>./_inc/images/battery/incharge.svg</incharge>
-				<full>./_inc/images/battery/full.svg</full>
-				<at75>./_inc/images/battery/75.svg</at75>
-				<at50>./_inc/images/battery/50.svg</at50>
-				<at25>./_inc/images/battery/25.svg</at25>
-				<empty>./_inc/images/battery/empty.svg</empty>
-				<linearSmooth>true</linearSmooth>
-				<color>FFFFFFA0</color>
-				<padding>0 0</padding>
-				<maxSize>1 1</maxSize>
-			</image> -->
-			
-			<networkIcon name="network">
-				<networkIcon>./_inc/icons/Network.png</networkIcon>
-				<planemodeIcon>./_inc/icons/Planemode.png</planemodeIcon>
-				<maxSize>1 1</maxSize>
-				<linearSmooth>true</linearSmooth>
-				<color>FFFFFFA0</color>
-				
-			</networkIcon>
-		</stackpanel>
-	</view>
+	<!-- Common views -->
+	<include>./_inc/elements/menu.xml</include>
+	<include>./_inc/elements/screen.xml</include>
+	<include>./_inc/elements/system.xml</include>
 
-	<view name="system">
-		<text ifSubset="showgamescount:yes" name="systemInfo" extra="static">
-			<backgroundColor>14141400</backgroundColor>
-			<color>777777FF</color>
-			<fontPath>${fontDescReg}</fontPath>
-			<pos>0.84 0.945</pos>
-			<pos if="${screen.ratio} == '21/9'">0.85 0.945</pos>
-			<size>0.10 0.058</size>
-			<alignment>right</alignment>
-			<fontSize>0.025</fontSize>
-			<color if="${screen.ratio} == '4/3'">FFFFFF</color>
-			<pos if="${screen.ratio} == '4/3'">0.688 0.895</pos>
-			<size if="${screen.ratio} == '4/3'">0.30 0.058</size>
-			<fontSize if="${screen.ratio} == '4/3'">0.034</fontSize>
-			<zIndex>93</zIndex>
-		</text>
-		<!-- Move gamecount to the right if the clock is disabled -->
-		<text ifSubset="showgamescount:yes" if="${global.clock} == 'false'" name="systemInfo" extra="static">
-			<pos>0.89 0.945</pos>
-			<pos if="${screen.ratio} == '21/9'">0.9 0.945</pos>
-		</text>
-		<carousel name="systemcarousel">
-			<color>00000000</color>
-			<scrollSound>./_inc/sound/scroll.wav</scrollSound>
-			<defaultTransition>instant</defaultTransition>
-		</carousel>
-		
-		<text name="logoText">
-			<fontPath>${fontDescReg}</fontPath>
-			<fontSize>0.06</fontSize>
-			<color>FFFFFFFF</color>
-			<glowColor>00000010</glowColor>
-			<glowSize>3</glowSize>
-			<forceUppercase>false</forceUppercase>
-		</text>
-
-<!-- Custom music for systems -->
-		<sound name="bgsound">
-			<path>./_inc/music/${system.theme}.ogg</path>
-			<path>./_inc/music/${system.theme}.wav</path>
-			<path>./_inc/music/${system.theme}.mp3</path>
-		</sound>
-	</view>
+<!-- Loads system desc & animations, attemps to load synonym if not available -->
+	<include>./_inc/layouts/${system.theme}.xml</include>
+	<include>./_inc/layouts/${synonym}.xml</include>
 
 <!-- Systems logos type -->
 	<subset name="systemview" displayName="${subset.systemview}">
 	<include name="Wheel (anim)" displayName="${swheelanim}">./_inc/systemviews/wheel_anim.xml</include>
+	<include name="Wheel (anim inv)" displayName="${swheelaniminv}">./_inc/systemviews/wheel_anim_inv.xml</include>
 	<include name="Wheel" displayName="${swheel}">./_inc/systemviews/wheel.xml</include>
 	<include name="Wheel Left (anim)" displayName="${swheelleftanim}">./_inc/systemviews/wheel_left_anim.xml</include>
 	<include name="Wheel Left" displayName="${swheelleft}">./_inc/systemviews/wheel_left.xml</include>
@@ -287,8 +75,8 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 	<include name="Vertical" displayName="${svertical}">./_inc/systemviews/vertical.xml</include>
 	<include name="Vertical Left (anim)" displayName="${sverticalleftanim}">./_inc/systemviews/vertical_left_anim.xml</include>
 	<include name="Vertical Left" displayName="${sverticalleft}">./_inc/systemviews/vertical_left.xml</include>
-	<include name="Horizontal" displayName="${shorizontal}">./_inc/systemviews/horizontal.xml</include>
 	<include name="Horizontal (anim)" displayName="${shorizontalanim}">./_inc/systemviews/horizontal_anim.xml</include>
+	<include name="Horizontal" displayName="${shorizontal}">./_inc/systemviews/horizontal.xml</include>
 	<include name="Center" displayName="${scenter}">./_inc/systemviews/center.xml</include>
 	</subset>
 
@@ -298,12 +86,12 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 	<include name="Colorful (no anim)" displayName="${ColorfulNoAnim}">./_inc/systemviews/noanimate.xml</include>
 	<include name="Colorful (no anim/video)" displayName="${ColorfulNoAnimNoVideo}">./_inc/systemviews/noanimatenovideo.xml</include>
 	<include name="Colorful (anim, sidebar)" displayName="${ColorfulAnimTransparent}">./_inc/systemviews/animatetransparent.xml</include>
-	<include name="Colorful (grid / WIP)" displayName="${ColorfulGrid}">./_inc/systemviews/grid.xml</include>
+	<!-- <include name="Colorful (grid / WIP)" displayName="${ColorfulGrid}">./_inc/systemviews/grid.xml</include> -->
 	<include name="Textlist" displayName="${systemview.textlist}">./_inc/systemviews/textlist.xml</include>
-	<include name="Consoles" displayName="${Art_169}">./_inc/systemviews/art_169.xml</include>
+	<!-- <include name="Consoles" displayName="${Art_169}">./_inc/systemviews/art_169.xml</include>
 	<include name="Wallpapers" displayName="${Art2_169}">./_inc/systemviews/art2_169.xml</include>
 	<include name="Cinematic FullScreen" displayName="${CV1}">./_inc/systemviews/cinematic.xml</include>
-	<include name="Cinematic Static" displayName="${CV2}">./_inc/systemviews/cinematic_static.xml</include>
+	<include name="Cinematic Static" displayName="${CV2}">./_inc/systemviews/cinematic_static.xml</include> -->
 	</subset>
 
 <!-- Subset option for system bg color (need higher "System backgrounds" for work noanimate) -->
@@ -316,20 +104,21 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 	</subset>
 
 <!-- Game views -->
+	<include>./_inc/views/common.xml</include>
 	<include>./_inc/views/basic.xml</include>
+	<include>./_inc/views/grid.xml</include>
+	<include>./_inc/views/gamecarousel.xml</include>
 	<include>./_inc/views/detailed.xml</include>
 	<include>./_inc/views/Detailed Dark.xml</include>
-	<include>./_inc/views/Detailed No Video.xml</include>
-	<include>./_inc/views/gamecarousel.xml</include>
+	<!-- <include>./_inc/views/Detailed No Video.xml</include> -->
 	<include>./_inc/views/DetailedWheel.xml</include>
-	<include>./_inc/views/grid.xml</include>
 	<include>./_inc/views/Grid + Details.xml</include>
-	<include>./_inc/views/Grid + Details + Marquee.xml</include>
+	<!-- <include>./_inc/views/Grid + Details + Marquee.xml</include> -->
 	<include>./_inc/views/Grid + Fanart.xml</include>
 	<!-- <include>./_inc/views/Modern Grid.xml</include> -->
-	<include>./_inc/views/Logo + Details.xml</include>
-	<include>./_inc/views/WallpapersCarousel.xml</include>
-	<include>./_inc/views/Wallpapers.xml</include>
+	<!-- <include>./_inc/views/Logo + Details.xml</include> -->
+	<!-- <include>./_inc/views/WallpapersCarousel.xml</include> -->
+	<!-- <include>./_inc/views/Wallpapers.xml</include> -->
 	<include>./_inc/views/WallpapersHeroes.xml</include>
 	<include>./_inc/views/WallpapersHeroesHor.xml</include>
 	<include>./_inc/views/WallpapersHeroesListHor.xml</include>
@@ -337,15 +126,15 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 	<include>./_inc/views/VideoFull.xml</include>
 	<include>./_inc/views/Carousel.xml</include>
 	<include>./_inc/views/Carousel + Details.xml</include>
-	<include>./_inc/views/Carousel + Details + Marquee.xml</include>
+	<!-- <include>./_inc/views/Carousel + Details + Marquee.xml</include> -->
 	<include>./_inc/views/Carousel + Fanart.xml</include>
 	<include>./_inc/views/Tiles.xml</include>
-	<include>./_inc/views/Tiles + Video.xml</include>
+	<!-- <include>./_inc/views/Tiles + Video.xml</include> -->
 	<include>./_inc/views/Icons.xml</include>
-	<include>./_inc/views/Vertically50.xml</include>
-	<include>./_inc/views/Vertically50List.xml</include>
-	<!-- <include>./_inc/views/Content.xml</include>
-	<include>./_inc/views/Test.xml</include> -->
+	<!-- <include>./_inc/views/Vertically50.xml</include>
+	<include>./_inc/views/Vertically50List.xml</include> -->
+	<!-- <include>./_inc/views/Content.xml</include> -->
+	<!-- <include>./_inc/views/Test.xml</include> -->
 
 <!-- Presets -->
 	<include>./_inc/presets/${system.theme}.xml</include>
@@ -365,6 +154,12 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 <!-- Subset option for Hotheys Help Image -->
 	<subset name="hotkey-help" displayName="${theme.hotkey}">
 		<include name="yes" displayName="${yes}"/>
+		<include name="no" displayName="${no}"/>
+	</subset>
+
+<!--Retroachievements avatar, nickname -->
+	<subset name="cheevos-avatar" displayName="${theme.avatar}">
+		<include if="{global.cheevos} == true" name="cheevos" displayName="${global.cheevos.username}"/>
 		<include name="no" displayName="${no}"/>
 	</subset>
 
@@ -390,38 +185,11 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 		<include name="default" displayName="${subset.scrollSpeed_Default}">./_inc/elements/scrollSpeed.xml</include>
 	</subset>
 
-<!-- Game views (common elements) -->
-	<view name="basic,detailed,grid,gamecarousel">
-		<image name="logo, logo1">
-			<path>./_inc/logos/${system.theme}.png</path>
-
-			<path>./_inc/logos/${system.theme}.svg</path>
-			<path>./_inc/logos/${system.theme}-w.svg</path>
-			<path>./_inc/logos/${system.theme}-w-${lang}.png</path>
-			<path>./_inc/logos/${system.theme}-w-${lang}.svg</path>
-
-			<path>./_inc/logos/${system.theme}-${lang}.png</path>
-			<path>./_inc/logos/${system.theme}-${lang}.svg</path>
-		<!-- Logos for Collections -->
-			<path>./_inc/logos/collections/${system.theme}.png</path>
-			<path>./_inc/logos/collections/${system.theme}.svg</path>
-			<path>./_inc/logos/collections/${system.theme}-w.svg</path>
-			<linearSmooth>true</linearSmooth>
-		</image>
-	<!-- Regional consoles/computers -->
-		<image name="logo, logo1" region="eu"></image>
-		<image name="logo, logo1" region="us">
-			<path>./_inc/logos/us/${system.theme}.png</path>
-			<path>./_inc/logos/us/${system.theme}.svg</path>
-			<path>./_inc/logos/us/${system.theme}-w.svg</path>
-		</image>
-		
-		<image name="logo, logo1" region="jp">
-			<path>./_inc/logos/jp/${system.theme}.png</path>
-			<path>./_inc/logos/jp/${system.theme}.svg</path>
-			<path>./_inc/logos/jp/${system.theme}-w.svg</path>
-		</image>
-	</view>
+<!-- System video sound -->
+	<subset name="videoSound" displayName="${subset.videoSound}">
+		<include name="on" displayName="${subset.videoSound_On}"></include>
+		<include name="off" displayName="${subset.videoSound_Off}">./_inc/elements/videoSound.xml</include>
+	</subset>
 
 <!-- Buttons -->
 	<subset name="helpsystem" displayName="${helpSubsetName}">
@@ -435,6 +203,15 @@ originally based on:	art from "Colorful" by viking (https://forums.launchbox-app
 		<include name="8buttons" displayName="${buttons8}">./_inc/help/8buttons.xml</include>   
 		<include name="ninbuttons" displayName="${ninbuttons}">./_inc/help/nintendo.xml</include>
 		<include name="standard" displayName="${stbuttons}">./_inc/help/default.xml</include>
+	</subset>
+
+<!-- Gamelist Box Source -->
+	<subset name="boxsource" displayName="${boxsource}">
+		<include name="boxdefault" displayName="${box.default}"/>
+		<include name="thumbnail" displayName="${box.thumbnail}">./_inc/elements/boxsource/thumbnail.xml</include>
+		<include name="boxart" displayName="${box.boxart}">./_inc/elements/boxsource/boxart.xml</include>
+		<include name="image" displayName="${box.image}">./_inc/elements/boxsource/image.xml</include>
+		<include name="mix" displayName="${box.mix}">./_inc/elements/boxsource/mix.xml</include>
 	</subset>
 
 <!-- Custom scroll sound -->

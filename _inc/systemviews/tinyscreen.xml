@@ -70,38 +70,41 @@
 	</view>
 	<view name="grid">
 		<imagegrid name="gamegrid">
+			<margin>0.005 0.014</margin>
 			<autoLayout>3 1</autoLayout>
+			<autoLayout if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'gameandwatch'|| {system.theme} == 'solarus' || {system.theme} == 'ngage'">3 2</autoLayout>
 		</imagegrid>
+		
 	</view>
 	<view name="gamecarousel">
 		<text name="md_description">
 			<fontSize>0.035</fontSize>
 		</text>
 	</view>
-	<customView name="Grid + Details" inherits="grid">
+	<customView name="Grid + Details">
 		<imagegrid name="gamegrid">
-			<autoLayout>3 2</autoLayout>
+			<autoLayout>2 1</autoLayout>
+			<autoLayout if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'gameandwatch'|| {system.theme} == 'solarus' || {system.theme} == 'ngage'">2 2</autoLayout>
 		</imagegrid>
-	</customView>
-	<customView name="Grid + Details" inherits="grid">
 		<text name="md_description">
 			<fontSize>0.035</fontSize>
 		</text>
 	</customView>
-	<customView name="Grid + Details + Marquee" inherits="Grid + Details">
+	<!-- <customView name="Grid + Details + Marquee" inherits="Grid + Details">
 		<imagegrid name="gamegrid">
 			<autoLayout>3 2</autoLayout>
 		</imagegrid>
-	</customView>
-	<customView name="Grid + Fanart" inherits="grid">
+	</customView> -->
+	<customView name="Grid + Fanart">
 		<imagegrid name="gamegrid">
 			<autoLayout>5 1</autoLayout>
+			<autoLayout if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'gameandwatch'|| {system.theme} == 'solarus' || {system.theme} == 'ngage'">3 1</autoLayout>
 		</imagegrid>
 		<text name="md_description">
 			<fontSize>0.035</fontSize>
 		</text>
 	</customView>
-	<!-- <customView name="Modern Grid" inherits="grid">
+	<!-- <customView name="Modern Grid">
 		<imagegrid name="gamegrid">
 			<autoLayout>5 1</autoLayout>
 		</imagegrid>
@@ -109,45 +112,65 @@
 			<fontSize>0.035</fontSize>
 		</text>
 	</customView> -->
-	<customView name="Logo + Details" inherits="Grid + Details">
+	<!-- <customView name="Logo + Details">
 		<imagegrid name="gamegrid">
 			<autoLayout>3 3</autoLayout>
 		</imagegrid>
+	</customView> -->
+	<customView name="Carousel">
+		<stackpanel name="stackpanel-icons">
+			<pos>0.04 0.80</pos>
+			<size>0.9 0.046</size>
+		</stackpanel>
+		<stackpanel name="2st-line">
+			<pos>0.04 0.85</pos>
+			<size>0.9 0.046</size>
+		</stackpanel>
+		<stackpanel name="3st-line">
+			<pos>0.04 0.90</pos>
+			<size>0.9 0.046</size>
+		</stackpanel>
 	</customView>
-	<customView name="Carousel" inherits="grid">
-		<text name="md_name">
-			<fontSize>0.037</fontSize>
-		</text>
-		<text name="md_developer">
-			<fontSize>0.03</fontSize>
-		</text>
+	<customView name="Carousel + Details">
+		<stackpanel name="stackpanel-icons">
+			<pos>0.04 0.80</pos>
+			<size>0.62 0.046</size>
+		</stackpanel>
+		<stackpanel name="2st-line">
+			<pos>0.04 0.85</pos>
+			<size>0.62 0.046</size>
+		</stackpanel>
+		<stackpanel name="3st-line">
+			<pos>0.04 0.90</pos>
+			<size>0.62 0.046</size>
+		</stackpanel>
 	</customView>
-	<customView name="Carousel + Details" inherits="grid">
+	<!-- <customView name="Carousel + Details + Marquee">
 		<imagegrid name="gamegrid">
 			<autoLayout>1 1</autoLayout>
 		</imagegrid>
 		<text name="md_description">
 			<fontSize>0.035</fontSize>
 		</text>
-	</customView>
-	<customView name="Carousel + Details + Marquee" inherits="grid">
-		<imagegrid name="gamegrid">
-			<autoLayout>1 1</autoLayout>
-		</imagegrid>
+	</customView> -->
+	<customView name="Carousel + Fanart">
+		<stackpanel name="container-icons2">
+			<pos>0.065 0.214</pos>
+			<size>0.54 0.046</size>
+		</stackpanel>
+		<stackpanel name="game-data">
+			<pos>0.065 0.43</pos>
+			<size>0.54 0.046</size>
+		</stackpanel>
 		<text name="md_description">
-			<fontSize>0.035</fontSize>
+			<pos>0.065 0.267</pos>
+			<size>0.54 0.16</size>
 		</text>
+		<video name="md_video">
+			<pos>0.785 0.433</pos>
+		</video>
 	</customView>
-	<customView name="Carousel + Fanart" inherits="grid">
-		<imagegrid name="gamegrid">
-			<margin>-0.010 -0.210</margin>
-			<autoLayout>5 1</autoLayout>
-		</imagegrid>
-		<text name="md_description">
-			<fontSize>0.035</fontSize>
-		</text>
-	</customView>
-	<customView name="Tiles" inherits="grid">
+	<customView name="Tiles">
 		<imagegrid name="gamegrid">
 			<autoLayout>3 2</autoLayout>
 		</imagegrid>
@@ -158,7 +181,7 @@
 			<size>0.95 0.95</size>
 		</image>
 	</customView>
-	<customView name="Tiles + Video" inherits="grid">
+	<!-- <customView name="Tiles + Video">
 		<imagegrid name="gamegrid">
 			<autoLayout>3 2</autoLayout>
 		</imagegrid>
@@ -168,28 +191,28 @@
 		<image name="gridtile.marquee:selected">
 			<size>0.95 0.95</size>
 		</image>
-	</customView>
-	<customView name="Icons" inherits="Tiles">
+	</customView> -->
+	<customView name="Icons">
 		<imagegrid name="gamegrid">
 			<autoLayout>3 1</autoLayout>
 		</imagegrid>
 	</customView>
-	<customView name="Vertically50" inherits="grid">
+	<!-- <customView name="Vertically50">
 		<text name="md_description">
 			<fontSize>0.035</fontSize>
 		</text>
-	</customView>
-	<customView name="Vertically50List" inherits="detailed">
+	</customView> -->
+	<!-- <customView name="Vertically50List">
 		<text name="md_description">
 			<fontSize>0.035</fontSize>
 		</text>
-	</customView>
-	<customView name="Content" inherits="grid">
+	</customView> -->
+	<!-- <customView name="Content">
 		<imagegrid name="gamegrid">
 			<autoLayout>1 2</autoLayout>
 		</imagegrid>
 		<text name="md_description">
 			<fontSize>0.035</fontSize>
 		</text>
-	</customView>
+	</customView> -->
 </theme>

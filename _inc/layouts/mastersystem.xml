@@ -2,67 +2,46 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.46 0.5</origin>
+		<image name="sysbg-video">
 			<pos>0.475 0.39</pos>
-			<maxSize>0.242</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.195 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.19 0.25</size>
+			<size if="${screen.ratio} == '16/10'">0.22 0.25</size>
+			<size if="${screen.ratio} == '4/3'">0.27 0.25</size>
+			<size if="${screen.ratio} == '21/9'">0.14 0.25</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.46 0.5</origin>
+		<video name="videobox">
 			<pos>0.475 0.39</pos>
 			<maxSize>0.23</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.195 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<pos if="${screen.ratio} == '16/10'">0.472 0.39</pos>
+			<pos if="${screen.ratio} == '4/3'">0.467 0.39</pos>
+			<pos if="${screen.ratio} == '21/9'">0.481 0.39</pos>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1987</text>
 		</text>
 	<!-- Regional consoles/computers -->
-		<text name="TextDate" extra="true" region="eu"/>
-		<text name="TextDate" extra="true" region="us">
+		<text name="TextDate" region="eu"/>
+		<text name="TextDate" region="us">
 			<text>1986</text>
 		</text>
-		<text name="TextDate" extra="true" region="jp">
+		<text name="TextDate" region="jp">
 			<text>1985</text>
 		</text>
 		
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Sega</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Master System</text>
 		</text>
 	<!-- Regional consoles/computers -->
-		<text name="TextName" extra="true" region="eu"/>
-		<text name="TextName" extra="true" region="us"/>
-		<text name="TextName" extra="true" region="jp">
+		<text name="TextName" region="eu"/>
+		<text name="TextName" region="us"/>
+		<text name="TextName" region="jp">
 			<text>Mark III</text>
 		</text>
 		
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Sega Master System is a third-generation 8-bit home video game console manufactured by Sega. It was originally a remodeled export version of the Sega Mark III, the third iteration of the SG-1000 series of consoles, which was released in Japan in 1985 and featured enhanced graphical capabilities over its predecessors. The Master System launched in North America in 1986, followed by Europe in 1987, and Brazil in 1989. A Japanese version of the Master System was also launched in 1987, which features a few enhancements over the export models (and by proxy the original Mark III): a built-in FM audio chip, a rapid-fire switch, and a dedicated port for the 3D glasses. The Master System II, a cheaper model, was released in 1990 in North America and Europe.
 
 The original Master System models use both cartridges and a credit card-sized format known as Sega Cards. Accessories for the consoles include a light gun and 3D glasses that work with a range of specially designed games. The later Master System II redesign removed the card slot, turning it into a strictly cartridge-only system and is incompatible with the 3D glasses.</text>

@@ -2,48 +2,27 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.26</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.42</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.325</pos>
-			<maxSize>0.254</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.325" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.21 0.27</size>
+			<size if="${screen.ratio} == '16/10'">0.23 0.27</size>
+			<size if="${screen.ratio} == '4/3'">0.28 0.27</size>
+			<size if="${screen.ratio} == '21/9'">0.16 0.27</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.26</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.42</origin>
+		<video name="videobox">
 			<pos>0.5 0.325</pos>
 			<maxSize>0.244</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.325" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1987</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Mattel</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Captain Power</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Saturday morning TV program Captain Power and the Soldiers of the Future, which aired from 1987-88, was a science fiction/action television series that ran for 22 episodes in Canadian/American syndication. A toy line was also produced by Mattel, and during each episode there was a segment that included visual and audio material which interacted with the toys.
 
 The first interactive toy and game for the series was a toy XT-7 jet with a video cassette. There were three tapes in all: &quot;Future Force Training,&quot; &quot;Bio-Dread Strike Mission,&quot; and &quot;Raid On Volcania.&quot; The tapes had openings and closings in live action with the cast of the television show. The actual mission itself was animated and took place in the jet cockpit from the first-person point of view of the pilot/player.

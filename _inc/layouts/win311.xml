@@ -2,49 +2,27 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
-			<pos>0.498 0.36</pos>
-			<maxSize>0.25</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.218 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<image name="sysbg-video">
+			<pos>0.5 0.354</pos>
+			<size>0.2 0.26</size>
+			<size if="${screen.ratio} == '16/10'">0.23 0.26</size>
+			<size if="${screen.ratio} == '4/3'">0.28 0.26</size>
+			<size if="${screen.ratio} == '21/9'">0.15 0.26</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+		<video name="videobox">
 			<pos>0.498 0.358</pos>
-			<maxSize>0.238</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.218 0.358" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize>0.236</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1992</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Microsoft</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Windows 3.11</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>Windows 3.1 is a major release of Microsoft Windows. It was released to manufacturing on April 6, 1992, as a successor to Windows 3.0.
 
 Like its predecessors, the Windows 3.1 series ran as a shell on top of MS-DOS. Codenamed Janus, Windows 3.1 introduced the TrueType font system as a competitor to Adobe Type Manager. Its multimedia was also expanded, and screensavers were introduced, alongside new software such as Windows Media Player and Sound Recorder. File Manager and Control Panel received tweaks, while Windows 3.1 also saw the introduction of Windows Registry and add-ons. Windows 3.1 remains a 16-bit operating environment, although it can run more RAM.

@@ -2,67 +2,31 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysart" extra="true">
-			<path>./../../_inc/anim/gb.png</path>
-			<path>./../../../ckau-book-addons/_inc/anim/4K/gb.png</path>
+		<image name="sysart">
+			<path>./../../_inc/arts/gb.png</path>
+			<path ifSubset="addons:yes">./../../../ckau-book-addons/_inc/arts/4K/gb.png</path>
 		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.413</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.35</pos>
-			<maxSize>0.23</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.18 0.23</size>
+			<size if="${screen.ratio} == '16/10'">0.2 0.23</size>
+			<size if="${screen.ratio} == '4/3'">0.25 0.23</size>
+			<size if="${screen.ratio} == '21/9'">0.13 0.23</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/gb.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/gb.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.243</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.413</origin>
+		<video name="videobox">
 			<pos>0.5 0.344</pos>
 			<maxSize>0.202</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.344" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-			<video name="videoglich" extra="true">
-			<path>./../../_inc/anim/video/glich.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
- 			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.413</origin>
-			<pos>0.5 0.35</pos>
-			<maxSize>0.22</maxSize>
-			<zIndex>26</zIndex>
-			<color>FFFFFF50</color>
-			<storyboard>
-				<animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1989</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Nintendo</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Game Boy</text>
 		</text>
-		<text name="TextVariant" extra="true">
+		<text name="TextVariant">
 			<text>ROM Hacks</text>
 			<text lang="pl">Hacki rom</text>
 			<text lang="ru">Хаки</text>
@@ -72,7 +36,7 @@
 			<text lang="it">ROM Hacks</text>
 			<text lang="pt">Hacks de ROM</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Game Boy is an 8-bit handheld game console developed and manufactured by Nintendo. The first handheld in the Game Boy family, it was first released in Japan on April 21, 1989, then North America, three months later, and lastly in Europe, more than one year later. It was designed by the same team that developed the Game &amp; Watch series of handheld electronic games and several Nintendo Entertainment System games: Satoru Okada, Gunpei Yokoi, and Nintendo Research and Development 1.
 
 Nintendo's second handheld game console, the Game Boy, combines features from both the NES home system and Game &amp; Watch hardware. The console features a dull green dot-matrix screen with adjustable contrast dial, five control buttons (a directional pad, two game buttons, and "START" and "SELECT"), a single speaker with adjustable volume dial, and, like its rivals, uses cartridges as physical media for games. The color scheme is made from two tones of grey with accents of black, blue, and dark magenta. All the corners of the portrait-oriented rectangular unit are softly rounded, save for the bottom right, which is curved. At launch, it was sold either as a standalone unit, or bundled with one of several games, namely Super Mario Land or Tetris. Several accessories were also developed, including a carrying pouch, Game Genie, and printer.</text>

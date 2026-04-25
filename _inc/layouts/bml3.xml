@@ -1,50 +1,28 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.285</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.425</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.36</pos>
-			<maxSize>0.24</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.18 0.24</size>
+			<size if="${screen.ratio} == '16/10'">0.21 0.24</size>
+			<size if="${screen.ratio} == '4/3'">0.26 0.24</size>
+			<size if="${screen.ratio} == '21/9'">0.14 0.24</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.285</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.425</origin>
+		<video name="videobox">
 			<pos>0.5 0.363</pos>
 			<maxSize>0.21</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1980</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Hitachi</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>MB-6890</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Hitachi MB 6890, also known as the BASIC Master Level 3, emerged as a groundbreaking personal computer from Japan during the early 1980s. Notably, it was the first system to display Japanese characters, a significant achievement at the time.
 
 Operating on an 8-bit platform, it utilized Extended BASIC, which greatly improved performance and user-friendliness. The machine featured a color display, and optional peripherals included a printer and a mini floppy drive. Beyond individual use, it found applications in education, office work, data search, and simulation. Overall, the Hitachi MB 6890, completed in 1980, played a pivotal role in driving the adoption of personal computers in the business-oriented market.</text>

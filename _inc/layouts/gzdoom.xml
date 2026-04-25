@@ -2,48 +2,33 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.42</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
-			<origin if="${screen.ratio} == '21/9'">0.5 0.5</origin>
-			<pos>0.541 0.447</pos>
-			<maxSize>0.23</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.261 0.447" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<image name="sysbg-video">
+			<pos>0.54 0.45</pos>
+			<size>0.18 0.24</size>
+			<size if="${screen.ratio} == '16/10'">0.19 0.24</size>
+			<pos if="${screen.ratio} == '16/10'">0.544 0.45</pos>
+			<size if="${screen.ratio} == '4/3'">0.23 0.24</size>
+			<pos if="${screen.ratio} == '4/3'">0.556 0.45</pos>
+			<size if="${screen.ratio} == '21/9'">0.13 0.24</size>
+			<pos if="${screen.ratio} == '21/9'">0.53 0.45</pos>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.42</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
-			<origin if="${screen.ratio} == '21/9'">0.6 0.5</origin>
-			<pos>0.541 0.447</pos>
-			<maxSize>0.204</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.261 0.447" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<video name="videobox">
+			<pos>0.542 0.449</pos>
+			<maxSize>0.202</maxSize>
+			<pos if="${screen.ratio} == '16/10'">0.546 0.449</pos>
+			<pos if="${screen.ratio} == '4/3'">0.555 0.449</pos>
+			<pos if="${screen.ratio} == '21/9'">0.531 0.449</pos>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2005</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextManufacturer">
+			<text>ZDoom Team</text>
+		</text>
+		<text name="TextName">
 			<text>GZDoom</text>
 		</text>
-		<text name="TextVariant" extra="true">
+		<text name="TextVariant">
 			<text>Port</text>
 			<text lang="pl">Port</text>
 			<text lang="ru">Порт</text>
@@ -53,7 +38,7 @@
 			<text lang="it">Port</text>
 			<text lang="pt">Porto</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>GZDoom is a 3D-accelerated Doom source port based on ZDoom coded and maintained by Christoph Oelckers.
 
 GZDoom features an OpenGL renderer and lots of new features, among them:

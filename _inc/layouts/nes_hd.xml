@@ -2,49 +2,27 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.31</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
-			<pos>0.5 0.36</pos>
-			<maxSize>0.34</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<image name="sysbg-video">
+			<pos>0.5 0.37</pos>
+			<size>0.26 0.32</size>
+			<size if="${screen.ratio} == '16/10'">0.28 0.32</size>
+			<size if="${screen.ratio} == '4/3'">0.33 0.32</size>
+			<size if="${screen.ratio} == '21/9'">0.2 0.32</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.31</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
-			<pos>0.498 0.368</pos>
-			<maxSize>0.31</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.218 0.368" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<video name="videobox">
+			<pos>0.5 0.37</pos>
+			<maxSize>0.32</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1986</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Nintendo</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Entertainment System</text>
 		</text>
-		<text name="TextVariant" extra="true">
+		<text name="TextVariant">
 			<text>HD Packs</text>
 			<text lang="pl">Pakiety HD</text>
 			<text lang="ru">HD-Паки</text>
@@ -54,7 +32,7 @@
 			<text lang="it">HD Packs</text>
 			<text lang="pt">Pacotes HD</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>HD Packs make it possible to replace a game’s graphics, audio and music with high definition alternatives. This can be used in many ways, for example, one could keep the game’s original resolution and simply improve its graphics by adding more colors and shading or replacing only the sounds and music and going through the old game with the new sound.
 
 Currently supported in the Mesen emulator. For HD textures to work, the name of the folder with textures must match the name of the ROM, and the folder with textures must be located in the HdPacks folder.</text>

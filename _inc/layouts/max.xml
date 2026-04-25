@@ -2,58 +2,34 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.28</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
-			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>
-			<pos>0.5 0.36</pos>
-			<maxSize>0.22</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<image name="sysbg-video">
+			<pos>0.5 0.356</pos>
+			<size>0.2 0.27</size>
+			<size if="${screen.ratio} == '16/10'">0.23 0.27</size>
+			<size if="${screen.ratio} == '4/3'">0.28 0.27</size>
+			<size if="${screen.ratio} == '21/9'">0.16 0.27</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.28</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
-			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>
-			<pos>0.5 0.36</pos>
+		<video name="videobox">
+			<pos>0.5 0.356</pos>
 			<maxSize>0.21</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1982</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Commodore</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>MAX Machine</text>
 		</text>
 	<!-- Regional consoles/computers -->
-		<text name="TextName" extra="true" region="eu"/>
-		<text name="TextName" extra="true" region="us">
+		<text name="TextName" region="eu"/>
+		<text name="TextName" region="us">
 			<text>Ultimax</text>
 		</text>
-		<text name="TextName" extra="true" region="jp"/>
+		<text name="TextName" region="jp"/>
 		
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>MAX Machine, also known as Ultimax in the United States and Canada and VC-10 in Germany, is a Video game console designed and sold by Commodore International in Japan, beginning in early 1982, a predecessor to the popular Commodore 64.
 The unit has a membrane keyboard and 2 KB of RAM internally and 0.5 KB of color RAM (1024 × 4 bits). It uses a television set for a display. It uses the same chipset and 6510 CPU as the Commodore 64, the same SID sound chip, and a MOS Technology 6566 graphics chip, a version of the VIC-II that powers the C-64 graphics for the MAX' static RAM. 
 

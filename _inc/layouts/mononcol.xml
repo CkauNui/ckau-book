@@ -2,53 +2,27 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.475</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.47</pos>
-			<maxSize>0.245</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.255</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.255</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.21 0.245</size>
+			<size if="${screen.ratio} == '16/10'">0.23 0.245</size>
+			<size if="${screen.ratio} == '4/3'">0.28 0.245</size>
+			<size if="${screen.ratio} == '21/9'">0.16 0.245</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.475</origin>
+		<video name="videobox">
 			<pos>0.5 0.47</pos>
 			<maxSize>0.235</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.245</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.245</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2014</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>M&amp;D</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Monon Color</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Monon Color (梦龙彩色掌机) is a handheld video game console system manufactured and distributed by the Chinese toy company M&amp;D during 2014.
 
 Intended to be a low-cost competitor to other handheld systems at the time, the Monon Color used 2D graphics comparable to the Game Boy Advance's performance and had 21 games released for it in total, most of them being licensed by franchises including Dragon Ball, Marvel and Roco Kingdom.

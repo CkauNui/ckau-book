@@ -2,45 +2,27 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video-arcade" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.363</pos>
 			<size>0.38 0.15</size>
+			<size if="${screen.ratio} == '16/10'">0.42 0.15</size>
+			<size if="${screen.ratio} == '4/3'">0.503 0.15</size>
 			<size if="${screen.ratio} == '21/9'">0.285 0.15</size>
-			<storyboard>
-				<animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</image>
-		<video name="videoboxarcade" extra="true">
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+		<video name="videobox">
 			<pos>0.499 0.366</pos>
 			<maxSize>0.376</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.219 0.366" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize if="${screen.ratio} == '16/10'">0.416</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.506</maxSize>
+			<maxSize if="${screen.ratio} == '21/9'">0.282</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2000</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Final Burn Neo</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>Final Burn Neo (aka FBNeo) is the new official branch of the Final Burn Alpha emulator, which is compatible with hundreds of arcade and console games. The libretro core of FBNeo brings its library of compatible titles to RetroArch, where the core's tight integration with the libretro API allows it to work with RetroArch's advanced time-bending features like rollback-based netplay and runahead latency reduction. It includes input presets for automatic mapping of buttons for different games, including fighting game layouts for both modern and old-school arcade controls (aka fightsticks).</text>
 			<text lang="pl">Final Burn Neo (aka FBNeo) to nowa oficjalna odmiana emulatora Final Burn Alpha, który jest kompatybilny z setkami gier arcade i konsolowych. Rdzeń libretro FBNeo przenosi bibliotekę kompatybilnych tytułów do RetroArch, gdzie ścisła integracja z API libretro pozwala na pracę z zaawansowanymi funkcjami RetroArch, takimi jak odtwarzanie sieciowe oparte na cofaniu i redukcja opóźnień. Zawiera presety wejściowe do automatycznego mapowania przycisków dla różnych gier, w tym układy gier walki dla nowoczesnych i oldschoolowych kontrolerów arcade (aka fightsticków).
 

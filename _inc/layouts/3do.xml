@@ -2,46 +2,24 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.26</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.42</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.325</pos>
-			<maxSize>0.254</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.325" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.21 0.27</size>
+			<size if="${screen.ratio} == '16/10'">0.23 0.27</size>
+			<size if="${screen.ratio} == '4/3'">0.28 0.27</size>
+			<size if="${screen.ratio} == '21/9'">0.16 0.27</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.26</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.42</origin>
+		<video name="videobox">
 			<pos>0.5 0.325</pos>
 			<maxSize>0.244</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.325" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1993</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Panasonic</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>3DO</text>
 		</text>
 	<!-- Regional consoles/computers -->
@@ -50,7 +28,7 @@
 		<text name="TextName" extra="true" region="jp">
 			<text>3DO REAL</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The 3DO Interactive Multiplayer, often called the 3DO, is a home video game console developed by The 3DO Company. Conceived by entrepreneur and Electronic Arts founder Trip Hawkins, the 3DO was not a console manufactured by the company itself, but a series of specifications, originally designed by Dave Needle and R. J. Mical of New Technologies Group, that could be licensed by third parties. Panasonic produced the first models in 1993, and further renditions of the hardware were released in 1994 by GoldStar (now LG Electronics) and in 1995 by Sanyo.
 
 Despite a highly promoted launch (including being named Time magazine's "1993 Product of the Year") and a host of cutting-edge technologies, the 3DO's high price and an oversaturated console market prevented the system from achieving success comparable to veteran competitors Sega and Nintendo. As a result, it was discontinued in early 1997, just after an unsuccessful holiday season.</text>

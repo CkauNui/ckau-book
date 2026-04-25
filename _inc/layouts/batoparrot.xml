@@ -2,78 +2,50 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.35 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.14 0.5</origin>
+		<image name="sysbg-left">
 			<pos>0.305 0.45</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>14</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.025 0.45" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.1 0.3</size>
+			<origin if="${screen.ratio} == '4/3'">0.95 0.5</origin>
+			<origin if="${screen.ratio} == '16/10'">0.64 0.5</origin>
+			<origin if="${screen.ratio} == '21/9'">0.14 0.5</origin>
+			<visible>true</visible>
 		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.64 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.51 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.86 0.5</origin>
+		<image name="sysbg-right">
 			<pos>0.695 0.45</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>-14</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.415 0.45" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.1 0.3</size>
+			<origin if="${screen.ratio} == '4/3'">0.04 0.5</origin>
+			<origin if="${screen.ratio} == '16/10'">0.36 0.5</origin>
+			<origin if="${screen.ratio} == '21/9'">0.86 0.5</origin>
+			<visible>true</visible>
 		</image>
-		<image name="sysbg-video-arcade" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+		<image name="sysbg-video">
 			<pos>0.499 0.47</pos>
 			<size>0.32 0.22</size>
-			<size if="${screen.ratio} == '4/3'">0.31 0.17</size>
-			<size if="${screen.ratio} == '21/9'">0.24 0.22</size>
-			<storyboard>
-				<animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size if="${screen.ratio} == '16/10'">0.36 0.22</size>
+			<size if="${screen.ratio} == '4/3'">0.42 0.22</size>
+			<size if="${screen.ratio} == '21/9'">0.27 0.22</size>
 		</image>
-		<video name="videoboxarcade" extra="true">
-			<path>./../../_inc/anim/video/teknoparrot.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+		<video name="videobox">
+			<path>./../../_inc/videos/teknoparrot.mp4</path>
 			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/teknoparrot.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.44</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+			<path ifSubset="addons:yes">./../../../ckau-book-addons/_inc/videos/teknoparrot.mp4</path>
 			<pos>0.4994 0.47</pos>
-			<maxSize>0.305</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.2194 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize>0.3</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.34</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.41</maxSize>
+			<maxSize if="${screen.ratio} == '21/9'">0.23</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2023</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Sleyk Industries</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<pos>0.49 0.30</pos>
 			<text>Batoparrot</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>Conceived initially as a parody system intent on making fun of the exclusivity and long-believed monopolistic ideals of Teknoparrot, (a Windows-based modern arcade game emulator) Batoparrot began as a simple idea to bring a few Teknoparrot playable games to Batocera, using the arcade game's PC counterpart as a substitute for the game's arcade counterpart in Linux. The idea being, that any Teknoparrot games that have a PC counterpart will be added to Batoparrot and fully playable in Batocera. In this regard,  Batoparrot is merely a parody system, in that it is using PC games that are already playable in Wine as a launch point to start the games. Of course, PC games are sometimes developed much differently to arcade games, (besides pure ports) and treating them as if they are fully-fledged arcade games will certainly draw the ire of arcade game purists. As such, those familiar with the layout and makeup of a true arcade game can easily spot the difference, but most users, due to the liking of the system, and their stance against the concept of Teknoparrot‘s exclusivity, along with its difficulty to setup and it’s monopolistic “pay-for-play” structure, simply do not care about the distinction, and continue to use it all the same. As such, playing PC based arcade developed games in this manner has its limitations, but also its advantages, as many games released for PC, based off their arcade original, generally have built in improvements and updates that make the game better than it's often older arcade counterpart; and in this very real sense, Batoparrot can even be seen as superior to Teknoparrot.
 
 As for the parody system's limitations, it is well-known, that since the system uses PC counterparts of arcade games playable by Teknoparrot, the system will only have as many titles that are released and playable on PC, of which many Teknoparrot playable games are still exclusive to their modern arcade systems without any current PC release. However, over time, many of the arcade games playable by Teknoparrot are slowly getting a PC counterpart and release, and as such, they can be added to Batoparrot and playable through Wine in Batocera. Although initially a parody concept, Batoparrot continues to do very well. As it is now, Batoparrot stands as a form of protest against the closed-source, monopolistic and profit-driven nature of Teknoparrot, and continues to be used by the Linux and Batocera communities. The person behind the concept of the parody system, Sleyk, vows to keep adding games to its repertoire, solely based on principle, keeping a strict adherence to only adding modern arcade games playable by Teknoparrot that are released for PC, until Teknoparrot gets an official Linux based UI, and gives up its pay-for-play profit-driven structure.</text>

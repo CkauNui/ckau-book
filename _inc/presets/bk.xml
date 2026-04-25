@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme defaultView="Grid + Fanart">
+	<formatVersion>7</formatVersion>
+	<customView name="Grid + Fanart">
+		<image name="fanart">
+		<color>FFFFFFFF</color>
+			<storyboard event="activate"/>
+			<storyboard event="deactivate"/>
+		</image>
+		<image name="md_marquee">
+			<pos>0.185 0.172</pos>
+		</image>
+		<text name="md_name">
+			<visible>false</visible>
+		</text>
+	</customView>
+	<view name="grid">
+		<imagegrid name="gamegrid">
+			<autoLayout>6 2</autoLayout>
+			<autoLayout if="${screen.ratio} == '21/9'">8 2</autoLayout>
+		</imagegrid>
+	</view>
+</theme>

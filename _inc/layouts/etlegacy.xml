@@ -2,54 +2,35 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>
-			<pos>0.489 0.461</pos>
-			<maxSize>0.28</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.37</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.31</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.209 0.461" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<image name="sysbg-video">
+			<pos>0.489 0.463</pos>
+			<size>0.276 0.28</size>
+			<size if="${screen.ratio} == '4/3'">0.368 0.28</size>
+			<pos if="${screen.ratio} == '4/3'">0.4858 0.463</pos>
+			<size if="${screen.ratio} == '16/10'">0.306 0.28</size>
+			<pos if="${screen.ratio} == '16/10'">0.488 0.463</pos>
+			<size if="${screen.ratio} == '21/9'">0.206 0.28</size>
+			<pos if="${screen.ratio} == '21/9'">0.492 0.463</pos>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.49 0.5</origin>
-			<pos>0.489 0.4602</pos>
+		<video name="videobox">
+			<pos>0.489 0.4606</pos>
 			<maxSize>0.27</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.36</maxSize>			
+			<maxSize if="${screen.ratio} == '4/3'">0.36</maxSize>
+			<pos if="${screen.ratio} == '4/3'">0.4858 0.4606</pos>
 			<maxSize if="${screen.ratio} == '16/10'">0.30</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.209 0.4602" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<pos if="${screen.ratio} == '16/10'">0.488 0.4606</pos>
+			<pos if="${screen.ratio} == '21/9'">0.492 0.4606</pos>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2010</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>ET: Legacy team</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>ET: Legacy</text>
 		</text>
-		<text name="TextVariant" extra="true">
+		<text name="TextVariant">
 			<text>Port</text>
 			<text lang="pl">Port</text>
 			<text lang="ru">Порт</text>
@@ -59,7 +40,7 @@
 			<text lang="it">Port</text>
 			<text lang="pt">Porto</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>Wolfenstein: Enemy Territory is a free multiplayer first-person shooter. Set during World War II and heavily focused on team work, it was initially released in 2003 by Splash Damage and id Software. More than a decade after its release, after spending countless hours of escorting tanks and trucks, stealing gold and radar parts and transmitting confidential documents, it was time to dust off the game which consistently refused to go down.
 
 ET: Legacy is an open source project based on the code of Wolfenstein: Enemy Territory which was released in 2010 under the terms of GPLv3 license.</text>

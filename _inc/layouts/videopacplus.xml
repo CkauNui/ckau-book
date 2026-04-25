@@ -2,51 +2,31 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.47 0.5</origin>
+		<image name="sysbg-video">
 			<pos>0.443 0.39</pos>
-			<maxSize>0.24</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.163 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.18 0.22</size>
+			<size if="${screen.ratio} == '16/10'">0.2 0.22</size>
+			<size if="${screen.ratio} == '4/3'">0.26 0.22</size>
+			<pos if="${screen.ratio} == '21/9'">0.458 0.39</pos>
+			<size if="${screen.ratio} == '21/9'">0.13 0.22</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.47 0.5</origin>
+		<video name="videobox">
 			<pos>0.443 0.39</pos>
-			<maxSize>0.22</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.163 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize>0.215</maxSize>
+			<pos if="${screen.ratio} == '16/10'">0.435 0.39</pos>
+			<pos if="${screen.ratio} == '4/3'">0.424 0.39</pos>
+			<pos if="${screen.ratio} == '21/9'">0.456 0.39</pos>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1983</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Philips</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Videopac+ G7400</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Philips Videopac+ G7400 is a third-generation home video game console released in limited quantities in 1983, and only in Europe; an American release as the Odyssey³ Command Center was planned but never occurred. The G7400 was the successor to the Philips Videopac G7000, the European counterpart to the American Magnavox Odyssey². The system featured excellently tailored background and foreground graphics.
 
 The G7400 could play three types of games: all normal G7000 games, special G7000 games with additional high-res background graphics that would appear only when played on the G7400, and G7400-only games with high-res sprites and backgrounds.</text>

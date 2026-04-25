@@ -2,51 +2,30 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.45 0.45</origin>
+		<image name="sysbg-video">
 			<pos>0.4755 0.39</pos>
-			<maxSize>0.257</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.1955 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.19 0.25</size>
+			<size if="${screen.ratio} == '16/10'">0.22 0.25</size>
+			<size if="${screen.ratio} == '4/3'">0.27 0.25</size>
+			<size if="${screen.ratio} == '21/9'">0.14 0.25</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.45 0.45</origin>
-			<pos>0.4755 0.39</pos>
-			<maxSize>0.237</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.1955 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<video name="videobox">
+			<pos>0.475 0.39</pos>
+			<maxSize>0.232</maxSize>
+			<pos if="${screen.ratio} == '16/10'">0.472 0.39</pos>
+			<pos if="${screen.ratio} == '4/3'">0.467 0.39</pos>
+			<pos if="${screen.ratio} == '21/9'">0.481 0.39</pos>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1984</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Thomson</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>MO5</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Thomson MO5 is a home computer introduced in France in June 1984 to compete against systems such as the ZX Spectrum and Commodore 64. At the same time, Thomson also released the up-market Thomson TO7/70 machine.
 
 The MO5 was not sold in vast quantities outside France and was largely discontinued in favour of the improved Thomson MO6 in 1986. MO5s were used as educational tools in French schools for a period. The computer boots directly to the built-in Microsoft BASIC interpreter (MO5 Basic 1.0).

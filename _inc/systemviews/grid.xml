@@ -5,8 +5,8 @@
 	<variables>
 		<corners>8 * ${screen.height} / 1080</corners>
 		<borderFrame>${themePath}/_inc/images/framewsel.png</borderFrame>
-		<videoFrame>firstfile("${themePath}/_inc/anim/video/" + {system:theme} + ".mp4")</videoFrame>
-		<systemFrame>firstfile("${themePath}/_inc/anim/" + {system:theme} + ".png","./../../../ckau-book-addons/_inc/anim/4K/" + {system:theme} + ".png","./../../../ckau-book-addons/_inc/art2/collections/" + {system:theme} + ".png")</systemFrame>
+		<videoFrame>firstfile("${themePath}/_inc/videos/" + {system:theme} + ".mp4")</videoFrame>
+		<systemFrame>firstfile("${themePath}/_inc/arts/" + {system:theme} + ".png","./../../../ckau-book-addons/_inc/arts/4K/" + {system:theme} + ".png","./../../../ckau-book-addons/_inc/art2/collections/" + {system:theme} + ".png")</systemFrame>
 		<blinkColor>FFFF80FF</blinkColor>
 		<grid.itemspacing.px>12 * ${screen.height} / 1080</grid.itemspacing.px>
 		<grid.itemspacing.px verticalScreen="true">15 * ${screen.width} / 1920</grid.itemspacing.px>
@@ -14,7 +14,7 @@
 		<grid.paddingtop verticalScreen="true">0.022</grid.paddingtop>
 	</variables>
 
-<include>${themePath}/_inc/layouts/${system.theme}.xml</include>
+<!-- <include>${themePath}/_inc/layouts/${system.theme}.xml</include> -->
 
 	<view name="system">
 		<image name="sysbg-left" extra="true">
@@ -151,7 +151,7 @@
 					</image>
 
 					<image name="systemBack" extra="true">
-						<path>${themePath}/_inc/anim/${system.theme}.png</path>
+						<path>${themePath}/_inc/arts/${system.theme}.png</path>
 						<!-- this line is just to make sure the image size was preloaded for async, but is not dynamic -->
 						<path>none</path>
 						<!-- remove binding to the preloaded version -->

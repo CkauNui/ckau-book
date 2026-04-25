@@ -1,54 +1,30 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.41</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.465</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.41</pos>
-			<maxSize>0.36</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.473</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.3925</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.41" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.35 0.35</size>
+			<size if="${screen.ratio} == '16/10'">0.39 0.35</size>
+			<size if="${screen.ratio} == '4/3'">0.47 0.35</size>
+			<size if="${screen.ratio} == '21/9'">0.264 0.35</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.41</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.465</origin>
+		<video name="videobox">
 			<pos>0.5 0.41</pos>
 			<maxSize>0.351</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.466</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.389</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.41" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize if="${screen.ratio} == '16/10'">0.391</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.47</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2016</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>HTC / Oculus / Pico / Valve / WMR</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>PC VR</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>Virtual reality (VR) is a technologically created world that is transmitted to a person through their senses: sight, hearing, touch and others. Virtual reality simulates both the impact and reactions to the impact. To create a convincing set of reality sensations, computer synthesis of virtual reality properties and reactions is performed in real time.
 
 Virtual reality objects typically behave closely to the behavior of similar material reality objects. The user can influence these objects in accordance with the real laws of physics (gravity, water properties, collision with objects, reflection, etc.). However, often for entertainment purposes, users of virtual worlds are allowed to do more than is possible in real life (for example: fly, create any objects, etc.).

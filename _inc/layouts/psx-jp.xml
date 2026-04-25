@@ -2,49 +2,27 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.33</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.37</pos>
-			<maxSize>0.254</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<image name="sysbg-video">
+			<pos>0.499 0.37</pos>
+			<size>0.2 0.26</size>
+			<size if="${screen.ratio} == '16/10'">0.22 0.26</size>
+			<size if="${screen.ratio} == '4/3'">0.27 0.26</size>
+			<size if="${screen.ratio} == '21/9'">0.15 0.26</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.33</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.37</pos>
-			<maxSize>0.244</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<video name="videobox">
+			<pos>0.499 0.369</pos>
+			<maxSize>0.242</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1994</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Sony</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>PlayStation</text>
 		</text>
-		<text name="TextVariant" extra="true">
+		<text name="TextVariant">
 			<text>Japanese version</text>
 			<text lang="pl">Wersja japońska</text>
 			<text lang="ru">Японская версия</text>
@@ -54,7 +32,7 @@
 			<text lang="it">Versione giapponese</text>
 			<text lang="pt">Versão japonesa</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>PlayStation (Japanese: プレイステーション, Hepburn: Pureisutēshon, officially abbreviated as PS) is a Japanese video game brand that consists of five home video game consoles, as well as a media center, an online service, a line of controllers, two handhelds and a phone, as well as multiple magazines. The brand is produced by Sony Interactive Entertainment, a division of Sony, with the first console releasing as the PlayStation in Japan released in December 1994, and worldwide the following year.
 
 The very first console in the series was the first console of any kind to exceed 100 million units, in less than a decade. Its successor, the PlayStation 2, was released in 2000. The PlayStation 2 is the best-selling home console to date, having exceeded 155 million units sold by the end of 2012. Sony's next console, the PlayStation 3, was released in 2006 and has sold over 87.4 million units as of March 2017. The next Playstation 4 was released in 2013 and sold one million units in a single day, making it the fastest-selling console in history. The last console in the series, the PlayStation 5, was released in November 2020.</text>

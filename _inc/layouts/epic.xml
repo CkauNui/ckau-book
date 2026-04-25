@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="sysbg-video">
+			<pos>0.5 0.394</pos>
+			<size>0.372 0.382</size>
+			<size if="${screen.ratio} == '4/3'">0.494 0.382</size>
+			<size if="${screen.ratio} == '16/10'">0.414 0.382</size>
+			<size if="${screen.ratio} == '21/9'">0.28 0.382</size>
+		</image>
+		<video name="videobox">
+			<path>{random}</path>
+			<path>${themePath}/_inc/videos/windows.mp4</path>
+			<!-- Loads platform video from addon directory, if available -->
+			<path ifSubset="addons:yes">./../../../ckau-book-addons/_inc/videos/windows.mp4</path>
+			<pos>0.5 0.392</pos>
+			<maxSize>0.372</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.412</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.493</maxSize>
+		</video>
+		<text name="TextDate">
+			<text>2018</text>
+		</text>
+		<text name="TextManufacturer">
+			<text></text>
+		</text>
+		<text name="TextName">
+			<text>Epic Games</text>
+		</text>
+		<text name="TextDesc">
+			<text>Epic Games Store is a popular digital storefront and launcher for PC and Mac developed by Epic Games. It offers a wide selection of games, including exclusives, well-known hits (Fortnite, Rocket League, Fall Guys), and weekly free game giveaways. The store is known for its favorable terms for developers and built-in social features.</text>
+			<text lang="pl">Epic Games Store to popularny sklep cyfrowy i launcher na PC oraz Mac, opracowany przez firmę Epic Games. Oferuje szeroki wybór gier, w tym tytuły ekskluzywne, znane hity (Fortnite, Rocket League, Fall Guys) oraz cotygodniowe darmowe rozdawnictwa. Sklep jest znany z korzystnych warunków dla deweloperów oraz wbudowanych funkcji społecznościowych.</text>
+			<text lang="ru">Epic Games Store — это популярный цифровой магазин и лаунчер для ПК и Mac, разработанный Epic Games. Он предлагает широкий выбор игр, включая эксклюзивы, известные хиты (Fortnite, Rocket League, Fall Guys) и еженедельные бесплатные раздачи. Магазин известен выгодными условиями для разработчиков и встроенными социальными функциями.</text>
+			<text lang="es">Epic Games Store es una popular tienda digital y lanzador para PC y Mac desarrollados por Epic Games. Ofrece una amplia selección de juegos, incluidos títulos exclusivos, éxitos conocidos (Fortnite, Rocket League, Fall Guys) y juegos gratuitos semanales. La tienda es conocida por sus condiciones favorables para los desarrolladores y sus funciones sociales integradas.</text>
+			<text lang="de">Der Epic Games Store ist ein beliebter digitaler Store und Launcher für PC und Mac, entwickelt von Epic Games. Er bietet eine große Auswahl an Spielen, darunter Exklusivtitel, bekannte Hits (Fortnite, Rocket League, Fall Guys) sowie wöchentliche kostenlose Spiele. Der Store ist bekannt für seine attraktiven Konditionen für Entwickler und integrierte soziale Funktionen.</text>
+			<text lang="fr">Epic Games Store est une boutique numérique et un lanceur populaires pour PC et Mac, développés par Epic Games. Il propose un large choix de jeux, включая des exclusivités, des titres à succès (Fortnite, Rocket League, Fall Guys) ainsi que des jeux gratuits distribués chaque semaine. La boutique est réputée pour ses conditions avantageuses pour les développeurs et ses fonctionnalités sociales intégrées.</text>
+			<text lang="it">Epic Games Store è un popolare negozio digitale e launcher per PC e Mac sviluppato da Epic Games. Offre un’ampia selezione di giochi, inclusi titoli esclusivi, grandi successi (Fortnite, Rocket League, Fall Guys) e giochi gratuiti distribuiti ogni settimana. Il negozio è noto per le condizioni vantaggiose offerte agli sviluppatori e per le funzioni social integrate.</text>
+			<text lang="pt">Epic Games Store é uma loja digital e launcher populares para PC e Mac, desenvolvidos pela Epic Games. Ele oferece uma ampla variedade de jogos, incluindo títulos exclusivos, sucessos conhecidos (Fortnite, Rocket League, Fall Guys) e jogos gratuitos distribuídos semanalmente. A loja é conhecida por suas condições favoráveis para desenvolvedores e por suas funções sociais integradas.</text>
+		</text>
+	</view>
+</theme>

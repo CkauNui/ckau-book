@@ -2,63 +2,41 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.364</pos>
-			<maxSize>0.34</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.364" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<image name="sysbg-video">
+			<pos>0.5 0.37</pos>
+			<size>0.28 0.34</size>
+			<size if="${screen.ratio} == '16/10'">0.3 0.34</size>
+			<size if="${screen.ratio} == '4/3'">0.36 0.34</size>
+			<size if="${screen.ratio} == '21/9'">0.22 0.34</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.364</pos>
-			<maxSize>0.33</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.364" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<video name="videobox">
+			<pos>0.5 0.37</pos>
+			<maxSize>0.326</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1996</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Apple</text>
 		</text>
 	<!-- Regional consoles/computers -->
-		<text name="TextManufacturer" extra="true" region="eu"/>
-		<text name="TextManufacturer" extra="true" region="us"/>
-		<text name="TextManufacturer" extra="true" region="jp">
+		<text name="TextManufacturer" region="eu"/>
+		<text name="TextManufacturer" region="us"/>
+		<text name="TextManufacturer" region="jp">
 			<text>Bandai</text>
 		</text>
 		
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Pippin</text>
 		</text>
 	<!-- Regional consoles/computers -->
-		<text name="TextName" extra="true" region="eu"/>
-		<text name="TextName" extra="true" region="us"/>
-		<text name="TextName" extra="true" region="jp">
+		<text name="TextName" region="eu"/>
+		<text name="TextName" region="us"/>
+		<text name="TextName" region="jp">
 			<text>Pippin Atmark</text>
 		</text>
 		
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Apple Pippin is an open multimedia technology platform, designed by Apple Computer, and marketed as PiPP!N. According to Apple, Pippin was directed at the home market as "an integral part of the consumer audiovisual, stereo, and television environment."
 
 Pippin is based on the Apple Macintosh platform, including the classic Mac OS architecture. Apple built a demonstration device based on Pippin called "Pippin Power Player," and used it to demonstrate the platform at trade shows and to the media, in order to attract potential software developers and hardware manufacturers.

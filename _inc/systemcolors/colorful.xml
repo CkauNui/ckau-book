@@ -9,32 +9,38 @@
 		<textDescColor>FFFFFF</textDescColor>
 <!-- 		<bottomBarColor>141414B9</bottomBarColor>
 		<clockColor>FFFFFF80</clockColor> -->
-		<unfilledColor>00000030</unfilledColor>	
+		<unfilledColor>00000030</unfilledColor>
 	</variables>
-
-	<view name="system, menu, basic, detailed, grid, gamecarousel">
-		<image name="sysbg" extra="true">
+	
+	<view name="system">
+		<!-- Rename to background now <image name="sysbg" extra="true">
+			<tile>false</tile>
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
 			<size>1 1</size>
 			<color>${sysColor}</color>
-			<path>./../../_inc/images/space.png</path>
+			<path>./../images/space.png</path>
 			<zIndex>1</zIndex>
+		</image> -->
+		<image name="background" extra="static">
+			<color>${sysColor}</color>
 		</image>
 		<image name="sysbg-fix" extra="true">
+			<!-- FOR TEST <color>FFFFFF</color> -->
 			<color>${sysColor}</color>
 		</image>
 		<image name="sysbg-left" extra="true">
+			<!-- FOR TEST <color>FFFFFF</color> -->
 			<color>${sysColor}</color>
 		</image>
 		<image name="sysbg-right" extra="true">
+			<!-- FOR TEST <color>FFFFFF</color> -->
 			<color>${sysColor}</color>
 		</image>
 		<image name="sysbg-down" extra="true">
 			<color>${sysColor}</color>
 		</image>
-
-<!-- System info desc -->
+	<!-- System info desc -->
 		<text name="TextDate" extra="true">
 			<color>FFFFFF80</color>
 		</text>
@@ -46,81 +52,72 @@
 		</text>
 		<text name="TextVariant" extra="true">
 			<color>FFFFFF</color>
-		</text>	
+		</text>
 		<text name="TextDesc" extra="true">
 			<color>FFFFFF</color>
 		</text>
-
-<!-- Color help buttons, games count, clock -->
-		<helpsystem name="help">
-			<textColor>FFFFFF80</textColor>
-			<iconColor>FFFFFF80</iconColor>
-		</helpsystem>
+		
 		<text name="systemInfo" extra="static">
 			<color>FFFFFF80</color>
 			<color if="${screen.ratio} == '4/3'">FFFFFF</color>
 		</text>
-
-<!-- Helpsystem bottom bar bg -->
+		
+		<!-- System Logos -->
+		<image name="logo">
+			<path>./../logos/${system.theme}.png</path>
+			<path>./../logos/${system.theme}.svg</path>
+			<path>./../logos/${system.theme}-${lang}.png</path>
+			<path>./../logos/${system.theme}-${lang}.svg</path>
+			<!-- Attemps to load synonym if system not available -->
+			<path>./../logos/${synonym}.png</path>
+			<path>./../logos/${synonym}.svg</path>
+			<path>./../logos/${synonym}-${lang}.png</path>
+			<path>./../logos/${synonym}-${lang}.svg</path>
+			<linearSmooth>true</linearSmooth>
+		</image>
+	<!-- Logos for Collections -->
+		<image name="logo" if="{system.collection}">
+			<path>./../logos/collections/${system.theme}.png</path>
+			<path>./../logos/collections/${system.theme}.svg</path>
+		</image>
+	<!-- Regional logos -->
+		<image name="logo" region="eu"/>
+		<image name="logo" region="us">
+			<path>./../logos/us/${system.theme}.png</path>
+			<path>./../logos/us/${system.theme}.svg</path>
+			<path>./../logos/us/${synonym}.png</path>
+			<path>./../logos/us/${synonym}.svg</path>
+		</image>
+		<image name="logo" region="jp">
+			<path>./../logos/jp/${system.theme}.png</path>
+			<path>./../logos/jp/${system.theme}.svg</path>
+			<path>./../logos/jp/${synonym}.png</path>
+			<path>./../logos/jp/${synonym}.svg</path>
+		</image>
+	</view>
+	<view name="system, menu, basic, detailed, grid, gamecarousel">
+	<!-- Color help buttons, games count, clock -->
+		<helpsystem name="help">
+			<textColor>FFFFFF80</textColor>
+			<iconColor>FFFFFF80</iconColor>
+		</helpsystem>
+	<!-- Helpsystem bottom bar bg -->
 		<image name="BottomBar" extra="static">
 			<tile>false</tile>
-			<size>1 0.05</size>
-			<pos>0 1</pos>
+			<size>1 0.06</size>
+			<pos>0 1.01</pos>
 			<origin>0 1</origin>
-			<path>./_inc/images/space.png</path>
+			<path>./../images/space.png</path>
 			<!-- <color>242424D0</color> -->
 			<!-- <color>00000022</color> -->
 			<color>141414B9</color>
 			<zIndex>91</zIndex>
 		</image>
-
-<!-- System Logos -->
-		<image name="logo, logo1">
-			<path>./../../_inc/logos/${system.theme}-w.png</path>
-			<path>./../../_inc/logos/${system.theme}-w.svg</path>
-			<path>./../../_inc/logos/${system.theme}-w-${lang}.png</path>
-			<path>./../../_inc/logos/${system.theme}-w-${lang}.svg</path>
-			<path>./../../_inc/logos/${system.theme}.png</path>
-			<path>./../../_inc/logos/${system.theme}.svg</path>
-			<path>./../../_inc/logos/${system.theme}-${lang}.png</path>
-			<path>./../../_inc/logos/${system.theme}-${lang}.svg</path>
-			<!-- Attemps to load synonym if system not available -->
-			<path>./../../_inc/logos/${synonym}-w.png</path>
-			<path>./../../_inc/logos/${synonym}-w.svg</path>
-			<path>./../../_inc/logos/${synonym}-w-${lang}.png</path>
-			<path>./../../_inc/logos/${synonym}-w-${lang}.svg</path>
-			<path>./../../_inc/logos/${synonym}.png</path>
-			<path>./../../_inc/logos/${synonym}.svg</path>
-			<path>./../../_inc/logos/${synonym}-${lang}.png</path>
-			<path>./../../_inc/logos/${synonym}-${lang}.svg</path>
-			<!-- Logos for Collections -->
-			<path>./_inc/logos/collections/${system.theme}-w.png</path>
-			<path>./_inc/logos/collections/${system.theme}.png</path>
-			<path>./_inc/logos/collections/${system.theme}-w.svg</path>
-			<path>./_inc/logos/collections/${system.theme}.svg</path>
-			<linearSmooth>true</linearSmooth>
-		</image>
-	<!-- Regional logos -->
-		<image name="logo, logo1" region="eu"></image>
-		<image name="logo, logo1" region="us">
-			<path>./../../_inc/logos/us/${system.theme}-w.png</path>
-			<path>./../../_inc/logos/us/${system.theme}-w.svg</path>
-			<path>./../../_inc/logos/us/${system.theme}.png</path>
-			<path>./../../_inc/logos/us/${system.theme}.svg</path>
-			<path>./../../_inc/logos/us/${synonym}-w.png</path>
-			<path>./../../_inc/logos/us/${synonym}-w.svg</path>
-			<path>./../../_inc/logos/us/${synonym}.png</path>
-			<path>./../../_inc/logos/us/${synonym}.svg</path>
-		</image>
-		<image name="logo, logo1" region="jp">
-			<path>./../../_inc/logos/jp/${system.theme}-w.png</path>
-			<path>./../../_inc/logos/jp/${system.theme}-w.svg</path>
-			<path>./../../_inc/logos/jp/${system.theme}.png</path>
-			<path>./../../_inc/logos/jp/${system.theme}.svg</path>
-			<path>./../../_inc/logos/jp/${synonym}-w.png</path>
-			<path>./../../_inc/logos/jp/${synonym}-w.svg</path>
-			<path>./../../_inc/logos/jp/${synonym}.png</path>
-			<path>./../../_inc/logos/jp/${synonym}.svg</path>
+	</view>
+	<view name="basic, detailed, grid, gamecarousel">
+	<!-- Helpsystem bottom bar bg -->
+		<image name="BottomBar" extra="static">
+			<zIndex>180</zIndex>
 		</image>
 	</view>
 

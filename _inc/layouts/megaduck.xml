@@ -2,48 +2,27 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.35</pos>
-			<maxSize>0.215</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.18 0.215</size>
+			<size if="${screen.ratio} == '16/10'">0.2 0.215</size>
+			<size if="${screen.ratio} == '4/3'">0.25 0.215</size>
+			<size if="${screen.ratio} == '21/9'">0.13 0.215</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+		<video name="videobox">
 			<pos>0.5 0.35</pos>
 			<maxSize>0.205</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.35" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1993</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Creatonic/Videojet/Timlex</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Mega Duck</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Mega Duck was released by Creatronic, Videojet and Timlex in 1993 mainly in Germany and France. Looks alike a Game Boy with the monochrome green screen, it's "start", "Select", "A" and "B" buttons and directional pad but that's were the similiraties ends.
 
 The carts are about 2 1/8 inchs by 2 1/2 inchs with 36 pins to connect with the cartridge slot of the Mega Duck (unlike the 32-pins of the Game Boy or the 40-pins of the Supervision).</text>

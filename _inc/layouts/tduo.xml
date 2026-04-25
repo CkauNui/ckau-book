@@ -2,48 +2,29 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.33</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+		<image name="sysbg-video">
 			<pos>0.50 0.395</pos>
-			<maxSize>0.22</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.395" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.18 0.24</size>
+			<size if="${screen.ratio} == '16/10'">0.2 0.24</size>
+			<size if="${screen.ratio} == '4/3'">0.25 0.24</size>
+			<size if="${screen.ratio} == '21/9'">0.13 0.24</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/pce-cd.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/pce-cd.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.33</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+		<video name="videobox">
+			<path>./../../_inc/videos/pce-cd.mp4</path>
+			<path ifSubset="addons:yes">./../../../ckau-book-addons/_inc/videos/pce-cd.mp4</path>
 			<pos>0.50 0.395</pos>
 			<maxSize>0.21</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.395" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1992</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Nec</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>TurboDuo</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The NEC TurboDuo, released in 1992, was an innovative video game console that combined the capabilities of the TurboGrafx-16 and its CD-ROM add-on, the TurboGrafx-CD, into a single, sleek unit. This console was developed through a collaboration between NEC and Hudson Soft and was known for its ability to play both HuCard cartridges and CD-ROM² discs, offering a wide range of games that utilized the enhanced storage and multimedia capabilities of CDs.
 
 The TurboDuo was the North American version of Japan's PC Engine Duo and featured an upgraded BIOS and additional RAM (192 KB), which enabled compatibility with a broader range of games, including the new Super CD-ROM² titles.

@@ -1,76 +1,22 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 -0.55</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.14</origin>
-			<pos>0.498 0.18</pos>
-			<minSize>0.4 0.1</minSize>
-			<minSize if="${screen.ratio} == '4/3'">0.59 0.1</minSize>
-			<minSize if="${screen.ratio} == '16/10'">0.49 0.1</minSize>
-			<rotation>0</rotation>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.218 0.18" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 1</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.74</origin>
-			<pos>0.498 0.65</pos>
-			<minSize>0.4 0.1</minSize>
-			<minSize if="${screen.ratio} == '4/3'">0.59 0.1</minSize>
-			<minSize if="${screen.ratio} == '16/10'">0.49 0.1</minSize>
-			<rotation>0</rotation>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.218 0.65" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.41</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.465</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.41</pos>
-			<maxSize>0.36</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.473</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.3925</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.41" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.35 0.35</size>
+			<size if="${screen.ratio} == '16/10'">0.39 0.35</size>
+			<size if="${screen.ratio} == '4/3'">0.47 0.35</size>
+			<size if="${screen.ratio} == '21/9'">0.264 0.35</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.41</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.465</origin>
+		<video name="videobox">
 			<pos>0.5 0.41</pos>
 			<maxSize>0.351</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.41" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text/>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Collection</text>
 			<text lang="pl">Kolekcja</text>
 			<text lang="ru">Коллекция</text>
@@ -79,10 +25,14 @@
 			<text lang="it">Collezione</text>
 			<text lang="pt">Coleção</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Steering Wheel Games</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextVariant">
+			<text>Auto</text>
+			<text lang="ru">Авто</text>
+		</text>
+		<text name="TextDesc">
 			<text>A sim racing wheel is a control device for use in racing games, racing simulators, and driving simulators. They are usually packaged with a large paddle styled as a steering wheel, along with a set of pedals for the accelerator, brake, and clutch, as well as transmission controls. An analog wheel and pedal set such as this allows the user to accurately manipulate steering angle and pedal control that is required to properly manage a simulated car, as opposed to digital control such as a keyboard. The relatively large range of motion further allows the user to more accurately apply the controls.
 
 The least expensive units are paddle controllers with a larger wheel, but many gaming wheels also employ force feedback to simulate the tactile feedback a real driver feels from a steering wheel. Game controllers are available for arcade cabinets, personal computers, and console games that are designed to look and feel like a steering wheel and intended for use in racing games.

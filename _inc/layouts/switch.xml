@@ -3,62 +3,37 @@
 	<formatVersion>7</formatVersion>
 	<view name="system">
 		<!-- fix bg color -->
-		<image name="sysbg-fix" extra="true">
+		<image name="sysbg-fix">
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
 			<maxSize>1 1</maxSize>
-			<scale if="${screen.ratio} == '16/10'">0.9</scale>
-			<scale if="${screen.ratio} == '4/3'">0.75</scale>
-			<path>./../../_inc/anim/switch-fix.png</path>
+			<path>./../../_inc/arts/switch-fix.png</path>
 			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.5</pos>
 			<size>0.5 0.8</size>
 			<size if="${screen.ratio} == '4/3'">0.65 0.6</size>
 			<size if="${screen.ratio} == '16/10'">0.55 0.6</size>
 			<size if="${screen.ratio} == '21/9'">0.4 0.75</size>
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</image>
-		<video name="videobox" extra="true">
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.485</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.495</origin>
-			<origin if="${screen.ratio} == '21/9'">0.51 0.5</origin>
+		<video name="videobox">
 			<pos>0.512 0.475</pos>
 			<maxSize>0.52</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.58</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.232 0.475" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize if="${screen.ratio} == '16/10'">0.52</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.59</maxSize>
+			<pos if="${screen.ratio} == '21/9'">0.508 0.475</pos>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2017</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Nintendo</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Switch</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Nintendo Switch is a video game console, developed by Nintendo and released worldwide in most regions on March 3, 2017. It is a hybrid console that can be used as either a home console or a portable device. Its wireless Joy-Con controllers, with standard buttons and directional analog sticks for user input, motion sensing, and tactile feedback, can attach to both sides of the console to support handheld-style play. They can also connect to a grip accessory to provide a traditional home console gamepad form, or be used individually in the hand like the Wii Remote and Nunchuk, supporting local multiplayer modes.
 
 The Nintendo Switch's software supports online gaming through Internet connectivity, as well as local wireless ad hoc connectivity with other consoles. Nintendo Switch games and software are available on both physical flash-based ROM cartridges and digital distribution via Nintendo eShop; the system has no region lockout. A handheld-focused revision of the system, called the Nintendo Switch Lite, was released on September 20, 2019.</text>

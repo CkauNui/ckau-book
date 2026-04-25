@@ -2,47 +2,25 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.535 0.5</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.378</pos>
-			<maxSize>0.26</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.378" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.19 0.26</size>
+			<size if="${screen.ratio} == '16/10'">0.21 0.26</size>
+			<size if="${screen.ratio} == '4/3'">0.26 0.26</size>
+			<size if="${screen.ratio} == '21/9'">0.14 0.26</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.535 0.5</origin>
+		<video name="videobox">
 			<pos>0.502 0.378</pos>
 			<maxSize>0.24</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.222 0.378" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<pos if="${screen.ratio} == '21/9'">0.501 0.378</pos>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2000</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>EasyRPG</text>
 		</text>
-		<text name="TextVariant" extra="true">
+		<text name="TextVariant">
 			<text>Port</text>
 			<text lang="pl">Port</text>
 			<text lang="ru">Порт</text>
@@ -52,7 +30,7 @@
 			<text lang="it">Port</text>
 			<text lang="pt">Porto</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>EasyRPG is a community project to create a free, open source, role playing game creation tool, compatible with RPG Maker 2000/2003 games.</text>
 			<text lang="pl">EasyRPG jest projektem społecznościowym mającym na celu stworzenie darmowego, otwartego narzędzia do tworzenia gier fabularnych, kompatybilnego z grami RPG Maker 2000/2003.</text>
 			<text lang="ru">EasyRPG позволяет играть в игры, созданные в RPG Maker 2000 и RPG Maker 2003 (более новые RPG-движки, такие как XP, VX, VX Ace, MV, Wolf RPG Editor или какие либо другие не поддерживаются).</text>

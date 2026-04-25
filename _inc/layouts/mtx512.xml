@@ -2,49 +2,27 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.27</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.42</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.325</pos>
-			<maxSize>0.275</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.325" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.21 0.28</size>
+			<size if="${screen.ratio} == '16/10'">0.23 0.28</size>
+			<size if="${screen.ratio} == '4/3'">0.28 0.28</size>
+			<size if="${screen.ratio} == '21/9'">0.16 0.28</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.27</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.42</origin>
+		<video name="videobox">
 			<pos>0.5 0.325</pos>
-			<maxSize>0.263</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.325" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize>0.26</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1983</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Memotech</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>MTX512</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Memotech MTX500 and MTX512 were a range of 8-bit Zilog Z80A based home computers released by the British company Memotech in 1983 and sold mainly in the UK, France, Germany and Scandinavia. Originally a manufacturer of memory add-ons for Sinclair machines, Memotech developed their own competing computer when it was perceived the expansion pack business would no longer be viable.
 
 The Memotech machines were technically similar to, although not compatible with, the MSX standard, making use of the same CPU and video chip. The machines were particularly distinguished from other microcomputers available at the time by the generous maximum memory ceiling. The 500 and 512 models could be expanded internally up to 512K, an unusually large amount of RAM in 1983 for a computer aimed at home use.</text>

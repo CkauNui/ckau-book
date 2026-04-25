@@ -2,49 +2,27 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.4995 0.39</pos>
-			<maxSize>0.252</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.2195 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<image name="sysbg-video">
+			<pos>0.499 0.39</pos>
+			<size>0.2 0.25</size>
+			<size if="${screen.ratio} == '16/10'">0.22 0.25</size>
+			<size if="${screen.ratio} == '4/3'">0.27 0.25</size>
+			<size if="${screen.ratio} == '21/9'">0.15 0.25</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.4995 0.39</pos>
+		<video name="videobox">
+			<pos>0.499 0.39</pos>
 			<maxSize>0.242</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.2195 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1993</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Atari</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Jaguar</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Atari Jaguar is a home video game console developed by Atari Corporation and released in North America in November 1993. Part of the fifth generation of video game consoles, it competed with the 16-bit Sega Genesis and Super NES and the 32-bit 3DO Interactive Multiplayer which launched the same year. Despite its two custom 32-bit processors – Tom and Jerry – in addition to a Motorola 68000, Atari marketed it as the world's first 64-bit game system, emphasizing its 64-bit bus. The Jaguar launched with Cybermorph as the pack-in game.
 
 Development on the Atari Jaguar started in the early 1990s by Flare Technology which also designed the cancelled Atari Panther console. The multi-chip architecture, hardware bugs, and lacking developer support tools made game development difficult. Underwhelming sales further contributed to the console's lack of third-party support. The game library comprised only 50 licensed titles, plus another 13 games on the Jaguar CD.

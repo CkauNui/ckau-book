@@ -2,51 +2,30 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.52 0.5</origin>
+		<image name="sysbg-video">
 			<pos>0.525 0.488</pos>
-			<maxSize>0.272</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.35</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.29</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.245 0.488" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.23 0.272</size>
+			<size if="${screen.ratio} == '16/10'">0.25 0.272</size>
+			<size if="${screen.ratio} == '4/3'">0.32 0.272</size>
+			<size if="${screen.ratio} == '21/9'">0.18 0.272</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.52 0.5</origin>
+		<video name="videobox">
 			<pos>0.525 0.488</pos>
 			<maxSize>0.262</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.29</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.245 0.488" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize if="${screen.ratio} == '4/3'">0.292</maxSize>
+			<pos if="${screen.ratio} == '4/3'">0.532 0.488</pos>
+			<pos if="${screen.ratio} == '21/9'">0.518 0.488</pos>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1999</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Bandai</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>WonderSwan</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The WonderSwan is a handheld game console released in Japan by Bandai. It was developed by Gunpei Yokoi's company Koto Laboratory and Bandai, and was the last piece of hardware Yokoi developed before his death in 1997.
 
 Released in 1999 in the fifth generation of video game consoles, the WonderSwan and its two later models, the WonderSwan Color and SwanCrystal were officially supported until being discontinued by Bandai in 2003. During its lifespan, no variation of the WonderSwan was released outside of Japan.</text>

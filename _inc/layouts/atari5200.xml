@@ -2,49 +2,30 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+		<image name="sysbg-video">
 			<pos>0.49 0.4</pos>
-			<maxSize>0.237</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.19 0.24</size>
+			<size if="${screen.ratio} == '16/10'">0.21 0.24</size>
+			<size if="${screen.ratio} == '4/3'">0.26 0.24</size>
+			<size if="${screen.ratio} == '21/9'">0.14 0.24</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+		<video name="videobox">
 			<pos>0.49 0.4</pos>
 			<maxSize>0.227</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<pos if="${screen.ratio} == '16/10'">0.489 0.4</pos>
+			<pos if="${screen.ratio} == '4/3'">0.486 0.4</pos>
+			<pos if="${screen.ratio} == '21/9'">0.491 0.4</pos>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1982</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Atari</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>5200</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Atari 5200 SuperSystem or simply Atari 5200 is a home video game console introduced in 1982 by Atari, Inc. as a higher-end complement for the popular Atari Video Computer System. The VCS was renamed to the Atari 2600 at the time of the 5200's launch. The 5200 was created to compete with the Intellivision, but wound up a direct competitor of the ColecoVision shortly after its release. While the Coleco system shipped with the first home version of Nintendo's Donkey Kong, the pack-in game for the 5200 was 1978's Super Breakout which had already appeared on the Atari VCS and Atari 8-bit computers in 1978 and 1979 respectively.
 
 The 5200's internal hardware is almost identical to that of Atari's Atari 8-bit family, although software is not directly compatible between the two systems. The 5200's controllers have an analog joystick and a numeric keypad along with start, pause, and reset buttons. The 360-degree non-centering joystick was touted as offering more control than the eight-way Atari CX40 joystick of the 2600, but it was a focal point for criticism.

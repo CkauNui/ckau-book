@@ -2,51 +2,32 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
-			<origin if="${screen.ratio} == '21/9'">0.52 0.5</origin>
-			<pos>0.514 0.43</pos>
-			<maxSize>0.22</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.234 0.43" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<image name="sysbg-video">
+			<pos>0.515 0.43</pos>
+			<size>0.18 0.23</size>
+			<size if="${screen.ratio} == '16/10'">0.2 0.23</size>
+			<pos if="${screen.ratio} == '4/3'">0.52 0.43</pos>
+			<size if="${screen.ratio} == '4/3'">0.25 0.23</size>
+			<pos if="${screen.ratio} == '21/9'">0.51 0.43</pos>
+			<size if="${screen.ratio} == '21/9'">0.13 0.23</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
-			<origin if="${screen.ratio} == '21/9'">0.52 0.5</origin>
+		<video name="videobox">
 			<pos>0.514 0.43</pos>
-			<maxSize>0.202</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.234 0.43" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize>0.2</maxSize>
+			<pos if="${screen.ratio} == '16/10'">0.5156 0.43</pos>
+			<pos if="${screen.ratio} == '4/3'">0.519 0.43</pos>
+			<pos if="${screen.ratio} == '21/9'">0.5106 0.43</pos>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1995</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Microsoft</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Windows 95</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>Windows 95 is a consumer-oriented operating system developed by Microsoft as part of its Windows 9x family of operating systems. The first operating system in the 9x family, it is the successor to Windows 3.1x, and was released to manufacturing on July 14, 1995, and generally to retail on August 24, 1995, almost three months after the release of Windows NT 3.51.
 Windows 95 merged Microsoft's formerly separate MS-DOS and Microsoft Windows products, and featured significant improvements over its predecessor, most notably in the graphical user interface (GUI) and in its simplified "plug-and-play" features.
 

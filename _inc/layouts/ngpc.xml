@@ -2,48 +2,27 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.47</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.49</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.468</pos>
-			<maxSize>0.332</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.468" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.21 0.34</size>
+			<size if="${screen.ratio} == '16/10'">0.23 0.34</size>
+			<size if="${screen.ratio} == '4/3'">0.28 0.34</size>
+			<size if="${screen.ratio} == '21/9'">0.16 0.34</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.47</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.49</origin>
+		<video name="videobox">
 			<pos>0.499 0.4785</pos>
 			<maxSize>0.296</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.219 0.4785" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1999</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>SNK</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Neo Geo Pocket Color</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Neo Geo Pocket Color is a 16-bit color handheld video game console manufactured by SNK. It is a successor to SNK's monochrome Neo Geo Pocket handheld which debuted in 1998 in Japan, with the Color being fully backward compatible. The Neo Geo Pocket Color was released on March 16, 1999 in Japan, August 6, 1999 in North America, and on October 1, 1999 in Europe, entering markets all dominated by Nintendo, competing with Nintendo's Game Boy Color.
 
 After a good sales start in both the U.S. and Japan with 14 launch titles (a record at the time), subsequent low retail support in the U.S., lack of communication with third-party developers by SNK's American management, the popularity of Nintendo's Pokémon franchise and anticipation of the 32-bit Game Boy Advance, and strong competition from Bandai's WonderSwan in Japan, led to a sales decline in both regions.</text>

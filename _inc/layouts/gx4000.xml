@@ -2,49 +2,27 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.32</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.375</pos>
-			<maxSize>0.228</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.375" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.18 0.24</size>
+			<size if="${screen.ratio} == '16/10'">0.2 0.24</size>
+			<size if="${screen.ratio} == '4/3'">0.25 0.24</size>
+			<size if="${screen.ratio} == '21/9'">0.13 0.24</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.32</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
+		<video name="videobox">
 			<pos>0.5 0.375</pos>
 			<maxSize>0.218</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.375" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1990</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Amstrad</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>GX4000</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The GX4000 is a video game console that was manufactured by Amstrad. It was the company's short-lived attempt to enter the games console market. The console was released in Europe in 1990 and was an upgraded design based on the then still-popular CPC technology. The GX4000 shared hardware architecture with Amstrad's CPC Plus computer line, which was released concurrently. This allowed the system to be compatible with the majority of CPC Plus software.
 
 The GX4000 was both Amstrad's first and only attempt at entering the console market. Although offering enhanced graphics capabilities, it failed to gain popularity in the market, and was quickly discontinued, selling 15,000 units in total.</text>

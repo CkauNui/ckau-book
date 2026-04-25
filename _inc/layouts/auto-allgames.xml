@@ -7,48 +7,29 @@
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
 			<maxSize>1 1</maxSize>
-			<scale if="${screen.ratio} == '16/10'">0.9</scale>
-			<scale if="${screen.ratio} == '4/3'">0.75</scale>
-			<path>./../../_inc/anim/auto-fix.png</path>
+			<path>./../../_inc/arts/auto-fix.png</path>
+			<!-- Loads 4K image, if addon is available -->
+			<path ifSubset="addons:yes">./../../../ckau-book-addons/_inc/arts/4K/auto-fix.png</path>
 			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>3</zIndex>
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.492</pos>
-			<maxSize>0.6</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.492" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<image name="sysbg-video">
+			<visible>false</visible>
 		</image>
-		<video name="videobox" extra="true">
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${system.theme}-${lang}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}-${lang}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '21/9'">0.494 0.5</origin>
+		<video name="videobox">
+			<path>./../../_inc/videos/${system.theme}.mp4</path>
+			<path>./../../_inc/videos/${system.theme}-${lang}.mp4</path>
+			<path ifSubset="addons:yes">./../../../ckau-book-addons/_inc/videos/${system.theme}.mp4</path>
+			<path ifSubset="addons:yes">./../../../ckau-book-addons/_inc/videos/${system.theme}-${lang}.mp4</path>
 			<pos>0.49 0.4929</pos>
 			<maxSize>0.555</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.21 0.4929" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<pos if="${screen.ratio} == '16/10'">0.488 0.4929</pos>
+			<pos if="${screen.ratio} == '4/3'">0.486 0.4929</pos>
+			<pos if="${screen.ratio} == '21/9'">0.492 0.4929</pos>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text/>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Collection</text>
 			<text lang="pl">Kolekcja</text>
 			<text lang="ru">Коллекция</text>
@@ -56,7 +37,7 @@
 			<text lang="fr">Collection</text>
 			<text lang="it">Collezione</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>All Games</text>
 			<text lang="pl">Wszystkie gry</text>
 			<text lang="ru">Все игры</text>
@@ -64,7 +45,7 @@
 			<text lang="fr">Tous les jeux</text>
 			<text lang="it">Tutti i giochi</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>Here is a collection of all the games, from all the systems you have in your retro collection on this machine.</text>
 			<text lang="pl">Oto kolekcja wszystkich gier, z wszystkich systemów jakie posiadasz w swojej retro kolekcji na tej maszynie.</text>
 			<text lang="ru">Здесь собраны все игры со всех систем, которые есть в вашей ретро-коллекции.</text>

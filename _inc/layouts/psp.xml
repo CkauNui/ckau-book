@@ -2,50 +2,29 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.488</pos>
-			<maxSize>0.30</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.4</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.32</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.488" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.3 0.30</size>
+			<size if="${screen.ratio} == '16/10'">0.33 0.30</size>
+			<size if="${screen.ratio} == '4/3'">0.38 0.30</size>
+			<size if="${screen.ratio} == '21/9'">0.22 0.30</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.485</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.495</origin>
+		<video name="videobox">
 			<pos>0.5 0.488</pos>
 			<maxSize>0.282</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.312</maxSize>
 			<maxSize if="${screen.ratio} == '4/3'">0.372</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.31</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.488" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2004</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Sony</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>PlayStation Portable</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The PlayStation Portable (PSP) is a handheld game console developed and marketed by Sony Computer Entertainment. It was first released in Japan on December 12, 2004, in North America on March 24, 2005, and in PAL regions on September 1, 2005, and is the first handheld installment in the PlayStation line of consoles. As a seventh generation console it competed with the Nintendo DS.
 
 Development of the PSP was announced during E3 2003, and the console was unveiled at a Sony press conference on May 11, 2004. The system was the most powerful portable console when it was introduced, and was the first real competitor of Nintendo's handheld consoles after many challengers, such as Nokia's N-Gage, had failed. The PSP's advanced graphics capabilities made it a popular mobile entertainment device, which could connect to the PlayStation 2 and PlayStation 3 consoles, any computer with USB interface, other PSP systems, and the Internet. The PSP also had a vast array of multimedia features such as video playback, and so has been considered a portable media player as well. The PSP is the only handheld console to use an optical disc format – Universal Media Disc (UMD) – as its primary storage medium; both games and movies have been released on the format.</text>

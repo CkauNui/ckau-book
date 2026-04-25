@@ -2,50 +2,30 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video-arcade" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.32</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.5 0.49</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.409</pos>
 			<size>0.315 0.2</size>
-			<size if="${screen.ratio} == '4/3'">0.316 0.16</size>
-			<size if="${screen.ratio} == '21/9'">0.24 0.2</size>
-			<storyboard>
-				<animation property="pos" to="0.22 0.409" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size if="${screen.ratio} == '4/3'">0.42 0.2</size>
+			<size if="${screen.ratio} == '16/10'">0.35 0.2</size>
+			<size if="${screen.ratio} == '21/9'">0.235 0.2</size>
 		</image>
-		<video name="videoboxarcade" extra="true">
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.32</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+		<video name="videobox">
 			<pos>0.5005 0.403</pos>
 			<maxSize>0.303</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.2205 0.403" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize if="${screen.ratio} == '4/3'">0.406</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.338</maxSize>
+			<maxSize if="${screen.ratio} == '21/9'">0.23</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2002</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Namco / Sega / Nintendo</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Triforce</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Triforce (トライフォース) is an arcade board developed in a joint venture between Sega, Nintendo, and Namco. It is based upon the Nintendo GameCube video game console to reduce development costs, and allowed for arcade ports of home console games, and vice versa. It is named after the magical, often sought-after object in Nintendo's popular The Legend of Zelda series.
 
 The system hardware is based on the Nintendo GameCube with several differences, like provisions for add-ons such as Sega's GD-ROM system and upgradeable RAM modules.

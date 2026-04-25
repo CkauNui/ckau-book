@@ -2,48 +2,30 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video-arcade" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.363</pos>
 			<size>0.38 0.15</size>
+			<size if="${screen.ratio} == '16/10'">0.42 0.15</size>
+			<size if="${screen.ratio} == '4/3'">0.503 0.15</size>
 			<size if="${screen.ratio} == '21/9'">0.285 0.15</size>
-			<storyboard>
-				<animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</image>
-		<video name="videoboxarcade" extra="true">
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+		<video name="videobox">
 			<pos>0.499 0.366</pos>
 			<maxSize>0.376</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.219 0.366" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize if="${screen.ratio} == '16/10'">0.416</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.506</maxSize>
+			<maxSize if="${screen.ratio} == '21/9'">0.282</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1998</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>SETA Corporation</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Aleck 64</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Aleck 64 is the Nintendo 64 design in arcade form, designed by SETA in cooperation with Nintendo, and sold from 1998 to 2003 only in Japan.
 It essentially consists of a Nintendo 64 board retrofitted with the sound capabilities which are standard for arcade games of the time. Nintendo and SETA began working on their agreement for the board in 1996, hoping to recreate the business model Namco and Sony Computer Entertainment displayed with the Namco System 11, to facilitate conversions of arcade games.
 

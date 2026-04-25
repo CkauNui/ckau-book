@@ -2,51 +2,33 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.35 0.5</origin>
+		<image name="sysbg-video">
 			<pos>0.422 0.382</pos>
-			<maxSize>0.252</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.142 0.382" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.2 0.252</size>
+			<size if="${screen.ratio} == '16/10'">0.22 0.252</size>
+			<pos if="${screen.ratio} == '16/10'">0.412 0.382</pos>
+			<size if="${screen.ratio} == '4/3'">0.26 0.252</size>
+			<pos if="${screen.ratio} == '4/3'">0.396 0.382</pos>
+			<size if="${screen.ratio} == '21/9'">0.15 0.252</size>
+			<pos if="${screen.ratio} == '21/9'">0.442 0.382</pos>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.35 0.5</origin>
+		<video name="videobox">
 			<pos>0.422 0.382</pos>
 			<maxSize>0.242</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.142 0.382" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<pos if="${screen.ratio} == '16/10'">0.412 0.382</pos>
+			<pos if="${screen.ratio} == '4/3'">0.396 0.382</pos>
+			<pos if="${screen.ratio} == '21/9'">0.442 0.382</pos>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2005</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Sega</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Advanced Pico Beena</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Advanced Pico Beena, also known simply as Beena or BeenaLite, is an educational console system targeted at young children sold by Sega Toys, released in 2005 in Japan. It is the successor to the Pico, and marketed around the "learn while playing" concept. According to Sega Toys, the focus of the Advanced Pico Beena is on learning in a new social environment, and is listed as their upper-end product. Topics listed as being educational focuses for the Beena include intellectual, moral, physical, dietary, and safety education.
 
 The name of the console was chosen to sound like the first syllables of "Be Natural".

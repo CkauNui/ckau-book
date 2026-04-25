@@ -2,49 +2,27 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.39</pos>
-			<maxSize>0.25</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<image name="sysbg-video">
+			<pos>0.5 0.386</pos>
+			<size>0.2 0.25</size>
+			<size if="${screen.ratio} == '16/10'">0.22 0.25</size>
+			<size if="${screen.ratio} == '4/3'">0.26 0.25</size>
+			<size if="${screen.ratio} == '21/9'">0.14 0.25</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.5 0.39</pos>
-			<maxSize>0.24</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<video name="videobox">
+			<pos>0.5 0.386</pos>
+			<maxSize>0.234</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1996</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Bandai</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>SuFami Turbo</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The SuFami Turbo (スーファミターボ), often compared to the Aladdin Deck Enhancer, is an accessory released by Bandai for Nintendo's Super Famicom system and was released in 1996.
 
 This device is designed to sit on top of the Super Famicom, and features two cartridge slots. The premise is that games could be produced at a much lower cost and development time, not having to rely on Nintendo for cartridge production. Unlike the Aladdin Deck Enhancer, this device was officially approved by Nintendo under the provision that Bandai handle all the hardware manufacturing itself.
@@ -61,13 +39,13 @@ Dwa sloty na kartridże zostały zaprojektowane w celu wymiany danych pomiędzy 
 Gry, które można łączyć, są oznaczone żółtym diagramem przedstawiającym SuFami Turbo z 1 lub 2 kartridżami w prawym dolnym rogu pudełka z grą. Jeśli do SuFami Turbo podłączony jest jeden moduł, gra nie może być łączona. Jeśli do urządzenia SuFami Turbo podłączone są 2 karty, to można je połączyć z grami wymienionymi na pudełku.
 
 Urządzenie SuFami Turbo zostało wydane jako samodzielne urządzenie lub w zestawie z grą.</text>
-			<text lang="ru">Часто сравниваемая с Aladdin Deck Enhancer - это аксессуар, выпущенный Bandai для системы Nintendo Super Famicom и выпущенный в 1996 году.
+			<text lang="ru">SuFami Turbo — устройство, которое часто сравнивают с Aladdin Deck Enhancer. Это аксессуар, выпущенный компанией Bandai для системы Nintendo Super Famicom в 1996 году.
 
-Имеет два слота для картриджей. Предполаглось, что игры можно будет производить с гораздо меньшими затратами и меньшим временем на разработку, без необходимости полагаться на Nintendo в производстве картриджей. В отличие от Aladdin Deck Enhancer , это устройство было официально одобрено Nintendo в соответствии с положением, согласно которому Bandai сама занимается производством оборудования.
+Устройство устанавливается поверх Super Famicom и оснащено двумя слотами для картриджей. Идея заключалась в том, чтобы выпускать игры с гораздо меньшими затратами и в более короткие сроки, не полагаясь на Nintendo в производстве картриджей. В отличие от Aladdin Deck Enhancer, это устройство было официально одобрено Nintendo при условии, что Bandai самостоятельно возьмёт на себя всё производство оборудования.
 
-Два слота для картриджей предназначены для обмена данными между играми. Картридж, помещенный в слот 1, является игрой, в которую будет играть, а картридж в слоте 2 предоставляет дополнительные данные для использования в основной игре. Из тринадцати выпущенных игр девять могут быть связаны в каждой игровой серии.
+Два слота для картриджей предназначены для обмена данными между играми. Картридж, установленный в слот 1, является основной игрой, в которую будет играть пользователь, а картридж в слоте 2 предоставляет дополнительные данные для использования в основной игре. Из тринадцати выпущенных игр девять поддерживают соединение друг с другом в рамках одной игровой серии.
 
-Игры, которые можно связать, обозначены желтой диаграммой, показывающей SuFami Turbo с 1 или 2 картриджами в правом нижнем углу коробки с игрой. Если на изображении 1 тележка подключена к SuFami Turbo, она не может быть привязана. Если к SuFami Turbo подключены 2 тележки, то его можно связать с играми, указанными на коробке.</text>
+SuFami Turbo выпускался как отдельное устройство, а также в комплекте с одной из игр.</text>
 			<text lang="es">El SuFami Turbo (スーファミターボ), a menudo comparado con el Aladdin Deck Enhancer, es un accesorio lanzado por Bandai para la consola Super Famicom de Nintendo y fue lanzado en 1996.
 
 Este dispositivo está diseñado para colocarse encima de la Super Famicom, y cuenta con dos ranuras para cartuchos. La premisa es que los juegos podrían producirse con un coste y un tiempo de desarrollo mucho menores, al no tener que depender de Nintendo para la producción de cartuchos. A diferencia del Aladdin Deck Enhancer, este dispositivo fue aprobado oficialmente por Nintendo con la condición de que Bandai se encargara de la fabricación del hardware.

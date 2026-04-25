@@ -2,51 +2,30 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.52 0.5</origin>
+		<image name="sysbg-video">
 			<pos>0.522 0.415</pos>
-			<maxSize>0.24</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.242 0.415" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.2 0.24</size>
+			<size if="${screen.ratio} == '16/10'">0.22 0.24</size>
+			<size if="${screen.ratio} == '4/3'">0.26 0.24</size>
+			<size if="${screen.ratio} == '21/9'">0.15 0.24</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.38</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.52 0.5</origin>
+		<video name="videobox">
 			<pos>0.522 0.415</pos>
 			<maxSize>0.23</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.242 0.415" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<pos if="${screen.ratio} == '16/10'">0.524 0.415</pos>
+			<pos if="${screen.ratio} == '4/3'">0.53 0.415</pos>
+			<pos if="${screen.ratio} == '21/9'">0.518 0.415</pos>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1985</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Atari</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>ST</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Atari ST is a line of home computers from Atari Corporation and the successor to the Atari 8-bit family. The initial model, the 520ST, saw limited release in April–June 1985 and was widely available in July. The 520ST is the first personal computer to come with a bitmapped color GUI, using a version of Digital Research's GEM released in February 1985. The 1040ST, released in 1986, is the first personal computer to ship with a megabyte of RAM in the base configuration and also the first with a cost-per-kilobyte of less than US$1.
 
 The Atari ST is part of a mid-1980s generation of home computers that have 16 or 32-bit processors, 256 KB or more of RAM, and mouse-controlled graphical user interfaces. This generation includes the Macintosh, Amiga, Apple IIGS, and in some markets the Acorn Archimedes. "ST" officially stands for "Sixteen/Thirty-two", which refers to the Motorola 68000's 16-bit external bus and 32-bit internals.

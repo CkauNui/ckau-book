@@ -2,53 +2,33 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.405</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.394</pos>
-			<maxSize>0.383</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.497</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.417</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.394" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.372 0.382</size>
+			<size if="${screen.ratio} == '4/3'">0.494 0.382</size>
+			<size if="${screen.ratio} == '16/10'">0.414 0.382</size>
+			<size if="${screen.ratio} == '21/9'">0.28 0.382</size>
 		</image>
-		<video name="videobox" extra="true">
+		<video name="videobox">
 			<path>{random}</path>
-			<path>./../../_inc/anim/video/moonlight.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
+			<path>${themePath}/_inc/videos/moonlight.mp4</path>
 			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/moonlight.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.405</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
-			<pos>0.5 0.39</pos>
+			<path ifSubset="addons:yes">./../../../ckau-book-addons/_inc/videos/moonlight.mp4</path>
+			<pos>0.5 0.392</pos>
 			<maxSize>0.372</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.495</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.415</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.39" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize if="${screen.ratio} == '16/10'">0.412</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.493</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2021</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Microsoft</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Windows 11</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>Windows 11 is the latest major release of Microsoft's Windows NT operating system, released on October 5, 2021. It was a free upgrade to its predecessor, Windows 10 (2015), and is available for any Windows 10 devices that meet the new Windows 11 system requirements, but can also be installed on unsupported devices by bypassing the restrictions of system requirements.</text>
 			<text lang="pl">Windows 11 to najnowsza główna wersja systemu operacyjnego Windows NT firmy Microsoft, wydana 5 października 2021 roku. Była to bezpłatna aktualizacja do swojego poprzednika, Windows 10 (2015), i jest dostępna dla wszystkich urządzeń z systemem Windows 10, które spełniają nowe wymagania systemowe Windows 11, ale można ją również zainstalować na nieobsługiwanych urządzeniach, omijając ograniczenia wymagań systemowych.</text>
 			<text lang="ru">Windows 11 - последний крупный выпуск операционной системы Windows NT компании Microsoft, выпущенный 5 октября 2021 года. Она стала бесплатным обновлением своей предшественницы, Windows 10 (2015), и доступна для любых устройств с Windows 10, отвечающих новым системным требованиям Windows 11, но может быть установлена и на неподдерживаемые устройства в обход ограничений системных требований.</text>

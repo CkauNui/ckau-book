@@ -2,51 +2,32 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.43 0.5</origin>
+		<image name="sysbg-video">
 			<pos>0.4645 0.41</pos>
-			<maxSize>0.24</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.1845 0.41" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.21 0.25</size>
+			<size if="${screen.ratio} == '16/10'">0.23 0.25</size>
+			<pos if="${screen.ratio} == '4/3'">0.4545 0.41</pos>
+			<size if="${screen.ratio} == '4/3'">0.28 0.25</size>
+			<pos if="${screen.ratio} == '21/9'">0.4745 0.41</pos>
+			<size if="${screen.ratio} == '21/9'">0.16 0.25</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.43 0.5</origin>
+		<video name="videobox">
 			<pos>0.4645 0.41</pos>
 			<maxSize>0.22</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.1845 0.41" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<pos if="${screen.ratio} == '4/3'">0.4525 0.41</pos>
+			<pos if="${screen.ratio} == '16/10'">0.4605 0.41</pos>
+			<pos if="${screen.ratio} == '21/9'">0.4725 0.41</pos>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1983</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>VTech</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Laser 310</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>VTech Laser 310 (also known as VZ-310). It is an all-in-one computer with a Z80, 3.54 MHz microprocessor. VTech (short for Video Technology Ltd.) was a Hong Kong electronics company that also sold the Laser in other countries through various retail chains. The Laser 310 was sold by Dick Smith Electronics , for example, so instead of VTech the Laser 310 was then called the Dick Smith Laser VZ-310 or VZ-310 for short (sold from 1983 to 1989). The Laser 310 is comparable to the previous model Laser200 (VZ-200), except for a modified keyboard and a rather unusual memory size of 18 KiB (2 KiB of which is video RAM) and is fully compatible with it. The machine ran basic games on the cartridge, such as Hoppy (Frogger's version), Cosmic Rescue (Scramble), VZ Invaders (Space Invaders), Dawn Patrol (Chopper) and Moon Patrol.
 
 Technical specifications:

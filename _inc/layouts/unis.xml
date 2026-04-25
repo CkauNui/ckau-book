@@ -1,78 +1,47 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.35 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.14 0.5</origin>
+		<image name="sysbg-left">
 			<pos>0.305 0.45</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>14</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.025 0.45" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.1 0.3</size>
+			<origin if="${screen.ratio} == '4/3'">0.95 0.5</origin>
+			<origin if="${screen.ratio} == '16/10'">0.64 0.5</origin>
+			<origin if="${screen.ratio} == '21/9'">0.14 0.5</origin>
+			<visible>true</visible>
 		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.64 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.51 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.86 0.5</origin>
+		<image name="sysbg-right">
 			<pos>0.695 0.45</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>-14</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.415 0.45" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.1 0.3</size>
+			<origin if="${screen.ratio} == '4/3'">0.04 0.5</origin>
+			<origin if="${screen.ratio} == '16/10'">0.36 0.5</origin>
+			<origin if="${screen.ratio} == '21/9'">0.86 0.5</origin>
+			<visible>true</visible>
 		</image>
-		<image name="sysbg-video-arcade" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+		<image name="sysbg-video">
 			<pos>0.499 0.47</pos>
 			<size>0.32 0.22</size>
-			<size if="${screen.ratio} == '4/3'">0.31 0.17</size>
-			<size if="${screen.ratio} == '21/9'">0.24 0.22</size>
-			<storyboard>
-				<animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size if="${screen.ratio} == '16/10'">0.36 0.22</size>
+			<size if="${screen.ratio} == '4/3'">0.42 0.22</size>
+			<size if="${screen.ratio} == '21/9'">0.27 0.22</size>
 		</image>
-		<video name="videoboxarcade" extra="true">
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.44</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+		<video name="videobox">
 			<pos>0.4994 0.47</pos>
 			<maxSize>0.3</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.2194 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize if="${screen.ratio} == '16/10'">0.34</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.41</maxSize>
+			<maxSize if="${screen.ratio} == '21/9'">0.23</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2005</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>UNIS Technology</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>UNIS Arcade Machines</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>UNIS Technology is a leading developer and manufacturer of coin-operated arcade games, known for their innovative and engaging designs.
 
 With over 30 years of experience, UNIS has created a wide range of arcade games that cater to various interests and age groups.</text>

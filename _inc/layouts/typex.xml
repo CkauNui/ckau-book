@@ -2,77 +2,46 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.35 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.14 0.5</origin>
+		<image name="sysbg-left">
 			<pos>0.305 0.45</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>14</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.025 0.45" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.1 0.3</size>
+			<origin if="${screen.ratio} == '4/3'">0.95 0.5</origin>
+			<origin if="${screen.ratio} == '16/10'">0.64 0.5</origin>
+			<origin if="${screen.ratio} == '21/9'">0.14 0.5</origin>
+			<visible>true</visible>
 		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.64 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.51 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.86 0.5</origin>
+		<image name="sysbg-right">
 			<pos>0.695 0.45</pos>
-			<minSize>0.1 0.3</minSize>
-			<rotation>-14</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.415 0.45" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.1 0.3</size>
+			<origin if="${screen.ratio} == '4/3'">0.04 0.5</origin>
+			<origin if="${screen.ratio} == '16/10'">0.36 0.5</origin>
+			<origin if="${screen.ratio} == '21/9'">0.86 0.5</origin>
+			<visible>true</visible>
 		</image>
-		<image name="sysbg-video-arcade" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+		<image name="sysbg-video">
 			<pos>0.499 0.47</pos>
 			<size>0.32 0.22</size>
-			<size if="${screen.ratio} == '4/3'">0.31 0.17</size>
-			<size if="${screen.ratio} == '21/9'">0.24 0.22</size>
-			<storyboard>
-				<animation property="pos" to="0.219 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size if="${screen.ratio} == '16/10'">0.36 0.22</size>
+			<size if="${screen.ratio} == '4/3'">0.42 0.22</size>
+			<size if="${screen.ratio} == '21/9'">0.27 0.22</size>
 		</image>
-		<video name="videoboxarcade" extra="true">
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.44</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.48</origin>
+		<video name="videobox">
 			<pos>0.4994 0.47</pos>
 			<maxSize>0.3</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.2194 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize if="${screen.ratio} == '16/10'">0.34</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.41</maxSize>
+			<maxSize if="${screen.ratio} == '21/9'">0.23</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2004</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Taito</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Type X</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Taito Type X is an arcade system board released in 2004 by game developer and publisher Taito.
 
 Based on commodity personal computer hardware architecture, Type X is not a specification for a single set of hardware, but rather a modular platform supporting multiple hardware configurations with different levels of graphical capability. This flexibility allows game developers limited choice in selecting a configuration to fit the game's specific requirements, and allows the platform as a whole to more efficiently support gaming titles with vastly different computing needs. For example, the Type X+ and Type X2 models have upgrade graphics processing power, which could be put toward better game visuals, or outputting to higher-resolution (HDTV) displays. The Type X7 board is used primarily for pachinko machines in Japan. Rawiya co-owned the company that produced this system board.

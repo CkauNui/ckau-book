@@ -2,53 +2,30 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.5 0.5</origin>
+		<image name="sysbg-video">
 			<pos>0.489 0.395</pos>
-			<maxSize>0.242</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.234</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.209 0.395" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.2 0.24</size>
+			<size if="${screen.ratio} == '16/10'">0.22 0.24</size>
+			<size if="${screen.ratio} == '4/3'">0.26 0.24</size>
+			<size if="${screen.ratio} == '21/9'">0.14 0.24</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.5 0.5</origin>
-			<pos>0.489 0.395</pos>
+		<video name="videobox">
+			<pos>0.488 0.395</pos>
 			<maxSize>0.232</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.234</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.209 0.395" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<pos if="${screen.ratio} == '16/10'">0.487 0.395</pos>
+			<pos if="${screen.ratio} == '4/3'">0.484 0.395</pos>
+			<pos if="${screen.ratio} == '21/9'">0.491 0.395</pos>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1980</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Acorn</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Atom</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Acorn Atom is a home computer made by Acorn Computers Ltd from 1980 to 1982, when it was replaced by the BBC Micro. The Micro began life as an upgrade to the Atom, originally known as the Proton.
 
 The Atom was a progression of the MOS Technology 6502-based machines that the company had been making from 1979. The Atom was a cut-down Acorn System 3 without a disk drive but with an integral keyboard and cassette tape interface, sold in either kit or complete form. In 1980 it was priced between £120 in kit form, £170 (equivalent to £745 in 2020) ready assembled, to over £200 for the fully expanded version with 12 KB of RAM and the floating-point extension ROM.

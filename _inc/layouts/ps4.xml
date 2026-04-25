@@ -2,53 +2,29 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.43</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.478</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.3978</pos>
-			<maxSize>0.47</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.62</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.513</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.3978" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.46 0.465</size>
+			<size if="${screen.ratio} == '16/10'">0.51 0.465</size>
+			<size if="${screen.ratio} == '4/3'">0.615 0.465</size>
+			<size if="${screen.ratio} == '21/9'">0.345 0.465</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.425</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.475</origin>
+		<video name="videobox">
 			<pos>0.5 0.3968</pos>
 			<maxSize>0.46</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.615</maxSize>
 			<maxSize if="${screen.ratio} == '16/10'">0.51</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.3968" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize if="${screen.ratio} == '4/3'">0.615</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2013</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Sony</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Playstation 4</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The PlayStation 4 (PS4) is a home video game console developed by Sony Interactive Entertainment. A console of the eighth generation, it competes with Microsoft's Xbox One and Nintendo's Wii U and Switch.
 
 Moving away from the more complex Cell microarchitecture of its predecessor, the console features an AMD Accelerated Processing Unit (APU) built upon the x86-64 architecture, which can theoretically peak at 1.84 teraflops; AMD stated that it was the "most powerful" APU it had developed to date. The PlayStation 4 places an increased emphasis on social interaction and integration with other devices and services, including the ability to play games off-console on PlayStation Vita and other supported devices ("Remote Play"), the ability to stream gameplay online or to friends, with them controlling gameplay remotely ("Share Play"). The console's controller was also redesigned and improved over the PlayStation 3, with improved buttons and analog sticks, and an integrated touchpad among other changes. The console also supports HDR10 High-dynamic-range video and playback of 4K resolution multimedia.</text>

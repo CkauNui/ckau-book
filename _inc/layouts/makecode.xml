@@ -2,49 +2,29 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+		<image name="sysbg-video">
 			<pos>0.499 0.405</pos>
-			<maxSize>0.2</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.219 0.405" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.18 0.2</size>
+			<size if="${screen.ratio} == '16/10'">0.21 0.2</size>
+			<size if="${screen.ratio} == '4/3'">0.26 0.2</size>
+			<size if="${screen.ratio} == '21/9'">0.14 0.2</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.32</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+		<video name="videobox">
 			<pos>0.499 0.405</pos>
-			<maxSize>0.19</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.23</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.219 0.405" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize>0.18</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.2</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.24</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2016</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Microsoft</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Makecode</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>Microsoft MakeCode is a free, open source platform for creating engaging computer science learning experiences that support a progression path into real-world programming.
 
 Available as a web-based environment for learning to code with physical computing devices such as the micro:bit, it has a handful of novel features all packed into a single web application (web app).

@@ -2,50 +2,27 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
-			<origin if="${screen.ratio} == '21/9'">0.48 0.5</origin>
+		<image name="sysbg-video">
 			<pos>0.482 0.444</pos>
-			<maxSize>0.216</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.202 0.444" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.18 0.22</size>
+			<size if="${screen.ratio} == '16/10'">0.21 0.22</size>
+			<size if="${screen.ratio} == '4/3'">0.25 0.22</size>
+			<size if="${screen.ratio} == '21/9'">0.15 0.22</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
-			<origin if="${screen.ratio} == '21/9'">0.48 0.5</origin>
+		<video name="videobox">
 			<pos>0.482 0.444</pos>
 			<maxSize>0.206</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.202 0.444" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1984</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Epoch</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Game Pocket Computer</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Epoch Game Pocket Computer (Japanese: ゲームポケコン, Hepburn: Gēmupokekon) is a second-generation handheld game console released by Epoch Co. in Japan in 1984 for 12,000 Japanese yen. It is also known as Pokekon and was one of the very few truly handheld systems to be released in the early 1980s, preceding the Game Boy by 5 years.
 
 The system was a bust in Japan, and as a result, only 5 games were made for it. A puzzle game and a paint program were built into the system. It was powered by 4 AA batteries, and screen's contrast could be adjusted by the user. Input and output controls included four buttons, an 8-way joypad, a contrast dial, and a sound on-off switch.

@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 <formatVersion>7</formatVersion>
 <!-- Сетка + фанарт -->
@@ -7,14 +6,12 @@
 		
 	<!-- Отключает элменеты из grid -->
 		<!-- Вертикальная панель с иконками -->
-		<stackpanel name="container-icons-vertical" extra="true">
+		<stackpanel name="container-icons-vertical">
 			<visible>false</visible>
 		</stackpanel>
-
-		<stackpanel name="container-icons-vertical-invert" extra="true" reverse="true">
+		<stackpanel name="container-icons-vertical-invert">
 			<visible>false</visible>
 		</stackpanel>
-
 
 		<imagegrid name="gamegrid">
 			<pos>0 0.425</pos>
@@ -22,43 +19,22 @@
 			<size>1 0.598</size>
 			<autoLayout>10 2</autoLayout>
 			<autoLayout if="${screen.ratio} == '4/3'">8 2</autoLayout>
+			<autoLayout if="${screen.ratio} == '16/10'">9 2</autoLayout>
 			<autoLayout if="${screen.ratio} == '21/9'">12 2</autoLayout>
+			<autoLayout if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'gameandwatch'|| {system.theme} == 'solarus' || {system.theme} == 'ngage'">7 2</autoLayout>
+			<autoLayout if="${screen.ratio} == '4/3' && {system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'gameandwatch'|| {system.theme} == 'solarus' || {system.theme} == 'ngage'">4 2</autoLayout>
 			<scrollbarColor>808080FF</scrollbarColor>
-			<scrollbarCorner>0</scrollbarCorner>
 			<scrollbarSize>0.002</scrollbarSize>
 			<autoLayoutSelectedZoom>1.20</autoLayoutSelectedZoom>
 		</imagegrid>
-		<gridtile name="selected">
-			<backgroundEdgeColor>FFFFFF</backgroundEdgeColor>
-			<backgroundCornerSize>0</backgroundCornerSize>
-			<padding>3 3</padding>
-		</gridtile>
-		<text name="gridtile">
-			<visible>false</visible>
-		</text>
-		<text name="gridtile:selected">
-			<visible>false</visible>
-		</text>
-		<image name="art" extra="true">
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.5</pos>
-			<minSize>1 1</minSize>
-			<path>${themePath}/_inc/images/overlay3.png</path>
-			<zIndex>20</zIndex>
+		<image name="art">
+			<pos>0.5 0.82</pos>
 		</image>
-		<image name="fanart-bg-fix" extra="true">
-			<visible>false</visible>
-		</image>
-		<image name="fanart" extra="true">
-			<origin>0.5 0</origin>
+		<image name="fanart">
 			<pos>0.5 0</pos>
 			<color>FFFFFF5F</color>
-			<maxSize>1 1</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">1.25 1.25</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">1.11 1.11</maxSize>
-			<path>{game:fanart}</path>
-			<linearSmooth>true</linearSmooth>
-			<zIndex>10</zIndex>
+			<size if="${screen.ratio} == '4/3'">1.25 0</size>
+			<size if="${screen.ratio} == '16/10'">1.11 0</size>
 			<storyboard event="activate" repeat="forever">
 				<animation property="scale" from="1" to="1.1" duration="8000"/>
 				<animation property="scale" begin="8000" to="1" duration="8000"/>
@@ -68,18 +44,8 @@
 				<animation property="scale" to="1" duration="250"/>
 			</storyboard>
 		</image>
-		<image name="fanart_fix" extra="true">
-			<visible>!exists({game:fanart})</visible>
-			<path>${themePath}/_inc/anim/${system.theme}.png</path>
+		<image name="fanart_fix">
 			<pos>0.5 -0.3</pos>
-			<origin>0.5 0</origin>
-			<maxSize>1 1</maxSize>
-			<color>FFFFFF16</color>
-			<zIndex>10</zIndex>
-		</image>
-		<image name="md_fanart">
-			<visible>false</visible>
-			<zIndex>1</zIndex>
 		</image>
 		<image name="logo">
 			<visible>false</visible>
@@ -88,6 +54,7 @@
 			<pos>0.185 0.14</pos>
 			<maxSize>0.25 0.14</maxSize>
 			<zIndex>36</zIndex>
+			<visible>true</visible>
 		</image>
 		<text name="md_description">
 			<pos>0.065 0.27</pos>
@@ -101,6 +68,7 @@
 			<glowSize>1</glowSize>
 			<glowOffset>3 2</glowOffset>
 			<zIndex>65</zIndex>
+			<visible>true</visible>
 		</text>
 		<video name="md_video">
 			<pos>0.785 0.403</pos>
@@ -112,15 +80,13 @@
 			<snapshotSource>image</snapshotSource>
 			<linearSmooth>true</linearSmooth>
 			<effect>none</effect>
-			<zIndex>12</zIndex>
-			<scaleOrigin>1</scaleOrigin>
+			<zIndex>110</zIndex>
+			<loops>0</loops>
 			<storyboard event="activateNext">
-				<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="600" duration="300" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
 			</storyboard>
 			<storyboard event="activatePrev">
-				<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
-				<animation property="opacity" from="0" to="1" begin="600" duration="300" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
 			</storyboard>
 			<shader>
 				<path>:/shaders/border.glsl</path>
@@ -140,7 +106,6 @@
 			<pos if="${screen.ratio} == '4/3'">0.32 0.04</pos>
 			<size if="${screen.ratio} == '4/3'">0.29 0.05</size>
 			<orientation>horizontal</orientation>
-			<backgroundColor>FF000000</backgroundColor>
 			<zIndex>150</zIndex>
 			
 			<text name="icons-players">
@@ -228,7 +193,6 @@
 		<size>0.28 0.032</size>
 		<pos if="${screen.ratio} == '4/3'">0.32 0.10</pos>
 		<size if="${screen.ratio} == '4/3'">0.29 0.042</size>
-		<backgroundColor>FF000000</backgroundColor>
 		<zIndex>150</zIndex>
 		
 		<!-- Год выпуска -->
@@ -300,10 +264,7 @@
 		<size>0.28 0.032</size>
 		<pos if="${screen.ratio} == '4/3'">0.32 0.16</pos>
 		<size if="${screen.ratio} == '4/3'">0.29 0.042</size>
-		<orientation>horizontal</orientation>
-		<backgroundColor>FF000000</backgroundColor>
 		<zIndex>150</zIndex>
-		<separator>0.01</separator>
 		
 		<!-- Издатель (если не = разработчику) -->
 		<container name="publisher-container" visible="{game:publisher} != {game:developer} &amp;&amp; !empty({game:publisher})">
@@ -412,7 +373,6 @@
 			<pos if="${screen.ratio} == '4/3'">0.32 0.22</pos>
 			<size if="${screen.ratio} == '4/3'">0.29 0.042</size>
 			<orientation>horizontal</orientation>
-			<backgroundColor>FF000000</backgroundColor>
 			<zIndex>150</zIndex>
 			
 			<!-- Кол-во запусков -->
@@ -497,7 +457,6 @@
 			<pos if="${screen.ratio} == '4/3'">0.065 0.22</pos>
 			<size if="${screen.ratio} == '4/3'">0.29 0.042</size>
 			<orientation>horizontal</orientation>
-			<backgroundColor>FF000000</backgroundColor>
 			<zIndex>150</zIndex>
 			
 			<!-- Флаги / Flags -->

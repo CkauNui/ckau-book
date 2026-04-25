@@ -2,63 +2,41 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+		<image name="sysbg-video">
 			<pos>0.50 0.415</pos>
-			<maxSize>0.22</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.415" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.18 0.24</size>
+			<size if="${screen.ratio} == '16/10'">0.2 0.24</size>
+			<size if="${screen.ratio} == '4/3'">0.25 0.24</size>
+			<size if="${screen.ratio} == '21/9'">0.13 0.24</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+		<video name="videobox">
 			<pos>0.50 0.415</pos>
 			<maxSize>0.21</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.415" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1987</text>
 		</text>
 	<!-- Regional consoles/computers -->
-		<text name="TextDate" extra="true" region="eu"/>
-		<text name="TextDate" extra="true" region="us">
+		<text name="TextDate" region="eu"/>
+		<text name="TextDate" region="us">
 			<text>1987</text>
 		</text>
-		<text name="TextDate" extra="true" region="jp"/>
+		<text name="TextDate" region="jp"/>
 		
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Nec</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>PC Engine</text>
 		</text>
 	<!-- Regional consoles/computers -->
-		<text name="TextName" extra="true" region="eu"/>
-		<text name="TextName" extra="true" region="us">
+		<text name="TextName" region="eu"/>
+		<text name="TextName" region="us">
 			<text>TurboGrafx-16</text>
 		</text>
-		<text name="TextName" extra="true" region="jp"/>
+		<text name="TextName" region="jp"/>
 		
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The TurboGrafx-16, known as the PC Engine in Japan and France, is a 16-bit fourth-generation home video game console designed by Hudson Soft and sold by NEC Home Electronics. It was released in Japan in 1987 and in North America in 1989. The Japanese model was imported and distributed in France in 1989, and the United Kingdom and Spain received a version based on the American model known as simply TurboGrafx. It was the first console released in the 16-bit era, although it used a modified 8-bit CPU. In Japan, the system was launched as a competitor to the Famicom, but the delayed United States release meant that it ended up competing with the Sega Genesis and later the Super Nintendo Entertainment System.
 
 The TurboGrafx-16 has an 8-bit CPU, a 16-bit video color encoder, and a 16-bit video display controller. The GPUs are capable of displaying 482 colors simultaneously, out of 512. With dimensions of just 14 cm × 14 cm × 3.8 cm (5.5 in × 5.5 in × 1.5 in), the Japanese PC Engine is the smallest major home game console ever made. Games were released on HuCard cartridges and later the CD-ROM optical format with the TurboGrafx-CD add-on.</text>

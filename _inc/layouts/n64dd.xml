@@ -2,49 +2,27 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.31</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
-			<pos>0.5 0.36</pos>
-			<maxSize>0.34</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<image name="sysbg-video">
+			<pos>0.5 0.37</pos>
+			<size>0.26 0.34</size>
+			<size if="${screen.ratio} == '16/10'">0.28 0.34</size>
+			<size if="${screen.ratio} == '4/3'">0.34 0.34</size>
+			<size if="${screen.ratio} == '21/9'">0.2 0.34</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.31</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
-			<pos>0.5 0.36</pos>
-			<maxSize>0.31</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<video name="videobox">
+			<pos>0.5 0.372</pos>
+			<maxSize>0.3</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1995</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Nintendo</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>64DD</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The 64DD is a magnetic floppy disk drive peripheral for the Nintendo 64 game console developed by Nintendo. It was announced in 1995, prior to the Nintendo 64's 1996 launch, and after numerous delays was released in Japan on December 13, 1999. The "64" references both the Nintendo 64 console and the 64MB storage capacity of the disks, and "DD" is short for "disk drive" or "dynamic drive".
 
 Plugging into the extension port on the underside of the console, the 64DD allows the Nintendo 64 to use proprietary 64MB magnetic disks for expanded and rewritable data storage, a real-time clock for persistent game world design, and a standard font and audio library for further storage efficiency. Its games and hardware accessories let the user create movies, characters, and animations to use within various other games and shared online.

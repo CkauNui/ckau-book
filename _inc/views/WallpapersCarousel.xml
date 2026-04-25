@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 <formatVersion>7</formatVersion>
 <!-- Обои + Карусель -->
@@ -22,21 +21,15 @@
 		<stackpanel name="container-flags" extra="true">
 			<visible>false</visible>
 		</stackpanel>
-
-		<image name="background" extra="true">
-			<color>141414</color>
-		</image>
-		<image name="gamelist-background" extra="true">
+		<image name="art">
 			<visible>false</visible>
-			<zIndex>1</zIndex>
 		</image>
-		<text name="md_name" extra="true">
-			<pos>0.5 0.015</pos>
-		</text>
+		<image name="fanart-bg-fix">
+			<visible>false</visible>
+		</image>
 		
 		<image name="fanart" extra="true">
-			<tile>true</tile>
-			<origin>0.5 0.5</origin>
+			<origin>0.5 0.5</origin><tile>true</tile>
 			<pos>0.5 0.5</pos>
 			<minSize>1 1</minSize>
 			<color>FFFFFF5F</color>
@@ -54,7 +47,7 @@
 		</image>
 		<image name="fanart_fix" extra="true">
 			<visible>!exists({game:fanart})</visible>
-			<path>${themePath}/_inc/anim/${system.theme}.png</path>
+			<path>${themePath}/_inc/arts/${system.theme}.png</path>
 			<pos>0.5 -0.3</pos>
 			<origin>0.5 0</origin>
 			<maxSize>1 1</maxSize>
@@ -113,7 +106,6 @@
 			<pos if="${screen.ratio} == '4/3'">0.024 0.90</pos>
 			<size if="${screen.ratio} == '4/3'">0.96 0.05</size>
 			<orientation>horizontal</orientation>
-			<backgroundColor>FF000000</backgroundColor>
 			<zIndex>150</zIndex>
 			<!-- Избранное / Favorite -->
 			<image name="icons-favorite">

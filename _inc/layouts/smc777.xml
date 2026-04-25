@@ -1,50 +1,28 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+		<image name="sysbg-video">
 			<pos>0.502 0.36</pos>
-			<maxSize>0.22</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.222 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.18 0.23</size>
+			<size if="${screen.ratio} == '16/10'">0.2 0.23</size>
+			<size if="${screen.ratio} == '4/3'">0.25 0.23</size>
+			<size if="${screen.ratio} == '21/9'">0.13 0.23</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
-			<pos>0.502 0.36</pos>
-			<maxSize>0.19</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.222 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<video name="videobox">
+			<pos>0.502 0.358</pos>
+			<maxSize>0.186</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1983</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Sony</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>SMC-777</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Sony SMC-777 is a personal computer that was released in November 1983 by Sony. It was aimed for the home market and featured a built-in 3.5-inch floppy disk drive, which was the first of its kind. The SMC-777 was designed to be easy to use, with a menu-based operating system called Sony Filer and a floppy disk containing various software applications, such as programming languages, games, and a word processor.
 
 The SMC-777 also had enhanced color graphics, with 16 colors and an optional color palette board that could choose from 4,096 colors. The SMC-777 was compatible with the SMC-70, an earlier model that was used for video production. The SMC-777 was followed by the SMC-777C, which had a faster CPU and more memory.</text>

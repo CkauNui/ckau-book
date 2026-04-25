@@ -2,7 +2,18 @@
 
 <theme>
 	<formatVersion>7</formatVersion>
+<!-- CD rotation animation -->
 	<view name="gamecarousel">
+		<image name="md_cartridge">
+			<storyboard event="activate">
+				<animation property="zIndex" to="150" begin="1000" duration="" mode="Linear"/>
+				<animation property="opacity" to="0" duration="0" mode="EaseOut"/>
+				<animation property="opacity" to="1" begin="2000" duration="600" mode="EaseIn"/>
+				<animation property="rotation" from="-360" begin="4000" duration="6800" repeat="forever" mode="easeOutInQuint"/> 
+			</storyboard>
+		</image>
+	</view>
+<!-- 	<view name="gamecarousel">
 		<image name="md_cartridge">
 			<storyboard event="activate">
 				<animation property="opacity" to="0" duration="0" mode="EaseOut"/>
@@ -113,5 +124,5 @@
 				<animation property="rotation" from="-360" begin="2500" duration="6800" repeat="forever" mode="easeOutInQuint"/> 
 			</storyboard>
 		</image>
-	</customView>
+	</customView> -->
 </theme>

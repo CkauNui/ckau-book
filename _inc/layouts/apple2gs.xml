@@ -2,51 +2,27 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.32</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.355</pos>
-			<maxSize>0.25</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.355" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.2 0.25</size>
+			<size if="${screen.ratio} == '16/10'">0.23 0.25</size>
+			<size if="${screen.ratio} == '4/3'">0.28 0.25</size>
+			<size if="${screen.ratio} == '21/9'">0.16 0.25</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.32</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+		<video name="videobox">
 			<pos>0.5 0.355</pos>
 			<maxSize>0.24</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.355" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1986</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Apple</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Apple IIGS</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Apple IIGS (styled as IIgs), the fifth and most powerful of the Apple II family, is a 16-bit personal computer produced by Apple Computer. While featuring the Macintosh look and feel, and resolution and color similar to the Amiga and Atari ST, it remains compatible with earlier Apple II models. The "GS" in the name stands for "Graphics and Sound," referring to its enhanced multimedia hardware, especially its state-of-the-art audio.
 
 The microcomputer is a radical departure from any previous Apple II, with a 16-bit 65C816 microprocessor, direct access to megabytes of random-access memory (RAM), and mouse. It is the first computer from Apple with a color graphical user interface (color was introduced on the Macintosh II six months later) and Apple Desktop Bus interface for keyboards, mice, and other input devices. It is the first personal computer with a wavetable synthesis chip, using technology from Ensoniq.

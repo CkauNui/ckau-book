@@ -3,62 +3,38 @@
 	<formatVersion>7</formatVersion>
 	<view name="system">
 		<!-- fix bg color -->
-		<image name="sysbg-fix" extra="true">
+		<image name="sysbg-fix">
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
 			<maxSize>1 1</maxSize>
-			<scale if="${screen.ratio} == '16/10'">0.9</scale>
-			<scale if="${screen.ratio} == '4/3'">0.75</scale>
-			<path>./../../_inc/anim/xboxpass-fix.png</path>
+			<path>./../../_inc/arts/xboxpass-fix.png</path>
 			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.5</pos>
 			<size>0.5 0.75</size>
 			<size if="${screen.ratio} == '4/3'">0.68 0.6</size>
 			<size if="${screen.ratio} == '16/10'">0.55 0.6</size>
 			<size if="${screen.ratio} == '21/9'">0.4 0.75</size>
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</image>
-		<video name="videobox" extra="true">
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.49</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.495</origin>
-			<origin if="${screen.ratio} == '21/9'">0.518 0.5</origin>
+		<video name="videobox">
 			<pos>0.5233 0.473</pos>
 			<maxSize>0.503</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.593</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.2433 0.473" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize if="${screen.ratio} == '4/3'">0.5934</maxSize>
+			<pos if="${screen.ratio} == '4/3'">0.5312 0.473</pos>
+			<pos if="${screen.ratio} == '16/10'">0.5252 0.473</pos>
+			<pos if="${screen.ratio} == '21/9'">0.5173 0.473</pos>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2017</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Microsoft</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Xbox Game Pass</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>Game Pass is a subscription service as part of Xbox and offered by Microsoft. Launched on June 1, 2017, the service allows users to download and play video games for Xbox video game consoles or Microsoft Windows PCs from a rotating library, with the games remaining accessible as long as the user has an active subscription. Game Pass subscribers also receive discounts on purchases of games from the service's library and their respective downloadable content (DLC).
 
 The service consists of two products; Xbox Game Pass for Xbox One, Series X, and Series S consoles, and PC Game Pass for PCs running Windows 10 and Windows 11. Xbox Game Pass and PC Game Pass are available as separate subscription products. A premium tier known as Game Pass Ultimate includes access to both services, an on-demand cloud gaming service available on console, PC, and mobile platforms, and Xbox Live Gold subscription benefits.

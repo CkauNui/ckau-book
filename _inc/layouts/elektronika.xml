@@ -2,50 +2,28 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.46</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.49</origin>
+		<image name="sysbg-video">
 			<pos>0.498 0.465</pos>
-			<maxSize>0.265</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.28</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.218 0.465" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.24 0.265</size>
+			<size if="${screen.ratio} == '16/10'">0.24 0.265</size>
+			<size if="${screen.ratio} == '4/3'">0.29 0.265</size>
+			<size if="${screen.ratio} == '21/9'">0.17 0.265</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.46</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.49</origin>
+		<video name="videobox">
 			<pos>0.498 0.465</pos>
 			<maxSize>0.255</maxSize>
 			<maxSize if="${screen.ratio} == '4/3'">0.28</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.218 0.465" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1984</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Elektronika</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Электроника ИМ</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>In the 1980s, computer and electronic games came to the USSR. In 1983, the Soviet industry mastered the production of household computers of the BK (household computer) series, and in 1984, the production of electronic games of the Electronica IM (microprocessor game) series began.
 
 Some of the games of this family were unlicensed copies, analogs and variations of electronic toys Game and Watch series "Wide Screen", released by Nintendo in 1981-1982 (EGG, Octopus, Mickey Mouse, Chef and others).</text>

@@ -2,50 +2,26 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.405</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
-			<pos>0.5 0.392</pos>
-			<maxSize>0.382</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.497</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.417</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.392" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<image name="sysbg-video">
+			<pos>0.5 0.394</pos>
+			<size>0.372 0.382</size>
+			<size if="${screen.ratio} == '4/3'">0.494 0.382</size>
+			<size if="${screen.ratio} == '16/10'">0.414 0.382</size>
+			<size if="${screen.ratio} == '21/9'">0.28 0.382</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.405</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.47</origin>
+		<video name="videobox">
 			<pos>0.5 0.392</pos>
 			<maxSize>0.372</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.495</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.415</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.392" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize if="${screen.ratio} == '16/10'">0.412</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.493</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2013</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Moonlight</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>Moonlight allows you to play your PC games on almost any device, whether you're in another room or miles away from your gaming rig.
 Moonlight (formerly Limelight) is an open source implementation of NVIDIA's GameStream protocol. We implemented the protocol used by the NVIDIA Shield and wrote a set of 3rd party clients.
 

@@ -2,49 +2,27 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.29</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+		<image name="sysbg-video">
 			<pos>0.50 0.335</pos>
-			<maxSize>0.257</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.335" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.21 0.257</size>
+			<size if="${screen.ratio} == '16/10'">0.23 0.257</size>
+			<size if="${screen.ratio} == '4/3'">0.28 0.257</size>
+			<size if="${screen.ratio} == '21/9'">0.16 0.257</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.29</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
+		<video name="videobox">
 			<pos>0.50 0.335</pos>
 			<maxSize>0.247</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.335" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1993</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Fujitsu</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>FM-Towns Marty</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The FM Towns Marty is a fifth-generation home video game console released in 1993 by Fujitsu, exclusively for the Japanese market. It is often claimed to be the first 32-bit CD-based home video game system, although it has a 16-bit data bus, just like the earlier Commodore CDTV and Sega CD, which both have Motorola 68000 processors that is similarly internally 16/32-bit, but with a 16-bit data bus.
 
 The console came complete with a built in CD-ROM drive and disk drive. It was based on the earlier FM Towns computer system Fujitsu had released in 1989. The Marty was backward-compatible with older FM Towns games.</text>

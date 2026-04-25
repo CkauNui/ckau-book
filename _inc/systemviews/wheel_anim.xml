@@ -1,43 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-  <formatVersion>7</formatVersion>
+	<formatVersion>7</formatVersion>
+	<include>${themePath}/_inc/systemviews/wheel.xml</include>
 	<view name="system">
 		<carousel name="systemcarousel">
-			<type>vertical_wheel</type>
-			<pos>0 0</pos>
-			<size>1 1</size>
-			<origin>0 0</origin>
-			<color>00000000</color>
-			<logoScale>1.2</logoScale>
-			<logoSize>0.15 0.15</logoSize>
-			<logoRotation>-6.5</logoRotation>
-			<logoRotationOrigin>4.0 0.3</logoRotationOrigin>
-			<logoAlignment>right</logoAlignment>
-			<maxLogoCount>7</maxLogoCount>
-			<systemInfoDelay>0.1</systemInfoDelay>
-			<zIndex>75</zIndex>
-			
-			<!-- 4:3 -->
-			<logoScale if="${screen.ratio} == '4/3'">1.8</logoScale>
-			<logoRotationOrigin if="${screen.ratio} == '4/3'">5.0 0.3</logoRotationOrigin>
+			<itemTemplate>
+				<container>
+					<!-- <image name="logoDropShadow" pos="0.5" origin="0.5" maxSize="1" linearSmooth="true">
+						<path>{system:logo}</path>
+						<padding>4 4 -4 -4</padding>
+						<color>00000050</color>
+						<zIndex>1</zIndex>
+					</image> -->
+					<image name="LogoImage" pos="0.5" origin="0.5" maxSize="1" linearSmooth="false">
+						<path>{system:logo}</path>
+						<zIndex>2</zIndex>
+					</image>
+					<text name="substitutionText" color="white" alignment="center" multiLine="true">
+						<visible>!exists({system:logo})</visible>
+						<text>{system:fullName}</text>
+						<fontSize>0.06</fontSize>
+						<fontPath>${fontNameBold}</fontPath>
+						<forceUppercase>false</forceUppercase>
+						<color>white</color>
+						<glowColor>00000010</glowColor>
+						<glowSize>3</glowSize>
+					</text>
+					<storyboard event="activate">
+						<animation property="x" to="2" begin="2500" duration="300" mode="EaseIn"/>
+						<animation property="opacity" to="1" duration="150" mode="Linear"/>
+					</storyboard>
+					<storyboard event="scroll">
+						<animation property="x" to="2" begin="1500" duration="300" mode="EaseIn"/>
+						<animation property="opacity" to="1" duration="150" mode="Linear"/>
+					</storyboard>
+					<storyboard event="deactivate">
+						<animation property="x" to="2" begin="1500" duration="300" mode="EaseIn"/>
+						<animation property="opacity" to="1" duration="150" mode="Linear"/>
+					</storyboard>
+				</container>
+			</itemTemplate>
 		</carousel>
-		<image name="logo">
-		<linearSmooth>true</linearSmooth>
-			<storyboard event="activate">
-				<animation property="x" to="0.5" begin="2500" duration="300" mode="EaseIn"/>
-				<animation property="opacity" from="0" to="1" duration="150" mode="Linear"/>
-				<animation property="opacity" from="1" to="1" begin="1150" duration="35" mode="Linear"/>
-			</storyboard>
-			<storyboard event="scroll">
-				<animation property="x" to="0.5" begin="1500" duration="300" mode="EaseIn"/>
-				<animation property="opacity" from="0" to="1" duration="150" mode="Linear"/>
-				<animation property="opacity" from="1" to="1" begin="1150" duration="35" mode="Linear"/>
-			</storyboard>
-			<storyboard event="deactivate">
-				<animation property="x" to="0.5" begin="1500" duration="300" mode="EaseIn"/>
-				<animation property="opacity" from="0" to="1" duration="150" mode="Linear"/>
-				<animation property="opacity" from="1" to="1" begin="1150" duration="35" mode="Linear"/>
-			</storyboard>
-		</image>
 	</view>
 </theme>

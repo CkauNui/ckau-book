@@ -2,78 +2,50 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.3 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.4 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.15 0.45</origin>
-			<pos>0.29 0.36</pos>
-			<minSize>0.1 0.3</minSize>
+		<image name="sysbg-left">
+			<pos>0.287 0.36</pos>
+			<size>0.1 0.3</size>
 			<rotation>26</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.01 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<visible>true</visible>
+			<origin if="${screen.ratio} == '4/3'">1.02 0.5</origin>
+			<origin if="${screen.ratio} == '16/10'">0.66 0.5</origin>
+			<origin if="${screen.ratio} == '21/9'">0.12 0.5</origin>
+			<size if="${screen.ratio} == '21/9'">0.1 0.4</size>
 		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.7 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.6 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.85 0.45</origin>
-			<pos>0.71 0.36</pos>
-			<minSize>0.1 0.3</minSize>
+		<image name="sysbg-right">
+			<pos>0.713 0.36</pos>
+			<size>0.1 0.3</size>
 			<rotation>-26</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.43 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<visible>true</visible>
+			<origin if="${screen.ratio} == '4/3'">0 0.5</origin>
+			<origin if="${screen.ratio} == '16/10'">0.34 0.5</origin>
+			<origin if="${screen.ratio} == '21/9'">0.88 0.5</origin>
+			<size if="${screen.ratio} == '21/9'">0.1 0.4</size>
 		</image>
-		<image name="sysbg-video-arcade" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.5 0.47</origin>
+		<image name="sysbg-video">
 			<pos>0.50 0.385</pos>
-			<size>0.38 0.22</size>
-			<size if="${screen.ratio} == '4/3'">0.38 0.17</size>
-			<size if="${screen.ratio} == '21/9'">0.28 0.22</size>
-			<storyboard>
-				<animation property="pos" to="0.22 0.385" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.38 0.24</size>
+			<size if="${screen.ratio} == '16/10'">0.42 0.24</size>
+			<size if="${screen.ratio} == '4/3'">0.5 0.24</size>
+			<size if="${screen.ratio} == '21/9'">0.29 0.24</size>
 		</image>
-		<video name="videoboxarcade" extra="true">
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.33</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.50 0.389</pos>
-			<maxSize>0.357</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.389" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<video name="videobox">
+			<pos>0.50 0.386</pos>
+			<maxSize>0.36</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.4</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.475</maxSize>
+			<maxSize if="${screen.ratio} == '21/9'">0.268</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1995</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>CAVE Interactive Co.</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Cave</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>CAVE Interactive Co., Ltd. is a Japanese video game company founded in 1994 by former employees of Toaplan following its bankruptcy. They are known primarily for their "bullet hell" shoot 'em ups; from 1995 up to 2013, CAVE was one of the most prolific shoot 'em up developers in the Japanese market. Alongside this, CAVE has produced a variety of other types games for arcades, home consoles, PCs, and smartphones, also dating back to 1995.
 
 "CAVE" is an acronym for "Computer Art Visual Entertainment".</text>

@@ -2,51 +2,30 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
-			<origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
+		<image name="sysbg-video">
 			<pos>0.4815 0.402</pos>
-			<maxSize>0.22</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.2015 0.402" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.18 0.22</size>
+			<size if="${screen.ratio} == '16/10'">0.2 0.22</size>
+			<size if="${screen.ratio} == '4/3'">0.26 0.22</size>
+			<size if="${screen.ratio} == '21/9'">0.13 0.22</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.36</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.46</origin>
-			<origin if="${screen.ratio} == '21/9'">0.45 0.49</origin>
+		<video name="videobox">
 			<pos>0.4815 0.402</pos>
 			<maxSize>0.215</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.2015 0.402" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<pos if="${screen.ratio} == '16/10'">0.48 0.402</pos>
+			<pos if="${screen.ratio} == '4/3'">0.475 0.402</pos>
+			<pos if="${screen.ratio} == '21/9'">0.486 0.402</pos>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1977</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Atari</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>2600</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Atari 2600, originally branded as the Atari Video Computer System (Atari VCS) until November 1982, is a home video game console developed and produced by Atari, Inc. Released on September 11, 1977, it is credited with popularizing the use of microprocessor-based hardware and games stored on ROM cartridges (a format first used with the Fairchild Channel F in 1976). The VCS was bundled with two joystick controllers, a conjoined pair of paddle controllers, and a game cartridge: initially Combat, and later Pac-Man.
 
 The Atari VCS launched with nine simple, low-resolution games in 2 KiB cartridges. The system found its killer app with the home conversion of Taito's arcade game Space Invaders in 1980 and became widely successful, leading to the creation of Activision and other third-party game developers as well as competition from home console manufacturers Mattel and Coleco. By the end of its primary lifecycle in 1983–84, games for the 2600 were using more than four times the ROM of the launch titles with significantly more advanced visuals and gameplay than the system was designed for, such as Pitfall! and its scrolling sequel Pitfall II: Lost Caverns.</text>

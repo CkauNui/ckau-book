@@ -2,51 +2,27 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.32</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.48 0.5</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.36</pos>
-			<maxSize>0.238</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.2 0.26</size>
+			<size if="${screen.ratio} == '16/10'">0.23 0.26</size>
+			<size if="${screen.ratio} == '4/3'">0.28 0.26</size>
+			<size if="${screen.ratio} == '21/9'">0.14 0.26</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.32</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.48 0.5</origin>
-			<pos>0.5 0.36</pos>
-			<maxSize>0.228</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<video name="videobox">
+			<pos>0.5 0.358</pos>
+			<maxSize>0.224</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1990</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Amstrad</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>CPC 464 Plus</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Amstrad CPC 464 Plus model was intended as "more sophisticated and stylish" replacements for the CPC 464. The 464 Plus has 64KB RAM and a cassette tape drive.
 
 The plus range is not equipped with an on-board ROM, and thus the 464 Plus and the 6128 Plus do not contain a firmware. Instead, Amstrad provided the firmware for both models via the ROM extension facility, contained on the included Burnin' Rubber and Locomotive BASIC cartridge. This resulted in reduced hardware localization cost (only some select key caps and case labels had to be localized) with the added benefit of a rudimentary copy protection mechanism (without a firmware present, the machine itself could not copy a game cartridge's content).</text>

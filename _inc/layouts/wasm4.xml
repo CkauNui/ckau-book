@@ -2,45 +2,24 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+		<image name="sysbg-video">
 			<pos>0.50 0.365</pos>
-			<maxSize>0.32</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.365" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.21 0.32</size>
+			<size if="${screen.ratio} == '16/10'">0.23 0.32</size>
+			<size if="${screen.ratio} == '4/3'">0.28 0.32</size>
+			<size if="${screen.ratio} == '21/9'">0.16 0.32</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+		<video name="videobox">
 			<pos>0.50 0.365</pos>
-			<maxSize>0.298</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.365" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize>0.31</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2014</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>WASM-4</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>WASM-4 is a low-level fantasy game console for building small games with WebAssembly.
 Game cartridges (ROMs) are small, self-contained .wasm files that can be built with any programming language that compiles to WebAssembly.</text>
 			<text lang="pl">WASM-4 to niskopoziomowa konsola do budowania małych gier za pomocą WebAssembly.

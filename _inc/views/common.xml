@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+	<view name="basic, detailed, grid, gamecarousel">
+		<image name="background" onclick="gameoptions">
+			<tile>false</tile>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<size>1 1</size>
+			<path>${themePath}/_inc/images/space.png</path>
+			<color>141414</color>
+			<zIndex>8</zIndex>
+		</image>
+
+		<image name="art" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.7</pos>
+			<size>1 1</size>
+			<color>141414</color>
+			<path>${themePath}/_inc/images/gradient.png</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>11</zIndex>
+		</image>
+
+		<text name="md_name" extra="true">
+			<pos>0.5 0.015</pos>
+			<size>1 0.03</size>
+			<origin>0.5 0.5</origin>
+			<alignment>center</alignment>
+			<fontPath>${fontNameBold}</fontPath>
+			<color>FFFFFFFF</color>
+			<fontSize>0.024</fontSize>
+			<fontSize if="${screen.ratio} == '4/3'">0.03</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<zIndex>140</zIndex>
+		</text>
+
+		<image name="fanart" extra="true">
+			<origin>0.5 0</origin>
+			<pos>0.5 -0.1</pos>
+			<color>FFFFFF2F</color>
+			<size>1 0</size>
+			<path>{game:fanart}</path>
+			<zIndex>10</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="activate" repeat="forever">
+				<animation property="scale" from="1" to="1.1" duration="16000"/>
+				<animation property="y" from="-0.1" to="0" duration="16000"/>
+				<animation property="scale" begin="16000" to="1" duration="16000"/>
+				<animation property="y" begin="16000" to="-0.1" duration="16000"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" to="0" duration="400" mode="easeOut"/>
+				<animation property="scale" to="1" duration="250"/>
+				<animation property="y" to="-0.1" duration="250"/>
+			</storyboard>
+		</image>
+		<image name="fanart_fix" extra="true">
+			<visible>!exists({game:fanart})</visible>
+			<path>${themePath}/_inc/arts/${system.theme}.png</path>
+			<pos>0.5 -0.5</pos>
+			<origin>0.5 0</origin>
+			<maxSize>1 1</maxSize>
+			<color>FFFFFF16</color>
+			<zIndex>10</zIndex>
+		</image>
+
+		<text name="logoText" extra="true">
+			<pos>0.5 0.142</pos>
+			<origin>0.5 0</origin>
+			<size>0.156 0.055</size>
+			<fontSize>0.044</fontSize>
+			<fontPath>${fontNameBold}</fontPath>
+			<color>${baseColor}</color>
+			<forceUppercase>true</forceUppercase>
+			<visible>false</visible>
+		</text>
+
+		<image name="logo" extra="true">
+			<pos>0.5 0.09</pos>
+			<maxSize>0.240 0.126</maxSize>
+			<origin>0.5 0.5</origin>
+			<zIndex>150</zIndex>
+		</image>
+		<!-- Logo anim bzz -->
+		<image name="logo1" extra="true">
+			<pos>0.5 0.09</pos> <!-- Должно совпадать с logo -->
+			<maxSize>0.240 0.126</maxSize> <!-- Должно совпадать с logo -->
+			<origin>0.5 0.5</origin> <!-- Должно совпадать с logo -->
+			<opacity>0</opacity>
+			<zIndex>140</zIndex>
+			<storyboard>
+				<animation property="opacity" from="0.75" to="0" begin="995" duration="4000" mode="EaseOut"/>
+				<animation property="scale" from="1.05" to="1.4" begin="995" duration="4000" mode="EaseOut"/>
+				<animation property="color" from="FFAAAA" to="FF7777" begin="975" duration="4000" mode="EaseOut"/>
+			</storyboard>
+		</image>
+
+<!-- Gamelist view logo -->
+		<image name="logo">
+			<path>./../logos/${system.theme}.png</path>
+			<path>./../logos/${system.theme}.svg</path>
+			<path>./../logos/${system.theme}-w.svg</path>
+			<path>./../logos/${system.theme}-${lang}.png</path>
+			<path>./../logos/${system.theme}-${lang}.svg</path>
+			<path>./../logos/${system.theme}-${lang}-w.png</path>
+			<path>./../logos/${system.theme}-${lang}-w.svg</path>
+			<!-- Attemps to load synonym if system not available -->
+			<path>./../logos/${synonym}.png</path>
+			<path>./../logos/${synonym}.svg</path>
+			<path>./../logos/${synonym}-${lang}.png</path>
+			<path>./../logos/${synonym}-${lang}.svg</path>
+			<path>./../logos/${synonym}-${lang}-w.png</path>
+			<path>./../logos/${synonym}-${lang}-w.svg</path>
+			<linearSmooth>true</linearSmooth>
+		</image>
+	<!-- Logos for Collections -->
+		<image name="logo" if="{system.collection}">
+			<path>./../logos/collections/${system.theme}.png</path>
+			<path>./../logos/collections/${system.theme}.svg</path>
+			<path>./../logos/collections/${system.theme}-w.svg</path>
+		</image>
+	<!-- Regional consoles/computers -->
+		<image name="logo" region="eu"/>
+		<image name="logo" region="us">
+			<path>./../logos/us/${system.theme}.png</path>
+			<path>./../logos/us/${system.theme}.svg</path>
+			<path>./../logos/us/${system.theme}-w.svg</path>
+		</image>
+		<image name="logo" region="jp">
+			<path>./../logos/jp/${system.theme}.png</path>
+			<path>./../logos/jp/${system.theme}.svg</path>
+			<path>./../logos/jp/${system.theme}-w.svg</path>
+		</image>
+<!-- For logo bzz -->
+		<image name="logo1">
+			<path>./../logos/${system.theme}.png</path>
+			<path>./../logos/${system.theme}.svg</path>
+			<path>./../logos/${system.theme}-w.svg</path>
+			<path>./../logos/${system.theme}-${lang}.png</path>
+			<path>./../logos/${system.theme}-${lang}.svg</path>
+			<path>./../logos/${system.theme}-${lang}-w.png</path>
+			<path>./../logos/${system.theme}-${lang}-w.svg</path>
+			<!-- Attemps to load synonym if system not available -->
+			<path>./../logos/${synonym}.png</path>
+			<path>./../logos/${synonym}.svg</path>
+			<path>./../logos/${synonym}-${lang}.png</path>
+			<path>./../logos/${synonym}-${lang}.svg</path>
+			<path>./../logos/${synonym}-${lang}-w.png</path>
+			<path>./../logos/${synonym}-${lang}-w.svg</path>
+			<linearSmooth>true</linearSmooth>
+		</image>
+	<!-- Logos for Collections -->
+		<image name="logo1" if="{system.collection}">
+			<path>./../logos/collections/${system.theme}.png</path>
+			<path>./../logos/collections/${system.theme}.svg</path>
+			<path>./../logos/collections/${system.theme}-w.svg</path>
+		</image>
+	<!-- Regional consoles/computers -->
+		<image name="logo1" region="eu"/>
+		<image name="logo1" region="us">
+			<path>./../logos/us/${system.theme}.png</path>
+			<path>./../logos/us/${system.theme}.svg</path>
+			<path>./../logos/us/${system.theme}-w.svg</path>
+		</image>
+		<image name="logo1" region="jp">
+			<path>./../logos/jp/${system.theme}.png</path>
+			<path>./../logos/jp/${system.theme}.svg</path>
+			<path>./../logos/jp/${system.theme}-w.svg</path>
+		</image>
+		<!-- Display system logo for each game -->
+		<control name="logo, logo1" if="{system.theme} == 'auto-allgames' || {system.theme} == 'arcade' || {system.theme} == 'auto-action' || {system.theme} == 'auto-adventure' || {system.theme} == 'auto-at2players'  || {system.theme} == 'auto-at4players' || {system.theme} == 'auto-beatemup' || {system.theme} == 'auto-favorites' || {system.theme} == 'auto-fight' || {system.theme} == 'auto-huntingandfishing' || {system.theme} == 'auto-lastplayed' || {system.theme} == 'auto-lightgun' || {system.theme} == 'auto-neverplayed' || {system.theme} == 'auto-pinball' || {system.theme} == 'auto-platform' || {system.theme} == 'auto-playingcards' || {system.theme} == 'auto-puzzle' || {system.theme} == 'auto-quiz' || {system.theme} == 'auto-racedriving' || {system.theme} == 'auto-reflection' || {system.theme} == 'auto-retroachievements' || {system.theme} == 'auto-roleplayings' || {system.theme} == 'auto-runandgun' || {system.theme} == 'auto-shootemup' || {system.theme} == 'auto-shooter' || {system.theme} == 'auto-spinner' || {system.theme} == 'auto-sports' || {system.theme} == 'auto-sportswithanimals' || {system.theme} == 'auto-strategy' || {system.theme} == 'auto-trackball' || {system.theme} == 'auto-verticalarcade' || {system.theme} == 'auto-wheel' || {system.theme} == 'custom-collections' || {system.theme} == 'lightgun' || {system.theme} == 'recordings' || {system.theme} == 'screenshots'">
+			<path>firstfile(
+				"${themePath}/_inc/logos/" + {game:system:theme} + "-w.svg",
+				"${themePath}/_inc/logos/" + {game:system:theme} + "-w.png",
+				"${themePath}/_inc/logos/" + {game:system:theme} + ".svg",
+				"${themePath}/_inc/logos/" + {game:system:theme} + ".png"
+			)</path>
+		</control>
+
+
+<!-- Disable default ES values -->
+		<rating name="md_rating">
+			<visible>false</visible>
+		</rating>
+		<datetime name="md_releasedate, md_lastplayed">
+			<visible>false</visible>
+		</datetime>
+		<image name="md_fanart, md_image, md_thumbnail, md_marquee, md_flag, md_manual, md_nomanual, md_cheevos, md_notcheevos, md_savestate, md_nosavestate, md_hidden, md_kidgame, md_notkidgame">
+			<visible>false</visible>
+		</image>
+		<text name="md_players, md_publisher, md_playcount, md_developer, md_genre, md_gametime, md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_lbl_gametime">
+			<visible>false</visible>
+		</text>
+
+	</view>
+</theme>

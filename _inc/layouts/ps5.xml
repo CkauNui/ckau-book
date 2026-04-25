@@ -2,55 +2,35 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.485</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.495</origin>
-			<origin if="${screen.ratio} == '21/9'">0.526 0.5</origin>
+		<image name="sysbg-video">
 			<pos>0.535 0.479</pos>
-			<maxSize>0.47</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.616</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.513</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.255 0.479" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.46 0.465</size>
+			<pos if="${screen.ratio} == '16/10'">0.5384 0.479</pos>
+			<size if="${screen.ratio} == '16/10'">0.51 0.465</size>
+			<pos if="${screen.ratio} == '4/3'">0.547 0.479</pos>
+			<size if="${screen.ratio} == '4/3'">0.615 0.465</size>
+			<pos if="${screen.ratio} == '21/9'">0.5265 0.479</pos>
+			<size if="${screen.ratio} == '21/9'">0.345 0.465</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.485</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.495</origin>
-			<origin if="${screen.ratio} == '21/9'">0.526 0.5</origin>
+		<video name="videobox">
 			<pos>0.535 0.478</pos>
 			<maxSize>0.46</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.613</maxSize>
 			<maxSize if="${screen.ratio} == '16/10'">0.51</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.255 0.478" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize if="${screen.ratio} == '4/3'">0.615</maxSize>
+			<pos if="${screen.ratio} == '4/3'">0.547 0.479</pos>
+			<pos if="${screen.ratio} == '16/10'">0.5384 0.479</pos>
+			<pos if="${screen.ratio} == '21/9'">0.5265 0.479</pos>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2020</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Sony</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Playstation 5</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The PlayStation 5 (PS5) is a home video game console developed by Sony Interactive Entertainment. The PS5 is part of the ninth generation of video game consoles, along with Microsoft's Xbox Series X/S consoles, which were released in the same month.
 
 The base model includes an optical disc drive compatible with Ultra HD Blu-ray discs. The Digital Edition lacks this drive, as a lower-cost model for buying games only through download. The two variants were launched simultaneously.

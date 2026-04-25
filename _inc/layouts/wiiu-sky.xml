@@ -3,59 +3,34 @@
 	<formatVersion>7</formatVersion>
 	<view name="system">
 		<!-- fix bg color -->
-		<image name="sysbg-fix" extra="true">
+		<image name="sysbg-fix">
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
 			<maxSize>1 1</maxSize>
-			<scale if="${screen.ratio} == '16/10'">0.9</scale>
-			<scale if="${screen.ratio} == '4/3'">0.75</scale>
-			<path>./../../_inc/anim/wiiu-fix.png</path>
+			<path>./../../_inc/arts/wiiu-fix.png</path>
 			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.5</pos>
 			<size>0.5 0.75</size>
 			<size if="${screen.ratio} == '4/3'">0.65 0.6</size>
 			<size if="${screen.ratio} == '16/10'">0.55 0.6</size>
 			<size if="${screen.ratio} == '21/9'">0.4 0.75</size>
-			<storyboard>
-				<animation property="pos" to="0.22 0.5" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</image>
-		<video name="videobox" extra="true">
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '21/9'">0.5 0.502</origin>
+		<video name="videobox">
 			<pos>0.5 0.494</pos>
 			<maxSize>0.555</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.494" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2012</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Nintendo</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Wii U - Skylanders</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Wii U version of &quot;Skylanders&quot; is part of the popular toys-to-life video game series where physical toy figures are placed on a portal to appear in the game.
 
 Released for the Wii U, the game allows players to embark on adventures in various fantastical worlds, battling enemies, solving puzzles, and collecting items. The game takes full advantage of the Wii U's GamePad, offering unique controls, off-TV play, and interactive features that enhance the overall gameplay experience. The vibrant graphics, engaging storylines, and the ability to bring toys to life make it a fun and immersive experience for players of all ages.</text>

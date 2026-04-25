@@ -2,50 +2,28 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.348</pos>
-			<maxSize>0.29</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.348" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.23 0.3</size>
+			<size if="${screen.ratio} == '16/10'">0.24 0.3</size>
+			<size if="${screen.ratio} == '4/3'">0.29 0.3</size>
+			<size if="${screen.ratio} == '21/9'">0.17 0.3</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+		<video name="videobox">
 			<pos>0.5 0.348</pos>
 			<maxSize>0.245</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.27</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.348" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize if="${screen.ratio} == '4/3'">0.285</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2020</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Worlds of Wonder</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Action Max</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>Action Max from Worlds of Wonder (WoW), released in the US in 1987, was a unique, if simple and ultimately unimpressive game system that used special pre-recorded VHS video tapes for software. The original package came bundled with the base unit, light gun, television sensor, headphones, connection cables, documentation and one game, "Sonic Fury". 
 In total, five games were released for the system, all emulated by SINGE, the Somewhat Interactive Nostalgic Game Engine, (named after the dragon in Dragon's Lair): a Lua-based scripting system that also allows for rapid prototyping of new laserdisc games, or the creation of entirely new games.
 

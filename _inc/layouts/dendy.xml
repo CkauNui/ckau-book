@@ -2,56 +2,37 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+		<image name="sysbg-video">
 			<pos>0.49 0.4</pos>
-			<maxSize>0.237</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.19 0.24</size>
+			<size if="${screen.ratio} == '16/10'">0.21 0.24</size>
+			<size if="${screen.ratio} == '4/3'">0.26 0.24</size>
+			<size if="${screen.ratio} == '21/9'">0.14 0.24</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+		<video name="videobox">
 			<pos>0.49 0.4</pos>
 			<maxSize>0.227</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.208 0.402" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<pos if="${screen.ratio} == '16/10'">0.489 0.4</pos>
+			<pos if="${screen.ratio} == '4/3'">0.486 0.4</pos>
+			<pos if="${screen.ratio} == '21/9'">0.491 0.4</pos>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1992</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Steepler</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Dendy</text>
 		</text>
 		<!-- Support different names for regional consoles/computers
-		<text name="TextName" extra="true" region="eu"/>
-		<text name="TextName" extra="true" region="us"/>
-		<text name="TextName" extra="true" region="jp">
+		<text name="TextName" region="eu"/>
+		<text name="TextName" region="us"/>
+		<text name="TextName" region="jp">
 			<text>Family Computer</text>
 		</text>
 		-->
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>Dendy (Russian: Де́нди) is a series of home video game consoles, an unofficial hardware clone of Nintendo's third-generation Famicom. Dendy was produced by Steepler since late 1992, and assembled in Taiwan from Chinese components. It was mainly sold in Russia and post-Soviet countries. Manufacturing assembly grew to add the Subor factory in China and at Tenzor factory in Dubna town in Russia.
 
 The Dendy lineup was divided into two categories: the basic Dendy Classic and the budget Dendy Junior, which differ in design, quality, and price. The Classic is a copy of the Micro Genius console of Taiwan TXC Corporation and was produced in the same factory. The Junior was made from cheaper system on a chip technology specifically for Steepler. A Dendy Pro version with one wired and one wireless gamepad was sold from only one small batch.</text>

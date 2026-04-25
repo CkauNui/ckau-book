@@ -1,49 +1,28 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.285</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.425</origin>
+		<image name="sysbg-video">
 			<pos>0.501 0.363</pos>
-			<maxSize>0.232</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.221 0.363" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.18 0.232</size>
+			<size if="${screen.ratio} == '16/10'">0.2 0.232</size>
+			<size if="${screen.ratio} == '4/3'">0.25 0.232</size>
+			<size if="${screen.ratio} == '21/9'">0.13 0.232</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.285</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.425</origin>
+		<video name="videobox">
 			<pos>0.501 0.363</pos>
 			<maxSize>0.212</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.221 0.363" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1985</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Tesla Liberec</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Ondra</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Tesla Ondra is an 8-bit personal computer developed in 1985 by Tesla Liberec in Czechoslovakia. Designed primarily for educational purposes and home use, it features a U880D microprocessor (an East German clone of the Zilog Z80) running at 2 MHz, 64 KB of RAM, and 4 KB of ROM.
 
 The computer supports a monochrome display with a resolution of 320x255 pixels and offers basic sound capabilities.

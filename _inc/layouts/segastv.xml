@@ -2,86 +2,57 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.3 0.33</origin>
-			<origin if="${screen.ratio} == '16/10'">0.44 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.105 0.51</origin>
+		<image name="sysbg-left">
 			<pos>0.287 0.36</pos>
-			<minSize>0.1 0.3</minSize>
+			<size>0.1 0.3</size>
 			<rotation>26</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.007 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<visible>true</visible>
+			<origin if="${screen.ratio} == '4/3'">1.02 0.5</origin>
+			<origin if="${screen.ratio} == '16/10'">0.66 0.5</origin>
+			<origin if="${screen.ratio} == '21/9'">0.12 0.5</origin>
+			<size if="${screen.ratio} == '21/9'">0.1 0.4</size>
 		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.7 0.33</origin>
-			<origin if="${screen.ratio} == '16/10'">0.57 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.915 0.51</origin>
+		<image name="sysbg-right">
 			<pos>0.713 0.36</pos>
-			<minSize>0.1 0.3</minSize>
+			<size>0.1 0.3</size>
 			<rotation>-26</rotation>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.433 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<visible>true</visible>
+			<origin if="${screen.ratio} == '4/3'">0 0.5</origin>
+			<origin if="${screen.ratio} == '16/10'">0.34 0.5</origin>
+			<origin if="${screen.ratio} == '21/9'">0.88 0.5</origin>
+			<size if="${screen.ratio} == '21/9'">0.1 0.4</size>
 		</image>
-		<image name="sysbg-video-arcade" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>20</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '21/9'">0.5 0.47</origin>
+		<image name="sysbg-video">
 			<pos>0.50 0.385</pos>
-			<size>0.38 0.22</size>
-			<size if="${screen.ratio} == '4/3'">0.38 0.17</size>
-			<size if="${screen.ratio} == '16/10'">0.39 0.22</size>
-			<size if="${screen.ratio} == '21/9'">0.28 0.22</size>
-			<storyboard>
-				<animation property="pos" to="0.22 0.385" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.38 0.2</size>
+			<size if="${screen.ratio} == '16/10'">0.42 0.2</size>
+			<size if="${screen.ratio} == '4/3'">0.5 0.2</size>
+			<size if="${screen.ratio} == '21/9'">0.29 0.2</size>
 		</image>
-		<video name="videoboxarcade" extra="true">
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.27</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
+		<video name="videobox">
 			<pos>0.50 0.38</pos>
 			<maxSize>0.365</maxSize>
-			<zIndex>26</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.38" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize if="${screen.ratio} == '16/10'">0.4</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.485</maxSize>
+			<maxSize if="${screen.ratio} == '21/9'">0.275</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1994</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Sega</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>ST-V</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>ST-V (Sega Titan Video) is an arcade system board released by Sega, in 1994 for Japan and 1995 worldwide. Departing from their usual process of building custom arcade hardware, Sega's ST-V is essentially identical to the Sega Saturn home console system. The only difference is the media; ST-V used ROM cartridges instead of CD-ROM discs to store games, with the exception of Sports Fishing 2. Being derived from the Saturn hardware, the ST-V was presumably named after the moon Titan, a satellite of Saturn.
 
 The majority of ST-V titles were released only in Japan, but a notable exception was the port of Dynamite Deka, which became Die Hard Arcade. Games released for the ST-V include the arcade versions of Virtua Fighter Remix, Radiant Silvergun, Golden Axe: The Duel, and Final Fight Revenge. The shared hardware between Saturn and ST-V allowed for very "pure" ports for the Saturn console.</text>
 			<text lang="pl">ST-V (Sega Titan Video) to system zręcznościowy wydany przez firmę Sega w 1994 roku w Japonii i 1995 roku na całym świecie. Odchodząc od zwyczajowego procesu tworzenia własnego sprzętu arcade, ST-V firmy Sega jest w zasadzie identyczny z systemem konsoli domowej Sega Saturn. Jedyną różnicą jest nośnik. ST-V wykorzystywał do przechowywania gier kartridże ROM zamiast płyt CD-ROM, z wyjątkiem Sports Fishing 2. ST-V, wywodzący się ze sprzętu Saturn, został prawdopodobnie nazwany na cześć księżyca Titan, satelity Saturna.
 
 Większość tytułów na ST-V została wydana tylko w Japonii, ale godnym uwagi wyjątkiem był port gry Dynamite Deka, która stała się grą Die Hard Arcade. Gry wydane na ST-V to między innymi arcade'owe wersje Virtua Fighter Remix, Radiant Silvergun, Golden Axe: The Duel oraz Final Fight Revenge. Wspólny sprzęt Saturna i ST-V pozwolił na stworzenie bardzo "czystych" portów na konsolę Saturn.</text>
-			<text lang="ru">(Sega Titan Video) - настольная аркадная система, выпущенная компанией Sega в 1994 году для Японии и в 1995 году по всему миру. Отходя от своего обычного процесса создания пользовательского аркадного оборудования, Sega ST-V по существу идентична домашней консольной системе Sega Saturn. Единственным отличием является носитель информации; ST-V использовала картриджи ROM вместо дисков CD-ROM для хранения игр, за исключением Sports Fishing 2. Будучи производной от аппаратного обеспечения Saturn, ST-V предположительно была названа в честь луны Титан, спутника Сатурна.
+			<text lang="ru">ST-V (Sega Titan Video) - настольная аркадная система, выпущенная компанией Sega в 1994 году для Японии и в 1995 году по всему миру. Отходя от своего обычного процесса создания пользовательского аркадного оборудования, Sega ST-V по существу идентична домашней консольной системе Sega Saturn. Единственным отличием является носитель информации; ST-V использовала картриджи ROM вместо дисков CD-ROM для хранения игр, за исключением Sports Fishing 2. Будучи производной от аппаратного обеспечения Saturn, ST-V предположительно была названа в честь луны Титан, спутника Сатурна.
 
 Большинство игр для ST-V были выпущены только в Японии, но заметным исключением стал порт игры Dynamite Deka, которая превратилась в Die Hard Arcade. Игры, выпущенные для ST-V, включают аркадные версии Virtua Fighter Remix, Radiant Silvergun, Golden Axe: The Duel и Final Fight Revenge. Общее аппаратное обеспечение Saturn и ST-V позволило создать очень "чистые" порты для консоли Saturn.</text>
 			<text lang="es">ST-V (Sega Titan Video) es una placa de sistema arcade lanzada por Sega, en 1994 para Japón y 1995 en todo el mundo. Apartándose de su proceso habitual de construcción de hardware arcade personalizado, el ST-V de Sega es esencialmente idéntico al sistema de consola doméstica Sega Saturn. La única diferencia es el soporte: el ST-V utilizaba cartuchos ROM en lugar de discos CD-ROM para almacenar los juegos, con la excepción de Sports Fishing 2. Al derivar del hardware de Saturn, la ST-V recibió presumiblemente el nombre de la luna Titán, un satélite de Saturno.

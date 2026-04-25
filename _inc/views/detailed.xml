@@ -1,35 +1,40 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 <formatVersion>7</formatVersion>
 <!-- Подробно -->
 	<view name="detailed">
-		
-		<image name="background" extra="true">
-			<tile>true</tile>
-			<origin>0 0</origin>
-			<pos>0 0</pos>
-			<size>1 1</size>
-			<path>${themePath}/_inc/images/space.png</path>
+		<text name="md_name">
+			<visible>false</visible>
+		</text>
+		<image name="fanart">
+			<visible>true</visible>
+			<pos>0.35 0</pos>
+			<color>FFFFFF</color>
+			<size>0.8 0</size>
+			<opacity>0.1</opacity>
+			<storyboard event="activate"/>
+			<storyboard event="deactivate"/>
+		</image>
+		<image name="fanart_fix">
+			<!-- <visible>true</visible> -->
+			<origin>0.75 0</origin>
+			<opacity>0.8</opacity>
+		</image>
+		<image name="art">
+			<color>CCCCCC</color>
+			<zIndex>12</zIndex>
+		</image>
+		<image name="background">
 			<color>CCCCCC</color>
 		</image>
 		<image name="logo">
 			<pos>0.862 0.152</pos>
 			<maxSize>0.200 0.126</maxSize>
-			<origin>0.5 0.5</origin>
-			<zIndex>40</zIndex>
 		</image>
 		<!-- Logo anim bzz -->
-		<image name="logo1" extra="true">
+		<image name="logo1">
 			<pos>0.862 0.152</pos> <!-- Должно совпадать с logo -->
 			<maxSize>0.200 0.126</maxSize> <!-- Должно совпадать с logo -->
-			<origin>0.5 0.5</origin> <!-- Должно совпадать с logo -->
-			<opacity>0</opacity>
-			<zIndex>20</zIndex>
-			<storyboard>
-				<animation property="opacity" from="0.75" to="0" begin="995" duration="4000" mode="EaseOut"/>
-				<animation property="scale" from="1.05" to="1.4" begin="995" duration="4000" mode="EaseOut"/>
-				<animation property="color" from="FFAAAA" to="FF7777" begin="975" duration="4000" mode="EaseOut"/>
-			</storyboard>
 		</image>
 		<video name="md_video">
 			<pos>0.520 0.678</pos>
@@ -41,13 +46,11 @@
 			<snapshotSource>image</snapshotSource>
 			<effect>none</effect>
 			<zIndex>110</zIndex>
-			<scaleOrigin>1</scaleOrigin>
+			<loops>0</loops>
 			<storyboard event="activateNext">
-				<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
 				<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
 			</storyboard>
 			<storyboard event="activatePrev">
-				<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
 				<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
 			</storyboard>
 			<shader>
@@ -68,11 +71,9 @@
 			<linearSmooth>true</linearSmooth>
 			<zIndex>110</zIndex>
 			<storyboard event="activateNext">
-				<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
 				<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
 			</storyboard>
 			<storyboard event="activatePrev">
-				<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
 				<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
 			</storyboard>
 			<shader>
@@ -102,8 +103,30 @@
 			<size>0.275 1</size>
 			<path>${themePath}/_inc/images/space.png</path>
 			<color>141414</color>
+			<zIndex>12</zIndex>
 		</image>
-		
+		<text name="folderpath">
+			<pos>0.747 0.22</pos>
+			<size>0.239 0.02</size>
+			<color>B0B0B0</color>
+			<alignment>left</alignment>
+			<fontSize>0.016</fontSize>
+			<fontPath>${fontDescReg}</fontPath>
+			<forceUppercase>true</forceUppercase>
+			<zIndex>200</zIndex>
+		</text>
+		<text name="filterInfo" extra="true">
+			<visible>empty({game:directory}) &amp;&amp; {system:hasfilter}</visible>
+			<text>{system:filter}</text>
+			<emptyTextDefaults>false</emptyTextDefaults>
+			<pos>0.747 0.20</pos>
+			<size>0.239 0.02</size>
+			<color>B0B0B0</color>
+			<alignment>left</alignment>
+			<fontSize>0.016</fontSize>
+			<forceUppercase>true</forceUppercase>
+			<zIndex>200</zIndex>
+		</text>
 		<textlist name="gamelist">
 			<selectorColor>333333FF</selectorColor>
 			<selectedColor>${baseColor}</selectedColor>
@@ -119,7 +142,6 @@
 			<lines>19</lines>
 			<horizontalMargin>0.005</horizontalMargin>
 			<fontSize>0.025</fontSize>
-			<scrollSound>${themePath}/_inc/sound/scroll.wav</scrollSound>
 			<scrollbarColor>333333FF</scrollbarColor>
 			<scrollbarCorner>0.49</scrollbarCorner>
 			<scrollbarSize>0.005</scrollbarSize>
@@ -146,7 +168,6 @@
 			<pos if="${screen.ratio} == '4/3'">0.356 0.072</pos>
 			<size if="${screen.ratio} == '4/3'">0.36 0.05</size>
 			<orientation>horizontal</orientation>
-			<backgroundColor>FF000000</backgroundColor>
 			<zIndex>150</zIndex>
 			
 			<text name="icons-players">
@@ -234,7 +255,6 @@
 		<size>0.33 0.032</size>
 		<pos if="${screen.ratio} == '4/3'">0.356 0.132</pos>
 		<size if="${screen.ratio} == '4/3'">0.36 0.042</size>
-		<backgroundColor>FF000000</backgroundColor>
 		<zIndex>150</zIndex>
 		
 		<!-- Год выпуска -->
@@ -300,10 +320,7 @@
 		<size>0.33 0.032</size>
 		<pos if="${screen.ratio} == '4/3'">0.356 0.182</pos>
 		<size if="${screen.ratio} == '4/3'">0.36 0.042</size>
-		<orientation>horizontal</orientation>
-		<backgroundColor>FF000000</backgroundColor>
 		<zIndex>150</zIndex>
-		<separator>0.01</separator>
 		
 		<!-- Издатель (если не = разработчику) -->
 		<container name="publisher-container" visible="{game:publisher} != {game:developer} &amp;&amp; !empty({game:publisher})">
@@ -400,7 +417,6 @@
 			<pos if="${screen.ratio} == '4/3'">0.356 0.232</pos>
 			<size if="${screen.ratio} == '4/3'">0.36 0.042</size>
 			<orientation>horizontal</orientation>
-			<backgroundColor>FF000000</backgroundColor>
 			<zIndex>150</zIndex>
 			
 			<!-- Кол-во запусков -->
@@ -478,7 +494,6 @@
 			<pos if="${screen.ratio} == '4/3'">0.356 0.282</pos>
 			<size if="${screen.ratio} == '4/3'">0.36 0.042</size>
 			<orientation>horizontal</orientation>
-			<backgroundColor>FF000000</backgroundColor>
 			<zIndex>150</zIndex>
 			
 			<!-- Флаги / Flags -->

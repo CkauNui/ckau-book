@@ -2,49 +2,27 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.28</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.42</origin>
-			<pos>0.5 0.357</pos>
-			<maxSize>0.24</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.357" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<image name="sysbg-video">
+			<pos>0.5 0.358</pos>
+			<size>0.18 0.27</size>
+			<size if="${screen.ratio} == '16/10'">0.2 0.27</size>
+			<size if="${screen.ratio} == '4/3'">0.25 0.27</size>
+			<size if="${screen.ratio} == '21/9'">0.13 0.27</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.28</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.42</origin>
-			<pos>0.5 0.357</pos>
+		<video name="videobox">
+			<pos>0.5 0.358</pos>
 			<maxSize>0.22</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.357" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1983</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Casio</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>PV-2000</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>Also called "RakuGaki" in Japan, the PV-2000 is a very obscure japanese system released in 1983 at the same time of the PV-1000 gaming system. These two systems are not compatible with each other, as they have very different architecure. The PV-2000 is closer to MSX systems than to its little brother PV-1000. The PV-2000 is crude little computer marketed as an initiation and gaming machine.
 
 The keyboard uses a flat plastic membrane just like the Sinclair ZX-81 for example. 8 direction keys act as a game controller along with two special "fire" keys next to the spacebar. Of course it had no great success. Only 11 cartridges seem to have been released for it, mainly popular Arcade hits (Pac &amp; Pal, Rock'n Rope, Pooyan, Galaga, Super Cobra, etc).</text>

@@ -2,45 +2,30 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video-arcade" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.363</pos>
 			<size>0.38 0.15</size>
+			<size if="${screen.ratio} == '16/10'">0.42 0.15</size>
+			<size if="${screen.ratio} == '4/3'">0.503 0.15</size>
 			<size if="${screen.ratio} == '21/9'">0.285 0.15</size>
-			<storyboard>
-				<animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</image>
-		<video name="videoboxarcade" extra="true">
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+		<video name="videobox">
 			<pos>0.499 0.366</pos>
 			<maxSize>0.376</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.219 0.366" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize if="${screen.ratio} == '16/10'">0.416</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.506</maxSize>
+			<maxSize if="${screen.ratio} == '21/9'">0.282</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2020</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextManufacturer">
+			<text>Hypseus</text>
+		</text>
+		<text name="TextName">
 			<text>SINGE</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>Hypseus SINGE, Somewhat Interactive Nostalgic Game Engine, (named after the dragon from Dragon's Lair) is the logical evolution of the Daphne emulator, which uses a Lua-based scripting system to quickly simulate LaserDisc games or create completely new games based on video files! The language is easy to learn, very powerful and fast. All the functions needed to develop your own game are available through a simple application programming interface (API).</text>
 			<text lang="pl">Hypseus SINGE, Somewhat Interactive Nostalgic Game Engine, (nazwany na cześć smoka z Dragon's Lair) jest logiczną ewolucją emulatora Daphne, który wykorzystuje system skryptowy oparty na Lua do szybkiego symulowania gier LaserDisc lub tworzenia zupełnie nowych gier opartych na plikach wideo! Język jest łatwy do nauczenia, bardzo wydajny i szybki. Wszystkie funkcje potrzebne do stworzenia własnej gry są dostępne za pośrednictwem prostego interfejsu programowania aplikacji (API).</text>
 			<text lang="ru">Hypseus SINGE, Somewhat Interactive Nostalgic Game Engine, (названный в честь дракона из Dragon's Lair) - это логическое развитие эмулятора Daphne, в котором используется скриптовая система на основе Lua, позволяющая быстро симулировать игры с LaserDisc или создавать совершенно новые игры, на основе видеофайлов в HD качестве! Язык прост в освоении, очень мощный и быстрый. Все функции, необходимые для разработки собственной игры, доступны через простой интерфейс прикладного программирования (API).</text>

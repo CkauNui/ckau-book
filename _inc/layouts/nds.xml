@@ -2,48 +2,27 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.49</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.47</pos>
-			<maxSize>0.61</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.47" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.21 0.62</size>
+			<size if="${screen.ratio} == '16/10'">0.23 0.62</size>
+			<size if="${screen.ratio} == '4/3'">0.28 0.62</size>
+			<size if="${screen.ratio} == '21/9'">0.16 0.62</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.49</origin>
+		<video name="videobox">
 			<pos>0.5 0.469</pos>
 			<maxSize>0.61</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.469" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2004</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Nintendo</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>DS</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Nintendo DS, or simply DS, is a line of handheld game console produced by Nintendo. The device released globally across 2004 and 2005. The DS, an initialism for "Developers' System" or "Dual Screen", introduced distinctive new features to handheld gaming: two LCD screens working in tandem (the bottom one being a touchscreen), a built-in microphone and support for wireless connectivity. Both screens are encompassed within a clamshell design similar to the Game Boy Advance SP. The Nintendo DS also features the ability for multiple DS consoles to directly interact with each other over Wi-Fi within a short range without the need to connect to an existing wireless network. Alternatively, they could interact online using the now-defunct Nintendo Wi-Fi Connection service. Its main competitor was Sony's PlayStation Portable during the seventh generation of video game consoles.</text>
 			<text lang="pl">Nintendo DS (skr. NDS lub DS) – przenośna konsola gier wideo zaprojektowana i wyprodukowana przez przedsiębiorstwo Nintendo. Wydana w 2004 roku w Kanadzie, Stanach Zjednoczonych i Japonii. Konsola ma obudowę typu clamshell, podobną do Game Boya Advance SP, a wewnątrz dwa ekrany LCD, z których jeden jest dotykowy. Była to pierwsza konsola Nintendo wydana najpierw w Ameryce Północnej, a nie w Japonii.
 

@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <theme defaultView="Grid + Fanart">
 	<formatVersion>7</formatVersion>
-
-
 	<view name="grid">
 		<imagegrid name="gamegrid">
 			<autoLayout>6 2</autoLayout>
@@ -14,120 +11,48 @@
 		<image name="md_marquee">
 			<maxSize>0.25 0.20</maxSize>
 		</image>
-		<image name="bgVideo" extra="true">
-			<tile>true</tile>
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.5</pos>
-			<size>1 1</size>
-			<path>${themePath}/_inc/images/space.png</path>
-			<color>141414</color>
-			<zIndex>1</zIndex>
-			<storyboard event="open">
-				<animation property="opacity" to="0" duration="0" mode="easeIn"/>
-			</storyboard>
+		<image name="background" extra="true">
 			<storyboard event="activate">
-				<animation property="opacity" from="0" to="0.8" begin="3200" duration="1200" mode="EaseInQuint"/>
+				<animation property="opacity" to="0.94" begin="3200" duration="1200" mode="EaseInQuint"/>
 				<animation property="zIndex" to="400" begin="4400" duration="0" mode="easeOut"/>
-			</storyboard>
-			<storyboard event="deactivate">
-				<animation property="opacity" to="0" duration="0" mode="easeOut"/>
 			</storyboard>
 		</image>
 		<imagegrid name="gamegrid">
-			<autoLayout>6 2</autoLayout>
+			<autoLayout>6 3</autoLayout>
 			<autoLayout if="${screen.ratio} == '21/9'">8 2</autoLayout>
 			<padding>0.03 0.04 0.03 0.1</padding>
 		</imagegrid>
-		<gridtile name="default">
-			<imageColor>FFFFFFB0</imageColor>
-		</gridtile>
-		<gridtile name="selected">
-			<backgroundCenterColor>${centerFadeColor}</backgroundCenterColor>
-			<backgroundEdgeColor>${bottomBarColor}</backgroundEdgeColor>
-			<imageColor>FFFFFFFF</imageColor>
-		</gridtile>
-		<text name="gridtile">
-			<fontSize>0.022</fontSize>
-			<alignment>center</alignment>
-			<size>1 0.24</size>
-			<visible>true</visible>
-		</text>
-		<text name="gridtile:selected">
-			<visible>true</visible>
-		</text>
 		<video name="md_video">
 			<delay>0.3</delay>
 			<showSnapshotNoVideo>false</showSnapshotNoVideo>
 			<showSnapshotDelay>false</showSnapshotDelay>
 			<storyboard event="activateNext">
-				<animation property="maxSize" from="0.35" to="1 1" begin="3200" duration="1200" mode="EaseInQuint"/>
-				<animation property="pos" to="0.5 0.499" begin="3200" duration="1200" mode="EaseInQuint"/>
-				<animation property="origin" from="0.5 1" to="0.5 0.5" begin="3200" duration="1200" mode="EaseInQuint"/>
-				<animation property="zIndex" from="100" to="470" begin="3200" duration="1200" mode="EaseInQuint"/>
+				<animation property="maxSize" to="0.98 0.98" begin="3200" duration="1200" mode="EaseInQuint"/>
+				<animation property="pos" to="0.5 0.49" begin="3200" duration="1200" mode="EaseInQuint"/>
+				<animation property="origin" to="0.5 0.5" begin="3200" duration="1200" mode="EaseInQuint"/>
+				<animation property="zIndex" to="1470" begin="3200" duration="1200" mode="EaseInQuint"/>
 				<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
 				<animation property="opacity" from="0" to="1" begin="600" duration="300" mode="linear"/>
 			</storyboard>
 			<storyboard event="activatePrev">
-				<animation property="maxSize" from="0.35" to="1 1" begin="3200" duration="1200" mode="EaseInQuint"/>
-				<animation property="pos" to="0.5 0.499" begin="3200" duration="1200" mode="EaseInQuint"/>
-				<animation property="origin" from="0.5 1" to="0.5 0.5" begin="3200" duration="1200" mode="EaseInQuint"/>
-				<animation property="zIndex" from="100" to="470" begin="3200" duration="1200" mode="EaseInQuint"/>
+				<animation property="maxSize" to="0.98 0.98" begin="3200" duration="1200" mode="EaseInQuint"/>
+				<animation property="pos" to="0.5 0.49" begin="3200" duration="1200" mode="EaseInQuint"/>
+				<animation property="origin" to="0.5 0.5" begin="3200" duration="1200" mode="EaseInQuint"/>
+				<animation property="zIndex" to="1470" begin="3200" duration="1200" mode="EaseInQuint"/>
 				<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
 				<animation property="opacity" from="0" to="1" begin="600" duration="300" mode="linear"/>
 			</storyboard>
 		</video>
 	</customView>
-	<customView name="Grid + Details, Grid + Details + Marquee">
+	<customView name="Grid + Details">
 		<imagegrid name="gamegrid">
-			<autoLayout>3 2</autoLayout>
+			<autoLayout>3 3</autoLayout>
 			<autoLayout if="${screen.ratio} == '21/9'">5 2</autoLayout>
 		</imagegrid>
-	</customView>
-	<customView name="Logo + Details">
-		<imagegrid name="gamegrid">
-			<autoLayout>4 3</autoLayout>
-			<autoLayout if="${screen.ratio} == '21/9'">6 3</autoLayout>
-		</imagegrid>
-	</customView>
-	<customView name="Wallpapers">
-		<imagegrid name="gamegrid">
-			<autoLayout>1 7</autoLayout>
-		</imagegrid>
-	</customView>
-	<customView name="Carousel">
-		<imagegrid name="gamegrid">
-			<autoLayout>5 1</autoLayout>
-			<autoLayout if="${screen.ratio} == '21/9'">7 1</autoLayout>
-		</imagegrid>
-	</customView>
-	<customView name="Carousel + Details, Carousel + Details + Marquee">
-		<imagegrid name="gamegrid">
-			<autoLayout>3 1</autoLayout>
-			<autoLayout if="${screen.ratio} == '21/9'">5 1</autoLayout>
-		</imagegrid>
-	</customView>
-	<customView name="Carousel + Fanart">
-		<imagegrid name="gamegrid">
-			<autoLayout>7 1</autoLayout>
-			<autoLayout if="${screen.ratio} == '21/9'">9 1</autoLayout>
-		</imagegrid>
-		<image name="bgVideo" extra="true">
-			<tile>true</tile>
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.5</pos>
-			<size>1 1</size>
-			<path>${themePath}/_inc/images/space.png</path>
-			<color>141414</color>
-			<zIndex>1</zIndex>
-			<storyboard event="open">
-				<animation property="opacity" to="0" duration="0" mode="easeIn"/>
-			</storyboard>
+		<image name="background" extra="true">
 			<storyboard event="activate">
-				<animation property="opacity" from="0" to="0.8" begin="3200" duration="1200" mode="EaseInQuint"/>
+				<animation property="opacity" to="0.94" begin="3200" duration="1200" mode="EaseInQuint"/>
 				<animation property="zIndex" to="400" begin="4400" duration="0" mode="easeOut"/>
-			</storyboard>
-			<storyboard event="deactivate">
-				<animation property="opacity" to="0" duration="0" mode="easeOut"/>
 			</storyboard>
 		</image>
 		<video name="md_video">
@@ -135,28 +60,21 @@
 			<showSnapshotNoVideo>false</showSnapshotNoVideo>
 			<showSnapshotDelay>false</showSnapshotDelay>
 			<storyboard event="activateNext">
-				<animation property="maxSize" from="0.35" to="1 1" begin="3200" duration="1200" mode="EaseInQuint"/>
-				<animation property="pos" to="0.5 0.499" begin="3200" duration="1200" mode="EaseInQuint"/>
-				<animation property="origin" from="0.5 1" to="0.5 0.5" begin="3200" duration="1200" mode="EaseInQuint"/>
-				<animation property="zIndex" from="100" to="470" begin="3200" duration="1200" mode="EaseInQuint"/>
+				<animation property="maxSize" to="0.98 0.98" begin="3200" duration="1200" mode="EaseInQuint"/>
+				<animation property="pos" to="0.5 0.49" begin="3200" duration="1200" mode="EaseInQuint"/>
+				<animation property="origin" to="0.5 0.5" begin="3200" duration="1200" mode="EaseInQuint"/>
+				<animation property="zIndex" to="1470" begin="3200" duration="1200" mode="EaseInQuint"/>
 				<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
 				<animation property="opacity" from="0" to="1" begin="600" duration="300" mode="linear"/>
 			</storyboard>
 			<storyboard event="activatePrev">
-				<animation property="maxSize" from="0.35" to="1 1" begin="3200" duration="1200" mode="EaseInQuint"/>
-				<animation property="pos" to="0.5 0.499" begin="3200" duration="1200" mode="EaseInQuint"/>
-				<animation property="origin" from="0.5 1" to="0.5 0.5" begin="3200" duration="1200" mode="EaseInQuint"/>
-				<animation property="zIndex" from="100" to="470" begin="3200" duration="1200" mode="EaseInQuint"/>
+				<animation property="maxSize" to="0.98 0.98" begin="3200" duration="1200" mode="EaseInQuint"/>
+				<animation property="pos" to="0.5 0.49" begin="3200" duration="1200" mode="EaseInQuint"/>
+				<animation property="origin" to="0.5 0.5" begin="3200" duration="1200" mode="EaseInQuint"/>
+				<animation property="zIndex" to="1470" begin="3200" duration="1200" mode="EaseInQuint"/>
 				<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
 				<animation property="opacity" from="0" to="1" begin="600" duration="300" mode="linear"/>
 			</storyboard>
 		</video>
-	</customView>
-	<customView name="Content">
-		<imagegrid name="gamegrid">
-			<autoLayout>1 4</autoLayout>
-			<autoLayout if="${wideScreen}">2 4</autoLayout>
-			<autoLayout if="${ultrawideScreen}">4 4</autoLayout>
-		</imagegrid>
 	</customView>
 </theme>

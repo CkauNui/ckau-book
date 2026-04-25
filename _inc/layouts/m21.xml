@@ -2,51 +2,30 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
-			<origin if="${screen.ratio} == '21/9'">0.44 0.5</origin>
+		<image name="sysbg-video">
 			<pos>0.474 0.365</pos>
-			<maxSize>0.24</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.194 0.365" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.21 0.24</size>
+			<size if="${screen.ratio} == '16/10'">0.23 0.24</size>
+			<size if="${screen.ratio} == '4/3'">0.28 0.24</size>
+			<size if="${screen.ratio} == '21/9'">0.16 0.24</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.44</origin>
-			<origin if="${screen.ratio} == '21/9'">0.44 0.5</origin>
+		<video name="videobox">
 			<pos>0.474 0.365</pos>
-			<maxSize>0.22</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.194 0.365" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize>0.20</maxSize>
+			<pos if="${screen.ratio} == '16/10'">0.471 0.365</pos>
+			<pos if="${screen.ratio} == '4/3'">0.465 0.365</pos>
+			<pos if="${screen.ratio} == '21/9'">0.48 0.365</pos>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1983</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Olivetti</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>M21</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>In 1984, a few months after presenting the M24, Olivetti put on the market the M21, the first and only transportable personal computer produced by the Ivrea-based company. The technical features are basically the same as those of the M24, from which the motherboard is also derived with a few modifications. The M21 mounts a monitor with amber phosphors, a real novelty for the time.
 
 The Olivetti Personal Computer M21 was a complete computer system, providing the full range of hardware and software options normally associated only with desktop personal computers. Based on the Intel 8086 microprocessor, the M21 supports MS-DOS, CP/M-86 and UCSD operating systems.

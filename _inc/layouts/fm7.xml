@@ -2,53 +2,30 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.28</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.42</origin>
-			<origin if="${screen.ratio} == '21/9'">0.46 0.52</origin>
+		<image name="sysbg-video">
 			<pos>0.469 0.363</pos>
-			<maxSize>0.22</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.24</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.189 0.363" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.18 0.22</size>
+			<size if="${screen.ratio} == '16/10'">0.2 0.22</size>
+			<size if="${screen.ratio} == '4/3'">0.24 0.22</size>
+			<size if="${screen.ratio} == '21/9'">0.14 0.22</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.28</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.42</origin>
-			<origin if="${screen.ratio} == '21/9'">0.46 0.52</origin>
+		<video name="videobox">
 			<pos>0.469 0.363</pos>
 			<maxSize>0.2</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.22</maxSize>
-			<zIndex>23</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.189 0.363" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<pos if="${screen.ratio} == '16/10'">0.466 0.363</pos>
+			<pos if="${screen.ratio} == '4/3'">0.458 0.363</pos>
+			<pos if="${screen.ratio} == '21/9'">0.476 0.363</pos>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1982</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Fujitsu</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>FM-7</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The FM-7 ("Fujitsu Micro 7") is a home computer created by Fujitsu. It was first released in 1982 and was sold in Japan and Spain. It is a stripped-down version of Fujitsu's earlier FM-8 computer, and during development it was referred to as the "FM-8 Jr.".
 
 Although it was designed to be a cut-down version of the FM-8, most notably removing the (expensive) bubble memory technology, the FM-7 was given a more advanced AY-3-8910 sound chip capable of three voice sound synthesis, leading to a strong uptake among the hobbyist computer market in Japan and making it a more popular system than the FM-8.

@@ -1,14 +1,41 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 <formatVersion>7</formatVersion>
 <!-- Подробно (тёмная версия) -->
 	<customView name="Detailed Dark" inherits="detailed" displayName="${DetailDarkViewName}">
-		<image name="background" extra="true">
+		<image name="fanart">
+			<pos>0.5 0</pos>
+			<size>1 0</size>
+			<storyboard event="activate" repeat="forever">
+				<animation property="scale" from="1" to="1.1" duration="16000"/>
+				<animation property="y" from="-0.1" to="0" duration="16000"/>
+				<animation property="scale" begin="16000" to="1" duration="16000"/>
+				<animation property="y" begin="16000" to="-0.1" duration="16000"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" to="0" duration="400" mode="easeOut"/>
+				<animation property="scale" to="1" duration="250"/>
+				<animation property="y" to="-0.1" duration="250"/>
+			</storyboard>
+		</image>
+		<image name="fanart_fix">
+			<origin>0.5 0</origin>
+		</image>
+		
+		<image name="art">
+			<color>161616</color>
+		</image>
+		
+		<image name="background">
 			<color>161616</color>
 		</image>
 
 		<text name="md_description">
-			<color>aaaaaa</color>
+			<color>AAAAAA</color>
 		</text>
+		
+		<image name="gamelist-background">
+			<visible>false</visible>
+		</image>
 	</customView>
 </theme>

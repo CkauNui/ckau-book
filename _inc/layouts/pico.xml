@@ -2,51 +2,33 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.35 0.5</origin>
+		<image name="sysbg-video">
 			<pos>0.422 0.382</pos>
-			<maxSize>0.252</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.142 0.382" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.2 0.252</size>
+			<pos if="${screen.ratio} == '16/10'">0.414 0.382</pos>
+			<size if="${screen.ratio} == '16/10'">0.22 0.252</size>
+			<pos if="${screen.ratio} == '4/3'">0.394 0.382</pos>
+			<size if="${screen.ratio} == '4/3'">0.27 0.252</size>
+			<pos if="${screen.ratio} == '21/9'">0.442 0.382</pos>
+			<size if="${screen.ratio} == '21/9'">0.15 0.252</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.35 0.5</origin>
+		<video name="videobox">
 			<pos>0.422 0.382</pos>
 			<maxSize>0.242</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.142 0.382" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<pos if="${screen.ratio} == '16/10'">0.414 0.382</pos>
+			<pos if="${screen.ratio} == '4/3'">0.394 0.382</pos>
+			<pos if="${screen.ratio} == '21/9'">0.442 0.382</pos>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1993</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Sega</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Pico</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Sega Pico, also known as Kids Computer Pico, is an educational video game console by Sega Toys. Marketed as "edutainment", the main focus of the Pico was educational video games for children between 3 and 7 years old. The Pico was released in June 1993 in Japan and November 1994 in North America and Europe, later reaching China. It was succeeded by the Advanced Pico Beena, which was released in Japan in 2005. Though the Pico was sold continuously in Japan through the release of the Beena, in North America and Europe the Pico was less successful and was discontinued in early 1998, later being re-released by Majesco Entertainment. Releases for the Pico were focused on education for children and included titles supported by licensed franchised animated characters, including Sega's own Sonic the Hedgehog series. Overall, Sega claims sales of 3.4 million Pico consoles and 11.2 million game cartridges, and over 350,000 Beena consoles and 800,000 cartridges.</text>
 			<text lang="pl">Sega Pico, znana również jako Kids Computer Pico, to edukacyjna konsola do gier wideo firmy Sega Toys. Pico, reklamowana jako "edutainment", była przeznaczona głównie do gier edukacyjnych dla dzieci w wieku od 3 do 7 lat. Konsola Pico została wydana w czerwcu 1993 roku w Japonii i w listopadzie 1994 roku w Ameryce Północnej i Europie, a później trafiła do Chin. Jego następcą został model Advanced Pico Beena, który ukazał się w Japonii w 2005 roku. Mimo że Pico było sprzedawane w Japonii nieprzerwanie do czasu wydania Beeny, w Ameryce Północnej i Europie Pico nie cieszyło się tak dużym powodzeniem i zostało wycofane z produkcji na początku 1998 roku, a następnie ponownie wydane przez Majesco Entertainment. 
 

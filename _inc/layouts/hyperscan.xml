@@ -2,49 +2,27 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.31</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
-			<pos>0.5 0.36</pos>
-			<maxSize>0.34</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<image name="sysbg-video">
+			<pos>0.5 0.37</pos>
+			<size>0.26 0.32</size>
+			<size if="${screen.ratio} == '16/10'">0.28 0.32</size>
+			<size if="${screen.ratio} == '4/3'">0.33 0.32</size>
+			<size if="${screen.ratio} == '21/9'">0.2 0.32</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.31</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.41</origin>
-			<pos>0.5 0.36</pos>
+		<video name="videobox">
+			<pos>0.5 0.37</pos>
 			<maxSize>0.31</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2006</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Mattel</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>HyperScan</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The HyperScan is a home video game console from the toy company Mattel. It is unique in that it includes a 13.56 MHz radio-frequency identification (RFID) scanner that reads and writes to the "cards" which, in turn, activate features in and save data from the game. Players are able to enhance the abilities of their characters by scanning cards.
 
 The games for the system were sold as "Game Packs", which consisted of a game disc accompanied by six game cards (seven for Spider-Man). Additional cards which contained characters, abilities, moves and levels when scanned were part of a six-card "Booster Pack". As with most trading card packs, the cards were randomized, meaning a player looking for a certain card to unlock that element of the game may have had to buy multiple Booster Packs in order to get it (while getting multiple cards for another aspect of the game), or trade it for another with a friend, as was likely intended by the Hyperscan's card aspect.

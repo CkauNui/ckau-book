@@ -1,49 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+		<image name="sysbg-video">
 			<pos>0.502 0.403</pos>
-			<maxSize>0.25</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.222 0.403" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.18 0.25</size>
+			<size if="${screen.ratio} == '16/10'">0.2 0.25</size>
+			<size if="${screen.ratio} == '4/3'">0.25 0.25</size>
+			<size if="${screen.ratio} == '21/9'">0.13 0.25</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.35</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+		<video name="videobox">
 			<pos>0.502 0.403</pos>
 			<maxSize>0.23</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.222 0.403" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1985</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Elektronska Industrija Niš</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Pecom 64</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Pecom 64 was a computer designed for education and home use in Serbia in the mid-1980s. It had a CDP 1802B processor, 32 KB of RAM, and a cassette tape for storage. It could display text and graphics on a TV screen, and produce sound through two channels. It had a programmable character set and a reconfigurable keyboard.
 
 It was compatible with some software and hardware from other computers, such as the Cosmac VIP and the Commodore 64. It was one of the first computers made in Yugoslavia.

@@ -2,45 +2,24 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.43</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.475</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.45</pos>
-			<maxSize>0.27</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.45" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.21 0.27</size>
+			<size if="${screen.ratio} == '16/10'">0.23 0.27</size>
+			<size if="${screen.ratio} == '4/3'">0.28 0.27</size>
+			<size if="${screen.ratio} == '21/9'">0.16 0.27</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.43</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.475</origin>
+		<video name="videobox">
 			<pos>0.5 0.45</pos>
 			<maxSize>0.25</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.45" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text/>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>LCD Games</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>Handheld electronic games are very small, portable devices for playing interactive electronic games, often miniaturized versions of video games. The controls, display and speakers are all part of a single unit.
 
 Rather than a general-purpose screen made up of a grid of small pixels, they usually have custom displays designed to play one game. This simplicity means they can be made as small as a smartwatch, and sometimes are. The visual output of these games can range from a few small light bulbs or LED lights to calculator-like alphanumerical screens; later these were mostly displaced by liquid crystal and vacuum fluorescent display screens with detailed images and in the case of VFD games, color. 

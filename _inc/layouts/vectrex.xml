@@ -2,48 +2,27 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.498 0.412</pos>
-			<maxSize>0.33</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.218 0.412" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<image name="sysbg-video">
+			<pos>0.5 0.412</pos>
+			<size>0.185 0.33</size>
+			<size if="${screen.ratio} == '16/10'">0.205 0.33</size>
+			<size if="${screen.ratio} == '4/3'">0.25 0.33</size>
+			<size if="${screen.ratio} == '21/9'">0.135 0.33</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
-			<pos>0.498 0.412</pos>
-			<maxSize>0.32</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.218 0.412" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<video name="videobox">
+			<pos>0.498 0.418</pos>
+			<maxSize>0.314</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1982</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Smith Engineering</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Vectrex</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Vectrex is a vector display-based home video game console–the only one ever designed and released for the home market, developed by Smith Engineering. It was first released for the North America market in November 1982 and then Europe and Japan in 1983. Originally manufactured by General Consumer Electronics, it was later licensed to Milton Bradley after they acquired the company. Bandai released the system in Japan.
 
 The Vectrex, in contrast to other video-game systems available at the time, featured an integrated monochrome CRT monitor and did not need to be hooked up to a television set as it provided its own built-in display. A detachable wired control pad was mounted at, and could be folded into, the lower base of the console. Games included translucent color sheet overlays that could be placed over the monochrome screen. A number of peripherals were produced, such as a pair of 3D goggles known as the "3D Imager" and a "light-pen" that allowed the player to draw directly on the screen. A built-in game, Mine Storm, was playable without inserting a cartridge.</text>

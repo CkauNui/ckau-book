@@ -2,49 +2,33 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.3 0.5</origin>
+		<image name="sysbg-video">
 			<pos>0.393 0.455</pos>
-			<maxSize>0.275</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.113 0.455" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.21 0.275</size>
+			<pos if="${screen.ratio} == '16/10'">0.383 0.455</pos>
+			<size if="${screen.ratio} == '16/10'">0.23 0.27</size>
+			<pos if="${screen.ratio} == '4/3'">0.36 0.455</pos>
+			<size if="${screen.ratio} == '4/3'">0.28 0.27</size>
+			<pos if="${screen.ratio} == '21/9'">0.418 0.455</pos>
+			<size if="${screen.ratio} == '21/9'">0.16 0.27</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '21/9'">0.3 0.5</origin>
+		<video name="videobox">
 			<pos>0.393 0.455</pos>
 			<maxSize>0.265</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.113 0.455" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<pos if="${screen.ratio} == '16/10'">0.383 0.455</pos>
+			<pos if="${screen.ratio} == '4/3'">0.36 0.455</pos>
+			<pos if="${screen.ratio} == '21/9'">0.418 0.455</pos>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1961</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Digital Equipment Corporation</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>PDP-1</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The PDP-1 (Programmed Data Processor-1) is the first computer in Digital Equipment Corporation's PDP series and was first produced in 1959. It is famous for being the computer most important in the creation of hacker culture at Massachusetts Institute of Technology, BBN and elsewhere.
 The PDP-1 is the original hardware for playing history's first game on a minicomputer, Steve Russell's Spacewar!
 

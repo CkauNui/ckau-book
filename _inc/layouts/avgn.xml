@@ -2,43 +2,21 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.26</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.415</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.325</pos>
-			<maxSize>0.254</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.325" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.21 0.27</size>
+			<size if="${screen.ratio} == '16/10'">0.23 0.27</size>
+			<size if="${screen.ratio} == '4/3'">0.28 0.27</size>
+			<size if="${screen.ratio} == '21/9'">0.16 0.27</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.26</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.415</origin>
+		<video name="videobox">
 			<pos>0.5 0.325</pos>
 			<maxSize>0.244</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.325" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2004</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Collection</text>
 			<text lang="pl">Kolekcja</text>
 			<text lang="ru">Коллекция</text>
@@ -47,11 +25,14 @@
 			<text lang="it">Collezione</text>
 			<text lang="pt">Coleção</text>
 		</text>
-		<text name="TextName" extra="true">
-			<text>The Angry Video Game
-Nerd</text>
+		<text name="TextName">
+			<text>The Angry Video Game Nerd</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextVariant">
+			<text>Video</text>
+			<text lang="ru">Видео</text>
+		</text>
+		<text name="TextDesc">
 			<text>AVGN is the main character of the video show of the same name, a series of video game reviews for video game consoles of the past years. The reviews are dedicated to criticizing low-quality video games in a humorous style.
 
 The video series is created by James D. Rolfe, who plays the role of the main character. The show gained popularity through the publication of the first videos on YouTube. The videos were then published on the ScrewAttack website and later, along with two other exclusive series, were given to the GameTrailers website, where they were published until the site was shut down. According to GameTrailers, the episodes posted there had between half a million and two million views. The show was subsequently published exclusively on Cinemassacre's YouTube channel.

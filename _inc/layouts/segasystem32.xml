@@ -2,48 +2,30 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video-arcade" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.363</pos>
 			<size>0.38 0.15</size>
+			<size if="${screen.ratio} == '16/10'">0.42 0.15</size>
+			<size if="${screen.ratio} == '4/3'">0.503 0.15</size>
 			<size if="${screen.ratio} == '21/9'">0.285 0.15</size>
-			<storyboard>
-				<animation property="pos" to="0.22 0.363" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</image>
-		<video name="videoboxarcade" extra="true">
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+		<video name="videobox">
 			<pos>0.499 0.366</pos>
 			<maxSize>0.376</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.219 0.366" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize if="${screen.ratio} == '16/10'">0.416</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.506</maxSize>
+			<maxSize if="${screen.ratio} == '21/9'">0.282</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1990</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Sega</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>System 32</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>Sega System 32 is the name of an arcade platform released by Sega that debuted in 1990. It was a successor to the Sega System 16, Sega System 24 and Sega Y Boards, and contains a 32-bit RISC processor at 16 MHz, hence its name.
 
 It was the last board to be released under the "Sega System" naming scheme, and was the last of the Sega System and Super Scaler series of arcade hardware – the "Sega Model" series would begin in 1992 with the Sega Model 1. Whereas Model 1 hardware was designed specifically with 3D polygon games in mind, System 32 primarily catered for sprite-based games, including 2D games and 3D sprite-scaling games. Like the Sega X Board and Sega Y Board, it is capable of scaling and rotating many sprites/textures in real-time, resulting in graphics ranging from a "pseudo-3D" look to a 3D texture-mapped look.</text>

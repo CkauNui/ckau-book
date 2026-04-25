@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <theme>
 <formatVersion>7</formatVersion>
@@ -162,9 +162,8 @@
 			<pos>0.65 0.04</pos>
 			<size>0.33 0.032</size>
 			<pos if="${screen.ratio} == '4/3'">0.65 0.07</pos>
-			<size if="${screen.ratio} == '4/3'">0.36 0.05</size>
+			<size if="${screen.ratio} == '4/3'">0.36 0.042</size>
 			<orientation>horizontal</orientation>
-			<backgroundColor>FF000000</backgroundColor>
 			<zIndex>150</zIndex>
 			
 			<!-- Избранное / Favorite -->
@@ -261,7 +260,6 @@
 		<size>0.33 0.032</size>
 		<pos if="${screen.ratio} == '4/3'">0.65 0.13</pos>
 		<size if="${screen.ratio} == '4/3'">0.36 0.042</size>
-		<backgroundColor>FF000000</backgroundColor>
 		<zIndex>150</zIndex>
 		
 		<!-- Год выпуска -->
@@ -327,10 +325,7 @@
 		<size>0.33 0.032</size>
 		<pos if="${screen.ratio} == '4/3'">0.65 0.187</pos>
 		<size if="${screen.ratio} == '4/3'">0.36 0.042</size>
-		<orientation>horizontal</orientation>
-		<backgroundColor>FF000000</backgroundColor>
 		<zIndex>150</zIndex>
-		<separator>0.01</separator>
 		
 		<!-- Издатель (если не = разработчику) -->
 		<container name="publisher-container" visible="{game:publisher} != {game:developer} &amp;&amp; !empty({game:publisher})">
@@ -427,7 +422,6 @@
 			<pos if="${screen.ratio} == '4/3'">0.65 0.24</pos>
 			<size if="${screen.ratio} == '4/3'">0.36 0.042</size>
 			<orientation>horizontal</orientation>
-			<backgroundColor>FF000000</backgroundColor>
 			<zIndex>150</zIndex>
 			
 			<!-- Кол-во запусков -->
@@ -505,7 +499,6 @@
 			<pos if="${screen.ratio} == '4/3'">0.65 0.29</pos>
 			<size if="${screen.ratio} == '4/3'">0.36 0.042</size>
 			<orientation>horizontal</orientation>
-			<backgroundColor>FF000000</backgroundColor>
 			<zIndex>150</zIndex>
 			
 			<!-- Флаги / Flags -->
@@ -563,7 +556,6 @@
 			<autoLayout>1 1</autoLayout>
 			<autoLayoutSelectedZoom>1</autoLayoutSelectedZoom>
 			<animateSelection>false</animateSelection>
-			<scrollSound>${themePath}/_inc/sound/scroll.wav</scrollSound>
 			<scrollbarColor>333333ff</scrollbarColor>
 			<scrollbarCorner>0.49</scrollbarCorner>
 			<scrollbarSize>0.005</scrollbarSize>
@@ -586,7 +578,7 @@
 		</text>
 		<text name="gridtile:selected">
 			<color>FFFFFF00</color>
-			<fontSize>0</fontSize>
+			<fontSize>0.01</fontSize>
 			<size>1 0</size>
 		</text>
 		<image name="gridtile.favorite">

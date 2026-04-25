@@ -1,50 +1,31 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.45</origin>
+		<image name="sysbg-video">
 			<pos>0.48 0.352</pos>
-			<maxSize>0.27</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.2 0.352" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.2 0.27</size>
+			<size if="${screen.ratio} == '16/10'">0.21 0.27</size>
+			<size if="${screen.ratio} == '4/3'">0.26 0.27</size>
+			<size if="${screen.ratio} == '21/9'">0.14 0.27</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+		<video name="videobox">
 			<pos>0.48 0.352</pos>
 			<maxSize>0.24</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.2 0.352" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<pos if="${screen.ratio} == '16/10'">0.478 0.352</pos>
+			<pos if="${screen.ratio} == '4/3'">0.474 0.352</pos>
+			<pos if="${screen.ratio} == '21/9'">0.484 0.352</pos>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1982</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>EACA</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>EG2000 Colour Genie</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The EACA EG2000 Colour Genie was a computer produced by Hong Kong-based manufacturer EACA. It was introduced in Germany in August 1982 by Tromeschläger Computer Service and Schmidtke Electronic.
 This computer followed their earlier Video Genie I and II models and was released around the same time as the business-oriented Video Genie. The Colour Genie featured a Zilog Z80 CPU running at 2.2 MHz, 16 KB RAM (expandable to 32 KB), and 16 colors for graphics. It had a 40×24 text display and 160×96 graphics resolution. The sound hardware included a General Instruments AY-3-8910 chip with 3 sound channels and 1 noise channel.
 

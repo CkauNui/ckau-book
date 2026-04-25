@@ -1,129 +1,64 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 <formatVersion>7</formatVersion>
 <!-- Сетка -->
 	<view name="grid">
-		<image name="background" extra="true">
-			<tile>true</tile>
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.5</pos>
-			<size>1 1</size>
-			<path>${themePath}/_inc/images/space.png</path>
-			<color>141414</color>
-		</image>
-		<text name="logoText">
-			<pos>0.5 0.142</pos>
-			<origin>0.5 0</origin>
-			<size>0.156 0.055</size>
-			<fontSize>0.044</fontSize>
-			<fontPath>${fontNameBold}</fontPath>
-			<color>${baseColor}</color>
-			<forceUppercase>true</forceUppercase>
-		</text>
-		<text name="md_name" extra="true">
-			<pos>0.5 0.015</pos>
-			<size>1 0.03</size>
-			<origin>0.5 0.5</origin>
-			<alignment>center</alignment>
-			<fontPath>${fontNameBold}</fontPath>
-			<color>FFFFFFFF</color>
-			<fontSize>0.024</fontSize>
-			<fontSize if="${screen.ratio} == '4/3'">0.03</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<zIndex>140</zIndex>
-		</text>
-		<image name="logo">
-			<pos>0.5 0.09</pos>
-			<maxSize>0.240 0.126</maxSize>
-			<origin>0.5 0.5</origin>
-			<zIndex>150</zIndex>
-		</image>
-		<!-- Logo anim bzz -->
-		<image name="logo1" extra="true">
-			<pos>0.5 0.09</pos> <!-- Должно совпадать с logo -->
-			<maxSize>0.240 0.126</maxSize> <!-- Должно совпадать с logo -->
-			<origin>0.5 0.5</origin> <!-- Должно совпадать с logo -->
-			<opacity>0</opacity>
-			<zIndex>20</zIndex>
-			<storyboard>
-				<animation property="opacity" from="0.75" to="0" begin="995" duration="4000" mode="EaseOut"/>
-				<animation property="scale" from="1.05" to="1.4" begin="995" duration="4000" mode="EaseOut"/>
-				<animation property="color" from="FFAAAA" to="FF7777" begin="975" duration="4000" mode="EaseOut"/>
-			</storyboard>
-		</image>
-		<image name="art" extra="true">
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.18</pos>
-			<minSize>1 1</minSize>
-			<path>${themePath}/_inc/images/overlay3.png</path>
-			<zIndex>11</zIndex>
-		</image>
-		<image name="fanart-bg-fix" extra="true">
-			<tile>true</tile>
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.9</pos>
-			<size>1 1</size>
-			<path>${themePath}/_inc/images/space.png</path>
-			<color>141414</color>
-			<zIndex>11</zIndex>
-		</image>
-		<image name="fanart" extra="true">
-			<origin>0.5 0</origin>
-			<pos>0.5 -0.1</pos>
-			<color>FFFFFF2F</color>
-			<size>1 0</size>
-			<path>{game:fanart}</path>
-			<zIndex>10</zIndex>
-			<linearSmooth>true</linearSmooth>
-			<storyboard event="activate" repeat="forever">
-				<animation property="scale" from="1" to="1.1" duration="16000"/>
-				<animation property="y" from="-0.1" to="0" duration="16000"/>
-				<animation property="scale" begin="16000" to="1" duration="16000"/>
-				<animation property="y" begin="16000" to="-0.1" duration="16000"/>
-			</storyboard>
-			<storyboard event="deactivate">
-				<animation property="opacity" to="0" duration="400" mode="easeOut"/>
-				<animation property="scale" to="1" duration="250"/>
-				<animation property="y" to="-0.1" duration="250"/>
-			</storyboard>
-		</image>
-		<image name="md_fanart">
+		<text name="md_description">
 			<visible>false</visible>
-			<zIndex>1</zIndex>
+		</text>
+		<image name="art">
+			<pos>0.5 0.6</pos>
 		</image>
-		
 		<imagegrid name="gamegrid">
 			<pos>0.016 0.16</pos>
 			<size>0.95 0.79</size>
 			<margin>0.005 0.010</margin>
 			<padding>0.03 0.04 0.03 0.1</padding>
 			<autoLayout>7 2</autoLayout>
+			<autoLayout if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'gameandwatch'|| {system.theme} == 'solarus' || {system.theme} == 'ngage'">5 3</autoLayout>
 			<autoLayoutSelectedZoom>1.12</autoLayoutSelectedZoom>
 			<centerSelection>false</centerSelection>
 			<animateSelection>false</animateSelection>
-			<scrollSound>${themePath}/_inc/sound/scroll.wav</scrollSound>
 			<scrollbarColor>333333FF</scrollbarColor>
 			<scrollbarCorner>0.49</scrollbarCorner>
 			<scrollbarSize>0.005</scrollbarSize>
 			<autoLayout if="${screen.ratio} == '4/3'">5 2</autoLayout>
 			<autoLayout if="${screen.ratio} == '21/9'">9 2</autoLayout>
 			<scrollbarAlignment if="${screen.ratio} == '4/3'">left</scrollbarAlignment>
+			
+			<autoLayout if="${screen.ratio} == '21/9' && {system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'gameandwatch'|| {system.theme} == 'solarus' || {system.theme} == 'ngage'">7 3</autoLayout>
+			<autoLayout if="${screen.ratio} == '4/3' && {system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'gameandwatch'|| {system.theme} == 'solarus' || {system.theme} == 'ngage'">4 3</autoLayout>
 			<zIndex>50</zIndex>
 		</imagegrid>
 		<gridtile name="default">
-			<backgroundCenterColor>FFFFFF00</backgroundCenterColor>
 			<backgroundColor>FFFFFF00</backgroundColor>
 			<backgroundCornerSize>9 9</backgroundCornerSize>
-			<imageSizeMode>maxSize</imageSizeMode>
 			<selectionMode>image</selectionMode>
 			<padding>5 5</padding>
-			<imageColor>FFFFFFAA</imageColor>
+			<imageColor>FFFFFFB0</imageColor>
 		</gridtile>
 		<gridtile name="selected">
 			<backgroundCenterColor>${centerFadeColor}</backgroundCenterColor>
 			<backgroundEdgeColor>${bottomBarColor}</backgroundEdgeColor>
 			<imageColor>FFFFFFFF</imageColor>
 		</gridtile>
+		<text name="gridtile">
+			<color>D0D0D0</color>
+			<backgroundColor>00000000</backgroundColor>
+			<fontSize>0.022</fontSize>
+			<alignment>center</alignment>
+			<size>1 0.24</size>
+			<!-- <multiLine>false</multiLine>
+			<autoScrollDelay>1</autoScrollDelay>
+			<singleLineScroll>true</singleLineScroll> -->
+			<visible>false</visible>
+		</text>
+		<text name="gridtile:selected">
+			<color>FFFFFF</color>
+			<glowColor>${glowColor}</glowColor>
+			<glowSize>2</glowSize>
+			<visible>false</visible>
+		</text>
 		<!-- <text name="gridtile">
 			<color>D0D0D0</color>
 			<backgroundColor>00000000</backgroundColor>
@@ -133,12 +68,12 @@
 			<multiLine>false</multiLine>
 			<autoScrollDelay>1</autoScrollDelay>
 			<singleLineScroll>true</singleLineScroll>
-		</text> -->
+		</text>
 		<text name="gridtile:selected">
 			<color>FFFFFF</color>
 			<glowColor>${glowColor}</glowColor>
 			<glowSize>2</glowSize>
-		</text>
+		</text> -->
 		<image name="gridtile.image">
 			<linearSmooth>true</linearSmooth>
 		</image>
@@ -168,7 +103,6 @@
 			<pos>0.973 0.19</pos>
 			<size>0.02 0.5</size>
 			<orientation>vertical</orientation>
-			<backgroundColor>00000000</backgroundColor>
 			<zIndex>150</zIndex>
 			<separator>0.008</separator>
 			<pos if="${screen.ratio} == '4/3'">0.957 0.19</pos>
@@ -192,7 +126,6 @@
 				<path>${themePath}/_inc/images/book.png</path>
 				<linearSmooth>true</linearSmooth>
 				<color>666666</color>
-				<alignment>center</alignment>
 				<maxSize>1 1</maxSize>
 			</image>
 			
@@ -201,7 +134,6 @@
 				<path>${themePath}/_inc/icons/Contest.png</path>
 				<linearSmooth>true</linearSmooth>
 				<color>666666</color>
-				<alignment>center</alignment>
 				<maxSize>1 1</maxSize>
 			</image>
 			
@@ -210,7 +142,6 @@
 				<path>${themePath}/_inc/icons/SaveState.png</path>
 				<linearSmooth>true</linearSmooth>
 				<color>666666</color>
-				<alignment>center</alignment>
 				<maxSize>1 1</maxSize>
 			</image>
 			
@@ -219,7 +150,6 @@
 				<path>${themePath}/_inc/images/wheel.svg</path>
 				<linearSmooth>true</linearSmooth>
 				<color>666666</color>
-				<alignment>center</alignment>
 				<maxSize>1 1</maxSize>
 			</image>
 			
@@ -228,7 +158,6 @@
 				<path>${themePath}/_inc/images/gun.svg</path>
 				<linearSmooth>true</linearSmooth>
 				<color>666666</color>
-				<alignment>center</alignment>
 				<maxSize>1 1</maxSize>
 			</image>
 			
@@ -237,7 +166,6 @@
 				<path>${themePath}/_inc/images/padtokey.png</path>
 				<linearSmooth>true</linearSmooth>
 				<color>666666</color>
-				<alignment>center</alignment>
 				<maxSize>1 1</maxSize>
 			</image>
 			
@@ -246,7 +174,6 @@
 				<path>${themePath}/_inc/images/hidden.svg</path>
 				<linearSmooth>true</linearSmooth>
 				<color>666666</color>
-				<alignment>center</alignment>
 				<maxSize>1 1</maxSize>
 			</image>
 			
@@ -255,7 +182,6 @@
 				<path>${themePath}/_inc/images/kid.svg</path>
 				<linearSmooth>true</linearSmooth>
 				<color>666666</color>
-				<alignment>center</alignment>
 				<maxSize>1 1</maxSize>
 			</image>
 		</stackpanel>
@@ -264,7 +190,6 @@
 			<pos>0.973 0.42</pos>
 			<size>0.02 0.5</size>
 			<orientation>vertical</orientation>
-			<backgroundColor>00000000</backgroundColor>
 			<zIndex>150</zIndex>
 			<separator>0.008</separator>
 			<pos if="${screen.ratio} == '4/3'">0.957 0.42</pos>
@@ -275,7 +200,6 @@
 			<image name="flag-region">
 				<path>${themePath}/_inc/images/flags/{game:region}.png</path>
 				<linearSmooth>true</linearSmooth>
-				<alignment>center</alignment>
 				<maxSize>1 1</maxSize>
 				<opacity>0.8</opacity>
 				<visible>{game:region} != {game:lang} &amp;&amp; !contains(lower({game:region}), ',') &amp;&amp; !empty({game:region})</visible>
@@ -283,7 +207,6 @@
 			<image name="flag-force-world">
 				<path>${themePath}/_inc/images/flags/wr.png</path>
 				<linearSmooth>true</linearSmooth>
-				<alignment>center</alignment>
 				<maxSize>1 1</maxSize>
 				<opacity>0.8</opacity>
 				<visible>contains(lower({game:region}), ',') &amp;&amp; !empty({game:region})</visible>
@@ -291,7 +214,6 @@
 			<image name="flag-lang">
 				<path>${themePath}/_inc/images/flags/{game:lang}.png</path>
 				<linearSmooth>true</linearSmooth>
-				<alignment>center</alignment>
 				<maxSize>1 1</maxSize>
 				<opacity>0.8</opacity>
 				<visible>!contains(lower({game:lang}), ',') &amp;&amp; !empty({game:lang})</visible>

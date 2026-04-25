@@ -1,49 +1,30 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.285</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.425</origin>
+		<image name="sysbg-video">
 			<pos>0.501 0.363</pos>
-			<maxSize>0.232</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.221 0.363" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.18 0.232</size>
+			<size if="${screen.ratio} == '16/10'">0.2 0.232</size>
+			<size if="${screen.ratio} == '4/3'">0.24 0.232</size>
+			<size if="${screen.ratio} == '21/9'">0.13 0.232</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.285</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.425</origin>
+		<video name="videobox">
 			<pos>0.501 0.363</pos>
 			<maxSize>0.212</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.221 0.363" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1988</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Zavod BRA</text>
+			<text lang="ru">Завод БРА</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Apogee BK-01</text>
+			<text lang="ru">Апогей БК-01</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Apogee BK-01, also known as Apogey BK-01, is a Soviet 8-bit personal computer that was built on the Radio 86RK basis and released in 1988. It features a KR580VM80A microprocessor with a clock speed of 1.78 MHz, 64 kB of memory (including 56.25 kB user-available RAM), and a text mode video display. The later version, Apogee BK-01C, introduced color support.
 
 This computer was primarily used for educational purposes and basic computing tasks, and it supported a variety of software, including games and applications for advanced mathematics and statistics.</text>

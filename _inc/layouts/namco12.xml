@@ -2,48 +2,30 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video-arcade" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.37</pos>
 			<size>0.38 0.165</size>
+			<size if="${screen.ratio} == '16/10'">0.42 0.165</size>
+			<size if="${screen.ratio} == '4/3'">0.503 0.165</size>
 			<size if="${screen.ratio} == '21/9'">0.285 0.165</size>
-			<storyboard>
-				<animation property="pos" to="0.22 0.37" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</image>
-		<video name="videoboxarcade" extra="true">
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.42</origin>
+		<video name="videobox">
 			<pos>0.501 0.38</pos>
-			<maxSize>0.38</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.221 0.38" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize>0.376</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.416</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.506</maxSize>
+			<maxSize if="${screen.ratio} == '21/9'">0.282</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1996</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Namco</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>System 12</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Namco System 12 is an arcade motherboard developed by Namco and released in late 1996. It is an upgrade of the previous System 11, based on Sony’s PlayStation, featuring a MIPS R3000A microprocessor that is 50% faster and a new Hitachi H8/3002 sound processor.
 
 This hardware powered iconic titles like Tekken 3, Soulcalibur, and Mr. Driller, renowned for their advanced 3D graphics and smooth gameplay.</text>

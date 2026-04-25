@@ -2,48 +2,29 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.495</pos>
-			<maxSize>0.26</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.35</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.292</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.495" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.28 0.27</size>
+			<size if="${screen.ratio} == '16/10'">0.3 0.27</size>
+			<size if="${screen.ratio} == '4/3'">0.34 0.27</size>
+			<size if="${screen.ratio} == '21/9'">0.2 0.27</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
+		<video name="videobox">
 			<pos>0.5 0.495</pos>
 			<maxSize>0.25</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.274</maxSize>
 			<maxSize if="${screen.ratio} == '4/3'">0.33</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.272</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.495" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2012</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Nintendo</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Wii U eShop</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Wii U eShop was a digital storefront where users could browse, purchase, and download games, applications, and other content directly to their Wii U console. It featured a wide range of titles, from major releases to indie games, as well as classic titles from previous Nintendo consoles through the Virtual Console. The eShop also offered demos, trailers, and user reviews to help players discover new games.
 
 With regular updates and promotions, the Wii U eShop provided an easy and convenient way for players to access a diverse library of digital content until its closure in March 2023.</text>

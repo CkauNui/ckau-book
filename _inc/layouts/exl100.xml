@@ -1,50 +1,28 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+		<image name="sysbg-video">
 			<pos>0.499 0.355</pos>
-			<maxSize>0.25</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.219 0.355" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.2 0.26</size>
+			<size if="${screen.ratio} == '16/10'">0.23 0.26</size>
+			<size if="${screen.ratio} == '4/3'">0.28 0.26</size>
+			<size if="${screen.ratio} == '21/9'">0.16 0.26</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.3</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.43</origin>
+		<video name="videobox">
 			<pos>0.499 0.355</pos>
 			<maxSize>0.24</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.219 0.355" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1984</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Exelvision</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>EXL 100</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The EXL 100 is a computer released in 1984 by the French brand Exelvision, based on the TMS 7020 microprocessor from Texas Instruments. This was an uncommon design choice (at the time almost all home computers either used 6502 or Z80 microprocessors) but justified by the fact that the engineering team behind the machine (Jacques Palpacuer, Victor Zebrouck and Christian Petiot) came from Texas instruments. It was part of the government Computing for All plan and 9000 units were used in schools.
 
 The design is unusual compared with similar machines of the time, as it had a separate central processing unit. Two keyboards are available: one with rubber keys and another with a more standard touch. Keyboard and joystick were not connected to the central unit by a cable but by infrared link, and are battery powered. Many extensions were available: modem, floppy disk drive and a 16 KB CMOS RAM powered by an integrated lithium battery. Its TMS 5220 sound processor was capable of French speech synthesis, another unusual feature.

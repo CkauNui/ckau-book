@@ -2,48 +2,27 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.333</pos>
-			<maxSize>0.235</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.333" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.18 0.235</size>
+			<size if="${screen.ratio} == '16/10'">0.2 0.235</size>
+			<size if="${screen.ratio} == '4/3'">0.25 0.235</size>
+			<size if="${screen.ratio} == '21/9'">0.13 0.235</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.25</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.4</origin>
+		<video name="videobox">
 			<pos>0.5 0.333</pos>
 			<maxSize>0.225</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.333" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1992</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Watara</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Supervision</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Watara Supervision, also known as the QuickShot Supervision in the UK, is a monochrome handheld game console, originating from Asia, and introduced in 1992 as a cut-price competitor for Nintendo's Game Boy. It came packaged with a game called Crystball, which is similar to Breakout. One unique feature of the Supervision was that it could be linked up to a television via a link cable. Games played in this way would display in four colors, much like Nintendo's Super Game Boy add-on for the SNES. A full color TV link was also in the works, but because of the Supervision's failure to make a major impression among gamers it was cancelled, along with the games which were in development for it.</text>
 			<text lang="pl">Watara Supervision – przenośna konsola gier wideo wyprodukowana przez przedsiębiorstwo Watara i wydana w Azji w 1992 roku. W założeniach miała stanowić tańszą konkurencję dla Game Boya.
 

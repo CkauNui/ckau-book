@@ -1,51 +1,30 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.52 0.5</origin>
-			<pos>0.5 0.488</pos>
-			<maxSize>0.24</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.35</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.29</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.488" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<image name="sysbg-video">
+			<pos>0.5 0.47</pos>
+			<size>0.21 0.24</size>
+			<size if="${screen.ratio} == '16/10'">0.23 0.24</size>
+			<size if="${screen.ratio} == '4/3'">0.28 0.24</size>
+			<size if="${screen.ratio} == '21/9'">0.16 0.24</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.48</origin>
-			<origin if="${screen.ratio} == '21/9'">0.52 0.5</origin>
-			<pos>0.502 0.474</pos>
+		<video name="videobox">
+			<pos>0.499 0.474</pos>
 			<maxSize>0.23</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.29</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.2202 0.474" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize if="${screen.ratio} == '4/3'">0.25</maxSize>
+			<maxSize if="${screen.ratio} == '21/9'">0.228</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>2000</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Benesse Corporation</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Pocket Challenge v2</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>The Pocket Challenge V2 is a handheld console developed by Benesse Corporation, a Japanese company focused on education. Released in 2000, this console features a 16-bit NEC V20 CPU, 512 KB of RAM, and a video resolution of 224 x 144 pixels.
 
 It was designed as an educational device, with several games aimed at language learning, leveraging Benesse's ownership of Berlitz Language Schools.

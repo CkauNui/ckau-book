@@ -1,44 +1,22 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-
-<!-- Базовый -->
+<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 <formatVersion>7</formatVersion>
+<!-- Базовый -->
 	<view name="basic">
-		<text name="logoText">
-			<pos>0.5 0.142</pos>
-			<origin>0.5 0</origin>
-			<size>0.156 0.055</size>
-			<fontSize>0.044</fontSize>
-			<fontPath>${fontNameBold}</fontPath>
-			<color>${baseColor}</color>
-			<forceUppercase>true</forceUppercase>
-		</text>
-		<image name="background" extra="true">
-			<tile>true</tile>
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.5</pos>
-			<size>1 1</size>
-			<path>${themePath}/_inc/images/space.png</path>
-			<color>141414</color>
+		<image name="fanart">
+			<visible>false</visible>
+		</image>
+		<image name="fanart_fix">
+			<visible>true</visible>
 		</image>
 		<image name="logo">
 			<pos>0.5 0.09</pos>
 			<maxSize>0.240 0.126</maxSize>
-			<origin>0.5 0.5</origin>
-			<zIndex>150</zIndex>
 		</image>
 		<!-- Logo anim bzz -->
-		<image name="logo1" extra="true">
+		<image name="logo1">
 			<pos>0.5 0.09</pos> <!-- Должно совпадать с logo -->
-			<maxSize>0.260 0.126</maxSize> <!-- Должно совпадать с logo -->
-			<origin>0.5 0.5</origin> <!-- Должно совпадать с logo -->
-			<opacity>0</opacity>
-			<zIndex>20</zIndex>
-			<storyboard>
-				<animation property="opacity" from="0.75" to="0" begin="995" duration="4000" mode="EaseOut"/>
-				<animation property="scale" from="1.05" to="1.4" begin="995" duration="4000" mode="EaseOut"/>
-				<animation property="color" from="FFAAAA" to="FF7777" begin="975" duration="4000" mode="EaseOut"/>
-			</storyboard>
+			<maxSize>0.240 0.126</maxSize> <!-- Должно совпадать с logo -->
 		</image>
 		<textlist name="gamelist">
 			<pos>0.025 0.18</pos>

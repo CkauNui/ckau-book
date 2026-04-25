@@ -2,77 +2,23 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-left" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 -0.75</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.08</origin>
-			<pos>0.498 0.14</pos>
-			<minSize>0.5 0.1</minSize>
-			<minSize if="${screen.ratio} == '4/3'">0.6 0.1</minSize>
-			<minSize if="${screen.ratio} == '16/10'">0.5 0.1</minSize>
-			<rotation>0</rotation>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.218 0.14" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<image name="sysbg-video">
+			<pos>0.5 0.425</pos>
+			<size>0.442 0.45</size>
+			<size if="${screen.ratio} == '16/10'">0.49 0.45</size>
+			<size if="${screen.ratio} == '4/3'">0.59 0.45</size>
+			<size if="${screen.ratio} == '21/9'">0.332 0.45</size>
 		</image>
-		<image name="sysbg-right" extra="true">
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 1.1</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.74</origin>
-			<pos>0.498 0.7</pos>
-			<minSize>0.5 0.1</minSize>
-			<minSize if="${screen.ratio} == '4/3'">0.6 0.1</minSize>
-			<minSize if="${screen.ratio} == '16/10'">0.5 0.1</minSize>
-			<rotation>0</rotation>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>27</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.218 0.7" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space169.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.485</origin>
-			<pos>0.499 0.425</pos>
-			<maxSize>0.45</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.59</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.492</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.219 0.425" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise169.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.45</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.485</origin>
-			<pos>0.4995 0.424</pos>
-			<maxSize>0.446</maxSize>
-			<maxSize if="${screen.ratio} == '4/3'">0.58</maxSize>
-			<maxSize if="${screen.ratio} == '16/10'">0.482</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.2195 0.424" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<video name="videobox">
+			<pos>0.5 0.424</pos>
+			<maxSize>0.44</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.49</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.585</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text></text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Collection</text>
 			<text lang="pl">Kolekcja</text>
 			<text lang="ru">Коллекция</text>
@@ -80,10 +26,10 @@
 			<text lang="fr">Collection</text>
 			<text lang="it">Collezione</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Video Game Movies</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>Films based on video games abound in interesting events and take on unusual stories, effectively piquing the interest of viewers. Action-packed stories offer enjoyable entertainment, and work well as a good movie for the evening. Among the numerous adaptations, there are several titles that are particularly noteworthy.
 
 This is a collection of theatrical films based on video games and films that made video games.</text>

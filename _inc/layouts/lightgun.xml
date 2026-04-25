@@ -2,45 +2,40 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video-arcade" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
-			<pos>0.5 0.36</pos>
-			<size>0.39 0.16</size>
-			<size if="${screen.ratio} == '21/9'">0.295 0.16</size>
-			<storyboard>
-				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+		<image name="sysbg-video">
+			<pos>0.5 0.363</pos>
+			<size>0.38 0.15</size>
+			<size if="${screen.ratio} == '16/10'">0.42 0.15</size>
+			<size if="${screen.ratio} == '4/3'">0.503 0.15</size>
+			<size if="${screen.ratio} == '21/9'">0.285 0.15</size>
 		</image>
-		<video name="videoboxarcade" extra="true">
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<origin if="${screen.ratio} == '4/3'">0.5 0.15</origin>
-			<origin if="${screen.ratio} == '16/10'">0.5 0.38</origin>
+		<video name="videobox">
 			<pos>0.5 0.36</pos>
-			<maxSize>0.36</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.36" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<maxSize>0.376</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.416</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.506</maxSize>
+			<maxSize if="${screen.ratio} == '21/9'">0.282</maxSize>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text/>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextManufacturer">
+			<text>Collection</text>
+			<text lang="pl">Kolekcja</text>
+			<text lang="ru">Коллекция</text>
+			<text lang="es">Recopilación</text>
+			<text lang="fr">Collection</text>
+			<text lang="it">Collezione</text>
+			<text lang="pt">Coleção</text>
+		</text>
+		<text name="TextName">
 			<text>Light Gun</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextVariant">
+			<text>Auto</text>
+			<text lang="ru">Авто</text>
+		</text>
+		<text name="TextDesc">
 			<text>A light gun is a pointing device for computers and a control device for arcade and video games, typically shaped to resemble a pistol. In aviation and shipping, it can also be a directional signal lamp.
 
 Modern screen-based light guns work by building an optical sensor into the gun, which receives its input from the light emitted by on-screen target(s). The first device of this type, the light pen, was used on the MIT Whirlwind computer.

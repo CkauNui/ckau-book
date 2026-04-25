@@ -2,45 +2,27 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<image name="sysbg-video" extra="true">
-			<color>000000</color>
-			<path>./../../_inc/images/space43.png</path>
-			<zIndex>2</zIndex>
-			<origin>0.5 0.5</origin>
+		<image name="sysbg-video">
 			<pos>0.5 0.43</pos>
-			<maxSize>0.25</maxSize>
-			<storyboard>
-				<animation property="pos" to="0.22 0.43" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
+			<size>0.22 0.25</size>
+			<size if="${screen.ratio} == '16/10'">0.23 0.25</size>
+			<size if="${screen.ratio} == '4/3'">0.28 0.25</size>
+			<size if="${screen.ratio} == '21/9'">0.16 0.25</size>
 		</image>
-		<video name="videobox" extra="true">
-			<path>{random}</path>
-			<path>./../../_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../_inc/anim/video/${synonym}.mp4</path>
-			<!-- Loads platform video from addon directory, if available -->
-			<path>./../../../ckau-book-addons/_inc/anim/video/${system.theme}.mp4</path>
-			<path>./../../../ckau-book-addons/_inc/anim/video/${synonym}.mp4</path>
-			<default>./../../_inc/anim/video/CRT_Noise.mp4</default>
-			<delay>0</delay>
-			<effect>none</effect>
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.43</pos>
+		<video name="videobox">
+			<pos>0.504 0.43</pos>
 			<maxSize>0.24</maxSize>
-			<zIndex>25</zIndex>
-			<storyboard>
-				<animation property="pos" to="0.22 0.43" begin="2000" duration="1000" mode="linear"/>
-			</storyboard>
 		</video>
-		<text name="TextDate" extra="true">
+		<text name="TextDate">
 			<text>1992</text>
 		</text>
-		<text name="TextManufacturer" extra="true">
+		<text name="TextManufacturer">
 			<text>Entex</text>
 		</text>
-		<text name="TextName" extra="true">
+		<text name="TextName">
 			<text>Adventure Vision</text>
 		</text>
-		<text name="TextDesc" extra="true">
+		<text name="TextDesc">
 			<text>Entex Adventure Vision or Adventure Vision for short is a second generation portable video game console manufactured by Entex in 1982.
 Games are controlled by a single joystick, and a set of four buttons, the buttons are located to the left and right of the joystick to allow left and right handed people to play.
 The console does not use an LCD screen or external monitors, LEDs arranged in forty rows are used to display the image, giving a resolution of 153 x 40 pixels, another console that uses similar technology is Virtual Boy.
