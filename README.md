@@ -1,13 +1,14 @@
 # Ckau-Book
 
 Download [Latest version](https://github.com/CkauNui/ckau-book/archive/refs/heads/master.zip). It is better to download and update via EmulationStation (ES).  
+Download [Old Ckau-Book 3.0 (2026)](https://drive.google.com/file/d/1UrNCiXP8hPNvTUDILyaGTuyB1guhW-Xj/view?usp=sharing) for old versions of Batocera/RetroBat or ES.  
 Download [Old Ckau-Book 2.0 (2025)](https://drive.google.com/file/d/1UrNCiXP8hPNvTUDILyaGTuyB1guhW-Xj/view?usp=sharing) for old versions of Batocera/RetroBat or ES.  
 Download [Very Old Ckau-Book (2023)](https://drive.google.com/file/d/1GOpP9HHNuaKdBdOTzB6GAZoH8uRjj6cm/view?usp=sharing) for older setups.
 
 <p>
 <img align="right" width="200px" src="https://i.imgur.com/eCZPBDE.png">
 Emulationstation Theme for Batocera, RetroBat, EmuELEC.<br/>
-456+ supported systems.<br/>
+477+ supported systems.<br/>
 Supported languages: English, French, German, Spanish, Italian, Polish, Portuguese, Russian.
 </p>
 
@@ -17,6 +18,7 @@ Supported languages: English, French, German, Spanish, Italian, Polish, Portugue
 [Ckau-Book 2.0 Update](https://youtu.be/ZZAhYxToddg)  
 [Ckau-Book 3.0 Update](https://youtu.be/Vzy6Q1oy1y0?si=Uj4blm9zB6QUs6K9)  
 [Ckau-Book 3.0 - Anbernic Update](https://youtu.be/BMwluAKQzsg?si=LKmv8PJ02bFg3FMK)  
+[Ckau-Book 4.0 Update](https://youtu.be/iXhUJ-ejwE0)  
 [YouTube Playlist](https://www.youtube.com/playlist?list=PLlc3zkd7FLPScpaFz9Gf7WWrcR0v21pDv)
 
 ---
@@ -45,28 +47,16 @@ Optional addons (4K images, videos, console arts, wallpapers, etc.) can be insta
 
 ### 💡 How to Install Addons
 
-#### 🐧 Addons manager (Only for **Batocera**)
-You can install and update addons automatically using the included script:
-```
-tools/install-addons-batocera.sh
-```
-
-This script provides an interactive menu for managing all official addons (4K images, videos, console arts, wallpapers, etc.).  
-It also supports command-line usage and will automatically keep track of installed versions.  
-
-📘 For full usage instructions, see  
-[`tools/install-addons-instructions.md`](tools/install-addons-instructions.md)
-
-#### 🪟 Manual mode (Both for **Batocera** and **Retrobat**)
-Currently there is **no automatic installer** for RetroBat.
-Batocera users can choose to use manual mode too.
-
-In this case, addons must be downloaded manually from the corresponding GitHub repositories:
+Manually download the add-ons from the corresponding GitHub repositories, then extract the `ckau-book-addons` folder into the `themes` directory.
 
 | Addon | Description |
 | :-- | :-- |
 | [COLORFUL 4K Images](https://github.com/CkauNui/ckau-book-addons-Colorful-4K-Images) | High-detailed, beautiful 3840x2160 system images |
 | [COLORFUL Video Pack](https://github.com/CkauNui/ckau-book-addons-Colorful-Video) | Gameplay videos for each system |
+  
+  
+| **For OLD theme** | **Less than version 4.0** |
+| :-- | :-- |
 | [CINEMATIC Video Pack](https://github.com/CkauNui/ckau-book-addons-Cinematic-Video) | Full-screen cinematic system view |
 | [CONSOLES](https://github.com/CkauNui/ckau-book-addons-Consoles) / [WALLPAPERS](https://github.com/CkauNui/ckau-book-addons-Wallpapers) | Console or wallpaper-based layouts |
 
