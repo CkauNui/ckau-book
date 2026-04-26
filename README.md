@@ -15,11 +15,11 @@ Supported languages: English, French, German, Spanish, Italian, Polish, Portugue
 ---
 
 ## Video Playlist
-[Ckau-Book 2.0 Update](https://youtu.be/ZZAhYxToddg)  
+[YouTube Playlist](https://www.youtube.com/playlist?list=PLlc3zkd7FLPScpaFz9Gf7WWrcR0v21pDv)  
+[Ckau-Book 4.0 Update](https://youtu.be/iXhUJ-ejwE0)  
 [Ckau-Book 3.0 Update](https://youtu.be/Vzy6Q1oy1y0?si=Uj4blm9zB6QUs6K9)  
 [Ckau-Book 3.0 - Anbernic Update](https://youtu.be/BMwluAKQzsg?si=LKmv8PJ02bFg3FMK)  
-[Ckau-Book 4.0 Update](https://youtu.be/iXhUJ-ejwE0)  
-[YouTube Playlist](https://www.youtube.com/playlist?list=PLlc3zkd7FLPScpaFz9Gf7WWrcR0v21pDv)
+[Ckau-Book 2.0 Update](https://youtu.be/ZZAhYxToddg)  
 
 ---
 
