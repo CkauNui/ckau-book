@@ -42,15 +42,12 @@
 		</stackpanel>
 	</view>
 	<view name="system">
-		<text ifSubset="showgamescount:yes" name="systemInfo" extra="static">
+		<text name="systemInfo" extra="static">
 			<color>FFFFFF</color>
 			<pos>0.688 0.895</pos>
+			<pos if="${global.clock} == 'false'">0.688 0.895</pos>
 			<size>0.30 0.058</size>
 			<fontSize>0.034</fontSize>
-		</text>
-		<!-- Move gamecount to the right if the clock is disabled -->
-		<text ifSubset="showgamescount:yes" if="${global.clock} == 'false'" name="systemInfo" extra="static">
-			<pos>0.688 0.895</pos>
 		</text>
 	</view>
 	

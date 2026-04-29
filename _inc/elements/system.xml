@@ -2,7 +2,7 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
-		<text ifSubset="showgamescount:yes" name="systemInfo" extra="static">
+		<text name="systemInfo" extra="static">
 			<backgroundColor>14141400</backgroundColor>
 			<color>777777FF</color>
 			<fontPath>${fontDescReg}</fontPath>
@@ -16,14 +16,12 @@
 			<size if="${screen.ratio} == '4/3'">0.30 0.058</size>
 			<fontSize if="${screen.ratio} == '4/3'">0.034</fontSize>
 			<zIndex>93</zIndex>
-		</text>
-		<text ifSubset="showgamescount:no" name="systemInfo" extra="static">
-			<visible>false</visible>
-		</text>
-		<!-- Move gamecount to the right if the clock is disabled -->
-		<text ifSubset="showgamescount:yes" if="${global.clock} == 'false'" name="systemInfo" extra="static">
-			<pos>0.89 0.945</pos>
-			<pos if="${screen.ratio} == '21/9'">0.9 0.945</pos>
+			<visible>true</visible>
+			<visible ifSubset="showgamescount:yes">true</visible>
+			<visible ifSubset="showgamescount:no">false</visible>
+			<!-- Move gamecount to the right if the clock is disabled -->
+			<pos if="${global.clock} == 'false'">0.89 0.945</pos>
+			<pos if="${global.clock} == 'false' && ${screen.ratio} == '21/9'">0.9 0.945</pos>
 		</text>
 		<carousel name="systemcarousel">
 			<color>00000000</color>
