@@ -526,8 +526,9 @@
 						<visible if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'gameandwatch' || {system.theme} == 'solarus' || {system.theme} == 'ngage'">false</visible>
 						<pos>0.5 0.6</pos>
 						<origin>0.5</origin>
-						<maxSize>0.38 1</maxSize>
-						<maxSize if="${screen.ratio} == '4/3'">0.58 1</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<maxSize>0.36 1</maxSize>
+						<maxSize if="${screen.ratio} == '4/3'">0.5 1</maxSize>
 						<path>{game:thumbnail}</path>
 						<path ifSubset="boxsource:thumbnail">{game:thumbnail}</path>
 						<path ifSubset="boxsource:boxart">{game:boxart}</path>
@@ -549,30 +550,31 @@
 							<animation property="opacity" to="0.7" duration="1" mode="EaseOut"/>
 							<animation property="opacity" to="0" begin="1400" duration="600" mode="EaseOut"/>
 						</storyboard>
-						<shader>
+						<!-- <shader>
 							<path>:/shaders/border.glsl</path>
 							<cornerRadius>0.01</cornerRadius>
 							<innerShadowSize>0.01</innerShadowSize>
 							<innerShadowColor>00000030</innerShadowColor>
 							<outerShadowSize>0.020</outerShadowSize>
 							<outerShadowColor>00000050</outerShadowColor>
-						</shader>
+						</shader> -->
 					</image>
 					<image name="thumbnail-hor">
 						<visible>false</visible>
 						<visible if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'gameandwatch' || {system.theme} == 'solarus' || {system.theme} == 'ngage'">{game:region} != 'jp'</visible>
 						<pos>0.5 0.6</pos>
 						<origin>0.5</origin>
+						<linearSmooth>true</linearSmooth>
 						<rotation>90</rotation>
-						<maxSize>0.55 1</maxSize>
+						<maxSize>0.53 1</maxSize>
 						<path>{game:thumbnail}</path>
 						<path ifSubset="boxsource:thumbnail">{game:thumbnail}</path>
 						<path ifSubset="boxsource:boxart">{game:boxart}</path>
 						<path ifSubset="boxsource:image">{game:image}</path>
 						<path ifSubset="boxsource:mix">{game:mix}</path>
-						<origin if="${screen.ratio} == '21/9'">0.5 0.58</origin>
-						<maxSize if="${screen.ratio} == '21/9'">0.53 0.8</maxSize>
-						<origin if="${screen.ratio} == '4/3'">0.5 0.4</origin>
+						<origin if="${screen.ratio} == '21/9'">0.48 0.58</origin>
+						<maxSize if="${screen.ratio} == '21/9'">0.46 1</maxSize>
+						<origin if="${screen.ratio} == '4/3'">0.5 0.42</origin>
 						<maxSize if="${screen.ratio} == '4/3'">0.6 1</maxSize>
 						<!-- <opacity>0</opacity> -->
 						<storyboard event="activate">
@@ -593,22 +595,23 @@
 							<animation property="opacity" to="0.7" duration="1" mode="EaseOut"/>
 							<animation property="opacity" to="0" begin="1400" duration="600" mode="EaseOut"/>
 						</storyboard>
-						<shader>
+						<!-- <shader>
 							<path>:/shaders/border.glsl</path>
 							<cornerRadius>0.01</cornerRadius>
 							<innerShadowSize>0.01</innerShadowSize>
 							<innerShadowColor>00000030</innerShadowColor>
 							<outerShadowSize>0.020</outerShadowSize>
 							<outerShadowColor>00000050</outerShadowColor>
-						</shader>
+						</shader> -->
 					</image>
 					<image name="thumbnail-jp">
 						<visible>false</visible>
 						<visible if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'gameandwatch' || {system.theme} == 'solarus' || {system.theme} == 'ngage'">{game:region} == 'jp'</visible>
 						<pos>0.5 0.6</pos>
 						<origin>0.5</origin>
+						<linearSmooth>true</linearSmooth>
 						<rotation>0</rotation>
-						<maxSize>0.38 1</maxSize>
+						<maxSize>0.36 1</maxSize>
 						<maxSize if="${screen.ratio} == '4/3'">0.58 1</maxSize>
 						<path>{game:thumbnail}</path>
 						<path ifSubset="boxsource:thumbnail">{game:thumbnail}</path>
@@ -631,19 +634,20 @@
 							<animation property="opacity" to="0.7" duration="1" mode="EaseOut"/>
 							<animation property="opacity" to="0" begin="1400" duration="600" mode="EaseOut"/>
 						</storyboard>
-						<shader>
+						<!-- <shader>
 							<path>:/shaders/border.glsl</path>
 							<cornerRadius>0.01</cornerRadius>
 							<innerShadowSize>0.01</innerShadowSize>
 							<innerShadowColor>00000030</innerShadowColor>
 							<outerShadowSize>0.020</outerShadowSize>
 							<outerShadowColor>00000050</outerShadowColor>
-						</shader>
+						</shader> -->
 					</image>
 					<image name="nothumb">
 						<visible>!exists({game:thumbnail}) &amp;&amp; !exists({game:marquee})</visible>
 						<pos>0.5 0.6</pos>
 						<origin>0.5</origin>
+						<linearSmooth>true</linearSmooth>
 						<rotation>0</rotation>
 						<maxSize>0.38 0.38</maxSize>
 						<path>${themePath}/_inc/images/invader.png</path>
@@ -675,6 +679,7 @@
 						<visible>!exists({game:thumbnail})</visible>
 						<pos>0.5 0.55</pos>
 						<origin>0.5</origin>
+						<linearSmooth>true</linearSmooth>
 						<rotation>0</rotation>
 						<maxSize>0.33 1</maxSize>
 						<path>{game:marquee}</path>
