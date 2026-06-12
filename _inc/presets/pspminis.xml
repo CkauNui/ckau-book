@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme defaultView="Grid + Fanart">
+	<formatVersion>7</formatVersion>
+	<customView name="Grid + Fanart">
+		<image name="fanart">
+			<color>FFFFFF9F</color>
+			<zIndex>8</zIndex>
+			<storyboard event="activate"/>
+			<storyboard event="deactivate"/>
+			<storyboard repeat="forever">
+				<animation property="scale" from="1" to="1.1" duration="8000"/>
+				<animation property="scale" begin="8000" to="1" duration="8000"/>
+			</storyboard>
+		</image>
+		<image name="fanart_fix">
+			<color>FFFFFFFF</color>
+			<pos>0.785 -0.172</pos>
+			<scale>1.1</scale>
+			<scale if="${screen.ratio} == '4/3'">1.1</scale>
+			<visible>true</visible>
+			<zIndex>10</zIndex>
+			<storyboard event="activate"/>
+			<storyboard event="deactivate"/>
+		</image>
+		<image name="md_marquee">
+			<maxSize>0.25 0.18</maxSize>
+			<!-- <pos>0.185 0.172</pos> -->
+		</image>
+		<video name="md_video">
+			<pos>0.784 0.401</pos>
+			<maxSize>0.316</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.422</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.352</maxSize>
+			<zIndex>9</zIndex>
+			<shader/>
+		</video>
+		<image name="sysbg-video" extra="true">
+			<!-- FOR TEST <color>FFFFFF</color> def 000000 -->
+			<color>000000</color>
+			<path>${themePath}/_inc/images/space.png</path>
+			<origin>0.5 1</origin>
+			<pos>0.784 0.40</pos>
+			<size>0.324 0.324</size>
+			<size if="${screen.ratio} == '4/3'">0.414 0.324</size>
+			<size if="${screen.ratio} == '16/10'">0.35 0.324</size>
+			<size if="${screen.ratio} == '21/9'">0.244 0.324</size>
+			<!-- FOR TEST <zIndex>800</zIndex> def 8 -->
+			<zIndex>8</zIndex>
+		</image>
+		<imagegrid name="gamegrid">
+			<imageSource>cartridge</imageSource>
+			<autoLayout>10 3</autoLayout>
+			<autoLayout if="${screen.ratio} == '4/3'">8 3</autoLayout>
+			<autoLayout if="${screen.ratio} == '16/10'">9 3</autoLayout>
+			<autoLayout if="${screen.ratio} == '21/9'">12 3</autoLayout>
+			<padding>0.03 0.01 0.03 0.12</padding>
+			<size>1 0.598</size>
+		</imagegrid>
+		<gridtile name="default">
+			<backgroundColor>FFFFFF00</backgroundColor>
+			<backgroundCornerSize>9 9</backgroundCornerSize>
+			<selectionMode>image</selectionMode>
+			<padding>5 5</padding>
+			<imageColor>FFFFFFB0</imageColor>
+		</gridtile>
+		<ninepatch name="gridtile.background:selected">
+			<path>${themePath}/_inc/images/framewsel.png</path>
+			<cornerSize>36 36</cornerSize>
+			<padding>-13 -13</padding>
+			<color>${baseColor}</color>
+			<animateColor>141414</animateColor>
+			<animateColorTime>850</animateColorTime>
+		</ninepatch>
+	</customView>
+	<view name="grid">
+		<image name="fanart">
+			<storyboard event="activate"/>
+			<storyboard event="deactivate"/>
+			<storyboard repeat="forever">
+				<animation property="scale" from="1" to="1.1" duration="8000"/>
+				<animation property="scale" begin="8000" to="1" duration="8000"/>
+			</storyboard>
+		</image>
+	</view>
+	<view name="gamecarousel">
+		<image name="fanart">
+			<storyboard event="activate"/>
+			<storyboard event="deactivate"/>
+			<storyboard repeat="forever">
+				<animation property="scale" from="1" to="1.1" duration="8000"/>
+				<animation property="scale" begin="8000" to="1" duration="8000"/>
+			</storyboard>
+		</image>
+		<image name="md_cartridge">
+			<maxSize>0.215 0.20</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.245 0.20</maxSize>
+		</image>
+	</view>
+	<customView name="Detailed Dark">
+		<image name="fanart">
+			<storyboard event="activate"/>
+			<storyboard event="deactivate"/>
+			<storyboard repeat="forever">
+				<animation property="scale" from="1" to="1.1" duration="8000"/>
+				<animation property="scale" begin="8000" to="1" duration="8000"/>
+			</storyboard>
+		</image>
+	</customView>
+</theme>
