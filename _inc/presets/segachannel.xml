@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme defaultView="Carousel + Fanart">
+	<formatVersion>7</formatVersion>
+	<view name="grid">
+		<image name="fanart">
+			<storyboard event="activate"/>
+			<storyboard event="deactivate"/>
+		</image>
+	</view>
+	<view name="gamecarousel">
+		<text name="md_name">
+			<color>FFFFFFFF</color>
+		</text>
+		<image name="fanart">
+			<color>FFFFFF9F</color>
+			<opacity>0.3</opacity>
+			<storyboard event="activate"/>
+			<storyboard event="deactivate"/>
+		</image>
+	</view>
+	<customView name="Carousel + Fanart">
+		<text name="md_name">
+			<color>FFFFFFFF</color>
+		</text>
+		<text name="md_description">
+			<color>FFFFFF</color>
+		</text>
+		<image name="fanart">
+			<color>FFFFFF9F</color>
+			<opacity>0.8</opacity>
+			<zIndex>8</zIndex>
+			<storyboard event="activate"/>
+			<storyboard event="deactivate"/>
+		</image>
+		<video name="md_video">
+			<pos>0.784 0.448</pos>
+			<maxSize>0.246 0.32</maxSize>
+			<maxSize if="${screen.ratio} == '4/3'">0.326 0.32</maxSize>
+			<maxSize if="${screen.ratio} == '16/10'">0.27 0.32</maxSize>
+			<maxSize if="${screen.ratio} == '21/9'">0.186 0.32</maxSize>
+			<zIndex>10</zIndex>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/>
+			</storyboard>
+			<shader/>
+		</video>
+		<image name="sysbg-video" extra="true">
+			<!-- FOR TEST <color>FFFFFF</color> def 000000 -->
+			<color>FFFFFF</color>
+			<path>${themePath}/_inc/images/sega-channel-video.gif</path>
+			<origin>0.5 1</origin>
+			<pos>0.784 0.46</pos>
+			<!-- <size>0.324 0.324</size> -->
+			<maxSize>0.42</maxSize>
+			<!-- <size if="${screen.ratio} == '4/3'">0.414 0.324</size>
+			<size if="${screen.ratio} == '16/10'">0.35 0.324</size>
+			<size if="${screen.ratio} == '21/9'">0.244 0.324</size> -->
+			<!-- FOR TEST <zIndex>800</zIndex> def 8 -->
+			<zIndex>9</zIndex>
+		</image>
+	</customView>
+</theme>
