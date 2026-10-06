@@ -4,6 +4,12 @@
 <!-- CD rotation animation -->
 	<view name="gamecarousel">
 		<image name="md_cartridge">
+			<storyboard event="open">
+				<animation property="zIndex" to="150" begin="1000" duration="" mode="Linear"/>
+				<animation property="opacity" to="0" duration="0" mode="EaseOut"/>
+				<animation property="opacity" to="1" begin="2000" duration="600" mode="EaseIn"/>
+				<animation property="rotation" from="-360" begin="4000" duration="6800" repeat="forever" mode="easeOutInQuint"/> 
+			</storyboard>
 			<storyboard event="activate">
 				<animation property="zIndex" to="150" begin="1000" duration="" mode="Linear"/>
 				<animation property="opacity" to="0" duration="0" mode="EaseOut"/>
@@ -26,6 +32,7 @@
 				<animation property="opacity" from="1" to="0" begin="0" duration="0" mode="EaseOutQuint"/>
 				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="EaseOutQuint"/>
 				<animation property="y" to="0.515" begin="2000" duration="2500" mode="EaseOutQuint"/>
+				<animation property="rotation" from="-360" begin="4000" duration="6800" repeat="forever" mode="easeOutInQuint"/> 
 			</storyboard>
 			<storyboard event="activate">
 				<animation property="opacity" from="1" to="0" begin="0" duration="0" mode="EaseOutQuint"/>
