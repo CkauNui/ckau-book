@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<subset name="ps3overlay" displayName="${subset.ps3overlay}" appliesTo="basic,grid,gamecarousel,detailed,DetailedDark,DetailedWheel,GridDetails,GridFanart,WallpapersHeroes,WallpapersHeroesHor,WallpapersHeroesListHor,WallpapersHeroesFullListHor,VideoFull,Carousel,CarouselDetails,CarouselFanart,Tiles,Icons,Content">
+		<include name="yes" displayName="${yes}"/>
+		<include name="no" displayName="${no}"/>
+	</subset>
+	<view name="basic, detailed, grid, gamecarousel">
+		<video name="default_background" extra="static" ifSubset="ps3overlay:yes">
+			<pos>0 -0.08</pos>
+			<maxSize>1</maxSize>
+			<opacity>0.4</opacity>
+			<path>${themePath}/_inc/images/ps3_background.mp4</path>
+			<zIndex>08</zIndex>
+		</video>
+	</view>
+</theme>
