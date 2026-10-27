@@ -51,7 +51,16 @@ based on:		"Playstation-X" by pajarorrojo
 				<backgroundColor>FF000000</backgroundColor>
 			</text>
 		</stackpanel>
-
+		<image name="background-fanart" extra="true">
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<size>0 1</size>
+			<path>{game:fanart}</path>
+			<roundCorners>0</roundCorners>
+			<linearSmooth>true</linearSmooth>
+			<color>FFFFFF1F</color>
+			<zIndex>1</zIndex>
+		</image>
 	<!-- Обложка, логотип, название / Boxart, logo, title -->
 		<image name="background-art" extra="true">
 			<path>firstfile({game:thumbnail}, {game:image})</path>
@@ -59,9 +68,17 @@ based on:		"Playstation-X" by pajarorrojo
 			<origin>0.5 0.5</origin>
 			<maxSize>0.86</maxSize>
 			<roundCorners>0</roundCorners>
-			<linearSmooth>false</linearSmooth>
+			<linearSmooth>true</linearSmooth>
 			<color>A0A0A0FF</color>
 			<zIndex>01</zIndex>
+			<shader>
+				<path>:/shaders/border.glsl</path>
+				<cornerRadius>0.01</cornerRadius>
+				<innerShadowSize>0.01</innerShadowSize>
+				<innerShadowColor>00000030</innerShadowColor>
+				<outerShadowSize>0.020</outerShadowSize>
+				<outerShadowColor>0000009F</outerShadowColor>
+			</shader>
 		</image>
 		<image name="logo-splash" extra="true">
 			<path>{game:marquee}</path>
@@ -74,10 +91,10 @@ based on:		"Playstation-X" by pajarorrojo
 		<text name="name-splash" extra="true">
 			<text>{game:name}</text>
 			<pos>0.023 0.175</pos>
-			<size>0.9 0.08</size>
+			<size>0.73 0.08</size>
 			<color>FFFFFF</color>
 			<backgroundColor>FF000000</backgroundColor>
-			<fontSize>0.06</fontSize>
+			<fontSize>0.05</fontSize>
 			<alignment>left</alignment>
 			<verticalAlignment>center</verticalAlignment>
 			<fontPath>${fontNameBold}</fontPath>
